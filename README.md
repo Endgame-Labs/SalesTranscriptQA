@@ -13,7 +13,6 @@ The final run accepted 200 of 256 candidates. Median answer length: 13 words. Es
 - [Corpus inventory](reports/corpus-inventory.json): verified counts, identity joins and eligible call pairs.
 - [Specification](docs/SPEC.md): agreed scope, data contracts, generation and publication approach.
 - [Decision record](docs/DECISIONS.md): source decisions and implementation defaults.
-- [Implementation and pilot issue #1](https://github.com/Endgame-Labs/SalesTranscriptQA/issues/1): operational source of truth.
 - [Attribution](NOTICE.md) and [upstream data license](LICENSE-DATA.txt).
 
 The corpus preserves dialogue verbatim. Linked IDs are resolved into separate identifying metadata. Questions may use both dialogue and that metadata; advanced questions must require evidence from exactly two calls within one opportunity or lead.

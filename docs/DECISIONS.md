@@ -45,3 +45,7 @@ Kyle subsequently specified:
 > make a note of that and tell me the next step
 
 Publish the dataset as **EndgameLabs/SalesTranscriptQA**. This supersedes the earlier tentative `endgame-labs` Hugging Face namespace. The GitHub organization remains **Endgame-Labs**. Publication awaits a write token with access to the selected Hugging Face organization.
+
+## README presentation
+
+Kyle requested that the GitHub README not link to GitHub issues. Keep the README focused on the dataset, CLI, usage, results and attribution; operational issue links belong in implementation/planning documentation.
