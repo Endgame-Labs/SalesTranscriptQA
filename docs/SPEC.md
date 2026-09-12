@@ -38,7 +38,7 @@ Single-call questions rely on one call plus its published metadata. Two-call que
 
 ## Publication data contract
 
-Use one Hugging Face dataset repository with B2B and B2C QA configurations. Within each domain, question_class is single_call or multi_call. Pilot QA belongs to an evaluation/test split; no training split is implied. Publish separately addressed corpus Parquet files alongside those QA configurations, plus generated Markdown exports and a checksum manifest. The eventual HF namespace is not yet selected.
+Use one Hugging Face dataset repository with B2B and B2C QA configurations. Within each domain, question_class is single_call or multi_call. Pilot QA belongs to an evaluation/test split; no training split is implied. Publish separately addressed corpus Parquet files alongside those QA configurations, plus generated Markdown exports and a checksum manifest. The selected Hugging Face organization is [EndgameLabs](https://huggingface.co/EndgameLabs); publish as `EndgameLabs/SalesTranscriptQA`. This differs from the GitHub organization `Endgame-Labs`.
 
 Canonical logical records:
 
@@ -94,7 +94,7 @@ Use configurable model endpoints and clear scoring provenance; no built-in claim
 
 Release requires mechanical corpus fidelity and provenance checks, accepted counts per pilot cell, passing automated QA/evidence gates, successful cross-format validation, deterministic export hashes, and a dataset card documenting method, synthetic origin, licensing, model configurations, costs and limitations. No human signoff gate is required.
 
-Before a future train/dev/test expansion, split by connected opportunity/lead groups (and duplicate calls) to avoid source leakage. Pilot tuning records must be identified; do not later describe this development pilot as an untouched test set. Full-scale size, split ratios, model endpoints, HF namespace, and concrete retry/sampling limits remain implementation choices to record before running.
+Before a future train/dev/test expansion, split by connected opportunity/lead groups (and duplicate calls) to avoid source leakage. Pilot tuning records must be identified; do not later describe this development pilot as an untouched test set. Full-scale size, split ratios, model endpoints, and concrete retry/sampling limits remain implementation choices to record before running.
 
 ## Methodological references
 

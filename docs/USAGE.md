@@ -21,7 +21,7 @@ This creates `salestranscriptqa-data/`, the default directory used by the exampl
 Once a Hugging Face release is published, use its dataset repository ID and full commit SHA:
 
 ```sh
-salestranscriptqa fetch --repo OWNER/SalesTranscriptQA --revision FULL_40_CHARACTER_COMMIT_SHA --data-dir salestranscriptqa-data
+salestranscriptqa fetch --repo EndgameLabs/SalesTranscriptQA --revision FULL_40_CHARACTER_COMMIT_SHA --data-dir salestranscriptqa-data
 ```
 
 The CLI requires an immutable revision and verifies all manifest checksums. The dataset includes full B2B/B2C corpora, question Parquet files, and Markdown transcript archives. Until publication, a locally prepared release directory can be supplied using `--data-dir`.

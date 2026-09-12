@@ -35,3 +35,13 @@ After comparing exhaustive human review and sampled human audits, Kyle instructe
 This supersedes the suggested human-review gate: use automated validation only and disclose that limitation.
 
 Kyle then confirmed saving this specification in a public Endgame-Labs/SalesTranscriptQA repository and submoduling it into the research workspace. This milestone establishes a specification, not a completed pilot or CLI.
+
+## Hugging Face organization selected
+
+Kyle subsequently specified:
+
+> okay we're gonna use this org: https://huggingface.co/EndgameLabs
+>
+> make a note of that and tell me the next step
+
+Publish the dataset as **EndgameLabs/SalesTranscriptQA**. This supersedes the earlier tentative `endgame-labs` Hugging Face namespace. The GitHub organization remains **Endgame-Labs**. Publication awaits a write token with access to the selected Hugging Face organization.
