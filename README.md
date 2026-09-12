@@ -2,8 +2,10 @@
 
 A planned dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales calls, with separate B2B and B2C question sets and a companion CLI in this repository.
 
-**Status: specification only.** The generation harness, CLI, pilot questions, and Hugging Face release are not implemented or published yet. The first target is 200 automatically validated questions: 50 single-call and 50 two-call questions per domain. Human review is not part of the planned validation process.
+**Status: pilot in progress.** The Python generation harness and companion CLI are implemented. Corpus extraction verified all 10,829 calls; the 200-question pilot is running. Hugging Face publication remains pending. Human review is not part of validation.
 
+- [CLI and generation usage](docs/USAGE.md): installation, exports, judging and reproducible builds.
+- [Corpus inventory](reports/corpus-inventory.json): verified counts, identity joins and eligible call pairs.
 - [Specification](docs/SPEC.md): agreed scope, data contracts, generation and publication approach.
 - [Decision record](docs/DECISIONS.md): source decisions and implementation defaults.
 - [Implementation and pilot issue #1](https://github.com/Endgame-Labs/SalesTranscriptQA/issues/1): operational source of truth.
