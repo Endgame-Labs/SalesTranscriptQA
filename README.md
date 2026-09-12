@@ -6,7 +6,7 @@ A planned dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro 
 
 - [Specification](docs/SPEC.md): agreed scope, data contracts, generation and publication approach.
 - [Decision record](docs/DECISIONS.md): source decisions and implementation defaults.
-- [Tracking issues](https://github.com/Endgame-Labs/SalesTranscriptQA/issues): operational source of truth.
+- [Implementation and pilot issue #1](https://github.com/Endgame-Labs/SalesTranscriptQA/issues/1): operational source of truth.
 - [Attribution](NOTICE.md) and [upstream data license](LICENSE-DATA.txt).
 
 The corpus preserves dialogue verbatim. Linked IDs are resolved into separate identifying metadata. Questions may use both dialogue and that metadata; advanced questions must require evidence from exactly two calls within one opportunity or lead.
