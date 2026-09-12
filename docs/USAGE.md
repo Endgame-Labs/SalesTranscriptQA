@@ -9,7 +9,7 @@ salestranscriptqa --help
 
 ## Get a dataset release
 
-The pilot is available now as a GitHub prerelease while Hugging Face publication is pending:
+The pilot is available on [Hugging Face](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA) and as a GitHub prerelease:
 
 ```sh
 gh release download v0.1.0 --repo Endgame-Labs/SalesTranscriptQA --pattern salestranscriptqa-pilot-v0.1.0.zip
@@ -18,13 +18,13 @@ unzip salestranscriptqa-pilot-v0.1.0.zip
 
 This creates `salestranscriptqa-data/`, the default directory used by the examples below.
 
-Once a Hugging Face release is published, use its dataset repository ID and full commit SHA:
+Fetch the published Hugging Face pilot at its immutable revision:
 
 ```sh
-salestranscriptqa fetch --repo EndgameLabs/SalesTranscriptQA --revision FULL_40_CHARACTER_COMMIT_SHA --data-dir salestranscriptqa-data
+salestranscriptqa fetch --repo EndgameLabs/SalesTranscriptQA --revision d5eae88b4a725b697ab81dc720429477611f1a9c --data-dir salestranscriptqa-data
 ```
 
-The CLI requires an immutable revision and verifies all manifest checksums. The dataset includes full B2B/B2C corpora, question Parquet files, and Markdown transcript archives. Until publication, a locally prepared release directory can be supplied using `--data-dir`.
+The CLI requires an immutable revision and verifies all manifest checksums. The dataset includes full B2B/B2C corpora, question Parquet files, and Markdown transcript archives. A locally prepared release directory can also be supplied using `--data-dir`.
 
 ## Export questions and documents
 
