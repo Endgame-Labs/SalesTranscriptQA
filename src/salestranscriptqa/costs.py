@@ -94,7 +94,7 @@ def breakdown(run, accepted_ids, output):
             )
         )
     with output.open("w") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     totals = defaultdict(float)
