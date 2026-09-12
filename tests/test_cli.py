@@ -70,3 +70,94 @@ def test_help_and_instructions():
     result = runner.invoke(app, ["instructions"])
     assert result.exit_code == 0
     assert "CRMArena-Pro" in result.stdout
+
+
+def test_local_release_exports_and_detects_corruption(tmp_path):
+    import pyarrow as pa
+    import pyarrow.parquet as pq
+
+    from salestranscriptqa.corpus import sha
+
+    p = tmp_path / "b2b-test.parquet"
+    pq.write_table(pa.Table.from_pylist([ROW]), p)
+    (tmp_path / "manifest.json").write_text(
+        json.dumps({"files": [{"path": p.name, "sha256": sha(p.read_bytes())}]})
+    )
+    runner = CliRunner()
+    result = runner.invoke(
+        app, ["questions", "export", "--domain", "b2b", "--data-dir", str(tmp_path)]
+    )
+    assert result.exit_code == 0
+    assert "gold_answer" not in result.stdout and "supporting_call_ids" not in result.stdout
+    assert json.loads(result.stdout)["question_id"] == "q"
+    p.write_bytes(p.read_bytes() + b"corrupt")
+    result = runner.invoke(
+        app, ["questions", "export", "--domain", "b2b", "--data-dir", str(tmp_path)]
+    )
+    assert result.exit_code != 0
+    assert "checksum" in result.output
+
+
+def test_corpus_shards_and_markdown_preserve_dialogue(tmp_path):
+    import pyarrow as pa
+    import pyarrow.parquet as pq
+
+    from salestranscriptqa.corpus import sha
+
+    rows = [
+        dict(
+            call_id=f"b2b:c{i}",
+            domain="b2b",
+            metadata={"lead_name": "Zoë"},
+            dialogue=f"Zoë: €{i}\nBuyer: Thanks.\n",
+        )
+        for i in range(3)
+    ]
+    p = tmp_path / "b2b-corpus.parquet"
+    pq.write_table(pa.Table.from_pylist(rows), p)
+    (tmp_path / "manifest.json").write_text(
+        json.dumps({"files": [{"path": p.name, "sha256": sha(p.read_bytes())}]})
+    )
+    runner = CliRunner()
+    result = runner.invoke(
+        app,
+        [
+            "documents",
+            "export",
+            "--domain",
+            "b2b",
+            "--data-dir",
+            str(tmp_path),
+            "--shards",
+            "2",
+            "--output",
+            str(tmp_path / "shards"),
+        ],
+    )
+    assert result.exit_code == 0
+    exported = [
+        json.loads(line)
+        for path in (tmp_path / "shards").glob("*.jsonl")
+        for line in path.read_text().splitlines()
+    ]
+    assert sorted(r["call_id"] for r in exported) == ["b2b:c0", "b2b:c1", "b2b:c2"]
+    result = runner.invoke(
+        app,
+        [
+            "documents",
+            "export",
+            "--domain",
+            "b2b",
+            "--data-dir",
+            str(tmp_path),
+            "--format",
+            "markdown",
+            "--output",
+            str(tmp_path / "markdown"),
+        ],
+    )
+    assert result.exit_code == 0
+    for i, row in enumerate(rows):
+        assert (tmp_path / "markdown" / f"c{i}.md").read_text().split("---\n", 2)[2] == row[
+            "dialogue"
+        ]

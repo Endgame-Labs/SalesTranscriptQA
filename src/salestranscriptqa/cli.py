@@ -187,17 +187,50 @@ def document_export(
     data_dir: Path = typer.Option(Path("salestranscriptqa-data")),
     output: Path | None = typer.Option(None),
     force: bool = False,
+    shards: int = typer.Option(1, min=1),
+    format: str = "jsonl",
 ):
-    """Export every call in the domain as JSONL, independent of question selection."""
-    emit(
-        [
-            {k: r[k] for k in ("call_id", "domain", "metadata", "dialogue")}
-            for r in records(data_dir, domain, "corpus")
-        ],
-        output,
-        force,
-        jsonl=True,
-    )
+    """Export the full domain corpus as JSONL shards or verbatim Markdown files."""
+    if format not in ("jsonl", "markdown"):
+        raise typer.BadParameter("format must be jsonl or markdown")
+    if (shards > 1 or format == "markdown") and output is None:
+        raise typer.BadParameter("--output directory required for shards or Markdown")
+    rows = [
+        {k: r[k] for k in ("call_id", "domain", "metadata", "dialogue")}
+        for r in records(data_dir, domain, "corpus")
+    ]
+    if format == "jsonl" and shards == 1:
+        emit(rows, output, force, jsonl=True)
+        return
+    preflight(output, force)
+    if output.exists() and not output.is_dir():
+        raise typer.BadParameter("Output must be a directory")
+    output.mkdir(parents=True, exist_ok=True)
+    if format == "markdown":
+        import yaml
+
+        for row in rows:
+            filename = row["call_id"].split(":")[-1]
+            if not re.fullmatch(r"[A-Za-z0-9_-]+", filename):
+                raise typer.BadParameter("Unsafe call ID")
+            text = (
+                "---\n"
+                + yaml.safe_dump(
+                    {"call_id": row["call_id"], "domain": domain, **row["metadata"]},
+                    allow_unicode=True,
+                    sort_keys=True,
+                )
+                + "---\n"
+                + row["dialogue"]
+            )
+            path = output / (filename + ".md")
+            temporary = path.with_suffix(".tmp")
+            temporary.write_text(text)
+            temporary.replace(path)
+    else:
+        for i in range(shards):
+            emit(rows[i::shards], output / f"part-{i:05d}.jsonl", force, jsonl=True)
+    typer.echo(f"Exported {len(rows)} calls to {output}")
 
 
 def batch(path, rows):

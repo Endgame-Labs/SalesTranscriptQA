@@ -150,6 +150,7 @@ def prepare(corpus, run, output, report_dir):
             data = path.read_bytes()
             manifest["files"].append(dict(path=path.name, bytes=len(data), sha256=sha(data)))
     write_json(output / "manifest.json", manifest)
+    shutil.copyfile("docs/DATASET_CARD.md", output / "README.md")
     (report_dir / "PILOT.md").write_text(f"""# SalesTranscriptQA pilot
 
 Automatically generated and automatically validated; no human review or calibration.

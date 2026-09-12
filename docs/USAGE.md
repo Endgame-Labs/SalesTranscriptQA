@@ -23,6 +23,8 @@ The CLI requires an immutable revision and verifies all manifest checksums. The 
 salestranscriptqa questions export --domain b2b --output questions.jsonl
 salestranscriptqa questions export --domain b2c --question-class multi_call --output multicall.jsonl
 salestranscriptqa documents export --domain b2b --output calls.jsonl
+salestranscriptqa documents export --domain b2b --shards 8 --output call-shards
+salestranscriptqa documents export --domain b2c --format markdown --output transcripts
 salestranscriptqa questions sample --domain b2b --count 4 --seed 42 --include-answer
 salestranscriptqa questions get QUESTION_ID --domain b2b --include-answer --include-source
 salestranscriptqa documents get CALL_ID --domain b2b

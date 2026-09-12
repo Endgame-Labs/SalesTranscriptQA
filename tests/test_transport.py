@@ -61,3 +61,36 @@ def test_auth_failure_is_not_retried(tmp_path, monkeypatch):
     assert len(calls) == 1
     with t.db() as db:
         assert db.execute("select estimated_usd from attempts").fetchone()[0] is None
+
+
+def test_rate_limit_honors_retry_after_and_keeps_both_attempts(tmp_path, monkeypatch):
+    from salestranscriptqa import transport
+
+    monkeypatch.setenv("FIREWORKS_API_KEY", "test")
+    clock = [1000.0]
+    monkeypatch.setattr(transport.time, "time", lambda: clock[0])
+    monkeypatch.setattr(
+        transport.time, "sleep", lambda seconds: clock.__setitem__(0, clock[0] + seconds)
+    )
+    t = Transport(tmp_path)
+    calls = []
+
+    def handler(request):
+        calls.append(request)
+        if len(calls) == 1:
+            return httpx.Response(429, headers={"Retry-After": "5"}, json={"error": "limited"})
+        return httpx.Response(
+            200,
+            json={
+                "choices": [{"finish_reason": "stop", "message": {"content": '{"ok":true}'}}],
+                "usage": {"prompt_tokens": 2, "completion_tokens": 3},
+            },
+        )
+
+    t.client = httpx.Client(transport=httpx.MockTransport(handler))
+    assert t.request(PRIMARY, "JSON", "rate-limit") == {"ok": True}
+    assert clock[0] >= 1005
+    with t.db() as db:
+        assert [
+            row["http_status"] for row in db.execute("select * from attempts order by started")
+        ] == [429, 200]
