@@ -1,8 +1,12 @@
 # SalesTranscriptQA
 
-A planned dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales calls, with separate B2B and B2C question sets and a companion CLI in this repository.
+A dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales calls, with separate B2B and B2C question sets and a companion CLI in this repository.
 
-**Status: pilot in progress.** The Python generation harness and companion CLI are implemented. Corpus extraction verified all 10,829 calls; the 200-question pilot is running. Hugging Face publication remains pending. Human review is not part of validation.
+**Status: 200-question pilot complete.** All 200 questions passed automated validation: 50 single-call and 50 two-call questions per domain, with the full 10,829-call corpus. No human review or calibration was performed. The CLI is implemented and tested. Hugging Face publication is pending a destination and write token.
+
+[Download the pilot and CLI release](https://github.com/Endgame-Labs/SalesTranscriptQA/releases/tag/v0.1.0) · [Pilot report and costs](reports/PILOT.md)
+
+The final run accepted 200 of 256 candidates. Median answer length: 13 words. Estimated API spend: **$0.89 for the pilot; $0.92 including all development and smoke checks**. These are usage-based estimates, not invoices.
 
 - [CLI and generation usage](docs/USAGE.md): installation, exports, judging and reproducible builds.
 - [Pilot implementation choices](docs/IMPLEMENTATION.md): models, rates, sampling and validation settings.
@@ -14,7 +18,7 @@ A planned dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro 
 
 The corpus preserves dialogue verbatim. Linked IDs are resolved into separate identifying metadata. Questions may use both dialogue and that metadata; advanced questions must require evidence from exactly two calls within one opportunity or lead.
 
-Publication will use canonical Parquet plus Markdown transcript exports with YAML frontmatter. The planned `salestranscriptqa` CLI will fetch pinned Hugging Face releases, export corpora/questions, validate submissions, and support answer judging in the style of [EnronQA-cli](https://github.com/dorkitude/EnronQA-cli).
+Publication uses canonical Parquet plus Markdown transcript exports with YAML frontmatter. The `salestranscriptqa` CLI fetches pinned Hugging Face releases, exports corpora/questions, validates submissions, and supports answer judging in the style of [EnronQA-cli](https://github.com/dorkitude/EnronQA-cli).
 
 ## Attribution and licensing
 

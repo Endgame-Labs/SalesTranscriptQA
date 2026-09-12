@@ -9,6 +9,15 @@ salestranscriptqa --help
 
 ## Get a dataset release
 
+The pilot is available now as a GitHub prerelease while Hugging Face publication is pending:
+
+```sh
+gh release download v0.1.0 --repo Endgame-Labs/SalesTranscriptQA --pattern salestranscriptqa-pilot-v0.1.0.zip
+unzip salestranscriptqa-pilot-v0.1.0.zip
+```
+
+This creates `salestranscriptqa-data/`, the default directory used by the examples below.
+
 Once a Hugging Face release is published, use its dataset repository ID and full commit SHA:
 
 ```sh
@@ -62,7 +71,7 @@ For direct LLM judging, export your provider key into an environment variable an
 salestranscriptqa check answers.jsonl --domain b2b --model PROVIDER_MODEL_ID --api-key-env FIREWORKS_API_KEY --output judgments.jsonl
 ```
 
-Use `--base-url` for another HTTPS OpenAI-compatible JSON endpoint. The full submission and output destination are validated before paid requests. Judgments checkpoint after each question and include per-attempt timing and provider usage where supplied. Failures have an `error` field, never a fabricated correctness value; `check` exits nonzero if any fail. `score` rejects incomplete/duplicate judgment sets. A new `check` invocation currently rejudges the supplied batch; supply only unanswered items when recovering a partial judging run.
+Use `--base-url` for another HTTPS OpenAI-compatible JSON endpoint. `--reasoning-effort` and `--max-tokens` configure provider reasoning/output limits; for GLM Flash, use `--reasoning-effort low`. The full submission and output destination are validated before paid requests. Judgments checkpoint after each question and include per-attempt timing and provider usage where supplied. Failures have an `error` field, never a fabricated correctness value; `check` exits nonzero if any fail. `score` rejects incomplete/duplicate judgment sets. A new `check` invocation currently rejudges the supplied batch; supply only unanswered items when recovering a partial judging run.
 
 Outputs refuse overwrite unless `--force` is supplied. Answers, judge results and API keys are not uploaded by these commands.
 

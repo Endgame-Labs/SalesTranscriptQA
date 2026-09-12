@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "domain": "b2b",
+      "questions": 100,
+      "corpus_calls": 4033,
+      "export_hides_gold": true,
+      "reference_fixture_score": {
+        "exact_match": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "token_f1": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "call_recall_at_5": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "call_recall_at_10": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "all_calls_at_5": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "all_calls_at_10": {
+          "mean": 1.0,
+          "n": 100
+        }
+      }
+    },
+    {
+      "domain": "b2c",
+      "questions": 100,
+      "corpus_calls": 6796,
+      "export_hides_gold": true,
+      "reference_fixture_score": {
+        "exact_match": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "token_f1": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "call_recall_at_5": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "call_recall_at_10": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "all_calls_at_5": {
+          "mean": 1.0,
+          "n": 100
+        },
+        "all_calls_at_10": {
+          "mean": 1.0,
+          "n": 100
+        }
+      }
+    }
+  ],
+  "note": "Reference-fixture scores verify CLI mechanics; they are not measured QA or RAG accuracy."
+}

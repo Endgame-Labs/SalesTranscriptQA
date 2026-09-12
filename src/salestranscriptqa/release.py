@@ -11,6 +11,7 @@ import pyarrow.parquet as pq
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from .corpus import sha, write_json
+from .costs import breakdown
 from .pilot import evidence_check
 
 
@@ -98,6 +99,13 @@ def prepare(corpus, run, output, report_dir):
         write_json(report_dir / "duplicate-candidates.json", duplicate_pairs)
         raise ValueError("Near-duplicate question candidates require replacement before release")
     costs = cost_report(run.parent)
+    candidate_costs = breakdown(
+        run, {q["provenance"]["job_id"] for q in questions}, report_dir / "pilot-costs.csv"
+    )
+    if any(row["outcome"] == "unattributed" for row in candidate_costs["rows"]):
+        raise ValueError("Unattributed or unfinished pilot requests prevent cost freeze")
+    costs.update(candidate_costs)
+    shutil.copyfile(report_dir / "pilot-costs.csv", output / "pilot-costs.csv")
     candidates = [json.loads(p.read_text()) for p in (run / "candidates").glob("*.json")]
     import statistics
 

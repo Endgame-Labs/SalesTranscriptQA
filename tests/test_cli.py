@@ -161,3 +161,62 @@ def test_corpus_shards_and_markdown_preserve_dialogue(tmp_path):
         assert (tmp_path / "markdown" / f"c{i}.md").read_text().split("---\n", 2)[2] == row[
             "dialogue"
         ]
+
+
+def test_direct_judging_validates_before_spending_and_preserves_usage(tmp_path, monkeypatch):
+    import httpx
+    import pyarrow as pa
+    import pyarrow.parquet as pq
+
+    from salestranscriptqa import cli
+    from salestranscriptqa.corpus import sha
+
+    path = tmp_path / "b2b-test.parquet"
+    pq.write_table(pa.Table.from_pylist([ROW]), path)
+    (tmp_path / "manifest.json").write_text(
+        json.dumps({"files": [{"path": path.name, "sha256": sha(path.read_bytes())}]})
+    )
+    answers = tmp_path / "answers.jsonl"
+    answers.write_text(json.dumps({"question_id": "q", "answer": ROW["gold_answer"]}) + "\n")
+    monkeypatch.setenv("TEST_JUDGE_KEY", "secret-do-not-print")
+    requests = []
+
+    def handler(request):
+        requests.append(request)
+        return httpx.Response(
+            200,
+            json={
+                "choices": [
+                    {
+                        "finish_reason": "stop",
+                        "message": {"content": '{"correct":true,"reason":"matches"}'},
+                    }
+                ],
+                "usage": {"prompt_tokens": 10, "completion_tokens": 4},
+            },
+        )
+
+    client = httpx.Client(transport=httpx.MockTransport(handler))
+    monkeypatch.setattr(cli.httpx, "Client", lambda **kwargs: client)
+    runner = CliRunner()
+    args = [
+        "check",
+        str(answers),
+        "--domain",
+        "b2b",
+        "--data-dir",
+        str(tmp_path),
+        "--model",
+        "test-model",
+        "--api-key-env",
+        "TEST_JUDGE_KEY",
+        "--output",
+        str(tmp_path / "judgments.jsonl"),
+    ]
+    result = runner.invoke(app, args)
+    assert result.exit_code == 0, result.output
+    judged = json.loads((tmp_path / "judgments.jsonl").read_text())
+    assert judged["correct"] is True and judged["attempts"][0]["usage"]["prompt_tokens"] == 10
+    assert "secret-do-not-print" not in (tmp_path / "judgments.jsonl").read_text()
+    result = runner.invoke(app, args)
+    assert result.exit_code != 0 and len(requests) == 1

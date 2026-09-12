@@ -1,6 +1,6 @@
 # SalesTranscriptQA specification
 
-Agreed scope: September 12, 2026. Status: design; no implementation or generated release claimed. Implementation defaults below can be revised based on pilot evidence. Work is tracked in GitHub issues, not a separate task checklist here.
+Agreed scope: September 12, 2026. Status: agreed design baseline; see [implementation choices](IMPLEMENTATION.md) and the [pilot report](../reports/PILOT.md) for completed implementation and results. Implementation defaults below can be revised based on pilot evidence. Work is tracked in GitHub issues, not a separate task checklist here.
 
 ## Objective and pilot
 

@@ -1,0 +1,66 @@
+{
+  "model": "accounts/fireworks/models/glm-5p3-flash",
+  "expected": [
+    true,
+    false
+  ],
+  "judgments": [
+    {
+      "question_id": "b2b-single_call-e3218b4a18e3e9be",
+      "correct": true,
+      "reason": "The answer matches the evidence quote and reference exactly.",
+      "model": "accounts/fireworks/models/glm-5p3-flash",
+      "attempts": [
+        {
+          "attempt": 0,
+          "status": 200,
+          "elapsed": 2.051739454269409,
+          "usage": {
+            "prompt_tokens": 268,
+            "total_tokens": 288,
+            "completion_tokens": 20,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "provider_id": "chatcmpl-45672c9d75234f019b55ea7c13bb3ff5"
+        }
+      ]
+    },
+    {
+      "question_id": "b2b-single_call-505acbae05a92a92",
+      "correct": false,
+      "reason": "The proposed answer is unrelated; the correct answer is that the Workflow Genius is priced at 899.",
+      "model": "accounts/fireworks/models/glm-5p3-flash",
+      "attempts": [
+        {
+          "attempt": 0,
+          "status": 200,
+          "elapsed": 0.5715069770812988,
+          "usage": {
+            "prompt_tokens": 268,
+            "total_tokens": 299,
+            "completion_tokens": 31,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "provider_id": "chatcmpl-78caffb0aa5f4cbeb91f202384bf937f"
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

@@ -431,6 +431,8 @@ def check(
     api_key_env: str = "FIREWORKS_API_KEY",
     output: Path = typer.Option(...),
     force: bool = False,
+    reasoning_effort: str | None = None,
+    max_tokens: int = typer.Option(4096, min=1),
 ):
     """Judge a validated answer batch using an OpenAI-compatible JSON endpoint."""
     preflight(output, force)
@@ -449,7 +451,7 @@ def check(
             payload = dict(
                 model=model,
                 temperature=0,
-                max_tokens=2048,
+                max_tokens=max_tokens,
                 response_format={"type": "json_object"},
                 messages=[
                     {
@@ -467,6 +469,8 @@ def check(
                     }
                 ],
             )
+            if reasoning_effort is not None:
+                payload["reasoning_effort"] = reasoning_effort
             error = None
             attempt_rows = []
             for attempt in range(8):
@@ -507,14 +511,16 @@ def check(
                     break
                 except (httpx.HTTPError, ValueError, KeyError, IndexError, TypeError) as exc:
                     error = type(exc).__name__
-                    attempt_rows.append(
-                        dict(
-                            attempt=attempt,
-                            error=error,
-                            status=response.status_code if response is not None else None,
-                            elapsed=time.time() - started,
-                        )
+                    failed_attempt = dict(
+                        attempt=attempt,
+                        error=error,
+                        status=response.status_code if response is not None else None,
+                        elapsed=time.time() - started,
                     )
+                    if attempt_rows and attempt_rows[-1]["attempt"] == attempt:
+                        attempt_rows[-1].update(failed_attempt)
+                    else:
+                        attempt_rows.append(failed_attempt)
                     if response is not None and response.status_code in (400, 401, 403, 404, 422):
                         break
                     if attempt < 7:
