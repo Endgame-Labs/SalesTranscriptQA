@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 from .corpus import write_json
 from .pilot import Pilot, public_call
-from .transport import PRIMARY, SECONDARY, digest
+from .transport import PRIMARY, SECONDARY, InvalidModelOutputError, digest
 
 
 def source_units(calls):
@@ -146,7 +146,15 @@ class Full(Pilot):
         result = super().candidate(domain, kind, calls, variant)
         if result["status"] != "accepted" or result.get("contract_checked"):
             return result
-        return self.audit_candidate(result, calls)
+        try:
+            return self.audit_candidate(result, calls)
+        except InvalidModelOutputError:
+            result.update(status="rejected", failure="model_output_invalid_after_retries")
+            result["stages"]["contract_output_error"] = "invalid_model_output_after_8_attempts"
+            write_json(self.root / "candidates" / f"{result['job_id']}.json", result)
+            with self.transport.db() as db:
+                db.execute("UPDATE jobs SET status='rejected' WHERE id=?", (result["job_id"],))
+            return result
 
     def audit_candidate(self, result, calls):
         job = result["job_id"]

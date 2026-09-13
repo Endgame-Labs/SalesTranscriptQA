@@ -94,3 +94,32 @@ def test_rate_limit_honors_retry_after_and_keeps_both_attempts(tmp_path, monkeyp
         assert [
             row["http_status"] for row in db.execute("select * from attempts order by started")
         ] == [429, 200]
+
+
+def test_invalid_completions_are_distinct_from_unavailable_provider(tmp_path, monkeypatch):
+    import pytest
+
+    from salestranscriptqa import transport
+
+    monkeypatch.setenv("FIREWORKS_API_KEY", "test")
+    monkeypatch.setattr(transport, "retry_delay", lambda *args: 0)
+    for status, error in [(200, transport.InvalidModelOutputError), (503, RuntimeError)]:
+        t = Transport(tmp_path / str(status))
+        t.client = httpx.Client(
+            transport=httpx.MockTransport(
+                lambda request: httpx.Response(
+                    status,
+                    json={
+                        "choices": [
+                            {"finish_reason": "length", "message": {"content": "unfinished"}}
+                        ],
+                        "usage": {"prompt_tokens": 2, "completion_tokens": 4096},
+                    },
+                )
+            )
+        )
+        with pytest.raises(error) as caught:
+            t.request(PRIMARY, "JSON", "audit")
+        assert type(caught.value) is error
+        with t.db() as db:
+            assert db.execute("SELECT count(*) FROM attempts").fetchone()[0] == 8

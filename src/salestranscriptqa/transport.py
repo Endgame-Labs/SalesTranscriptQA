@@ -18,6 +18,10 @@ SECONDARY = "accounts/fireworks/models/glm-5p3-flash"
 RATES = {PRIMARY: (0.22, 0.007, 0.66), SECONDARY: (0.15, 0.03, 0.50)}
 
 
+class InvalidModelOutputError(ValueError):
+    """All bounded attempts returned successful HTTP responses with unusable model output."""
+
+
 def digest(value):
     return hashlib.sha256(
         json.dumps(value, sort_keys=True, ensure_ascii=False).encode()
@@ -97,6 +101,7 @@ class Transport:
         if row:
             return json.loads((self.root / row["artifact"]).read_text())["parsed"]
         credentials()
+        invalid_outputs = 0
         for attempt in range(8):
             while True:
                 with self.lock:
@@ -127,6 +132,13 @@ class Transport:
                     raise ValueError("Expected JSON object")
             except Exception as exc:
                 error = type(exc).__name__  # no server bodies, headers or credentials in errors
+            if (
+                response is not None
+                and response.status_code == 200
+                and error
+                in ("ValueError", "JSONDecodeError", "KeyError", "IndexError", "TypeError")
+            ):
+                invalid_outputs += 1
             usage = (data or {}).get("usage") or {}
             inp, out = usage.get("prompt_tokens"), usage.get("completion_tokens")
             cached = (
@@ -179,4 +191,6 @@ class Transport:
                 )
                 with self.lock:
                     self.cooldown = max(self.cooldown, time.time() + delay)
+        if invalid_outputs == 8:
+            raise InvalidModelOutputError("invalid_model_output_after_8_attempts")
         raise RuntimeError("Provider retries exhausted")

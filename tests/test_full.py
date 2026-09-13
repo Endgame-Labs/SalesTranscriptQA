@@ -175,3 +175,27 @@ def test_resume_marks_abandoned_requests_unknown_instead_of_blocking_release(tmp
         ).fetchone()
         assert tuple(row) == ("interrupted", None, "InterruptedProcessUnknownUsage")
         assert db.execute("SELECT status FROM attempts WHERE id='finished'").fetchone()[0] == "ok"
+
+
+def test_invalid_contract_output_rejects_proposal_without_stopping_run(tmp_path, monkeypatch):
+    import threading
+
+    from salestranscriptqa.full import Full
+    from salestranscriptqa.pilot import Pilot
+    from salestranscriptqa.transport import InvalidModelOutputError, Transport
+
+    full = object.__new__(Full)
+    full.root = tmp_path
+    full.local = threading.local()
+    full.transport = Transport(tmp_path)
+    monkeypatch.setattr(
+        Pilot, "candidate", lambda *args: dict(job_id="job", status="accepted", stages={})
+    )
+
+    def fail(*args):
+        raise InvalidModelOutputError("bad output")
+
+    full.audit_candidate = fail
+    result = full.candidate("b2b", "single_call", [])
+    assert result["status"] == "rejected"
+    assert result["failure"] == "model_output_invalid_after_retries"
