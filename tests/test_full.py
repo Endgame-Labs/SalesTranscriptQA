@@ -157,3 +157,21 @@ def test_missing_source_unit_blocks_release(tmp_path):
     (run / "source-plan.json").write_text("[]")
     with pytest.raises(ValueError, match="every eligible unit"):
         validate_complete(corpus, run)
+
+
+def test_resume_marks_abandoned_requests_unknown_instead_of_blocking_release(tmp_path):
+    from salestranscriptqa.full import Full
+    from salestranscriptqa.transport import Transport
+
+    full = object.__new__(Full)
+    full.transport = Transport(tmp_path)
+    with full.transport.db() as db:
+        db.execute("INSERT INTO attempts(id,status) VALUES('abandoned','running')")
+        db.execute("INSERT INTO attempts(id,status,estimated_usd) VALUES('finished','ok',.01)")
+    full.recover_interrupted_requests()
+    with full.transport.db() as db:
+        row = db.execute(
+            "SELECT status,estimated_usd,error FROM attempts WHERE id='abandoned'"
+        ).fetchone()
+        assert tuple(row) == ("interrupted", None, "InterruptedProcessUnknownUsage")
+        assert db.execute("SELECT status FROM attempts WHERE id='finished'").fetchone()[0] == "ok"

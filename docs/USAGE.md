@@ -122,3 +122,25 @@ Progress is in `runs/full-v1/progress.json` and `workflow.json`, with per-source
 The strengthened protocol first extracts required facts from the question and sources without the gold answer, then uses the other model family to audit each atomic gold-answer claim against an explicit request. Two-call obligations must include a distinct requested fact exclusive to each source. Known pilot defects are checked using `uv run python scripts/check_contract_regressions.py` (paid calls).
 
 The release preserves the original pilot and its artifacts under `pilot/`, with separate `b2b_pilot` and `b2c_pilot` configurations. The original immutable revision remains valid. The main `b2b`/`b2c` configurations contain the freshly generated full cohort, rather than silently rewriting pilot questions. There is source overlap between cohorts: these are not independent train/test partitions. The existing 200-question retrieval experiment remains tied to its original revision; expansion does not automatically rerun that experiment.
+
+### Operate the background run on this VM
+
+The managed service is `salestranscriptqa-full-v1`. It continues without an assistant session and automatically packages/publishes only on successful completion. To inspect it:
+
+```sh
+systemctl --user status salestranscriptqa-full-v1
+cat runs/full-v1/progress.json
+cat runs/full-v1/workflow.json
+tail -f runs/full-v1/workflow.log
+```
+
+To stop or resume the current managed job:
+
+```sh
+systemctl --user stop salestranscriptqa-full-v1
+systemctl --user start salestranscriptqa-full-v1
+```
+
+Alternatively, after stopping the service, run `uv run python scripts/generate_and_publish.py` yourself from the repository root. Do not launch both at once. Resume uses completed unit files and successful request caches. In-flight requests at interruption are recorded as interrupted with unknown billing; a replacement request may incur another charge. Do not delete the run directory to resume. The transient service is not installed to start automatically after a VM reboot; the standalone command remains available.
+
+Completion is recorded as `stage: complete` in `workflow.json`; the immutable Hugging Face revision and anonymous verification results are in `runs/full-v1/publication.json`. `stage: failed` requires inspecting the log and rerunning after resolving the error. Full generation is slow; polling by an assistant is unnecessary.

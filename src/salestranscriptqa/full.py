@@ -252,9 +252,18 @@ class Full(Pilot):
         write_json(path, value)
         return value
 
+    def recover_interrupted_requests(self):
+        """Call only while holding the run lock; provider usage may be unknown."""
+        with self.transport.db() as db:
+            db.execute(
+                "UPDATE attempts SET status='interrupted', error='InterruptedProcessUnknownUsage' "
+                "WHERE status='running'"
+            )
+
     def run_all(self, limit=None):
         with (self.root / "pilot.lock").open("w") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            self.recover_interrupted_requests()
             units = self.plan()
             write_json(self.root / "source-plan.json", units)
             selected = units if limit is None else units[:limit]

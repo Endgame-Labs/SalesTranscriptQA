@@ -4,6 +4,8 @@ A dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales ca
 
 **Status: 200-question pilot complete.** All 200 questions passed automated validation: 50 single-call and 50 two-call questions per domain, with the full 10,829-call corpus. No human review or calibration was performed. The CLI is implemented and tested. The dataset is published at [EndgameLabs/SalesTranscriptQA on Hugging Face](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA).
 
+**Full expansion is running:** the standalone workflow covers all 22,594 eligible call/pair units, strengthens required-fact and two-call audits, and automatically publishes a validated full cohort to Hugging Face. [Run and monitor it yourself](docs/USAGE.md#generate-the-full-dataset). The published dataset remains the pilot until that workflow completes.
+
 [Download the pilot and CLI release](https://github.com/Endgame-Labs/SalesTranscriptQA/releases/tag/v0.1.0) · [Pilot report and costs](reports/PILOT.md)
 
 The final run accepted 200 of 256 candidates. Median answer length: 13 words. Estimated API spend: **$0.89 for the pilot; $0.92 including all development and smoke checks**. These are usage-based estimates, not invoices.
