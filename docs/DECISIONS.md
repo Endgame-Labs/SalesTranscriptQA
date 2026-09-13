@@ -49,3 +49,9 @@ Publish the dataset as **EndgameLabs/SalesTranscriptQA**. This supersedes the ea
 ## README presentation
 
 Kyle requested that the GitHub README not link to GitHub issues. Keep the README focused on the dataset, CLI, usage, results and attribution; operational issue links belong in implementation/planning documentation.
+
+## 2026-09-13 — Exhaustive expansion
+
+Kyle selected “all of them” after being offered all eligible calls/call pairs versus a fixed QA count. Interpret this as every individual call and every distinct-dialogue pair within the same explicit opportunity or lead, not every possible question or cross-account combination. Attempt up to three proposals per source unit, keeping at most one passing QA; record exhausted units and global duplicate removals. Do not relax quality gates to reach a nominal count.
+
+Use a fresh strengthened generation protocol and preserve the original pilot for reproducibility. Publishing the completed full cohort to the existing EndgameLabs/SalesTranscriptQA dataset is part of the authorized workflow. Main configurations expose the new cohort; separate pilot configurations and immutable history preserve the old one. No generation deadline or accepted yield is promised.

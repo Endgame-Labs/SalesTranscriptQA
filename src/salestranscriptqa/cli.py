@@ -570,3 +570,42 @@ def generate_pilot(
     from .pilot import Pilot
 
     Pilot(corpus, run_dir).run(per_class)
+
+
+@app.command("generate-all")
+def generate_all(
+    corpus: Path = Path("data/corpus"),
+    run_dir: Path = Path("runs/full-v1"),
+    workers: int = typer.Option(24, min=1, max=64),
+    proposals: int = typer.Option(3, min=1, max=5),
+    limit: int | None = typer.Option(None, min=1),
+):
+    """Generate/resume every eligible call and pair; --limit is a non-publishable smoke run."""
+    from .full import Full
+
+    Full(corpus, run_dir, workers, proposals).run_all(limit)
+
+
+@app.command("prepare-full-release")
+def prepare_full_release(
+    corpus: Path = Path("data/corpus"),
+    run_dir: Path = Path("runs/full-v1"),
+    output: Path = Path("data/full-v1-release"),
+    pilot: Path = Path("data/release"),
+):
+    """Validate exhaustive completion and package the full cohort locally."""
+    from .full_release import prepare_full
+
+    emit(prepare_full(corpus, run_dir, output, pilot))
+
+
+@app.command("publish-full-release")
+def publish_full_release(
+    output: Path = Path("data/full-v1-release"),
+    receipt: Path = Path("runs/full-v1/publication.json"),
+    repo: str = "EndgameLabs/SalesTranscriptQA",
+):
+    """Publish a completed release to Hugging Face and verify anonymous downloads."""
+    from .full_release import publish_full
+
+    emit(publish_full(output, receipt, repo))

@@ -1,0 +1,86 @@
+[
+  {
+    "question_id": "b2b-single_call-44366532fbd14e03",
+    "status": "rejected",
+    "failure": "question_contract",
+    "contract": {
+      "obligations": [
+        {
+          "question_span": "What did Fatima Olayanju identify as a key factor for UrbanTech Developments when considering a tech partner?",
+          "explicitly_requested": true,
+          "required_fact": "Strong market presence and stability (market stability) is a key factor when considering a tech partner.",
+          "source_call_ids": [
+            "b2b:a05Wt000003T2KsIAK"
+          ]
+        }
+      ]
+    },
+    "verdict": {
+      "type": "object",
+      "question_answer_aligned": false,
+      "no_unasked_required_facts": false,
+      "complete_minimal_reference": false,
+      "independent_answer_satisfies_question": false,
+      "obligations_correct": false,
+      "each_call_required_by_question": false,
+      "reason": "The gold_answer contains two distinct key factors: 'market stability' and 'robust data protection'. The question asks for 'a key factor' (singular), so only one factor is explicitly requested. The gold_answer includes an extra unasked factor (data protection), violating no_unasked_required_facts and complete_minimal_reference. The independent_answer also includes extra unasked facts (scalability, data protection), so it does not satisfy the question. The contract obligation only covers market stability, missing the data protection fact present in the gold_answer, so obligations_correct is false. The single call does provide the market stability fact, but since the gold_answer includes an extra fact not requested, the call is not fully aligned with the question.",
+      "unasked_gold_claims": [
+        "robust data protection is a key factor"
+      ],
+      "gold_claim_checks": [
+        {
+          "claim": "Market stability is a key factor",
+          "question_span": "a key factor",
+          "required_by_question": true
+        },
+        {
+          "claim": "robust data protection is a key factor",
+          "question_span": "",
+          "required_by_question": false
+        }
+      ]
+    }
+  },
+  {
+    "question_id": "b2c-multi_call-44c21bc1b95c05df",
+    "status": "rejected",
+    "failure": "question_contract",
+    "contract": {
+      "obligations": [
+        {
+          "question_span": "what inspection process did Hassan say certified pre-owned vehicles undergo?",
+          "explicitly_requested": true,
+          "required_fact": "Certified pre-owned vehicles undergo a stringent 160-point inspection.",
+          "source_call_ids": [
+            "b2c:a05Ws000005SQeGIAW"
+          ]
+        }
+      ]
+    },
+    "verdict": {
+      "type": "object",
+      "question_answer_aligned": true,
+      "no_unasked_required_facts": false,
+      "complete_minimal_reference": false,
+      "independent_answer_satisfies_question": true,
+      "obligations_correct": true,
+      "each_call_required_by_question": false,
+      "reason": "The gold_answer includes an unasked fact about the vehicle model mentioned on Feb 15, which is not requested by the question. The question only asks for the inspection process mentioned on Feb 18. The gold_answer also includes the model, making it non-minimal and containing unasked facts. The independent answer correctly answers the question. The obligation is correct. The two calls are not both required; only the Feb 18 call is needed.",
+      "unasked_gold_claims": [
+        "The 2020 Lexus RX 350 was mentioned on Feb 15."
+      ],
+      "gold_claim_checks": [
+        {
+          "claim": "The 2020 Lexus RX 350 was mentioned on Feb 15.",
+          "question_span": "",
+          "required_by_question": false
+        },
+        {
+          "claim": "a 160-point inspection was mentioned on Feb 18.",
+          "question_span": "what inspection process did Hassan say certified pre-owned vehicles undergo?",
+          "required_by_question": true
+        }
+      ]
+    }
+  }
+]

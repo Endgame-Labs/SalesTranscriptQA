@@ -78,6 +78,9 @@ def evidence_check(candidate, calls):
 
 
 class Pilot:
+    version = VERSION
+    settings = {}
+
     def __init__(self, corpus, root, seed=20260912):
         self.corpus, self.root, self.seed = Path(corpus), Path(root), seed
         self.transport = Transport(root)
@@ -94,7 +97,7 @@ class Pilot:
             )
             self.index[domain] = (calls, vectorizer, matrix)
         self.config = dict(
-            version=VERSION,
+            version=self.version,
             seed=seed,
             models=[PRIMARY, SECONDARY],
             rates=RATES,
@@ -108,6 +111,7 @@ class Pilot:
                 d: sha((self.corpus / f"{d}-corpus.parquet").read_bytes()) for d in self.calls
             },
         )
+        self.config.update(self.settings)
         self.config_digest = digest(self.config)
         existing = self.root / "config.json"
         if existing.exists() and json.loads(existing.read_text()) != self.config:
@@ -121,7 +125,7 @@ class Pilot:
             model,
             instruction + "\nINPUT JSON:\n" + json.dumps(value, ensure_ascii=False),
             stage,
-            nonce=VERSION + job,
+            nonce=self.version + job,
         )
 
     def sources(self, domain, kind):
@@ -142,13 +146,14 @@ class Pilot:
                 if pair[0]["dialogue_sha256"] != pair[1]["dialogue_sha256"]:
                     yield list(pair)
 
-    def candidate(self, domain, kind, calls):
+    def candidate(self, domain, kind, calls, variant=0):
         job = digest(
             dict(
                 config=self.config_digest,
                 domain=domain,
                 kind=kind,
                 calls=[c["call_id"] for c in calls],
+                **({"variant": variant} if variant else {}),
             )
         )
         artifact = self.root / "candidates" / f"{job}.json"

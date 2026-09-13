@@ -69,6 +69,7 @@ class Transport:
                 input_tokens INTEGER, cached_tokens INTEGER, output_tokens INTEGER,
                 estimated_usd REAL, artifact TEXT, error TEXT);
                 CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY, status TEXT, artifact TEXT, lease_until REAL);
+                CREATE INDEX IF NOT EXISTS attempts_cache ON attempts(request_key,status,started);
             """)
 
     def db(self):

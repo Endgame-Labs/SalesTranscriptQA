@@ -96,3 +96,29 @@ This version implements the modular stages directly in Python. It does not requi
 ## Data terms
 
 The data are **CC BY-NC 4.0**, with Salesforce attribution. The CLI and original implementation are **MIT**. The CLI license does not grant commercial rights to the dataset. See [NOTICE](../NOTICE.md) and the [specification](SPEC.md).
+
+## Generate the full dataset
+
+The full workflow processes **every single call and every eligible distinct-dialogue pair within an explicit opportunity or lead**: 4,033 B2B calls, 6,796 B2C calls, 4,087 B2B pairs and 7,678 B2C pairs (22,594 source units). It allows up to three proposals per unit and stops at the first accepted question. Units with no passing proposal remain documented rejections; no quality gate is relaxed to force coverage.
+
+```sh
+uv run salestranscriptqa generate-all
+uv run salestranscriptqa prepare-full-release
+uv run salestranscriptqa publish-full-release
+```
+
+Or run the complete sequence from the repository root:
+
+```sh
+uv run python scripts/generate_and_publish.py
+```
+
+Generation uses `FIREWORKS_API_KEY`; publication uses `HF_TOKEN`. On the development VM each helper loads only its own key from `~/.secrets/keys.env` if needed. Publication writes to `EndgameLabs/SalesTranscriptQA`, then verifies anonymous pinned downloads and the CLI fetch. It uses one Hugging Face commit with a parent-revision precondition. A completed publication receipt prevents duplicate uploads on resume.
+
+Defaults: `--corpus data/corpus`, `--run-dir runs/full-v1`, `--workers 24`, `--proposals 3`. Resume with the same configuration. `generate-all --limit 8` is a non-publishable smoke check across all four domain/class strata; running again without the limit reuses its completed work. A process lock prevents concurrent generators on the same run. The workflow adds its own lock across generation, packaging and publication. Infrastructure failures stop the workflow rather than becoming quality rejections; rerun after resolving the failure.
+
+Progress is in `runs/full-v1/progress.json` and `workflow.json`, with per-source results in `units/`, candidate/audit artifacts in `candidates/`, and requests plus metered usage in SQLite. A final `coverage.json` is only written after every eligible unit reaches a terminal status. Accepted candidates pass a global deterministic .9 TF-IDF cosine duplicate filter. Duplicates are recorded as removed; the workflow does not keep generating replacements indefinitely. `prepare-full-release` refuses incomplete coverage, mismatched QA/evidence, unfinished requests, or a nonempty output directory. `publish-full-release` verifies the completed release's checksums before uploading.
+
+The strengthened protocol first extracts required facts from the question and sources without the gold answer, then uses the other model family to audit each atomic gold-answer claim against an explicit request. Two-call obligations must include a distinct requested fact exclusive to each source. Known pilot defects are checked using `uv run python scripts/check_contract_regressions.py` (paid calls).
+
+The release preserves the original pilot and its artifacts under `pilot/`, with separate `b2b_pilot` and `b2c_pilot` configurations. The original immutable revision remains valid. The main `b2b`/`b2c` configurations contain the freshly generated full cohort, rather than silently rewriting pilot questions. There is source overlap between cohorts: these are not independent train/test partitions. The existing 200-question retrieval experiment remains tied to its original revision; expansion does not automatically rerun that experiment.

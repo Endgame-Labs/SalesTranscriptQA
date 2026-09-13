@@ -18,3 +18,11 @@ The [specification](SPEC.md) records the agreed product scope. [Issue #1](https:
 - Canonical corpus Parquet regenerated twice with identical bytes. Markdown body round trips preserve every original dialogue character. Markdown archives use fixed ZIP entry timestamps for reproducible bytes.
 
 The pilot test split is a development artifact, not a claim of independence from pipeline tuning. Future train/dev/test splits should separate connected source groups and duplicate content.
+
+## Full source coverage (September 13, 2026)
+
+The full runner supersedes pilot sampling with enumeration of all 10,829 calls and 11,765 eligible pairs, with at most three proposals per source unit. It uses 24 candidate workers, bounded submission, the same eight-attempt Fireworks backoff, SQLite request caching with an indexed lookup, and explicit per-unit terminal files. No rejected unit is silently replaced by a different source unit. Accepted near-duplicates above .9 TF-IDF cosine are removed globally using sparse blocks instead of a quadratic dense matrix.
+
+The pilot evaluation exposed unasked gold-answer facts and false two-call necessity. Full generation adds question-first obligation extraction with GLM and atomic gold-claim alignment auditing with DeepSeek. The gold reference, not merely an intermediate obligation list, must contain only requested facts. Supported but unasked extra reference facts fail. Each two-call source must supply a requested fact unavailable from the other call. Both known defective pilot examples are rejected by the production audit; this is a regression check, not human calibration or a general accuracy claim.
+
+The fresh cohort is published only after exhaustive completion, source/evidence verification and duplicate accounting. It preserves the original corpus bytes, original pilot artifacts under `pilot/`, and prior immutable HF revision. Main B2B/B2C configurations receive the full cohort; explicitly named pilot configurations preserve earlier evaluation inputs. Publication is one HF commit with a parent-revision precondition, followed by anonymous checksum and CLI fetch verification. See [usage](USAGE.md) for the executable workflow.
