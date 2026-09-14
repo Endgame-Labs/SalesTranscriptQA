@@ -126,3 +126,20 @@ separate task. The historical `generate_and_publish.py` workflow is not this run
 
 See [experiment history](QUESTION_EXPERIMENTS.md) for comparisons and calibration
 failures that motivated the current checks.
+
+## Reuse the approved expansion in a full run
+
+After the assistant has inspected the completed expansion and recorded its exact
+reviewed-question SHA-256 in a checkpoint assessment with `approved_for_full: true`,
+`scripts/seed_full_run.py --source EXPANDED_RUN --destination NEW_FULL_RUN --checkpoint-review ASSESSMENT.json`
+can seed a new full-run directory without model calls. It requires a terminal source
+workflow, preserves candidate/unit files separately, snapshots SQLite, and reuses
+immutable provider responses. The full runner must use the same frozen configuration
+(currently 16 workers and three proposals) or initialization rejects the cache.
+The helper does not start the full run or change its question policy.
+
+Inherited attempt IDs and usage represent already-paid work. Count them once across
+source/destination ledgers; the destination's generation allowance includes those
+carried-forward costs. The new source plan must cover all eligible units, and the
+final cohort still needs selection, independent review, quarantine checks, and RAG
+verification before reporting.
