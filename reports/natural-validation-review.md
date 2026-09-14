@@ -22,3 +22,14 @@ Critical regression: item 13's second-version assessment incorrectly returned co
 Next implementation: reference-blind answer extraction on individual sources/small batches, followed by explicit evidence-grounded answer comparison, with the known conflict tested amid the full distractor pool. Do not weaken conflict handling or accept the provisional pool-consistent results. Existing production acceptance has not changed.
 
 Recorded experiment costs: quote-based regression $0.00261845, quote-based 20-item review $0.22427915, indexed-evidence regression $0.00271623, indexed-evidence 20-item review $0.28225254 (total $0.51186637). Thirty-three deterministic tests pass; this does not imply the live larger-pool semantic regression passed.
+
+## Reference-blind per-transcript regression (September 14)
+
+Implemented `blind_ambiguity.py`: GLM extracts an answer from each transcript individually without the reference; DeepSeek verifies support without the reference; only afterward does a separate DeepSeek request compare extracted and reference answers. Deterministic aggregation preserves any verified conflict and treats missing/failed source reviews as inconclusive rather than consistent.
+
+The first implementation combined support verification and reference comparison and failed both live regressions with inconclusive results (retained in `blind-ambiguity-regression-v1.json`). Separating those stages fixed both full-pool cases (`blind-ambiguity-regression-v2.json`):
+
+- Item 13, 30 transcripts: 3 conflicting, 1 equivalent, 26 insufficient. The known Friday-afternoon conflict is explicitly extracted and retained; overall ambiguous.
+- Item 18, 31 transcripts: 11 equivalent warranty-price answers, 20 insufficient; overall consistent in this pool.
+
+Total recorded cost across both per-transcript trial revisions: $0.068262454. Existing suite: 35 passing tests; an additional reference-isolation regression passed with the two other blind-audit tests (3 tests). No production acceptance changes; full pilot review and multi-call extension remain necessary. No corpus-wide ambiguity guarantee.

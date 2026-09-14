@@ -1,0 +1,1243 @@
+{
+  "results": [
+    {
+      "item": 13,
+      "question": "What is the scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350?",
+      "expected": "ambiguous",
+      "decision": "inconclusive",
+      "sources": [
+        {
+          "call_id": "b2c:a05Ws000005SZHnIAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript never mentions a scheduled time for a product demonstration of the Volvo XC60 or Lexus RX 350; it only discusses the proposal, features, pricing, and offers to arrange a test drive later."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not contain any scheduled time for a product demonstration of the Volvo XC60 or Lexus RX 350. The transcript only discusses features, pricing, and offers to arrange a test drive later, with no mention of a specific time. Therefore, the extraction is correct, and the evidence supports that no complete answer exists in the source. The reference answer 'Saturday at noon' is not supported by the transcript, so the relation is insufficient rather than conflicting."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUOUIA4",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses a 2020 Lexus RX 350 proposal and financing, but never mentions a Volvo XC60 or any scheduled product demonstration time."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The transcript does not mention a Volvo XC60 or any scheduled product demonstration time for either vehicle. The extractor correctly identified the question as unanswerable, but the reference answer 'Saturday at noon' is not supported by any evidence in the transcript. Therefore, the extraction is correct in stating no answer exists, but the evidence does not support the reference answer, and the relation is insufficient due to lack of information."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR2SIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR2SIAW",
+                "line_start": 19,
+                "line_end": 20
+              }
+            ],
+            "reason": "The transcript never mentions a scheduled product demonstration time. Line 19 only says demonstrations can be discussed at the customer's convenience, with no date or time set."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is empty and marks the question as unanswerable, but the reference answer states 'Saturday at noon.' However, the transcript does not mention any scheduled time for a product demonstration, nor does it mention Saturday or noon. The only relevant line (19) says demonstrations can be discussed at the customer's convenience, with no specific time. Therefore, the extraction is incorrect because it missed a complete answer if one exists, but the evidence does not support the reference answer. The relation is insufficient because the source lacks the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR47IAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the proposal, pricing, and features for the Lexus RX 350 and Volvo XC60, but no product demonstration is mentioned and no scheduled time for one is given."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly states the transcript does not mention a product demonstration or scheduled time, so the answerable=false is correct. However, the reference answer claims 'Saturday at noon,' which is not supported by any cited lines in the transcript. Since the source lacks any mention of a demonstration schedule, the evidence is insufficient to support the reference answer, and the extraction (which found no answer) is correct in that regard. The relation is insufficient because the reference cannot be verified or contradicted by the source."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STsEIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": true,
+            "answer": "2:45 PM on May 15th (afternoon).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STsEIAW",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2022-05-09T14:04:50] Hiroko Yamada: Absolutely, Ethan. I’ll ensure we cover everything about the Lexus RX 350 and Volvo XC60, and anything else you might be interested in. Is there a particular time on May 15th that works best for you?\n[2022-05-09T14:05:05] Ethan Martinez: Let’s keep it in the afternoon, if possible—perhaps 2:45 PM?"
+              }
+            ],
+            "reason": "Hiroko asks about a time on May 15th for the meeting covering the Lexus RX 350 and Volvo XC60, and Ethan proposes 2:45 PM, which Hiroko confirms."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": true,
+            "relation": "conflicting",
+            "reason": "The extracted answer states the meeting is at 2:45 PM on May 15th, which is directly supported by the cited lines. However, the reference answer says 'Saturday at noon,' which conflicts with the source. The source does not mention Saturday or noon, and the reference answer is not supported by the transcript. Therefore, the extraction is correct in capturing the source, but the reference answer conflicts with the evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SbEjIAK",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions a product demo that occurred last week (line 2) but never states a scheduled time for any future demonstration, and the Volvo XC60 is never mentioned at all—only the Lexus RX 350, Chevrolet Tahoe, and service plans are discussed."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The transcript does not mention any scheduled time for a product demonstration, nor does it mention the Volvo XC60 at all. The only reference to a demo is in line 2, where Noah says 'the product demo last week,' but no specific time is given. The extracted answer correctly identifies the lack of information, so extraction_correct is false because it missed a complete answer (there is none). Evidence does not support any scheduled time, and the reference answer 'Saturday at noon' is not supported by the transcript. Therefore, the relation is insufficient."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQEdIAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQEdIAO",
+                "line_start": 4,
+                "line_end": 5
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQEdIAO",
+                "line_start": 16,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript does not mention a Lexus RX 350; the proposal covers a Volvo XC60 and an Infiniti QX80. Additionally, the demonstration is only scheduled for March 10th with no specific time given, so the question as written cannot be answered from this transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is empty and marks the question as unanswerable, but the transcript does provide a scheduled date for the product demonstration (March 10th) for the Volvo XC60 and Infiniti QX80, though no specific time is given. However, the question asks about the Volvo XC60 and Lexus RX 350, and the transcript never mentions a Lexus RX 350; it discusses the Infiniti QX80 instead. Therefore, the extracted answer is incomplete because it missed the available date, and the evidence does not support an answer for the exact vehicles requested. The reference answer 'Saturday at noon' is not supported by the transcript, which lacks any time or day-of-week information. Thus, the relation is insufficient due to missing scope and time details."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SMCYIA4",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses a product demonstration for the 2020 Lexus RX 350 and 2023 Mercedes-Benz E-Class, not the Volvo XC60 or Lexus RX 350. Additionally, no scheduled time for any demonstration is mentioned anywhere in the call."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SPtXIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350 and mentions a future proposal review meeting, but no product demonstration is mentioned and no scheduled time for any meeting is given."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that no product demonstration or scheduled time is mentioned in the transcript. However, the reference answer states 'Saturday at noon,' which is not supported by any cited lines in the transcript. Since the transcript lacks any mention of a demonstration or time, the evidence is insufficient to support either the extracted or reference answer. The extraction is correct in declaring the question unanswerable, but the reference answer conflicts with the source due to absence of evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSY2IAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Lexus RX 350 and Volvo XC60 and mentions scheduling a showroom visit, but no specific scheduled time for a product demonstration is stated."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that no scheduled time for a product demonstration is mentioned in the transcript. However, the reference answer states 'Saturday at noon,' which is not present in the cited lines. Since the source does not contain any time for a demonstration, the extracted answer's 'answerable: false' is correct, but the reference answer is unsupported. The evidence does not support either a specific time or a complete answer, so the relation is insufficient."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSUnIAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses financing, warranties, and demonstrations in general for the Lexus RX 350, but never mentions a Volvo XC60 or any scheduled time for a product demonstration."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZhYIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": true,
+            "answer": "The demonstration of the Lexus RX 350 and Volvo XC60 was not scheduled for a future time — it took place during this call itself, which began at 11:00 on 2021-05-21. Maria Rodriguez opens the call by saying she wants to give Lucas a detailed demonstration of both vehicles, and the walkthrough proceeds immediately.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZhYIAW",
+                "line_start": 0,
+                "line_end": 3,
+                "quote": "[2021-05-21T11:00:00] Maria Rodriguez: Hello Lucas, this is Maria Rodriguez from AutoElite Motors. How are you today?\n[2021-05-21T11:00:15] Lucas Wright: Hi Maria, I'm doing well, thank you. Excited to hear more about the vehicles.\n[2021-05-21T11:00:25] Maria Rodriguez: Great to hear! Today, I want to give you a detailed demonstration of the Lexus RX 350 and Volvo XC60 we discussed in our previous call."
+              }
+            ],
+            "reason": "Line 2 (timestamped 11:00:25) shows Maria initiating the demonstration of the Lexus RX 350 and Volvo XC60 during the current call, and lines 4-16 show the demonstration being conducted in real time. No separate future demonstration time is mentioned anywhere in the transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": true,
+            "relation": "conflicting",
+            "reason": "The extracted answer correctly notes that the demonstration occurred during the call and no future time is mentioned, but the reference answer states 'Saturday at noon,' which is not supported by the transcript. The transcript provides no scheduled time for the demonstration, so the extracted answer is factually correct based on the source, but it conflicts with the reference answer. Since the reference answer is unsupported, the extraction is correct in substance, but the relation is conflicting because the reference provides a different value."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQo0IAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript covers a product demonstration of the Lexus RX 350 and Audi Q7 (not the Volvo XC60 and Lexus RX 350), and no scheduled time for any demonstration is stated. The only scheduled item is a follow-up call on October 13th, with no time given."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STlmIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses features, warranties, and support for the Lexus RX 350 and Volvo XC60, but no product demonstration is mentioned and no scheduled time is given."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly states that the transcript does not mention any product demonstration or scheduled time. The reference answer 'Saturday at noon' is not supported by any line in the transcript, and the transcript provides no evidence for any scheduled demonstration. Therefore, the extraction is correct, and the evidence supports the answer that no complete answer exists, but the relation to the reference is insufficient because the reference cannot be verified."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SORBIA4",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SORBIA4",
+                "line_start": 15,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript shows Ethan requesting a demonstration of the Lexus RX 350 and Hiroko agreeing to arrange one, but no specific scheduled time is mentioned. Also, the demonstration discussed is only for the Lexus RX 350, not the Volvo XC60."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is empty and marked as not answerable, but the transcript does not contain any scheduled time for the product demonstration of either the Volvo XC60 or Lexus RX 350. The reference answer 'Saturday at noon' is not supported by any cited lines in the transcript. Therefore, the extraction is incorrect because it missed a complete answer (though none exists), and the evidence does not support the reference answer. The relation is insufficient because the transcript lacks the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SboCIAS",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SboCIAS",
+                "line_start": 2,
+                "line_end": 4
+              }
+            ],
+            "reason": "The transcript shows the demonstration happening during the call itself (starting around 10:45:20 on 2021-11-28), but no specific scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350 is stated. The vehicles are mentioned as part of the virtual demonstration, but no scheduled time is given."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is empty and marks the question as unanswerable, but the transcript does not contain any scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350. The demonstration is described as happening during the call, but no specific scheduled time is mentioned. The reference answer 'Saturday at noon' is not supported by any cited lines in the transcript. Therefore, the extraction is incorrect because it missed a complete answer (though none exists), and the evidence does not support the reference answer. The relation is insufficient because the source provides no information about a scheduled time."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSjNIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350, including pricing and a suggestion to schedule a test drive, but no scheduled time for a product demonstration is mentioned anywhere."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extractor correctly determined the transcript does not mention any scheduled time for a product demonstration. However, the reference answer states 'Saturday at noon,' which is not present in the transcript. Since the source lacks the requested information, the extracted answer (empty) is correct in that no answer is supported, but the reference answer cannot be verified. The relation is insufficient because the transcript does not provide enough evidence to confirm or contradict the reference."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZw6IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZw6IAG",
+                "line_start": 18,
+                "line_end": 21
+              }
+            ],
+            "reason": "The call only shows that a virtual demonstration was offered and accepted, with an email invitation to follow (lines 18-21). No specific scheduled time for the demo of the Volvo XC60 or Lexus RX 350 is mentioned anywhere in the transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not contain a scheduled time for the product demonstration. The evidence lines (18-21) show only that a virtual demo was offered and accepted, with an email invitation to follow, but no specific time is mentioned. The reference answer 'Saturday at noon' is not supported by the transcript, so the extracted answer (not answerable) is correct. Since the question asks for a specific time and none is provided, the evidence is insufficient to support any answer, and the relation is 'insufficient' because the reference cannot be confirmed or contradicted by the source."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQhVIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript confirms a product demo for the 2020 Lexus RX 350 and 2021 Volvo XC60 is scheduled, but no specific date or time for the demo is mentioned anywhere in the call."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly states that the transcript does not mention a specific time for the product demonstration. The transcript only confirms that a demo is scheduled but never provides a date or time. Therefore, the extraction is correct in marking it unanswerable, but the evidence does not support any specific time. The reference answer 'Saturday at noon' is not supported by the transcript, so the relation is insufficient."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUlBIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUlBIAW",
+                "line_start": 4,
+                "line_end": 6
+              }
+            ],
+            "reason": "The transcript schedules a product demonstration for the 2021 Volvo XC60 on Friday at 2 PM, but the Lexus RX 350 is never mentioned anywhere in the call, so no scheduled time for a Lexus RX 350 demonstration can be determined from this transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "conflicting",
+            "reason": "The extracted answer is empty and marks the question as unanswerable, but the transcript clearly provides a scheduled time for the Volvo XC60 demonstration (Friday at 2 PM). However, the question asks for the scheduled time for both the Volvo XC60 and Lexus RX 350. The transcript never mentions the Lexus RX 350, so no complete answer exists for both vehicles. The reference answer 'Saturday at noon' conflicts with the transcript's Friday 2 PM for the Volvo and is unsupported for the Lexus. Therefore, the extraction is incorrect because it missed the Volvo time, and the evidence does not support the reference answer."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZOFIA4",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "Saturday at noon.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZOFIA4",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-06-12T14:01:05] William Brooks: Great, I can stop by on Saturday around noon. Would that work for you?\n[2023-06-12T14:01:15] Hiroko Yamada: Saturday at noon sounds perfect. We’ll be ready for you. Just to recap, you’ll be viewing the Volvo XC60 and Lexus RX 350. Both models have some fantastic features to offer."
+              }
+            ],
+            "reason": "William proposes Saturday around noon and Hiroko confirms 'Saturday at noon sounds perfect' while recapping the Volvo XC60 and Lexus RX 350 demonstration."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer 'Saturday at noon' is directly supported by the cited lines: William proposes Saturday around noon, and Hiroko confirms 'Saturday at noon sounds perfect' while recapping the Volvo XC60 and Lexus RX 350 demonstration. The reference answer matches exactly."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SctyIAC",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses features, pricing, and warranty plans for the Lexus RX 350 and Volvo XC60, but no product demonstration is mentioned and no scheduled time for one appears anywhere in the call."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly states the transcript does not mention any product demonstration or scheduled time, so answerable=false is correct. The evidence (transcript lines) supports that no such information exists, so evidence_supports_answer=true. The reference answer 'Saturday at noon' is not present in the source, and the source provides no basis to confirm or contradict it, so the relation is insufficient."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVscIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350 but never mentions a product demonstration or any scheduled time for one."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not mention any product demonstration or scheduled time, so answerable=false is correct. The evidence (the full transcript) supports that there is no complete answer to the question, as no demonstration time is discussed. The reference answer 'Saturday at noon' is not supported by the source, and since the source lacks any information about a demonstration, the relation is insufficient rather than conflicting."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005RotvIAC",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript never mentions a product demonstration or any scheduled time for one; it only discusses the vehicles, pricing, financing, warranties, and the pre-owned program."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is correct in stating the transcript does not mention a product demonstration or scheduled time, so answerable=false is accurate. However, the reference answer claims 'Saturday at noon,' which is not supported by any cited lines in the transcript. Since the source provides no evidence for any scheduled time, the evidence does not support the reference answer, and the relation is insufficient because the transcript lacks the requested information entirely."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SXxTIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": true,
+            "answer": "Friday afternoon (the customer proposed Friday afternoon and the agent confirmed the demonstration for Friday; no specific clock time was given).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXxTIAW",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2022-10-18T13:01:10] Oliver Carter: I was thinking about coming by later this week. Maybe Friday afternoon?"
+              }
+            ],
+            "reason": "Oliver proposes Friday afternoon and Liam confirms Friday for the demonstration of both vehicles; no exact hour is stated."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": true,
+            "relation": "conflicting",
+            "reason": "The extracted answer states Friday afternoon, which is supported by the cited lines (Oliver proposes Friday afternoon and Liam confirms Friday). However, the reference answer says Saturday at noon, which conflicts with the source. Since the source clearly indicates Friday, the extracted answer is correct per the source, but the reference is not supported. The relation is conflicting because the extracted answer and reference answer differ."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQo7IAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQo7IAG",
+                "line_start": 4,
+                "line_end": 5
+              }
+            ],
+            "reason": "The transcript never mentions a Lexus RX 350; the demonstration covers the 2021 Volvo XC60 and the 2020 Chevrolet Tahoe (line 4). Additionally, no specific scheduled time for the demonstration is stated anywhere in the call—only that a demo is upcoming."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not mention a Lexus RX 350 or a scheduled time for the demonstration. However, the reference answer states 'Saturday at noon,' which is not present in the transcript. Since the transcript lacks any time information, the evidence does not support the reference answer, and the relation is insufficient rather than conflicting because the reference provides a specific time not contradicted by the source but also not substantiated."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005Tt6IIAS",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the 2020 Lexus RX 350 only; there is no mention of a Volvo XC60 or any scheduled product demonstration time."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not mention a Volvo XC60 or any scheduled product demonstration time, so the answerable=false and empty answer are correct. The evidence is insufficient to support any scheduled time, and the reference answer 'Saturday at noon' is not supported by the transcript."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STdlIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses pricing, financing, and warranty for the Volvo XC60 and Lexus RX 350, but no product demonstration or its scheduled time is mentioned anywhere."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not mention any product demonstration or its scheduled time, so answerable=false is accurate. The evidence supports that no demonstration time is provided, and the reference answer 'Saturday at noon' is not supported by the transcript, making the relation insufficient rather than conflicting because the reference provides a specific time not present in the source."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR49IAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR49IAG",
+                "line_start": 14,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript shows Layla Scott agreeing to schedule a demonstration and Kwesi saying he will email the details, but no specific scheduled time for the Volvo XC60 / Lexus RX 350 demonstration is mentioned."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is false because the extractor marked the question as unanswerable, but the reference answer provides a specific time ('Saturday at noon'). However, the transcript does not contain any mention of a scheduled time for the demonstration. The cited lines (14-17) only discuss scheduling and sending details via email, with no time specified. Therefore, the extracted answer (false/unanswerable) is incorrect because a complete answer exists in the reference, but the evidence does not support the reference answer either. The relation is insufficient because the source lacks the requested fact, making it impossible to verify the reference answer against the transcript."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SXr1IAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350 but never mentions a scheduled product demonstration or its time."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The transcript does not mention any scheduled product demonstration or its time for the Volvo XC60 and Lexus RX 350. The extractor correctly identified the question as unanswerable, but the reference answer 'Saturday at noon' is not supported by any cited lines. Therefore, the extraction is correct in stating no answer exists, but the evidence does not support the reference answer, and the relation is insufficient due to lack of information."
+          }
+        }
+      ]
+    },
+    {
+      "item": 18,
+      "question": "What is the price of the extended warranty offered by AutoElite Motors?",
+      "expected": "consistent_in_pool",
+      "decision": "inconclusive",
+      "sources": [
+        {
+          "call_id": "b2c:a05Ws000005ST4NIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ST4NIAW",
+                "line_start": 5,
+                "line_end": 7
+              }
+            ],
+            "reason": "The transcript discusses warranties only in general terms (lines 5–6: 'quite accommodating compared to industry standards', 'transparent terms and flexibility', 'excellent value') but never states a price for the extended warranty. Vehicle prices and the maintenance plan are mentioned, but no warranty price appears anywhere in the call."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide a price for the extended warranty, so the answerable=false is accurate. However, the reference answer claims $1,299.99, but the cited lines (5-7) only discuss warranty quality in general terms and never mention a specific price. Since the source transcript lacks any warranty price, the extracted answer (no answer) is correct, but the reference answer is unsupported. The evidence does not support the reference answer, and the relation is insufficient because the source does not contain the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SU3YIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript describes the extended warranty's coverage but never states a price."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The transcript never mentions a price for the extended warranty. The extracted answer correctly identifies the question as unanswerable from the source, so extraction_correct is false because it missed a complete answer (the reference provides a price, but the source does not). Evidence does not support any price, and the reference cannot be used to supply missing information. Thus, the relation is insufficient."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZ55IAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZ55IAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-09-07T14:00:50] Vanessa Müller: Perfect. Just to reiterate, the Camry Hybrid comes in at $25,999.99. Along with that, we have the AutoElite Comprehensive Maintenance Plan at $1,999.99 and the Extended Warranty Plan for $1,299.99."
+              }
+            ],
+            "reason": "Vanessa Müller explicitly states the Extended Warranty Plan price of $1,299.99 in line 4."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer correctly identifies the Extended Warranty Plan price as $1,299.99, directly supported by line 4 where Vanessa states the price. The reference answer matches exactly, and the evidence is sufficient and complete."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005Sbd2IAC",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005Sbd2IAC",
+                "line_start": 10,
+                "line_end": 11
+              }
+            ],
+            "reason": "The Extended Warranty Plan is mentioned (line 10) but no price is stated anywhere in the transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The transcript only mentions the Extended Warranty Plan by name (line 10) but never states its price. The extracted answer correctly identifies that no price is provided, so the extraction is correct in that sense. However, the reference answer claims a specific price ($1,299.99) that is not supported by any cited lines. Since the question asks for the price and the source does not contain it, the evidence does not support the reference answer. The relation is insufficient because the source lacks the requested fact, not conflicting."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSuZIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript describes the Extended Warranty's coverage but never states a price for it; pricing is only discussed in general terms (transparent pricing, no hidden fees), and a detailed proposal is deferred to a later stage."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly states that the transcript does not provide a price for the extended warranty. The source lines only describe the warranty's coverage and general pricing transparency, with no specific dollar amount. The reference answer of $1,299.99 is not supported by the cited lines, so the evidence is insufficient to confirm or conflict with the reference."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SaTtIAK",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SaTtIAK",
+                "line_start": 16,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript mentions the Extended Warranty but never states its price. Line 16 only gives vehicle prices and says service plans like the Extended Warranty are 'competitively priced' without a figure."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is empty and marks the question as unanswerable, but the transcript does not provide the price of the extended warranty. The reference answer ($1,299.99) is not supported by any cited lines. The evidence lines (16-17) only mention vehicle prices and state that service plans are 'competitively priced' without a specific figure. Therefore, the extraction is incorrect because it missed a complete answer, but the evidence does not support the reference answer either. The relation is insufficient because the source lacks the requested price."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUziIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "AutoElite Motors offers an extended warranty for $1,299.99 on new vehicles (and an extended service contract for $999.99 on pre-owned vehicles).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUziIAG",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2022-07-05T12:03:45] Mai Nguyen: We offer a comprehensive maintenance plan for $1,999.99 and an extended warranty for $1,299.99 on new vehicles. For pre-owned, there's an extended service contract for $999.99, covering all essential aspects."
+              }
+            ],
+            "reason": "Line 16 explicitly states the extended warranty price of $1,299.99 for new vehicles, plus $999.99 for pre-owned."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer correctly identifies the extended warranty price as $1,299.99 for new vehicles, directly supported by line 16. The additional mention of the pre-owned service contract is unrequested but not conflicting. The reference answer matches the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SY5VIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SY5VIAW",
+                "line_start": 13,
+                "line_end": 15
+              }
+            ],
+            "reason": "The transcript discusses the Extended Warranty Plan's coverage (lines 13-14) but never states its price, so the question cannot be answered from this transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide the price of the extended warranty. The cited lines (13-15) only describe the coverage and benefits, not the cost. Therefore, the extraction is correct in marking the question as unanswerable, but the evidence does not support any specific price. The reference answer of $1,299.99 is not present in the transcript, so it cannot be substantiated. The relation is insufficient because the source lacks the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVCiIAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVCiIAO",
+                "line_start": 9,
+                "line_end": 11
+              }
+            ],
+            "reason": "The transcript describes what the extended warranty covers (parts and labor for major components) but never states its price."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not mention a price for the extended warranty. The cited lines (9-11) only describe coverage, not cost. The reference answer of $1,299.99 is not supported by any line in the transcript. Therefore, the extraction is correct in marking it unanswerable, but since the reference provides a specific price not found in the source, the evidence does not support the answer, and the relation is insufficient due to missing information."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZkjIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan for the 2020 Lexus RX 350 is $1,299.99 (an add-on).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZkjIAG",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2020-04-25T11:02:15] Lucia Alvarez: It's an add-on, but one that many customers find highly beneficial. For the 2020 Lexus RX 350, the Extended Warranty Plan is only $1,299.99, and many believe it adds substantial value to their purchase by preventing unforeseen larger costs."
+              }
+            ],
+            "reason": "Line 10 states the Extended Warranty Plan for the 2020 Lexus RX 350 is $1,299.99."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer correctly identifies the price of the extended warranty as $1,299.99 for the 2020 Lexus RX 350, directly supported by line 10. The reference answer matches this value, and the additional detail that it is an add-on is consistent with the source and not conflicting."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUgFIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions an Extended Warranty Plan but never states its price. Only a total package price of $134,499.95 is given (line 16), which is not the warranty price alone."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SWVDIA4",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWVDIA4",
+                "line_start": 7,
+                "line_end": 9
+              }
+            ],
+            "reason": "The customer asks about the price of the extended warranty (line 7), but the agent only discusses its value and coverage without ever stating a price (line 8). No dollar amount for the Extended Warranty Plan appears anywhere in the transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide a price for the extended warranty. The customer asks for the price (line 7), but the agent only describes the plan's benefits and never states a dollar amount. The reference answer of $1,299.99 is not supported by any cited lines in the transcript. Therefore, the extraction is correct in marking it unanswerable, but the evidence does not support the reference answer, and the relation is insufficient because the source lacks the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR7HIAW",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR7HIAW",
+                "line_start": 5,
+                "line_end": 7
+              }
+            ],
+            "reason": "The extended warranty is discussed (lines 5-7), but no price is ever mentioned in the transcript."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUOcIAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions the Extended Warranty Plan but never states its price. Only the vehicle prices ($74,999.99 for the 2022 BMW X5 M and $65,999.99 for the 2023 Mercedes-Benz E-Class) are given; the warranty cost is discussed only qualitatively as 'higher' than some competitors."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide the price of the extended warranty. The source lines only mention the warranty qualitatively (e.g., 'initial cost might appear higher') and give prices for vehicles, not the warranty. The reference answer of $1,299.99 is not supported by any cited line, so the evidence is insufficient to confirm or conflict with the reference."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SRs9IAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRs9IAG",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-02-09T11:09:10] Zanele Dlamini: Certainly! The 2022 Toyota Camry Hybrid is priced at $25,999.99. Our AutoElite Comprehensive Maintenance Plan is $1,999.99, and the Extended Warranty Plan comes in at $1,299.99. These options help ensure your investment is well-protected, all while fitting within your budget."
+              }
+            ],
+            "reason": "Line 14 explicitly states the Extended Warranty Plan comes in at $1,299.99."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer correctly identifies the price of the Extended Warranty Plan as $1,299.99, which is directly supported by line 14 of the transcript. The reference answer matches this value, and the evidence is sufficient and specific."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUWaIAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUWaIAO",
+                "line_start": 12,
+                "line_end": 13
+              }
+            ],
+            "reason": "The transcript mentions extended warranties at 'regular and bulk rates' and a 10% bulk discount, but never states the actual per-warranty price. The $25,999.99 figure is the Camry Hybrid price, and $42,510 is the total, so the specific warranty price is not given."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer is empty and marks the question as unanswerable, but the transcript does not provide the specific price of the extended warranty. The only figures mentioned are the car price ($25,999.99) and a total ($42,510), with a 10% bulk discount on 13 warranties, but no per-warranty price is stated. Therefore, the extractor correctly identified that the answer is not available in the source, but since the question asks for a specific price and none is given, the extraction is correct in being false, but the evidence does not support any answer. The reference answer ($1,299.99) is not substantiated by the cited lines, so the relation is insufficient rather than conflicting."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SdWcIAK",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SdWcIAK",
+                "line_start": 22,
+                "line_end": 23,
+                "quote": "[2022-03-09T10:03:37] Keiko Mori: The extended warranty, priced at $1,299.99, covers most major components for an additional period post the standard warranty. It gives you peace of mind as it significantly reduces out-of-pocket expenses for any major repairs."
+              }
+            ],
+            "reason": "Keiko Mori states the extended warranty is priced at $1,299.99 and describes its coverage."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer states the extended warranty is priced at $1,299.99, which directly matches the cited line 22 where Keiko Mori says 'The extended warranty, priced at $1,299.99...'. The reference answer is also $1,299.99, so they are equivalent."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SYtiIAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Extended Warranty Plan's coverage and comparison to industry standards (lines 5–6) but never states a price for it."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQxuIAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQxuIAG",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2020-03-09T14:46:50] Samuel Smith: I understand; our extended warranty plan is $1,299.99. It's tailored to provide extensive coverage, especially considering our vehicles are maintained by factory-trained technicians. This ensures your vehicle's longevity and optimal performance."
+              }
+            ],
+            "reason": "Samuel Smith of AutoElite Motors explicitly states the extended warranty plan price is $1,299.99."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SWn2IAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions extended warranties (lines 4-5) but never states a price for them. Only the Nissan Leaf base price ($28,999.99) and the maintenance plan price ($1,999.99) are given."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide a price for the extended warranty. The transcript only mentions the extended warranty in general terms (lines 4-5) and provides prices for the base vehicle ($28,999.99) and the maintenance plan ($1,999.99), but no price for the extended warranty itself. Therefore, the extraction is correct in marking the question as unanswerable, but the evidence does not support any specific price, and the reference answer ($1,299.99) is not found in the source. The relation is insufficient because the source lacks the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005ScE1IAK",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ScE1IAK",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-02-05T13:32:30] Chinedu Okoye: Excellent. To start off, the total price for the Volkswagen ID.4 is $43,999.99. We also have the Comprehensive Maintenance Plan for $1999.99 and the Extended Warranty Plan for $1299.99. All these are part of our Eco-Friendly SUV package."
+              }
+            ],
+            "reason": "Chinedu Okoye of AutoElite Motors states the Extended Warranty Plan price is $1299.99."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer correctly identifies the Extended Warranty Plan price as $1299.99, directly supported by line 4 where Chinedu states the price. The reference answer matches this value, and the evidence is sufficient and specific."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSUkIAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSUkIAO",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-02-10T11:33:20] Felix Bakker: For the Audi Q7, you'd be looking at $53,999.99, and the Acura RDX is priced at $33,999.99. Now, the Extended Warranty Plan is $1,299.99, the Comprehensive Maintenance Plan is $1,999.99, and the Emergency Roadside Assistance comes in at $149.99. Each of these adds substantial value to your purchase."
+              }
+            ],
+            "reason": "Felix Bakker of AutoElite Motors explicitly states the Extended Warranty Plan is $1,299.99 in line 12."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SalgIAC",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the extended warranty's coverage and pricing transparency but never states a specific price for the warranty."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide a specific price for the extended warranty. The transcript only discusses warranty coverage and pricing transparency in general terms, with no dollar amount mentioned. Therefore, the extraction is correct in marking the question as unanswerable, but since the reference answer provides a price not found in the source, the evidence does not support the answer. The relation is insufficient because the source lacks the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUhuIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty plan is normally priced at $1,299.99 (with a 15% discount available on volume commitments of fifteen additional plans, bringing the total to $16,574.87).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUhuIAG",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-04-10T14:48:35] Hina Patel: For the extended warranty plan, normally priced at $1,299.99, if you commit to fifteen additional plans, we can offer a 15% discount, bringing the total to $16,574.87. It's a cost-efficient way to add value and ensure ongoing support."
+              }
+            ],
+            "reason": "Line 14 states the extended warranty plan is 'normally priced at $1,299.99' and details the volume discount terms."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer correctly identifies the normal price of the extended warranty as $1,299.99, directly supported by line 14. The additional detail about the volume discount is unrequested but does not conflict with the reference answer. The evidence quote substantiates the price."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STqbIAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STqbIAG",
+                "line_start": 8,
+                "line_end": 9
+              }
+            ],
+            "reason": "The transcript discusses the extended warranty's coverage, transferability, and applicable vehicles (2020 Lexus RX 350, 2021 Volvo XC60), but no price for the warranty is ever stated."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVJ2IAO",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVJ2IAO",
+                "line_start": 10,
+                "line_end": 12
+              }
+            ],
+            "reason": "The extended warranty is mentioned (lines 10-11) but no price is ever stated in the transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The transcript mentions the extended warranty (lines 10-11) but never states its price. The extracted answer correctly identifies that no price is provided, so the extraction is correct in that sense. However, the reference answer claims a price of $1,299.99, which is not supported by any cited lines. Since the question asks for a specific price and the source does not contain it, the evidence is insufficient to support any price. The extracted answer (answerable=false) is correct because there is no complete answer in the source, but the reference answer conflicts with the source due to lack of evidence. Therefore, extraction_correct is true (the extractor correctly found no answer), but evidence_supports_answer is false because the reference answer is not supported. The relation is insufficient because the source does not provide enough information to confirm or deny the reference price."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZJYIA4",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions a maintenance plan priced at $1,999.99, but no extended warranty is discussed or priced anywhere in the call."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly states that no extended warranty price is mentioned in the transcript. The transcript only discusses a maintenance plan priced at $1,999.99, not an extended warranty. The reference answer of $1,299.99 is not supported by any cited lines. Therefore, the extraction is correct in finding no answer, but the evidence does not support the reference answer, and the relation is insufficient because the source lacks the requested information."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SWn9IAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWn9IAG",
+                "line_start": 10,
+                "line_end": 10
+              }
+            ],
+            "reason": "The transcript only states a total price of $177,299.96 that includes the extended warranty plan (line 10), and describes the warranty's coverage terms (line 12). The standalone price of the extended warranty itself is never mentioned, so the literal question cannot be answered from this transcript."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide a standalone price for the extended warranty. The transcript only mentions a total price including the warranty (line 10) and coverage terms (line 12), but never states the warranty's individual cost. Therefore, the extraction is correct in marking the question as unanswerable, and the evidence does not support any specific price. The reference answer of $1,299.99 is not present in the source, so it cannot be verified. The relation is insufficient because the source lacks the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SdV1IAK",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions an extended warranty (lines 6, 18) but never states its price."
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": false,
+            "evidence_supports_answer": false,
+            "relation": "insufficient",
+            "reason": "The extracted answer correctly identifies that the transcript does not provide the price of the extended warranty. The transcript only mentions the extended warranty in lines 6 and 18 without stating any price. Therefore, the extraction is correct in marking the question as unanswerable, but since the reference answer provides a specific price not found in the source, the evidence does not support the answer. The relation is insufficient because the source lacks the necessary information to confirm or contradict the reference price."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STyqIAG",
+          "decision": "verification_failed",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan from AutoElite Motors costs $1,299.99, providing additional coverage beyond the standard 3-year/36,000-mile warranty.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STyqIAG",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-02-25T10:02:55] Zanele Dlamini: Exactly, only the best for our customers. And don’t forget, with the Extended Warranty Plan, you get additional coverage beyond the standard 3-year/36,000-mile warranty for $1,299.99, which further adds to the vehicle's reliability."
+              }
+            ],
+            "reason": "Zanele Dlamini explicitly states the Extended Warranty Plan price of $1,299.99 in line 12."
+          },
+          "verification": {
+            "type": "object"
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STu1IAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STu1IAG",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-10-10T13:33:45] Mohamed Bakr: Certainly. Let’s look at the numbers again. For the 2024 Tesla Model S, we've set the price at $89,999.99, and the 2023 Nissan Leaf stands at $28,999.99. The comprehensive maintenance plan is $1,999.99, and the extended warranty is $1,299.99."
+              }
+            ],
+            "reason": "Line 10 states: 'the extended warranty is $1,299.99.'"
+          },
+          "verification": {
+            "type": "object",
+            "extraction_correct": true,
+            "evidence_supports_answer": true,
+            "relation": "equivalent",
+            "reason": "The extracted answer correctly states the extended warranty price as $1,299.99, directly supported by line 10 where Mohamed says 'the extended warranty is $1,299.99.' The reference answer matches exactly, and the evidence is sufficient and specific."
+          }
+        }
+      ]
+    }
+  ],
+  "estimated_usd": 0.044655118,
+  "limitations": "Fixed distractor pools; single-source complete answers only. Not a multi-call production gate."
+}

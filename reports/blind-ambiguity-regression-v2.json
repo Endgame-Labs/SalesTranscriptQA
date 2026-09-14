@@ -1,0 +1,1164 @@
+{
+  "results": [
+    {
+      "item": 13,
+      "question": "What is the scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350?",
+      "expected": "ambiguous",
+      "decision": "ambiguous",
+      "sources": [
+        {
+          "call_id": "b2c:a05Ws000005SZHnIAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript never mentions a scheduled time for a product demonstration of the Volvo XC60 or Lexus RX 350; it only discusses the proposal, features, pricing, and offers to arrange a test drive later."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any mention of a scheduled time for a product demonstration of the Volvo XC60 or Lexus RX 350, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUOUIA4",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses a 2020 Lexus RX 350 proposal and financing, but never mentions a Volvo XC60 or any scheduled product demonstration time."
+          },
+          "verification": {
+            "type": "object",
+            "valid": true,
+            "reason": "The transcript lacks any mention of a Volvo XC60 or a scheduled product demonstration time, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR2SIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR2SIAW",
+                "line_start": 19,
+                "line_end": 20
+              }
+            ],
+            "reason": "The transcript never mentions a scheduled product demonstration time. Line 19 only says demonstrations can be discussed at the customer's convenience, with no date or time set."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350. The extracted answer is empty, and the cited lines (19-20) only mention that demonstrations can be discussed at the customer's convenience without specifying a time. Since the question is answerable=false and the transcript truly lacks a complete answer, the extraction is valid."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR47IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the proposal, pricing, and features for the Lexus RX 350 and Volvo XC60, but no product demonstration is mentioned and no scheduled time for one is given."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any mention of a product demonstration or its scheduled time, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STsEIAW",
+          "decision": "conflicting",
+          "extracted": {
+            "answerable": true,
+            "answer": "2:45 PM on May 15th (afternoon).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STsEIAW",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2022-05-09T14:04:50] Hiroko Yamada: Absolutely, Ethan. I’ll ensure we cover everything about the Lexus RX 350 and Volvo XC60, and anything else you might be interested in. Is there a particular time on May 15th that works best for you?\n[2022-05-09T14:05:05] Ethan Martinez: Let’s keep it in the afternoon, if possible—perhaps 2:45 PM?"
+              }
+            ],
+            "reason": "Hiroko asks about a time on May 15th for the meeting covering the Lexus RX 350 and Volvo XC60, and Ethan proposes 2:45 PM, which Hiroko confirms."
+          },
+          "verification": {
+            "type": "object",
+            "valid": true,
+            "reason": "The transcript explicitly confirms the meeting time of 2:45 PM on May 15th for the product demonstration covering the Volvo XC60 and Lexus RX 350, as cited in lines 14-16."
+          },
+          "comparison": {
+            "relation": "conflicting",
+            "reason": "The extracted answer specifies 2:45 PM on May 15th, while the reference answer states Saturday at noon. These are different times for the scheduled product demonstration, so the values conflict."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SbEjIAK",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions a product demo that occurred last week (line 2) but never states a scheduled time for any future demonstration, and the Volvo XC60 is never mentioned at all—only the Lexus RX 350, Chevrolet Tahoe, and service plans are discussed."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any scheduled time for a product demonstration and never mentions the Volvo XC60, so the extraction correctly determines the question is unanswerable."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQEdIAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQEdIAO",
+                "line_start": 4,
+                "line_end": 5
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQEdIAO",
+                "line_start": 16,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript does not mention a Lexus RX 350; the proposal covers a Volvo XC60 and an Infiniti QX80. Additionally, the demonstration is only scheduled for March 10th with no specific time given, so the question as written cannot be answered from this transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any mention of a Lexus RX 350, instead discussing a Volvo XC60 and an Infiniti QX80, and the product demonstration is only dated March 10th with no specific time provided. Since the question asks for the scheduled time for both the Volvo XC60 and Lexus RX 350, and the transcript does not contain a complete answer for either the Lexus or the time, the extraction correctly marks it as unanswerable."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SMCYIA4",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses a product demonstration for the 2020 Lexus RX 350 and 2023 Mercedes-Benz E-Class, not the Volvo XC60 or Lexus RX 350. Additionally, no scheduled time for any demonstration is mentioned anywhere in the call."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript discusses the 2020 Lexus RX 350 and 2023 Mercedes-Benz E-Class, not the Volvo XC60 or Lexus RX 350, and no scheduled time for any demonstration is mentioned."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SPtXIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350 and mentions a future proposal review meeting, but no product demonstration is mentioned and no scheduled time for any meeting is given."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript does not mention a product demonstration or any scheduled time for one, so the extraction correctly marks the question as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSY2IAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Lexus RX 350 and Volvo XC60 and mentions scheduling a showroom visit, but no specific scheduled time for a product demonstration is stated."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any scheduled time for a product demonstration of the Volvo XC60 and Lexus RX 350; it only mentions arranging a showroom visit without a specific time, so the extraction correctly marks it as unanswerable."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSUnIAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses financing, warranties, and demonstrations in general for the Lexus RX 350, but never mentions a Volvo XC60 or any scheduled time for a product demonstration."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any mention of a Volvo XC60 or a scheduled time for a product demonstration, so the extraction correctly marks the question as unanswerable."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZhYIAW",
+          "decision": "conflicting",
+          "extracted": {
+            "answerable": true,
+            "answer": "The demonstration of the Lexus RX 350 and Volvo XC60 was not scheduled for a future time — it took place during this call itself, which began at 11:00 on 2021-05-21. Maria Rodriguez opens the call by saying she wants to give Lucas a detailed demonstration of both vehicles, and the walkthrough proceeds immediately.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZhYIAW",
+                "line_start": 0,
+                "line_end": 3,
+                "quote": "[2021-05-21T11:00:00] Maria Rodriguez: Hello Lucas, this is Maria Rodriguez from AutoElite Motors. How are you today?\n[2021-05-21T11:00:15] Lucas Wright: Hi Maria, I'm doing well, thank you. Excited to hear more about the vehicles.\n[2021-05-21T11:00:25] Maria Rodriguez: Great to hear! Today, I want to give you a detailed demonstration of the Lexus RX 350 and Volvo XC60 we discussed in our previous call."
+              }
+            ],
+            "reason": "Line 2 (timestamped 11:00:25) shows Maria initiating the demonstration of the Lexus RX 350 and Volvo XC60 during the current call, and lines 4-16 show the demonstration being conducted in real time. No separate future demonstration time is mentioned anywhere in the transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extracted answer correctly states that the demonstration occurred during the call itself, not at a scheduled future time, and cites line 2 where Maria initiates the demonstration. The evidence supports the answer, and the transcript lacks any mention of a separate scheduled time for the demonstration."
+          },
+          "comparison": {
+            "type": "object",
+            "relation": "conflicting",
+            "reason": "The extracted answer states the demonstration was not scheduled for a future time and occurred during the call, while the reference answer provides a specific scheduled time ('Saturday at noon'). These are different values for the requested fact (the scheduled time), so they conflict."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQo0IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript covers a product demonstration of the Lexus RX 350 and Audi Q7 (not the Volvo XC60 and Lexus RX 350), and no scheduled time for any demonstration is stated. The only scheduled item is a follow-up call on October 13th, with no time given."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any scheduled time for a product demonstration of the Volvo XC60 and Lexus RX 350; the demonstration is ongoing, and the only scheduled event is a follow-up call on October 13th with no time specified. The extraction correctly marks answerable=false and provides no answer or evidence, which is appropriate."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STlmIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses features, warranties, and support for the Lexus RX 350 and Volvo XC60, but no product demonstration is mentioned and no scheduled time is given."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript does not mention any product demonstration or scheduled time for the Volvo XC60 and Lexus RX 350, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SORBIA4",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SORBIA4",
+                "line_start": 15,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript shows Ethan requesting a demonstration of the Lexus RX 350 and Hiroko agreeing to arrange one, but no specific scheduled time is mentioned. Also, the demonstration discussed is only for the Lexus RX 350, not the Volvo XC60."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any scheduled time for the product demonstration of either the Volvo XC60 or the Lexus RX 350. The extracted answer is empty, and the cited lines (15-17) only show a request and agreement to arrange a demonstration, with no time specified. Since the question is unanswerable from the transcript, the extraction is valid."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SboCIAS",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SboCIAS",
+                "line_start": 2,
+                "line_end": 4
+              }
+            ],
+            "reason": "The transcript shows the demonstration happening during the call itself (starting around 10:45:20 on 2021-11-28), but no specific scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350 is stated. The vehicles are mentioned as part of the virtual demonstration, but no scheduled time is given."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350; the demonstration occurs during the call, and no future scheduled time is mentioned, so the extraction correctly marks it as unanswerable."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSjNIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350, including pricing and a suggestion to schedule a test drive, but no scheduled time for a product demonstration is mentioned anywhere."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any mention of a scheduled time for a product demonstration, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZw6IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZw6IAG",
+                "line_start": 18,
+                "line_end": 21
+              }
+            ],
+            "reason": "The call only shows that a virtual demonstration was offered and accepted, with an email invitation to follow (lines 18-21). No specific scheduled time for the demo of the Volvo XC60 or Lexus RX 350 is mentioned anywhere in the transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines that the transcript lacks a specific scheduled time for the product demonstration, as the call only mentions offering and accepting a virtual demo with an email follow-up, and no time is stated."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQhVIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript confirms a product demo for the 2020 Lexus RX 350 and 2021 Volvo XC60 is scheduled, but no specific date or time for the demo is mentioned anywhere in the call."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript confirms a product demo is scheduled for the 2020 Lexus RX 350 and 2021 Volvo XC60, but it never mentions a specific date or time for the demo. Since the question asks for the scheduled time and the transcript lacks that information, the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUlBIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUlBIAW",
+                "line_start": 4,
+                "line_end": 6
+              }
+            ],
+            "reason": "The transcript schedules a product demonstration for the 2021 Volvo XC60 on Friday at 2 PM, but the Lexus RX 350 is never mentioned anywhere in the call, so no scheduled time for a Lexus RX 350 demonstration can be determined from this transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript only schedules the Volvo XC60 demonstration and never mentions the Lexus RX 350, so the evidence lines support the lack of a complete answer."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZOFIA4",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "Saturday at noon.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZOFIA4",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-06-12T14:01:05] William Brooks: Great, I can stop by on Saturday around noon. Would that work for you?\n[2023-06-12T14:01:15] Hiroko Yamada: Saturday at noon sounds perfect. We’ll be ready for you. Just to recap, you’ll be viewing the Volvo XC60 and Lexus RX 350. Both models have some fantastic features to offer."
+              }
+            ],
+            "reason": "William proposes Saturday around noon and Hiroko confirms 'Saturday at noon sounds perfect' while recapping the Volvo XC60 and Lexus RX 350 demonstration."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extracted answer 'Saturday at noon' is directly supported by the cited lines where William proposes Saturday around noon and Hiroko confirms 'Saturday at noon sounds perfect' while recapping the Volvo XC60 and Lexus RX 350 demonstration, fully answering the literal question."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both answers state the scheduled time as 'Saturday at noon' for the product demonstration."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SctyIAC",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses features, pricing, and warranty plans for the Lexus RX 350 and Volvo XC60, but no product demonstration is mentioned and no scheduled time for one appears anywhere in the call."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript contains no mention of a product demonstration or any scheduled time for one, so the extraction correctly marks the question as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVscIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350 but never mentions a product demonstration or any scheduled time for one."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript contains no mention of a product demonstration or any scheduled time for one, and the answer and evidence are appropriately empty."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005RotvIAC",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript never mentions a product demonstration or any scheduled time for one; it only discusses the vehicles, pricing, financing, warranties, and the pre-owned program."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any mention of a product demonstration or scheduled time, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SXxTIAW",
+          "decision": "conflicting",
+          "extracted": {
+            "answerable": true,
+            "answer": "Friday afternoon (the customer proposed Friday afternoon and the agent confirmed the demonstration for Friday; no specific clock time was given).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXxTIAW",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2022-10-18T13:01:10] Oliver Carter: I was thinking about coming by later this week. Maybe Friday afternoon?"
+              }
+            ],
+            "reason": "Oliver proposes Friday afternoon and Liam confirms Friday for the demonstration of both vehicles; no exact hour is stated."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript confirms the demonstration is scheduled for Friday afternoon, as Oliver proposes it and Liam confirms it, and the extraction accurately notes that no specific clock time was given."
+          },
+          "comparison": {
+            "relation": "conflicting",
+            "reason": "The extracted answer states the demonstration is scheduled for Friday afternoon, while the reference answer states Saturday at noon. These are different days and times for the requested product demonstration, so the values conflict."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQo7IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQo7IAG",
+                "line_start": 4,
+                "line_end": 5
+              }
+            ],
+            "reason": "The transcript never mentions a Lexus RX 350; the demonstration covers the 2021 Volvo XC60 and the 2020 Chevrolet Tahoe (line 4). Additionally, no specific scheduled time for the demonstration is stated anywhere in the call—only that a demo is upcoming."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript never mentions a Lexus RX 350 or a scheduled time for the demonstration, and the cited lines support this."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005Tt6IIAS",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the 2020 Lexus RX 350 only; there is no mention of a Volvo XC60 or any scheduled product demonstration time."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript only discusses the 2020 Lexus RX 350 and never mentions a Volvo XC60 or any scheduled product demonstration time, so the extraction correctly marks the question as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STdlIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses pricing, financing, and warranty for the Volvo XC60 and Lexus RX 350, but no product demonstration or its scheduled time is mentioned anywhere."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript contains no mention of a product demonstration or its scheduled time for the Volvo XC60 and Lexus RX 350, so the extraction correctly marks the question as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR49IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR49IAG",
+                "line_start": 14,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript shows Layla Scott agreeing to schedule a demonstration and Kwesi saying he will email the details, but no specific scheduled time for the Volvo XC60 / Lexus RX 350 demonstration is mentioned."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the transcript lacks a specific scheduled time for the demonstration, and the evidence lines support this conclusion."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SXr1IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Volvo XC60 and Lexus RX 350 but never mentions a scheduled product demonstration or its time."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any mention of a scheduled product demonstration or its time, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        }
+      ]
+    },
+    {
+      "item": 18,
+      "question": "What is the price of the extended warranty offered by AutoElite Motors?",
+      "expected": "consistent_in_pool",
+      "decision": "consistent_in_pool",
+      "sources": [
+        {
+          "call_id": "b2c:a05Ws000005ST4NIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ST4NIAW",
+                "line_start": 5,
+                "line_end": 7
+              }
+            ],
+            "reason": "The transcript discusses warranties only in general terms (lines 5–6: 'quite accommodating compared to industry standards', 'transparent terms and flexibility', 'excellent value') but never states a price for the extended warranty. Vehicle prices and the maintenance plan are mentioned, but no warranty price appears anywhere in the call."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines that the transcript lacks a complete answer to the question about the extended warranty price. The cited lines (5-7) only discuss warranties in general terms without providing a specific price, and the transcript indeed contains no warranty price information. Therefore, the extraction is valid."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SU3YIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript describes the extended warranty's coverage but never states a price."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript discusses the extended warranty's coverage and value but never mentions a price, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZ55IAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZ55IAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-09-07T14:00:50] Vanessa Müller: Perfect. Just to reiterate, the Camry Hybrid comes in at $25,999.99. Along with that, we have the AutoElite Comprehensive Maintenance Plan at $1,999.99 and the Extended Warranty Plan for $1,299.99."
+              }
+            ],
+            "reason": "Vanessa Müller explicitly states the Extended Warranty Plan price of $1,299.99 in line 4."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript explicitly states the Extended Warranty Plan price as $1,299.99 in line 4, and the extracted answer correctly reflects this with appropriate evidence."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both answers state the same price of $1,299.99 for the extended warranty. The extracted answer adds descriptive wording but does not change the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005Sbd2IAC",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005Sbd2IAC",
+                "line_start": 10,
+                "line_end": 11
+              }
+            ],
+            "reason": "The Extended Warranty Plan is mentioned (line 10) but no price is stated anywhere in the transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript mentions the Extended Warranty Plan (line 10) but never provides its price, so the extraction correctly marks the question as unanswerable with empty answer and appropriate evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSuZIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript describes the Extended Warranty's coverage but never states a price for it; pricing is only discussed in general terms (transparent pricing, no hidden fees), and a detailed proposal is deferred to a later stage."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript never provides a specific price for the extended warranty; it only describes coverage and mentions transparent pricing generally, with a proposal deferred. The extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SaTtIAK",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SaTtIAK",
+                "line_start": 16,
+                "line_end": 17
+              }
+            ],
+            "reason": "The transcript mentions the Extended Warranty but never states its price. Line 16 only gives vehicle prices and says service plans like the Extended Warranty are 'competitively priced' without a figure."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript never provides a specific price for the Extended Warranty, only stating it is 'competitively priced' in line 16, and the evidence cites the relevant lines."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUziIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "AutoElite Motors offers an extended warranty for $1,299.99 on new vehicles (and an extended service contract for $999.99 on pre-owned vehicles).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUziIAG",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2022-07-05T12:03:45] Mai Nguyen: We offer a comprehensive maintenance plan for $1,999.99 and an extended warranty for $1,299.99 on new vehicles. For pre-owned, there's an extended service contract for $999.99, covering all essential aspects."
+              }
+            ],
+            "reason": "Line 16 explicitly states the extended warranty price of $1,299.99 for new vehicles, plus $999.99 for pre-owned."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extracted answer correctly identifies the extended warranty price of $1,299.99 for new vehicles as stated in line 16, and the evidence quote directly supports this fact. The additional mention of the pre-owned service contract is supplementary and does not detract from the literal question's answer."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "The extracted answer provides the same price ($1,299.99) as the reference answer, with additional unrequested details about a separate service contract for pre-owned vehicles, which does not conflict with the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SY5VIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SY5VIAW",
+                "line_start": 13,
+                "line_end": 15
+              }
+            ],
+            "reason": "The transcript discusses the Extended Warranty Plan's coverage (lines 13-14) but never states its price, so the question cannot be answered from this transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript only describes the extended warranty's coverage (lines 13-14) and never mentions its price, so the answer and evidence are appropriately empty."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVCiIAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVCiIAO",
+                "line_start": 9,
+                "line_end": 11
+              }
+            ],
+            "reason": "The transcript describes what the extended warranty covers (parts and labor for major components) but never states its price."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript only describes the extended warranty coverage (parts and labor for major components) but never mentions its price, so the extraction correctly marks the question as unanswerable with empty answer and relevant evidence lines."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZkjIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan for the 2020 Lexus RX 350 is $1,299.99 (an add-on).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZkjIAG",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2020-04-25T11:02:15] Lucia Alvarez: It's an add-on, but one that many customers find highly beneficial. For the 2020 Lexus RX 350, the Extended Warranty Plan is only $1,299.99, and many believe it adds substantial value to their purchase by preventing unforeseen larger costs."
+              }
+            ],
+            "reason": "Line 10 states the Extended Warranty Plan for the 2020 Lexus RX 350 is $1,299.99."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly identifies the price of the extended warranty as $1,299.99 from line 10, which directly answers the question, and the evidence is accurately cited."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "The extracted answer provides the same price ($1,299.99) as the reference answer, with additional context about the vehicle and plan type, which does not conflict with the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUgFIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions an Extended Warranty Plan but never states its price. Only a total package price of $134,499.95 is given (line 16), which is not the warranty price alone."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript does not provide the price of the extended warranty alone; it only mentions the total package price, so the extraction correctly marks it as unanswerable."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SWVDIA4",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWVDIA4",
+                "line_start": 7,
+                "line_end": 9
+              }
+            ],
+            "reason": "The customer asks about the price of the extended warranty (line 7), but the agent only discusses its value and coverage without ever stating a price (line 8). No dollar amount for the Extended Warranty Plan appears anywhere in the transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the transcript lacks the extended warranty price; the customer asks for it (line 7) but the agent only describes coverage and value (line 8), with no price mentioned anywhere. The evidence lines are appropriate and the answer is empty as expected."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SR7HIAW",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR7HIAW",
+                "line_start": 5,
+                "line_end": 7
+              }
+            ],
+            "reason": "The extended warranty is discussed (lines 5-7), but no price is ever mentioned in the transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript discusses the extended warranty but never mentions its price, and the evidence lines accurately cover the relevant discussion."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUOcIAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions the Extended Warranty Plan but never states its price. Only the vehicle prices ($74,999.99 for the 2022 BMW X5 M and $65,999.99 for the 2023 Mercedes-Benz E-Class) are given; the warranty cost is discussed only qualitatively as 'higher' than some competitors."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript never states the price of the extended warranty; it only discusses the plan qualitatively. The extraction correctly marks the question as unanswerable and provides no answer or evidence, which is appropriate."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SRs9IAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRs9IAG",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-02-09T11:09:10] Zanele Dlamini: Certainly! The 2022 Toyota Camry Hybrid is priced at $25,999.99. Our AutoElite Comprehensive Maintenance Plan is $1,999.99, and the Extended Warranty Plan comes in at $1,299.99. These options help ensure your investment is well-protected, all while fitting within your budget."
+              }
+            ],
+            "reason": "Line 14 explicitly states the Extended Warranty Plan comes in at $1,299.99."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extracted answer correctly identifies the Extended Warranty Plan price as $1,299.99, directly supported by line 14 of the transcript, and the evidence quote accurately cites the relevant line."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both answers state the same price of $1,299.99 for the extended warranty. The extracted answer adds descriptive wording but does not change the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUWaIAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUWaIAO",
+                "line_start": 12,
+                "line_end": 13
+              }
+            ],
+            "reason": "The transcript mentions extended warranties at 'regular and bulk rates' and a 10% bulk discount, but never states the actual per-warranty price. The $25,999.99 figure is the Camry Hybrid price, and $42,510 is the total, so the specific warranty price is not given."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the transcript lacks the specific extended warranty price, as it only mentions regular and bulk rates with a 10% discount and a total, but no per-warranty cost. The evidence lines support this, and the answer is appropriately empty."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SdWcIAK",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SdWcIAK",
+                "line_start": 22,
+                "line_end": 23,
+                "quote": "[2022-03-09T10:03:37] Keiko Mori: The extended warranty, priced at $1,299.99, covers most major components for an additional period post the standard warranty. It gives you peace of mind as it significantly reduces out-of-pocket expenses for any major repairs."
+              }
+            ],
+            "reason": "Keiko Mori states the extended warranty is priced at $1,299.99 and describes its coverage."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extracted answer correctly identifies the extended warranty price as $1,299.99, directly supported by line 22 where Keiko Mori states the price. The evidence quote is exact and the answer fully addresses the literal question."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both the extracted answer and the reference answer provide the same price of $1,299.99 for the extended warranty. The extracted answer adds context but does not conflict with the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SYtiIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the Extended Warranty Plan's coverage and comparison to industry standards (lines 5–6) but never states a price for it."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript lacks any price for the extended warranty, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQxuIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQxuIAG",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2020-03-09T14:46:50] Samuel Smith: I understand; our extended warranty plan is $1,299.99. It's tailored to provide extensive coverage, especially considering our vehicles are maintained by factory-trained technicians. This ensures your vehicle's longevity and optimal performance."
+              }
+            ],
+            "reason": "Samuel Smith of AutoElite Motors explicitly states the extended warranty plan price is $1,299.99."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript explicitly states the extended warranty plan price is $1,299.99, and the extracted answer and evidence accurately reflect this."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both answers state the same price of $1,299.99 for the extended warranty. The extracted answer adds descriptive context but does not conflict with the reference."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SWn2IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions extended warranties (lines 4-5) but never states a price for them. Only the Nissan Leaf base price ($28,999.99) and the maintenance plan price ($1,999.99) are given."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript does not provide a price for the extended warranty; it only discusses the warranty qualitatively and gives prices for the vehicle and maintenance plan. The extraction correctly marks the question as unanswerable."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005ScE1IAK",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ScE1IAK",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-02-05T13:32:30] Chinedu Okoye: Excellent. To start off, the total price for the Volkswagen ID.4 is $43,999.99. We also have the Comprehensive Maintenance Plan for $1999.99 and the Extended Warranty Plan for $1299.99. All these are part of our Eco-Friendly SUV package."
+              }
+            ],
+            "reason": "Chinedu Okoye of AutoElite Motors states the Extended Warranty Plan price is $1299.99."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly identifies the price of the Extended Warranty Plan as $1299.99, directly supported by the cited line 4 where Chinedu Okoye states the price. The answer is complete and matches the literal question."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both answers state the same price of $1,299.99 for the extended warranty; the extracted answer adds descriptive wording but no conflicting information."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SSUkIAO",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSUkIAO",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-02-10T11:33:20] Felix Bakker: For the Audi Q7, you'd be looking at $53,999.99, and the Acura RDX is priced at $33,999.99. Now, the Extended Warranty Plan is $1,299.99, the Comprehensive Maintenance Plan is $1,999.99, and the Emergency Roadside Assistance comes in at $149.99. Each of these adds substantial value to your purchase."
+              }
+            ],
+            "reason": "Felix Bakker of AutoElite Motors explicitly states the Extended Warranty Plan is $1,299.99 in line 12."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly identifies the price of the Extended Warranty Plan as $1,299.99, directly supported by the cited line 12 where Felix Bakker states the price. The answer is complete and matches the literal question."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both answers state the same price of $1,299.99 for the extended warranty. The extracted answer adds descriptive wording but does not change the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SalgIAC",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript discusses the extended warranty's coverage and pricing transparency but never states a specific price for the warranty."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript discusses the extended warranty's coverage and pricing transparency but never provides a specific price, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUhuIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty plan is normally priced at $1,299.99 (with a 15% discount available on volume commitments of fifteen additional plans, bringing the total to $16,574.87).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUhuIAG",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-04-10T14:48:35] Hina Patel: For the extended warranty plan, normally priced at $1,299.99, if you commit to fifteen additional plans, we can offer a 15% discount, bringing the total to $16,574.87. It's a cost-efficient way to add value and ensure ongoing support."
+              }
+            ],
+            "reason": "Line 14 states the extended warranty plan is 'normally priced at $1,299.99' and details the volume discount terms."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly identifies the extended warranty price as $1,299.99 from line 14, which directly answers the literal question, and the evidence quote supports the answer."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "The extracted answer provides the same requested price ($1,299.99) as the reference, with additional unrequested details about a discount and total cost, which do not conflict with the literal question."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STqbIAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STqbIAG",
+                "line_start": 8,
+                "line_end": 9
+              }
+            ],
+            "reason": "The transcript discusses the extended warranty's coverage, transferability, and applicable vehicles (2020 Lexus RX 350, 2021 Volvo XC60), but no price for the warranty is ever stated."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the question is unanswerable because the transcript never mentions a price for the extended warranty, and the cited lines support the discussion of coverage and transferability without a price."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVJ2IAO",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVJ2IAO",
+                "line_start": 10,
+                "line_end": 12
+              }
+            ],
+            "reason": "The extended warranty is mentioned (lines 10-11) but no price is ever stated in the transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the transcript lacks the extended warranty price, as the warranty is only mentioned without any cost details, and the evidence lines support this."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZJYIA4",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions a maintenance plan priced at $1,999.99, but no extended warranty is discussed or priced anywhere in the call."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript does not mention an extended warranty or its price, so the extraction correctly marks the question as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SWn9IAG",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWn9IAG",
+                "line_start": 10,
+                "line_end": 10
+              }
+            ],
+            "reason": "The transcript only states a total price of $177,299.96 that includes the extended warranty plan (line 10), and describes the warranty's coverage terms (line 12). The standalone price of the extended warranty itself is never mentioned, so the literal question cannot be answered from this transcript."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly determines the transcript lacks the standalone price of the extended warranty, as line 10 only gives a total including it and line 12 describes coverage, not cost. The answer is empty with evidence citing line 10, which is appropriate for an unanswerable question."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005SdV1IAK",
+          "decision": "insufficient",
+          "extracted": {
+            "answerable": false,
+            "answer": "",
+            "evidence": [],
+            "reason": "The transcript mentions an extended warranty (lines 6, 18) but never states its price."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The transcript mentions the extended warranty but never provides its price, so the extraction correctly marks it as unanswerable with empty answer and evidence."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STyqIAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The Extended Warranty Plan from AutoElite Motors costs $1,299.99, providing additional coverage beyond the standard 3-year/36,000-mile warranty.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STyqIAG",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-02-25T10:02:55] Zanele Dlamini: Exactly, only the best for our customers. And don’t forget, with the Extended Warranty Plan, you get additional coverage beyond the standard 3-year/36,000-mile warranty for $1,299.99, which further adds to the vehicle's reliability."
+              }
+            ],
+            "reason": "Zanele Dlamini explicitly states the Extended Warranty Plan price of $1,299.99 in line 12."
+          },
+          "verification": {
+            "valid": true,
+            "reason": "The extraction correctly identifies the price of the Extended Warranty Plan as $1,299.99, directly supported by the cited line 12, and the answer fully addresses the literal question."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both answers state the same price of $1,299.99 for the extended warranty. The extracted answer includes extra descriptive details about coverage, which are not conflicting with the requested fact."
+          }
+        },
+        {
+          "call_id": "b2c:a05Ws000005STu1IAG",
+          "decision": "equivalent",
+          "extracted": {
+            "answerable": true,
+            "answer": "The extended warranty offered by AutoElite Motors is priced at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STu1IAG",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-10-10T13:33:45] Mohamed Bakr: Certainly. Let’s look at the numbers again. For the 2024 Tesla Model S, we've set the price at $89,999.99, and the 2023 Nissan Leaf stands at $28,999.99. The comprehensive maintenance plan is $1,999.99, and the extended warranty is $1,299.99."
+              }
+            ],
+            "reason": "Line 10 states: 'the extended warranty is $1,299.99.'"
+          },
+          "verification": {
+            "type": "object",
+            "valid": true,
+            "reason": "The transcript explicitly states the extended warranty price as $1,299.99 in line 10, and the extracted answer correctly reflects this with exact evidence."
+          },
+          "comparison": {
+            "relation": "equivalent",
+            "reason": "Both the extracted answer and the reference answer provide the same price of $1,299.99 for the extended warranty. The extracted answer adds context but does not conflict with the requested fact."
+          }
+        }
+      ]
+    }
+  ],
+  "estimated_usd": 0.068262454,
+  "limitations": "Fixed distractor pools; single-source complete answers only. Not a multi-call production gate."
+}
