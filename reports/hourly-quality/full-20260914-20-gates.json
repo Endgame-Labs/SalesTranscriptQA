@@ -1,0 +1,472 @@
+[
+  {
+    "question_id": "b2b-multi_call-e39589d0915c1fb1",
+    "question": "Across the initial and negotiation calls with Pioneer Envisions, what concern did Sofia Gonzalez raise about early user engagement or user experience, and how did Fatoumata respond in each call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Sofia Gonzalez's concern about early user engagement/user experience and Fatoumata's responses in both the initial and negotiation calls with Pioneer Envisions",
+        "relationship": "single concern tracked across two calls (initial and negotiation) on the same business issue",
+        "reason": "The question asks about one coherent concern (user engagement/UX) and how it was addressed in each call, forming a natural follow-up comparison of the same issue rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwqlIAC",
+                "fact": "Sofia asked how intuitive the products are for new users, and Fatoumata said they are still enhancing user interfaces using client feedback.",
+                "why_other_call_cannot_supply_it": "The second call does not mention the initial question about intuitiveness or the response about ongoing UI enhancement; it focuses on a different concern about early engagement depth."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T29cIAC",
+                "fact": "Sofia noted competitors emphasize early user engagement more, and Fatoumata said onboarding was enhanced so users are engaged from the start.",
+                "why_other_call_cannot_supply_it": "The first call does not contain the competitor comparison or the specific response about enhanced onboarding for engagement; it only covers the initial intuitiveness question."
+              }
+            ],
+            "reason": "The question explicitly asks for the concern raised and Fatoumata's response in each of the two calls. The two calls contain distinct concerns (intuitiveness vs. competitor emphasis on early engagement) and distinct responses (ongoing UI enhancement vs. enhanced onboarding), which are not paraphrases of each other. Each call provides unique information that the other lacks, so both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwqlIAC",
+                  "fact": "Sofia asked how intuitive the products are for new users, and Fatoumata said they are still enhancing user interfaces using client feedback.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention the initial question about intuitiveness or the response about ongoing UI enhancement; it focuses on a different concern about early engagement depth."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T29cIAC",
+                  "fact": "Sofia noted competitors emphasize early user engagement more, and Fatoumata said onboarding was enhanced so users are engaged from the start.",
+                  "why_other_call_cannot_supply_it": "The first call does not contain the competitor comparison or the specific response about enhanced onboarding for engagement; it only covers the initial intuitiveness question."
+                }
+              ],
+              "reason": "The question explicitly asks for the concern raised and Fatoumata's response in each of the two calls. The two calls contain distinct concerns (intuitiveness vs. competitor emphasis on early engagement) and distinct responses (ongoing UI enhancement vs. enhanced onboarding), which are not paraphrases of each other. Each call provides unique information that the other lacks, so both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwqlIAC",
+                "fact": "Sofia asked how intuitive the products are for new users; Fatoumata said they continuously enhance user interfaces using client feedback.",
+                "why_other_call_cannot_supply_it": "The negotiation call contains no discussion of product intuitiveness for new users; its user-engagement topic is a different concern about competitors."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T29cIAC",
+                "fact": "Sofia noted competitors emphasize early user engagement more, questioning depth of engagement; Fatoumata said onboarding was enhanced so users are engaged from the start.",
+                "why_other_call_cannot_supply_it": "The initial call has no mention of competitor comparison on early engagement or the enhanced onboarding response."
+              }
+            ],
+            "reason": "The question explicitly asks about the user-engagement/UX concern and Fatoumata's response in each of the two calls. The initial call raises intuitiveness for new users (answered with UI enhancement via feedback), while the negotiation call raises a distinct concern about competitors' stronger early user engagement (answered with enhanced onboarding). These are different concerns and different responses, each available only in its respective call."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwqlIAC",
+                  "fact": "Sofia asked how intuitive the products are for new users; Fatoumata said they continuously enhance user interfaces using client feedback.",
+                  "why_other_call_cannot_supply_it": "The negotiation call contains no discussion of product intuitiveness for new users; its user-engagement topic is a different concern about competitors."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T29cIAC",
+                  "fact": "Sofia noted competitors emphasize early user engagement more, questioning depth of engagement; Fatoumata said onboarding was enhanced so users are engaged from the start.",
+                  "why_other_call_cannot_supply_it": "The initial call has no mention of competitor comparison on early engagement or the enhanced onboarding response."
+                }
+              ],
+              "reason": "The question explicitly asks about the user-engagement/UX concern and Fatoumata's response in each of the two calls. The initial call raises intuitiveness for new users (answered with UI enhancement via feedback), while the negotiation call raises a distinct concern about competitors' stronger early user engagement (answered with enhanced onboarding). These are different concerns and different responses, each available only in its respective call."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall how a specific customer (Sofia Gonzalez at Pioneer Envisions) raised user-experience/engagement concerns across two calls and how the rep responded each time\u2014classic objection-handling tracking. Call 1: Sofia asks 'How intuitive are your products for new users\u2026?' and Fatoumata replies they are 'continuously working to enhance user interfaces\u2026integrating client suggestions.' Call 2: Sofia notes 'some competitors have a stronger emphasis on user engagement early on' and Fatoumata responds they 'enhanced our onboarding process to ensure that users are\u2026engaged\u2026right from the start.' Each source contributes an exclusive fact (initial intuitiveness concern vs. competitor early-engagement concern), so both are required. The gold answer accurately captures both exchanges without adding unasked extras. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Sofia Gonzalez asking 'How intuitive are your products for new users, considering we have some custom tools in place already?' and Fatoumata responding that they are 'continuously working to enhance user interfaces, particularly for early adoption phases' with 'active feedback loops, integrating client suggestions to improve user-friendliness.' This fully supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Sofia stating 'some competitors have a stronger emphasis on user engagement early on' and Fatoumata responding 'We've enhanced our onboarding process to ensure that users are not just comfortable but engaged and using our tools to their fullest potential right from the start.' This fully supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Initially Sofia asked how intuitive the products are for new users \u2013 supported by index 0 quote. (2) Fatoumata said they're still enhancing user interfaces using client feedback \u2013 supported by index 0 ('continuously working to enhance user interfaces\u2026integrating client suggestions'). (3) Later she noted competitors emphasize early user engagement more \u2013 supported by index 1 quote. (4) Fatoumata said onboarding was enhanced so users are engaged from the start \u2013 supported by index 1 ('enhanced our onboarding process to ensure that users are\u2026engaged\u2026right from the start'). All factual claims in the gold_answer are covered by the two cited evidence items."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-fd23d863cafce7a2",
+    "question": "Across the Digital Horizon Media opportunity, what concerns did Sara Morales raise about CircuitWave in the initial discussion versus the later pricing call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Sara Morales's concerns about CircuitWave in the initial discussion versus the later pricing call on the Digital Horizon Media opportunity",
+        "relationship": "same business issue (concerns about CircuitWave) tracked across two calls",
+        "reason": "Both calls address the same issue\u2014concerns about CircuitWave\u2014so comparing initial vs. later concerns is a coherent multi-call request, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for concerns raised in the initial discussion versus the later pricing call. The initial call (b2b:a05Wt000003SvgAIAS) mentions Sara's concern about CircuitWave's security lacking. The later call (b2b:a05Wt000003SthWIAS) mentions her concern about slow roadmap enhancements. These are two distinct concerns, each appearing in only one call. However, the question explicitly requests both concerns, so both calls are necessary to provide the complete answer. The facts are not repeated or paraphrases; they are different aspects (security vs. roadmap). Therefore, both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for concerns raised in the initial discussion versus the later pricing call. The initial call (b2b:a05Wt000003SvgAIAS) mentions Sara's concern about CircuitWave's security lacking. The later call (b2b:a05Wt000003SthWIAS) mentions her concern about slow roadmap enhancements. These are two distinct concerns, each appearing in only one call. However, the question explicitly requests both concerns, so both calls are necessary to provide the complete answer. The facts are not repeated or paraphrases; they are different aspects (security vs. roadmap). Therefore, both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvgAIAS",
+                "fact": "Sara said CircuitWave's security was lacking (initial discussion, Aug 2 call)",
+                "why_other_call_cannot_supply_it": "The Aug 18 call only mentions CircuitWave's slow roadmap enhancements, not any security concern"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SthWIAS",
+                "fact": "Sara cited struggles with CircuitWave's slower roadmap enhancements (later pricing call, Aug 18)",
+                "why_other_call_cannot_supply_it": "The Aug 2 call only mentions CircuitWave's weak security, not any roadmap concern"
+              }
+            ],
+            "reason": "The question explicitly contrasts concerns raised in the initial discussion versus the later pricing call. Each call contains a distinct CircuitWave complaint (security vs. roadmap pace) that the other call does not contain, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvgAIAS",
+                  "fact": "Sara said CircuitWave's security was lacking (initial discussion, Aug 2 call)",
+                  "why_other_call_cannot_supply_it": "The Aug 18 call only mentions CircuitWave's slow roadmap enhancements, not any security concern"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SthWIAS",
+                  "fact": "Sara cited struggles with CircuitWave's slower roadmap enhancements (later pricing call, Aug 18)",
+                  "why_other_call_cannot_supply_it": "The Aug 2 call only mentions CircuitWave's weak security, not any roadmap concern"
+                }
+              ],
+              "reason": "The question explicitly contrasts concerns raised in the initial discussion versus the later pricing call. Each call contains a distinct CircuitWave complaint (security vs. roadmap pace) that the other call does not contain, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The initial discovery call (Aug 2) has Sara stating CircuitWave's security was lacking; the later pricing call (Aug 18) has her citing CircuitWave's slow roadmap enhancements. Each source contributes one exclusive fact matching the gold answer exactly, with no extra or missing claims.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from the 2023-08-02 call (the earlier/initial discussion) shows Sara Morales explicitly stating 'We've had some experience with CircuitWave but found their security lacking,' which directly supports the claim that she raised security concerns about CircuitWave in the initial discussion."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from the 2023-08-18 call (the later call) shows Sara Morales stating 'We've had struggles with slower roadmap enhancements with some suppliers like CircuitWave,' which directly supports the claim that she cited slow roadmap enhancements regarding CircuitWave in the later pricing call."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states that initially Sara Morales said CircuitWave's security was lacking, and later she cited their slow roadmap enhancements. Evidence index 0 (from the 2023-08-02 call, the earlier one) confirms the security concern, and evidence index 1 (from the 2023-08-18 call, the later one) confirms the slow roadmap enhancements concern. Both calls are tied to the Digital Horizon Media opportunity and Sara Morales as the contact. The chronological ordering (Aug 2 initial, Aug 18 later) aligns with the 'initial discussion versus later pricing call' framing. All factual claims in the gold answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-13dd4a858a6fe309",
+    "question": "What pricing did Amir quote Leon Chen for each of the three products in the Insight Analytics Group expansion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The per-product pricing Amir quoted to Leon Chen for the three products in the Insight Analytics Group expansion",
+        "relationship": "single coherent commercial quote lookup from one call",
+        "reason": "This is one unified request for a quote breakdown covering the same expansion deal; the three product prices are parts of a single commercial quote, not independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the three product prices Amir quoted Leon Chen during the Insight Analytics Group expansion call. The dialogue confirms AI Cirku-Tech at $5723.89 (10% off), SecureFlow Suite at $4559.92 (5% off), and PulseSim Pro at $4499.91 (10% off). The gold answer states exactly those three figures and discounts with no unasked extras. The question naturally identifies the account, contact, rep, and deal context. Single-call set, so both_sources_required is true by rule.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states Amir Haddad offering 'a 10% discount on that product [AI Cirku-Tech] for a total price of $5723.89,' which exactly matches the answer_claim of 10% discount and $5723.89 for AI Cirku-Tech."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote explicitly states 'The SecureFlow Suite, for example, comes with a 5% discount, priced at $4559.92,' which directly supports the answer_claim of a 5% discount and $4559.92 price for SecureFlow Suite."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quote explicitly states 'We've got a 10% discount on PulseSim Pro, bringing the total to $4499.91,' which directly supports the answer_claim of a 10% discount and $4499.91 total for PulseSim Pro."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "All three products, their respective prices, and discount percentages in the gold_answer are directly and explicitly stated in the three cited evidence items. The context metadata confirms the call involves Leon Chen at Insight Analytics Group and the opportunity is named 'Insight Analytics AI-Driven Expansion,' consistent with the question's framing. Speaker attribution (Amir Haddad) is preserved across all quotes. No facts in the gold_answer are missing or contradicted by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-436a451e989fde44",
+    "question": "What pain points with Pioneer Envisions' current provider did Juan Carlos raise on the EDA Suite expansion call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the pain points with the current provider that Juan Carlos raised on the EDA Suite expansion call.",
+        "relationship": "single coherent lookup about one call",
+        "reason": "One fact lookup about pain points raised in a single call; natural sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific pain point Juan Carlos raised about his current provider during the EDA Suite expansion call. The dialogue at 10:51:30 confirms he cited 'limitations with our current provider in terms of support and SLA commitments' and called it 'quite frustrating.' The gold answer faithfully restates those facts without adding unasked extras. The question is naturally phrased, scoped to a named account/opportunity/contact, and a rep would plausibly want this competitive intel. Single-call set, so both_sources_required is true by rule.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is attributed to Juan Carlos on the Pioneer Envisions \u2013 EDA Suite Expansion call (2023-06-10). He explicitly states: 'We have encountered some limitations with our current provider in terms of support and SLA commitments. It's been quite frustrating.' This directly matches the answer_claim verbatim and confirms the pain points are (1) limitations with the current provider's support and SLA commitments, and (2) the frustration caused by those limitations."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'Limitations with the current provider's support and SLA commitments, which have been frustrating.' The single cited evidence item (index 0) is a direct quote from Juan Carlos on the correct call (EDA Suite Expansion, Pioneer Envisions) that contains exactly these two elements: limitations in support and SLA commitments, and the frustration they caused. The metadata confirms the speaker is Juan Carlos and the opportunity is 'Pioneer Envisions - EDA Suite Expansion.' All factual claims in the gold_answer are fully supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-7059ba6d1736694f",
+    "question": "What did Abigail recommend as vehicle options for Priya Patel, and what does AutoElite's post-purchase support include?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) Abigail's vehicle option recommendations for Priya Patel; 2) contents of AutoElite's post-purchase support",
+        "relationship": "two independent fact lookups joined only by the same account",
+        "reason": "A product recommendation and a description of post-purchase support are separate information needs with no shared business issue; the same customer/account is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both requested facts (vehicle recommendations and post-purchase support components) are stated verbatim in the single call transcript. The question naturally combines two pieces of information a rep would want to recall about Priya Patel's account. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Abigail Johnson explicitly states: 'I'd recommend taking a look at the 2024 Tesla Model S and the 2020 Lexus RX 350.' This directly supports the answer_claim that she recommends those two vehicles. The speaker is Abigail Johnson, the context metadata confirms the account is Priya Patel, and the vehicles match exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Abigail Johnson explicitly states: 'Our post-purchase support includes maintenance services, extended warranty plans, and emergency roadside assistance.' This directly and verbatim supports the answer_claim about the three components of AutoElite's post-purchase support."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms the two vehicle recommendations (2024 Tesla Model S and 2020 Lexus RX 350) made by Abigail for Priya Patel. Index 1 confirms the three post-purchase support components (maintenance services, extended warranty plans, and emergency roadside assistance). Together they cover every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-0e06268cce43dfa3",
+    "question": "What did Sebastian commit to regarding the Comprehensive Maintenance Plan pricing for David Gonzalez's fleet deal, and when will the adjusted contract arrive?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Sebastian committed to regarding the Comprehensive Maintenance Plan pricing for David Gonzalez's fleet deal, and when the adjusted contract will arrive",
+        "relationship": "single coherent issue: a pricing commitment and its follow-up deliverable (adjusted contract) on the same deal",
+        "reason": "The commitment on maintenance plan pricing and the timing of the adjusted contract are two parts of the same commercial follow-up, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Sebastian committed to regarding Maintenance Plan pricing and when the adjusted contract would arrive. The dialogue confirms Sebastian agreed to adjust the Maintenance Plan pricing to fit David's budget (14:34:55, 14:35:40) and stated the adjusted contract would be received by Friday (14:36:20). The gold answer captures both facts precisely without unasked extras. The question naturally identifies the customer (David Gonzalez), the rep (Sebastian), and the deal context (fleet deal / Comprehensive Maintenance Plan), which is realistic for an account manager reviewing commitments. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Sebastian Martinez explicitly states: 'I'll discuss with our team right after this call to adjust the pricing on the Maintenance Plan for you.' This directly supports the answer_claim that Sebastian committed to adjusting the Maintenance Plan pricing. The speaker is Sebastian, the addressee is David, and the commitment to adjust pricing is clearly stated. The phrase 'I'm sure we can make this work smoothly' further reinforces the commitment to fit David's budget."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Sebastian Martinez states: 'We'll finalize these terms and prepare the adjusted contract for your review, which you should receive by Friday.' This directly supports the answer_claim that the adjusted contract would be sent by Friday. The speaker is Sebastian, the timeline is 'by Friday,' and the deliverable is the 'adjusted contract.' The slight hedging with 'should receive' is a minor qualifier but still constitutes a commitment to the Friday timeline."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Sebastian agreed to adjust the Maintenance Plan pricing to fit David's budget, and (2) the adjusted contract would be sent by Friday. Evidence index 0 supports claim (1) with Sebastian's explicit commitment to 'adjust the pricing on the Maintenance Plan' and 'make this work smoothly' (implying fitting the budget). Evidence index 1 supports claim (2) with Sebastian's statement that the adjusted contract 'should receive by Friday.' Both factual claims in the gold_answer are supported by the combined cited evidence. The context metadata confirms the account is David Gonzalez and the call date is 2020-09-01, consistent with the dialogue timestamps."
+      }
+    }
+  }
+]

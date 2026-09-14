@@ -1,0 +1,438 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "f61e5a0e79fe070e184180e48459bdcb30ead2addb56dc5c94adadb4508524a1",
+  "questions": 4,
+  "counts": {
+    "pass": 4
+  },
+  "estimated_usd": 0.48454829,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-e39589d0915c1fb1",
+      "question": "Across the initial and negotiation calls with Pioneer Envisions, what concern did Sofia Gonzalez raise about early user engagement or user experience, and how did Fatoumata respond in each call?",
+      "gold_answer": "Initially Sofia asked how intuitive the products are for new users; Fatoumata said they're still enhancing user interfaces using client feedback. Later she noted competitors emphasize early user engagement more; Fatoumata said onboarding was enhanced so users are engaged from the start.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SsLZIA0",
+        "b2b:a05Wt000003StO4IAK",
+        "b2b:a05Wt000003SvXwIAK",
+        "b2b:a05Wt000003SvXxIAK",
+        "b2b:a05Wt000003SvkwIAC",
+        "b2b:a05Wt000003Svo6IAC",
+        "b2b:a05Wt000003SwDyIAK",
+        "b2b:a05Wt000003SwqlIAC",
+        "b2b:a05Wt000003SxwOIAS",
+        "b2b:a05Wt000003SyEBIA0",
+        "b2b:a05Wt000003SyqrIAC",
+        "b2b:a05Wt000003SzDOIA0",
+        "b2b:a05Wt000003SzdAIAS",
+        "b2b:a05Wt000003SzoTIAS",
+        "b2b:a05Wt000003T0UQIA0",
+        "b2b:a05Wt000003T0aqIAC",
+        "b2b:a05Wt000003T0nmIAC",
+        "b2b:a05Wt000003T1ByIAK",
+        "b2b:a05Wt000003T1WtIAK",
+        "b2b:a05Wt000003T1tTIAS",
+        "b2b:a05Wt000003T1tUIAS",
+        "b2b:a05Wt000003T21YIAS",
+        "b2b:a05Wt000003T29cIAC",
+        "b2b:a05Wt000003T2mIIAS",
+        "b2b:a05Wt000003T2r8IAC",
+        "b2b:a05Wt000003T2uLIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Sofia Gonzalez has exactly one initial/discovery call and one negotiation call with Fatoumata on the Pioneer Envisions opportunity. In each she raises a user engagement/UX concern, and the question explicitly asks for the concern and response in each call, so the complete answer aggregates both.",
+        "answers": [
+          {
+            "answer": "In the initial call (2021-04-07), Sofia Gonzalez raised user experience as a key concern, asking how intuitive TechPulse's products are for new users given that Pioneer Envisions already has custom tools in place. Fatoumata responded that while TechPulse prides itself on innovative technology, they acknowledge they are continuously working to enhance user interfaces, particularly for early adoption phases, and that their development team actively uses feedback loops, integrating client suggestions to improve user-friendliness. In the negotiation call (2021-05-15), Sofia raised feedback that some competitors have a stronger emphasis on user engagement early on, leaving questions about the depth of engagement with TechPulse's solutions. Fatoumata acknowledged it as a valid point and something they constantly strive to improve, explaining that while their early stages focus on effective orientation and training, they have enhanced their onboarding process to ensure users are not just comfortable but engaged and using the tools to their fullest potential right from the start.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqlIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2021-04-07T10:33:40] Sofia Gonzalez: That’s reassuring. User experience is also key for us. How intuitive are your products for new users, considering we have some custom tools in place already?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T29cIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2021-05-15T14:04:10] Sofia Gonzalez: Good to hear. One piece of feedback I’ve received is that some competitors have a stronger emphasis on user engagement early on, which has left us with some questions about the depth of engagement with TechPulse’s solutions."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Sofia Gonzalez, Fatoumata, Pioneer Envisions, and the 'initial and negotiation calls.' Sofia Gonzalez appears in exactly two calls with Fatoumata Traoré under opportunity 'Advanced Aerospace EDA Solutions for Pioneer Envisions': the initial call on 2021-04-07 (b2b:a05Wt000003SwqlIAC) and the negotiation call on 2021-05-15 (b2b:a05Wt000003T29cIAC). In both calls, Sofia raises a concern about early user engagement/user experience, and Fatoumata responds in each. The concern and response are substantively the same topic across both calls, yielding one determinate aggregate answer.",
+        "answers": [
+          {
+            "answer": "In the initial call (2021-04-07), Sofia Gonzalez raised the concern that user experience is key for Pioneer Envisions and asked how intuitive TechPulse's products are for new users, given they already have custom tools in place. Fatoumata responded by acknowledging that while TechPulse prides itself on innovation, they are continuously working to enhance user interfaces, particularly for early adoption phases, and that their development team is very active in feedback loops, integrating client suggestions to improve user-friendliness.\n\nIn the negotiation call (2021-05-15), Sofia Gonzalez raised the concern that some competitors have a stronger emphasis on user engagement early on, which left Pioneer Envisions with questions about the depth of engagement with TechPulse's solutions. Fatoumata responded by acknowledging it as a valid point they constantly strive to improve; she explained that while their early stages focus on effective orientation and training, they understand the importance of depth from the get-go, and they have enhanced their onboarding process to ensure users are not just comfortable but engaged and using the tools to their fullest potential right from the start.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqlIAC",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2021-04-07T10:33:40] Sofia Gonzalez: That’s reassuring. User experience is also key for us. How intuitive are your products for new users, considering we have some custom tools in place already?\n[2021-04-07T10:34:05] Fatoumata Traoré: Great question. While we pride ourselves on the innovative aspects of our tech, we acknowledge we’re continuously working to enhance user interfaces, particularly for early adoption phases. Our development team is very active in feedback loops, integrating client suggestions to improve user-friendliness."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T29cIAC",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2021-05-15T14:04:10] Sofia Gonzalez: Good to hear. One piece of feedback I’ve received is that some competitors have a stronger emphasis on user engagement early on, which has left us with some questions about the depth of engagement with TechPulse’s solutions.\n[2021-05-15T14:04:35] Fatoumata Traoré: It's a valid point and something we constantly strive to improve. While our early stages focus on effective orientation and training, we understand the importance of depth from the get-go. We've enhanced our onboarding process to ensure that users are not just comfortable but engaged and using our tools to their fullest potential right from the start. [14:04]"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers describe the same two-call structure. In the initial call, both state Sofia raised the concern about how intuitive TechPulse's products are for new users given Pioneer Envisions' existing custom tools, and Fatoumata responded that they are continuously enhancing user interfaces using client feedback loops. In the negotiation call, both state Sofia raised the concern that competitors emphasize early user engagement more, raising questions about depth of engagement with TechPulse, and Fatoumata acknowledged it as valid and explained they enhanced onboarding to ensure users are engaged from the start. The reference covers both requested facts: the initial-call concern (intuitiveness for new users) and response (enhancing interfaces via client feedback), and the negotiation-call concern (competitors' stronger early engagement emphasis) and response (enhanced onboarding for engagement from the start). Minor wording differences and slight extra detail in the answers do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-13dd4a858a6fe309",
+      "question": "What pricing did Amir quote Leon Chen for each of the three products in the Insight Analytics Group expansion?",
+      "gold_answer": "AI Cirku-Tech $5723.89 (10% off), SecureFlow Suite $4559.92 (5% off), PulseSim Pro $4499.91 (10% off).",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqTTIA0",
+        "b2b:a05Wt000003SrHWIA0",
+        "b2b:a05Wt000003StG7IAK",
+        "b2b:a05Wt000003StG8IAK",
+        "b2b:a05Wt000003StkfIAC",
+        "b2b:a05Wt000003SuIhIAK",
+        "b2b:a05Wt000003Suk8IAC",
+        "b2b:a05Wt000003Sv9nIAC",
+        "b2b:a05Wt000003SvgHIAS",
+        "b2b:a05Wt000003SvoHIAS",
+        "b2b:a05Wt000003SyR0IAK",
+        "b2b:a05Wt000003Syj1IAC",
+        "b2b:a05Wt000003SzTYIA0",
+        "b2b:a05Wt000003SzriIAC",
+        "b2b:a05Wt000003Szv7IAC",
+        "b2b:a05Wt000003T0T1IAK",
+        "b2b:a05Wt000003T0uMIAS",
+        "b2b:a05Wt000003T10wIAC",
+        "b2b:a05Wt000003T1dXIAS",
+        "b2b:a05Wt000003T1teIAC",
+        "b2b:a05Wt000003T2BUIA0",
+        "b2b:a05Wt000003T2eRIAS",
+        "b2b:a05Wt000003T2eSIAS",
+        "b2b:a05Wt000003T2hgIAC",
+        "b2b:a05Wt000003T2pZIAS",
+        "b2b:a05Wt000003T2w7IAC",
+        "b2b:a05Wt000003T2w8IAC",
+        "b2b:a05Wt000003T37JIAS",
+        "b2b:a05Wt000003T3aMIAS",
+        "b2b:a05Wt000003T3c5IAC",
+        "b2b:a05Wt000003T3ddIAC",
+        "b2b:a05Wt000003T3nJIAS",
+        "b2b:a05Wt000003T3qTIAS",
+        "b2b:a05Wt000003T40CIAS",
+        "b2b:a05Wt000003T4HzIAK",
+        "b2b:a05Wt000003T4bDIAS",
+        "b2b:a05Wt000003T4mUIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 10,
+            "normalized_end": 11
+          },
+          {
+            "answer": 0,
+            "evidence": 2,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves Amir Haddad speaking with Leon Chen on the Insight Analytics AI-Driven Expansion opportunity, and it contains explicit pricing for all three products (AI Cirku-Tech, SecureFlow Suite, PulseSim Pro).",
+        "answers": [
+          {
+            "answer": "Amir quoted Leon Chen: AI Cirku-Tech with a 10% discount for a total price of $5723.89; SecureFlow Suite with a 5% discount, priced at $4559.92; and PulseSim Pro with a 10% discount, bringing the total to $4499.91.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqTTIA0",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-11-20T13:01:00] Amir Haddad: Great. Let's start with AI Cirku-Tech—currently, we're offering a 10% discount on that product for a total price of $5723.89. How does that fit into your budget expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqTTIA0",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-11-20T13:02:35] Amir Haddad: Yes, we believe in total transparency. The SecureFlow Suite, for example, comes with a 5% discount, priced at $4559.92. I'm happy to discuss any specifics or clarify further."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqTTIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-11-20T13:03:40] Amir Haddad: We've got a 10% discount on PulseSim Pro, bringing the total to $4499.91. With its robust features, we're confident it delivers significant value, especially with the AI enhancements."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Amir (Haddad), Leon Chen, and the 'Insight Analytics Group expansion' with three products. The opportunity 'Insight Analytics AI-Driven Expansion' (006Wt000007B5mpIAC) is the only one matching both the salesperson Amir Haddad and contact Leon Chen. The call on 2023-11-20 (b2b:a05Wt000003SqTTIA0) is the only call where Amir quotes specific prices for all three products (AI Cirku-Tech, SecureFlow Suite, and PulseSim Pro) to Leon Chen. The earlier call (b2b:a05Wt000003T4HzIAK) only quotes AI Cirku-Tech pricing. No other call in the dataset involves Amir quoting Leon Chen pricing for three products.",
+        "answers": [
+          {
+            "answer": "Amir quoted Leon Chen the following pricing for the three products in the Insight Analytics AI-Driven Expansion: (1) AI Cirku-Tech at $5,723.89 with a 10% discount; (2) SecureFlow Suite at $4,559.92 with a 5% discount; (3) PulseSim Pro at $4,499.91 with a 10% discount.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqTTIA0",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-11-20T13:01:00] Amir Haddad: Great. Let's start with AI Cirku-Tech—currently, we're offering a 10% discount on that product for a total price of $5723.89. How does that fit into your budget expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqTTIA0",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-11-20T13:02:35] Amir Haddad: Yes, we believe in total transparency. The SecureFlow Suite, for example, comes with a 5% discount, priced at $4559.92. I'm happy to discuss any specifics or clarify further."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqTTIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-11-20T13:03:40] Amir Haddad: We've got a 10% discount on PulseSim Pro, bringing the total to $4499.91. With its robust features, we're confident it delivers significant value, especially with the AI enhancements."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers and the reference list the same three products with identical prices and discount percentages: AI Cirku-Tech at $5,723.89 with a 10% discount, SecureFlow Suite at $4,559.92 with a 5% discount, and PulseSim Pro at $4,499.91 with a 10% discount. All requested pricing facts for each of the three products are present and consistent across all three sources."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-436a451e989fde44",
+      "question": "What pain points with Pioneer Envisions' current provider did Juan Carlos raise on the EDA Suite expansion call?",
+      "gold_answer": "Limitations with the current provider's support and SLA commitments, which have been frustrating.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SsLZIA0",
+        "b2b:a05Wt000003StO4IAK",
+        "b2b:a05Wt000003SvXwIAK",
+        "b2b:a05Wt000003SvXxIAK",
+        "b2b:a05Wt000003SvkwIAC",
+        "b2b:a05Wt000003Svo6IAC",
+        "b2b:a05Wt000003SwDyIAK",
+        "b2b:a05Wt000003SwqlIAC",
+        "b2b:a05Wt000003SxwOIAS",
+        "b2b:a05Wt000003SyEBIA0",
+        "b2b:a05Wt000003SyqrIAC",
+        "b2b:a05Wt000003SzDOIA0",
+        "b2b:a05Wt000003SzdAIAS",
+        "b2b:a05Wt000003SzoTIAS",
+        "b2b:a05Wt000003T0UQIA0",
+        "b2b:a05Wt000003T0aqIAC",
+        "b2b:a05Wt000003T0nmIAC",
+        "b2b:a05Wt000003T1ByIAK",
+        "b2b:a05Wt000003T1WtIAK",
+        "b2b:a05Wt000003T1tTIAS",
+        "b2b:a05Wt000003T1tUIAS",
+        "b2b:a05Wt000003T21YIAS",
+        "b2b:a05Wt000003T29cIAC",
+        "b2b:a05Wt000003T2mIIAS",
+        "b2b:a05Wt000003T2r8IAC",
+        "b2b:a05Wt000003T2uLIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 7,
+            "normalized_end": 8
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across the three calls on the 'Pioneer Envisions - EDA Suite Expansion' opportunity with Juan Carlos, only the 2023-06-10 call contains an explicit statement of pain points with the current provider: limitations in support and SLA commitments. The 2023-05-18 call is a scheduling call and the 2023-06-20 call is a brainstorming session, neither of which raises current-provider pain points.",
+        "answers": [
+          {
+            "answer": "Juan Carlos said they had encountered limitations with their current provider in terms of support and SLA commitments, which had been quite frustrating.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsLZIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-06-10T10:51:30] Juan Carlos: Sounds promising. We have encountered some limitations with our current provider in terms of support and SLA commitments. It's been quite frustrating."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Juan Carlos, Pioneer Envisions, and the 'EDA Suite expansion call.' The opportunity named 'Pioneer Envisions - EDA Suite Expansion' (ID 006Wt000007BF7lIAG) has three calls with Juan Carlos. The call on 2023-06-10 (b2b:a05Wt000003SsLZIA0) is the one where Juan Carlos explicitly raises pain points with his current provider (line 7). The other two calls on this opportunity (2023-05-18 and 2023-06-20) do not contain Juan Carlos raising pain points about his current provider. The 2023-06-10 call is the determinate match.",
+        "answers": [
+          {
+            "answer": "Juan Carlos raised that Pioneer Envisions had encountered limitations with their current provider in terms of support and SLA commitments, describing the experience as 'quite frustrating.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsLZIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-06-10T10:51:30] Juan Carlos: Sounds promising. We have encountered some limitations with our current provider in terms of support and SLA commitments. It's been quite frustrating."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same pain points raised by Juan Carlos: limitations with the current provider regarding support and SLA commitments, described as frustrating. The reference likewise covers these exact facts (support and SLA commitment limitations, frustrating experience). All three align on the requested facts with no missing commitments or substitutions."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-0e06268cce43dfa3",
+      "question": "What did Sebastian commit to regarding the Comprehensive Maintenance Plan pricing for David Gonzalez's fleet deal, and when will the adjusted contract arrive?",
+      "gold_answer": "Sebastian agreed to adjust the Maintenance Plan pricing to fit David's budget and said the adjusted contract would be sent by Friday.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLPKIA4",
+        "b2c:a05Ws000005SLprIAG",
+        "b2c:a05Ws000005SMPQIA4",
+        "b2c:a05Ws000005SMPRIA4",
+        "b2c:a05Ws000005SNmqIAG",
+        "b2c:a05Ws000005SOFvIAO",
+        "b2c:a05Ws000005SOvpIAG",
+        "b2c:a05Ws000005SP3DIAW",
+        "b2c:a05Ws000005SPOrIAO",
+        "b2c:a05Ws000005SQT1IAO",
+        "b2c:a05Ws000005SR0tIAG",
+        "b2c:a05Ws000005SRaLIAW",
+        "b2c:a05Ws000005SSWPIA4",
+        "b2c:a05Ws000005SSxpIAG",
+        "b2c:a05Ws000005ST2dIAG",
+        "b2c:a05Ws000005ST98IAG",
+        "b2c:a05Ws000005STIpIAO",
+        "b2c:a05Ws000005STKQIA4",
+        "b2c:a05Ws000005STNcIAO",
+        "b2c:a05Ws000005STcAIAW",
+        "b2c:a05Ws000005STsKIAW",
+        "b2c:a05Ws000005SU5BIAW",
+        "b2c:a05Ws000005SVAyIAO",
+        "b2c:a05Ws000005SVPPIA4",
+        "b2c:a05Ws000005SVR5IAO",
+        "b2c:a05Ws000005SVVuIAO",
+        "b2c:a05Ws000005SWDUIA4",
+        "b2c:a05Ws000005SWDVIA4",
+        "b2c:a05Ws000005SXW6IAO",
+        "b2c:a05Ws000005SXpTIAW",
+        "b2c:a05Ws000005SYQZIA4",
+        "b2c:a05Ws000005SYTjIAO",
+        "b2c:a05Ws000005SYf2IAG",
+        "b2c:a05Ws000005SYf3IAG",
+        "b2c:a05Ws000005SYiEIAW",
+        "b2c:a05Ws000005SZZSIA4",
+        "b2c:a05Ws000005SaH5IAK",
+        "b2c:a05Ws000005SaX8IAK",
+        "b2c:a05Ws000005SagnIAC",
+        "b2c:a05Ws000005SagoIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 16,
+            "normalized_end": 17
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Sebastian Martinez discussing the Comprehensive Maintenance Plan pricing for David Gonzalez's fleet: the 2020-09-01 'Winter Sales Opportunity' call. Sebastian committed to discussing a price adjustment with his team right after the call and said the adjusted contract would arrive by Friday.",
+        "answers": [
+          {
+            "answer": "Sebastian Martinez committed to discussing the pricing adjustment with his team right after the call to adjust the pricing on the Comprehensive Maintenance Plan for David's fleet, keeping it within David's budget constraints, and said the adjusted contract would be prepared for David's review and received by Friday.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMPRIA4",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-09-01T14:35:40] Sebastian Martinez: Understood, David. I'll discuss with our team right after this call to adjust the pricing on the Maintenance Plan for you. I’m sure we can make this work smoothly."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMPRIA4",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2020-09-01T14:36:20] Sebastian Martinez: I believe we've touched on all the key points. We'll finalize these terms and prepare the adjusted contract for your review, which you should receive by Friday."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Sebastian, the Comprehensive Maintenance Plan pricing, David Gonzalez's fleet deal, and asks about an adjusted contract arrival. Only one call matches all these qualifiers: call b2c:a05Ws000005SMPRIA4 (2020-09-01), where Sebastian Martinez discusses the fleet deal under opportunity 'Winter Sales Opportunity' (006Ws00000ALfX5IAL). In that call, David asks about negotiating better terms on the Comprehensive Maintenance Plan (line 11), Sebastian commits to discussing with his team to adjust the pricing (line 14), and states the adjusted contract will arrive by Friday (line 16). No other call involves Sebastian making a commitment about Comprehensive Maintenance Plan pricing with a contract delivery timeline for a fleet deal.",
+        "answers": [
+          {
+            "answer": "Sebastian Martinez committed to discussing with his team right after the call to adjust the pricing on the Comprehensive Maintenance Plan to work within David Gonzalez's budget constraints. He stated that the adjusted contract would be prepared for David's review and that David should receive it by Friday.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMPRIA4",
+                "line_start": 11,
+                "line_end": 17,
+                "quote": "[2020-09-01T14:34:30] David Gonzalez: I've heard positive feedback about your maintenance services, which is a big factor for us. I want to know if we can negotiate better terms on the Comprehensive Maintenance Plan.\n[2020-09-01T14:34:55] Sebastian Martinez: I'm glad to hear the maintenance services align with your expectations. Let’s see... considering your budgetary constraints, I'm confident we can work out a more favorable arrangement. Perhaps we can discuss a slight adjustment if it helps keep everything within budget.\n[2020-09-01T14:35:20] David Gonzalez: That sounds promising. Given my budget, any reduction would certainly help seal the deal.\n[2020-09-01T14:35:40] Sebastian Martinez: Understood, David. I'll discuss with our team right after this call to adjust the pricing on the Maintenance Plan for you. I’m sure we can make this work smoothly.\n[2020-09-01T14:36:00] David Gonzalez: Thank you, Sebastian. I appreciate your flexibility. Are there any other aspects we should cover today?\n[2020-09-01T14:36:20] Sebastian Martinez: I believe we've touched on all the key points. We'll finalize these terms and prepare the adjusted contract for your review, which you should receive by Friday."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same commitments: Sebastian will discuss/adjust the Comprehensive Maintenance Plan pricing with his team right after the call to keep it within David Gonzalez's budget constraints, and the adjusted contract will be prepared for David's review and received by Friday. The reference covers both requested facts: (1) adjusting the Maintenance Plan pricing to fit David's budget, and (2) the adjusted contract being sent by Friday. The reference omits the 'discussing with his team right after the call' detail, but the core commitment (adjust pricing to fit budget) and the timeline (by Friday) are both present. No requested commitment is missing or substituted in either answer or the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
