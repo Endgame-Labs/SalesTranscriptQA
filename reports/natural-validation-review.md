@@ -33,3 +33,13 @@ The first implementation combined support verification and reference comparison 
 - Item 18, 31 transcripts: 11 equivalent warranty-price answers, 20 insufficient; overall consistent in this pool.
 
 Total recorded cost across both per-transcript trial revisions: $0.068262454. Existing suite: 35 passing tests; an additional reference-isolation regression passed with the two other blind-audit tests (3 tests). No production acceptance changes; full pilot review and multi-call extension remain necessary. No corpus-wide ambiguity guarantee.
+
+## All single-call items and stronger conflict adjudication
+
+Reviewed all 15 single-call pilot items with reference-blind per-transcript extraction against their frozen 30-competitor pools plus original sources. Provisional outcomes: 11 ambiguous, 2 consistent in pool, 2 inconclusive. Total cumulative blind-trial usage $0.357823924 (includes prior $0.068262454 regression work).
+
+Manually noticed false conflicts such as a combined bundle price being treated as a standalone three-license price. Independently adjudicated all 95 flagged conflicts with Fireworks Qwen3.8 Max (same model/rates as the earlier RAG evaluator). Results: 58 conflict, 22 partial, 14 equivalent, 1 unsupported; cost $0.411238. Thus 37 cheaper-model conflict flags were not confirmed. Ten of the fifteen questions still have at least one Qwen-confirmed conflict. This is an automated adjudication of flagged conflicts, not a proof of completeness or human-approved quality.
+
+Example: the generic DevVision IDE three-license question admits quotes of $300, $499, $540, and $759 per license in different conversations. The bundle-price flag was partial evidence, but other price differences were confirmed. Product-level wording alone cannot identify the intended customer quote. Some generic company-wide facts (e.g. warranty price in the regression pool) can have repeated equivalent evidence and remain usable.
+
+Next: improve natural business scope in generation (customer need, purchase context, or meaningful account scope without mandated participant names or exact call dates), then review a fresh unfiltered pilot. The lower-cost conflict verifier still needs adjudication calibration; do not deploy its provisional counts as acceptance decisions. B2B multi-call validation remains to be extended. No publication or full evaluation restart.
