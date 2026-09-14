@@ -22,3 +22,14 @@ def test_reference_blind_extraction_and_multiple_answers_fail_closed():
     result=assess(q,calls,T())
     assert result['schema_valid'] and not result['passed']
     assert result['extraction']['answers'][0]['evidence'][0]['quote']=='Price 1'
+
+def test_equal_endpoint_normalization_preserves_raw_receipt():
+    raw={'scope':'determinate','answers':[{'answer':'one','evidence':[{'call_id':'a','line_start':0,'line_end':0}]}]}
+    class T:
+        def request(self,model,prompt,stage,nonce):
+            if stage.endswith('-extract'):return raw
+            return dict(scope_determinate=True,reference_complete_and_supported=True,alternatives_checked=True)
+    r=assess({'question':'Price?','gold_answer':'one'},[{'call_id':'a','metadata':{},'dialogue':'one'}],T())
+    assert r['passed'] and r['evidence_index_repairs']
+    assert raw['answers'][0]['evidence'][0]['line_end']==0
+    assert r['extraction']['answers'][0]['evidence'][0]['quote']=='one'

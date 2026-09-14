@@ -1,5 +1,6 @@
 """Diagnostic audit for alternative answers within a customer's complete call history."""
 import json
+from copy import deepcopy
 from .ambiguity import materialize_evidence
 from .transport import SECONDARY, RATES, digest
 
@@ -57,7 +58,17 @@ def assess(question,calls,transport):
                                 VERSION+'-extract',nonce=nonce)
     valid=isinstance(extracted,dict) and extracted.get('scope') in {'determinate','multiple','unanswerable','uncertain'} and isinstance(extracted.get('answers'),list)
     valid=valid and all(isinstance(a,dict) and isinstance(a.get('evidence'),list) and all(isinstance(e,dict) for e in a['evidence']) for a in extracted['answers'])
-    materialized=materialize_evidence(extracted,calls) if valid else None
+    normalized=deepcopy(extracted)
+    repairs=[]
+    if valid:
+        lengths={c['call_id']:len(c['dialogue'].splitlines()) for c in calls}
+        for ai,a in enumerate(normalized['answers']):
+            for ei,e in enumerate(a['evidence']):
+                start,end=e.get('line_start'),e.get('line_end')
+                if type(start) is int and type(end) is int and start==end and 0<=start<lengths.get(e.get('call_id'),0):
+                    e['line_end']=end+1
+                    repairs.append({'answer':ai,'evidence':ei,'original_end':end,'normalized_end':end+1})
+    materialized=materialize_evidence(normalized,calls) if valid else None
     valid=valid and materialized is not None
     if valid:
         valid=all(isinstance(a.get('answer'),str) and a['answer'].strip() and a.get('evidence') for a in materialized['answers'])
@@ -68,4 +79,4 @@ def assess(question,calls,transport):
     verdict=transport.request(MODEL,VERIFY+'\nINPUT JSON:\n'+json.dumps({**payload,
         'extraction':materialized,'reference_answer':question['gold_answer']}),VERSION+'-verify',nonce=nonce+digest(question['gold_answer']))
     passed=extracted['scope']=='determinate' and all(verdict.get(k) is True for k in ['scope_determinate','reference_complete_and_supported','alternatives_checked'])
-    return {'passed':passed,'schema_valid':True,'extraction':materialized,'verdict':verdict}
+    return {'passed':passed,'schema_valid':True,'extraction':materialized,'verdict':verdict,'evidence_index_repairs':repairs}

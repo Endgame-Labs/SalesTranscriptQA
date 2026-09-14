@@ -45,3 +45,14 @@ cost still need inspection before making this a production acceptance gate.
 Tracking: https://github.com/Endgame-Labs/SalesTranscriptQA/issues/6.
 The full run remains unapproved. Next assistant inspection: 17:00 UTC; continue
 bounded quality diagnosis before then. No original question/evidence was rewritten.
+
+Follow-up during this inspection: the diagnostic reproduced GLM's existing
+single-line equal-endpoint convention. Added and tested the same bounded
+normalization used by v9 (start==end becomes one in-bounds line), retaining the raw
+provider receipt and an explicit repair record. No other span is changed. The
+service was intentionally stopped and resumed from cached requests as
+salestranscriptqa-scope-audit-v2.service with a $75 cumulative allowance, because
+complete account histories make Qwen review more expensive than gold-only review.
+In-flight requests interrupted by the restart retain conservative reservations;
+unknown usage must not be reported as free. Three targeted tests pass. This remains
+a diagnostic; no accepted cohort or generation prompt has changed.
