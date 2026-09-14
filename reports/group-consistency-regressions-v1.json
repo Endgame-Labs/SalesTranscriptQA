@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "item": 13,
+      "expected": "conflicting",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005SXxTIAW"
+        ],
+        "classification": "conflicting",
+        "extracted": {
+          "answerable": true,
+          "answer": "The product demonstration of the 2021 Volvo XC60 and 2020 Lexus RX 350 is scheduled for Friday afternoon (the call took place on 2022-10-18, a Tuesday, so the demo would be that Friday, 2022-10-21).",
+          "evidence": [
+            {
+              "call_id": "b2c:a05Ws000005SXxTIAW",
+              "line_start": 5,
+              "line_end": 6,
+              "quote": "[2022-10-18T13:01:10] Oliver Carter: I was thinking about coming by later this week. Maybe Friday afternoon?"
+            },
+            {
+              "call_id": "b2c:a05Ws000005SXxTIAW",
+              "line_start": 16,
+              "line_end": 17,
+              "quote": "[2022-10-18T13:04:45] Liam Murphy: Fantastic! We are looking forward to welcoming you on Friday and answering any more questions you might have. It’s going to be a great experience."
+            }
+          ]
+        },
+        "verdict": {
+          "classification": "conflicting",
+          "reason": "The source call clearly shows Oliver Carter proposing 'Friday afternoon' (line 5) and Liam Murphy confirming 'Friday' (lines 6, 16) for the product demonstration of the Volvo XC60 and Lexus RX 350. The extracted answer correctly reflects this as 'Friday afternoon.' However, the reference answer states 'Saturday at noon,' which directly contradicts the evidence in the source. Since the source supports a complete answer (Friday afternoon) that differs from the reference answer (Saturday at noon) on the requested fact (scheduled time), this is classified as conflicting."
+        }
+      }
+    },
+    {
+      "item": 18,
+      "expected": "equivalent",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005STyqIAG"
+        ],
+        "classification": "equivalent",
+        "extracted": {
+          "answerable": true,
+          "answer": "The Extended Warranty Plan from AutoElite Motors is priced at $1,299.99, providing additional coverage beyond the standard 3-year/36,000-mile warranty.",
+          "evidence": [
+            {
+              "call_id": "b2c:a05Ws000005STyqIAG",
+              "line_start": 12,
+              "line_end": 13,
+              "quote": "[2023-02-25T10:02:55] Zanele Dlamini: Exactly, only the best for our customers. And don’t forget, with the Extended Warranty Plan, you get additional coverage beyond the standard 3-year/36,000-mile warranty for $1,299.99, which further adds to the vehicle's reliability."
+            }
+          ]
+        },
+        "verdict": {
+          "classification": "equivalent",
+          "reason": "The source clearly states in line 12 that the Extended Warranty Plan is priced at $1,299.99, which matches the reference answer exactly. The extracted answer correctly identifies this price and the source evidence supports it fully."
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "estimated_usd": 0.009616
+}

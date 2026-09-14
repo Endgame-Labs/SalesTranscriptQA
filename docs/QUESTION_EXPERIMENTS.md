@@ -54,3 +54,24 @@ Known limitations under investigation:
 The v4/v5 reports preserve earlier scope/wording experiments. Their participant-name
 restrictions were an overcorrection and are superseded by v6; their results should
 not be treated as the desired style specification.
+
+## Draft/edit and answer-consistency experiments
+
+```bash
+uv run python scripts/sales_question_experiment.py --model edited --count 100
+uv run python scripts/calibrate_consistency_v2.py
+uv run python scripts/check_sales_consistency.py reports/sales-questions-v6-glm-seed20260915-n100.json --version 2
+```
+
+The edited arm uses GLM drafting and DeepSeek revision, followed by the same evidence,
+independent answering, ablation and contract checks. Explicit locator patterns reject
+dated/month-named call references while allowing participant names and business dates.
+The initial 100-unit comparison reuses the prior source seed to isolate the effect of
+editing; a fresh seed is still required before production selection.
+
+The consistency experiment retrieves 30 lexical neighbors plus intended sources and
+expands these to complete explicit CRM groups. Its first judge design was stopped:
+seeing the reference caused false conflicts for wrong entities and partial answers.
+Version 2 separates blind extraction, blind complete-answer verification, and only
+then reference comparison. Nine observed-failure/control cases passed live calibration.
+This is not yet the production specificity gate; broader sample results remain pending.

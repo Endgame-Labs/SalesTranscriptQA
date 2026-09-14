@@ -1,0 +1,217 @@
+{
+  "results": [
+    {
+      "label": "appointment_conflict",
+      "expected": "conflicting",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005SXxTIAW"
+        ],
+        "classification": "conflicting",
+        "verification": {
+          "complete": true,
+          "answer": "The product demonstration for the 2021 Volvo XC60 and 2020 Lexus RX 350 is scheduled for Friday afternoon.",
+          "evidence": [
+            {
+              "call_id": "b2c:a05Ws000005SXxTIAW",
+              "line_start": 4,
+              "line_end": 7,
+              "quote": "[2022-10-18T13:00:50] Liam Murphy: Great! So, the main purpose of our call today is to schedule a time for you to visit our showroom and experience the 2021 Volvo XC60 and the 2020 Lexus RX 350 firsthand. Seeing the vehicles in person gives you a chance to explore their features and really get a feel for them. When would be a convenient time for you to come by?\n[2022-10-18T13:01:10] Oliver Carter: I was thinking about coming by later this week. Maybe Friday afternoon?\n[2022-10-18T13:01:30] Liam Murphy: Friday sounds perfect! We can arrange for a detailed demonstration of both vehicles. It's a great opportunity to compare how our pre-owned program stands against competitors. We've got a knack for ensuring our options remain reliable—it’s something our customers love. Have you seen anything that you had questions or concerns about so far?"
+            },
+            {
+              "call_id": "b2c:a05Ws000005SXxTIAW",
+              "line_start": 10,
+              "line_end": 11,
+              "quote": "[2022-10-18T13:02:55] Liam Murphy: That's right. Both the Volvo and Lexus offer some cutting-edge tech features, like advanced safety systems and intuitive infotainment options. They’re especially good if you’re tech-savvy. Once you’re in the driver's seat on Friday, you'll be able to test those features out yourself."
+            },
+            {
+              "call_id": "b2c:a05Ws000005SXxTIAW",
+              "line_start": 16,
+              "line_end": 17,
+              "quote": "[2022-10-18T13:04:45] Liam Murphy: Fantastic! We are looking forward to welcoming you on Friday and answering any more questions you might have. It’s going to be a great experience."
+            }
+          ],
+          "reason": "Line 4 establishes the purpose is to schedule a demonstration of the 2021 Volvo XC60 and 2020 Lexus RX 350. Line 5 has Oliver Carter proposing 'Friday afternoon.' Line 6 has Liam Murphy confirming 'Friday sounds perfect' and arranging a detailed demonstration of both vehicles. Line 10 reinforces 'Once you're in the driver's seat on Friday.' Line 16 confirms 'welcoming you on Friday.' Together these lines confirm the scheduled time is Friday afternoon for both vehicles."
+        },
+        "comparison": {
+          "classification": "conflicting",
+          "reason": "Answer A states the demonstration is scheduled for Friday afternoon, while Answer B states it is Saturday at noon. These are different days and times for the same requested fact."
+        }
+      }
+    },
+    {
+      "label": "duplicate_warranty",
+      "expected": "equivalent",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005STyqIAG"
+        ],
+        "classification": "equivalent",
+        "verification": {
+          "complete": true,
+          "answer": "The Extended Warranty Plan offered by AutoElite Motors is priced at $1,299.99, providing additional coverage beyond the standard 3-year/36,000-mile warranty.",
+          "evidence": [
+            {
+              "call_id": "b2c:a05Ws000005STyqIAG",
+              "line_start": 12,
+              "line_end": 13,
+              "quote": "[2023-02-25T10:02:55] Zanele Dlamini: Exactly, only the best for our customers. And don’t forget, with the Extended Warranty Plan, you get additional coverage beyond the standard 3-year/36,000-mile warranty for $1,299.99, which further adds to the vehicle's reliability."
+            }
+          ],
+          "reason": "Line 12 of the call transcript explicitly states the Extended Warranty Plan price as $1,299.99, offered by Zanele Dlamini from AutoElite Motors. This directly answers the question about the price of the extended warranty."
+        },
+        "comparison": {
+          "classification": "equivalent",
+          "reason": "Both answers state the same price of $1,299.99 for the extended warranty offered by AutoElite Motors. Answer A includes additional context about coverage beyond the standard warranty, but the core requested fact (the price) is identical in both."
+        }
+      }
+    },
+    {
+      "label": "quote_scope_b2b:a05Wt000003Sv6XIAS",
+      "expected": "conflicting",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2b:a05Wt000003Sv6XIAS",
+          "b2b:a05Wt000003SypGIAS",
+          "b2b:a05Wt000003T3KAIA0"
+        ],
+        "classification": "conflicting",
+        "verification": {
+          "complete": true,
+          "answer": "A 5% discount was applied to the SecureFlow Suite, bringing the total price to $2,849.95 for five licenses.",
+          "evidence": [
+            {
+              "call_id": "b2b:a05Wt000003Sv6XIAS",
+              "line_start": 16,
+              "line_end": 17,
+              "quote": "[2022-03-24T14:33:55] Jamal Abdi: Certainly. For PulseSim Pro, it's $4499.91 given the 10 units at a 10% discount. SecureFlow Suite is priced at $2849.95 for five licenses with a 5% discount, and AI Cirku-Tech comes to $4027.92 for eight licenses, also with a 5% discount."
+            }
+          ],
+          "reason": "Line 16 of call b2b:a05Wt000003Sv6XIAS explicitly states: 'SecureFlow Suite is priced at $2849.95 for five licenses with a 5% discount.' This provides both the discount percentage (5%) and the resulting total price ($2,849.95) for the SecureFlow Suite in the Vertex Engineering quote. The draft extraction is accurate and complete."
+        },
+        "comparison": {
+          "classification": "conflicting",
+          "reason": "The two answers provide different values for both requested facts: Answer A states a 5% discount and a total price of $2,849.95, while Answer B states a 10% discount and a total price of $5,399.91. These are directly contradictory values for the discount percentage and the resulting total price."
+        }
+      }
+    },
+    {
+      "label": "quote_scope_b2b:a05Wt000003StO5IAK",
+      "expected": "insufficient",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2b:a05Wt000003StO5IAK",
+          "b2b:a05Wt000003SwsJIAS",
+          "b2b:a05Wt000003T1a7IAC"
+        ],
+        "classification": "insufficient",
+        "verification": {
+          "complete": false,
+          "answer": "The sources mention a 15% discount on the SecureFlow Suite (stated by Jamal Abdi in the 2023-07-07 call), but no formal quote with a total price for Vertex Engineering is ever discussed in any of the three transcripts. Therefore the resulting total price cannot be determined.",
+          "evidence": [],
+          "reason": "The question asks for both the discount applied in the quote AND the total price it brings Vertex Engineering to. While a 15% discount on SecureFlow Suite is mentioned in call b2b:a05Wt000003StO5IAK line 14, it is presented as a general offer ('we have a 15% discount on the SecureFlow Suite and UnitySim Essentials') rather than a specific quote. No total price, base price, or final quoted amount for Vertex Engineering appears in any of the three call transcripts. Because the total price fact is entirely missing, the answer is incomplete."
+        }
+      }
+    },
+    {
+      "label": "quote_scope_b2b:a05Wt000003SrnjIAC",
+      "expected": "insufficient",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2b:a05Wt000003SrnjIAC",
+          "b2b:a05Wt000003SuVOIA0",
+          "b2b:a05Wt000003T3FKIA0"
+        ],
+        "classification": "insufficient",
+        "verification": {
+          "complete": false,
+          "answer": "The SecureFlow Suite was quoted with a 5% discount for Vertex Engineering Corp (mentioned alongside CloudLink Designer units). However, no total price for the SecureFlow Suite after that discount is provided in any of the calls. The $4,769.91 figure referenced in the transcripts is the discounted total for the AI Cirku-Tech package (10% discount on 10 units), not the SecureFlow Suite. Therefore, the total price for SecureFlow Suite cannot be determined from the available sources.",
+          "evidence": [],
+          "reason": "The 5% discount for SecureFlow Suite is confirmed in call b2b:a05Wt000003T3FKIA0 line 14, but no total price for SecureFlow Suite is ever stated. The only dollar figure ($4,769.91) in the transcripts pertains to AI Cirku-Tech, not SecureFlow Suite. Since the question asks for both the discount AND the resulting total price, and the total price is missing, the answer is incomplete."
+        }
+      }
+    },
+    {
+      "label": "wrong_salesperson_b2c:a05Ws000005SQxbIAG",
+      "expected": "insufficient",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005SQxbIAG",
+          "b2c:a05Ws000005SSwCIAW",
+          "b2c:a05Ws000005SXnlIAG"
+        ],
+        "classification": "insufficient",
+        "verification": {
+          "complete": false,
+          "answer": "The question asks about 'Elena,' but no person named Elena appears in any of the three calls. The salesperson in all calls is Alejandra Torres. Regarding financing rates compared to competitors, Sara Larson did comment in the 2023-03-30 call (line 15) that she had 'seen other places with similar offers, but usually, their numbers are quite inflated.' However, because the question specifically asks what follow-up 'Elena proposed at the end of the call,' and no Elena exists in these sources, that part of the question cannot be answered. The follow-up at the end of the 2023-03-30 call was proposed by Alejandra Torres (not Elena), who offered to send detailed information via email. Since the exact named person 'Elena' is not present, the answer is incomplete.",
+          "evidence": [],
+          "reason": "The question references 'Elena' as the person who proposed a follow-up, but no individual named Elena appears in any of the three provided calls. The salesperson across all calls is Alejandra Torres. While Sara Larson's comment about competitors' inflated financing numbers is found (call b2c:a05Ws000005SQxbIAG, line 15), the second part of the question—what Elena proposed—cannot be answered because Elena does not exist in the source data. A different salesperson (Alejandra) cannot substitute for the specifically named Elena."
+        }
+      }
+    },
+    {
+      "label": "wrong_salesperson_b2c:a05Ws000005SVvgIAG",
+      "expected": "insufficient",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005SVvgIAG"
+        ],
+        "classification": "insufficient",
+        "verification": {
+          "complete": false,
+          "answer": "The call transcript does not contain any statement by Sara Larson comparing financing rates to competitors, nor does it include any person named Elena. Sara asked about financing options (line 7) and Amelie Beaufort mentioned competitive interest rates (line 8), but Sara herself never made a comparison of financing rates versus competitors. The salesperson on this call was Amelie Beaufort, not Elena, so no follow-up proposed by Elena exists in the provided sources.",
+          "evidence": [],
+          "reason": "Two facts are missing: (1) Sara Larson never explicitly compared financing rates to competitors—she only asked about financing options and noted competitors offer reliable service. (2) No person named Elena appears anywhere in the transcript; the call was conducted by Amelie Beaufort. Therefore the question cannot be fully answered from the supplied sources."
+        }
+      }
+    },
+    {
+      "label": "wrong_salesperson_b2c:a05Ws000005SRiNIAW",
+      "expected": "insufficient",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005SRiNIAW",
+          "b2c:a05Ws000005SWoUIAW",
+          "b2c:a05Ws000005SXhJIAW"
+        ],
+        "classification": "insufficient",
+        "verification": {
+          "complete": false,
+          "answer": "The sources do not support a complete answer. Sara Larson never made a statement about financing rates compared to competitors; she only asked about financing options (e.g., 'How does your financing compare to others?' in call b2c:a05Ws000005SXhJIAW line 9, and 'And about the financing options?' in call b2c:a05Ws000005SRiNIAW line 9). It was Tariq Al-Farsi who described the financing as clear, straightforward, and on par with competitors. Furthermore, no person named Elena appears in any of the three calls; the salesperson in all calls is Tariq Al-Farsi, so no follow-up proposed by Elena exists in the provided sources.",
+          "evidence": [],
+          "reason": "Two facts are missing: (1) Sara Larson did not herself comment on financing rates versus competitors—she only posed questions, and the comparative descriptions came from Tariq Al-Farsi. (2) No individual named Elena is present in any transcript; therefore no follow-up proposed by Elena can be identified. Because both requested facts are unsupported for the exact named people, the answer is incomplete."
+        }
+      }
+    },
+    {
+      "label": "wrong_salesperson_b2c:a05Ws000005SQ3AIAW",
+      "expected": "insufficient",
+      "passed": true,
+      "result": {
+        "call_ids": [
+          "b2c:a05Ws000005SQ3AIAW",
+          "b2c:a05Ws000005SUbQIAW",
+          "b2c:a05Ws000005SVAtIAO"
+        ],
+        "classification": "insufficient",
+        "verification": {
+          "complete": false,
+          "answer": "The sources do not contain the requested information. Sara Larson never made a statement comparing financing rates to competitors; she only asked about financing options generally (2020-03-28 call, lines 7–9) and noted that transparent pricing seemed 'a bit higher compared to others' (line 13), which concerns pricing, not financing rates. Additionally, no person named Elena appears in any of the three call transcripts. The salesperson in all calls is Fatima El-Masry, so no follow-up proposed by Elena exists in the sources.",
+          "evidence": [],
+          "reason": "Two facts are missing: (1) Sara Larson never commented on financing rates compared to competitors—she asked about financing options and commented on pricing being higher, but never specifically compared financing/interest rates to competitors. (2) There is no person named Elena in any of the three transcripts; the salesperson is Fatima El-Masry throughout. Since neither requested fact can be supported for the exact named people and topic, the answer is incomplete."
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "estimated_usd": 0.08487018,
+  "limitations": "Targeted observed failure regressions, not a random quality estimate."
+}
