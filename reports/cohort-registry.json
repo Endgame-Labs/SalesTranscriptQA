@@ -1,7 +1,7 @@
 {
   "version": 1,
   "protocol": "sales-questions-v9-line-evidence",
-  "independent_review_protocol": "full-source review plus quoted-evidence-audit-v1, required for expanded and full cohorts",
+  "independent_review_protocol": "full-source review plus quoted-evidence-audit-v1 and customer-event-scope-v2; required for full cohort",
   "active_seed": {
     "path": "data/active-seed-v1",
     "questions": 36,
@@ -11,19 +11,848 @@
   "expansion": {
     "run": "runs/sales-expanded-2000-v1",
     "source_units": 2000,
-    "status": "generation, independent review, and RAG evaluation complete",
-    "on_completion": "Replace active seed with verified expanded cohort; evaluate all selected questions before any outcome-based exclusions."
+    "status": "410-question scope-reviewed checkpoint verified; conditional full run approved",
+    "on_completion": "Preserve historical cohorts; all exclusions use uniform source-quality gates, never RAG correctness."
   },
   "retired_cohorts": [
     "published pilot-v2 (200 questions)",
     "runs/full-v1",
-    "earlier v2-v8 research samples"
+    "earlier v2-v8 research samples",
+    "runs/sales-expanded-2000-v1/reviewed (548 questions; superseded after uniform customer-history scope review)"
   ],
   "excluded_questions": [
     {
       "question_id": "b2c-single_call-1d87a47e053920bf",
       "question": "What is the total price of Sofia Kim's eco-friendly vehicle package, and what adjustment did she want made to it?",
       "reason": "Ambiguous eco-friendly package scope for Sofia Kim across opportunities with different prices; quarantined after full-corpus RAG review."
+    },
+    {
+      "question_id": "b2b-multi_call-26b4a8325daea976",
+      "question": "What next steps did Marcus Nguyen agree to for the Quantum Designs opportunity across the two calls?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-3687136581616049",
+      "question": "For RenewSys Corp, what support issue did Liam McCarthy raise in the initial discussion, and what did Luciana say about TechPulse's support SLAs in the follow-up?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-499bee5f654b7e52",
+      "question": "For Quantum Innovations, what pricing concern did Isabelle Leclerc raise on the initial discovery call, and how was pricing resolved when the contract was finalized?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-6a5847bc227e260a",
+      "question": "For the TerraSync Green Circuit Initiative, what concern did Sofia Ramirez raise about NanoDesign in the pricing/terms discussion, and how did Dariusz position TechPulse against NanoDesign in the earlier demo follow-up?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-8dcb417501dddf86",
+      "question": "Across the two discovery calls with George Romanov at Precision Circuit Systems, what pain point did he raise about his current simulation tools in the first call, and what implementation concern did he raise in the follow-up?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-9bc09bb5fef694ee",
+      "question": "Across the TerraForm Engineering discussions, Liam twice raised a competitive concern about rivals' frequent updates. What did he point to in the first conversation, and what did Aisha say in the later pricing call about TechPulse's update approach?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-9d9b49a517493deb",
+      "question": "For the TechFusion EDA Enhancement opportunity, what next step did Santiago Cruz agree to on the initial discovery call, and what follow-up step did Ava commit to on the proposal-tailoring call?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-b1ca25612a2f0a04",
+      "question": "For NaviCorp Tech, which product did Nikhil ask for a pricing adjustment on in the initial feedback call, and which products received discounts in the updated proposal?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-ba1b4014a5e259c6",
+      "question": "What pricing information did TechPulse give Isabella Ruiz at Innovate Sphere in the initial discussion versus the later negotiation-prep call?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-be63850349ce627d",
+      "question": "What technical challenges did Tomoko Sato of Circuit Dynamics flag in the initial discussion, and which TechPulse products were later tailored to their workflows during onboarding?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-c67b826814649061",
+      "question": "For Innovative Robotics, how did Aarav initially position TechPulse's pricing versus competitors, and what specific discount was later proposed and on which products?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-d65b8907d9332e27",
+      "question": "Across the two TechPulse calls with NaviCorp Tech's Zhi Huang, what support or downtime concern did Zhi raise in each conversation, and what did Mohammed commit in response?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-fb5d32e670c2ac39",
+      "question": "Across the two discussions with Ibrahim Ahmad at SkyLevel Systems, what concerns did he raise about competitors \u2014 one about Quantum Circuits' support and one about another competitor's offerings?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-multi_call-fcaee0bccd6a92ba",
+      "question": "Across the two conversations with Fatima Hassani at SkyTech Ventures, how did Yasmin respond to the competitor update-frequency concern in each call?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-0853d322e365a480",
+      "question": "What did Priyanka commit to delivering next to Nikhil at NaviCorp Tech, and what will it include?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-0baf719b503ed32e",
+      "question": "What concern did Artem Ivanov raise about Quantum Circuits Inc., and what did Priyanka say differentiates TechPulse on that point?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-0f5b605c29086e4a",
+      "question": "What pricing did Kai offer Ethan for CloudLink Designer, and how did Ethan respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-0f63a75ec0f29982",
+      "question": "What concern did Rafael Mendes raise about Quantum Circuits Inc as a competitor for TechWave Innovations?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-12b8ced0bddd1154",
+      "question": "What concerns did Samuel Okafor at TerraForm Engineering raise about adopting TechPulse's solutions, and what did Linh Tran say to address them?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-15b22793b9b184d9",
+      "question": "What concern did Jamal Ali at AgroSmart Innovations raise about competing EDA vendors, and how did Fatoumata respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-218d180c4067a298",
+      "question": "What concern did Ingrid Nilsen raise about competitors' updates, and how did Mei Chen say TechPulse handles updates?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-224c28359a62e0d4",
+      "question": "What security-related concern did Kayla Adebayo raise about TechPulse's solutions, and how did Jaemin respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-2a5f1ad3a8cc9f7e",
+      "question": "What did Linh Nguyen say SkyNet Technologies values most when comparing TechPulse to CircuitWave?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-360ec22366987661",
+      "question": "What concern did Ahmed El-Masry at EcoEnergy Solutions raise about the SecureFlow Suite, and how did Santiago respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-38f139c1c4231d0d",
+      "question": "What follow-up did Yuki Kato schedule with Ming Li at InnovateGrid Systems after the initial discussion?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-416b76c2611d80d9",
+      "question": "What discount did TechPulse offer SkyNet Technologies on the CloudLink Designer and QuantumPCB Modeler purchase?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-4380931966757af7",
+      "question": "What did Tania Grewal agree to as a next step for the SafetyNet Inc. opportunity?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-4386c8dbc1776504",
+      "question": "What concerns did Kofi Nkrumah at AeroFusion Systems raise about implementation, and how did Junaid respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-4a042f3df09ea23e",
+      "question": "What concern does Quinn Taylor raise about TechPulse's SecureFlow Suite relative to Quantum Circuits Inc, and how does Mei Chen respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-4e621cb319c0dce6",
+      "question": "What did Ling Chen say MetaData Analytics is focusing on when comparing vendors, given that pricing is competitive across the board?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-4ff72f3287562577",
+      "question": "What pain point did Chung Wei at CyberWave Security raise about their current provider, and what meeting did Ayumi schedule in response?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-51a79979685ecb55",
+      "question": "What concern did Hung Nguyen raise about TechPulse's solutions, and how did Luciana respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-62b0aefbc9355df2",
+      "question": "What discounts did Sarah offer Anastasia for the SecureLink package?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-636abe8c8f4758dd",
+      "question": "What decision criteria did Maya Hernandez from Quantum Designs say would drive their final choice?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-6c749ac0c95835f4",
+      "question": "What key pain point did Igor Petrov of EcoVision Engineering raise about their current setup, and which TechPulse product did John say addresses it?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-6fbdda28023827dc",
+      "question": "What pricing or discount did Alejandro offer Jiro on CloudLink Designer for CraftTech Electronics?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-7b840de7f616b9c1",
+      "question": "What did Ayako Tanaka at SecureWise Solutions say about support during implementation, and what did Monique commit to providing?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-879b354508c4851d",
+      "question": "What discounts did TechPulse offer MedTech Advances on PulseSim Pro and SecureFlow Suite?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-9e13e12020dfd312",
+      "question": "What follow-up commitments did Ayo make to Charles Dubois at MediLux Solutions, and when is the next meeting scheduled?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-a1bfc4d995b79051",
+      "question": "What discount percentages and final total did GreenLeaf Engineering agree to on the TechPulse quote?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-a465569ddedf8c76",
+      "question": "What next steps did Mei Lin propose to Noah Singh for the Nova Healthcare opportunity, and what did Noah commit to?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-a5d422b20bd6f17f",
+      "question": "What total price was quoted to Aiden Lee at MetroGrid Networks, and which products does it cover?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-a680ea73291b5fc0",
+      "question": "What follow-up did Chidi commit to for Innovate Sphere after the call with Thabo Dlamini?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-adb013e9dc1444b6",
+      "question": "What pricing did TechPulse propose to Metro Security Systems for the SecureFlow Suite and CircuitSync Pro, including discounts and total cost?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-b3637beefb937b7a",
+      "question": "What did Jenna Thompson flag as a concern with other vendors' product enhancements, and how did Dariusz say TechPulse handles updates?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-b5392f40b29fec4b",
+      "question": "What discounts did Isabella offer MetroGrid Networks on PulseSim Pro and SecureFlow Suite, and what follow-up did Luis commit to?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-b5a16a4db56beffb",
+      "question": "What did Mei Lin commit to doing after the call with Javier Sanchez at NexGen Biotech?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-b651b57c5c406c58",
+      "question": "What did Isaac Njoroge say TechGrove Systems needs from TechPulse regarding post-implementation support and scalability?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-bb39ac92da6c978a",
+      "question": "What did Oluwaseun Olowo at TrueNorth Technologies say about their security compliance priorities, and what implementation support did Noura commit to?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-bd48ef34336f7b24",
+      "question": "What discounts did Liam offer Ayesha on the PulseSim Pro and SecureFlow Suite licenses for OmegaDesign Labs?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-bf193270dfe31ca2",
+      "question": "What discounts did TechPulse offer EnergyNova in the proposal, and what did Aziz say about competitors' pricing?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-c32beb3bf8aeccf7",
+      "question": "What security capabilities did TechPulse highlight to Ravi Teja at EnviroTech Solutions, and which product delivers them?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-c5935bf703484af6",
+      "question": "What did Noah Singh say about NanoDesign as a competitor, and what concern did he raise about support from a previous vendor?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-c94245075bd4f1e2",
+      "question": "What pricing did Carlos quote Anand for AI Cirku-Tech and SecureFlow Suite, and what did they agree on as the next step?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-cc95ff48f8f90cf4",
+      "question": "What pain points did Kwame Mensah raise about AquaSys Controls' current suppliers, and what did Tariq say TechPulse would do to address them?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-d5a1133bcc663080",
+      "question": "What did Luis Rodriguez say about why MetroGrid Networks is looking beyond Adaptive Design Solutions for their network expansion?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-dae0c6c062f550ae",
+      "question": "What concern did Sophia Ferrari raise about Quantum Circuits Inc as a competitor for OmegaDesign Labs' integration project?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-e18dd380cccfef88",
+      "question": "What concern did Kofi Nkrumah raise about TechPulse's support, and how did Sarah Johnson respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-fb48aea1298539f6",
+      "question": "What pricing follow-up did Jorge promise Chin Ho Huang after the SecureLink call?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2b-single_call-fbecd79715637376",
+      "question": "What next steps did Nadia commit to for TechGrove Systems, and when is the proposal presentation scheduled?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-0a91c5f98697817a",
+      "question": "What financing flexibility did Ananya say AutoElite can offer Jackson Kim on an eco-friendly vehicle?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-0b389a3a2867e6c3",
+      "question": "What concern did Abigail Turner raise about AutoElite's financing, and how did Emily respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-1079495e4800f3de",
+      "question": "What next steps did Tariq commit to for Amelia Davis's family vehicle upgrade?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-107e99f3a9efd438",
+      "question": "What warranty feedback did Vanessa share with Sophia Brown about AutoElite's Extended Warranty Plan?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-11c8fedb42946953",
+      "question": "What did Enzo say about the extended warranty plans for Ethan Harris's luxury vehicle options?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-17cbaa54dcc5e99c",
+      "question": "What post-purchase support does AutoElite offer Rachel Davis alongside the BMW X5 M proposal?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-1ac1094adc7c541e",
+      "question": "What did Maria commit to sending Nia Brown after their initial discussion about luxury sedans?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-1b9d07523e1c8bba",
+      "question": "What did Liam Murphy commit to sending Ethan Rogers after their call?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-1d2e31f407aae595",
+      "question": "What test drive appointment was scheduled with Gavin Lewis for the Audi Q7, and what will be covered during it?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-2023c0b3c44d08aa",
+      "question": "What did Liam Johnson say his top priorities are for the Family SUV & Safety Package Deal, and what follow-up did Kaito schedule?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-2902779dab6a674e",
+      "question": "What did Elena say the Winter Protection Package for Noah Green's Tesla Model S proposal includes?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-2c0a1ad407b05209",
+      "question": "What is Mason Blake looking for in a fleet upgrade, and what did Felix say differentiates AutoElite's service and maintenance?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-30e26edee7fe9700",
+      "question": "What financing concern did Ava Simpson raise about AutoElite Motors compared to competitors, and how did Linh Nguyen respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-33bb31deda408d17",
+      "question": "What concern did Grace Brown raise about Premium Dealerships Ltd. relative to AutoElite Motors, and how did Amelie respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-3841908242e492f0",
+      "question": "How does AutoElite position its financing against Premium Dealerships Ltd. for Lucas Edwards?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-3868ae825d61ced7",
+      "question": "What did Oliver Black say matters most to him in a new vehicle, and which two models did Linh suggest as fitting his interests?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-3f74f65289781de3",
+      "question": "What objection did Layla Scott raise about AutoElite Motors' pricing compared to other options, and how did Keiko Mori respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-44111beacd9ef333",
+      "question": "What did Isabella Jones say she wants in an eco-friendly luxury vehicle, and which models did Danieles suggest?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-48ea00ef2f739463",
+      "question": "What concern did Benjamin Foster raise about AutoElite's pricing on the Tesla Model S proposal, and how did John Smith respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-4b4ed9e2d75c7c73",
+      "question": "What is Alice Sharp looking for in a family vehicle, and which models did Arjun suggest as matches?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-4f99b3d106c06d1a",
+      "question": "What did Harper Allen say matters most to her in the premium SUV options, and which two models did Tariq present?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-5033e644c07858bf",
+      "question": "What financing options did Hiroshi offer Sophia Turner during their discussion?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-52606c3a45eb5748",
+      "question": "What are the prices of the two pre-owned eco-friendly SUVs quoted to Ella James, and what maintenance coverage is included?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-535445ce0399a272",
+      "question": "Which safety features did Emily say the Mercedes-Benz E-Class and Audi Q7 each offer Eva Simmons?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-5cad89d6858a8f7b",
+      "question": "What warranty coverage does Lucas Green get with the Genesis G80?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-5cbc877aeb405c3b",
+      "question": "What concern did James Nelson raise about AutoElite's competitors, and what next step did he agree to with Luiz?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-617ed1490fdb2881",
+      "question": "What did Anastasia offer to send Alice Sharp after she raised concerns about pricing transparency and service center quality?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-625ce011131c72df",
+      "question": "What next step did Lars commit to for James Walsh's off-road vehicle opportunity?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-62ebda44079d44a3",
+      "question": "For Isaac Thompson's luxury vehicle proposal, what did Aisha commit to do about pricing on the maintenance package?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-633e5abcd885866b",
+      "question": "What did Priyanka say distinguishes AutoElite's maintenance services from competitors for Isabella Jones?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-6f022973a56c14c6",
+      "question": "What post-purchase support options did Enzo offer Amelia Foster for her hybrid purchase?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-796af1c111423b98",
+      "question": "What did Mia say makes AutoElite's financing options stand out for Isabella Murphy's Tesla Model S purchase?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7ac37e11de9fccee",
+      "question": "When Grace White asked how AutoElite's financing compares to competitors, what did Hassan say about negotiation flexibility and terms?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7ae9559e4b61e33f",
+      "question": "What did Grace White say her top priorities are for a premium family vehicle, and which two models did Santiago recommend?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7c818d4cce5ab185",
+      "question": "What pricing did AutoElite quote Sophia Collins for the Volvo XC60 and Ford F-150, and what did Kaito commit to regarding discounts?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7de009992586b627",
+      "question": "What next steps did Samuel commit to for Aiden Clark's Tesla Model S opportunity?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7defdcf380dc3e5c",
+      "question": "What did Hina say about how AutoElite's technology compares to Prestige Car Network for Olivia Wang's luxury and eco-friendly vehicle needs?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7ed4291dc1d273d9",
+      "question": "What are Ava Lee's top priorities for her premium SUV purchase, and which two vehicles did Abigail recommend?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7ee6faf47edf1f57",
+      "question": "What did Lucy Chen say about how AutoElite's financing compares to competitors' for Noah Foster?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-7f219b17a990fe96",
+      "question": "What flexible financing options did John offer David Miller for his luxury vehicle upgrade?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-8523effc6da3c94f",
+      "question": "What did Anastasia commit to send Charlotte Evans after their call about the Luxury Electric Purchase and Maintenance Plan?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-85b2cf5f6cec4d91",
+      "question": "For Ryan Thompson's vehicle purchase, what did Aisha say distinguishes AutoElite's certified pre-owned program from competitors'?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-886aeb91148f915d",
+      "question": "What did Jacob Wilson say matters most to him when evaluating a warranty for his fleet lease?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-8a1c06694071b956",
+      "question": "What's the total price for Lucas Turner's 2021 Volvo XC60 including the Extended Warranty Plan, and when is the closing call scheduled?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-8b381b08f7a43806",
+      "question": "What did Amina say the next step would be after the call with Harper Allen?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-8d3665b430f6d16e",
+      "question": "For Liam Thompson's Premium SUV and Maintenance Package, what did he say about when he'd get back to us, and what next step did Linh propose if he wants to proceed?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-910b282991293817",
+      "question": "What concern did Ava Davidson raise about post-purchase support, and how did Noah say AutoElite is addressing it?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-98171172fb3b136f",
+      "question": "What concerns does Oliver Black raise about the Tesla Model S and how does Kwame address his pre-owned reliability worry?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-990a27a785449355",
+      "question": "What did Ivan say the next steps are for Alice Sharp's family SUV opportunity?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-9980c5df97db0905",
+      "question": "For Ethan Barnes's Cadillac XT6 deal, what does the Paint Protection Plan cover?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-9bb3b7840bdb97ae",
+      "question": "What is holding Liam Thompson back from moving forward on the Volkswagen ID.4, and what did Chinedu commit to do about it?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-9d0e93114621ba4a",
+      "question": "What did Ethan Adams want covered in the discovery meeting about pre-owned SUVs, and which two certified pre-owned models did Liam propose discussing?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-a76fed25076e79f4",
+      "question": "What financing options did Kwesi offer Ethan Rogers for the Tesla Model S?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-a80c78828691b9e8",
+      "question": "What follow-up did Noah commit to for Isabella Murphy regarding the Tesla Model S?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-ac12dcc9482f922c",
+      "question": "What concern did Mia Peterson raise about competitors' technology, and how did Ivan respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-adf27649842b3d4f",
+      "question": "What did Gabriel Silva and Mia Johansson agree on for their upcoming discovery meeting?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-ae674c75469cecf5",
+      "question": "For Emma Daniels' luxury vehicle upgrade, what did she ask Andreas to arrange at the end of the call, and which two models is she deciding between?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-b07a510800d91f62",
+      "question": "What financing options did Kamila offer Zoe Harris, and what concern did Zoe raise about past financing?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-b2eba809ef1c228a",
+      "question": "What essential features is Lucas Gomez looking for in a family SUV, and what did he agree to schedule with Hiroshi?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-b36f8d50b4346d10",
+      "question": "What objection did Ava Lewis raise about AutoElite's pricing compared to competitors, and how did Kwesi respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-b8d999f9af8a07c1",
+      "question": "What concern did Olivia Adams raise about pricing, and how did Anwar Hassan respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-be09f78b39213f54",
+      "question": "What did Amelia Jackson say she's heard about Premium Dealerships Ltd. compared to AutoElite's offer?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-c01c138bb2d3b7ea",
+      "question": "What maintenance coverage does AutoElite Motors offer Amelia Reed, and which competitor did Priyanka contrast with their service packages?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-c136b2f81e1fc32e",
+      "question": "What did Enzo commit to sending Ava Lewis after their discussion about eco-friendly vehicles?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-c8cf0401853514c8",
+      "question": "What next step did Abigail commit to for Sophia Carter's test drives of the Tesla Model S and Camry Hybrid?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-c9baf2f014edd0b2",
+      "question": "What financing flexibility did Rajiv offer Emma Allen for the Camry Hybrid, and how did he address her pricing transparency concern?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-d2e5c535224d6b18",
+      "question": "What next steps did Luis outline for Lucas Wright regarding the 2021 Volvo XC60?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-d6192c305943c74a",
+      "question": "What is Carlos Rivera looking for in a premium SUV, and which two models did Liam suggest?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-d61e927df4600665",
+      "question": "What next step did Liam propose to Ethan Adams at the end of their certified pre-owned SUV discussion, and how did Ethan respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-ebcdac26f86e9682",
+      "question": "What next step did Grace propose to Ethan Barnes after his interest in the Audi Q7 and Volvo XC60?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-ece64b1ac2d8e9d8",
+      "question": "What did Abigail Turner say about High-End Autos Co. as a competitor, and what follow-up did Amelie commit to?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-f165e9eff31cd9a3",
+      "question": "What features is Samuel Perez prioritizing in his vehicle search, and what did Hina commit to sending him?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-f432f89265607c1b",
+      "question": "For Henry Bennett's eco-friendly vehicle proposal, what financing flexibility did Lucia offer regarding prepayment, and which two pre-owned vehicles are included?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-f49469e95662a7a8",
+      "question": "What did William Brooks say matters most to him in a family SUV, and what did Keiko agree to send him afterward?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-f7512fb3c066d7ea",
+      "question": "What concern did Anjali Kapoor raise about competing certified pre-owned programs, and how did Ravi respond?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-f9349ac2e8dd6ba4",
+      "question": "What is included in the proposal for Ethan Rogers' Tesla Model S, and what financing options did Emily describe?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-fb99ad84357dc6d1",
+      "question": "For Mila Clark's premium vehicle purchase, which competitor is she comparing financing rates against, and what did Kaito say differentiates AutoElite's offering?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
+    },
+    {
+      "question_id": "b2c-single_call-fdb9164e431fabdd",
+      "question": "What did Kaito say sets AutoElite's service centers apart from local rivals for Zoe Bennett?",
+      "reason": "Failed customer-event-scope-v2 (fail closed); not necessarily confirmed ambiguity. See exhaustive source audit.",
+      "review_report": "reports/sales-expanded-2000-customer-scope-review-v2.json"
     }
   ],
   "retained_difficult_questions": [
@@ -35,8 +864,8 @@
   "artifact_policy": "Historical source artifacts remain immutable for audit; retired questions must not be mixed into the new active cohort. HF pilot remains available as a legacy release until replacement publication.",
   "tracking_issue": "https://github.com/Endgame-Labs/SalesTranscriptQA/issues/3",
   "active_cohort": {
-    "path": "runs/sales-expanded-2000-v1/reviewed",
-    "questions": 548,
-    "sha256": "97df13c95376df53b670b3bb3371cd42576a071b5232d4308caf8eef0e237c83"
+    "path": "runs/sales-expanded-2000-v1/scope-reviewed",
+    "questions": 410,
+    "sha256": "95239b487791476b35d6cac6e0a8ba7c7b22e7793ce417b957a63f5a4da62e41"
   }
 }

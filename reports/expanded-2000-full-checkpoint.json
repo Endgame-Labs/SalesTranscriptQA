@@ -1,0 +1,78 @@
+{
+  "approved_for_full": true,
+  "reviewed_at": "2026-09-14T17:05:48.552959+00:00",
+  "authorization": "User: if it looks good after that, expand it to do the FULL set; monitor quality and shared $5000 budget hourly.",
+  "question_sha256": "97df13c95376df53b670b3bb3371cd42576a071b5232d4308caf8eef0e237c83",
+  "scope_checkpoint": {
+    "audit_report": "reports/sales-expanded-2000-customer-scope-review-v2.json",
+    "audit_sha256": "74dd4c9d323ee3b2958bc1cba340144b2e9ce8cbd2fdea51c2762c9a743d09c7",
+    "questions": "runs/sales-expanded-2000-v1/scope-reviewed/questions.json",
+    "question_sha256": "95239b487791476b35d6cac6e0a8ba7c7b22e7793ce417b957a63f5a4da62e41",
+    "rag_report": "../2026-09-12-salestranscriptqa-rag-evaluation/reports/expanded-2000-scope-v2"
+  },
+  "budget_limits": {
+    "generation_usd": 4000,
+    "review_usd": 480,
+    "rag_usd": 230,
+    "reserve_usd": 100
+  },
+  "explicit_speaker_prefilter": true,
+  "eligible_source_units": 14916,
+  "source_counts": {
+    "b2b/single_call": 4033,
+    "b2c/single_call": 6796,
+    "b2b/multi_call": 4087
+  },
+  "quality": {
+    "original_questions": 548,
+    "retained_questions": 410,
+    "retained_counts": {
+      "b2b/multi_call": 40,
+      "b2b/single_call": 163,
+      "b2c/single_call": 207
+    },
+    "scope_excluded": 138,
+    "invalid_evidence_exclusions": 8,
+    "protocol": "customer-event-scope-v2",
+    "manual_audit": "reports/hourly-quality/expanded-20260914-17-sample.json",
+    "rag": {
+      "hybrid": {
+        "correct": 362,
+        "n": 410
+      },
+      "hybrid-rerank": {
+        "correct": 401,
+        "n": 410,
+        "single_correct": 367,
+        "single_n": 370,
+        "multi_correct": 34,
+        "multi_n": 40
+      },
+      "oracle": {
+        "correct": 410,
+        "n": 410
+      },
+      "no-context": {
+        "correct": 0,
+        "n": 410
+      }
+    },
+    "decision": "Proceed using unchanged v9 generation prompts and cache, mandatory source/citation plus dual reference-blind complete-customer-history scope gates, and the verified conservative required-speaker absence precheck. All eligible units are included; no B2C multi-call. No RAG-correctness-based exclusions."
+  },
+  "forecast": {
+    "generation_cumulative_usd_approx": 3914,
+    "review_including_scope_usd_approx": 447,
+    "rag_recorded_usd_approx": 182,
+    "full_retained_questions_approx": 3048,
+    "method": "Scale measured stratum yields to all source units; scope review uses measured stratum costs. Generation applies observed 14% total-cost bypass savings only to new units; cached $597.10 remains counted. Forecast is uncertain; stage caps and hourly inspections control spend.",
+    "cost_evidence": "reports/absent-speaker-complete-checkpoint.json"
+  },
+  "limitations": [
+    "Automated construction and judging, not human gold; individual judges still miss alternatives.",
+    "Scope audit covers full account/lead-ID histories plus original cross-group checks, not a proof of corpus-wide unambiguity.",
+    "Quality revision was motivated by error inspection; report both original 548 and retained 410 scores.",
+    "API estimates use configured rates, not invoices. VM/Turbopuffer costs are not in usage ledgers; reserve is an allowance, not measured infrastructure spend.",
+    "Cached older candidate decisions are retained; new group checks may use the deterministic speaker-absence precheck.",
+    "No Hugging Face publication until full workflow and release verification."
+  ]
+}
