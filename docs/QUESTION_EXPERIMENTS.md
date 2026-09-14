@@ -135,3 +135,20 @@ groups from v6, the v8 fresh-seed plan, and the interrupted standalone plan. It 
 running under a $50 allowance, with 100 source units and up to three proposals
 each. No full-corpus generation was started. Readiness remains pending completion,
 output review and replay checks.
+
+After a standalone run completes, verify its artifacts and export accepted questions
+for review (substitute the actual run directory):
+
+```bash
+uv run python scripts/verify_generation_output.py runs/sales-ready-validation-20260918
+uv run python scripts/review_generation_output.py runs/sales-ready-validation-20260918
+uv run python scripts/review_sales_sample.py reports/sales-ready-validation-20260918-accepted.json
+```
+
+The artifact verifier checks the frozen corpus hashes, source-plan scope, complete
+unit counts, excluded groups, absence of B2C multi-call units, JSON/Parquet equality,
+question-ID uniqueness, exact evidence, recorded contract/consistency acceptance,
+and locator checks. It deliberately does not label these integrity checks an
+independent semantic quality estimate. Re-running the original generation command
+after completion should replay checkpoints without new API attempts; this is part
+of the pending end-to-end validation.
