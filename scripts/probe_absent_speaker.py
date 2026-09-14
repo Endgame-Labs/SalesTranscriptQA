@@ -1,4 +1,5 @@
 """Offline high-recall entity absence diagnostic; never changes production gates."""
+import argparse
 import collections
 import json
 import sqlite3
@@ -10,6 +11,7 @@ from salestranscriptqa.speaker_scope import words,speaker_catalog,required_speak
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',type=Path,default=Path('reports/absent-speaker-probe-v2.json'));args=parser.parse_args()
     corpus=[c for d in ['b2b','b2c'] for c in pq.read_table(f'data/corpus/{d}-corpus.parquet').to_pylist()]
     names=speaker_catalog(corpus)
     # Full known speaker names only. Retain a group if ANY name token occurs anywhere.
@@ -36,7 +38,7 @@ def main():
     result={'stats':dict(stats),'known_speaker_names':len(names),'unique_questions':len(qcache),'contradictions':contradictions,'skipped_examples':blocked[:30],
             'production_changed':False,'rule':'Only exact normalized full speaker names in clear subject/recipient/possessive positions; ambiguous syntax falls back. Reject a source group only if every token of at least one such name is absent from its complete metadata/dialogue. Any partial-name occurrence keeps model verification.',
             'limitations':'Agreement with saved model decisions is not proof of universal recall. Query mentions can be incidental; semantic scope and alias regressions must be assessed before adoption.'}
-    Path('reports/absent-speaker-probe-v2.json').write_text(json.dumps(result,indent=2)+'\n')
+    args.output.write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k not in ['skipped_examples','contradictions']}));print('Contradictions',len(contradictions))
 
 if __name__=='__main__':main()

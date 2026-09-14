@@ -27,6 +27,7 @@ def main():
     parser.add_argument('--run-dir',type=Path,required=True)
     parser.add_argument('--corpus',default='data/corpus')
     parser.add_argument('--plan-only',action='store_true',help='Freeze and inspect the source plan without making API calls')
+    parser.add_argument('--explicit-speaker-prefilter',action='store_true',help='Skip model review only for explicit required full speaker names entirely absent from a source group')
     parser.add_argument('--exclude-report',type=Path,action='append',default=[])
     args=parser.parse_args()
     if not 1 <= args.sample <= 2000 or not math.isfinite(args.budget_usd) or args.budget_usd <= 0:
@@ -40,6 +41,9 @@ def main():
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         RATES[JUDGE]=(2.0,0.25,6.0)
         full=SalesQuestionsReliable(args.corpus,args.run_dir,workers=args.workers,proposals=args.proposals)
+        if args.explicit_speaker_prefilter:
+            from salestranscriptqa.speaker_scope import speaker_catalog
+            full.speaker_scope_names=speaker_catalog([c for domain in full.calls.values() for c in domain.values()])
         full.transport.budget_usd=args.budget_usd
         full.recover_interrupted_requests()
         eligible=[u for u in full.plan() if not (u['domain']=='b2c' and u['question_class']=='multi_call')]
@@ -70,6 +74,10 @@ def main():
             selected=[buckets[keys[i%4]].pop() for i in range(args.sample)]
         plan={'scope':'all' if args.all else 'sample','seed':args.seed,'units':selected,
               'eligible_units':len(eligible),'generation_prompt':READY_PROMPT,'excluded_groups':sorted(excluded_groups)}
+        if args.explicit_speaker_prefilter:
+            from salestranscriptqa.speaker_scope import VERSION
+            plan['explicit_speaker_prefilter']=VERSION
+            plan['cache_policy']='Previously completed unit/candidate decisions are retained; the precheck applies to new group checks.'
         plan_path=args.run_dir/'source-plan.json'
         if plan_path.exists() and json.loads(plan_path.read_text())!=plan:
             raise RuntimeError('Source plan changed; choose a new run directory')

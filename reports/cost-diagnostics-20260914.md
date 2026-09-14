@@ -41,3 +41,26 @@ absence rule unsound. It is not enabled in production. Any adoption requires a
 separate checkpoint assessment and protocol record; these savings are not included
 in the current run's budget forecast. Earlier v1 results used a broader rule and
 are retained only as diagnostic history.
+
+
+## Complete-checkpoint speaker-absence review
+
+The completed ledger contains 53,566 group verifier calls costing $540.53.
+The conservative full-name absence rule would bypass 8,657 of those checks,
+accounting for $83.46 of verifier spend (15.4% of this stage, 14.0% of all $597.10
+generation spend; extraction savings are not included). Unlike the earlier partial
+probe, there are 17 `complete=true` disagreements. Inspection shows the model
+substituting another named person—e.g. Andreas for Mai Nguyen, Anwar for Chen Wei,
+Jamal for Liu Wei, and Jorge for Pierre Fontaine—even though every token of the
+required name is absent from the source group's metadata and dialogue. These are
+not evidence that the requested person made the claim. The full raw disagreements
+are retained in `absent-speaker-complete-checkpoint.json`.
+
+An opt-in `--explicit-speaker-prefilter` is prepared, not enabled on the historical
+checkpoint. It records deterministic insufficient groups with absent names,
+preserves all partial-name/metadata matches, falls back on ambiguous syntax, and
+records the policy in the immutable source plan. Output verification recomputes
+each bypass from the original corpus. Cached completed units retain their original
+gates; future full generation can opt in through its explicit checkpoint assessment.
+This is a conservative source-availability rule, not proof of universal alias
+resolution. No existing candidate or model receipt was changed by this diagnostic.

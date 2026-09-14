@@ -21,3 +21,10 @@ def test_negations_alternatives_hypotheticals_and_incidental_mentions_fall_back(
 def test_catalog_excludes_generic_roles_and_single_names():
     names=speaker_catalog([{'dialogue':'[2020] Sales Agent: Hi\n[2020] Mei Chen: Hello\n[2020] Mei: Yes'}])
     assert names=={('mei','chen')}
+
+def test_precheck_records_recomputable_insufficient_group_only():
+    from salestranscriptqa.speaker_scope import precheck_group
+    calls=[{'call_id':'x','dialogue':'[2020] Alex Jones: I will send it.'}]
+    r=precheck_group('What did Mei Chen promise?',calls,NAMES)
+    assert r['classification']=='insufficient' and r['absent_required_speakers']==['mei chen'] and r['call_ids']==['x']
+    assert precheck_group('What did Mei promise?',calls,NAMES) is None

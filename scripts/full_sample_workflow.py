@@ -106,6 +106,8 @@ def main():
             generation = ['uv', 'run', 'python', 'scripts/generate_sales_questions.py', '--all',
                           '--seed', '20260919', '--workers', '16', '--proposals', '3',
                           '--budget-usd', str(limits['generation_usd']), '--run-dir', str(ROOT)]
+            if approval.get('explicit_speaker_prefilter') is True:
+                generation.append('--explicit-speaker-prefilter')
             write_json(ROOT / 'validation-command.json', generation)
             run('source-plan', [*generation, '--plan-only'])
             plan = json.loads((ROOT / 'source-plan.json').read_text())

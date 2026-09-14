@@ -150,8 +150,13 @@ class SalesQuestionsReady(SalesQuestionsGLM):
                 group = c.get('group_id') or c['call_id']
                 if group in groups:
                     groups[group].append(c)
-            checks = [check_group_v2(question,self.local.generated['gold_answer'],groups[g],self.transport)
-                      for g in sorted(groups)]
+            checks=[]
+            for g in sorted(groups):
+                precheck=None
+                if getattr(self,'speaker_scope_names',None) is not None:
+                    from .speaker_scope import precheck_group
+                    precheck=precheck_group(question,groups[g],self.speaker_scope_names)
+                checks.append(precheck or check_group_v2(question,self.local.generated['gold_answer'],groups[g],self.transport))
             decision = aggregate(checks)
             # Adapt the historical Pilot interface: original citations remain the annotation,
             # but source identity is no longer the acceptance criterion. Keep all group evidence.

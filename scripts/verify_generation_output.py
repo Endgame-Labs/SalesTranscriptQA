@@ -10,6 +10,7 @@ from salestranscriptqa.pilot import evidence_check
 from salestranscriptqa.question_style import locator_flags
 from salestranscriptqa.answer_consistency import aggregate
 from salestranscriptqa.corpus import write_json
+from salestranscriptqa.speaker_scope import VERSION, precheck_group, speaker_catalog
 
 
 def main():
@@ -40,6 +41,7 @@ def main():
     parquet=[q for domain in ['b2b','b2c'] for q in pq.read_table(root/f'{domain}-test.parquet').to_pylist()]
     canonical=lambda rows:json.dumps(sorted(rows,key=lambda q:q['question_id']),sort_keys=True)
     assert canonical(parquet)==canonical(questions)
+    scope_names=speaker_catalog(calls.values()) if plan.get("explicit_speaker_prefilter") else frozenset()
     for q in questions:
         assert not locator_flags(q['question'])
         source=[calls[cid] for cid in q['supporting_call_ids']]
@@ -51,6 +53,11 @@ def main():
         gate=candidate['stages']['specificity']
         assert gate['method']=='reference-blind-group-consistency-v2'
         assert aggregate(gate['groups'])=='consistent_in_pool'
+        for group in gate['groups']:
+            if group.get('method')==VERSION:
+                checked=precheck_group(q['question'],[calls[cid] for cid in group['call_ids']],scope_names)
+                assert checked==group and checked['classification']=='insufficient'
+                assert plan.get('explicit_speaker_prefilter')==VERSION
         assert candidate['stages']['final_audit']['pass'] is True
     selection=json.loads((root/'selected/selection.json').read_text())
     selected=json.loads((root/'selected/questions.json').read_text())

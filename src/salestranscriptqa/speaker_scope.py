@@ -44,3 +44,11 @@ def absent_speakers(question,calls,names):
     required=required_speakers(question,names)
     source_tokens=set(words(json.dumps(calls,ensure_ascii=False)))
     return [' '.join(name) for name in required if not set(name)&source_tokens]
+
+
+def precheck_group(question,calls,names):
+    absent=absent_speakers(question,calls,names)
+    if not absent:return None
+    return {'call_ids':[c['call_id'] for c in calls],'classification':'insufficient',
+            'method':VERSION,'absent_required_speakers':absent,
+            'reason':'Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue.'}
