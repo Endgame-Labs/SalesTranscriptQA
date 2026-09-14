@@ -1,0 +1,372 @@
+[
+  {
+    "question_id": "b2b-multi_call-895389f91da9db1e",
+    "question": "For InnoBuild Constructors, what discount did Pierre say was applied to SecureTrack Pro, and how did Samir describe competitors' compliance offerings in the earlier discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The discount Pierre said was applied to SecureTrack Pro for InnoBuild Constructors; 2) How Samir described competitors' compliance offerings in an earlier discussion.",
+        "relationship": "Two independent fact lookups joined by the same account: a commercial pricing detail and a separate competitive-landscape comment.",
+        "reason": "The discount applied to SecureTrack Pro and Samir's characterization of competitors' compliance offerings address different business issues (pricing vs. competitive positioning). Sharing the account InnoBuild Constructors is not enough to connect them, and no single coherent issue (e.g., pricing negotiation shaped by competition) is stated."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the discount Pierre mentioned for SecureTrack Pro (5% volume discount, found in the Feb 2023 call) and (2) Samir's characterization of competitors' compliance offerings (beneficial in certain aspects, making the decision tougher, found in the Dec 2022 call). Each source contributes an exclusive requested fact. The gold answer accurately reflects both transcripts without adding unasked information. The question is naturally phrased, scoped to a named account and product, and represents a plausible rep need to recall pricing terms and competitive positioning context.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Pierre Fontaine explicitly states 'We've already applied a 5% discount considering the volume you're purchasing' in reference to SecureTrack Pro, directly supporting the claim of a 5% volume-based discount on SecureTrack Pro."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Samir Hussain states 'they were quite beneficial in certain aspects of compliance, making our decision tougher,' which directly supports the claim that Samir described competitors as beneficial in certain aspects of compliance, making the decision tougher."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported by the cited evidence: (1) Evidence index 0 confirms Pierre stated a 5% discount was applied to SecureTrack Pro based on volume, and (2) Evidence index 1 confirms Samir said competitors were beneficial in certain aspects of compliance, making the decision tougher. The combined citations cover all factual claims in the gold answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-c1b57cc3fea8b334",
+    "question": "For Circuit Dynamics, which competing vendor did Juan Lopez mention evaluating, and what quote did Pierre give for PulseSim Pro in the later demo?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the competing vendor Juan Lopez mentioned evaluating for Circuit Dynamics, and the quote Pierre provided for PulseSim Pro in the later demo.",
+        "relationship": "Both facts concern the same competitive evaluation/procurement issue for Circuit Dynamics: the competitor under consideration and the commercial quote for the product positioned against it.",
+        "reason": "The competitor mention and the PulseSim Pro quote address the same business issue (vendor selection/competitive comparison), not merely the same account, and the wording is plausible sales language."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2zVIAS",
+                "fact": "Juan Lopez mentioned evaluating Adaptive Design Solutions as a competing vendor.",
+                "why_other_call_cannot_supply_it": "The later demo call does not mention Adaptive Design Solutions or any competing vendor evaluation."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4L9IAK",
+                "fact": "Pierre quoted PulseSim Pro at $3324.93 with discounts applied.",
+                "why_other_call_cannot_supply_it": "The earlier call does not provide any specific quote or pricing for PulseSim Pro."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the competing vendor mentioned in the earlier call and the quote given in the later demo. Each fact is exclusively present in one call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2zVIAS",
+                  "fact": "Juan Lopez mentioned evaluating Adaptive Design Solutions as a competing vendor.",
+                  "why_other_call_cannot_supply_it": "The later demo call does not mention Adaptive Design Solutions or any competing vendor evaluation."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4L9IAK",
+                  "fact": "Pierre quoted PulseSim Pro at $3324.93 with discounts applied.",
+                  "why_other_call_cannot_supply_it": "The earlier call does not provide any specific quote or pricing for PulseSim Pro."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the competing vendor mentioned in the earlier call and the quote given in the later demo. Each fact is exclusively present in one call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2zVIAS",
+                "fact": "Juan Lopez mentioned evaluating Adaptive Design Solutions as a competing vendor",
+                "why_other_call_cannot_supply_it": "The second call contains no mention of Adaptive Design Solutions or any competitor evaluation"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4L9IAK",
+                "fact": "Pierre quoted PulseSim Pro at $3324.93 with discounts applied during the demo",
+                "why_other_call_cannot_supply_it": "The first call contains no pricing quote for PulseSim Pro, only general statements about competitive total cost of ownership"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the competitor Juan mentioned (only in the first call) and the specific PulseSim Pro quote (only in the second call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2zVIAS",
+                  "fact": "Juan Lopez mentioned evaluating Adaptive Design Solutions as a competing vendor",
+                  "why_other_call_cannot_supply_it": "The second call contains no mention of Adaptive Design Solutions or any competitor evaluation"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4L9IAK",
+                  "fact": "Pierre quoted PulseSim Pro at $3324.93 with discounts applied during the demo",
+                  "why_other_call_cannot_supply_it": "The first call contains no pricing quote for PulseSim Pro, only general statements about competitive total cost of ownership"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the competitor Juan mentioned (only in the first call) and the specific PulseSim Pro quote (only in the second call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two specific facts: (1) the competing vendor Juan Lopez mentioned evaluating, found in the first call where Juan says 'We've also been looking at Adaptive Design Solutions,' and (2) the PulseSim Pro quote from the later demo, found in the second call where Pierre states '$3324.93 with discounts applied.' Both facts are verified verbatim in their respective transcripts. Each source contributes an exclusive requested fact (vendor name only in call 1, quote only in call 2), so both_sources_required is true. The question is naturally worded, adequately scoped to the Circuit Dynamics account and Juan Lopez, and a rep would plausibly want to recall competitive intel and pricing history. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Juan Lopez explicitly states 'We've also been looking at Adaptive Design Solutions' and mentions 'cost is a critical factor for us,' directly supporting the claim that Juan mentioned evaluating Adaptive Design Solutions and that cost is a critical factor."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Pierre Fontaine explicitly states 'with PulseSim Pro, you have the quote at $3324.93 with discounts applied,' directly supporting the claim that Pierre gave a quote of $3324.93 with discounts applied for PulseSim Pro."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states two facts: (1) the competing vendor Juan Lopez mentioned evaluating was Adaptive Design Solutions, and (2) Pierre quoted PulseSim Pro at $3324.93 with discounts applied. Evidence index 0 directly supports fact (1) with Juan's own words, and evidence index 1 directly supports fact (2) with Pierre's own words. Both facts are fully covered by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-53013c395a893d8b",
+    "question": "What concern did Fatima Jalal raise about NanoDesign, and what did Ming say TechPulse offers comprehensive sessions for?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the concern Fatima Jalal raised about NanoDesign and what Ming said TechPulse offers comprehensive sessions for",
+        "relationship": "objection and response",
+        "reason": "The question pairs a customer's concern with the salesperson's corresponding response (comprehensive sessions addressing that concern), forming one coherent objection-and-response request about the same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both facts come from the single call: Fatima explicitly states 'flexibility has been a concern' regarding NanoDesign keeping up with evolving requirements, and Ming states they 'offer comprehensive training sessions to make the transition as smooth as possible.' The gold answer accurately captures both. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall a customer's stated concern about a competitor and the training commitment made. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Fatima Jalal the statement that 'flexibility has been a concern' regarding whether 'NanoDesign can keep up with our evolving requirements.' This matches the answer_claim exactly, preserving speaker, subject (NanoDesign), and the specific concern (flexibility with evolving requirements)."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Ming Zhao responding to Fatima's question about training by stating 'we offer comprehensive training sessions to make the transition as smooth as possible.' This supports the claim that comprehensive training sessions are offered to ease the transition. The speaker is correctly attributed to Ming Zhao, and the purpose (smooth transition) is explicitly stated."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Fatima said flexibility is a concern with NanoDesign keeping up with evolving requirements \u2014 directly supported by evidence index 0. (2) Ming said TechPulse offers comprehensive training sessions to ease the team's transition \u2014 supported by evidence index 1, where Ming Zhao says 'we offer comprehensive training sessions to make the transition as smooth as possible.' The reference to 'TechPulse' is contextually supported by the opportunity name 'TechSavvy-Partnership-Expansion' and the account 'TechSavvy Innovations,' and Ming's use of 'we' and 'our tools' identifies his company. The gold_answer's phrasing 'ease the team's transition' is a faithful paraphrase of 'make the transition as smooth as possible' in the context of Fatima's concern about her team. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-4207a7b2b2168d2c",
+    "question": "What security concerns did Ibrahim Ahmad raise about CircuitWave, and how did Priyanka say SecureFlow Suite addresses them?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The security concerns Ibrahim Ahmad raised about CircuitWave and Priyanka's explanation of how SecureFlow Suite addresses them",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "This is a single coherent request pairing a customer's security objection with the salesperson's response addressing that same concern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection (CircuitWave security gaps) and the rep's counter-positioning (SecureFlow Suite encryption and compliance), which a rep/account manager would plausibly want to recall. The dialogue confirms Ibrahim raised 'gaps in security' with CircuitWave and Priyanka responded with 'end-to-end encryption' and 'latest compliance standards' protecting data 'throughout processing and transmission.' The gold answer faithfully restates these facts without adding unasked extras or leaking information. Wording is natural, no artificial locator preamble, and the scope (SkyLevel Systems / AI Design Initiative context) is sufficient. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Ibrahim Ahmad explicitly states 'We've faced some challenges with CircuitWave before, particularly with their gaps in security which is crucial for us.' This directly supports the claim that Ibrahim raised CircuitWave's security gaps as a crucial concern."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Priyanka Iyer explicitly states 'SecureFlow Suite offers end-to-end encryption and adheres to the latest compliance standards. This ensures your data is protected throughout processing and transmission.' This directly supports the claim about end-to-end encryption, latest compliance standards, and data protection during processing and transmission."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Ibrahim cited CircuitWave's security gaps \u2014 supported by index 0; (2) Priyanka said SecureFlow Suite offers end-to-end encryption \u2014 supported by index 1; (3) adheres to the latest compliance standards \u2014 supported by index 1; (4) protecting data during processing and transmission \u2014 supported by index 1. All factual claims in the gold_answer are covered by the two cited evidence items."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-9973cda6d4b5732e",
+    "question": "What pricing did Enzo quote David Miller for the Tesla Model S and Mercedes-Benz E-Class, and what add-on options were mentioned?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted for two vehicles plus the add-on options mentioned in the same quote",
+        "relationship": "single coherent quote request: prices and associated add-ons from one quoting interaction",
+        "reason": "The question asks for a commercial quote breakdown (vehicle prices and add-on options) within the same sales conversation, which is one coherent information need."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about pricing and add-on options quoted in a specific sales conversation between Enzo Rossi and David Miller regarding two vehicles. All four figures in the gold answer ($89,999.99 for Tesla Model S, $65,999.99 for Mercedes-Benz E-Class, $1,299.99 Extended Warranty, $3,999.99 Luxury Lease Solutions) are explicitly stated in the single call transcript at timestamps 15:02:25 and 15:02:50. The question is adequately scoped by naming the rep, customer, and vehicles. Wording is natural for a rep or account manager reviewing commercial terms. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Enzo Rossi explicitly states the Tesla is priced at $89,999.99 and the Mercedes is $65,999.99, and mentions both come with options like Extended Warranty and Luxury Lease Solutions. This directly supports the answer_claim about pricing and add-on options."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Enzo Rossi explicitly states the Extended Warranty costs an additional $1,299.99 and Luxury Lease Solutions is $3,999.99. This directly supports the answer_claim about the specific add-on pricing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Tesla Model S is $89,999.99, Mercedes-Benz E-Class is $65,999.99, Extended Warranty at $1,299.99, and Luxury Lease Solutions at $3,999.99. Evidence index 0 confirms both vehicle prices and names the two add-on options. Evidence index 1 confirms the exact prices of both add-ons. All factual claims in the gold_answer are fully supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-8848ea3236dde6b8",
+    "question": "What did Noah Johnson say about AutoElite's extended warranties, and what follow-up did Vanessa commit to regarding the Tesla Model S?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) What Noah Johnson said about AutoElite's extended warranties; 2) What follow-up Vanessa committed to regarding the Tesla Model S.",
+        "relationship": "Two independent fact lookups joined only by the same call/account; the warranty comment and the Tesla Model S follow-up are not stated to address the same business issue.",
+        "reason": "The question bundles an unrelated opinion lookup (extended warranties) with a separate commitment lookup (Tesla Model S follow-up) with no stated connection between the topics, matching the reject pattern of two independent needs artificially joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question asks two specific facts from a single call: Noah's reaction to extended warranties and Vanessa's follow-up commitment regarding the Tesla Model S. The dialogue confirms Noah said the warranties are 'truly understandable and meet general requirements' but he'd 'appreciate more personalized options,' matching the gold answer. Vanessa offered to invite Noah to a 'virtual product demonstration next week' of the Tesla Model S and committed to sending the invite, matching the gold answer. The question is naturally worded, scoped to a named customer and account, and a rep would plausibly want to recall this feedback and next step. Since question_class is single_call, both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Noah Johnson saying the warranties are 'truly understandable and meet general requirements' (positive/appreciative) but he 'would personally appreciate more personalized options.' This matches the answer_claim that he appreciated understandable warranties but wanted more personalized options."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote shows Vanessa proposing a virtual product demonstration 'next week' and offering to invite Noah, and Noah accepting. However, the answer_claim states Vanessa said she will send the invite 'right after the call.' The quoted passage contains no such timing commitment ('right after the call' is absent). The gold_answer's 'next week' timing for the demonstration is supported, but the specific claim about when the invite will be sent is not present in the cited text."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Noah found warranties understandable but wanted more personalized options \u2013 fully supported by evidence index 0. (2) Vanessa committed to sending him an invite to a virtual Tesla Model S demonstration next week \u2013 the virtual demonstration 'next week' and the invitation commitment are supported by evidence index 1 (Vanessa says 'I can invite you to join' and Noah accepts). The gold_answer does not include the unsupported 'right after the call' timing from the evidence claim. The only minor gap is that the quote says 'virtual product demonstration' without explicitly naming 'Tesla Model S,' but the opportunity metadata ('Luxury and Eco-Friendly Solution for Noah Johnson') and the reference to 'eco-friendly perks' provide contextual identification. Overall the gold_answer's factual claims are supported by the combined citations."
+      }
+    }
+  }
+]
