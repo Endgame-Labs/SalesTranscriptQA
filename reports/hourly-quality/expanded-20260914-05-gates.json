@@ -1,0 +1,164 @@
+[
+  {
+    "question_id": "b2b-multi_call-23ec2bef2c56dca6",
+    "question": "What scalability concern did Olga Romanov raise for Nordic HealthTech in the initial discussion, and how did Mei address customization in the follow-up call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The scalability concern Olga Romanov raised for Nordic HealthTech in the initial call; 2) How Mei addressed customization in the follow-up call.",
+        "relationship": "Two independent fact lookups joined only by the same account/call participants.",
+        "reason": "Scalability concerns and customization handling are separate business issues; sharing the same account does not connect them into one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks for two distinct facts: (1) Olga's scalability concern from the initial call (Call 1, 2023-03-05: 'maintaining pace with the fast-evolving healthcare sector and being able to customize and expand features swiftly') and (2) Mei's customization response in the follow-up (Call 2, 2023-03-09: 'AI Cirku-Tech\u2026offers user-friendly adjustments and scalability options that can be tailored to suit Nordic HealthTech's specific needs'). Both claims are verified verbatim in the respective dialogues. Each source contributes an exclusive requested fact\u2014Call 1 supplies the scalability concern, Call 2 supplies the customization answer\u2014so both_sources_required is true. The question is naturally worded, adequately scoped to the Nordic HealthTech account and named participants, and a rep would plausibly want to recall these requirement-level details. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-7936d71c0a09f4a6",
+    "question": "For EcoWave Solutions, what pricing concern did Amelia Rodriguez raise in the follow-up discussion, and what commitment did Mei Lin make in the initial call about the customization proposal?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A pricing concern raised by Amelia Rodriguez in a follow-up call, and a commitment Mei Lin made in an initial call about a customization proposal",
+        "relationship": "Two independent fact lookups joined only by the same account (EcoWave Solutions)",
+        "reason": "The pricing concern and the customization commitment are unrelated business issues from two different calls; sharing the same customer is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct facts across two calls for the EcoWave Solutions account. Call 2 (2021-07-13) contains Amelia's pricing objection: 'the upfront investment seems higher compared to some other offers we've received' while acknowledging competitive TCO. Call 1 (2021-06-19) contains Mei's commitment: 'I'll have the proposal ready and sent over by the end of the month.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both claims without extras. The question is naturally phrased, adequately scoped by account and participant names, and represents a plausible rep need to recall a customer objection and a prior commitment."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-fa426f2d7fb50c32",
+    "question": "What did Sofia Russo say about Quantum Circuits Inc's pricing, and what concern did she raise about FutureTech's security needs?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Sofia Russo's comments on Quantum Circuits Inc's pricing and her concern about FutureTech's security needs",
+        "relationship": "two independent fact lookups joined by the same speaker",
+        "reason": "The question combines an unrelated pricing remark and a separate security concern; sharing a speaker/call context does not make them one coherent information need."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Sofia Russo explicitly states Quantum Circuits Inc's pricing model was 'a bit unpredictable' and raises FutureTech's need for solutions meeting 'stringent security requirements' and 'strict compliance requirements.' The gold answer captures both facts accurately without unasked extras. The question is naturally phrased, scoped to a specific customer/contact, and a rep would plausibly want this competitive and requirements intel. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-1752ff620f753806",
+    "question": "What discount did TechPulse offer InnovateGrid Systems on the EcoPCB Creator and CircuitMaster Analyzer, and how many EcoPCB Creator units were quoted?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount offered on the EcoPCB Creator and CircuitMaster Analyzer, plus the quoted quantity of EcoPCB Creator units",
+        "relationship": "single coherent quote lookup",
+        "reason": "All requested facts come from the same commercial quote to the same customer: discounts on the quoted products and the unit quantity are part of one quote breakdown."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the discount percentage on two specific products and the unit count for one of them. The single call transcript confirms Santiago Fernandez states a 5% discount on both EcoPCB Creator and CircuitMaster Analyzer and mentions eight units of EcoPCB Creator at the discounted rate. The gold answer matches these facts exactly with no unasked extras. The question is naturally phrased, identifies the account (InnovateGrid Systems) and vendor (TechPulse) clearly, and a rep would plausibly need to recall quoted discount terms and quantities. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-ece64b1ac2d8e9d8",
+    "question": "What did Abigail Turner say about High-End Autos Co. as a competitor, and what follow-up did Amelie commit to?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Abigail Turner said about High-End Autos Co. as a competitor and the follow-up Amelie committed to",
+        "relationship": "single coherent issue: competitive discussion and the resulting follow-up commitment",
+        "reason": "The follow-up directly addresses the same competitive concern raised, forming one objection/competitive-comparison thread with next steps."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The transcript confirms Abigail Turner stated High-End Autos Co. has appealing luxury pricing but weaker service coverage, and Amelie committed to sending detailed financing options for comparison. The question naturally targets competitive positioning and a next-step commitment a rep would track. Wording is natural, scope is clear (named customer and competitor), and the answer states exactly the two requested facts without extras. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-7219ba7ba1a7facd",
+    "question": "What additional services does Sophia Carter get if she finances through AutoElite?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the additional services/benefits Sophia Carter receives if she finances through AutoElite.",
+        "relationship": "single coherent lookup about one customer's financing benefits",
+        "reason": "One coherent information request about the perks tied to a specific financing option for one customer; no unrelated needs joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what additional services Sophia Carter receives when financing through AutoElite. The transcript at 14:33:10 has Bakari explicitly stating 'comprehensive maintenance plans and extended warranties,' which matches the gold answer exactly with no unasked extras. The question is naturally phrased, scoped to a named customer and a specific business context (financing through AutoElite), and a rep/account manager would plausibly want to confirm bundled service offerings for their customer. Single-call set, so both_sources_required is true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    }
+  }
+]
