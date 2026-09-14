@@ -1,0 +1,224 @@
+[
+  {
+    "question_id": "b2b-multi_call-da272e5e2966e77c",
+    "question": "For EcoTech Manufacturing's expansion, what pricing did Giuseppe quote for QuantumPCB Modeler and OptiPower Max, and what deployment timeline did he give earlier?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted for QuantumPCB Modeler and OptiPower Max plus the deployment timeline given earlier for EcoTech Manufacturing's expansion",
+        "relationship": "single coherent quote: product pricing and deployment timeline for the same expansion deal",
+        "reason": "The pricing and timeline both concern the same commercial proposal for the same expansion, forming one quote breakdown rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for pricing and deployment timeline. Pricing is only in the second call, and the deployment timeline is only in the first call. However, the question does not require both calls for a meaningful answer; it could be answered by consulting both calls, but the information is not overlapping or redundant. Yet, the instruction says to reject if both repeat one fact or if facts are unrelated lookups joined together. Here, the pricing and timeline are distinct facts from different calls, but the question explicitly requests both, so both calls are necessary to provide the complete answer. However, the instruction also says 'If necessary=true give exactly one essential fact per source call.' Since the pricing is only in call 2 and timeline only in call 1, each call provides a unique fact. But the instruction says 'Reject if either source suffices for the actual information need' \u2013 here neither source suffices alone because one lacks pricing and the other lacks timeline. So necessary should be true. But the instruction also says 'if both repeat one fact' \u2013 they don't. So I think necessary=true. However, the instruction says 'Do not invent causality or progression' \u2013 we don't. So I'll set necessary=true and list the exclusive facts. But wait, the question says 'what pricing did Giuseppe quote for QuantumPCB Modeler and OptiPower Max, and what deployment timeline did he give earlier?' The word 'earlier' might imply the timeline was given in an earlier call, which is call 1. So indeed, both calls are needed. So necessary=true. I'll provide exclusive facts: for call 1, the deployment timeline of four to six weeks; for call 2, the pricing details. The why other call cannot supply it: call 2 does not mention deployment timeline, call 1 does not mention pricing for these products. So I'll output that."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for pricing and deployment timeline. Pricing is only in the second call, and the deployment timeline is only in the first call. However, the question does not require both calls for a meaningful answer; it could be answered by consulting both calls, but the information is not overlapping or redundant. Yet, the instruction says to reject if both repeat one fact or if facts are unrelated lookups joined together. Here, the pricing and timeline are distinct facts from different calls, but the question explicitly requests both, so both calls are necessary to provide the complete answer. However, the instruction also says 'If necessary=true give exactly one essential fact per source call.' Since the pricing is only in call 2 and timeline only in call 1, each call provides a unique fact. But the instruction says 'Reject if either source suffices for the actual information need' \u2013 here neither source suffices alone because one lacks pricing and the other lacks timeline. So necessary should be true. But the instruction also says 'if both repeat one fact' \u2013 they don't. So I think necessary=true. However, the instruction says 'Do not invent causality or progression' \u2013 we don't. So I'll set necessary=true and list the exclusive facts. But wait, the question says 'what pricing did Giuseppe quote for QuantumPCB Modeler and OptiPower Max, and what deployment timeline did he give earlier?' The word 'earlier' might imply the timeline was given in an earlier call, which is call 1. So indeed, both calls are needed. So necessary=true. I'll provide exclusive facts: for call 1, the deployment timeline of four to six weeks; for call 2, the pricing details. The why other call cannot supply it: call 2 does not mention deployment timeline, call 1 does not mention pricing for these products. So I'll output that."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T09NIAS",
+                "fact": "Pricing quotes: QuantumPCB Modeler 12 licenses at 10% discount totaling $6,479.89; OptiPower Max 6 licenses at 5% discount totaling $2,792.94",
+                "why_other_call_cannot_supply_it": "The January 19 call discusses only SecureFlow Suite and CloudLink Designer; no pricing for QuantumPCB Modeler or OptiPower Max appears there."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqZtIAK",
+                "fact": "Deployment timeline: typically four to six weeks to be fully up and running",
+                "why_other_call_cannot_supply_it": "The February 14 demo call contains no deployment timeline; it covers features, scalability, and pricing only."
+              }
+            ],
+            "reason": "The question requests two distinct facts: product pricing (only in the Feb 14 call) and deployment timeline (only in the Jan 19 call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T09NIAS",
+                  "fact": "Pricing quotes: QuantumPCB Modeler 12 licenses at 10% discount totaling $6,479.89; OptiPower Max 6 licenses at 5% discount totaling $2,792.94",
+                  "why_other_call_cannot_supply_it": "The January 19 call discusses only SecureFlow Suite and CloudLink Designer; no pricing for QuantumPCB Modeler or OptiPower Max appears there."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SqZtIAK",
+                  "fact": "Deployment timeline: typically four to six weeks to be fully up and running",
+                  "why_other_call_cannot_supply_it": "The February 14 demo call contains no deployment timeline; it covers features, scalability, and pricing only."
+                }
+              ],
+              "reason": "The question requests two distinct facts: product pricing (only in the Feb 14 call) and deployment timeline (only in the Jan 19 call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks a rep to recall pricing quoted for two specific products and a deployment timeline previously discussed for EcoTech Manufacturing's expansion. Call 2 (2021-02-14) provides the exclusive pricing facts: QuantumPCB Modeler 12 licenses at 10% discount = $6,479.89 and OptiPower Max 6 licenses at 5% discount = $2,792.94. Call 1 (2021-01-19) provides the exclusive deployment-timeline fact: four to six weeks. Each source contributes a distinct requested fact, satisfying the multi-call requirement. The gold answer states exactly the requested facts with no unasked extras. No artificial locator preamble, no answer leakage, no unsupported causality. The phrasing 'what deployment timeline did he give earlier?' is a natural follow-up reference to the prior call."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-f4cbf0d84f5ba612",
+    "question": "For TechFusion, what shortcomings did Santiago Cruz cite about NanoDesign's solutions, and what current discounts did Olivia offer on TechPulse products?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) Shortcomings Santiago Cruz cited about NanoDesign's solutions for TechFusion; 2) current discounts Olivia offered on TechPulse products.",
+        "relationship": "Two independent fact lookups (competitive criticism vs. pricing/discount offer) joined only by the same account.",
+        "reason": "The competitive shortcomings of NanoDesign and the discount offer on TechPulse products are unrelated business issues; sharing the TechFusion account context does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Call 1 has Santiago Cruz explicitly stating NanoDesign falls short on customization and support services; Call 2 has Olivia detailing the 10% discount on AI Cirku-Tech for 10 units and 5% on SecureFlow Suite and CircuitAI Innovator for other quantities. Each source contributes an exclusive requested fact. The question naturally identifies the account (TechFusion), the contact (Santiago Cruz), and the competitor (NanoDesign), which a rep would plausibly want to recall. The gold answer matches the sources precisely with no unasked extras or leakage. No artificial locator preamble, no unsupported causality, and wording is natural."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-418f8892e979a5e2",
+    "question": "What did Samir Hussain say was lacking in the Quantum Circuits Inc. solution InnoBuild previously tried?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Samir Hussain identified as lacking in Quantum Circuits Inc.'s previously tried solution",
+        "relationship": "single lookup of one stated shortcoming",
+        "reason": "A single fact lookup about one customer's prior solution gap, natural sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question asks what Samir Hussain identified as lacking in the Quantum Circuits Inc. solution InnoBuild previously tried. The dialogue at 13:01:20 has Samir stating 'their rigid frameworks really held us back, particularly Quantum Circuits Inc. They lacked the flexibility we needed.' The gold answer accurately captures this: rigid frameworks lacking flexibility for design automation requirements. The question is naturally worded, scoped to a specific customer (InnoBuild) and contact (Samir Hussain), and represents a realistic sales need (understanding a competitive objection/pain point). No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-a0c80b55e0807610",
+    "question": "What did Noah Singh flag as Nova Healthcare Tech's top priority, and what did Chen say TechPulse emphasizes versus competitors on feature updates?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Two independent lookups: (1) Noah Singh's stated top priority for Nova Healthcare Tech, and (2) what Chen said TechPulse emphasizes versus competitors on feature updates.",
+        "relationship": "No substantive relationship; two unrelated fact lookups about different customers joined together.",
+        "reason": "The question combines a priority flag from one account (Nova Healthcare Tech) with a competitive positioning statement from a different account (TechPulse). These are independent information needs concerning different business issues, not the same issue across calls."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "decision_criteria",
+        "locator_preamble": false,
+        "reason": "Both facts are verified in the single call: Noah Singh states 'Security compliance and data protection are big priorities for us' and Chen Lixin says TechPulse emphasizes 'the quality and effectiveness of our features' versus competitors who emphasize frequent updates. The question naturally targets decision criteria a rep would track. No locator preamble, no answer leakage, no unsupported claims. Since question_class is single_call, both_sources_required is set true per instructions."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-5dc43fae7779cee1",
+    "question": "What's the total price quoted to Emma Daniels for the Tesla Model S, Mercedes-Benz E-Class, maintenance plan, and extended warranty?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total quoted price for a bundle: Tesla Model S, Mercedes-Benz E-Class, maintenance plan, and extended warranty quoted to Emma Daniels",
+        "relationship": "single coherent commercial quote breakdown for one customer",
+        "reason": "The question asks for one quote total covering a coherent set of items in a single transaction; no unrelated lookups are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the total quoted price across four specific line items for a named customer. The dialogue explicitly states the Tesla Model S at $89,999.99, Mercedes-Benz E-Class at $65,999.99, maintenance plan at $1,999.99, and extended warranty at $1,299.99, summing to $159,299.96, which matches the gold answer exactly. The question is naturally phrased, scoped to a specific customer and deal, and a rep/account manager would plausibly need this pricing confirmation. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-28a66c6357e194e7",
+    "question": "What did Jack Robinson say about his interest in the Tesla Model S and what follow-up did Rajeev schedule with him?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Jack Robinson's stated interest in the Tesla Model S and the follow-up Rajeev scheduled with him",
+        "relationship": "single coherent issue: the customer's interest and the corresponding next step on that same opportunity",
+        "reason": "Both parts concern the same sales opportunity (Robinson's Model S interest) and its natural follow-up, forming one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Jack's stated interest in the Tesla Model S (performance and green credentials) and the follow-up Rajeev scheduled (a discovery meeting the next day). Both are verbatim-supported in the dialogue. The rep/account-manager context is plausible\u2014knowing a prospect's model interest and next-step commitment is core sales intelligence. Wording is natural, scope is clear (named customer, named product, named rep), and the answer contains exactly the requested facts with no extras or leakage. No locator preamble, no artificial clue lists, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    }
+  }
+]
