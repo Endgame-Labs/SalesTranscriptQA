@@ -1,0 +1,368 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "925b3aeb58a6e8474c59656381a6dbfca4fad3583ef62ae92e6095d02365bc36",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.40453083,
+  "results": [
+    {
+      "question_id": "b2b-single_call-2fdb305bb1e199f7",
+      "question": "What pricing adjustment did Nikhil Reddy request on the SecureFlow Suite proposal for NaviCorp Tech, and what did Kofi commit to doing about it?",
+      "gold_answer": "Nikhil asked for cost adjustments on SecureFlow Suite to make it more accessible for larger-scale deployment; Kofi agreed to pass the request to the finance team to review pricing flexibility.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgQIAS",
+        "b2b:a05Wt000003SrSjIAK",
+        "b2b:a05Wt000003StW9IAK",
+        "b2b:a05Wt000003Suk6IAC",
+        "b2b:a05Wt000003SutbIAC",
+        "b2b:a05Wt000003Svl1IAC",
+        "b2b:a05Wt000003SvplIAC",
+        "b2b:a05Wt000003SwM1IAK",
+        "b2b:a05Wt000003Swc3IAC",
+        "b2b:a05Wt000003Sx5FIAS",
+        "b2b:a05Wt000003Sx5GIAS",
+        "b2b:a05Wt000003SxzgIAC",
+        "b2b:a05Wt000003SySbIAK",
+        "b2b:a05Wt000003SyZ3IAK",
+        "b2b:a05Wt000003SyyzIAC",
+        "b2b:a05Wt000003Sz6vIAC",
+        "b2b:a05Wt000003Szv3IAC",
+        "b2b:a05Wt000003SzwcIAC",
+        "b2b:a05Wt000003T0sfIAC",
+        "b2b:a05Wt000003T18gIAC",
+        "b2b:a05Wt000003T1v6IAC",
+        "b2b:a05Wt000003T24qIAC",
+        "b2b:a05Wt000003T26OIAS",
+        "b2b:a05Wt000003T2w1IAC",
+        "b2b:a05Wt000003T2w2IAC",
+        "b2b:a05Wt000003T2xbIAC",
+        "b2b:a05Wt000003T30sIAC",
+        "b2b:a05Wt000003T35jIAC",
+        "b2b:a05Wt000003T3P3IAK",
+        "b2b:a05Wt000003T3thIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 20,
+            "normalized_end": 21
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call matches all qualifiers: Nikhil Reddy requesting a pricing adjustment specifically on the SecureFlow Suite proposal, with Kofi Adomah responding. Other Nikhil/Kofi calls discuss pricing generally or other products, and other SecureFlow Suite pricing discussions involve different contacts (Zhi Huang, Mohammed Bashir, Enzo Moretti) with different reps.",
+        "answers": [
+          {
+            "answer": "Nikhil Reddy requested cost adjustments (a price reduction) on the SecureFlow Suite specifically — while he found its features appealing, he said cost adjustments would make it more accessible for deployment on a larger scale. Kofi Adomah committed to reviewing the request for pricing adjustments on the SecureFlow Suite and passing it on to TechPulse's finance team to see what flexibility they have, and proposed scheduling another call later that week to finalize everything.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrSjIAK",
+                "line_start": 15,
+                "line_end": 18,
+                "quote": "[2024-03-27T14:02:00] Nikhil Reddy: That’s reassuring. Coming to the proposal, could you provide some clarity on possible pricing adjustments?\n[2024-03-27T14:02:10] Kofi Adomah: Sure thing. We aim to be as transparent as possible regarding costs. Might there be specific areas you're looking at for adjustment, like the total cost or specific product discounts?\n[2024-03-27T14:02:22] Nikhil Reddy: Well, we're considering adjustments particularly on the SecureFlow Suite. While we find its features quite appealing, some cost adjustments would make it more accessible for deployment on a larger scale."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SrSjIAK",
+                "line_start": 20,
+                "line_end": 21,
+                "quote": "[2024-03-27T14:02:50] Kofi Adomah: Absolutely. We value our relationship with NaviCorp Tech and aim for a mutually beneficial partnership. Let's schedule another call later this week to finalize everything."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Nikhil Reddy, Kofi, the SecureFlow Suite proposal, and NaviCorp Tech. Only one call matches all these criteria: call b2b:a05Wt000003SrSjIAK (2024-03-27), where Kofi Adomah speaks with Nikhil Reddy about the NaviCorp Tech Strategic Partnership opportunity. In that call, Nikhil explicitly requests pricing adjustments on the SecureFlow Suite to make it more accessible for larger-scale deployment, and Kofi commits to passing the request to the finance team to explore flexibility.",
+        "answers": [
+          {
+            "answer": "Nikhil Reddy requested cost adjustments on the SecureFlow Suite, explaining that while its features are appealing, some pricing adjustments would make it more accessible for deployment on a larger scale. Kofi Adomah committed to reviewing the request and passing it on to the finance team to see what flexibility they have.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrSjIAK",
+                "line_start": 15,
+                "line_end": 19,
+                "quote": "[2024-03-27T14:02:00] Nikhil Reddy: That’s reassuring. Coming to the proposal, could you provide some clarity on possible pricing adjustments?\n[2024-03-27T14:02:10] Kofi Adomah: Sure thing. We aim to be as transparent as possible regarding costs. Might there be specific areas you're looking at for adjustment, like the total cost or specific product discounts?\n[2024-03-27T14:02:22] Nikhil Reddy: Well, we're considering adjustments particularly on the SecureFlow Suite. While we find its features quite appealing, some cost adjustments would make it more accessible for deployment on a larger scale.\n[2024-03-27T14:02:32] Kofi Adomah: Understood. We can certainly review your request for pricing adjustments on the SecureFlow Suite. I'll pass this on to our finance team to see what flexibility we have. Any other areas you'd like to cover?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Nikhil Reddy requested cost/pricing adjustments on the SecureFlow Suite to make it more accessible for larger-scale deployment, and that Kofi committed to reviewing the request and passing it to the finance team to check pricing flexibility. Answer A adds an extra detail about scheduling another call, but this is an unrequested extra and does not create disagreement. The reference covers both requested facts: the pricing adjustment request and Kofi's commitment to pass it to the finance team for review."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-da4bacb9eecdc28f",
+      "question": "What main challenges did Kofi Nkrumah at AeroFusion Systems say they're trying to address with the expansion?",
+      "gold_answer": "Improving design precision, reducing time to market, and maintaining high reliability standards in development processes.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgSIAS",
+        "b2b:a05Wt000003SrnoIAC",
+        "b2b:a05Wt000003StG3IAK",
+        "b2b:a05Wt000003StG4IAK",
+        "b2b:a05Wt000003SuiNIAS",
+        "b2b:a05Wt000003SuleIAC",
+        "b2b:a05Wt000003SuteIAC",
+        "b2b:a05Wt000003SvhiIAC",
+        "b2b:a05Wt000003SvptIAC",
+        "b2b:a05Wt000003SvrTIAS",
+        "b2b:a05Wt000003SwVeIAK",
+        "b2b:a05Wt000003SwdlIAC",
+        "b2b:a05Wt000003SxEuIAK",
+        "b2b:a05Wt000003SxQAIA0",
+        "b2b:a05Wt000003SxZpIAK",
+        "b2b:a05Wt000003SyHXIA0",
+        "b2b:a05Wt000003SyQxIAK",
+        "b2b:a05Wt000003SypMIAS",
+        "b2b:a05Wt000003SypNIAS",
+        "b2b:a05Wt000003Sz3lIAC",
+        "b2b:a05Wt000003SzQPIA0",
+        "b2b:a05Wt000003SzdFIAS",
+        "b2b:a05Wt000003Szi5IAC",
+        "b2b:a05Wt000003SzweIAC",
+        "b2b:a05Wt000003SzzyIAC",
+        "b2b:a05Wt000003T0caIAC",
+        "b2b:a05Wt000003T18hIAC",
+        "b2b:a05Wt000003T2zPIAS",
+        "b2b:a05Wt000003T346IAC",
+        "b2b:a05Wt000003T3SIIA0",
+        "b2b:a05Wt000003T3ldIAC",
+        "b2b:a05Wt000003T4JUIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Kofi Nkrumah appears in several calls, but only the 2021-02-20 call on the 'AeroFusion Systems Future Expansion' opportunity explicitly ties his stated challenges to the expansion: Sarah asks about challenges they're facing regarding the expansion, and Kofi names improving design precision, reducing time to market, and maintaining high reliability standards. Other Kofi calls belong to different opportunities and discuss different concerns (e.g., deployment/security protocols, downtime, training), so they are not competing answers to this question's wording.",
+        "answers": [
+          {
+            "answer": "Kofi Nkrumah said their main challenges are improving design precision, reducing time to market, and maintaining high standards of reliability in their development processes as they expand operations (particularly enhancing flight system design capabilities).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqgSIAS",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2021-02-20T15:01:05] Kofi Nkrumah: Absolutely. We're looking to expand some of our operations, particularly focusing on enhancing our flight system design capabilities. So, any insights or solutions you have would be great to hear about.\n[2021-02-20T15:01:30] Sarah Johnson: Fantastic! At TechPulse, our focus is on providing AI-powered solutions that add efficiency and innovation to electronic design automation. I'd love to understand more about the challenges you're currently facing."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Kofi Nkrumah at AeroFusion Systems and asks about challenges they're trying to address 'with the expansion.' Only one call features Kofi Nkrumah in the context of an expansion opportunity: call b2b:a05Wt000003SqgSIAS, tied to opportunity 'AeroFusion Systems Future Expansion.' In that call, Kofi directly states the main challenges. Other Kofi calls relate to different opportunities (Advanced Simulation Initiative, AI-Powered Integration, etc.) and do not frame challenges in the context of 'the expansion.'",
+        "answers": [
+          {
+            "answer": "Kofi Nkrumah stated that their main challenges revolve around improving design precision, reducing time to market, and maintaining high standards of reliability in their development processes.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqgSIAS",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2021-02-20T15:01:50] Kofi Nkrumah: Our main challenges revolve around improving design precision and reducing time to market. Additionally, maintaining high standards of reliability in our development processes is essential."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same three challenges: improving design precision, reducing time to market, and maintaining high standards of reliability in development processes. Answer A adds contextual detail about expanding operations and enhancing flight system design capabilities, but this is supplementary and does not alter the core facts. The reference lists the same three challenges, covering all requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-db7172c9fffae42c",
+      "question": "What pricing concern did Noah Simmons raise about AutoElite Motors, and how did Elena respond?",
+      "gold_answer": "Noah heard from peer groups that AutoElite's pricing may not be the most competitive; Elena acknowledged they aren't always cheapest but emphasized transparent pricing with no hidden fees, plus value from extended warranties and flexible financing.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMPZIA4",
+        "b2c:a05Ws000005SMfeIAG",
+        "b2c:a05Ws000005SPNTIA4",
+        "b2c:a05Ws000005SPiEIAW",
+        "b2c:a05Ws000005SQRYIA4",
+        "b2c:a05Ws000005STZ4IAO",
+        "b2c:a05Ws000005STu2IAG",
+        "b2c:a05Ws000005STu3IAG",
+        "b2c:a05Ws000005SUgPIAW",
+        "b2c:a05Ws000005SUn1IAG",
+        "b2c:a05Ws000005SVUMIA4",
+        "b2c:a05Ws000005SVZCIA4",
+        "b2c:a05Ws000005SWorIAG",
+        "b2c:a05Ws000005SWrvIAG",
+        "b2c:a05Ws000005SZ85IAG",
+        "b2c:a05Ws000005SZeNIAW",
+        "b2c:a05Ws000005SaQoIAK",
+        "b2c:a05Ws000005SaU4IAK",
+        "b2c:a05Ws000005Sb8LIAS",
+        "b2c:a05Ws000005SbbSIAS",
+        "b2c:a05Ws000005SbulIAC",
+        "b2c:a05Ws000005SckHIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 1,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Noah raised pricing concerns with Elena in two different calls, with different concerns and responses: in the 2022-03-12 call he questioned whether AutoElite's pricing was the most competitive in town, while in the 2022-03-10 call he raised mixed feedback about the cost aspect. Each is a complete, materially different answer.",
+        "answers": [
+          {
+            "answer": "In the March 12, 2022 call, Noah Simmons raised the concern that AutoElite Motors' pricing might not be the most competitive in town, citing what he'd heard from peer groups. Elena Pavlova responded that AutoElite aims for transparent pricing with no hidden fees, acknowledged that doesn't always make them the cheapest option, said they constantly review pricing strategies to enhance competitiveness while maintaining quality, and emphasized that what sets them apart is the value offered through extended warranties and flexible financing solutions.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMfeIAG",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2022-03-12T14:51:40] Noah Simmons: That sounds promising. But... uh... I've heard from some peer groups that your pricing might not be the most competitive in town. Is there any truth to that?"
+              }
+            ]
+          },
+          {
+            "answer": "In the March 10, 2022 call, Noah Simmons raised a pricing concern, saying he'd heard mixed feedback about the cost aspect of pricing and maintenance. Elena Pavlova responded that AutoElite aims for transparent pricing and structures offerings to include the AutoElite Comprehensive Maintenance Plan with factory-trained technicians and genuine parts, but acknowledged that some customers feel their pricing could be more aligned with industry standards; she later added that while some pricing may initially seem less attractive, customers see significant long-term benefits from comprehensive support.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SaU4IAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2022-03-10T10:46:50] Noah Simmons: That sounds impressive. What about pricing and maintenance? I've heard mixed feedback about the cost aspect."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SaU4IAK",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2022-03-10T10:48:45] Elena Pavlova: We take pride in our robust post-purchase services including the Extended Warranty Plan that offers additional peace of mind beyond the standard warranty. While some of our pricing may initially seem less attractive, many customers see significant long-term benefits from our comprehensive support."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names both Noah Simmons and Elena as the participants, and asks specifically about a pricing concern Noah raised and Elena's response. Among all calls, only call b2c:a05Ws000005SMfeIAG (2022-03-12) features Elena Pavlova speaking with Noah Simmons where Noah explicitly raises a pricing concern (that AutoElite's pricing might not be the most competitive) and Elena directly responds. The other Elena calls (b2c:a05Ws000005SPNTIA4, b2c:a05Ws000005SUgPIAW, b2c:a05Ws000005SWrvIAG, b2c:a05Ws000005SaU4IAK) do not contain Noah raising a pricing concern with Elena responding to it in the same direct manner.",
+        "answers": [
+          {
+            "answer": "Noah Simmons raised the concern that he had heard from peer groups that AutoElite Motors' pricing might not be the most competitive in town. Elena responded by acknowledging his concern, explaining that AutoElite aims for transparent pricing with no hidden fees, though she acknowledged that doesn't always mean they're the cheapest option. She stated they are constantly reviewing pricing strategies to enhance competitiveness while maintaining quality, and emphasized that what truly sets them apart is the value offered through extended warranties and flexible financing solutions.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMfeIAG",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2022-03-12T14:51:40] Noah Simmons: That sounds promising. But... uh... I've heard from some peer groups that your pricing might not be the most competitive in town. Is there any truth to that?\n[2022-03-12T14:52:05] Elena Pavlova: I understand your concern. We do aim for transparent pricing which ensures there are no hidden fees, although I know that doesn't always mean we're the cheapest option. We're constantly reviewing our pricing strategies to enhance competitiveness while maintaining quality. I'd say what truly sets us apart is the value we offer through extended warranties and flexible financing solutions."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-0f77190562c3ead0",
+      "question": "What concern did Felix Zhang raise about the maintenance plan's cost, and how did Emily respond?",
+      "gold_answer": "Felix worried maintenance costs could be higher; Emily said factory-trained technicians and genuine parts provide long-term savings despite higher upfront cost.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SJcmIAG",
+        "b2c:a05Ws000005SJcnIAG",
+        "b2c:a05Ws000005SMCXIA4",
+        "b2c:a05Ws000005SPb0IAG",
+        "b2c:a05Ws000005SQWBIA4",
+        "b2c:a05Ws000005SSTAIA4",
+        "b2c:a05Ws000005SSo7IAG",
+        "b2c:a05Ws000005SSwDIAW",
+        "b2c:a05Ws000005STPEIA4",
+        "b2c:a05Ws000005STQoIAO",
+        "b2c:a05Ws000005SU59IAG",
+        "b2c:a05Ws000005SUwOIAW",
+        "b2c:a05Ws000005SUwPIAW",
+        "b2c:a05Ws000005SVAvIAO",
+        "b2c:a05Ws000005SVajIAG",
+        "b2c:a05Ws000005SWF2IAO",
+        "b2c:a05Ws000005SWN5IAO",
+        "b2c:a05Ws000005SWRvIAO",
+        "b2c:a05Ws000005SWi3IAG",
+        "b2c:a05Ws000005SYqHIAW",
+        "b2c:a05Ws000005SYrtIAG",
+        "b2c:a05Ws000005SYtVIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves Emily (Emily Jackson, 2022-10-20 discovery call). Felix raised the concern that maintenance cost can sometimes be higher, and Emily acknowledged it and explained that higher upfront cost from factory-trained technicians and genuine parts yields long-term savings.",
+        "answers": [
+          {
+            "answer": "Felix Zhang raised the concern that the cost of maintenance can sometimes be higher (he'd heard this about AutoElite's service centers). Emily Jackson responded that while their services might seem costlier upfront compared to non-specialized providers, the expertise of factory-trained technicians who work specifically on Lexus vehicles, along with genuine parts, often provide long-term savings by avoiding potential issues — and she added that the maintenance plan includes regular check-ups to prevent unexpected problems, offering peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMCXIA4",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2022-10-20T10:01:05] Felix Zhang: I've heard good things about your service centers and technicians. But I've also heard the cost of maintenance can sometimes be higher. Could you elaborate on that?\n[2022-10-20T10:01:20] Emily Jackson: That's a valid point, Felix. Our services might seem costlier upfront compared to non-specialized providers. However, the expertise of factory-trained technicians, who work specifically on Lexus vehicles, along with genuine parts, often provide long-term savings by avoiding potential issues.\n[2022-10-20T10:01:32] Felix Zhang: That makes sense. Sometimes the upfront cost does pay off in the long run."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Emily as the rep and Felix Zhang as the customer, and asks about a concern regarding the maintenance plan's cost. Only one call features Emily (Emily Jackson) speaking with Felix Zhang: call b2c:a05Ws000005SMCXIA4 (2022-10-20, 'Felix Zhang CPO and Maintenance Bundle'). In that call, Felix raises the concern that maintenance costs can sometimes be higher, and Emily responds by acknowledging the higher upfront cost but explaining that factory-trained technicians and genuine parts provide long-term savings.",
+        "answers": [
+          {
+            "answer": "Felix Zhang raised the concern that he had heard the cost of maintenance can sometimes be higher. Emily Jackson responded by acknowledging that their services might seem costlier upfront compared to non-specialized providers, but explained that the expertise of factory-trained technicians who work specifically on Lexus vehicles, along with genuine parts, often provide long-term savings by avoiding potential issues. She further added that the maintenance plan includes regular check-ups to prevent unexpected problems, offering peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMCXIA4",
+                "line_start": 7,
+                "line_end": 11,
+                "quote": "[2022-10-20T10:01:05] Felix Zhang: I've heard good things about your service centers and technicians. But I've also heard the cost of maintenance can sometimes be higher. Could you elaborate on that?\n[2022-10-20T10:01:20] Emily Jackson: That's a valid point, Felix. Our services might seem costlier upfront compared to non-specialized providers. However, the expertise of factory-trained technicians, who work specifically on Lexus vehicles, along with genuine parts, often provide long-term savings by avoiding potential issues.\n[2022-10-20T10:01:32] Felix Zhang: That makes sense. Sometimes the upfront cost does pay off in the long run.\n[2022-10-20T10:01:41] Emily Jackson: Exactly, and our maintenance plan includes regular check-ups to prevent unexpected problems, offering peace of mind. So it's really about what you value more in the car ownership experience."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same concern (Felix heard maintenance costs can sometimes be higher) and the same response from Emily (higher upfront cost offset by factory-trained technicians, genuine parts, long-term savings, plus regular check-ups for peace of mind). The reference captures the core requested facts: Felix's worry about higher maintenance costs and Emily's reply that factory-trained technicians and genuine parts yield long-term savings despite higher upfront cost. The additional detail about regular check-ups in the answers is an extra not required by the reference's scope, and the reference still covers the essential concern and response."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

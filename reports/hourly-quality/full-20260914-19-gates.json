@@ -1,0 +1,340 @@
+[
+  {
+    "question_id": "b2b-multi_call-c19e60e39e0ccc69",
+    "question": "Across the AquaGuard Solutions discussions, which competitor did Rosa praise for security measures, and which competitor's partnership model appealed to her for vendor reliability?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Which competitor Rosa praised for security measures, and which competitor's partnership model appealed to her for vendor reliability",
+        "relationship": "two independent competitor fact lookups joined only by the same account",
+        "reason": "The question asks about two unrelated competitor assessments (security praise vs. partnership model appeal) across calls; sharing the account/customer is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Feb 2022) contains Rosa's praise of Quantum Circuits Inc for security measures; Call 2 (May 2022) contains her remark about NanoDesign's partnership model appealing for perceived strong vendor reliability. Each source contributes an exclusive requested fact. The question naturally identifies the AquaGuard Solutions account and Rosa, a rep would plausibly want to know which competitors the customer admires and why. The gold answer states exactly the two requested facts with no extras. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Rosa Matthews saying 'we're really impressed with Quantum Circuits Inc in terms of security measures,' which exactly supports the answer_claim that Rosa praised Quantum Circuits Inc for security measures."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Rosa Matthews stating 'NanoDesign's partnership model did seem quite appealing initially because of their perceived strong vendor reliability,' which exactly supports the answer_claim that NanoDesign's partnership model appealed to her for perceived strong vendor reliability."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items directly support the gold_answer: Index 0 confirms Rosa praised Quantum Circuits Inc for security measures, and Index 1 confirms NanoDesign's partnership model appealed to her for perceived strong vendor reliability. The metadata confirms both calls are part of the AquaGuard Solutions discussions with contact Rosa Matthews. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-5331f81143db5aa6",
+    "question": "For SafetyNet, what concern did Lars raise about initial user adoption in the early proposal discussions, and what did TechPulse commit to on that issue in the final agreement call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Lars's concern about initial user adoption in early proposal discussions and TechPulse's commitment on that same issue in the final agreement call",
+        "relationship": "same business issue (user adoption) tracked from initial concern to final commitment across two calls",
+        "reason": "Both lookups concern the same issue\u2014user adoption\u2014so the multi-call question is coherent, not two unrelated facts joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for Lars's concern about initial user adoption and TechPulse's commitment on that issue. Both facts are present in the first call: Lars raises the concern and TechPulse responds with a commitment to enhanced training and support. The second call merely reiterates the same commitment without adding a new substantive fact. Therefore, the first call alone suffices to answer the question, and the second call is not necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Lars's concern about initial user adoption and TechPulse's commitment on that issue. Both facts are present in the first call: Lars raises the concern and TechPulse responds with a commitment to enhanced training and support. The second call merely reiterates the same commitment without adding a new substantive fact. Therefore, the first call alone suffices to answer the question, and the second call is not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StRIIA0",
+                "fact": "Lars raised a concern about initial user adoption during the early proposal discussions",
+                "why_other_call_cannot_supply_it": "The final agreement call only references the topic retrospectively; the concern itself is only stated in the early proposal call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0SjIAK",
+                "fact": "TechPulse committed to enhancing user guidance resources to support initial configuration setup",
+                "why_other_call_cannot_supply_it": "The early call only offers general training/support; the specific commitment to enhanced user guidance resources appears only in the final agreement call"
+              }
+            ],
+            "reason": "The question explicitly asks for a concern from the early proposal call and a resolution commitment from the final agreement call; each fact exists only in its respective source, forming a concern-plus-resolution pair."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StRIIA0",
+                  "fact": "Lars raised a concern about initial user adoption during the early proposal discussions",
+                  "why_other_call_cannot_supply_it": "The final agreement call only references the topic retrospectively; the concern itself is only stated in the early proposal call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0SjIAK",
+                  "fact": "TechPulse committed to enhancing user guidance resources to support initial configuration setup",
+                  "why_other_call_cannot_supply_it": "The early call only offers general training/support; the specific commitment to enhanced user guidance resources appears only in the final agreement call"
+                }
+              ],
+              "reason": "The question explicitly asks for a concern from the early proposal call and a resolution commitment from the final agreement call; each fact exists only in its respective source, forming a concern-plus-resolution pair."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "Call 1 (early proposal discussion) shows Lars raising the concern about initial user adoption ('We're also curious about your strategy for addressing specific pain points we've raised regarding initial user adoption'). Call 2 (final agreement call) shows Thato committing to enhanced user guidance resources for initial configuration setup ('We're enhancing our resources to better support you in setting up initial configurations'). Each source contributes an exclusive requested fact: the concern from call 1 and the commitment from call 2. The gold answer accurately captures both facts without unasked extras. The question is naturally worded, adequately scoped to the SafetyNet account and the specific topic, and a rep would plausibly want to track how an early concern was resolved in the final agreement. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Lars S\u00f8rensen explicitly asking about TechPulse's strategy for addressing pain points regarding initial user adoption. This supports the answer_claim that Lars raised a concern about initial user adoption. The phrasing 'curious about your strategy for addressing specific pain points we've raised regarding initial user adoption' clearly indicates a concern was raised and he is asking how it will be addressed."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Thato Mokoena stating 'We're enhancing our resources to better support you in setting up initial configurations.' This directly supports the claim that TechPulse committed to enhanced user guidance resources to support initial configuration setup. The reference to 'during our earlier talks we covered the user guidance part as well' ties it back to the earlier discussion. However, the answer_claim also states 'Lars welcomed it,' but the cited quote (lines 10-11) only contains Thato's statement; no Lars response is included in the quoted passage. The claim about Lars welcoming it is not supported by the supplied quote. Despite this minor overreach in the answer_claim, the core commitment claim is supported."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Lars was concerned about initial user adoption \u2013 supported by index 0 where Lars asks about strategy for addressing pain points regarding initial user adoption. (2) TechPulse committed to enhanced user guidance resources to support initial configuration setup \u2013 supported by index 1 where Thato states they are enhancing resources to better support setting up initial configurations. Both factual claims in the gold_answer are supported by the combined cited evidence. The minor unsupported detail in index 1's answer_claim about Lars welcoming it does not affect the gold_answer's factual content."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-2fdb305bb1e199f7",
+    "question": "What pricing adjustment did Nikhil Reddy request on the SecureFlow Suite proposal for NaviCorp Tech, and what did Kofi commit to doing about it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing adjustment Nikhil Reddy requested on the SecureFlow Suite proposal for NaviCorp Tech and Kofi's commitment in response",
+        "relationship": "objection/request and the response to it",
+        "reason": "A single coherent issue: a pricing adjustment request and the commitment made to address it."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific pricing discussion on SecureFlow Suite within the NaviCorp Tech account. The dialogue confirms Nikhil requested cost adjustments to make SecureFlow Suite more accessible for larger-scale deployment, and Kofi committed to passing the request to the finance team to review pricing flexibility. The gold answer matches these facts precisely with no unasked extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Nikhil Reddy stating they are 'considering adjustments particularly on the SecureFlow Suite' and that 'some cost adjustments would make it more accessible for deployment on a larger scale.' This fully supports the claim that Nikhil requested cost adjustments on SecureFlow Suite for larger-scale deployment."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Kofi Adomah saying 'I'll pass this on to our finance team to see what flexibility we have' in response to the pricing adjustment request on SecureFlow Suite. This directly supports the claim that Kofi committed to passing the request to the finance team to check pricing flexibility."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer. Evidence 0 confirms Nikhil asked for cost adjustments on SecureFlow Suite to make it more accessible for larger-scale deployment. Evidence 1 confirms Kofi agreed to pass the request to the finance team to review pricing flexibility. All factual claims in the gold_answer are covered by the supplied citations with correct speaker attribution, product name, and action commitments."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-da4bacb9eecdc28f",
+    "question": "What main challenges did Kofi Nkrumah at AeroFusion Systems say they're trying to address with the expansion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The main challenges Kofi Nkrumah at AeroFusion Systems said they are trying to address with the expansion",
+        "relationship": "single coherent lookup of one customer's stated challenges regarding one initiative",
+        "reason": "A single fact lookup about one customer's challenges tied to one expansion initiative; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about challenges Kofi Nkrumah mentioned regarding AeroFusion's expansion. The dialogue at 15:01:50 states: 'Our main challenges revolve around improving design precision and reducing time to market. Additionally, maintaining high standards of reliability in our development processes is essential.' The gold answer captures all three challenges precisely with no extras. The question is naturally phrased, scoped to a named contact and account discussing a specific expansion initiative, and a rep would plausibly want to recall stated challenges. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Kofi Nkrumah explicitly states: 'Our main challenges revolve around improving design precision and reducing time to market. Additionally, maintaining high standards of reliability in our development processes is essential.' This directly supports the answer_claim that the main challenges are improving design precision, reducing time to market, and maintaining high reliability standards."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item (index 0) contains a direct quote from Kofi Nkrumah at AeroFusion Systems that explicitly names all three challenges listed in the gold_answer: improving design precision, reducing time to market, and maintaining high reliability standards in development processes. The speaker attribution, context (AeroFusion Systems expansion opportunity), and all three factual claims are fully supported by the quoted dialogue."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-db7172c9fffae42c",
+    "question": "What pricing concern did Noah Simmons raise about AutoElite Motors, and how did Elena respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing concern Noah Simmons raised about AutoElite Motors and Elena's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer objection (pricing concern) with the salesperson's response, which is a natural objection-and-response pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific pricing objection raised by Noah Simmons and Elena's response. The dialogue confirms Noah heard from peer groups that AutoElite's pricing may not be the most competitive, and Elena acknowledged they aren't always cheapest but emphasized transparent pricing with no hidden fees, plus value from extended warranties and flexible financing. All answer claims are directly supported by the transcript. The question is naturally worded, adequately scoped to a specific customer interaction, and a rep/AM would plausibly want to know how a pricing objection was handled. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Noah Simmons explicitly states: 'I've heard from some peer groups that your pricing might not be the most competitive in town.' This directly supports the answer_claim that Noah raises a peer-group concern about pricing competitiveness."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Elena's quoted response contains all elements of the answer_claim: (1) 'transparent pricing which ensures there are no hidden fees' supports transparent pricing with no hidden fees; (2) 'doesn't always mean we're the cheapest option' supports not always cheapest; (3) 'the value we offer through extended warranties and flexible financing solutions' supports value via extended warranties and flexible financing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Noah heard from peer groups that pricing may not be most competitive (supported by index 0), and Elena acknowledged they aren't always cheapest but emphasized transparent pricing with no hidden fees plus value from extended warranties and flexible financing (supported by index 1). All factual claims in the gold_answer are directly present in the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-0f77190562c3ead0",
+    "question": "What concern did Felix Zhang raise about the maintenance plan's cost, and how did Emily respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Felix Zhang raised about the maintenance plan's cost and Emily's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer's cost objection with the salesperson's reply, matching the accepted objection-and-response pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question targets a specific cost objection raised by Felix Zhang and Emily's rebuttal, a realistic sales-QA need. The dialogue confirms Felix said 'the cost of maintenance can sometimes be higher' and Emily responded that factory-trained technicians and genuine parts provide long-term savings despite higher upfront cost. The gold answer captures both parts precisely without unasked extras. Wording is natural, scope is clear (named participants, maintenance-plan cost topic), and no locator preamble or answer leakage is present. Single-call question, so both_sources_required is set true."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Felix Zhang raising the concern that 'the cost of maintenance can sometimes be higher' and Emily Jackson responding that while services 'might seem costlier upfront,' the 'expertise of factory-trained technicians' and 'genuine parts' 'often provide long-term savings by avoiding potential issues.' This matches the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports both parts of the gold_answer: (1) Felix worried maintenance costs could be higher, and (2) Emily explained that factory-trained technicians and genuine parts provide long-term savings despite higher upfront cost. The quote preserves speaker attribution, the cost concern, and the specific justification Emily provided."
+      }
+    }
+  }
+]

@@ -871,6 +871,24 @@
       "question": "What did Olivia Adams say she's looking for in a vehicle, and which BMW model is she considering?",
       "reason": "Customer-history scope audit failed; source inspection confirms June 3 latest-features/BMW preference and June 4 reliability/quality/BMW preference in the same opportunity.",
       "review_report": "reports/hourly-quality/full-20260914-18-scope.json"
+    },
+    {
+      "question_id": "b2b-multi_call-c19e60e39e0ccc69",
+      "question_text": "Across the AquaGuard Solutions discussions, which competitor did Rosa praise for security measures, and which competitor's partnership model appealed to her for vendor reliability?",
+      "reason": "Hourly coherence gate rejected the compound competitor question. Independent source review disagreed; this is a conservative gate exclusion, not a confirmed factual defect.",
+      "review_report": "reports/hourly-quality/full-20260914-19-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-5331f81143db5aa6",
+      "question_text": "For SafetyNet, what concern did Lars raise about initial user adoption in the early proposal discussions, and what did TechPulse commit to on that issue in the final agreement call?",
+      "reason": "Hourly necessity judges disagreed (DeepSeek rejects, GLM passes). Additionally, second evidence answer_claim says Lars welcomed the commitment, but its quote contains only Thato; Lars reply is on the next uncited line. Source-confirmed evidence-claim overreach, despite citation judge passing.",
+      "review_report": "reports/hourly-quality/full-20260914-19-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-db7172c9fffae42c",
+      "question": "What pricing concern did Noah Simmons raise about AutoElite Motors, and how did Elena respond?",
+      "reason": "Source-confirmed alternative Noah/Elena pricing concern-response in b2c:a05Ws000005SaU4IAK (March 10), same opportunity as March 12 gold call. GLM scope review rejects; Qwen misses alternative.",
+      "review_report": "reports/hourly-quality/full-20260914-19-review.md"
     }
   ],
   "retained_difficult_questions": [
