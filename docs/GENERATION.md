@@ -12,7 +12,9 @@ uv run python scripts/expanded_sample_workflow.py
 
 This resumable workflow generates 1,000 B2C single-call units, 500 B2B single-call units, and 500 B2B two-call units, with up to three proposals per unit and 16 workers. It verifies artifacts, independently reviews all selected questions, freezes review-passing questions, and runs the sibling private RAG evaluator with the same hybrid/reranked/full-source/no-context protocol as the 37-question diagnostic. Review exclusions occur before RAG; retrieval failures never trigger question deletion.
 
-Generation has an $850 operational cap. The earlier sample projects roughly $540 for generation plus tens of dollars for review/RAG, with substantial uncertainty. API estimates exclude turbopuffer/VM. No Hugging Face upload occurs. The legacy `generate_and_publish.py` entry point now refuses execution.
+The overall expanded-sample + conditional full-run experiment has a $5,000 ceiling. The current expansion retains its $850 generation guard, a $150 independent-review allowance, and a $500 RAG allowance. These are conservative sublimits, not separate additions to the overall ceiling. An active assistant goal reviews progress and random quality samples hourly; the scripted monitor is supplemental. After the expansion passes agent review, a full eligible run is authorized within the remaining shared budget.
+
+Generation currently has an $850 operational cap. The earlier sample projects roughly $540 for generation plus tens of dollars for review/RAG, with substantial uncertainty. API estimates exclude turbopuffer/VM. No Hugging Face upload occurs. The legacy `generate_and_publish.py` entry point now refuses execution.
 
 On the research VM, the complete sequence runs as `salestranscriptqa-expanded-2000.service`:
 

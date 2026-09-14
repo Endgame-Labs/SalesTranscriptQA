@@ -35,11 +35,15 @@ FIELDS = ['realistic_sales_need','natural_wording','adequately_scoped','factual_
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('report', type=Path)
+    parser.add_argument('--budget-usd',type=float,default=150,help='Conservative independent-review API allowance')
     args = parser.parse_args()
+    import math
+    if not math.isfinite(args.budget_usd) or args.budget_usd <= 0:
+        parser.error("budget-usd must be positive and finite")
     report = json.loads(args.report.read_text())
     root = Path('runs') / (args.report.stem+'-qwen-review-v1')
     RATES[MODEL] = (2.0,0.25,6.0)
-    transport = Transport(root)
+    transport = Transport(root,budget_usd=args.budget_usd)
     calls = {c['call_id']:c for d in ['b2b','b2c'] for c in pq.read_table(f'data/corpus/{d}-corpus.parquet').to_pylist()}
     accepted = [q for q in report['questions'] if q['status']=='accepted']
     rejected = [q for q in report['questions'] if q['status']!='accepted' and q['question']]

@@ -1,0 +1,200 @@
+[
+  {
+    "question_id": "b2b-multi_call-dc3c65a20b46e538",
+    "question": "For GreenStar Electronics' OptiEnergy Suite interest, how did Akira say the suite achieves its energy efficiencies, and what volume discount and total price did Nadia qualify for?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How the OptiEnergy Suite achieves its energy efficiencies, plus the volume discount and total price Nadia qualified for on that same product interest",
+        "relationship": "coherent single sales thread: product capability explanation and the commercial quote (discount and total price) for the same product opportunity",
+        "reason": "Both parts concern the same product interest (OptiEnergy Suite for GreenStar): the efficiency explanation is the value proposition underlying the quoted discount and price, forming one coherent product/quote discussion rather than two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: how the OptiEnergy Suite achieves energy efficiencies, and the volume discount and total price Nadia qualified for. The first piece is supplied by the second call (b2b:a05Wt000003SxY5IAK) where Akira explains the advanced algorithms and adaptive load. The second piece is supplied by the first call (b2b:a05Wt000003StB8IAK) where Akira states the 10% discount on 10 units totaling $4,139.91. However, the question does not require both calls to be used; each piece of information is independently available in separate calls, and the question does not ask for a comparison or a combined fact that would necessitate both. The two facts are unrelated lookups joined together, and either call alone would not provide both, but the question's information need can be satisfied by using both calls, yet the necessity is not genuine because the facts are not exclusive to each call in a way that requires both for a single coherent answer. The question is a compound of two independent queries, and the answer can be assembled from two different calls, but the instruction says to reject if facts are unrelated lookups joined together. Therefore, necessary is false."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: how the OptiEnergy Suite achieves energy efficiencies, and the volume discount and total price Nadia qualified for. The first piece is supplied by the second call (b2b:a05Wt000003SxY5IAK) where Akira explains the advanced algorithms and adaptive load. The second piece is supplied by the first call (b2b:a05Wt000003StB8IAK) where Akira states the 10% discount on 10 units totaling $4,139.91. However, the question does not require both calls to be used; each piece of information is independently available in separate calls, and the question does not ask for a comparison or a combined fact that would necessitate both. The two facts are unrelated lookups joined together, and either call alone would not provide both, but the question's information need can be satisfied by using both calls, yet the necessity is not genuine because the facts are not exclusive to each call in a way that requires both for a single coherent answer. The question is a compound of two independent queries, and the answer can be assembled from two different calls, but the instruction says to reject if facts are unrelated lookups joined together. Therefore, necessary is false."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxY5IAK",
+                "fact": "OptiEnergy Suite achieves energy efficiency via advanced algorithms optimizing energy consumption across devices and adapting automatically to varying loads",
+                "why_other_call_cannot_supply_it": "The 2024 call discusses pricing, security, and integration but never explains how the suite achieves its energy efficiencies"
+              },
+              {
+                "call_id": "b2b:a05Wt000003StB8IAK",
+                "fact": "GreenStar qualifies for a 10% discount on 10 units of OptiEnergy Suite, totaling $4,139.91",
+                "why_other_call_cannot_supply_it": "The 2021 call is an early exploration with no pricing, discount, or volume terms discussed"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the technical mechanism of energy efficiency (only in the 2021 call) and the specific volume discount and total price (only in the 2024 call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxY5IAK",
+                  "fact": "OptiEnergy Suite achieves energy efficiency via advanced algorithms optimizing energy consumption across devices and adapting automatically to varying loads",
+                  "why_other_call_cannot_supply_it": "The 2024 call discusses pricing, security, and integration but never explains how the suite achieves its energy efficiencies"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003StB8IAK",
+                  "fact": "GreenStar qualifies for a 10% discount on 10 units of OptiEnergy Suite, totaling $4,139.91",
+                  "why_other_call_cannot_supply_it": "The 2021 call is an early exploration with no pricing, discount, or volume terms discussed"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the technical mechanism of energy efficiency (only in the 2021 call) and the specific volume discount and total price (only in the 2024 call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-b27c2d8e4e88c50d",
+    "question": "For FutureTech Innovations' PulseSim Pro quote, what discount and total price did Chen quote Sofia, and what discount terms did he restate during the product demo?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount and total price Chen quoted Sofia for PulseSim Pro, and the discount terms he restated during the product demo",
+        "relationship": "same commercial terms (discount/price) tracked across the quote and the demo",
+        "reason": "Both parts concern the same commercial terms for the same product quote; the demo restatement is a natural follow-up on the same issue, not an independent fact lookup."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for the discount and total price quoted by Chen, and the discount terms restated during the demo. Both facts are essentially the same: a 10% discount for orders of 10 units or more, and the total price of $4,499.91 is only mentioned in the first call. The second call only restates the discount terms without providing the total price. Since the total price is not requested separately from the discount terms, and the discount terms are repeated in both calls, one call (the first) suffices to answer the question. The second call does not provide any distinct requested information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the discount and total price quoted by Chen, and the discount terms restated during the demo. Both facts are essentially the same: a 10% discount for orders of 10 units or more, and the total price of $4,499.91 is only mentioned in the first call. The second call only restates the discount terms without providing the total price. Since the total price is not requested separately from the discount terms, and the discount terms are repeated in both calls, one call (the first) suffices to answer the question. The second call does not provide any distinct requested information."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrSnIAK",
+                "fact": "Chen quoted a 10% discount on PulseSim Pro with a total of $4,499.91 for ten units",
+                "why_other_call_cannot_supply_it": "The demo call never mentions the total price or unit count; it only restates the discount threshold"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sv0BIAS",
+                "fact": "During the product demo Chen restated a 10% discount for orders of 10 units or more",
+                "why_other_call_cannot_supply_it": "The quote call states the discount and total but does not restate the discount terms as a unit-threshold condition during the demo"
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information from two different conversations: the specific quote (discount plus total price, found only in the first call) and the restated discount terms during the demo (unit-threshold condition, found only in the second call). Neither call alone answers both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrSnIAK",
+                  "fact": "Chen quoted a 10% discount on PulseSim Pro with a total of $4,499.91 for ten units",
+                  "why_other_call_cannot_supply_it": "The demo call never mentions the total price or unit count; it only restates the discount threshold"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sv0BIAS",
+                  "fact": "During the product demo Chen restated a 10% discount for orders of 10 units or more",
+                  "why_other_call_cannot_supply_it": "The quote call states the discount and total but does not restate the discount terms as a unit-threshold condition during the demo"
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information from two different conversations: the specific quote (discount plus total price, found only in the first call) and the restated discount terms during the demo (unit-threshold condition, found only in the second call). Neither call alone answers both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    }
+  },
+  {
+    "question_id": "b2b-single_call-e7c0e9c7fc124755",
+    "question": "What is InnoBuild Constructors' budget and required installation timeline for the AutoGen IDE, EnergyReduce Pro, and CollabDesign Studio purchase?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Budget and required installation timeline for a single three-product software purchase (AutoGen IDE, EnergyReduce Pro, CollabDesign Studio) by InnoBuild Constructors",
+        "relationship": "single coherent request: one purchase's commercial terms (budget) and deployment requirement (installation timeline) for the same deal",
+        "reason": "Budget and installation timeline describe the same purchase/deal, and software installation is a valid sales context; no unrelated lookups are joined."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-816d6bd2492c4392",
+    "question": "What discounted prices did Linh quote Linda Gonzales for the three products in ClearSky Data Solutions' expansion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounted prices Linh quoted Linda Gonzales for the three products in ClearSky Data Solutions' expansion",
+        "relationship": "single coherent quote lookup",
+        "reason": "This is one commercial quote breakdown request covering discounted pricing for the products in a single quote, not multiple independent lookups."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-c136b2f81e1fc32e",
+    "question": "What did Enzo commit to sending Ava Lewis after their discussion about eco-friendly vehicles?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify what Enzo committed to send to Ava Lewis following their discussion about eco-friendly vehicles.",
+        "relationship": "single coherent follow-up commitment from one call",
+        "reason": "This is a single lookup about one commitment made in one conversation; the eco-friendly vehicle discussion provides natural context for the follow-up item."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-5b22ef5faa517b94",
+    "question": "What did Charlotte Evans want to compare the 2024 Tesla Model S and 2023 Nissan Leaf against, and what meeting was scheduled to discuss further?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Charlotte Evans wanted to compare the 2024 Tesla Model S and 2023 Nissan Leaf against, and what meeting was scheduled to discuss it further",
+        "relationship": "single coherent request: the comparison context and the follow-up meeting both concern the same vehicle-comparison discussion",
+        "reason": "The question asks for the comparison target and the resulting next-step meeting, which are part of one coherent sales conversation about the same vehicle comparison, not two independent lookups."
+      }
+    }
+  }
+]

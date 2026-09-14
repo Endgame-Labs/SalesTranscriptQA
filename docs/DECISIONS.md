@@ -61,3 +61,7 @@ Use a fresh strengthened generation protocol and preserve the original pilot for
 Kyle: “expand the generation sample size by 20x and then run another similar test against it” and “get rid of the bad ones from prior run, this new sample is better and we'll rely on this style of prompting and quality from now on for this project.”
 
 Expand 100 source units to 2,000 using unchanged v9 generation and final quality gates. Exclude previously sampled CRM groups. Retire legacy pilot/full-v1 questions from active research; preserve historical artifacts and published pilot until a replacement release. Quarantine the ambiguous Sofia package question from the 37-question seed; retain SkyTech because its observed failure was retrieval-context truncation. Independently review and freeze expanded questions before RAG; do not remove difficult questions based on RAG scores. Track active inputs in reports/cohort-registry.json.
+
+## September 14, 2026 — Agent supervision, shared $5,000 ceiling, conditional full run
+
+Kyle requests that the assistant itself inspect progress and random quality samples hourly, fix issues, and monitor a $5,000 ceiling. If the 2,000-unit expansion and RAG test look good, proceed to the full eligible QA set under the same shared ceiling. Completion requires a secret-gist HTML report and HTML Preview link after the full workflow; a scripted health check or interim expanded-sample report alone is insufficient. Reuse compatible completed work, preserve frozen historical cohorts, and do not delete questions merely because retrieval fails.
