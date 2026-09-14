@@ -138,6 +138,47 @@ immutable provider responses. The full runner must use the same frozen configura
 (currently 16 workers and three proposals) or initialization rejects the cache.
 The helper does not start the full run or change its question policy.
 
+### Supervised full workflow
+
+`scripts/full_sample_workflow.py` is prepared but has not been started. After the
+assistant assesses the completed expansion's quality, random source samples, all
+four RAG arms, and cost forecast, the assessment file
+`reports/expanded-2000-full-checkpoint.json` must identify the exact reviewed
+question SHA-256 and set `approved_for_full: true`. It also supplies
+`budget_limits`: `generation_usd`, `review_usd`, `rag_usd`, and `reserve_usd`.
+These are positive cumulative ceilings, not forecasts. Generation includes the
+imported checkpoint spend; accounting deducts that inherited spend exactly once.
+Retain at least $100 reserve for monitoring and unmetered infrastructure. This
+reserve is not evidence of actual VM or Turbopuffer invoice charges.
+
+Validate the assessment and combined allowance without starting work:
+
+```bash
+uv run python scripts/full_sample_workflow.py \
+  --checkpoint-review reports/expanded-2000-full-checkpoint.json --check-only
+```
+
+The same command without `--check-only` seeds compatible generation caches,
+freezes and validates all 14,916 source units before paid generation, runs the
+existing gates, independently reviews every selected question, freezes the final
+cohort, and evaluates every final question in all four RAG arms. The accompanying
+`ops/salestranscriptqa-full-v2.service` is a deployment template, not an enabled
+service. It must not be started before checkpoint approval.
+
+Known historical quarantines and expanded independent-review rejections remain
+excluded by question ID or normalized question text. RAG failures do not remove
+questions. Before each paid stage, the workflow checks all remaining stage
+ceilings together against the shared $5,000 campaign allowance. Each transport
+also reserves the cost of in-flight calls against its own stage ceiling. The
+assistant must continue hourly inspection, account for additional diagnostics
+and infrastructure, and stop if the reserve is inadequate. Stage failures stop
+the workflow and preserve artifacts; do not increase limits without rechecking
+the shared allowance and recording the revised assessment.
+
+The workflow leaves publication and the final secret-gist report as explicit
+post-evaluation steps. Its `complete` state means generation/review/RAG completed,
+not that the overall supervised task is finished.
+
 Inherited attempt IDs and usage represent already-paid work. Count them once across
 source/destination ledgers; the destination's generation allowance includes those
 carried-forward costs. The new source plan must cover all eligible units, and the

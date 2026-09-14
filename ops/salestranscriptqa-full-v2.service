@@ -1,0 +1,14 @@
+[Unit]
+Description=SalesTranscriptQA approved full generation, independent review, and four-arm RAG
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/exedev/a/dev/phd/research-projects/SalesTranscriptQA
+ExecStart=/usr/local/bin/uv run python scripts/full_sample_workflow.py --checkpoint-review reports/expanded-2000-full-checkpoint.json
+Restart=no
+Environment=PYTHONUNBUFFERED=1
+TimeoutStopSec=30
+
+[Install]
+WantedBy=default.target
