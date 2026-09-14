@@ -1,0 +1,32 @@
+{
+  "automation_complete": true,
+  "first_replay_added_only_selection": true,
+  "second_replay_new_attempts": 0,
+  "artifact_hashes": {
+    "questions.json": "99910b43bce415c79298f22b2295bf9af666a1c3ce7d4d3a769798f51028a9b5",
+    "b2b-test.parquet": "7054105e473c6f51a3998eac2fae35efea851703fdbea6d836732db524254159",
+    "b2c-test.parquet": "812c7944b137dcd502ea9e810fb7779ed8346e9720750435caba05749b9b3642",
+    "selected/questions.json": "b7b064b58a76b117dfd19a73d351fe7bf948570854e23bf00661bf403fd0b88b",
+    "selected/b2b-test.parquet": "a13f06f8e0d7d6c84c86e99a1fa9fce3b6df5c00609b95a8c2eff62300748cce",
+    "selected/b2c-test.parquet": "b1b8f2a2e94a474eceb89e1c09140293f272d85e0ded55787e2314a82e44ba24",
+    "selected/selection.json": "bc65a5fb41362c63c061098dbfb7ea735d3ef3952e1f33a0ab21f36c78ee92d1"
+  },
+  "attempts_by_stage": {
+    "contract_audit": 96,
+    "final_audit": 98,
+    "final_multi_necessity": 16,
+    "final_multi_necessity_schema_repair": 3,
+    "generate": 234,
+    "group_answer_comparison_v2": 463,
+    "group_blind_extraction": 2504,
+    "group_blind_verification_v2": 2504,
+    "independent_answer": 233,
+    "no_context": 466,
+    "quality_audit": 233,
+    "query_coherence": 41,
+    "question_contract": 95,
+    "single_call_ablation": 122
+  },
+  "independent_review_report": "reports/sales-ready-validation-20260918-accepted-qwen-review-v1.json",
+  "limitations": "Proves completed bounded execution, artifact verification and cache replay. Final semantic review and readiness decision still require inspecting the resulting questions/reviews."
+}

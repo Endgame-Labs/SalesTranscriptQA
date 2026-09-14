@@ -1,5 +1,7 @@
 # Sales question redesign experiments
 
+**Completed:** the consolidated [readiness report](../reports/GENERATOR_READINESS.md) and [generation guide](GENERATION.md) describe the final validated pipeline. The sections below preserve experiment chronology; their in-progress status statements are historical.
+
 The target is a question a sales rep or account manager would ask about a customer,
 account or opportunity. Natural participant names are allowed. Avoid repetitive
 source-location scaffolding such as “in the July 11 call titled … with …”. Business
@@ -182,3 +184,9 @@ and, only after successful completion of the recorded 100-unit sample, run selec
 artifact verification, question export, independent review, and a second replay. Its
 receipt distinguishes execution/replay verification from the final semantic readiness
 decision. It never starts a full-corpus run.
+
+Final selection v4 also requires DeepSeek/GLM agreement that each multi-call source
+contributes substantively distinct requested information. A repeated delay complaint
+was rejected by both. JSON-schema replies receive at most two format retries, while
+valid negatives are never retried. Final output: 37 questions, six multi-call, with
+all selected outputs reviewed and completed replay verified without new API attempts.

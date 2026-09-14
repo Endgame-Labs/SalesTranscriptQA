@@ -58,12 +58,18 @@ def main():
     assert canonical(selected)==canonical(selected_parquet)
     expected={d['question_id'] for d in selection['decisions'] if d['accepted'] is True}
     assert {q['question_id'] for q in selected}==expected
+    decisions={d['question_id']:d for d in selection['decisions']}
+    for q in selected:
+        if q['question_class']=='multi_call':
+            review=decisions[q['question_id']]['multi_necessity']
+            assert review['accepted'] is True and len(review['verdicts'])==2
+            assert all(v['passed'] is True for v in review['verdicts'])
     assert len(selected)==selection['selected_questions']==progress['selected_questions']
     assert canonical(selected)==canonical([q for q in questions if q['question_id'] in expected])
     report={'verified':True,'scope':plan['scope'],'source_units':len(plan['units']),
             'raw_accepted_questions':len(questions),'accepted_questions':len(selected),'accepted_counts':dict(Counter(q['domain']+'/'+q['question_class'] for q in selected)),
             'excluded_groups':len(excluded),'checks':['source hashes','complete scope','group exclusions','no B2C multi-call',
-            'JSON/Parquet parity','unique question IDs','exact evidence','accepted contract and consistency gates','locator checks','final coherence selection and Parquet parity'],
+            'JSON/Parquet parity','unique question IDs','exact evidence','accepted contract and consistency gates','locator checks','final coherence selection and Parquet parity','cross-model multi-call necessity'],
             'limitations':'Artifact integrity and recorded-gate verification, not an independent semantic quality estimate.'}
     write_json(Path('reports')/(root.name+'-verification.json'),report)
     print(json.dumps(report))

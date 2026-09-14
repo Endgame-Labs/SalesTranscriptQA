@@ -4,7 +4,7 @@ A dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales ca
 
 **Status: 200-question pilot complete.** All 200 questions passed automated validation: 50 single-call and 50 two-call questions per domain, with the full 10,829-call corpus. No human review or calibration was performed. The CLI is implemented and tested. The dataset is published at [EndgameLabs/SalesTranscriptQA on Hugging Face](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA).
 
-**Expansion is paused for question-quality research.** A revised generator is being validated on bounded samples of realistic sales/account questions, with B2C single-call and B2B single-/two-call scope. The published dataset remains the original pilot. [Revised generation workflow](docs/GENERATION.md) · [Experiment history](docs/QUESTION_EXPERIMENTS.md).
+**Revised generator validated; full expansion is paused.** A 100-unit development run produced 37 final sales/account questions with B2C single-call and B2B single-/two-call scope. The published dataset remains the original pilot. [Generation guide](docs/GENERATION.md) · [Readiness report and questions](reports/GENERATOR_READINESS.md).
 
 [Download the pilot and CLI release](https://github.com/Endgame-Labs/SalesTranscriptQA/releases/tag/v0.1.0) · [Pilot report and costs](reports/PILOT.md)
 

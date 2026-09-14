@@ -1,8 +1,10 @@
 # Generate sales questions
 
-The revised generator is undergoing a 100-unit validation run. Full generation
-and publication are paused. These instructions describe the implementation being
-validated; the final results report will record readiness and sample quality.
+The revised generator completed 100-unit development validation and is ready to
+run: 37 final questions, all passing the final independent source review, with
+zero new API calls on completed replay. Full generation and publication remain
+paused. See the [readiness report](../reports/GENERATOR_READINESS.md) for evidence,
+experiment history, costs and limitations.
 
 ## Prepare
 
@@ -88,7 +90,7 @@ verified answers. Equivalent evidence is allowed; conflicting complete answers a
 inconclusive checks reject the proposal. This is a checked source pool, not a proof
 of uniqueness over the whole corpus.
 
-Final question-only GLM selection removes unrelated fact bundles and clearly mismatched domain language, such as unexplained installation of ordinary purchased vehicles. Names can supply
+Final question-only GLM selection removes unrelated fact bundles and clearly mismatched domain language, such as unexplained installation of ordinary purchased vehicles. Two-call questions also require cross-model agreement on substantively distinct requested facts; valid negative judgments are not retried into positives. Names can supply
 natural scope; document-date/title preambles and unbound first-person identity are
 rejected. All judges remain fallible, and coherence has subjective boundaries.
 
@@ -98,7 +100,7 @@ estimates from unique SQLite databases; it does not sum overlapping report total
 
 ## Eventual full generation
 
-After accepting the validated approach, replace `--sample 100` with `--all` and use
+For a full run, replace `--sample 100` with `--all` and use
 a new directory and an explicit budget. The full eligible scope is 14,916 source
 units: 10,829 single calls and 4,087 B2B pairs. This mode exists but has not been run
 during the current research. It also writes local artifacts only; publication is a

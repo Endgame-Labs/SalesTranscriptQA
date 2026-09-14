@@ -92,7 +92,7 @@ def main():
         coverage['accepted_questions']=coverage.pop('published_questions')
         coverage['published']=False
         write_json(args.run_dir/'coverage.json',coverage)
-        selection=select_output(args.run_dir,full.transport)
+        selection=select_output(args.run_dir,full.transport,full.calls)
         with full.transport.db() as db:
             cost=db.execute('SELECT COALESCE(SUM(estimated_usd),0) FROM attempts').fetchone()[0]
         progress.update(complete=True,accepted_after_dedup=coverage['accepted_questions'],

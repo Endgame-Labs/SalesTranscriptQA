@@ -52,7 +52,7 @@ def assess(question,kind,transport,version=2):
     return {'accepted':valid and verdict['accept'],'verdict':verdict}
 
 
-def select_output(root,transport):
+def select_output(root,transport,calls):
     """Preserve raw generation artifacts; emit the final selected dataset separately."""
     import concurrent.futures
     from pathlib import Path
@@ -62,7 +62,13 @@ def select_output(root,transport):
     root=Path(root)
     questions=json.loads((root/'questions.json').read_text())
     def check(q):
-        return {'question_id':q['question_id'],**assess(q['question'],q['question_class'],transport)}
+        result={'question_id':q['question_id'],**assess(q['question'],q['question_class'],transport)}
+        if result['accepted'] and q['question_class']=='multi_call':
+            from .multi_necessity import assess as check_necessity
+            review=check_necessity(q,[calls[q['domain']][cid] for cid in q['supporting_call_ids']],transport)
+            result['multi_necessity']=review
+            result['accepted']=review['accepted']
+        return result
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         decisions=list(pool.map(check,questions))
     keep={d['question_id'] for d in decisions if d['accepted']}
@@ -74,7 +80,7 @@ def select_output(root,transport):
         schema=pq.read_schema(root/f'{domain}-test.parquet')
         rows=[q for q in selected if q['domain']==domain]
         pq.write_table(pa.Table.from_pylist(rows,schema=schema),output/f'{domain}-test.parquet',compression='zstd')
-    report={'version':VERSION,'prompt_sha256':digest(PROMPT),'input_sha256':digest(questions),
+    report={'version':'final-selection-v4','coherence_version':VERSION,'prompt_sha256':digest(PROMPT),'input_sha256':digest(questions),
             'generated_accepted':len(questions),'selected_questions':len(selected),'decisions':decisions,
             'limitations':'Question-only automated coherence selection after factual/source checks. Some coherent timeline questions lie on a subjective boundary; this is not a human gold label.'}
     write_json(output/'selection.json',report)

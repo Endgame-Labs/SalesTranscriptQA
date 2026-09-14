@@ -1,0 +1,1129 @@
+{
+  "version": "final-selection-v4",
+  "coherence_version": "query-coherence-v2",
+  "prompt_sha256": "212174b348d2ef3edbf91c7912dfca61d9cad5182b76b14f3bdc00c92d1eeda5",
+  "input_sha256": "ff389197ee832d63982be93c4412b3cfc0f3c248d1eb7394b15b8bfe29c32074",
+  "generated_accepted": 41,
+  "selected_questions": 37,
+  "decisions": [
+    {
+      "question_id": "b2b-multi_call-27d6920ffe8f7afe",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The existing tools Samuel Peterson said any new EDA solution must mesh with, and the integration concern he raised when reviewing the proposal draft",
+        "relationship": "Both facts concern the same business issue \u2014 integration requirements for SkyVista's EDA integration opportunity \u2014 across an initial requirement discussion and a later proposal review",
+        "reason": "A coherent single-issue request: integration requirements and the integration concern raised on the proposal draft address the same issue, not two independent lookups."
+      },
+      "multi_necessity": {
+        "accepted": true,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxoHIAS",
+                  "fact": "Samuel Peterson said any new solution must mesh well with QuantumPCB Modeler and VeriSim Express.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SuvGIAS) does not mention these specific tool names; it only discusses integration in general terms."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuvGIAS",
+                  "fact": "During proposal review, Samuel Peterson raised the integration concern of past integration obstacles causing downtime.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SxoHIAS) does not mention any past integration obstacles or downtime; it only discusses integration requirements in a general sense."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific existing tools that must be integrated with, and the integration concern raised during proposal review. These facts are provided by different calls and are not repeated or paraphrased in the other call. The first call supplies the tool names, while the second call supplies the specific concern about past obstacles causing downtime. Neither call contains both facts, so both are necessary."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003SxoHIAS",
+                    "fact": "Samuel Peterson said any new solution must mesh well with QuantumPCB Modeler and VeriSim Express.",
+                    "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SuvGIAS) does not mention these specific tool names; it only discusses integration in general terms."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003SuvGIAS",
+                    "fact": "During proposal review, Samuel Peterson raised the integration concern of past integration obstacles causing downtime.",
+                    "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SxoHIAS) does not mention any past integration obstacles or downtime; it only discusses integration requirements in a general sense."
+                  }
+                ],
+                "reason": "The question asks for two distinct pieces of information: the specific existing tools that must be integrated with, and the integration concern raised during proposal review. These facts are provided by different calls and are not repeated or paraphrased in the other call. The first call supplies the tool names, while the second call supplies the specific concern about past obstacles causing downtime. Neither call contains both facts, so both are necessary."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxoHIAS",
+                  "fact": "Any new solution must mesh well with QuantumPCB Modeler and VeriSim Express",
+                  "why_other_call_cannot_supply_it": "The February proposal-review call never names these existing tools; it only discusses integration generally."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuvGIAS",
+                  "fact": "During proposal review he raised the concern that integration must be seamless, citing past integration obstacles that caused downtime",
+                  "why_other_call_cannot_supply_it": "The January call predates the proposal and contains no proposal-review feedback or mention of past integration downtime."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific existing tools (stated only in the January discovery call) and the integration concern raised during proposal review (stated only in the February call). Neither call supplies both facts, and they are not paraphrases of one complaint."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003SxoHIAS",
+                    "fact": "Any new solution must mesh well with QuantumPCB Modeler and VeriSim Express",
+                    "why_other_call_cannot_supply_it": "The February proposal-review call never names these existing tools; it only discusses integration generally."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003SuvGIAS",
+                    "fact": "During proposal review he raised the concern that integration must be seamless, citing past integration obstacles that caused downtime",
+                    "why_other_call_cannot_supply_it": "The January call predates the proposal and contains no proposal-review feedback or mention of past integration downtime."
+                  }
+                ],
+                "reason": "The question asks for two distinct pieces of information: the specific existing tools (stated only in the January discovery call) and the integration concern raised during proposal review (stated only in the February call). Neither call supplies both facts, and they are not paraphrases of one complaint."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-2a74696f7f6a51e6",
+      "accepted": false,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing concern Mikhail Volkov raised with Terek Al-Farsi regarding Innovatech Group's EDA expansion, and the next step agreed in the follow-up call",
+        "relationship": "Objection and its resolution: the follow-up call's next step directly addresses the pricing concern raised, forming one coherent issue across two calls",
+        "reason": "Both requested facts concern the same business issue (pricing on the EDA expansion) across an initial and follow-up call, which is a valid multi-call pattern."
+      },
+      "multi_necessity": {
+        "accepted": false,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": false,
+            "verdict": {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the pricing concern raised by Mikhail and the agreed next step. Both facts are present in the first call: Mikhail explicitly requests more flexible pricing options, and Terek agrees to discuss customizable options, with the follow-up call on March 25th mentioned in the second call. However, the first call already contains the pricing concern and the agreement to continue discussions, while the second call merely reiterates the next step (the March 25th call) without adding a new requested fact. The pricing concern is not mentioned in the second call, but the first call alone supplies both the concern and the next step (as Terek says 'we look forward to deeper conversations in the coming weeks' and the second call confirms the specific date). Since the first call suffices for the actual information need, the second call is not necessary. The two calls do not provide distinct requested facts; the second call only repeats the next step and does not introduce a new pricing concern. Therefore, the question does not genuinely need both calls."
+            },
+            "schema_attempts": [
+              {
+                "type": "object",
+                "necessary": false,
+                "exclusive_facts": [],
+                "reason": "The question asks for the pricing concern raised by Mikhail and the agreed next step. Both facts are present in the first call: Mikhail explicitly requests more flexible pricing options, and Terek agrees to discuss customizable options, with the follow-up call on March 25th mentioned in the second call. However, the first call already contains the pricing concern and the agreement to continue discussions, while the second call merely reiterates the next step (the March 25th call) without adding a new requested fact. The pricing concern is not mentioned in the second call, but the first call alone supplies both the concern and the next step (as Terek says 'we look forward to deeper conversations in the coming weeks' and the second call confirms the specific date). Since the first call suffices for the actual information need, the second call is not necessary. The two calls do not provide distinct requested facts; the second call only repeats the next step and does not introduce a new pricing concern. Therefore, the question does not genuinely need both calls."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StXsIAK",
+                  "fact": "Mikhail requested more flexible pricing options to align with Innovatech's growth plans",
+                  "why_other_call_cannot_supply_it": "The second call only mentions general cost-of-ownership assurances and defers pricing talk; the specific flexible-pricing concern appears only in the first call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2eUIAS",
+                  "fact": "They agreed to a follow-up call on March 25th to dive into pain points and outline a tailored action plan",
+                  "why_other_call_cannot_supply_it": "The first call ends with only a vague 'next engagement' and no agreed date or plan; the concrete next step is stated only in the second call"
+                }
+              ],
+              "reason": "The question asks for two distinct facts: a pricing concern raised in the first call and a concrete agreed next step in the follow-up call. Each fact exists in only one call, so both sources are required."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003StXsIAK",
+                    "fact": "Mikhail requested more flexible pricing options to align with Innovatech's growth plans",
+                    "why_other_call_cannot_supply_it": "The second call only mentions general cost-of-ownership assurances and defers pricing talk; the specific flexible-pricing concern appears only in the first call"
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003T2eUIAS",
+                    "fact": "They agreed to a follow-up call on March 25th to dive into pain points and outline a tailored action plan",
+                    "why_other_call_cannot_supply_it": "The first call ends with only a vague 'next engagement' and no agreed date or plan; the concrete next step is stated only in the second call"
+                  }
+                ],
+                "reason": "The question asks for two distinct facts: a pricing concern raised in the first call and a concrete agreed next step in the follow-up call. Each fact exists in only one call, so both sources are required."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-3836e306a5889d70",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Thato offered on EcoPCB Creator and OptiPower Manager in the initial discussion and the discounted prices he quoted for each in the follow-up, for TerraForm Engineering's Sustainable Design Expansion.",
+        "relationship": "single coherent commercial inquiry: comparison of the same quoted pricing terms (discounts and discounted prices) across the initial discussion and follow-up",
+        "reason": "Both parts concern the same commercial terms (discounts and discounted prices for the same two products in the same deal), compared across an initial and follow-up call, which is a natural pricing follow-up pattern."
+      },
+      "multi_necessity": {
+        "accepted": true,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwyeIAC",
+                  "fact": "Thato offered a 10% discount on EcoPCB Creator and OptiPower Manager in the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The follow-up call only mentions that a 10% discount was applied, but does not state that it was offered in the initial discussion."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T287IAC",
+                  "fact": "Thato quoted discounted prices of $4,724.87 for EcoPCB Creator and $4,859.89 for OptiPower Manager in the follow-up.",
+                  "why_other_call_cannot_supply_it": "The initial call does not provide any specific discounted prices for these products."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount offered in the initial discussion and the discounted prices quoted in the follow-up. The initial call contains the discount offer but no prices, while the follow-up contains the prices but not the original offer. Both calls are necessary to answer the question fully."
+            },
+            "schema_attempts": [
+              {
+                "type": "object",
+                "properties": {
+                  "necessary": {
+                    "type": "boolean"
+                  },
+                  "exclusive_facts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "call_id": {
+                          "type": "string"
+                        },
+                        "fact": {
+                          "type": "string"
+                        },
+                        "why_other_call_cannot_supply_it": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "call_id",
+                        "fact",
+                        "why_other_call_cannot_supply_it"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "necessary",
+                  "exclusive_facts",
+                  "reason"
+                ]
+              },
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003SwyeIAC",
+                    "fact": "Thato offered a 10% discount on EcoPCB Creator and OptiPower Manager in the initial discussion.",
+                    "why_other_call_cannot_supply_it": "The follow-up call only mentions that a 10% discount was applied, but does not state that it was offered in the initial discussion."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003T287IAC",
+                    "fact": "Thato quoted discounted prices of $4,724.87 for EcoPCB Creator and $4,859.89 for OptiPower Manager in the follow-up.",
+                    "why_other_call_cannot_supply_it": "The initial call does not provide any specific discounted prices for these products."
+                  }
+                ],
+                "reason": "The question asks for two distinct pieces of information: the discount offered in the initial discussion and the discounted prices quoted in the follow-up. The initial call contains the discount offer but no prices, while the follow-up contains the prices but not the original offer. Both calls are necessary to answer the question fully."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwyeIAC",
+                  "fact": "Thato offered a 10% discount on EcoPCB Creator and OptiPower Manager in the initial discussion",
+                  "why_other_call_cannot_supply_it": "The follow-up call only restates the 10% discount as part of the price recap; the initial offer of the discount is stated in the first call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T287IAC",
+                  "fact": "Discounted prices quoted in the follow-up: EcoPCB Creator $4,724.87 and OptiPower Manager $4,859.89",
+                  "why_other_call_cannot_supply_it": "The first call mentions only the 10% discount with no dollar figures; the specific discounted prices appear only in the second call"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount offered initially (only in call 1) and the specific discounted prices quoted in the follow-up (only in call 2). Neither call alone contains both facts."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003SwyeIAC",
+                    "fact": "Thato offered a 10% discount on EcoPCB Creator and OptiPower Manager in the initial discussion",
+                    "why_other_call_cannot_supply_it": "The follow-up call only restates the 10% discount as part of the price recap; the initial offer of the discount is stated in the first call"
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003T287IAC",
+                    "fact": "Discounted prices quoted in the follow-up: EcoPCB Creator $4,724.87 and OptiPower Manager $4,859.89",
+                    "why_other_call_cannot_supply_it": "The first call mentions only the 10% discount with no dollar figures; the specific discounted prices appear only in the second call"
+                  }
+                ],
+                "reason": "The question asks for two distinct pieces of information: the discount offered initially (only in call 1) and the specific discounted prices quoted in the follow-up (only in call 2). Neither call alone contains both facts."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-535048bfe696dc6c",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitive concerns Elisa Ordo\u00f1ez raised about CircuitWave at SkyTech Ventures \u2014 one in the initial discussion and one during final terms.",
+        "relationship": "Both requests concern the same business issue (competitive concerns about CircuitWave) tracked across two calls on the same opportunity.",
+        "reason": "This is a coherent comparison of the same competitive issue across the deal lifecycle, not two independent fact lookups joined merely by the account."
+      },
+      "multi_necessity": {
+        "accepted": true,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx54IAC",
+                  "fact": "Elisa noted peers lean toward competitors who emphasize user experience more heavily.",
+                  "why_other_call_cannot_supply_it": "The initial call (b2b:a05Wt000003T0kVIAS) does not mention any competitor concern about user experience; it only discusses CircuitWave's slower feature introduction."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0kVIAS",
+                  "fact": "Elisa raised CircuitWave's slower pace of feature introduction as a concern.",
+                  "why_other_call_cannot_supply_it": "The finalizing call (b2b:a05Wt000003Sx54IAC) does not mention CircuitWave or its feature pace; it only raises the user experience competitor concern."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct competitive concerns raised at two different times (initial discussion and finalizing terms). The initial call contains only the CircuitWave feature pace concern, while the finalizing call contains only the user experience competitor concern. Neither call provides both facts, so both calls are necessary to answer the question fully."
+            },
+            "schema_attempts": [
+              {
+                "type": "object",
+                "properties": {
+                  "necessary": {
+                    "type": "boolean"
+                  },
+                  "exclusive_facts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "call_id": {
+                          "type": "string"
+                        },
+                        "fact": {
+                          "type": "string"
+                        },
+                        "why_other_call_cannot_supply_it": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "call_id",
+                        "fact",
+                        "why_other_call_cannot_supply_it"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "necessary",
+                  "exclusive_facts",
+                  "reason"
+                ]
+              },
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003Sx54IAC",
+                    "fact": "Elisa noted peers lean toward competitors who emphasize user experience more heavily.",
+                    "why_other_call_cannot_supply_it": "The initial call (b2b:a05Wt000003T0kVIAS) does not mention any competitor concern about user experience; it only discusses CircuitWave's slower feature introduction."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003T0kVIAS",
+                    "fact": "Elisa raised CircuitWave's slower pace of feature introduction as a concern.",
+                    "why_other_call_cannot_supply_it": "The finalizing call (b2b:a05Wt000003Sx54IAC) does not mention CircuitWave or its feature pace; it only raises the user experience competitor concern."
+                  }
+                ],
+                "reason": "The question explicitly asks for two distinct competitive concerns raised at two different times (initial discussion and finalizing terms). The initial call contains only the CircuitWave feature pace concern, while the finalizing call contains only the user experience competitor concern. Neither call provides both facts, so both calls are necessary to answer the question fully."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0kVIAS",
+                  "fact": "Elisa cited CircuitWave's slower pace of feature introduction as a concern in the initial discussion",
+                  "why_other_call_cannot_supply_it": "The finalization call (2021-09-30) contains no mention of CircuitWave or feature-introduction pace; it only discusses UX-focused competitors."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sx54IAC",
+                  "fact": "When finalizing terms, Elisa noted peers lean toward competitors who emphasize user experience more heavily",
+                  "why_other_call_cannot_supply_it": "The initial call (2021-06-08) contains no mention of peers or user-experience-focused competitors; its concern is CircuitWave's feature pace."
+                }
+              ],
+              "reason": "The question explicitly asks for two different competitor-related concerns at two stages. Each call contains a distinct, non-redundant concern (feature-introduction pace vs. user-experience emphasis), and neither call contains both facts."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003T0kVIAS",
+                    "fact": "Elisa cited CircuitWave's slower pace of feature introduction as a concern in the initial discussion",
+                    "why_other_call_cannot_supply_it": "The finalization call (2021-09-30) contains no mention of CircuitWave or feature-introduction pace; it only discusses UX-focused competitors."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003Sx54IAC",
+                    "fact": "When finalizing terms, Elisa noted peers lean toward competitors who emphasize user experience more heavily",
+                    "why_other_call_cannot_supply_it": "The initial call (2021-06-08) contains no mention of peers or user-experience-focused competitors; its concern is CircuitWave's feature pace."
+                  }
+                ],
+                "reason": "The question explicitly asks for two different competitor-related concerns at two stages. Each call contains a distinct, non-redundant concern (feature-introduction pace vs. user-experience emphasis), and neither call contains both facts."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-5bf32b44c23c78fe",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The security concern Chin Ho Lee raised about integrating OptiEnergy Suite and his post-implementation satisfaction with TechPulse's security compliance documentation",
+        "relationship": "Both facts concern the same business issue \u2014 security/compliance of the OptiEnergy Suite integration \u2014 tracked from initial concern to post-implementation follow-up",
+        "reason": "This is a coherent before/after question about a single issue (security compliance), not two independent lookups joined by account name."
+      },
+      "multi_necessity": {
+        "accepted": true,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": true,
+            "verdict": {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T21ZIAS",
+                  "fact": "Chin Ho Lee asked how the integration could avoid compromising their current system's security.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Suk4IAC) does not contain this pre-implementation security concern; it only mentions post-implementation satisfaction with compliance documentation."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Suk4IAC",
+                  "fact": "After implementation, Chin Ho Lee said they reviewed the compliance documentation and were satisfied with the standards.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T21ZIAS) occurs before implementation and does not include any post-implementation satisfaction statement about compliance documentation."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the security concern raised before integration and the post-implementation satisfaction. Each fact is only present in one call, and neither call contains both facts, so both calls are necessary."
+            },
+            "schema_attempts": [
+              {
+                "type": "object",
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003T21ZIAS",
+                    "fact": "Chin Ho Lee asked how the integration could avoid compromising their current system's security.",
+                    "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Suk4IAC) does not contain this pre-implementation security concern; it only mentions post-implementation satisfaction with compliance documentation."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003Suk4IAC",
+                    "fact": "After implementation, Chin Ho Lee said they reviewed the compliance documentation and were satisfied with the standards.",
+                    "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T21ZIAS) occurs before implementation and does not include any post-implementation satisfaction statement about compliance documentation."
+                  }
+                ],
+                "reason": "The question explicitly asks for two distinct pieces of information: the security concern raised before integration and the post-implementation satisfaction. Each fact is only present in one call, and neither call contains both facts, so both calls are necessary."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T21ZIAS",
+                  "fact": "Chin Ho Lee raised the concern of whether integrating OptiEnergy Suite would compromise TerraSync's current system's security",
+                  "why_other_call_cannot_supply_it": "The later post-implementation call only covers setup challenges and compliance satisfaction; the pre-integration security concern is raised only in this earlier call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Suk4IAC",
+                  "fact": "After implementation, Chin Ho Lee stated they reviewed the compliance documentation and were satisfied with TechPulse's security standards",
+                  "why_other_call_cannot_supply_it": "The earlier pre-sale call predates implementation and contains no statement about reviewing or being satisfied with compliance documentation"
+                }
+              ],
+              "reason": "The question asks for two distinct facts across a timeline: a pre-sale security concern (only in the 2021-12-05 call) and a post-implementation satisfaction statement about compliance documentation (only in the 2022-01-15 call). Neither call supplies both, and the facts are a concern plus its explicit resolution, which is a substantive distinction."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003T21ZIAS",
+                    "fact": "Chin Ho Lee raised the concern of whether integrating OptiEnergy Suite would compromise TerraSync's current system's security",
+                    "why_other_call_cannot_supply_it": "The later post-implementation call only covers setup challenges and compliance satisfaction; the pre-integration security concern is raised only in this earlier call"
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003Suk4IAC",
+                    "fact": "After implementation, Chin Ho Lee stated they reviewed the compliance documentation and were satisfied with TechPulse's security standards",
+                    "why_other_call_cannot_supply_it": "The earlier pre-sale call predates implementation and contains no statement about reviewing or being satisfied with compliance documentation"
+                  }
+                ],
+                "reason": "The question asks for two distinct facts across a timeline: a pre-sale security concern (only in the 2021-12-05 call) and a post-implementation satisfaction statement about compliance documentation (only in the 2022-01-15 call). Neither call supplies both, and the facts are a concern plus its explicit resolution, which is a substantive distinction."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-67b83093660ba1c6",
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Security shortcoming Mei attributed to competitors like CircuitWave; (2) current provider Hassan blamed for unresponsive support during the demo.",
+        "relationship": "Two independent fact lookups from different calls joined only by a shared 'Nordic HealthTech' context; one concerns competitor security weaknesses, the other incumbent support quality.",
+        "reason": "The requested facts address different business issues (competitive security gaps vs. poor support from a current provider) and come from different conversations; being about the same account/region is not enough to connect them."
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-7ea452fe6491cb8e",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How discounts on the proposed EDA products for MediLux Solutions were described in the initial proposal discussion and how Ayumi described the discount terms when Jing later reviewed the proposal terms",
+        "relationship": "same commercial terms (discounts on the EDA products) tracked across the initial proposal and a later review",
+        "reason": "This is a coherent comparison of the same commercial term\u2014discounts on the same proposed products\u2014across an initial discussion and a later review, matching the accepted pattern of comparing commercial terms over time."
+      },
+      "multi_necessity": {
+        "accepted": true,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxY8IAK",
+                  "fact": "Initially, the discounts were 10% on CloudLink Designer and AI Cirku-Tech, and 15% on CircuitMaster Analyzer.",
+                  "why_other_call_cannot_supply_it": "The later call only mentions a flexible 10-15% discount on main products without specifying the per-product breakdown, so it cannot provide the initial specific percentages."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy4RIAS",
+                  "fact": "Later, Ayumi described the discount as a flexible 10-15% on main products tailored to MediLux's budget.",
+                  "why_other_call_cannot_supply_it": "The initial call only gives fixed percentages per product and does not mention flexibility or budget tailoring, so it cannot supply the later description."
+                }
+              ],
+              "reason": "The question explicitly asks for how discounts were described in the initial proposal discussion and how Ayumi described them later. The two calls provide distinct descriptions: the first gives specific per-product percentages, while the second gives a flexible range tailored to budget. These are substantively different and both are required to answer the question fully."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003SxY8IAK",
+                    "fact": "Initially, the discounts were 10% on CloudLink Designer and AI Cirku-Tech, and 15% on CircuitMaster Analyzer.",
+                    "why_other_call_cannot_supply_it": "The later call only mentions a flexible 10-15% discount on main products without specifying the per-product breakdown, so it cannot provide the initial specific percentages."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003Sy4RIAS",
+                    "fact": "Later, Ayumi described the discount as a flexible 10-15% on main products tailored to MediLux's budget.",
+                    "why_other_call_cannot_supply_it": "The initial call only gives fixed percentages per product and does not mention flexibility or budget tailoring, so it cannot supply the later description."
+                  }
+                ],
+                "reason": "The question explicitly asks for how discounts were described in the initial proposal discussion and how Ayumi described them later. The two calls provide distinct descriptions: the first gives specific per-product percentages, while the second gives a flexible range tailored to budget. These are substantively different and both are required to answer the question fully."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxY8IAK",
+                  "fact": "Initial proposal discounts: 10% on CloudLink Designer and AI Cirku-Tech, 15% on CircuitMaster Analyzer",
+                  "why_other_call_cannot_supply_it": "The later call only states a flexible 10-15% range on main products and never gives the per-product breakdown from the initial proposal"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy4RIAS",
+                  "fact": "Later review: a flexible 10-15% discount on the main products tailored to MediLux's budget",
+                  "why_other_call_cannot_supply_it": "The initial call only gives fixed per-product percentages and does not mention the flexible budget-tailored range"
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct commercial terms: fixed per-product discounts in the initial proposal versus a later flexible budget-tailored 10-15% range. These are different discount structures, not paraphrases, and each call supplies only one of them."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003SxY8IAK",
+                    "fact": "Initial proposal discounts: 10% on CloudLink Designer and AI Cirku-Tech, 15% on CircuitMaster Analyzer",
+                    "why_other_call_cannot_supply_it": "The later call only states a flexible 10-15% range on main products and never gives the per-product breakdown from the initial proposal"
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003Sy4RIAS",
+                    "fact": "Later review: a flexible 10-15% discount on the main products tailored to MediLux's budget",
+                    "why_other_call_cannot_supply_it": "The initial call only gives fixed per-product percentages and does not mention the flexible budget-tailored range"
+                  }
+                ],
+                "reason": "The question explicitly asks for two distinct commercial terms: fixed per-product discounts in the initial proposal versus a later flexible budget-tailored 10-15% range. These are different discount structures, not paraphrases, and each call supplies only one of them."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-d79ccfdbf81c2140",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Maria's comments on CircuitWave's weaknesses and Mei's concession about what CircuitWave excels at",
+        "relationship": "competitive comparison of the same competitor across discussions",
+        "reason": "Both parts address the same business issue\u2014assessing the competitor CircuitWave\u2014forming one coherent competitive comparison, even if drawn from multiple calls."
+      },
+      "multi_necessity": {
+        "accepted": true,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0SuIAK",
+                  "fact": "Maria said CircuitWave may lag in innovation, which affects scalability.",
+                  "why_other_call_cannot_supply_it": "This specific criticism of CircuitWave's innovation and scalability impact is only mentioned in the first call; the second call does not discuss CircuitWave's weaknesses."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3nCIAS",
+                  "fact": "Mei conceded CircuitWave excels in support services.",
+                  "why_other_call_cannot_supply_it": "This concession about CircuitWave's strength in support is only present in the second call; the first call does not mention any CircuitWave strengths."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: Maria's statement about CircuitWave's weaknesses and Mei's concession about CircuitWave's strengths. These are separate facts that appear in different calls\u2014the weakness in the first call and the strength in the second\u2014so both calls are necessary to fully answer the question."
+            },
+            "schema_attempts": [
+              {
+                "type": "object",
+                "properties": {
+                  "necessary": {
+                    "type": "boolean"
+                  },
+                  "exclusive_facts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "call_id": {
+                          "type": "string"
+                        },
+                        "fact": {
+                          "type": "string"
+                        },
+                        "why_other_call_cannot_supply_it": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "call_id",
+                        "fact",
+                        "why_other_call_cannot_supply_it"
+                      ]
+                    }
+                  },
+                  "reason": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "necessary",
+                  "exclusive_facts",
+                  "reason"
+                ]
+              },
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003T0SuIAK",
+                    "fact": "Maria said CircuitWave may lag in innovation, which affects scalability.",
+                    "why_other_call_cannot_supply_it": "This specific criticism of CircuitWave's innovation and scalability impact is only mentioned in the first call; the second call does not discuss CircuitWave's weaknesses."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003T3nCIAS",
+                    "fact": "Mei conceded CircuitWave excels in support services.",
+                    "why_other_call_cannot_supply_it": "This concession about CircuitWave's strength in support is only present in the second call; the first call does not mention any CircuitWave strengths."
+                  }
+                ],
+                "reason": "The question explicitly asks for two distinct pieces of information: Maria's statement about CircuitWave's weaknesses and Mei's concession about CircuitWave's strengths. These are separate facts that appear in different calls\u2014the weakness in the first call and the strength in the second\u2014so both calls are necessary to fully answer the question."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": true,
+            "verdict": {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0SuIAK",
+                  "fact": "Maria said CircuitWave may lag in innovation, which affects scalability",
+                  "why_other_call_cannot_supply_it": "The second call contains no mention of CircuitWave's weaknesses; Maria's criticism appears only in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3nCIAS",
+                  "fact": "Maria noted support is something CircuitWave is particularly strong at (and Mei conceded CircuitWave excels in support)",
+                  "why_other_call_cannot_supply_it": "The first call contains no discussion of CircuitWave's support strengths; this concession appears only in the second call."
+                }
+              ],
+              "reason": "The question asks for two distinct facts: Maria's stated weakness about CircuitWave (only in the first call) and the acknowledged strength in support services (only in the second call). Neither call alone contains both pieces of requested information."
+            },
+            "schema_attempts": [
+              {
+                "necessary": true,
+                "exclusive_facts": [
+                  {
+                    "call_id": "b2b:a05Wt000003T0SuIAK",
+                    "fact": "Maria said CircuitWave may lag in innovation, which affects scalability",
+                    "why_other_call_cannot_supply_it": "The second call contains no mention of CircuitWave's weaknesses; Maria's criticism appears only in the first call."
+                  },
+                  {
+                    "call_id": "b2b:a05Wt000003T3nCIAS",
+                    "fact": "Maria noted support is something CircuitWave is particularly strong at (and Mei conceded CircuitWave excels in support)",
+                    "why_other_call_cannot_supply_it": "The first call contains no discussion of CircuitWave's support strengths; this concession appears only in the second call."
+                  }
+                ],
+                "reason": "The question asks for two distinct facts: Maria's stated weakness about CircuitWave (only in the first call) and the acknowledged strength in support services (only in the second call). Neither call alone contains both pieces of requested information."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-multi_call-e8041b862639cc61",
+      "accepted": false,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Oliveira Santos said about Quantum Circuits Inc's implementation timelines in each of the two calls",
+        "relationship": "same business issue (implementation timelines) compared across two calls",
+        "reason": "Both requested facts concern the same business issue\u2014implementation timelines\u2014across two conversations, which is a valid multi-call comparison."
+      },
+      "multi_necessity": {
+        "accepted": false,
+        "verdicts": [
+          {
+            "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+            "passed": false,
+            "verdict": {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "Both calls contain essentially the same complaint about Quantum Circuits Inc's implementation timelines: in the first call, Oliveira says they had 'longer-than-expected integration timelines,' and in the later call, he says their 'implementation delays put Onyx behind schedule.' These are paraphrases of the same underlying fact (delays in implementation), not distinct requested facts. The question asks for what he said in each conversation, but the information need is satisfied by either call alone, as both convey the same delay issue. Therefore, both calls are not necessary."
+            },
+            "schema_attempts": [
+              {
+                "necessary": false,
+                "exclusive_facts": [],
+                "reason": "Both calls contain essentially the same complaint about Quantum Circuits Inc's implementation timelines: in the first call, Oliveira says they had 'longer-than-expected integration timelines,' and in the later call, he says their 'implementation delays put Onyx behind schedule.' These are paraphrases of the same underlying fact (delays in implementation), not distinct requested facts. The question asks for what he said in each conversation, but the information need is satisfied by either call alone, as both convey the same delay issue. Therefore, both calls are not necessary."
+              }
+            ]
+          },
+          {
+            "model": "accounts/fireworks/models/glm-5p3-flash",
+            "passed": false,
+            "verdict": {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "Both calls contain essentially the same complaint about Quantum Circuits Inc's slow implementation/integration timelines. The December call says 'longer-than-expected integration timelines' and the February call says 'delays... put us a bit behind schedule' \u2014 a paraphrase of the same fact, not a new outcome, numerical change, or distinct commercial term. Either call alone suffices for the information need."
+            },
+            "schema_attempts": [
+              {
+                "necessary": false,
+                "exclusive_facts": [],
+                "reason": "Both calls contain essentially the same complaint about Quantum Circuits Inc's slow implementation/integration timelines. The December call says 'longer-than-expected integration timelines' and the February call says 'delays... put us a bit behind schedule' \u2014 a paraphrase of the same fact, not a new outcome, numerical change, or distinct commercial term. Either call alone suffices for the information need."
+              }
+            ]
+          }
+        ],
+        "version": "multi-necessity-v1"
+      }
+    },
+    {
+      "question_id": "b2b-single_call-0bf73ebf30e9e373",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify what Omar Khoury asked Nadia to send after the call and what she committed to including in it",
+        "relationship": "single coherent follow-up request: the ask and the corresponding commitment concern the same deliverable",
+        "reason": "Both parts address one follow-up item (the requested send-off and its contents), forming a single request rather than two independent lookups."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-11d52f0e1fd04b15",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Ayumi proposed to Amelia Richardson at UrbanTech Developments and what Amelia agreed to look for afterward",
+        "relationship": "single coherent next-steps exchange: the proposed action and the customer's corresponding follow-up commitment on the same issue",
+        "reason": "Both parts address the same forward-looking action item from one call\u2014Ayumi's proposal and Amelia's agreement to look for something in response\u2014forming one coherent next-steps request."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-3f297a6f775775d0",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Zaid Hassan's budget and installation timeline for the Lahore Digital Experts purchase",
+        "relationship": "single coherent lookup: budget and timeline are two facets of the same purchase/deal",
+        "reason": "Both facts concern the same commercial transaction (budget and implementation schedule), a natural combined sales question."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-5420237fbfa7bbad",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitive concern Kwame Mensah raised about Quantum Circuits Inc's positioning against TechPulse, and Priyanka's response to it.",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "This is a single coherent request: one objection (competitive positioning concern) paired with the response it elicited, addressing the same business issue."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-7b50ae222e9b4cfe",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Rahul Patel's stated budget for the two SecureFlow Suite units and Lucas's commitment regarding pricing",
+        "relationship": "same pricing discussion: the budget figure and the salesperson's pricing commitment address one commercial issue",
+        "reason": "Both parts concern the same pricing/budget matter within one call, forming a coherent objection-and-response style request rather than unrelated lookups."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-8715f95231f27fae",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Sue Lin from Skyline Robotics wanted to confirm about fees beyond the $400 AutoGen IDE price, and the response given",
+        "relationship": "single coherent clarification: a customer's fee question and the reply to it",
+        "reason": "This is one objection/clarification about the same commercial terms (fees beyond the quoted $400 price) together with the response, not two independent lookups."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-89b8c64e5f0b7337",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Fatima Ahmed's budget for the InnovateGrid Systems purchase and the installation timeline she required",
+        "relationship": "single coherent request about one purchase's commercial and implementation requirements",
+        "reason": "Budget and installation timeline are both requirements for the same purchase, forming one coherent set of needs; installation is a valid software/equipment context."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-8e5fee65c8169b3e",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total quoted price for Fatima Ali's order of 2 PulseSim Pro and 4 NextGen IDE units, plus the installation timeline she required",
+        "relationship": "Both facts concern the same order/quote \u2014 the price and its associated installation timeline form one coherent commercial request",
+        "reason": "A single order's quoted price and required installation timeline are naturally connected parts of one sales transaction, and installation of software products is plausible sales language."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-967bcd72def30c18",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Aisha Hamidi raised about other vendors and Fatoumata's explanation of how TechPulse addresses it",
+        "relationship": "single coherent objection-and-response exchange",
+        "reason": "This is one objection (vendor concern) paired with its response from the same conversation, a natural sales Q&A unit."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-a30e19b0b94d3028",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Sofia said about moving forward on the terms and when Aarav committed to sending the draft contract, for BrightField Ventures",
+        "relationship": "Both parts address the same deal-progression issue: the customer's response to terms and the corresponding next step (sending the draft contract)",
+        "reason": "A coherent next-steps question about one negotiation: the customer's stance on terms and the seller's commitment to follow up with a contract are naturally connected, not independent lookups."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-a8b7f131c6c13f6c",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing structure Omar committed to for RenewSys Corp's future expanded usage of OptiEnergy Suite",
+        "relationship": "single lookup of one commercial commitment",
+        "reason": "One coherent fact lookup about a single pricing commitment within the same deal context."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-b6f49f359e14d7a6",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts given on AI Cirku-Tech and SecureFlow Suite, plus the alternative Jo\u00e3o offered in place of a larger discount on QuantumPCB Modeler",
+        "relationship": "single coherent commercial negotiation \u2014 discount terms and the counter-offer made during the same pricing discussion for the same account",
+        "reason": "All parts concern the same commercial negotiation: discount levels and the vendor's alternative concession are one pricing topic, not independent fact lookups."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-c17a88e1a56766a6",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted by Yasmin to Liam O'Reilly at SolarWind Innovations for two products (EcoPCB Creator and OptiPower Manager)",
+        "relationship": "single coherent quote lookup covering one pricing interaction",
+        "reason": "This is one commercial quote breakdown: a single pricing quote from Yasmin to the same customer, listing two products in the same quote. No unrelated lookups are joined."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-e53ad385cc0525d8",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount Junaid offered EcoEnergy on SecureFlow Suite for the ten units Anika mentioned, plus the discounts applying to the other products",
+        "relationship": "single coherent commercial quote breakdown across products in the same discussion",
+        "reason": "This is one pricing/discount inquiry covering the quoted products in the same sales conversation; the SecureFlow discount and other product discounts form a coherent quote breakdown, not independent lookups."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-ec4787f63ecef4f0",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The flexibility concern Ming Li raised about competitors' offerings and Jasper's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent objection-and-response exchange about the same issue (competitor flexibility)."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-f37307ef465d63ba",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next steps Lucas outlined for AgroSmart Innovations following the initial discussion",
+        "relationship": "single coherent request",
+        "reason": "This is one lookup about next steps from a single call, a natural sales follow-up question about the same engagement."
+      }
+    },
+    {
+      "question_id": "b2b-single_call-f9f86a547de495d2",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify what Aisha Khan at MedTech Advances is purchasing and the total quoted price",
+        "relationship": "Single coherent lookup: the product and its quoted price are part of one commercial quote breakdown",
+        "reason": "The question asks for the purchase and its total quoted price, which together form one coherent commercial information need about the same deal."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-1708fc69e294ac6f",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What concern Sara Larson raised about post-purchase service policies and how Zanele responded to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer's concern with the salesperson's response to that same issue."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-1d87a47e053920bf",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total price of Sofia Kim's eco-friendly vehicle package and the adjustment she requested to that package",
+        "relationship": "Both parts concern the same commercial package: its quoted price and a requested modification to it",
+        "reason": "This is a coherent single-issue request about one quote/package \u2014 the price and the customer's requested adjustment are naturally connected, not two independent lookups."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-1e3983b24ee61331",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Liam Baker values most in a pre-owned vehicle and which model Lars recommended to meet that need",
+        "relationship": "single coherent exchange: customer's stated need/preference and the salesperson's matching recommendation",
+        "reason": "The question pairs a customer's requirement with the recommendation addressing that same requirement, forming one coherent sales interaction rather than two independent lookups."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-2233faa97172712f",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What perks Sebastian said the financing plans include besides flexibility, for Lila Scott's Tesla Model S purchase",
+        "relationship": "single coherent lookup of one statement about financing plan perks",
+        "reason": "One fact lookup about the same financing discussion; natural sales language, no mismatched domain terms."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-3c96cc77935037f1",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount and total price quoted by AutoElite to Zara Phillips for nine Lexus RX 350 units",
+        "relationship": "single coherent quote lookup",
+        "reason": "This is one commercial quote breakdown (discount and total) for the same deal; no unrelated requests joined."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-4e314d81ce7e30e1",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Ava Singh's budget and desired installation timeline for the Jeep Grand Cherokee protection film purchase",
+        "relationship": "single coherent request: budget and timeline for the same purchase",
+        "reason": "Both facts concern one purchase (protection film for the Jeep Grand Cherokee), and installation is plausible because protection film is an installable accessory."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-54fba96b1a119b42",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The financing structure Ethan Davis is seeking for his Tesla Model S and Genesis G80 acquisition",
+        "relationship": "single coherent lookup about one customer's financing requirements across a vehicle acquisition",
+        "reason": "One coherent requirement lookup about the same acquisition; both vehicles are part of the same financing question, which is natural sales language."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-58b49dd8e0d49feb",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Isaac Palmer's requirements/preferences for an eco-friendly vehicle suited to city driving",
+        "relationship": "single coherent requirement lookup",
+        "reason": "One natural sales discovery question about a single customer's needs; no unrelated lookups joined."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-6dbded628ca735e0",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Isabelle Cruz's stated vehicle priorities and the two models Kamila suggested in response",
+        "relationship": "customer preference and the corresponding recommendation addressing it",
+        "reason": "A single coherent exchange: the customer's priorities and the salesperson's model suggestions directly respond to those priorities in the same conversation."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-822040248095384d",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the vehicle model David Gonzalez is considering for his fleet and what Hina said that model offers.",
+        "relationship": "Single coherent lookup: the model under consideration and its described offering are two facets of the same purchase consideration.",
+        "reason": "Both parts concern the same fleet purchase decision \u2014 the specific model and its stated benefits \u2014 forming one natural sales question, not two independent fact lookups."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-d805a16e98581255",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Olivia Adams raised about AutoElite's technicians and Felix's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single coherent objection-and-response exchange about the same issue (technician concerns), which is an accepted pattern."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-e3067fab21c8ebd8",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the customization options Youssef mentioned for the 2024 Tesla Model S that Ava is considering.",
+        "relationship": "single coherent lookup about one product's customization options within one call",
+        "reason": "This is a single fact lookup about customization options for one vehicle in one call; no unrelated requests are joined."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-e4bd30a1a8dd9d92",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Isabella Young's stated priorities following the Mercedes-Benz E-Class demo and the follow-up Emily committed to send her",
+        "relationship": "single coherent exchange: customer's stated needs and the salesperson's corresponding next-step commitment from the same call",
+        "reason": "Both parts concern one interaction (the E-Class demo): the customer's priorities and the rep's response to them form a natural objection/needs-and-next-steps pattern, not two independent lookups."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-e6dd57d81a084fee",
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Vehicles Isaac Turner is considering and an installation timeline he required",
+        "relationship": "two independent lookups joined by the same customer, plus a mismatched domain term",
+        "reason": "The question pairs a vehicle lookup with an 'installation timeline' for ordinary vehicles, which is a mismatched domain term; no installable accessory/system is identified, and the two needs are not one coherent issue."
+      }
+    },
+    {
+      "question_id": "b2c-single_call-fba6763f1b81836d",
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What David Gonzalez scheduled with Nadia Gonzalez and what he wants to prepare for it",
+        "relationship": "single coherent request: the preparation item pertains to the same scheduled meeting",
+        "reason": "Timing/scheduling and preparation for that same meeting form one coherent information need about a single event."
+      }
+    }
+  ],
+  "limitations": "Question-only automated coherence selection after factual/source checks. Some coherent timeline questions lie on a subjective boundary; this is not a human gold label."
+}

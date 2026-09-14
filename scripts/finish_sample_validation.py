@@ -12,17 +12,18 @@ from salestranscriptqa.corpus import write_json
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--pid',type=int,required=True)
+    parser.add_argument('--pid',type=int)
     parser.add_argument('--run-dir',type=Path,required=True)
     args=parser.parse_args()
     root=args.run_dir
     # A pidfd pins this exact process; PID reuse cannot trigger a different job.
-    handle=os.pidfd_open(args.pid)
-    try:
-        while not select.select([handle],[],[],5)[0]:
-            pass
-    finally:
-        os.close(handle)
+    if args.pid is not None:
+        handle=os.pidfd_open(args.pid)
+        try:
+            while not select.select([handle],[],[],5)[0]:
+                pass
+        finally:
+            os.close(handle)
     progress=json.loads((root/'progress.json').read_text())
     if progress.get('complete') is not True or progress.get('scope')!='sample' or progress.get('total_units')!=100:
         raise RuntimeError('The original process ended without completing the intended 100-unit sample')
