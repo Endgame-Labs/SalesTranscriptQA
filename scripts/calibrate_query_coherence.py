@@ -12,7 +12,7 @@ labels={3:True,25:True,47:True,74:True,79:True,94:False,76:False}
 transport=Transport('runs/sales-query-coherence-calibration-v1')
 def run(item):
     number,expected=item;q=questions[number-1]
-    result=assess(q['question'],q['question_class'],transport)
+    result=assess(q['question'],q['question_class'],transport,version=1)
     return {'item':number,'question':q['question'],'expected':expected,'passed':result['accepted']==expected,**result}
 with concurrent.futures.ThreadPoolExecutor(max_workers=7) as pool:
     rows=list(pool.map(run,labels.items()))

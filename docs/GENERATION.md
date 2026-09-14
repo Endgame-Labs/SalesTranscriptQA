@@ -88,7 +88,7 @@ verified answers. Equivalent evidence is allowed; conflicting complete answers a
 inconclusive checks reject the proposal. This is a checked source pool, not a proof
 of uniqueness over the whole corpus.
 
-Final question-only GLM selection removes unrelated fact bundles. Names can supply
+Final question-only GLM selection removes unrelated fact bundles and clearly mismatched domain language, such as unexplained installation of ordinary purchased vehicles. Names can supply
 natural scope; document-date/title preambles and unbound first-person identity are
 rejected. All judges remain fallible, and coherence has subjective boundaries.
 

@@ -1,0 +1,79 @@
+{
+  "results": [
+    {
+      "question": "What vehicles is Isaac Turner considering and what installation timeline did he require?",
+      "expected": false,
+      "passed": true,
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Vehicles Isaac Turner is considering and an installation timeline he required",
+        "relationship": "two independent lookups joined by the same person; also the 'installation' term is a domain mismatch for ordinary vehicle purchases",
+        "reason": "The question combines a vehicle consideration lookup with an installation timeline requirement. Installing ordinary purchased vehicles is not plausible sales language, and no installable accessory/system is identified, so the request fails the natural-query check."
+      }
+    },
+    {
+      "question": "What is Ava Singh's budget and desired installation timeline for the Jeep Grand Cherokee and protection film purchase?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Ava Singh's budget and desired installation timeline for the Jeep Grand Cherokee protection film purchase",
+        "relationship": "single coherent request: budget and timeline for the same purchase",
+        "reason": "Both facts concern the same purchase (protection film for the Jeep Grand Cherokee), and installation is plausible for protection film."
+      }
+    },
+    {
+      "question": "What is Zaid Hassan's budget and installation timeline for the Lahore Digital Experts purchase?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Zaid Hassan's budget and installation timeline for the Lahore Digital Experts purchase",
+        "relationship": "single coherent purchase inquiry — budget and timeline are two attributes of the same deal",
+        "reason": "Both facts concern the same purchase and are naturally asked together as part of one sales qualification/lookup; no unrelated requests are joined."
+      }
+    },
+    {
+      "question": "What is the total quoted price for Fatima Ali's order of 2 PulseSim Pro and 4 NextGen IDE units, and what installation timeline did she require?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total quoted price for Fatima Ali's order of 2 PulseSim Pro and 4 NextGen IDE units, plus the installation timeline she required",
+        "relationship": "single coherent request: commercial quote details (price and installation timeline) for the same order",
+        "reason": "Both facts concern one order's quote — total price and its associated installation timeline — forming a coherent quote breakdown, and software installation is a plausible sales context."
+      }
+    },
+    {
+      "question": "What discovery meeting did Aarav schedule with Nina Rossi of Innovative Robotics, and what did she say data protection was for their operations?",
+      "expected": false,
+      "passed": true,
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) What discovery meeting Aarav scheduled with Nina Rossi, and (2) what Nina said data protection was for their operations",
+        "relationship": "two independent information needs joined only by the same call/participants",
+        "reason": "Scheduling a meeting and a data-protection characterization are unrelated lookups; same call is not enough to connect them."
+      }
+    },
+    {
+      "question": "What quote did Miguel give Rajveer Singh for AI Cirku-Tech, including the discount and total price?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quote Miguel provided to Rajveer Singh for AI Cirku-Tech, including discount and total price",
+        "relationship": "single coherent quote lookup",
+        "reason": "One commercial quote breakdown (quote, discount, total) for the same product in one request."
+      }
+    }
+  ],
+  "passed": true,
+  "estimated_usd": 0.00074605,
+  "limitations": "Targeted language/coherence controls, not a random accuracy estimate. Source facts are not rewritten."
+}

@@ -168,3 +168,17 @@ and review exporter use the final selected dataset. The active generation proces
 was launched before this final selection stage was added; replaying its completed
 command will run cached generation and then this new stage, without restarting the
 source-generation experiment. Final validation must include that replay and review.
+
+Final selection v2 adds a plausibility check for mismatched source-template language
+(e.g. unexplained installation of ordinary purchased vehicles). It does not rewrite
+source facts; it rejects the question. Six targeted controls passed, including valid
+software and protection-film installation. The v1 calibration remains replayable.
+Because this final selection was refined after inspecting development outputs, the
+source-group-disjoint generation sample is development validation, not an unbiased
+held-out accuracy estimate for the entire final pipeline.
+
+`scripts/finish_sample_validation.py` can wait on one exact live Linux process handle
+and, only after successful completion of the recorded 100-unit sample, run selection,
+artifact verification, question export, independent review, and a second replay. Its
+receipt distinguishes execution/replay verification from the final semantic readiness
+decision. It never starts a full-corpus run.
