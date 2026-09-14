@@ -159,3 +159,39 @@ class SalesQuestionsReady(SalesQuestionsGLM):
                     'ambiguous':decision!='consistent_in_pool','reason':decision,
                     'method':'reference-blind-group-consistency-v2','groups':checks}
         return super().ask(model,instruction,value,stage,job)
+
+
+def normalize_single_line_evidence(candidate, calls):
+    """Interpret only equal, in-bounds integer endpoints as a one-line selection.
+
+    Observed GLM output uses inclusive endpoints for one-line quotes despite the
+    exclusive-end prompt. No other range is changed; all semantic checks still run.
+    The original provider JSON remains in the metered request artifact.
+    """
+    from copy import deepcopy
+    result = deepcopy(candidate)
+    lengths = {c['call_id']:len(c['numbered_lines']) for c in calls}
+    repairs = []
+    if not isinstance(result,dict) or not isinstance(result.get('evidence'),list):
+        return result
+    for index,item in enumerate(result['evidence']):
+        if not isinstance(item,dict) or item.get('kind')!='dialogue':
+            continue
+        start,end = item.get('line_start'),item.get('line_end')
+        if type(start) is int and type(end) is int and start==end and 0<=start<lengths.get(item.get('call_id'),0):
+            item['line_end']=end+1
+            repairs.append({'evidence_index':index,'original_end':end,'normalized_end':end+1})
+    if repairs:
+        result['evidence_index_repairs']=repairs
+    return result
+
+
+class SalesQuestionsReliable(SalesQuestionsReady):
+    version='sales-questions-v9-line-evidence'
+
+    def ask(self, model, instruction, value, stage, job):
+        result=super().ask(model,instruction,value,stage,job)
+        if stage=='generate':
+            result=normalize_single_line_evidence(result,value['calls'])
+            self.local.generated=result
+        return result

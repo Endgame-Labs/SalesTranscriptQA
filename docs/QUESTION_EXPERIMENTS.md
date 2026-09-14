@@ -119,3 +119,19 @@ no files are uploaded. B2C multi-call units are excluded. An explicit `--all` op
 exists for eventual full generation, but has NOT been run during this research.
 Do not confuse this new runner with the stopped historical generate-and-publish
 workflow. Production readiness is still pending live sample results and review.
+
+### One-line evidence normalization (v9)
+
+Direct request inspection showed frequent `line_start == line_end` outputs for
+one-line quotes. Version 9 interprets only equal integer endpoints within the
+source as a one-line selection (`line_end = line_start + 1`). Raw provider JSON
+is retained; the candidate records every repair. All subsequent source, evidence,
+answer and contract checks still run. Out-of-bounds, reversed and noninteger
+ranges remain invalid. Six regression cases cover this behavior.
+
+The initial standalone v8 sample was intentionally stopped and preserved after
+this diagnosis. A new v9 standalone sample uses seed 20260918 and excludes CRM
+groups from v6, the v8 fresh-seed plan, and the interrupted standalone plan. It is
+running under a $50 allowance, with 100 source units and up to three proposals
+each. No full-corpus generation was started. Readiness remains pending completion,
+output review and replay checks.

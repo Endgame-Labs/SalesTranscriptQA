@@ -7,7 +7,7 @@ import json
 import random
 from collections import Counter
 from pathlib import Path
-from salestranscriptqa.sales_questions import SalesQuestionsReady, READY_PROMPT
+from salestranscriptqa.sales_questions import SalesQuestionsReliable, READY_PROMPT
 from salestranscriptqa.answer_consistency import JUDGE
 from salestranscriptqa.transport import RATES
 from salestranscriptqa.corpus import write_json
@@ -34,13 +34,14 @@ def main():
     with (args.run_dir/'pilot.lock').open('w') as lock:
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         RATES[JUDGE]=(2.0,0.25,6.0)
-        full=SalesQuestionsReady(args.corpus,args.run_dir,workers=args.workers,proposals=args.proposals)
+        full=SalesQuestionsReliable(args.corpus,args.run_dir,workers=args.workers,proposals=args.proposals)
         full.transport.budget_usd=args.budget_usd
         full.recover_interrupted_requests()
         eligible=[u for u in full.plan() if not (u['domain']=='b2c' and u['question_class']=='multi_call')]
         excluded_ids=set()
         for path in args.exclude_report:
-            for q in json.loads(path.read_text())['questions']:
+            prior=json.loads(path.read_text())
+            for q in prior.get('questions',prior.get('units',[])):
                 excluded_ids.update(q['supporting_call_ids'])
         excluded_groups={c.get('group_id') or c['call_id'] for calls in full.calls.values()
                          for c in calls.values() if c['call_id'] in excluded_ids}
