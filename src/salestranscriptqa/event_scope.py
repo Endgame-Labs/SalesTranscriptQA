@@ -80,3 +80,20 @@ def assess(question,calls,transport):
         'extraction':materialized,'reference_answer':question['gold_answer']}),VERSION+'-verify',nonce=nonce+digest(question['gold_answer']))
     passed=extracted['scope']=='determinate' and all(verdict.get(k) is True for k in ['scope_determinate','reference_complete_and_supported','alternatives_checked'])
     return {'passed':passed,'schema_valid':True,'extraction':materialized,'verdict':verdict,'evidence_index_repairs':repairs}
+
+
+def select_reviewed(questions, report):
+    """Require exhaustive, unchanged source-audit coverage before selecting a cohort."""
+    if report.get('protocol')!=VERSION:raise ValueError('Unexpected customer-scope protocol')
+    lookup={q['question_id']:q for q in questions};rows=report['results']
+    if len(lookup)!=len(questions) or len(rows)!=len(questions) or {r['question_id'] for r in rows}!=set(lookup):
+        raise ValueError('Customer-scope review coverage mismatch')
+    allowed=set();rejected=[]
+    for r in rows:
+        q=lookup[r['question_id']]
+        if r['question']!=q['question'] or r['gold_answer']!=q['gold_answer']:
+            raise ValueError('Customer-scope review changed a question or answer')
+        passed=r.get('passed') is True and r.get('schema_valid') is True and r['extraction'].get('scope')=='determinate' and all((r.get('verdict') or {}).get(k) is True for k in ['scope_determinate','reference_complete_and_supported','alternatives_checked'])
+        if passed:allowed.add(q['question_id'])
+        else:rejected.append({'question_id':q['question_id'],'question':q['question'],'scope_review':r})
+    return [q for q in questions if q['question_id'] in allowed],rejected

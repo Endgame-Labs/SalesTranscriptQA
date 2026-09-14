@@ -33,3 +33,14 @@ def test_equal_endpoint_normalization_preserves_raw_receipt():
     assert r['passed'] and r['evidence_index_repairs']
     assert raw['answers'][0]['evidence'][0]['line_end']==0
     assert r['extraction']['answers'][0]['evidence'][0]['quote']=='one'
+
+def test_selection_requires_full_coverage_and_both_verdicts():
+    import pytest
+    from salestranscriptqa.event_scope import select_reviewed,VERSION
+    q={'question_id':'q','question':'What?','gold_answer':'one'}
+    row=dict(q,passed=True,schema_valid=True,extraction={'scope':'multiple'},verdict=dict(scope_determinate=True,reference_complete_and_supported=True,alternatives_checked=True))
+    # A stale or inconsistent passed flag cannot bypass the underlying scope decision.
+    assert select_reviewed([q],{'protocol':VERSION,'results':[row]})[0]==[]
+    with pytest.raises(ValueError):select_reviewed([q],{'protocol':VERSION,'results':[]})
+    row['extraction']['scope']='determinate'
+    assert select_reviewed([q],{'protocol':VERSION,'results':[row]})[0]==[q]

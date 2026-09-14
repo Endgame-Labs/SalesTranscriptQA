@@ -18,6 +18,7 @@ import pyarrow.parquet as pq
 
 from salestranscriptqa.corpus import write_json
 from salestranscriptqa.full_checkpoint import budget_envelope, reviewed_selection
+from salestranscriptqa.event_scope import select_reviewed, VERSION as SCOPE_VERSION
 from seed_full_run import seed
 
 PROJECT = Path(__file__).resolve().parents[1]
@@ -41,6 +42,25 @@ def main():
         raise ValueError('Full run requires approval of this exact completed checkpoint')
     if json.loads((SOURCE / 'workflow.json').read_text()).get('stage') != 'complete':
         raise ValueError('Expanded generation, independent review, and RAG must finish first')
+    scope_checkpoint=approval['scope_checkpoint']
+    scope_report_path=PROJECT/scope_checkpoint['audit_report']
+    scope_questions_path=PROJECT/scope_checkpoint['questions']
+    if hashlib.sha256(scope_report_path.read_bytes()).hexdigest()!=scope_checkpoint['audit_sha256'] or hashlib.sha256(scope_questions_path.read_bytes()).hexdigest()!=scope_checkpoint['question_sha256']:
+        raise ValueError('Approved customer-history checkpoint artifacts changed')
+    scope_report=json.loads(scope_report_path.read_text())
+    if scope_report['question_sha256']!=source_hash:
+        raise ValueError('Scope checkpoint must audit the entire original frozen cohort')
+    scoped,_=select_reviewed(json.loads((SOURCE/'reviewed/questions.json').read_text()),scope_report)
+    if not scoped or json.loads(scope_questions_path.read_text())!=scoped:
+        raise ValueError('Qualified checkpoint does not match the exhaustive scope review')
+    checkpoint_rag=PROJECT/scope_checkpoint['rag_report']
+    rag_verification=json.loads((checkpoint_rag/'verification.json').read_text())
+    if json.loads((checkpoint_rag/'questions.json').read_text())!=scoped or rag_verification.get('exact_context_and_coverage_verified') is not True or rag_verification.get('outcomes')!=4*len(scoped):
+        raise ValueError('Qualified checkpoint requires verified RAG outcomes for the exact cohort')
+    rag_rows=[json.loads(line) for line in (checkpoint_rag/'results.jsonl').read_text().splitlines()]
+    expected={(q['question_id'],mode) for q in scoped for mode in ['hybrid','hybrid-rerank','oracle','no-context']}
+    if len(rag_rows)!=len(expected) or {(r['question_id'],r['configuration']) for r in rag_rows}!=expected:
+        raise ValueError('Qualified checkpoint RAG coverage mismatch')
     config = json.loads((SOURCE / 'config.json').read_text())
     if config['version'] != 'sales-questions-v9-line-evidence' or config['workers'] != 16 or config['proposals_per_unit'] != 3:
         raise ValueError('Full run must preserve the approved v9 generation configuration')
@@ -107,6 +127,16 @@ def main():
             checkpoint_rejections = json.loads((PROJECT / 'reports/sales-expanded-2000-v1-review-selection.json').read_text())['rejected']
             final, rejected = reviewed_selection(questions, exported, reviews,
                                                  registry['excluded_questions'] + checkpoint_rejections)
+            pre_scope=ROOT/'pre-scope/questions.json'
+            write_json(pre_scope,final)
+            run('customer-scope-review',['uv','run','python','scripts/audit_customer_scope.py',str(pre_scope),
+                '--run-dir',str(REVIEW_ROOT),'--budget-usd',str(limits['review_usd'])],paid=True)
+            scope_review=json.loads((REVIEW_ROOT/'report.json').read_text())
+            if scope_review['question_sha256']!=hashlib.sha256(pre_scope.read_bytes()).hexdigest():
+                raise ValueError('Full customer-scope review hash mismatch')
+            final,scope_rejected=select_reviewed(final,scope_review)
+            rejected+=scope_rejected
+            write_json(PROJECT/'reports/sales-full-v2-customer-scope-review.json',scope_review)
             if not final or not all(any(q['domain'] == d for q in final) for d in ['b2b', 'b2c']):
                 raise ValueError('Reviewed cohort must be nonempty and cover both domains')
             active = ROOT / 'reviewed'
@@ -121,7 +151,7 @@ def main():
                 pq.write_table(table.filter(pa.array([q['question_id'] in allowed for q in table.to_pylist()])), active / f'{domain}-test.parquet')
             selection = dict(before_review=len(questions), accepted=len(final), rejected=rejected,
                              question_sha256=hashlib.sha256(frozen.read_bytes()).hexdigest(),
-                             policy='Independent quality review and prior quarantines only; RAG failures never remove questions.')
+                             policy='Independent source/citation and complete customer-history scope review plus prior quarantines; RAG failures never remove questions.', scope_protocol=SCOPE_VERSION)
             write_json(PROJECT / 'reports/sales-full-v2-review-selection.json', selection)
             run('rag-evaluation', ['uv', 'run', 'python', 'sample_eval.py', '--questions', str(frozen),
                                   '--run-dir', str(EVAL_ROOT), '--report-dir', str(EVAL_REPORT),

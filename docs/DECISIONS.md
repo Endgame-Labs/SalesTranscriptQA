@@ -79,3 +79,19 @@ item, and must affirm support for the complete gold answer. Preserve the raw
 candidate and exclude it if this new gate fails; do not silently repair historical
 artifacts. This is an evidence-validation correction under the authorized hourly
 quality supervision, not a change to question generation style.
+
+
+## September 14, 2026 — Customer-history scope checkpoint before full expansion
+
+The 548-question RAG diagnostic exposed real within-opportunity alternatives that
+the previous one-answer-per-group check missed. The full workflow now requires an
+approved complete-history scope audit and exact verified RAG coverage of its
+retained checkpoint. It applies that same audit after source/citation review to
+all full-run questions, before freezing the full cohort. The generation prompt and
+raw v9 candidate cache remain unchanged. Questions are never selected by their RAG
+correctness. Full account/lead IDs expand histories without fuzzy name merges;
+reference-blind extraction and independent Qwen verification check alternative
+complete answers. This is still an automated source-pool check, not proof of global
+unambiguity. Scope review shares the cumulative independent-review budget ledger.
+Original cohorts/results remain intact. Implementation and diagnostic reliability
+are tracked in [quality issue #6](https://github.com/Endgame-Labs/SalesTranscriptQA/issues/6).
