@@ -6,6 +6,7 @@ def test_real_model_date_locator_failures():
     assert locator_flags("What pricing did Mei Lin quote during the December 29 call with Samuel Peterson?")
     assert locator_flags("In the call on July 11, what did Mark agree to?")
     assert locator_flags('What happened in the call titled Foobar?')
+    assert locator_flags('What support was promised in the January call?')
 
 
 def test_natural_customer_names_and_business_dates_are_preserved():

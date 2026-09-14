@@ -1,0 +1,830 @@
+{
+  "results": [
+    {
+      "item": 1,
+      "original_status": "accepted",
+      "question": "What did Liu Wei commit to sending Oliver Black after the call, and what did Oliver want to review it with?",
+      "gold_answer": "Liu Wei committed to sending a detailed quote covering the Tesla Model S, Nissan Leaf, and maintenance plan by the next day; Oliver wanted to review it with his finance team.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The dialogue confirms Liu Wei committed to sending a detailed quote covering the Tesla Model S, Nissan Leaf, and maintenance plan by the next day, and Oliver explicitly asked to review it with his finance team. The question is naturally phrased, scoped to a specific customer interaction, and the answer states precisely the two requested facts with no extras. Single-call question, so both_sources_required is set true.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 2,
+      "original_status": "accepted",
+      "question": "What pricing did Mei quote Samuel for the SecureFlow Suite and CloudLink Designer, and what concern did Samuel raise about long-term costs?",
+      "gold_answer": "SecureFlow Suite is $1799.97 for three licenses and CloudLink Designer is $1899.95 for five units at a 5% discount; Samuel is concerned about transparency around long-term cost projections as they scale.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific pricing figures and a customer concern, all of which appear verbatim in the single supplied call. Mei quotes SecureFlow Suite at $1799.97 for three licenses and CloudLink Designer at $1899.95 for five units at a 5% discount; Samuel raises transparency around long-term cost projections as they scale. The answer matches the source exactly with no extra or missing facts. The question is naturally worded, scoped to a named rep/customer interaction, and a rep would plausibly need this pricing/objection recap. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 5,
+      "original_status": "accepted",
+      "question": "What concerns did Fatima raise about AutoElite's service speed and warranty coverage, and which vehicle is she interested in seeing in person?",
+      "gold_answer": "Fatima raised concerns about service center timing/speed of service and mixed feedback on extended warranty coverage details; she is interested in seeing the 2020 Lexus RX 350 in person.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets three specific facts from a single call: Fatima's concern about service-center speed, her concern about mixed feedback on extended-warranty coverage details, and her interest in seeing the 2020 Lexus RX 350 in person. All three are directly supported by the dialogue (service timing at 14:16:18, mixed warranty feedback at 14:17:00, Lexus RX 350 interest at 14:18:50 with Alejandra offering an in-person viewing at 14:19:08). The gold answer states exactly those facts without unasked extras. The question is naturally phrased, adequately scoped to a named customer and account, and a rep would plausibly want this information. No locator preamble, no answer leakage, no unsupported causality. Because question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "objection",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 10,
+      "original_status": "accepted",
+      "question": "What discount was applied to the SecureFlow Suite in the quote for Vertex Engineering, and what total price does that bring them to?",
+      "gold_answer": "A 10% discount was applied, bringing the SecureFlow Suite total to $5,399.91.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific discount and resulting total for SecureFlow Suite in the Vertex Engineering quote. The dialogue at 11:04:05 confirms Xinyi states a 10% discount bringing the total to $5,399.91. The answer matches exactly with no extra or missing facts. The question is naturally phrased, scoped to a named account and product, and represents a plausible rep need to recall pricing details. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 16,
+      "original_status": "accepted",
+      "question": "For TechSavvy Innovations' EDA expansion, what concern did Elena raise about competitors' long-term innovation potential in our initial call, and what past implementation issue did she flag during the discovery meeting?",
+      "gold_answer": "In the initial call Elena said they were unsure about some competitors' long-term innovation potential; in the discovery meeting she raised that a lengthy implementation with Quantum Circuits Inc. delayed their project timelines.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall two distinct customer concerns across two calls for the TechSavvy EDA Expansion opportunity. The initial call (2022-06-20) contains Elena's statement about being 'unsure about the long-term innovation potential of some competitors,' and the discovery meeting (2022-06-30) contains her flagging the 'lengthy implementation process with Quantum Circuits Inc.' that 'delayed our project timelines.' Each source contributes an exclusive requested fact, the gold answer matches both transcripts precisely with no unasked extras, the wording is natural, and the scope (account + opportunity + named contact) is sufficient for a sales rep to identify the situation."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 18,
+      "original_status": "accepted",
+      "question": "What's Elizabeth Choi's budget cap at SafetyNet Inc. and what did she want for the installation timeline?",
+      "gold_answer": "Budget cap of $3,084; installation completed within 4 days.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts (budget cap and installation timeline) that a rep would plausibly need to track for Elizabeth Choi at SafetyNet Inc. Both facts are directly stated in the single call transcript: Elizabeth states a budget cap of $3,084 and Ava confirms installation within 4 days. The gold answer matches exactly with no extra or missing information. Wording is natural and scoped to a named contact and company. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 19,
+      "original_status": "accepted",
+      "question": "What did Sara Larson say about financing rates compared to competitors, and what follow-up did Elena propose at the end of the call?",
+      "gold_answer": "Sara said AutoElite's financing rates were similar to competitors' and she wasn't sure of an advantage; Elena proposed touching base next week, which Sara agreed to.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two facts from a single call: Sara's comment on financing rates vs. competitors and Elena's proposed follow-up. The dialogue confirms Sara said rates were similar and she wasn't sure of an advantage (11:01:05), and Elena proposed touching base next week, which Sara accepted (11:01:30-35). The gold answer states precisely those two facts with no extras. The question is naturally worded, scoped to a named customer and a clear business topic, and a rep would plausibly want this competitive-positioning and next-step info. Single-call question, so both_sources_required is set true per instructions."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 21,
+      "original_status": "accepted",
+      "question": "What did Mason Williams say would most help sway his decision on the Camry Hybrid, and what did Enzo commit to do about the service package costs?",
+      "gold_answer": "Mason said immediate cost savings would really help sway his decision; Enzo committed to take the service package cost concern back to his team to see if a more competitive tailored package is possible.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both requested facts are verified in the single transcript: Mason states 'immediate cost savings would really help sway my decision' and Enzo says 'I'll take your concern back to our team to see if there's a way we can offer a more competitive package tailored to your needs.' The question is naturally phrased, scoped to a specific customer and vehicle, and the answer contains exactly the two requested facts with no extras. As a single-call question, both_sources_required is set true.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 22,
+      "original_status": "accepted",
+      "question": "What post-implementation support did Aisha say GreenEnergy would receive after full implementation?",
+      "gold_answer": "Ongoing support packages including regular check-ins, software updates, and significant new feature introductions.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what post-implementation support Aisha described for GreenEnergy. The dialogue at 14:03:45 has Aisha stating 'ongoing support packages that include regular check-ins, software updates, and significant new feature introductions,' which matches the gold answer exactly. The question is naturally phrased, scoped to a specific account and speaker, and a rep/AM would plausibly want to recall this commitment. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 26,
+      "original_status": "accepted",
+      "question": "What pain point did Andre Silva mention with UrbanTech's current support provider, and which TechPulse product did he say they're considering for upcoming phases?",
+      "gold_answer": "Andre said their current provider's service response times have been a struggle, and they've considered SecureData Nexus for upcoming phases.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks about a specific pain point (current provider's service response times) and a product under consideration (SecureData Nexus for upcoming phases), both of which are clearly stated by Andre Silva in the single call transcript. The answer matches the source exactly: 'struggled a bit with our current provider's service response times' and 'We've certainly considered SecureData Nexus, especially for some upcoming phases.' The question is naturally worded, scoped to a named contact and account, and represents a plausible sales-rep need to recall customer pain points and product interest. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 29,
+      "original_status": "accepted",
+      "question": "What follow-up did Amelie commit to with Alice Sharp, and which two SUV models were discussed?",
+      "gold_answer": "Amelie committed to reaching out early next week to schedule a follow-up. The models discussed were the 2020 Lexus RX 350 and the 2021 Volvo XC60.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two facts from a single call: Amelie's follow-up commitment and the two SUV models discussed. The dialogue confirms Amelie said 'I'll reach out early next week to set something up' and named the 2020 Lexus RX 350 and 2021 Volvo XC60. The gold answer states exactly those facts with no extras. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall the next step and models discussed. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 30,
+      "original_status": "accepted",
+      "question": "What is Emily O'Connor at GreenEnergy Solutions looking to buy, and what's her budget and installation timeline?",
+      "gold_answer": "Emily wants EcoPCB Creator, three PowerPro Optimize units, and two AutoGen IDE licenses; budget is $2,693 with installation completed within three days.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Emily wants to buy, her budget, and installation timeline. The dialogue confirms: EcoPCB Creator (one), three PowerPro Optimize units, two AutoGen IDE licenses, budget $2,693, and installation within three days. All gold-answer claims are directly supported by the transcript. The question naturally identifies the customer and company, and a rep would plausibly need this summary. Single-call set, so both_sources_required is true by rule.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 33,
+      "original_status": "accepted",
+      "question": "What is Ahmed Hassan's budget for the four 2020 Honda Civics, and what timeline did he give for having them ready?",
+      "gold_answer": "His budget is around $80,538, and he needs the vehicles ready within nine days.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts (budget and timeline) that a sales rep would plausibly need to track for a fleet deal. The dialogue confirms Ahmed Hassan's budget of ~$80,538 for four 2020 Honda Civics and a nine-day readiness timeline. The gold answer states exactly those two facts with no extras. Wording is natural and scoped to a named customer and product. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 34,
+      "original_status": "accepted",
+      "question": "What did Mohammed commit to sending Fatima after their January 14 call, and what follow-up meeting did they plan to align further?",
+      "gold_answer": "Mohammed agreed to send case studies and testimonials highlighting TechPulse's work with energy-sector companies, and they planned to align further during an upcoming workshop.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two specific facts from the January 14 call: (1) what Mohammed committed to sending Fatima, and (2) what follow-up meeting they planned. The dialogue confirms Mohammed said 'I'll send over some of the case studies and testimonials we discussed' highlighting energy-sector work, and closed with 'let's aim to align further during our upcoming workshop.' The gold answer captures both facts precisely without unasked extras. The question naturally identifies the participants and call date, which is acceptable scoping. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": [
+        "dated_call_locator"
+      ]
+    },
+    {
+      "item": 35,
+      "original_status": "accepted",
+      "question": "What concern did Chloe Johnson raise about our financing compared to Elite Ride Motors, and what did Arjun say we offer as an advantage?",
+      "gold_answer": "Chloe found our financing process complex versus Elite Ride Motors' simpler option; Arjun highlighted our flexibility to tailor financing to her needs.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a competitive financing concern and the rep's counter-advantage, both clearly present in the single call transcript. Chloe states the process is 'a bit complex compared to Elite Ride Motors' who have 'a simpler financing option,' and Arjun responds that their advantage is 'flexibility; you can tailor the financing to better fit your needs.' The gold answer accurately captures both facts without adding unasked extras. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall this competitive objection and rebuttal. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 38,
+      "original_status": "accepted",
+      "question": "What concern did Jenna Lopez raise about TechPulse's competitors, and what existing tool did she mention CraftTech currently uses?",
+      "gold_answer": "Jenna noted competitors update their case studies frequently, keeping them in tune with market changes; CraftTech currently uses DevVision IDE.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two specific facts from a single call: (1) Jenna's concern about competitors updating case studies frequently to stay in tune with market changes, and (2) the existing tool CraftTech uses (DevVision IDE). Both are clearly stated in the dialogue. The answer matches precisely with no extra or missing information. The question is naturally phrased, scoped to a named contact and account, and represents a plausible sales-rep need to understand competitive positioning and current tooling. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 39,
+      "original_status": "accepted",
+      "question": "What monthly payment would Sophia Collins have on a five-year financing plan for the Camry Hybrid, and what does the total price include?",
+      "gold_answer": "About $489 per month over five years; the $29,299.97 total includes the Camry Hybrid, Comprehensive Maintenance Plan, and Extended Warranty Plan.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the five-year monthly payment and what the total price includes. The dialogue confirms Sebastian states approximately $489/month for a five-year plan and that the $29,299.97 total includes the Camry Hybrid, Comprehensive Maintenance Plan, and Extended Warranty Plan. The gold answer matches exactly with no extra or missing facts. The question is naturally phrased, scoped to a specific customer and vehicle, and a rep would plausibly need this financing/pricing detail. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 40,
+      "original_status": "accepted",
+      "question": "For the EnviroTech Solutions EDA Partnership, what did Svetlana say about how EnviroTech compares Quantum Circuits Inc and TechPulse, and what final pricing did Sarah quote for the SecureFlow Suite and CircuitSync Pro licenses?",
+      "gold_answer": "Svetlana said EnviroTech is fairly neutral between Quantum Circuits Inc and TechPulse, seeing both as having strengths on security and customization. Sarah quoted three SecureFlow Suite licenses and four CircuitSync Pro licenses for a total of $3,159.93.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets two distinct facts from two separate calls within the same opportunity. Call 2 (Nov 18) contains Svetlana's competitive comparison statement ('We've been comparing Quantum Circuits Inc and yourselves, mostly looking at security and customization options. We're pretty neutral, as both have strengths.'), and Call 1 (Dec 27) contains Sarah's pricing quote ('three licenses of SecureFlow Suite and four for CircuitSync Pro. The total comes to $3,159.93'). Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is scoped by opportunity name and participant names, which is natural for a rep reviewing account history. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 42,
+      "original_status": "accepted",
+      "question": "What pain point did Rashid Khan mention with Oceanic Innovation Labs' current provider, Quantum Circuits Inc, and what follow-up did Nadia commit to at the end of the call?",
+      "gold_answer": "Rashid said Quantum Circuits Inc's integration options are limited; Nadia committed to coordinating with his team to schedule a follow-up meeting.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question asks about a specific pain point (limited integration options with Quantum Circuits Inc) and a follow-up commitment (Nadia coordinating with Rashid's team to schedule a meeting), both clearly stated in the single call transcript. The pain point is a legitimate competitive objection a rep would track, and the follow-up is a standard next-step commitment. Wording is natural, scope is adequate (identifies account, contact, and current provider), and the answer contains exactly the two requested facts with no extras. Since question_class is single_call, both_sources_required is set to true per instructions."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 59,
+      "original_status": "accepted",
+      "question": "What financing preference did Sofia Martinez express for her Tesla Model S or Mercedes-Benz E-Class purchase, and what did Bakari commit to do after the call?",
+      "gold_answer": "Sofia wants lower monthly payments without extending the loan too long; Bakari committed to prepare several financing options for her to review and follow up shortly after the call.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks about Sofia's financing preference and Bakari's post-call commitment, both clearly stated in the single transcript. Sofia says she'd prefer lower monthly payments without extending the loan too long (11:33:45), and Bakari commits to prepare a few financing options for her to review and follow up shortly (11:34:00, 11:34:57). The gold answer captures both facts precisely without unasked extras. The question is naturally worded, scoped to a specific customer and vehicle context, and represents a realistic sales need. Since question_class is single_call, both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 62,
+      "original_status": "accepted",
+      "question": "What pricing did Carlos quote for the SecureFlow Suite, and what volume discount applies to OptiPower Manager?",
+      "gold_answer": "SecureFlow Suite is priced at $1799.97, and OptiPower Manager includes a 10% discount for larger orders.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific pricing facts (SecureFlow Suite price and OptiPower Manager volume discount) that a rep/account manager would plausibly need to recall. Both facts are stated verbatim in the single call transcript: Carlos quotes SecureFlow Suite at $1799.97 and mentions OptiPower Manager includes a 10% discount for larger orders. The gold answer matches exactly with no extra or missing information. Wording is natural and scoped to the EcoEnergy Solutions account discussion. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 65,
+      "original_status": "accepted",
+      "question": "What did Isabella commit to sending Lily after their discovery call?",
+      "gold_answer": "An email summarizing the conversation with a preliminary list of models and services matching Lily's criteria.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Isabella committed to sending Lily after their discovery call. The transcript at 10:34:05 shows Isabella saying she will send an email summarizing the conversation with a preliminary list of models and services matching Lily's criteria. The gold answer matches this verbatim commitment. The question is naturally worded, scoped to a specific rep-customer interaction, and a sales rep would plausibly want to recall follow-up commitments. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 67,
+      "original_status": "accepted",
+      "question": "What budget range and purchase timeline did Henry Thompson share for the Genesis G80?",
+      "gold_answer": "Henry is looking to spend around $50,000 to $55,000 and hopes to purchase within the next few months.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for budget range and purchase timeline for Henry Thompson's Genesis G80 inquiry. The dialogue at 14:32:35 has Henry stating '$50,000 to $55,000' and 'within the next few months,' which the gold answer reproduces precisely with no extra or missing facts. The question is naturally phrased, identifies the customer and vehicle, and a sales rep would plausibly need this information. Single-call set, so both_sources_required is true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 69,
+      "original_status": "accepted",
+      "question": "What payment structure does Linda Olsson prefer for her Tesla Model S lease, and what follow-up did Nora commit to at the end of the call?",
+      "gold_answer": "Linda prefers flexible plans with manageable monthly payments that don't significantly raise total cost; Nora committed to emailing her to confirm a follow-up call about vehicle requirements and lease options.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Linda's payment-structure preference and Nora's end-of-call commitment. The dialogue supports both: Linda states she prefers manageable monthly payments with flexibility that doesn't significantly raise total cost, and Nora commits to emailing to confirm a follow-up call about vehicle requirements and lease options. The gold answer matches precisely with no unasked extras. The question is naturally worded, scoped to a named customer and vehicle, and represents a plausible rep need. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 76,
+      "original_status": "accepted",
+      "question": "For MedTech Advances, how did Luciana position TechPulse against CircuitWave, and what flexibility concern did Fatima raise about TechPulse's products in the later discussion?",
+      "gold_answer": "TechPulse emphasizes comprehensive security and superior compliance, while CircuitWave focuses on simplifying interfaces but shows some compliance gaps. Fatima noted TechPulse products, though appreciated for innovation, might lack flexibility compared to competitors.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two distinct facts: (1) Luciana's competitive positioning of TechPulse vs CircuitWave, found exclusively in the April 14 call where she states TechPulse emphasizes comprehensive security and superior compliance while CircuitWave focuses on simplifying interfaces but shows compliance gaps; (2) Fatima's flexibility concern, found exclusively in the May 15 call where she says TechPulse products 'might lack some flexibility compared to competitors.' Both claims are verbatim-supported. The gold answer states precisely these two facts without unasked extras. The account (MedTech Advances), rep (Luciana), contact (Fatima), and competitor (CircuitWave) are all named in the sources. The phrasing 'in the later discussion' is a natural temporal reference, not an artificial locator preamble. A rep or AM would plausibly want to recall how they positioned against a competitor and what objections the customer raised.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 78,
+      "original_status": "accepted",
+      "question": "What discount did Anwar offer Farah on bulk purchases, and what did she agree to do before their follow-up call next week?",
+      "gold_answer": "A 10% discount on quantities; Farah will review the case studies and talk to her team about compatibility.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks about a specific discount offered and agreed next steps before a follow-up call, which a rep would plausibly track. The dialogue confirms Anwar offered a 10% discount on quantities (16:03:28) and Farah agreed to review case studies and talk to her team about compatibility (16:03:40), with a follow-up call next week (16:04:02). The gold answer states exactly these facts with no extras. Single-call question so both_sources_required is set true. No locator preamble, no answer leakage, no unsupported causality."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 80,
+      "original_status": "accepted",
+      "question": "For TechFusion, what main pain point did Raj Mehta raise in our initial prep discussion, and what follow-up did Ming commit to on the later call?",
+      "gold_answer": "Raj's main pain point is ensuring scalability without compromising security or performance; Ming committed to following up with detailed documentation and a proposed timeline.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: Raj's main pain point from the initial prep call (Call 1) and Ming's follow-up commitment from the later call (Call 2). Call 1 contains Raj stating 'our main issue is ensuring scalability without compromising security or performance.' Call 2 contains Ming saying 'I'll follow up with more detailed documentation and a proposed timeline.' Each source contributes an exclusive requested fact. The question naturally identifies the account (TechFusion), the contact (Raj Mehta), and the rep (Ming) without artificial locator preambles. The gold answer precisely states both requested facts with no unasked extras. Wording is natural and a rep/AM would plausibly want this information.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 81,
+      "original_status": "accepted",
+      "question": "What did Henry Bennett say he wants in a tailored extended warranty, and when did Sebastian commit to sending the proposal?",
+      "gold_answer": "Henry wants warranty options tailored to specific needs like mileage or usage frequency; Sebastian committed to sending the proposal by July 25th.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both requested facts are verified in the single transcript: Henry explicitly asks for warranty options tailored to mileage or usage frequency, and Sebastian commits to sending the proposal by July 25th. The question is naturally phrased, scoped to a named customer and rep, and the answer states precisely the two requested facts without extras.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 83,
+      "original_status": "accepted",
+      "question": "What next steps did Enzo commit to for Oliver Black's Camry Hybrid deal, and what concern did Oliver raise about service response times?",
+      "gold_answer": "Enzo committed to sending a tailored proposal via email and scheduling a product demo. Oliver raised concern that competitors might have quicker service turnaround times.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two facts from a single call: Enzo's committed next steps and Oliver's service-response concern. The dialogue confirms Enzo proposed sending a tailored proposal via email and scheduling a product demo (14:21:10), and Oliver raised the concern that competitors might have quicker turnaround times (14:17:35). The gold answer states exactly those facts with no extras. The question naturally identifies the customer (Oliver Black), the deal (Camry Hybrid), and the rep (Enzo), which is realistic for an account manager reviewing call outcomes. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 84,
+      "original_status": "accepted",
+      "question": "For the BioPulse Infrastructure Revamp opportunity, what existing systems did Juan Alvarez say BioPulse currently runs, and what competitive concern did he raise in the later discussion about TechPulse's offerings?",
+      "gold_answer": "BioPulse currently has a setup with SimuCheck Ultra and EduTech Lab. Juan's competitive concern was that the competitor is introducing new features at a faster pace.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) existing systems mentioned by Juan, found only in the Feb 21 call ('SimuCheck Ultra and EduTech Lab'), and (2) a competitive concern raised in the later discussion, found only in the Mar 1 call ('the competitor is introducing new features at a faster pace'). Each source contributes an exclusive requested fact. The answer matches both transcripts verbatim with no extra or missing information. The question is naturally scoped to a named opportunity and contact, and a rep would plausibly want to recall the customer's current stack and competitive worries.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 89,
+      "original_status": "accepted",
+      "question": "What must-have features is Chloe Bennett looking for in her luxury vehicle purchase?",
+      "gold_answer": "Comfort, reliability, and a good infotainment system.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Chloe Bennett's must-have features in a luxury vehicle purchase. The dialogue at [13:16:10] has Chloe stating 'I'm interested in both comfort and reliability. Also, a good infotainment system would be nice!' The gold answer 'Comfort, reliability, and a good infotainment system' matches exactly. The question is naturally worded, scoped to a named customer and her vehicle purchase, and a sales rep would plausibly want to know a prospect's must-have features. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 90,
+      "original_status": "accepted",
+      "question": "What did Liam Kwong highlight as TerraForm Engineering's key advantages of TechPulse compared to other vendors they've considered?",
+      "gold_answer": "Rapid implementation and adaptability to highly specific operational needs.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Liam Kwong explicitly states at 09:33:32 that 'the rapid implementation and adaptability stand out as significant advantages compared to others we've considered,' which matches the gold answer exactly. The question is scoped to a named account (TerraForm Engineering) and contact (Liam Kwong), a realistic sales context. Wording is natural with no locator preamble or clue list. Single-call question so both_sources_required is set true by convention.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 98,
+      "original_status": "accepted",
+      "question": "What discount did Ayo offer BrightField Ventures on the SecureFlow Suite, and what did Elena say the next step would be?",
+      "gold_answer": "A 5% discount for BrightField Ventures; Elena said the next step is to look into the proposal details.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two specific facts (discount percentage and next step) that a rep would plausibly track. The dialogue confirms Ayo offered a 5% discount on SecureFlow Suite for BrightField Ventures and Elena stated the next step is to look into the proposal details. The gold answer matches both claims exactly with no extra or missing information. Wording is natural, scope is clear (named account, product, and participants), and no locator preamble or artificial scaffolding is present. Single-call question so both_sources_required is set true.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 88,
+      "original_status": "rejected",
+      "question": "Across the two calls with Samantha White at DataGuard Insights, what did she say was Quantum Circuits' key weakness, and what concern did she raise about her current provider's initial user adoption experience?",
+      "gold_answer": "Quantum Circuits lacked flexibility in customization, which was significant for DataGuard. Samantha also noted feedback suggesting their current provider offers a more engaging initial user adoption phase.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Both facts are verified in the transcripts. The June 1 call contains Samantha's direct statement that 'Quantum Circuits Inc lacked the flexibility in customization, which was a significant point for us' and her concern that 'our current provider might offer a more engaging initial phase' regarding user adoption. The May 15 call introduces the Quantum Circuits comparison (Nina mentions their lack of flexibility for integration) and Samantha's emphasis on flexibility for future expansions, providing the competitive context. Each call contributes an exclusive requested fact: the May call establishes the Quantum Circuits weakness discussion, while the June call adds the user-adoption concern. The question naturally identifies the account (DataGuard Insights) and contact (Samantha White) without artificial locator preambles. The gold answer accurately reflects both facts without unasked extras."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 37,
+      "original_status": "rejected",
+      "question": "What follow-up meeting did Vanessa schedule with Zara Ward, and which two sustainable models were introduced?",
+      "gold_answer": "A detailed discovery meeting on March 31 at 9 AM; the 2023 Nissan Leaf and the 2024 Volkswagen ID.4.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the follow-up meeting details and the two sustainable models introduced. The dialogue confirms Vanessa scheduled a 'detailed discovery meeting' on March 31 at 9 AM and introduced the 2023 Nissan Leaf and 2024 Volkswagen ID.4. All answer claims are directly supported by the transcript. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall these details. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 94,
+      "original_status": "rejected",
+      "question": "What are TechWave's key buying requirements for the EDA solution, and what concerns did Lara raise about Quantum Circuits Inc?",
+      "gold_answer": "TechWave needs scalable, reliable, seamlessly integrated EDA solutions with ease of use and strong support. Lara's concerns about Quantum Circuits: lacking adaptability, longer implementation timelines delaying projects, and requiring frequent follow-ups for ongoing support.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about TechWave's buying requirements and Lara's concerns about a competitor (Quantum Circuits Inc), both of which a rep/account manager would plausibly want to know. The dialogue confirms all answer claims: scalability, reliability, seamless integration, ease of use, and strong support are stated by Lara; concerns about Quantum Circuits (lacking adaptability, longer implementation timelines delaying projects, frequent follow-ups for ongoing support) are explicitly raised. Wording is natural, scope is adequate (identifies account and business situation), and the answer precisely covers both requested parts without unasked extras. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 41,
+      "original_status": "rejected",
+      "question": "What's the next step with Ava White's luxury vehicle package?",
+      "gold_answer": "A proposal review meeting is to be scheduled next week; Ava will check her calendar and confirm availability.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about the next step for a named customer's opportunity, which a rep would plausibly want to know. The gold answer accurately reflects the dialogue: Haruto proposes scheduling a proposal review meeting for next week, and Ava says she will check her calendar and confirm availability. No locator preamble, no answer leakage, no unsupported claims. Single-call question so both_sources_required is set to true per instructions. Scope is adequate via the customer name and opportunity name."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 53,
+      "original_status": "rejected",
+      "question": "What did Chloe Bennett say she's looking for in a luxury vehicle and services, and what did she want to see next?",
+      "gold_answer": "Chloe wants connectivity, safety features, transparent pricing, and reliable long-term support; she's eager to see the next detailed tailored proposal.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what the customer (Chloe Bennett) stated as her priorities and desired next step—information a rep would plausibly need. The gold answer accurately captures all four requirements Chloe voiced (connectivity, safety features, transparent pricing, reliable long-term support) and her stated eagerness to see the next detailed tailored proposal, matching the dialogue verbatim. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true by convention."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 58,
+      "original_status": "rejected",
+      "question": "What did Isabella Russo say Vertex found during their trials compared to other providers' solutions?",
+      "gold_answer": "Vertex had positive compliance experiences with other providers, but found more seamless integration with TechPulse's approach during their trials.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Isabella Russo said Vertex found during trials compared to other providers. The dialogue at 13:52:15 contains her exact statement: positive compliance experiences with other providers but more seamless integration with TechPulse's approach during trials. The gold answer faithfully reproduces both facts without adding unasked extras. The question is naturally phrased, scoped to a specific customer (Vertex) and contact (Isabella Russo), and a rep would plausibly want to recall this competitive feedback. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 86,
+      "original_status": "rejected",
+      "question": "What discounts did Jaemin quote TerraForm on the products Samuel is interested in?",
+      "gold_answer": "AI Cirku-Tech and QuantumPCB Modeler each at 10% off, and DesignWave Automation at 15% off.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks about discounts quoted by rep Jaemin to TerraForm on products Samuel expressed interest in. The dialogue confirms AI Cirku-Tech and QuantumPCB Modeler at 10% off each, and DesignWave Automation at 15% off. The gold answer states exactly these three discounts with no unasked extras. Scope is clear (TerraForm account, Samuel's interest, Jaemin's quotes). Single-call set, so both_sources_required is true by rule.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 66,
+      "original_status": "rejected",
+      "question": "What next step did Jia Yuen agree to for the InnoSphere Labs opportunity, and what concern did he raise about implementation?",
+      "gold_answer": "Jia agreed to a technical demo, targeted for the following week, and stressed seamless integration with minimal downtime and disruption during implementation.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about the agreed next step and the implementation concern for a named contact and opportunity—information a rep would plausibly track. The gold answer correctly states (1) Jia agreed to a technical demo targeted for the following week (dialogue 14:02:05–14:02:10) and (2) he stressed seamless integration with minimal downtime and disruption (dialogue 14:00:42). Both facts are sourced exclusively from the single provided call; no unasked extras are included. Wording is natural, scope is adequate via the opportunity and contact names, and no artificial locator preamble or answer leakage is present."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 17,
+      "original_status": "rejected",
+      "question": "What did Ava Lee say she prioritizes when evaluating an SUV, and what follow-up did Ananya commit to?",
+      "gold_answer": "Ava prioritizes reliability, post-purchase support, and modern technology meeting daily needs; Ananya committed to setting up a follow-up meeting to explore SUV options.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "decision_criteria",
+        "locator_preamble": false,
+        "reason": "The question asks for Ava Lee's stated SUV priorities and Ananya's committed follow-up—both are standard decision-criteria/next-steps facts a rep would track. The dialogue supports reliability (Ava confirms 'reliability is definitely a priority'), post-purchase support (she focuses on 'post-purchase services'), and modern technology meeting daily needs (her explicit statement). Ananya's commitment to 'set up a follow-up meeting' to explore SUV options is verbatim. Wording is natural, scope is clear (named customer, named rep, SUV evaluation context), no locator preamble or answer leakage. Single-call question so both_sources_required is set true per instructions."
+      },
+      "mechanical_locator_flags": []
+    },
+    {
+      "item": 25,
+      "original_status": "rejected",
+      "question": "Did Ethan Harris raise any concerns about AutoElite's post-purchase support or maintenance coverage before agreeing to proceed with the BMW X5 M purchase?",
+      "gold_answer": "No major concerns. He said the maintenance coverage seemed similar to industry standard, noted some competitors emphasize partnerships, but appreciated AutoElite's direct support and agreed to proceed.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question asks whether Ethan Harris raised concerns about post-purchase support/maintenance before agreeing to the BMW X5 M purchase. The transcript confirms he said 'No major concerns,' noted maintenance coverage seemed similar to industry standard, mentioned competitors emphasize partnerships, appreciated AutoElite's direct support, and agreed to proceed. The gold answer accurately captures all these points without adding unasked extras. The question is naturally worded, scoped to a specific customer and vehicle, and represents a plausible sales-rep need (understanding whether objections were raised before closing). Single-call question so both_sources_required is set to true. No locator preamble, no answer leakage, no unsupported causality."
+      },
+      "mechanical_locator_flags": []
+    }
+  ],
+  "model": "accounts/fireworks/models/qwen3p8-max",
+  "estimated_usd": 0.21951,
+  "counts": {
+    "accepted/pass": 33,
+    "rejected/pass": 10
+  },
+  "limitations": "All accepted plus 10 seeded rejects. Independent automated source audit; no full-corpus ambiguity claim. Not human gold labels."
+}
