@@ -1,0 +1,342 @@
+[
+  {
+    "question_id": "b2b-multi_call-db7feb7ba974d258",
+    "question": "Across the two calls with Fiona McGregor at BioPulse MedTech, how did Aarav position TechPulse against FlexEDA, and how did he address her concern that competitors offer more customization?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Aarav positioned TechPulse against FlexEDA across two calls and how he responded to Fiona's concern that competitors offer more customization",
+        "relationship": "competitive positioning and the customization objection are part of the same competitive issue (FlexEDA)",
+        "reason": "Both parts address the same business issue\u2014handling the FlexEDA competitive threat\u2014including the objection about customization and its response, so the multi-call comparison is coherent."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks how Aarav positioned TechPulse against FlexEDA and how he addressed the customization concern. Both pieces of information are fully supplied in the first call (b2b:a05Wt000003T2BCIA0): he cites stronger data protection and AI features against FlexEDA, and acknowledges competitors' off-the-shelf customization while offering a scalable core with strategic customization. The second call (b2b:a05Wt000003T2fpIAC) only repeats the same FlexEDA positioning (stronger data protection and AI features) and does not address customization at all. Therefore, the first call alone suffices for the requested information, and the second call adds no distinct requested fact."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks how Aarav positioned TechPulse against FlexEDA and how he addressed the customization concern. Both pieces of information are fully supplied in the first call (b2b:a05Wt000003T2BCIA0): he cites stronger data protection and AI features against FlexEDA, and acknowledges competitors' off-the-shelf customization while offering a scalable core with strategic customization. The second call (b2b:a05Wt000003T2fpIAC) only repeats the same FlexEDA positioning (stronger data protection and AI features) and does not address customization at all. Therefore, the first call alone suffices for the requested information, and the second call adds no distinct requested fact."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2fpIAC",
+                "fact": "Aarav positioned TechPulse against FlexEDA by citing stronger data protection and AI features as their unique advantage",
+                "why_other_call_cannot_supply_it": "The May 1 call never mentions FlexEDA or any direct competitor comparison; the FlexEDA discussion occurs only in the April 19 call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2BCIA0",
+                "fact": "When Fiona raised that competitors offer more customizable options, Aarav acknowledged competitors may seem more tailored off-the-shelf but said TechPulse offers a scalable core with strategic customization fitting existing workflows",
+                "why_other_call_cannot_supply_it": "The April 19 call contains no customization concern from Fiona and no such response from Aarav; the customization exchange occurs only in the May 1 call"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the FlexEDA competitive positioning and the response to the customization concern. Each is found in only one of the two calls (FlexEDA in the April 19 call, customization in the May 1 call), so both sources are required and neither alone suffices."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2fpIAC",
+                  "fact": "Aarav positioned TechPulse against FlexEDA by citing stronger data protection and AI features as their unique advantage",
+                  "why_other_call_cannot_supply_it": "The May 1 call never mentions FlexEDA or any direct competitor comparison; the FlexEDA discussion occurs only in the April 19 call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2BCIA0",
+                  "fact": "When Fiona raised that competitors offer more customizable options, Aarav acknowledged competitors may seem more tailored off-the-shelf but said TechPulse offers a scalable core with strategic customization fitting existing workflows",
+                  "why_other_call_cannot_supply_it": "The April 19 call contains no customization concern from Fiona and no such response from Aarav; the customization exchange occurs only in the May 1 call"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the FlexEDA competitive positioning and the response to the customization concern. Each is found in only one of the two calls (FlexEDA in the April 19 call, customization in the May 1 call), so both sources are required and neither alone suffices."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (2022-04-19) contains the FlexEDA positioning where Aarav cites stronger data protection and AI features as TechPulse's advantage. Call 2 (2022-05-01) contains the customization objection where Fiona raises competitors offering more customization and Aarav responds with the scalable-core/strategic-customization framing. Each source contributes an exclusive requested fact. The answer accurately reflects both transcripts without adding unasked extras or leaking information. The question naturally identifies the account, contact, and competitive context a rep would track.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003T2fpIAC shows Aarav Sharma explicitly stating 'our stronger data protection and AI features give us a unique advantage' in direct response to Fiona's question about how TechPulse stacks up against FlexEDA. This directly supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003T2BCIA0 shows Aarav acknowledging 'some competitors may have offerings that seem more tailored off-the-shelf' and then stating 'our focus is on creating a scalable core with strategic customization options that can fit into your existing workflows seamlessly.' This directly supports the answer_claim about addressing the customization concern."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Against FlexEDA, Aarav cited stronger data protection and AI features as TechPulse's advantage\u2014supported by evidence index 0. (2) On customization, he acknowledged competitors seem more tailored off-the-shelf but said TechPulse offers a scalable core with strategic customization fitting existing workflows\u2014supported by evidence index 1. Both factual claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms both calls involve Fiona McGregor at BioPulse MedTech with Aarav (Aarav Sharma) as the salesperson, matching the question's framing of 'two calls with Fiona McGregor at BioPulse MedTech.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-5850f81a703c0e8b",
+    "question": "Across the two calls with Nordic HealthTech's Miguel Hernandez, what did Miguel say attracted him to CircuitWave, and what concern did he raise about CircuitWave's security?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) What attracted Miguel Hernandez to CircuitWave, and (2) his security concern about CircuitWave, across two calls.",
+        "relationship": "Two independent fact lookups joined only by the same contact and vendor.",
+        "reason": "The attraction reason and the security concern are separate evaluation topics, not one coherent issue; being about the same customer and product is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two distinct facts about Miguel's views on CircuitWave. Call 2 (2022-03-10) contains Miguel stating 'CircuitWave's strong support and service agreements have attracted attention, especially for immediate assistance,' which is the attraction fact. Call 1 (2022-05-18) contains Miguel saying 'we're concerned about potential gaps, especially in our industry' regarding CircuitWave's security and compliance. Each source contributes an exclusive requested fact. The gold answer accurately reflects both statements without adding unasked extras. The question naturally identifies the account (Nordic HealthTech) and contact (Miguel Hernandez), which is realistic for a rep reviewing their pipeline. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Miguel Hernandez stating 'we're concerned about potential gaps, especially in our industry' regarding how CircuitWave handles security and compliance. This fully supports the answer_claim about his concern regarding potential security and compliance gaps in their industry."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Miguel Hernandez saying 'CircuitWave's strong support and service agreements have attracted attention, especially for immediate assistance.' This directly supports the answer_claim that CircuitWave's strong support and service agreements attracted attention for immediate assistance. The phrasing 'attracted attention' is a faithful representation of what attracted him, and the context of the conversation (comparing to TechPulse) confirms this is about what drew him to CircuitWave."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two things: (1) CircuitWave's strong support and service agreements for immediate assistance attracted him, and (2) he was concerned about potential security and compliance gaps in their industry. Evidence index 1 directly supports claim (1) with Miguel's statement about strong support and service agreements attracting attention for immediate assistance. Evidence index 0 directly supports claim (2) with Miguel's explicit concern about potential gaps in security and compliance, especially in their industry. Both factual claims in the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-9e86828d462ddca4",
+    "question": "What did Ivan Petrova say DigitalWave Solutions wants expanded in the partnership to support their transformation goals?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What DigitalWave Solutions wants expanded in the partnership to support their transformation goals, per Ivan Petrova",
+        "relationship": "single lookup of one partner requirement",
+        "reason": "One coherent requirement lookup about the same partnership discussion; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks what a named contact (Ivan Petrova) at a named account (DigitalWave Solutions) wants expanded in the partnership to support transformation goals\u2014exactly the kind of information a rep/account manager would want. The dialogue at 14:33:36 shows Ivan saying 'incorporating more on-the-ground training could help. Also, customized solutions specifically tailored to our sector would be invaluable,' which the gold answer faithfully paraphrases as 'more on-the-ground training and customized, sector-specific solutions tailored to their industry.' No extra unasked facts are included, no locator preamble is present, and the wording is natural. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Ivan Petrova explicitly states 'incorporating more on-the-ground training could help' and 'customized solutions specifically tailored to our sector would be invaluable.' This directly supports the answer_claim about more on-the-ground training and customized, sector-specific solutions."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'More on-the-ground training and customized, sector-specific solutions tailored to their industry.' The cited evidence (index 0) contains Ivan Petrova's direct quote requesting 'more on-the-ground training' and 'customized solutions specifically tailored to our sector.' The metadata confirms the speaker is Ivan Petrova and the account is DigitalWave Solutions. The gold_answer faithfully paraphrases the quoted dialogue, with 'their industry' being a reasonable paraphrase of 'our sector.' All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5a98884350ee6210",
+    "question": "What is FusionTech Systems' budget for the CircuitMaster Analyzer and how many units does that cover?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "FusionTech Systems' budget for the CircuitMaster Analyzer and the number of units that budget covers",
+        "relationship": "single coherent commercial lookup: budget amount and unit coverage are two facets of the same pricing detail",
+        "reason": "Both parts concern the same commercial term (budget and what it covers) for the same product, forming one natural sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for budget and unit count, both clearly stated in the single call transcript: Maria Gonzalez states a $1,883 budget and Liam confirms three units at $600 each ($1,800). The gold answer accurately reflects these facts with no extras. The question is naturally worded, scoped to a named company and product, and represents a plausible commercial-terms inquiry a rep would need. Single-call set, so both_sources_required is true by rule."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue explicitly shows Maria Gonzalez stating 'We're looking to stay within $1883' and Liam O'Sullivan confirming 'Each unit is $600, so for three units, it's $1800. That falls well within your specified budget.' This directly supports the claim that the budget is $1,883 and three units at $600 each totals $1,800, fitting within that budget."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: (1) Maria Gonzalez's budget of $1,883, (2) three units at $600 each, (3) the $1,800 total, and (4) that this fits within the stated budget. The context metadata confirms the lead is Maria Gonzalez at FusionTech Systems, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b36f8d50b4346d10",
+    "question": "What objection did Ava Lewis raise about AutoElite's pricing compared to competitors, and how did Kwesi respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing objection Ava Lewis raised relative to competitors and Kwesi's response to it",
+        "relationship": "single coherent objection-and-response exchange",
+        "reason": "This is one objection and its response addressing the same pricing issue, a natural sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific pricing objection and the rep's rebuttal within a named account conversation\u2014plausible QA for a sales manager. The gold answer accurately captures Ava's concern (upfront sticker price higher than competitors) and Kwesi's response (transparent pricing, no hidden costs/surprises, all costs known upfront), matching the dialogue verbatim. No locator preamble, no answer leakage, no unsupported causality. Single-call set, so both_sources_required is true by rule.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Kwesi's quote explicitly references Ava's prior statement: 'You mentioned previously that while our pricing is clear, the upfront cost seems higher compared to others?' This confirms Ava raised the objection that the upfront cost seems higher compared to competitors. The answer_claim's addition about 'competitors' sticker price is lower though there might be hidden costs later' is a reasonable inference from 'upfront cost seems higher compared to others' combined with Kwesi's framing of 'transparent pricing' as the counterpoint, though the exact phrase 'hidden costs later' is not verbatim in this citation. However, the core claim\u2014that Ava said the upfront cost seems higher compared to others\u2014is directly supported by the quoted passage."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly states: 'our transparent pricing means that what you see is what you get\u2014no surprises...you know all costs upfront.' This matches the answer_claim that Kwesi said transparent pricing means no surprises and all costs known upfront."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Ava felt the upfront sticker price was higher than competitors'\u2014supported by index 0 where Kwesi references Ava's prior mention that 'the upfront cost seems higher compared to others'; (2) Kwesi explained transparent pricing means no hidden costs or surprises, with all costs known upfront\u2014supported by index 1 where Kwesi states 'what you see is what you get\u2014no surprises...you know all costs upfront.' Both factual claims in the gold_answer are supported by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-da071c960c8c7302",
+    "question": "What concern did James Nelson raise about AutoElite's tech options versus competitors, and how did Mia respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "James Nelson's concern about AutoElite's tech options compared to competitors and Mia's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single competitive objection and the salesperson's reply addressing the same issue; coherent sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection (DriveFirst Automotive's more aggressive pricing for similar tech) and Mia's rebuttal (premium positioning with higher security/compliance standards). The dialogue at 09:52:05 and 09:52:28 confirms both facts verbatim. James's reassurance at 09:52:40 supports the 'reassured him' claim. The question is naturally phrased, scoped to a named customer and account, and a rep would plausibly want to review how a competitive objection was handled. Single-call set, so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows James Nelson stating that competitors offer 'more aggressive pricing for similar tech' and specifically names DriveFirst Automotive as 'more compelling in that aspect.' This fully supports the claim that James raised pricing concerns versus DriveFirst Automotive."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote supports that Mia cited premium positioning, security, and compliance standards. However, the answer_claim also asserts 'James felt assured.' The cited passage only contains Mia's question 'Does that add confidence for you?'\u2014a question does not establish its answer. No subsequent dialogue from James confirming reassurance is supplied in the evidence. The claim that James 'felt assured' is unsupported by the quoted text."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer states Mia's response 'reassured him,' implying James confirmed he felt reassured. Evidence index 1 only shows Mia asking 'Does that add confidence for you?' but no cited passage contains James's affirmative reply. While the concern and Mia's response content are well-supported, the final factual claim that James was reassured lacks supporting dialogue in the supplied evidence."
+      }
+    }
+  }
+]
