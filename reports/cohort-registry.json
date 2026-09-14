@@ -891,16 +891,28 @@
       "review_report": "reports/hourly-quality/full-20260914-19-review.md"
     },
     {
-      "question_id": "b2b-multi_call-fd23d863cafce7a2",
-      "question_text": "Across the Digital Horizon Media opportunity, what concerns did Sara Morales raise about CircuitWave in the initial discussion versus the later pricing call?",
-      "reason": "Hourly necessity gate fails closed: DeepSeek emits necessary=false and no exclusive facts, despite its reason explicitly concluding both calls are necessary. GLM passes. This is an internally inconsistent judge output, not a source-confirmed QA defect.",
-      "review_report": "reports/hourly-quality/full-20260914-20-review.md"
-    },
-    {
       "question_id": "b2c-single_call-7059ba6d1736694f",
       "question_text": "What did Abigail recommend as vehicle options for Priya Patel, and what does AutoElite's post-purchase support include?",
       "reason": "Hourly coherence gate rejects vehicle recommendations plus generic post-purchase support as separate information needs. Source/citation review passes. Conservative gate exclusion, not a confirmed factual defect.",
       "review_report": "reports/hourly-quality/full-20260914-20-review.md"
+    },
+    {
+      "question_id": "b2b-single_call-701209b6eb6241d0",
+      "question_text": "What discount did TechPulse offer AquaGuard Solutions on SecureTrack Pro, and what did Rosa say about it?",
+      "reason": "Failed unanimous customer-history scope review. Alternative passages verified, but material distinctness/coverage is debatable; conservative ID exclusion, not a confirmed contradictory answer.",
+      "review_report": "reports/hourly-quality/full-20260914-21-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-b4fc3175b7733ad4",
+      "question_text": "What did Oliver Black say matters most to him in a premium performance vehicle, and what did David commit to sending him afterward?",
+      "reason": "Failed unanimous customer-history scope review. Alternative passages verified, but material distinctness/coverage is debatable; conservative ID exclusion, not a confirmed contradictory answer.",
+      "review_report": "reports/hourly-quality/full-20260914-21-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-2ef58f1370830af5",
+      "question_text": "How did Liu position AutoElite's initial luxury car pricing against High-End Autos Co. for David Gonzalez?",
+      "reason": "Failed unanimous customer-history scope review. Alternative passages verified, but material distinctness/coverage is debatable; conservative ID exclusion, not a confirmed contradictory answer.",
+      "review_report": "reports/hourly-quality/full-20260914-21-review.md"
     }
   ],
   "retained_difficult_questions": [
@@ -915,5 +927,12 @@
     "path": "runs/sales-expanded-2000-v1/scope-reviewed",
     "questions": 410,
     "sha256": "95239b487791476b35d6cac6e0a8ba7c7b22e7793ce417b957a63f5a4da62e41"
-  }
+  },
+  "resolved_quarantines": [
+    {
+      "question_id": "b2b-multi_call-fd23d863cafce7a2",
+      "reason": "Strict decision schema triggered the existing bounded repair; both necessity judges and full customer-history review now pass. No QA content changed.",
+      "review_report": "reports/necessity-schema-scope-regression-20260914.json"
+    }
+  ]
 }

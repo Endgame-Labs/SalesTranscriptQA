@@ -1,0 +1,413 @@
+[
+  {
+    "question_id": "b2b-multi_call-1683b1e38e304323",
+    "question": "For SafetyNet, how did Thato say TechPulse addresses initial user adoption in the proposal discussion, and what UI improvement was mentioned in the demo follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Thato said TechPulse addresses initial user adoption in the proposal discussion, and the UI improvement mentioned in the demo follow-up",
+        "relationship": "same business issue across two calls \u2014 user adoption/usability of TechPulse, with the UI improvement being the concrete response to the adoption concern",
+        "reason": "Both facts concern the same issue (user adoption and the UI improvement addressing it), so the two-call comparison is coherent rather than two unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: how TechPulse addresses initial user adoption in the proposal discussion, and what UI improvement was mentioned in the demo follow-up. The first fact is found in the first call, and the second fact is found in the second call. However, the second call's UI improvement is not explicitly requested by the question; the question only asks for 'what UI improvement was mentioned', which is a direct lookup from the second call. The first call provides the adoption strategy. Since each fact is sourced from a different call and the question explicitly asks for both, both calls are necessary. The facts are distinct: one is about training/support for adoption, the other about UI refinement. Therefore, both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: how TechPulse addresses initial user adoption in the proposal discussion, and what UI improvement was mentioned in the demo follow-up. The first fact is found in the first call, and the second fact is found in the second call. However, the second call's UI improvement is not explicitly requested by the question; the question only asks for 'what UI improvement was mentioned', which is a direct lookup from the second call. The first call provides the adoption strategy. Since each fact is sourced from a different call and the question explicitly asks for both, both calls are necessary. The facts are distinct: one is about training/support for adoption, the other about UI refinement. Therefore, both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StRIIA0",
+                "fact": "Thato said TechPulse addresses initial user adoption by providing comprehensive training and support for a smooth transition.",
+                "why_other_call_cannot_supply_it": "The demo follow-up call never discusses training/support as the adoption strategy; it only mentions UI refinement."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxRgIAK",
+                "fact": "In the demo follow-up, Thato said they are refining the user interface to be more intuitive, particularly during the early adoption phase.",
+                "why_other_call_cannot_supply_it": "The proposal discussion call contains no mention of UI/interface improvements."
+              }
+            ],
+            "reason": "The question asks for two distinct, requested facts: the adoption strategy (training and support) from the proposal call and the UI improvement from the demo follow-up. Each fact appears only in one call, and neither is a paraphrase of the other."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StRIIA0",
+                  "fact": "Thato said TechPulse addresses initial user adoption by providing comprehensive training and support for a smooth transition.",
+                  "why_other_call_cannot_supply_it": "The demo follow-up call never discusses training/support as the adoption strategy; it only mentions UI refinement."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxRgIAK",
+                  "fact": "In the demo follow-up, Thato said they are refining the user interface to be more intuitive, particularly during the early adoption phase.",
+                  "why_other_call_cannot_supply_it": "The proposal discussion call contains no mention of UI/interface improvements."
+                }
+              ],
+              "reason": "The question asks for two distinct, requested facts: the adoption strategy (training and support) from the proposal call and the UI improvement from the demo follow-up. Each fact appears only in one call, and neither is a paraphrase of the other."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two distinct facts: (1) how Thato addressed initial user adoption in the proposal discussion (call 1: comprehensive training and support for smooth transition) and (2) what UI improvement was mentioned in the demo follow-up (call 2: refining the interface to be more intuitive, especially during early adoption). Both claims are directly supported by the respective dialogues. Each source contributes an exclusive requested fact. The question naturally identifies the account (SafetyNet), the rep (Thato), and the vendor (TechPulse), and a rep/AM would plausibly want to recall these details. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Thato Mokoena in the proposal discussion (call b2b:a05Wt000003StRIIA0, 2023-08-31) explicitly states: 'We're focusing on providing comprehensive training and support to help transition smoothly.' This directly supports the answer_claim about comprehensive training and support for smooth transition regarding initial user adoption."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Thato Mokoena in the demo follow-up (call b2b:a05Wt000003SxRgIAK, 2023-09-04) explicitly states: 'We've been working on refining our user interface to make it more intuitive, particularly during the early adoption phase.' This directly supports the answer_claim about refining the interface to be more intuitive during early adoption."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Thato cited comprehensive training and support for smooth transition in the proposal discussion (first call, 2023-08-31). Evidence index 1 confirms that in the demo follow-up (second call, 2023-09-04), Thato said they're refining the interface to be more intuitive, especially during early adoption. Speaker attribution (Thato Mokoena), the account context (SafetyNet), and the two distinct calls (proposal discussion vs. demo follow-up) all align with the question and gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9b3aa74f84f73f01",
+    "question": "For the Horizon Tech Integrations expansion with Rashid Ahmed, what total quote did Monique give after the demo, and what per-product discount structure did she later outline?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total quote Monique provided after the demo and the per-product discount structure she later outlined for the Horizon Tech Integrations expansion with Rashid Ahmed",
+        "relationship": "Same commercial terms (quote and discount structure) for the same expansion deal, compared across two calls",
+        "reason": "Both parts concern the same commercial negotiation\u2014the total quote and the discount breakdown are components of one pricing discussion, so this is a coherent multi-call request about the same business issue."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for the total quote after the demo and the per-product discount structure outlined later. The total quote ($24,127.53) is provided in the October call, and the discount structure (10% off PulseSim Pro and CloudLink Designer, 15% off SecureFlow Suite) is provided in the November call. However, the question's phrasing 'after the demo' and 'later' does not require both calls; the total quote and discount structure are distinct facts but each is fully supplied by a single call. The November call contains the discount structure but not the total quote, and the October call contains the total quote but not the discount structure. Since the question explicitly requests both pieces of information, one might argue both calls are necessary. But the instruction says to reject if 'both repeat one fact' or 'facts are unrelated lookups joined together.' Here, the facts are related (pricing details for the same deal) but are not repeated; each call provides a different piece. However, the question does not require cross-referencing or synthesis; it simply asks for two separate facts. The necessity criterion is that each call must supply a fact that the other cannot. Here, the October call cannot supply the discount structure, and the November call cannot supply the total quote. So both are necessary. But the instruction also says 'If unsure, necessary=false.' I am unsure because the question could be answered by reading both calls, but the facts are not overlapping. Yet the instruction says 'Reject if either source suffices for the actual information need' \u2013 here neither source suffices alone. So necessary should be true. However, the instruction also says 'Do not invent causality or progression.' The question implies a temporal sequence (after demo, later), but that is just context. The facts are distinct and each call provides one. So I think necessary=true. But the instruction says 'If necessary=true give exactly one essential fact per source call.' So I need to list exclusive facts. For the October call, the fact is the total quote. For the November call, the fact is the discount structure. The why_other_call_cannot_supply_it: for October, the November call does not mention the total quote; for November, the October call does not mention the discount structure. So I will set necessary=true. But wait, the instruction says 'Repeated complaints or paraphrases are NOT distinct facts merely because the question says ",
+            "first": "or ",
+            "later": ".' Here the facts are not repeated; they are different. So I think necessary=true. However, the instruction also says 'A genuine new outcome, a stated numerical change, a concern plus an explicit resolution, or different commercial terms can count.' The total quote and discount structure are different commercial terms. So they count. Thus necessary=true. I will output that."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the total quote after the demo and the per-product discount structure outlined later. The total quote ($24,127.53) is provided in the October call, and the discount structure (10% off PulseSim Pro and CloudLink Designer, 15% off SecureFlow Suite) is provided in the November call. However, the question's phrasing 'after the demo' and 'later' does not require both calls; the total quote and discount structure are distinct facts but each is fully supplied by a single call. The November call contains the discount structure but not the total quote, and the October call contains the total quote but not the discount structure. Since the question explicitly requests both pieces of information, one might argue both calls are necessary. But the instruction says to reject if 'both repeat one fact' or 'facts are unrelated lookups joined together.' Here, the facts are related (pricing details for the same deal) but are not repeated; each call provides a different piece. However, the question does not require cross-referencing or synthesis; it simply asks for two separate facts. The necessity criterion is that each call must supply a fact that the other cannot. Here, the October call cannot supply the discount structure, and the November call cannot supply the total quote. So both are necessary. But the instruction also says 'If unsure, necessary=false.' I am unsure because the question could be answered by reading both calls, but the facts are not overlapping. Yet the instruction says 'Reject if either source suffices for the actual information need' \u2013 here neither source suffices alone. So necessary should be true. However, the instruction also says 'Do not invent causality or progression.' The question implies a temporal sequence (after demo, later), but that is just context. The facts are distinct and each call provides one. So I think necessary=true. But the instruction says 'If necessary=true give exactly one essential fact per source call.' So I need to list exclusive facts. For the October call, the fact is the total quote. For the November call, the fact is the discount structure. The why_other_call_cannot_supply_it: for October, the November call does not mention the total quote; for November, the October call does not mention the discount structure. So I will set necessary=true. But wait, the instruction says 'Repeated complaints or paraphrases are NOT distinct facts merely because the question says ",
+              "first": "or ",
+              "later": ".' Here the facts are not repeated; they are different. So I think necessary=true. However, the instruction also says 'A genuine new outcome, a stated numerical change, a concern plus an explicit resolution, or different commercial terms can count.' The total quote and discount structure are different commercial terms. So they count. Thus necessary=true. I will output that."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2BLIA0",
+                "fact": "Monique quoted a total of approximately $24,127.53 after discounts following the demo",
+                "why_other_call_cannot_supply_it": "The later call (a05Wt000003SwVdIAK) never states a total dollar figure, only percentage discounts"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwVdIAK",
+                "fact": "Monique outlined 10% off PulseSim Pro and CloudLink Designer and 15% off SecureFlow Suite based on volume",
+                "why_other_call_cannot_supply_it": "The earlier call (a05Wt000003T2BLIA0) gives only the total quote and mentions no per-product discount percentages"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of commercial information: the total quote (given only in the October 15 call) and the per-product discount structure (given only in the November 15 call). Neither call contains both facts, and they are not paraphrases of the same information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2BLIA0",
+                  "fact": "Monique quoted a total of approximately $24,127.53 after discounts following the demo",
+                  "why_other_call_cannot_supply_it": "The later call (a05Wt000003SwVdIAK) never states a total dollar figure, only percentage discounts"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwVdIAK",
+                  "fact": "Monique outlined 10% off PulseSim Pro and CloudLink Designer and 15% off SecureFlow Suite based on volume",
+                  "why_other_call_cannot_supply_it": "The earlier call (a05Wt000003T2BLIA0) gives only the total quote and mentions no per-product discount percentages"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of commercial information: the total quote (given only in the October 15 call) and the per-product discount structure (given only in the November 15 call). Neither call contains both facts, and they are not paraphrases of the same information."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question targets two specific commercial facts for a named account/contact/opportunity. Call 2 (Oct 15) exclusively supplies the post-demo total quote of ~$24,127.53; Call 1 (Nov 15) exclusively supplies the per-product discount structure (10% off PulseSim Pro and CloudLink Designer, 15% off SecureFlow Suite by volume). Both facts are verbatim-supported in the dialogues, each source contributes a unique requested fact, the answer states exactly what was asked with no unasked extras, and the phrasing is natural for an account manager reviewing pricing history."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Monique Dubois on call b2b:a05Wt000003T2BLIA0 explicitly states 'the total comes to approximately $24,127.53, after applying relevant discounts,' which directly supports the answer_claim about the quote total."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Monique Dubois on call b2b:a05Wt000003SwVdIAK explicitly states 'a 10% discount on PulseSim Pro and CloudLink Designer, and a 15% discount on SecureFlow Suite due to the volume your organization plans on purchasing,' which directly supports the answer_claim about the per-product discount structure."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer: index 0 confirms the total quote of approximately $24,127.53 after discounts, and index 1 confirms the discount structure of 10% off PulseSim Pro and CloudLink Designer and 15% off SecureFlow Suite based on volume. The context metadata confirms the account is Horizon Tech Integrations and the contact is Rashid Ahmed, matching the question's framing. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-701209b6eb6241d0",
+    "question": "What discount did TechPulse offer AquaGuard Solutions on SecureTrack Pro, and what did Rosa say about it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount TechPulse offered AquaGuard Solutions on SecureTrack Pro and Rosa's response to it",
+        "relationship": "objection/response: the discount and Rosa's reaction are two sides of the same commercial discussion",
+        "reason": "A single coherent commercial exchange \u2014 the quoted discount and the customer's (Rosa's) response to it \u2014 addressing the same pricing issue on the same product."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific discount offered on SecureTrack Pro and Rosa's reaction. The dialogue confirms Pierre offered a 5% discount on five units of SecureTrack Pro, and Rosa responded it was 'quite competitive' and aligned with their 'need for data protection.' The gold answer accurately captures both facts. The question is naturally phrased, scoped to a clear business situation (TechPulse/AquaGuard partnership discussion), and a rep would plausibly want to recall the discount terms and customer sentiment. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Pierre Fontaine explicitly states 'SecureTrack Pro coming in with a 5% discount for your purchase of five units,' which directly supports the answer_claim about a 5% discount on five units."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Rosa Matthews' quoted response states 'that's quite competitive, and it gives us a reliable solution that aligns with our need for data protection in our operations,' which directly supports the claim that Rosa called the pricing competitive and said it aligns with their data protection needs."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) a 5% discount on a purchase of five units \u2013 supported by evidence index 0; (2) Rosa called it competitive and aligned with their data protection needs \u2013 supported by evidence index 1. Both factual claims in the gold_answer are fully substantiated by the cited evidence. The context metadata confirms the call involves AquaGuard Solutions and Rosa Matthews, consistent with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-f70f992977da8261",
+    "question": "What key challenge did Nia Williams from BrightTech Systems say her team faces in circuit design, and which TechPulse product did Chen Wei suggest for it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The circuit design challenge Nia Williams of BrightTech Systems described and the TechPulse product Chen Wei recommended to address it",
+        "relationship": "single coherent need-and-recommendation exchange within one call",
+        "reason": "The question pairs a customer's stated challenge with the salesperson's corresponding product suggestion, forming one objection/need-and-response interaction, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The dialogue confirms Nia Williams states the challenge is 'optimizing power efficiency without compromising performance' and Chen Wei responds with 'Our OptiPower Max tool is specifically designed to tackle power optimization challenges.' The question naturally identifies the account (BrightTech Systems), contact (Nia Williams), and vendor (TechPulse/Chen Wei), which a rep would plausibly reference. The answer states exactly the two requested facts with no extras. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Nia Williams the statement: 'One challenge is optimizing power efficiency without compromising performance.' This matches the answer_claim exactly, with correct speaker attribution and context (circuit design processes)."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Chen Wei saying 'Our OptiPower Max tool is specifically designed to tackle power optimization challenges\u2014it uses advanced algorithms to balance efficiency and performance beautifully.' This directly supports the claim that OptiPower Max is designed to tackle power optimization challenges, and it is Chen Wei who suggests it in response to Nia's stated challenge."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states the challenge is 'optimizing power efficiency without compromising performance' and that Chen Wei suggested OptiPower Max. Evidence index 0 provides Nia Williams's exact words stating that challenge in the context of circuit design. Evidence index 1 shows Chen Wei recommending OptiPower Max specifically for power optimization challenges, directly responding to Nia's stated issue. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b4fc3175b7733ad4",
+    "question": "What did Oliver Black say matters most to him in a premium performance vehicle, and what did David commit to sending him afterward?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Oliver Black's stated priority in a premium performance vehicle and David's follow-up commitment to him",
+        "relationship": "objection/preference and the corresponding next-step commitment from the same conversation",
+        "reason": "Both parts address the same sales interaction: the customer's key requirement and the rep's promised follow-up responding to it."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Oliver's stated priorities (modern features, strong performance, not feeling outdated soon) and David's follow-up commitment (email a detailed proposal with vehicle specifics, financing options, and maintenance/warranty plans). Both are directly supported by the dialogue. The gold answer accurately captures these without adding unasked extras. The question is naturally phrased, adequately scoped to a named customer and business situation, and a rep would plausibly want to recall a customer's priorities and their own follow-up commitment. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Oliver Black stating he is 'interested in vehicles with modern features and a bit of oomph under the hood' and later saying 'It's important to me that I get something that's not going to feel outdated soon.' This fully supports the answer_claim about modern features, power/performance, and not wanting something that feels outdated soon."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows David Ng explicitly stating: 'I'll follow up with a detailed proposal outlining vehicle specifics, financing options, and additional services like our maintenance and warranty plans. I'll send it over via email in the next few days.' This directly supports the answer_claim about sending a detailed proposal with vehicle specifics, financing options, and maintenance/warranty plans via email."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Oliver wants modern features and strong performance that won't feel outdated soon, and David committed to emailing a detailed proposal covering vehicle specifics, financing options, and maintenance/warranty plans. Evidence index 0 supports the first part (modern features, 'oomph under the hood' = strong performance, and not feeling outdated soon). Evidence index 1 supports the second part (detailed proposal via email with vehicle specifics, financing options, and maintenance/warranty plans). All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2ef58f1370830af5",
+    "question": "How did Liu position AutoElite's initial luxury car pricing against High-End Autos Co. for David Gonzalez?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Liu positioned AutoElite's initial luxury car pricing relative to competitor High-End Autos Co. for customer David Gonzalez",
+        "relationship": "single coherent competitive-pricing positioning request",
+        "reason": "One competitive comparison of pricing against a named competitor within the same sales conversation; no unrelated lookups joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks how Liu positioned AutoElite's initial luxury car pricing against High-End Autos Co. for David Gonzalez. The single call transcript contains the exact exchange at 14:49:25 where Liu acknowledges High-End Autos has more aggressive initial pricing but argues AutoElite's added benefits and comprehensive support provide greater value over time. The gold answer faithfully reproduces this without adding unasked extras. The question is naturally worded, scoped to a specific customer (David Gonzalez) and competitive comparison, and a rep/account manager would plausibly want to know how pricing was positioned. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage is attributed to Liu Wei and directly states: (1) 'Some buyers feel that High-End Autos has more aggressive pricing at the initial stage' \u2013 acknowledging the competitor's more aggressive initial pricing; and (2) 'when you weigh the added benefits and comprehensive support with our packages, we believe our offers provide greater value over time' \u2013 arguing AutoElite's added benefits and comprehensive support provide greater value over time. The speaker is Liu Wei, the account is David Gonzalez, and the content matches the answer_claim verbatim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: Liu acknowledged High-End Autos has more aggressive initial pricing, and argued AutoElite's added benefits and comprehensive support offer greater value over time. The speaker (Liu Wei), the account (David Gonzalez), and the positioning content all align with the question and gold answer."
+      }
+    }
+  }
+]

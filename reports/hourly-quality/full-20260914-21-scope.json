@@ -1,0 +1,483 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "5e7e5020774a748a47e96595811a1705faadcd1663feecf45f07d26c5f6d1831",
+  "questions": 4,
+  "counts": {
+    "fail": 3,
+    "pass": 1
+  },
+  "estimated_usd": 0.56918234,
+  "results": [
+    {
+      "question_id": "b2b-single_call-701209b6eb6241d0",
+      "question": "What discount did TechPulse offer AquaGuard Solutions on SecureTrack Pro, and what did Rosa say about it?",
+      "gold_answer": "A 5% discount on a purchase of five units; Rosa called it competitive and aligned with their data protection needs.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SpcDIAS",
+        "b2b:a05Wt000003SrcXIAS",
+        "b2b:a05Wt000003SsOnIAK",
+        "b2b:a05Wt000003StG2IAK",
+        "b2b:a05Wt000003Su4CIAS",
+        "b2b:a05Wt000003SuvFIAS",
+        "b2b:a05Wt000003Sv1oIAC",
+        "b2b:a05Wt000003Swx7IAC",
+        "b2b:a05Wt000003Sx0MIAS",
+        "b2b:a05Wt000003SxgLIAS",
+        "b2b:a05Wt000003SyHUIA0",
+        "b2b:a05Wt000003T0JBIA0",
+        "b2b:a05Wt000003T0cXIAS",
+        "b2b:a05Wt000003T0e5IAC",
+        "b2b:a05Wt000003T0e6IAC",
+        "b2b:a05Wt000003T1gdIAC",
+        "b2b:a05Wt000003T24uIAC",
+        "b2b:a05Wt000003T24vIAC",
+        "b2b:a05Wt000003T288IAC",
+        "b2b:a05Wt000003T2BNIA0",
+        "b2b:a05Wt000003T30uIAC",
+        "b2b:a05Wt000003T3KDIA0",
+        "b2b:a05Wt000003T408IAC",
+        "b2b:a05Wt000003T409IAC",
+        "b2b:a05Wt000003T49nIAC",
+        "b2b:a05Wt000003T49oIAC",
+        "b2b:a05Wt000003T49pIAC",
+        "b2b:a05Wt000003T4GEIA0",
+        "b2b:a05Wt000003T4HqIAK",
+        "b2b:a05Wt000003T4HrIAK",
+        "b2b:a05Wt000003T4HsIAK",
+        "b2b:a05Wt000003T4MgIAK",
+        "b2b:a05Wt000003T4OIIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Rosa Matthews appears in multiple calls where SecureTrack Pro discounts are discussed. In the 2022-03-31 call, Pierre offers a 5% discount on SecureTrack Pro for five units and Rosa calls it competitive. In the 2022-02-18 call, Pierre offers a discount on SecureTrack Pro (five units for $2,944.9525) and Rosa calls the breakdown competitive. These are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "TechPulse offered a 5% discount on SecureTrack Pro for a purchase of five units. Rosa said the pricing was quite competitive and that it gave them a reliable solution aligning with their need for data protection in their operations.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcXIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2022-03-31T13:31:50] Pierre Fontaine: Moving on to pricing, we have the SecureTrack Pro coming in with a 5% discount for your purchase of five units. Is the pricing aspect aligning with your expectations?"
+              }
+            ]
+          },
+          {
+            "answer": "In a later pricing discussion, Pierre told Rosa they were offering a discount on SecureTrack Pro, bringing it to $2,944.9525 for five units (part of a roughly $8,834.8325 total with AI Cirku-Tech and EcoPower Convert). Rosa thanked him for the breakdown and said it seemed competitive and aligned with what they were aiming for.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2BNIA0",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2022-02-18T14:20:10] Rosa Matthews: Perfect, that answers my questions. Can you remind me of the pricing details again?\n[2022-02-18T14:20:30] Pierre Fontaine: Certainly. For your planned setup, AI Cirku-Tech at three units totals $1589.97, EcoPower Convert is at $1199.97 for three units as well. We're also offering a discount on SecureTrack Pro, bringing that to $2944.9525 for five units. Altogether, your total would be around $8834.8325."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about a discount on SecureTrack Pro offered to AquaGuard Solutions and what Rosa said about it. Only one call features Rosa Matthews (the only Rosa in the dataset) discussing a SecureTrack Pro discount: call b2b:a05Wt000003SrcXIAS (2022-03-31, Pierre Fontaine with Rosa Matthews, opportunity 'AquaGuard Solutions Partnership'). In that call, Pierre states a 5% discount on SecureTrack Pro for five units, and Rosa responds that it is 'quite competitive' and gives them a reliable solution aligned with their data protection needs. Other calls mentioning SecureTrack Pro discounts (e.g., with Aya Nakamura or Tarek Dalton) do not involve Rosa, so they do not satisfy the question's explicit person qualifier.",
+        "answers": [
+          {
+            "answer": "TechPulse offered AquaGuard Solutions a 5% discount on SecureTrack Pro for a purchase of five units. Rosa Matthews said it was 'quite competitive' and that it gives them a reliable solution that aligns with their need for data protection in their operations.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcXIAS",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2022-03-31T13:31:50] Pierre Fontaine: Moving on to pricing, we have the SecureTrack Pro coming in with a 5% discount for your purchase of five units. Is the pricing aspect aligning with your expectations?\n[2022-03-31T13:32:05] Rosa Matthews: Yes, that’s quite competitive, and it gives us a reliable solution that aligns with our need for data protection in our operations."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-f70f992977da8261",
+      "question": "What key challenge did Nia Williams from BrightTech Systems say her team faces in circuit design, and which TechPulse product did Chen Wei suggest for it?",
+      "gold_answer": "Optimizing power efficiency without compromising performance; Chen Wei suggested OptiPower Max.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkQIAS",
+        "b2b:a05Wt000003Sru6IAC",
+        "b2b:a05Wt000003SrywIAC",
+        "b2b:a05Wt000003SryxIAC",
+        "b2b:a05Wt000003SsyEIAS",
+        "b2b:a05Wt000003StEMIA0",
+        "b2b:a05Wt000003StMQIA0",
+        "b2b:a05Wt000003SthOIAS",
+        "b2b:a05Wt000003SuQZIA0",
+        "b2b:a05Wt000003SuaFIAS",
+        "b2b:a05Wt000003Sv03IAC",
+        "b2b:a05Wt000003Sv4uIAC",
+        "b2b:a05Wt000003Sv6VIAS",
+        "b2b:a05Wt000003SvHmIAK",
+        "b2b:a05Wt000003SvHnIAK",
+        "b2b:a05Wt000003SvHoIAK",
+        "b2b:a05Wt000003SwSMIA0",
+        "b2b:a05Wt000003SwaQIAS",
+        "b2b:a05Wt000003SxTHIA0",
+        "b2b:a05Wt000003SxgCIAS",
+        "b2b:a05Wt000003SxzXIAS",
+        "b2b:a05Wt000003Sy7ZIAS",
+        "b2b:a05Wt000003Sy9BIAS",
+        "b2b:a05Wt000003SyAnIAK",
+        "b2b:a05Wt000003SyAoIAK",
+        "b2b:a05Wt000003SyCPIA0",
+        "b2b:a05Wt000003SyE1IAK",
+        "b2b:a05Wt000003SyFdIAK",
+        "b2b:a05Wt000003SyHFIA0",
+        "b2b:a05Wt000003SyHGIA0",
+        "b2b:a05Wt000003SyIrIAK",
+        "b2b:a05Wt000003SyKTIA0",
+        "b2b:a05Wt000003SyM5IAK",
+        "b2b:a05Wt000003SyNhIAK",
+        "b2b:a05Wt000003SyPJIA0",
+        "b2b:a05Wt000003SyQvIAK",
+        "b2b:a05Wt000003SySXIA0",
+        "b2b:a05Wt000003SyU9IAK",
+        "b2b:a05Wt000003SyVlIAK",
+        "b2b:a05Wt000003SyVmIAK",
+        "b2b:a05Wt000003SyXNIA0",
+        "b2b:a05Wt000003SyYzIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features both Nia Williams and Chen Wei (b2b:a05Wt000003SryxIAC, 2022-11-03). In it Nia states the circuit design challenge and Chen Wei recommends OptiPower Max.",
+        "answers": [
+          {
+            "answer": "Nia Williams said a key challenge in circuit design is optimizing power efficiency without compromising performance (while improving connectivity solutions and streamlining circuit design processes). Chen Wei suggested the OptiPower Max tool, which uses advanced algorithms to balance efficiency and performance.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SryxIAC",
+                "line_start": 16,
+                "line_end": 19,
+                "quote": "[2022-11-03T10:34:10] Chen Wei: Great. I’ll definitely follow up with that. So, just to understand better, could you share some insights into BrightTech's current goals and where you see potential challenges in circuit design?\n[2022-11-03T10:34:25] Nia Williams: We're really focused on improving connectivity solutions and streamlining our circuit design processes. One challenge is optimizing power efficiency without compromising performance.\n[2022-11-03T10:34:40] Chen Wei: Our OptiPower Max tool is specifically designed to tackle power optimization challenges—it uses advanced algorithms to balance efficiency and performance beautifully."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Nia Williams from BrightTech Systems, Chen Wei as the TechPulse rep, and asks about a key challenge in circuit design and the product Chen Wei suggested. Only one call matches all three qualifiers: call b2b:a05Wt000003SryxIAC (2022-11-03), where Chen Wei speaks with Nia Williams. In that call, Nia states the challenge of optimizing power efficiency without compromising performance in circuit design, and Chen Wei suggests OptiPower Max. Other calls with Nia Williams involve different reps (Aisha Ibrahim, Luciana Alves, Carlos Nunez), and other calls with Chen Wei involve different contacts (Pedro Almeida, Alejandro Morales).",
+        "answers": [
+          {
+            "answer": "Nia Williams said her team's key challenge in circuit design is optimizing power efficiency without compromising performance. Chen Wei suggested TechPulse's OptiPower Max tool, explaining that it uses advanced algorithms to balance efficiency and performance.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SryxIAC",
+                "line_start": 16,
+                "line_end": 19,
+                "quote": "[2022-11-03T10:34:10] Chen Wei: Great. I’ll definitely follow up with that. So, just to understand better, could you share some insights into BrightTech's current goals and where you see potential challenges in circuit design?\n[2022-11-03T10:34:25] Nia Williams: We're really focused on improving connectivity solutions and streamlining our circuit design processes. One challenge is optimizing power efficiency without compromising performance.\n[2022-11-03T10:34:40] Chen Wei: Our OptiPower Max tool is specifically designed to tackle power optimization challenges—it uses advanced algorithms to balance efficiency and performance beautifully."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same key challenge (optimizing power efficiency without compromising performance) and the same TechPulse product (OptiPower Max). Answer A includes a minor parenthetical extra about connectivity solutions and streamlining processes, but this is unrequested additional detail and does not alter the core facts. The reference explicitly states both requested facts: the challenge and the product suggestion. All requested commitments are covered consistently across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-b4fc3175b7733ad4",
+      "question": "What did Oliver Black say matters most to him in a premium performance vehicle, and what did David commit to sending him afterward?",
+      "gold_answer": "Oliver wants modern features and strong performance that won't feel outdated soon; David committed to emailing a detailed proposal covering vehicle specifics, financing options, and maintenance/warranty plans.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SM9GIAW",
+        "b2c:a05Ws000005SPVJIA4",
+        "b2c:a05Ws000005SQKtIAO",
+        "b2c:a05Ws000005SQKuIAO",
+        "b2c:a05Ws000005SQkiIAG",
+        "b2c:a05Ws000005SRCAIA4",
+        "b2c:a05Ws000005SRTyIAO",
+        "b2c:a05Ws000005SS0CIAW",
+        "b2c:a05Ws000005SSL8IAO",
+        "b2c:a05Ws000005SSUvIAO",
+        "b2c:a05Ws000005ST1AIAW",
+        "b2c:a05Ws000005STQxIAO",
+        "b2c:a05Ws000005SU8XIAW",
+        "b2c:a05Ws000005SUEyIAO",
+        "b2c:a05Ws000005SUN1IAO",
+        "b2c:a05Ws000005SUN2IAO",
+        "b2c:a05Ws000005SUl7IAG",
+        "b2c:a05Ws000005SUmkIAG",
+        "b2c:a05Ws000005SUrdIAG",
+        "b2c:a05Ws000005SUwSIAW",
+        "b2c:a05Ws000005SV2wIAG",
+        "b2c:a05Ws000005SVEIIA4",
+        "b2c:a05Ws000005SVHSIA4",
+        "b2c:a05Ws000005SVfZIAW",
+        "b2c:a05Ws000005SW5RIAW",
+        "b2c:a05Ws000005SXPfIAO",
+        "b2c:a05Ws000005SXW8IAO",
+        "b2c:a05Ws000005SY3xIAG",
+        "b2c:a05Ws000005SYf7IAG",
+        "b2c:a05Ws000005SYlYIAW",
+        "b2c:a05Ws000005SZhZIAW",
+        "b2c:a05Ws000005SZkoIAG",
+        "b2c:a05Ws000005SZmRIAW",
+        "b2c:a05Ws000005SaaNIAS",
+        "b2c:a05Ws000005Sax1IAC",
+        "b2c:a05Ws000005SayaIAC",
+        "b2c:a05Ws000005Sb0BIAS",
+        "b2c:a05Ws000005SbHuIAK",
+        "b2c:a05Ws000005SbRdIAK",
+        "b2c:a05Ws000005SbWQIA0",
+        "b2c:a05Ws000005SbY6IAK",
+        "b2c:a05Ws000005SbcuIAC",
+        "b2c:a05Ws000005SbpnIAC",
+        "b2c:a05Ws000005Sbt1IAC",
+        "b2c:a05Ws000005SbwDIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 3,
+            "normalized_end": 4
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 7,
+            "normalized_end": 8
+          },
+          {
+            "answer": 0,
+            "evidence": 2,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "David Ng had two calls with Oliver Black on the 'Premium Performance Vehicle and Financing' opportunity (2020-04-25 and 2020-05-14). The question's 'the call' does not disambiguate, and each call yields a materially different complete answer: in the first, Oliver emphasizes modern features and engine power, and David commits to emailing a detailed proposal; in the second, Oliver stresses post-purchase support (and pricing flexibility concerns), and David commits to emailing customer testimonials and negotiation-meeting dates.",
+        "answers": [
+          {
+            "answer": "In the April 25, 2020 call, Oliver Black said what matters most to him in a premium performance vehicle is modern features and power — 'vehicles with modern features and a bit of oomph under the hood' (he later added it's important the vehicle not feel outdated soon). David Ng committed to following up with a detailed proposal sent via email in the next few days, outlining vehicle specifics, financing options, and additional services like the maintenance and warranty plans.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SM9GIAW",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2020-04-25T12:00:26] Oliver Black: Absolutely, I'm keen to hear what's available. I'm interested in vehicles with modern features and a bit of oomph under the hood, if you know what I mean."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SM9GIAW",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-04-25T12:01:20] Oliver Black: That's good to hear. It's important to me that I get something that's not going to feel outdated soon."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SM9GIAW",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-04-25T12:03:10] David Ng: For sure. I'll follow up with a detailed proposal outlining vehicle specifics, financing options, and additional services like our maintenance and warranty plans. I'll send it over via email in the next few days."
+              }
+            ]
+          },
+          {
+            "answer": "In the May 14, 2020 follow-up call on the same opportunity, Oliver Black said post-purchase support is what matters most to him (he raised it as a concern alongside his worry that transparent pricing might limit negotiation flexibility). David Ng committed to emailing him customer testimonials highlighting service excellence after the call, and also to sending over potential dates for a negotiation meeting right after the call.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SbY6IAK",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2020-05-14T14:11:32] Oliver Black: I noticed that, but to be honest, I'm used to having some room for negotiation. I worry that transparent pricing might limit my flexibility.\n[2020-05-14T14:11:55] David Ng: I completely understand, and you're not alone in feeling that way. While it may seem restrictive, many of our customers ultimately appreciate it because it avoids the back-and-forths and makes budgeting easier. Plus, it assures you that you're getting a fair, market-competitive deal right away."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SbY6IAK",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2020-05-14T14:14:05] Oliver Black: Makes sense. Do you have any customer testimonials that highlight your service excellence? It would be reassuring to hear experiences from other clients."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SbY6IAK",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2020-05-14T14:15:10] Oliver Black: Yes, let's do that. Please send over potential dates for the negotiation meeting."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names both Oliver Black and David. Only one salesperson named David appears in the call history: David Ng, who spoke with Oliver Black in two calls under the opportunity 'Premium Performance Vehicle and Financing' (b2c:a05Ws000005SM9GIAW on 2020-04-25 and b2c:a05Ws000005SbY6IAK on 2020-05-14). In the first call, Oliver states what matters most to him in a premium performance vehicle, and David commits to sending a detailed proposal. In the second call, David commits to sending customer testimonials and negotiation meeting dates. The first call contains the explicit 'what matters most' statement and the primary sending commitment; the second call adds further commitments. Together they form the complete answer.",
+        "answers": [
+          {
+            "answer": "Oliver Black said that what matters most to him in a premium performance vehicle is modern features, power ('a bit of oomph under the hood'), advanced technology that won't feel outdated soon, and flexible financing options that fit his budget. David Ng committed to sending him a detailed proposal via email outlining vehicle specifics, financing options, and additional services (maintenance and warranty plans) within the next few days. In their follow-up call, David also committed to emailing Oliver some customer testimonials highlighting service excellence and to sending over potential dates for a negotiation meeting.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SM9GIAW",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2020-04-25T12:00:26] Oliver Black: Absolutely, I'm keen to hear what's available. I'm interested in vehicles with modern features and a bit of oomph under the hood, if you know what I mean."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SM9GIAW",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-04-25T12:01:20] Oliver Black: That's good to hear. It's important to me that I get something that's not going to feel outdated soon."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SM9GIAW",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2020-04-25T12:02:29] Oliver Black: That gives me some peace of mind. Budget-wise, I'm working with a certain range, and financing options are going to be key for me."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SM9GIAW",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-04-25T12:03:10] David Ng: For sure. I'll follow up with a detailed proposal outlining vehicle specifics, financing options, and additional services like our maintenance and warranty plans. I'll send it over via email in the next few days."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SbY6IAK",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-05-14T14:14:25] David Ng: Absolutely, Oliver! We have numerous testimonials from satisfied customers who appreciate our transparent pricing and exceptional support. I'll email you a few of them after our call so you can get a better sense of our client satisfaction."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SbY6IAK",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2020-05-14T14:15:10] Oliver Black: Yes, let's do that. Please send over potential dates for the negotiation meeting.\n[2020-05-14T14:15:25] David Ng: Will do, Oliver. I'll get those dates over to you right after this call. Thanks for your time today, and I'm excited to work with you on this."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-2ef58f1370830af5",
+      "question": "How did Liu position AutoElite's initial luxury car pricing against High-End Autos Co. for David Gonzalez?",
+      "gold_answer": "Liu acknowledged High-End Autos has more aggressive initial pricing, but argued AutoElite's added benefits and comprehensive support offer greater value over time.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLPKIA4",
+        "b2c:a05Ws000005SLprIAG",
+        "b2c:a05Ws000005SMPQIA4",
+        "b2c:a05Ws000005SMPRIA4",
+        "b2c:a05Ws000005SNmqIAG",
+        "b2c:a05Ws000005SOFvIAO",
+        "b2c:a05Ws000005SOvpIAG",
+        "b2c:a05Ws000005SP3DIAW",
+        "b2c:a05Ws000005SPOrIAO",
+        "b2c:a05Ws000005SQT1IAO",
+        "b2c:a05Ws000005SR0tIAG",
+        "b2c:a05Ws000005SRaLIAW",
+        "b2c:a05Ws000005SSWPIA4",
+        "b2c:a05Ws000005SSxpIAG",
+        "b2c:a05Ws000005ST2dIAG",
+        "b2c:a05Ws000005ST98IAG",
+        "b2c:a05Ws000005STIpIAO",
+        "b2c:a05Ws000005STKQIA4",
+        "b2c:a05Ws000005STNcIAO",
+        "b2c:a05Ws000005STcAIAW",
+        "b2c:a05Ws000005STsKIAW",
+        "b2c:a05Ws000005SU5BIAW",
+        "b2c:a05Ws000005SVAyIAO",
+        "b2c:a05Ws000005SVPPIA4",
+        "b2c:a05Ws000005SVR5IAO",
+        "b2c:a05Ws000005SVVuIAO",
+        "b2c:a05Ws000005SWDUIA4",
+        "b2c:a05Ws000005SWDVIA4",
+        "b2c:a05Ws000005SXW6IAO",
+        "b2c:a05Ws000005SXpTIAW",
+        "b2c:a05Ws000005SYQZIA4",
+        "b2c:a05Ws000005SYTjIAO",
+        "b2c:a05Ws000005SYf2IAG",
+        "b2c:a05Ws000005SYf3IAG",
+        "b2c:a05Ws000005SYiEIAW",
+        "b2c:a05Ws000005SZZSIA4",
+        "b2c:a05Ws000005SaH5IAK",
+        "b2c:a05Ws000005SaX8IAK",
+        "b2c:a05Ws000005SagnIAC",
+        "b2c:a05Ws000005SagoIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Liu discussed initial luxury-car pricing versus High-End Autos Co. in two separate calls (2021-07-15 and 2021-07-20), each with a distinct framing, and the question does not identify which call is intended.",
+        "answers": [
+          {
+            "answer": "In the 2021-07-15 call, when David asked how AutoElite stood on initial costs for luxury cars, Liu acknowledged that some buyers feel High-End Autos has more aggressive pricing at the initial stage, but argued that when you weigh the added benefits and comprehensive support in AutoElite's packages, AutoElite's offers provide greater value over time.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SLprIAG",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-07-15T14:49:00] David Gonzalez: Got it. I appreciate the clarity. One last thing, cost-wise, how do we stand with luxury cars in terms of initial costs?\n[2021-07-15T14:49:25] Liu Wei: Some buyers feel that High-End Autos has more aggressive pricing at the initial stage. However, when you weigh the added benefits and comprehensive support with our packages, we believe our offers provide greater value over time."
+              }
+            ]
+          },
+          {
+            "answer": "In the 2021-07-20 call, after David noted he had compared the package against High-End Autos Co. and found their prices a bit lower, Liu conceded that High-End Autos Co. might have an initial lower price but emphasized that many customers appreciate the long-term value of AutoElite's services—especially post-purchase support—and that AutoElite's certified pre-owned program offers quality assurance and reliability that budget-conscious buyers appreciate, framing it as peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVAyIAO",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2021-07-20T10:32:50] David Gonzalez: That does sound appealing. I appreciate the breakdown. I did have a moment to compare it against High-End Autos Co. Their prices are a bit lower, but I’m concerned about their support after purchase.\n[2021-07-20T10:33:15] Liu Wei: I understand your concern. While High-End Autos Co. might have an initial lower price, many of our customers appreciate the long-term value of our services, especially the support component. Our certified pre-owned program offers quality assurance and reliability that budget-conscious buyers often appreciate. It's all about peace of mind.\n[2021-07-20T10:33:40] David Gonzalez: Yes, peace of mind is significant. The positive feedback from other customers is reassuring."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Liu (Liu Wei), David Gonzalez, AutoElite, High-End Autos Co., and 'initial luxury car pricing.' Among Liu Wei's calls with David Gonzalez, the only call where Liu explicitly positions AutoElite's initial luxury car pricing against High-End Autos Co. is b2c:a05Ws000005SLprIAG (2021-07-15). David asks 'cost-wise, how do we stand with luxury cars in terms of initial costs?' and Liu responds that High-End Autos has more aggressive initial pricing but AutoElite's added benefits and comprehensive support provide greater value over time. The earlier initial call (b2c:a05Ws000005ST2dIAG) discusses pricing strategy generically without naming High-End Autos Co. The 2021-07-20 call (b2c:a05Ws000005SVAyIAO) also touches on this but is a later final-terms call, not the initial positioning.",
+        "answers": [
+          {
+            "answer": "Liu acknowledged that some buyers feel High-End Autos Co. has more aggressive pricing at the initial stage for luxury cars. However, Liu positioned AutoElite's offer as providing greater value over time by weighing the added benefits and comprehensive support included in their packages against the lower upfront price at High-End Autos Co.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SLprIAG",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-07-15T14:49:00] David Gonzalez: Got it. I appreciate the clarity. One last thing, cost-wise, how do we stand with luxury cars in terms of initial costs?\n[2021-07-15T14:49:25] Liu Wei: Some buyers feel that High-End Autos has more aggressive pricing at the initial stage. However, when you weigh the added benefits and comprehensive support with our packages, we believe our offers provide greater value over time."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

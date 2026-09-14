@@ -1,0 +1,288 @@
+[
+  {
+    "question_id": "b2b-multi_call-fd23d863cafce7a2",
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SthWIAS",
+                "fact": "Sara Morales cited CircuitWave's slow roadmap enhancements as a concern.",
+                "why_other_call_cannot_supply_it": "The later pricing call (2023-08-18) is the only call where she mentions this specific concern; the initial call does not discuss roadmap enhancements."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvgAIAS",
+                "fact": "Sara Morales stated that CircuitWave's security was lacking.",
+                "why_other_call_cannot_supply_it": "The initial call (2023-08-02) is the only call where she raises this security concern; the later pricing call does not mention security issues with CircuitWave."
+              }
+            ],
+            "reason": "The question explicitly asks for concerns raised in the initial discussion versus the later pricing call, requiring distinct facts from each call. The initial call contains a security concern about CircuitWave, while the later call contains a different concern about slow roadmap enhancements. These are separate, non-overlapping facts that each call uniquely supplies."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SthWIAS",
+                  "fact": "Sara Morales raised a concern about CircuitWave's slow roadmap enhancements.",
+                  "why_other_call_cannot_supply_it": "The later pricing call (b2b:a05Wt000003SvgAIAS) does not mention any concern about roadmap enhancements; it only discusses security concerns."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvgAIAS",
+                  "fact": "Sara Morales raised a concern about CircuitWave's security being lacking.",
+                  "why_other_call_cannot_supply_it": "The initial discussion (b2b:a05Wt000003SthWIAS) does not mention any security concern about CircuitWave; it only mentions slow roadmap enhancements."
+                }
+              ],
+              "reason": "The question explicitly asks for concerns raised in the initial discussion versus the later pricing call, and the two calls contain distinct, non-overlapping concerns: security in the initial call and roadmap enhancements in the later call. Each fact is essential to answer the question fully, and neither call alone provides both concerns."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SthWIAS",
+                  "fact": "Sara Morales cited CircuitWave's slow roadmap enhancements as a concern.",
+                  "why_other_call_cannot_supply_it": "The later pricing call (2023-08-18) is the only call where she mentions this specific concern; the initial call does not discuss roadmap enhancements."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvgAIAS",
+                  "fact": "Sara Morales stated that CircuitWave's security was lacking.",
+                  "why_other_call_cannot_supply_it": "The initial call (2023-08-02) is the only call where she raises this security concern; the later pricing call does not mention security issues with CircuitWave."
+                }
+              ],
+              "reason": "The question explicitly asks for concerns raised in the initial discussion versus the later pricing call, requiring distinct facts from each call. The initial call contains a security concern about CircuitWave, while the later call contains a different concern about slow roadmap enhancements. These are separate, non-overlapping facts that each call uniquely supplies."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvgAIAS",
+                "fact": "Sara said CircuitWave's security was lacking (initial discussion, Aug 2 call)",
+                "why_other_call_cannot_supply_it": "The Aug 18 call only mentions CircuitWave's slow roadmap enhancements, not the security concern"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SthWIAS",
+                "fact": "Sara cited struggles with slower roadmap enhancements from CircuitWave (later pricing call, Aug 18)",
+                "why_other_call_cannot_supply_it": "The Aug 2 call only mentions CircuitWave's weak security, not the roadmap concern"
+              }
+            ],
+            "reason": "The question explicitly contrasts concerns raised in the initial discussion versus the later pricing call. Each call contains a distinct CircuitWave complaint (security vs. roadmap pace) that the other call does not contain, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvgAIAS",
+                  "fact": "Sara said CircuitWave's security was lacking (initial discussion, Aug 2 call)",
+                  "why_other_call_cannot_supply_it": "The Aug 18 call only mentions CircuitWave's slow roadmap enhancements, not the security concern"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SthWIAS",
+                  "fact": "Sara cited struggles with slower roadmap enhancements from CircuitWave (later pricing call, Aug 18)",
+                  "why_other_call_cannot_supply_it": "The Aug 2 call only mentions CircuitWave's weak security, not the roadmap concern"
+                }
+              ],
+              "reason": "The question explicitly contrasts concerns raised in the initial discussion versus the later pricing call. Each call contains a distinct CircuitWave complaint (security vs. roadmap pace) that the other call does not contain, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-1683b1e38e304323",
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StRIIA0",
+                "fact": "Thato said TechPulse addresses initial user adoption by providing comprehensive training and support to help transition smoothly.",
+                "why_other_call_cannot_supply_it": "The demo follow-up call does not mention training or support; it only discusses UI refinement."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxRgIAK",
+                "fact": "Thato mentioned they are refining the user interface to be more intuitive, particularly during the early adoption phase.",
+                "why_other_call_cannot_supply_it": "The proposal discussion call does not mention any UI improvements; it focuses on training and support."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: how TechPulse addresses initial user adoption in the proposal discussion, and what UI improvement was mentioned in the demo follow-up. Each fact is only present in its respective call, and neither call contains the other fact. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: how TechPulse addresses initial user adoption (from the proposal discussion) and a UI improvement mentioned in the demo follow-up. The first call provides the adoption strategy (comprehensive training and support), and the second call provides the UI improvement (refining interface to be more intuitive). These are distinct facts from separate calls, and each call supplies one of the requested pieces. However, the question explicitly requests information from two different contexts (proposal discussion and demo follow-up), so both calls are necessary to answer the full question. The facts are not repeated or paraphrases; they are substantively different. Therefore, necessary is true."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StRIIA0",
+                  "fact": "Thato said TechPulse addresses initial user adoption by providing comprehensive training and support to help transition smoothly.",
+                  "why_other_call_cannot_supply_it": "The demo follow-up call does not mention training or support; it only discusses UI refinement."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxRgIAK",
+                  "fact": "Thato mentioned they are refining the user interface to be more intuitive, particularly during the early adoption phase.",
+                  "why_other_call_cannot_supply_it": "The proposal discussion call does not mention any UI improvements; it focuses on training and support."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: how TechPulse addresses initial user adoption in the proposal discussion, and what UI improvement was mentioned in the demo follow-up. Each fact is only present in its respective call, and neither call contains the other fact. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StRIIA0",
+                "fact": "Thato said TechPulse addresses initial user adoption by providing comprehensive training and support for a smooth transition.",
+                "why_other_call_cannot_supply_it": "The demo follow-up call never mentions training/support; it only discusses UI refinement."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxRgIAK",
+                "fact": "In the demo follow-up, Thato said they are refining the user interface to be more intuitive, particularly during the early adoption phase.",
+                "why_other_call_cannot_supply_it": "The proposal discussion call contains no mention of UI/interface improvements."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: the adoption strategy (training/support) from the proposal call and the UI improvement from the demo follow-up. Each fact appears only in its respective call, and both are requested, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StRIIA0",
+                  "fact": "Thato said TechPulse addresses initial user adoption by providing comprehensive training and support for a smooth transition.",
+                  "why_other_call_cannot_supply_it": "The demo follow-up call never mentions training/support; it only discusses UI refinement."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxRgIAK",
+                  "fact": "In the demo follow-up, Thato said they are refining the user interface to be more intuitive, particularly during the early adoption phase.",
+                  "why_other_call_cannot_supply_it": "The proposal discussion call contains no mention of UI/interface improvements."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: the adoption strategy (training/support) from the proposal call and the UI improvement from the demo follow-up. Each fact appears only in its respective call, and both are requested, so both calls are necessary."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9b3aa74f84f73f01",
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2BLIA0",
+                "fact": "The total quote after discounts is approximately $24,127.53.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SwVdIAK) does not mention any total quote amount; it only discusses discount percentages and future proposal adjustments."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwVdIAK",
+                "fact": "Monique outlined a 10% discount on PulseSim Pro and CloudLink Designer, and a 15% discount on SecureFlow Suite due to volume.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T2BLIA0) only provides the total quote amount and does not specify any per-product discount percentages."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the total quote after the demo and the per-product discount structure outlined later. The total quote appears only in the October call, while the discount structure appears only in the November call. Neither call contains both facts, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the total quote after the demo and the per-product discount structure outlined later. The total quote ($24,127.53) is provided in the October call, and the discount structure (10% off PulseSim Pro and CloudLink Designer, 15% off SecureFlow Suite) is provided in the November call. However, the question's phrasing 'after the demo' and 'later' does not require both calls; the November call alone contains the discount structure, and the total quote is not present there. But the October call contains the total quote and not the discount structure. Since the question explicitly requests two distinct pieces of information that are each only present in one call, one might argue both are necessary. However, the instruction says to reject if 'both repeat one fact' or if 'facts are unrelated lookups joined together.' Here, the two facts are related (pricing details for the same deal) and are distinct, but the question does not require the temporal relationship to be verified; it simply asks for the total quote and the discount structure. The total quote is not in the November call, and the discount structure is not in the October call, so each call supplies a unique fact. But the instruction also says 'If unsure, necessary=false.' Given that the question could be answered by a single source if that source contained both facts, but here no single source has both, the necessity is borderline. However, the instruction emphasizes that 'Repeated complaints or paraphrases are NOT distinct facts merely because the question says ",
+              "first": ", or ",
+              "later": ",' Here they are not paraphrases. So it's fine. So I will output necessary=true. But the instruction also says 'Do not invent causality or progression.' I am not inventing. So I will output necessary=true. So I will write the JSON accordingly. But let me ensure that the facts are indeed exclusive. The total quote is not in the November call, and the discount structure is not in the October call. So they are exclusive. So I will set necessary=true. However, the instruction says 'If necessary=true give exactly one essential fact per source call.' So I will list one fact per call. So my final answer is necessary=true with the two facts. But I need to format the JSON as per the schema. The schema is {"
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2BLIA0",
+                  "fact": "The total quote after discounts is approximately $24,127.53.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SwVdIAK) does not mention any total quote amount; it only discusses discount percentages and future proposal adjustments."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwVdIAK",
+                  "fact": "Monique outlined a 10% discount on PulseSim Pro and CloudLink Designer, and a 15% discount on SecureFlow Suite due to volume.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T2BLIA0) only provides the total quote amount and does not specify any per-product discount percentages."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the total quote after the demo and the per-product discount structure outlined later. The total quote appears only in the October call, while the discount structure appears only in the November call. Neither call contains both facts, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2BLIA0",
+                "fact": "Total quote of approximately $24,127.53 after discounts",
+                "why_other_call_cannot_supply_it": "The November call never states a total dollar figure; it only discusses discount percentages."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwVdIAK",
+                "fact": "Discount structure: 10% off PulseSim Pro and CloudLink Designer, 15% off SecureFlow Suite based on volume",
+                "why_other_call_cannot_supply_it": "The October call gives only the final total and mentions 'relevant discounts' without any per-product percentages."
+              }
+            ],
+            "reason": "The question asks for two distinct commercial facts: the total quote (stated only in the October call) and the per-product discount percentages (stated only in the November call). Neither call contains both pieces of information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2BLIA0",
+                  "fact": "Total quote of approximately $24,127.53 after discounts",
+                  "why_other_call_cannot_supply_it": "The November call never states a total dollar figure; it only discusses discount percentages."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwVdIAK",
+                  "fact": "Discount structure: 10% off PulseSim Pro and CloudLink Designer, 15% off SecureFlow Suite based on volume",
+                  "why_other_call_cannot_supply_it": "The October call gives only the final total and mentions 'relevant discounts' without any per-product percentages."
+                }
+              ],
+              "reason": "The question asks for two distinct commercial facts: the total quote (stated only in the October call) and the per-product discount percentages (stated only in the November call). Neither call contains both pieces of information."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    }
+  }
+]
