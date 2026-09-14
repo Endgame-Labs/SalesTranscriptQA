@@ -1,0 +1,413 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "a9ced2f5fdf54c39b7a7afa200679470d9073975f3d381d514807b422c480aac",
+  "questions": 4,
+  "counts": {
+    "pass": 4
+  },
+  "estimated_usd": 0.554481539,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-574195fc432a34b4",
+      "question": "For the LiftTech Elevations demo, what timing did Ahmed Khan agree to in the initial discovery call, and what demo date and time was set in the follow-up call?",
+      "gold_answer": "In the first call they agreed to a demo the following week; in the follow-up the demo was set for Friday at 3 PM.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sqy5IAC",
+        "b2b:a05Wt000003SrN8IAK",
+        "b2b:a05Wt000003SrN9IAK",
+        "b2b:a05Wt000003SrxKIAS",
+        "b2b:a05Wt000003SsqAIAS",
+        "b2b:a05Wt000003StHdIAK",
+        "b2b:a05Wt000003StHeIAK",
+        "b2b:a05Wt000003StHfIAK",
+        "b2b:a05Wt000003StHgIAK",
+        "b2b:a05Wt000003SuOyIAK",
+        "b2b:a05Wt000003SuOzIAK",
+        "b2b:a05Wt000003SulWIAS",
+        "b2b:a05Wt000003SulXIAS",
+        "b2b:a05Wt000003Sv05IAC",
+        "b2b:a05Wt000003Sv1gIAC",
+        "b2b:a05Wt000003SvCzIAK",
+        "b2b:a05Wt000003SvT5IAK",
+        "b2b:a05Wt000003SvhdIAC",
+        "b2b:a05Wt000003SvrIIAS",
+        "b2b:a05Wt000003Sw0zIAC",
+        "b2b:a05Wt000003Sw2ZIAS",
+        "b2b:a05Wt000003SwAfIAK",
+        "b2b:a05Wt000003SwDrIAK",
+        "b2b:a05Wt000003Swx1IAC",
+        "b2b:a05Wt000003Sx8KIAS",
+        "b2b:a05Wt000003SxEmIAK",
+        "b2b:a05Wt000003SxEnIAK",
+        "b2b:a05Wt000003SxrVIAS",
+        "b2b:a05Wt000003Sxt9IAC",
+        "b2b:a05Wt000003SyHJIA0",
+        "b2b:a05Wt000003SyM7IAK",
+        "b2b:a05Wt000003SyfSIAS",
+        "b2b:a05Wt000003SyfTIAS",
+        "b2b:a05Wt000003SyvcIAC",
+        "b2b:a05Wt000003SyvdIAC",
+        "b2b:a05Wt000003SzDLIA0",
+        "b2b:a05Wt000003SzEwIAK",
+        "b2b:a05Wt000003SzQFIA0",
+        "b2b:a05Wt000003SzemIAC",
+        "b2b:a05Wt000003SzlDIAS",
+        "b2b:a05Wt000003T0AzIAK",
+        "b2b:a05Wt000003T0CbIAK",
+        "b2b:a05Wt000003T0EDIA0",
+        "b2b:a05Wt000003T0FpIAK",
+        "b2b:a05Wt000003T0HRIA0",
+        "b2b:a05Wt000003T0J3IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Ahmed Khan appears in several calls, but only one pair matches the question's structure: the 2022-01-25 discovery meeting with Diego Sanchez (LiftTech Partnership Expansion), where Ahmed agreed to a demo 'next week', followed by the 2022-02-01 call where a specific demo slot (Friday at 3 PM) was set. The Carmen Silva calls (2022-01-10/2022-01-14) set and reference a demo within/after the same call and don't fit a discovery-then-follow-up pattern, and other Ahmed Khan calls involve different opportunities or post-demo discussions.",
+        "answers": [
+          {
+            "answer": "In the initial discovery call (2022-01-25, Diego Sanchez, LiftTech Partnership Expansion), Ahmed Khan agreed to a product demo 'next week'. In the follow-up call (2022-02-01), the demo was set for Friday at 3 PM.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvrIIAS",
+                "line_start": 16,
+                "line_end": 20,
+                "quote": "[2022-01-25T14:04:09] Diego Sanchez: We'd be thrilled to explore these options with you. Would a product demonstration help to give you a more detailed understanding of how our solutions could integrate with your systems?\n[2022-01-25T14:04:20] Ahmed Khan: Yes, I think that would be very helpful. Seeing the products in action could give us a clearer picture.\n[2022-01-25T14:04:30] Diego Sanchez: Excellent! I’ll coordinate with our team to set up a demo. How does next week sound?\n[2022-01-25T14:04:38] Ahmed Khan: Next week would be perfect. I’ll make sure to have the necessary team members available for the demo."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxEmIAK",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2022-02-01T14:33:25] Diego Sanchez: Definitely. Well, I'm enthusiastic about diving deeper into the specifics during our demo session. How does scheduling a session for this coming Friday sound to you?\n[2022-02-01T14:33:35] Ahmed Khan: Friday works for me. Could we set it for the afternoon, say 3 PM?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Ahmed Khan, the LiftTech Elevations demo, an 'initial discovery call,' and a 'follow-up call.' Ahmed Khan appears in two opportunities with demos discussed. In the 'LiftTech Elevations Smart Building Expansion' opportunity (Carmen Silva), the initial discovery call (2021-12-20) contains no demo timing agreement, so it cannot satisfy the question. In the 'LiftTech Partnership Expansion' opportunity (Diego Sanchez), the initial discovery call (2022-01-25) has Ahmed agreeing to 'next week' for the demo, and the follow-up call (2022-02-01) sets the demo for Friday at 3 PM. This is the only opportunity where both parts of the question are answered.",
+        "answers": [
+          {
+            "answer": "In the initial discovery call (2022-01-25), Ahmed Khan agreed to a demo 'next week' when Diego Sanchez asked how next week sounded. In the follow-up call (2022-02-01), the demo was set for Friday at 3 PM.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvrIIAS",
+                "line_start": 16,
+                "line_end": 20,
+                "quote": "[2022-01-25T14:04:09] Diego Sanchez: We'd be thrilled to explore these options with you. Would a product demonstration help to give you a more detailed understanding of how our solutions could integrate with your systems?\n[2022-01-25T14:04:20] Ahmed Khan: Yes, I think that would be very helpful. Seeing the products in action could give us a clearer picture.\n[2022-01-25T14:04:30] Diego Sanchez: Excellent! I’ll coordinate with our team to set up a demo. How does next week sound?\n[2022-01-25T14:04:38] Ahmed Khan: Next week would be perfect. I’ll make sure to have the necessary team members available for the demo."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxEmIAK",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2022-02-01T14:33:25] Diego Sanchez: Definitely. Well, I'm enthusiastic about diving deeper into the specifics during our demo session. How does scheduling a session for this coming Friday sound to you?\n[2022-02-01T14:33:35] Ahmed Khan: Friday works for me. Could we set it for the afternoon, say 3 PM?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that in the initial discovery call Ahmed Khan agreed to a demo 'next week' and that in the follow-up call the demo was set for Friday at 3 PM. The reference likewise covers both requested facts: the timing agreed in the initial call (the following week) and the demo date/time set in the follow-up (Friday at 3 PM). All requested commitments are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-ebe4f1cf6b30168f",
+      "question": "What discounts did TechPulse offer Digital Horizon Media in the proposal, and what did Wei Ling say about the pricing?",
+      "gold_answer": "10% off SecureFlow Suite and 5% off CloudLink Designer, CollabCircuit Hub, and AI DesignShift; Wei Ling said the pricing structure with discounts seems competitive.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrhLIAS",
+        "b2b:a05Wt000003SrkdIAC",
+        "b2b:a05Wt000003SsQSIA0",
+        "b2b:a05Wt000003StO8IAK",
+        "b2b:a05Wt000003SthWIAS",
+        "b2b:a05Wt000003Sto1IAC",
+        "b2b:a05Wt000003SuP7IAK",
+        "b2b:a05Wt000003SvgAIAS",
+        "b2b:a05Wt000003SvppIAC",
+        "b2b:a05Wt000003SvpqIAC",
+        "b2b:a05Wt000003SwM2IAK",
+        "b2b:a05Wt000003SxZoIAK",
+        "b2b:a05Wt000003SxjUIAS",
+        "b2b:a05Wt000003SxjVIAS",
+        "b2b:a05Wt000003SxjWIAS",
+        "b2b:a05Wt000003SxwQIAS",
+        "b2b:a05Wt000003Sy4XIAS",
+        "b2b:a05Wt000003SyFlIAK",
+        "b2b:a05Wt000003SydxIAC",
+        "b2b:a05Wt000003SyxEIAS",
+        "b2b:a05Wt000003SzF7IAK",
+        "b2b:a05Wt000003SzF8IAK",
+        "b2b:a05Wt000003SzdDIAS",
+        "b2b:a05Wt000003Szv4IAC",
+        "b2b:a05Wt000003SzzxIAC",
+        "b2b:a05Wt000003T02yIAC",
+        "b2b:a05Wt000003T0r0IAC",
+        "b2b:a05Wt000003T1GnIAK",
+        "b2b:a05Wt000003T1GoIAK",
+        "b2b:a05Wt000003T1v7IAC",
+        "b2b:a05Wt000003T1v8IAC",
+        "b2b:a05Wt000003T1v9IAC",
+        "b2b:a05Wt000003T1wiIAC",
+        "b2b:a05Wt000003T200IAC",
+        "b2b:a05Wt000003T201IAC",
+        "b2b:a05Wt000003T24sIAC",
+        "b2b:a05Wt000003T26PIAS",
+        "b2b:a05Wt000003T2ROIA0",
+        "b2b:a05Wt000003T2b1IAC",
+        "b2b:a05Wt000003T2hbIAC",
+        "b2b:a05Wt000003T3aLIAS",
+        "b2b:a05Wt000003T3jzIAC",
+        "b2b:a05Wt000003T46YIAS",
+        "b2b:a05Wt000003T49lIAC",
+        "b2b:a05Wt000003T4BNIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves Wei Ling discussing a proposal's discounts: the 2023-09-10 'Digital Horizon Media EDA Enhancement' call with Maya Johnson, where the specific discounts are itemized and Wei Ling comments on the pricing. Other discount discussions involve different contacts (Sara Morales, Lucia Rossi, Ivy Chen, Leonard Müller) and are not relevant to the Wei Ling part of the question.",
+        "answers": [
+          {
+            "answer": "In the proposal for Digital Horizon Media, TechPulse offered a 10% discount on the SecureFlow Suite and 5% discounts on the CloudLink Designer, CollabCircuit Hub, and AI DesignShift, a structure aimed at offering a favorable total cost of ownership. Wei Ling said the pricing structure with the discounts seemed competitive, and added that pricing was one aspect, but that she also really admired TechPulse's customer support and customization options.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrkdIAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-09-10T14:50:35] Wei Ling: That's reassuring, Maya. Let’s talk about the quote. We received your proposal, and the pricing structure with the discounts seems competitive.\n[2023-09-10T14:51:10] Maya Johnson: Right. For Digital Horizon Media, we've outlined competitive pricing with a 10% discount on the SecureFlow Suite and 5% discounts on CloudLink Designer, CollabCircuit Hub, and AI DesignShift. This structure aims to offer a favorable total cost of ownership."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about discounts in 'the proposal' and what Wei Ling said about pricing. Only one call features Wei Ling discussing a received proposal with specific discounts: call b2b:a05Wt000003SrkdIAC (2023-09-10, opportunity 'Digital Horizon Media EDA Enhancement', rep Maya Johnson). In that call, Maya details the discounts and Wei Ling comments on the pricing. No other call with Wei Ling contains both a proposal with itemized discounts and her pricing reaction.",
+        "answers": [
+          {
+            "answer": "TechPulse offered Digital Horizon Media a 10% discount on the SecureFlow Suite and 5% discounts on CloudLink Designer, CollabCircuit Hub, and AI DesignShift. Wei Ling said the pricing structure with the discounts 'seems competitive,' that it 'makes sense,' and that they would go back and review it with the team. She also noted that pricing is one aspect, but she really admired TechPulse's customer support and customization options.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrkdIAC",
+                "line_start": 11,
+                "line_end": 14,
+                "quote": "[2023-09-10T14:50:35] Wei Ling: That's reassuring, Maya. Let’s talk about the quote. We received your proposal, and the pricing structure with the discounts seems competitive.\n[2023-09-10T14:51:10] Maya Johnson: Right. For Digital Horizon Media, we've outlined competitive pricing with a 10% discount on the SecureFlow Suite and 5% discounts on CloudLink Designer, CollabCircuit Hub, and AI DesignShift. This structure aims to offer a favorable total cost of ownership.\n[2023-09-10T14:51:45] Wei Ling: That makes sense. We’ll go back and review it with the team. Pricing is one aspect, but I also really admired your customer support and customization options."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers list the same discounts (10% on SecureFlow Suite; 5% on CloudLink Designer, CollabCircuit Hub, and AI DesignShift) and both report Wei Ling saying the pricing structure with discounts seems competitive. Answer B adds extra quotes ('makes sense,' reviewing with the team) and both mention her admiration for customer support/customization, but these are unrequested extras. The reference covers the core requested facts: the specific discount percentages for each product and Wei Ling's statement that the pricing seems competitive."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-e50eb99811fa7f73",
+      "question": "For Mohammed Akhtar's certified pre-owned purchase, which two vehicles did Aisha identify as options, and what did she say the Extended Warranty Plan covers?",
+      "gold_answer": "The 2020 Lexus RX 350 and 2022 Acura RDX; the Extended Warranty Plan extends the factory warranty, providing additional coverage for unforeseen repairs.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOB0IAO",
+        "b2c:a05Ws000005SOFsIAO",
+        "b2c:a05Ws000005SPJyIAO",
+        "b2c:a05Ws000005SQHeIAO",
+        "b2c:a05Ws000005SRglIAG",
+        "b2c:a05Ws000005SSrKIAW",
+        "b2c:a05Ws000005ST10IAG",
+        "b2c:a05Ws000005ST11IAG",
+        "b2c:a05Ws000005ST7SIAW",
+        "b2c:a05Ws000005STDvIAO",
+        "b2c:a05Ws000005STc6IAG",
+        "b2c:a05Ws000005STgvIAG",
+        "b2c:a05Ws000005STiXIAW",
+        "b2c:a05Ws000005STiYIAW",
+        "b2c:a05Ws000005STiZIAW",
+        "b2c:a05Ws000005STiaIAG",
+        "b2c:a05Ws000005STk9IAG",
+        "b2c:a05Ws000005STllIAG",
+        "b2c:a05Ws000005STlmIAG",
+        "b2c:a05Ws000005STnNIAW",
+        "b2c:a05Ws000005STozIAG",
+        "b2c:a05Ws000005STqbIAG",
+        "b2c:a05Ws000005STsDIAW",
+        "b2c:a05Ws000005STtpIAG",
+        "b2c:a05Ws000005STvRIAW",
+        "b2c:a05Ws000005STx3IAG",
+        "b2c:a05Ws000005STyfIAG",
+        "b2c:a05Ws000005SU0HIAW",
+        "b2c:a05Ws000005SU1tIAG",
+        "b2c:a05Ws000005SU3VIAW",
+        "b2c:a05Ws000005SU57IAG",
+        "b2c:a05Ws000005SU6jIAG",
+        "b2c:a05Ws000005SU8LIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Aisha Patel discussing both vehicle options and the Extended Warranty Plan: the 2021-05-04 call on the 'Mohammed Akhtar Certified Pre-Owned Purchase' opportunity. Her other call (2021-04-21) is a discovery call that mentions the Lexus RX 350 and Acura RDX but contains no Extended Warranty Plan discussion, so it cannot supply a competing complete answer.",
+        "answers": [
+          {
+            "answer": "Aisha identified the 2020 Lexus RX 350 and the 2022 Acura RDX as the two vehicle options for Mohammed's certified pre-owned purchase. She said the Extended Warranty Plan extends the factory warranty, providing additional coverage for unforeseen repairs — 'peace of mind for your vehicle's future.'",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOB0IAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-05-04T11:00:40] Aisha Patel: Great! Just to recap, during our last call we discussed some of your preferences and driving habits. Based on that, I've identified a couple of vehicles that might suit your needs, notably the 2020 Lexus RX 350 and the 2022 Acura RDX."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOB0IAO",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2021-05-04T11:03:25] Mohammed Akhtar: Not so much questions, but I'd love to hear more about the Extended Warranty Plan?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Aisha as the rep and the opportunity name 'Mohammed Akhtar Certified Pre-Owned Purchase' (opportunity_id 006Ws00000ALoyXIAT). Only call b2c:a05Ws000005SOB0IAO matches both criteria. In that call, Aisha identifies the 2020 Lexus RX 350 and the 2022 Acura RDX as the two vehicle options, and describes the Extended Warranty Plan as extending the factory warranty and providing additional coverage for unforeseen repairs.",
+        "answers": [
+          {
+            "answer": "Aisha identified the 2020 Lexus RX 350 and the 2022 Acura RDX as the two vehicle options. She said the Extended Warranty Plan extends the factory warranty, providing additional coverage for unforeseen repairs, and described it as peace of mind for the vehicle's future.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOB0IAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-05-04T11:00:40] Aisha Patel: Great! Just to recap, during our last call we discussed some of your preferences and driving habits. Based on that, I've identified a couple of vehicles that might suit your needs, notably the 2020 Lexus RX 350 and the 2022 Acura RDX."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOB0IAO",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2021-05-04T11:03:40] Aisha Patel: Certainly. The Extended Warranty Plan extends the factory warranty, providing additional coverage for unforeseen repairs. It’s peace of mind for your vehicle's future."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two vehicles (2020 Lexus RX 350 and 2022 Acura RDX) and state the same Extended Warranty Plan coverage (extends the factory warranty, providing additional coverage for unforeseen repairs). The reference also lists both vehicles and the same warranty coverage description. The 'peace of mind' phrasing in both answers is an additional descriptor not present in the reference but does not contradict it; all requested facts are covered."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-362fd56763a62862",
+      "question": "For Emma Wilson's Audi Q7 upgrade, what did she ask about the certified pre-owned program and how did Hiroshi respond?",
+      "gold_answer": "She asked how AutoElite's certified pre-owned program compares to others with attractive initial prices; Hiroshi said their vehicles undergo a rigorous inspection process that customers find more thorough than competitors, adding peace of mind.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMMGIA4",
+        "b2c:a05Ws000005SMPcIAO",
+        "b2c:a05Ws000005SOBEIA4",
+        "b2c:a05Ws000005SOEJIA4",
+        "b2c:a05Ws000005SPn8IAG",
+        "b2c:a05Ws000005SQ51IAG",
+        "b2c:a05Ws000005SQI0IAO",
+        "b2c:a05Ws000005SQhXIAW",
+        "b2c:a05Ws000005SQucIAG",
+        "b2c:a05Ws000005SRKOIA4",
+        "b2c:a05Ws000005SRNWIA4",
+        "b2c:a05Ws000005SSV3IAO",
+        "b2c:a05Ws000005STu4IAG",
+        "b2c:a05Ws000005SUVAIA4",
+        "b2c:a05Ws000005SUgQIAW",
+        "b2c:a05Ws000005SVUPIA4",
+        "b2c:a05Ws000005SWVJIA4",
+        "b2c:a05Ws000005SWryIAG",
+        "b2c:a05Ws000005SWtdIAG",
+        "b2c:a05Ws000005SWteIAG",
+        "b2c:a05Ws000005SX1VIAW",
+        "b2c:a05Ws000005SYnGIAW",
+        "b2c:a05Ws000005SZHvIAO",
+        "b2c:a05Ws000005SZmYIAW",
+        "b2c:a05Ws000005SaAsIAK",
+        "b2c:a05Ws000005SaM2IAK",
+        "b2c:a05Ws000005SbMtIAK",
+        "b2c:a05Ws000005Sbd1IAC",
+        "b2c:a05Ws000005SbrXIAS",
+        "b2c:a05Ws000005SdWcIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The Audi Q7 upgrade is discussed only in the 2023-04-16 call with Hiroshi Ito (opportunity 'Emma Wilson Family and Eco-Friendly Vehicle Upgrade'). Emma's certified pre-owned question and Hiroshi's response appear only there, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Emma asked how AutoElite's certified pre-owned program compares to others, noting that some dealerships have pretty attractive initial prices. Hiroshi responded that their certified pre-owned vehicles go through a rigorous inspection process ensuring reliability and quality, and that many customers find their inspections more thorough than competitors', which adds significant peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMMGIA4",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-04-16T13:51:34] Emma Wilson: I see, and how does your certified pre-owned program compare to others? I’ve noticed some dealerships have pretty attractive initial prices."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Emma Wilson's Audi Q7 upgrade and asks about Hiroshi's response. Only one call involves both Hiroshi Ito and the Audi Q7: call b2c:a05Ws000005SMMGIA4 (opportunity 'Emma Wilson Family and Eco-Friendly Vehicle Upgrade'). In that call, Emma asks how the certified pre-owned program compares to others, and Hiroshi responds about the rigorous inspection process. No other call combines Hiroshi with the Audi Q7.",
+        "answers": [
+          {
+            "answer": "Emma asked how AutoElite Motors' certified pre-owned program compares to others, noting that some dealerships have pretty attractive initial prices. Hiroshi responded that their certified pre-owned vehicles go through a rigorous inspection process that ensures reliability and quality, and that many customers have expressed they find AutoElite's inspections more thorough compared to competitors, which adds significant peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMMGIA4",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-04-16T13:51:34] Emma Wilson: I see, and how does your certified pre-owned program compare to others? I’ve noticed some dealerships have pretty attractive initial prices.\n[2023-04-16T13:51:52] Hiroshi Ito: That’s a great question, Emma. Our certified pre-owned vehicles go through a rigorous inspection process that ensures reliability and quality. Many customers have expressed that they find our inspections more thorough compared to competitors, which adds significant peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same facts: Emma asked how AutoElite's certified pre-owned program compares to others, noting some dealerships have attractive initial prices; Hiroshi responded that their CPO vehicles undergo a rigorous inspection process ensuring reliability and quality, that customers find their inspections more thorough than competitors', and that this adds significant peace of mind. The only differences are minor wording variations (e.g., 'AutoElite' vs. 'AutoElite Motors', 'ensuring' vs. 'that ensures'). The reference covers all requested facts: the question about comparing the CPO program to others with attractive initial prices, and Hiroshi's response about rigorous inspections being more thorough than competitors and adding peace of mind."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

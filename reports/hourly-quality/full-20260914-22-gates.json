@@ -1,0 +1,392 @@
+[
+  {
+    "question_id": "b2b-multi_call-574195fc432a34b4",
+    "question": "For the LiftTech Elevations demo, what timing did Ahmed Khan agree to in the initial discovery call, and what demo date and time was set in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The demo timing Ahmed Khan agreed to in the initial discovery call and the demo date/time set in the follow-up call for LiftTech Elevations",
+        "relationship": "same business issue (demo scheduling) tracked across two calls",
+        "reason": "Both lookups concern the same issue\u2014scheduling the LiftTech Elevations demo\u2014across the initial and follow-up calls, forming one coherent multi-call question."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvrIIAS",
+                "fact": "Ahmed Khan agreed to a demo the following week (next week) in the initial discovery call.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial agreement to schedule the demo for the following week; it only discusses setting a specific date and time."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxEmIAK",
+                "fact": "The demo was set for Friday at 3 PM in the follow-up call.",
+                "why_other_call_cannot_supply_it": "The initial discovery call does not specify a particular day or time for the demo; it only agrees to schedule it for the following week."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the timing agreed in the initial discovery call (next week) and the specific demo date/time set in the follow-up call (Friday at 3 PM). Each call provides one of these facts, and neither call contains the other's fact, so both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvrIIAS",
+                  "fact": "Ahmed agreed to a demo the following week (next week) in the initial discovery call.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial agreement to schedule the demo for the following week; it only discusses setting a specific date and time."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxEmIAK",
+                  "fact": "The demo was set for Friday at 3 PM in the follow-up call.",
+                  "why_other_call_cannot_supply_it": "The initial discovery call does not specify a particular date or time for the demo; it only agrees to schedule it for the following week."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the timing agreed in the initial discovery call (next week) and the specific demo date/time set in the follow-up call (Friday at 3 PM). Each fact is only present in one of the two calls, and neither call contains both facts. Therefore, both calls are necessary to fully answer the question."
+            },
+            {
+              "type": "object"
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvrIIAS",
+                  "fact": "Ahmed Khan agreed to a demo the following week (next week) in the initial discovery call.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial agreement to schedule the demo for the following week; it only discusses setting a specific date and time."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxEmIAK",
+                  "fact": "The demo was set for Friday at 3 PM in the follow-up call.",
+                  "why_other_call_cannot_supply_it": "The initial discovery call does not specify a particular day or time for the demo; it only agrees to schedule it for the following week."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the timing agreed in the initial discovery call (next week) and the specific demo date/time set in the follow-up call (Friday at 3 PM). Each call provides one of these facts, and neither call contains the other's fact, so both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvrIIAS",
+                "fact": "In the initial discovery call, Ahmed Khan agreed to a demo 'next week' (no specific date/time).",
+                "why_other_call_cannot_supply_it": "The follow-up call only references 'initial discussions' and sets the concrete demo slot; it never states what timing was agreed in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxEmIAK",
+                "fact": "In the follow-up call, the demo was scheduled for Friday at 3 PM.",
+                "why_other_call_cannot_supply_it": "The discovery call only contains the vague 'next week' agreement and predates the specific scheduling; it contains no Friday/3 PM detail."
+              }
+            ],
+            "reason": "The question asks for two distinct requested facts: the vague timing agreed in the discovery call ('next week') and the concrete demo slot set in the follow-up (Friday, 3 PM). Each fact exists only in its respective call, and the progression from vague agreement to a specific scheduled date/time is a substantive, requested distinction, not a paraphrase."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvrIIAS",
+                  "fact": "In the initial discovery call, Ahmed Khan agreed to a demo 'next week' (no specific date/time).",
+                  "why_other_call_cannot_supply_it": "The follow-up call only references 'initial discussions' and sets the concrete demo slot; it never states what timing was agreed in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxEmIAK",
+                  "fact": "In the follow-up call, the demo was scheduled for Friday at 3 PM.",
+                  "why_other_call_cannot_supply_it": "The discovery call only contains the vague 'next week' agreement and predates the specific scheduling; it contains no Friday/3 PM detail."
+                }
+              ],
+              "reason": "The question asks for two distinct requested facts: the vague timing agreed in the discovery call ('next week') and the concrete demo slot set in the follow-up (Friday, 3 PM). Each fact exists only in its respective call, and the progression from vague agreement to a specific scheduled date/time is a substantive, requested distinction, not a paraphrase."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two scheduling facts across two calls: the agreed timing in the discovery call (next week) and the specific demo date/time in the follow-up (Friday at 3 PM). Both are clearly stated in the transcripts. Each call contributes an exclusive fact\u2014call 1 provides the 'next week' agreement, call 2 provides 'Friday at 3 PM.' The question is naturally scoped to a named account and contact, and a rep would plausibly need to recall these scheduling details. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Diego Sanchez proposing 'How does next week sound?' and Ahmed Khan responding 'Next week would be perfect.' This directly supports the claim that Diego proposed a demo next week and Ahmed agreed that next week would be perfect."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Diego proposing 'this coming Friday,' Ahmed asking 'Could we set it for the afternoon, say 3 PM?' and Diego confirming 'Sure, 3 PM it is.' This directly supports the claim that Ahmed asked for Friday at 3 PM and Diego confirmed 3 PM."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) In the first call they agreed to a demo the following week \u2014 supported by evidence index 0 where Diego proposes next week and Ahmed agrees. (2) In the follow-up the demo was set for Friday at 3 PM \u2014 supported by evidence index 1 where Diego proposes Friday, Ahmed requests 3 PM, and Diego confirms. Both factual claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms the first call (2022-01-25) is the initial discovery call and the second call (2022-02-01) is the follow-up, both involving Ahmed Khan and LiftTech Elevations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-057c5bba558f7d9f",
+    "question": "What concern did Sara Morales raise about CircuitWave's security, and what discount did TechPulse offer on SecuManage Pro for Digital Horizon Media's bulk purchase?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Sara Morales's security concern about CircuitWave, and TechPulse's discount on SecuManage Pro for Digital Horizon Media's bulk purchase",
+        "relationship": "two independent fact lookups joined only by transcript content",
+        "reason": "A security concern raised by one person and a discount offered to a different customer are unrelated information needs; sharing an account/call context does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Aug 2) contains Sara Morales stating 'We've had some experience with CircuitWave but found their security lacking,' which is the exclusive source for the security concern. Call 2 (Aug 15) contains Dariusz stating 'For your potential bulk purchase, we've offered a 15% discount on SecuManage Pro,' which is the exclusive source for the discount. Each call contributes a distinct requested fact. The question naturally identifies the account (Digital Horizon Media), the contact (Sara Morales), and the business context (security concern and bulk-purchase discount). The gold answer accurately and concisely restates both facts without unasked extras. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Sara Morales stating 'We've had some experience with CircuitWave but found their security lacking,' which fully supports the answer_claim that she found CircuitWave's security lacking."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Dariusz Wisniewski explicitly stating 'For your potential bulk purchase, we've offered a 15% discount on SecuManage Pro,' which directly supports the answer_claim about the 15% discount on SecuManage Pro for the bulk purchase."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are supported by the cited evidence: (1) Sara Morales found CircuitWave's security lacking (index 0), and (2) TechPulse offered a 15% discount on SecuManage Pro for the bulk purchase (index 1). The context metadata confirms the call involves Sara Morales at Digital Horizon Media and the opportunity is 'TechPulse Expansion with Digital Horizon Media,' establishing that Dariusz represents TechPulse. The gold_answer faithfully summarizes both cited facts."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5d748998cc8e7875",
+    "question": "What quantities and budget did Anand Patel at Horizon Dynamics specify for the PCB QuickMaker, PulseSim Pro, and EduFlow Academy?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quantities and budget Anand Patel at Horizon Dynamics specified for PCB QuickMaker, PulseSim Pro, and EduFlow Academy",
+        "relationship": "single coherent requirements lookup",
+        "reason": "One request for the customer's specified quantities and budget across a set of products from the same conversation; a natural single-lookup sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for quantities and budget for three named products tied to a specific lead (Anand Patel, Horizon Dynamics). The single call confirms 4 PCB QuickMaker, 3 PulseSim Pro, 3 EduFlow Academy, and a budget around $4302. The gold answer states exactly those facts with no extras. Wording is natural, scope is clear, and a rep would plausibly need this info. No locator preamble, no leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quote is Aisha Ibrahim asking Anand to confirm the quantities ('Is that correct?'). It is a question seeking confirmation, not Anand's confirmation itself. The answer_claim states 'Anand confirms 4 units PCB QuickMaker, 3 PulseSim Pro, 3 EduFlow Academy,' but the cited passage only shows Aisha's inquiry. No subsequent line from Anand affirming these quantities is supplied. A question does not establish its answer."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote is directly from Anand Patel stating 'Our budget is around $4302. Will that be feasible?' This explicitly supports the answer_claim that Anand states the budget is around $4302. The speaker, amount, and uncertainty qualifier ('around') are all preserved."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer asserts that Anand specified 4 units PCB QuickMaker, 3 PulseSim Pro, and 3 EduFlow Academy. However, the only evidence for the quantities (index 0) is Aisha's question asking Anand to confirm, not Anand's actual confirmation. Without a cited line where Anand affirms these quantities, the claim that he 'specified' them is not supported by the supplied evidence. The budget portion ($4302) is supported by index 1, but the quantities portion lacks direct confirmation from Anand in the cited passages."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-ebe4f1cf6b30168f",
+    "question": "What discounts did TechPulse offer Digital Horizon Media in the proposal, and what did Wei Ling say about the pricing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts offered to Digital Horizon Media in the proposal and Wei Ling's comments about the pricing",
+        "relationship": "same commercial terms \u2014 the discount details and Wei Ling's reaction both concern the pricing in the same proposal",
+        "reason": "This is a coherent single-issue request: the quoted discounts and a stakeholder's response to that pricing address the same commercial topic within one call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific discount details from the proposal and Wei Ling's reaction to pricing\u2014both are clearly present in the single call transcript. The gold answer accurately lists the 10% SecureFlow Suite discount, the 5% discounts on CloudLink Designer, CollabCircuit Hub, and AI DesignShift, and quotes Wei Ling's statement that 'the pricing structure with the discounts seems competitive.' All claims are directly supported by the dialogue. The question is naturally phrased, adequately scoped to the Digital Horizon Media account and TechPulse proposal, and a rep would plausibly want to confirm what was offered and how the customer reacted. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Maya Johnson explicitly states 'a 10% discount on the SecureFlow Suite and 5% discounts on CloudLink Designer, CollabCircuit Hub, and AI DesignShift,' which directly matches the answer_claim about the specific discounts offered to Digital Horizon Media."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Wei Ling explicitly states 'the pricing structure with the discounts seems competitive,' which directly supports the answer_claim that Wei Ling said the pricing structure with the discounts seems competitive."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms the exact discount percentages (10% off SecureFlow Suite; 5% off CloudLink Designer, CollabCircuit Hub, and AI DesignShift), and Index 1 confirms Wei Ling's statement that the pricing structure with the discounts seems competitive. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-e50eb99811fa7f73",
+    "question": "For Mohammed Akhtar's certified pre-owned purchase, which two vehicles did Aisha identify as options, and what did she say the Extended Warranty Plan covers?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the two vehicle options Aisha presented for Mohammed Akhtar's certified pre-owned purchase and the coverage details of the Extended Warranty Plan she described.",
+        "relationship": "Both items concern the same single purchase decision: the vehicle options and the warranty plan are part of one coherent sales recommendation for that purchase.",
+        "reason": "The question asks about one purchase scenario \u2014 the candidate vehicles and the warranty attached to that recommendation form a natural, connected set of requirements rather than two unrelated fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks which two vehicles Aisha identified and what the Extended Warranty Plan covers\u2014information a rep or account manager would plausibly track for a CPO opportunity. The dialogue confirms the 2020 Lexus RX 350 and 2022 Acura RDX as the two options and states the Extended Warranty Plan 'extends the factory warranty, providing additional coverage for unforeseen repairs,' matching the gold answer exactly with no extra or missing facts. The question is scoped to Mohammed Akhtar's CPO purchase and Aisha's recommendations, no artificial locator preamble is present, and wording is natural. Because question_class is single_call, both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aisha Patel explicitly states she identified 'the 2020 Lexus RX 350 and the 2022 Acura RDX' as vehicles that might suit Mohammed Akhtar's needs, directly supporting the claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Aisha Patel's quoted response states 'The Extended Warranty Plan extends the factory warranty, providing additional coverage for unforeseen repairs,' which directly supports the answer claim about what the plan covers."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer: index 0 confirms the two vehicles (2020 Lexus RX 350 and 2022 Acura RDX) identified by Aisha, and index 1 confirms her statement that the Extended Warranty Plan extends the factory warranty and provides additional coverage for unforeseen repairs. The context metadata confirms this is Mohammed Akhtar's Certified Pre-Owned Purchase opportunity. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-362fd56763a62862",
+    "question": "For Emma Wilson's Audi Q7 upgrade, what did she ask about the certified pre-owned program and how did Hiroshi respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Emma Wilson asked about the certified pre-owned program for her Audi Q7 upgrade and how Hiroshi responded",
+        "relationship": "single coherent inquiry-and-response exchange on the same topic (CPO program)",
+        "reason": "One objection/inquiry paired with its response within the same call; no unrelated lookups joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer (Emma Wilson) and vehicle (Audi Q7 upgrade), which a rep/account manager would plausibly want to review. The wording is natural and free of artificial locator preambles. The gold answer accurately reflects the dialogue: Emma asked how AutoElite's certified pre-owned program compares to others with attractive initial prices, and Hiroshi responded about the rigorous inspection process being more thorough than competitors, adding peace of mind. No unasked extras are included and no facts are fabricated. Since question_class is single_call with one call supplied, both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Emma Wilson directly asks 'how does your certified pre-owned program compare to others?' and mentions 'some dealerships have pretty attractive initial prices,' which fully supports the answer_claim that she asks how the certified pre-owned program compares to others with attractive initial prices."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Hiroshi's quoted response explicitly states their vehicles 'go through a rigorous inspection process,' that 'customers have expressed that they find our inspections more thorough compared to competitors,' and that this 'adds significant peace of mind.' This directly supports the answer_claim about the rigorous inspection process and thoroughness versus competitors."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Emma asked how AutoElite's certified pre-owned program compares to others with attractive initial prices \u2014 supported by index 0; (2) Hiroshi said their vehicles undergo a rigorous inspection process that customers find more thorough than competitors, adding peace of mind \u2014 supported by index 1. Both factual claims in the gold_answer are fully covered by the two cited evidence items. The account metadata confirms this is Emma Wilson's call regarding a vehicle upgrade, consistent with the question context."
+      }
+    }
+  }
+]
