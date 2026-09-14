@@ -1,0 +1,337 @@
+[
+  {
+    "question_id": "b2b-multi_call-c3bdc2ce19038f94",
+    "question": "For AlphaWave Networks, what follow-up step did Nadine Weber agree to in the initial discussion, and what total price was quoted for PulseSim Pro during the negotiation call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A follow-up step Nadine Weber agreed to in the initial discussion, and the total price quoted for PulseSim Pro in the negotiation call",
+        "relationship": "two independent fact lookups joined only by the same account",
+        "reason": "The follow-up commitment and the PulseSim Pro price quote address different business issues across calls; sharing the AlphaWave Networks account is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question asks for two distinct facts: (1) the follow-up step Nadine Weber agreed to in the initial discussion (a detailed needs analysis meeting, confirmed at 15:03:52 in call 1) and (2) the total price quoted for PulseSim Pro during the negotiation call ($1499.97 for three units, stated at 14:45:57 in call 2). Each fact is sourced exclusively from its respective call, satisfying the multi-call requirement. The question is naturally phrased, adequately scoped to AlphaWave Networks and the named contact, and the gold answer states precisely the two requested facts without unasked extras. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Sarah Johnson proposing 'a more detailed needs analysis meeting' and Nadine Weber responding 'Yes, let's do that,' confirming Nadine agreed to the follow-up step. The call metadata confirms this is the initial discussion (2021-06-21) with AlphaWave Networks and Nadine Weber."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote explicitly states Sarah Johnson saying 'For our PulseSim Pro, we've set a total price of $1499.97 for three units.' This directly supports the claim about the total price and quantity. The call metadata confirms this is the negotiation call (2021-07-20) with AlphaWave Networks."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are fully supported by the cited evidence: (1) Evidence index 0 confirms Nadine Weber agreed to a detailed needs analysis meeting during the initial discussion, and (2) Evidence index 1 confirms PulseSim Pro was priced at $1499.97 for three units during the negotiation call. The context metadata correctly identifies the account (AlphaWave Networks), contact (Nadine Weber), and the two calls as the initial discussion and negotiation call respectively."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-e0a8350f687d9e99",
+    "question": "What security-related concern did Viktoria Petrenko from BlueSky Aerospace raise in the follow-up call, and how had TechPulse positioned its security compliance in the initial discussion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The security concern Viktoria Petrenko raised in the follow-up call and how TechPulse positioned its security compliance in the initial discussion",
+        "relationship": "objection and response on the same security-compliance issue across two calls",
+        "reason": "Both parts address the same business issue (security compliance), comparing the initial positioning with the later concern raised \u2014 a coherent objection-and-response comparison, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: the security concern raised in the follow-up call and how TechPulse positioned its security compliance in the initial discussion. Both facts are present in the respective calls, and each call supplies the fact relevant to its time point. However, the initial call also contains Viktoria's security concern (she says 'Security is definitely crucial for us' and 'We want to avoid any data vulnerabilities at all costs'), and the follow-up call also contains TechPulse's positioning (Chidi says 'We have rigorous security protocols that many of our clients find reassuring'). Thus, either call alone could supply both pieces of information, so the two calls are not necessary for the requested information. The facts are not exclusive to each call."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: the security concern raised in the follow-up call and how TechPulse positioned its security compliance in the initial discussion. Both facts are present in the respective calls, and each call supplies the fact relevant to its time point. However, the initial call also contains Viktoria's security concern (she says 'Security is definitely crucial for us' and 'We want to avoid any data vulnerabilities at all costs'), and the follow-up call also contains TechPulse's positioning (Chidi says 'We have rigorous security protocols that many of our clients find reassuring'). Thus, either call alone could supply both pieces of information, so the two calls are not necessary for the requested information. The facts are not exclusive to each call."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T3f7IAC",
+                "fact": "In the follow-up call, Viktoria stated data security is a big concern and tight security protocols are non-negotiable for their cutting-edge aerospace work.",
+                "why_other_call_cannot_supply_it": "The initial call (June 14) contains no statement from Viktoria raising a security concern; she only asks about TechPulse's protocols there."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxWeIAK",
+                "fact": "In the initial call, Chidi positioned TechPulse's robust security compliance and highest data-protection standards as a key differentiator for clients needing stringent data protection.",
+                "why_other_call_cannot_supply_it": "The follow-up call (June 15) only mentions TechPulse's rigorous security protocols in response to Viktoria's concern, not the initial positioning as a differentiator."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from different calls: the security concern Viktoria raised in the follow-up call and how TechPulse positioned its security compliance in the initial discussion. Each fact appears only in its respective call, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T3f7IAC",
+                  "fact": "In the follow-up call, Viktoria stated data security is a big concern and tight security protocols are non-negotiable for their cutting-edge aerospace work.",
+                  "why_other_call_cannot_supply_it": "The initial call (June 14) contains no statement from Viktoria raising a security concern; she only asks about TechPulse's protocols there."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxWeIAK",
+                  "fact": "In the initial call, Chidi positioned TechPulse's robust security compliance and highest data-protection standards as a key differentiator for clients needing stringent data protection.",
+                  "why_other_call_cannot_supply_it": "The follow-up call (June 15) only mentions TechPulse's rigorous security protocols in response to Viktoria's concern, not the initial positioning as a differentiator."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from different calls: the security concern Viktoria raised in the follow-up call and how TechPulse positioned its security compliance in the initial discussion. Each fact appears only in its respective call, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Viktoria's security concern raised in the follow-up call (June 15) and (2) how TechPulse positioned security compliance in the initial call (June 14). Call 2 (follow-up) contains Viktoria stating 'Data security is a big concern for us\u2026ensuring tight security protocols is non-negotiable.' Call 1 (initial) contains Chidi highlighting 'robust security compliance' as 'a big differentiator' and 'highest standards of data protection.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally worded, scoped to a named account/contact, and a rep would plausibly want to recall how security was discussed across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003SxWeIAK (2021-06-14, the initial call) shows Chidi Onyekachi explicitly stating 'One of the key strengths of TechPulse is our robust security compliance. It's been a big differentiator for clients who need stringent data protection' and 'We adhere to the highest standards of data protection.' This directly supports the answer_claim that Chidi highlighted TechPulse's robust security compliance and high data-protection standards as a key differentiator."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003T3f7IAC (2021-06-15, the follow-up call) shows Viktoria Petrenko stating 'Data security is a big concern for us, actually. As we work on cutting-edge aerospace technologies, ensuring tight security protocols is non-negotiable.' This directly supports the answer_claim that Viktoria said data security is a big concern and tight security protocols are non-negotiable for their aerospace work."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Viktoria raised data security as a big concern and tight security protocols as non-negotiable in the follow-up call\u2014supported by evidence index 1; (2) In the initial call, Chidi highlighted TechPulse's robust security compliance and high data-protection standards as a key differentiator\u2014supported by evidence index 0. Both factual claims in the gold_answer are fully supported by the cited evidence. The metadata confirms the correct participants (Viktoria Petrenko, BlueSky Aerospace) and the correct call sequence (initial call 2021-06-14, follow-up 2021-06-15)."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-134a5685f4947e82",
+    "question": "What main challenge did Ahmed Khaled from InnovateX Solutions raise about their EDA processes, and which TechPulse product did Ming say addresses it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The main challenge Ahmed Khaled from InnovateX Solutions raised about their EDA processes, and the TechPulse product Ming said addresses it",
+        "relationship": "objection/concern and the recommended product response within the same discussion",
+        "reason": "A single coherent need: a customer's stated challenge paired with the product proposed to address that same challenge."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the main challenge Ahmed raised and the specific TechPulse product Ming recommended. The dialogue confirms Ahmed stated the challenge is 'ensuring strong security compliance while maintaining flexibility in our technology implementations' and Ming pointed to 'SecureFlow Suite' emphasizing 'comprehensive security compliance' and 'ease of customization.' The gold answer matches these facts precisely with no unasked extras. The question naturally identifies the account (InnovateX Solutions) and contact (Ahmed Khaled), which is realistic for a rep reviewing their own call. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is solely Ahmed Khaled's statement identifying the challenge of balancing strong security compliance with flexibility in technology implementations. It does not contain any utterance from Ming, nor any mention of 'SecureFlow Suite' or its attributes (comprehensive security compliance with ease of customization). The answer_claim bundles both the challenge and Ming's product recommendation, but the cited dialogue only covers the first half."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains two factual components: (1) Ahmed's challenge of balancing security compliance with flexibility, and (2) Ming pointing to SecureFlow Suite for comprehensive security compliance with ease of customization. The single cited evidence (index 0) supports component (1) but provides no dialogue or metadata establishing component (2). No supplied citation shows Ming naming SecureFlow Suite or describing its features. Because a critical factual claim in the gold_answer lacks supporting evidence among the supplied citations, the answer as a whole is not supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-d5a1133bcc663080",
+    "question": "What did Luis Rodriguez say about why MetroGrid Networks is looking beyond Adaptive Design Solutions for their network expansion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Luis Rodriguez's stated reasons for MetroGrid Networks looking beyond Adaptive Design Solutions for their network expansion",
+        "relationship": "single lookup of one customer's stated rationale",
+        "reason": "One coherent fact lookup about a single issue (the customer's reason for considering alternatives) within one call; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Luis Rodriguez explicitly states at 11:01:15 that 'complexities in deployment with other solutions, like Adaptive Design Solutions, led us to seek more straightforward alternatives.' The gold answer faithfully paraphrases this. The question names the customer (MetroGrid Networks), the contact (Luis Rodriguez), and the competitor (Adaptive Design Solutions), giving adequate scope. Wording is natural for a rep researching why a prospect is shopping around. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage is directly attributed to Luis Rodriguez and states: 'We've been considering the complexities in deployment with other solutions, like Adaptive Design Solutions, which led us to seek more straightforward alternatives.' This explicitly supports the answer_claim that deployment complexity with Adaptive Design Solutions led them to seek more straightforward alternatives. The speaker, the reason (deployment complexity), the named solution (Adaptive Design Solutions), and the outcome (seeking more straightforward alternatives) all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Deployment complexity with Adaptive Design Solutions led them to seek more straightforward alternatives.' The single cited evidence item (index 0) is a direct quote from Luis Rodriguez that contains exactly this information: complexities in deployment with Adaptive Design Solutions led them to seek more straightforward alternatives. The metadata confirms the speaker is Luis Rodriguez and the account is MetroGrid Networks. All factual claims in the gold_answer are fully supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-c8cf0401853514c8",
+    "question": "What next step did Abigail commit to for Sophia Carter's test drives of the Tesla Model S and Camry Hybrid?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Abigail committed to regarding Sophia Carter's test drives of the Tesla Model S and Camry Hybrid",
+        "relationship": "single coherent request: one commitment about the same test-drive process",
+        "reason": "The question asks for a single next step tied to one customer's test-drive activity; comparing/arranging test drives of two vehicles is one business issue, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a concrete next-step commitment (test-drive scheduling) made by the rep to a named customer regarding two specific models. The dialogue at 15:02:45 shows Abigail saying she will 'coordinate with our team and get back to you with some dates' for test drives of the Tesla Model S and Camry Hybrid, which matches the gold answer precisely. Wording is natural, scope is clear (named rep, named customer, named vehicles, named action), and no locator preamble or answer leakage is present. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Abigail Johnson explicitly states 'I'll coordinate with our team and get back to you with some dates,' which directly supports the answer_claim. The speaker is identified as Abigail Johnson, and the commitment to coordinate with her team and return with dates is clearly present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Abigail will coordinate with her team and get back to Sophia with test drive dates for both models.' The cited evidence confirms Abigail's commitment to coordinate with her team and get back with dates. The context metadata identifies the account as 'Sophia Carter' and the opportunity as 'Sophia Carter's Sustainable Luxury Vehicle Purchase,' establishing the customer context. The question specifies the test drives are for the Tesla Model S and Camry Hybrid, and the gold answer references 'both models.' While the specific vehicle names are not in the quoted passage itself, the question already establishes these as the subject of the test drives, and Abigail's commitment to 'get back to you with some dates' in the context of this conversation supports the claim about providing test drive dates. The core factual claim\u2014Abigail coordinating with her team and getting back to Sophia with dates\u2014is directly supported by the evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-17b0b375cd5c866e",
+    "question": "What discount applies to Chloe Bennett's 9-unit 2022 BMW X5 M order, and what did she say she'd do next after the call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount on Chloe Bennett's 9-unit 2022 BMW X5 M order and her stated next steps after the call",
+        "relationship": "single coherent request: commercial terms of one order plus the customer's follow-up commitment from the same call",
+        "reason": "Both parts concern the same order and same call\u2014the pricing term and the resulting next step form one natural sales inquiry, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two facts from a single call: the 5% bulk discount on 9 units of 2022 BMW X5 M and Chloe's stated next step. The dialogue confirms Hiroko states 'a bulk purchase discount of 5%' for the 9 units, and Chloe says 'I'll take some time to review all the details and get back to you soon.' The gold answer accurately captures both. The question is naturally scoped to a specific customer and order, and a rep would plausibly want to confirm discount terms and follow-up commitment. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Hiroko Yamada explicitly states: 'For the 9 units of the 2022 BMW X5 M, we've included a bulk purchase discount of 5%.' This directly supports the answer_claim about a 5% bulk purchase discount for the 9-unit 2022 BMW X5 M order."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Chloe Bennett explicitly states: 'I'll take some time to review all the details and get back to you soon.' This directly supports the answer_claim that Chloe said she'd review the details and get back to Hiroko soon. The speaker attribution (Chloe Bennett) and the addressee (Hiroko, named in the preceding sentence) are clear."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are fully supported by the cited evidence: (1) Index 0 confirms the 5% bulk purchase discount for the 9 units of the 2022 BMW X5 M, and (2) Index 1 confirms Chloe said she'd review the details and get back to Hiroko soon. The context metadata (account_name 'Chloe Bennett', opportunity_name referencing Chloe Bennett) corroborates the participant identity. No unsupported claims are present in the gold_answer."
+      }
+    }
+  }
+]
