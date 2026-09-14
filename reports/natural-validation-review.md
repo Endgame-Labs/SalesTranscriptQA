@@ -12,3 +12,13 @@ The natural-v2 review sample remains unchanged. A new `NaturalNext` validation r
 Compare the answers supported by competing sources, not merely the selected source IDs. Require exact evidence for each proposed alternative or conflict. Retain original verified supporting evidence while representing alternative sufficient evidence separately. An independent judge must verify question scope and answer equivalence; different wording alone is not a conflict. Reject customer-specific questions whose omitted scope permits incompatible answers. Repeated company-wide facts can be valid but should not dominate the question distribution. Broader competitor retrieval is needed before claiming corpus-wide ambiguity resolution; the current top-ten TF-IDF pool is not sufficient proof.
 
 No ambiguity gate has yet been relaxed or replaced. Publication and full evaluation remain paused. B2C multi-call questions are excluded from future generation; B2B may retain both classes. Initial-discussion/follow-up phrasing is allowed occasionally, not mandated.
+
+## Answer-based audit experiment (September 14)
+
+Implemented an experimental answer-based check with deterministic evidence validation and cross-family verification. The first version requested exact quotes and produced seven invalid-evidence assessments in the 20-question/30-competitor review. The second requests numbered source lines and copies quotes in code; it produced 13 pool-consistent, 4 ambiguous, 2 invalid-evidence, and 1 verification-failed assessments. These are experimental outputs, **not approved QA counts**.
+
+Critical regression: item 13's second-version assessment incorrectly returned consistent_in_pool even though the known Friday-afternoon conflict (`b2c:a05Ws000005SXxTIAW`) was present in the pool. Both proposer and verifier missed it. The same method correctly detected the conflict in the isolated two-call live regression. This larger-pool miss invalidates adoption of the current design as a production gate; passing the small regression is insufficient. Preserve both reports so the failure is reproducible.
+
+Next implementation: reference-blind answer extraction on individual sources/small batches, followed by explicit evidence-grounded answer comparison, with the known conflict tested amid the full distractor pool. Do not weaken conflict handling or accept the provisional pool-consistent results. Existing production acceptance has not changed.
+
+Recorded experiment costs: quote-based regression $0.00261845, quote-based 20-item review $0.22427915, indexed-evidence regression $0.00271623, indexed-evidence 20-item review $0.28225254 (total $0.51186637). Thirty-three deterministic tests pass; this does not imply the live larger-pool semantic regression passed.

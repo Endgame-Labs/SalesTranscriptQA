@@ -1,0 +1,113 @@
+{
+  "results": [
+    {
+      "case": "equivalent_sources",
+      "question": "What is the price of the extended warranty offered by AutoElite Motors?",
+      "call_ids": [
+        "b2c:a05Ws000005SdWcIAK",
+        "b2c:a05Ws000005STyqIAG"
+      ],
+      "expected": "consistent_in_pool",
+      "decision": "consistent_in_pool",
+      "verdict": {
+        "scope_sufficient": true,
+        "reason": "Both calls state the extended warranty price of $1,299.99, matching the reference answer.",
+        "answers": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SdWcIAK"
+            ],
+            "answer": "$1,299.99",
+            "relation": "equivalent",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SdWcIAK",
+                "line_start": 22,
+                "line_end": 23,
+                "quote": "[2022-03-09T10:03:37] Keiko Mori: The extended warranty, priced at $1,299.99, covers most major components for an additional period post the standard warranty. It gives you peace of mind as it significantly reduces out-of-pocket expenses for any major repairs."
+              }
+            ]
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STyqIAG"
+            ],
+            "answer": "$1,299.99",
+            "relation": "equivalent",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STyqIAG",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-02-25T10:02:55] Zanele Dlamini: Exactly, only the best for our customers. And don’t forget, with the Extended Warranty Plan, you get additional coverage beyond the standard 3-year/36,000-mile warranty for $1,299.99, which further adds to the vehicle's reliability."
+              }
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "type": "object",
+        "quotes_support_complete_answers": true,
+        "relations_correct": true,
+        "scope_assessment_correct": true,
+        "no_plausible_conflicts_omitted": true,
+        "reason": "Both calls explicitly state the extended warranty price as $1,299.99, matching the reference answer. The quotes directly support the complete answer. The relations are correctly marked as equivalent. The scope is sufficient as the question asks for the price, and both calls provide it. No conflicting prices for the extended warranty are present in the supplied pool; the maintenance plan price of $1,999.99 in the second call is a different product and not a conflict."
+      }
+    },
+    {
+      "case": "conflicting_appointments",
+      "question": "What is the scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350?",
+      "call_ids": [
+        "b2c:a05Ws000005SZOFIA4",
+        "b2c:a05Ws000005SXxTIAW"
+      ],
+      "expected": "ambiguous",
+      "decision": "ambiguous",
+      "verdict": {
+        "scope_sufficient": false,
+        "reason": "Two different customers scheduled demonstrations of the same vehicles (Volvo XC60 and Lexus RX 350) at different times, and the question does not specify which customer is intended.",
+        "answers": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZOFIA4"
+            ],
+            "answer": "Saturday at noon.",
+            "relation": "conflicting",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZOFIA4",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-06-12T14:01:05] William Brooks: Great, I can stop by on Saturday around noon. Would that work for you?\n[2023-06-12T14:01:15] Hiroko Yamada: Saturday at noon sounds perfect. We’ll be ready for you. Just to recap, you’ll be viewing the Volvo XC60 and Lexus RX 350. Both models have some fantastic features to offer."
+              }
+            ]
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SXxTIAW"
+            ],
+            "answer": "Friday afternoon.",
+            "relation": "conflicting",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXxTIAW",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2022-10-18T13:01:10] Oliver Carter: I was thinking about coming by later this week. Maybe Friday afternoon?\n[2022-10-18T13:01:30] Liam Murphy: Friday sounds perfect! We can arrange for a detailed demonstration of both vehicles. It's a great opportunity to compare how our pre-owned program stands against competitors. We've got a knack for ensuring our options remain reliable—it’s something our customers love. Have you seen anything that you had questions or concerns about so far?"
+              }
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "type": "object",
+        "quotes_support_complete_answers": true,
+        "relations_correct": true,
+        "scope_assessment_correct": true,
+        "no_plausible_conflicts_omitted": true,
+        "reason": "The question asks for the scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350 without specifying a customer. The supplied pool contains two calls, each scheduling a demonstration for these same vehicles for different customers at different times: William Brooks on Saturday at noon, and Oliver Carter on Friday afternoon. Both answers are complete and directly supported by the quoted lines. The assessment correctly identifies the scope as insufficient due to the ambiguity, and correctly classifies both answers as conflicting because they are mutually exclusive and both satisfy the literal question. No other plausible conflicts exist in the pool, and no unsupported facts or invented links are present."
+      }
+    }
+  ],
+  "estimated_usd": 0.00271623
+}

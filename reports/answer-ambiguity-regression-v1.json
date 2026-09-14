@@ -1,0 +1,113 @@
+{
+  "results": [
+    {
+      "case": "equivalent_sources",
+      "question": "What is the price of the extended warranty offered by AutoElite Motors?",
+      "call_ids": [
+        "b2c:a05Ws000005SdWcIAK",
+        "b2c:a05Ws000005STyqIAG"
+      ],
+      "expected": "consistent_in_pool",
+      "decision": "consistent_in_pool",
+      "verdict": {
+        "scope_sufficient": true,
+        "reason": "Two calls both state the extended warranty price of $1,299.99, matching the reference.",
+        "answers": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SdWcIAK"
+            ],
+            "answer": "$1,299.99",
+            "relation": "equivalent",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SdWcIAK",
+                "quote": "The extended warranty, priced at $1,299.99, covers most major components for an additional period post the standard warranty."
+              }
+            ]
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STyqIAG"
+            ],
+            "answer": "$1,299.99",
+            "relation": "equivalent",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STyqIAG",
+                "quote": "with the Extended Warranty Plan, you get additional coverage beyond the standard 3-year/36,000-mile warranty for $1,299.99"
+              }
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "type": "object",
+        "quotes_support_complete_answers": true,
+        "relations_correct": true,
+        "scope_assessment_correct": true,
+        "no_plausible_conflicts_omitted": true,
+        "reason": "Both calls explicitly state the extended warranty price as $1,299.99, matching the reference answer. The quotes directly support the complete answer. The relations are correctly marked as equivalent. The scope is sufficient as the question asks for the price, and both calls provide it. No conflicting prices or omitted plausible conflicts exist."
+      }
+    },
+    {
+      "case": "conflicting_appointments",
+      "question": "What is the scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350?",
+      "call_ids": [
+        "b2c:a05Ws000005SZOFIA4",
+        "b2c:a05Ws000005SXxTIAW"
+      ],
+      "expected": "ambiguous",
+      "decision": "ambiguous",
+      "verdict": {
+        "scope_sufficient": false,
+        "reason": "The pool contains product demonstrations of the same two vehicles (Volvo XC60 and Lexus RX 350) for two different customers with different scheduled times, and the question does not specify which customer, so conflicting complete answers exist.",
+        "answers": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZOFIA4"
+            ],
+            "answer": "Saturday at noon.",
+            "relation": "conflicting",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZOFIA4",
+                "quote": "Great, I can stop by on Saturday around noon. Would that work for you?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SZOFIA4",
+                "quote": "Saturday at noon sounds perfect. We’ll be ready for you. Just to recap, you’ll be viewing the Volvo XC60 and Lexus RX 350."
+              }
+            ]
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SXxTIAW"
+            ],
+            "answer": "Friday afternoon.",
+            "relation": "conflicting",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXxTIAW",
+                "quote": "I was thinking about coming by later this week. Maybe Friday afternoon?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXxTIAW",
+                "quote": "Friday sounds perfect! We can arrange for a detailed demonstration of both vehicles."
+              }
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "type": "object",
+        "quotes_support_complete_answers": true,
+        "relations_correct": true,
+        "scope_assessment_correct": true,
+        "no_plausible_conflicts_omitted": true,
+        "reason": "The question asks for the scheduled time for the product demonstration of the Volvo XC60 and Lexus RX 350 without specifying a customer. The pool contains two separate demonstrations for different customers (William Brooks and Oliver Carter) with different scheduled times (Saturday at noon and Friday afternoon, respectively). Both calls explicitly confirm the demonstration of both vehicles and the scheduled times. The reference answer 'Saturday at noon' matches only the first call, but the second call provides a conflicting complete answer. The assessment correctly identifies the scope as insufficient due to the ambiguity and correctly classifies both answers as conflicting. All quotes directly support the answers, and no other plausible conflicts are present."
+      }
+    }
+  ],
+  "estimated_usd": 0.0026184499999999996
+}
