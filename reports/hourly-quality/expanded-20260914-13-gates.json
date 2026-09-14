@@ -1,0 +1,342 @@
+[
+  {
+    "question_id": "b2b-multi_call-7e7389fbd2ee0cdc",
+    "question": "In evaluating TechPulse Solutions, what competitive concern did Anwar Hakim at MedTech Advances raise about CircuitWave, and what past issue did he mention with other vendors' pricing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitive concern Anwar Hakim raised about CircuitWave and the past pricing issue he mentioned with other vendors, both in the context of evaluating TechPulse Solutions",
+        "relationship": "Both facts are objections/concerns raised by the same stakeholder as part of a single vendor-evaluation discussion, forming one coherent picture of his competitive and pricing objections",
+        "reason": "The question asks for two related concerns (competitive worry and past vendor pricing issue) that together describe the customer's evaluation objections \u2014 a natural objection-and-context set, not two unrelated lookups joined by account alone"
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: a competitive concern about CircuitWave and a past issue with other vendors' pricing. The first call (b2b:a05Wt000003SuLsIAK) contains both facts: Anwar mentions CircuitWave's slower feature rollouts and, in the same call, discusses transparency and hidden pricing as a past issue. The second call (b2b:a05Wt000003T2HrIAK) only mentions the past pricing issue, not the CircuitWave concern. Since the first call alone supplies all requested information, the second call is not necessary. The two facts are distinct but both are present in the first call, so no exclusive fact is required from the second call."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: a competitive concern about CircuitWave and a past issue with other vendors' pricing. The first call (b2b:a05Wt000003SuLsIAK) contains both facts: Anwar mentions CircuitWave's slower feature rollouts and, in the same call, discusses transparency and hidden pricing as a past issue. The second call (b2b:a05Wt000003T2HrIAK) only mentions the past pricing issue, not the CircuitWave concern. Since the first call alone supplies all requested information, the second call is not necessary. The two facts are distinct but both are present in the first call, so no exclusive fact is required from the second call."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SuLsIAK",
+                "fact": "Anwar Hakim raised the competitive concern that CircuitWave has slower feature rollouts.",
+                "why_other_call_cannot_supply_it": "The earlier call (2023-09-21) never mentions CircuitWave or any specific competitor weakness; the CircuitWave concern appears only in the 2023-10-03 call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2HrIAK",
+                "fact": "Anwar Hakim said that hidden or non-transparent pricing from other vendors had been an issue for MedTech in the past.",
+                "why_other_call_cannot_supply_it": "The later call (2023-10-03) discusses pricing transparency only as a positive of TechPulse and never states that non-transparent pricing was a past problem with other vendors; that admission occurs only in the 2023-09-21 call."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a named competitive concern about CircuitWave and a past pricing issue with other vendors. Each fact appears in only one of the two calls, and neither call contains both, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SuLsIAK",
+                  "fact": "Anwar Hakim raised the competitive concern that CircuitWave has slower feature rollouts.",
+                  "why_other_call_cannot_supply_it": "The earlier call (2023-09-21) never mentions CircuitWave or any specific competitor weakness; the CircuitWave concern appears only in the 2023-10-03 call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2HrIAK",
+                  "fact": "Anwar Hakim said that hidden or non-transparent pricing from other vendors had been an issue for MedTech in the past.",
+                  "why_other_call_cannot_supply_it": "The later call (2023-10-03) discusses pricing transparency only as a positive of TechPulse and never states that non-transparent pricing was a past problem with other vendors; that admission occurs only in the 2023-09-21 call."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a named competitive concern about CircuitWave and a past pricing issue with other vendors. Each fact appears in only one of the two calls, and neither call contains both, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two specific competitive-positioning facts about the same account (MedTech Advances / Anwar Hakim) evaluating TechPulse Solutions. Call 1 (Oct 3) supplies the CircuitWave concern: Anwar says 'we've noticed CircuitWave's slower feature rollouts.' Call 2 (Sep 21) supplies the past pricing issue: after Nina mentions no hidden fees, Anwar replies 'It's been an issue for us in the past,' referring to non-transparent/hidden pricing. Each source contributes an exclusive requested fact. The gold answer accurately captures both claims without adding unasked extras. The question is naturally worded, adequately scoped by naming the account, contact, and vendor context, and a rep would plausibly want to recall these competitive objections. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Anwar Hakim the statement 'we've noticed CircuitWave's slower feature rollouts. Speed is critical, especially in the healthcare sector\u2026' which fully supports the claim about CircuitWave's slower feature rollouts and the importance of speed in healthcare."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote 'That's definitely reassuring. It's been an issue for us in the past.' contains the pronoun 'It' and the demonstrative 'That's' whose antecedents are not supplied in any cited evidence. The answer_claim specifies 'non-transparent pricing' as the issue, but the quoted passage never mentions pricing, hidden fees, or transparency. The word 'reassuring' suggests a prior statement (likely about transparent pricing) was made, but that prior statement is not cited. Per the audit rules, we cannot assume an adjacent uncited line supplies the fact, and metadata alone does not substitute for the missing dialogue claim."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer makes two factual claims: (1) CircuitWave's slower feature rollouts \u2013 fully supported by evidence index 0. (2) Hidden or non-transparent pricing had been an issue for MedTech in the past \u2013 evidence index 1 only contains the vague pronoun 'It' with no cited antecedent identifying the issue as pricing or non-transparency. Because the second factual claim in the gold_answer is not substantiated by the supplied citations, the combined evidence does not fully support the answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-d1762c1a41c5d29c",
+    "question": "For InfiLink Solutions, what customizability item did Viktor ask Maria to include in the proposal, and what concern did he raise earlier about frequent product updates?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The customizability item Viktor asked Maria to include in the proposal; 2) Viktor's earlier concern about frequent product updates.",
+        "relationship": "Two independent fact lookups joined only by the same account (InfiLink Solutions) and the same call participants.",
+        "reason": "A proposal-inclusion request and a separate concern about product update frequency are distinct information needs; there is no stated link that the update concern motivated the customizability item, so this is two unrelated lookups artificially combined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "decision_criteria",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct facts from two separate calls for the same account (InfiLink Solutions, contact Viktor Ivanov). Call 1 (2023-06-14) contains Viktor asking Maria to include customizability options\u2014specifically the adaptable CircuitAI Innovator\u2014in the proposal. Call 2 (2023-04-17) contains Viktor's earlier remark that frequent updates are 'a double-edged sword,' improving features but risking stability if not managed well. Each source contributes an exclusive requested fact; the gold answer accurately reflects both without adding unasked extras. The question is naturally phrased, adequately scoped by account and contact names, and represents a plausible rep need to recall a customer's decision criteria and prior concerns."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Viktor asking for 'a closer look at potential customizability options' and how they could adapt to their needs. Maria then mentions the CircuitAI Innovator can be adjusted to suit various environments. Viktor responds 'Please ensure it's part of the proposal.' This supports the claim that Viktor asked customizability options, particularly the adaptable CircuitAI Innovator, be included in the proposal."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Viktor saying 'Frequent updates can be a double-edged sword. They're great for improvements, but can also disrupt stability if not managed well.' This exactly matches the answer_claim about frequent updates being a double-edged sword, improving features but risking stability if not managed well."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Viktor asked Maria to include customizability options (particularly the adaptable CircuitAI Innovator) in the proposal. Evidence 1 confirms Viktor's earlier concern that frequent updates are a double-edged sword\u2014improving features but risking stability if not managed well. The metadata confirms both calls relate to InfiLink Solutions and Viktor Ivanov. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-4830e6f5d4367409",
+    "question": "What pricing did Nova Healthcare Tech agree to for the SecureFlow Suite and EduTech Lab?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The agreed pricing for the SecureFlow Suite and EduTech Lab",
+        "relationship": "single commercial quote breakdown covering two line items",
+        "reason": "The question asks for pricing on two items (SecureFlow Suite and EduTech Lab) as part of one agreed commercial arrangement, which reads as a coherent quote lookup rather than two unrelated fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for agreed pricing on two specific products for a named account, which is a natural commercial-terms inquiry for a rep. The dialogue confirms SecureFlow Suite at $8,099.87 for 15 licenses (10% discount) and EduTech Lab at $6,799.83 for 20 units (15% discount), matching the gold answer exactly. The answer includes only the two requested products and omits the unasked OptiPower Manager, satisfying the exactly-requested-answer criterion. Wording is natural, scope is clear (account + products), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Rashid Hadi explicitly states: SecureFlow Suite at $8099.87 for 15 licenses after a 10% discount, and EduTech Lab at $6799.83 for 20 units with a 15% discount. These figures, quantities, and discount percentages match the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains all the factual elements of the gold_answer: SecureFlow Suite at $8,099.87 for 15 licenses with a 10% discount, and EduTech Lab at $6,799.83 for 20 units with a 15% discount. The context metadata confirms the account is Nova Healthcare Tech, matching the question's subject. All amounts, quantities, and discount percentages are directly stated in the quote."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-64a282e69a4d2967",
+    "question": "What pricing did Lara offer Jamal Ali at AgroSmart Innovations for OptiPower Max, and what follow-up did they schedule?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing Lara offered Jamal Ali at AgroSmart Innovations for OptiPower Max and the follow-up they scheduled",
+        "relationship": "single coherent sales interaction: a quote and the resulting next step from the same conversation",
+        "reason": "Pricing offered and the scheduled follow-up are part of one deal progression on the same call, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts (pricing offer and scheduled follow-up) that a rep/account manager would plausibly need to track. Both facts are directly stated in the single transcript: Lara offers a 15% discount on 20 units of OptiPower Max and schedules a detailed follow-up session on November 15th at 2 PM. The gold answer matches the source exactly with no extra or missing information. The question uses natural participant and account names without artificial locator preambles. Scope is adequate\u2014AgroSmart Innovations, Jamal Ali, and OptiPower Max clearly identify the business situation. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Lara Haddad explicitly states 'OptiPower Max comes with a 15% discount on a purchase of 20 units,' which directly supports the answer_claim about the pricing offered."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Lara Haddad explicitly states 'I can arrange a detailed session next week on November 15th at 2 PM. Does that work for you?' This supports the claim of a detailed follow-up session scheduled for November 15th at 2 PM. While phrased as a proposal/question ('Does that work for you?'), the gold_answer says 'a detailed follow-up session on November 15th at 2 PM' which is consistent with Lara arranging/offering this session. The metadata confirms the call date is 2023-11-10, making 'next week' consistent with November 15th."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) 'A 15% discount on a purchase of 20 units' \u2014 directly supported by evidence index 0 where Lara explicitly states this pricing for OptiPower Max. (2) 'A detailed follow-up session on November 15th at 2 PM' \u2014 supported by evidence index 1 where Lara proposes arranging this session. The context metadata confirms the account is AgroSmart Innovations and the contact is Jamal Ali, matching the question. Both factual claims in the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-486f9d8d6b65dc90",
+    "question": "What did Ethan Barnes say about his concerns with competitors' service technicians, and how did Grace respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Ethan Barnes's concerns about competitors' service technicians and Grace's response to them",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single coherent objection-and-response exchange about one business issue (competitor service technician concerns)."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific competitive objection (technician certification) and the rep's response, which is a realistic sales-intelligence need. The dialogue confirms Ethan's concern about competitors' technicians not being factory-certified and Grace's reply about AutoElite's factory-trained technicians maintaining manufacturer standards and providing peace of mind. The gold answer captures both parts precisely without unasked extras. Wording is natural, scope is clear (named participants and topic), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is attributed solely to Ethan Barnes (lines 7-8) and contains only his concern about competitors' technicians not being factory-certified and the resulting quality worry. There is no quoted text from Grace in this evidence item. The answer_claim asserts that 'Grace says factory-trained technicians ensure manufacturer-standard workmanship,' but no Grace dialogue is present in the citation. The quote supports only the Ethan half of the claim."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer makes two factual claims: (1) Ethan worries competitors' technicians aren't factory-certified, raising quality concerns, and (2) Grace said AutoElite's factory-trained technicians maintain manufacturer standards, providing peace of mind. The single supplied evidence item (index 0) only contains Ethan's statement and fully supports claim (1). However, no cited evidence contains any utterance from Grace regarding factory-trained technicians or manufacturer standards. Since the instructions require auditing only supplied cited evidence and not assuming uncited lines supply the fact, claim (2) is unsupported. Therefore the combined citations do not support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-7dd3ba33ee4f30b2",
+    "question": "What pricing did Enzo quote Ethan Harris for the Tesla Model S and Mercedes-Benz E-Class, and is the extended warranty included?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The prices Enzo quoted Ethan Harris for a Tesla Model S and a Mercedes-Benz E-Class, and whether the extended warranty is included",
+        "relationship": "single coherent quote request: pricing for two vehicles in one quote plus a warranty-inclusion detail",
+        "reason": "This is a commercial quote breakdown covering the same quoting interaction; the two vehicle prices and the warranty question are parts of one quote, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific pricing on two vehicle models and whether the extended warranty is included\u2014information a rep/account manager would plausibly need to track. The dialogue confirms $179,999.98 for two Tesla Model S units, $197,999.97 for three Mercedes-Benz E-Class, and the extended warranty as an optional $1,299.99 add-on not included in the base prices. The gold answer matches all source claims exactly with no unasked extras. Wording is natural, scope is clear (named customer, named vehicles, named rep), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set true by convention.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Enzo Rossi explicitly states '$179,999.98 for two units' for the 2024 Tesla Model S and '$197,999.97 for three' for the Mercedes-Benz E-Class, directly matching the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Enzo Rossi states 'optional add-ons like the extended warranty plan of $1,299.99 are available based on your preferences,' confirming the warranty is optional (not included) and priced at $1,299.99. The 'No hidden costs' portion also supports the claim of no hidden costs."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer claims: (1) $179,999.98 for two Tesla Model S units \u2013 supported by index 0; (2) $197,999.97 for three Mercedes-Benz E-Class \u2013 supported by index 0; (3) extended warranty is an optional $1,299.99 add-on, not included \u2013 supported by index 1, which explicitly calls it 'optional' and 'available based on your preferences,' indicating it is not included in the base price. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]
