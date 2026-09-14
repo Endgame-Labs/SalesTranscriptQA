@@ -1,0 +1,238 @@
+{
+  "seed": 2026091416,
+  "stage": "completed RAG checkpoint; customer-history ambiguity audit pending",
+  "questions": [
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-26b4a8325daea976",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "What next steps did Marcus Nguyen agree to for the Quantum Designs opportunity across the two calls?",
+      "gold_answer": "He scheduled a formal meeting for Thursday at 9:45 AM, and agreed to coordinate with his team to set up a product demonstration.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SrSoIAK",
+        "b2b:a05Wt000003SsOtIAK"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SrSoIAK",
+          "answer_claim": "Marcus agreed to a formal meeting Thursday morning at 9:45 AM.",
+          "kind": "dialogue",
+          "line_start": 19,
+          "line_end": 21,
+          "quote": "[2021-10-20T10:04:44] Marcus Nguyen: Yes, let's do that. How does Thursday morning work for you?\n[2021-10-20T10:04:52] Ayumi Shimizu: Thursday morning works perfectly! Let\u2019s set it for 9:45 AM? We\u2019ll send over a calendar invite with the details.",
+          "start": 4079,
+          "end": 4324
+        },
+        {
+          "call_id": "b2b:a05Wt000003SsOtIAK",
+          "answer_claim": "Marcus agreed to coordinate with his team and get back with a suitable time for a demonstration.",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 20,
+          "quote": "[2021-10-21T09:49:55] Ayumi Shimizu: I\u2019m glad that aligns with your goals. Shall we begin scheduling a demonstration for your team to see the TechPulse solutions in action?\n[2021-10-21T09:50:05] Marcus Nguyen: Yes, that would be the next logical step. I\u2019ll coordinate with the team and get back to you with a suitable time.",
+          "start": 4008,
+          "end": 4331
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "26b4a8325daea976f48e049d8853436212546abfa02eccb77d05a7960cf1c706",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-1c8d2aa26ec64765",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "How did Jamal's position on scalability for AquaSys Controls evolve between the initial discussion and the SecureFlow Suite demo?",
+      "gold_answer": "Initially he acknowledged scalability needed further improvement; in the demo he said SecureFlow's modular design lets AquaSys scale up without hiccups.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003T12HIAS",
+        "b2b:a05Wt000003T1jqIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T12HIAS",
+          "answer_claim": "Jamal admits they see opportunities for further improving scalability, while noting continuous investment ensures solutions adapt as the business evolves.",
+          "kind": "dialogue",
+          "line_start": 8,
+          "line_end": 9,
+          "quote": "[2021-05-13T10:02:30] Jamal Abdi: We understand the importance of scalability. While we excel in forward-thinking enhancements, we do see opportunities for further improving our scalability. Rest assured, our continuous investment in technology ensures our solutions are equipped to handle future advancements and can adapt as your business evolves.",
+          "start": 1700,
+          "end": 2049
+        },
+        {
+          "call_id": "b2b:a05Wt000003T1jqIAC",
+          "answer_claim": "Jamal says SecureFlow's modular design lets AquaSys scale up as needs grow without any hiccups.",
+          "kind": "dialogue",
+          "line_start": 6,
+          "line_end": 7,
+          "quote": "[2021-07-20T10:01:15] Jamal Abdi: Exactly, and with SecureFlow's modular design, you can scale up as your needs grow without any hiccups.",
+          "start": 825,
+          "end": 962
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "1c8d2aa26ec64765efe671418ea8468c3b6f0edbb23f856fd3c5f7cf949f593e",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-a680ea73291b5fc0",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What follow-up did Chidi commit to for Innovate Sphere after the call with Thabo Dlamini?",
+      "gold_answer": "Chidi agreed to email detailed documentation and case studies, then touch base the following week for a more in-depth discussion.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003T12KIAS"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T12KIAS",
+          "answer_claim": "I can arrange to send you detailed documentation and case studies.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 17,
+          "quote": "[2023-10-02T15:33:40] Chidi Onyekachi: I can arrange to send you detailed documentation and case studies. They provide excellent insights into how our solutions perform across similar industries.",
+          "start": 2817,
+          "end": 3012
+        },
+        {
+          "call_id": "b2b:a05Wt000003T12KIAS",
+          "answer_claim": "I'll follow up with an email containing all the discussed materials. How about we touch base next week for a more in-depth discussion?",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 19,
+          "quote": "[2023-10-02T15:34:10] Chidi Onyekachi: I'm glad to hear that, Thabo. I'll follow up with an email containing all the discussed materials. How about we touch base next week for a more in-depth discussion?",
+          "start": 3141,
+          "end": 3344
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "a680ea73291b5fc0e5cdeb1eb78857f7258d9d556f00f3e0928965a574eb9973",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-3d4e3c27bf0261f4",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What did Monique commit to regarding TerraSync's early-stage support costs, and when will the updated contract documents be shared?",
+      "gold_answer": "Monique agreed to reassess initial support conditions for the first quarter, and legal will share updated contract documents by the end of the week.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SyNoIAK"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SyNoIAK",
+          "answer_claim": "we agree to reassess initial support conditions for the first quarter",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 19,
+          "quote": "[2023-08-10T14:35:00] Monique Dubois: I believe we can accommodate some adjustments there. How about we agree to reassess initial support conditions for the first quarter? This way, we ensure TerraSync gets all the tailored assistance needed without immediate concern about costs.",
+          "start": 4074,
+          "end": 4354
+        },
+        {
+          "call_id": "b2b:a05Wt000003SyNoIAK",
+          "answer_claim": "legal team share the updated documents for your review by the end of the week",
+          "kind": "dialogue",
+          "line_start": 20,
+          "line_end": 21,
+          "quote": "[2023-08-10T14:35:25] Monique Dubois: Wonderful! Let's proceed with documenting this adjustment in the contract drafts. I'll have our legal team share the updated documents for your review by the end of the week.",
+          "start": 4451,
+          "end": 4663
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "3d4e3c27bf0261f4d2aab858b507fa86fe065e6f44b72f2c62abf504b59e8ad7",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-63749de2504de323",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What are the prices for the Jaguar F-Pace and Audi A6 in Emily Foster's proposal, and what does the maintenance plan cost?",
+      "gold_answer": "The Jaguar F-Pace is $60,999.99, the Audi A6 is $48,999.99, and the maintenance plan is $1,999.99.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SZkmIAG"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SZkmIAG",
+          "answer_claim": "The Jaguar F-Pace is priced at $60,999.99 and the Audi A6 at $48,999.99, with the maintenance plan set at $1,999.99.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 17,
+          "quote": "[2021-07-30T13:03:40] Chinedu Okoye: Yes, we've worked hard to offer packages that bring substantial value. The Jaguar F-Pace is priced at $60,999.99 and the Audi A6 at $48,999.99. Both come with competitive leasing options and the maintenance plan, which is set at $1,999.99.",
+          "start": 2881,
+          "end": 3157
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "63749de2504de3233117c50f986b90014dcca7b82796fcab0bbb71db2a24fa73",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-b7f3bd9f1ade5b48",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "For Zara Phillips' Camry Hybrid quote, which competitor did Hina say has cumbersome transaction processes, and what follow-up was scheduled?",
+      "gold_answer": "High-End Autos Co. has cumbersome transaction processes; a product demo was scheduled for Friday.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SZrHIAW"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SZrHIAW",
+          "answer_claim": "High-End Autos Co. transaction processes can be quite cumbersome",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2023-01-30T14:20:00] Hina Patel: High-End Autos Co. does position themselves well on price initially, but we've noticed their transaction processes can be quite cumbersome. Our process aims to be smoother and more customer-friendly, which many of our clients appreciate.",
+          "start": 1909,
+          "end": 2180
+        },
+        {
+          "call_id": "b2c:a05Ws000005SZrHIAW",
+          "answer_claim": "Product demo scheduled for Friday",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 18,
+          "quote": "[2023-01-30T14:28:00] Hina Patel: Absolutely! We can schedule a product demo at your convenience to go through all the car\u2019s features in detail. Would you be available later this week?\n[2023-01-30T14:30:00] Zara Phillips: Yes, I should be available on Friday. Let\u2019s set it up for then.",
+          "start": 2781,
+          "end": 3066
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "b7f3bd9f1ade5b48f200f365400fb081306ceb07ee208271e3ab34c908bac923",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    }
+  ]
+}
