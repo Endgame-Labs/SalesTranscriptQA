@@ -1,0 +1,512 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "a4e9ba44673d9638449c1d125598b04dcb6b6c050a3eff669dc9f8a846fdafd4",
+  "questions": 5,
+  "counts": {
+    "pass": 2,
+    "fail": 3
+  },
+  "estimated_usd": 0.54734384,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-7e0e21a6e01d9d9d",
+      "question": "For EcoTech Manufacturing's AI-Powered EDA opportunity, what total quote did Elena present to Yen Nguyen in the final proposal call, and what bulk discount applied to OptiPower Manager in the earlier demo?",
+      "gold_answer": "The final quote totaled $29,854.33; OptiPower Manager carried a 10% discount when purchasing 15 units.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZtIAK",
+        "b2b:a05Wt000003SqZuIAK",
+        "b2b:a05Wt000003SrkRIAS",
+        "b2b:a05Wt000003Sru7IAC",
+        "b2b:a05Wt000003SryyIAC",
+        "b2b:a05Wt000003SswjIAC",
+        "b2b:a05Wt000003SvBOIA0",
+        "b2b:a05Wt000003SvhcIAC",
+        "b2b:a05Wt000003SvkrIAC",
+        "b2b:a05Wt000003SvrHIAS",
+        "b2b:a05Wt000003Swx0IAC",
+        "b2b:a05Wt000003SxGQIA0",
+        "b2b:a05Wt000003SxGRIA0",
+        "b2b:a05Wt000003SxWUIA0",
+        "b2b:a05Wt000003SxY7IAK",
+        "b2b:a05Wt000003SxZiIAK",
+        "b2b:a05Wt000003Sy4QIAS",
+        "b2b:a05Wt000003SyE4IAK",
+        "b2b:a05Wt000003SyE5IAK",
+        "b2b:a05Wt000003SyHIIA0",
+        "b2b:a05Wt000003SyUAIA0",
+        "b2b:a05Wt000003SyvbIAC",
+        "b2b:a05Wt000003Sz3gIAC",
+        "b2b:a05Wt000003SzDKIA0",
+        "b2b:a05Wt000003SzRqIAK",
+        "b2b:a05Wt000003T02vIAC",
+        "b2b:a05Wt000003T02wIAC",
+        "b2b:a05Wt000003T04XIAS",
+        "b2b:a05Wt000003T069IAC",
+        "b2b:a05Wt000003T07lIAC",
+        "b2b:a05Wt000003T09NIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Within the 'EcoTech Manufacturing - AI-Powered EDA Solutions' opportunity, Elena Petrova had three calls with Yen Nguyen: a discovery (2023-11-30), a demo (2024-02-12), and a final proposal call (2024-03-17). The final proposal call states the total quote of $29,854.33, and the demo call states the OptiPower Manager bulk discount of 10% on 15 units.",
+        "answers": [
+          {
+            "answer": "In the final proposal call (2024-03-17), Elena Petrova quoted a total of $29,854.33 with products and discounts applied. In the earlier demo call (2024-02-12), OptiPower Manager came with a 10% discount when purchasing 15 units.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2024-03-17T10:01:18] Elena Petrova: That's exactly what we aim for. Now, regarding the quote, with the products and discounts applied, the total amount is $29,854.33. We've ensured it balances efficiency with a favorable total cost of ownership for EcoTech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T04XIAS",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2024-02-12T15:03:45] Elena Petrova: Absolutely. Our pricing for products like PulseSim Pro, SecureFlow Suite, and CloudLink Designer includes attractive discounts. For instance, OptiPower Manager comes with a 10% discount when purchasing 15 units, and EcoPower Convert offers a 15% discount on bulk orders of 20 units. This ensures a favorable total cost of ownership for you."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies EcoTech Manufacturing's 'AI-Powered EDA' opportunity (opportunity_id 006Wt000007B5S3IAK, named 'EcoTech Manufacturing - AI-Powered EDA Solutions'), Elena Petrova as the rep, Yen Nguyen as the contact, a 'final proposal call' with a total quote, and an 'earlier demo' with a bulk discount on OptiPower Manager. The final proposal call is b2b:a05Wt000003SxGRIA0 (2024-03-17), where Elena explicitly states the total quote of $29,854.33. The earlier demo is b2b:a05Wt000003T04XIAS (2024-02-12), where Elena states OptiPower Manager comes with a 10% discount when purchasing 15 units. Both calls are within the same opportunity and involve the same rep/contact pair.",
+        "answers": [
+          {
+            "answer": "In the final proposal call on 2024-03-17, Elena Petrova presented a total quote of $29,854.33 to Yen Nguyen. In the earlier demo call on 2024-02-12, the bulk discount applied to OptiPower Manager was 10% (when purchasing 15 units).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2024-03-17T10:01:18] Elena Petrova: That's exactly what we aim for. Now, regarding the quote, with the products and discounts applied, the total amount is $29,854.33. We've ensured it balances efficiency with a favorable total cost of ownership for EcoTech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T04XIAS",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2024-02-12T15:03:45] Elena Petrova: Absolutely. Our pricing for products like PulseSim Pro, SecureFlow Suite, and CloudLink Designer includes attractive discounts. For instance, OptiPower Manager comes with a 10% discount when purchasing 15 units, and EcoPower Convert offers a 15% discount on bulk orders of 20 units. This ensures a favorable total cost of ownership for you."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same total quote of $29,854.33 presented by Elena Petrova to Yen Nguyen in the final proposal call, and both identify the bulk discount on OptiPower Manager as 10% when purchasing 15 units in the earlier demo. The reference likewise covers both requested facts: the $29,854.33 total quote and the 10% bulk discount for 15 units of OptiPower Manager. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-0afc80624f1f7d8a",
+      "question": "What integration concern did Ravi Kapoor raise about the SecureFlow Suite for SolarWind Innovations, and how did Emmanuel respond?",
+      "gold_answer": "Ravi worried about integrating with SolarWind's customized setup; Emmanuel said SecureFlow Suite is customizable, tailors to unique workflows, and support assists to minimize disruption.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgOIAS",
+        "b2b:a05Wt000003SrcSIAS",
+        "b2b:a05Wt000003SsLaIAK",
+        "b2b:a05Wt000003StFyIAK",
+        "b2b:a05Wt000003StW6IAK",
+        "b2b:a05Wt000003StcnIAC",
+        "b2b:a05Wt000003StkcIAC",
+        "b2b:a05Wt000003StmKIAS",
+        "b2b:a05Wt000003Sv0AIAS",
+        "b2b:a05Wt000003SvUoIAK",
+        "b2b:a05Wt000003SwCGIA0",
+        "b2b:a05Wt000003Swc2IAC",
+        "b2b:a05Wt000003Sx5DIAS",
+        "b2b:a05Wt000003SxJgIAK",
+        "b2b:a05Wt000003Sxd0IAC",
+        "b2b:a05Wt000003SxjQIAS",
+        "b2b:a05Wt000003SxjRIAS",
+        "b2b:a05Wt000003Sy4VIAS",
+        "b2b:a05Wt000003SysPIAS",
+        "b2b:a05Wt000003Sz6uIAC",
+        "b2b:a05Wt000003SzYJIA0",
+        "b2b:a05Wt000003SztLIAS",
+        "b2b:a05Wt000003T02xIAC",
+        "b2b:a05Wt000003T0mGIAS",
+        "b2b:a05Wt000003T15VIAS",
+        "b2b:a05Wt000003T24oIAC",
+        "b2b:a05Wt000003T2eHIAS",
+        "b2b:a05Wt000003T2pXIAS",
+        "b2b:a05Wt000003T32RIAS",
+        "b2b:a05Wt000003T3tdIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Ravi Kapoor had two calls with Emmanuel Okonkwo (same opportunity, 'TechPulse and SolarWind Strategic Partnership'), and each contains a distinct integration-related concern about the SecureFlow Suite with a different response from Emmanuel: the 2023-09-14 call raises how SecureFlow Suite integrates with SolarWind's customized existing systems, while the 2023-09-09 call raises complexity of implementations (citing Quantum Circuits Inc.) in the context of SecureFlow Suite. Both are complete, materially different answers fitting the question's wording.",
+        "answers": [
+          {
+            "answer": "Ravi Kapoor asked how the SecureFlow Suite would integrate with SolarWind's existing systems, noting they have quite a customized setup. Emmanuel responded that the SecureFlow Suite is built for seamless integration—it's customizable and can be tailored to fit unique workflows, and their support team stands ready to assist with the integration, ensuring minimal disruption.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcSIAS",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-09-14T11:31:45] Ravi Kapoor: I see. And how does that integrate with existing systems, since we have quite a customized setup here?"
+              }
+            ]
+          },
+          {
+            "answer": "While discussing the SecureFlow Suite, Ravi Kapoor raised the concern that implementations can be complex, noting SolarWind had previously looked at Quantum Circuits Inc. and found their implementation complex, requiring significant internal adjustments. Emmanuel responded that complex systems can add unnecessary layers, and that with the SecureFlow Suite TechPulse has streamlined that process while enhancing AI-powered features to align with EDA trends.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StW6IAK",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-09-09T16:01:06] Ravi Kapoor: Yes, indeed. We’ve looked at Quantum Circuits Inc. previously, but found their implementation to be a bit complex, requiring significant internal adjustments."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Ravi Kapoor, Emmanuel, SecureFlow Suite, and SolarWind Innovations. Only call b2b:a05Wt000003SrcSIAS (2023-09-14) features both Ravi Kapoor and Emmanuel Okonkwo discussing the SecureFlow Suite. In that call, Ravi raises an integration concern about how SecureFlow Suite integrates with SolarWind's existing customized setup, and Emmanuel responds that it is built for seamless integration, is customizable, and that the support team will assist with minimal disruption.",
+        "answers": [
+          {
+            "answer": "Ravi Kapoor raised the concern of how the SecureFlow Suite would integrate with SolarWind Innovations' existing systems, noting that they have 'quite a customized setup.' Emmanuel Okonkwo responded that the SecureFlow Suite is built for seamless integration, is customizable and can be tailored to fit unique workflows, and that their support team stands ready to assist with the integration, ensuring minimal disruption.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcSIAS",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-09-14T11:31:45] Ravi Kapoor: I see. And how does that integrate with existing systems, since we have quite a customized setup here?\n[2023-09-14T11:32:05] Emmanuel Okonkwo: That's a great question. The SecureFlow Suite is built for seamless integration. It's customizable and can be tailored to fit unique workflows. Plus, our support team stands ready to assist with the integration, ensuring minimal disruption."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-406d53ccd8e024d1",
+      "question": "What next step did Nguyen commit to for EcoTech Manufacturing after discussing the QuantumPCB Modeler and CryptGuard Module?",
+      "gold_answer": "Nguyen committed to preparing a tailored proposal detailing how each solution fits EcoTech's objectives and outlining an integration plan.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZtIAK",
+        "b2b:a05Wt000003SqZuIAK",
+        "b2b:a05Wt000003SrkRIAS",
+        "b2b:a05Wt000003Sru7IAC",
+        "b2b:a05Wt000003SryyIAC",
+        "b2b:a05Wt000003SswjIAC",
+        "b2b:a05Wt000003SvBOIA0",
+        "b2b:a05Wt000003SvhcIAC",
+        "b2b:a05Wt000003SvkrIAC",
+        "b2b:a05Wt000003SvrHIAS",
+        "b2b:a05Wt000003Swx0IAC",
+        "b2b:a05Wt000003SxGQIA0",
+        "b2b:a05Wt000003SxGRIA0",
+        "b2b:a05Wt000003SxWUIA0",
+        "b2b:a05Wt000003SxY7IAK",
+        "b2b:a05Wt000003SxZiIAK",
+        "b2b:a05Wt000003Sy4QIAS",
+        "b2b:a05Wt000003SyE4IAK",
+        "b2b:a05Wt000003SyE5IAK",
+        "b2b:a05Wt000003SyHIIA0",
+        "b2b:a05Wt000003SyUAIA0",
+        "b2b:a05Wt000003SyvbIAC",
+        "b2b:a05Wt000003Sz3gIAC",
+        "b2b:a05Wt000003SzDKIA0",
+        "b2b:a05Wt000003SzRqIAK",
+        "b2b:a05Wt000003T02vIAC",
+        "b2b:a05Wt000003T02wIAC",
+        "b2b:a05Wt000003T04XIAS",
+        "b2b:a05Wt000003T069IAC",
+        "b2b:a05Wt000003T07lIAC",
+        "b2b:a05Wt000003T09NIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Nguyen had two calls with EcoTech Manufacturing (Lucas Torres) that involve QuantumPCB Modeler and CryptGuard Module. In the 2021-03-17 call the products are discussed substantively and Nguyen commits to preparing/sending a tailored proposal. In the 2021-03-09 call Nguyen proposes a detailed follow-up call diving into QuantumPCB Modeler and CryptGuard Module and commits to following up with suggested meeting times. These are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "Nguyen committed to preparing a tailored proposal for Lucas's review, detailing how each solution (QuantumPCB Modeler, CryptGuard Module, etc.) fits EcoTech's objectives with a clear integration plan, and to get it over to him soon.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SswjIAC",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2021-03-17T15:30:50] Nguyen Thi Minh: Great! Let’s start with how our QuantumPCB Modeler and CryptGuard Module can support you. Our QuantumPCB Modeler, for instance, is designed to streamline PCB design with minimized material waste, aligning perfectly with EcoTech's eco-friendly manufacturing ethos.\n[2021-03-17T15:31:05] Lucas Torres: That sounds promising. How about data security? That's an area we've seen some of our competitors struggle with."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SswjIAC",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2021-03-17T15:33:30] Lucas Torres: Impressive. We definitely see the potential for EcoTech in these capabilities. What's next in terms of steps forward?\n[2021-03-17T15:33:45] Nguyen Thi Minh: The next logical step would be preparing a tailored proposal for your review. This would detail how each of our solutions fits into your objectives and outline a clear integration plan.\n[2021-03-17T15:34:00] Lucas Torres: Sounds like a plan, Nguyen. I'm looking forward to reading through it and seeing how we could strategically fit these technologies into what we're already doing."
+              }
+            ]
+          },
+          {
+            "answer": "Nguyen committed to a more detailed follow-up call diving deeper into how QuantumPCB Modeler and CryptGuard Module can assist EcoTech's sustainability goals, and to follow up with suggested times for the next meeting.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyE5IAK",
+                "line_start": 14,
+                "line_end": 18,
+                "quote": "[2021-03-09T14:35:40] Nguyen Thi Minh: Absolutely, and that's why we are a strong fit. As we continue this conversation, I'd be happy to offer more detailed insights into our security features during a follow-up meeting.\n[2021-03-09T14:36:00] Lucas Torres: I would appreciate that, Nguyen. Can we also discuss how TechPulse's solutions align with our long-term sustainability objectives in future calls?\n[2021-03-09T14:36:20] Nguyen Thi Minh: Of course, Lucas. Our next step could be a more detailed follow-up call where we dive deeper into how QuantumPCB Modeler and CryptGuard Module can assist EcoTech in achieving its sustainability goals.\n[2021-03-09T14:36:40] Lucas Torres: Sounds like a plan. Let's continue the conversation, Nguyen. Thank you for the insights today."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Only one call in the supplied history features Nguyen Thi Minh discussing both the QuantumPCB Modeler and CryptGuard Module with EcoTech Manufacturing: call b2b:a05Wt000003SswjIAC (2021-03-17). In that call, after discussing both products, Nguyen committed to preparing a tailored proposal detailing how each solution fits EcoTech's objectives and outlining a clear integration plan. The earlier Nguyen call (b2b:a05Wt000003SyE5IAK, 2021-03-09) only mentions QuantumPCB Modeler and CryptGuard Module as topics for a future follow-up call, not as products already discussed in that call.",
+        "answers": [
+          {
+            "answer": "Nguyen committed to preparing a tailored proposal for Lucas Torres's review that would detail how each of TechPulse's solutions fits into EcoTech's objectives and outline a clear integration plan. She also said she would get it over to him soon and invited him to reach out with any questions in the meantime.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SswjIAC",
+                "line_start": 13,
+                "line_end": 17,
+                "quote": "[2021-03-17T15:33:30] Lucas Torres: Impressive. We definitely see the potential for EcoTech in these capabilities. What's next in terms of steps forward?\n[2021-03-17T15:33:45] Nguyen Thi Minh: The next logical step would be preparing a tailored proposal for your review. This would detail how each of our solutions fits into your objectives and outline a clear integration plan.\n[2021-03-17T15:34:00] Lucas Torres: Sounds like a plan, Nguyen. I'm looking forward to reading through it and seeing how we could strategically fit these technologies into what we're already doing.\n[2021-03-17T15:34:15] Nguyen Thi Minh: Fantastic, Lucas. I'll make sure to get that over to you soon. In the meantime, if any questions come up, just let me know."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-8fa6f42babd016d3",
+      "question": "What pricing did Rajeev quote Emily Novak for the Eco-Friendly Hybrid and Protection Package, and what did he commit to sending her?",
+      "gold_answer": "Toyota Camry Hybrid $25,999.99, Comprehensive Maintenance Plan $1,999.99, Extended Warranty Plan $1,299.99; Rajeev committed to sending a detailed proposal covering pricing, maintenance, warranty, and financing by end of week.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMiiIAG",
+        "b2c:a05Ws000005SMijIAG",
+        "b2c:a05Ws000005SMqkIAG",
+        "b2c:a05Ws000005SOSnIAO",
+        "b2c:a05Ws000005SPOpIAO",
+        "b2c:a05Ws000005SQRLIA4",
+        "b2c:a05Ws000005SRX4IAO",
+        "b2c:a05Ws000005SRdYIAW",
+        "b2c:a05Ws000005SS3NIAW",
+        "b2c:a05Ws000005STFYIA4",
+        "b2c:a05Ws000005STYsIAO",
+        "b2c:a05Ws000005SU3WIAW",
+        "b2c:a05Ws000005SU3XIAW",
+        "b2c:a05Ws000005SUJfIAO",
+        "b2c:a05Ws000005SUd1IAG",
+        "b2c:a05Ws000005SVIxIAO",
+        "b2c:a05Ws000005SW27IAG",
+        "b2c:a05Ws000005SWoVIAW",
+        "b2c:a05Ws000005SXEIIA4",
+        "b2c:a05Ws000005SXxUIAW",
+        "b2c:a05Ws000005SYQUIA4",
+        "b2c:a05Ws000005SZ6QIAW",
+        "b2c:a05Ws000005SZCsIAO",
+        "b2c:a05Ws000005SZG5IAO",
+        "b2c:a05Ws000005SZHhIAO",
+        "b2c:a05Ws000005SZJJIA4",
+        "b2c:a05Ws000005SZKvIAO"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 12,
+            "normalized_end": 13
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 10,
+            "normalized_end": 11
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Two Rajeev Nair calls exist on the 'Eco-Friendly Hybrid and Protection Package' opportunity (2023-03-01 and 2023-03-14), each with different quoted pricing and a different commitment to send something to Emily.",
+        "answers": [
+          {
+            "answer": "On the 2023-03-01 call, Rajeev quoted a total of $29,299.97 for the Camry Hybrid including the maintenance and warranty plans, and committed to sending a calendar invite for a March 14th 3:30 PM meeting to prepare a formal proposal.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STYsIAO",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-03-01T14:33:12] Rajeev Nair: At AutoElite Motors, we pride ourselves on transparent pricing. There are no hidden fees, and everything is laid out clearly. The total for the Camry Hybrid, including the maintenance and warranty plans, is $29,299.97. How does that sound to you?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005STYsIAO",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2023-03-01T14:33:45] Rajeev Nair: Great to hear! We can arrange a more detailed discussion to go over your specific needs more thoroughly. Would March 14th at 3:30 PM work for you to explore further and prepare a formal proposal?\n[2023-03-01T14:34:00] Emily Novak: Yes, that works for me. Looking forward to it."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2023-03-14 call, Rajeev quoted itemized pricing: Toyota Camry Hybrid at $25,999.99, Comprehensive Maintenance Plan at $1,999.99, and Extended Warranty Plan at $1,299.99, and committed to sending a detailed proposal covering pricing, maintenance, warranty, and financing by the end of that week.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMiiIAG",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-03-14T15:32:32] Rajeev Nair: Exactly! Now, in terms of pricing, the Toyota Camry Hybrid is priced at $25,999.99. The Comprehensive Maintenance Plan is $1,999.99, and our Extended Warranty Plan is $1,299.99. Altogether, it's a great value package."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMiiIAG",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2023-03-14T15:33:50] Emily Novak: That sounds like it would be helpful. I’d really like to see a formal proposal with everything we discussed."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Rajeev, Emily Novak, and the specific opportunity 'Eco-Friendly Hybrid and Protection Package.' Two calls match that opportunity (b2c:a05Ws000005STYsIAO on 2023-03-01 and b2c:a05Ws000005SMiiIAG on 2023-03-14), both with Rajeev Nair. The March 14 call is the one where Rajeev quotes itemized pricing and commits to sending a detailed proposal. The March 1 call quotes a total package price ($29,299.97) but does not break out individual component prices and the commitment there is a calendar invite, not a document to send. The question's phrasing 'what pricing did Rajeev quote' and 'what did he commit to sending her' aligns with the March 14 call where he gives specific per-item prices and commits to sending a detailed proposal.",
+        "answers": [
+          {
+            "answer": "Rajeev quoted Emily Novak the following pricing for the Eco-Friendly Hybrid and Protection Package: the 2022 Toyota Camry Hybrid at $25,999.99, the Comprehensive Maintenance Plan at $1,999.99, and the Extended Warranty Plan at $1,299.99. He committed to preparing and sending her a detailed proposal outlining all aspects—pricing, maintenance, warranty, and financing—by the end of that week.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMiiIAG",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-03-14T15:32:32] Rajeev Nair: Exactly! Now, in terms of pricing, the Toyota Camry Hybrid is priced at $25,999.99. The Comprehensive Maintenance Plan is $1,999.99, and our Extended Warranty Plan is $1,299.99. Altogether, it's a great value package."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMiiIAG",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2023-03-14T15:33:50] Emily Novak: That sounds like it would be helpful. I’d really like to see a formal proposal with everything we discussed.\n[2023-03-14T15:34:05] Rajeev Nair: Absolutely, I'll prepare and send a detailed proposal that outlines all aspects—pricing, maintenance, warranty, and financing. Expect that by the end of this week."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-5d2b4e7ca1190f9c",
+      "question": "What did Sophia Patel say draws her to the Tesla Model S versus the BMW X5 M?",
+      "gold_answer": "She likes the Tesla's sleek design and innovative tech features, and the BMW's sporty drive and luxury feel.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNEKIA4",
+        "b2c:a05Ws000005SNVDIA4",
+        "b2c:a05Ws000005SNVEIA4",
+        "b2c:a05Ws000005SPlPIAW",
+        "b2c:a05Ws000005SQ4sIAG",
+        "b2c:a05Ws000005SQMiIAO",
+        "b2c:a05Ws000005SRNOIA4",
+        "b2c:a05Ws000005SSl0IAG",
+        "b2c:a05Ws000005SSmbIAG",
+        "b2c:a05Ws000005ST17IAG",
+        "b2c:a05Ws000005ST4NIAW",
+        "b2c:a05Ws000005SUGUIA4",
+        "b2c:a05Ws000005SUoMIAW",
+        "b2c:a05Ws000005SUpvIAG",
+        "b2c:a05Ws000005SUrbIAG",
+        "b2c:a05Ws000005SUwQIAW",
+        "b2c:a05Ws000005SV4YIAW",
+        "b2c:a05Ws000005SVEDIA4",
+        "b2c:a05Ws000005SVFnIAO",
+        "b2c:a05Ws000005SW0XIAW",
+        "b2c:a05Ws000005SW5NIAW",
+        "b2c:a05Ws000005SXRKIA4",
+        "b2c:a05Ws000005SYNQIA4",
+        "b2c:a05Ws000005SYgfIAG",
+        "b2c:a05Ws000005SYrzIAG",
+        "b2c:a05Ws000005SZEUIA4",
+        "b2c:a05Ws000005Sa7OIAS",
+        "b2c:a05Ws000005SafEIAS",
+        "b2c:a05Ws000005SbOMIA0",
+        "b2c:a05Ws000005SbUpIAK",
+        "b2c:a05Ws000005SbZdIAK",
+        "b2c:a05Ws000005SbbFIAS",
+        "b2c:a05Ws000005SbcrIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (2024-05-15, Noah Brown) directly asks Sophia what draws her to the Tesla Model S versus the BMW X5 M, and she gives a direct comparative answer. Other calls discuss the Tesla or BMW separately or with different models, not this specific comparison.",
+        "answers": [
+          {
+            "answer": "Sophia Patel said she loves the sleek design and innovative tech features of the Tesla Model S, while the BMW X5 M appeals to her with its sporty drive and luxury feel.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNVDIA4",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2024-05-15T10:00:25] Noah Brown: Fantastic. I want to ensure we explore all options that fit your lifestyle and preferences. Let's start with some models you showed interest in, like the 2024 Tesla Model S and the 2022 BMW X5 M. What draws you to these vehicles?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks what Sophia Patel said draws her to the Tesla Model S versus the BMW X5 M. Only one call contains Sophia directly comparing these two specific vehicles and stating what draws her to each: call b2c:a05Ws000005SNVDIA4 (2024-05-15, Noah Brown, opportunity 'Sophia Patel - Winter Clearance Luxury Vehicle Exploration'). In that call, Noah asks 'What draws you to these vehicles?' referring to the 2024 Tesla Model S and the 2022 BMW X5 M, and Sophia responds with her specific attractions to each. No other call contains Sophia making this exact Tesla Model S vs. BMW X5 M comparison in her own words.",
+        "answers": [
+          {
+            "answer": "Sophia Patel said she loves the sleek design and innovative tech features of the Tesla Model S, while the BMW X5 M appeals to her with its sporty drive and luxury feel.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNVDIA4",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2024-05-15T10:00:25] Noah Brown: Fantastic. I want to ensure we explore all options that fit your lifestyle and preferences. Let's start with some models you showed interest in, like the 2024 Tesla Model S and the 2022 BMW X5 M. What draws you to these vehicles?\n[2024-05-15T10:00:40] Sophia Patel: Well, I love the sleek design and innovative tech features of the Tesla. The BMW, on the other hand, appeals to me with its sporty drive and luxury feel."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers are identical, stating Sophia Patel loves the Tesla Model S's sleek design and innovative tech features, and the BMW X5 M's sporty drive and luxury feel. The reference covers the same facts: Tesla's sleek design and innovative tech features, and BMW's sporty drive and luxury feel. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "question_id": "b2b-multi_call-7e0e21a6e01d9d9d",
+    "question": "For EcoTech Manufacturing's AI-Powered EDA opportunity, what total quote did Elena present to Yen Nguyen in the final proposal call, and what bulk discount applied to OptiPower Manager in the earlier demo?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total quote presented in the final proposal call and the bulk discount on OptiPower Manager from the earlier demo, both for the EcoTech Manufacturing AI-Powered EDA opportunity",
+        "relationship": "Comparison of the same commercial terms (pricing/discount) for the same product and opportunity across the demo and final proposal stages",
+        "reason": "Both facts concern the same commercial issue\u2014pricing and discounts for OptiPower Manager in the same opportunity\u2014so this is a coherent comparison of commercial terms across calls, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "fact": "The final quote total was $29,854.33.",
+                "why_other_call_cannot_supply_it": "The earlier demo call does not mention any final quote or total amount; it only discusses pricing discounts."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T04XIAS",
+                "fact": "OptiPower Manager has a 10% discount when purchasing 15 units.",
+                "why_other_call_cannot_supply_it": "The final proposal call does not mention any specific discount for OptiPower Manager; it only states the total quote."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the final quote total and a specific bulk discount. Each fact is only present in one of the two calls, and neither call contains both facts. Therefore, both calls are necessary to answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGRIA0",
+                  "fact": "The final quote total was $29,854.33.",
+                  "why_other_call_cannot_supply_it": "The earlier demo call does not mention any final quote or total amount; it only discusses pricing discounts."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T04XIAS",
+                  "fact": "OptiPower Manager has a 10% discount when purchasing 15 units.",
+                  "why_other_call_cannot_supply_it": "The final proposal call does not mention any specific discount for OptiPower Manager; it only states the total quote."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the final quote total and a specific bulk discount. Each fact is only present in one of the two calls, and neither call contains both facts. Therefore, both calls are necessary to answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "fact": "Final proposal quote totaled $29,854.33",
+                "why_other_call_cannot_supply_it": "The earlier demo call contains no total quote figure; the final total is only stated in the proposal call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T04XIAS",
+                "fact": "OptiPower Manager had a 10% discount when purchasing 15 units",
+                "why_other_call_cannot_supply_it": "The final proposal call mentions discounts only in aggregate and never states the OptiPower Manager bulk discount terms; those details appear only in the demo call."
+              }
+            ],
+            "reason": "The question asks for two distinct commercial facts: the total quote from the final proposal call and the specific bulk discount from the demo. Each fact appears only in one call, and both are explicitly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGRIA0",
+                  "fact": "Final proposal quote totaled $29,854.33",
+                  "why_other_call_cannot_supply_it": "The earlier demo call contains no total quote figure; the final total is only stated in the proposal call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T04XIAS",
+                  "fact": "OptiPower Manager had a 10% discount when purchasing 15 units",
+                  "why_other_call_cannot_supply_it": "The final proposal call mentions discounts only in aggregate and never states the OptiPower Manager bulk discount terms; those details appear only in the demo call."
+                }
+              ],
+              "reason": "The question asks for two distinct commercial facts: the total quote from the final proposal call and the specific bulk discount from the demo. Each fact appears only in one call, and both are explicitly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two specific commercial facts: the total quote from the final proposal call and the bulk discount on OptiPower Manager from the earlier demo. Call 1 (2024-03-17) contains Elena stating the total quote of $29,854.33; Call 2 (2024-02-12) contains the 10% discount on OptiPower Manager for 15 units. Each source contributes an exclusive requested fact. The question naturally identifies the account (EcoTech Manufacturing), opportunity (AI-Powered EDA), rep (Elena), and contact (Yen Nguyen) without artificial locator preambles. The gold answer states exactly the two requested facts with no unasked extras. Wording is natural and a rep/AM would plausibly need this pricing information."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Elena Petrova on 2024-03-17 explicitly states: 'with the products and discounts applied, the total amount is $29,854.33.' This directly supports the answer_claim that Elena states the quote total is $29,854.33. The call metadata confirms this is the EcoTech Manufacturing / Yen Nguyen opportunity, and the date (2024-03-17) aligns with the 'final proposal call' context."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Elena Petrova on 2024-02-12 explicitly states: 'OptiPower Manager comes with a 10% discount when purchasing 15 units.' This directly supports the answer_claim about the 10% bulk discount for 15 units of OptiPower Manager. The call metadata confirms this is the same EcoTech Manufacturing / Yen Nguyen opportunity, and the earlier date (2024-02-12) aligns with the 'earlier demo' context."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are fully supported by the cited evidence: (1) the final quote total of $29,854.33 is explicitly stated by Elena in the March 17 call (index 0), and (2) the 10% discount on OptiPower Manager for 15 units is explicitly stated by Elena in the February 12 call (index 1). The metadata confirms both calls relate to the EcoTech Manufacturing AI-Powered EDA opportunity with contact Yen Nguyen. The chronological ordering (Feb demo, Mar final proposal) is consistent with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-bace67636f650312",
+    "question": "What challenges did Elena Horvat of QuantumLeap Computing raise on the initial call, and what adoption concern did she raise in the follow-up discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Challenges raised by Elena Horvat on the initial call, plus a separate adoption concern she raised in a follow-up discussion",
+        "relationship": "two independent fact lookups joined only by the same person across two calls",
+        "reason": "The initial-call challenges and the follow-up adoption concern are distinct information needs; being about the same person/call thread is not enough to connect them, and no single business issue ties the two facts together."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for challenges from the initial call and an adoption concern from the follow-up. Call 1 (2020-09-16) has Elena stating 'optimizing our design processes and enhancing data security without compromising performance.' Call 2 (2020-09-29) has her raising user-friendliness during initial adoption, citing past challenges, and Chidi offering training. Each source contributes an exclusive requested fact. The answer matches the sources precisely without unasked extras. The question naturally identifies the account and contact, and a rep would plausibly want to recall these points.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Elena Horvat on 2020-09-16 explicitly states: 'we're looking at optimizing our design processes and enhancing data security without compromising performance.' This directly supports the answer_claim about optimizing design processes and enhancing data security without compromising performance."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2020-09-29 call shows Elena Horvat raising concern about user-friendliness 'especially during the initial adoption phase' and noting 'We've seen some challenges with that in the past.' Chidi Onyekachi responds by mentioning 'comprehensive training programs to support your team throughout the process.' This supports the answer_claim about user-friendliness during initial adoption, past challenges, and training being offered."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: Initially: optimizing design processes and enhancing data security without compromising performance (supported by index 0). Follow-up: user-friendliness during initial adoption, citing past challenges; training was offered (supported by index 1). Both cited evidence items fully support every factual claim in the gold_answer. The context metadata confirms Elena Horvat of QuantumLeap Computing was the contact on both calls."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-0afc80624f1f7d8a",
+    "question": "What integration concern did Ravi Kapoor raise about the SecureFlow Suite for SolarWind Innovations, and how did Emmanuel respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The integration concern Ravi Kapoor raised about SecureFlow Suite for SolarWind Innovations and Emmanuel's response to it",
+        "relationship": "single coherent objection-and-response pair about the same issue",
+        "reason": "This is one objection (integration concern) and its response, addressing the same business issue within the same call context."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question targets a specific integration objection raised by Ravi Kapoor about SecureFlow Suite at SolarWind Innovations and Emmanuel's response\u2014plausible QA for a rep reviewing a discovery call. The gold answer accurately captures Ravi's concern about integrating with SolarWind's customized setup and Emmanuel's reply that SecureFlow Suite is customizable, tailors to unique workflows, and support assists to minimize disruption, all directly supported by the dialogue. Wording is natural, scope is adequate (names the product, account, and contact), and no locator preamble or answer leakage is present. Single-call question so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Ravi Kapoor asking 'how does that integrate with existing systems, since we have quite a customized setup here?' This directly supports the claim that Ravi asks how SecureFlow integrates with their customized setup. The speaker attribution, the concern about integration, and the mention of a customized setup are all present."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Emmanuel Okonkwo stating that SecureFlow Suite is 'customizable and can be tailored to fit unique workflows' and that 'our support team stands ready to assist with the integration, ensuring minimal disruption.' This directly supports the claim that Emmanuel explains it is customizable and support assists with integration."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Ravi worried about integrating with SolarWind's customized setup \u2013 supported by index 0 where Ravi asks about integration with their customized setup. (2) Emmanuel said SecureFlow Suite is customizable \u2013 supported by index 1 ('It's customizable'). (3) Tailors to unique workflows \u2013 supported by index 1 ('can be tailored to fit unique workflows'). (4) Support assists to minimize disruption \u2013 supported by index 1 ('our support team stands ready to assist with the integration, ensuring minimal disruption'). All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-406d53ccd8e024d1",
+    "question": "What next step did Nguyen commit to for EcoTech Manufacturing after discussing the QuantumPCB Modeler and CryptGuard Module?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Nguyen committed to for EcoTech Manufacturing following the discussion of QuantumPCB Modeler and CryptGuard Module.",
+        "relationship": "single coherent request: a next-step commitment arising from one product discussion in the same call.",
+        "reason": "The question asks for one next-step commitment tied to a single call's product discussion; the two products are part of the same conversation context, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what next step Nguyen committed to after discussing two specific products with EcoTech Manufacturing. The dialogue clearly shows Nguyen stating: 'The next logical step would be preparing a tailored proposal for your review. This would detail how each of our solutions fits into your objectives and outline a clear integration plan.' The gold answer faithfully captures this. The question is naturally worded, identifies the account (EcoTech Manufacturing), the rep (Nguyen), and the products discussed (QuantumPCB Modeler, CryptGuard Module), giving adequate scope. A rep/account manager would plausibly want to know the committed next step. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nguyen Thi Minh explicitly states: 'The next logical step would be preparing a tailored proposal for your review. This would detail how each of our solutions fits into your objectives and outline a clear integration plan.' This directly supports the answer_claim that the next step is preparing a tailored proposal detailing fit and integration plan. The speaker is identified as Nguyen, the account metadata confirms EcoTech Manufacturing, and the content matches the claim about detailing how solutions fit objectives and outlining an integration plan."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Nguyen committed to preparing a tailored proposal detailing how each solution fits EcoTech's objectives and outlining an integration plan. The cited evidence (index 0) contains Nguyen's exact words committing to 'preparing a tailored proposal' that would 'detail how each of our solutions fits into your objectives and outline a clear integration plan.' The context metadata confirms the account is EcoTech Manufacturing. The question references QuantumPCB Modeler and CryptGuard Module, which are not explicitly named in the cited quote, but the quote refers to 'each of our solutions' in the context of this call, and the gold_answer's factual claims about the next step (tailored proposal, detailing fit, integration plan) are fully supported by the cited evidence. The commitment language ('The next logical step would be') is a clear commitment to the action."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-8fa6f42babd016d3",
+    "question": "What pricing did Rajeev quote Emily Novak for the Eco-Friendly Hybrid and Protection Package, and what did he commit to sending her?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price Rajeev quoted Emily Novak for the Eco-Friendly Hybrid with Protection Package, and what he committed to sending her",
+        "relationship": "single coherent quote interaction: the pricing and the follow-up commitment both stem from the same quote discussion",
+        "reason": "This is one commercial quote breakdown plus the natural next step (what he promised to send) arising from that same quote, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks for pricing and a follow-up commitment from a specific sales conversation. The dialogue confirms all three prices ($25,999.99 Camry Hybrid, $1,999.99 Comprehensive Maintenance Plan, $1,299.99 Extended Warranty Plan) and Rajeev's commitment to send a detailed proposal covering pricing, maintenance, warranty, and financing by end of week. The gold answer matches the source exactly with no unasked extras. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Rajeev Nair explicitly states the Toyota Camry Hybrid at $25,999.99, the Comprehensive Maintenance Plan at $1,999.99, and the Extended Warranty Plan at $1,299.99, matching the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Rajeev Nair explicitly commits to preparing and sending a detailed proposal outlining pricing, maintenance, warranty, and financing, with delivery by the end of this week, matching the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support every factual element in the gold_answer: the three specific prices for the Camry Hybrid, Comprehensive Maintenance Plan, and Extended Warranty Plan (index 0), and Rajeev's commitment to send a detailed proposal covering pricing, maintenance, warranty, and financing by end of week (index 1). The context metadata confirms the call is with Emily Novak regarding the 'Eco-Friendly Hybrid and Protection Package' opportunity, consistent with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-5d2b4e7ca1190f9c",
+    "question": "What did Sophia Patel say draws her to the Tesla Model S versus the BMW X5 M?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The customer's stated reasons for preferring the Tesla Model S over the BMW X5 M",
+        "relationship": "single coherent lookup of one customer's stated preference/comparison",
+        "reason": "This is one natural sales question about a single customer's comparative preference between two vehicles she is considering; it is a single lookup, not two independent requests."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what draws Sophia Patel to the Tesla Model S versus the BMW X5 M. The dialogue at 10:00:40 has Sophia stating she loves the Tesla's sleek design and innovative tech features, and the BMW's sporty drive and luxury feel. The gold answer reproduces exactly those four attributes with no extras or omissions. The question is naturally phrased, identifies the customer by name, and a rep would plausibly want to recall a prospect's stated preferences. Single-call set, so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Sophia Patel explicitly states she loves the 'sleek design and innovative tech features of the Tesla' and that the BMW 'appeals to me with its sporty drive and luxury feel,' directly matching the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Sophia Patel's own words attributing sleek design and innovative tech to the Tesla, and sporty drive and luxury feel to the BMW, which fully supports every factual claim in the gold_answer."
+      }
+    }
+  }
+]
