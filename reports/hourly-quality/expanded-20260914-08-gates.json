@@ -1,0 +1,426 @@
+[
+  {
+    "question_id": "b2b-multi_call-be63850349ce627d",
+    "question": "What technical challenges did Tomoko Sato of Circuit Dynamics flag in the initial discussion, and which TechPulse products were later tailored to their workflows during onboarding?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The technical challenges Tomoko Sato of Circuit Dynamics raised in the initial discussion and the TechPulse products later tailored to their workflows during onboarding.",
+        "relationship": "Problem and solution on the same business issue: the challenges identified in the initial call are directly addressed by the tailored products in onboarding.",
+        "reason": "This is a coherent two-call question where the requested facts concern the same business issue \u2014 the customer's technical needs and how the vendor's products were tailored to address them \u2014 not merely the same account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "type": "object",
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2eVIAS",
+                "fact": "TechPulse products AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro were tailored to Circuit Dynamics' workflows during onboarding.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T4g2IAC) only mentions these products as future capabilities or scheduled for a demo, not as tailored during onboarding."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4g2IAC",
+                "fact": "Tomoko Sato flagged scalability and integration challenges in the initial discussion.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T2eVIAS) does not mention any specific technical challenges flagged by Tomoko; it focuses on onboarding and support."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: technical challenges flagged in the initial discussion and products tailored during onboarding. The initial discussion (call b2b:a05Wt000003T4g2IAC) contains the explicit statement of scalability and integration challenges, while the onboarding call (b2b:a05Wt000003T2eVIAS) explicitly states the three products were tailored to workflows. Neither call provides both facts, so both are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2eVIAS",
+                  "fact": "TechPulse products AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro were tailored to Circuit Dynamics' workflows during onboarding.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T4g2IAC) only mentions these products as future capabilities or scheduled for a demo, not as tailored during onboarding."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4g2IAC",
+                  "fact": "Tomoko Sato flagged scalability and integration challenges in the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T2eVIAS) does not mention any specific technical challenges flagged by Tomoko; it focuses on onboarding and support."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: technical challenges flagged in the initial discussion and products tailored during onboarding. The initial discussion (call b2b:a05Wt000003T4g2IAC) contains the explicit statement of scalability and integration challenges, while the onboarding call (b2b:a05Wt000003T2eVIAS) explicitly states the three products were tailored to workflows. Neither call provides both facts, so both are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T4g2IAC",
+                "fact": "Tomoko Sato flagged scalability and integration challenges in the initial discussion",
+                "why_other_call_cannot_supply_it": "The 2023 onboarding call contains no mention of the initial challenges; it only covers onboarding and support."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2eVIAS",
+                "fact": "AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro were tailored to Circuit Dynamics' workflows during onboarding",
+                "why_other_call_cannot_supply_it": "The 2022 initial call only previews a future demo of VeriSim Express and SecureAnalytics Pro and never states products were tailored during onboarding; the tailored-products statement appears only in the 2023 call."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information from different time points: the challenges raised in the initial 2022 discussion and the products tailored during the later 2023 onboarding. Each call exclusively supplies one of these facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T4g2IAC",
+                  "fact": "Tomoko Sato flagged scalability and integration challenges in the initial discussion",
+                  "why_other_call_cannot_supply_it": "The 2023 onboarding call contains no mention of the initial challenges; it only covers onboarding and support."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2eVIAS",
+                  "fact": "AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro were tailored to Circuit Dynamics' workflows during onboarding",
+                  "why_other_call_cannot_supply_it": "The 2022 initial call only previews a future demo of VeriSim Express and SecureAnalytics Pro and never states products were tailored during onboarding; the tailored-products statement appears only in the 2023 call."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information from different time points: the challenges raised in the initial 2022 discussion and the products tailored during the later 2023 onboarding. Each call exclusively supplies one of these facts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The initial discussion (2022-02-21) has Tomoko Sato explicitly stating challenges with 'scalability and integration.' The onboarding call (2023-03-04) has Mohamed stating that 'AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro' have each been 'tailored to fit your specific workflows.' Each source contributes an exclusive requested fact: the first provides the technical challenges, the second provides the tailored product names. The gold answer accurately reflects both. The question is naturally phrased, adequately scoped to a named contact and account, and a rep would plausibly want to recall what pain points were raised and which products were customized. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Tomoko Sato the statement 'We've been facing some challenges with scalability and integration lately,' which matches the answer_claim about scalability and integration challenges. The call metadata confirms this is the earlier call (2022-02-21) with contact Tomoko Sato at Circuit Dynamics Inc., consistent with 'initial discussion.'"
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Mohamed Ahmed explicitly states the onboarding briefing walks through integration details for AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro, and that 'Each has been tailored to fit your specific workflows.' This directly supports the answer_claim about those three products being tailored to their workflows during onboarding. The call metadata confirms this is the later call (2023-03-04) with the same account and contact."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) scalability and integration challenges were flagged by Tomoko Sato in the initial discussion, and (2) AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro were tailored to their workflows during onboarding. Evidence index 0 directly supports fact (1) with Tomoko's own words in the earlier call. Evidence index 1 directly supports fact (2) with Mohamed's statement in the later onboarding call. Both citations together fully substantiate every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-7b828833e59a60b9",
+    "question": "What did Juan Carlos of Pioneer Envisions say about why support matters to them, and what implementation support did Fatoumata promise in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Juan Carlos of Pioneer Envisions said about why support matters to them, and what implementation support Fatoumata promised in the follow-up call",
+        "relationship": "customer's support concern and the vendor's promised implementation support addressing that same concern across two calls",
+        "reason": "Both parts address the same business issue\u2014support/implementation needs\u2014linking the customer's stated concern with the vendor's response in the follow-up."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for Juan's reason why support matters and Fatoumata's promised implementation support. Both facts are present in the second call: Juan states past competitors' support was lacking, and Fatoumata promises comprehensive support including training and troubleshooting. The first call only contains Juan's general statement that support is critical due to past issues, which is the same fact. Thus, the second call alone suffices for both requested pieces of information, so the two calls are not necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Juan's reason why support matters and Fatoumata's promised implementation support. Both facts are present in the second call: Juan states past competitors' support was lacking, and Fatoumata promises comprehensive support including training and troubleshooting. The first call only contains Juan's general statement that support is critical due to past issues, which is the same fact. Thus, the second call alone suffices for both requested pieces of information, so the two calls are not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwDyIAK",
+                "fact": "Juan Carlos said past competitors' support was lacking, making support critical for Pioneer Envisions",
+                "why_other_call_cannot_supply_it": "The August 1 call contains no discussion of why support matters or past competitor support issues; that rationale appears only in the July 2 call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2r8IAC",
+                "fact": "Fatoumata promised comprehensive implementation support including training and troubleshooting",
+                "why_other_call_cannot_supply_it": "The July 2 call only contains general claims about support/SLAs; the specific implementation-support promise (training and troubleshooting) was made only in the August 1 call"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: Juan's stated reason for valuing support (only in the first call) and Fatoumata's specific implementation-support promise (only in the second call). Neither call alone answers both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwDyIAK",
+                  "fact": "Juan Carlos said past competitors' support was lacking, making support critical for Pioneer Envisions",
+                  "why_other_call_cannot_supply_it": "The August 1 call contains no discussion of why support matters or past competitor support issues; that rationale appears only in the July 2 call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2r8IAC",
+                  "fact": "Fatoumata promised comprehensive implementation support including training and troubleshooting",
+                  "why_other_call_cannot_supply_it": "The July 2 call only contains general claims about support/SLAs; the specific implementation-support promise (training and troubleshooting) was made only in the August 1 call"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: Juan's stated reason for valuing support (only in the first call) and Fatoumata's specific implementation-support promise (only in the second call). Neither call alone answers both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1: Juan Carlos states 'We've had issues in the past with competitors where support was lacking, so knowing that TechPulse can provide unmatched support is reassuring,' confirming support is critical due to past competitor shortcomings. Call 2: Fatoumata says 'Our team offers comprehensive support, including training and troubleshooting.' Both facts are accurately captured in the gold answer. Each call contributes an exclusive requested fact (reason support matters vs. implementation support promised). The question naturally identifies the account (Pioneer Envisions), contact (Juan Carlos), and rep (Fatoumata) without artificial locator preambles. No answer leakage, no unsupported causality, no unbound questions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Juan Carlos stating that service and support are critical, and that they've had issues in the past with competitors where support was lacking. This matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Fatoumata Traor\u00e9 stating that their team offers comprehensive support, including training and troubleshooting, and that they're dedicated to ensuring the team feels confident. This matches the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Juan said past competitors' support was lacking, so support is critical \u2014 supported by evidence index 0 where Juan Carlos explicitly states support is critical and references past issues with competitors where support was lacking. (2) Fatoumata promised comprehensive support including training and troubleshooting during implementation \u2014 supported by evidence index 1 where Fatoumata states their team offers comprehensive support including training and troubleshooting. The second call (2023-08-01) is identified in context_metadata as a follow-up call (one month after the first call on 2023-07-02), consistent with the question's reference to 'the follow-up call.' All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-398ddef21e9e5869",
+    "question": "What concern did Ismail Habibi raise about competitors' implementation timelines, and how did Sarah Johnson respond regarding TechPulse's support during mission-critical phases?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Ismail Habibi's concern about competitors' implementation timelines and Sarah Johnson's response about TechPulse's support during mission-critical phases",
+        "relationship": "objection and its response on the same issue (implementation timelines/support during critical phases)",
+        "reason": "The question pairs a customer objection with the salesperson's response addressing the same business concern, forming one coherent sales exchange."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets two specific facts from the same call: Ismail's concern about competitors' long ramp-up times and Sarah's response about a dedicated team for mission-critical phases. Both are verbatim-supported in the dialogue. The question is naturally phrased, scoped to a named account/contact, and a rep would plausibly want to recall this competitive concern and support commitment. No locator preamble, no answer leakage, no unsupported causality. Single-call set so both_sources_required is true by rule.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Ismail Habibi stating 'We've heard of some competitors having long ramp-up times, which we're trying to avoid.' This fully supports the claim that competitors have long ramp-up times which BlueSky is trying to avoid."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quoted passage is Ismail Habibi stating 'We require immediate assistance during mission-critical phases, so that's very important to us.' This is a customer expressing a requirement/concern. It does NOT contain any statement from Sarah Johnson about TechPulse having a dedicated team or ensuring swift resolution of hurdles. A customer's request for support does not prove that the salesperson promised a dedicated team. The answer_claim attributes a response to Sarah Johnson, but the cited quote is from Ismail and contains no such promise."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) Ismail said competitors have long ramp-up times they want to avoid \u2013 supported by evidence index 0. (2) Sarah said TechPulse has a dedicated team ensuring swift resolution of hurdles during mission-critical phases \u2013 NOT supported by the supplied evidence. Evidence index 1 only shows Ismail expressing a need for immediate assistance during mission-critical phases; it does not contain any statement from Sarah Johnson about a dedicated team or swift resolution. No supplied citation establishes Sarah's response regarding TechPulse's dedicated team. Therefore the combined citations do not support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-ed09f2babcbf71e5",
+    "question": "What pricing did Luis quote Ethan Spencer at InnoSphere Labs for the CryptSecure Core?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price Luis quoted for CryptSecure Core",
+        "relationship": "single lookup of one quote",
+        "reason": "One coherent pricing lookup tied to a specific product and customer."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the specific pricing Luis quoted Ethan Spencer for CryptSecure Core at InnoSphere Labs. The dialogue at 10:04:10 confirms Luis states 'the CryptSecure Core for 8 units is at a 5% discount, which totals around $4788,' matching the gold answer exactly. The question is naturally phrased, scoped to a clear account/contact/product, and a rep would plausibly need to recall quoted pricing. No locator preamble, no answer leakage, no unsupported claims. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Luis Rodriguez explicitly states: 'the CryptSecure Core for 8 units is at a 5% discount, which totals around $4788.' This directly supports the answer_claim about 8 units, 5% discount, and approximately $4788 for CryptSecure Core."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '8 units at a 5% discount, totaling around $4788.' The cited evidence (index 0) contains Luis Rodriguez's exact quote confirming all three elements: 8 units, 5% discount, and approximately $4788 for CryptSecure Core. The context metadata confirms the call involves Ethan Spencer at InnoSphere Labs, and the speaker is Luis Rodriguez, matching the question's participants. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-f634df5058e3de8b",
+    "question": "What did Ella James ask about how AutoElite's transparent pricing affects negotiation, and how did Nadia respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Ella James asked about how AutoElite's transparent pricing affects negotiation, and Nadia's response",
+        "relationship": "single coherent exchange: one question and its direct response on the same issue",
+        "reason": "The question pairs an objection/inquiry about transparent pricing with the response to it \u2014 a natural objection-and-response unit within one call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer objection about transparent pricing and negotiation during a sales call\u2014plausible for a rep reviewing account interactions. The dialogue confirms Ella asked 'does that mean there's no room for negotiation' and Nadia replied it 'helps build trust' and packages are 'competitively set to market standards.' The gold answer captures exactly those facts with no extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Ella James asking 'does that mean there's no room for negotiation, like with other dealerships?' in the context of transparent pricing, and Nadia Gonzalez responding that transparent pricing 'helps build trust' and that packages 'have been competitively set to market standards.' This fully supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains both Ella's question about whether transparent pricing eliminates negotiation room and Nadia's response about building trust and packages being competitively set to market standards. Every factual element in the gold_answer is directly present in the quoted passage with correct speaker attribution."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-17cefc3d7c4e1245",
+    "question": "What is Luisa Figueroa's budget and required delivery timeline for the Winter Protection Package, four Lincoln Navigators, and the extended service contract?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Luisa Figueroa's budget and required delivery timeline for a single quote covering the Winter Protection Package, four Lincoln Navigators, and an extended service contract",
+        "relationship": "single coherent quote request: budget and delivery timeline for one combined deal",
+        "reason": "All items belong to one commercial quote for the same customer; budget and delivery timeline are natural requirements for that same quote, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for budget and delivery timeline tied to specific products (Winter Protection Package, four Lincoln Navigators, extended service contract) for a named lead, Luisa Figueroa. The dialogue confirms a budget of $323,196 (stated by the rep referencing the customer's earlier mention) and a nine-day installation/delivery requirement (stated by Luisa). The gold answer captures both facts precisely with no unasked extras. The question is naturally worded, adequately scoped to a specific customer and product set, and represents a realistic commercial-terms inquiry a rep would need. Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Mohammed Khan explicitly states 'you mentioned a budget of $323,196' and ties it to the Winter Protection Package, four Lincoln Navigators, and the service contract. The phrasing 'you mentioned' attributes the budget figure to Luisa Figueroa, supporting the claim of her budget being $323,196."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Luisa Figueroa directly states 'I do need the installation and delivery completed within nine days,' which is a clear customer-stated requirement for the delivery timeline. This supports the claim of a nine-day delivery requirement."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states 'Budget of $323,196, with installation and delivery completed within nine days.' Evidence index 0 supports the $323,196 budget attributed to Luisa Figueroa for the specified items. Evidence index 1 supports the nine-day installation and delivery timeline as Luisa's stated requirement. Together, the two citations fully support every factual claim in the gold answer."
+      }
+    }
+  }
+]

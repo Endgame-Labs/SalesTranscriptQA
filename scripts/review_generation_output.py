@@ -22,7 +22,7 @@ def main():
     rows=[]
     for i,q in enumerate(questions,1):
         rows.append({'item':i,'status':'accepted','failure':None,'job_id':q['provenance']['job_id'],
-                     **{k:q[k] for k in ['question_id','domain','question_class','question','gold_answer','supporting_call_ids']}})
+                     **{k:q[k] for k in ['question_id','domain','question_class','question','gold_answer','supporting_call_ids','evidence']}})
     report={'questions':rows,'seed':plan['seed'],'source_units':len(plan['units']),
             'accepted_questions':len(rows),'estimated_usd':progress['estimated_usd'],'run_root':str(root),
             'scope':plan['scope'],'limitations':'Final deduplicated, coherence-selected output; all automated gates, not human gold. Full rejected candidates are retained in the run directory.'}

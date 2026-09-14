@@ -9,6 +9,7 @@ import pyarrow.parquet as pq
 from salestranscriptqa.corpus import write_json
 from salestranscriptqa.question_style import locator_flags
 from salestranscriptqa.transport import Transport, RATES, digest
+from salestranscriptqa.citation_audit import assess as audit_citations
 
 MODEL = 'accounts/fireworks/models/qwen3p8-max'
 PROMPT = '''Audit a candidate sales-transcript QA without trusting earlier acceptance.
@@ -54,11 +55,13 @@ def main():
         payload['calls'] = [{k:calls[cid][k] for k in ['call_id','metadata','dialogue']} for cid in q['supporting_call_ids']]
         verdict = transport.request(MODEL,PROMPT+'\nINPUT JSON:\n'+json.dumps(payload),
                                     'independent_sales_review',nonce=digest(payload))
-        passed = all(verdict.get(f) is True for f in FIELDS) and verdict.get('locator_preamble') is False
+        citation_audit = audit_citations(q, [calls[cid] for cid in q['supporting_call_ids']], transport)
+        passed = all(verdict.get(f) is True for f in FIELDS) and verdict.get('locator_preamble') is False and citation_audit['passed']
         row = {'item':q['item'],'original_status':q['status'],'question':q['question'],
                'gold_answer':q['gold_answer'],'passed':passed,'verdict':verdict,
-               'mechanical_locator_flags':locator_flags(q['question'])}
-        print(json.dumps({'item':q['item'],'passed':passed,'reason':verdict.get('reason')}),flush=True)
+               'mechanical_locator_flags':locator_flags(q['question']), 'citation_audit':citation_audit}
+        reason = verdict.get('reason') if citation_audit['passed'] else citation_audit['verdict'].get('reason')
+        print(json.dumps({'item':q['item'],'passed':passed,'citations_passed':citation_audit['passed'],'reason':reason}),flush=True)
         return row
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         rows = list(pool.map(review,sample))
@@ -66,7 +69,8 @@ def main():
         cost = db.execute('SELECT COALESCE(SUM(estimated_usd),0) FROM attempts').fetchone()[0]
     summary = {'results':rows,'model':MODEL,'estimated_usd':cost,
                'counts':dict(Counter(f'{r["original_status"]}/{"pass" if r["passed"] else "fail"}' for r in rows)),
-               'limitations':'All accepted plus 10 seeded rejects. Independent automated source audit; no full-corpus ambiguity claim. Not human gold labels.'}
+               'citation_policy':'quoted-evidence-audit-v1: separate Qwen audit sees cited passages, not uncited dialogue; all citation claims and the full gold answer must be supported.',
+               'limitations':'All accepted plus 10 seeded rejects. Independent automated source and citation audits; no full-corpus ambiguity claim. Not human gold labels.'}
     write_json(Path('reports')/(root.name+'.json'),summary)
     print(json.dumps({k:v for k,v in summary.items() if k!='results'}),flush=True)
 

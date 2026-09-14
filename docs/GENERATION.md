@@ -14,6 +14,18 @@ This resumable workflow generates 1,000 B2C single-call units, 500 B2B single-ca
 
 The overall expanded-sample + conditional full-run experiment has a $5,000 ceiling. The current expansion retains its $850 generation guard, a $150 independent-review allowance, and a $500 RAG allowance. These are conservative sublimits, not separate additions to the overall ceiling. An active assistant goal reviews progress and random quality samples hourly; the scripted monitor is supplemental. After the expansion passes agent review, a full eligible run is authorized within the remaining shared budget.
 
+An 08:00 UTC source inspection on September 14 found a supported answer with an
+incorrectly narrow evidence span. Full-transcript reviewers could see the missing
+line and passed the answer, overlooking the citation defect. Independent review
+now additionally requires `quoted-evidence-audit-v1`: a separate Qwen request sees
+only cited passages and identifying metadata, checks each evidence-to-claim link,
+and checks complete answer support. Missing or malformed verdict coverage fails
+closed. This strengthens the post-generation review; the v9 generator and original
+artifacts remain unchanged. Both expanded and full workflows export evidence into
+the review inputs and freeze only questions passing both reviews. No automatic
+span repair or manual acceptance override is performed. The recorded regression
+shows the erroneous citation rejected and an explicitly corrected example accepted.
+
 Generation currently has an $850 operational cap. The earlier sample projects roughly $540 for generation plus tens of dollars for review/RAG, with substantial uncertainty. API estimates exclude turbopuffer/VM. No Hugging Face upload occurs. The legacy `generate_and_publish.py` entry point now refuses execution.
 
 On the research VM, the complete sequence runs as `salestranscriptqa-expanded-2000.service`:

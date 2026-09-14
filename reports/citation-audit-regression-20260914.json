@@ -1,0 +1,67 @@
+{
+  "question_id": "b2b-single_call-398ddef21e9e5869",
+  "original_evidence": {
+    "call_id": "b2b:a05Wt000003SvZXIA0",
+    "answer_claim": "TechPulse has a dedicated team addressing mission-critical needs, overcoming hurdles swiftly",
+    "kind": "dialogue",
+    "line_start": 11,
+    "line_end": 12,
+    "quote": "[2021-04-14T12:02:30] Ismail Habibi: I see. We require immediate assistance during mission-critical phases, so that\u2019s very important to us.",
+    "start": 2215,
+    "end": 2354
+  },
+  "corrected_example_evidence": {
+    "call_id": "b2b:a05Wt000003SvZXIA0",
+    "answer_claim": "TechPulse has a dedicated team addressing mission-critical needs, overcoming hurdles swiftly",
+    "kind": "dialogue",
+    "line_start": 11,
+    "line_end": 13,
+    "quote": "[2021-04-14T12:02:30] Ismail Habibi: I see. We require immediate assistance during mission-critical phases, so that\u2019s very important to us.\n[2021-04-14T12:02:45] Sarah Johnson: Understood, Ismail. We have a team that's dedicated to addressing those exact needs, ensuring that any potential hurdles are overcome swiftly. Additionally, our ROI metrics and client testimonials highlight the positive outcomes and strategic partnerships we\u2019ve fostered.",
+    "start": 2215,
+    "end": 2663
+  },
+  "original_audit": {
+    "method": "quoted-evidence-audit-v1",
+    "passed": false,
+    "schema_valid": true,
+    "verdict": {
+      "evidence_support": [
+        {
+          "index": 0,
+          "supported": true,
+          "reason": "The quote directly shows Ismail Habibi stating 'We've heard of some competitors having long ramp-up times, which we're trying to avoid.' This fully supports the claim that competitors have long ramp-up times which BlueSky is trying to avoid."
+        },
+        {
+          "index": 1,
+          "supported": false,
+          "reason": "The quoted passage is Ismail Habibi stating 'We require immediate assistance during mission-critical phases, so that's very important to us.' This is a customer expressing a requirement/concern. It does NOT contain any statement from Sarah Johnson about TechPulse having a dedicated team or ensuring swift resolution of hurdles. A customer's request for support does not prove that the salesperson promised a dedicated team. The answer_claim attributes a response to Sarah Johnson, but the cited quote is from Ismail and contains no such promise."
+        }
+      ],
+      "answer_supported": false,
+      "reason": "The gold_answer has two parts: (1) Ismail said competitors have long ramp-up times they want to avoid \u2013 supported by evidence index 0. (2) Sarah said TechPulse has a dedicated team ensuring swift resolution of hurdles during mission-critical phases \u2013 NOT supported by the supplied evidence. Evidence index 1 only shows Ismail expressing a need for immediate assistance during mission-critical phases; it does not contain any statement from Sarah Johnson about a dedicated team or swift resolution. No supplied citation establishes Sarah's response regarding TechPulse's dedicated team. Therefore the combined citations do not support every factual claim in the gold_answer."
+    }
+  },
+  "corrected_example_audit": {
+    "method": "quoted-evidence-audit-v1",
+    "passed": true,
+    "schema_valid": true,
+    "verdict": {
+      "evidence_support": [
+        {
+          "index": 0,
+          "supported": true,
+          "reason": "The quote directly shows Ismail Habibi stating 'We've heard of some competitors having long ramp-up times, which we're trying to avoid.' This fully supports the claim that competitors have long ramp-up times which BlueSky is trying to avoid."
+        },
+        {
+          "index": 1,
+          "supported": true,
+          "reason": "Sarah Johnson's quoted response states 'We have a team that's dedicated to addressing those exact needs, ensuring that any potential hurdles are overcome swiftly.' This directly supports the claim that TechPulse has a dedicated team addressing mission-critical needs and overcoming hurdles swiftly. Ismail's preceding line establishes the context of 'mission-critical phases,' and Sarah's 'those exact needs' refers back to that context."
+        }
+      ],
+      "answer_supported": true,
+      "reason": "The gold_answer has two parts: (1) Ismail said competitors have long ramp-up times they want to avoid \u2014 supported by evidence index 0. (2) Sarah said TechPulse has a dedicated team ensuring swift resolution of hurdles during mission-critical phases \u2014 supported by evidence index 1, where Sarah explicitly mentions a dedicated team addressing 'those exact needs' (mission-critical phases per Ismail's prior line) and ensuring hurdles are 'overcome swiftly.' Both factual claims in the gold_answer are fully supported by the cited evidence."
+    }
+  },
+  "production_candidate_modified": false,
+  "purpose": "Regression probe only: demonstrate that quoted-only audit rejects missing salesperson evidence and accepts an explicitly expanded correct citation."
+}

@@ -8,6 +8,7 @@ from salestranscriptqa.query_coherence import assess
 from salestranscriptqa.multi_necessity import assess as necessity
 from salestranscriptqa.question_style import locator_flags
 from review_sales_sample import MODEL,PROMPT,FIELDS
+from salestranscriptqa.citation_audit import assess as audit_citations
 
 
 def main():
@@ -23,8 +24,9 @@ def main():
         payload['calls']=[{k:c[k] for k in ['call_id','metadata','dialogue']} for c in sources]
         verdict=t.request(MODEL,PROMPT+'\nINPUT JSON:\n'+json.dumps(payload),'independent_sales_review',nonce=digest(payload))
         row['independent_review']={'passed':all(verdict.get(f) is True for f in FIELDS) and verdict.get('locator_preamble') is False and not locator_flags(q['question']),'verdict':verdict}
+        row['citation_audit']=audit_citations(q,sources,t)
         results.append(row)
-        print(json.dumps({'question_id':q['question_id'],'coherence':row['coherence']['accepted'],'necessity':row.get('necessity',{}).get('accepted'),'review':row['independent_review']['passed']}),flush=True)
+        print(json.dumps({'question_id':q['question_id'],'coherence':row['coherence']['accepted'],'necessity':row.get('necessity',{}).get('accepted'),'review':row['independent_review']['passed'],'citations':row['citation_audit']['passed']}),flush=True)
     output=a.sample.with_name(a.sample.stem.replace('-sample','-gates')+'.json');output.write_text(json.dumps(results,indent=2)+'\n')
 
 if __name__=='__main__':main()

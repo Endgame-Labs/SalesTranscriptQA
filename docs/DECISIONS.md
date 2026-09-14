@@ -65,3 +65,17 @@ Expand 100 source units to 2,000 using unchanged v9 generation and final quality
 ## September 14, 2026 — Agent supervision, shared $5,000 ceiling, conditional full run
 
 Kyle requests that the assistant itself inspect progress and random quality samples hourly, fix issues, and monitor a $5,000 ceiling. If the 2,000-unit expansion and RAG test look good, proceed to the full eligible QA set under the same shared ceiling. Completion requires a secret-gist HTML report and HTML Preview link after the full workflow; a scripted health check or interim expanded-sample report alone is insufficient. Reuse compatible completed work, preserve frozen historical cohorts, and do not delete questions merely because retrieval fails.
+
+## September 14, 2026, 08:00 UTC — Close the citation-validation gap
+
+The assistant's random source audit found that candidate
+`b2b-single_call-398ddef21e9e5869` cited only the customer's request for immediate
+support while claiming the salesperson promised a dedicated team. The next line
+supports the answer, but it was absent from the citation. Exact-span validation
+and full-source model reviews therefore did not establish evidence entailment.
+Add a separate quoted-evidence audit to independent review before freezing the
+expanded/full cohorts. It receives no uncited dialogue, must cover every evidence
+item, and must affirm support for the complete gold answer. Preserve the raw
+candidate and exclude it if this new gate fails; do not silently repair historical
+artifacts. This is an evidence-validation correction under the authorized hourly
+quality supervision, not a change to question generation style.
