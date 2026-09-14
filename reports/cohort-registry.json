@@ -5,12 +5,13 @@
   "active_seed": {
     "path": "data/active-seed-v1",
     "questions": 36,
-    "origin": "runs/sales-ready-validation-20260918/selected"
+    "origin": "runs/sales-ready-validation-20260918/selected",
+    "status": "superseded by expanded reviewed cohort"
   },
   "expansion": {
     "run": "runs/sales-expanded-2000-v1",
     "source_units": 2000,
-    "status": "running",
+    "status": "generation, independent review, and RAG evaluation complete",
     "on_completion": "Replace active seed with verified expanded cohort; evaluate all selected questions before any outcome-based exclusions."
   },
   "retired_cohorts": [
@@ -32,5 +33,10 @@
     }
   ],
   "artifact_policy": "Historical source artifacts remain immutable for audit; retired questions must not be mixed into the new active cohort. HF pilot remains available as a legacy release until replacement publication.",
-  "tracking_issue": "https://github.com/Endgame-Labs/SalesTranscriptQA/issues/3"
+  "tracking_issue": "https://github.com/Endgame-Labs/SalesTranscriptQA/issues/3",
+  "active_cohort": {
+    "path": "runs/sales-expanded-2000-v1/reviewed",
+    "questions": 548,
+    "sha256": "97df13c95376df53b670b3bb3371cd42576a071b5232d4308caf8eef0e237c83"
+  }
 }

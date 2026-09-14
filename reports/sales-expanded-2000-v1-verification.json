@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "scope": "sample",
+  "source_units": 2000,
+  "raw_accepted_questions": 778,
+  "accepted_questions": 616,
+  "accepted_counts": {
+    "b2b/multi_call": 59,
+    "b2b/single_call": 235,
+    "b2c/single_call": 322
+  },
+  "excluded_groups": 392,
+  "checks": [
+    "source hashes",
+    "complete scope",
+    "group exclusions",
+    "no B2C multi-call",
+    "JSON/Parquet parity",
+    "unique question IDs",
+    "exact evidence",
+    "accepted contract and consistency gates",
+    "locator checks",
+    "final coherence selection and Parquet parity",
+    "cross-model multi-call necessity"
+  ],
+  "limitations": "Artifact integrity and recorded-gate verification, not an independent semantic quality estimate."
+}
