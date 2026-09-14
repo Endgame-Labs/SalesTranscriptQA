@@ -1,10 +1,27 @@
 # Generate sales questions
 
-The revised generator completed 100-unit development validation and is ready to
-run: 37 final questions, all passing the final independent source review, with
-zero new API calls on completed replay. Full generation and publication remain
-paused. See the [readiness report](../reports/GENERATOR_READINESS.md) for evidence,
-experiment history, costs and limitations.
+The current standard is `sales-questions-v9-line-evidence`, with the same prompt and quality gates validated in the 100-unit sample. The next run expands to **2,000 source units**, excluding all 392 CRM groups covered by the prior validation/exclusion plans. Retired pilot/full-v1 questions must not be mixed into new releases. The [cohort registry](../reports/cohort-registry.json) records exclusions and active inputs.
+
+## Expanded generation and RAG workflow
+
+Operational status: [expansion issue #3](https://github.com/Endgame-Labs/SalesTranscriptQA/issues/3).
+
+```bash
+uv run python scripts/expanded_sample_workflow.py
+```
+
+This resumable workflow generates 1,000 B2C single-call units, 500 B2B single-call units, and 500 B2B two-call units, with up to three proposals per unit and 16 workers. It verifies artifacts, independently reviews all selected questions, freezes review-passing questions, and runs the sibling private RAG evaluator with the same hybrid/reranked/full-source/no-context protocol as the 37-question diagnostic. Review exclusions occur before RAG; retrieval failures never trigger question deletion.
+
+Generation has an $850 operational cap. The earlier sample projects roughly $540 for generation plus tens of dollars for review/RAG, with substantial uncertainty. API estimates exclude turbopuffer/VM. No Hugging Face upload occurs. The legacy `generate_and_publish.py` entry point now refuses execution.
+
+On the research VM, the complete sequence runs as `salestranscriptqa-expanded-2000.service`:
+
+```bash
+watch -n 10 'cat runs/sales-expanded-2000-v1/workflow.json; cat runs/sales-expanded-2000-v1/progress.json'
+journalctl --user -u salestranscriptqa-expanded-2000.service -f
+```
+
+Stage logs are in the run directory. RAG progress later appears at `../2026-09-12-salestranscriptqa-rag-evaluation/runs/expanded-2000-v1/progress.json`. Errors stop the sequence and preserve checkpoints; rerun the workflow after resolving the cause.
 
 ## Prepare
 
@@ -51,8 +68,7 @@ before billing is recorded retain conservative budget reservations.
 
 The spend limit accounts for recorded usage and reserves an overestimate for active
 requests. You can raise `--budget-usd` when resuming after a budget stop. This is an
-operational allowance, not a provider invoice guarantee. The research campaign is
-limited to $1,000 across experiments. The sample command defaults to $50.
+operational allowance, not a provider invoice guarantee. The original bounded research campaign used a $1,000 limit; the newly authorized expansion has the explicit allowance above. Individual sample runs remain capped at $1,000. The sample command defaults to $50.
 
 ## Outputs
 

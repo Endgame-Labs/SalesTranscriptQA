@@ -2,13 +2,11 @@
 
 A dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales calls, with separate B2B and B2C question sets and a companion CLI in this repository.
 
-**Status: 200-question pilot complete.** All 200 questions passed automated validation: 50 single-call and 50 two-call questions per domain, with the full 10,829-call corpus. No human review or calibration was performed. The CLI is implemented and tested. The dataset is published at [EndgameLabs/SalesTranscriptQA on Hugging Face](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA).
+**Current direction: revised sales/account QA.** The validated `sales-questions-v9-line-evidence` prompt and quality gates are the standard for new generation. A 2,000-source-unit expansion is underway, followed automatically by independent source review and full-corpus RAG evaluation. B2C is single-call only; B2B supports single- and two-call questions. [Generation guide](docs/GENERATION.md) · [Cohort registry](reports/cohort-registry.json).
 
-**Revised generator validated; full expansion is paused.** A 100-unit development run produced 37 final sales/account questions with B2C single-call and B2B single-/two-call scope. The published dataset remains the original pilot. [Generation guide](docs/GENERATION.md) · [Readiness report and questions](reports/GENERATOR_READINESS.md).
+The earlier 200-question Hugging Face pilot and stopped legacy full-generation run are retired for new research. They remain historical artifacts; they will not be mixed into the revised cohort. The published [Hugging Face dataset](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA) still serves that legacy pilot pending replacement publication. The revised 37-question sample yielded 36 active seed questions after quarantining one ambiguous package question.
 
-[Download the pilot and CLI release](https://github.com/Endgame-Labs/SalesTranscriptQA/releases/tag/v0.1.0) · [Pilot report and costs](reports/PILOT.md)
-
-The final run accepted 200 of 256 candidates. Median answer length: 13 words. Estimated API spend: **$0.89 for the pilot; $0.92 including all development and smoke checks**. These are usage-based estimates, not invoices.
+The CLI is implemented and tested. [Legacy CLI release](https://github.com/Endgame-Labs/SalesTranscriptQA/releases/tag/v0.1.0) · [Historical pilot report](reports/PILOT.md) · [Revised generator readiness report](reports/GENERATOR_READINESS.md).
 
 - [CLI and generation usage](docs/USAGE.md): installation, exports, judging and reproducible builds.
 - [Pilot implementation choices](docs/IMPLEMENTATION.md): models, rates, sampling and validation settings.

@@ -55,3 +55,9 @@ Kyle requested that the GitHub README not link to GitHub issues. Keep the README
 Kyle selected “all of them” after being offered all eligible calls/call pairs versus a fixed QA count. Interpret this as every individual call and every distinct-dialogue pair within the same explicit opportunity or lead, not every possible question or cross-account combination. Attempt up to three proposals per source unit, keeping at most one passing QA; record exhausted units and global duplicate removals. Do not relax quality gates to reach a nominal count.
 
 Use a fresh strengthened generation protocol and preserve the original pilot for reproducibility. Publishing the completed full cohort to the existing EndgameLabs/SalesTranscriptQA dataset is part of the authorized workflow. Main configurations expose the new cohort; separate pilot configurations and immutable history preserve the old one. No generation deadline or accepted yield is promised.
+
+## September 14, 2026 — Adopt revised questions and expand validation
+
+Kyle: “expand the generation sample size by 20x and then run another similar test against it” and “get rid of the bad ones from prior run, this new sample is better and we'll rely on this style of prompting and quality from now on for this project.”
+
+Expand 100 source units to 2,000 using unchanged v9 generation and final quality gates. Exclude previously sampled CRM groups. Retire legacy pilot/full-v1 questions from active research; preserve historical artifacts and published pilot until a replacement release. Quarantine the ambiguous Sofia package question from the 37-question seed; retain SkyTech because its observed failure was retrieval-context truncation. Independently review and freeze expanded questions before RAG; do not remove difficult questions based on RAG scores. Track active inputs in reports/cohort-registry.json.

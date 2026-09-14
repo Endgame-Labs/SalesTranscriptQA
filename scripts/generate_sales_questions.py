@@ -26,10 +26,11 @@ def main():
     parser.add_argument('--budget-usd',type=float,default=50)
     parser.add_argument('--run-dir',type=Path,required=True)
     parser.add_argument('--corpus',default='data/corpus')
+    parser.add_argument('--plan-only',action='store_true',help='Freeze and inspect the source plan without making API calls')
     parser.add_argument('--exclude-report',type=Path,action='append',default=[])
     args=parser.parse_args()
-    if not 1 <= args.sample <= 100 or not math.isfinite(args.budget_usd) or args.budget_usd <= 0:
-        parser.error('sample must be 1..100 and budget-usd must be a finite positive amount')
+    if not 1 <= args.sample <= 2000 or not math.isfinite(args.budget_usd) or args.budget_usd <= 0:
+        parser.error('sample must be 1..2000 and budget-usd must be a finite positive amount')
     if not args.all and args.budget_usd > 1000:
         parser.error('Research samples are capped at a $1000 per-run allowance')
     if args.all and args.exclude_report:
@@ -62,6 +63,10 @@ def main():
             rng=random.Random(args.seed)
             for bucket in buckets.values(): rng.shuffle(bucket)
             keys=[('b2c','single_call'),('b2b','single_call'),('b2c','single_call'),('b2b','multi_call')]
+            needed=Counter(keys[i%4] for i in range(args.sample))
+            for key,count in needed.items():
+                if len(buckets.get(key,[])) < count:
+                    parser.error(f'Insufficient unused units for {key}: need {count}, available {len(buckets.get(key,[]))}')
             selected=[buckets[keys[i%4]].pop() for i in range(args.sample)]
         plan={'scope':'all' if args.all else 'sample','seed':args.seed,'units':selected,
               'eligible_units':len(eligible),'generation_prompt':READY_PROMPT,'excluded_groups':sorted(excluded_groups)}
@@ -69,6 +74,9 @@ def main():
         if plan_path.exists() and json.loads(plan_path.read_text())!=plan:
             raise RuntimeError('Source plan changed; choose a new run directory')
         write_json(plan_path,plan)
+        if args.plan_only:
+            print(json.dumps({'units':len(selected),'counts':dict(Counter(u['domain']+'/'+u['question_class'] for u in selected)),'excluded_groups':len(excluded_groups),'api_calls':0}),flush=True)
+            return
         completed=[]
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
             iterator=iter(selected)

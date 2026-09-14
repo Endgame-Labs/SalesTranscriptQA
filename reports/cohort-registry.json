@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "protocol": "sales-questions-v9-line-evidence",
+  "active_seed": {
+    "path": "data/active-seed-v1",
+    "questions": 36,
+    "origin": "runs/sales-ready-validation-20260918/selected"
+  },
+  "expansion": {
+    "run": "runs/sales-expanded-2000-v1",
+    "source_units": 2000,
+    "status": "running",
+    "on_completion": "Replace active seed with verified expanded cohort; evaluate all selected questions before any outcome-based exclusions."
+  },
+  "retired_cohorts": [
+    "published pilot-v2 (200 questions)",
+    "runs/full-v1",
+    "earlier v2-v8 research samples"
+  ],
+  "excluded_questions": [
+    {
+      "question_id": "b2c-single_call-1d87a47e053920bf",
+      "question": "What is the total price of Sofia Kim's eco-friendly vehicle package, and what adjustment did she want made to it?",
+      "reason": "Ambiguous eco-friendly package scope for Sofia Kim across opportunities with different prices; quarantined after full-corpus RAG review."
+    }
+  ],
+  "retained_difficult_questions": [
+    {
+      "question_id": "b2b-multi_call-535048bfe696dc6c",
+      "reason": "SkyTech full-source control passed; RAG truncation is not a dataset quality failure."
+    }
+  ],
+  "artifact_policy": "Historical source artifacts remain immutable for audit; retired questions must not be mixed into the new active cohort. HF pilot remains available as a legacy release until replacement publication.",
+  "tracking_issue": "https://github.com/Endgame-Labs/SalesTranscriptQA/issues/3"
+}

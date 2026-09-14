@@ -1,0 +1,14 @@
+[Unit]
+Description=SalesTranscriptQA 2000-unit expansion, independent review, and RAG evaluation
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/exedev/a/dev/phd/research-projects/SalesTranscriptQA
+ExecStart=/usr/local/bin/uv run python scripts/expanded_sample_workflow.py
+Restart=no
+Environment=PYTHONUNBUFFERED=1
+TimeoutStopSec=30
+
+[Install]
+WantedBy=default.target
