@@ -102,3 +102,60 @@ class SalesQuestionsEdited(SalesQuestionsGLM):
                     raise ValueError('source_locator:' + ','.join(flags))
             return result
         return super().ask(model, instruction, value, stage, job)
+
+
+READY_PROMPT = SALES_PROMPT + FOCUS_PROMPT + '''
+Keep enough natural entity scope: use the customer's full name when discussing their specific
+quote, preference or commitment, and account/product where needed. Account names alone may span
+several opportunities with different contacts and commercial terms. Do not force dates or titles.
+Do not use first-person "I", "me" or "my": this benchmark has no authenticated user identity.
+Prefer a short question about one issue. Do not routinely append a request for follow-up details.
+For a single call, a single explicit fact or coherent set of buying requirements is sufficient.
+A two-call question should connect facts about the SAME issue, not just facts about the same account.
+Do not identify calls with dates, months or years. Relative initial/follow-up language is optional.
+Keep the answer compact; omit repeated names/setup and all facts the question does not request.
+'''
+
+
+class SalesQuestionsReady(SalesQuestionsGLM):
+    """Fresh focused generation with answer consistency replacing source identity."""
+    version = 'sales-questions-v8-focused'
+
+    def candidate(self, domain, kind, calls, variant=0):
+        self.local.source_calls = calls
+        self.local.domain = domain
+        return super().candidate(domain,kind,calls,variant)
+
+    def ask(self, model, instruction, value, stage, job):
+        if stage == 'generate':
+            from .question_style import locator_flags
+            result = Full.ask(self,SECONDARY,READY_PROMPT,value,stage,job)
+            if isinstance(result,dict) and result.get('skip') is True:
+                raise ValueError('no_coherent_supported_question')
+            if isinstance(result,dict) and isinstance(result.get('question'),str):
+                flags = locator_flags(result['question'])
+                if flags:
+                    raise ValueError('source_locator:' + ','.join(flags))
+            self.local.generated = result
+            return result
+        if stage == 'specificity':
+            from .answer_consistency import check_group_v2, aggregate
+            calls,vectorizer,matrix = self.index[self.local.domain]
+            question = value['question']
+            scores = (matrix @ vectorizer.transform([question]).T).toarray().ravel()
+            selected = [calls[i] for i in scores.argsort()[-30:][::-1]] + self.local.source_calls
+            group_ids = {c.get('group_id') or c['call_id'] for c in selected}
+            groups = {g:[] for g in group_ids}
+            for c in calls:
+                group = c.get('group_id') or c['call_id']
+                if group in groups:
+                    groups[group].append(c)
+            checks = [check_group_v2(question,self.local.generated['gold_answer'],groups[g],self.transport)
+                      for g in sorted(groups)]
+            decision = aggregate(checks)
+            # Adapt the historical Pilot interface: original citations remain the annotation,
+            # but source identity is no longer the acceptance criterion. Keep all group evidence.
+            return {'call_ids':[c['call_id'] for c in self.local.source_calls],
+                    'ambiguous':decision!='consistent_in_pool','reason':decision,
+                    'method':'reference-blind-group-consistency-v2','groups':checks}
+        return super().ask(model,instruction,value,stage,job)

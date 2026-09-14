@@ -75,3 +75,47 @@ seeing the reference caused false conflicts for wrong entities and partial answe
 Version 2 separates blind extraction, blind complete-answer verification, and only
 then reference comparison. Nine observed-failure/control cases passed live calibration.
 This is not yet the production specificity gate; broader sample results remain pending.
+
+## Standalone runner under validation
+
+The v8 focused-GLM arm integrates reference-blind group consistency into acceptance,
+replacing exact original-source selection. Evidence spans, independent answers,
+no-context controls, multi-call ablations and atomic question/answer contract checks
+remain. The broader v6 audit has already found genuine competing quotes and customer
+commitments that the earlier specificity selector missed.
+
+The reusable runner is implemented but still undergoing live sample validation:
+
+```bash
+uv run python scripts/generate_sales_questions.py \
+  --sample 100 --seed 20260917 --workers 8 --proposals 3 \
+  --budget-usd 50 --run-dir runs/sales-ready-sample-20260917 \
+  --exclude-report reports/sales-questions-v6-glm-seed20260915-n100.json
+```
+
+Sample exclusions remove entire CRM groups appearing in earlier reports. The v8
+initial fresh-seed experiment has two source-call overlaps with v6; it is a new
+random sample, not a completely disjoint holdout. Use exclusions for the final
+validation sample.
+
+Repeat the identical command to resume. The source plan and configuration are frozen;
+changing prompts requires a new version and directory. Observe the run with:
+
+```bash
+watch -n 10 cat runs/sales-ready-sample-20260917/progress.json
+uv run python scripts/research_costs.py
+```
+
+SQLite meters each request attempt. The optional transport budget reserves a
+conservative estimate for in-flight requests atomically across workers and retains
+reservations for unknown usage. Known token usage replaces reservations. The cap is
+an operational allowance, not a provider invoice guarantee. A budget stop preserves
+checkpoints; raise the explicit allowance to resume if desired. The research-wide
+ceiling remains $1,000 across all runs.
+
+On completion the runner writes `questions.json`, B2B/B2C question Parquet files,
+coverage/deduplication reports and progress. Sample coverage is explicitly marked;
+no files are uploaded. B2C multi-call units are excluded. An explicit `--all` option
+exists for eventual full generation, but has NOT been run during this research.
+Do not confuse this new runner with the stopped historical generate-and-publish
+workflow. Production readiness is still pending live sample results and review.

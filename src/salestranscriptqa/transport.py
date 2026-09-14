@@ -18,6 +18,10 @@ SECONDARY = "accounts/fireworks/models/glm-5p3-flash"
 RATES = {PRIMARY: (0.22, 0.007, 0.66), SECONDARY: (0.15, 0.03, 0.50)}
 
 
+class BudgetExceededError(RuntimeError):
+    """Configured conservative per-run API allowance has been exhausted."""
+
+
 class InvalidModelOutputError(ValueError):
     """All bounded attempts returned successful HTTP responses with unusable model output."""
 
@@ -59,7 +63,8 @@ def retry_delay(attempt, header=None, now=None):
 
 
 class Transport:
-    def __init__(self, root):
+    def __init__(self, root, budget_usd=None):
+        self.budget_usd = budget_usd
         self.root = Path(root)
         (self.root / "requests").mkdir(parents=True, exist_ok=True)
         self.lock = threading.Lock()
@@ -73,6 +78,7 @@ class Transport:
                 input_tokens INTEGER, cached_tokens INTEGER, output_tokens INTEGER,
                 estimated_usd REAL, artifact TEXT, error TEXT);
                 CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY, status TEXT, artifact TEXT, lease_until REAL);
+                CREATE TABLE IF NOT EXISTS budget_reservations(id TEXT PRIMARY KEY, worst_usd REAL NOT NULL);
                 CREATE INDEX IF NOT EXISTS attempts_cache ON attempts(request_key,status,started);
             """)
 
@@ -80,6 +86,23 @@ class Transport:
         db = sqlite3.connect(self.root / "progress.sqlite", timeout=60)
         db.row_factory = sqlite3.Row
         return db
+
+    def start_attempt(self, aid, key, stage, model, started, payload):
+        # Reserve one conservative attempt allowance atomically across workers.
+        # One UTF-8 byte per input token plus framing allowance deliberately overestimates.
+        with self.db() as db:
+            db.execute("BEGIN IMMEDIATE")
+            if self.budget_usd is not None:
+                a, _, c = RATES[model]
+                worst = ((len(json.dumps(payload,ensure_ascii=False).encode()) + 1024) * a
+                         + payload['max_tokens'] * c) / 1e6
+                used = db.execute("SELECT COALESCE(SUM(COALESCE(a.estimated_usd,r.worst_usd,0)),0) "
+                                  "FROM attempts a LEFT JOIN budget_reservations r ON a.id=r.id").fetchone()[0]
+                if used + worst > self.budget_usd:
+                    raise BudgetExceededError('Run API allowance exhausted; raise the explicit budget to resume')
+                db.execute('INSERT INTO budget_reservations VALUES(?,?)',(aid,worst))
+            db.execute("INSERT INTO attempts(id,request_key,stage,model,started,status) VALUES(?,?,?,?,?,?)",
+                       (aid,key,stage,model,started,'running'))
 
     def request(self, model, prompt, stage, nonce=""):
         if model not in RATES:
@@ -111,11 +134,7 @@ class Transport:
                 time.sleep(min(delay, 30))
             aid = uuid.uuid4().hex
             started = time.time()
-            with self.db() as db:
-                db.execute(
-                    "INSERT INTO attempts(id,request_key,stage,model,started,status) VALUES(?,?,?,?,?,?)",
-                    (aid, key, stage, model, started, "running"),
-                )
+            self.start_attempt(aid, key, stage, model, started, payload)
             data, response, parsed, error = None, None, None, None
             try:
                 response = self.client.post(

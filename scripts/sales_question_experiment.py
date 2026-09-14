@@ -7,19 +7,19 @@ import random
 from collections import Counter
 from pathlib import Path
 from salestranscriptqa.corpus import write_json
-from salestranscriptqa.sales_questions import SalesQuestions, SalesQuestionsGLM, SalesQuestionsEdited, SALES_PROMPT, STYLE_AUDIT
+from salestranscriptqa.sales_questions import SalesQuestions, SalesQuestionsGLM, SalesQuestionsEdited, SalesQuestionsReady, SALES_PROMPT, STYLE_AUDIT
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--model', choices=['deepseek', 'glm', 'edited'], default='deepseek')
+    parser.add_argument('--model', choices=['deepseek', 'glm', 'edited', 'focused'], default='deepseek')
     parser.add_argument('--seed', type=int, default=20260915)
     parser.add_argument('--count', type=int, default=100)
     parser.add_argument('--workers', type=int, default=8)
     args = parser.parse_args()
     if not 1 <= args.count <= 100:
         parser.error('Experiments are limited to 1..100 source units per invocation')
-    cls = {'deepseek':SalesQuestions,'glm':SalesQuestionsGLM,'edited':SalesQuestionsEdited}[args.model]
+    cls = {'deepseek':SalesQuestions,'glm':SalesQuestionsGLM,'edited':SalesQuestionsEdited,'focused':SalesQuestionsReady}[args.model]
     root = Path('runs') / f'{cls.version}-seed{args.seed}-n{args.count}'
     root.mkdir(parents=True, exist_ok=True)
     with (root/'experiment.lock').open('w') as lock:

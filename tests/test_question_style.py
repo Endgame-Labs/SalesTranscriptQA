@@ -18,3 +18,9 @@ def test_natural_customer_names_and_business_dates_are_preserved():
         "What did Ravi commit to sending before the demo on July 11?",
     ]:
         assert locator_flags(q) == []
+
+
+def test_observed_year_locator_and_unbound_speaker():
+    assert locator_flags('What did Rajesh prioritize in the 2022 call?')
+    assert locator_flags('How did I address Chloe’s concern?')
+    assert locator_flags('What did Arjun offer Chloe?')==[]
