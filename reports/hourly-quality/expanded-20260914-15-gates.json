@@ -1,0 +1,446 @@
+[
+  {
+    "question_id": "b2b-multi_call-783dd759719a93bd",
+    "question": "For MetroGrid Networks, what pricing concern did Juanita Gomez raise in the initial discussion, and what discount did TechPulse later offer on the PulseSim Pro in the proposal review?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing concern Juanita Gomez raised in the initial discussion and the discount TechPulse later offered on the PulseSim Pro in the proposal review, both for MetroGrid Networks.",
+        "relationship": "Same commercial issue (pricing/discount on the PulseSim Pro deal) tracked across the initial call and the later proposal review.",
+        "reason": "Both parts concern the same pricing negotiation on the same product for the same customer; the initial-concern and later-offer comparison is a coherent commercial thread, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0XfIAK",
+                "fact": "TechPulse offered a 10% discount on 15 PulseSim Pro licenses, totaling $6,749.87.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T0uEIAS) does not mention any specific discount or pricing details for PulseSim Pro; it only discusses general pricing concerns and long-term value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0uEIAS",
+                "fact": "Juanita Gomez raised a pricing concern that initial costs could strain MetroGrid's budget.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T0XfIAK) does not include Juanita raising a budget concern; it focuses on product features and the discount offer, with no mention of initial cost strain."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the pricing concern raised in the initial discussion and the discount offered later. These facts are substantively different and each is exclusively present in one call, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0XfIAK",
+                  "fact": "TechPulse offered a 10% discount on 15 PulseSim Pro licenses, totaling $6,749.87.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T0uEIAS) does not mention any specific discount or pricing details for PulseSim Pro; it only discusses general pricing concerns and long-term value."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0uEIAS",
+                  "fact": "Juanita Gomez raised a pricing concern that initial costs could strain MetroGrid's budget.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T0XfIAK) does not include Juanita raising a budget concern; it focuses on product features and the discount offer, with no mention of initial cost strain."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the pricing concern raised in the initial discussion and the discount offered later. These facts are substantively different and each is exclusively present in one call, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0uEIAS",
+                "fact": "Juanita raised that initial costs could be a concern for MetroGrid's budget",
+                "why_other_call_cannot_supply_it": "The October call contains no mention of budget/initial-cost concerns; it only discusses security, compliance, and discounts."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0XfIAK",
+                "fact": "TechPulse offered a 10% discount on 15 PulseSim Pro licenses totaling $6,749.87",
+                "why_other_call_cannot_supply_it": "The August call contains no discount, license quantity, or pricing figures for PulseSim Pro; it only discusses general cost-of-ownership philosophy."
+              }
+            ],
+            "reason": "The question asks for two distinct facts: a pricing concern from the initial discussion and a specific discount from the proposal review. Each fact appears only in one call, and neither call contains the other's information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0uEIAS",
+                  "fact": "Juanita raised that initial costs could be a concern for MetroGrid's budget",
+                  "why_other_call_cannot_supply_it": "The October call contains no mention of budget/initial-cost concerns; it only discusses security, compliance, and discounts."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0XfIAK",
+                  "fact": "TechPulse offered a 10% discount on 15 PulseSim Pro licenses totaling $6,749.87",
+                  "why_other_call_cannot_supply_it": "The August call contains no discount, license quantity, or pricing figures for PulseSim Pro; it only discusses general cost-of-ownership philosophy."
+                }
+              ],
+              "reason": "The question asks for two distinct facts: a pricing concern from the initial discussion and a specific discount from the proposal review. Each fact appears only in one call, and neither call contains the other's information."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The initial discussion (Aug 29) contains Juanita's pricing concern ('initial costs can be a concern for our budget'), and the proposal review (Oct 8) contains the 10% discount on 15 PulseSim Pro licenses totaling $6,749.87. Each source contributes an exclusive requested fact. The answer matches both sources precisely with no unasked extras. The question is naturally scoped to a named account and contact, and a rep would plausibly want to recall the customer's budget concern and the discount offered.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Juanita Gomez stating 'we're attracted to cost-effective solutions, but initial costs can be a concern for our budget,' which matches the answer_claim that she raised a pricing concern about initial costs straining the budget."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Noura Haddad explicitly states 'we are offering a 10% discount on a bulk quantity of 15 licenses, bringing the total down to $6,749.87' for the PulseSim Pro, which directly supports the answer_claim about the 10% discount on 15 PulseSim Pro licenses totaling $6,749.87."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Juanita Gomez's concern that initial costs could strain the budget, and evidence index 1 confirms TechPulse (via Noura Haddad) offered a 10% discount on 15 PulseSim Pro licenses totaling $6,749.87. The metadata confirms the account is MetroGrid Networks and the contact is Juanita Gomez, and the call dates align with 'initial discussion' (Aug 29) and 'proposal review' (Oct 8). All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    },
+    "source": "Actual frozen-cohort gate receipts, not a new model rejudge."
+  },
+  {
+    "question_id": "b2b-multi_call-c67b826814649061",
+    "question": "For Innovative Robotics, how did Aarav initially position TechPulse's pricing versus competitors, and what specific discount was later proposed and on which products?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Aarav initially positioned TechPulse's pricing versus competitors for Innovative Robotics, and the specific discount later proposed and the products it covered",
+        "relationship": "Both parts address the same commercial/pricing issue for the same deal \u2014 initial competitive pricing positioning and the subsequent discount proposal are stages of one negotiation thread",
+        "reason": "This is a coherent commercial-terms question: competitive pricing comparison and the discount that followed concern the same business issue (TechPulse's pricing for Innovative Robotics), not two unrelated lookups joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "type": "object",
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyqnIAC",
+                "fact": "Aarav initially positioned TechPulse's pricing as competitive, transparent, with strong ROI and no hidden costs.",
+                "why_other_call_cannot_supply_it": "The second call does not mention the initial pricing positioning; it focuses on the discount proposal and other topics."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzzoIAC",
+                "fact": "A 15% discount was proposed on CloudLink Designer and CircuitAI Innovator.",
+                "why_other_call_cannot_supply_it": "The first call does not mention any discount or specific products for discount; it only discusses general pricing positioning."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the initial pricing positioning and a later specific discount on specific products. These facts are substantively different and each is only present in one of the two calls. The first call provides the initial positioning, while the second call provides the discount details. Neither call contains both facts, so both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyqnIAC",
+                  "fact": "Aarav initially positioned TechPulse's pricing as competitive, transparent, with strong ROI and no hidden costs.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention the initial pricing positioning; it focuses on the discount proposal and other topics."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzzoIAC",
+                  "fact": "A 15% discount was proposed on CloudLink Designer and CircuitAI Innovator.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention any discount or specific products for discount; it only discusses general pricing positioning."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the initial pricing positioning and a later specific discount on specific products. These facts are substantively different and each is only present in one of the two calls. The first call provides the initial positioning, while the second call provides the discount details. Neither call contains both facts, so both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyqnIAC",
+                "fact": "Aarav initially positioned TechPulse's pricing as competitive and transparent, emphasizing cost-effectiveness, strong ROI, and no hidden costs versus competitors.",
+                "why_other_call_cannot_supply_it": "The December call discusses only the proposed discount and total cost of ownership; it never states how pricing was initially positioned relative to competitors."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzzoIAC",
+                "fact": "Aarav later proposed a specific 15% discount on key products including CloudLink Designer and CircuitAI Innovator.",
+                "why_other_call_cannot_supply_it": "The November call contains no discount proposal, percentage, or named discounted products; it only gives the general pricing positioning."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the initial pricing positioning (found only in the November 17 call) and the specific later discount with its percentage and applicable products (found only in the December 20 call). These are different commercial facts, not paraphrases, and each source call is required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyqnIAC",
+                  "fact": "Aarav initially positioned TechPulse's pricing as competitive and transparent, emphasizing cost-effectiveness, strong ROI, and no hidden costs versus competitors.",
+                  "why_other_call_cannot_supply_it": "The December call discusses only the proposed discount and total cost of ownership; it never states how pricing was initially positioned relative to competitors."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzzoIAC",
+                  "fact": "Aarav later proposed a specific 15% discount on key products including CloudLink Designer and CircuitAI Innovator.",
+                  "why_other_call_cannot_supply_it": "The November call contains no discount proposal, percentage, or named discounted products; it only gives the general pricing positioning."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the initial pricing positioning (found only in the November 17 call) and the specific later discount with its percentage and applicable products (found only in the December 20 call). These are different commercial facts, not paraphrases, and each source call is required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks how Aarav initially positioned TechPulse pricing versus competitors (Call 1: competitive, transparent, strong ROI, no hidden costs) and what specific discount was later proposed on which products (Call 2: 15% on CloudLink Designer and CircuitAI Innovator). Each call contributes an exclusive requested fact. The gold answer matches both transcripts precisely with no unasked extras. The account name 'Innovative Robotics' provides adequate scope, and a rep would plausibly want to recall how pricing was framed and what discount was offered.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Aarav Sharma on 2021-11-17 explicitly states pricing is 'competitive but also transparent,' emphasizes 'cost-effectiveness with a strong ROI,' and notes 'without hidden costs' versus competitors. This directly supports the answer_claim about initial positioning."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Aarav Sharma on 2021-12-20 explicitly states 'We're proposing a 15% discount on several key products, including CloudLink Designer and CircuitAI Innovator.' This directly supports the answer_claim about the specific discount and products."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) initial positioning as competitive, transparent pricing with strong ROI and no hidden costs\u2014fully supported by evidence index 0; (2) a later 15% discount on key products including CloudLink Designer and CircuitAI Innovator\u2014fully supported by evidence index 1. Both citations are from Aarav Sharma speaking to Sara Andersson at Innovative Robotics, matching the question's context. All factual claims in the gold_answer are covered by the supplied evidence."
+      }
+    },
+    "source": "Actual frozen-cohort gate receipts, not a new model rejudge."
+  },
+  {
+    "question_id": "b2b-single_call-bffedb0e9c42d09b",
+    "question": "What is Chen Wei at EcoWave Solutions buying and what's the total price quoted?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify what Chen Wei at EcoWave Solutions is purchasing and the total quoted price.",
+        "relationship": "Single coherent quote lookup: the product and its total price are parts of one commercial quote.",
+        "reason": "The question asks for the item being bought and the quoted total for that same purchase \u2014 one unified commercial inquiry, not two independent lookups."
+      }
+    },
+    "necessity": null,
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Chen Wei at EcoWave Solutions is buying and the total quoted price. The single call transcript confirms four units of SecureTrack Pro, two units of EcoPCB Creator, and a total of $3,572. The gold answer states exactly those facts with no extras. The question is naturally phrased, identifies the customer by name and company, and a rep would plausibly want to confirm purchase details and pricing. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Linh Tran confirming 'four units of SecureTrack Pro and two units of EcoPCB Creator,' Chen Wei replying 'Yes, that's correct,' and Linh Tran stating 'considering your total purchase, it's $3,572.' This directly supports the claim of four SecureTrack Pro, two EcoPCB Creator, and a total of $3,572."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: the buyer is Chen Wei at EcoWave Solutions (confirmed by context_metadata lead_name and company_name), the products are four units of SecureTrack Pro and two units of EcoPCB Creator (confirmed in dialogue), and the total quoted price is $3,572 (stated explicitly by Linh Tran). All claims in the gold_answer are accounted for by the supplied citations."
+      }
+    },
+    "source": "Actual frozen-cohort gate receipts, not a new model rejudge."
+  },
+  {
+    "question_id": "b2b-single_call-0754ebd240524372",
+    "question": "What did Anton M\u00fcller from Austrian Tech Innovators want the installation timeline to be after purchase, and why?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Anton M\u00fcller's desired installation timeline after purchase and his reasoning",
+        "relationship": "single coherent lookup: one stakeholder's requirement and rationale on the same issue",
+        "reason": "A single requirement (installation timeline) plus its justification is one coherent information need; installation of software/equipment is a plausible sales topic, and no mismatched domain term is evident."
+      }
+    },
+    "necessity": null,
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the installation timeline and the reason behind it. The transcript at 10:01:25 has Anton M\u00fcller stating 'everything installed and running within 3 days after purchase since we have some deadlines coming up.' The gold answer captures both facts precisely with no extras. The question names the contact and company, which is natural scoping. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is attributed to Anton M\u00fcller and states verbatim: 'We want to have everything installed and running within 3 days after purchase since we have some deadlines coming up.' This directly supports the answer_claim regarding the 3-day installation timeline and the reason (upcoming deadlines)."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: (1) Anton M\u00fcller is the speaker, confirmed by the dialogue attribution and the context metadata identifying him as the lead for Austrian Tech Innovators; (2) the desired timeline is 'within 3 days after purchase'; (3) the reason is 'deadlines coming up.' The gold_answer's phrasing 'upcoming deadlines' is a faithful paraphrase of 'some deadlines coming up.' No unsupported claims are present."
+      }
+    },
+    "source": "Actual frozen-cohort gate receipts, not a new model rejudge."
+  },
+  {
+    "question_id": "b2c-single_call-08d43cae59563a53",
+    "question": "What pricing did Mai quote Elena Borisov for the 2024 Tesla Model S and the 2023 Mercedes-Benz E-Class?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The prices Mai quoted Elena Borisov for two vehicles (2024 Tesla Model S and 2023 Mercedes-Benz E-Class)",
+        "relationship": "single coherent quote lookup covering two vehicles in one pricing request",
+        "reason": "This is one pricing lookup spanning two vehicles in the same quote context; a commercial quote breakdown is acceptable, and there is no domain-mismatch issue."
+      }
+    },
+    "necessity": null,
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific prices quoted by Mai to Elena Borisov. The single call transcript contains both figures verbatim ($89,999.99 for the 2024 Tesla Model S and $65,999.99 for the 2023 Mercedes-Benz E-Class). The gold answer states exactly those two prices with no extra or missing information. The question is naturally phrased, adequately scoped to a named customer and rep, and a sales rep would plausibly need to recall quoted pricing. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Mai Nguyen explicitly states 'the 2024 Tesla Model S at $89,999.99 and the Mercedes-Benz E-Class at $65,999.99,' which directly supports the answer_claim. The speaker is Mai (Nguyen), the account is Elena Borisov, and the prices match exactly. The only minor note is that the quote says 'the Mercedes-Benz E-Class' without the '2023' year qualifier, but the answer_claim includes '2023.' However, the gold_answer also specifies '2023 Mercedes-Benz E-Class.' The quote does not explicitly state '2023' for the Mercedes. That said, the answer_claim itself says 'the Mercedes-Benz E-Class at $65,999.99' without '2023,' so the quote supports the answer_claim as written. The price and model are confirmed."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item provides Mai Nguyen quoting both prices to Elena Borisov: $89,999.99 for the 2024 Tesla Model S and $65,999.99 for the Mercedes-Benz E-Class. The gold_answer states 'Tesla Model S: $89,999.99; Mercedes-Benz E-Class: $65,999.99,' which is fully supported by the quote. The '2023' year for the Mercedes is not explicitly in the quote, but the gold_answer includes it; however, the core pricing facts and model names are directly confirmed. The account metadata confirms the call is with Elena Borisov. All essential factual claims in the gold_answer (both prices and both vehicle models) are supported by the supplied evidence."
+      }
+    },
+    "source": "Actual frozen-cohort gate receipts, not a new model rejudge."
+  },
+  {
+    "question_id": "b2c-single_call-ef39437ce9df72f1",
+    "question": "What is the total price Aiden Scott agreed to for the 2022 Toyota Camry Hybrid package, and what does it include?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total agreed price for the 2022 Toyota Camry Hybrid package and what that package includes",
+        "relationship": "single coherent commercial lookup: price and inclusions of the same quoted package",
+        "reason": "One lookup about a single quote/package \u2014 the total price and its contents are two facets of the same commercial offer, with plausible sales language."
+      }
+    },
+    "necessity": null,
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the agreed total price and package contents for Aiden Scott's 2022 Toyota Camry Hybrid. The single call transcript clearly states the total is $29,299.97 including the Camry Hybrid, Comprehensive Maintenance Plan, and Extended Warranty Plan. The gold answer matches exactly. A rep/account manager would plausibly need to confirm the agreed price and package composition. The question is naturally worded, adequately scoped by naming the customer and vehicle, and the answer provides precisely the requested facts without extras. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Zanele Dlamini explicitly states: 'the total for the Camry Hybrid, the Comprehensive Maintenance Plan, and the Extended Warranty Plan comes to $29,299.97.' This directly supports the answer_claim that the total for those three items is $29,299.97. The speaker is the salesperson presenting the price, and the account metadata confirms the call is associated with Aiden Scott. The quote also says 'That includes everything you'll need for a robust ownership experience,' reinforcing the package contents."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '$29,299.97 for the Camry Hybrid plus the Comprehensive Maintenance Plan and Extended Warranty Plan.' The single cited evidence item (index 0) contains a direct quote from the salesperson stating exactly that total price ($29,299.97) for exactly those three components (Camry Hybrid, Comprehensive Maintenance Plan, Extended Warranty Plan). The context metadata confirms the account is Aiden Scott. All factual elements of the gold_answer\u2014price, vehicle, and two add-on plans\u2014are explicitly present in the cited quote. The word 'agreed' is not directly evidenced (the quote is the salesperson stating the price, not the customer confirming), but the question asks what Aiden Scott 'agreed to,' and the evidence shows the price presented in the call associated with Aiden Scott's account; no contradicting evidence is supplied. The answer is fully supported by the supplied citations."
+      }
+    },
+    "source": "Actual frozen-cohort gate receipts, not a new model rejudge."
+  }
+]
