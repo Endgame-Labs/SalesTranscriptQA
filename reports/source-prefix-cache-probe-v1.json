@@ -1,0 +1,770 @@
+{
+  "plan": {
+    "source_requests": {
+      "requests": 7749,
+      "input_tokens": 34274284
+    },
+    "potential_repeated_group_input_within_seconds": {
+      "300": 13498509,
+      "900": 17406240,
+      "3600": 22557684
+    },
+    "seed": 20260914,
+    "limitations": "Selected frequent source groups with positive and negative decisions; cache gains are a warm-reuse diagnostic, not an end-to-end cost forecast. TTL estimates assume identical group prefix and replica routing, ignoring eviction; they are upper bounds."
+  },
+  "outcomes": [
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "question-first",
+      "position": 0,
+      "question": "For Nordic HealthTech, what discounts did Liam offer on SecureFlow Suite and SecureAnalytics Pro in the proposal discussion, and how did the discount recap during the demo differ?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the proposal discussion (2021-03-14), Liam offered a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro. In the demo recap (2021-03-30), Liam recapped a 10% discount on SecureFlow Suite and a 5% discount on OptiPower Manager, with no mention of SecureAnalytics Pro. The difference is that SecureAnalytics Pro's 10% discount from the proposal discussion was not repeated in the demo recap; instead, the recap featured a 5% discount on OptiPower Manager, while SecureFlow Suite remained at 10%.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003SvkyIAC",
+            "line_start": 14,
+            "line_end": 15
+          },
+          {
+            "call_id": "b2b:a05Wt000003T0uFIAS",
+            "line_start": 14,
+            "line_end": 15
+          }
+        ],
+        "reason": "The proposal discussion call (b2b:a05Wt000003SvkyIAC, line 14) explicitly states Liam offered a 10% discount on both SecureFlow Suite and SecureAnalytics Pro. The demo call (b2b:a05Wt000003T0uFIAS, line 14) recaps SecureFlow Suite at 10% and OptiPower Manager at 5%, with no mention of SecureAnalytics Pro. Both facts are directly supported by the source transcripts for the exact named account (Nordic HealthTech), salesperson (Liam Kelly), and products."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "question-first",
+      "position": 1,
+      "question": "What next step did Carmen propose to Bala Krishnan at Nordic HealthTech for moving forward with the EDA integration?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "No person named Carmen appears in any of the provided call transcripts. All calls with Bala Krishnan at Nordic HealthTech were conducted by Liam Kelly of TechPulse Solutions. Since the question specifically asks about a next step proposed by Carmen regarding the EDA integration, and no such person or proposal exists in the sources, the question cannot be answered.",
+        "evidence": [],
+        "reason": "The question asks about a next step proposed by 'Carmen' to Bala Krishnan at Nordic HealthTech for moving forward with the EDA integration. After reviewing all five call transcripts, the only salesperson who interacted with Bala Krishnan is Liam Kelly from TechPulse Solutions. There is no mention of anyone named Carmen in any of the calls. While EDA (electronic design automation) is discussed in the context of TechPulse's products, no Carmen proposed any next step. The exact named person (Carmen) required by the question is absent from all sources, making the answer incomplete."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-question-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "question-first",
+      "position": 2,
+      "question": "For Nordic HealthTech, what discounts did Liam quote in the initial proposal discussion versus what he recapped during the demo?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the initial proposal discussion (2021-03-14), Liam quoted a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro. During the demo recap (2021-03-30), he recapped a 10% discount on SecureFlow Suite and a 5% discount on OptiPower Manager, plus 'several others to fit your larger strategy.'",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003SvkyIAC",
+            "line_start": 14,
+            "line_end": 15
+          },
+          {
+            "call_id": "b2b:a05Wt000003T0uFIAS",
+            "line_start": 14,
+            "line_end": 15
+          }
+        ],
+        "reason": "Line 14 of call b2b:a05Wt000003SvkyIAC (the 2021-03-14 initial proposal discussion) has Liam stating 'We offer a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro.' Line 14 of call b2b:a05Wt000003T0uFIAS (the 2021-03-30 demo) has Liam recapping 'SecureFlow Suite at a 10% discount, OptiPower Manager at a 5% discount, and several others to fit your larger strategy.' Both facts are directly supported by the exact named salesperson (Liam Kelly) for the exact account (Nordic HealthTech)."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "question-first",
+      "position": 3,
+      "question": "For Nordic HealthTech, what discounts did Liam quote in the initial proposal discussion, and how did the discount recap during the demo differ?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the initial proposal discussion (2021-03-14), Liam quoted a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro, noting they were negotiable. In the demo recap (2021-03-30), Liam recapped a 10% discount on SecureFlow Suite and a 5% discount on OptiPower Manager, plus 'several others to fit your larger strategy' \u2014 the recap replaced SecureAnalytics Pro with OptiPower Manager at 5% and no longer mentioned the SecureAnalytics Pro discount.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003SvkyIAC",
+            "line_start": 14,
+            "line_end": 15
+          },
+          {
+            "call_id": "b2b:a05Wt000003T0uFIAS",
+            "line_start": 14,
+            "line_end": 15
+          }
+        ],
+        "reason": "Line 14 of call b2b:a05Wt000003SvkyIAC (the 2021-03-14 initial proposal discussion) has Liam stating 'We offer a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro, and these are certainly negotiable.' Line 14 of call b2b:a05Wt000003T0uFIAS (the 2021-03-30 demo) has Liam recapping 'SecureFlow Suite at a 10% discount, OptiPower Manager at a 5% discount, and several others to fit your larger strategy.' The difference is that the demo recap swapped SecureAnalytics Pro for OptiPower Manager at 5%, while keeping SecureFlow Suite at 10%. Both facts are directly supported by the cited lines."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "source-first",
+      "position": 0,
+      "question": "For Nordic HealthTech, what discounts did Liam offer on SecureFlow Suite and SecureAnalytics Pro in the proposal discussion, and how did the discount recap during the demo differ?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the proposal discussion (2021-03-14 call), Liam offered a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro. In the demo recap (2021-03-30 call), Liam recapped a 10% discount on SecureFlow Suite and a 5% discount on OptiPower Manager, with no mention of SecureAnalytics Pro. The difference is that SecureAnalytics Pro's 10% discount from the proposal discussion was not repeated in the demo recap; instead, the recap included a 5% discount on OptiPower Manager, while SecureFlow Suite remained at 10%.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003SvkyIAC",
+            "line_start": 14,
+            "line_end": 15
+          },
+          {
+            "call_id": "b2b:a05Wt000003T0uFIAS",
+            "line_start": 14,
+            "line_end": 15
+          }
+        ],
+        "reason": "Line 14 of the 2021-03-14 call explicitly states '10% discount on both the SecureFlow Suite and SecureAnalytics Pro.' Line 14 of the 2021-03-30 demo call states 'SecureFlow Suite at a 10% discount, OptiPower Manager at a 5% discount, and several others,' with no mention of SecureAnalytics Pro. The draft extraction is accurate and fully supported by the source text."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "source-first",
+      "position": 1,
+      "question": "What next step did Carmen propose to Bala Krishnan at Nordic HealthTech for moving forward with the EDA integration?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "No person named Carmen appears in any of the provided call transcripts. All calls with Bala Krishnan at Nordic HealthTech were conducted by Liam Kelly of TechPulse Solutions. Therefore, no next step proposed by 'Carmen' regarding an EDA integration can be identified from these sources.",
+        "evidence": [],
+        "reason": "The question asks about a next step proposed by 'Carmen' to Bala Krishnan. Across all five call transcripts (b2b:a05Wt000003SvkyIAC, b2b:a05Wt000003SxWaIAK, b2b:a05Wt000003T0uFIAS, b2b:a05Wt000003T1joIAC, b2b:a05Wt000003T1tXIAS), the only salesperson interacting with Bala Krishnan is Liam Kelly from TechPulse Solutions. No individual named Carmen is mentioned or participates in any call. Since the exact named person (Carmen) is not present in the sources, the requested fact cannot be supported, and the answer is incomplete."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-source-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "source-first",
+      "position": 2,
+      "question": "For Nordic HealthTech, what discounts did Liam quote in the initial proposal discussion versus what he recapped during the demo?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the initial proposal discussion (2021-03-14), Liam quoted a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro. During the demo recap (2021-03-30), he recapped a 10% discount on SecureFlow Suite and a 5% discount on OptiPower Manager, plus 'several others to fit your larger strategy.'",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003SvkyIAC",
+            "line_start": 14,
+            "line_end": 15
+          },
+          {
+            "call_id": "b2b:a05Wt000003T0uFIAS",
+            "line_start": 14,
+            "line_end": 15
+          }
+        ],
+        "reason": "Line 14 of call b2b:a05Wt000003SvkyIAC (the 2021-03-14 proposal discussion) states Liam offered 'a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro.' Line 14 of call b2b:a05Wt000003T0uFIAS (the 2021-03-30 demo) states 'we're offering SecureFlow Suite at a 10% discount, OptiPower Manager at a 5% discount, and several others to fit your larger strategy.' Both facts are directly supported by the exact named salesperson (Liam Kelly) and account (Nordic HealthTech)."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "mode": "source-first",
+      "position": 3,
+      "question": "For Nordic HealthTech, what discounts did Liam quote in the initial proposal discussion, and how did the discount recap during the demo differ?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the initial proposal discussion (2021-03-14), Liam quoted a 10% discount on both the SecureFlow Suite and SecureAnalytics Pro, noting they were negotiable. In the demo recap (2021-03-30), Liam recapped a 10% discount on SecureFlow Suite and a 5% discount on OptiPower Manager, plus 'several others' \u2014 the recap replaced SecureAnalytics Pro with OptiPower Manager at 5% and no longer mentioned the SecureAnalytics Pro discount.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003SvkyIAC",
+            "line_start": 14,
+            "line_end": 15
+          },
+          {
+            "call_id": "b2b:a05Wt000003T0uFIAS",
+            "line_start": 14,
+            "line_end": 15
+          }
+        ],
+        "reason": "Line 14 of the 2021-03-14 call has Liam stating '10% discount on both the SecureFlow Suite and SecureAnalytics Pro' and that they are negotiable. Line 14 of the 2021-03-30 demo call has Liam recapping 'SecureFlow Suite at a 10% discount, OptiPower Manager at a 5% discount, and several others.' The difference is that the demo recap substituted OptiPower Manager at 5% in place of SecureAnalytics Pro, and no longer mentioned the SecureAnalytics Pro discount. Both facts are directly supported by the cited lines."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-4ea3e4cceffb34ad"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "question-first",
+      "position": 0,
+      "question": "What next step did Harper Allen agree to for moving forward with the luxury vehicle purchase?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "Harper Allen agreed to a virtual demonstration of the 2024 Tesla Model S. Sebastian Martinez offered to schedule a virtual demonstration focusing on the vehicle's features and performance, Harper replied 'That sounds perfect. I look forward to it,' and Sebastian confirmed he would follow up soon to arrange the demonstration.",
+        "evidence": [
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 17,
+            "line_end": 20
+          }
+        ],
+        "reason": "In the July 4 call, Sebastian proposed scheduling a virtual demonstration of the Model S (line 17), Harper Allen explicitly agreed saying 'That sounds perfect. I look forward to it' (line 18), and Sebastian confirmed he would follow up to arrange it (line 19). This is the next step Harper agreed to for moving forward with the luxury vehicle purchase. The draft's line_end of 19 excluded Harper's final acknowledgment on line 20, so it is corrected to 20 (end-exclusive)."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-f57b13155a273343"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "question-first",
+      "position": 1,
+      "question": "What matters most to Harper Allen when choosing a dealer for a premium vehicle like the Tesla Model S or BMW X5 M?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "Harper Allen's top priorities when choosing a dealer for a premium vehicle (the 2024 Tesla Model S; the BMW X5 M is never mentioned in any call) are: (1) Reliability \u2013 'Reliable transportation is quite crucial for us' and he is 'primarily looking for something that's reliable'; (2) A seamless, easy buying and service experience \u2013 'a seamless experience is important to us,' and he prefers a streamlined financing process with fewer options: 'It's more about the ease of the process for me'; (3) Strong post-purchase support \u2013 'The long-term maintenance support is really important to me,' including comprehensive maintenance plans, clear extended warranties, and full coverage ('coverage is crucial'); and (4) Cutting-edge technology and safety features in the vehicle. Note: the BMW X5 M does not appear in any of the three calls; only the Tesla Model S is discussed.",
+        "evidence": [
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 3,
+            "line_end": 6
+          },
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 8,
+            "line_end": 9
+          },
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 12,
+            "line_end": 16
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 3,
+            "line_end": 4
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 17,
+            "line_end": 18
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 5,
+            "line_end": 8
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 9,
+            "line_end": 11
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 13,
+            "line_end": 16
+          }
+        ],
+        "reason": "All four priorities are directly stated by Harper Allen across the three calls. Reliability is stated in call 1 lines 3 and 5. Seamless experience is stated in call 1 line 8 and reinforced in call 3 lines 5-7 where Harper prefers a less cumbersome, streamlined financing process. Post-purchase support importance is explicitly stated in call 2 line 17 ('The long-term maintenance support is really important to me') and call 3 lines 13-15 (warranties and coverage). Technology and safety interest appears in call 1 line 5, call 2 line 3, and call 3 lines 9-11. The BMW X5 M is never mentioned in any source call, so the answer is scoped to the Tesla Model S only, which is the vehicle actually discussed. The draft extraction is accurate; I expanded evidence to include technology/safety lines and adjusted line_end values to be exclusive."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-f57b13155a273343"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "question-first",
+      "position": 2,
+      "question": "What next step did Harper Allen agree to after discussing the Tesla Model S and Mercedes-Benz E-Class?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "The provided call transcripts for Harper Allen discuss only the Tesla Model S; the Mercedes-Benz E-Class is never mentioned in any of the three calls. Because the question asks about a next step agreed to after discussing both the Tesla Model S and the Mercedes-Benz E-Class, and no discussion of the Mercedes-Benz E-Class exists in the sources, the requested fact cannot be answered.",
+        "evidence": [],
+        "reason": "All three calls (b2c:a05Ws000005SPGlIAO, b2c:a05Ws000005SZ6RIAW, b2c:a05Ws000005SaAXIA0) reference only the Tesla Model S. The Mercedes-Benz E-Class does not appear anywhere in the transcripts, so no next step tied to a joint discussion of both vehicles can be identified."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-question-first-f57b13155a273343"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "question-first",
+      "position": 3,
+      "question": "What matters most to Harper Allen when evaluating a premium vehicle purchase from AutoElite?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "Harper Allen's top priorities when evaluating a premium vehicle purchase from AutoElite are: (1) Reliability \u2013 he states 'Reliable transportation is quite crucial for us' and is 'primarily looking for something that's reliable and possibly electric'; (2) Long-term post-purchase support and coverage \u2013 he explicitly says 'The long-term maintenance support is really important to me' and 'coverage is crucial,' and he probes extended warranties and maintenance plans; (3) Ease/streamlining of the financing process \u2013 he prefers a less cumbersome process, saying 'It's more about the ease of the process for me' and asks for financing adjustments to replicate a smooth process; (4) Technology and safety features \u2013 he expresses interest in the Tesla Model S's features, safety aspects, and tech integration, and appreciates AutoElite's dedication to model advancements.",
+        "evidence": [
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 3,
+            "line_end": 6
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 3,
+            "line_end": 4
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 9,
+            "line_end": 12
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 17,
+            "line_end": 18
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 5,
+            "line_end": 8
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 9,
+            "line_end": 10
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 13,
+            "line_end": 16
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 17,
+            "line_end": 18
+          }
+        ],
+        "reason": "All four priorities are directly stated by Harper Allen across the three calls. Reliability is stated in call 1 lines 3 and 5. Long-term maintenance support is explicitly called 'really important' in call 2 line 17, and 'coverage is crucial' in call 3 line 15. Ease of financing is stated in call 3 lines 5, 7, and 17. Technology/safety interest appears in call 2 lines 3 and 11, and call 3 line 9. The draft extraction is accurate; I added call 2 line 3 (safety aspects) and call 3 line 9 (technology appreciation) as additional supporting evidence."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-f57b13155a273343"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "source-first",
+      "position": 0,
+      "question": "What next step did Harper Allen agree to for moving forward with the luxury vehicle purchase?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "Harper Allen agreed to a virtual demonstration of the 2024 Tesla Model S. Sebastian Martinez offered to schedule a virtual demonstration focusing on the Model S's features and performance, Harper responded 'That sounds perfect. I look forward to it,' and Sebastian confirmed he would follow up soon to arrange the demonstration.",
+        "evidence": [
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 17,
+            "line_end": 20
+          }
+        ],
+        "reason": "In the July 4 call, Sebastian proposed scheduling a virtual demonstration of the Model S (line 17), Harper explicitly agreed saying 'That sounds perfect. I look forward to it' (line 18), and Sebastian confirmed he would follow up to arrange it (line 19). This is the next step Harper agreed to for moving forward with the vehicle purchase. The draft extraction is correct; I extended the line_end to 20 (exclusive) to include Sebastian's confirmation line at index 19."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-f57b13155a273343"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "source-first",
+      "position": 1,
+      "question": "What matters most to Harper Allen when choosing a dealer for a premium vehicle like the Tesla Model S or BMW X5 M?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "Harper Allen's top priorities when choosing a dealer for a premium vehicle (the 2024 Tesla Model S; the BMW X5 M is never mentioned in any call) are: (1) Reliability \u2013 'Reliable transportation is quite crucial for us' and he is 'primarily looking for something that's reliable'; (2) A seamless, easy buying and financing experience \u2013 'a seamless experience is important to us,' and he prefers a streamlined process with fewer options ('It's more about the ease of the process for me'); (3) Strong post-purchase support \u2013 'The long-term maintenance support is really important to me,' including comprehensive maintenance plans, clear extended warranties, and full coverage ('coverage is crucial'); and (4) Cutting-edge technology and safety features in the vehicle.",
+        "evidence": [
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 3,
+            "line_end": 6
+          },
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 8,
+            "line_end": 9
+          },
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 12,
+            "line_end": 16
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 17,
+            "line_end": 18
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 5,
+            "line_end": 8
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 13,
+            "line_end": 16
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 9,
+            "line_end": 11
+          }
+        ],
+        "reason": "All four priorities are directly stated by Harper Allen across the three calls. Reliability is stated in call 1 lines 3-5. Seamless experience is in call 1 line 8. Post-purchase support importance is in call 2 line 17 and call 3 lines 13-15. Ease of financing process is in call 3 lines 5-7. Technology/safety interest is in call 3 lines 9-11 and call 1 lines 5-6. The BMW X5 M is never mentioned in any source; only the 2024 Tesla Model S is discussed, so the answer addresses the Tesla Model S scope only."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-f57b13155a273343"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "source-first",
+      "position": 2,
+      "question": "What next step did Harper Allen agree to after discussing the Tesla Model S and Mercedes-Benz E-Class?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "The provided call transcripts only discuss the Tesla Model S; the Mercedes-Benz E-Class is never mentioned in any of the three calls between Sebastian Martinez and Harper Allen. Therefore, no next step agreed upon after discussing both the Tesla Model S and the Mercedes-Benz E-Class can be identified from these sources.",
+        "evidence": [],
+        "reason": "The question asks about a next step after discussing both the Tesla Model S and the Mercedes-Benz E-Class. While the Tesla Model S is discussed extensively across all three calls, the Mercedes-Benz E-Class is never mentioned in any transcript. Since the question requires facts about both vehicles and only one is present, the answer is incomplete."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-source-first-f57b13155a273343"
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "mode": "source-first",
+      "position": 3,
+      "question": "What matters most to Harper Allen when evaluating a premium vehicle purchase from AutoElite?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "Harper Allen's top priorities when evaluating a premium vehicle purchase from AutoElite are: (1) Reliability \u2014 he states 'Reliable transportation is quite crucial for us' and says he's looking for something 'reliable and possibly electric' (call 1, lines 3, 5); (2) Long-term post-purchase support and coverage \u2014 he explicitly says 'The long-term maintenance support is really important to me' (call 2, line 17) and 'coverage is crucial' (call 3, line 15), and he probes extended warranties and maintenance plans in detail (call 2, lines 9\u201310; call 3, lines 13\u201314); (3) Ease of the financing process \u2014 he prefers a less cumbersome, streamlined process, saying 'It's more about the ease of the process for me' and requesting adjustments to replicate a smooth process (call 3, lines 5, 7, 17); and (4) Technology and safety features \u2014 he expresses interest in the Model S's tech integration and safety aspects (call 2, lines 3, 11; call 3, line 9).",
+        "evidence": [
+          {
+            "call_id": "b2c:a05Ws000005SPGlIAO",
+            "line_start": 3,
+            "line_end": 6
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 3,
+            "line_end": 4
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 9,
+            "line_end": 11
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 11,
+            "line_end": 12
+          },
+          {
+            "call_id": "b2c:a05Ws000005SZ6RIAW",
+            "line_start": 17,
+            "line_end": 18
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 5,
+            "line_end": 8
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 9,
+            "line_end": 10
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 13,
+            "line_end": 16
+          },
+          {
+            "call_id": "b2c:a05Ws000005SaAXIA0",
+            "line_start": 17,
+            "line_end": 18
+          }
+        ],
+        "reason": "All four priorities are directly stated by Harper Allen across the three calls. Reliability is stated in call 1 lines 3 and 5. Long-term maintenance support is explicitly called 'really important' in call 2 line 17, and 'coverage is crucial' in call 3 line 15. Ease of financing process is stated in call 3 lines 5, 7, and 17. Technology and safety interest is expressed in call 2 lines 3 and 11, and call 3 line 9. The draft extraction is accurate; I added the call 2 line 3 and line 11 evidence for technology/safety and call 3 line 9 for technology appreciation to fully support that fourth priority."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-f57b13155a273343"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "question-first",
+      "position": 0,
+      "question": "What pricing did NaviCorp Tech get on the SecureFlow Suite and on the OptiPower Manager and CircuitAI Innovator?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "NaviCorp Tech was quoted: SecureFlow Suite at $2,849.95 after a 5% discount; OptiPower Manager at $4,049.91 total after a 10% discount for 10 units; and CircuitAI Innovator at $7,424.87 total after a 10% discount for 15 units.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003Sx5FIAS",
+            "line_start": 10,
+            "line_end": 11
+          }
+        ],
+        "reason": "Line 10 of call b2b:a05Wt000003Sx5FIAS contains Xinyi Zhang's explicit quote to Zhi Huang (NaviCorp Tech) with all three product prices, discounts, and unit quantities. The draft extraction is accurate and complete."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-b89bd73f5b4209d5"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "question-first",
+      "position": 1,
+      "question": "For NaviCorp Tech, what main pain point did Enzo Moretti raise in the initial discussion, and what discount applies to OptiPower Manager in the proposal?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "The question cannot be answered as asked because Enzo Moretti does not appear in any of the NaviCorp Tech call transcripts. All three calls for the NaviCorp Tech Strategic Expansion opportunity involve contact Zhi Huang and salesperson Xinyi Zhang. The initial discussion (2023-02-14) records Zhi Huang raising the pain point of maintaining precision without sacrificing power efficiency, and the 2023-06-19 call states OptiPower Manager carries a 10% discount (10 units, totaling $4,049.91). However, because the question specifically attributes the pain point to Enzo Moretti\u2014who is entirely absent from the sources\u2014the requested fact cannot be confirmed for the exact named person.",
+        "evidence": [],
+        "reason": "Enzo Moretti is not mentioned in any of the three NaviCorp Tech call transcripts. The contact on all calls is Zhi Huang. While the underlying facts (pain point about precision vs. power efficiency, and a 10% discount on OptiPower Manager) exist in the sources, they are attributed to Zhi Huang, not Enzo Moretti. Per the instructions, a different person cannot answer a question scoped to a specific named individual, so the answer is incomplete."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-question-first-b89bd73f5b4209d5"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "question-first",
+      "position": 2,
+      "question": "For NaviCorp Tech, what follow-up did Tariq commit to after the initial discussion with Enzo, and what discount applies to the OptiPower Manager in the later proposal?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "The provided transcripts do not mention anyone named Tariq or Enzo. All NaviCorp Tech calls are between Xinyi Zhang (TechPulse Solutions) and Zhi Huang. While the June 19, 2023 call does reference a 10% discount on OptiPower Manager (10 units, totaling $4,049.91), the question's named participants (Tariq and Enzo) cannot be matched to any source, so the follow-up Tariq committed to after an initial discussion with Enzo cannot be verified from the provided transcripts.",
+        "evidence": [],
+        "reason": "No call transcript contains a person named Tariq or Enzo. The NaviCorp Tech opportunity calls involve only Xinyi Zhang and Zhi Huang. Because the exact named people in the question are absent, the follow-up commitment attributed to Tariq cannot be established. The 10% OptiPower Manager discount exists in the June 19 call (line 10 of b2b:a05Wt000003Sx5FIAS), but without the required Tariq/Enzo follow-up fact, the answer is incomplete."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-question-first-b89bd73f5b4209d5"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "question-first",
+      "position": 3,
+      "question": "What pricing did NaviCorp Tech get on the SecureFlow Suite, OptiPower Manager, and CircuitAI Innovator in the proposal?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the proposal discussed on the June 19, 2023 call, NaviCorp Tech received the following pricing: CircuitAI Innovator at $7,424.87 total after a 10% discount for 15 units; OptiPower Manager at $4,049.91 total after a 10% discount for 10 units; and SecureFlow Suite at $2,849.95 after a 5% discount.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003Sx5FIAS",
+            "line_start": 10,
+            "line_end": 11
+          }
+        ],
+        "reason": "Line 10 of call b2b:a05Wt000003Sx5FIAS contains Xinyi Zhang's explicit quote to Zhi Huang (NaviCorp Tech) with all three products, their discounts, unit quantities, and total prices. The draft extraction is accurate and fully supported by the source."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-question-first-b89bd73f5b4209d5"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "source-first",
+      "position": 0,
+      "question": "What pricing did NaviCorp Tech get on the SecureFlow Suite and on the OptiPower Manager and CircuitAI Innovator?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "On the 2023-06-19 call, Xinyi Zhang quoted NaviCorp Tech: CircuitAI Innovator at $7,424.87 total after a 10% discount for 15 units; OptiPower Manager at $4,049.91 total after a 10% discount for 10 units; and SecureFlow Suite at $2,849.95 after a 5% discount.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003Sx5FIAS",
+            "line_start": 10,
+            "line_end": 11
+          }
+        ],
+        "reason": "Line 10 of call b2b:a05Wt000003Sx5FIAS contains the exact pricing for all three products quoted by Xinyi Zhang to Zhi Huang at NaviCorp Tech: CircuitAI Innovator $7,424.87 (10% discount, 15 units), OptiPower Manager $4,049.91 (10% discount, 10 units), and SecureFlow Suite $2,849.95 (5% discount). The draft extraction is accurate and fully supported by the source."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-b89bd73f5b4209d5"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "source-first",
+      "position": 1,
+      "question": "For NaviCorp Tech, what main pain point did Enzo Moretti raise in the initial discussion, and what discount applies to OptiPower Manager in the proposal?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "The question cannot be fully answered because Enzo Moretti does not appear in any of the NaviCorp Tech call transcripts. The contact on all three calls is Zhi Huang. While the initial discussion (2023-02-14) records a main pain point\u2014maintaining precision without sacrificing power efficiency\u2014raised by Zhi Huang, and the 2023-06-19 call states OptiPower Manager carries a 10% discount for 10 units totaling $4,049.91, the question specifically asks about Enzo Moretti, who is absent from all sources. Therefore the pain-point fact cannot be attributed to the named individual.",
+        "evidence": [],
+        "reason": "Enzo Moretti is not mentioned in any of the three NaviCorp Tech transcripts. All calls involve Xinyi Zhang and Zhi Huang. Because the question scopes the pain point to Enzo Moretti specifically, and no source supports that attribution, the answer is incomplete. The OptiPower Manager discount (10%) exists in the sources but is tied to a proposal discussed with Zhi Huang, not Enzo Moretti. Since the exact named person is not present, complete=false."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-source-first-b89bd73f5b4209d5"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "source-first",
+      "position": 2,
+      "question": "For NaviCorp Tech, what follow-up did Tariq commit to after the initial discussion with Enzo, and what discount applies to the OptiPower Manager in the later proposal?",
+      "complete": false,
+      "verdict": {
+        "complete": false,
+        "answer": "The question asks about a follow-up committed by 'Tariq' after an initial discussion with 'Enzo' for NaviCorp Tech, and the discount on OptiPower Manager in a later proposal. No person named Tariq or Enzo appears in any of the three provided call transcripts. All NaviCorp Tech calls are between Xinyi Zhang (TechPulse Solutions) and Zhi Huang. While the June 19, 2023 call does mention a 10% discount on OptiPower Manager (10 units, totaling $4,049.91), the named participants in the question (Tariq and Enzo) cannot be matched to any source, so the follow-up commitment cannot be verified.",
+        "evidence": [],
+        "reason": "The question specifically asks about Tariq and Enzo, neither of whom appears in any transcript. All three calls for NaviCorp Tech involve Xinyi Zhang and Zhi Huang. Although a 10% discount on OptiPower Manager is mentioned in call b2b:a05Wt000003Sx5FIAS (line 10), the follow-up commitment by Tariq after a discussion with Enzo is entirely absent from the sources. Since the exact named people cannot be matched, the answer is incomplete."
+      },
+      "original_complete": false,
+      "routing": "stqa-prefix-v1-source-first-b89bd73f5b4209d5"
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "mode": "source-first",
+      "position": 3,
+      "question": "What pricing did NaviCorp Tech get on the SecureFlow Suite, OptiPower Manager, and CircuitAI Innovator in the proposal?",
+      "complete": true,
+      "verdict": {
+        "complete": true,
+        "answer": "In the proposal discussed on the June 19, 2023 call, Xinyi Zhang quoted NaviCorp Tech the following pricing: CircuitAI Innovator at $7,424.87 total after a 10% discount for 15 units; OptiPower Manager at $4,049.91 total after a 10% discount for 10 units; and SecureFlow Suite at $2,849.95 after a 5% discount.",
+        "evidence": [
+          {
+            "call_id": "b2b:a05Wt000003Sx5FIAS",
+            "line_start": 10,
+            "line_end": 11
+          }
+        ],
+        "reason": "Line 10 of call b2b:a05Wt000003Sx5FIAS contains Xinyi Zhang's explicit quote to Zhi Huang (NaviCorp Tech) with all three product prices, discounts, and unit quantities. The draft extraction is accurate and fully supported by the source text."
+      },
+      "original_complete": true,
+      "routing": "stqa-prefix-v1-source-first-b89bd73f5b4209d5"
+    }
+  ],
+  "paired_checks": [
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "position": 0,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers state identical facts: in the proposal discussion (2021-03-14), Liam offered 10% discounts on both SecureFlow Suite and SecureAnalytics Pro; in the demo recap (2021-03-30), Liam recapped 10% on SecureFlow Suite and 5% on OptiPower Manager with no mention of SecureAnalytics Pro. The only wording differences are trivial ('featured' vs 'included', 'call' added in parentheses), which do not change any requested fact."
+      }
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "position": 1,
+      "complete_agrees": true
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "position": 2,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers provide identical information: the initial proposal discussion (2021-03-14) included a 10% discount on SecureFlow Suite and SecureAnalytics Pro, and the demo recap (2021-03-30) included a 10% discount on SecureFlow Suite, a 5% discount on OptiPower Manager, plus 'several others to fit your larger strategy.' The wording, dates, products, and discount values are exactly the same in both answers."
+      }
+    },
+    {
+      "group": "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+      "position": 3,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers state the same facts: initial proposal (2021-03-14) had 10% discounts on SecureFlow Suite and SecureAnalytics Pro (negotiable); the demo recap (2021-03-30) had 10% on SecureFlow Suite and 5% on OptiPower Manager, replacing SecureAnalytics Pro. The only difference is answer_a includes the extra phrase 'to fit your larger strategy' in the quote, which is additional unrequested detail and does not change any requested fact."
+      }
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "position": 0,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers state the same next step: Harper Allen agreed to a virtual demonstration of the 2024 Tesla Model S. They include identical details\u2014Sebastian Martinez offered to schedule the demonstration focusing on features and performance, Harper's response ('That sounds perfect. I look forward to it'), and Sebastian's confirmation to follow up soon. The only differences are trivial wording variations ('vehicle's' vs. 'Model S's', 'replied' vs. 'responded'), which do not change the meaning."
+      }
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "position": 1,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers list the same four priorities (reliability, seamless/easy buying and financing experience, strong post-purchase support, and cutting-edge technology/safety features) with identical supporting quotes. Both note the BMW X5 M is never mentioned. The only differences are trivial wording variations (e.g., 'buying and service experience' vs. 'buying and financing experience') and Answer A includes an extra closing note reiterating the BMW X5 M point, which is unrequested extra detail. No requested facts differ in value."
+      }
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "position": 2,
+      "complete_agrees": true
+    },
+    {
+      "group": "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+      "position": 3,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers identify the same four top priorities for Harper Allen: (1) Reliability, (2) Long-term post-purchase support and coverage, (3) Ease/streamlining of the financing process, and (4) Technology and safety features. They cite the same quotes and describe the same details for each priority. Answer B adds specific call and line references, but the substantive content and requested facts are identical. The differences are purely in formatting and citation granularity, not in the facts themselves."
+      }
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "position": 0,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers provide identical pricing for all three products: SecureFlow Suite at $2,849.95 after a 5% discount, OptiPower Manager at $4,049.91 total after a 10% discount for 10 units, and CircuitAI Innovator at $7,424.87 total after a 10% discount for 15 units. Answer B adds extra context (date, representative name) and reorders the products, but the requested pricing facts are the same."
+      }
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "position": 1,
+      "complete_agrees": true
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "position": 2,
+      "complete_agrees": true
+    },
+    {
+      "group": "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74",
+      "position": 3,
+      "complete_agrees": true,
+      "answer_comparison": {
+        "classification": "equivalent",
+        "reason": "Both answers provide identical pricing for all three products: CircuitAI Innovator at $7,424.87 total after a 10% discount for 15 units, OptiPower Manager at $4,049.91 total after a 10% discount for 10 units, and SecureFlow Suite at $2,849.95 after a 5% discount. The only difference is that answer_b additionally mentions 'Xinyi Zhang quoted,' which is extra unrequested detail and does not change the requested pricing facts."
+      }
+    }
+  ],
+  "usage": [
+    {
+      "stage": "prefix_probe/comparison",
+      "attempts": 8,
+      "input_tokens": 3290,
+      "cached_tokens": 0,
+      "output_tokens": 952,
+      "estimated_usd": 0.012291999999999999
+    },
+    {
+      "stage": "prefix_probe/question-first",
+      "attempts": 12,
+      "input_tokens": 68205,
+      "cached_tokens": 0,
+      "output_tokens": 3881,
+      "estimated_usd": 0.159696
+    },
+    {
+      "stage": "prefix_probe/source-first",
+      "attempts": 12,
+      "input_tokens": 68205,
+      "cached_tokens": 0,
+      "output_tokens": 3899,
+      "estimated_usd": 0.159804
+    }
+  ],
+  "production_changed": false,
+  "group_keys": [
+    "4ea3e4cceffb34ad60e0fb4dde31f35085b6d57fde9f4a17c803392f241cae16",
+    "f57b13155a2733433b31479308f7516a76bfcb58002a1e0ced2f8f712eef31b8",
+    "b89bd73f5b4209d5f404bfa3bb26ae61e18ea8a514ab259f83c8074ffdf94c74"
+  ],
+  "local_plan": "runs/sales-expanded-cache-probe-v1/plan.json"
+}
