@@ -95,3 +95,14 @@ complete answers. This is still an automated source-pool check, not proof of glo
 unambiguity. Scope review shares the cumulative independent-review budget ledger.
 Original cohorts/results remain intact. Implementation and diagnostic reliability
 are tracked in [quality issue #6](https://github.com/Endgame-Labs/SalesTranscriptQA/issues/6).
+
+
+A passing-case spot check exposed reference anchoring in the first customer-scope
+diagnostic: an unqualified competitor-concern question was wrongly treated as
+asking only about the reference's topic. That diagnostic was stopped, its partial
+receipts retained, and no cohort was promoted. Protocol `customer-event-scope-v2`
+now asks GLM and Qwen independently about scope, with neither seeing a gold answer,
+annotated call IDs, or the other's extraction. Only after unanimous determinate
+scope does semantic comparison assess the reference. Four source-confirmed ambiguous
+regressions fail and two precise controls pass. This does not establish perfect
+judge reliability; their disagreements and errors remain in the artifacts.

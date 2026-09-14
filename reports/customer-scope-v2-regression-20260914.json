@@ -1,0 +1,642 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "9273ea7238c953c7736b594c93937b44699a20b9603a3c959b1de56f6e702d5f",
+  "questions": 6,
+  "counts": {
+    "fail": 4,
+    "pass": 2
+  },
+  "estimated_usd": 0.6049596,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-26b4a8325daea976",
+      "question": "What next steps did Marcus Nguyen agree to for the Quantum Designs opportunity across the two calls?",
+      "gold_answer": "He scheduled a formal meeting for Thursday at 9:45 AM, and agreed to coordinate with his team to set up a product demonstration.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sqa3IAC",
+        "b2b:a05Wt000003Sqa4IAC",
+        "b2b:a05Wt000003SrSoIAK",
+        "b2b:a05Wt000003SrSpIAK",
+        "b2b:a05Wt000003SrcjIAC",
+        "b2b:a05Wt000003Ss0cIAC",
+        "b2b:a05Wt000003SsNEIA0",
+        "b2b:a05Wt000003SsOtIAK",
+        "b2b:a05Wt000003SstPIAS",
+        "b2b:a05Wt000003StZQIA0",
+        "b2b:a05Wt000003StkgIAC",
+        "b2b:a05Wt000003SuDkIAK",
+        "b2b:a05Wt000003SuInIAK",
+        "b2b:a05Wt000003SuLwIAK",
+        "b2b:a05Wt000003Suk9IAC",
+        "b2b:a05Wt000003SulhIAC",
+        "b2b:a05Wt000003SuliIAC",
+        "b2b:a05Wt000003Sv1tIAC",
+        "b2b:a05Wt000003SwCOIA0",
+        "b2b:a05Wt000003SwXFIA0",
+        "b2b:a05Wt000003SwcBIAS",
+        "b2b:a05Wt000003SwdnIAC",
+        "b2b:a05Wt000003SwdoIAC",
+        "b2b:a05Wt000003SxoPIAS",
+        "b2b:a05Wt000003SxoQIAS",
+        "b2b:a05Wt000003Sy31IAC",
+        "b2b:a05Wt000003SyHeIAK",
+        "b2b:a05Wt000003SyKcIAK",
+        "b2b:a05Wt000003SyNtIAK",
+        "b2b:a05Wt000003Sz3oIAC",
+        "b2b:a05Wt000003Sz3pIAC",
+        "b2b:a05Wt000003T12NIAS",
+        "b2b:a05Wt000003T1GrIAK",
+        "b2b:a05Wt000003T1qTIAS",
+        "b2b:a05Wt000003T2eXIAS",
+        "b2b:a05Wt000003T2zXIAS",
+        "b2b:a05Wt000003T37MIAS",
+        "b2b:a05Wt000003T37NIAS",
+        "b2b:a05Wt000003T3deIAC",
+        "b2b:a05Wt000003T3k4IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Marcus Nguyen is the contact on exactly two calls, both for the 'Quantum Designs Partnership - AI & PCB Excellence' opportunity with Ayumi Shimizu (2021-10-19 and 2021-10-20). The question asks for next steps across both calls, so the complete answer aggregates the commitments from each.",
+        "answers": [
+          {
+            "answer": "Across the two calls on the Quantum Designs Partnership - AI & PCB Excellence opportunity, the next steps agreed were: (1) On the Oct 19, 2021 call, Ayumi Shimizu committed to send Marcus Nguyen an introductory email summarizing the discussion with links to product brochures and case studies, and they agreed to set up a meeting to tailor solutions to Quantum Designs' needs, with Marcus agreeing to review the materials before they meet. (2) On the Oct 20, 2021 follow-up call (after Marcus reviewed the sent materials), they agreed to schedule the initial formal meeting \u2014 Marcus proposed Thursday morning, Ayumi confirmed 9:45 AM, and a calendar invite with the details would be sent.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcjIAC",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2021-10-19T11:49:15] Ayumi Shimizu: Next, I\u2019ll be sending you an introductory email that summarizes today\u2019s discussion and provides links to our product brochures and some case studies for a deeper dive. Let\u2019s also look at setting up a meeting where we can tailor our solutions to best fit Quantum Designs\u2019 needs.\n[2021-10-19T11:49:30] Marcus Nguyen: That sounds good. Please go ahead and send those details. I\u2019d like to review them before we meet."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SrSoIAK",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2021-10-20T10:00:20] Ayumi Shimizu: I'm great, thank you! I appreciate you taking the time to chat today. I'd like to discuss scheduling our initial formal meeting and go over some ways TechPulse Solutions might support Quantum Designs. Does that sound good?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SrSoIAK",
+                "line_start": 18,
+                "line_end": 21,
+                "quote": "[2021-10-20T10:04:26] Ayumi Shimizu: I think it would! So, shall we schedule a time for our formal meeting? I believe diving deeper into these products during a dedicated session will give us a clearer picture of how we can enhance Quantum Designs\u2019 projects.\n[2021-10-20T10:04:44] Marcus Nguyen: Yes, let's do that. How does Thursday morning work for you?\n[2021-10-20T10:04:52] Ayumi Shimizu: Thursday morning works perfectly! Let\u2019s set it for 9:45 AM? We\u2019ll send over a calendar invite with the details."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Marcus Nguyen appears as the contact in exactly three calls, all tied to the same opportunity 'Quantum Designs Partnership - AI & PCB Excellence' (opportunity_id 006Wt000007BIonIAG): b2b:a05Wt000003SrcjIAC (2021-10-19), b2b:a05Wt000003SrSoIAK (2021-10-20), and b2b:a05Wt000003SsOtIAK (2021-10-21). The question says 'the two calls,' but three calls exist for this person and opportunity. No qualifier (e.g., 'initial,' 'first,' 'last') narrows the set to exactly two. The question is ambiguous as to which two of the three calls are intended, making the scope uncertain rather than determinate or cleanly multiple.",
+        "answers": [
+          {
+            "answer": "Across all three calls Marcus Nguyen had with Ayumi Shimizu for the Quantum Designs Partnership - AI & PCB Excellence opportunity, the agreed next steps were: (1) In the first call (Oct 19), Ayumi agreed to send an introductory email summarizing the discussion with links to product brochures and case studies, and Marcus agreed to review those materials before a follow-up meeting to tailor solutions to Quantum Designs' needs. (2) In the second call (Oct 20), Marcus agreed to schedule a formal meeting for Thursday morning at 9:45 AM, with Ayumi sending a calendar invite. (3) In the third call (Oct 21), Marcus agreed to coordinate with his team and get back to Ayumi with a suitable time for a product demonstration.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcjIAC",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2021-10-19T11:49:15] Ayumi Shimizu: Next, I\u2019ll be sending you an introductory email that summarizes today\u2019s discussion and provides links to our product brochures and some case studies for a deeper dive. Let\u2019s also look at setting up a meeting where we can tailor our solutions to best fit Quantum Designs\u2019 needs.\n[2021-10-19T11:49:30] Marcus Nguyen: That sounds good. Please go ahead and send those details. I\u2019d like to review them before we meet."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SrSoIAK",
+                "line_start": 18,
+                "line_end": 22,
+                "quote": "[2021-10-20T10:04:26] Ayumi Shimizu: I think it would! So, shall we schedule a time for our formal meeting? I believe diving deeper into these products during a dedicated session will give us a clearer picture of how we can enhance Quantum Designs\u2019 projects.\n[2021-10-20T10:04:44] Marcus Nguyen: Yes, let's do that. How does Thursday morning work for you?\n[2021-10-20T10:04:52] Ayumi Shimizu: Thursday morning works perfectly! Let\u2019s set it for 9:45 AM? We\u2019ll send over a calendar invite with the details.\n[2021-10-20T10:05:05] Marcus Nguyen: Sounds good, Ayumi. I'll look out for the invite. Thanks for this insightful conversation!"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SsOtIAK",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2021-10-21T09:49:55] Ayumi Shimizu: I\u2019m glad that aligns with your goals. Shall we begin scheduling a demonstration for your team to see the TechPulse solutions in action?\n[2021-10-21T09:50:05] Marcus Nguyen: Yes, that would be the next logical step. I\u2019ll coordinate with the team and get back to you with a suitable time."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": false,
+        "reference_covers_requested_facts": false,
+        "reason": "The question explicitly asks about next steps agreed 'across the two calls.' Answer A addresses exactly two calls (Oct 19 and Oct 20) and lists commitments from both. Answer B introduces a third call (Oct 21) with an additional commitment (coordinate with team for a product demonstration), which goes beyond the two-call scope stated in the question, so the answers do not agree on scope or content. The reference mentions the Thursday 9:45 AM formal meeting and the team-coordination/product-demonstration commitment. The team-coordination item corresponds to the third call in Answer B, which is outside the two-call scope the question specifies. Additionally, the reference omits the Oct 19 commitments (introductory email with brochures/case studies and Marcus agreeing to review materials before a tailored-solutions meeting), which are requested facts under the two-call framing. Therefore the reference does not fully cover the facts requested by the literal question."
+      },
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-0853d322e365a480",
+      "question": "What did Priyanka commit to delivering next to Nikhil at NaviCorp Tech, and what will it include?",
+      "gold_answer": "A tailored proposal ready shortly, including a demo session of the CircuitAI Innovator and OptiPower Manager.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgQIAS",
+        "b2b:a05Wt000003SrSjIAK",
+        "b2b:a05Wt000003StW9IAK",
+        "b2b:a05Wt000003Suk6IAC",
+        "b2b:a05Wt000003SutbIAC",
+        "b2b:a05Wt000003Svl1IAC",
+        "b2b:a05Wt000003SvplIAC",
+        "b2b:a05Wt000003SwM1IAK",
+        "b2b:a05Wt000003Swc3IAC",
+        "b2b:a05Wt000003Sx5FIAS",
+        "b2b:a05Wt000003Sx5GIAS",
+        "b2b:a05Wt000003SxzgIAC",
+        "b2b:a05Wt000003SySbIAK",
+        "b2b:a05Wt000003SyZ3IAK",
+        "b2b:a05Wt000003SyyzIAC",
+        "b2b:a05Wt000003Sz6vIAC",
+        "b2b:a05Wt000003Szv3IAC",
+        "b2b:a05Wt000003SzwcIAC",
+        "b2b:a05Wt000003T0sfIAC",
+        "b2b:a05Wt000003T18gIAC",
+        "b2b:a05Wt000003T1v6IAC",
+        "b2b:a05Wt000003T24qIAC",
+        "b2b:a05Wt000003T26OIAS",
+        "b2b:a05Wt000003T2w1IAC",
+        "b2b:a05Wt000003T2w2IAC",
+        "b2b:a05Wt000003T2xbIAC",
+        "b2b:a05Wt000003T30sIAC",
+        "b2b:a05Wt000003T35jIAC",
+        "b2b:a05Wt000003T3P3IAK",
+        "b2b:a05Wt000003T3thIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Priyanka Iyer appears in two separate calls with Nikhil Reddy at NaviCorp Tech, and in each she commits to delivering something different next: in the 2024-03-20 call she commits to a tailored proposal including a demo session of CircuitAI Innovator and OptiPower Manager; in the 2024-03-30 call she commits to sending case studies/documentation and following up with a detailed development roadmap. The question does not disambiguate which call is meant.",
+        "answers": [
+          {
+            "answer": "Priyanka committed to delivering a tailored proposal to Nikhil shortly, which will highlight how TechPulse can strategically add value to NaviCorp's operations and include a demo session for the CircuitAI Innovator and OptiPower Manager so Nikhil can see them in action.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqgQIAS",
+                "line_start": 18,
+                "line_end": 22,
+                "quote": "[2024-03-20T11:02:50] Priyanka Iyer: And we want to partner with you to achieve just that! In our upcoming proposal, we'll highlight how TechPulse can strategically add value to your operations.\n[2024-03-20T11:02:57] Nikhil Reddy: Looking forward to the details. I assume we'll see something concrete soon?\n[2024-03-20T11:03:08] Priyanka Iyer: Yes, we\u2019re in the final stages of tailoring it specifically to your needs and should have it ready shortly. We\u2019ll also include a demo session for the CircuitAI Innovator and OptiPower Manager so you can see them in action.\n[2024-03-20T11:03:15] Nikhil Reddy: Perfect. Thank you for walking me through everything today, Priyanka."
+              }
+            ]
+          },
+          {
+            "answer": "Priyanka committed to sending over TechPulse's latest case studies and documentation right after the call (showing ROI and operational gains), and to following up with a detailed development roadmap (including a follow-up meeting with the product team to go through the roadmap in detail).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T3P3IAK",
+                "line_start": 17,
+                "line_end": 20,
+                "quote": "[2024-03-30T09:39:00] Nikhil Reddy: Thanks, Priyanka. Can we expect additional documentation or case studies where these features have been proven in similar scenarios?\n[2024-03-30T09:39:30] Priyanka Iyer: Absolutely, I'll send over our latest case studies and documentation right after our call. These will give you a further sense of what to expect in terms of ROI and operational gains.\n[2024-03-30T09:39:50] Nikhil Reddy: That would be great, thanks. This session has been highly productive, and I feel we're moving in the right direction."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3P3IAK",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2024-03-30T09:34:40] Nikhil Reddy: Yes, scalability is crucial for us moving forward. However, we'd also prefer having a more detailed roadmap for future advancements to help with our long-term planning. Can you provide more insights on this?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Priyanka (Iyer) and Nikhil (Reddy) at NaviCorp Tech. Only one call in the dataset features Priyanka speaking with Nikhil: b2b:a05Wt000003SqgQIAS (2024-03-20, opportunity 'TechPulse-NaviCorp Strategic EDA Partnership'). In that call, Priyanka commits to delivering a tailored proposal and a demo session. The second Priyanka\u2013Nikhil call (b2b:a05Wt000003T3P3IAK, 2024-03-30) contains additional commitments (case studies/documentation and a detailed roadmap meeting), but the question's phrasing 'commit to delivering next' most naturally refers to the immediate next deliverable discussed in the first call. However, since both calls involve Priyanka committing deliverables to Nikhil, I will aggregate all commitments Priyanka made to Nikhil across both calls to give the complete answer.",
+        "answers": [
+          {
+            "answer": "Priyanka committed to delivering a tailored proposal to Nikhil at NaviCorp Tech, which will highlight how TechPulse can strategically add value to their operations. The proposal will also include a demo session for the CircuitAI Innovator and OptiPower Manager so Nikhil can see them in action. Additionally, in a follow-up call, Priyanka committed to sending over the latest case studies and documentation (showing ROI and operational gains) right after the call, and to setting up a follow-up meeting with the product team to walk through the detailed development roadmap for future advancements.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqgQIAS",
+                "line_start": 18,
+                "line_end": 21,
+                "quote": "[2024-03-20T11:02:50] Priyanka Iyer: And we want to partner with you to achieve just that! In our upcoming proposal, we'll highlight how TechPulse can strategically add value to your operations.\n[2024-03-20T11:02:57] Nikhil Reddy: Looking forward to the details. I assume we'll see something concrete soon?\n[2024-03-20T11:03:08] Priyanka Iyer: Yes, we\u2019re in the final stages of tailoring it specifically to your needs and should have it ready shortly. We\u2019ll also include a demo session for the CircuitAI Innovator and OptiPower Manager so you can see them in action."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqgQIAS",
+                "line_start": 22,
+                "line_end": 23,
+                "quote": "[2024-03-20T11:03:22] Priyanka Iyer: Anytime, Nikhil! It's been a pleasure discussing how we can potentially collaborate. I\u2019ll be in touch soon with the proposal and next steps."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3P3IAK",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2024-03-30T09:39:00] Nikhil Reddy: Thanks, Priyanka. Can we expect additional documentation or case studies where these features have been proven in similar scenarios?\n[2024-03-30T09:39:30] Priyanka Iyer: Absolutely, I'll send over our latest case studies and documentation right after our call. These will give you a further sense of what to expect in terms of ROI and operational gains."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3P3IAK",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2024-03-30T09:35:15] Priyanka Iyer: Absolutely, I can set up a follow-up meeting with our product team to go through our development roadmap in detail. It's something we continually build on, integrating feedback from strategic partners like NaviCorp Tech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3P3IAK",
+                "line_start": 20,
+                "line_end": 21,
+                "quote": "[2024-03-30T09:40:10] Priyanka Iyer: I agree, Nikhil. I'm confident that our partnership holds great potential. Let's keep the momentum going, and I'll follow up with the detailed roadmap and studies as discussed."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-0baf719b503ed32e",
+      "question": "What concern did Artem Ivanov raise about Quantum Circuits Inc., and what did Priyanka say differentiates TechPulse on that point?",
+      "gold_answer": "Artem is concerned Quantum Circuits can't integrate future tech trends; Priyanka cited TechPulse's proactive future-proofing that anticipates upcoming technological shifts.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7pIAC",
+        "b2b:a05Wt000003SslLIAS",
+        "b2b:a05Wt000003SslMIAS",
+        "b2b:a05Wt000003StETIA0",
+        "b2b:a05Wt000003StHhIAK",
+        "b2b:a05Wt000003StRIIA0",
+        "b2b:a05Wt000003StRJIA0",
+        "b2b:a05Wt000003Su43IAC",
+        "b2b:a05Wt000003SuQdIAK",
+        "b2b:a05Wt000003SwSQIA0",
+        "b2b:a05Wt000003SwTyIAK",
+        "b2b:a05Wt000003SxLCIA0",
+        "b2b:a05Wt000003SxRgIAK",
+        "b2b:a05Wt000003SxRhIAK",
+        "b2b:a05Wt000003SxRiIAK",
+        "b2b:a05Wt000003SxUvIAK",
+        "b2b:a05Wt000003SxUwIAK",
+        "b2b:a05Wt000003SxUxIAK",
+        "b2b:a05Wt000003SxrWIAS",
+        "b2b:a05Wt000003Sy2lIAC",
+        "b2b:a05Wt000003SyE7IAK",
+        "b2b:a05Wt000003SyE8IAK",
+        "b2b:a05Wt000003SyHLIA0",
+        "b2b:a05Wt000003SzACIA0",
+        "b2b:a05Wt000003SzExIAK",
+        "b2b:a05Wt000003SzV4IAK",
+        "b2b:a05Wt000003SzV5IAK",
+        "b2b:a05Wt000003SzjbIAC",
+        "b2b:a05Wt000003SzwUIAS",
+        "b2b:a05Wt000003T09OIAS",
+        "b2b:a05Wt000003T0B0IAK",
+        "b2b:a05Wt000003T0NvIAK",
+        "b2b:a05Wt000003T0R7IAK",
+        "b2b:a05Wt000003T0SjIAK",
+        "b2b:a05Wt000003T0ULIA0",
+        "b2b:a05Wt000003T0VxIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Artem Ivanov raised concerns about Quantum Circuits Inc. in two different calls with Priyanka Iyer, each with a different concern and a different TechPulse differentiator: (1) on 2023-10-10, concern about QCI's capability to integrate future tech trends, answered with 'proactive future-proofing'; (2) on 2023-10-01, concern that QCI's implementation took much longer than anticipated, answered with TechPulse's streamlined rapid deployment process. The question does not disambiguate which call is intended.",
+        "answers": [
+          {
+            "answer": "Artem Ivanov raised that Quantum Circuits Inc., an existing partner, provides strong security measures but he was concerned about their capability to integrate future tech trends. Priyanka said a key differentiator for TechPulse is proactive future-proofing \u2014 supporting present requirements while anticipating upcoming technological shifts in public safety for long-term success.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxUvIAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-10-10T15:01:50] Artem Ivanov: That sounds promising. One of our existing partners, Quantum Circuits Inc., provides strong security measures, but we're concerned about their capability to integrate future tech trends."
+              }
+            ]
+          },
+          {
+            "answer": "Artem Ivanov raised that TechPulse recently worked with Quantum Circuits Inc. and the implementation took much longer than anticipated, delaying their timelines, and they wanted something more streamlined. Priyanka responded that TechPulse has streamlined its process to ensure rapid deployment and integration, with AI Cirku-Tech specifically designed to be straightforward and time-efficient, plus comprehensive support from planning through post-implementation.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T09OIAS",
+                "line_start": 5,
+                "line_end": 8,
+                "quote": "[2023-10-01T10:01:35] Artem Ivanov: Sure, we recently worked with Quantum Circuits Inc., and the implementation took much longer than we'd anticipated, delaying our timelines. We're looking for something more streamlined.\n[2023-10-01T10:02:00] Priyanka Iyer: Yes, hearing about those kinds of roadblocks is quite common. At TechPulse, we've streamlined our process to ensure rapid deployment and integration. Our AI Cirku-Tech, for example, is specifically designed to be straightforward and time-efficient.\n[2023-10-01T10:02:25] Artem Ivanov: That sounds promising. Time efficiency is definitely a priority for us. How does your support during implementation work?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Artem Ivanov, Priyanka, and Quantum Circuits Inc. Only one call features both Artem Ivanov and Priyanka Iyer together with an explicit mention of Quantum Circuits Inc.: call b2b:a05Wt000003SxUvIAK (2023-10-10). In that call, Artem raises the concern that Quantum Circuits Inc. provides strong security but may lack the capability to integrate future tech trends. Priyanka responds that TechPulse differentiates through 'proactive future-proofing' that supports present requirements and anticipates upcoming technological shifts. Other calls involving Artem and Priyanka (b2b:a05Wt000003StETIA0, b2b:a05Wt000003SxUwIAK, b2b:a05Wt000003T09OIAS) do not mention Quantum Circuits Inc. by name. Calls where Quantum Circuits is discussed (e.g., with Aline Mendez/Liam or Maya Anand/Anwar) involve different people and are not relevant to the named participants.",
+        "answers": [
+          {
+            "answer": "Artem Ivanov raised the concern that while Quantum Circuits Inc. provides strong security measures, he is worried about their capability to integrate future tech trends. Priyanka Iyer responded that what differentiates TechPulse on that point is 'proactive future-proofing'\u2014their solutions not only support present requirements but also set customers up for long-term success by anticipating upcoming technological shifts in public safety.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxUvIAK",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-10-10T15:01:50] Artem Ivanov: That sounds promising. One of our existing partners, Quantum Circuits Inc., provides strong security measures, but we're concerned about their capability to integrate future tech trends.\n[2023-10-10T15:02:05] Priyanka Iyer: I understand your concern. One of the key differentiators with our solutions is proactive future-proofing. This not only supports present requirements but also sets you up for long-term success by anticipating upcoming technological shifts in public safety."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-647ea50fe9509e15",
+      "question": "What implementation timeline did Mohamed give Giovanni for the AI Cirku-Tech and SecureFlow Suite integration?",
+      "gold_answer": "Initial integration phase within two months, followed by one month of training.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZqIAK",
+        "b2b:a05Wt000003SrioIAC",
+        "b2b:a05Wt000003SripIAC",
+        "b2b:a05Wt000003SsesIAC",
+        "b2b:a05Wt000003SslKIAS",
+        "b2b:a05Wt000003StHbIAK",
+        "b2b:a05Wt000003StJCIA0",
+        "b2b:a05Wt000003StvuIAC",
+        "b2b:a05Wt000003StvvIAC",
+        "b2b:a05Wt000003SuQYIA0",
+        "b2b:a05Wt000003SujuIAC",
+        "b2b:a05Wt000003SvT4IAK",
+        "b2b:a05Wt000003SvfyIAC",
+        "b2b:a05Wt000003SvhaIAC",
+        "b2b:a05Wt000003Svo2IAC",
+        "b2b:a05Wt000003SvpeIAC",
+        "b2b:a05Wt000003SwCEIA0",
+        "b2b:a05Wt000003SwKIIA0",
+        "b2b:a05Wt000003SwNVIA0",
+        "b2b:a05Wt000003SwP7IAK",
+        "b2b:a05Wt000003SwQjIAK",
+        "b2b:a05Wt000003SwSLIA0",
+        "b2b:a05Wt000003SwTxIAK",
+        "b2b:a05Wt000003SwVZIA0",
+        "b2b:a05Wt000003SwXBIA0",
+        "b2b:a05Wt000003SwYnIAK",
+        "b2b:a05Wt000003SwaPIAS",
+        "b2b:a05Wt000003Swc1IAC",
+        "b2b:a05Wt000003SwddIAC",
+        "b2b:a05Wt000003SwfFIAS",
+        "b2b:a05Wt000003SwgrIAC",
+        "b2b:a05Wt000003SwiTIAS",
+        "b2b:a05Wt000003Swk5IAC",
+        "b2b:a05Wt000003SwlhIAC",
+        "b2b:a05Wt000003SwnJIAS",
+        "b2b:a05Wt000003SwovIAC",
+        "b2b:a05Wt000003SwqXIAS",
+        "b2b:a05Wt000003Sws9IAC",
+        "b2b:a05Wt000003SwtlIAC",
+        "b2b:a05Wt000003SwvNIAS",
+        "b2b:a05Wt000003SwwzIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves Mohamed Ahmed speaking with Giovanni Rossi (2022-01-15, 'Metro Security Systems AI Integration'), where he explicitly reviews the implementation timeline for AI Cirku-Tech and the SecureFlow Suite. No competing timeline exists in other calls.",
+        "answers": [
+          {
+            "answer": "Mohamed said that if all went well, the initial integration phase would be completed within two months, followed by another month dedicated to training (i.e., roughly a three-month total timeline for the AI Cirku-Tech and SecureFlow Suite integration).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StJCIA0",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2022-01-15T13:49:20] Mohamed Ahmed: We're committed to maintaining that flexibility throughout our partnership. So, let's review the implementation timeline. If all goes well, we\u2019re looking at completing the initial integration phase within two months, followed by another month dedicated to training."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Mohamed (Ahmed) giving Giovanni (Rossi) an implementation timeline for AI Cirku-Tech and SecureFlow Suite. Only one call matches all these criteria: call b2b:a05Wt000003StJCIA0 (2022-01-15), where Mohamed Ahmed explicitly discusses the implementation timeline for AI Cirku-Tech and SecureFlow Suite with Giovanni Rossi. Other calls involving Mohamed and Giovanni (b2b:a05Wt000003SvpeIAC, b2b:a05Wt000003SwKIIA0, b2b:a05Wt000003SwYnIAK) discuss these products but do not provide a specific implementation timeline. The timeline given is: initial integration phase within two months, followed by another month dedicated to training.",
+        "answers": [
+          {
+            "answer": "Mohamed Ahmed told Giovanni Rossi that the implementation timeline for the AI Cirku-Tech and SecureFlow Suite integration would be: completing the initial integration phase within two months, followed by another month dedicated to training.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StJCIA0",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-01-15T13:45:50] Mohamed Ahmed: That's awesome to hear. So, to give you an overview, today we'll be discussing the implementation timeline, training sessions, and our onboarding process specifically for AI Cirku-Tech and the SecureFlow Suite."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StJCIA0",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2022-01-15T13:49:20] Mohamed Ahmed: We're committed to maintaining that flexibility throughout our partnership. So, let's review the implementation timeline. If all goes well, we\u2019re looking at completing the initial integration phase within two months, followed by another month dedicated to training."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same timeline: an initial integration phase completed within two months, followed by one month dedicated to training. Answer A adds a parenthetical summary ('roughly a three-month total timeline') and a conditional ('if all went well'), but these are extras that do not alter the core facts. Answer B names the parties explicitly but conveys the identical timeline. The reference captures both requested facts (two-month initial integration phase and one month of training), fully covering the implementation timeline asked about in the question."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-a680ea73291b5fc0",
+      "question": "What follow-up did Chidi commit to for Innovate Sphere after the call with Thabo Dlamini?",
+      "gold_answer": "Chidi agreed to email detailed documentation and case studies, then touch base the following week for a more in-depth discussion.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SruDIAS",
+        "b2b:a05Wt000003Su2SIAS",
+        "b2b:a05Wt000003SuLuIAK",
+        "b2b:a05Wt000003SuLvIAK",
+        "b2b:a05Wt000003SuiPIAS",
+        "b2b:a05Wt000003SvDAIA0",
+        "b2b:a05Wt000003SxRkIAK",
+        "b2b:a05Wt000003SyKaIAK",
+        "b2b:a05Wt000003SzZxIAK",
+        "b2b:a05Wt000003SzgZIAS",
+        "b2b:a05Wt000003SzwgIAC",
+        "b2b:a05Wt000003T0ZKIA0",
+        "b2b:a05Wt000003T0siIAC",
+        "b2b:a05Wt000003T0sjIAC",
+        "b2b:a05Wt000003T0skIAC",
+        "b2b:a05Wt000003T12KIAS",
+        "b2b:a05Wt000003T1exIAC",
+        "b2b:a05Wt000003T1eyIAC",
+        "b2b:a05Wt000003T1ryIAC",
+        "b2b:a05Wt000003T1rzIAC",
+        "b2b:a05Wt000003T1s0IAC",
+        "b2b:a05Wt000003T205IAC",
+        "b2b:a05Wt000003T2JUIA0",
+        "b2b:a05Wt000003T2RYIA0",
+        "b2b:a05Wt000003T2eLIAS",
+        "b2b:a05Wt000003T2eMIAS",
+        "b2b:a05Wt000003T2eNIAS",
+        "b2b:a05Wt000003T2eOIAS",
+        "b2b:a05Wt000003T2heIAC",
+        "b2b:a05Wt000003T348IAC",
+        "b2b:a05Wt000003T3daIAC",
+        "b2b:a05Wt000003T3dbIAC",
+        "b2b:a05Wt000003T3leIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Chidi Onyekachi had two separate calls with Thabo Dlamini on the Innovate Sphere Circuit Collaboration opportunity (2023-10-02 and 2023-10-07), and each contains its own distinct set of follow-up commitments, so the question's wording does not identify which call is intended.",
+        "answers": [
+          {
+            "answer": "After the October 2, 2023 call, Chidi committed to following up with an email containing all the discussed materials \u2014 including detailed documentation and case studies demonstrating the impact of AI on process efficiency and how solutions perform across similar industries \u2014 and to touch base the following week for a more in-depth discussion.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T12KIAS",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2023-10-02T15:31:45] Chidi Onyekachi: I understand. We have robust case studies that demonstrate the impact of AI on process efficiency, which I can share if you're interested.\n[2023-10-02T15:31:55] Thabo Dlamini: That would be helpful, especially with real-world applications."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T12KIAS",
+                "line_start": 16,
+                "line_end": 19,
+                "quote": "[2023-10-02T15:33:40] Chidi Onyekachi: I can arrange to send you detailed documentation and case studies. They provide excellent insights into how our solutions perform across similar industries.\n[2023-10-02T15:33:55] Thabo Dlamini: Sounds good! This has been quite insightful, Chidi. I appreciate the detailed information.\n[2023-10-02T15:34:10] Chidi Onyekachi: I'm glad to hear that, Thabo. I'll follow up with an email containing all the discussed materials. How about we touch base next week for a more in-depth discussion?"
+              }
+            ]
+          },
+          {
+            "answer": "After the October 7, 2023 discovery call, Chidi committed to sending over case studies after the call, arranging a conversation with an existing client who faced similar challenges, arranging a demo session covering integration specifics with tools like EcoPCB Creator and TrainEDU Suite, and following up with the information and next steps soon.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2heIAC",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2023-10-07T14:03:05] Thabo Dlamini: That's reassuring. Would it be possible to get a deeper look at some of your case studies and maybe even chat with one of your clients?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2heIAC",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2023-10-07T14:03:30] Chidi Onyekachi: I agree. Let me send those over after our call. Additionally, would you be interested in a demo or workshop to see our products in action?\n[2023-10-07T14:03:40] Thabo Dlamini: Yes, that would be very useful. We\u2019d like to see how these tools can integrate with what we're currently using."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2heIAC",
+                "line_start": 22,
+                "line_end": 23,
+                "quote": "[2023-10-07T14:04:10] Chidi Onyekachi: My pleasure, Thabo. I\u2019ll follow up with the information and the next steps soon. Have a great day ahead!"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "There are two calls between Chidi Onyekachi and Thabo Dlamini for Innovate Sphere (both under opportunity 'Innovate Sphere Circuit Collaboration'): one on 2023-10-02 and one on 2023-10-07. The question says 'the call' without specifying which one, and both contain explicit follow-up commitments by Chidi. These are materially different commitments, so both are valid complete answers.",
+        "answers": [
+          {
+            "answer": "After the 2023-10-02 call, Chidi committed to following up with an email containing all the discussed materials (including case studies demonstrating AI impact on process efficiency and detailed documentation), and proposed touching base the following week for a more in-depth discussion.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T12KIAS",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2023-10-02T15:31:45] Chidi Onyekachi: I understand. We have robust case studies that demonstrate the impact of AI on process efficiency, which I can share if you're interested.\n[2023-10-02T15:31:55] Thabo Dlamini: That would be helpful, especially with real-world applications."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T12KIAS",
+                "line_start": 16,
+                "line_end": 19,
+                "quote": "[2023-10-02T15:33:40] Chidi Onyekachi: I can arrange to send you detailed documentation and case studies. They provide excellent insights into how our solutions perform across similar industries.\n[2023-10-02T15:33:55] Thabo Dlamini: Sounds good! This has been quite insightful, Chidi. I appreciate the detailed information.\n[2023-10-02T15:34:10] Chidi Onyekachi: I'm glad to hear that, Thabo. I'll follow up with an email containing all the discussed materials. How about we touch base next week for a more in-depth discussion?"
+              }
+            ]
+          },
+          {
+            "answer": "After the 2023-10-07 discovery call, Chidi committed to sending over case studies and arranging a conversation with a client who faced similar challenges, as well as arranging a demo/workshop session covering integration specifics with tools like EcoPCB Creator and TrainEDU Suite, and following up with information and next steps soon.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2heIAC",
+                "line_start": 15,
+                "line_end": 23,
+                "quote": "[2023-10-07T14:03:05] Thabo Dlamini: That's reassuring. Would it be possible to get a deeper look at some of your case studies and maybe even chat with one of your clients?\n[2023-10-07T14:03:15] Chidi Onyekachi: Of course, Thabo. I can share a few case studies and arrange for a conversation with a client who faced similar challenges.\n[2023-10-07T14:03:22] Thabo Dlamini: That would be perfect. It\u2019s always helpful to learn from peers.\n[2023-10-07T14:03:30] Chidi Onyekachi: I agree. Let me send those over after our call. Additionally, would you be interested in a demo or workshop to see our products in action?\n[2023-10-07T14:03:40] Thabo Dlamini: Yes, that would be very useful. We\u2019d like to see how these tools can integrate with what we're currently using.\n[2023-10-07T14:03:50] Chidi Onyekachi: Fantastic, I\u2019ll arrange for a demo session. We\u2019ll make sure to cover integration specifics with tools like EcoPCB Creator and TrainEDU Suite.\n[2023-10-07T14:04:00] Thabo Dlamini: Looking forward to it, Chidi. Thanks for the informative discussion today.\n[2023-10-07T14:04:10] Chidi Onyekachi: My pleasure, Thabo. I\u2019ll follow up with the information and the next steps soon. Have a great day ahead!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-c54c0c99d29dde60",
+      "question": "What pricing did Jasper quote James O'Reilly at SecureLink Technologies for the four DesignEdge Pro licenses, and what was included?",
+      "gold_answer": "$498 per license, $1,992 total for four licenses, with free customer support and updates for the first year.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003T0soIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 18,
+            "normalized_end": 19
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call exists between Jasper and James O'Reilly, and it contains a single explicit pricing quote for the four DesignEdge Pro licenses.",
+        "answers": [
+          {
+            "answer": "Jasper quoted $498 per license, totaling $1992 for the four DesignEdge Pro licenses (just within James's ~$2012 budget), and the quote included free customer support and updates for the first year.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0soIAC",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-10-10T10:02:20] Jasper van Dijk: The pricing is $498 per license, so for four, that brings us to $1992, just within your budget. We also provide free customer support and updates for the first year."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is exactly one call in the supplied history involving Jasper van Dijk and James O'Reilly at SecureLink Technologies discussing four DesignEdge Pro licenses. The pricing quote and inclusions are stated clearly in a single line.",
+        "answers": [
+          {
+            "answer": "Jasper quoted $498 per license, totaling $1,992 for four DesignEdge Pro licenses. Included with the purchase were free customer support and updates for the first year.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0soIAC",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-10-10T10:02:20] Jasper van Dijk: The pricing is $498 per license, so for four, that brings us to $1992, just within your budget. We also provide free customer support and updates for the first year."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same pricing ($498 per license, $1,992 total for four DesignEdge Pro licenses) and the same inclusions (free customer support and updates for the first year). The reference also covers all requested facts: per-license price, total price, and what was included. Answer A adds a parenthetical about the budget, which is an unrequested extra and does not affect agreement."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof.",
+  "regression_note": "Targeted six-case regression: four source-confirmed ambiguous questions and two precise controls. Both models independently assess scope without reference or draft; only unanimous determinate scope plus semantic comparison can pass. Individual judges still miss alternatives; retain both raw verdicts."
+}
