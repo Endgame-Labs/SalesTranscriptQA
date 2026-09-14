@@ -1,0 +1,441 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "9ab6c10a5bd0c5b58c7dbb64aa84bf5eeb66cd7cdfbae4dd95e5187715a45363",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.61673536,
+  "results": [
+    {
+      "question_id": "b2b-single_call-5219204b368eae06",
+      "question": "What did Tomoko Sato say she needs to do before making a decision on the EDA tools, and what next step did Mohamed propose for her board?",
+      "gold_answer": "She needs to present the tools to Circuit Dynamics' board before deciding; Mohamed offered to arrange a detailed demonstration for the board.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqTUIA0",
+        "b2b:a05Wt000003SqgTIAS",
+        "b2b:a05Wt000003SsOqIAK",
+        "b2b:a05Wt000003SsOrIAK",
+        "b2b:a05Wt000003Su2TIAS",
+        "b2b:a05Wt000003SulgIAC",
+        "b2b:a05Wt000003SuvKIAS",
+        "b2b:a05Wt000003SvY0IAK",
+        "b2b:a05Wt000003SvY1IAK",
+        "b2b:a05Wt000003SvgIIAS",
+        "b2b:a05Wt000003Sx0OIAS",
+        "b2b:a05Wt000003Sx3bIAC",
+        "b2b:a05Wt000003SxbOIAS",
+        "b2b:a05Wt000003SxoNIAS",
+        "b2b:a05Wt000003SyMHIA0",
+        "b2b:a05Wt000003SyNsIAK",
+        "b2b:a05Wt000003Syj2IAC",
+        "b2b:a05Wt000003T000IAC",
+        "b2b:a05Wt000003T0KnIAK",
+        "b2b:a05Wt000003T0ZMIA0",
+        "b2b:a05Wt000003T0ZNIA0",
+        "b2b:a05Wt000003T0ZOIA0",
+        "b2b:a05Wt000003T15ZIAS",
+        "b2b:a05Wt000003T1qRIAS",
+        "b2b:a05Wt000003T1qSIAS",
+        "b2b:a05Wt000003T21jIAC",
+        "b2b:a05Wt000003T21kIAC",
+        "b2b:a05Wt000003T2WMIA0",
+        "b2b:a05Wt000003T2eVIAS",
+        "b2b:a05Wt000003T2eWIAS",
+        "b2b:a05Wt000003T2hhIAC",
+        "b2b:a05Wt000003T2w9IAC",
+        "b2b:a05Wt000003T2wAIAS",
+        "b2b:a05Wt000003T2zVIAS",
+        "b2b:a05Wt000003T35kIAC",
+        "b2b:a05Wt000003T37LIAS",
+        "b2b:a05Wt000003T3iSIAS",
+        "b2b:a05Wt000003T3lfIAC",
+        "b2b:a05Wt000003T3nKIAS",
+        "b2b:a05Wt000003T3qUIAS",
+        "b2b:a05Wt000003T48BIAS",
+        "b2b:a05Wt000003T4L9IAK",
+        "b2b:a05Wt000003T4MhIAK",
+        "b2b:a05Wt000003T4MiIAK",
+        "b2b:a05Wt000003T4MjIAK",
+        "b2b:a05Wt000003T4OOIA0",
+        "b2b:a05Wt000003T4g2IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Tomoko Sato with Mohamed Ahmed discussing EDA tools and a board decision (2022-02-24, 'EDA Transformation at Circuit Dynamics'). Tomoko states she must present the tools to her board before deciding, and Mohamed proposes arranging a more detailed demonstration for the board.",
+        "answers": [
+          {
+            "answer": "Tomoko Sato said she needs to present the tools to her board before making any decisions, and Mohamed proposed arranging a more detailed demonstration of TechPulse's solutions for her board.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqTUIA0",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2022-02-24T11:03:15] Tomoko Sato: That's quite an improvement. I\u2019ll need to present these tools to our board before making any decisions. Although, I\u2019m intrigued by the potential here."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Tomoko Sato, Mohamed (Ahmed), EDA tools, and her board. Only one call features both Tomoko Sato and Mohamed Ahmed together discussing EDA tools where Tomoko mentions presenting to her board and Mohamed proposes a next step for it: call b2b:a05Wt000003SqTUIA0 (2022-02-24, 'EDA Transformation at Circuit Dynamics'). In the other Mohamed\u2013Tomoko calls (2022-02-21, 2022-03-09, 2022-03-14, 2023-03-04), Tomoko either says she needs internal time to review details or discusses onboarding/pricing, but never mentions her board, and Mohamed never proposes a board-specific next step.",
+        "answers": [
+          {
+            "answer": "Tomoko Sato said she needs to present the EDA tools to her board before making any decisions. In response, Mohamed proposed arranging a more detailed demonstration specifically for her board, highlighting that their future-proof and scalable solutions would meet her expectations.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqTUIA0",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2022-02-24T11:03:15] Tomoko Sato: That's quite an improvement. I\u2019ll need to present these tools to our board before making any decisions. Although, I\u2019m intrigued by the potential here.\n[2022-02-24T11:03:30] Mohamed Ahmed: Absolutely, Tomoko. We can definitely arrange a more detailed demonstration for your board. Our future-proof and scalable solutions will surely meet your expectations."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Tomoko Sato needs to present the EDA tools to her board before making a decision, and that Mohamed proposed arranging a more detailed demonstration for her board. Answer B adds extra detail about future-proof and scalable solutions, but this is unrequested extra and does not change the core facts. The reference covers both requested facts: presenting the tools to the board before deciding, and Mohamed offering to arrange a detailed demonstration for the board. All requested commitments are present in both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-35778f9ec721f0df",
+      "question": "What customization concern did Charles Dubois raise about the previous vendor, and how did Jorge respond regarding AI Cirku-Tech?",
+      "gold_answer": "Charles said Quantum Circuits Inc had limited customizability; Jorge said TechPulse can tailor product features extensively, especially AI Cirku-Tech.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZyIAK",
+        "b2b:a05Wt000003SqZzIAK",
+        "b2b:a05Wt000003Sr7tIAC",
+        "b2b:a05Wt000003SrkUIAS",
+        "b2b:a05Wt000003SslNIAS",
+        "b2b:a05Wt000003SswlIAC",
+        "b2b:a05Wt000003SswmIAC",
+        "b2b:a05Wt000003StEVIA0",
+        "b2b:a05Wt000003StEWIA0",
+        "b2b:a05Wt000003Su48IAC",
+        "b2b:a05Wt000003Su49IAC",
+        "b2b:a05Wt000003Svg0IAC",
+        "b2b:a05Wt000003SvrJIAS",
+        "b2b:a05Wt000003SvrKIAS",
+        "b2b:a05Wt000003Sw7TIAS",
+        "b2b:a05Wt000003SwgwIAC",
+        "b2b:a05Wt000003SwgxIAC",
+        "b2b:a05Wt000003Swp0IAC",
+        "b2b:a05Wt000003Sx9wIAC",
+        "b2b:a05Wt000003SxUzIAK",
+        "b2b:a05Wt000003SxY8IAK",
+        "b2b:a05Wt000003Sy2oIAC",
+        "b2b:a05Wt000003Sy4RIAS",
+        "b2b:a05Wt000003SyHNIA0",
+        "b2b:a05Wt000003SyveIAC",
+        "b2b:a05Wt000003SzBlIAK",
+        "b2b:a05Wt000003SzF0IAK",
+        "b2b:a05Wt000003SzJnIAK",
+        "b2b:a05Wt000003SzRsIAK",
+        "b2b:a05Wt000003SzRtIAK",
+        "b2b:a05Wt000003SzV7IAK",
+        "b2b:a05Wt000003SzYIIA0",
+        "b2b:a05Wt000003SzlEIAS",
+        "b2b:a05Wt000003SztHIAS",
+        "b2b:a05Wt000003SzzkIAC",
+        "b2b:a05Wt000003T0B2IAK",
+        "b2b:a05Wt000003T0CdIAK",
+        "b2b:a05Wt000003T0FqIAK",
+        "b2b:a05Wt000003T0MLIA0",
+        "b2b:a05Wt000003T0VyIAK",
+        "b2b:a05Wt000003T0pKIAS",
+        "b2b:a05Wt000003T0sYIAS",
+        "b2b:a05Wt000003T10bIAC",
+        "b2b:a05Wt000003T10cIAC",
+        "b2b:a05Wt000003T12DIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features both Charles Dubois and Jorge Pinto (2020-12-23, MediLux EDA Transformation). In it, Charles raises the previous vendor Quantum Circuits Inc's limited customizability, and Jorge responds that TechPulse can tailor product features extensively, especially with AI Cirku-Tech. Other calls with Charles involve different reps (Pierre, Ayo) and different concerns, so they do not compete.",
+        "answers": [
+          {
+            "answer": "Charles Dubois raised that MediLux had issues with Quantum Circuits Inc's limited customizability in the past. Jorge Pinto responded that a key strength of TechPulse Solutions is the ability to tailor product features to meet specific needs \u2014 unlike some competitors, they can tweak their solutions extensively, especially with AI Cirku-Tech.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sr7tIAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-12-23T14:01:55] Charles Dubois: That\u2019s good to hear. One question we have is about the level of customization available. We've had some issues with Quantum Circuits Inc's limited customizability in the past."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Charles Dubois, Jorge, a customization concern about a previous vendor, and AI Cirku-Tech. Only one call matches all these qualifiers: call b2b:a05Wt000003Sr7tIAC (2020-12-23), where Charles Dubois speaks with Jorge Pinto. Charles raises the concern about Quantum Circuits Inc's limited customizability, and Jorge responds by highlighting TechPulse's ability to tailor product features extensively, especially with AI Cirku-Tech. No other call features both Charles Dubois and Jorge together discussing a previous vendor's customization issue and AI Cirku-Tech.",
+        "answers": [
+          {
+            "answer": "Charles Dubois raised the concern that they had experienced issues with Quantum Circuits Inc's limited customizability in the past. Jorge Pinto responded by stating that one of TechPulse Solutions' strengths is the ability to tailor product features to meet specific needs, and that unlike some competitors, they can tweak their solutions extensively, especially with AI Cirku-Tech.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sr7tIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2020-12-23T14:01:55] Charles Dubois: That\u2019s good to hear. One question we have is about the level of customization available. We've had some issues with Quantum Circuits Inc's limited customizability in the past.\n[2020-12-23T14:02:15] Jorge Pinto: Great point, Charles. One of the strengths of TechPulse Solutions is our ability to tailor the product features to meet your specific needs. Unlike some competitors, we can tweak our solutions extensively, especially with AI Cirku-Tech."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two facts: (1) Charles Dubois raised the concern about Quantum Circuits Inc's limited customizability with the previous vendor, and (2) Jorge Pinto responded that TechPulse Solutions can tailor product features extensively, especially with AI Cirku-Tech. The reference captures both requested facts: the customizability concern regarding Quantum Circuits Inc and Jorge's response about TechPulse's ability to tailor features extensively, especially AI Cirku-Tech. All requested commitments are present in both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-104351f5d7f75436",
+      "question": "What pricing did Aisha quote Carlos Rivera for the BMW X5 M and the Cadillac XT6, and when did they agree to follow up?",
+      "gold_answer": "BMW X5 M: $74,999.99; Cadillac XT6: $54,999.99; follow-up discussion on tailored proposals around October 20th.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMApIAO",
+        "b2c:a05Ws000005SME2IAO",
+        "b2c:a05Ws000005SMPKIA4",
+        "b2c:a05Ws000005SQKsIAO",
+        "b2c:a05Ws000005SQZOIA4",
+        "b2c:a05Ws000005SQr8IAG",
+        "b2c:a05Ws000005SRSDIA4",
+        "b2c:a05Ws000005SRTpIAO",
+        "b2c:a05Ws000005SRVRIA4",
+        "b2c:a05Ws000005SRX3IAO",
+        "b2c:a05Ws000005SRYfIAO",
+        "b2c:a05Ws000005SRaHIAW",
+        "b2c:a05Ws000005SRbtIAG",
+        "b2c:a05Ws000005SRdVIAW",
+        "b2c:a05Ws000005SRf7IAG",
+        "b2c:a05Ws000005SRgjIAG",
+        "b2c:a05Ws000005SRiLIAW",
+        "b2c:a05Ws000005SRjxIAG",
+        "b2c:a05Ws000005SRlZIAW",
+        "b2c:a05Ws000005SRnBIAW",
+        "b2c:a05Ws000005SRonIAG",
+        "b2c:a05Ws000005SRqPIAW",
+        "b2c:a05Ws000005SRs1IAG",
+        "b2c:a05Ws000005SRtdIAG",
+        "b2c:a05Ws000005SRvFIAW",
+        "b2c:a05Ws000005SRwrIAG",
+        "b2c:a05Ws000005SRyTIAW",
+        "b2c:a05Ws000005SS05IAG",
+        "b2c:a05Ws000005SS1hIAG",
+        "b2c:a05Ws000005SS3JIAW",
+        "b2c:a05Ws000005SS4vIAG",
+        "b2c:a05Ws000005SS6XIAW",
+        "b2c:a05Ws000005SS89IAG",
+        "b2c:a05Ws000005SS9lIAG",
+        "b2c:a05Ws000005SSBNIA4"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Aisha Patel quoting prices for both the BMW X5 M and Cadillac XT6 (the 2023-10-10 'Premium SUV Year-End Event' call), and that same call contains the agreed follow-up date. Other Aisha calls involve different vehicles (Audi Q7) or no pricing, so there are no competing complete answers.",
+        "answers": [
+          {
+            "answer": "Aisha quoted the 2022 BMW X5 M at $74,999.99 and the 2022 Cadillac XT6 at $54,999.99 (also mentioning the AutoElite Comprehensive Maintenance Plan at $1,999.99 and the 2023 Winter Tire Package at $699.99, with no current discount). They agreed to follow up around October 20th for another discussion on tailored proposals, with Aisha sending a follow-up email to confirm the meeting.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMApIAO",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-10-10T11:05:05] Aisha Patel: The BMW X5 M is priced at $74,999.99, and the Cadillac XT6 at $54,999.99. We also have the AutoElite Comprehensive Maintenance Plan for $1,999.99 and the 2023 Winter Tire Package coming in at $699.99. There's no discount on these right now, but we can ensure excellent value with the quality and after-sale support you\u2019d be receiving."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMApIAO",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2023-10-10T11:06:00] Carlos Rivera: That would be great. How about we touch base again later this month?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Aisha Patel quoting Carlos Rivera pricing for both the BMW X5 M and the Cadillac XT6, plus an agreed follow-up time. Only one call matches all three criteria: call b2c:a05Ws000005SMApIAO (2023-10-10), where Aisha explicitly quotes $74,999.99 for the BMW X5 M and $54,999.99 for the Cadillac XT6, and they agree to follow up around October 20th. The earlier Aisha\u2013Carlos call on the same opportunity (b2c:a05Ws000005SQKsIAO, 2023-10-05) discusses the same two vehicles but contains no specific dollar pricing. Other calls mentioning the Cadillac XT6 at $54,999.99 (e.g., b2c:a05Ws000005SRwrIAG) are with Lena Schmidt, not Aisha, and do not include the BMW X5 M price.",
+        "answers": [
+          {
+            "answer": "Aisha Patel quoted Carlos Rivera $74,999.99 for the 2022 BMW X5 M and $54,999.99 for the 2022 Cadillac XT6. She also mentioned the AutoElite Comprehensive Maintenance Plan at $1,999.99 and the 2023 Winter Tire Package at $699.99, with no current discount. They agreed to follow up around October 20th for a discussion on tailored proposals, with Aisha to send a follow-up email to confirm the meeting.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMApIAO",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-10-10T11:05:05] Aisha Patel: The BMW X5 M is priced at $74,999.99, and the Cadillac XT6 at $54,999.99. We also have the AutoElite Comprehensive Maintenance Plan for $1,999.99 and the 2023 Winter Tire Package coming in at $699.99. There's no discount on these right now, but we can ensure excellent value with the quality and after-sale support you\u2019d be receiving."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMApIAO",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2023-10-10T11:06:00] Carlos Rivera: That would be great. How about we touch base again later this month?\n[2023-10-10T11:06:15] Aisha Patel: Sounds perfect. Let\u2019s aim for another discussion on tailored proposals around October 20th. I'll send a follow-up email to confirm our meeting."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers provide identical pricing: $74,999.99 for the 2022 BMW X5 M and $54,999.99 for the 2022 Cadillac XT6, and both state the follow-up was agreed for around October 20th for a discussion on tailored proposals. The reference also covers all three requested facts: the BMW X5 M price ($74,999.99), the Cadillac XT6 price ($54,999.99), and the follow-up timing (around October 20th for tailored proposals). The additional details in both answers (maintenance plan, winter tire package, follow-up email) are extras that do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-7467a2321962bb51",
+      "question": "What did Olivia Adams say she's looking for in a vehicle, and which BMW model is she considering?",
+      "gold_answer": "Reliability and quality with good long-term value; she's considering the BMW X5 M.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SM9LIAW",
+        "b2c:a05Ws000005SMvnIAG",
+        "b2c:a05Ws000005SO1NIAW",
+        "b2c:a05Ws000005SOB6IAO",
+        "b2c:a05Ws000005SOG2IAO",
+        "b2c:a05Ws000005SPbqIAG",
+        "b2c:a05Ws000005SQKvIAO",
+        "b2c:a05Ws000005SQPnIAO",
+        "b2c:a05Ws000005SQo4IAG",
+        "b2c:a05Ws000005SRU0IAO",
+        "b2c:a05Ws000005SRaSIAW",
+        "b2c:a05Ws000005SRc1IAG",
+        "b2c:a05Ws000005SRddIAG",
+        "b2c:a05Ws000005SRgwIAG",
+        "b2c:a05Ws000005SS53IAG",
+        "b2c:a05Ws000005SSBXIA4",
+        "b2c:a05Ws000005SSLIIA4",
+        "b2c:a05Ws000005SSQ7IAO",
+        "b2c:a05Ws000005ST5uIAG",
+        "b2c:a05Ws000005STFiIAO",
+        "b2c:a05Ws000005SUgMIAW",
+        "b2c:a05Ws000005SVCYIA4",
+        "b2c:a05Ws000005SVSrIAO",
+        "b2c:a05Ws000005SW5WIAW",
+        "b2c:a05Ws000005SWJzIAO",
+        "b2c:a05Ws000005SWQPIA4",
+        "b2c:a05Ws000005SWQQIA4",
+        "b2c:a05Ws000005SX9SIAW",
+        "b2c:a05Ws000005SXWFIA4",
+        "b2c:a05Ws000005SXhNIAW",
+        "b2c:a05Ws000005SY2QIAW",
+        "b2c:a05Ws000005SY5gIAG",
+        "b2c:a05Ws000005SYK8IAO",
+        "b2c:a05Ws000005SYLnIAO",
+        "b2c:a05Ws000005SZJQIA4",
+        "b2c:a05Ws000005SZJRIA4",
+        "b2c:a05Ws000005SZRWIA4",
+        "b2c:a05Ws000005SZTAIA4",
+        "b2c:a05Ws000005SZrEIAW",
+        "b2c:a05Ws000005Sa10IAC",
+        "b2c:a05Ws000005SanKIAS",
+        "b2c:a05Ws000005SbDAIA0",
+        "b2c:a05Ws000005SbLDIA0",
+        "b2c:a05Ws000005SbxtIAC",
+        "b2c:a05Ws000005Sc9BIAS",
+        "b2c:a05Ws000005ScXJIA0",
+        "b2c:a05Ws000005ScYvIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Olivia states what she's looking for in a vehicle in more than one call tied to the BMW X5 M (Luxury Auto Bundle opportunity), with different stated priorities: the June 4 discovery call emphasizes reliability/quality/long-term value, while the June 3 call emphasizes wanting a new model with the latest features. Both pair a 'looking for' statement with the BMW X5 M, so they are competing complete answers.",
+        "answers": [
+          {
+            "answer": "Olivia said reliability and quality are high on her list because she wants to ensure good value long-term, and she is considering the BMW X5 M, which she said 'looks amazing' with a mix of luxury and performance that seems perfect for what she needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SM9LIAW",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2022-06-04T11:00:25] Zanele Dlamini: Great to hear! I\u2019m doing well too, thank you. So, I\u2019m glad we could set up this time to chat. I\u2019d love to learn more about what you\u2019re looking for in a vehicle and how we at AutoElite Motors can assist."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SM9LIAW",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2022-06-04T11:04:45] Zanele Dlamini: Convenience and peace of mind, exactly what we strive for. So, before we wrap up, are there any specific vehicles you\u2019ve been considering? I understand the BMW X5 M caught your eye?"
+              }
+            ]
+          },
+          {
+            "answer": "Olivia said she has been considering upgrading her car and is leaning towards a new model because she likes having the latest features, and the BMW model she is considering is the 2022 BMW X5 M, whose technological features caught her interest.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SX9SIAW",
+                "line_start": 6,
+                "line_end": 9,
+                "quote": "[2022-06-03T13:46:30] Zanele Dlamini: I\u2019m glad to hear that. We focus on personalized customer service, which really adds value beyond just the purchasing phase. Speaking of which, are you mainly interested in new models or exploring pre-owned options as well?\n[2022-06-03T13:46:45] Olivia Adams: I\u2019m probably leaning towards a new model. I like having the latest features.\n[2022-06-03T13:47:00] Zanele Dlamini: Excellent choice! Our latest models, like the 2022 BMW X5 M, are equipped with cutting-edge technology that keeps us ahead of the competition. They offer innovative features that really stand out."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks what Olivia Adams said she's looking for in a vehicle AND which BMW model she is considering. Only one call in the entire history involves a BMW model: the 'Luxury Auto Bundle for Olivia Adams' opportunity with Zanele Dlamini. In the initial call (b2c:a05Ws000005SM9LIAW, 2022-06-04), Olivia explicitly states her vehicle priorities (reliability, quality, good long-term value) and confirms she is considering the BMW X5 M. No other call mentions any BMW model, making this the sole determinate answer.",
+        "answers": [
+          {
+            "answer": "Olivia Adams said she is looking for reliability and quality in a vehicle, especially to ensure good value long-term. The BMW model she is considering is the BMW X5 M, which she described as looking amazing with a mix of luxury and performance that seems perfect for what she needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SM9LIAW",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2022-06-04T11:00:45] Olivia Adams: Absolutely. I'm really excited to explore some options. Reliability and quality are high on my list, especially since I want to ensure good value long-term."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SM9LIAW",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2022-06-04T11:04:45] Zanele Dlamini: Convenience and peace of mind, exactly what we strive for. So, before we wrap up, are there any specific vehicles you\u2019ve been considering? I understand the BMW X5 M caught your eye?\n[2022-06-04T11:05:05] Olivia Adams: Yes, the BMW X5 M looks amazing. The mix of luxury and performance seems perfect for what I need."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

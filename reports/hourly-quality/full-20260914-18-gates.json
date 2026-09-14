@@ -1,0 +1,492 @@
+[
+  {
+    "question_id": "b2b-multi_call-3f7145057243cd21",
+    "question": "For InnoSphere Labs, how did Anika respond to Anna's scalability concern in the initial discussion, and what did she point to when Anna later asked about keeping pace with EDA trends?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Anika responded to Anna's scalability concern initially and what she pointed to when Anna later asked about keeping pace with EDA trends",
+        "relationship": "objection and response across two calls concerning the same business issue (InnoSphere Labs' ability to scale and keep pace with EDA trends)",
+        "reason": "Both parts address the same underlying concern\u2014scalability/keeping pace with technology trends\u2014and the follow-up question is a natural continuation of the initial objection, not two independent fact lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyqlIAC",
+                "fact": "Anika responded to Anna's scalability concern by admitting some offerings lack scalability but said advancements are in development, citing EcoPCB Creator's future scalability.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SzABIA0) does not contain this response to the scalability concern; it only mentions scalability in a different context and does not include the admission or the citation of EcoPCB Creator."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzABIA0",
+                "fact": "Anika pointed to AI Cirku-Tech's AI-driven design workflows when Anna later asked about keeping pace with EDA trends.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyqlIAC) does not contain this specific response to the EDA trends question; it mentions AI Cirku-Tech but not in the context of answering the later question about EDA trends."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: Anika's response to the scalability concern in the initial discussion, and what she pointed to when Anna later asked about EDA trends. These are separate events occurring in different calls, and each call provides only one of the required facts. The first call contains the scalability response, while the second call contains the EDA trends response. Neither call alone can supply both facts, and the facts are not paraphrases of each other."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyqlIAC",
+                  "fact": "Anika responded to Anna's scalability concern by admitting some offerings lack scalability but said advancements are in development, citing EcoPCB Creator's future scalability.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SzABIA0) does not contain this response to the scalability concern; it only mentions scalability in a different context and does not include the admission or the citation of EcoPCB Creator."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzABIA0",
+                  "fact": "Anika pointed to AI Cirku-Tech's AI-driven design workflows when Anna later asked about keeping pace with EDA trends.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyqlIAC) does not contain this specific response to the EDA trends question; it mentions AI Cirku-Tech but not in the context of answering the later question about EDA trends."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: Anika's response to the scalability concern in the initial discussion, and what she pointed to when Anna later asked about EDA trends. These are separate events occurring in different calls, and each call provides only one of the required facts. The first call contains the scalability response, while the second call contains the EDA trends response. Neither call alone can supply both facts, and the facts are not paraphrases of each other."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzABIA0",
+                "fact": "Anika admitted some offerings lack certain scalability aspects but said advancements are actively being developed, citing EcoPCB Creator as designed with future scalability in mind.",
+                "why_other_call_cannot_supply_it": "The Sept 25 call contains no admission of scalability gaps or mention of EcoPCB Creator's future scalability; it only references scalability generically in the proposal summary."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyqlIAC",
+                "fact": "Anika said they actively monitor EDA trends to keep solutions cutting-edge, citing AI Cirku-Tech's AI-driven design workflows.",
+                "why_other_call_cannot_supply_it": "The Sept 12 call never discusses monitoring EDA trends or AI Cirku-Tech's AI-driven workflows; it only mentions AI Cirku-Tech's performance algorithms."
+              }
+            ],
+            "reason": "The question asks for two distinct responses from different conversations: the scalability concern response (only in the Sept 12 call) and the EDA trends answer (only in the Sept 25 call). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzABIA0",
+                  "fact": "Anika admitted some offerings lack certain scalability aspects but said advancements are actively being developed, citing EcoPCB Creator as designed with future scalability in mind.",
+                  "why_other_call_cannot_supply_it": "The Sept 25 call contains no admission of scalability gaps or mention of EcoPCB Creator's future scalability; it only references scalability generically in the proposal summary."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyqlIAC",
+                  "fact": "Anika said they actively monitor EDA trends to keep solutions cutting-edge, citing AI Cirku-Tech's AI-driven design workflows.",
+                  "why_other_call_cannot_supply_it": "The Sept 12 call never discusses monitoring EDA trends or AI Cirku-Tech's AI-driven workflows; it only mentions AI Cirku-Tech's performance algorithms."
+                }
+              ],
+              "reason": "The question asks for two distinct responses from different conversations: the scalability concern response (only in the Sept 12 call) and the EDA trends answer (only in the Sept 25 call). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about two distinct moments across two calls: (1) Anna's scalability concern in the 9/12 initial discussion, where Anika admitted some offerings lack scalability but cited EcoPCB Creator's future scalability; (2) Anna's question about keeping pace with EDA trends in the 9/25 call, where Anika cited active monitoring of EDA trends and AI Cirku-Tech's AI-driven design workflows. Each source contributes an exclusive fact. The answer matches both transcripts precisely with no unasked extras. The question is naturally phrased, scoped to a named account and rep, and reflects a plausible QA need for a sales manager reviewing how objections were handled across calls.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2023-09-12 call shows Anna asking about scalability and Anika responding that 'some of our offerings might lack certain scalability aspects, we are actively developing advancements to address these challenges' and that 'EcoPCB Creator are designed with future scalability in mind.' This directly supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quoted passage only contains Anna's question ('Can we expect the same adaptability in innovations as market trends evolve, particularly in EDA?'). It does not include Anika's response. The answer_claim states Anika said they actively monitor EDA trends and cited AI Cirku-Tech's AI-driven design workflows, but none of that response text appears in the cited quote. A question does not establish its answer."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts. The first part (Anika admitted some offerings lack scalability, advancements in development, EcoPCB Creator's future scalability) is fully supported by evidence index 0. However, the second part (Anika said they actively monitor EDA trends, citing AI Cirku-Tech's AI-driven design workflows) is not supported by the supplied evidence. Index 1 only provides Anna's question about EDA adaptability but omits Anika's actual response. Since the cited evidence does not contain Anika's reply mentioning active monitoring of EDA trends or AI Cirku-Tech, the combined citations do not support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-e4c2cc66008df40b",
+    "question": "For SafetyNet, what did Thato promise to send Lars after the initial discussion, and what specific case study result did he cite in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Thato promised to send Lars after the initial discussion and the specific case study result he cited in the follow-up call",
+        "relationship": "follow-up on the same sales thread \u2014 the promised materials and the cited case study both address the same engagement progression with SafetyNet",
+        "reason": "Both facts concern the same business issue: the follow-up to the initial discussion (what was promised to send and what supporting evidence was later cited). This is a coherent next-steps/evidence question, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxLCIA0",
+                "fact": "Thato promised to send case studies and testimonials after the initial discussion.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not contain any promise to send case studies or testimonials; it only discusses them in response to Lars's request."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzACIA0",
+                "fact": "Thato cited a public safety firm achieving a 30% increase in operational efficiency with SecureFlow Suite.",
+                "why_other_call_cannot_supply_it": "The initial call does not mention any specific case study result; it only refers to case studies and testimonials generally."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a promise made in the initial discussion and a specific case study result cited in the follow-up call. The initial call contains the promise to send case studies and testimonials, while the follow-up call contains the specific 30% efficiency result. Neither call provides both facts, so both are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxLCIA0",
+                  "fact": "Thato promised to send case studies and testimonials after the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not contain any promise to send case studies or testimonials; it only discusses them in response to Lars's request."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzACIA0",
+                  "fact": "Thato cited a public safety firm achieving a 30% increase in operational efficiency with SecureFlow Suite.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention any specific case study result; it only refers to case studies and testimonials generally."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a promise made in the initial discussion and a specific case study result cited in the follow-up call. The initial call contains the promise to send case studies and testimonials, while the follow-up call contains the specific 30% efficiency result. Neither call provides both facts, so both are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxLCIA0",
+                "fact": "Thato promised to send case studies and testimonials right after the call",
+                "why_other_call_cannot_supply_it": "The second call contains no mention of a promise to send materials"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzACIA0",
+                "fact": "A public safety firm saw a 30% increase in operational efficiency after deploying SecureFlow Suite",
+                "why_other_call_cannot_supply_it": "The first call only mentions case studies generally, with no specific result or figure"
+              }
+            ],
+            "reason": "The question asks for two distinct facts: the promise (only in the first call) and the specific 30% case study result (only in the second call). Neither call alone answers both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxLCIA0",
+                  "fact": "Thato promised to send case studies and testimonials right after the call",
+                  "why_other_call_cannot_supply_it": "The second call contains no mention of a promise to send materials"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzACIA0",
+                  "fact": "A public safety firm saw a 30% increase in operational efficiency after deploying SecureFlow Suite",
+                  "why_other_call_cannot_supply_it": "The first call only mentions case studies generally, with no specific result or figure"
+                }
+              ],
+              "reason": "The question asks for two distinct facts: the promise (only in the first call) and the specific 30% case study result (only in the second call). Neither call alone answers both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Aug 15): Lars asks for case studies/testimonials and Thato says 'I'll send those over right after our call.' Call 2 (Aug 19): Thato cites 'a public safety firm that saw a 30% increase in operational efficiency after deploying our SecureFlow Suite.' Each source contributes an exclusive requested fact. The question is naturally scoped to the SafetyNet account and the two participants. The gold answer states exactly the two requested facts with no extras.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is Lars S\u00f8rensen saying 'I'd like to take a closer look at those. It will be beneficial for our team to assess the potential impacts.' This is a customer's request/interest, not a statement by Thato promising to send case studies and testimonials. The answer_claim attributes a promise to Thato ('I'll send those over right after our call'), but the cited quote contains no such utterance by Thato. A customer's request does not establish that the salesperson made a specific promise."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage is Thato Mokoena stating: 'One that stands out is a public safety firm that saw a 30% increase in operational efficiency after deploying our SecureFlow Suite.' This directly supports the answer_claim that a public safety firm achieved a 30% increase in operational efficiency with SecureFlow Suite. Speaker, figures, and product name all match."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two factual components: (1) Thato promised to send case studies and testimonials, and (2) he cited a public safety firm achieving a 30% increase in operational efficiency with SecureFlow Suite. Component (2) is fully supported by evidence index 1. However, component (1) is not supported by the supplied evidence: index 0 only quotes Lars expressing interest in reviewing materials, not Thato making a promise to send case studies and testimonials. Since the cited evidence does not establish the promise, the combined citations do not fully support the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5219204b368eae06",
+    "question": "What did Tomoko Sato say she needs to do before making a decision on the EDA tools, and what next step did Mohamed propose for her board?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Tomoko Sato said she needs before deciding on the EDA tools, and the next step Mohamed proposed regarding her board",
+        "relationship": "single coherent decision-process question: the customer's stated requirement and the salesperson's proposed next step address the same pending decision",
+        "reason": "Both parts concern the same issue\u2014moving Tomoko Sato's EDA tools decision forward\u2014and form a natural objection/requirement plus next-step request, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: (1) Tomoko's prerequisite before deciding (present tools to Circuit Dynamics' board) and (2) Mohamed's proposed next step for the board (arrange a detailed demonstration). Both are directly stated in the dialogue at 11:03:15 and 11:03:30. The answer matches precisely with no unasked extras. A rep would plausibly want to know the decision gate and the follow-up action. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage directly states Tomoko Sato saying 'I'll need to present these tools to our board before making any decisions,' which fully supports the claim that she needs to present the tools to her board before making decisions."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage shows Mohamed Ahmed saying 'We can definitely arrange a more detailed demonstration for your board,' which directly supports the claim that Mohamed offered to arrange a more detailed demonstration for her board."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer. Evidence index 0 confirms Tomoko needs to present the tools to Circuit Dynamics' board before deciding (the account metadata confirms the company is Circuit Dynamics Inc. and the contact is Tomoko Sato). Evidence index 1 confirms Mohamed offered to arrange a detailed demonstration for the board. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-35778f9ec721f0df",
+    "question": "What customization concern did Charles Dubois raise about the previous vendor, and how did Jorge respond regarding AI Cirku-Tech?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The customization concern Charles Dubois raised about the previous vendor and Jorge's response regarding AI Cirku-Tech",
+        "relationship": "objection and its response on the same customization issue",
+        "reason": "This is a single coherent objection-and-response question: the concern about the prior vendor and Jorge's answer about AI Cirku-Tech address the same customization issue within one exchange."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection (limited customizability with Quantum Circuits Inc) and the rep's counter-positioning on AI Cirku-Tech, both clearly present in the single transcript. The gold answer accurately restates Charles's concern and Jorge's response without adding unasked facts or omitting requested ones. The question is naturally phrased, identifies the customer (Charles Dubois) and product (AI Cirku-Tech), and a rep would plausibly want to recall this objection-handling exchange. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Charles Dubois explicitly states: 'We've had some issues with Quantum Circuits Inc's limited customizability in the past.' This directly supports the answer_claim that Charles raised Quantum Circuits Inc's limited customizability as a concern about the previous vendor."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Jorge Pinto explicitly states: 'One of the strengths of TechPulse Solutions is our ability to tailor the product features to meet your specific needs. Unlike some competitors, we can tweak our solutions extensively, especially with AI Cirku-Tech.' This directly supports the answer_claim that Jorge said TechPulse can tailor features extensively, especially AI Cirku-Tech."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Charles said Quantum Circuits Inc had limited customizability \u2013 supported by evidence index 0 where Charles explicitly mentions 'Quantum Circuits Inc's limited customizability.' (2) Jorge said TechPulse can tailor product features extensively, especially AI Cirku-Tech \u2013 supported by evidence index 1 where Jorge states TechPulse can 'tailor the product features' and 'tweak our solutions extensively, especially with AI Cirku-Tech.' Both factual claims in the gold_answer are fully supported by the cited evidence. The speaker attributions, company names, and specific product references all match."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-104351f5d7f75436",
+    "question": "What pricing did Aisha quote Carlos Rivera for the BMW X5 M and the Cadillac XT6, and when did they agree to follow up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The prices Aisha quoted Carlos Rivera for the BMW X5 M and the Cadillac XT6, plus the agreed follow-up timing",
+        "relationship": "single coherent quote discussion: pricing for two vehicles compared in one conversation, with the follow-up as the natural next step of that same discussion",
+        "reason": "The pricing of both vehicles belongs to one quote interaction, and the follow-up timing addresses the same sales exchange, not an independent fact lookup."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific vehicle prices and a follow-up date, all of which appear in the single supplied call. The gold answer matches the dialogue exactly: BMW X5 M at $74,999.99, Cadillac XT6 at $54,999.99, and a follow-up on tailored proposals around October 20th. The rep (Aisha) quoting prices to a named customer (Carlos Rivera) is a natural sales scenario. No locator preamble, no answer leakage, no unsupported causality. The question is well-scoped to a specific account and opportunity. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aisha Patel explicitly states 'The BMW X5 M is priced at $74,999.99, and the Cadillac XT6 at $54,999.99,' which directly matches the answer_claim for both vehicle prices."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Aisha Patel explicitly states 'Let's aim for another discussion on tailored proposals around October 20th,' which directly supports the answer_claim about the follow-up timing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer contains three factual claims: (1) BMW X5 M at $74,999.99, (2) Cadillac XT6 at $54,999.99, and (3) follow-up discussion on tailored proposals around October 20th. Evidence index 0 directly supports claims 1 and 2 with exact dollar amounts quoted from Aisha Patel's dialogue. Evidence index 1 directly supports claim 3 with the exact phrasing about the October 20th follow-up. The context metadata confirms the account is Carlos Rivera and the call date is 2023-10-10, consistent with the scenario. All factual elements of the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-7467a2321962bb51",
+    "question": "What did Olivia Adams say she's looking for in a vehicle, and which BMW model is she considering?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Olivia Adams's stated vehicle preferences/needs and the BMW model she is considering",
+        "relationship": "single coherent discovery lookup about one customer's purchase intent",
+        "reason": "Both parts concern the same customer's buying requirements and are naturally connected in a sales discovery context; no unrelated lookups are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Olivia Adams is looking for in a vehicle and which BMW model she's considering. The dialogue confirms she stated 'Reliability and quality are high on my list, especially since I want to ensure good value long-term' and confirmed 'the BMW X5 M looks amazing.' The gold answer accurately captures both facts. The question is naturally phrased, adequately scoped to a specific customer and conversation, and a sales rep would plausibly want to recall a prospect's stated preferences and model interest. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly contains Olivia Adams stating 'Reliability and quality are high on my list, especially since I want to ensure good value long-term,' which matches the answer_claim verbatim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly contains Olivia Adams saying 'Yes, the BMW X5 M looks amazing. The mix of luxury and performance seems perfect for what I need,' which matches the answer_claim verbatim and confirms she is considering the BMW X5 M."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states she is looking for 'Reliability and quality with good long-term value' and is 'considering the BMW X5 M.' Evidence index 0 supports the reliability/quality/long-term value portion, and evidence index 1 supports the BMW X5 M consideration. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]
