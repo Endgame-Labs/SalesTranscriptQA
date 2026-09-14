@@ -1,0 +1,434 @@
+[
+  {
+    "question_id": "b2b-multi_call-c0d18afe6963cf05",
+    "question": "Across the two calls with BrightField Ventures' Asha Patel, how did Mei Lin position TechPulse against CircuitWave each time?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Mei Lin positioned TechPulse against CircuitWave in each of the two calls with Asha Patel of BrightField Ventures",
+        "relationship": "single coherent competitive comparison tracked across two calls",
+        "reason": "Both parts address the same business issue\u2014competitive positioning against CircuitWave\u2014compared across the two calls; natural multi-call framing with plausible sales language."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sqa0IAC",
+                "fact": "TechPulse offers customizable options that integrate with existing systems, while CircuitWave's focus on long-term stability during transitions can feel limiting.",
+                "why_other_call_cannot_supply_it": "The second call only mentions that TechPulse introduces new features faster than CircuitWave, which emphasizes user experience but innovates more slowly; it does not discuss customization or CircuitWave's stability focus."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxwKIAS",
+                "fact": "TechPulse introduces new features faster than CircuitWave, which emphasizes user experience but innovates more slowly.",
+                "why_other_call_cannot_supply_it": "The first call does not mention feature introduction speed or CircuitWave's user experience emphasis; it only discusses customization and stability limitations."
+              }
+            ],
+            "reason": "The question asks how Mei Lin positioned TechPulse against CircuitWave in each call, and the two calls contain distinct comparative claims: one about innovation speed and user experience, the other about customization and stability. These are substantively different facts, each only present in one call, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sqa0IAC",
+                  "fact": "TechPulse offers customizable options that integrate with existing systems, while CircuitWave's focus on long-term stability during transitions can feel limiting.",
+                  "why_other_call_cannot_supply_it": "The second call only mentions that TechPulse introduces new features faster than CircuitWave, which emphasizes user experience but innovates more slowly; it does not discuss customization or CircuitWave's stability focus."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxwKIAS",
+                  "fact": "TechPulse introduces new features faster than CircuitWave, which emphasizes user experience but innovates more slowly.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention feature introduction speed or CircuitWave's user experience emphasis; it only discusses customization and stability limitations."
+                }
+              ],
+              "reason": "The question asks how Mei Lin positioned TechPulse against CircuitWave in each call, and the two calls contain distinct comparative claims: one about innovation speed and user experience, the other about customization and stability. These are substantively different facts, each only present in one call, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxwKIAS",
+                "fact": "TechPulse introduces new features faster than CircuitWave, which emphasizes user experience but innovates more slowly",
+                "why_other_call_cannot_supply_it": "The June 29 call contains no mention of innovation speed or feature release pace relative to CircuitWave"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sqa0IAC",
+                "fact": "TechPulse offers customizable options that integrate with existing systems, while CircuitWave's focus on long-term stability during transitions can feel limiting",
+                "why_other_call_cannot_supply_it": "The June 22 call contains no mention of customizability, integration, or CircuitWave's stability focus"
+              }
+            ],
+            "reason": "The question asks how Mei Lin positioned TechPulse against CircuitWave in each of the two calls. Each call contains a distinct, non-redundant comparison: one about innovation speed, the other about customizability/integration vs. stability. Neither call alone covers both, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxwKIAS",
+                  "fact": "TechPulse introduces new features faster than CircuitWave, which emphasizes user experience but innovates more slowly",
+                  "why_other_call_cannot_supply_it": "The June 29 call contains no mention of innovation speed or feature release pace relative to CircuitWave"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sqa0IAC",
+                  "fact": "TechPulse offers customizable options that integrate with existing systems, while CircuitWave's focus on long-term stability during transitions can feel limiting",
+                  "why_other_call_cannot_supply_it": "The June 22 call contains no mention of customizability, integration, or CircuitWave's stability focus"
+                }
+              ],
+              "reason": "The question asks how Mei Lin positioned TechPulse against CircuitWave in each of the two calls. Each call contains a distinct, non-redundant comparison: one about innovation speed, the other about customizability/integration vs. stability. Neither call alone covers both, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": false,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": false,
+        "exactly_requested_answer": false,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The gold answer swaps the two calls. The June 22 call (first chronologically) contains the 'introduces new features faster than CircuitWave, which emphasizes user experience but innovates more slowly' positioning, while the June 29 call (second) contains the 'customizable options that integrate with existing systems vs. CircuitWave's focus on long-term stability during transitions can feel limiting' positioning. The gold answer labels the first-call content as belonging to the first call and the second-call content as belonging to the second call, but it reverses which call is 'first' and 'second' relative to the actual dates (June 22 is first, June 29 is second). Specifically, the gold says 'First call: TechPulse introduces new features faster\u2026' which matches the June 22 call, and 'Second call: TechPulse offers customizable options\u2026' which matches the June 29 call. On re-reading, this ordering is actually correct (June 22 = first, June 29 = second). Both claims are verbatim-supported by the respective dialogues. Each source contributes an exclusive competitive-positioning fact. The question naturally identifies the account (BrightField Ventures), contact (Asha Patel), and rep (Mei Lin), and a sales rep would plausibly want to recall how they positioned against a competitor across calls. No locator preamble, no answer leakage, no unsupported causality. Correcting factual_answer and exactly_requested_answer to true."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Mei Lin on the 2020-06-22 call explicitly states TechPulse introduces new features faster than competitors like CircuitWave, which 'tend to emphasize user experience but at a slower innovation pace.' This directly supports the answer_claim about faster feature introduction vs. CircuitWave's UX emphasis with slower innovation."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage from Mei Lin on the 2020-06-29 call explicitly states TechPulse's platforms 'emphasize customizable options that fit seamlessly with existing systems' and that 'some clients feel CircuitWave's focus on long-term stability during transitions can be a bit limiting compared to our flexible model.' This directly supports the answer_claim about customizable options integrating with existing systems and CircuitWave's stability focus feeling limiting."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 (first call, 2020-06-22) confirms Mei Lin positioned TechPulse as introducing new features faster than CircuitWave, which emphasizes user experience but innovates more slowly. Evidence index 1 (second call, 2020-06-29) confirms Mei Lin positioned TechPulse as offering customizable options that integrate with existing systems, while CircuitWave's focus on long-term stability during transitions can feel limiting. The metadata confirms both calls involve BrightField Ventures and Asha Patel. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-7a1e9e2a3c294a51",
+    "question": "Across the FutureTech Innovations opportunity, what did Chen Lixin say about Adaptive Design Solutions in the initial discussion, and what did Sofia Russo report about Adaptive's latest enhancements in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Chen Lixin said about Adaptive Design Solutions initially and what Sofia Russo reported about Adaptive's latest enhancements in the follow-up call",
+        "relationship": "competitive intelligence on the same competitor (Adaptive Design Solutions) tracked across two calls on the same opportunity",
+        "reason": "Both parts concern the same business issue\u2014competitive positioning of Adaptive Design Solutions within the FutureTech opportunity\u2014making this a coherent competitive comparison across calls, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: Chen Lixin's comment about Adaptive Design Solutions in the initial discussion, and Sofia Russo's report about Adaptive's latest enhancements in the follow-up call. However, the first piece is supplied by the first call, and the second piece is supplied by the second call. The second call does not contain any information about Chen's initial comment, and the first call does not contain any information about Sofia's follow-up report. Therefore, both calls are necessary to answer the question, as each provides a distinct fact that the other cannot supply. The facts are not repeated or paraphrased; they are separate and requested by the question. Thus, necessary=true."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: Chen Lixin's comment about Adaptive Design Solutions in the initial discussion, and Sofia Russo's report about Adaptive's latest enhancements in the follow-up call. However, the first piece is supplied by the first call, and the second piece is supplied by the second call. The second call does not contain any information about Chen's initial comment, and the first call does not contain any information about Sofia's follow-up report. Therefore, both calls are necessary to answer the question, as each provides a distinct fact that the other cannot supply. The facts are not repeated or paraphrased; they are separate and requested by the question. Thus, necessary=true."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Ss5QIAS",
+                "fact": "Chen Lixin said Adaptive Design Solutions sometimes struggles with user-friendly experience",
+                "why_other_call_cannot_supply_it": "The follow-up call contains no statement by Chen about Adaptive's weaknesses; only the initial call has this competitive criticism."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuImIAK",
+                "fact": "Sofia Russo reported there has been talk of Adaptive's latest enhancements but specifics were still being looked into",
+                "why_other_call_cannot_supply_it": "The initial call contains no mention by Sofia of Adaptive's latest enhancements; this report appears only in the follow-up call."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information from different speakers in different calls: Chen's initial criticism of Adaptive and Sofia's later report on Adaptive's enhancements. Each fact exists only in one call, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Ss5QIAS",
+                  "fact": "Chen Lixin said Adaptive Design Solutions sometimes struggles with user-friendly experience",
+                  "why_other_call_cannot_supply_it": "The follow-up call contains no statement by Chen about Adaptive's weaknesses; only the initial call has this competitive criticism."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuImIAK",
+                  "fact": "Sofia Russo reported there has been talk of Adaptive's latest enhancements but specifics were still being looked into",
+                  "why_other_call_cannot_supply_it": "The initial call contains no mention by Sofia of Adaptive's latest enhancements; this report appears only in the follow-up call."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information from different speakers in different calls: Chen's initial criticism of Adaptive and Sofia's later report on Adaptive's enhancements. Each fact exists only in one call, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall two competitive-positioning data points about Adaptive Design Solutions across two calls on the same opportunity. Call 1 (Nov 1) has Chen stating Adaptive 'sometimes struggle[s]' with user-friendly experience; Call 2 (Nov 20) has Sofia reporting 'talk about their latest enhancements' while noting 'we're still looking into the specifics.' Each source contributes an exclusive requested fact, the gold answer matches both transcripts precisely without unasked extras, the wording is natural, and no artificial locator preamble or answer leakage is present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Chen Lixin on 2023-11-01 explicitly states: 'we've found that it's an area our competitors, like Adaptive Design Solutions, sometimes struggle with,' referring to 'creating a user-friendly experience.' This directly supports the claim that Chen noted Adaptive Design Solutions sometimes struggles with user-friendly experience."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Sofia Russo's first utterance mentions 'There's been talk about their latest enhancements' regarding Adaptive Design Solutions, and her later response states 'we're still looking into the specifics.' Together these support the claim that Sofia reported talk of Adaptive's latest enhancements but specifics were still being looked into."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Chen said Adaptive Design Solutions sometimes struggles with user-friendly experience\u2014supported by evidence index 0 where Chen explicitly names Adaptive as a competitor that sometimes struggles with user-friendly experience. (2) Sofia reported talk of Adaptive's latest enhancements but specifics were still being looked into\u2014supported by evidence index 1 where Sofia mentions 'talk about their latest enhancements' and later says 'we're still looking into the specifics.' Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-543d42b4137feb9f",
+    "question": "What quantities and total price did Alice Chen from Metro Security Systems agree to for the OptiPower Max and DesignEdge Pro?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The agreed quantities and total price for two products (OptiPower Max and DesignEdge Pro) in Alice Chen's order/quote for Metro Security Systems",
+        "relationship": "single coherent commercial quote breakdown \u2014 quantities and pricing for the same agreement",
+        "reason": "This is one lookup into a single commercial agreement: the quantities and total price Alice Chen agreed to, covering the products in that same quote. It is a coherent quote breakdown, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for quantities and total price agreed by Alice Chen for two named products. The single call transcript confirms: 3 OptiPower Max at $1,200 each, 4 DesignEdge Pro at $750 each, total ~$7,500 before taxes/discounts. The gold answer matches exactly. The rep/account manager would plausibly need this order-detail information. No locator preamble, no answer leakage, no unsupported claims. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Alice Chen explicitly states: 'I need three units of OptiPower Max and four of the DesignEdge Pro.' This directly supports the answer_claim about the quantities (three OptiPower Max, four DesignEdge Pro). The metadata confirms the speaker is Alice Chen from Metro Security Systems."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Thato Mokoena explicitly states the per-unit prices ($1,200 for OptiPower Max, $750 for DesignEdge Pro) and the total of 'approximately $7,500 before any applicable taxes or discounts.' This directly supports the answer_claim regarding pricing and total."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: three units of OptiPower Max at $1,200 each, four DesignEdge Pro at $750 each, totaling about $7,500 before taxes or discounts. Evidence index 0 confirms the quantities (3 OptiPower Max, 4 DesignEdge Pro) spoken by Alice Chen. Evidence index 1 confirms the unit prices ($1,200 and $750) and the approximate total of $7,500 before taxes or discounts. The metadata confirms Alice Chen is associated with Metro Security Systems. All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-a141cfd167dab3b0",
+    "question": "What did Anwar Hakim at MedTech Advances say about pricing transparency as a concern, and what meeting did TechPulse schedule with him?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Anwar Hakim's stated concern about pricing transparency, and (2) the meeting TechPulse scheduled with him.",
+        "relationship": "Two independent lookups joined by the same contact: a concern raised and a separate scheduling fact.",
+        "reason": "The pricing-transparency concern and the meeting scheduling are distinct information needs; the meeting is not shown to be a response addressing that same issue, so 'same contact' is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks two things from the same call: (1) Anwar's stated concern about pricing transparency and (2) the meeting TechPulse scheduled. The dialogue confirms Anwar said hidden costs 'had been an issue for us in the past' and found TechPulse's upfront pricing 'reassuring,' and Nina scheduled a meeting for September 26th at 3 PM. The gold answer captures both facts precisely with no unasked extras. The question is naturally worded, scoped to a named contact and account, and reflects a realistic rep need (recording objection context and next-step logistics). Because question_class is single_call, both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quote 'That's definitely reassuring. It's been an issue for us in the past.' confirms something was an issue in the past and that something was reassuring, but the cited passage itself never mentions 'pricing transparency,' 'hidden costs,' or 'lack of pricing transparency.' The answer_claim specifies 'lack of pricing transparency' as the issue, but the quoted text only says 'It's been an issue' without identifying what 'it' refers to. No other supplied citation resolves the pronoun. The 'reassuring' part is present, but the specific subject (pricing transparency/hidden costs) is absent from the cited text."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "Nina Kovalenko proposes scheduling a meeting for September 26th at 3 PM and asks 'Does that sound good?' However, the cited evidence does not include Anwar's confirmation or acceptance. The answer_claim states the meeting was 'scheduled,' but the quote only shows a proposal/question, not a confirmed arrangement. Without a subsequent line confirming acceptance, the claim that the meeting was definitively scheduled is not fully supported by this citation alone."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer makes two key factual claims: (1) Anwar said hidden costs had been an issue and found TechPulse's upfront pricing reassuring, and (2) a meeting was scheduled for September 26th at 3 PM. For claim (1), the cited quote at index 0 says 'It's been an issue for us in the past' and 'That's definitely reassuring,' but never explicitly mentions 'hidden costs' or 'upfront pricing'\u2014the pronoun 'It' and the referent of 'That' are not resolved by any supplied citation. For claim (2), index 1 shows Nina proposing the meeting and asking if it sounds good, but no confirmation from Anwar is included in the supplied evidence. Both claims rely on information not present in the cited passages."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-4ede9d4e6b7c06d0",
+    "question": "What are the prices of the 2024 Tesla Model S and the 2022 BMW X5 M that Amelia Jackson is considering?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Price of a 2024 Tesla Model S and price of a 2022 BMW X5 M that Amelia Jackson is considering",
+        "relationship": "two independent price lookups for different vehicles, joined only by the same shopper",
+        "reason": "The question bundles two separate fact lookups (the price of two distinct vehicles). Being about the same customer's consideration set is not enough to connect them; there is no single coherent requirement, quote breakdown, or shared business issue linking the two prices."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the prices of two specific vehicles Amelia Jackson is considering. The single call transcript clearly states the Tesla Model S at $89,999.99 and the BMW X5 M at $74,999.99. The gold answer matches exactly with no extra or missing facts. The question is naturally worded, scoped to a named customer and specific vehicles, and a rep would plausibly want to confirm pricing details for their account. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Keiko Mori explicitly states 'the 2024 Tesla Model S...is priced at $89,999.99,' which directly supports the answer_claim about the Tesla Model S price."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Keiko Mori explicitly states 'The BMW X5 M...comes at $74,999.99,' which directly supports the answer_claim about the BMW X5 M price. The year '2022' is not explicitly stated in the quote, but the price claim itself is fully supported."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items directly support the gold_answer. Index 0 confirms the Tesla Model S price of $89,999.99, and Index 1 confirms the BMW X5 M price of $74,999.99. The context metadata identifies the account as Amelia Jackson, confirming she is the person considering these vehicles. The only minor gap is that the '2022' year for the BMW X5 M is not explicitly stated in the quoted dialogue, but the price and model name are confirmed, and the question's framing already supplies the year. The combined citations support all factual claims in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-068e06256f1f9df0",
+    "question": "What did Grace Turner say she values most about AutoElite's offering, and what follow-up did Aisha agree to arrange?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Grace Turner values most about AutoElite's offering and the follow-up Aisha agreed to arrange",
+        "relationship": "The follow-up directly addresses the customer's stated values/priorities, forming one coherent customer-relationship exchange",
+        "reason": "A single call capturing the customer's expressed value and the agreed next step responding to it is a natural, connected sales interaction, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Grace explicitly states she appreciates 'the focus on reliability and transparency' as 'a major plus,' and Aisha agrees to set up a virtual showroom and service center tour and send details. Both facts come from the single supplied call, so both_sources_required is true for a single-call question. The question is naturally phrased, scoped to a named customer and account, and the answer matches the dialogue without extras or leakage.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Grace Turner saying 'I do appreciate the focus on reliability and transparency, though. It's a major plus for us.' This fully supports the claim that Grace appreciates the focus on reliability and transparency as a major plus."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Grace says 'A virtual tour might be nice,' and Aisha responds 'I'll set something up and send you the details.' This supports the claim that Aisha will set up a virtual tour and send details. The 'something up' refers back to the virtual tour Grace just mentioned. However, the gold_answer adds 'service center tour' which is not explicitly stated in the cited quote\u2014only 'virtual tour' is mentioned. The core claim of setting up a virtual tour and sending details is supported."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer states Grace values 'reliability and transparency' (supported by index 0) and that Aisha agreed to 'set up a virtual showroom and service center tour and send details.' Index 1 supports a virtual tour and sending details, but the phrase 'showroom and service center tour' is not present in the cited evidence. Grace only says 'A virtual tour might be nice' and Aisha says 'I'll set something up.' The specific characterization as a 'virtual showroom and service center tour' goes beyond what the cited quotes establish. Since the gold_answer includes 'service center' which is not found in any supplied citation, the combined evidence does not fully support every factual claim in the gold_answer."
+      }
+    }
+  }
+]
