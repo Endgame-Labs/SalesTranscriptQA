@@ -120,6 +120,18 @@ class Pilot:
                 raise ValueError("Run configuration changed: use a new run directory")
         write_json(existing, self.config)
 
+    def quality_required(self, kind):
+        return [
+            "factual",
+            "complete_evidence",
+            "clear_specific_question",
+            "concise_answer",
+            "independent_answer_matches",
+            "no_context_answers_fail",
+            "both_calls_necessary",
+            "single_call_answers_fail",
+        ]
+
     def ask(self, model, instruction, value, stage, job):
         return self.transport.request(
             model,
@@ -247,16 +259,7 @@ class Pilot:
                 job,
             )
             stages["quality_audit"] = verdict
-            required = [
-                "factual",
-                "complete_evidence",
-                "clear_specific_question",
-                "concise_answer",
-                "independent_answer_matches",
-                "no_context_answers_fail",
-                "both_calls_necessary",
-                "single_call_answers_fail",
-            ]
+            required = self.quality_required(kind)
             if any(verdict.get(k) is not True for k in required):
                 result["failure"] = "quality:" + ",".join(
                     k for k in required if verdict.get(k) is not True

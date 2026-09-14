@@ -33,3 +33,14 @@ class Natural(Full):
                 "For multiple sources require a coherent business relationship between the requested facts."
             )
         return super().ask(model, instruction, value, stage, job)
+
+
+class NaturalNext(Natural):
+    """Next validation revision, keeping v2 replay and cached decisions intact."""
+    version = "natural-pilot-v3"
+
+    def quality_required(self, kind):
+        required = super().quality_required(kind)
+        if kind == "single_call":
+            return [k for k in required if k not in {"both_calls_necessary", "single_call_answers_fail"}]
+        return required
