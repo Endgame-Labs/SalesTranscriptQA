@@ -1,0 +1,481 @@
+[
+  {
+    "question_id": "b2b-multi_call-c9f6f65f7ccdc0b4",
+    "question": "For GreenLeaf Engineering, what did Dariusz promise about ongoing support in the initial discussion, and how did Maria Gonzales characterize TechPulse's support in the later negotiation call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Dariusz promised about ongoing support for GreenLeaf Engineering in the initial discussion, and how Maria Gonzales characterized TechPulse's support in the later negotiation call",
+        "relationship": "Comparison of the same business issue (ongoing support commitments/characterization) across an initial discussion and a later negotiation call",
+        "reason": "Both parts concern the same issue\u2014support for GreenLeaf Engineering\u2014compared across two calls, which fits the allowed two-call pattern; the question uses plausible sales language."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "type": "object",
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SuP4IAK",
+                "fact": "Dariusz promised ongoing support through dedicated technical staff familiar with GreenLeaf's systems and proactive maintenance.",
+                "why_other_call_cannot_supply_it": "The later negotiation call does not mention dedicated technical staff or proactive maintenance; it only discusses service level agreements and general support."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwaZIAS",
+                "fact": "Maria characterized TechPulse's support as 'much more responsive than what we've been experiencing elsewhere.'",
+                "why_other_call_cannot_supply_it": "The initial discussion does not contain this comparative assessment of responsiveness; it only includes Dariusz's promises about support."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: Dariusz's promise in the initial discussion and Maria's characterization in the later negotiation call. Each fact is unique to its respective call and cannot be derived from the other, as the initial call focuses on promises while the later call provides Maria's evaluative comment."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SuP4IAK",
+                  "fact": "Dariusz promised ongoing support through dedicated technical staff familiar with GreenLeaf's systems and proactive maintenance.",
+                  "why_other_call_cannot_supply_it": "The later negotiation call does not mention dedicated technical staff or proactive maintenance; it only discusses service level agreements and general support."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwaZIAS",
+                  "fact": "Maria characterized TechPulse's support as 'much more responsive than what we've been experiencing elsewhere.'",
+                  "why_other_call_cannot_supply_it": "The initial discussion does not contain this comparative assessment of responsiveness; it only includes Dariusz's promises about support."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: Dariusz's promise in the initial discussion and Maria's characterization in the later negotiation call. Each fact is unique to its respective call and cannot be derived from the other, as the initial call focuses on promises while the later call provides Maria's evaluative comment."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SuP4IAK",
+                "fact": "Dariusz promised ongoing support via dedicated technical staff familiar with GreenLeaf's systems, plus proactive maintenance",
+                "why_other_call_cannot_supply_it": "The later negotiation call contains no restatement of this initial promise; it only discusses SLAs and training generically, not the specific dedicated-staff commitment made in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwaZIAS",
+                "fact": "Maria characterized TechPulse's support system as much more responsive than what they've experienced elsewhere",
+                "why_other_call_cannot_supply_it": "The initial call predates this assessment; Maria only asked about support there and never offered any evaluation of TechPulse's responsiveness."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: a specific promise made by Dariusz in the initial call and Maria's later evaluative characterization of support. Each fact appears only in its respective call, and both are directly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SuP4IAK",
+                  "fact": "Dariusz promised ongoing support via dedicated technical staff familiar with GreenLeaf's systems, plus proactive maintenance",
+                  "why_other_call_cannot_supply_it": "The later negotiation call contains no restatement of this initial promise; it only discusses SLAs and training generically, not the specific dedicated-staff commitment made in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwaZIAS",
+                  "fact": "Maria characterized TechPulse's support system as much more responsive than what they've experienced elsewhere",
+                  "why_other_call_cannot_supply_it": "The initial call predates this assessment; Maria only asked about support there and never offered any evaluation of TechPulse's responsiveness."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: a specific promise made by Dariusz in the initial call and Maria's later evaluative characterization of support. Each fact appears only in its respective call, and both are directly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets two distinct support-related facts across two calls for the same account. Call 1 (Feb 2) contains Dariusz's promise of dedicated technical staff familiar with GreenLeaf's systems and proactive maintenance (12:08:30). Call 2 (Mar 20) contains Maria's characterization that TechPulse's support system 'seems much more responsive than what we've been experiencing elsewhere' (16:01:15). Each source contributes an exclusive requested fact. The gold answer accurately reflects both statements without adding unasked extras. The question is naturally scoped to a named account and contact, uses natural participant names, and a rep would plausibly want to track support commitments and customer sentiment across calls.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003SuP4IAK shows Dariusz Wisniewski explicitly stating: 'we offer ongoing support through dedicated technical staff who are familiar with your systems. Our goal is to ensure seamless operation and proactive maintenance.' This directly supports the answer_claim about dedicated technical staff familiar with GreenLeaf's systems, seamless operation, and proactive maintenance. The speaker attribution (Dariusz), the account context (GreenLeaf Engineering per metadata), and the content all align."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003SwaZIAS shows Maria Gonzales saying: 'your support system seems much more responsive than what we've been experiencing elsewhere.' This directly supports the answer_claim that Maria characterized TechPulse's support as much more responsive than what they've experienced elsewhere. The speaker attribution (Maria Gonzales), the context (negotiation call per metadata dated 2024-03-20), and the characterization all align."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Dariusz promised ongoing support via dedicated technical staff familiar with GreenLeaf's systems plus proactive maintenance \u2014 fully supported by evidence index 0, which quotes Dariusz saying exactly this. (2) Maria said TechPulse's support system seems much more responsive than what they've experienced elsewhere \u2014 fully supported by evidence index 1, which quotes Maria using those words. The 'seamless operation' detail in the gold_answer is also present in the index 0 quote. Both calls are correctly attributed to GreenLeaf Engineering and Maria Gonzales per context_metadata. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-2c5058d62facba5d",
+    "question": "What concerns did Mei Cheng raise about TechPulse competitors across the two calls with MetaData Analytics \u2014 one regarding pricing and one regarding service/deployment?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Mei Cheng's concerns about TechPulse competitors across two calls \u2014 one pricing-related and one service/deployment-related",
+        "relationship": "Two-call comparison of the same business issue (competitor concerns), spanning pricing and service/deployment aspects",
+        "reason": "Both requested facts concern the same business issue \u2014 concerns about TechPulse competitors \u2014 across two calls, which is a valid multi-call comparison rather than unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "type": "object",
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SztIIAS",
+                "fact": "Mei Cheng mentioned competitors have hidden costs, prompting her interest in pricing transparency.",
+                "why_other_call_cannot_supply_it": "The second call does not discuss pricing or hidden costs; it focuses on deployment complexity and service levels."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0UNIA0",
+                "fact": "Mei Cheng cited competitors' overly complex deployments and concerns about their service levels and support.",
+                "why_other_call_cannot_supply_it": "The first call does not mention deployment complexity or service/support concerns; it only addresses pricing transparency."
+              }
+            ],
+            "reason": "The question explicitly asks for concerns about competitors in two separate calls, one regarding pricing and one regarding service/deployment. Each call contains a distinct, non-overlapping concern: the first call has a pricing-related concern (hidden costs), and the second call has a service/deployment-related concern (complex deployment and support issues). These are substantively different facts that are both requested and cannot be supplied by the other call."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SztIIAS",
+                  "fact": "Mei Cheng mentioned competitors have hidden costs, prompting her interest in pricing transparency.",
+                  "why_other_call_cannot_supply_it": "The second call does not discuss pricing or hidden costs; it focuses on deployment complexity and service levels."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0UNIA0",
+                  "fact": "Mei Cheng cited competitors' overly complex deployments and concerns about their service levels and support.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention deployment complexity or service/support concerns; it only addresses pricing transparency."
+                }
+              ],
+              "reason": "The question explicitly asks for concerns about competitors in two separate calls, one regarding pricing and one regarding service/deployment. Each call contains a distinct, non-overlapping concern: the first call has a pricing-related concern (hidden costs), and the second call has a service/deployment-related concern (complex deployment and support issues). These are substantively different facts that are both requested and cannot be supplied by the other call."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SztIIAS",
+                "fact": "Mei Cheng noted competitors tend to have hidden costs, prompting her interest in pricing transparency",
+                "why_other_call_cannot_supply_it": "The second call contains no mention of pricing, hidden costs, or cost transparency; it only discusses deployment complexity and support."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0UNIA0",
+                "fact": "Mei Cheng cited competitors' overly complex deployments and concerns about their service levels and support",
+                "why_other_call_cannot_supply_it": "The first call contains no mention of deployment complexity, service levels, or support concerns; it only discusses pricing transparency and data security."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct competitor concerns raised across two calls: a pricing concern (hidden costs, in the first call only) and a service/deployment concern (complex deployments and support worries, in the second call only). Each fact appears in exactly one call, and neither call alone can answer both parts of the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SztIIAS",
+                  "fact": "Mei Cheng noted competitors tend to have hidden costs, prompting her interest in pricing transparency",
+                  "why_other_call_cannot_supply_it": "The second call contains no mention of pricing, hidden costs, or cost transparency; it only discusses deployment complexity and support."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0UNIA0",
+                  "fact": "Mei Cheng cited competitors' overly complex deployments and concerns about their service levels and support",
+                  "why_other_call_cannot_supply_it": "The first call contains no mention of deployment complexity, service levels, or support concerns; it only discusses pricing transparency and data security."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct competitor concerns raised across two calls: a pricing concern (hidden costs, in the first call only) and a service/deployment concern (complex deployments and support worries, in the second call only). Each fact appears in exactly one call, and neither call alone can answer both parts of the question."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1: Mei says 'We've heard some competitors tend to have hidden costs' (pricing concern). Call 2: she says 'deployment was overly complex' and 'We had concerns about service levels and support with some competitors' (service/deployment concern). Each call contributes an exclusive fact; the gold answer captures both precisely without extras. The question naturally identifies the account (MetaData Analytics), contact (Mei Cheng), and vendor (TechPulse), and a rep would plausibly want to track competitor objections across calls.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Mei Cheng stating 'We've heard some competitors tend to have hidden costs' and expressing curiosity about how TechPulse handles pricing transparency. This fully supports the answer_claim about hidden costs and interest in pricing transparency."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote supports the claim about overly complex deployments ('We've had experiences with other solutions where deployment was overly complex'). However, the claim about 'concerns about competitors' service levels and support' is NOT supported by the cited dialogue. Mei's quoted line only mentions deployment complexity and timeline pressures. The mention of 'support services' comes from Mohammed El-Sayed's response, where he is pitching TechPulse's own support\u2014not Mei raising concerns about competitors' service levels and support. A salesperson's offer of support does not establish that the customer raised concerns about competitors' service levels."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer states that in the second call Mei 'cited competitors' overly complex deployments and concerns about their service levels and support.' While the deployment complexity concern is supported by evidence index 1, the claim about Mei raising concerns regarding competitors' service levels and support is not present in any cited evidence. The only mention of support in the second call's citation is Mohammed El-Sayed promoting TechPulse's own support services, not Mei expressing concerns about competitors' service levels. Since the gold_answer includes a factual claim (concerns about competitors' service levels and support) that is not substantiated by the supplied citations, the answer is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-0076f9af8ff313d5",
+    "question": "What did Laila Hassan at Horizon Tech Integrations say prompted her interest in SecureFlow Suite and CloudLink Designer?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Laila Hassan at Horizon Tech Integrations said prompted her interest in SecureFlow Suite and CloudLink Designer",
+        "relationship": "single coherent lookup of one customer's stated motivation covering two related products in the same conversation",
+        "reason": "The question asks for one piece of information\u2014the customer's stated reason for interest\u2014expressed across two products from the same vendor discussed in one call; this is a natural single-need query, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what prompted Laila Hassan's interest in SecureFlow Suite and CloudLink Designer. The dialogue at 10:47:00 shows her stating frustration with a competitor's limited flexibility and longer implementation times affecting their project timeline. The gold answer captures exactly this. The question is naturally phrased, scoped to a named contact and account, and a rep would plausibly want to know the trigger behind product interest. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Laila Hassan explicitly states frustration with a competitor due to 'limited flexibility and longer implementation times' and that 'It's affected our project's timeline significantly.' This directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports the gold_answer: Laila Hassan at Horizon Tech Integrations (confirmed by context_metadata) stated that frustration with a competitor's limited flexibility and longer implementation times, which significantly affected their project timeline, prompted her interest. The quote matches every factual element in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-0853d322e365a480",
+    "question": "What did Priyanka commit to delivering next to Nikhil at NaviCorp Tech, and what will it include?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Priyanka committed to deliver next to Nikhil at NaviCorp Tech and what it will include",
+        "relationship": "single coherent request: a commitment and its contents describe one deliverable",
+        "reason": "One next-step lookup about a single commitment and its contents; natural sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what the rep committed to delivering next, a typical next-steps query. The dialogue at 11:03:08 confirms Priyanka said the tailored proposal would be ready shortly and would include a demo session for the CircuitAI Innovator and OptiPower Manager, matching the gold answer exactly. No locator preamble, no answer leakage, no unsupported claims. Single-call set so both_sources_required is true by rule."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Priyanka Iyer explicitly states they are 'in the final stages of tailoring it specifically to your needs and should have it ready shortly' and 'We'll also include a demo session for the CircuitAI Innovator and OptiPower Manager so you can see them in action.' This directly supports the claim that Priyanka committed to delivering a tailored proposal shortly, including a demo session for both named products."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: (1) a tailored proposal, (2) ready shortly, (3) including a demo session, (4) of the CircuitAI Innovator and OptiPower Manager. The context metadata confirms the account is NaviCorp Tech and the contact is Nikhil Reddy, matching the question's framing. The speaker is Priyanka Iyer, consistent with the question's reference to Priyanka."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-e191ba44a2cbb6de",
+    "question": "What bulk purchase discount did Aisha offer Isabella Jones on extended warranties, and how is it packaged?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The bulk purchase discount Aisha offered Isabella Jones on extended warranties and how it is packaged",
+        "relationship": "single coherent lookup: one discount offer and its packaging",
+        "reason": "This is one fact lookup about a single commercial offer (discount plus its packaging), not two independent requests."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific bulk-purchase discount and its packaging, which a rep/account manager would plausibly want to recall. The dialogue at 09:04:00 confirms Aisha offered a 15% discount on purchasing more warranties, wrapped into Extended Warranty Plans and Flexible Financing Solutions. The gold answer states exactly those facts with no unasked extras. Wording is natural and scoped to the named customer (Isabella Jones) and rep (Aisha). No locator preamble, no answer leakage, no unsupported causality. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aisha Patel explicitly states a '15% discount on purchasing more warranties' and that these are 'wrapped into our Extended Warranty Plans and Flexible Financing Solutions,' directly matching the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: the 15% discount, the condition of purchasing more warranties, and the packaging into Extended Warranty Plans and Flexible Financing Solutions. The speaker (Aisha) and recipient (Isabella) are confirmed in the quote and metadata."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2523e35b46c389c6",
+    "question": "Which two vehicles will AutoElite showcase at Emily Chen's Thursday showroom meeting, and what time is it scheduled?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the two vehicles AutoElite will showcase at Emily Chen's Thursday showroom meeting and the meeting's scheduled time.",
+        "relationship": "single coherent request about one meeting",
+        "reason": "Both parts describe the same showroom meeting (which vehicles and when), forming one natural lookup about a single event."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific vehicles and the meeting time for Emily Chen's Thursday showroom event. The single call transcript confirms Sophia Grimaldi from AutoElite Motors confirms the meeting at 3 PM Thursday at the downtown showroom and names the 2024 Genesis G80 and 2022 Audi A6 as showcase vehicles. The gold answer states exactly those facts with no unasked extras. The question is naturally phrased, adequately scoped to a specific customer and event, and a rep/account manager would plausibly need this scheduling and product-showcase detail. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Sophia Grimaldi explicitly states 'we'll be showcasing some of our luxury vehicle offerings, including the 2024 Genesis G80 and the 2022 Audi A6,' which directly supports the answer_claim about showcasing those two vehicles."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Sophia Grimaldi explicitly states 'It's scheduled for this Thursday at 3 PM at our downtown showroom,' which directly supports the answer_claim about the meeting being scheduled for Thursday at 3 PM at the downtown showroom."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'The 2024 Genesis G80 and 2022 Audi A6, at 3 PM Thursday at the downtown showroom.' Evidence index 0 confirms both vehicles (2024 Genesis G80 and 2022 Audi A6) will be showcased. Evidence index 1 confirms the meeting is scheduled for Thursday at 3 PM at the downtown showroom. The context metadata confirms the account is Emily Chen and the opportunity is 'Luxury Vehicle and Services for Emily Chen,' supporting that this is Emily Chen's meeting. All factual claims in the gold_answer are supported by the combined citations."
+      }
+    }
+  }
+]
