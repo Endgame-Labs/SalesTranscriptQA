@@ -1,0 +1,310 @@
+[
+  {
+    "question_id": "b2b-multi_call-9766d9407db81bb5",
+    "question": "Across the InnovateVibes EDA Transformation discussions, how did TechPulse position itself against CircuitWave in the initial workshop-findings call, and what concern about CircuitWave did Lina Moreno raise during the proposal walkthrough?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How TechPulse positioned itself against CircuitWave in the workshop-findings call, and Lina Moreno's concern about CircuitWave during the proposal walkthrough",
+        "relationship": "Both requests concern the same competitive issue\u2014TechPulse vs. CircuitWave\u2014across two calls in the same deal",
+        "reason": "A coherent competitive-comparison question: both parts address the same business issue (CircuitWave as competitor) within the same opportunity, so the multi-call linkage is substantive, not merely shared account context."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: TechPulse's positioning against CircuitWave in the initial workshop-findings call, and Lina's concern about CircuitWave during the proposal walkthrough. The first fact is only in the June call, and the second only in the July call. However, both facts are essentially the same: TechPulse claims to be faster and more innovative than CircuitWave, and Lina's concern is that CircuitWave has slower roadmap enhancements. These are two sides of the same coin, not substantively different requested facts. The question artificially splits one underlying fact into two separate calls, but the information need is a single comparative claim. Therefore, both calls are not necessary; one call would suffice to answer the actual question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: TechPulse's positioning against CircuitWave in the initial workshop-findings call, and Lina's concern about CircuitWave during the proposal walkthrough. The first fact is only in the June call, and the second only in the July call. However, both facts are essentially the same: TechPulse claims to be faster and more innovative than CircuitWave, and Lina's concern is that CircuitWave has slower roadmap enhancements. These are two sides of the same coin, not substantively different requested facts. The question artificially splits one underlying fact into two separate calls, but the information need is a single comparative claim. Therefore, both calls are not necessary; one call would suffice to answer the actual question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0iuIAC",
+                "fact": "In the June workshop-findings call, TechPulse positioned itself against CircuitWave as standing out on speed and innovation, updating and enhancing features faster than competitors.",
+                "why_other_call_cannot_supply_it": "The July proposal call contains no competitive positioning statement by TechPulse about CircuitWave; it only responds to Lina's concern."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sun9IAC",
+                "fact": "In the July proposal walkthrough, Lina Moreno raised a concern based on reviews that CircuitWave has slower roadmap enhancements, framing a scalability worry.",
+                "why_other_call_cannot_supply_it": "The June call contains no concern from Lina about CircuitWave; she only asks a neutral curiosity question about competitors."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information from different calls: TechPulse's competitive positioning (June call) and Lina's CircuitWave-related concern (July call). Each fact exists only in one call, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0iuIAC",
+                  "fact": "In the June workshop-findings call, TechPulse positioned itself against CircuitWave as standing out on speed and innovation, updating and enhancing features faster than competitors.",
+                  "why_other_call_cannot_supply_it": "The July proposal call contains no competitive positioning statement by TechPulse about CircuitWave; it only responds to Lina's concern."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sun9IAC",
+                  "fact": "In the July proposal walkthrough, Lina Moreno raised a concern based on reviews that CircuitWave has slower roadmap enhancements, framing a scalability worry.",
+                  "why_other_call_cannot_supply_it": "The June call contains no concern from Lina about CircuitWave; she only asks a neutral curiosity question about competitors."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information from different calls: TechPulse's competitive positioning (June call) and Lina's CircuitWave-related concern (July call). Each fact exists only in one call, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two distinct competitive-positioning facts: (1) how TechPulse differentiated itself from CircuitWave in the workshop-findings call (June 1), and (2) what concern Lina raised about CircuitWave during the proposal walkthrough (July 1). Call 2 (June 1) provides the exclusive fact that TechPulse 'stands out' on 'speed and innovation' and 'continuously update[s] and enhance[s] our features faster than some competitors.' Call 1 (July 1) provides the exclusive fact that Lina cited 'reviews about how CircuitWave has slower roadmap enhancements' as a scalability concern. Both sources contribute unique, non-overlapping requested facts. The gold answer accurately reflects both claims without adding unasked extras. The question is naturally phrased, scoped to a named opportunity and contact, and a rep would plausibly want to recall competitive positioning across calls. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9447f3ac2c601857",
+    "question": "For Nova Healthcare Tech, what quantities of SecureFlow Suite and AI Cirku-Tech were discussed in the initial proposal, and what discount percentages did Chen later quote for SecureFlow Suite and AI Cirku-Tech?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Quantities of SecureFlow Suite and AI Cirku-Tech in the initial proposal for Nova Healthcare Tech, and the discount percentages Chen later quoted for those same two products",
+        "relationship": "same commercial terms (quantities and discounts for the same two products) compared across the initial proposal and a later quote",
+        "reason": "This is a coherent commercial-terms comparison: quantities and discounts concern the same two products in the same deal, tracking how pricing evolved from proposal to quote, which fits the accepted pattern of comparing the same commercial terms over time."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "type": "object",
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGMIA0",
+                "fact": "The initial proposal discussed quantities of 10 units of SecureFlow Suite and 6 units of AI Cirku-Tech.",
+                "why_other_call_cannot_supply_it": "The second call does not mention any specific quantities for these products; it only refers to 'the quantities we've been discussing' without stating the numbers."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sz6rIAC",
+                "fact": "Chen later quoted a 10% discount for SecureFlow Suite and an additional 5% discount for AI Cirku-Tech.",
+                "why_other_call_cannot_supply_it": "The first call only mentions 'standard discount rates' without specifying any percentages, so the exact discount figures are only available in the second call."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the quantities from the initial proposal and the discount percentages quoted later. These facts are provided by different calls and are not repeated or paraphrased in the other call. The first call supplies the quantities, while the second call supplies the specific discount percentages. Neither call contains both pieces of information, so both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGMIA0",
+                  "fact": "The initial proposal discussed quantities of 10 units of SecureFlow Suite and 6 units of AI Cirku-Tech.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention any specific quantities for these products; it only refers to 'the quantities we've been discussing' without stating the numbers."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sz6rIAC",
+                  "fact": "Chen later quoted a 10% discount for SecureFlow Suite and an additional 5% discount for AI Cirku-Tech.",
+                  "why_other_call_cannot_supply_it": "The first call only mentions 'standard discount rates' without specifying any percentages, so the exact discount figures are only available in the second call."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the quantities from the initial proposal and the discount percentages quoted later. These facts are provided by different calls and are not repeated or paraphrased in the other call. The first call supplies the quantities, while the second call supplies the specific discount percentages. Neither call contains both pieces of information, so both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGMIA0",
+                "fact": "Initial proposal quantities: 10 units of SecureFlow Suite and 6 units of AI Cirku-Tech",
+                "why_other_call_cannot_supply_it": "The July 11 negotiation call never mentions the proposed unit quantities for either product."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sz6rIAC",
+                "fact": "Later quoted discounts: 10% for SecureFlow Suite and an additional 5% for AI Cirku-Tech",
+                "why_other_call_cannot_supply_it": "The April 24 proposal call only references unspecified 'standard discount rates' with no percentages."
+              }
+            ],
+            "reason": "The question asks for two distinct, time-separated pieces of information: quantities from the initial proposal (only in the first call) and specific discount percentages quoted later (only in the second call). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGMIA0",
+                  "fact": "Initial proposal quantities: 10 units of SecureFlow Suite and 6 units of AI Cirku-Tech",
+                  "why_other_call_cannot_supply_it": "The July 11 negotiation call never mentions the proposed unit quantities for either product."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sz6rIAC",
+                  "fact": "Later quoted discounts: 10% for SecureFlow Suite and an additional 5% for AI Cirku-Tech",
+                  "why_other_call_cannot_supply_it": "The April 24 proposal call only references unspecified 'standard discount rates' with no percentages."
+                }
+              ],
+              "reason": "The question asks for two distinct, time-separated pieces of information: quantities from the initial proposal (only in the first call) and specific discount percentages quoted later (only in the second call). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "Call 1 (2021-04-24) explicitly states '10 units of SecureFlow Suite and the 6 units of AI Cirku-Tech' in the initial proposal discussion. Call 2 (2021-07-11) has Chen quoting 'a 10% discount' for SecureFlow Suite and 'an additional 5% discount' for AI Cirku-Tech. Each source contributes an exclusive set of requested facts (quantities vs. discount percentages), so both are required. The gold answer matches the sources exactly with no unasked extras. The question is naturally scoped to a named account and opportunity, and a rep would plausibly need to recall proposal quantities and negotiated discounts."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-e3c6ee8df992a3af",
+    "question": "After the demo, what did Elena Georgiou say about how TechPulse's pricing compares to other providers she evaluated?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Elena Georgiou's post-demo comments comparing TechPulse's pricing to other providers she evaluated",
+        "relationship": "single coherent lookup",
+        "reason": "One fact lookup about a competitive pricing comparison from a single call; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Elena Georgiou said about TechPulse's pricing relative to other providers after the demo. The dialogue at 10:17:25 shows her stating pricing is 'reasonable, quite in line with what we've seen' and that 'there weren't any major differentiators purely from the pricing angle.' The gold answer captures both points accurately with no extra or missing facts. The question is naturally phrased, scoped to a specific post-demo feedback conversation with a named contact and company, and a rep would plausibly want this competitive-pricing feedback. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-1d1fd8bbe34527b2",
+    "question": "What products and quantities is Anya Petrova from St. Petersburg Innovations looking to purchase, and what is her budget?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The specific products and quantities Anya Petrova from St. Petersburg Innovations intends to purchase, along with her stated budget.",
+        "relationship": "single coherent purchase inquiry \u2014 the product list/quantities and the budget are facets of the same buying requirement.",
+        "reason": "Both parts concern one purchase requirement (what she wants to buy and what she can spend), forming a natural single sales question rather than two unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for products, quantities, and budget for a named lead at a named company\u2014information a rep would plausibly need. The dialogue confirms two each of PCB EcoModel and UnitySim Essentials, four PCB QuickMaker, and a $3,494 budget. The gold answer states exactly those facts with no extras. Single-call question, so both_sources_required is set true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-deca41aea19d6cfc",
+    "question": "What vehicles is Sophia Bailey considering, and what did Linh offer when she raised the lack of current promotions?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The vehicles Sophia Bailey is considering and Linh's offer/response when Sophia raised the lack of current promotions",
+        "relationship": "objection and response within the same sales conversation",
+        "reason": "The question pairs a customer's vehicle interest with the salesperson's offer addressing her promotion concern \u2014 a coherent objection-and-response exchange about the same purchase discussion, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: the vehicles Sophia Bailey is considering and Linh's response to the lack of promotions. The dialogue confirms she is interested in the 2024 Tesla Model S and 2022 BMW X5 M, and that Linh offered a flexible financing solution after acknowledging no promotions were running. The answer states precisely those facts with no extras. The question is naturally phrased, scoped to a named customer and a specific business situation, and a rep would plausibly want this information. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-bab9deda4f751996",
+    "question": "What did Lucas Turner say he liked about the AutoElite proposal, and what did Lena say distinguishes AutoElite's financing rates from Prestige Car Network's?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) What Lucas Turner said he liked about the AutoElite proposal, and (2) what Lena said distinguishes AutoElite's financing rates from Prestige Car Network's.",
+        "relationship": "Two independent lookups joined only by the same vendor/proposal \u2014 positive feedback on the proposal and a separate competitive financing-rate comparison address different business issues.",
+        "reason": "Liking aspects of a proposal and a competitor financing-rate differentiation are unrelated information needs; the shared AutoElite context is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both requested facts (Lucas's appreciation of flexible financing details and Lena's comparison of AutoElite vs. Prestige rates) are found exclusively in the single supplied call. The answer accurately reflects the dialogue without adding unasked extras. The question is naturally phrased, scoped to a specific proposal discussion, and represents a plausible QA need for a rep reviewing customer feedback and competitive positioning.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    }
+  }
+]
