@@ -52,10 +52,18 @@ def main():
         assert gate['method']=='reference-blind-group-consistency-v2'
         assert aggregate(gate['groups'])=='consistent_in_pool'
         assert candidate['stages']['final_audit']['pass'] is True
+    selection=json.loads((root/'selected/selection.json').read_text())
+    selected=json.loads((root/'selected/questions.json').read_text())
+    selected_parquet=[q for domain in ['b2b','b2c'] for q in pq.read_table(root/'selected'/f'{domain}-test.parquet').to_pylist()]
+    assert canonical(selected)==canonical(selected_parquet)
+    expected={d['question_id'] for d in selection['decisions'] if d['accepted'] is True}
+    assert {q['question_id'] for q in selected}==expected
+    assert len(selected)==selection['selected_questions']==progress['selected_questions']
+    assert canonical(selected)==canonical([q for q in questions if q['question_id'] in expected])
     report={'verified':True,'scope':plan['scope'],'source_units':len(plan['units']),
-            'accepted_questions':len(questions),'accepted_counts':dict(Counter(q['domain']+'/'+q['question_class'] for q in questions)),
+            'raw_accepted_questions':len(questions),'accepted_questions':len(selected),'accepted_counts':dict(Counter(q['domain']+'/'+q['question_class'] for q in selected)),
             'excluded_groups':len(excluded),'checks':['source hashes','complete scope','group exclusions','no B2C multi-call',
-            'JSON/Parquet parity','unique question IDs','exact evidence','accepted contract and consistency gates','locator checks'],
+            'JSON/Parquet parity','unique question IDs','exact evidence','accepted contract and consistency gates','locator checks','final coherence selection and Parquet parity'],
             'limitations':'Artifact integrity and recorded-gate verification, not an independent semantic quality estimate.'}
     write_json(Path('reports')/(root.name+'-verification.json'),report)
     print(json.dumps(report))

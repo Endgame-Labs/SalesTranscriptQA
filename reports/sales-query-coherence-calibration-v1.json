@@ -1,0 +1,98 @@
+{
+  "results": [
+    {
+      "item": 3,
+      "question": "What is the total quoted price for Isaac Thompson's Tesla Model S and Mercedes-Benz E-Class purchase with the maintenance plan?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total quoted price for Isaac Thompson's Tesla Model S and Mercedes-Benz E-Class purchase including the maintenance plan",
+        "relationship": "single coherent quote lookup covering one purchase transaction (two vehicles plus maintenance plan) within the same quote",
+        "reason": "This is one commercial quote breakdown: the total price for a single purchase deal including the maintenance plan, not two independent fact lookups."
+      }
+    },
+    {
+      "item": 25,
+      "question": "What two vehicle models did Arjun recommend to Grace White for her family-friendly, safety-focused needs?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the two vehicle models Arjun recommended to Grace White for her family-friendly, safety-focused needs",
+        "relationship": "single coherent lookup within one recommendation",
+        "reason": "One unified request about a single recommendation addressing the same customer need (family-friendly, safety-focused vehicles)."
+      }
+    },
+    {
+      "item": 47,
+      "question": "What concern did Aiden Scott raise about High-End Autos Co., and how did Zanele respond?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Aiden Scott raised about High-End Autos Co. and Zanele's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent objection-and-response exchange addressing one business issue."
+      }
+    },
+    {
+      "item": 74,
+      "question": "What quote did Miguel give Rajveer Singh for AI Cirku-Tech, including the discount and total price?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quote Miguel provided to Rajveer Singh for AI Cirku-Tech, including discount and total price",
+        "relationship": "single coherent quote lookup",
+        "reason": "One commercial quote breakdown (discount and total) for the same product/quote."
+      }
+    },
+    {
+      "item": 79,
+      "question": "What pricing did AutoElite quote Liam Perez for the Tesla Model S and Nissan Leaf, and are any discounts available?",
+      "expected": true,
+      "passed": true,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quoted prices for the Tesla Model S and Nissan Leaf given to Liam Perez by AutoElite, plus any available discounts",
+        "relationship": "single coherent commercial quote request: pricing for the quoted vehicles with discount availability as part of the same quote",
+        "reason": "This is one commercial quote breakdown—prices for the quoted models and whether discounts apply—addressing the same sales interaction, not two independent fact lookups."
+      }
+    },
+    {
+      "item": 94,
+      "question": "What discovery meeting did Aarav schedule with Nina Rossi of Innovative Robotics, and what did she say data protection was for their operations?",
+      "expected": false,
+      "passed": true,
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) What discovery meeting Aarav scheduled with Nina Rossi, and (2) what Nina said data protection was for their operations",
+        "relationship": "two independent fact lookups joined by shared participants/account",
+        "reason": "Scheduling details and a data-protection requirement are unrelated information needs; sharing the same customer/call does not connect them."
+      }
+    },
+    {
+      "item": 76,
+      "question": "For the QuantumLeap Computing partnership expansion, what meeting time did Leila Abadi schedule with Fatima, and what deployment timeline did she later target for the enhancements?",
+      "expected": false,
+      "passed": false,
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The meeting time Leila Abadi scheduled with Fatima regarding the QuantumLeap Computing partnership expansion, and the deployment timeline she later targeted for the enhancements.",
+        "relationship": "Both facts concern the same business issue — the QuantumLeap partnership expansion — covering its scheduling and subsequent deployment planning as a coherent progression.",
+        "reason": "The meeting time and deployment timeline are sequential next steps for the same expansion initiative, not two independent lookups joined merely by account."
+      }
+    }
+  ],
+  "passed": false,
+  "estimated_usd": 0.0007425,
+  "limitations": "Seven intentionally selected calibration examples; independent holdout review remains required."
+}

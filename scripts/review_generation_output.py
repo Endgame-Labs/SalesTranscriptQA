@@ -15,8 +15,9 @@ def main():
     plan=json.loads((root/'source-plan.json').read_text())
     if progress.get('complete') is not True or coverage.get('published') is not False:
         raise RuntimeError('Expected complete, unpublished generation output')
-    questions=json.loads((root/'questions.json').read_text())
-    if len(questions)!=coverage['accepted_questions']:
+    selection=json.loads((root/'selected/selection.json').read_text())
+    questions=json.loads((root/'selected/questions.json').read_text())
+    if len(questions)!=selection['selected_questions']:
         raise RuntimeError('Question count does not match coverage')
     rows=[]
     for i,q in enumerate(questions,1):
@@ -24,7 +25,7 @@ def main():
                      **{k:q[k] for k in ['question_id','domain','question_class','question','gold_answer','supporting_call_ids']}})
     report={'questions':rows,'seed':plan['seed'],'source_units':len(plan['units']),
             'accepted_questions':len(rows),'estimated_usd':progress['estimated_usd'],'run_root':str(root),
-            'scope':plan['scope'],'limitations':'Final deduplicated accepted output; all automated gates, not human gold. Full rejected candidates are retained in the run directory.'}
+            'scope':plan['scope'],'limitations':'Final deduplicated, coherence-selected output; all automated gates, not human gold. Full rejected candidates are retained in the run directory.'}
     path=Path('reports')/(root.name+'-accepted.json')
     write_json(path,report)
     text=['# Accepted sales questions',f'\n{len(rows)} accepted from {len(plan["units"])} source units. Recorded API estimate: ${progress["estimated_usd"]:.4f}.',

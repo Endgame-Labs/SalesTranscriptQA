@@ -4,6 +4,7 @@ import concurrent.futures
 import fcntl
 import itertools
 import json
+import math
 import random
 from collections import Counter
 from pathlib import Path
@@ -11,6 +12,7 @@ from salestranscriptqa.sales_questions import SalesQuestionsReliable, READY_PROM
 from salestranscriptqa.answer_consistency import JUDGE
 from salestranscriptqa.transport import RATES
 from salestranscriptqa.corpus import write_json
+from salestranscriptqa.query_coherence import select_output
 
 
 def main():
@@ -26,8 +28,10 @@ def main():
     parser.add_argument('--corpus',default='data/corpus')
     parser.add_argument('--exclude-report',type=Path,action='append',default=[])
     args=parser.parse_args()
-    if not 1 <= args.sample <= 100 or not 0 < args.budget_usd <= 1000:
-        parser.error('sample must be 1..100 and budget-usd must be >0 and <=1000')
+    if not 1 <= args.sample <= 100 or not math.isfinite(args.budget_usd) or args.budget_usd <= 0:
+        parser.error('sample must be 1..100 and budget-usd must be a finite positive amount')
+    if not args.all and args.budget_usd > 1000:
+        parser.error('Research samples are capped at a $1000 per-run allowance')
     if args.all and args.exclude_report:
         parser.error('exclude-report applies only to sample validation')
     args.run_dir.mkdir(parents=True,exist_ok=True)
@@ -88,7 +92,12 @@ def main():
         coverage['accepted_questions']=coverage.pop('published_questions')
         coverage['published']=False
         write_json(args.run_dir/'coverage.json',coverage)
-        progress.update(complete=True,accepted_after_dedup=coverage['accepted_questions'])
+        selection=select_output(args.run_dir,full.transport)
+        with full.transport.db() as db:
+            cost=db.execute('SELECT COALESCE(SUM(estimated_usd),0) FROM attempts').fetchone()[0]
+        progress.update(complete=True,accepted_after_dedup=coverage['accepted_questions'],
+                        selected_questions=selection['selected_questions'],estimated_usd=cost,
+                        final_output=str(args.run_dir/'selected'))
         write_json(args.run_dir/'progress.json',progress)
         print(json.dumps(progress),flush=True)
 

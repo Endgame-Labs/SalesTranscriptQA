@@ -152,3 +152,19 @@ and locator checks. It deliberately does not label these integrity checks an
 independent semantic quality estimate. Re-running the original generation command
 after completion should replay checkpoints without new API attempts; this is part
 of the pending end-to-end validation.
+
+### Final coherence selection
+
+The runner now preserves factual-gate output at the run root and writes the final
+coherence-selected dataset under `selected/`. Its question-only GLM check rejects
+unrelated fact bundles that passed factual audits. Five clear positive examples and
+one clear negative were classified as intended; a seventh timing/deployment example
+was accepted despite an initially negative manual label, a documented subjective
+boundary. This is not claimed as a perfect or independently measured classifier.
+
+`selected/selection.json` records every decision and the prompt/input digests.
+All raw candidates and discarded questions remain reviewable. The output verifier
+and review exporter use the final selected dataset. The active generation process
+was launched before this final selection stage was added; replaying its completed
+command will run cached generation and then this new stage, without restarting the
+source-generation experiment. Final validation must include that replay and review.
