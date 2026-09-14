@@ -99,6 +99,8 @@ The data are **CC BY-NC 4.0**, with Salesforce attribution. The CLI and original
 
 ## Generate the full dataset
 
+**Historical workflow, currently stopped.** These commands describe the original name/date-anchored generator and automatic publisher. The revised generator is documented in [GENERATION.md](GENERATION.md); it excludes B2C multi-call questions and does not publish.
+
 The full workflow processes **every single call and every eligible distinct-dialogue pair within an explicit opportunity or lead**: 4,033 B2B calls, 6,796 B2C calls, 4,087 B2B pairs and 7,678 B2C pairs (22,594 source units). It allows up to three proposals per unit and stops at the first accepted question. Units with no passing proposal remain documented rejections; no quality gate is relaxed to force coverage.
 
 ```sh
