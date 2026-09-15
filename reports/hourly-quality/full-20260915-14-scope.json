@@ -1,0 +1,375 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "e8b1f25b209dfc878c638355227e49e899b20f5f07fb06270b834df2d39e9fc7",
+  "questions": 4,
+  "counts": {
+    "pass": 4
+  },
+  "estimated_usd": 0.3358453,
+  "results": [
+    {
+      "question_id": "b2b-single_call-3c9822bef7a4d878",
+      "question": "What did Linda Sørensen at Nordic Tech Solutions say her budget cap is, and what total did Priya quote for the three CircuitAI Innovators and four EduTech Advance units?",
+      "gold_answer": "Budget cap of $3784; quoted total of $3760 with the promotional discount.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SuvPIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 13,
+            "normalized_end": 14
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Single call contains both facts: Linda's budget cap and Priya's quoted total.",
+        "answers": [
+          {
+            "answer": "Linda Sørensen said her budget is capped at $3784, and Priya quoted a total of $3760 (with the promotional discount) for three CircuitAI Innovators and four EduTech Advance units.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuvPIAS",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-10-11T10:02:16] Linda Sørensen: That sounds promising. Now, let's talk numbers. Our budget is capped at $3784."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuvPIAS",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2023-10-11T10:02:27] Priya Choudhury: Certainly. You're looking at three CircuitAI Innovators and four EduTech Advance units, right?\n[2023-10-11T10:02:32] Linda Sørensen: That's correct."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is exactly one call in the supplied history involving Linda Sørensen at Nordic Tech Solutions and Priya Choudhury. The call clearly states Linda's budget cap and Priya's quoted total for the specified quantities of CircuitAI Innovators and EduTech Advance units.",
+        "answers": [
+          {
+            "answer": "Linda Sørensen said her budget is capped at $3,784. Priya quoted a total of $3,760 (with the current promotional discount) for three CircuitAI Innovators and four EduTech Advance units.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuvPIAS",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-10-11T10:02:16] Linda Sørensen: That sounds promising. Now, let's talk numbers. Our budget is capped at $3784."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuvPIAS",
+                "line_start": 14,
+                "line_end": 17,
+                "quote": "[2023-10-11T10:02:27] Priya Choudhury: Certainly. You're looking at three CircuitAI Innovators and four EduTech Advance units, right?\n[2023-10-11T10:02:32] Linda Sørensen: That's correct.\n[2023-10-11T10:03:00] Priya Choudhury: Let me run the numbers quickly... [Pause] Alright, the total comes to $3760 with our current promotional discount, which is within your budget."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state Linda Sørensen's budget cap as $3,784 and Priya's quoted total as $3,760 (with promotional discount) for three CircuitAI Innovators and four EduTech Advance units. The reference likewise covers both requested facts: the $3784 budget cap and the $3760 quoted total with the promotional discount. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-194f4312d72d7c31",
+      "question": "What was the proposal total for EcoTech Manufacturing in the initial pricing discussion, and what final quote total did Elena give in the later proposal call?",
+      "gold_answer": "The initial proposal was just under $30,000; the final quote total was $29,854.33.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZtIAK",
+        "b2b:a05Wt000003SqZuIAK",
+        "b2b:a05Wt000003SrkRIAS",
+        "b2b:a05Wt000003Sru7IAC",
+        "b2b:a05Wt000003SryyIAC",
+        "b2b:a05Wt000003SswjIAC",
+        "b2b:a05Wt000003SvBOIA0",
+        "b2b:a05Wt000003SvhcIAC",
+        "b2b:a05Wt000003SvkrIAC",
+        "b2b:a05Wt000003SvrHIAS",
+        "b2b:a05Wt000003Swx0IAC",
+        "b2b:a05Wt000003SxGQIA0",
+        "b2b:a05Wt000003SxGRIA0",
+        "b2b:a05Wt000003SxWUIA0",
+        "b2b:a05Wt000003SxY7IAK",
+        "b2b:a05Wt000003SxZiIAK",
+        "b2b:a05Wt000003Sy4QIAS",
+        "b2b:a05Wt000003SyE4IAK",
+        "b2b:a05Wt000003SyE5IAK",
+        "b2b:a05Wt000003SyHIIA0",
+        "b2b:a05Wt000003SyUAIA0",
+        "b2b:a05Wt000003SyvbIAC",
+        "b2b:a05Wt000003Sz3gIAC",
+        "b2b:a05Wt000003SzDKIA0",
+        "b2b:a05Wt000003SzRqIAK",
+        "b2b:a05Wt000003T02vIAC",
+        "b2b:a05Wt000003T02wIAC",
+        "b2b:a05Wt000003T04XIAS",
+        "b2b:a05Wt000003T069IAC",
+        "b2b:a05Wt000003T07lIAC",
+        "b2b:a05Wt000003T09NIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 18,
+            "normalized_end": 19
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Elena Petrova's calls with EcoTech Manufacturing (opportunity 'EcoTech Manufacturing - AI-Powered EDA Solutions') form a clear sequence: the 2024-01-04 call is the initial pricing/proposal discussion where she states a proposal total of 'just under $30,000', and the 2024-03-17 call is the later final proposal call where she gives the exact quote total of $29,854.33. No other call contains a competing 'proposal total' in an initial pricing discussion with Elena.",
+        "answers": [
+          {
+            "answer": "In the initial pricing discussion (January 4, 2024 proposal call), Elena Petrova said the proposal total was just under $30,000 (with PulseSim Pro at a 10% discount, SecureFlow Suite at 5%, and further benefits on CloudLink Designer and others). In the later final proposal call (March 17, 2024), Elena gave a final quote total of $29,854.33 with all products and discounts applied.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvrHIAS",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2024-01-04T14:03:08] Elena Petrova: Let’s talk about pricing. With the configurations we discussed, PulseSim Pro would be at a 10% discount, SecureFlow Suite at 5%, and further benefits on CloudLink Designer and others. We're looking at a proposal total of just under $30,000. How does this align with your expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2024-03-17T10:01:18] Elena Petrova: That's exactly what we aim for. Now, regarding the quote, with the products and discounts applied, the total amount is $29,854.33. We've ensured it balances efficiency with a favorable total cost of ownership for EcoTech."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for two specific figures: (1) the proposal total in the 'initial pricing discussion' for EcoTech Manufacturing, and (2) the 'final quote total' Elena gave in the 'later proposal call.' Elena Petrova appears in three calls for opportunity 'EcoTech Manufacturing - AI-Powered EDA Solutions' (006Wt000007B5S3IAK): a discovery call (2023-11-30), a demo call (2024-02-12), an initial proposal/pricing call (2024-01-04), and a final proposal call (2024-03-17). The initial pricing discussion is the 2024-01-04 call where Elena first presents a proposal total of 'just under $30,000.' The later proposal call is the 2024-03-17 call where Elena gives the final quote total of $29,854.33. These are the only calls where Elena provides specific dollar totals, and they are clearly sequenced as initial pricing → final quote.",
+        "answers": [
+          {
+            "answer": "In the initial pricing discussion (2024-01-04), Elena Petrova presented a proposal total of just under $30,000 for EcoTech Manufacturing. In the later final proposal call (2024-03-17), Elena gave a final quote total of $29,854.33.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvrHIAS",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2024-01-04T14:03:08] Elena Petrova: Let’s talk about pricing. With the configurations we discussed, PulseSim Pro would be at a 10% discount, SecureFlow Suite at 5%, and further benefits on CloudLink Designer and others. We're looking at a proposal total of just under $30,000. How does this align with your expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2024-03-17T10:01:18] Elena Petrova: That's exactly what we aim for. Now, regarding the quote, with the products and discounts applied, the total amount is $29,854.33. We've ensured it balances efficiency with a favorable total cost of ownership for EcoTech."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the initial proposal total was just under $30,000 and the final quote total was $29,854.33, matching each other and the reference. Answer A includes extra discount details not requested, but these do not affect agreement. The reference covers both requested figures."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-fddb704098341948",
+      "question": "What pricing did Mohamed quote Olivia Brooks for the Volvo XC60 and the Audi Q7 fleet?",
+      "gold_answer": "Volvo XC60 at $32,999.99; Audi Q7 with a 10% discount totaling $485,999.91 for 10 vehicles.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SPK6IAO",
+        "b2c:a05Ws000005SQJQIA4",
+        "b2c:a05Ws000005SQMhIAO",
+        "b2c:a05Ws000005SQnzIAG",
+        "b2c:a05Ws000005SQuPIAW",
+        "b2c:a05Ws000005SRLsIAO",
+        "b2c:a05Ws000005SRvMIAW",
+        "b2c:a05Ws000005SSkzIAG",
+        "b2c:a05Ws000005SSszIAG",
+        "b2c:a05Ws000005SSt0IAG",
+        "b2c:a05Ws000005SSxsIAG",
+        "b2c:a05Ws000005SUZvIAO",
+        "b2c:a05Ws000005SUzfIAG",
+        "b2c:a05Ws000005SVFmIAO",
+        "b2c:a05Ws000005SWAEIA4",
+        "b2c:a05Ws000005SWbcIAG",
+        "b2c:a05Ws000005SWdHIAW",
+        "b2c:a05Ws000005SWtNIAW",
+        "b2c:a05Ws000005SWzpIAG",
+        "b2c:a05Ws000005SXhMIAW",
+        "b2c:a05Ws000005SYNPIA4",
+        "b2c:a05Ws000005SYyRIAW",
+        "b2c:a05Ws000005SZ6VIAW",
+        "b2c:a05Ws000005SZ83IAG",
+        "b2c:a05Ws000005SZUhIAO",
+        "b2c:a05Ws000005Sa0wIAC",
+        "b2c:a05Ws000005SadaIAC",
+        "b2c:a05Ws000005SaleIAC",
+        "b2c:a05Ws000005SayYIAS",
+        "b2c:a05Ws000005SbWPIA0",
+        "b2c:a05Ws000005SbY1IAK",
+        "b2c:a05Ws000005SbY2IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call contains Mohamed Bakr quoting specific pricing for the Volvo XC60 and Audi Q7 fleet (the 2021-01-05 call on the Black Friday Family Safe Vehicle Offer opportunity); other Mohamed calls discuss pricing only generically.",
+        "answers": [
+          {
+            "answer": "Mohamed quoted $32,999.99 for the 2021 Volvo XC60, and for the Audi Q7 a 10% discount bringing the total to $485,999.91 for the fleet of 10 vehicles.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPK6IAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-01-05T11:16:05] Mohamed Bakr: Great. Let’s start with the pricing then. We have a solid offer on the table for the Volvo XC60 at $32,999.99, and for the Audi Q7, we're offering a 10% discount, bringing it to a total of $485,999.91 for the fleet of 10 vehicles."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about pricing Mohamed quoted Olivia Brooks for the Volvo XC60 and the Audi Q7 fleet. Only one call in the dataset features Mohamed Bakr quoting explicit dollar figures for both vehicles: call b2c:a05Ws000005SPK6IAO (2021-01-05), line 4. Other Mohamed calls (b2c:a05Ws000005SSkzIAG, b2c:a05Ws000005SUzfIAG, b2c:a05Ws000005SZ6VIAW, b2c:a05Ws000005SUZvIAO, b2c:a05Ws000005SVFmIAO) discuss the Volvo XC60 and Audi Q7 but do not contain specific quoted prices. The answer is therefore determinate.",
+        "answers": [
+          {
+            "answer": "Mohamed Bakr quoted Olivia Brooks $32,999.99 for the 2021 Volvo XC60, and for the Audi Q7 fleet of 10 vehicles he offered a 10% discount, bringing the total to $485,999.91.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPK6IAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-01-05T11:16:05] Mohamed Bakr: Great. Let’s start with the pricing then. We have a solid offer on the table for the Volvo XC60 at $32,999.99, and for the Audi Q7, we're offering a 10% discount, bringing it to a total of $485,999.91 for the fleet of 10 vehicles."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same pricing: $32,999.99 for the 2021 Volvo XC60 and a 10% discount on the Audi Q7 fleet of 10 vehicles totaling $485,999.91. The reference also covers both requested facts: the Volvo XC60 price of $32,999.99 and the Audi Q7 10% discount totaling $485,999.91 for 10 vehicles. All requested pricing commitments are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-d524209d606ed943",
+      "question": "What did Leila tell Liam Perez about the next step for getting pricing on the 2023 Nissan Leaf and maintenance plan?",
+      "gold_answer": "Since they were in the discovery stage, Leila would provide a detailed quote in the next conversation and send a detailed email.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SPNUIA4",
+        "b2c:a05Ws000005SPNVIA4",
+        "b2c:a05Ws000005SPP1IAO",
+        "b2c:a05Ws000005SQMuIAO",
+        "b2c:a05Ws000005SR0vIAG",
+        "b2c:a05Ws000005SRQoIAO",
+        "b2c:a05Ws000005SSi1IAG",
+        "b2c:a05Ws000005SUtGIAW",
+        "b2c:a05Ws000005SUwhIAG",
+        "b2c:a05Ws000005SVvuIAG",
+        "b2c:a05Ws000005SX37IAG",
+        "b2c:a05Ws000005SY0tIAG",
+        "b2c:a05Ws000005SYQkIAO",
+        "b2c:a05Ws000005SYaIIAW",
+        "b2c:a05Ws000005SZ0BIAW",
+        "b2c:a05Ws000005SZubIAG",
+        "b2c:a05Ws000005SaYrIAK",
+        "b2c:a05Ws000005SanQIAS",
+        "b2c:a05Ws000005SctxIAC",
+        "b2c:a05Ws000005SdLOIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one Leila El-Tayeb call (2022-05-09) addresses how pricing for the 2023 Nissan Leaf and maintenance plan would be obtained. In that call Leila says that because they are in the discovery stage, she will provide a detailed quote in their next conversation and send a detailed email shortly. The other Leila calls either don't discuss pricing next steps (2022-05-06) or already present the price with next steps being paperwork/finalization (2022-05-19), which doesn't match 'getting pricing.'",
+        "answers": [
+          {
+            "answer": "Leila told Liam that since they were still in the discovery stage, she would provide a detailed quote for the 2023 Nissan Leaf and the comprehensive maintenance plan in their next conversation, and that she would send over a detailed email shortly so they could then discuss any further questions. She noted the Leaf is competitively priced and the maintenance plan offers great value given its extensive coverage.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPNVIA4",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2022-05-09T15:11:10] Liam Perez: That does sound comprehensive indeed. How about the pricing for the 2023 Nissan Leaf and this maintenance plan? Could you give me a general idea?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SPNVIA4",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2022-05-09T15:14:20] Liam Perez: Not at this moment. Thanks, Leila, for all the information. Looking forward to the quote soon."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifically asks what Leila told Liam Perez about the next step for getting pricing on the 2023 Nissan Leaf and maintenance plan. Only one call features Leila El-Tayeb speaking with Liam Perez where he explicitly asks about pricing for the 2023 Nissan Leaf and maintenance plan, and she describes the next step. This is call b2c:a05Ws000005SPNVIA4 (2022-05-09). In that call, Liam asks for pricing (line 12), and Leila responds that since they are in the discovery stage, she will provide a detailed quote in their next conversation, and she will send a detailed email shortly (lines 13, 17). The other Leila calls either don't involve a direct pricing question with a next-step answer (b2c:a05Ws000005SZ0BIA0 is a discovery call without a specific pricing request) or involve actual pricing being given rather than a 'next step' to get pricing (b2c:a05Ws000005SctxIAC).",
+        "answers": [
+          {
+            "answer": "Leila told Liam that since they were still in the discovery stage, she would provide him with a detailed quote in their next conversation. She added that the 2023 Nissan Leaf is competitively priced and the maintenance plan offers great value given its extensive coverage. She also said she would send over a detailed email shortly, after which they could discuss any further questions.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPNVIA4",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2022-05-09T15:11:10] Liam Perez: That does sound comprehensive indeed. How about the pricing for the 2023 Nissan Leaf and this maintenance plan? Could you give me a general idea?\n[2022-05-09T15:12:00] Leila El-Tayeb: Absolutely, but since we are in the discovery stage, I'll be providing you with a detailed quote in our next conversation. What I can tell you now is that the Leaf is competitively priced, and the maintenance plan offers great value given its extensive coverage."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SPNVIA4",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2022-05-09T15:15:00] Leila El-Tayeb: You're welcome, Liam! I’ll send over that detailed email in a bit, and we can then discuss any further questions. Have a great day!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same core commitments: (1) they were still in the discovery stage, (2) Leila would provide a detailed quote in the next conversation, and (3) she would send a detailed email shortly so they could discuss further questions. Both also add the same extra commentary about the Leaf being competitively priced and the maintenance plan offering great value. The reference captures the two key next-step commitments (detailed quote in the next conversation and a detailed email), which are the facts the question asks about. The additional value/coverage remarks in both answers are extras not required by the question and do not affect agreement or coverage."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

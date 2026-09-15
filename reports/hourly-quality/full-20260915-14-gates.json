@@ -1,0 +1,439 @@
+[
+  {
+    "question_id": "b2b-single_call-3c9822bef7a4d878",
+    "question": "What did Linda S\u00f8rensen at Nordic Tech Solutions say her budget cap is, and what total did Priya quote for the three CircuitAI Innovators and four EduTech Advance units?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Linda S\u00f8rensen's stated budget cap and the total price Priya quoted for three CircuitAI Innovators and four EduTech Advance units",
+        "relationship": "both facts concern the same commercial pricing discussion (customer's budget vs. quoted total)",
+        "reason": "A single coherent commercial question: the budget constraint and the quote total address the same pricing issue in the same deal, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific commercial facts (budget cap and quoted total) from a single call. The dialogue confirms Linda states a budget cap of $3784 and Priya quotes $3760 with the promotional discount for three CircuitAI Innovators and four EduTech Advance units. The gold answer matches exactly. The question is naturally phrased, scoped to a named contact and company, and a rep would plausibly need to recall these figures. No locator preamble, no answer leakage, no unsupported claims. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Linda S\u00f8rensen explicitly states 'Our budget is capped at $3784,' which directly supports the answer_claim. The metadata confirms the speaker is Linda S\u00f8rensen at Nordic Tech Solutions, matching the question's context."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Priya Choudhury explicitly states 'the total comes to $3760 with our current promotional discount,' which directly supports the answer_claim. The speaker is identified as Priya, matching the question's reference to Priya quoting the total."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states a budget cap of $3784 and a quoted total of $3760 with the promotional discount. Evidence index 0 confirms Linda S\u00f8rensen stated the budget cap is $3784, and evidence index 1 confirms Priya quoted a total of $3760 with the promotional discount. Both factual claims in the gold_answer are fully supported by the cited evidence. The question also asks about 'three CircuitAI Innovators and four EduTech Advance units,' but the cited evidence does not explicitly mention these product names or quantities. However, the gold_answer does not restate those product details\u2014it only states the budget cap and quoted total\u2014so the gold_answer as written is fully supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-4876a39aa75d4111",
+    "question": "What next step did Isabelle Leclerc agree to for the Quantum Innovations AI-Driven EDA expansion, and when?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Isabelle Leclerc agreed to for the Quantum Innovations AI-Driven EDA expansion, and its timing",
+        "relationship": "single coherent request: next step and its timing for the same deal/expansion",
+        "reason": "Next steps and their timing address the same issue (the AI-Driven EDA expansion) and form one natural sales follow-up question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what next step Isabelle Leclerc agreed to and when. The dialogue clearly shows Kimberly proposing 'a discovery call to go through your requirements in more detail' and Isabelle confirming 'June 14th sounds perfect.' The gold answer captures both facts precisely with no extras. The question names the contact and opportunity, giving adequate scope. Wording is natural for a rep reviewing their pipeline. Single-call set, so both_sources_required is true by rule.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage shows Kimberly Lee proposing a discovery call on June 14th and asking 'Would June 14th work for you?' However, the cited evidence only covers lines 20\u201321, which contain Kimberly's proposal/question. There is no cited line showing Isabelle Leclerc's affirmative response or agreement. A question does not establish its answer; the claim that 'Isabelle agreed' is not supported by the supplied quote."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold answer states that Isabelle Leclerc agreed to a discovery call scheduled for June 14th. The only cited evidence shows Kimberly proposing the call and asking if June 14th works, but no cited passage records Isabelle's agreement. Without explicit evidence of Isabelle's acceptance, the claim that she 'agreed' is unsupported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-5059df3aa3a2e6fe",
+    "question": "For GreenEnergy Solutions' Tech Innovation Partnership, what was the total proposal amount Zara was reviewing, and what deployment timeline did Aisha commit to once terms were agreed?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total proposal amount Zara was reviewing for GreenEnergy Solutions' Tech Innovation Partnership, and the deployment timeline Aisha committed to once terms were agreed.",
+        "relationship": "Both facts concern the same deal (the Tech Innovation Partnership proposal) \u2014 the commercial amount and the committed deployment timeline are parts of one coherent commercial inquiry.",
+        "reason": "The question asks about the proposal value and the deployment commitment for the same partnership/deal, forming a single coherent sales information request rather than two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for the total proposal amount and the deployment timeline. Both facts are supplied by the first call: the total proposal amount is explicitly stated as $23,471.02, and the deployment timeline is not mentioned in the first call. However, the second call provides the deployment timeline of 6 to 8 weeks but does not mention the total amount. Since the question requires both pieces of information, and each call supplies only one of them, both calls are necessary to answer the question fully. The facts are distinct and not repeated across calls."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the total proposal amount and the deployment timeline. Both facts are supplied by the first call: the total proposal amount is explicitly stated as $23,471.02, and the deployment timeline is not mentioned in the first call. However, the second call provides the deployment timeline of 6 to 8 weeks but does not mention the total amount. Since the question requires both pieces of information, and each call supplies only one of them, both calls are necessary to answer the question fully. The facts are distinct and not repeated across calls."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvpnIAC",
+                "fact": "The total proposal amount Zara was reviewing was $23,471.02",
+                "why_other_call_cannot_supply_it": "The second call only mentions a 10% discount on some products and never states the total proposal figure."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvpoIAC",
+                "fact": "Aisha committed to a deployment timeline of 6 to 8 weeks including customized training once terms were agreed",
+                "why_other_call_cannot_supply_it": "The first call discusses the proposal and pricing but contains no deployment timeline commitment."
+              }
+            ],
+            "reason": "The question asks for two distinct requested facts: the total proposal amount (stated only in the first call) and the deployment timeline commitment (stated only in the second call). Neither call alone supplies both pieces of information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvpnIAC",
+                  "fact": "The total proposal amount Zara was reviewing was $23,471.02",
+                  "why_other_call_cannot_supply_it": "The second call only mentions a 10% discount on some products and never states the total proposal figure."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvpoIAC",
+                  "fact": "Aisha committed to a deployment timeline of 6 to 8 weeks including customized training once terms were agreed",
+                  "why_other_call_cannot_supply_it": "The first call discusses the proposal and pricing but contains no deployment timeline commitment."
+                }
+              ],
+              "reason": "The question asks for two distinct requested facts: the total proposal amount (stated only in the first call) and the deployment timeline commitment (stated only in the second call). Neither call alone supplies both pieces of information."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: the total proposal amount Zara was reviewing (found in call 1: $23,471.02) and the deployment timeline Aisha committed to once terms were agreed (found in call 2: 6 to 8 weeks including customized training). Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally worded, scoped to a specific opportunity and account, and a rep would plausibly want to recall these commercial terms. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aisha Ibrahim explicitly states 'The total proposal is $23,471.02' and details the 10% discount on EcoPCB Creator and OptiEnergy Suite plus AI Cirku-Tech, and 5% on SecureAnalytics Pro and OptiPower Max. This directly supports the answer_claim about the total proposal amount and discount structure."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Zara Ali asking about deployment timeline once terms are agreed, and Aisha Ibrahim responding 'We estimate a deployment timeline of around 6 to 8 weeks. This timeframe includes customized training sessions to ensure your team is fully comfortable with the systems.' This directly supports the answer_claim about the 6-to-8-week deployment timeline including customized training, and confirms it was Aisha who committed to this timeline in response to Zara's question about post-agreement implementation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '$23,471.02 total, with deployment estimated at 6 to 8 weeks including customized training.' Evidence index 0 confirms the $23,471.02 total proposal amount stated by Aisha. Evidence index 1 confirms Aisha's commitment to a 6-to-8-week deployment timeline including customized training sessions, made in response to Zara's question about implementation once terms were agreed. The context metadata confirms the account is GreenEnergy Solutions, the opportunity is GreenEnergy Tech Innovation Partnership, and the contact is Zara Ali. All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-194f4312d72d7c31",
+    "question": "What was the proposal total for EcoTech Manufacturing in the initial pricing discussion, and what final quote total did Elena give in the later proposal call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Compare the initial proposal total with the final quote total for EcoTech Manufacturing",
+        "relationship": "same commercial terms (pricing) tracked across the initial discussion and the later proposal call",
+        "reason": "Both lookups concern the same business issue\u2014EcoTech's pricing/proposal total\u2014compared from initial to final quote, which is a coherent commercial comparison."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvrHIAS",
+                "fact": "The initial proposal total was just under $30,000.",
+                "why_other_call_cannot_supply_it": "The later call only provides the final quote total of $29,854.33 and does not mention the initial proposal total."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "fact": "The final quote total was $29,854.33.",
+                "why_other_call_cannot_supply_it": "The initial call only states the proposal total as just under $30,000 and does not provide the exact final quote total."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct figures: the initial proposal total and the final quote total. Each call provides one of these figures exclusively, and neither call contains both. Therefore, both calls are necessary to answer the question completely."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvrHIAS",
+                  "fact": "The initial proposal total was just under $30,000.",
+                  "why_other_call_cannot_supply_it": "The later call only provides the final quote total of $29,854.33 and does not mention the initial proposal total."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxGRIA0",
+                  "fact": "The final quote total was $29,854.33.",
+                  "why_other_call_cannot_supply_it": "The initial call only states the proposal was 'just under $30,000' and does not provide the exact final quote total."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the initial proposal total and the final quote total. Each call supplies one of these facts exclusively, and neither call contains both values. The initial call gives the approximate total, while the later call gives the exact final amount, making both calls necessary to answer the question fully."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvrHIAS",
+                  "fact": "The initial proposal total was just under $30,000.",
+                  "why_other_call_cannot_supply_it": "The later call only provides the final quote total of $29,854.33 and does not mention the initial proposal total."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxGRIA0",
+                  "fact": "The final quote total was $29,854.33.",
+                  "why_other_call_cannot_supply_it": "The initial call only states the proposal total as just under $30,000 and does not provide the exact final quote total."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct figures: the initial proposal total and the final quote total. Each call provides one of these figures exclusively, and neither call contains both. Therefore, both calls are necessary to answer the question completely."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvrHIAS",
+                "fact": "Initial proposal total was just under $30,000",
+                "why_other_call_cannot_supply_it": "The later call only states the final quote of $29,854.33 and never mentions the initial proposal total."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "fact": "Final quote total of $29,854.33",
+                "why_other_call_cannot_supply_it": "The initial call only gives the approximate 'just under $30,000' figure and not the exact final quote amount."
+              }
+            ],
+            "reason": "The question asks for two distinct requested figures: the approximate initial proposal total and the exact final quote total. Each figure appears in only one call, and the numerical change between them is substantive."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvrHIAS",
+                  "fact": "Initial proposal total was just under $30,000",
+                  "why_other_call_cannot_supply_it": "The later call only states the final quote of $29,854.33 and never mentions the initial proposal total."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxGRIA0",
+                  "fact": "Final quote total of $29,854.33",
+                  "why_other_call_cannot_supply_it": "The initial call only gives the approximate 'just under $30,000' figure and not the exact final quote amount."
+                }
+              ],
+              "reason": "The question asks for two distinct requested figures: the approximate initial proposal total and the exact final quote total. Each figure appears in only one call, and the numerical change between them is substantive."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two specific pricing figures across two calls for EcoTech Manufacturing. Call 1 (2024-01-04) contains Elena stating 'a proposal total of just under $30,000' during the initial pricing discussion. Call 2 (2024-03-17) contains Elena stating 'the total amount is $29,854.33' as the final quote. Each source contributes an exclusive requested fact, the answer matches both figures precisely with no unasked extras, the wording is natural, the account name provides adequate scope, and a rep would plausibly want to track proposal-to-final-quote progression. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Elena Petrova on 2024-01-04 explicitly states 'We're looking at a proposal total of just under $30,000,' which directly supports the answer_claim that Elena said the proposal total was just under $30,000. The call metadata confirms this is the EcoTech Manufacturing opportunity."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Elena Petrova on 2024-03-17 explicitly states 'the total amount is $29,854.33,' which directly supports the answer_claim that Elena stated the quote total is $29,854.33. The call metadata confirms this is the same EcoTech Manufacturing opportunity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states the initial proposal was 'just under $30,000' and the final quote total was '$29,854.33.' Evidence index 0 directly quotes Elena saying 'a proposal total of just under $30,000' in the initial pricing discussion (2024-01-04 call), and evidence index 1 directly quotes Elena stating 'the total amount is $29,854.33' in the later proposal call (2024-03-17). Both factual claims in the gold_answer are fully supported by the cited evidence, and the context metadata confirms both calls relate to EcoTech Manufacturing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-fddb704098341948",
+    "question": "What pricing did Mohamed quote Olivia Brooks for the Volvo XC60 and the Audi Q7 fleet?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted by Mohamed to Olivia Brooks for the Volvo XC60 and Audi Q7 fleet",
+        "relationship": "single coherent commercial quote covering two vehicle models in one fleet quote",
+        "reason": "One pricing lookup for a fleet quote spanning two models; same quote context, natural sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific pricing figures quoted by Mohamed to Olivia Brooks for two vehicles. The single call transcript contains both facts: Volvo XC60 at $32,999.99 and Audi Q7 fleet of 10 at $485,999.91 with a 10% discount. The gold answer matches the dialogue exactly with no extra or missing information. The question is naturally worded, scoped to a named rep and customer discussing a real deal, and a sales rep would plausibly need to recall quoted pricing. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Mohamed Bakr explicitly states the Volvo XC60 at $32,999.99 and the Audi Q7 with a 10% discount totaling $485,999.91 for a fleet of 10 vehicles, matching the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Mohamed's direct quote providing both the Volvo XC60 price ($32,999.99) and the Audi Q7 fleet pricing (10% discount, $485,999.91 for 10 vehicles), which fully supports every factual element in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d524209d606ed943",
+    "question": "What did Leila tell Liam Perez about the next step for getting pricing on the 2023 Nissan Leaf and maintenance plan?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Leila told Liam Perez about for getting pricing on the 2023 Nissan Leaf and maintenance plan",
+        "relationship": "single coherent request about next steps for one pricing matter",
+        "reason": "One next-step lookup covering a single issue (pricing for the vehicle and its maintenance plan) in one call; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what the rep (Leila) told the customer (Liam Perez) about next steps for pricing on the 2023 Nissan Leaf and maintenance plan. The dialogue at 15:12 shows Leila stating they are in the discovery stage and she will provide a detailed quote in the next conversation; at 15:15 she adds she will send a detailed email. The gold answer captures both facts (detailed quote in next conversation + detailed email) and the discovery-stage context. Wording is natural, scope is clear (named participants, specific vehicle and plan), and no locator preamble or answer leakage is present. Single-call question so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly contains Leila saying 'since we are in the discovery stage, I'll be providing you with a detailed quote in our next conversation,' which matches the answer_claim exactly. The speaker is Leila El-Tayeb, the context is the discovery stage, and the promise is a detailed quote in the next conversation."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly contains Leila saying 'I'll send over that detailed email in a bit,' which matches the answer_claim. The speaker is Leila El-Tayeb addressing Liam, confirming she will send a detailed email."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) they were in the discovery stage \u2013 supported by index 0 ('since we are in the discovery stage'); (2) Leila would provide a detailed quote in the next conversation \u2013 supported by index 0; (3) send a detailed email \u2013 supported by index 1. The context metadata confirms the account is Liam Perez and the opportunity relates to an Eco-Friendly Vehicle and Maintenance Package, consistent with the 2023 Nissan Leaf and maintenance plan topic. All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  }
+]
