@@ -1,0 +1,446 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "8a3654f3ff035fc3bc4bc8309307ed25c67f2bf962244d527531cf9812c63411",
+  "questions": 4,
+  "counts": {
+    "fail": 1,
+    "pass": 3
+  },
+  "estimated_usd": 0.589256743,
+  "results": [
+    {
+      "question_id": "b2b-single_call-41b196280c6edf97",
+      "question": "What did Nadya Kuznetsov say she needs to discuss with her QuantumLeap team before deciding on the TechPulse proposal?",
+      "gold_answer": "She needs to discuss with the team the initial costs versus long-term benefits.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgRIAS",
+        "b2b:a05Wt000003SrSkIAK",
+        "b2b:a05Wt000003SsQRIA0",
+        "b2b:a05Wt000003StWAIA0",
+        "b2b:a05Wt000003StWBIA0",
+        "b2b:a05Wt000003StWCIA0",
+        "b2b:a05Wt000003Su2OIAS",
+        "b2b:a05Wt000003SuldIAC",
+        "b2b:a05Wt000003SvUqIAK",
+        "b2b:a05Wt000003SvUrIAK",
+        "b2b:a05Wt000003SvsyIAC",
+        "b2b:a05Wt000003SvszIAC",
+        "b2b:a05Wt000003SwqpIAC",
+        "b2b:a05Wt000003SxJkIAK",
+        "b2b:a05Wt000003Sxd8IAC",
+        "b2b:a05Wt000003Sxd9IAC",
+        "b2b:a05Wt000003SxoEIAS",
+        "b2b:a05Wt000003T0cUIAS",
+        "b2b:a05Wt000003T0cVIAS",
+        "b2b:a05Wt000003T1C3IAK",
+        "b2b:a05Wt000003T1aBIAS",
+        "b2b:a05Wt000003T1whIAC",
+        "b2b:a05Wt000003T2KuIAK",
+        "b2b:a05Wt000003T2WEIA0",
+        "b2b:a05Wt000003T2j7IAC",
+        "b2b:a05Wt000003T2knIAC",
+        "b2b:a05Wt000003T2xcIAC",
+        "b2b:a05Wt000003T32SIAS",
+        "b2b:a05Wt000003T3aJIAS",
+        "b2b:a05Wt000003T3aKIAS",
+        "b2b:a05Wt000003T3qQIAS",
+        "b2b:a05Wt000003T3s5IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 13,
+            "normalized_end": 14
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call has Nadya stating a specific topic she needs to discuss with her team before deciding: on the 2023-05-25 call she says she'll discuss with the rest of the team 'especially regarding the initial costs versus long-term benefits.' Other Nadya calls mention bringing info to her team but name no specific topic, so they are not competing complete answers.",
+        "answers": [
+          {
+            "answer": "Nadya Kuznetsov said she needs to discuss the proposal with the rest of her team, especially regarding the initial costs versus long-term benefits, before deciding on moving forward with TechPulse's proposal.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqpIAC",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-05-25T09:09:50] Nadya Kuznetsov: I think we’ve covered most of what’s been on my mind. I’ll need to discuss this with the rest of the team, especially regarding the initial costs versus long-term benefits."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Nadya Kuznetsov appears in five calls under the 'TechPulse-QuantumLeap Collaboration' opportunity. In two of those calls she explicitly states what she needs to discuss with her team before deciding: in the 2023-05-25 call she says she needs to discuss 'the initial costs versus long-term benefits,' and in the 2023-05-09 call she says she needs to 'discuss these details with my team' (referring to the flexibility and support TechPulse provides). These are materially different topics, and the question does not specify which call or which topic, so both are valid complete answers.",
+        "answers": [
+          {
+            "answer": "Nadya Kuznetsov said she needs to discuss the initial costs versus long-term benefits with the rest of her team before deciding on the TechPulse proposal.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqpIAC",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-05-25T09:09:50] Nadya Kuznetsov: I think we’ve covered most of what’s been on my mind. I’ll need to discuss this with the rest of the team, especially regarding the initial costs versus long-term benefits."
+              }
+            ]
+          },
+          {
+            "answer": "Nadya Kuznetsov said she needs to discuss the details of TechPulse's flexibility and support offerings with her team before deciding.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sxd9IAC",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2023-05-09T10:06:30] Nadya Kuznetsov: I appreciate your insights. I will need to discuss these details with my team, but it’s good to hear about the flexibility and support TechPulse provides."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-multi_call-bf19853fd3ea2064",
+      "question": "Across the two discussions with Farah Khalil at Metro Security Systems, what did Mohammed say about post-implementation support in the later call, and what did he say about TechPulse's service level agreements in the earlier one?",
+      "gold_answer": "Later call: comprehensive 24/7 support with dedicated teams. Earlier call: robust SLAs emphasizing proactive monitoring and quick response times to minimize downtime.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZqIAK",
+        "b2b:a05Wt000003SrioIAC",
+        "b2b:a05Wt000003SripIAC",
+        "b2b:a05Wt000003SsesIAC",
+        "b2b:a05Wt000003SslKIAS",
+        "b2b:a05Wt000003StHbIAK",
+        "b2b:a05Wt000003StJCIA0",
+        "b2b:a05Wt000003StvuIAC",
+        "b2b:a05Wt000003StvvIAC",
+        "b2b:a05Wt000003SuQYIA0",
+        "b2b:a05Wt000003SujuIAC",
+        "b2b:a05Wt000003SvT4IAK",
+        "b2b:a05Wt000003SvfyIAC",
+        "b2b:a05Wt000003SvhaIAC",
+        "b2b:a05Wt000003Svo2IAC",
+        "b2b:a05Wt000003SvpeIAC",
+        "b2b:a05Wt000003SwCEIA0",
+        "b2b:a05Wt000003SwKIIA0",
+        "b2b:a05Wt000003SwNVIA0",
+        "b2b:a05Wt000003SwP7IAK",
+        "b2b:a05Wt000003SwQjIAK",
+        "b2b:a05Wt000003SwSLIA0",
+        "b2b:a05Wt000003SwTxIAK",
+        "b2b:a05Wt000003SwVZIA0",
+        "b2b:a05Wt000003SwXBIA0",
+        "b2b:a05Wt000003SwYnIAK",
+        "b2b:a05Wt000003SwaPIAS",
+        "b2b:a05Wt000003Swc1IAC",
+        "b2b:a05Wt000003SwddIAC",
+        "b2b:a05Wt000003SwfFIAS",
+        "b2b:a05Wt000003SwgrIAC",
+        "b2b:a05Wt000003SwiTIAS",
+        "b2b:a05Wt000003Swk5IAC",
+        "b2b:a05Wt000003SwlhIAC",
+        "b2b:a05Wt000003SwnJIAS",
+        "b2b:a05Wt000003SwovIAC",
+        "b2b:a05Wt000003SwqXIAS",
+        "b2b:a05Wt000003Sws9IAC",
+        "b2b:a05Wt000003SwtlIAC",
+        "b2b:a05Wt000003SwvNIAS",
+        "b2b:a05Wt000003SwwzIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "There are exactly two calls between Mohammed El-Sayed and Farah Khalil at Metro Security Systems: 2023-03-25 (earlier) and 2023-11-19 (later). The later call contains a direct question about post-implementation support, and the earlier one about service level agreements, so both requested facts are uniquely identified.",
+        "answers": [
+          {
+            "answer": "In the later call (2023-11-19), Mohammed said TechPulse provides comprehensive 24/7 support, with dedicated teams ensuring seamless transitions and ongoing assistance at every stage to maximize the solution's efficacy in Metro's operations. In the earlier call (2023-03-25), he said TechPulse's SLAs are robust, emphasizing proactive monitoring and quick response times, guaranteeing minimal downtime and optimal performance — a major positive feedback point with existing clients.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StHbIAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-11-19T14:01:30] Farah Khalil: That's reassuring. And what about post-implementation support?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuQYIA0",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-03-25T14:15:35] Farah Khalil: That's definitely promising. We are working towards an infrastructure that adapts to future demands. What can you say about your service level agreements on this?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies 'the two discussions with Farah Khalil at Metro Security Systems' involving 'Mohammed.' Only two calls in the dataset feature both Mohammed El-Sayed and Farah Khalil: b2b:a05Wt000003SuQYIA0 (2023-03-25, earlier) and b2b:a05Wt000003StHbIAK (2023-11-19, later). The question asks about post-implementation support in the later call and SLAs in the earlier call, both of which are clearly present.",
+        "answers": [
+          {
+            "answer": "In the later call (2023-11-19), when Farah asked about post-implementation support, Mohammed El-Sayed said: 'We provide comprehensive 24/7 support. Our teams are dedicated to ensuring seamless transitions and ongoing assistance at every stage to maximize the solution's efficacy in your operations.' In the earlier call (2023-03-25), when Farah asked about TechPulse's service level agreements, Mohammed said: 'Our SLAs are robust, emphasizing proactive monitoring and quick response times, guaranteeing minimal downtime and optimal performance. This has been a major positive feedback point with our existing clients.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StHbIAK",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-11-19T14:01:30] Farah Khalil: That's reassuring. And what about post-implementation support?\n[2023-11-19T14:01:45] Mohammed El-Sayed: We provide comprehensive 24/7 support. Our teams are dedicated to ensuring seamless transitions and ongoing assistance at every stage to maximize the solution's efficacy in your operations."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuQYIA0",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-03-25T14:15:35] Farah Khalil: That's definitely promising. We are working towards an infrastructure that adapts to future demands. What can you say about your service level agreements on this?\n[2023-03-25T14:16:00] Mohammed El-Sayed: Our SLAs are robust, emphasizing proactive monitoring and quick response times, guaranteeing minimal downtime and optimal performance. This has been a major positive feedback point with our existing clients."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers attribute the same content to the correct calls: the later call (2023-11-19) covers comprehensive 24/7 post-implementation support with dedicated teams ensuring seamless transitions and ongoing assistance, and the earlier call (2023-03-25) covers robust SLAs emphasizing proactive monitoring and quick response times to guarantee minimal downtime and optimal performance. Answer B adds direct quotes and the full name 'Mohammed El-Sayed,' but the substantive facts are identical. The reference captures both requested commitments: 24/7 support with dedicated teams for the later call, and robust SLAs with proactive monitoring and quick response times to minimize downtime for the earlier call."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-b91fdf3cb883a5b6",
+      "question": "What pricing did Emily recap for Leo Harris's vehicle order, and what follow-up is scheduled?",
+      "gold_answer": "Two 2023 Nissan Leafs at 57,999.98, a 2024 Volkswagen ID.4 at 43,999.99, and an Extended Warranty Plan at 1,299.99; a virtual demonstration is scheduled for August 5th.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLPUIA4",
+        "b2c:a05Ws000005SMCdIAO",
+        "b2c:a05Ws000005SPlYIAW",
+        "b2c:a05Ws000005SPlZIAW",
+        "b2c:a05Ws000005SQeTIAW",
+        "b2c:a05Ws000005SQxpIAG",
+        "b2c:a05Ws000005SR4HIAW",
+        "b2c:a05Ws000005SR4IIAW",
+        "b2c:a05Ws000005SRLuIAO",
+        "b2c:a05Ws000005SSMuIAO",
+        "b2c:a05Ws000005SSjQIAW",
+        "b2c:a05Ws000005STKWIA4",
+        "b2c:a05Ws000005STM9IAO",
+        "b2c:a05Ws000005STMAIA4",
+        "b2c:a05Ws000005STVmIAO",
+        "b2c:a05Ws000005STqlIAG",
+        "b2c:a05Ws000005SUV9IAO",
+        "b2c:a05Ws000005SUlDIAW",
+        "b2c:a05Ws000005SUoTIAW",
+        "b2c:a05Ws000005SVUIIA4",
+        "b2c:a05Ws000005SVxMIAW",
+        "b2c:a05Ws000005SVxNIAW",
+        "b2c:a05Ws000005SWOlIAO",
+        "b2c:a05Ws000005SWVEIA4",
+        "b2c:a05Ws000005SXeBIAW",
+        "b2c:a05Ws000005SXeCIAW",
+        "b2c:a05Ws000005SY2UIAW",
+        "b2c:a05Ws000005SY7DIAW",
+        "b2c:a05Ws000005SYATIA4",
+        "b2c:a05Ws000005SYAUIA4",
+        "b2c:a05Ws000005SYC3IAO",
+        "b2c:a05Ws000005SYGxIAO",
+        "b2c:a05Ws000005SYTnIAO",
+        "b2c:a05Ws000005SYToIAO",
+        "b2c:a05Ws000005SZ6bIAG",
+        "b2c:a05Ws000005SZGDIA4",
+        "b2c:a05Ws000005SaliIAC",
+        "b2c:a05Ws000005SbMqIAK",
+        "b2c:a05Ws000005SbY8IAK",
+        "b2c:a05Ws000005SbuhIAC",
+        "b2c:a05Ws000005SbxvIAC",
+        "b2c:a05Ws000005SbxwIAC",
+        "b2c:a05Ws000005SbxxIAC",
+        "b2c:a05Ws000005ScfOIAS",
+        "b2c:a05Ws000005Scp4IAC",
+        "b2c:a05Ws000005ScsHIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 10,
+            "normalized_end": 11
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only Emily Jackson's 2022-08-01 call contains a pricing recap for Leo's vehicle order, and the same call schedules the follow-up (a virtual demonstration on August 5th). No other Emily call recaps pricing, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Emily Jackson recapped: the 2023 Nissan Leaf at 57,999.98 for two units, the 2024 Volkswagen ID.4 at 43,999.99, and the Extended Warranty Plan at 1,299.99. The scheduled follow-up is a virtual product demonstration on August 5th showcasing the features and benefits of both the Nissan Leaf and the Volkswagen ID.4.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SaliIAC",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-09-12T14:02:20] Priya Nair: Of course. So, the total price for the 2023 Nissan Leaf is $28,999.99. The AutoElite Comprehensive Maintenance Plan is $1,999.99, and the Extended Warranty Plan comes to $1,299.99. Altogether, the total package cost is $32,299.97."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SaliIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-09-12T14:03:10] Priya Nair: Fantastic. Well, our next step would be to finalize the negotiation terms, which we’ll be doing at our next meeting. I'll make sure to touch on the extended warranty benefits during that as well."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names 'Emily' as the person who recapped pricing for Leo Harris's vehicle order. Only one salesperson named Emily appears in the call history: Emily Jackson, on the 'Eco-Friendly Luxury Vehicle Purchase' opportunity. The call on 2022-08-01 (b2c:a05Ws000005SRLuIAO) contains a clear pricing recap and a scheduled follow-up (virtual demonstration on August 5th). No other Emily call contains a pricing recap with a scheduled follow-up.",
+        "answers": [
+          {
+            "answer": "Emily Jackson recapped the following pricing for Leo Harris: two units of the 2023 Nissan Leaf at $57,999.98, one 2024 Volkswagen ID.4 at $43,999.99, and an Extended Warranty Plan at $1,299.99. The scheduled follow-up is a virtual demonstration on August 5th, where Emily will showcase the features and benefits of both the Nissan Leaf and the Volkswagen ID.4.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRLuIAO",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2022-08-01T10:03:40] Emily Jackson: That’s great to hear, Leo. It's all about creating a hassle-free and straightforward buying experience. And speaking of pricing, let’s recap the specifics: for the 2023 Nissan Leaf, you're looking at 57,999.98 for two units, and 43,999.99 for the 2024 Volkswagen ID.4. Then there's the Extended Warranty Plan at 1,299.99."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SRLuIAO",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2022-08-01T10:05:00] Leo Harris: I appreciate the comprehensive overview, Emily. I feel prepared for the next steps. I believe we'll be having a product demonstration soon?\n[2022-08-01T10:05:20] Emily Jackson: Yes, we have a virtual demonstration scheduled for August 5th. We’ll showcase the features and benefits of both the Nissan Leaf and Volkswagen ID.4, so it's going to be quite insightful. I'm looking forward to that!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers list the same pricing items (two 2023 Nissan Leafs at 57,999.98, a 2024 Volkswagen ID.4 at 43,999.99, and an Extended Warranty Plan at 1,299.99) and the same follow-up (a virtual product demonstration on August 5th showcasing features of both vehicles). The reference also covers all requested facts: the three pricing items and the August 5th virtual demonstration. Minor wording differences (e.g., 'virtual product demonstration' vs. 'virtual demonstration') do not affect factual agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-53ae93487311dadc",
+      "question": "What did Olivia Adams' quote for the BMW X5 M include, and what follow-up did Zanele commit to?",
+      "gold_answer": "BMW X5 M at $74,999.99, Maintenance Plan at $1,999.99, Premium Protection Film at $799.99, with flexible financing; Zanele will send detailed financing options.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SM9LIAW",
+        "b2c:a05Ws000005SMvnIAG",
+        "b2c:a05Ws000005SO1NIAW",
+        "b2c:a05Ws000005SOB6IAO",
+        "b2c:a05Ws000005SOG2IAO",
+        "b2c:a05Ws000005SPbqIAG",
+        "b2c:a05Ws000005SQKvIAO",
+        "b2c:a05Ws000005SQPnIAO",
+        "b2c:a05Ws000005SQo4IAG",
+        "b2c:a05Ws000005SRU0IAO",
+        "b2c:a05Ws000005SRaSIAW",
+        "b2c:a05Ws000005SRc1IAG",
+        "b2c:a05Ws000005SRddIAG",
+        "b2c:a05Ws000005SRgwIAG",
+        "b2c:a05Ws000005SS53IAG",
+        "b2c:a05Ws000005SSBXIA4",
+        "b2c:a05Ws000005SSLIIA4",
+        "b2c:a05Ws000005SSQ7IAO",
+        "b2c:a05Ws000005ST5uIAG",
+        "b2c:a05Ws000005STFiIAO",
+        "b2c:a05Ws000005SUgMIAW",
+        "b2c:a05Ws000005SVCYIA4",
+        "b2c:a05Ws000005SVSrIAO",
+        "b2c:a05Ws000005SW5WIAW",
+        "b2c:a05Ws000005SWJzIAO",
+        "b2c:a05Ws000005SWQPIA4",
+        "b2c:a05Ws000005SWQQIA4",
+        "b2c:a05Ws000005SX9SIAW",
+        "b2c:a05Ws000005SXWFIA4",
+        "b2c:a05Ws000005SXhNIAW",
+        "b2c:a05Ws000005SY2QIAW",
+        "b2c:a05Ws000005SY5gIAG",
+        "b2c:a05Ws000005SYK8IAO",
+        "b2c:a05Ws000005SYLnIAO",
+        "b2c:a05Ws000005SZJQIA4",
+        "b2c:a05Ws000005SZJRIA4",
+        "b2c:a05Ws000005SZRWIA4",
+        "b2c:a05Ws000005SZTAIA4",
+        "b2c:a05Ws000005SZrEIAW",
+        "b2c:a05Ws000005Sa10IAC",
+        "b2c:a05Ws000005SanKIAS",
+        "b2c:a05Ws000005SbDAIA0",
+        "b2c:a05Ws000005SbLDIA0",
+        "b2c:a05Ws000005SbxtIAC",
+        "b2c:a05Ws000005Sc9BIAS",
+        "b2c:a05Ws000005ScXJIA0",
+        "b2c:a05Ws000005ScYvIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call contains a quote for the BMW X5 M from Zanele (2022-06-20, Luxury Auto Bundle opportunity), where she summarizes the quote and commits to a follow-up with detailed financing options. Other Zanele calls cover demos, contract finalization, or post-purchase check-ins, not the quote.",
+        "answers": [
+          {
+            "answer": "Zanele's quote for the BMW X5 M included the BMW X5 M at $74,999.99, the AutoElite Comprehensive Maintenance Plan at $1,999.99, and the AutoElite Premium Protection Film at $799.99, all with options for flexible financing. As follow-up, Zanele committed to sending Olivia more detailed financing options promptly (and said she's available for further questions).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPbqIAG",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2022-06-20T10:20:10] Zanele Dlamini: Great! So to summarize, we have the BMW X5 M at $74,999.99, the Maintenance Plan at $1,999.99, and the Premium Protection Film at $799.99. All with options for flexible financing. We'll follow up with more detailed financing options.\n[2022-06-20T10:20:30] Olivia Adams: That sounds good to me. I'll look forward to more details on the financing options."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about Olivia Adams' quote for the BMW X5 M and the follow-up Zanele committed to. The BMW X5 M opportunity is 'Luxury Auto Bundle for Olivia Adams' (opportunity_id 006Ws00000ALtlJIAT), handled by Zanele Dlamini. The specific quote with itemized pricing is given in call b2c:a05Ws000005SPbqIAG (2022-06-20), where Zanele summarizes the BMW X5 M at $74,999.99, the Maintenance Plan at $1,999.99, and the Premium Protection Film at $799.99, and commits to following up with more detailed financing options. This is the only call where a concrete quote for the BMW X5 M is presented with specific prices and a clear follow-up commitment from Zanele.",
+        "answers": [
+          {
+            "answer": "Zanele's quote for the BMW X5 M included three items: the 2022 BMW X5 M at $74,999.99, the Comprehensive Maintenance Plan at $1,999.99, and the AutoElite Premium Protection Film at $799.99, all with options for flexible financing. Zanele committed to following up with more detailed financing options.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPbqIAG",
+                "line_start": 16,
+                "line_end": 19,
+                "quote": "[2022-06-20T10:20:10] Zanele Dlamini: Great! So to summarize, we have the BMW X5 M at $74,999.99, the Maintenance Plan at $1,999.99, and the Premium Protection Film at $799.99. All with options for flexible financing. We'll follow up with more detailed financing options.\n[2022-06-20T10:20:30] Olivia Adams: That sounds good to me. I'll look forward to more details on the financing options.\n[2022-06-20T10:20:45] Zanele Dlamini: Fantastic, I'll make sure we get that to you promptly, and I'm always here if you have more questions. Thank you so much for your time, Olivia. I'm excited about the potential of getting you behind the wheel of your new BMW X5 M!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers list the same three quote items (BMW X5 M at $74,999.99, Maintenance Plan at $1,999.99, Premium Protection Film at $799.99) with flexible financing, and both state Zanele's follow-up commitment to send more detailed financing options. The reference covers all these requested facts: the three line items, flexible financing, and the commitment to send detailed financing options. Minor wording differences (e.g., 'AutoElite' branding, '2022' model year, 'promptly,' availability for questions) do not affect agreement or coverage."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1,0 +1,377 @@
+[
+  {
+    "question_id": "b2b-single_call-3f1111812ca2c7e8",
+    "question": "What concern did Khalid Al-Mansoor raise about competitors' offerings, and how did Jasper respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Khalid Al-Mansoor raised about competitors' offerings and Jasper's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single competitive objection paired with the salesperson's reply is one coherent sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection raised by Khalid Al-Mansoor and Jasper's rebuttal, a realistic concern for a rep tracking objection-handling. The dialogue at 10:34:30 shows Khalid stating competitors offer more adaptable initial configurations, and at 10:34:55 Jasper responds that TechPulse is enhancing customization, citing CloudLink Designer's adaptive setup for niche needs. The gold answer captures both parts precisely with no extra or missing facts. Single-call question, so both_sources_required is set true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage contains only Khalid Al-Mansoor's statement (lines 11-12). It supports the claim that Khalid noted competitors offer more adaptable initial configurations. However, the answer_claim also asserts that 'Jasper points to CloudLink Designer's adaptive setup,' but no dialogue from Jasper appears in the cited quote. The quote ends with Khalid's question 'How is TechPulse addressing flexibility?'\u2014a question does not establish Jasper's response. The cited evidence is missing Jasper's reply entirely."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) Khalid said competitors offer more adaptable initial configurations, and (2) Jasper said TechPulse is enhancing customization, citing CloudLink Designer's adaptive setup for niche needs. The single cited evidence item only contains Khalid's question and does not include any response from Jasper. There is no supplied citation showing Jasper mentioning TechPulse enhancing customization or CloudLink Designer's adaptive setup. Therefore the combined supplied citations do not support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-41b196280c6edf97",
+    "question": "What did Nadya Kuznetsov say she needs to discuss with her QuantumLeap team before deciding on the TechPulse proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Nadya Kuznetsov said she needs to discuss with her QuantumLeap team before deciding on the TechPulse proposal",
+        "relationship": "single coherent lookup about one decision point in one call",
+        "reason": "This is one fact lookup about the same issue (internal deliberation before deciding on the proposal), not multiple independent requests."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Nadya Kuznetsov needs to discuss with her QuantumLeap team before deciding on the TechPulse proposal. The dialogue at 09:09:50 shows her saying she'll need to discuss 'the initial costs versus long-term benefits' with the rest of the team. The gold answer matches this exactly. The question is naturally worded, scoped to a specific account/contact/proposal, and represents a realistic sales need (understanding the customer's internal decision criteria). No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadya Kuznetsov explicitly states: 'I'll need to discuss this with the rest of the team, especially regarding the initial costs versus long-term benefits.' This directly supports the answer_claim that she will discuss with the team the initial costs versus long-term benefits."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Nadya Kuznetsov's exact words stating she needs to discuss with the rest of the team 'especially regarding the initial costs versus long-term benefits.' The gold_answer ('She needs to discuss with the team the initial costs versus long-term benefits') is a faithful paraphrase of this quote. The context metadata confirms the call involves Nadya Kuznetsov at QuantumLeap Computing and the opportunity is named 'TechPulse-QuantumLeap Collaboration,' aligning with the question's reference to the TechPulse proposal and QuantumLeap team. All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-308498118b0b809b",
+    "question": "Across the two calls with Jia Ming at UrbanTech Developments, what did he say UrbanTech prioritizes over adaptability in the initial discussion, and which competitor did he cite as having strong support and service agreements in the follow-up?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) What UrbanTech prioritizes over adaptability (initial call), and 2) which competitor Jia Ming cited for strong support/service agreements (follow-up call).",
+        "relationship": "Two independent fact lookups joined only by the same contact/account; the priority statement and the competitor citation address different business issues.",
+        "reason": "The question bundles two unrelated information needs across calls \u2014 a product-priority concern and a competitor comparison \u2014 with no shared business issue connecting them, matching the reject pattern of artificially joined lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Feb 13) has Jia Ming stating UrbanTech prioritizes 'reliability and long-term innovation' over adaptability; Call 2 (Feb 15) has him citing CircuitWave as having 'strong support and service agreements.' Each fact is exclusive to its respective call, and the gold answer matches both sources precisely with no extras.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Jia Ming on 2024-02-13 explicitly states 'we also prioritize reliability and long-term innovation,' directly supporting the claim that UrbanTech prioritizes reliability and long-term innovation over adaptability. The speaker is confirmed as Jia Ming, matching the contact metadata."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Jia Ming on 2024-02-15 explicitly names CircuitWave as a competitor with 'strong support and service agreements,' directly supporting the claim. The speaker is confirmed as Jia Ming, matching the contact metadata."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms UrbanTech prioritizes reliability and long-term innovation over adaptability (stated by Jia Ming in the initial call on 2024-02-13). Evidence index 1 confirms CircuitWave was cited as having strong support and service agreements (stated by Jia Ming in the follow-up call on 2024-02-15). All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-bf19853fd3ea2064",
+    "question": "Across the two discussions with Farah Khalil at Metro Security Systems, what did Mohammed say about post-implementation support in the later call, and what did he say about TechPulse's service level agreements in the earlier one?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Mohammed said about post-implementation support in the later call and about TechPulse's SLAs in the earlier call, across two discussions with Farah Khalil at Metro Security Systems.",
+        "relationship": "Both lookups concern the same business issue\u2014service and support commitments (post-implementation support and SLAs)\u2014compared across two calls with the same customer.",
+        "reason": "This is a two-call question, but the requested facts address the same issue (support/service commitments), not merely the same account, and the initial/follow-up framing is natural."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StHbIAK",
+                "fact": "Mohammed said TechPulse provides comprehensive 24/7 support with dedicated teams for post-implementation support.",
+                "why_other_call_cannot_supply_it": "The earlier call (b2b:a05Wt000003SuQYIA0) only mentions 'comprehensive support services' without specifying 24/7 or dedicated teams, so it cannot supply this specific detail."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuQYIA0",
+                "fact": "Mohammed said TechPulse's SLAs are robust, emphasizing proactive monitoring and quick response times to minimize downtime.",
+                "why_other_call_cannot_supply_it": "The later call (b2b:a05Wt000003StHbIAK) does not discuss SLAs at all, so it cannot supply this information."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: post-implementation support details from the later call and SLA details from the earlier call. Each call contains unique, non-overlapping facts that are directly requested, and neither call alone can provide both pieces of information."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StHbIAK",
+                  "fact": "Mohammed said TechPulse provides comprehensive 24/7 support with dedicated teams for post-implementation assistance.",
+                  "why_other_call_cannot_supply_it": "The earlier call (b2b:a05Wt000003SuQYIA0) only mentions 'comprehensive support services' in general, without specifying 24/7 availability or dedicated teams, so it cannot supply this specific detail."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuQYIA0",
+                  "fact": "Mohammed said TechPulse's SLAs are robust, emphasizing proactive monitoring and quick response times to minimize downtime.",
+                  "why_other_call_cannot_supply_it": "The later call (b2b:a05Wt000003StHbIAK) does not discuss SLAs at all, so it cannot supply this information."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information from two different calls: post-implementation support details from the later call and SLA details from the earlier call. Each call contains unique, non-overlapping facts that are both necessary to fully answer the question."
+            },
+            {
+              "type": "object"
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StHbIAK",
+                  "fact": "Mohammed said TechPulse provides comprehensive 24/7 support with dedicated teams for post-implementation support.",
+                  "why_other_call_cannot_supply_it": "The earlier call (b2b:a05Wt000003SuQYIA0) only mentions 'comprehensive support services' without specifying 24/7 or dedicated teams, so it cannot supply this specific detail."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuQYIA0",
+                  "fact": "Mohammed said TechPulse's SLAs are robust, emphasizing proactive monitoring and quick response times to minimize downtime.",
+                  "why_other_call_cannot_supply_it": "The later call (b2b:a05Wt000003StHbIAK) does not discuss SLAs at all, so it cannot supply this information."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: post-implementation support details from the later call and SLA details from the earlier call. Each call contains unique, non-overlapping facts that are directly requested, and neither call alone can provide both pieces of information."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StHbIAK",
+                "fact": "Post-implementation support: comprehensive 24/7 support with dedicated teams ensuring seamless transitions and ongoing assistance",
+                "why_other_call_cannot_supply_it": "The earlier (March) call only mentions generic 'comprehensive support services' with no 24/7 or dedicated-team detail; the specific post-implementation support statement appears only in the later call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuQYIA0",
+                "fact": "SLAs are robust, emphasizing proactive monitoring and quick response times to guarantee minimal downtime and optimal performance",
+                "why_other_call_cannot_supply_it": "The later (November) call never discusses service level agreements; the SLA statement appears only in the earlier call"
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: post-implementation support detail from the later call and SLA description from the earlier call. Each fact exists only in one call, and neither is a paraphrase of the other."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StHbIAK",
+                  "fact": "Post-implementation support: comprehensive 24/7 support with dedicated teams ensuring seamless transitions and ongoing assistance",
+                  "why_other_call_cannot_supply_it": "The earlier (March) call only mentions generic 'comprehensive support services' with no 24/7 or dedicated-team detail; the specific post-implementation support statement appears only in the later call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuQYIA0",
+                  "fact": "SLAs are robust, emphasizing proactive monitoring and quick response times to guarantee minimal downtime and optimal performance",
+                  "why_other_call_cannot_supply_it": "The later (November) call never discusses service level agreements; the SLA statement appears only in the earlier call"
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: post-implementation support detail from the later call and SLA description from the earlier call. Each fact exists only in one call, and neither is a paraphrase of the other."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts from two separate calls with the same contact. The later call (2023-11-19) contains Mohammed's statement about post-implementation support ('comprehensive 24/7 support\u2026dedicated teams'), and the earlier call (2023-03-25) contains his statement about SLAs ('robust, emphasizing proactive monitoring and quick response times'). Each source contributes an exclusive requested fact. The gold answer accurately reflects both transcripts without adding unasked information. The question is naturally phrased, adequately scoped to a named account/contact, and represents a plausible rep need to recall commitments made across calls.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from the later call (2023-11-19) by Mohammed El-Sayed explicitly states 'We provide comprehensive 24/7 support. Our teams are dedicated to ensuring seamless transitions and ongoing assistance at every stage,' which directly supports the answer_claim about comprehensive 24/7 support with dedicated teams."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from the earlier call (2023-03-25) by Mohammed El-Sayed explicitly states 'Our SLAs are robust, emphasizing proactive monitoring and quick response times, guaranteeing minimal downtime and optimal performance,' which directly supports the answer_claim about robust SLAs emphasizing proactive monitoring and quick response times to minimize downtime."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Later call: comprehensive 24/7 support with dedicated teams \u2013 supported by index 0 where Mohammed says 'comprehensive 24/7 support' and 'Our teams are dedicated.' (2) Earlier call: robust SLAs emphasizing proactive monitoring and quick response times to minimize downtime \u2013 supported by index 1 where Mohammed says 'Our SLAs are robust, emphasizing proactive monitoring and quick response times, guaranteeing minimal downtime.' The context metadata confirms the later call is 2023-11-19 and the earlier call is 2023-03-25, both with Farah Khalil at Metro Security Systems. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b91fdf3cb883a5b6",
+    "question": "What pricing did Emily recap for Leo Harris's vehicle order, and what follow-up is scheduled?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing Emily recapped for Leo Harris's vehicle order and the scheduled follow-up",
+        "relationship": "single coherent request: commercial terms and next steps for the same order",
+        "reason": "Pricing recap and follow-up both address the same vehicle order, forming one natural sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for pricing recapped by Emily and the scheduled follow-up. The dialogue confirms: two 2023 Nissan Leafs at 57,999.98, a 2024 Volkswagen ID.4 at 43,999.99, an Extended Warranty Plan at 1,299.99, and a virtual demonstration on August 5th. All gold-answer claims match the transcript exactly. The question is naturally phrased, identifies the customer (Leo Harris) and rep (Emily), and a sales rep would plausibly need this recap. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Emily Jackson explicitly recaps: 57,999.98 for two 2023 Nissan Leafs, 43,999.99 for the 2024 Volkswagen ID.4, and the Extended Warranty Plan at 1,299.99. This directly matches the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Emily Jackson states 'we have a virtual demonstration scheduled for August 5th' and mentions showcasing both the Nissan Leaf and Volkswagen ID.4. This directly supports the answer_claim about the virtual demonstration on August 5th."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms the pricing recap (two 2023 Nissan Leafs at 57,999.98, 2024 Volkswagen ID.4 at 43,999.99, Extended Warranty Plan at 1,299.99), and Index 1 confirms the virtual demonstration scheduled for August 5th. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-53ae93487311dadc",
+    "question": "What did Olivia Adams' quote for the BMW X5 M include, and what follow-up did Zanele commit to?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The contents of Olivia Adams' quote for the BMW X5 M and the follow-up action Zanele committed to regarding it",
+        "relationship": "Quote details and the committed next step on that same quote form one coherent sales interaction",
+        "reason": "Both parts address the same quote/next-steps issue: what was quoted and what follow-up was promised, which is a natural single request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what the quote included and what follow-up was committed to\u2014both are commercial/next-steps details a rep would legitimately need. The dialogue confirms the BMW X5 M at $74,999.99, Maintenance Plan at $1,999.99, Premium Protection Film at $799.99, flexible financing, and Zanele's commitment to send detailed financing options. All gold-answer claims match the transcript exactly with no extras or omissions. Single-call set, so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Zanele Dlamini explicitly states: BMW X5 M at $74,999.99, Maintenance Plan at $1,999.99, Premium Protection Film at $799.99, 'options for flexible financing,' and 'We'll follow up with more detailed financing options.' Olivia Adams confirms she'll look forward to more details on financing options. All elements of the answer_claim are directly present in the quoted passage with correct speaker attribution, amounts, and commitments."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element in the gold_answer: the BMW X5 M price ($74,999.99), Maintenance Plan ($1,999.99), Premium Protection Film ($799.99), flexible financing, and Zanele's commitment to send detailed financing options. All amounts, items, and the follow-up commitment are explicitly stated in the quoted dialogue."
+      }
+    }
+  }
+]
