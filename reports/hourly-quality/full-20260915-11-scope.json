@@ -1,0 +1,205 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "95fc325eb66ec46cdcf79c76d2c0208fe0d091bf3b9bc9e5d0fc0a93e3837796",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.30959774,
+  "results": [
+    {
+      "question_id": "b2b-single_call-00f84402a1a0d49e",
+      "question": "What did Dinesh Nair say LiftTech Elevations is focused on improving in their building automation technologies?",
+      "gold_answer": "Improving the efficiency and security of their building automation technologies.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sqy5IAC",
+        "b2b:a05Wt000003SrN8IAK",
+        "b2b:a05Wt000003SrN9IAK",
+        "b2b:a05Wt000003SrxKIAS",
+        "b2b:a05Wt000003SsqAIAS",
+        "b2b:a05Wt000003StHdIAK",
+        "b2b:a05Wt000003StHeIAK",
+        "b2b:a05Wt000003StHfIAK",
+        "b2b:a05Wt000003StHgIAK",
+        "b2b:a05Wt000003SuOyIAK",
+        "b2b:a05Wt000003SuOzIAK",
+        "b2b:a05Wt000003SulWIAS",
+        "b2b:a05Wt000003SulXIAS",
+        "b2b:a05Wt000003Sv05IAC",
+        "b2b:a05Wt000003Sv1gIAC",
+        "b2b:a05Wt000003SvCzIAK",
+        "b2b:a05Wt000003SvT5IAK",
+        "b2b:a05Wt000003SvhdIAC",
+        "b2b:a05Wt000003SvrIIAS",
+        "b2b:a05Wt000003Sw0zIAC",
+        "b2b:a05Wt000003Sw2ZIAS",
+        "b2b:a05Wt000003SwAfIAK",
+        "b2b:a05Wt000003SwDrIAK",
+        "b2b:a05Wt000003Swx1IAC",
+        "b2b:a05Wt000003Sx8KIAS",
+        "b2b:a05Wt000003SxEmIAK",
+        "b2b:a05Wt000003SxEnIAK",
+        "b2b:a05Wt000003SxrVIAS",
+        "b2b:a05Wt000003Sxt9IAC",
+        "b2b:a05Wt000003SyHJIA0",
+        "b2b:a05Wt000003SyM7IAK",
+        "b2b:a05Wt000003SyfSIAS",
+        "b2b:a05Wt000003SyfTIAS",
+        "b2b:a05Wt000003SyvcIAC",
+        "b2b:a05Wt000003SyvdIAC",
+        "b2b:a05Wt000003SzDLIA0",
+        "b2b:a05Wt000003SzEwIAK",
+        "b2b:a05Wt000003SzQFIA0",
+        "b2b:a05Wt000003SzemIAC",
+        "b2b:a05Wt000003SzlDIAS",
+        "b2b:a05Wt000003T0AzIAK",
+        "b2b:a05Wt000003T0CbIAK",
+        "b2b:a05Wt000003T0EDIA0",
+        "b2b:a05Wt000003T0FpIAK",
+        "b2b:a05Wt000003T0HRIA0",
+        "b2b:a05Wt000003T0J3IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 3,
+            "normalized_end": 4
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Dinesh Nair appears in three calls, but only in the 2023-07-20 call does he state what LiftTech is 'focused on improving' in their building automation technologies — efficiency and security. The other Dinesh calls discuss different framings (streamlining operations/data flow; security compliance) and do not use this phrasing, so the literal wording identifies a single source.",
+        "answers": [
+          {
+            "answer": "Dinesh Nair said LiftTech Elevations is focused on improving the efficiency and security of their building automation technologies.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SulWIAS",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2023-07-20T10:31:00] Dinesh Nair: Yes, we're very focused on improving the efficiency and security of our building automation technologies."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Dinesh Nair and asks what he said LiftTech Elevations is focused on improving in their building automation technologies. Dinesh Nair appears in three calls (b2b:a05Wt000003SulWIAS, b2b:a05Wt000003SulXIAS, b2b:a05Wt000003SzDLIA0). In the first call (2023-07-20), line 3, Dinesh directly states: 'we're very focused on improving the efficiency and security of our building automation technologies.' This is the only instance where Dinesh uses the exact phrasing 'focused on improving' in relation to 'building automation technologies.' The other two calls discuss related topics (streamlining operations, security compliance) but do not use this specific formulation.",
+        "answers": [
+          {
+            "answer": "Dinesh Nair said that LiftTech Elevations is very focused on improving the efficiency and security of their building automation technologies.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SulWIAS",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2023-07-20T10:31:00] Dinesh Nair: Yes, we're very focused on improving the efficiency and security of our building automation technologies."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Dinesh Nair said LiftTech Elevations is focused on improving the efficiency and security of their building automation technologies. The only difference is minor wording ('very focused' vs 'focused'), which does not change the substance. The reference also identifies the same two requested facts: efficiency and security of building automation technologies."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-a71408ce8351507b",
+      "question": "What did Carlos say about why AutoElite's extended warranty pricing is higher than some industry standards for Aiden Harris's SUV purchase?",
+      "gold_answer": "The warranties are more comprehensive, covering a wider range of issues, and are backed by factory-trained technicians.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SO9ZIAW",
+        "b2c:a05Ws000005SPLjIAO",
+        "b2c:a05Ws000005SQ0xIAG",
+        "b2c:a05Ws000005SQuXIAW",
+        "b2c:a05Ws000005SQxmIAG",
+        "b2c:a05Ws000005SRAcIAO",
+        "b2c:a05Ws000005SRAdIAO",
+        "b2c:a05Ws000005SRloIAG",
+        "b2c:a05Ws000005SS8JIAW",
+        "b2c:a05Ws000005SSBYIA4",
+        "b2c:a05Ws000005SSBZIA4",
+        "b2c:a05Ws000005STKUIA4",
+        "b2c:a05Ws000005STR7IAO",
+        "b2c:a05Ws000005SUhwIAG",
+        "b2c:a05Ws000005SVHXIA4",
+        "b2c:a05Ws000005SW5XIAW",
+        "b2c:a05Ws000005SYFGIA4",
+        "b2c:a05Ws000005SYQbIAO",
+        "b2c:a05Ws000005SYX2IAO",
+        "b2c:a05Ws000005SYfDIAW",
+        "b2c:a05Ws000005SYtfIAG",
+        "b2c:a05Ws000005SZ4yIAG",
+        "b2c:a05Ws000005SZrGIAW",
+        "b2c:a05Ws000005SaDtIAK",
+        "b2c:a05Ws000005SaDuIAK",
+        "b2c:a05Ws000005SaFUIA0",
+        "b2c:a05Ws000005SaP6IAK",
+        "b2c:a05Ws000005SaU3IAK",
+        "b2c:a05Ws000005Sc2hIAC",
+        "b2c:a05Ws000005ScXKIA0",
+        "b2c:a05Ws000005SclpIAC",
+        "b2c:a05Ws000005SclqIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Carlos Mendes discussing why AutoElite's extended warranty pricing is higher than some industry standards for Aiden Harris's SUV purchase (the 2021-11-30 call on 'Aiden Harris's Fall Luxury SUV Purchase'). Other Carlos calls cover different topics (maintenance plans, financing, volume discounts) and do not address this question.",
+        "answers": [
+          {
+            "answer": "Carlos Mendes explained that AutoElite Motors' extended warranties are more comprehensive than some industry standards: they cover a wider range of potential issues and are backed by AutoElite's network of factory-trained technicians, ensuring that if something happens, the vehicle will be in the best hands. He added that their technicians receive specialized training directly from manufacturers (unlike at other dealerships), are highly skilled at handling issues quickly and efficiently, and have access to proprietary tools and resources — part of why the pricing reflects the more robust coverage.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPLjIAO",
+                "line_start": 3,
+                "line_end": 6,
+                "quote": "[2021-11-30T13:01:55] Aiden Harris: Yes, I was reviewing the extended warranty options, and noticed they seem a bit pricier compared to some industry standards. Can you clarify why that might be?\n[2021-11-30T13:02:20] Carlos Mendes: Absolutely, Aiden. At AutoElite Motors, our extended warranties are indeed more comprehensive. They cover a wider range of potential issues, and they’re backed by our network of factory-trained technicians. This ensures that if something does happen, your vehicle will be in the best hands.\n[2021-11-30T13:02:45] Aiden Harris: I see. That makes sense. The factory-trained technicians part is definitely appealing. Just curious, how does their expertise compare to that of the competition?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifically asks what Carlos said about why AutoElite's extended warranty pricing is higher than some industry standards for Aiden Harris's SUV purchase. Only one call features Carlos Mendes directly addressing Aiden's question about extended warranty pricing being higher compared to industry standards: call b2c:a05Ws000005SPLjIAO (2021-11-30), opportunity 'Aiden Harris's Fall Luxury SUV Purchase'. In that call, Aiden explicitly asks why the extended warranty options seem pricier compared to some industry standards, and Carlos provides a direct explanation. While other calls discuss extended warranties (e.g., Anastasia Petrova in b2c:a05Ws000005STKUIA4, Sebastian Martinez in b2c:a05SaP6IAK), none involve Carlos addressing this specific pricing concern for Aiden's SUV purchase.",
+        "answers": [
+          {
+            "answer": "Carlos explained that AutoElite's extended warranties are more comprehensive than industry standards. They cover a wider range of potential issues and are backed by AutoElite's network of factory-trained technicians, ensuring that if something does happen to the vehicle, it will be in the best hands. This broader coverage and the quality of the technician network justify the higher pricing.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPLjIAO",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2021-11-30T13:01:55] Aiden Harris: Yes, I was reviewing the extended warranty options, and noticed they seem a bit pricier compared to some industry standards. Can you clarify why that might be?\n[2021-11-30T13:02:20] Carlos Mendes: Absolutely, Aiden. At AutoElite Motors, our extended warranties are indeed more comprehensive. They cover a wider range of potential issues, and they’re backed by our network of factory-trained technicians. This ensures that if something does happen, your vehicle will be in the best hands."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers agree on the core explanation: Carlos stated that AutoElite's extended warranties are more comprehensive than some industry standards, cover a wider range of potential issues, and are backed by a network of factory-trained technicians, which justifies the higher pricing. Answer A adds extra details about specialized manufacturer training, proprietary tools, and quick/efficient handling, but these are unrequested extras that do not contradict Answer B. The reference captures the two key requested facts (more comprehensive coverage of a wider range of issues and backing by factory-trained technicians), which are the substantive reasons given for the higher pricing."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

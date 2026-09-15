@@ -1,0 +1,368 @@
+[
+  {
+    "question_id": "b2b-single_call-d0ef67a50738feb2",
+    "question": "What did Oliveira Santos at Onyx Security Systems say about TechPulse's pricing compared to competitors, and what follow-up did Thato commit to?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Oliveira Santos at Onyx Security Systems said about TechPulse's pricing compared to competitors, and what follow-up Thato committed to",
+        "relationship": "single coherent issue: the customer's competitive pricing feedback and the salesperson's committed follow-up on that same concern",
+        "reason": "The pricing comparison and the follow-up commitment both address the same business issue (competitive pricing concern), making this one coherent request rather than independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two things from a single call: Oliveira Santos's pricing comparison and Thato's follow-up commitment. The dialogue confirms Oliveira said pricing is transparent and competitive in long-term cost of ownership but some competitors offer lower initial implementation costs, and Thato committed to arranging a demo and sending details. The gold answer matches precisely with no unasked extras. The question identifies the account (Onyx Security Systems), contact (Oliveira Santos), and vendor (TechPulse) naturally. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Oliveira Santos directly states: pricing is 'pretty transparent,' 'competitive especially in long-term cost of ownership,' and 'some competitors do offer lower initial implementation costs.' This fully supports the answer_claim about transparent pricing, competitive long-term cost of ownership, and lower initial implementation costs from competitors."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quoted passage only shows Oliveira Santos requesting a demo ('A demo would be helpful, yes. I'd like to see firsthand how these features work.'). This is a customer's request, not a commitment by Thato. The answer_claim states 'Thato will set up a demo and send details,' but the cited quote contains no statement from Thato committing to arrange a demo or send details. A customer's request for support does not prove the salesperson promised to fulfill it."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) pricing is transparent and competitive in long-term cost of ownership, though some competitors offer lower initial implementation costs \u2014 this is fully supported by evidence index 0. (2) Thato committed to arranging a demo and sending details \u2014 this is NOT supported by the supplied evidence. Index 1 only shows Oliveira Santos requesting a demo; there is no cited dialogue from Thato committing to set up a demo or send details. Since the second factual claim in the gold_answer lacks supporting evidence in the supplied citations, the combined answer is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-00f84402a1a0d49e",
+    "question": "What did Dinesh Nair say LiftTech Elevations is focused on improving in their building automation technologies?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Dinesh Nair said LiftTech Elevations is focused on improving in their building automation technologies",
+        "relationship": "single lookup",
+        "reason": "One coherent fact lookup about a stated focus area from a single call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Dinesh Nair said LiftTech Elevations is focused on improving. The dialogue at 10:31:00 has Dinesh stating they are 'very focused on improving the efficiency and security of our building automation technologies.' The gold answer matches this exactly. The question is naturally phrased, scoped to a named contact and account, and a rep would plausibly want to recall a customer's stated priorities. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes to Dinesh Nair the statement: 'we're very focused on improving the efficiency and security of our building automation technologies.' This matches the answer_claim that Dinesh says they are focused on improving efficiency and security of building automation technologies. Speaker attribution, the specific items (efficiency and security), and the domain (building automation technologies) are all explicitly present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Improving the efficiency and security of their building automation technologies.' The single cited evidence (index 0) contains Dinesh Nair's direct quote confirming exactly this: 'improving the efficiency and security of our building automation technologies.' The context metadata confirms the speaker is Dinesh Nair and the account is LiftTech Elevations. All factual elements of the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-8b0b336a1ddc5c9e",
+    "question": "Across the InspireTech Consulting discussions with Kwasi Mensah, what customization requirement did he raise for DesignWave Automation, and what flexibility concern did he raise about TechPulse versus competitors in the follow-up?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A customization requirement Kwasi raised for DesignWave Automation, plus a flexibility concern about TechPulse versus competitors in a follow-up call",
+        "relationship": "Two independent fact lookups joined only by the same customer/contact",
+        "reason": "The customization requirement for DesignWave and the competitive flexibility concern about TechPulse are separate business issues on different products; being about the same customer across calls does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "Call 1 (2024-02-21) contains Kwasi's DesignWave Automation customization requirement: integration with existing systems so changes can be made without extensive reconfiguration. Call 2 (2024-02-24) contains his flexibility concern: 'competitors offer more flexibility.' Each source contributes an exclusive requested fact. The question naturally identifies the account (InspireTech Consulting) and contact (Kwasi Mensah), which is realistic for a rep reviewing their pipeline. The gold answer states precisely the two requested facts with no unasked extras. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states Kwasi Mensah says 'We're looking for features that integrate well with our existing systems, specifically in DesignWave Automation. We need to ensure changes can be made without extensive reconfiguration.' This fully supports the answer_claim about integration with existing systems for DesignWave Automation and changes without extensive reconfiguration."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Kwasi Mensah stating 'we've also seen that competitors offer more flexibility.' This directly supports the answer_claim that Kwasi notes competitors offer more flexibility than TechPulse. The context of the follow-up call (2024-02-24) and the phrasing 'It does, but...' implies a comparison with TechPulse's offering, and the question 'How do you handle specific client needs?' reinforces the flexibility concern."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) DesignWave Automation must integrate with existing systems so changes can be made without extensive reconfiguration\u2014fully supported by evidence index 0; (2) in the follow-up, Kwasi said competitors offer more flexibility\u2014fully supported by evidence index 1. Both factual claims in the gold_answer are directly backed by the cited quotations with correct speaker attribution, product names, and context."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-4446b30693744ca6",
+    "question": "Across both discussions with Mikhail Volkov at Innovatech Group, what concern did he raise about competitors' setups, and how did Liam respond each time?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Mikhail Volkov raised about competitors' setups in each of two discussions, and Liam's response on each occasion",
+        "relationship": "Same business issue (competitor-related concern) tracked across two calls, with the response paired to each occurrence",
+        "reason": "This is a coherent multi-call question: both requested facts concern the same business issue\u2014Mikhail's competitor concern and Liam's handling of it\u2014not merely the same account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvhlIAC",
+                "fact": "Mikhail said competitors offer more flexibility/adaptable configurations during initial setup, and Liam responded that TechPulse offers customized solutions and smooth implementation with responsive support.",
+                "why_other_call_cannot_supply_it": "The first call contains the initial concern and Liam's first response, which is not present in the second call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4mVIAS",
+                "fact": "Mikhail repeated the concern about competitors' setups allowing more adaptable configurations for specialized applications, and Liam responded that CloudLink Designer allows customized integration for specialized workloads.",
+                "why_other_call_cannot_supply_it": "The second call contains the repeated concern and Liam's different response mentioning CloudLink Designer, which is not present in the first call."
+              }
+            ],
+            "reason": "The question asks for the concern raised in each conversation and how Liam responded each time. The two calls contain distinct responses: the first call's response focuses on customized solutions and smooth implementation, while the second call's response specifically mentions CloudLink Designer for specialized workloads. These are substantively different responses, and each call provides unique information required to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the concern raised about competitors' setups and Liam's response each time. Both calls contain the same concern (competitors offer more flexibility/adaptable configurations during initial setup) and Liam's responses are substantively similar (TechPulse offers customized solutions, smooth implementation, responsive support, and CloudLink Designer for specialized workloads). The second call's mention of CloudLink Designer is a specific product detail but not a distinct requested fact\u2014it's part of the same response to the same concern. There is no new outcome, numerical change, explicit resolution, or different commercial term that would require both calls. The information need is fully satisfied by either call alone, so both calls are not necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvhlIAC",
+                  "fact": "Mikhail said competitors offer more flexibility/adaptable configurations during initial setup, and Liam responded that TechPulse offers customized solutions and smooth implementation with responsive support.",
+                  "why_other_call_cannot_supply_it": "The first call contains the initial concern and Liam's first response, which is not present in the second call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4mVIAS",
+                  "fact": "Mikhail repeated the concern about competitors' setups allowing more adaptable configurations for specialized applications, and Liam responded that CloudLink Designer allows customized integration for specialized workloads.",
+                  "why_other_call_cannot_supply_it": "The second call contains the repeated concern and Liam's different response mentioning CloudLink Designer, which is not present in the first call."
+                }
+              ],
+              "reason": "The question asks for the concern raised in each conversation and how Liam responded each time. The two calls contain distinct responses: the first call's response focuses on customized solutions and smooth implementation, while the second call's response specifically mentions CloudLink Designer for specialized workloads. These are substantively different responses, and each call provides unique information required to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvhlIAC",
+                "fact": "Mikhail noted competitors offer more flexibility during initial setups; Liam responded that TechPulse strives to be flexible, offering customized solutions to meet specific client needs.",
+                "why_other_call_cannot_supply_it": "The March 5 call's concern and Liam's specific response appear only in this call; the November call contains a different response mentioning CloudLink Designer."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4mVIAS",
+                "fact": "Mikhail said competitors' setups allow more adaptable configurations for specialized applications; Liam responded that implementation is smooth with responsive support and CloudLink Designer allows customized integration for specialized workloads.",
+                "why_other_call_cannot_supply_it": "This November response (CloudLink Designer, smooth implementation/responsive support) appears only in this call; the March call's response does not mention it."
+              }
+            ],
+            "reason": "The question explicitly asks how Liam responded each time across both discussions. Each call contains the competitor-flexibility concern plus a distinct Liam response (customized solutions vs. CloudLink Designer/specialized workloads), so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvhlIAC",
+                  "fact": "Mikhail noted competitors offer more flexibility during initial setups; Liam responded that TechPulse strives to be flexible, offering customized solutions to meet specific client needs.",
+                  "why_other_call_cannot_supply_it": "The March 5 call's concern and Liam's specific response appear only in this call; the November call contains a different response mentioning CloudLink Designer."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4mVIAS",
+                  "fact": "Mikhail said competitors' setups allow more adaptable configurations for specialized applications; Liam responded that implementation is smooth with responsive support and CloudLink Designer allows customized integration for specialized workloads.",
+                  "why_other_call_cannot_supply_it": "This November response (CloudLink Designer, smooth implementation/responsive support) appears only in this call; the March call's response does not mention it."
+                }
+              ],
+              "reason": "The question explicitly asks how Liam responded each time across both discussions. Each call contains the competitor-flexibility concern plus a distinct Liam response (customized solutions vs. CloudLink Designer/specialized workloads), so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Call 1: Mikhail says 'We have noticed more flexibility with competitors during initial setups' and Liam replies 'We strive to be flexible, offering customized solutions to meet specific client needs.' Call 2: Mikhail says 'we heard their setups allow more adaptable configurations, which help in our specialized applications' and Liam responds about smooth implementation, responsive support, and CloudLink Designer allowing customized integration for specialized workloads. The gold answer accurately captures both concerns (flexibility/adaptable configurations) and both responses (customized solutions; CloudLink Designer for specialized workloads). Each call contributes an exclusive response detail, satisfying the multi-call requirement. The question naturally identifies the account and contact without artificial locator preambles, and a rep would plausibly want to track how a competitive objection was handled across calls."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Mikhail Volkov stating 'We have noticed more flexibility with competitors during initial setups' and Liam O'Sullivan responding 'We strive to be flexible, offering customized solutions to meet specific client needs.' This supports the answer_claim about Mikhail's concern regarding competitor flexibility and Liam's response about customized solutions."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote only contains Mikhail Volkov's statement about competitors' setups allowing 'more adaptable configurations.' The cited passage (lines 9-10) does not include any response from Liam. The answer_claim attributes to Liam a response about 'smooth implementation, responsive support, and CloudLink Designer allows customized integration for specialized workloads,' but none of this appears in the quoted text. The evidence is truncated before Liam's reply, so the claim about his response is unsupported by this citation."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer requires evidence from both calls showing (1) Mikhail's concern about competitor flexibility/adaptable configurations and (2) Liam's responses in each call. Evidence index 0 supports both Mikhail's concern and Liam's first response. However, evidence index 1 only captures Mikhail's concern in the second call; Liam's response about smooth implementation, responsive support, and CloudLink Designer customized integration is not present in the cited quote. Since the gold_answer asserts specific content of Liam's second response that is not substantiated by any supplied citation, the combined evidence does not fully support the answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-a71408ce8351507b",
+    "question": "What did Carlos say about why AutoElite's extended warranty pricing is higher than some industry standards for Aiden Harris's SUV purchase?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Carlos's explanation for why AutoElite's extended warranty pricing is higher than some industry standards for Aiden Harris's SUV purchase",
+        "relationship": "single coherent request: objection/pricing justification and its response",
+        "reason": "One lookup about a pricing objection and the seller's stated rationale, concerning the same warranty pricing issue on the same deal."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks why Carlos explained AutoElite's extended warranty pricing is higher. The dialogue at 13:02:20 shows Carlos stating the warranties are more comprehensive, cover a wider range of issues, and are backed by factory-trained technicians. The gold answer captures all three points precisely with no unasked extras. The question naturally references the rep (Carlos), the dealership (AutoElite), the customer (Aiden Harris), and the purchase context (SUV), which is realistic for an account manager reviewing a pricing objection. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Carlos Mendes explicitly states that AutoElite's extended warranties are 'more comprehensive,' 'cover a wider range of potential issues,' and are 'backed by our network of factory-trained technicians.' This directly supports the answer_claim about why the pricing is higher."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states that warranties are more comprehensive, cover a wider range of issues, and are backed by factory-trained technicians. The single cited evidence item (index 0) contains Carlos's exact dialogue confirming all three points: 'more comprehensive,' 'cover a wider range of potential issues,' and 'backed by our network of factory-trained technicians.' The context metadata confirms this is the correct call for Aiden Harris's SUV purchase. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2ddc35d6a41b4574",
+    "question": "What did Grace Turner say about AutoElite's warranties and maintenance plans, and what did Liam commit to as a follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Grace Turner said about AutoElite's warranties and maintenance plans, and what follow-up Liam committed to",
+        "relationship": "single coherent issue: customer's concerns about warranties/maintenance and the salesperson's follow-up commitment addressing them",
+        "reason": "The follow-up commitment naturally relates to the same warranty/maintenance discussion, forming one objection-and-response with next steps."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "Grace Turner's statement that warranties meet industry standards but she wants more personalized options is directly supported (14:02:23). Liam's commitment to discuss personalized options with his team and follow up with details is supported by his remarks at 14:02:40 and 14:04:45. The question naturally targets a rep's need to recall customer requirements and agreed next steps. Wording is natural, scope is clear (named customer, named topic), and the answer states exactly the two requested facts without extras. Single-call set, so both_sources_required is true by rule."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Grace Turner stating 'your warranties meet the industry standards' and 'I'm exploring more personalized options,' which matches the answer_claim that warranties meet industry standards but she wants more personalized options."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "Liam's quoted dialogue shows him saying 'Let me make a note of that, and I'll discuss it further with our team.' This supports noting it and discussing with the team. However, the answer_claim also states he committed to 'following up with details on personalized options.' No passage in the cited quote contains Liam explicitly promising to follow up with details. The remainder of the cited lines covers concierge service, customer feedback, and closing remarks\u2014none of which include a follow-up commitment. The claim of 'following up with details' is not supported by the supplied evidence."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer states Liam 'agreed to discuss personalized options with his team and follow up with details.' While the evidence supports the discussion-with-team commitment (index 1), no cited passage contains Liam explicitly committing to 'follow up with details.' The follow-up-with-details portion of the gold_answer is not substantiated by any supplied citation, so the combined evidence does not fully support every factual claim in the gold_answer."
+      }
+    }
+  }
+]
