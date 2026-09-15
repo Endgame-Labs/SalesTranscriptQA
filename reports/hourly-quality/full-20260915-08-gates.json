@@ -1,0 +1,411 @@
+[
+  {
+    "question_id": "b2b-single_call-f347ca707bf16ee2",
+    "question": "What is Eva Jansson's budget for the Nordic HealthTech order, and what installation timeline did she request?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Eva Jansson's budget for the Nordic HealthTech order and the installation timeline she requested",
+        "relationship": "single coherent request about one order's commercial and logistical requirements",
+        "reason": "Both facts concern the same order and form a natural set of requirements (budget plus requested installation timeline) for one sales opportunity; no unrelated lookups are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about budget and installation timeline for a named lead and company, which a rep would plausibly need. The dialogue confirms Eva Jansson states a budget of 'around 3043' and confirms installation 'within three days' to minimize downtime. The gold answer matches both facts precisely with no extra unasked information. Wording is natural, scope is adequate (identifies person, company, and order context), and no locator preamble or artificial framing is present. Since question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Eva Jansson stating 'Our budget is around 3043,' which matches the answer_claim that her budget is around 3043."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Yasmin Farouk asking Eva to confirm 'a quick installation, within three days,' and Eva responding 'Yes, if possible. It's important we have minimal downtime.' This supports the claim that Eva confirms aiming for installation within three days and wanting minimal downtime."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer: index 0 establishes the budget of around 3043, and index 1 establishes the three-day installation timeline with the goal of minimizing downtime. The gold_answer's phrasing 'Budget around 3043; installation within three days to minimize downtime' is a faithful summary of the two quotes."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-1c1257fb1dd7d77e",
+    "question": "What is Innovate Sphere's budget for the SecuManage Pro units, and what installation timeline did they request?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Innovate Sphere's budget for SecuManage Pro units and the requested installation timeline",
+        "relationship": "single coherent deal inquiry: commercial budget and implementation timeline for the same product purchase",
+        "reason": "Both facts concern the same procurement (SecuManage Pro units) and naturally belong to one sales opportunity; installation is valid for software."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two specific commercial details (budget and installation timeline) about Innovate Sphere's SecuManage Pro purchase. The dialogue confirms the budget is $1886 (rep confirms, customer agrees) and the customer requests installation by next Friday. The answer states exactly those two facts with no extras. The question is naturally scoped by company and product. Single-call set, so both_sources_required is true. No locator preamble, no answer leakage, no unsupported claims."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Yuki Kato confirming the budget as $1886 and Yuki Nakamura (the Innovate Sphere contact per metadata) affirming 'Yes, that's right.' This directly supports the claim that the budget is confirmed as $1886."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Yuki Nakamura stating 'we'd aim to have everything set up by next Friday.' This supports the claim that the installation/setup timeline requested is next Friday. The phrasing 'If possible, we'd aim to' is a request/aim, which aligns with the answer's characterization of what they 'want' or 'requested.'"
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are supported by the cited evidence: (1) the $1886 budget is confirmed in evidence index 0, and (2) the 'next Friday' installation timeline is stated in evidence index 1. The answer faithfully summarizes these two points without adding unsupported information."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-263d764d90f5330c",
+    "question": "Across the two discussions with Mariko Watanabe at TrueNorth Technologies, what key requirement did she emphasize in the initial call about deployment, and what did she call mandatory in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The key deployment requirement Mariko Watanabe emphasized in the initial call and what she called mandatory in the follow-up call",
+        "relationship": "same business issue (her stated requirements) tracked across two calls",
+        "reason": "Both lookups concern the same issue\u2014Mariko's requirements\u2014with the follow-up naturally building on the initial call, not two unrelated facts joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for a key requirement from the initial call and a mandatory item from the follow-up call. However, the initial call (2022-06-01) emphasizes rapid implementation speed, while the follow-up call (2022-07-09) explicitly states 'security is absolutely mandatory.' These are distinct facts, but the question's phrasing 'Across the two discussions' and 'in the initial call' vs 'in the follow-up call' does not require both calls to answer the actual information need. The answer can be derived from each call independently: the initial call provides the speed emphasis, and the follow-up provides the security mandate. There is no need to cross-reference or combine information from both calls to answer the question. Thus, both calls are not necessary; one could answer each part separately, but the question as a whole does not require both calls to be used together. Therefore, necessary=false."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for a key requirement from the initial call and a mandatory item from the follow-up call. However, the initial call (2022-06-01) emphasizes rapid implementation speed, while the follow-up call (2022-07-09) explicitly states 'security is absolutely mandatory.' These are distinct facts, but the question's phrasing 'Across the two discussions' and 'in the initial call' vs 'in the follow-up call' does not require both calls to answer the actual information need. The answer can be derived from each call independently: the initial call provides the speed emphasis, and the follow-up provides the security mandate. There is no need to cross-reference or combine information from both calls to answer the question. Thus, both calls are not necessary; one could answer each part separately, but the question as a whole does not require both calls to be used together. Therefore, necessary=false."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyM8IAK",
+                "fact": "In the initial call (2022-06-01), Mariko emphasized rapid implementation/deployment speed, noting past solutions took longer than expected.",
+                "why_other_call_cannot_supply_it": "The July 9 call only references deployment support experiences vaguely and does not state her initial emphasis on implementation speed."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su44IAC",
+                "fact": "In the follow-up call (2022-07-09), Mariko called security 'absolutely mandatory'.",
+                "why_other_call_cannot_supply_it": "The June 1 call contains no mention of security as a requirement; it focuses on automation, speed, and strategic alignment."
+              }
+            ],
+            "reason": "The question asks for two distinct requirements from two different calls: implementation speed from the first call and security as mandatory from the follow-up. Each fact appears only in one call, so both sources are needed."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyM8IAK",
+                  "fact": "In the initial call (2022-06-01), Mariko emphasized rapid implementation/deployment speed, noting past solutions took longer than expected.",
+                  "why_other_call_cannot_supply_it": "The July 9 call only references deployment support experiences vaguely and does not state her initial emphasis on implementation speed."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Su44IAC",
+                  "fact": "In the follow-up call (2022-07-09), Mariko called security 'absolutely mandatory'.",
+                  "why_other_call_cannot_supply_it": "The June 1 call contains no mention of security as a requirement; it focuses on automation, speed, and strategic alignment."
+                }
+              ],
+              "reason": "The question asks for two distinct requirements from two different calls: implementation speed from the first call and security as mandatory from the follow-up. Each fact appears only in one call, so both sources are needed."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks a rep to recall two key customer requirements across two calls with the same contact. The initial call (2022-06-01) shows Mariko emphasizing rapid implementation speed because past solutions were slow ('Speed has often been a bottleneck for us'). The follow-up call (2022-07-09) shows her stating 'security is absolutely mandatory for us.' Each source contributes an exclusive requested fact: the first provides the deployment-speed requirement, the second provides the security-mandatory statement. The gold answer matches both transcripts precisely with no unasked extras. The question identifies the customer (Mariko Watanabe, TrueNorth Technologies) and the business context (deployment/security requirements) sufficiently. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2022-06-01 call shows Mariko Watanabe stating 'Our past experiences with other solutions took much longer than expected' and 'Speed has often been a bottleneck for us.' This directly supports the claim that she noted past implementations took much longer than expected and speed has been a bottleneck, emphasizing rapid implementation speed as a key requirement."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2022-07-09 call shows Mariko Watanabe explicitly stating 'security is absolutely mandatory for us.' This directly supports the claim that she said security is absolutely mandatory for TrueNorth."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) In the initial call she emphasized rapid implementation speed (past solutions were slow) \u2014 supported by evidence index 0 where Mariko says past solutions took much longer than expected and speed has been a bottleneck; (2) In the follow-up she said security is absolutely mandatory \u2014 supported by evidence index 1 where Mariko says 'security is absolutely mandatory for us.' The metadata confirms the 2022-06-01 call is the initial call and the 2022-07-09 call is the follow-up, both with Mariko Watanabe at TrueNorth Technologies. All factual claims in the gold answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9ebaa92f47a20dbe",
+    "question": "Across the TechWave Innovations discussions, what differentiation did Dariusz cite against Quantum Circuits Inc regarding PulseSim Pro, and what limitation did he attribute to Quantum on tech trends?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Dariusz's differentiation of PulseSim Pro against Quantum Circuits Inc and the limitation he attributed to Quantum regarding tech trends",
+        "relationship": "competitive comparison \u2014 both parts concern the same competitor (Quantum Circuits Inc) and the same product positioning issue",
+        "reason": "A coherent competitive comparison: differentiation claims and a competitor limitation both address the same business issue (positioning PulseSim Pro against Quantum), even across calls."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: (1) the differentiation Dariusz cited against Quantum Circuits Inc regarding PulseSim Pro, and (2) the limitation he attributed to Quantum on tech trends. Both facts appear in the first call (b2b:a05Wt000003SwM3IAK) in the same dialogue: Dariusz states 'PulseSim Pro's seamless integration capabilities set it apart from Quantum Circuits Inc' and 'Quantum Circuits Inc hasn't forecasted tech trends in the same way, which could be a limitation for future adaptability.' The second call (b2b:a05Wt000003T4PtIAK) only mentions the seamless integration differentiation but does not mention the tech trends limitation. Since the first call alone supplies both requested facts, the second call is not necessary for the actual information need. The two facts are not exclusive to separate calls; they are both present in one call, so no exclusive facts are required."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "Both requested facts (PulseSim Pro's seamless integration differentiation and Quantum's lack of tech trend forecasting) appear in the single call b2b:a05Wt000003SwM3IAK. The other call only mentions seamless integration as a differentiator but does not mention the tech trend limitation. Since one call supplies both facts, the question does not require both calls."
+            },
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: (1) the differentiation Dariusz cited against Quantum Circuits Inc regarding PulseSim Pro, and (2) the limitation he attributed to Quantum on tech trends. Both facts appear in the first call (b2b:a05Wt000003SwM3IAK) in the same dialogue: Dariusz states 'PulseSim Pro's seamless integration capabilities set it apart from Quantum Circuits Inc' and 'Quantum Circuits Inc hasn't forecasted tech trends in the same way, which could be a limitation for future adaptability.' The second call (b2b:a05Wt000003T4PtIAK) only mentions the seamless integration differentiation but does not mention the tech trends limitation. Since the first call alone supplies both requested facts, the second call is not necessary for the actual information need. The two facts are not exclusive to separate calls; they are both present in one call, so no exclusive facts are required."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T4PtIAK",
+                "fact": "Dariusz cited PulseSim Pro's seamless integration capabilities as setting it apart from Quantum Circuits Inc.",
+                "why_other_call_cannot_supply_it": "The Sept 26 call discusses EcoPCB Creator and general innovation vs Quantum, but never mentions PulseSim Pro or its integration differentiation."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwM3IAK",
+                "fact": "Dariusz stated Quantum Circuits Inc hasn't forecasted tech trends in the same way, which could limit future adaptability.",
+                "why_other_call_cannot_supply_it": "The Sept 19 call only claims PulseSim Pro's integration edge over Quantum; it contains no mention of Quantum's tech-trend forecasting limitation."
+              }
+            ],
+            "reason": "The question asks for two distinct claims: the PulseSim Pro differentiation vs Quantum (stated only in the Sept 19 call) and Quantum's tech-trend forecasting limitation (stated only in the Sept 26 call). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T4PtIAK",
+                  "fact": "Dariusz cited PulseSim Pro's seamless integration capabilities as setting it apart from Quantum Circuits Inc.",
+                  "why_other_call_cannot_supply_it": "The Sept 26 call discusses EcoPCB Creator and general innovation vs Quantum, but never mentions PulseSim Pro or its integration differentiation."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwM3IAK",
+                  "fact": "Dariusz stated Quantum Circuits Inc hasn't forecasted tech trends in the same way, which could limit future adaptability.",
+                  "why_other_call_cannot_supply_it": "The Sept 19 call only claims PulseSim Pro's integration edge over Quantum; it contains no mention of Quantum's tech-trend forecasting limitation."
+                }
+              ],
+              "reason": "The question asks for two distinct claims: the PulseSim Pro differentiation vs Quantum (stated only in the Sept 19 call) and Quantum's tech-trend forecasting limitation (stated only in the Sept 26 call). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct competitive-positioning facts Dariusz raised across two TechWave calls. Call 2 (Sep 19) supplies the PulseSim Pro differentiation: 'seamless integration capabilities, which sets it apart from\u2026Quantum Circuits Inc.' Call 1 (Sep 26) supplies the tech-trend limitation: 'Quantum Circuits Inc hasn't forecasted tech trends in the same way, which could be a limitation for future adaptability.' Each source contributes an exclusive requested fact; the gold answer faithfully restates both without adding unasked extras. The question is naturally phrased, scoped to a named account and rep, and a sales rep would plausibly want to recall competitive positioning across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states Dariusz Wisniewski said PulseSim Pro 'is known for its seamless integration capabilities, which sets it apart from some of our competitors like Quantum Circuits Inc.' This fully supports the claim that seamless integration differentiates PulseSim Pro from Quantum Circuits Inc."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly states Dariusz Wisniewski said 'It seems Quantum Circuits Inc hasn't forecasted tech trends in the same way, which could be a limitation for future adaptability.' This supports the claim about Quantum's limitation regarding tech trends and future adaptability. The slight hedging ('It seems,' 'could be') is preserved in the gold answer's phrasing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer. Index 0 establishes the differentiation (seamless integration capabilities of PulseSim Pro vs. Quantum Circuits Inc), and Index 1 establishes the limitation attributed to Quantum (hasn't forecasted tech trends the same way, limiting future adaptability). The speaker is Dariusz in both cases, the account is TechWave Innovations, and all factual claims in the gold answer are directly backed by the quoted dialogue."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d4f13bbf66847353",
+    "question": "What is Ethan Martinez looking for in a pre-owned vehicle, and what did Abigail say about how AutoElite's service plans compare to High-End Autos Co.?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Ethan Martinez's pre-owned vehicle preferences AND Abigail's comparison of AutoElite's service plans to High-End Autos Co.",
+        "relationship": "two independent lookups joined only by the same customer/conversation",
+        "reason": "The customer's vehicle preferences and a competitive service-plan comparison are unrelated information needs; sharing the same call/account does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two things from the same call: Ethan's vehicle preferences and Abigail's competitive comparison of AutoElite vs. High-End Autos Co. Both are clearly present in the single transcript. Ethan states he wants a smooth-driving, low-maintenance car with reliable service (14:00:55). Abigail's comparison at 14:02:20 matches the gold answer: High-End Autos Co. may have appealing pricing but less comprehensive service coverage, while AutoElite covers a wide range of needs with factory-trained technicians. The answer includes no unasked extras and omits nothing requested. A rep/account manager would plausibly want to know a customer's vehicle criteria and how the competitor was positioned. Since question_class is single_call with one call, both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states Ethan Martinez says: 'I'm looking for a car that not only drives smoothly but is also low-maintenance. Reliable service is key for me.' This fully supports the claim that Ethan wants a smooth-driving, low-maintenance car with reliable service."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Abigail Johnson states: 'While some other companies, like High-End Autos Co., might offer appealing pricing strategies, they often come with less comprehensive service coverage. Our service plans are designed to cover a wide range of needs. Plus, our technicians' specialized knowledge guarantees a smoother service experience...' This supports the claim about High-End Autos Co. having appealing pricing but less comprehensive coverage, and AutoElite covering a wide range of needs with specialized technicians. The gold_answer uses 'factory-trained technicians' while the quote says 'specialized knowledge'\u2014this is a minor paraphrase difference but the core meaning (specialized/expert technicians) is preserved."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both evidence items support the gold_answer. Index 0 confirms Ethan's desire for a smooth-driving, low-maintenance car with reliable service. Index 1 confirms Abigail's comparison: High-End Autos Co. has appealing pricing but less comprehensive service coverage, while AutoElite's plans cover a wide range of needs with specialized technicians. The gold_answer's use of 'factory-trained technicians' is a slight embellishment over the quote's 'specialized knowledge,' but the substantive meaning is faithfully conveyed. All factual claims in the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-59dadfdffad4597b",
+    "question": "What did Samuel say about how AutoElite's post-purchase support compares to competitors for John Doe's Lexus RX 350 proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Samuel's comparison of AutoElite's post-purchase support versus competitors in John Doe's Lexus RX 350 proposal",
+        "relationship": "single competitive-comparison lookup within one proposal",
+        "reason": "One coherent competitive comparison addressing the same proposal; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning remark Samuel made during the Lexus RX 350 proposal walkthrough for John Doe. The gold answer ('Some competitors have faster response times, but AutoElite offers flexibility with warranty extensions that clients find valuable.') matches Samuel's statement at 13:32:30 almost verbatim. The question is naturally phrased, scoped to a named account/proposal, and a rep or account manager would plausibly want to know how post-purchase support stacks up against competitors. No locator preamble, no answer leakage, no unsupported causality. Single-call set, so both_sources_required is true by rule.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage is spoken by Samuel Smith and directly states: 'While some clients do note that competitors may have faster response times, our flexibility with warranty extensions is something that clients find valuable.' This matches the answer_claim that competitors may have faster response times but AutoElite's flexibility with warranty extensions is valuable. The speaker is Samuel, the context is the AutoElite Premium Vehicle Proposal for John Doe (per metadata), and the statement concerns post-purchase support. The claim is faithfully supported by the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'Some competitors have faster response times, but AutoElite offers flexibility with warranty extensions that clients find valuable.' The single cited evidence (index 0) contains Samuel Smith's exact words acknowledging that 'some clients do note that competitors may have faster response times' and that 'our flexibility with warranty extensions is something that clients find valuable.' This fully supports both factual components of the gold_answer. The context metadata confirms this is the AutoElite Premium Vehicle Proposal for John Doe, and the speaker is Samuel. All elements of the answer are covered by the supplied evidence."
+      }
+    }
+  }
+]

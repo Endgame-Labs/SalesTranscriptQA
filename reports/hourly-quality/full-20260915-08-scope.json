@@ -1,0 +1,235 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "585429e74b24261172e0d6c6648721dfb79750ad668d863e5d6a1fded2cb962e",
+  "questions": 3,
+  "counts": {
+    "pass": 3
+  },
+  "estimated_usd": 0.16233429,
+  "results": [
+    {
+      "question_id": "b2b-single_call-f347ca707bf16ee2",
+      "question": "What is Eva Jansson's budget for the Nordic HealthTech order, and what installation timeline did she request?",
+      "gold_answer": "Budget around 3043; installation within three days to minimize downtime.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SsNHIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 17,
+            "normalized_end": 18
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Single call with Eva Jansson; both budget and installation timeline are stated there.",
+        "answers": [
+          {
+            "answer": "Eva Jansson's budget for the Nordic HealthTech order is around 3043, and she requested installation within three days (to minimize downtime).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsNHIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-10-10T15:01:48] Yasmin Farouk: Great. Just to touch on logistics, you’re aiming for a quick installation, within three days, correct?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SsNHIA0",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2023-10-10T15:02:08] Eva Jansson: That's what I needed to hear. What about pricing? Our budget is around 3043."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is exactly one call in the supplied history involving Eva Jansson at Nordic HealthTech. In that call she states her budget is around 3043 and confirms an installation timeline of within three days. Both facts are clearly stated in a single document, making the answer determinate.",
+        "answers": [
+          {
+            "answer": "Eva Jansson's budget for the Nordic HealthTech order is around 3043, and she requested an installation timeline of within three days (to minimize downtime).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsNHIA0",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2023-10-10T15:01:48] Yasmin Farouk: Great. Just to touch on logistics, you’re aiming for a quick installation, within three days, correct?\n[2023-10-10T15:01:53] Eva Jansson: Yes, if possible. It's important we have minimal downtime."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SsNHIA0",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2023-10-10T15:02:08] Eva Jansson: That's what I needed to hear. What about pricing? Our budget is around 3043."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same budget (around 3043) and the same installation timeline (within three days to minimize downtime). The reference also covers both requested facts: the budget of around 3043 and the three-day installation timeline to minimize downtime. All requested facts are present and consistent across all three sources."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-1c1257fb1dd7d77e",
+      "question": "What is Innovate Sphere's budget for the SecuManage Pro units, and what installation timeline did they request?",
+      "gold_answer": "Budget is $1886, and they want installation completed by next Friday.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StG9IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Single call contains both facts: budget of $1886 and installation requested by next Friday (within one day).",
+        "answers": [
+          {
+            "answer": "Innovate Sphere's budget for the SecuManage Pro units is $1886, and they requested installation completed within one day, specifically set up by next Friday.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StG9IAK",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-10-15T10:01:05] Yuki Kato: I’m glad to hear that. Just to confirm, the budget you’ve allocated for this is $1886, correct?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003StG9IAK",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2023-10-15T10:01:15] Yuki Kato: Excellent. With your budget, we can comfortably provide the three units of SecuManage Pro and also ensure a seamless installation. Speaking of which, you mentioned you’d like the installation completed within one day. Is there a specific timeline you're targeting?\n[2023-10-15T10:01:20] Yuki Nakamura: If possible, we'd aim to have everything set up by next Friday. Can that be accommodated?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is a single call for Innovate Sphere (contact Yuki Nakamura) discussing SecuManage Pro. The budget of $1886 is confirmed on lines 10-11, and the installation timeline request (completed within one day, targeting next Friday) is stated on lines 12-13. No other calls exist for this customer/product, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Innovate Sphere's budget for the three SecuManage Pro units is $1,886. They requested that installation be completed within one day, specifically targeting everything to be set up by the following Friday.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StG9IAK",
+                "line_start": 10,
+                "line_end": 12,
+                "quote": "[2023-10-15T10:01:05] Yuki Kato: I’m glad to hear that. Just to confirm, the budget you’ve allocated for this is $1886, correct?\n[2023-10-15T10:01:08] Yuki Nakamura: Yes, that's right."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StG9IAK",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2023-10-15T10:01:15] Yuki Kato: Excellent. With your budget, we can comfortably provide the three units of SecuManage Pro and also ensure a seamless installation. Speaking of which, you mentioned you’d like the installation completed within one day. Is there a specific timeline you're targeting?\n[2023-10-15T10:01:20] Yuki Nakamura: If possible, we'd aim to have everything set up by next Friday. Can that be accommodated?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the budget as $1,886 and the installation timeline as within one day, specifically by next Friday. They agree on all requested facts. The reference also covers both requested facts: the $1886 budget and installation completed by next Friday. Minor wording differences (e.g., 'three units,' 'following Friday' vs 'next Friday') do not affect factual agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-59dadfdffad4597b",
+      "question": "What did Samuel say about how AutoElite's post-purchase support compares to competitors for John Doe's Lexus RX 350 proposal?",
+      "gold_answer": "Some competitors have faster response times, but AutoElite offers flexibility with warranty extensions that clients find valuable.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SPVGIA4",
+        "b2c:a05Ws000005SPdKIAW",
+        "b2c:a05Ws000005SQ37IAG",
+        "b2c:a05Ws000005SQ4jIAG",
+        "b2c:a05Ws000005SQ6LIAW",
+        "b2c:a05Ws000005SQ7xIAG",
+        "b2c:a05Ws000005SQ9ZIAW",
+        "b2c:a05Ws000005SQBBIA4",
+        "b2c:a05Ws000005SQBCIA4",
+        "b2c:a05Ws000005SQCnIAO",
+        "b2c:a05Ws000005SQEPIA4",
+        "b2c:a05Ws000005SQG1IAO",
+        "b2c:a05Ws000005SQHdIAO",
+        "b2c:a05Ws000005SQJFIA4",
+        "b2c:a05Ws000005SQKrIAO",
+        "b2c:a05Ws000005SQMTIA4",
+        "b2c:a05Ws000005SQMUIA4",
+        "b2c:a05Ws000005SQO5IAO",
+        "b2c:a05Ws000005SQPhIAO",
+        "b2c:a05Ws000005SQRJIA4",
+        "b2c:a05Ws000005SQSvIAO",
+        "b2c:a05Ws000005SQUXIA4",
+        "b2c:a05Ws000005SQW9IAO",
+        "b2c:a05Ws000005SQXlIAO",
+        "b2c:a05Ws000005SQZNIA4",
+        "b2c:a05Ws000005SQazIAG",
+        "b2c:a05Ws000005SQcbIAG",
+        "b2c:a05Ws000005SQeDIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one Samuel Smith call discusses the Lexus RX 350 proposal and directly addresses post-purchase support versus competitors (2023-08-15 call, lines 11-12). Other Samuel calls either don't mention post-purchase support comparison or concern different topics (technicians, service centers, tech features).",
+        "answers": [
+          {
+            "answer": "Samuel acknowledged that some clients note competitors may have faster response times, but said AutoElite prides itself on its customer service and post-purchase support, and that its flexibility with warranty extensions is something clients find valuable.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQEPIA4",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-08-15T13:32:15] John Doe: I’ve heard that some competitors offer really streamlined post-purchase support. How does AutoElite compare?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically what Samuel said about post-purchase support compared to competitors for John Doe's Lexus RX 350 proposal. Samuel Smith is the salesperson on opportunity 'AutoElite Premium Vehicle Proposal for John Doe' (006Ws00000ALl9SIAT), which centers on the 2020 Lexus RX 350. In the proposal walkthrough call (b2c:a05Ws000005SQEPIA4, 2023-08-15), John explicitly asks how AutoElite's post-purchase support compares to competitors, and Samuel responds directly. This is the only call where Samuel discusses post-purchase support in the context of the Lexus RX 350 proposal.",
+        "answers": [
+          {
+            "answer": "Samuel said that AutoElite prides itself on customer service and post-purchase support. He acknowledged that some clients note competitors may have faster response times, but emphasized that AutoElite's flexibility with warranty extensions is something clients find valuable.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQEPIA4",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-08-15T13:32:15] John Doe: I’ve heard that some competitors offer really streamlined post-purchase support. How does AutoElite compare?\n[2023-08-15T13:32:30] Samuel Smith: We pride ourselves on our customer service and post-purchase support. While some clients do note that competitors may have faster response times, our flexibility with warranty extensions is something that clients find valuable."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same three points: (1) Samuel acknowledged some clients note competitors may have faster response times, (2) AutoElite prides itself on customer service and post-purchase support, and (3) AutoElite's flexibility with warranty extensions is valued by clients. The reference captures the competitor response-time comparison and the warranty-extension flexibility, which are the core comparative facts requested. The additional mention of AutoElite priding itself on customer service in the answers is a framing detail consistent with the reference's overall comparison and does not constitute a missing requested fact."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

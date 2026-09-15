@@ -1111,6 +1111,24 @@
       "question_text": "What technology features did Aleksey say the BMW X5 M includes for Lucas Turner, and which competitor's lower initial prices did Lucas raise as an objection?",
       "reason": "Coherence gate rejects vehicle technology features plus separate competitor-price objection. Full source/citations support both facts; preserve ID-only exclusion.",
       "review_report": "reports/hourly-quality/full-20260915-07-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-263d764d90f5330c",
+      "question_text": "Across the two discussions with Mariko Watanabe at TrueNorth Technologies, what key requirement did she emphasize in the initial call about deployment, and what did she call mandatory in the follow-up call?",
+      "reason": "Fail-closed necessity disagreement: DeepSeek acknowledges distinct per-call facts but wrongly concludes separately answerable parts mean both sources are unnecessary. GLM correctly identifies separate requirements. Reviewer-error/conservative exclusion, not factual defect.",
+      "review_report": "reports/hourly-quality/full-20260915-08-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-9ebaa92f47a20dbe",
+      "question_text": "Across the TechWave Innovations discussions, what differentiation did Dariusz cite against Quantum Circuits Inc regarding PulseSim Pro, and what limitation did he attribute to Quantum on tech trends?",
+      "reason": "Fail-closed necessity disagreement: DeepSeek incorrectly attributes PulseSim Pro differentiation to September 26 call. It is only in September 19; September 26 supplies tech-trend limitation. Source-confirmed reviewer error, not QA factual defect.",
+      "review_report": "reports/hourly-quality/full-20260915-08-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-d4f13bbf66847353",
+      "question_text": "What is Ethan Martinez looking for in a pre-owned vehicle, and what did Abigail say about how AutoElite's service plans compare to High-End Autos Co.?",
+      "reason": "Coherence rejection plus manual citation gap: factory-trained technicians appears at uncited lines 6/12, whereas evidence line 10 only establishes specialized knowledge. Full-source answer supported.",
+      "review_report": "reports/hourly-quality/full-20260915-08-review.md"
     }
   ],
   "retained_difficult_questions": [
