@@ -1,0 +1,406 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "68420fadffcf6f0badd27287796b46ef451a6d4a14b034e272f38ec847c88c3b",
+  "questions": 4,
+  "counts": {
+    "pass": 4
+  },
+  "estimated_usd": 0.49415986,
+  "results": [
+    {
+      "question_id": "b2b-single_call-7c7dc2b49e45b605",
+      "question": "What pricing did Dariusz offer SecureWise for PulseSim Pro and the secure integration?",
+      "gold_answer": "PulseSim Pro units with a 10% discount, and secure integration at a total of $4499.91.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgPIAS",
+        "b2b:a05Wt000003SrNBIA0",
+        "b2b:a05Wt000003SrcWIAS",
+        "b2b:a05Wt000003SsLeIAK",
+        "b2b:a05Wt000003SsLfIAK",
+        "b2b:a05Wt000003SvUpIAK",
+        "b2b:a05Wt000003SxQ5IAK",
+        "b2b:a05Wt000003Sxd3IAC",
+        "b2b:a05Wt000003T0SvIAK",
+        "b2b:a05Wt000003T0ZHIA0",
+        "b2b:a05Wt000003T1FEIA0",
+        "b2b:a05Wt000003T284IAC",
+        "b2b:a05Wt000003T285IAC",
+        "b2b:a05Wt000003T2BJIA0",
+        "b2b:a05Wt000003T2JPIA0",
+        "b2b:a05Wt000003T2OBIA0",
+        "b2b:a05Wt000003T2OCIA0",
+        "b2b:a05Wt000003T2klIAC",
+        "b2b:a05Wt000003T2mLIAS",
+        "b2b:a05Wt000003T2zEIAS",
+        "b2b:a05Wt000003T342IAC",
+        "b2b:a05Wt000003T3aIIAS",
+        "b2b:a05Wt000003T3s2IAC",
+        "b2b:a05Wt000003T43JIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call contains Dariusz stating pricing for both PulseSim Pro and the secure integration: the 2021-03-08 demo call with Jenna Thompson (10% discount on PulseSim Pro units; secure integration at $4,499.91). The 2021-03-30 follow-up repeats only the 10% PulseSim Pro discount, not the integration price, so it does not compete as a complete answer.",
+        "answers": [
+          {
+            "answer": "Dariusz offered SecureWise PulseSim Pro units at a 10% discount, with the secure integration priced at a total of $4,499.91 (along with similar deals on SecureFlow Suite and CloudLink Designer).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsLeIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-03-08T16:01:45] Jenna Thompson: Could you tell me more about the pricing, especially how it fits within our budget constraints?\n[2021-03-08T16:01:55] Dariusz Wisniewski: Certainly. We're offering PulseSim Pro units with a 10% discount, secure integration at a total of $4499.91, and similar deals on SecureFlow Suite and CloudLink Designer."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about pricing Dariusz offered SecureWise for PulseSim Pro and the secure integration. Only one call contains Dariusz Wisniewski providing concrete pricing figures for both PulseSim Pro and the secure integration: call b2b:a05Wt000003SsLeIAK (2021-03-08, opportunity 'TechPulse & SecureWise Cyber Enhancement', contact Jenna Thompson). In that call, Dariusz states a 10% discount on PulseSim Pro units and secure integration at a total of $4499.91. The follow-up call b2b:a05Wt000003SsLfIAK (2021-03-30) reiterates the 10% discount on PulseSim Pro but does not restate the secure integration price. No other Dariusz call provides specific pricing for these items.",
+        "answers": [
+          {
+            "answer": "Dariusz offered PulseSim Pro units with a 10% discount and secure integration at a total of $4499.91. He also mentioned similar deals on SecureFlow Suite and CloudLink Designer.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsLeIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-03-08T16:01:45] Jenna Thompson: Could you tell me more about the pricing, especially how it fits within our budget constraints?\n[2021-03-08T16:01:55] Dariusz Wisniewski: Certainly. We're offering PulseSim Pro units with a 10% discount, secure integration at a total of $4499.91, and similar deals on SecureFlow Suite and CloudLink Designer."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two requested pricing facts: PulseSim Pro units at a 10% discount and secure integration at a total of $4,499.91. The reference also covers both of these facts. The additional mention of SecureFlow Suite and CloudLink Designer in both answers is extra information not requested by the question and does not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-10382cbc932f9185",
+      "question": "What discounts did Emmanuel say were already applied on PulseSim Pro and CloudLink Designer for DigitalWave Solutions, and when did he commit to sending the revised proposal?",
+      "gold_answer": "10% discounts on both PulseSim Pro and CloudLink Designer; revised proposal promised by the next afternoon.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7lIAC",
+        "b2b:a05Wt000003SswiIAC",
+        "b2b:a05Wt000003StcZIAS",
+        "b2b:a05Wt000003SthRIAS",
+        "b2b:a05Wt000003SuOxIAK",
+        "b2b:a05Wt000003SuQbIAK",
+        "b2b:a05Wt000003SvBKIA0",
+        "b2b:a05Wt000003SvBLIA0",
+        "b2b:a05Wt000003SvBMIA0",
+        "b2b:a05Wt000003SvBNIA0",
+        "b2b:a05Wt000003SvCyIAK",
+        "b2b:a05Wt000003Sw0xIAC",
+        "b2b:a05Wt000003Sw0yIAC",
+        "b2b:a05Wt000003SwAcIAK",
+        "b2b:a05Wt000003SwAdIAK",
+        "b2b:a05Wt000003SwAeIAK",
+        "b2b:a05Wt000003SwSPIA0",
+        "b2b:a05Wt000003SwiWIAS",
+        "b2b:a05Wt000003SwowIAC",
+        "b2b:a05Wt000003Sx8JIAS",
+        "b2b:a05Wt000003SxQ3IAK",
+        "b2b:a05Wt000003SxUuIAK",
+        "b2b:a05Wt000003SxY6IAK",
+        "b2b:a05Wt000003SxrUIAS",
+        "b2b:a05Wt000003Sxt6IAC",
+        "b2b:a05Wt000003Sxt7IAC",
+        "b2b:a05Wt000003Sxt8IAC",
+        "b2b:a05Wt000003SxwIIAS",
+        "b2b:a05Wt000003Sy2kIAC",
+        "b2b:a05Wt000003Sy4NIAS",
+        "b2b:a05Wt000003Sy4OIAS",
+        "b2b:a05Wt000003Sy4PIAS",
+        "b2b:a05Wt000003SyFfIAK",
+        "b2b:a05Wt000003SyItIAK",
+        "b2b:a05Wt000003SyvaIAC",
+        "b2b:a05Wt000003Sz3fIAC",
+        "b2b:a05Wt000003SzTTIA0",
+        "b2b:a05Wt000003Szd8IAC",
+        "b2b:a05Wt000003SzelIAC",
+        "b2b:a05Wt000003SzlCIAS",
+        "b2b:a05Wt000003Szq1IAC",
+        "b2b:a05Wt000003SzrdIAC",
+        "b2b:a05Wt000003SztFIAS",
+        "b2b:a05Wt000003SztGIAS",
+        "b2b:a05Wt000003SzurIAC",
+        "b2b:a05Wt000003SzwTIAS",
+        "b2b:a05Wt000003Szy5IAC",
+        "b2b:a05Wt000003SzzhIAC",
+        "b2b:a05Wt000003T01JIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 16,
+            "normalized_end": 17
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Emmanuel Okonkwo discussing discounts on PulseSim Pro and CloudLink Designer for DigitalWave Solutions and committing to a revised proposal timeline (the 2021-04-15 call with Nadia Souleyman). Other calls involve different reps, different products, or no revised-proposal commitment.",
+        "answers": [
+          {
+            "answer": "Emmanuel said a 10% competitive discount had already been applied on both PulseSim Pro and CloudLink Designer, and he committed to sending the updated/revised proposal by tomorrow afternoon (i.e., by April 16, 2021).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sr7lIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2021-04-15T11:50:40] Emmanuel Okonkwo: We've already applied some competitive discounts—10% on PulseSim Pro and CloudLink Designer. Given the volume of products you're interested in, I'm confident we can find mutually beneficial terms. Let me revisit the pricing details to ensure you're getting the best value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sr7lIAC",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2021-04-15T11:51:20] Emmanuel Okonkwo: I'll update the proposal and have it to you by tomorrow afternoon. Does that timeline work for you?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Emmanuel as the speaker, the products PulseSim Pro and CloudLink Designer, the account DigitalWave Solutions, and asks about discounts already applied and a commitment to send a revised proposal. Only one call features Emmanuel Okonkwo discussing both PulseSim Pro and CloudLink Designer discounts for DigitalWave Solutions and committing to a revised proposal timeline: call b2b:a05Wt000003Sr7lIAC (2021-04-15). In the other Emmanuel call (b2b:a05Wt000003SuQbIAK, 2021-04-10), he discusses CloudLink Designer and QuantumPCB Modeler discounts but not PulseSim Pro, and does not commit to sending a revised proposal. The 2021-04-15 call is the unique match.",
+        "answers": [
+          {
+            "answer": "Emmanuel said that 10% discounts had already been applied on both PulseSim Pro and CloudLink Designer. He committed to sending the revised proposal by tomorrow afternoon (i.e., the afternoon of April 16, 2021).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sr7lIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2021-04-15T11:50:40] Emmanuel Okonkwo: We've already applied some competitive discounts—10% on PulseSim Pro and CloudLink Designer. Given the volume of products you're interested in, I'm confident we can find mutually beneficial terms. Let me revisit the pricing details to ensure you're getting the best value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sr7lIAC",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2021-04-15T11:51:20] Emmanuel Okonkwo: I'll update the proposal and have it to you by tomorrow afternoon. Does that timeline work for you?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that a 10% discount was already applied on both PulseSim Pro and CloudLink Designer, and both commit to the revised proposal being sent by tomorrow afternoon (April 16, 2021). The reference likewise covers the 10% discounts on both products and the next-afternoon commitment for the revised proposal. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-0272f94f45d4ec14",
+      "question": "What is the price of the 2023 Nissan Leaf quoted to Ava Morgan, and what does the maintenance plan include?",
+      "gold_answer": "$28,999.99; the plan covers regular inspections, tire rotations, and oil changes with genuine parts by factory-trained technicians.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOG4IAO",
+        "b2c:a05Ws000005SORIIA4",
+        "b2c:a05Ws000005SOZLIA4",
+        "b2c:a05Ws000005SOZMIA4",
+        "b2c:a05Ws000005SOvyIAG",
+        "b2c:a05Ws000005SQ0yIAG",
+        "b2c:a05Ws000005SQ9kIAG",
+        "b2c:a05Ws000005SQ9lIAG",
+        "b2c:a05Ws000005SQo5IAG",
+        "b2c:a05Ws000005SRsDIAW",
+        "b2c:a05Ws000005SSwOIAW",
+        "b2c:a05Ws000005SVBHIA4",
+        "b2c:a05Ws000005SVKiIAO",
+        "b2c:a05Ws000005SVKjIAO",
+        "b2c:a05Ws000005SVNuIAO",
+        "b2c:a05Ws000005SVmKIAW",
+        "b2c:a05Ws000005SW5ZIAW",
+        "b2c:a05Ws000005SWgYIAW",
+        "b2c:a05Ws000005SXUXIA4",
+        "b2c:a05Ws000005SXXmIAO",
+        "b2c:a05Ws000005SXhPIAW",
+        "b2c:a05Ws000005SXw0IAG",
+        "b2c:a05Ws000005SY0pIAG",
+        "b2c:a05Ws000005SYAVIA4",
+        "b2c:a05Ws000005SYyZIAW",
+        "b2c:a05Ws000005SYyaIAG",
+        "b2c:a05Ws000005SZ1eIAG",
+        "b2c:a05Ws000005SbErIAK",
+        "b2c:a05Ws000005SbUxIAK",
+        "b2c:a05Ws000005SbrSIAS",
+        "b2c:a05Ws000005Sc7XIAS",
+        "b2c:a05Ws000005ScAnIAK",
+        "b2c:a05Ws000005ScKUIA0",
+        "b2c:a05Ws000005ScNgIAK",
+        "b2c:a05Ws000005ScVkIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 10,
+            "normalized_end": 11
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The 2023 Nissan Leaf price quoted to Ava Morgan is consistently $28,999.99 in both calls where it is quoted (Aleksey Kozlov and Andreas Johansson). The maintenance plan inclusions are detailed in Aleksey Kozlov's call, and Andreas's call corroborates the price and adds the plan's cost. These are consistent facts, not competing answers.",
+        "answers": [
+          {
+            "answer": "The 2023 Nissan Leaf is quoted at $28,999.99. The comprehensive maintenance plan covers regular inspections, tire rotations, and oil changes, using genuine parts installed by factory-trained technicians (the maintenance plan itself is priced at $1,999.99 in the later proposal discussion).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOvyIAG",
+                "line_start": 8,
+                "line_end": 14,
+                "quote": "[2024-01-22T10:32:00] Aleksey Kozlov: That's a great point, Ava. At AutoElite Motors, we pride ourselves on our transparent pricing. The Nissan Leaf is listed at $28,999.99, and we offer comprehensive maintenance plans and flexible financing to fit various budgets.\n[2024-01-22T10:32:20] Ava Morgan: I appreciate the transparency. A friend mentioned a competitor that wasn't clear on prices, which was frustrating for them.\n[2024-01-22T10:32:35] Aleksey Kozlov: We hear that feedback often. It’s crucial to have clarity up front to make informed decisions. Transparency is something our customers truly value, alongside our personalized service approach.\n[2024-01-22T10:32:50] Ava Morgan: That’s good to know. What kind of financing solutions do you offer?\n[2024-01-22T10:33:05] Aleksey Kozlov: We offer a range of flexible financing solutions that can be tailored to your needs. Whether you prefer shorter or longer terms or a specific down payment arrangement, we can work something out that suits your financial plans.\n[2024-01-22T10:33:20] Ava Morgan: Alright, that sounds promising. I also read about your comprehensive maintenance plan. How does that work?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SRsDIAW",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2024-01-27T10:33:45] Andreas Johansson: Glad to hear that! For the Nissan Leaf and flexible financing, the base price is $28,999.99, plus an optional extended warranty at $1,299.99, and our comprehensive maintenance plan at $1,999.99. How does that sit with your budget expectations?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for the price of the 2023 Nissan Leaf quoted to Ava Morgan and what the maintenance plan includes. The only call where a specific dollar price for the 2023 Nissan Leaf is explicitly quoted to Ava Morgan is call b2c:a05Ws000005SOvyIAG (Aleksey Kozlov, 2024-01-22), where the price is stated as $28,999.99 and the maintenance plan is described as covering regular inspections, tire rotations, and oil changes using genuine parts installed by factory-trained technicians. While the same base price appears in call b2c:a05Ws000005SRsDIAW (Andreas Johansson, 2024-01-27), that call does not describe what the maintenance plan includes. The Aleksey call provides both requested facts in full.",
+        "answers": [
+          {
+            "answer": "The 2023 Nissan Leaf was quoted to Ava Morgan at $28,999.99. The comprehensive maintenance plan includes regular inspections, tire rotations, and oil changes, using genuine parts installed by factory-trained technicians.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOvyIAG",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2024-01-22T10:32:00] Aleksey Kozlov: That's a great point, Ava. At AutoElite Motors, we pride ourselves on our transparent pricing. The Nissan Leaf is listed at $28,999.99, and we offer comprehensive maintenance plans and flexible financing to fit various budgets."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOvyIAG",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2024-01-22T10:33:35] Aleksey Kozlov: Our comprehensive maintenance plan covers a variety of services to keep your vehicle in peak condition. This includes regular inspections, tire rotations, and oil changes, using genuine parts installed by factory-trained technicians."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same price ($28,999.99) and the same maintenance plan inclusions (regular inspections, tire rotations, oil changes, genuine parts, factory-trained technicians). Answer A adds an extra detail about the maintenance plan's own price ($1,999.99), which is unrequested but does not conflict. The reference covers both requested facts: the quoted price and the maintenance plan components."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-8f10f684d23ddef4",
+      "question": "What did Nia Brown say she'd do about scheduling the test drive Tariq offered?",
+      "gold_answer": "She said she'd check her schedule and get back to him later that day or the next day.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMPSIA4",
+        "b2c:a05Ws000005SOHVIA4",
+        "b2c:a05Ws000005SOSrIAO",
+        "b2c:a05Ws000005SPDZIA4",
+        "b2c:a05Ws000005SPNGIA4",
+        "b2c:a05Ws000005SPdLIAW",
+        "b2c:a05Ws000005SPdMIAW",
+        "b2c:a05Ws000005SRKCIA4",
+        "b2c:a05Ws000005SRwtIAG",
+        "b2c:a05Ws000005SSmYIAW",
+        "b2c:a05Ws000005SSmZIAW",
+        "b2c:a05Ws000005SSxqIAG",
+        "b2c:a05Ws000005SU8RIAW",
+        "b2c:a05Ws000005SVMDIA4",
+        "b2c:a05Ws000005SVMEIA4",
+        "b2c:a05Ws000005SVPQIA4",
+        "b2c:a05Ws000005SVSgIAO",
+        "b2c:a05Ws000005SVimIAG",
+        "b2c:a05Ws000005SVm6IAG",
+        "b2c:a05Ws000005SWN7IAO",
+        "b2c:a05Ws000005SXKqIAO",
+        "b2c:a05Ws000005SYn5IAG",
+        "b2c:a05Ws000005SYrwIAG",
+        "b2c:a05Ws000005SZJNIA4",
+        "b2c:a05Ws000005SZmMIAW",
+        "b2c:a05Ws000005SaiPIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call exists where Tariq Al-Farsi offers a test drive (2021-12-08, Premium Leasing and Tech-Savvy Upgrades opportunity). Nia's response there is the single determinate answer; his other calls involve a demo follow-up, research discussion, and negotiation prep, not a test drive offer.",
+        "answers": [
+          {
+            "answer": "Nia said she would check her schedule and get back to Tariq later that day or the next day about coming in for a closer look/test drive.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPNGIA4",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2021-12-08T10:25:30] Tariq Al-Farsi: I’m glad to hear that, Nia. If you’d like, we could set a time for you to come in and take a closer look or even a test drive?\n[2021-12-08T10:25:45] Nia Brown: Yes, that would be great. Let me check my schedule and get back to you later today or tomorrow."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about what Nia Brown said she'd do regarding scheduling a test drive that Tariq offered. Only one call features Tariq Al-Farsi offering a test drive: call b2c:a05Ws000005SPNGIA4 (2021-12-08). In that call, Tariq offers a test drive at line 16, and Nia responds at line 17 saying she'd check her schedule and get back to him later today or tomorrow. No other call in the dataset contains Tariq offering a test drive.",
+        "answers": [
+          {
+            "answer": "Nia Brown said she would check her schedule and get back to Tariq later today or tomorrow to schedule the test drive.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPNGIA4",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2021-12-08T10:25:30] Tariq Al-Farsi: I’m glad to hear that, Nia. If you’d like, we could set a time for you to come in and take a closer look or even a test drive?\n[2021-12-08T10:25:45] Nia Brown: Yes, that would be great. Let me check my schedule and get back to you later today or tomorrow."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Nia Brown said she would check her schedule and get back to Tariq later that day or the next day to schedule the test drive. The reference conveys the same core facts: she'd check her schedule and get back to him later that day or the next day. All requested facts (checking schedule, getting back to him, timeframe of later that day or next day) are present in both answers and the reference. Minor wording differences (e.g., 'coming in for a closer look/test drive' vs. 'schedule the test drive') do not change the substance."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

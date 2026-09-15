@@ -1,0 +1,368 @@
+[
+  {
+    "question_id": "b2b-single_call-7c7dc2b49e45b605",
+    "question": "What pricing did Dariusz offer SecureWise for PulseSim Pro and the secure integration?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing Dariusz offered SecureWise for PulseSim Pro plus the secure integration",
+        "relationship": "single coherent commercial quote covering the product and its associated integration",
+        "reason": "One quote request: the secure integration is tied to PulseSim Pro, forming a single pricing breakdown rather than unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific pricing Dariusz offered SecureWise for two items. The dialogue at 16:01:55 states 'PulseSim Pro units with a 10% discount, secure integration at a total of $4499.91,' which matches the gold answer exactly. The question is naturally phrased, scoped to a named rep and account, and a rep/AM would plausibly want to recall offered pricing. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Dariusz Wisniewski explicitly states 'PulseSim Pro units with a 10% discount, secure integration at a total of $4499.91,' which directly supports the answer_claim regarding those two pricing items. The additional mention of SecureFlow Suite and CloudLink Designer is also present in the quote, so the full claim is supported."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'PulseSim Pro units with a 10% discount, and secure integration at a total of $4499.91.' The single cited evidence (index 0) contains Dariusz's exact words matching both pricing elements: the 10% discount on PulseSim Pro units and the $4499.91 total for secure integration. All factual claims in the gold_answer are directly supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-10382cbc932f9185",
+    "question": "What discounts did Emmanuel say were already applied on PulseSim Pro and CloudLink Designer for DigitalWave Solutions, and when did he commit to sending the revised proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Emmanuel said were already applied on PulseSim Pro and CloudLink Designer for DigitalWave Solutions, and when he committed to sending the revised proposal",
+        "relationship": "single coherent commercial request: pricing/discount status on the quoted products and the related next step (revised proposal) for the same deal",
+        "reason": "The discounts and the revised-proposal commitment are part of the same commercial negotiation/quote for the same account, not independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks about specific discount percentages on two named products and a proposal deadline\u2014information a rep or account manager would plausibly need to track. The dialogue confirms Emmanuel stated 10% discounts on both PulseSim Pro and CloudLink Designer and committed to sending the revised proposal by 'tomorrow afternoon' (i.e., the next afternoon). The gold answer matches these facts precisely with no extra or missing information. The question is naturally worded, adequately scoped to the DigitalWave Solutions expansion opportunity, and contains no artificial locator preamble or answer leakage. Since question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Emmanuel Okonkwo the statement 'We've already applied some competitive discounts\u201410% on PulseSim Pro and CloudLink Designer,' which exactly matches the answer_claim about 10% discounts on both products."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Emmanuel Okonkwo the statement 'I'll update the proposal and have it to you by tomorrow afternoon,' which matches the answer_claim about committing to send the revised proposal by the next afternoon."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer: index 0 confirms 10% discounts on both PulseSim Pro and CloudLink Designer as stated by Emmanuel, and index 1 confirms his commitment to deliver the revised proposal by tomorrow afternoon. The context metadata confirms the account is DigitalWave Solutions and the call date is 2021-04-15, consistent with 'next afternoon' meaning the afternoon of 2021-04-16. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-950ba96d57e26375",
+    "question": "For the LiftTech Expansion Project, what pricing concern did Amina Heba raise in the initial discussion, and what discounts and total project cost did TechPulse later propose?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Amina Heba's pricing concern on the LiftTech Expansion Project and TechPulse's later proposed discounts and total project cost",
+        "relationship": "objection and subsequent commercial response addressing the same pricing issue",
+        "reason": "Both parts concern the same business issue\u2014pricing for the LiftTech Expansion Project\u2014linking the raised concern to the proposed discounts/cost, which is a coherent objection-and-response/commercial-terms question across calls."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StHeIAK",
+                "fact": "TechPulse proposed 10% discount on AI Cirku-Tech and OptiPower Manager, 5% on CircuitMaster Analyzer, total project cost $13,809.73.",
+                "why_other_call_cannot_supply_it": "The other call (2022-07-19) is an initial discussion and does not contain any specific discount percentages or total cost figures; it only mentions a general pricing concern."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvCzIAK",
+                "fact": "Amina Heba raised a pricing concern that initial costs seem attractive but there may be unexpected increases later on.",
+                "why_other_call_cannot_supply_it": "The other call (2023-10-10) is a later negotiation where the pricing concern is not explicitly raised; it focuses on the proposal details and other topics."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the pricing concern from the initial discussion and the later proposed discounts/total cost. These facts are found in separate calls and are not redundant; one call provides the concern, the other provides the specific proposal figures. Both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Amina's pricing concern from the initial discussion and TechPulse's later proposal. The pricing concern is found in the 2022 call, and the proposal details are in the 2023 call. However, the 2023 call also contains the same pricing concern (Amina mentions 'initial costs seem attractive, but there are sometimes unexpected increases later on'), so the 2022 call is not strictly necessary for that fact. The proposal details are only in the 2023 call, so the 2023 call is necessary. Since only one call is necessary, the question does not require both calls."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StHeIAK",
+                  "fact": "TechPulse proposed 10% discount on AI Cirku-Tech and OptiPower Manager, 5% on CircuitMaster Analyzer, total project cost $13,809.73.",
+                  "why_other_call_cannot_supply_it": "The other call (2022-07-19) is an initial discussion and does not contain any specific discount percentages or total cost figures; it only mentions a general pricing concern."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvCzIAK",
+                  "fact": "Amina Heba raised a pricing concern that initial costs seem attractive but there may be unexpected increases later on.",
+                  "why_other_call_cannot_supply_it": "The other call (2023-10-10) is a later negotiation where the pricing concern is not explicitly raised; it focuses on the proposal details and other topics."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the pricing concern from the initial discussion and the later proposed discounts/total cost. These facts are found in separate calls and are not redundant; one call provides the concern, the other provides the specific proposal figures. Both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvCzIAK",
+                "fact": "Amina's concern that initial costs seem attractive but unexpected increases occur later on",
+                "why_other_call_cannot_supply_it": "The 2023-10-10 call contains no mention of this pricing concern; it only covers discounts and total cost."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StHeIAK",
+                "fact": "TechPulse proposed 10% discount on AI Cirku-Tech and OptiPower Manager, 5% on CircuitMaster Analyzer, total project cost $13,809.73",
+                "why_other_call_cannot_supply_it": "The 2022-07-19 call contains no specific discounts or total project cost figures; pricing was only discussed abstractly."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: Amina's initial pricing concern (stated only in the 2022 call) and the specific discounts/total cost TechPulse later proposed (stated only in the 2023 call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvCzIAK",
+                  "fact": "Amina's concern that initial costs seem attractive but unexpected increases occur later on",
+                  "why_other_call_cannot_supply_it": "The 2023-10-10 call contains no mention of this pricing concern; it only covers discounts and total cost."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003StHeIAK",
+                  "fact": "TechPulse proposed 10% discount on AI Cirku-Tech and OptiPower Manager, 5% on CircuitMaster Analyzer, total project cost $13,809.73",
+                  "why_other_call_cannot_supply_it": "The 2022-07-19 call contains no specific discounts or total project cost figures; pricing was only discussed abstractly."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: Amina's initial pricing concern (stated only in the 2022 call) and the specific discounts/total cost TechPulse later proposed (stated only in the 2023 call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": false,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": false,
+        "exactly_requested_answer": false,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The pricing concern (initial costs attractive but unexpected increases later) is correctly sourced from the July 2022 call. However, the discounts (10% off AI Cirku-Tech and OptiPower Manager, 5% off CircuitMaster Analyzer) and total cost ($13,809.73) are stated by Fatima in the October 2023 call, not 'later proposed' as a separate event\u2014both facts appear in the same call. More critically, the gold answer says Amina 'worried initial costs would attractively low but rise unexpectedly later,' which slightly misrepresents her wording: she said 'while initial costs seem attractive, there are sometimes unexpected increases later on'\u2014a general concern about pricing models, not a statement that costs 'would' rise. The answer also uses 'attractively low' where the source says 'attractive,' a minor distortion. The question asks what TechPulse 'later proposed,' implying the discount info came in a subsequent call after the initial discussion, which is accurate (Oct 2023 vs Jul 2022). Both sources contribute exclusive facts. The question is well-scoped to a named opportunity and contact. No locator preamble issues. The factual inaccuracy in paraphrasing the concern ('attractively low' vs 'attractive'; 'would\u2026rise' vs 'sometimes\u2026increases') makes the answer not perfectly factual."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Amina Heba stating: 'We've found that while initial costs seem attractive, there are sometimes unexpected increases later on.' This matches the answer_claim that she raised a concern about initial costs seeming attractive but unexpected increases coming later. The speaker attribution (Amina Heba), the call context (LiftTech Expansion Project, 2022-07-19), and the substance of the concern all align."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Fatima Al-Masri explicitly states: 'our proposal includes a 10% discount on the AI Cirku-Tech and OptiPower Manager, and a 5% on the CircuitMaster Analyzer. This brings the total project cost to $13,809.73.' This directly supports the answer_claim regarding the 10% discount on AI Cirku-Tech and OptiPower Manager, 5% on CircuitMaster Analyzer, and total project cost of $13,809.73. The call metadata confirms this is the LiftTech Expansion Project opportunity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Amina worried initial costs would be attractively low but rise unexpectedly later \u2014 supported by evidence index 0 where she says 'initial costs seem attractive, there are sometimes unexpected increases later on.' (2) TechPulse proposed 10% off AI Cirku-Tech and OptiPower Manager, 5% off CircuitMaster Analyzer, totaling $13,809.73 \u2014 supported by evidence index 1 where Fatima Al-Masri (representing TechPulse) states exactly those discounts and total. Both factual claims in the gold_answer are fully supported by the cited evidence. The slight paraphrase in the gold_answer ('attractively low' vs. 'seem attractive') is a faithful rendering of the same meaning."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-24774df9a2c386cc",
+    "question": "What main pain points did Noriko Suzuki of TerraSync Solutions raise in the initial discussion, and what package and discounted total did TechPulse later quote for the EcoPCB Creator deal?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Pain points Noriko Suzuki raised in the initial discussion; (2) package and discounted total TechPulse later quoted for the EcoPCB Creator deal",
+        "relationship": "two independent lookups joined only by the same account",
+        "reason": "Pain points from an initial call and a later quote's package/price are unrelated information needs; same customer is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for pain points from the initial call and the quoted package/discounted total from the follow-up call. Call 1 (2022-12-02) has Noriko stating pain points: enhancing design efficiencies while maintaining sustainability goals and ensuring rapid team support. Call 2 (2022-12-15) has Priya quoting seven EcoPCB Creator, five AIOptics Vision, eight OptiEnergy Suite licenses with a 5% discount totaling ~$8340.81. Each source contributes an exclusive requested fact. The gold answer matches both transcripts precisely with no unasked extras. The question naturally identifies the account (TerraSync Solutions), contact (Noriko Suzuki), and deal (EcoPCB Creator) without artificial locator preambles.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Noriko Suzuki on 2022-12-02 explicitly states: 'our primary focus is on enhancing design efficiencies while maintaining our sustainability goals. We also want to ensure that our team has rapid support when they need it.' This directly supports the answer_claim about pain points: enhancing design efficiencies, maintaining sustainability goals, and ensuring rapid team support."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Priya Choudhury on 2022-12-15 explicitly states: 'seven licenses for the EcoPCB Creator, five for the AIOptics Vision, and eight for the OptiEnergy Suite. You're getting a 5% discount on each product, bringing the total to approximately $8340.81.' This directly supports the answer_claim about the package composition, 5% discount, and approximate total of $8340.81."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms all three pain points (design efficiencies, sustainability goals, rapid team support) as stated by Noriko Suzuki of TerraSync Solutions in the initial discussion. Evidence index 1 confirms the exact package (seven EcoPCB Creator, five AIOptics Vision, eight OptiEnergy Suite), the 5% discount, and the approximate total of $8340.81 quoted by Priya Choudhury. The context metadata confirms both calls involve Noriko Suzuki at TerraSync Solutions under the GreenTech Fusion Partnership opportunity. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-0272f94f45d4ec14",
+    "question": "What is the price of the 2023 Nissan Leaf quoted to Ava Morgan, and what does the maintenance plan include?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quoted price of the 2023 Nissan Leaf for Ava Morgan and what the maintenance plan includes",
+        "relationship": "Parts of a single commercial quote breakdown",
+        "reason": "Price and maintenance plan coverage are components of one coherent quote for the same vehicle and customer, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the quoted price of the 2023 Nissan Leaf and the maintenance plan contents for Ava Morgan. The single call transcript confirms the price as $28,999.99 and the maintenance plan covering regular inspections, tire rotations, and oil changes with genuine parts by factory-trained technicians. The gold answer matches exactly with no unasked extras. The question is naturally worded, scoped to a specific customer and vehicle, and a rep would plausibly need to recall these details. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aleksey Kozlov explicitly states 'The Nissan Leaf is listed at $28,999.99,' directly supporting the answer_claim about the price."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Aleksey Kozlov explicitly states the maintenance plan 'includes regular inspections, tire rotations, and oil changes, using genuine parts installed by factory-trained technicians,' which directly supports the answer_claim about what the maintenance plan covers."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer: index 0 confirms the $28,999.99 price for the Nissan Leaf, and index 1 confirms the maintenance plan covers regular inspections, tire rotations, and oil changes with genuine parts by factory-trained technicians. The context metadata confirms the call is associated with Ava Morgan's account, matching the question's reference to her."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-8f10f684d23ddef4",
+    "question": "What did Nia Brown say she'd do about scheduling the test drive Tariq offered?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Nia Brown said she would do regarding scheduling the test drive that Tariq offered",
+        "relationship": "single coherent request: a customer's stated next step on one offered action (the test drive)",
+        "reason": "This is one lookup about a single issue\u2014the test drive\u2014and the customer's response to the offer, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what Nia Brown committed to regarding the test-drive Tariq offered\u2014a routine next-step detail a rep would want to track. The gold answer ('check her schedule and get back to him later that day or the next day') matches the transcript line at 10:25:45 exactly, with no extra or missing facts. Wording is conversational, scope is clear (named customer, named rep, specific offer), and no artificial locator preamble or clue list is present. Single-call question, so both_sources_required is set true by convention."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nia Brown explicitly states: 'Let me check my schedule and get back to you later today or tomorrow.' This directly supports the answer_claim that she would check her schedule and get back to Tariq later today or tomorrow. The speaker attribution (Nia Brown), the action (check schedule, get back), and the time qualifier (later today or tomorrow) all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Nia said she'd check her schedule and get back to him later that day or the next day. The cited evidence (index 0) contains Nia Brown's exact words: 'Let me check my schedule and get back to you later today or tomorrow.' This faithfully supports every factual element: the action (check schedule, get back), the recipient (Tariq, implied by 'you' in context of the call), and the timeframe (later that day or the next day = later today or tomorrow). The context metadata confirms the call involves Nia Brown, and the opportunity name references her. All claims in the gold_answer are covered by the supplied citation."
+      }
+    }
+  }
+]
