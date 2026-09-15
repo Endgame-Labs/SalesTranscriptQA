@@ -1,0 +1,275 @@
+[
+  {
+    "question_id": "b2b-multi_call-d40a702f25b80bf1",
+    "question": "Across the TrueNorth Technologies EDA integration discussions with Thierry Dupont, what concern did he raise about security compliance, and what discount did Liam later offer on AIOptics Vision?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Thierry Dupont's security compliance concern during EDA integration discussions, and the discount Liam later offered on AIOptics Vision",
+        "relationship": "two independent fact lookups joined across calls",
+        "reason": "A security compliance concern and a product discount are unrelated information needs; sharing the same account/customer does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The security-compliance concern ('key concern given industry issues') appears only in the September 3 call, and the 15% discount on AIOptics Vision appears only in the November 1 call. Each source contributes an exclusive requested fact. The answer states both facts precisely without unasked extras. The question naturally identifies the account, contact, and opportunity, and a rep would plausibly want to recall a customer's stated concern and the discount offered.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Thierry Dupont on 2023-09-03 states verbatim: 'Security compliance is definitely a key concern for us, especially given some issues we've seen across the industry.' This directly supports the answer_claim that Thierry raised security compliance as a key concern given industry issues."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Liam Kelly on 2023-11-01 explicitly mentions 'our AIOptics Vision' and states 'And with our 15% discount, it represents great value.' This directly supports the answer_claim that Liam offered a 15% discount on AIOptics Vision."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are fully supported by the cited evidence: (1) Thierry's concern about security compliance given industry issues is confirmed by evidence index 0, and (2) Liam's 15% discount on AIOptics Vision is confirmed by evidence index 1. The context metadata confirms both calls involve TrueNorth Technologies, Thierry Dupont, and the TrueNorth Tech-EDA Integration opportunity, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-b1a6a950f7e96c14",
+    "question": "For DataStream Analytics, how did Monique say SecureFlow Suite integrates with their SecureAnalytics Pro system, and what pricing was quoted for SecureFlow Suite in the later demo?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) How Monique described SecureFlow Suite's integration with SecureAnalytics Pro, and 2) the pricing quoted for SecureFlow Suite in a later demo",
+        "relationship": "two independent fact lookups (integration detail vs. pricing) joined only by the same product/account",
+        "reason": "Integration capability and quoted pricing are separate information needs; sharing the same product does not make them one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks two specific facts: (1) how Monique described SecureFlow Suite's integration with SecureAnalytics Pro, and (2) the pricing quoted for SecureFlow Suite in the later demo. The earlier call (2020-11-09) contains Monique's integration statement ('built with flexibility in mind, ensuring easy integration with popular platforms including SecureAnalytics Pro. This minimizes downtime and ensures a smoother transition without compromising security'), while the later call (2021-01-25) contains the pricing ('$5399.91 for 10 licenses with a 10% discount'). Each source contributes an exclusive requested fact. The gold answer accurately captures both claims. The question is naturally phrased, scoped to a named account (DataStream Analytics) and product, and a rep would plausibly want to recall integration details and pricing across calls. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Monique Dubois on 2020-11-09 explicitly states SecureFlow Suite is 'built with flexibility in mind, ensuring easy integration with popular platforms including SecureAnalytics Pro' and that 'This minimizes downtime and ensures a smoother transition without compromising security.' This directly supports the answer_claim about flexible integration with SecureAnalytics Pro, minimizing downtime without compromising security."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Monique Dubois on 2021-01-25 explicitly states 'SecureFlow Suite is available at $5399.91 for 10 licenses with a 10% discount.' This directly supports the answer_claim about the pricing quoted for SecureFlow Suite."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Monique said SecureFlow Suite integrates flexibly with SecureAnalytics Pro, minimizing downtime without compromising security. Index 1 confirms the pricing quoted was $5399.91 for 10 licenses with a 10% discount. The later demo (2021-01-25) is correctly identified as the source of the pricing quote. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-505bbea5b8681df4",
+    "question": "What next steps did Ayumi commit to for Marcus Nguyen at Quantum Designs after their initial discussion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next steps Ayumi committed to for Marcus Nguyen at Quantum Designs following their initial discussion",
+        "relationship": "single coherent request: follow-up commitments from one call",
+        "reason": "A single next-steps lookup tied to one discussion; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about next steps committed by Ayumi for Marcus Nguyen at Quantum Designs after their initial discussion. The dialogue at 11:49:15 shows Ayumi committing to send an introductory email summarizing the discussion with product brochures and case studies, and to set up a meeting to tailor solutions to Quantum Designs' needs. The gold answer captures both commitments precisely with no unasked extras. The question is naturally worded, identifies the rep, contact, and account, and a sales rep would plausibly want to recall committed next steps. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Ayumi Shimizu explicitly states she will send an introductory email summarizing the discussion with links to product brochures and case studies, and proposes setting up a meeting to tailor solutions to Quantum Designs' needs. This directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item fully supports every factual element in the gold_answer: (1) introductory email summarizing the discussion, (2) product brochures and case studies included, and (3) setting up a meeting to tailor solutions to Quantum Designs' needs. The speaker is Ayumi, the account is Quantum Designs, and the contact is Marcus Nguyen per the metadata, all consistent with the question."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-881ed0cabaf9b7da",
+    "question": "What did Jorge Mendes at UrbanEDGE Innovation say about his current provider's security measures?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Jorge Mendes at UrbanEDGE Innovation said about his current provider's security measures",
+        "relationship": "single lookup of one stated concern",
+        "reason": "One coherent fact lookup about a single topic (current provider's security) from one contact."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Jorge Mendes said about his current provider's security measures. The dialogue at 14:32:00 contains his exact statement: 'Our current provider has sufficient security measures, but they could be more comprehensive.' The gold answer faithfully reproduces this. The question is naturally worded, scoped to a named contact and account, and reflects a realistic sales need (understanding the incumbent's weaknesses). No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes to Jorge Mendes the statement: 'Our current provider has sufficient security measures, but they could be more comprehensive.' This matches the answer_claim exactly, preserving the speaker, the positive assessment ('sufficient'), and the qualifier ('could be more comprehensive')."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Jorge Mendes's verbatim statement that his current provider has sufficient security measures but they could be more comprehensive, which fully supports the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-948e397b4169450b",
+    "question": "What vehicle features did Ethan Rogers say are top priorities for his fleet, and which two models did Kaito say meet them?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Ethan Rogers' top fleet vehicle priorities and the two models Kaito identified as meeting them",
+        "relationship": "requirement and its matching recommendation within the same sales conversation",
+        "reason": "A single coherent exchange: customer requirements and the salesperson's response identifying models that meet them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts from a single call: Ethan's stated top-priority vehicle features and the two models Kaito recommends. The dialogue at 15:49:55 has Ethan explicitly naming 'Wireless connectivity and safety features' as top priorities, and at 15:50:20 Kaito names the Tesla Model S and Jaguar F-Pace as excelling in those areas. The gold answer matches exactly with no extra or missing information. The question is naturally phrased, uses participant names appropriately, and a rep/AM would plausibly want to confirm stated priorities and recommended models. Single-call set, so both_sources_required is true by rule.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote is directly attributed to Ethan Rogers and states 'Wireless connectivity and safety features are top of our list,' which exactly matches the answer_claim about his fleet's top priorities."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote is attributed to Kaito Nakamura and explicitly names 'Both the Tesla Model S and the Jaguar F-Pace' as excelling 'in those areas,' directly supporting the claim that Kaito identified those two models as meeting the stated priorities."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Evidence index 0 confirms Ethan Rogers stated wireless connectivity and safety features are top priorities. Evidence index 1 confirms Kaito named the Tesla Model S and Jaguar F-Pace as the two models meeting those priorities. Together they fully support every factual element of the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d8a5748bc1d4a60b",
+    "question": "What concerns did Benjamin Foster raise about luxury vehicle financing, and how did Aisha address them?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the financing concerns Benjamin Foster raised about a luxury vehicle and how Aisha responded to them.",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer's objection with the salesperson's response to that same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer concern (higher interest rates for luxury brands) and the rep's response (flexible financing, better rates via lender network). Both facts are directly supported by the dialogue at 08:51:05 and 08:51:18. The wording is natural, the scope identifies the customer and business situation, and the answer contains exactly the two requested elements with no extras or leakage. Single-call question, so both_sources_required is set true by convention.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage (lines 9-10) contains only Benjamin Foster's question about higher interest rates from luxury-brand-focused companies. It does not include any response from Aisha. The answer_claim attributes a statement to Aisha about AutoElite offering flexible financing with better rates through a vast lender network, but no such dialogue from Aisha appears in the cited quote. A customer's question does not establish the salesperson's answer."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) Benjamin's concern about higher interest rates, and (2) Aisha's response about AutoElite's flexible financing and better rates via a network of lenders. The sole cited evidence (index 0) only contains Benjamin's question and does not include Aisha's reply. Therefore the second factual claim in the gold_answer is unsupported by the supplied citations."
+      }
+    }
+  }
+]
