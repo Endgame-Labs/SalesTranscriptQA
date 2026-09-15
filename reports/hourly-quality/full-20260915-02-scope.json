@@ -1,0 +1,440 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "feb592547c23bcf61758ac99c4388f186073ddf83f1c9ee3f4622ab83c28fca2",
+  "questions": 4,
+  "counts": {
+    "pass": 2,
+    "fail": 2
+  },
+  "estimated_usd": 0.50785523,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-45f7e4b188679967",
+      "question": "In the Quantum Designs partnership, which competitor did Nia Adetokunbo say fell short on customization, and what total contract value did she ultimately agree to sign?",
+      "gold_answer": "NanoDesign fell short on customization; Quantum Designs agreed to a total of $8,719.81.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sqa3IAC",
+        "b2b:a05Wt000003Sqa4IAC",
+        "b2b:a05Wt000003SrSoIAK",
+        "b2b:a05Wt000003SrSpIAK",
+        "b2b:a05Wt000003SrcjIAC",
+        "b2b:a05Wt000003Ss0cIAC",
+        "b2b:a05Wt000003SsNEIA0",
+        "b2b:a05Wt000003SsOtIAK",
+        "b2b:a05Wt000003SstPIAS",
+        "b2b:a05Wt000003StZQIA0",
+        "b2b:a05Wt000003StkgIAC",
+        "b2b:a05Wt000003SuDkIAK",
+        "b2b:a05Wt000003SuInIAK",
+        "b2b:a05Wt000003SuLwIAK",
+        "b2b:a05Wt000003Suk9IAC",
+        "b2b:a05Wt000003SulhIAC",
+        "b2b:a05Wt000003SuliIAC",
+        "b2b:a05Wt000003Sv1tIAC",
+        "b2b:a05Wt000003SwCOIA0",
+        "b2b:a05Wt000003SwXFIA0",
+        "b2b:a05Wt000003SwcBIAS",
+        "b2b:a05Wt000003SwdnIAC",
+        "b2b:a05Wt000003SwdoIAC",
+        "b2b:a05Wt000003SxoPIAS",
+        "b2b:a05Wt000003SxoQIAS",
+        "b2b:a05Wt000003Sy31IAC",
+        "b2b:a05Wt000003SyHeIAK",
+        "b2b:a05Wt000003SyKcIAK",
+        "b2b:a05Wt000003SyNtIAK",
+        "b2b:a05Wt000003Sz3oIAC",
+        "b2b:a05Wt000003Sz3pIAC",
+        "b2b:a05Wt000003T12NIAS",
+        "b2b:a05Wt000003T1GrIAK",
+        "b2b:a05Wt000003T1qTIAS",
+        "b2b:a05Wt000003T2eXIAS",
+        "b2b:a05Wt000003T2zXIAS",
+        "b2b:a05Wt000003T37MIAS",
+        "b2b:a05Wt000003T37NIAS",
+        "b2b:a05Wt000003T3deIAC",
+        "b2b:a05Wt000003T3k4IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 9,
+            "normalized_end": 10
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across Nia Adetokunbo's calls on the Quantum Designs Partnership opportunity, she named NanoDesign as the competitor falling short on customization (2021-03-15 call), and in the contract-finalization call (2021-05-05) she agreed to sign at a total of $8,719.81. No other Nia call names a different customization-deficient competitor or a different signed contract value.",
+        "answers": [
+          {
+            "answer": "Nia Adetokunbo said NanoDesign fell short on customization, and she ultimately agreed to sign a contract with a total value of $8,719.81.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SulhIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2021-03-15T14:12:32] Nia Adetokunbo: That's reassuring. We've been comparing with NanoDesign, and while their vendor stability and roadmap are notable, they just don't meet our customization needs as well."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StkgIAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2021-05-05T11:33:15] Adebola Adeyemi: Yes, the total comes to $8,719.81, with discounts applied to the SecureFlow Suite and EduTech Lab. Shall we proceed with signing the contract?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies the 'Quantum Designs partnership' (opportunity 006Wt000007B5bTIAS, named exactly 'Quantum Designs Partnership'), the person Nia Adetokunbo, a competitor that 'fell short on customization,' and a total contract value she 'ultimately agreed to sign.' In the initial discovery call (2021-01-18), Nia says a competitor 'didn't really offer the same level of customization,' and Adebola immediately names NanoDesign Systems. In the demo follow-up (2021-03-15), Nia explicitly states 'We've been comparing with NanoDesign, and...they just don't meet our customization needs as well.' In the contract finalization call (2021-05-05), the total of $8,719.81 is stated and Nia agrees to sign. No other opportunity named 'Quantum Designs Partnership' involves Nia Adetokunbo or a contract signing.",
+        "answers": [
+          {
+            "answer": "Nia Adetokunbo said NanoDesign (NanoDesign Systems) fell short on customization, and she ultimately agreed to sign a contract with a total value of $8,719.81.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuDkIAK",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2021-01-18T11:31:50] Nia Adetokunbo: That definitely makes a difference. A competitor we looked at didn't really offer the same level of customization, and that was a bit concerning for us.\n[2021-01-18T11:32:05] Adebola Adeyemi: I hear you. Customization is key, especially as every organization has different requirements. On a related note, integrating our products like AI Cirku-Tech into existing workflows is straightforward and more efficient compared to what NanoDesign Systems offers."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SulhIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2021-03-15T14:12:32] Nia Adetokunbo: That's reassuring. We've been comparing with NanoDesign, and while their vendor stability and roadmap are notable, they just don't meet our customization needs as well."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StkgIAC",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2021-05-05T11:33:15] Adebola Adeyemi: Yes, the total comes to $8,719.81, with discounts applied to the SecureFlow Suite and EduTech Lab. Shall we proceed with signing the contract?\n[2021-05-05T11:33:30] Nia Adetokunbo: Everything sounds good to us. We’re ready to sign off and look forward to a prosperous partnership with TechPulse."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify NanoDesign as the competitor that fell short on customization and state the total contract value as $8,719.81. Answer B adds the parenthetical 'NanoDesign Systems,' which is merely extra wording and does not change the substance. The reference likewise names NanoDesign for the customization shortfall and gives the $8,719.81 total, covering both requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-403490c1ad6dbebd",
+      "question": "What concern did Sofia Russo raise about TechPulse's pricing, and what did Chen say in response?",
+      "gold_answer": "Sofia said the pricing structure seemed complex and competitors offered more straightforward initial pricing; Chen acknowledged the feedback, said they're working on simplifying it, and emphasized transparent variables and favorable total cost of ownership.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrHYIA0",
+        "b2b:a05Wt000003SrNHIA0",
+        "b2b:a05Wt000003SrSnIAK",
+        "b2b:a05Wt000003SrciIAC",
+        "b2b:a05Wt000003Ss5QIAS",
+        "b2b:a05Wt000003Ss5RIAS",
+        "b2b:a05Wt000003SsOsIAK",
+        "b2b:a05Wt000003SuIlIAK",
+        "b2b:a05Wt000003SuImIAK",
+        "b2b:a05Wt000003SuvLIAS",
+        "b2b:a05Wt000003Sv0BIAS",
+        "b2b:a05Wt000003Sv1sIAC",
+        "b2b:a05Wt000003SvhmIAC",
+        "b2b:a05Wt000003SwacIAC",
+        "b2b:a05Wt000003SwadIAC",
+        "b2b:a05Wt000003SwaeIAC",
+        "b2b:a05Wt000003SxYAIA0",
+        "b2b:a05Wt000003SxoOIAS",
+        "b2b:a05Wt000003Sye0IAC",
+        "b2b:a05Wt000003SynbIAC",
+        "b2b:a05Wt000003SyqvIAC",
+        "b2b:a05Wt000003SzTaIAK",
+        "b2b:a05Wt000003SzTbIAK",
+        "b2b:a05Wt000003Szv9IAC",
+        "b2b:a05Wt000003T10xIAC",
+        "b2b:a05Wt000003T12MIAS",
+        "b2b:a05Wt000003T1VLIA0",
+        "b2b:a05Wt000003T1dYIAS",
+        "b2b:a05Wt000003T2HyIAK",
+        "b2b:a05Wt000003T2HzIAK",
+        "b2b:a05Wt000003T2hiIAC",
+        "b2b:a05Wt000003T2xeIAC",
+        "b2b:a05Wt000003T2zWIAS",
+        "b2b:a05Wt000003T35lIAC",
+        "b2b:a05Wt000003T4EgIAK",
+        "b2b:a05Wt000003T4LAIA0",
+        "b2b:a05Wt000003T4o6IAC",
+        "b2b:a05Wt000003T4o7IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Sofia Russo raised pricing-related concerns in several different calls with Chen Lixin, each with a distinct concern and response: (1) Nov 9 – unpredictability of other vendors' pricing models / need for predictable budget, answered with the PulseSim Pro 10% discount and steady $4,499.91 total; (2) Nov 14 – frustration that additional costs surface later, answered with the no-hidden-costs pricing model and 10% discount for 10+ units; (3) Nov 20 – pricing structures seeming complex at first glance versus competitors' straightforward initial pricing, answered with a commitment to transparency/simplification and favorable total cost of ownership. The question does not specify which call, so these are competing complete answers.",
+        "answers": [
+          {
+            "answer": "In the November 9, 2023 call, Sofia Russo raised the concern that unpredictability can be an issue with pricing models from other vendors and that FutureTech needs a predictable budget. Chen Lixin responded that predictability is crucial, especially for integrating their AI-powered electronic design automation, and noted that for PulseSim Pro they are offering a 10% discount so the cost for ten units remains steady at $4,499.91 total.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrSnIAK",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2023-11-09T17:31:00] Chen Lixin: Fantastic. I wanted to start off by discussing our pricing model, which we've tailored to be as clear and competitive as possible. We’ve set it up to avoid any hidden costs you might encounter with other implementations.\n[2023-11-09T17:31:20] Sofia Russo: That's good to hear. I’ve noticed that unpredictability can sometimes be an issue with pricing models from other vendors, and it’s important for us to have a predictable budget.\n[2023-11-09T17:31:45] Chen Lixin: Absolutely, Sofia. Predictability is crucial, especially for integrating something as transformational as our AI-powered electronic design automation. For instance, with PulseSim Pro, which you're considering, we are offering a 10% discount. This means your cost for those ten units remains steady at $4499.91 total."
+              }
+            ]
+          },
+          {
+            "answer": "In the November 14, 2023 call, Sofia Russo raised the concern that clear and predictable costs are crucial because FutureTech had encountered issues in the past where additional costs surfaced later, which was frustrating. Chen Lixin responded that TechPulse's key strength is a clear pricing model with no hidden costs (sometimes an issue with competitors), that total cost of ownership is very transparent to support budgeting, and gave the example of a 10% discount on PulseSim Pro for orders of 10 units or more providing significant upfront savings.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sv0BIAS",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2023-11-14T11:01:01] Sofia Russo: That's great to hear. How does it compare with other tools, especially in terms of transparency and overall cost?\n[2023-11-14T11:01:14] Chen Lixin: Great question. One of our key strengths is our clear pricing model. TechPulse ensures no hidden costs, which is sometimes an issue with our competitors. The total cost of ownership is very transparent, providing economic clarity that supports your budgeting needs.\n[2023-11-14T11:01:27] Sofia Russo: Clear and predictable costs are crucial for us. We've encountered issues in the past where additional costs surface later, which is frustrating."
+              }
+            ]
+          },
+          {
+            "answer": "In the November 20, 2023 call, Sofia Russo raised a minor concern that TechPulse's pricing structures seemed a bit complex at first glance, with some of her team members noting that competitors offered more straightforward initial pricing. Chen Lixin responded that he completely understood, that TechPulse had heard similar feedback and was working on simplifying the structure where possible, that their approach ensures all variables are transparent to deliver a comprehensive and tailored solution, and that once clear, the pricing becomes very favorable in terms of total cost of ownership.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuImIAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-11-20T14:46:05] Sofia Russo: Definitely the real-time collaboration feature. Given our focus on cloud-based work, it's an excellent match for us. But there was a minor concern about priced structures being a bit complex at first glance. Some of our team members mentioned competitors offering more straightforward initial pricing."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "The question asks about a concern Sofia Russo raised about TechPulse's pricing and Chen's response. Sofia Russo spoke with Chen Lixin in multiple calls, and in at least two of them she raised materially different pricing concerns: (1) in the Nov 9 call she raised unpredictability in pricing models from other vendors and the need for a predictable budget, and (2) in the Nov 20 call she raised that TechPulse's priced structures seemed complex at first glance and competitors offered more straightforward initial pricing. Chen gave different responses to each. Since the question does not specify which call or which pricing topic, both are valid complete answers.",
+        "answers": [
+          {
+            "answer": "Sofia Russo raised the concern that unpredictability can sometimes be an issue with pricing models from other vendors, and that it is important for FutureTech to have a predictable budget. Chen responded by affirming that predictability is crucial, especially for integrating something as transformational as their AI-powered electronic design automation, and gave a concrete example: PulseSim Pro is offered with a 10% discount, keeping the cost for ten units steady at $4,499.91 total.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrSnIAK",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2023-11-09T17:31:00] Chen Lixin: Fantastic. I wanted to start off by discussing our pricing model, which we've tailored to be as clear and competitive as possible. We’ve set it up to avoid any hidden costs you might encounter with other implementations.\n[2023-11-09T17:31:20] Sofia Russo: That's good to hear. I’ve noticed that unpredictability can sometimes be an issue with pricing models from other vendors, and it’s important for us to have a predictable budget.\n[2023-11-09T17:31:45] Chen Lixin: Absolutely, Sofia. Predictability is crucial, especially for integrating something as transformational as our AI-powered electronic design automation. For instance, with PulseSim Pro, which you're considering, we are offering a 10% discount. This means your cost for those ten units remains steady at $4499.91 total."
+              }
+            ]
+          },
+          {
+            "answer": "Sofia Russo raised the concern that TechPulse's priced structures seemed a bit complex at first glance, noting that some of her team members mentioned competitors offering more straightforward initial pricing. Chen responded by saying he completely understands, that they've heard similar feedback occasionally and are working on simplifying the structure where possible, and that their approach ensures all variables are transparent to cater to a comprehensive and tailored solution. He added that once the structure is clear, it actually becomes very favorable in terms of total cost of ownership.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuImIAK",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-11-20T14:46:05] Sofia Russo: Definitely the real-time collaboration feature. Given our focus on cloud-based work, it's an excellent match for us. But there was a minor concern about priced structures being a bit complex at first glance. Some of our team members mentioned competitors offering more straightforward initial pricing.\n[2023-11-20T14:46:25] Chen Lixin: I completely understand. We've heard similar feedback occasionally, and we're working on simplifying our structure where possible. Our approach is to ensure that all variables are transparent, catering to a comprehensive and tailored solution for your needs. Once it's clear, it actually becomes very favorable with our total cost of ownership."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-0b7a911a19ded6ec",
+      "question": "What did Marcus Lund say SecureWise values about TechPulse's deployment approach for CryptSecure Core?",
+      "gold_answer": "He values the rapid deployment, given the agility required in cybersecurity.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgPIAS",
+        "b2b:a05Wt000003SrNBIA0",
+        "b2b:a05Wt000003SrcWIAS",
+        "b2b:a05Wt000003SsLeIAK",
+        "b2b:a05Wt000003SsLfIAK",
+        "b2b:a05Wt000003SvUpIAK",
+        "b2b:a05Wt000003SxQ5IAK",
+        "b2b:a05Wt000003Sxd3IAC",
+        "b2b:a05Wt000003T0SvIAK",
+        "b2b:a05Wt000003T0ZHIA0",
+        "b2b:a05Wt000003T1FEIA0",
+        "b2b:a05Wt000003T284IAC",
+        "b2b:a05Wt000003T285IAC",
+        "b2b:a05Wt000003T2BJIA0",
+        "b2b:a05Wt000003T2JPIA0",
+        "b2b:a05Wt000003T2OBIA0",
+        "b2b:a05Wt000003T2OCIA0",
+        "b2b:a05Wt000003T2klIAC",
+        "b2b:a05Wt000003T2mLIAS",
+        "b2b:a05Wt000003T2zEIAS",
+        "b2b:a05Wt000003T342IAC",
+        "b2b:a05Wt000003T3aIIAS",
+        "b2b:a05Wt000003T3s2IAC",
+        "b2b:a05Wt000003T43JIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only the 2023-08-09 call (TechPulse-SecureWise Strategic Collaboration) has Marcus Lund commenting on TechPulse's deployment approach in the context of CryptSecure Core: Aarav describes the streamlined implementation/rapid deployment process, and Marcus says rapid deployment is something SecureWise values given the agility required in cybersecurity. No other Marcus Lund call addresses deployment approach for CryptSecure Core.",
+        "answers": [
+          {
+            "answer": "Marcus Lund said that SecureWise values TechPulse's rapid deployment — the streamlined implementation process designed to ensure rapid deployment into existing systems — because of the agility required in cybersecurity, with CryptSecure Core being integral to their cybersecurity framework.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcWIAS",
+                "line_start": 4,
+                "line_end": 8,
+                "quote": "[2023-08-09T10:01:50] Aarav Sharma: First off, we've been reviewing how you're currently using our CryptSecure Core and SecureData Nexus. We're tailoring our presentation to highlight the specific benefits and enhancements these products can bring to SecureWise.\n[2023-08-09T10:02:15] Marcus Lund: That's great to hear. We're always looking for ways to optimize our processes, especially with CryptSecure Core since it's integral to our cybersecurity framework.\n[2023-08-09T10:02:35] Aarav Sharma: Absolutely, and that's where our new developments with the SecureFlow Suite and its integration capabilities come into play. Our streamlined implementation process is designed to ensure rapid deployment into your existing systems. We've had very positive feedback about this from other clients.\n[2023-08-09T10:02:55] Marcus Lund: I did hear about your rapid deployment. It's something we definitely value considering the agility required in cybersecurity."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically what Marcus Lund said SecureWise values about TechPulse's deployment approach for CryptSecure Core. In call b2b:a05Wt000003SrcWIAS (2023-08-09), Aarav Sharma discusses CryptSecure Core usage and then describes TechPulse's 'streamlined implementation process' designed for 'rapid deployment into your existing systems.' Marcus Lund responds directly: 'I did hear about your rapid deployment. It's something we definitely value considering the agility required in cybersecurity.' This is the only call where Marcus Lund explicitly states what SecureWise values about TechPulse's deployment approach in the context of CryptSecure Core.",
+        "answers": [
+          {
+            "answer": "Marcus Lund said that SecureWise values TechPulse's rapid deployment, specifically because of the agility required in cybersecurity. This came after Aarav Sharma described TechPulse's streamlined implementation process designed to ensure rapid deployment into SecureWise's existing systems, in the context of discussing how SecureWise uses CryptSecure Core as integral to their cybersecurity framework.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcWIAS",
+                "line_start": 4,
+                "line_end": 8,
+                "quote": "[2023-08-09T10:01:50] Aarav Sharma: First off, we've been reviewing how you're currently using our CryptSecure Core and SecureData Nexus. We're tailoring our presentation to highlight the specific benefits and enhancements these products can bring to SecureWise.\n[2023-08-09T10:02:15] Marcus Lund: That's great to hear. We're always looking for ways to optimize our processes, especially with CryptSecure Core since it's integral to our cybersecurity framework.\n[2023-08-09T10:02:35] Aarav Sharma: Absolutely, and that's where our new developments with the SecureFlow Suite and its integration capabilities come into play. Our streamlined implementation process is designed to ensure rapid deployment into your existing systems. We've had very positive feedback about this from other clients.\n[2023-08-09T10:02:55] Marcus Lund: I did hear about your rapid deployment. It's something we definitely value considering the agility required in cybersecurity."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same core fact: Marcus Lund said SecureWise values TechPulse's rapid deployment because of the agility required in cybersecurity. Answer B adds contextual detail about Aarav Sharma's description and the cybersecurity framework, but these are extras that do not change the substantive agreement. The reference states 'He values the rapid deployment, given the agility required in cybersecurity,' which directly covers the requested fact about what SecureWise values (rapid deployment) and the reason (agility required in cybersecurity). All requested facts are present in both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-8be35f112c10a430",
+      "question": "What next steps did Enzo outline to Emma Daniels for closing her Tesla Model S deal?",
+      "gold_answer": "Enzo will send contract documents for review and signature, then proceed with setting the delivery date for the Tesla Model S.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNF2IAO",
+        "b2c:a05Ws000005SNGhIAO",
+        "b2c:a05Ws000005SNLUIA4",
+        "b2c:a05Ws000005SPGrIAO",
+        "b2c:a05Ws000005SPVKIA4",
+        "b2c:a05Ws000005SQ4uIAG",
+        "b2c:a05Ws000005SQEXIA4",
+        "b2c:a05Ws000005SQfuIAG",
+        "b2c:a05Ws000005SQfvIAG",
+        "b2c:a05Ws000005SQpbIAG",
+        "b2c:a05Ws000005SQuSIAW",
+        "b2c:a05Ws000005SRycIAG",
+        "b2c:a05Ws000005SSMkIAO",
+        "b2c:a05Ws000005SSPyIAO",
+        "b2c:a05Ws000005SSl2IAG",
+        "b2c:a05Ws000005SSrVIAW",
+        "b2c:a05Ws000005SSwHIAW",
+        "b2c:a05Ws000005SSxvIAG",
+        "b2c:a05Ws000005ST2jIAG",
+        "b2c:a05Ws000005ST7eIAG",
+        "b2c:a05Ws000005SUutIAG",
+        "b2c:a05Ws000005SUziIAG",
+        "b2c:a05Ws000005SVB3IAO",
+        "b2c:a05Ws000005SWYRIA4",
+        "b2c:a05Ws000005SXW9IAO",
+        "b2c:a05Ws000005SXz9IAG",
+        "b2c:a05Ws000005SY7AIAW",
+        "b2c:a05Ws000005SYySIAW",
+        "b2c:a05Ws000005SZL1IAO",
+        "b2c:a05Ws000005SaVZIA0",
+        "b2c:a05Ws000005SaVaIAK",
+        "b2c:a05Ws000005SaddIAC",
+        "b2c:a05Ws000005SbWRIA0",
+        "b2c:a05Ws000005SbY7IAK",
+        "b2c:a05Ws000005SbeWIAS",
+        "b2c:a05Ws000005SbkxIAC",
+        "b2c:a05Ws000005SbxpIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Enzo Rossi appears in three calls on the same Tesla Model S opportunity (006Ws00000ALftjIAD), and each call contains a different set of next steps he outlined to Emma. The question does not specify which call, so materially different complete answers exist.",
+        "answers": [
+          {
+            "answer": "In the 2023-01-18 call, Enzo outlined that with everything agreed upon, the next step was to finalize the contract documents — he would send them over right after the call for Emma's review and signature, and once received, they would proceed with setting the delivery date for her Tesla Model S.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNLUIA4",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2023-01-18T09:33:40] Emma Daniels: So, to wrap everything up, what are the next steps from here?\n[2023-01-18T09:33:50] Enzo Rossi: With everything agreed upon, the next step is to finalize the contract documents. I’ll send them over right after our call for your review and signature. Once we have that, we can proceed with the delivery date for your Tesla Model S.\n[2023-01-18T09:34:10] Emma Daniels: Sounds perfect. I’ll keep an eye out for that email and will have it back to you promptly."
+              }
+            ]
+          },
+          {
+            "answer": "In the 2023-01-14 call, Enzo outlined that they would proceed with finalizing the terms that day, get all the paperwork ready for contract finalization, and he would reach out to confirm everything for the next meeting.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SaVaIAK",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2023-01-14T10:04:30] Enzo Rossi: Glad to hear, Emma. So, should we proceed with finalizing these terms today?\n[2023-01-14T10:04:40] Emma Daniels: Yes, let’s go ahead. I’m really looking forward to driving that Tesla and having the peace of mind from your packages."
+              }
+            ]
+          },
+          {
+            "answer": "In the 2023-01-06 call, Enzo outlined that he would refine the proposal details based on their discussion and follow up soon with the updated proposal for the Tesla Model S and service packages.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SaVZIA0",
+                "line_start": 17,
+                "line_end": 20,
+                "quote": "[2023-01-06T09:34:20] Emma Daniels: Makes sense. I think every company has its style. Anyway, I'm really liking what has been outlined in the proposal so far.\n[2023-01-06T09:34:35] Enzo Rossi: That's great to hear, Emma. I'll make sure to refine the details based on our discussion today. If there are any other questions or needs, let me know. We're here to make this as seamless as possible for you.\n[2023-01-06T09:34:50] Emma Daniels: Thanks, Enzo. I'll definitely reach out if anything else comes to mind. Looking forward to the next steps."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Enzo (Rossi) and Emma Daniels and asks about next steps for closing her Tesla Model S deal. Only one call features Enzo Rossi discussing closing/finalizing the Tesla Model S deal with Emma: call b2c:a05Ws000005SNLUIA4 (2023-01-18), opportunity 'Emma Daniels Luxury Vehicle and Service Package'. In that call, Emma asks 'what are the next steps from here?' and Enzo outlines them clearly. Other Enzo calls (2022-12-27, 2023-01-06, 2023-01-14) are earlier discovery/proposal/finalization-stage calls but do not contain the specific closing next-steps outline tied to the Tesla Model S deal in the same direct way.",
+        "answers": [
+          {
+            "answer": "Enzo outlined the following next steps to Emma for closing her Tesla Model S deal: (1) He would finalize the contract documents and send them over right after the call for her review and signature. (2) Once the signed contract was received, they would proceed with scheduling the delivery date for her Tesla Model S. Emma confirmed she would keep an eye out for the email and return it promptly.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNLUIA4",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2023-01-18T09:33:40] Emma Daniels: So, to wrap everything up, what are the next steps from here?\n[2023-01-18T09:33:50] Enzo Rossi: With everything agreed upon, the next step is to finalize the contract documents. I’ll send them over right after our call for your review and signature. Once we have that, we can proceed with the delivery date for your Tesla Model S.\n[2023-01-18T09:34:10] Emma Daniels: Sounds perfect. I’ll keep an eye out for that email and will have it back to you promptly."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
