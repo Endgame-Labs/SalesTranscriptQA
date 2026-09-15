@@ -1,0 +1,304 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "98dc09d4f3c63f3e1ab61630346ab693d4d78274357e94bad92c1056c22eb90d",
+  "questions": 3,
+  "counts": {
+    "pass": 3
+  },
+  "estimated_usd": 0.39698818999999996,
+  "results": [
+    {
+      "question_id": "b2b-single_call-9e6f59367f0393c6",
+      "question": "What concern did Fatima Osei raise about TechPulse's products compared to competitors, and how did Luciana respond?",
+      "gold_answer": "Fatima said the products might lack flexibility compared to competitors; Luciana acknowledged it and said they're refining features to meet niche needs while meeting security compliance.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrnpIAC",
+        "b2b:a05Wt000003St1VIAS",
+        "b2b:a05Wt000003StOAIA0",
+        "b2b:a05Wt000003SuLsIAK",
+        "b2b:a05Wt000003Suk7IAC",
+        "b2b:a05Wt000003SvD6IAK",
+        "b2b:a05Wt000003SvRbIAK",
+        "b2b:a05Wt000003SvoEIAS",
+        "b2b:a05Wt000003SvxpIAC",
+        "b2b:a05Wt000003SxBfIAK",
+        "b2b:a05Wt000003SxZqIAK",
+        "b2b:a05Wt000003SxZrIAK",
+        "b2b:a05Wt000003SxjYIAS",
+        "b2b:a05Wt000003SxjZIAS",
+        "b2b:a05Wt000003SyHaIAK",
+        "b2b:a05Wt000003SyHbIAK",
+        "b2b:a05Wt000003SyMDIA0",
+        "b2b:a05Wt000003SydzIAC",
+        "b2b:a05Wt000003SyivIAC",
+        "b2b:a05Wt000003SyxGIAS",
+        "b2b:a05Wt000003Sz3nIAC",
+        "b2b:a05Wt000003SzATIA0",
+        "b2b:a05Wt000003SzQQIA0",
+        "b2b:a05Wt000003T035IAC",
+        "b2b:a05Wt000003T0MTIA0",
+        "b2b:a05Wt000003T10sIAC",
+        "b2b:a05Wt000003T1DdIAK",
+        "b2b:a05Wt000003T2HqIAK",
+        "b2b:a05Wt000003T2HrIAK",
+        "b2b:a05Wt000003T2HsIAK",
+        "b2b:a05Wt000003T2hdIAC",
+        "b2b:a05Wt000003T41kIAC",
+        "b2b:a05Wt000003T4L6IAK",
+        "b2b:a05Wt000003T4WUIA0",
+        "b2b:a05Wt000003T4ZcIAK",
+        "b2b:a05Wt000003T4ZdIAK",
+        "b2b:a05Wt000003T4coIAC",
+        "b2b:a05Wt000003T4cpIAC",
+        "b2b:a05Wt000003T4cqIAC",
+        "b2b:a05Wt000003T4eQIAS",
+        "b2b:a05Wt000003T4g1IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Fatima Osei appears in three calls with Luciana Alves. Only the 2023-05-15 call contains a concern Fatima raises specifically about TechPulse's products relative to competitors (lack of flexibility); the other calls raise concerns about competitors (e.g., CircuitWave's compliance) or ask neutral comparison questions, so they are not competing answers to the question's wording.",
+        "answers": [
+          {
+            "answer": "Fatima Osei raised the concern that while TechPulse's products are appreciated for innovation, they might lack some flexibility compared to competitors. Luciana Alves responded that this is a fair point, noting that TechPulse is constantly working to diversify its offerings while ensuring they meet security compliance standards, and that flexibility can vary but they are committed to refining product features to better meet niche needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvRbIAK",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-05-15T10:34:15] Fatima Osei: It's impressive how tailored it seems. However, I have heard that while your products are appreciated for innovation, they might lack some flexibility compared to competitors."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Fatima Osei and Luciana. Only two calls feature this pair: b2b:a05Wt000003SvRbIAK (2023-05-15) and b2b:a05Wt000003SvoEIAS (2023-04-10), plus b2b:a05Wt000003SyMDIA0 (2023-04-14). The question asks about a concern regarding TechPulse's products 'compared to competitors.' In b2b:a05Wt000003SvRbIAK, Fatima Osei explicitly raises the concern that TechPulse products 'might lack some flexibility compared to competitors' (line 11), and Luciana responds directly (line 12). In b2b:a05Wt000003SvoEIAS, Fatima raises a concern about CircuitWave's compliance shortcomings (line 7), but that is about a competitor's weakness, not about TechPulse's products compared to competitors. In b2b:a05Wt000003SyMDIA0, Fatima asks how SecureFlow compares to CircuitWave (line 7), but this is framed as an inquiry rather than a concern she raised about TechPulse's products. The concern in b2b:a05Wt000003SvRbIAK line 11 is the clearest match: Fatima states she has 'heard that while your products are appreciated for innovation, they might lack some flexibility compared to competitors,' which is a direct concern about TechPulse's products relative to competitors.",
+        "answers": [
+          {
+            "answer": "Fatima Osei raised the concern that while TechPulse's products are appreciated for innovation, they might lack some flexibility compared to competitors. Luciana responded by acknowledging it as a fair point, stating that TechPulse is constantly working to diversify their offerings while ensuring they meet security compliance standards, and that while flexibility can vary, they are committed to refining their product features to better meet niche needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvRbIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-05-15T10:34:15] Fatima Osei: It's impressive how tailored it seems. However, I have heard that while your products are appreciated for innovation, they might lack some flexibility compared to competitors.\n[2023-05-15T10:34:45] Luciana Alves: That's a fair point, Fatima. We are constantly working to diversify our offerings while ensuring they meet security compliance standards. Flexibility can vary, but we're committed to refining our product features to better meet niche needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same concern (TechPulse's products might lack flexibility compared to competitors despite being appreciated for innovation) and the same response from Luciana (acknowledged as fair, working to diversify offerings, ensuring security compliance, committed to refining features for niche needs). The reference covers both requested facts: the flexibility concern and Luciana's acknowledgment plus commitment to refining features while meeting security compliance. Minor wording differences (e.g., 'Luciana Alves' vs 'Luciana') do not affect substance."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-3153cde08b6d817c",
+      "question": "For SafetyNet Inc., what concern did Lars Sørensen raise about pricing in the initial discussion, and how did he characterize TechPulse's pricing model during the proposal review?",
+      "gold_answer": "Initially he said projecting long-term costs can be unclear; in the proposal review he found TechPulse's pricing model transparent and favorable, though initial phase costs are competitive with other vendors.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7pIAC",
+        "b2b:a05Wt000003SslLIAS",
+        "b2b:a05Wt000003SslMIAS",
+        "b2b:a05Wt000003StETIA0",
+        "b2b:a05Wt000003StHhIAK",
+        "b2b:a05Wt000003StRIIA0",
+        "b2b:a05Wt000003StRJIA0",
+        "b2b:a05Wt000003Su43IAC",
+        "b2b:a05Wt000003SuQdIAK",
+        "b2b:a05Wt000003SwSQIA0",
+        "b2b:a05Wt000003SwTyIAK",
+        "b2b:a05Wt000003SxLCIA0",
+        "b2b:a05Wt000003SxRgIAK",
+        "b2b:a05Wt000003SxRhIAK",
+        "b2b:a05Wt000003SxRiIAK",
+        "b2b:a05Wt000003SxUvIAK",
+        "b2b:a05Wt000003SxUwIAK",
+        "b2b:a05Wt000003SxUxIAK",
+        "b2b:a05Wt000003SxrWIAS",
+        "b2b:a05Wt000003Sy2lIAC",
+        "b2b:a05Wt000003SyE7IAK",
+        "b2b:a05Wt000003SyE8IAK",
+        "b2b:a05Wt000003SyHLIA0",
+        "b2b:a05Wt000003SzACIA0",
+        "b2b:a05Wt000003SzExIAK",
+        "b2b:a05Wt000003SzV4IAK",
+        "b2b:a05Wt000003SzV5IAK",
+        "b2b:a05Wt000003SzjbIAC",
+        "b2b:a05Wt000003SzwUIAS",
+        "b2b:a05Wt000003T09OIAS",
+        "b2b:a05Wt000003T0B0IAK",
+        "b2b:a05Wt000003T0NvIAK",
+        "b2b:a05Wt000003T0R7IAK",
+        "b2b:a05Wt000003T0SjIAK",
+        "b2b:a05Wt000003T0ULIA0",
+        "b2b:a05Wt000003T0VxIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Lars Sørensen appears only in the SafetyNet EDA Transformation opportunity calls with Thato Mokoena. His first pricing concern appears in the 2023-08-19 discussion (the initial discussion of pricing), where he raised that projecting costs long-term can be unclear. The proposal review occurs in the 2023-09-14 call, where he characterized TechPulse's pricing model as transparent and favorable, though noting initial phase costs are competitive with other vendors. The 2023-08-31 proposal-feedback call contains no pricing characterization, and the 2023-11-20 closing call is not a proposal review, so the answer is uniquely determined.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-08-19), Lars Sørensen raised the concern that projecting costs long-term can sometimes be unclear — i.e., a lack of clarity around long-term cost projections. During the proposal review (2023-09-14), he characterized TechPulse's pricing model as transparent and favorable, while noting that the initial phase costs are competitive with what other vendors offer.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzACIA0",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-08-19T14:32:55] Lars Sørensen: That’s impressive. We’re really interested in seeing those kinds of results. However, we’ve heard from others that projecting costs long-term can sometimes be unclear."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0R7IAK",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-09-14T14:32:45] Lars Sørensen: That's reassuring. Another aspect of interest is your pricing model. We’ve found TechPulse's model transparent and favorable, though we notice the initial phase costs are competitive in what other vendors offer."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Lars Sørensen appears only in the 'SafetyNet EDA Transformation' opportunity (006Wt000007AyaBIAS) with rep Thato Mokoena. The earliest call (2023-08-15) is the initial discussion, where Lars raised a pricing concern about unclear long-term cost projections. The proposal review call (2023-09-14) is where Lars characterized TechPulse's pricing model as 'transparent and favorable' while noting initial phase costs are competitive with other vendors.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-08-15), Lars Sørensen raised the concern that projecting costs long-term can sometimes be unclear, saying 'we've heard from others that projecting costs long-term can sometimes be unclear.' Thato Mokoena responded by emphasizing transparency, stating they are 'committed to providing clear, upfront information about costs, especially for long-term projects.' During the proposal review (2023-09-14), Lars characterized TechPulse's pricing model as 'transparent and favorable,' but noted that 'the initial phase costs are competitive in what other vendors offer,' meaning other vendors match TechPulse on initial-phase pricing. Thato responded by explaining that their pricing 'reflects the value-packed services we provide, including robust security compliance and streamlined implementation processes' and called it 'an investment in a secure and scalable future.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzACIA0",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2023-08-19T14:32:55] Lars Sørensen: That’s impressive. We’re really interested in seeing those kinds of results. However, we’ve heard from others that projecting costs long-term can sometimes be unclear.\n[2023-08-19T14:33:15] Thato Mokoena: I understand, Lars. Transparency is key in these engagements. We're committed to providing clear, upfront information about costs, especially for long-term projects. We're always looking to improve on this front as well.\n[2023-08-19T14:33:30] Lars Sørensen: Right. It's something both parties could benefit from improving, I suppose."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0R7IAK",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-09-14T14:32:45] Lars Sørensen: That's reassuring. Another aspect of interest is your pricing model. We’ve found TechPulse's model transparent and favorable, though we notice the initial phase costs are competitive in what other vendors offer.\n[2023-09-14T14:33:15] Thato Mokoena: I completely understand your perspective. Our pricing, while competitive, reflects the value-packed services we provide, including robust security compliance and streamlined implementation processes. It’s an investment in a secure and scalable future."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two requested facts: (1) In the initial discussion, Lars Sørensen raised the concern that projecting costs long-term can sometimes be unclear. (2) In the proposal review, he characterized TechPulse's pricing model as transparent and favorable, while noting initial phase costs are competitive with other vendors. Answer B adds extra context (quotes, Thato Mokoena's responses, a slightly different date) but these are unrequested extras and do not contradict the core facts. The reference succinctly covers both requested commitments: the long-term cost projection concern and the transparent/favorable characterization with the competitive initial-phase note. All three sources align on the substantive facts requested."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-3c6ad3039516da85",
+      "question": "For UrbanEDGE Innovation's Smart City Circuit Expansion, what pricing did TechPulse quote for AI Cirku-Tech and CircuitMaster Analyzer, and what scalability requirement did Aisha Hamidi say drove the project?",
+      "gold_answer": "AI Cirku-Tech: 15% discount on 20 units, $9,009.83; CircuitMaster Analyzer: 10% discount on 15 units, $7,424.87. Aisha needs rapid rollout of urban solutions across multiple cities with quick deployment and handling of increasing data loads.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqJiIAK",
+        "b2b:a05Wt000003StnqIAC",
+        "b2b:a05Wt000003SuIVIA0",
+        "b2b:a05Wt000003SuOwIAK",
+        "b2b:a05Wt000003SvkqIAC",
+        "b2b:a05Wt000003SwnKIAS",
+        "b2b:a05Wt000003Sx6gIAC",
+        "b2b:a05Wt000003SxgAIAS",
+        "b2b:a05Wt000003SxgBIAS",
+        "b2b:a05Wt000003SxhmIAC",
+        "b2b:a05Wt000003SxrRIAS",
+        "b2b:a05Wt000003Sxt3IAC",
+        "b2b:a05Wt000003Sxt4IAC",
+        "b2b:a05Wt000003SxufIAC",
+        "b2b:a05Wt000003SxwHIAS",
+        "b2b:a05Wt000003SxxtIAC",
+        "b2b:a05Wt000003SxzVIAS",
+        "b2b:a05Wt000003SxzWIAS",
+        "b2b:a05Wt000003Sy17IAC",
+        "b2b:a05Wt000003Sy2jIAC",
+        "b2b:a05Wt000003Sy4LIAS",
+        "b2b:a05Wt000003Sy5xIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only two calls belong to the 'UrbanEDGE Smart City Circuit Expansion' opportunity (both with Aisha Hamidi and Fatoumata Traoré). The 2023-12-27 demo follow-up contains the specific pricing for AI Cirku-Tech and CircuitMaster Analyzer, and the 2023-12-18 discovery call contains Aisha's scalability rationale. Other calls with pricing (e.g., $3,329.93 package) belong to different opportunities and are excluded.",
+        "answers": [
+          {
+            "answer": "For the UrbanEDGE Smart City Circuit Expansion, TechPulse quoted AI Cirku-Tech with a 15% discount on 20 units, totaling $9,009.83, and CircuitMaster Analyzer with a 10% discount on 15 units, totaling $7,424.87. Aisha Hamidi said the project was driven by scalability: UrbanEDGE's primary goal is to enhance existing smart infrastructure while ensuring scalability — they plan to roll out new urban solutions rapidly across multiple cities, and their current setup doesn't support that expansion efficiently, so they need technologies offering quick deployment that can handle increasing data loads seamlessly.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxgBIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-12-27T10:32:30] Fatoumata Traoré: Sure, happy to dive into that. As you know, we offer AI Cirku-Tech with a 15% discount on a total of 20 units, which brings the price to $9,009.83. Similarly, CircuitMaster Analyzer comes with a 10% discount for 15 units, totaling $7,424.87. These prices reflect our commitment to providing competitive offerings while delivering exceptional value through the product features."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sx6gIAC",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2023-12-18T11:00:40] Aisha Hamidi: Sure, happy to give you an overview. Our primary goal is to enhance the existing smart infrastructure while ensuring scalability. We've faced some challenges with integrating new technologies into our current system, which has prompted us to look for more advanced solutions.\n[2023-12-18T11:01:10] Fatoumata Traoré: That makes sense. Integration can indeed be quite complex. At TechPulse, we've helped various clients navigate similar challenges through our AI-powered solutions. In fact, our AI Cirku-Tech is designed to streamline that process. Could you tell me more about the specific scalability challenges you’re encountering?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names the opportunity 'UrbanEDGE Smart City Circuit Expansion' (opportunity_id 006Wt000007BAckIAG), the products AI Cirku-Tech and CircuitMaster Analyzer, and the contact Aisha Hamidi. Only one call in the dataset matches this exact opportunity name and contact: b2b:a05Wt000003SxgBIAS (2023-12-27, Fatoumata Traoré with Aisha Hamidi). In that call, Fatoumata quotes specific dollar pricing for both products, and Aisha's stated scalability requirement (from the earlier discovery call b2b:a05Wt000003Sx6gIAC on the same opportunity) is the need to roll out new urban solutions rapidly across multiple cities with technologies that handle increasing data loads seamlessly.",
+        "answers": [
+          {
+            "answer": "TechPulse quoted AI Cirku-Tech at $9,009.83 (a 15% discount on 20 units) and CircuitMaster Analyzer at $7,424.87 (a 10% discount on 15 units). Aisha Hamidi said the project was driven by the need to roll out new urban solutions rapidly across multiple cities, requiring technologies that offer quick deployment and can handle increasing data loads seamlessly, because their current setup does not support that expansion efficiently.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxgBIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-12-27T10:32:30] Fatoumata Traoré: Sure, happy to dive into that. As you know, we offer AI Cirku-Tech with a 15% discount on a total of 20 units, which brings the price to $9,009.83. Similarly, CircuitMaster Analyzer comes with a 10% discount for 15 units, totaling $7,424.87. These prices reflect our commitment to providing competitive offerings while delivering exceptional value through the product features."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sx6gIAC",
+                "line_start": 3,
+                "line_end": 6,
+                "quote": "[2023-12-18T11:00:40] Aisha Hamidi: Sure, happy to give you an overview. Our primary goal is to enhance the existing smart infrastructure while ensuring scalability. We've faced some challenges with integrating new technologies into our current system, which has prompted us to look for more advanced solutions.\n[2023-12-18T11:01:10] Fatoumata Traoré: That makes sense. Integration can indeed be quite complex. At TechPulse, we've helped various clients navigate similar challenges through our AI-powered solutions. In fact, our AI Cirku-Tech is designed to streamline that process. Could you tell me more about the specific scalability challenges you’re encountering?\n[2023-12-18T11:01:40] Aisha Hamidi: Well, we are planning to roll out new urban solutions rapidly across multiple cities, and our current setup doesn't support that expansion efficiently. We need technologies that offer quick deployment and can handle increasing data loads seamlessly."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers provide identical pricing details: AI Cirku-Tech at $9,009.83 with a 15% discount on 20 units, and CircuitMaster Analyzer at $7,424.87 with a 10% discount on 15 units. Both also attribute the scalability requirement to Aisha Hamidi, stating the need for rapid rollout of urban solutions across multiple cities, quick deployment, and handling increasing data loads because the current setup doesn't support expansion efficiently. The reference covers all these same facts: both product prices with discounts and unit counts, and the scalability requirement of rapid multi-city rollout with quick deployment and increasing data load handling. Answer A adds a framing sentence about enhancing existing smart infrastructure, but this is extra context rather than a missing or substituted fact. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
