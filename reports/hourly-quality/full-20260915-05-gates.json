@@ -1,0 +1,368 @@
+[
+  {
+    "question_id": "b2b-multi_call-9d748eb244165b8c",
+    "question": "Across the two discussions with Amelia Richardson at UrbanTech Developments, what did Luis acknowledge about early adoption experiences in the initial call, and which competitor did he name as ahead on user-friendly interfaces in the follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Luis acknowledged about early adoption experiences in the initial call and which competitor he named as ahead on user-friendly interfaces in the follow-up, across two discussions with Amelia Richardson at UrbanTech Developments",
+        "relationship": "Both facts address the same business issue\u2014competitive positioning and product experience (early adoption feedback and competitor strength on UI)\u2014discussed across the two calls",
+        "reason": "The two-call facts concern the same competitive/product-experience issue, not merely the same account, and use plausible sales language"
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0ntIAC",
+                "fact": "Luis acknowledged user feedback about early adoption experiences needing improvement.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not contain this acknowledgment; it only mentions feedback about the need for more intuitive user experiences, not specifically early adoption experiences."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3dVIAS",
+                "fact": "Luis named Adaptive Design Solutions as ahead with user-friendly interfaces in the early phase.",
+                "why_other_call_cannot_supply_it": "The initial call does not mention any competitor by name; it only discusses training resources and user-friendly interfaces without naming Adaptive Design Solutions."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two separate calls: what Luis acknowledged about early adoption experiences in the initial call, and which competitor he named in the follow-up. Each fact is only present in one call, and the other call cannot supply it. The initial call contains the acknowledgment of early adoption feedback, while the follow-up call contains the competitor name. These are not paraphrases or repetitions; they are separate requested details."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: what Luis acknowledged about early adoption experiences in the initial call, and which competitor he named as ahead on user-friendly interfaces in the follow-up. The first fact is found in the initial call: Luis acknowledged user feedback about early adoption experiences needing improvement. The second fact is found in the follow-up: he named Adaptive Design Solutions as ahead with user-friendly interfaces. However, the second call also contains the acknowledgment about early adoption experiences (Luis says 'We've received feedback highlighting the need for more intuitive user experiences'), and the first call does not mention any competitor. Thus, the first call is necessary for the early adoption acknowledgment, and the second call is necessary for the competitor name. But the question explicitly asks for information from each call, so both calls are needed to answer the question as posed. The facts are distinct and each is exclusively available in one call. Therefore, both calls are necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0ntIAC",
+                  "fact": "Luis acknowledged user feedback about early adoption experiences needing improvement.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not contain this acknowledgment; it only mentions feedback about the need for more intuitive user experiences, not specifically early adoption experiences."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3dVIAS",
+                  "fact": "Luis named Adaptive Design Solutions as ahead with user-friendly interfaces in the early phase.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention any competitor by name; it only discusses training resources and user-friendly interfaces without naming Adaptive Design Solutions."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two separate calls: what Luis acknowledged about early adoption experiences in the initial call, and which competitor he named in the follow-up. Each fact is only present in one call, and the other call cannot supply it. The initial call contains the acknowledgment of early adoption feedback, while the follow-up call contains the competitor name. These are not paraphrases or repetitions; they are separate requested details."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0ntIAC",
+                "fact": "Luis acknowledged user feedback about early adoption experiences needing improvement",
+                "why_other_call_cannot_supply_it": "The follow-up call only contains feedback about intuitive user experiences and the competitor comparison; the initial acknowledgment of early adoption feedback appears only in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3dVIAS",
+                "fact": "Luis named Adaptive Design Solutions as ahead on user-friendly interfaces in the early phase",
+                "why_other_call_cannot_supply_it": "The first call never mentions any competitor by name; the competitor naming occurs only in the second call."
+              }
+            ],
+            "reason": "The question requests two distinct facts: an acknowledgment in the first call and a competitor name in the second. Each fact exists only in its respective call, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0ntIAC",
+                  "fact": "Luis acknowledged user feedback about early adoption experiences needing improvement",
+                  "why_other_call_cannot_supply_it": "The follow-up call only contains feedback about intuitive user experiences and the competitor comparison; the initial acknowledgment of early adoption feedback appears only in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3dVIAS",
+                  "fact": "Luis named Adaptive Design Solutions as ahead on user-friendly interfaces in the early phase",
+                  "why_other_call_cannot_supply_it": "The first call never mentions any competitor by name; the competitor naming occurs only in the second call."
+                }
+              ],
+              "reason": "The question requests two distinct facts: an acknowledgment in the first call and a competitor name in the second. Each fact exists only in its respective call, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall two specific admissions across two calls with the same contact/account. Call 1 (2020-08-09) contains Luis's acknowledgment that 'we have noted some areas for improvement based on user feedback about early adoption experiences,' matching the first requested fact. Call 2 (2020-08-17) contains Luis naming 'Adaptive Design Solutions' as ahead 'with user-friendly interfaces in the early phase,' matching the second requested fact. Each source contributes an exclusive fact; the gold answer states precisely those two facts without unasked extras. Wording is natural, scope is clear (named contact, account, and two-call context), and no artificial locator preamble or answer leakage is present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Luis Rodriguez in the initial call (2020-08-09) explicitly states 'we have noted some areas for improvement based on user feedback about early adoption experiences' and 'We're actively working to enhance that aspect.' This directly supports the answer_claim that Luis acknowledged areas for improvement based on user feedback about early adoption experiences and said they are actively working to enhance that."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Luis Rodriguez in the follow-up call (2020-08-17) explicitly states 'Competitors like Adaptive Design Solutions seem to be ahead with user-friendly interfaces in the early phase.' This directly supports the answer_claim that Luis named Adaptive Design Solutions as ahead with user-friendly interfaces in the early phase."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Luis acknowledged user feedback about early adoption experiences needing improvement, and (2) he named Adaptive Design Solutions as ahead with user-friendly interfaces in the early phase. Evidence index 0 supports part (1) with Luis's explicit acknowledgment of 'areas for improvement based on user feedback about early adoption experiences.' Evidence index 1 supports part (2) with Luis naming 'Adaptive Design Solutions seem to be ahead with user-friendly interfaces in the early phase.' Both calls are confirmed via context_metadata to be with Amelia Richardson at UrbanTech Developments. The gold_answer faithfully summarizes both cited passages."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-0d673ea6ed1125e2",
+    "question": "For InspireTech, what did Santiago commit to about scalability in the initial discussion, and what specific integration requirement did Kwasi raise in the follow-up call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Santiago's commitment about scalability in the initial discussion and Kwasi's specific integration requirement in the follow-up call",
+        "relationship": "two independent fact lookups joined across calls",
+        "reason": "The scalability commitment and the integration requirement are separate business issues from different calls; being about the same account (InspireTech) is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct facts across two calls for the InspireTech account. Call 1 (2024-02-16) contains Santiago's scalability commitment: 'We'll ensure that your feedback is considered as we finalize our proposals and future updates' and 'Could we perhaps take some time to explore your specific scalability expectations in more detail during our next call?' Call 2 (2024-02-21) contains Kwasi's integration requirement: 'We're looking for features that integrate well with our existing systems, specifically in DesignWave Automation. We need to ensure changes can be made without extensive reconfiguration.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally phrased, identifies the account (InspireTech) and participants (Santiago, Kwasi), and a rep would plausibly want to recall these commitments and requirements. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Santiago Fernandez on 2024-02-16 states: 'We'll ensure that your feedback is considered as we finalize our proposals and future updates. Could we perhaps take some time to explore your specific scalability expectations in more detail during our next call?' This directly supports the claim that Santiago said scalability feedback would be considered in proposals and explored in detail on the next call. Kwasi's response confirms agreement. The speaker attribution, content, and context all align with the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Kwasi Mensah on 2024-02-21 states: 'We're looking for features that integrate well with our existing systems, specifically in DesignWave Automation. We need to ensure changes can be made without extensive reconfiguration.' This directly supports the claim that Kwasi asked for DesignWave Automation features that integrate with existing systems without extensive reconfiguration. Speaker attribution, product name, and the specific requirement all match the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Santiago committed to considering scalability feedback in proposals and exploring it in detail on the next call. Evidence index 1 confirms Kwasi raised the specific integration requirement for DesignWave Automation features that integrate with existing systems without extensive reconfiguration. The context metadata confirms both calls relate to InspireTech Consulting and Kwasi Mensah, matching the question's framing of an initial discussion and a follow-up call."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-be6872e427a06528",
+    "question": "What concern did Sara Morales raise about Quantum Circuits Inc, and how did Isabella respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Sara Morales raised about Quantum Circuits Inc and Isabella's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent objection-and-response request about the same issue; natural sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific concern raised by Sara Morales regarding Quantum Circuits Inc and Isabella's response. The dialogue confirms Sara expressed concern about long-term security because Quantum Circuits Inc emphasizes security adherence, and Isabella responded that SecureFlow Suite ensures robust compliance with up-to-date security protocols and is continuously updated. All claims in the gold answer are directly supported by the transcript. The question is naturally worded, scoped to a specific customer interaction, and a rep would plausibly want to know about objections raised. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Sara Morales stating she is 'concerned about the long-term security' and that 'Quantum Circuits Inc has been emphasizing their security adherence quite strongly.' This fully supports the answer_claim about Sara's concern regarding long-term security and Quantum Circuits Inc's emphasis on security adherence."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Isabella Rossi responding that 'Our SecureFlow Suite is designed to ensure robust compliance with up-to-date security protocols' and 'We continuously update our security measures to keep up with industry standards.' This directly supports the answer_claim about SecureFlow Suite ensuring robust compliance with up-to-date security protocols and being continuously updated."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Sara was concerned about long-term security since Quantum Circuits emphasizes security adherence, and that Isabella said SecureFlow Suite ensures robust compliance with up-to-date security protocols and is continuously updated. Evidence index 0 directly supports Sara's concern and the Quantum Circuits reference. Evidence index 1 directly supports Isabella's response about SecureFlow Suite, robust compliance, up-to-date security protocols, and continuous updates. All factual claims in the gold_answer are covered by the two cited evidence items."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-1ff0a0211b337e7f",
+    "question": "What discount is TechPulse currently offering on OptiPower Max for BrightTech, and what pricing adjustments did Xinyi say could be discussed later?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The current discount on OptiPower Max offered to BrightTech and the potential future pricing adjustments Xinyi mentioned",
+        "relationship": "Both parts concern the same commercial pricing terms for the same product and customer \u2014 the current discount and its possible future evolution",
+        "reason": "This is a coherent commercial quote/pricing question: the discount and the discussed future adjustments address the same pricing issue, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about the current discount on OptiPower Max and future pricing adjustments Xinyi mentioned. The dialogue confirms a 15% discount and that volume purchases or bundled discounts could be discussed as the relationship progresses. The answer matches exactly with no unasked extras. The question is naturally phrased, scoped to a specific account (BrightTech) and product (OptiPower Max), and a rep would plausibly want to recall these commercial terms. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Xinyi Zhang explicitly states 'we're offering a 15% discount on it' (referring to OptiPower Max) and 'as our relationship progresses, we're open to discussing volume purchases or bundled discounts, ensuring mutual benefits.' This directly supports the answer_claim of a 15% discount and openness to volume/bundled discounts later."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'A 15% discount on OptiPower Max; later volume purchase or bundled discounts as the relationship progresses.' The single cited evidence item contains Xinyi Zhang's exact words confirming both the 15% discount on OptiPower Max and the willingness to discuss volume purchases or bundled discounts as the relationship progresses. All factual claims in the gold_answer are fully supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-505a7359afbdf170",
+    "question": "What did Lena commit to sending Lucas Hall after their discussion about advanced tech and eco-friendly vehicles?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify what Lena committed to send to Lucas Hall following their discussion about advanced tech and eco-friendly vehicles.",
+        "relationship": "single coherent request: one follow-up commitment lookup tied to the same discussion",
+        "reason": "A single follow-up/commitment lookup about one conversation; no unrelated needs joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Lena committed to sending Lucas Hall after their discussion. The dialogue at 13:48:55 shows Lena saying she will 'follow up with an email tomorrow summarizing what we've discussed, along with some options tailored to your needs for advanced tech and eco-friendly vehicles.' The gold answer accurately captures this commitment. The question is naturally worded, scoped to a specific customer interaction, and a sales rep would plausibly want to track follow-up commitments. Single-call question so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Lena Schmidt explicitly states: 'I'll follow up with an email tomorrow summarizing what we've discussed, along with some options tailored to your needs for advanced tech and eco-friendly vehicles.' This directly supports the answer_claim that Lena will follow up with an email tomorrow summarizing the discussion along with tailored options for advanced tech and eco-friendly vehicles."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Lena committed to sending 'An email the next day summarizing the discussion with tailored options for advanced tech and eco-friendly vehicles.' The cited evidence (index 0) contains Lena's exact words committing to 'an email tomorrow summarizing what we've discussed, along with some options tailored to your needs for advanced tech and eco-friendly vehicles.' The metadata confirms the call date is 2024-02-22 and the opportunity name references 'Lucas Hall - Advanced Tech & Eco-Friendly Vehicle Purchase,' confirming the recipient context. All factual elements of the gold_answer (email, next day/tomorrow, summarizing discussion, tailored options, advanced tech, eco-friendly vehicles) are directly supported by the single cited evidence item."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-4cd9fa1af1b20853",
+    "question": "What vehicle is Harper Allen interested in, and what did Sebastian offer to arrange as a next step?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the vehicle Harper Allen is interested in and the next step Sebastian offered to arrange",
+        "relationship": "single coherent request: customer's interest and the corresponding next step from the same sales conversation",
+        "reason": "Both parts address the same sales interaction\u2014the prospect's vehicle interest and the follow-up action offered\u2014forming one natural query."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts (vehicle of interest and next-step offer) that are both found in the single supplied call. Harper Allen explicitly mentions interest in the Tesla Model S, and Sebastian offers to schedule a virtual demonstration. The answer states precisely those two facts with no extras. The question is naturally worded, scoped to a named customer/account, and represents a plausible rep need. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Harper Allen explicitly states 'I've heard quite a bit about the Tesla Model S' in the context of looking for something reliable and possibly electric, directly supporting the claim that Harper is interested in the Tesla Model S."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Sebastian Martinez says 'we can schedule a virtual demonstration of the Model S, focusing on its features and performance,' which directly supports the claim that Sebastian offered to schedule a virtual demonstration of the Model S. Harper's affirmative response ('That sounds perfect') further confirms the offer was made and accepted."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are fully supported by the cited evidence: (1) Harper Allen's interest in the Tesla Model S is established by index 0, and (2) Sebastian's offer to schedule a virtual demonstration of the Model S is established by index 1. No additional facts are asserted in the gold_answer beyond what the citations provide."
+      }
+    }
+  }
+]
