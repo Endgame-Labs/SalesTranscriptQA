@@ -1,0 +1,458 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "5a86d2079ddf1b8eba4fa9dfe5a6bcdbe82e96d4cdc3274b2514ebd225bff419",
+  "questions": 4,
+  "counts": {
+    "pass": 4
+  },
+  "estimated_usd": 0.58857184,
+  "results": [
+    {
+      "question_id": "b2b-single_call-caaf5e05a4a3cca6",
+      "question": "What discounts did João quote Indira Shreshta for SkyTech Ventures on PulseSim Pro versus the other products in the proposal?",
+      "gold_answer": "PulseSim Pro has a 10% discount; CloudLink Designer, AI Cirku-Tech, and OptiPower Max each have 5% discounts.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZxIAK",
+        "b2b:a05Wt000003Sr7rIAC",
+        "b2b:a05Wt000003Sr7sIAC",
+        "b2b:a05Wt000003SsroIAC",
+        "b2b:a05Wt000003StEUIA0",
+        "b2b:a05Wt000003Su46IAC",
+        "b2b:a05Wt000003Su47IAC",
+        "b2b:a05Wt000003Sv1iIAC",
+        "b2b:a05Wt000003SvD0IAK",
+        "b2b:a05Wt000003SvHrIAK",
+        "b2b:a05Wt000003SvfzIAC",
+        "b2b:a05Wt000003Sw10IAC",
+        "b2b:a05Wt000003Sw11IAC",
+        "b2b:a05Wt000003SwDsIAK",
+        "b2b:a05Wt000003SwTzIAK",
+        "b2b:a05Wt000003SwnNIAS",
+        "b2b:a05Wt000003SwnOIAS",
+        "b2b:a05Wt000003SwoyIAC",
+        "b2b:a05Wt000003SwozIAC",
+        "b2b:a05Wt000003SwqdIAC",
+        "b2b:a05Wt000003SwqeIAC",
+        "b2b:a05Wt000003SwqfIAC",
+        "b2b:a05Wt000003Sx54IAC",
+        "b2b:a05Wt000003SxBaIAK",
+        "b2b:a05Wt000003SyFgIAK",
+        "b2b:a05Wt000003SyNiIAK",
+        "b2b:a05Wt000003SyqmIAC",
+        "b2b:a05Wt000003SzEyIAK",
+        "b2b:a05Wt000003SzEzIAK",
+        "b2b:a05Wt000003SzV6IAK",
+        "b2b:a05Wt000003SzhzIAC",
+        "b2b:a05Wt000003SzwVIAS",
+        "b2b:a05Wt000003SzwWIAS",
+        "b2b:a05Wt000003T0B1IAK",
+        "b2b:a05Wt000003T0KgIAK",
+        "b2b:a05Wt000003T0MKIA0",
+        "b2b:a05Wt000003T0NwIAK",
+        "b2b:a05Wt000003T0hGIAS",
+        "b2b:a05Wt000003T0hHIAS",
+        "b2b:a05Wt000003T0kUIAS",
+        "b2b:a05Wt000003T0kVIAS",
+        "b2b:a05Wt000003T0yzIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 15,
+            "normalized_end": 16
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only João Pereira's calls with Indira Shreshta (SkyTech Ventures EDA Expansion) discuss the proposal's discounts. The 2024-03-19 call explicitly states a 10% discount on PulseSim Pro and 5% discounts on CloudLink Designer, AI Cirku-Tech, and OptiPower Max; the 2024-03-25 call confirms the same four discounted products without different percentages, so there is no competing alternative.",
+        "answers": [
+          {
+            "answer": "João quoted a 10% discount on PulseSim Pro, while the other products in the proposal — CloudLink Designer, AI Cirku-Tech, and OptiPower Max — each received a 5% discount.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqeIAC",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2024-03-19T10:00:35] Indira Shreshta: Absolutely, that's key for us. I noticed the breakdown of products in our proposal; could we touch on the pricing structure and any potential discounts?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwDsIAK",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2024-03-25T09:33:40] João Pereira: Certainly. For the current proposal, we’ve factored in competitive pricing with discounts on the PulseSim Pro, CloudLink Designer, AI Cirku-Tech, and OptiPower Max. The total comes to $13,686.22 for your proposed quantities."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies João (Pereira), Indira Shreshta, SkyTech Ventures, and PulseSim Pro versus other products in the proposal. Only one call matches all these criteria: b2b:a05Wt000003SwqeIAC (2024-03-19), where João Pereira explicitly quotes discount percentages for PulseSim Pro and the other products in the proposal to Indira Shreshta. The other João–Indira calls (b2b:a05Wt000003Su47IAC and b2b:a05Wt000003SwDsIAK) do not contain specific per-product discount breakdowns.",
+        "answers": [
+          {
+            "answer": "João Pereira quoted Indira Shreshta a 10% discount on PulseSim Pro, while the other products in the proposal—CloudLink Designer, AI Cirku-Tech, and OptiPower Max—each received a 5% discount.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqeIAC",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2024-03-19T10:00:35] Indira Shreshta: Absolutely, that's key for us. I noticed the breakdown of products in our proposal; could we touch on the pricing structure and any potential discounts?\n[2024-03-19T10:01:00] João Pereira: Of course! For PulseSim Pro, we have a 10% discount included, and it really offers excellent value for optimizing simulation precision. For CloudLink Designer and AI Cirku-Tech, we've applied a 5% discount. Similarly, OptiPower Max comes with a 5% discount as well. Overall, these solutions will be cost-effective while providing significant enhancements in your workflow."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that PulseSim Pro received a 10% discount and the other products (CloudLink Designer, AI Cirku-Tech, and OptiPower Max) each received a 5% discount. The reference confirms the same discount figures for the same products. All requested facts are covered and the two answers are in full agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-ec4d10374d1a349a",
+      "question": "How did Hiroshi Saito's view of TechPulse's pricing change between the initial EduTech Lab/DesignWave demo and the later integration check-in for InspireTech Consulting?",
+      "gold_answer": "In the demo he said competitors had similar price points and finding a fitting pricing model was a challenge; by the check-in he was satisfied, calling the offering competitive versus higher-cost alternatives.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StFzIAK",
+        "b2b:a05Wt000003StcoIAC",
+        "b2b:a05Wt000003SvZZIA0",
+        "b2b:a05Wt000003SvsvIAC",
+        "b2b:a05Wt000003SwabIAC",
+        "b2b:a05Wt000003Sx5EIAS",
+        "b2b:a05Wt000003SxBbIAK",
+        "b2b:a05Wt000003Sxd4IAC",
+        "b2b:a05Wt000003SxjTIAS",
+        "b2b:a05Wt000003SySaIAK",
+        "b2b:a05Wt000003Sz3hIAC",
+        "b2b:a05Wt000003SzetIAC",
+        "b2b:a05Wt000003SzeuIAC",
+        "b2b:a05Wt000003SzgTIAS",
+        "b2b:a05Wt000003SzwaIAC",
+        "b2b:a05Wt000003SzwbIAC",
+        "b2b:a05Wt000003T09SIAS",
+        "b2b:a05Wt000003T0KjIAK",
+        "b2b:a05Wt000003T0ZIIA0",
+        "b2b:a05Wt000003T1iKIAS",
+        "b2b:a05Wt000003T1qKIAS",
+        "b2b:a05Wt000003T1v5IAC",
+        "b2b:a05Wt000003T23BIAS",
+        "b2b:a05Wt000003T2RNIA0",
+        "b2b:a05Wt000003T2XmIAK",
+        "b2b:a05Wt000003T2w0IAC",
+        "b2b:a05Wt000003T35hIAC",
+        "b2b:a05Wt000003T35iIAC",
+        "b2b:a05Wt000003T3LnIAK",
+        "b2b:a05Wt000003T3NTIA0",
+        "b2b:a05Wt000003T3TtIAK",
+        "b2b:a05Wt000003T3VUIA0",
+        "b2b:a05Wt000003T3opIAC",
+        "b2b:a05Wt000003T3s3IAC",
+        "b2b:a05Wt000003T3s4IAC",
+        "b2b:a05Wt000003T3teIAC",
+        "b2b:a05Wt000003T406IAC",
+        "b2b:a05Wt000003T41iIAC",
+        "b2b:a05Wt000003T44vIAC",
+        "b2b:a05Wt000003T46XIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The initial demo of EduTech Lab and DesignWave Automation to Hiroshi Saito is the 2023-05-10 call (b2b:a05Wt000003SzeuIAC), where he found pricing hard to align with growth plans. The later integration check-in is the 2023-06-09 call (b2b:a05Wt000003StFzIAK) on the same opportunity (TechInnovation Expansion with InspireTech), where he called the pricing competitive. Other Hiroshi calls are different opportunities or not the demo/check-in in question.",
+        "answers": [
+          {
+            "answer": "At the initial EduTech Lab/DesignWave Automation demo (May 10, 2023), Hiroshi Saito viewed pricing as a challenge: he noted similar price points with competitors, said it was 'a bit of a challenge finding a pricing model that aligns with our plans,' and Ayo Okeke offered possible bundled offerings and adjustments based on InspireTech's growth trajectory. By the later integration check-in (June 9, 2023), his view had turned clearly positive: when Ayo asked if he was still satisfied with the current offering, Hiroshi said 'Yes, absolutely. Your offering is quite competitive, and it stands out, especially compared to other higher-cost solutions we've considered.' In short, his view shifted from concern about finding a pricing model that fit InspireTech's growth plans to satisfaction that TechPulse's pricing was competitive and cost-effective versus higher-cost alternatives.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzeuIAC",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2023-05-10T14:02:30] Hiroshi Saito: That's reassuring. It’s crucial for us that our solutions grow with us. And how about the pricing? We've noticed some similar price points with competitors.\n[2023-05-10T14:03:00] Ayo Okeke: Our pricing is designed to be competitive while ensuring a favorable total cost of ownership. I understand you’re looking for more options as your business expands. While we have a standardized pricing structure, there might be room for adjustments based on your growth trajectory.\n[2023-05-10T14:03:25] Hiroshi Saito: I appreciate that. It's a bit of a challenge finding a pricing model that aligns with our plans."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StFzIAK",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2023-06-09T15:31:20] Ayo Okeke: Of course, I can have our specialists prepare some tailored materials for you. Also, regarding pricing, are you still satisfied with our current offering?\n[2023-06-09T15:31:30] Hiroshi Saito: Yes, absolutely. Your offering is quite competitive, and it stands out, especially compared to other higher-cost solutions we’ve considered."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question identifies two specific events: (1) the 'initial EduTech Lab/DesignWave demo' involving Hiroshi Saito, which is the May 10, 2023 demo call (b2b:a05Wt000003SzeuIAC) under opportunity 'TechInnovation Expansion with InspireTech' where Ayo Okeke demos EduTech Lab and DesignWave Automation; and (2) the 'later integration check-in for InspireTech Consulting,' which is the June 9, 2023 call (b2b:a05Wt000003StFzIAK) under the same opportunity where Ayo Okeke checks in on integration progress. Both calls involve Hiroshi Saito and the same salesperson (Ayo Okeke). In the demo, Hiroshi expressed concern about pricing alignment with growth plans; in the integration check-in, he expressed full satisfaction, calling the offering competitive and standout compared to higher-cost alternatives.",
+        "answers": [
+          {
+            "answer": "During the initial EduTech Lab/DesignWave demo (May 10, 2023), Hiroshi Saito raised a pricing concern, noting that TechPulse's price points were similar to competitors and that finding a pricing model aligned with InspireTech's growth plans was 'a bit of a challenge.' Ayo Okeke responded by offering to explore bundled offerings to help manage costs at scale. By the later integration check-in (June 9, 2023), Hiroshi's view had shifted to full satisfaction: when Ayo asked if he was still satisfied with the pricing, Hiroshi replied 'Yes, absolutely. Your offering is quite competitive, and it stands out, especially compared to other higher-cost solutions we've considered.' Ayo affirmed that TechPulse's value proposition offers the best blend of innovation and cost-effectiveness. In short, Hiroshi moved from viewing pricing as a challenge requiring further exploration to viewing it as competitive and a clear differentiator against higher-cost alternatives.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzeuIAC",
+                "line_start": 7,
+                "line_end": 11,
+                "quote": "[2023-05-10T14:02:30] Hiroshi Saito: That's reassuring. It’s crucial for us that our solutions grow with us. And how about the pricing? We've noticed some similar price points with competitors.\n[2023-05-10T14:03:00] Ayo Okeke: Our pricing is designed to be competitive while ensuring a favorable total cost of ownership. I understand you’re looking for more options as your business expands. While we have a standardized pricing structure, there might be room for adjustments based on your growth trajectory.\n[2023-05-10T14:03:25] Hiroshi Saito: I appreciate that. It's a bit of a challenge finding a pricing model that aligns with our plans.\n[2023-05-10T14:03:45] Ayo Okeke: That’s understandable. Maybe we can look into some bundled offerings that might make it easier for you to manage costs as you scale. It’s something I can discuss with our team."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StFzIAK",
+                "line_start": 8,
+                "line_end": 11,
+                "quote": "[2023-06-09T15:31:20] Ayo Okeke: Of course, I can have our specialists prepare some tailored materials for you. Also, regarding pricing, are you still satisfied with our current offering?\n[2023-06-09T15:31:30] Hiroshi Saito: Yes, absolutely. Your offering is quite competitive, and it stands out, especially compared to other higher-cost solutions we’ve considered.\n[2023-06-09T15:31:40] Ayo Okeke: I'm glad to hear that our value proposition makes a difference. It’s all about offering the best blend of innovation and cost-effective solutions."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers describe the same shift: at the initial EduTech Lab/DesignWave demo Hiroshi Saito viewed TechPulse's pricing as a challenge (similar price points to competitors, difficulty finding a model aligned with InspireTech's growth plans), and by the later integration check-in he expressed full satisfaction, calling the offering competitive and standing out versus higher-cost alternatives. The reference captures both key facts—the initial challenge with similar competitor pricing and the later satisfaction calling the offering competitive against higher-cost alternatives—covering all facts requested by the question."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-df0bfce31d496a33",
+      "question": "For SkyTech Ventures' EDA deal, what discounts did Chen offer on CloudLink Designer and OptiPower Max, and how soon after signing can PulseSim Pro integration start?",
+      "gold_answer": "CloudLink Designer: 15% volume discount; OptiPower Max: 10% discount; PulseSim Pro integration can start within a week of signing.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZxIAK",
+        "b2b:a05Wt000003Sr7rIAC",
+        "b2b:a05Wt000003Sr7sIAC",
+        "b2b:a05Wt000003SsroIAC",
+        "b2b:a05Wt000003StEUIA0",
+        "b2b:a05Wt000003Su46IAC",
+        "b2b:a05Wt000003Su47IAC",
+        "b2b:a05Wt000003Sv1iIAC",
+        "b2b:a05Wt000003SvD0IAK",
+        "b2b:a05Wt000003SvHrIAK",
+        "b2b:a05Wt000003SvfzIAC",
+        "b2b:a05Wt000003Sw10IAC",
+        "b2b:a05Wt000003Sw11IAC",
+        "b2b:a05Wt000003SwDsIAK",
+        "b2b:a05Wt000003SwTzIAK",
+        "b2b:a05Wt000003SwnNIAS",
+        "b2b:a05Wt000003SwnOIAS",
+        "b2b:a05Wt000003SwoyIAC",
+        "b2b:a05Wt000003SwozIAC",
+        "b2b:a05Wt000003SwqdIAC",
+        "b2b:a05Wt000003SwqeIAC",
+        "b2b:a05Wt000003SwqfIAC",
+        "b2b:a05Wt000003Sx54IAC",
+        "b2b:a05Wt000003SxBaIAK",
+        "b2b:a05Wt000003SyFgIAK",
+        "b2b:a05Wt000003SyNiIAK",
+        "b2b:a05Wt000003SyqmIAC",
+        "b2b:a05Wt000003SzEyIAK",
+        "b2b:a05Wt000003SzEzIAK",
+        "b2b:a05Wt000003SzV6IAK",
+        "b2b:a05Wt000003SzhzIAC",
+        "b2b:a05Wt000003SzwVIAS",
+        "b2b:a05Wt000003SzwWIAS",
+        "b2b:a05Wt000003T0B1IAK",
+        "b2b:a05Wt000003T0KgIAK",
+        "b2b:a05Wt000003T0MKIA0",
+        "b2b:a05Wt000003T0NwIAK",
+        "b2b:a05Wt000003T0hGIAS",
+        "b2b:a05Wt000003T0hHIAS",
+        "b2b:a05Wt000003T0kUIAS",
+        "b2b:a05Wt000003T0kVIAS",
+        "b2b:a05Wt000003T0yzIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only Chen Lixin on the SkyTech Ventures EDA Transformation opportunity discusses discounts on both CloudLink Designer and OptiPower Max (2020-12-01 negotiation call: 15% on CloudLink Designer, 10% on OptiPower Max), and only the 2020-12-10 contract call with Chen states PulseSim Pro integration can start within a week of signing. Other calls with discounts involve different reps, different products, or different opportunities.",
+        "answers": [
+          {
+            "answer": "Chen offered a 15% discount on CloudLink Designer (when purchased in volume) and a 10% discount on OptiPower Max. Regarding deployment, once the contract is signed, PulseSim Pro integration can start within a week.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-12-01T13:34:30] Chen Lixin: I'm glad you found value in our case studies. We've invested heavily in ensuring our support and SLAs are top notch. Let’s discuss how we can model an advantageous pricing structure for CloudLink Designer and OptiPower Max for you. We're offering a 15% discount on CloudLink Designer when purchased in volume – which I believe fits your scale. As for OptiPower Max, there's a 10% discount we'd like to extend."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwoyIAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-12-10T09:48:00] Marco Salvatore: That's excellent. And about the deployment timelines? We’re keen on how quickly we can start integrating PulseSim Pro into our systems."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Chen as the rep and the 'EDA deal' for SkyTech Ventures, which identifies the 'SkyTech Ventures EDA Transformation' opportunity (006Wt000007B7lKIAS). Chen offered discounts on CloudLink Designer and OptiPower Max in the negotiation call (b2b:a05Wt000003SzwVIAS, line 4): 15% on CloudLink Designer and 10% on OptiPower Max. The PulseSim Pro integration timeline is stated in the contract finalization call (b2b:a05Wt000003SwoyIAC, line 8): within a week after signing. No other call in this opportunity has Chen offering discounts on both CloudLink Designer and OptiPower Max simultaneously.",
+        "answers": [
+          {
+            "answer": "Chen offered a 15% discount on CloudLink Designer (volume purchase) and a 10% discount on OptiPower Max. PulseSim Pro integration can start within a week after the contract is signed.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-12-01T13:34:30] Chen Lixin: I'm glad you found value in our case studies. We've invested heavily in ensuring our support and SLAs are top notch. Let’s discuss how we can model an advantageous pricing structure for CloudLink Designer and OptiPower Max for you. We're offering a 15% discount on CloudLink Designer when purchased in volume – which I believe fits your scale. As for OptiPower Max, there's a 10% discount we'd like to extend."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwoyIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2020-12-10T09:48:00] Marco Salvatore: That's excellent. And about the deployment timelines? We’re keen on how quickly we can start integrating PulseSim Pro into our systems.\n[2020-12-10T09:48:20] Chen Lixin: Good question. We aim for a rapid deployment process. For PulseSim Pro, once the contract is signed, we can start the integration within a week. Our solutions are designed for seamless integration, minimizing downtime in your current workflows."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same three requested facts: a 15% discount on CloudLink Designer (volume purchase), a 10% discount on OptiPower Max, and PulseSim Pro integration starting within a week after signing. The reference likewise covers all three facts with matching values and timing. No requested commitment is missing or substituted in any of the three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-d5d59db969eb8e2c",
+      "question": "For Gabriel Silva's SUV purchase, what does the BMW X5 M include that the Audi Q7 does not, and how do their prices compare?",
+      "gold_answer": "The BMW X5 M includes an extended service contract covering additional post-warranty aspects, while the Audi Q7 is slightly cheaper and comes with standard maintenance services.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SM9DIAW",
+        "b2c:a05Ws000005SMdtIAG",
+        "b2c:a05Ws000005SMikIAG",
+        "b2c:a05Ws000005SMqlIAG",
+        "b2c:a05Ws000005SNV6IAO",
+        "b2c:a05Ws000005SQ9aIAG",
+        "b2c:a05Ws000005SQMaIAO",
+        "b2c:a05Ws000005SQMbIAO",
+        "b2c:a05Ws000005SQSxIAO",
+        "b2c:a05Ws000005SQWCIA4",
+        "b2c:a05Ws000005SQZQIA4",
+        "b2c:a05Ws000005SQceIAG",
+        "b2c:a05Ws000005SQmJIAW",
+        "b2c:a05Ws000005SRLmIAO",
+        "b2c:a05Ws000005STaZIAW",
+        "b2c:a05Ws000005STdmIAG",
+        "b2c:a05Ws000005SU8OIAW",
+        "b2c:a05Ws000005SUTMIA4",
+        "b2c:a05Ws000005SV4RIAW",
+        "b2c:a05Ws000005SW3jIAG",
+        "b2c:a05Ws000005SWmuIAG",
+        "b2c:a05Ws000005SXe7IAG",
+        "b2c:a05Ws000005SXmBIAW",
+        "b2c:a05Ws000005SXvqIAG",
+        "b2c:a05Ws000005SY3vIAG",
+        "b2c:a05Ws000005SYIRIA4",
+        "b2c:a05Ws000005SYNGIA4",
+        "b2c:a05Ws000005SYlSIAW",
+        "b2c:a05Ws000005SYruIAG",
+        "b2c:a05Ws000005SZMXIA4",
+        "b2c:a05Ws000005SZO9IAO",
+        "b2c:a05Ws000005SZOAIA4",
+        "b2c:a05Ws000005SZPlIAO",
+        "b2c:a05Ws000005SZPmIAO",
+        "b2c:a05Ws000005SZRNIA4",
+        "b2c:a05Ws000005SZSzIAO",
+        "b2c:a05Ws000005SZUbIAO",
+        "b2c:a05Ws000005SZWDIA4"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across calls, the only stated feature the BMW X5 M includes that the Audi Q7 does not is the extended service contract (post-warranty coverage), and the prices are consistently quoted as BMW $74,999.99 vs Audi $53,999.99. These facts aggregate cleanly across the calls for the same customer with no competing alternatives.",
+        "answers": [
+          {
+            "answer": "The BMW X5 M includes AutoElite's extended service contract, which covers additional aspects after the warranty expires, while the Audi Q7 comes only with the standard comprehensive maintenance services. On price, the BMW X5 M is quoted at $74,999.99 versus $53,999.99 for the Audi Q7 — roughly $21,000 more (the Q7 is described as 'slightly less on the price tag').",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQMbIAO",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-04-12T15:20:30] Gabriel Silva: That clarity really helps. And the models in the proposal, the BMW X5 M and Audi Q7, how do they differ in terms of the services included?\n[2021-04-12T15:21:10] Hassan Riaz: Great question. Both vehicles come with our comprehensive maintenance plan. The BMW X5 M offers a slightly sportier feel and includes our extended service contract, which covers additional aspects post-warranty. The Audi Q7, while slightly less on the price tag, comes with all the standard maintenance services, ensuring you’re covered across all fronts."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMikIAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-04-20T16:31:00] Hassan Riaz: Of course, that’s what I’m here for. Let's get into it. We’ve quoted the BMW X5 M at $74,999.99 and the Audi Q7 at $53,999.99. Additionally, our comprehensive maintenance plan, which we discussed earlier, comes highly recommended for these models."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SRLmIAO",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2021-03-25T11:46:42] Gabriel Silva: That makes sense. In terms of pricing and financing, how do they stack up?\n[2021-03-25T11:46:55] Hassan Riaz: In terms of pricing, the BMW is a bit on the higher end at $74,999.99, compared to the Audi at $53,999.99. We offer flexible financing solutions to help manage the costs effectively, which many customers find straightforward and clear."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks what the BMW X5 M includes that the Audi Q7 does not, and how their prices compare, for Gabriel Silva's SUV purchase. The most direct and complete answer comes from Hassan Riaz's call on 2021-04-12 (call b2c:a05Ws000005SQMbIAO), where Gabriel explicitly asks how the BMW X5 M and Audi Q7 differ in services included, and Hassan answers that the BMW X5 M includes an extended service contract covering additional aspects post-warranty, while the Audi Q7 comes with standard maintenance services. Hassan also notes the Audi Q7 is 'slightly less on the price tag.' The exact prices ($74,999.99 for BMW X5 M and $53,999.99 for Audi Q7) are confirmed in Hassan's call on 2021-04-20 (call b2c:a05Ws000005SMikIAG) and Mia Johansson's call on 2020-06-29 (call b2c:a05Ws000005SQZQIA4). These calls together provide the complete answer to both parts of the question.",
+        "answers": [
+          {
+            "answer": "The BMW X5 M includes an extended service contract that covers additional aspects post-warranty, which the Audi Q7 does not include. The Audi Q7 comes with all the standard maintenance services but lacks this extended service contract. In terms of pricing, the BMW X5 M is priced at $74,999.99, while the Audi Q7 is priced at $53,999.99, making the BMW approximately $21,000 more expensive than the Audi.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQMbIAO",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-04-12T15:20:30] Gabriel Silva: That clarity really helps. And the models in the proposal, the BMW X5 M and Audi Q7, how do they differ in terms of the services included?\n[2021-04-12T15:21:10] Hassan Riaz: Great question. Both vehicles come with our comprehensive maintenance plan. The BMW X5 M offers a slightly sportier feel and includes our extended service contract, which covers additional aspects post-warranty. The Audi Q7, while slightly less on the price tag, comes with all the standard maintenance services, ensuring you’re covered across all fronts."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMikIAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-04-20T16:31:00] Hassan Riaz: Of course, that’s what I’m here for. Let's get into it. We’ve quoted the BMW X5 M at $74,999.99 and the Audi Q7 at $53,999.99. Additionally, our comprehensive maintenance plan, which we discussed earlier, comes highly recommended for these models."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQZQIA4",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-06-29T09:15:45] Mia Johansson: Great. As we discussed, we've included two models in the quote: the 2022 BMW X5 M, which is priced at $74,999.99, and the 2021 Audi Q7, at $53,999.99. Both are equipped with cutting-edge technology. What do you think about those models?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers agree on the two requested facts: (1) the BMW X5 M includes an extended service contract covering additional post-warranty aspects that the Audi Q7 does not, and (2) the BMW X5 M is priced at $74,999.99 versus $53,999.99 for the Audi Q7, making the BMW roughly $21,000 more expensive. The reference also covers both requested facts: it mentions the extended service contract for the BMW X5 M covering additional post-warranty aspects, notes the Audi Q7 comes with standard maintenance services, and states the Audi Q7 is slightly cheaper. Although the reference omits exact dollar figures, it addresses the price comparison qualitatively, which satisfies the 'how do their prices compare' portion of the question."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

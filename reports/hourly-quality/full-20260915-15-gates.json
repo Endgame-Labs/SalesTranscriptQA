@@ -1,0 +1,449 @@
+[
+  {
+    "question_id": "b2b-single_call-caaf5e05a4a3cca6",
+    "question": "What discounts did Jo\u00e3o quote Indira Shreshta for SkyTech Ventures on PulseSim Pro versus the other products in the proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Jo\u00e3o quoted to Indira Shreshta of SkyTech Ventures for PulseSim Pro compared with the other products in the same proposal.",
+        "relationship": "single coherent quote breakdown: one proposal's discount terms across its products",
+        "reason": "This is a commercial quote breakdown covering the same proposal and customer, comparing discount terms across products in that proposal."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific discount percentages quoted by Jo\u00e3o to Indira Shreshta for SkyTech Ventures across multiple products in a proposal. The dialogue at [10:01:00] confirms PulseSim Pro at 10% and CloudLink Designer, AI Cirku-Tech, and OptiPower Max each at 5%. The gold answer states exactly these facts with no extras. The question is naturally phrased, scoped to a named account/contact/rep, and a rep would plausibly need to recall quoted discounts. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jo\u00e3o Pereira explicitly states: PulseSim Pro has a 10% discount; CloudLink Designer and AI Cirku-Tech have a 5% discount; OptiPower Max has a 5% discount. This directly matches the answer_claim verbatim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Jo\u00e3o's exact quote listing all four products and their respective discounts (10% for PulseSim Pro; 5% each for CloudLink Designer, AI Cirku-Tech, and OptiPower Max). The context metadata confirms the call involves SkyTech Ventures and Indira Shreshta. Every factual element of the gold_answer is present in the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-aaf5b1df7bb1d2e0",
+    "question": "What did Zainab Khader at FusionTech Systems say about how CircuitWave's SLAs fit their priorities, and what discovery meeting time did she agree to?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) Zainab Khader's comments on how CircuitWave's SLAs fit FusionTech's priorities; 2) the discovery meeting time she agreed to.",
+        "relationship": "Two independent fact lookups joined only by the same contact/account.",
+        "reason": "The SLA-fit assessment and the meeting scheduling are unrelated information needs; sharing the same customer does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks about a specific customer's (Zainab Khader, FusionTech Systems) stated view on a competitor's SLAs and the agreed discovery-meeting time\u2014both realistic needs for a rep tracking competitive positioning and next steps. The dialogue confirms Zainab said CircuitWave's SLAs are 'solid' but 'the need for the latest features often takes precedence,' and she agreed to Tuesday at 3 PM. The gold answer captures both facts precisely with no unasked extras. Wording is natural, scope is adequate (named contact, account, and topic), and no locator preamble or answer leakage is present. Single-call question, so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote is directly attributed to Zainab Khader and states 'While their SLAs are solid, the need for the latest features often takes precedence, given the pace at which we operate.' This matches the answer_claim that SLAs are solid but latest features take precedence. The speaker, content, and meaning all align."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote is spoken by Chen Lixin, not Zainab Khader. The question asks what Zainab Khader agreed to regarding the discovery meeting time. Chen Lixin saying 'Tuesday at 3 PM works perfectly on our end' is Chen confirming the time, but there is no cited evidence showing Zainab Khader herself agreed to or confirmed Tuesday at 3 PM. A question does not establish its answer, and another speaker's confirmation does not substitute for Zainab's own agreement."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) Zainab said SLAs are solid but latest features take precedence \u2013 supported by evidence index 0. (2) She agreed to Tuesday at 3 PM \u2013 NOT supported. Evidence index 1 shows Chen Lixin confirming the time, but no cited evidence shows Zainab Khader herself agreeing to Tuesday at 3 PM. The combined citations do not support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-ec4d10374d1a349a",
+    "question": "How did Hiroshi Saito's view of TechPulse's pricing change between the initial EduTech Lab/DesignWave demo and the later integration check-in for InspireTech Consulting?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Hiroshi Saito's perception of TechPulse's pricing evolved from the initial EduTech Lab/DesignWave demo to the later InspireTech Consulting integration check-in",
+        "relationship": "same business issue (TechPulse pricing perception) tracked across two calls",
+        "reason": "Both calls concern the same issue\u2014Saito's view of TechPulse pricing\u2014so the comparison is coherent, not two unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StFzIAK",
+                "fact": "Hiroshi Saito expressed satisfaction with TechPulse's pricing, calling it competitive and standing out compared to higher-cost alternatives.",
+                "why_other_call_cannot_supply_it": "The initial demo call only contains his earlier uncertainty about pricing, not the later positive assessment."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzeuIAC",
+                "fact": "Hiroshi Saito noted that competitors had similar price points and that finding a fitting pricing model was a challenge.",
+                "why_other_call_cannot_supply_it": "The later check-in call does not mention any initial pricing concerns or competitor comparisons; it only reflects his final satisfaction."
+              }
+            ],
+            "reason": "The question explicitly asks for a change in view between the two calls. Each call provides a distinct, time-specific statement about pricing: the initial demo shows uncertainty and competitor similarity, while the later check-in shows satisfaction and competitiveness. Both are necessary to demonstrate the change."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StFzIAK",
+                  "fact": "Hiroshi Saito expressed satisfaction with TechPulse's pricing, calling it competitive and standing out compared to higher-cost alternatives.",
+                  "why_other_call_cannot_supply_it": "The initial demo call only contains his earlier uncertainty about pricing, not the later positive assessment."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzeuIAC",
+                  "fact": "Hiroshi Saito noted that competitors had similar price points and that finding a fitting pricing model was a challenge.",
+                  "why_other_call_cannot_supply_it": "The later check-in call does not mention any initial pricing concerns or competitor comparisons; it only reflects his final satisfaction."
+                }
+              ],
+              "reason": "The question explicitly asks for a change in view between the two calls. Each call provides a distinct, time-specific statement about pricing: the initial demo shows uncertainty and competitor similarity, while the later check-in shows satisfaction and competitiveness. Both are necessary to demonstrate the change."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzeuIAC",
+                "fact": "At the May 10 demo, Saito noted similar price points with competitors and said finding a pricing model aligned with their plans was a challenge.",
+                "why_other_call_cannot_supply_it": "The June 9 check-in call occurred after the demo and contains no record of his initial pricing concerns."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StFzIAK",
+                "fact": "At the June 9 integration check-in, Saito said he was satisfied, calling the offering quite competitive, especially versus higher-cost alternatives considered.",
+                "why_other_call_cannot_supply_it": "The May 10 demo predates the check-in and only shows the earlier challenge, not the later stated satisfaction."
+              }
+            ],
+            "reason": "The question explicitly asks how his pricing view changed between two conversations; each call supplies a distinct, requested endpoint of that change (initial concern vs. later satisfaction), and neither call contains the other's fact."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzeuIAC",
+                  "fact": "At the May 10 demo, Saito noted similar price points with competitors and said finding a pricing model aligned with their plans was a challenge.",
+                  "why_other_call_cannot_supply_it": "The June 9 check-in call occurred after the demo and contains no record of his initial pricing concerns."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003StFzIAK",
+                  "fact": "At the June 9 integration check-in, Saito said he was satisfied, calling the offering quite competitive, especially versus higher-cost alternatives considered.",
+                  "why_other_call_cannot_supply_it": "The May 10 demo predates the check-in and only shows the earlier challenge, not the later stated satisfaction."
+                }
+              ],
+              "reason": "The question explicitly asks how his pricing view changed between two conversations; each call supplies a distinct, requested endpoint of that change (initial concern vs. later satisfaction), and neither call contains the other's fact."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks how Hiroshi Saito's pricing view evolved across two specific calls for InspireTech Consulting, a realistic account-management need. The demo call (2023-05-10) shows him noting competitors had similar price points and that finding a fitting pricing model was a challenge; the integration check-in (2023-06-09) shows him satisfied, calling TechPulse competitive versus higher-cost alternatives. The gold answer captures both facts precisely with no unasked extras. Each source contributes an exclusive fact (initial concern vs. later satisfaction), so both are required. Wording is natural, scope is adequate via named contact, account, and call contexts, and no locator preamble or answer leakage is present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2023-05-10 call shows Hiroshi Saito stating 'We've noticed some similar price points with competitors' and 'It's a bit of a challenge finding a pricing model that aligns with our plans.' This directly supports the answer_claim that he noted similar price points with competitors and said finding a pricing model aligned with their plans was a challenge."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2023-06-09 call shows Hiroshi Saito responding 'Yes, absolutely. Your offering is quite competitive, and it stands out, especially compared to other higher-cost solutions we've considered.' This directly supports the answer_claim that he was satisfied and found the offering competitive versus higher-cost alternatives."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) in the demo he said competitors had similar price points and finding a fitting pricing model was a challenge \u2014 supported by index 0; (2) by the check-in he was satisfied, calling the offering competitive versus higher-cost alternatives \u2014 supported by index 1. The context metadata confirms the first call (2023-05-10) is associated with InspireTech Consulting/Hiroshi Saito and the second (2023-06-09) is the later integration check-in for the same account. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-df0bfce31d496a33",
+    "question": "For SkyTech Ventures' EDA deal, what discounts did Chen offer on CloudLink Designer and OptiPower Max, and how soon after signing can PulseSim Pro integration start?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Discounts Chen offered on CloudLink Designer and OptiPower Max, plus the timeline for starting PulseSim Pro integration after signing, all within SkyTech Ventures' EDA deal",
+        "relationship": "single coherent commercial quote breakdown for one deal",
+        "reason": "The discounts and the integration start timing all pertain to the same EDA deal's commercial terms and next steps, forming one coherent quote/next-steps question rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwoyIAC",
+                "fact": "PulseSim Pro integration can start within a week of signing.",
+                "why_other_call_cannot_supply_it": "The other call does not mention PulseSim Pro integration timing at all."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "fact": "Chen offered a 15% volume discount on CloudLink Designer and a 10% discount on OptiPower Max.",
+                "why_other_call_cannot_supply_it": "The other call does not mention any specific discount percentages for these products."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: discount details for two products and integration timing for another product. Each piece is provided exclusively by one of the two calls, and neither call contains both pieces. Therefore, both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwoyIAC",
+                  "fact": "PulseSim Pro integration can start within a week of signing.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention PulseSim Pro integration timing at all."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzwVIAS",
+                  "fact": "Chen offered a 15% volume discount on CloudLink Designer and a 10% discount on OptiPower Max.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention any specific discount percentages for these products."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: discount details for two products and integration timing for another product. Each piece is provided exclusively by one of the two calls, and neither call contains both pieces. Therefore, both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "fact": "Chen offered a 15% volume discount on CloudLink Designer and a 10% discount on OptiPower Max.",
+                "why_other_call_cannot_supply_it": "The Dec 10 call contains no mention of any discounts on these products; it only discusses service scope, deployment timelines, and payment plans."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwoyIAC",
+                "fact": "PulseSim Pro integration can start within a week of contract signing.",
+                "why_other_call_cannot_supply_it": "The Dec 1 call only vaguely references fast deployment timelines in response to competitor concerns and never states a concrete integration start time for PulseSim Pro."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: specific discount percentages (stated only in the Dec 1 negotiation call) and a concrete PulseSim Pro integration start timeline (stated only in the Dec 10 contract call). Neither call alone supplies both facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzwVIAS",
+                  "fact": "Chen offered a 15% volume discount on CloudLink Designer and a 10% discount on OptiPower Max.",
+                  "why_other_call_cannot_supply_it": "The Dec 10 call contains no mention of any discounts on these products; it only discusses service scope, deployment timelines, and payment plans."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwoyIAC",
+                  "fact": "PulseSim Pro integration can start within a week of contract signing.",
+                  "why_other_call_cannot_supply_it": "The Dec 1 call only vaguely references fast deployment timelines in response to competitor concerns and never states a concrete integration start time for PulseSim Pro."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: specific discount percentages (stated only in the Dec 1 negotiation call) and a concrete PulseSim Pro integration start timeline (stated only in the Dec 10 contract call). Neither call alone supplies both facts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about discount terms and integration timeline for a named account/opportunity. Call 2 (Dec 1) exclusively provides the 15% volume discount on CloudLink Designer and 10% discount on OptiPower Max. Call 1 (Dec 10) exclusively provides the PulseSim Pro integration timeline of within a week of signing. All three answer claims are directly supported by the dialogues. The question is well-scoped to the SkyTech Ventures EDA deal, uses natural phrasing without artificial locator preambles, and the gold answer states exactly the requested facts with no unasked extras. Both sources contribute unique, non-overlapping requested facts, satisfying the multi-call requirement."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Chen Lixin explicitly states 'a 15% discount on CloudLink Designer when purchased in volume' and 'a 10% discount we'd like to extend' for OptiPower Max, directly supporting the answer_claim of 15% volume discount on CloudLink Designer and 10% discount on OptiPower Max."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Chen Lixin explicitly states 'For PulseSim Pro, once the contract is signed, we can start the integration within a week,' directly supporting the answer_claim that integration can start within a week once the contract is signed."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer makes three factual claims: (1) CloudLink Designer gets a 15% volume discount, (2) OptiPower Max gets a 10% discount, and (3) PulseSim Pro integration can start within a week of signing. Evidence index 0 directly supports claims (1) and (2) with Chen Lixin's exact quoted words. Evidence index 1 directly supports claim (3) with Chen Lixin's statement about starting integration within a week once the contract is signed. The context metadata confirms the calls relate to SkyTech Ventures' EDA Transformation opportunity. All three factual components of the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-eedb673b421caeab",
+    "question": "What did Noah Simmons say matters most to him when considering a purchase, and which models did Ivan present as options?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Noah Simmons's stated purchase priority and the models Ivan presented as options",
+        "relationship": "single coherent sales interaction: the customer's key buying criterion and the options presented in response",
+        "reason": "Both facts concern the same sales conversation and form one natural exchange\u2014what the customer values and what was offered as a result."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Noah's top purchase consideration and the models Ivan presented. The dialogue confirms Noah states post-purchase support is 'really important' when considering a purchase, and Ivan presents the 2023 Nissan Leaf, 2021 Volvo XC60, and 2024 Volkswagen ID.4. The gold answer matches exactly with no extras or omissions. The question is naturally phrased, scoped to a named customer and rep interaction, and a sales rep would plausibly want to recall a prospect's priorities and which vehicles were pitched. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Noah Simmons stating 'post-purchase support? That's something really important for me when considering a purchase,' which fully supports the claim that post-purchase support is really important to him when considering a purchase."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Ivan Kovalchuk explicitly naming 'the 2023 Nissan Leaf and the 2021 Volvo XC60' as options, directly supporting the claim that Ivan presents these two models."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quote shows Ivan Kovalchuk saying 'we also have the 2024 Volkswagen ID.4,' directly supporting the claim that Ivan also mentions the 2024 Volkswagen ID.4 as an option."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) post-purchase support is most important to Noah, supported by evidence index 0 where Noah explicitly says it is 'really important for me when considering a purchase'; and (2) Ivan presented the 2023 Nissan Leaf, 2021 Volvo XC60, and 2024 Volkswagen ID.4, supported by evidence indices 1 and 2 which together name all three models as options Ivan presented. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d5d59db969eb8e2c",
+    "question": "For Gabriel Silva's SUV purchase, what does the BMW X5 M include that the Audi Q7 does not, and how do their prices compare?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Feature differences between the BMW X5 M and Audi Q7 for Gabriel Silva's SUV purchase, plus a price comparison",
+        "relationship": "single competitive comparison for the same purchase decision",
+        "reason": "One coherent competitive comparison: features and pricing of two candidate vehicles for the same customer's purchase."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer (Gabriel Silva) and a concrete comparison between two vehicles in his proposal, which a sales rep would plausibly need. The dialogue at 15:21:10 confirms the BMW X5 M includes an extended service contract covering additional post-warranty aspects, while the Audi Q7 is slightly cheaper and comes with standard maintenance services\u2014matching the gold answer exactly. No locator preamble, no answer leakage, no unsupported causality. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Hassan Riaz explicitly states: (1) the BMW X5 M 'includes our extended service contract, which covers additional aspects post-warranty,' (2) the Audi Q7 is 'slightly less on the price tag,' and (3) the Audi Q7 'comes with all the standard maintenance services.' All three factual elements of the answer_claim are directly present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states the BMW X5 M includes an extended service contract covering additional post-warranty aspects, the Audi Q7 is slightly cheaper, and the Audi Q7 comes with standard maintenance services. The single cited evidence (index 0) contains a direct quote from Hassan Riaz that supports every one of these claims verbatim. The context metadata confirms the call is associated with Gabriel Silva's SUV Purchase Opportunity, matching the question's framing. No unsupported or missing facts are present."
+      }
+    }
+  }
+]
