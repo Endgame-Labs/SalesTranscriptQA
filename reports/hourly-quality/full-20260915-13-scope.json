@@ -1,0 +1,213 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "55c8a226129a39243c75fe8afdcade7f7d3ae856e30e2f86673c8169b4a3b2d7",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.27871089,
+  "results": [
+    {
+      "question_id": "b2b-single_call-136e7366f1d9c541",
+      "question": "What pricing did Junaid quote EcoEnergy for the SecureFlow Suite and the CloudLink Designer package?",
+      "gold_answer": "SecureFlow Suite is $5399.91 with a 10% discount; CloudLink Designer's 8-license package with a 5% discount comes to $3039.924.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr85IAC",
+        "b2b:a05Wt000003SrNGIA0",
+        "b2b:a05Wt000003SrchIAC",
+        "b2b:a05Wt000003Ss5PIAS",
+        "b2b:a05Wt000003SsOpIAK",
+        "b2b:a05Wt000003StCmIAK",
+        "b2b:a05Wt000003SuIiIAK",
+        "b2b:a05Wt000003SuIjIAK",
+        "b2b:a05Wt000003SuIkIAK",
+        "b2b:a05Wt000003SvDBIA0",
+        "b2b:a05Wt000003SvXzIAK",
+        "b2b:a05Wt000003SwdmIAC",
+        "b2b:a05Wt000003SxoLIAS",
+        "b2b:a05Wt000003SxoMIAS",
+        "b2b:a05Wt000003SyMFIA0",
+        "b2b:a05Wt000003SyMGIA0",
+        "b2b:a05Wt000003SylxIAC",
+        "b2b:a05Wt000003SzdKIAS",
+        "b2b:a05Wt000003T0smIAC",
+        "b2b:a05Wt000003T15YIAS",
+        "b2b:a05Wt000003T18oIAC",
+        "b2b:a05Wt000003T1VKIA0",
+        "b2b:a05Wt000003T21iIAC",
+        "b2b:a05Wt000003T37KIAS",
+        "b2b:a05Wt000003T4heIAC",
+        "b2b:a05Wt000003T4mWIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 12,
+            "normalized_end": 13
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Junaid Khan quoting prices for both the SecureFlow Suite and the CloudLink Designer package to EcoEnergy (the 2021-08-27 call with Anika Jha). Other pricing mentions are by different reps or different products, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Junaid quoted the SecureFlow Suite at $5399.91 with a 10% discount for orders like EcoEnergy's, and the CloudLink Designer as an 8-license package with a 5% discount totaling $3039.924.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sr85IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2021-08-27T15:14:30] Junaid Khan: Certainly. For instance, the SecureFlow Suite is priced at $5399.91 with a 10% discount for orders like yours. We ensure all pricing details are laid out clearly to facilitate straightforward financial planning."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sr85IAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2021-08-27T15:15:15] Junaid Khan: Sure thing. For CloudLink Designer, an 8-license package with a 5% discount comes to $3039.924. Each product like the OptiPower Manager and EcoPower Convert is similarly structured with similar discounts. We aim to provide competitive pricing without compromising on quality."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Junaid as the salesperson and asks about pricing for SecureFlow Suite and CloudLink Designer quoted to EcoEnergy. Only one call features Junaid Khan quoting specific dollar figures for both products: call b2b:a05Wt000003Sr85IAC (2021-08-27). In that call, Junaid quotes SecureFlow Suite at $5399.91 with a 10% discount (line 12) and CloudLink Designer as an 8-license package at $3039.924 with a 5% discount (line 14). Other Junaid calls (b2b:a05Wt000003SxoLIAS, b2b:a05Wt000003SyMGIA0) discuss discounts but do not provide specific dollar amounts for both products. No other salesperson is Junaid.",
+        "answers": [
+          {
+            "answer": "Junaid Khan quoted EcoEnergy the SecureFlow Suite at $5,399.91 with a 10% discount, and the CloudLink Designer as an 8-license package at $3,039.924 with a 5% discount.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sr85IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2021-08-27T15:14:30] Junaid Khan: Certainly. For instance, the SecureFlow Suite is priced at $5399.91 with a 10% discount for orders like yours. We ensure all pricing details are laid out clearly to facilitate straightforward financial planning."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sr85IAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2021-08-27T15:15:15] Junaid Khan: Sure thing. For CloudLink Designer, an 8-license package with a 5% discount comes to $3039.924. Each product like the OptiPower Manager and EcoPower Convert is similarly structured with similar discounts. We aim to provide competitive pricing without compromising on quality."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same pricing: SecureFlow Suite at $5,399.91 with a 10% discount, and CloudLink Designer as an 8-license package at $3,039.924 with a 5% discount. The reference covers both requested facts identically. Minor wording differences (e.g., 'Junaid Khan' vs 'Junaid', 'for orders like EcoEnergy's') do not affect the requested pricing information."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-b8b6933124adacea",
+      "question": "What did Keiko say about adjusting the vehicle package pricing for Lucas Green's family vehicle deal?",
+      "gold_answer": "The packages already reflect AutoElite's most competitive pricing, but she offered to explore financing options instead and follow up.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNGkIAO",
+        "b2c:a05Ws000005SNLVIA4",
+        "b2c:a05Ws000005SORJIA4",
+        "b2c:a05Ws000005SOZNIA4",
+        "b2c:a05Ws000005SOokIAG",
+        "b2c:a05Ws000005SOvzIAG",
+        "b2c:a05Ws000005SPNRIA4",
+        "b2c:a05Ws000005SPtWIAW",
+        "b2c:a05Ws000005SQHuIAO",
+        "b2c:a05Ws000005SQeUIAW",
+        "b2c:a05Ws000005SQo6IAG",
+        "b2c:a05Ws000005SQxqIAG",
+        "b2c:a05Ws000005SRSKIA4",
+        "b2c:a05Ws000005SS0HIAW",
+        "b2c:a05Ws000005SShsIAG",
+        "b2c:a05Ws000005SShtIAG",
+        "b2c:a05Ws000005STpAIAW",
+        "b2c:a05Ws000005SULLIA4",
+        "b2c:a05Ws000005SUy8IAG",
+        "b2c:a05Ws000005SVpLIAW",
+        "b2c:a05Ws000005SWNEIA4",
+        "b2c:a05Ws000005SWgZIAW",
+        "b2c:a05Ws000005SWgaIAG",
+        "b2c:a05Ws000005SXEQIA4",
+        "b2c:a05Ws000005SXWKIA4",
+        "b2c:a05Ws000005SXXnIAO",
+        "b2c:a05Ws000005SY8uIAG",
+        "b2c:a05Ws000005SYAWIA4",
+        "b2c:a05Ws000005SYGyIAO",
+        "b2c:a05Ws000005SYTqIAO",
+        "b2c:a05Ws000005SYsAIAW",
+        "b2c:a05Ws000005SYsBIAW",
+        "b2c:a05Ws000005SYybIAG",
+        "b2c:a05Ws000005SZRZIA4",
+        "b2c:a05Ws000005SbEsIAK",
+        "b2c:a05Ws000005SbHyIAK",
+        "b2c:a05Ws000005SbbOIAS",
+        "b2c:a05Ws000005Sc4KIAS",
+        "b2c:a05Ws000005ScSWIA0",
+        "b2c:a05Ws000005ScdpIAC",
+        "b2c:a05Ws000005Sd3ZIAS",
+        "b2c:a05Ws000005Sd5BIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call with Keiko Mori discusses adjusting vehicle package pricing: the 2021-08-01 call (Family Vehicle Autumn Sale Opportunity for Lucas Green), where Lucas asks about opportunities for adjustments to the proposed package pricing and Keiko responds. Keiko's other calls cover pricing transparency, discounts, or financing generally, but not adjusting the package pricing.",
+        "answers": [
+          {
+            "answer": "Keiko said that the vehicle packages they had discussed already reflected AutoElite's most competitive pricing, so there wasn't room to adjust the package pricing itself; instead, she offered to explore what could be done with the financing options to make the deal work for Lucas, and committed to reviewing the financing options and following up promptly.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOvzIAG",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2021-08-01T15:32:08] Lucas Green: I see. And the pricing on the vehicle packages you proposed — are there any opportunities for adjustments?\n[2021-08-01T15:32:19] Keiko Mori: Looking at the options we discussed, these packages already reflect our most competitive pricing. However, let’s explore what we might do with the financing options. We really want to make this work for you.\n[2021-08-01T15:32:28] Lucas Green: I'd appreciate that. Overall, I'm quite satisfied with the offer. It's just about getting those last details in place."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically what Keiko said about adjusting vehicle package pricing for Lucas Green's family vehicle deal. Only one call features Keiko Mori discussing vehicle package pricing adjustments: call b2c:a05Ws000005SOvzIAG (2021-08-01, opportunity 'Family Vehicle Autumn Sale Opportunity for Lucas Green'). In that call, Lucas asks about adjustments to vehicle package pricing (line 13), and Keiko responds that the packages already reflect the most competitive pricing but offers to explore financing options instead (line 14). No other Keiko call contains a discussion about adjusting vehicle package pricing.",
+        "answers": [
+          {
+            "answer": "When Lucas asked whether there were any opportunities for adjustments on the vehicle packages Keiko had proposed, Keiko said that the packages already reflect their most competitive pricing, but she offered to explore what they might do with the financing options to make the deal work for him.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOvzIAG",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-08-01T15:32:08] Lucas Green: I see. And the pricing on the vehicle packages you proposed — are there any opportunities for adjustments?\n[2021-08-01T15:32:19] Keiko Mori: Looking at the options we discussed, these packages already reflect our most competitive pricing. However, let’s explore what we might do with the financing options. We really want to make this work for you."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Keiko said the vehicle packages already reflect the most competitive pricing (no room to adjust package pricing) and that she offered to explore financing options to make the deal work for Lucas. Answer A adds a commitment to review financing options and follow up promptly, which is also present in the reference ('follow up'). Answer B omits the explicit follow-up commitment but otherwise matches. The reference covers the key facts: competitive pricing, exploring financing options, and following up. All requested facts are addressed consistently."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

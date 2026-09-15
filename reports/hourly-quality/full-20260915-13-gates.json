@@ -1,0 +1,362 @@
+[
+  {
+    "question_id": "b2b-single_call-136e7366f1d9c541",
+    "question": "What pricing did Junaid quote EcoEnergy for the SecureFlow Suite and the CloudLink Designer package?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The prices Junaid quoted EcoEnergy for two products: SecureFlow Suite and CloudLink Designer package",
+        "relationship": "single coherent quote lookup covering two line items from the same quote",
+        "reason": "Both items are part of one pricing quote to the same customer; asking for the quoted prices of two products in one quote is a natural commercial request, not two unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific pricing Junaid quoted EcoEnergy for two products. The dialogue confirms SecureFlow Suite at $5399.91 with a 10% discount and CloudLink Designer 8-license package at $3039.924 with a 5% discount. The gold answer states exactly these facts with no unasked extras. The question naturally identifies the rep (Junaid), the account (EcoEnergy), and the two products, making it well-scoped. Wording is natural and a rep/AM would plausibly need this pricing information. Single-call question so both_sources_required is set true.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Junaid Khan explicitly states: 'the SecureFlow Suite is priced at $5399.91 with a 10% discount for orders like yours.' This directly supports the answer_claim about SecureFlow Suite pricing at $5399.91 with a 10% discount."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Junaid Khan explicitly states: 'For CloudLink Designer, an 8-license package with a 5% discount comes to $3039.924.' This directly supports the answer_claim about CloudLink Designer's 8-license package with a 5% discount at $3039.924."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) SecureFlow Suite is $5399.91 with a 10% discount, and (2) CloudLink Designer's 8-license package with a 5% discount comes to $3039.924. Evidence index 0 directly quotes Junaid stating the SecureFlow Suite price and discount, and evidence index 1 directly quotes Junaid stating the CloudLink Designer package details. Both claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms the call is between Junaid (salesperson) and EcoEnergy Solutions, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-69b1007300f3c89a",
+    "question": "What implementation timeline did Mohammad Hassan from Tehran Future Designs require for CloudInnovate Space?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The implementation timeline required by Mohammad Hassan of Tehran Future Designs for CloudInnovate Space",
+        "relationship": "single coherent lookup",
+        "reason": "One fact lookup about a requirement tied to a specific customer and product; plausible sales language with no mismatched domain terms."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific implementation timeline requirement stated by Mohammad Hassan for CloudInnovate Space. In the dialogue, Mohammad says 'We need everything up and running within three days.' The gold answer adds 'of purchase confirmation,' which is drawn from Aaliyah's response ('Once the purchase is confirmed, we can deploy and configure CloudInnovate Space within your timeline'). The combined answer accurately reflects the exchange. The question is naturally worded, scoped to a named contact and product, and represents a realistic need for a rep to know a customer's implementation deadline. No locator preamble, no answer leakage, no unsupported causality. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is attributed to Mohammad Hassan and states 'We need everything up and running within three days.' This directly supports the answer_claim that the required implementation timeline is three days. The context metadata confirms the lead is Mohammad Hassan from Tehran Future Designs, matching the question's subject."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Everything up and running within three days of purchase confirmation.' The cited evidence (index 0) directly quotes Mohammad Hassan saying 'We need everything up and running within three days.' The phrase 'of purchase confirmation' in the gold_answer is not explicitly present in the cited quote, but the core factual claim\u2014three days for everything to be up and running\u2014is fully supported. The addition of 'of purchase confirmation' is a minor contextual qualifier that does not contradict the evidence and is a reasonable inference from the implementation discussion context. The answer is substantively supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-157574247338ad05",
+    "question": "What pain point did Akira Tanabe of MetaData Analytics raise about past vendors' training, and how did Ayo position TechPulse against Quantum Circuits on security in the later discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The pain point Akira Tanabe raised about past vendors' training; 2) how Ayo positioned TechPulse against Quantum Circuits on security in a later discussion.",
+        "relationship": "Two independent fact lookups joined only by the same account/call context.",
+        "reason": "The training pain point and the competitive security positioning are unrelated information needs; sharing the same customer does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two distinct facts: (1) Akira's pain point about past-vendor training, found only in the Oct 3 call ('training to be a significant hurdle with past vendors'), and (2) Ayo's positioning of TechPulse vs Quantum Circuits on security, found only in the Oct 5 call ('balanced solution by coupling security with innovative, user-friendly analytics features' plus 'continuous security updates and enhancements'). Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question names the contact, company, and rep naturally, scopes the account well, and a rep would plausibly want to recall a customer's stated pain point and how they handled a competitive comparison. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Akira Tanabe stating 'We've found training to be a significant hurdle with past vendors' and Ayo Okeke responding that their implementation is 'streamlined' with 'thorough training supported by extensive documentation and online resources.' This fully supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quoted passage contains only Akira Tanabe's question about how TechPulse compares to Quantum Circuits on security. There is no quoted response from Ayo. The answer_claim attributes specific statements to Ayo (TechPulse couples security with user-friendly analytics, prioritizes continuous security updates), but none of Ayo's dialogue is present in the cited quote. A question does not establish its answer."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer's first part (Akira's pain point about training and Ayo's streamlined implementation response) is fully supported by evidence index 0. However, the second part\u2014Ayo's positioning of TechPulse against Quantum Circuits on security (balancing security with user-friendly analytics, continuous security updates)\u2014is not supported by the supplied evidence. Index 1 only contains Akira's question and omits Ayo's actual response, so the factual claims about Ayo's security positioning cannot be verified from the cited text."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-d7662dd7a4f106a2",
+    "question": "For EcoLite Innovations, what security compliance point did Carlos emphasize in the initial discussion, and what specific concern did Haruto raise about security in the proposal follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The security compliance point Carlos emphasized in the initial discussion and Haruto's specific security concern in the proposal follow-up for EcoLite Innovations",
+        "relationship": "Both requests concern the same business issue (security requirements/concerns) tracked across the initial call and the proposal follow-up for the same account",
+        "reason": "This is a coherent multi-call question: both facts address the same security topic for EcoLite Innovations, not two unrelated lookups joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sw7UIAS",
+                "fact": "Carlos emphasized superior security compliance as a standout feature protecting client data.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention Carlos emphasizing security as a standout feature; it only addresses Haruto's question about alignment."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyM9IAK",
+                "fact": "Haruto raised a specific concern about how TechPulse's security compliance aligns with the data protection EcoLite needs in its highly regulated industry.",
+                "why_other_call_cannot_supply_it": "The initial call does not contain this specific concern; Haruto only acknowledges security compliance as crucial without questioning alignment."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: Carlos's emphasis in the initial discussion and Haruto's concern in the follow-up. Each fact is unique to its respective call and cannot be derived from the other."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sw7UIAS",
+                  "fact": "Carlos emphasized superior security compliance as a standout feature protecting client data.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention Carlos emphasizing security as a standout feature; it only addresses Haruto's question about alignment."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyM9IAK",
+                  "fact": "Haruto raised a specific concern about how TechPulse's security compliance aligns with the data protection EcoLite needs in its highly regulated industry.",
+                  "why_other_call_cannot_supply_it": "The initial call does not contain this specific concern; Haruto only acknowledges security compliance as crucial without questioning alignment."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: Carlos's emphasis in the initial discussion and Haruto's concern in the follow-up. Each fact is unique to its respective call and cannot be derived from the other."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sw7UIAS",
+                "fact": "Carlos emphasized superior security compliance as a standout feature protecting client data in the initial discussion",
+                "why_other_call_cannot_supply_it": "The follow-up call only contains Haruto's concern and Carlos's general reassurance; it never states what Carlos emphasized in the initial discussion"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyM9IAK",
+                "fact": "Haruto questioned how TechPulse's security compliance aligns with the data protection EcoLite needs in its highly regulated industry",
+                "why_other_call_cannot_supply_it": "The initial call predates the proposal and contains no proposal follow-up feedback; Haruto's specific regulatory-alignment concern appears only in the second call"
+              }
+            ],
+            "reason": "The question requests two distinct, time-separated facts: Carlos's initial emphasis on security compliance (only in the first call) and Haruto's specific proposal-stage concern about regulatory data protection alignment (only in the second call). Neither call contains the other's fact, and the concern is a substantive new issue, not a paraphrase of the initial discussion."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sw7UIAS",
+                  "fact": "Carlos emphasized superior security compliance as a standout feature protecting client data in the initial discussion",
+                  "why_other_call_cannot_supply_it": "The follow-up call only contains Haruto's concern and Carlos's general reassurance; it never states what Carlos emphasized in the initial discussion"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyM9IAK",
+                  "fact": "Haruto questioned how TechPulse's security compliance aligns with the data protection EcoLite needs in its highly regulated industry",
+                  "why_other_call_cannot_supply_it": "The initial call predates the proposal and contains no proposal follow-up feedback; Haruto's specific regulatory-alignment concern appears only in the second call"
+                }
+              ],
+              "reason": "The question requests two distinct, time-separated facts: Carlos's initial emphasis on security compliance (only in the first call) and Haruto's specific proposal-stage concern about regulatory data protection alignment (only in the second call). Neither call contains the other's fact, and the concern is a substantive new issue, not a paraphrase of the initial discussion."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct security-related facts: Carlos's emphasis on superior security compliance as a standout feature protecting client data (Call 1, 11:32:15) and Haruto's specific concern about how TechPulse's security compliance aligns with data protection needs in a highly regulated industry (Call 2, 15:46:50). Both claims are directly supported by the transcripts. Each call contributes an exclusive requested fact\u2014Call 1 provides Carlos's initial security pitch, Call 2 provides Haruto's follow-up concern\u2014so both sources are genuinely required. The question is naturally scoped to the EcoLite Innovations account and the named participants, with no artificial locator preamble or answer leakage.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Carlos Nunez on 2022-09-15 explicitly states 'We've also prioritized superior security compliance to keep your data protected, which is a standout feature for many of our clients.' This directly supports the claim that Carlos highlighted superior security compliance as a standout feature protecting client data."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Haruto Yamamoto on 2022-09-30 explicitly states 'The main question is about your security compliance and how it aligns with the kind of data protection we need, especially since we're in a highly regulated industry.' This directly supports the claim that Haruto questioned how TechPulse's security compliance aligns with the data protection EcoLite needs in its highly regulated industry."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Carlos emphasized superior security compliance as a standout feature protecting client data in the initial discussion (2022-09-15). Evidence 1 confirms Haruto raised a specific concern in the proposal follow-up (2022-09-30) about how security compliance aligns with EcoLite's data protection needs in a highly regulated industry. The metadata confirms both calls are associated with EcoLite Innovations and Haruto Yamamoto. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-6a607ee49e0b8c99",
+    "question": "Which vehicle is Sophia Bailey most interested in, and what safety features did Felix say it includes?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the vehicle Sophia Bailey is most interested in and the safety features Felix said it includes",
+        "relationship": "single coherent request: the safety features pertain to the same vehicle of interest",
+        "reason": "Both parts concern one vehicle and one sales discussion; the feature lookup is scoped by the interest identified in the same question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks which vehicle Sophia Bailey is most interested in and what safety features Felix mentioned. The single call clearly shows Sophia expressing particular interest in the 2024 Genesis G80 and Felix listing forward-collision warning, adaptive cruise control, and a 360-degree camera. The gold answer matches the transcript exactly with no extra or missing facts. The question is naturally phrased, adequately scoped to a specific customer interaction, and a sales rep would plausibly want to know a prospect's vehicle preference and the features discussed. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Sophia Bailey explicitly states 'I'm particularly interested in the Genesis G80,' directly supporting the claim that Sophia is particularly interested in the Genesis G80."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Felix Bakker's quoted dialogue explicitly lists 'a forward-collision warning system, adaptive cruise control, and a 360-degree camera,' which directly supports the claimed safety features."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states the vehicle is the 2024 Genesis G80 with forward-collision warning, adaptive cruise control, and a 360-degree camera. Evidence index 0 confirms Sophia's interest in the Genesis G80, and index 1 confirms Felix listed all three safety features. The only minor discrepancy is the '2024' model-year qualifier in the gold answer, which is not explicitly stated in either cited quote. However, the metadata (call date 2023-08-15, opportunity name 'Sophia Bailey Premium Dealership Experience') provides contextual framing but does not supply the model year. Since the core factual claims (vehicle name, three safety features, speaker attributions) are all supported, and the '2024' is a minor contextual detail not contradicted by the evidence, the answer is substantively supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b8b6933124adacea",
+    "question": "What did Keiko say about adjusting the vehicle package pricing for Lucas Green's family vehicle deal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Keiko said about adjusting the vehicle package pricing for Lucas Green's family vehicle deal",
+        "relationship": "single coherent lookup about one pricing adjustment in one deal",
+        "reason": "This is a single fact lookup about one commercial topic (package pricing adjustment) within one deal, with plausible sales language and no unrelated requests joined together."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what Keiko said about adjusting vehicle package pricing for Lucas Green's family vehicle deal\u2014a realistic commercial-terms inquiry for a rep reviewing an account. The gold answer accurately captures all three elements from the transcript: (1) packages already reflect AutoElite's most competitive pricing, (2) she offered to explore financing options instead, and (3) she committed to follow up. No unasked extras are included. The question identifies the customer (Lucas Green) and the business situation (family vehicle deal) sufficiently without artificial locator preambles. Single-call question, so both_sources_required is set to true per instructions. All answer claims are directly supported by the dialogue at timestamps 15:32:19 and 15:32:38."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly supports the answer_claim. Keiko Mori states 'these packages already reflect our most competitive pricing' (competitive pricing claim), then says 'let's explore what we might do with the financing options' (explore financing options claim), and later says 'I'll make sure we review the financing options and get back to you promptly' (follow-up claim). All three elements of the claim are explicitly present in the cited passage."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) packages already reflect AutoElite's most competitive pricing \u2013 supported by Keiko's quote 'these packages already reflect our most competitive pricing'; (2) she offered to explore financing options instead \u2013 supported by 'let's explore what we might do with the financing options'; (3) and follow up \u2013 supported by 'I'll make sure we review the financing options and get back to you promptly' and Lucas's 'I look forward to your follow-up.' The context metadata confirms this is the Lucas Green family vehicle deal. All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  }
+]
