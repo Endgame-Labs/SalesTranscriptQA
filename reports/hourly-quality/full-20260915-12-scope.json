@@ -1,0 +1,425 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "072b5f871befaf49f014e88c32340615856f5e30370710030561405ac6073c2f",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.484897029,
+  "results": [
+    {
+      "question_id": "b2b-single_call-2c0923f6d2d33dd0",
+      "question": "What pain point did Samuel Okafor of TerraForm Engineering raise about balancing cost and environmental impact, and what next step was agreed with Linh Tran?",
+      "gold_answer": "Samuel said optimizing both cost and environmental impact feels like forced trade-offs; they agreed Linh would prepare a tailored proposal and send it before a follow-up session.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkeIAC",
+        "b2b:a05Wt000003SsQTIA0",
+        "b2b:a05Wt000003SuvDIAS",
+        "b2b:a05Wt000003Sv9jIAC",
+        "b2b:a05Wt000003SvD5IAK",
+        "b2b:a05Wt000003SvGBIA0",
+        "b2b:a05Wt000003SvoBIAS",
+        "b2b:a05Wt000003SvrSIAS",
+        "b2b:a05Wt000003SwCMIA0",
+        "b2b:a05Wt000003Swc4IAC",
+        "b2b:a05Wt000003SwyeIAC",
+        "b2b:a05Wt000003SwyfIAC",
+        "b2b:a05Wt000003SxEqIAK",
+        "b2b:a05Wt000003SxLKIA0",
+        "b2b:a05Wt000003SxQ7IAK",
+        "b2b:a05Wt000003SxoFIAS",
+        "b2b:a05Wt000003SxoGIAS",
+        "b2b:a05Wt000003SxwRIAS",
+        "b2b:a05Wt000003Sz3jIAC",
+        "b2b:a05Wt000003Sz3kIAC",
+        "b2b:a05Wt000003T0HUIA0",
+        "b2b:a05Wt000003T0e3IAC",
+        "b2b:a05Wt000003T0e4IAC",
+        "b2b:a05Wt000003T0kcIAC",
+        "b2b:a05Wt000003T15XIAS",
+        "b2b:a05Wt000003T21dIAC",
+        "b2b:a05Wt000003T287IAC",
+        "b2b:a05Wt000003T2ESIA0",
+        "b2b:a05Wt000003T2zHIAS",
+        "b2b:a05Wt000003T30tIAC",
+        "b2b:a05Wt000003T3YhIAK",
+        "b2b:a05Wt000003T3dYIAS",
+        "b2b:a05Wt000003T3s6IAC",
+        "b2b:a05Wt000003T407IAC",
+        "b2b:a05Wt000003T49mIAC",
+        "b2b:a05Wt000003T4BOIA0",
+        "b2b:a05Wt000003T4BPIA0",
+        "b2b:a05Wt000003T4JSIA0",
+        "b2b:a05Wt000003T4JTIA0",
+        "b2b:a05Wt000003T4T7IAK",
+        "b2b:a05Wt000003T4UjIAK",
+        "b2b:a05Wt000003T4WLIA0",
+        "b2b:a05Wt000003T4XxIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves both Samuel Okafor and Linh Tran discussing a cost-vs-environmental-impact pain point: the 2023-04-26 call (b2b:a05Wt000003Swc4IAC). The other Linh Tran call (2023-04-19) covers setup customization and user experience, not this pain point, so there is no competing alternative.",
+        "answers": [
+          {
+            "answer": "Samuel Okafor said a major challenge is the complexity of optimizing both cost and environmental impact — it sometimes feels like trade-offs have to be made, and TerraForm wants solutions that bridge that gap. Linh Tran responded that AI Cirku-Tech can help via AI-driven precise simulations to optimize parameters and achieve that balance. The agreed next step was to schedule a follow-up session to go over a tailored proposal, with Linh preparing the proposal and sending it over before the next session.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Swc4IAC",
+                "line_start": 6,
+                "line_end": 8,
+                "quote": "[2023-04-26T10:01:30] Linh Tran: Great. We understand that TerraForm is all about integrating environmental efficiency into your designs. Can you share some of the pain points you’re currently facing?\n[2023-04-26T10:01:50] Samuel Okafor: One major challenge is the complexity involved in optimizing both cost and environmental impact. It sometimes feels like trade-offs have to be made, and we're looking for solutions that can help us bridge that gap."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swc4IAC",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2023-04-26T10:05:10] Linh Tran: That’s fantastic! Let’s keep this momentum going. How about we schedule a follow-up session to go over a tailored proposal that outlines how our solutions fit into your strategy?\n[2023-04-26T10:05:25] Samuel Okafor: Yes, that sounds like a great next step. I'm looking forward to seeing a proposal that aligns with our initiatives."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Samuel Okafor of TerraForm Engineering, the specific pain point topic of 'balancing cost and environmental impact,' and the salesperson Linh Tran. Only one call in the dataset features both Samuel Okafor and Linh Tran together: call b2b:a05Wt000003Swc4IAC (2023-04-26, opportunity 'TerraForm-EDA Expansion'). In that call, Samuel raises the exact pain point about the complexity of optimizing both cost and environmental impact (line 7), and Linh Tran responds with AI Cirku-Tech's precise simulations (line 8). The agreed next step is for Linh Tran to prepare a tailored proposal and schedule a follow-up session (lines 18-20). No other call matches all three qualifiers simultaneously.",
+        "answers": [
+          {
+            "answer": "Samuel Okafor raised the pain point that the complexity involved in optimizing both cost and environmental impact sometimes feels like trade-offs have to be made, and TerraForm is looking for solutions that can help bridge that gap. Linh Tran responded by explaining that AI Cirku-Tech leverages AI to enable more precise simulations to optimize various parameters, helping achieve the balance Samuel is aiming for. The agreed next step was to schedule a follow-up session to go over a tailored proposal outlining how TechPulse's solutions fit into TerraForm's strategy; Linh Tran committed to preparing the proposal and sending it over before the next session.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Swc4IAC",
+                "line_start": 6,
+                "line_end": 9,
+                "quote": "[2023-04-26T10:01:30] Linh Tran: Great. We understand that TerraForm is all about integrating environmental efficiency into your designs. Can you share some of the pain points you’re currently facing?\n[2023-04-26T10:01:50] Samuel Okafor: One major challenge is the complexity involved in optimizing both cost and environmental impact. It sometimes feels like trade-offs have to be made, and we're looking for solutions that can help us bridge that gap.\n[2023-04-26T10:02:10] Linh Tran: I see. That’s quite a common challenge, and that's precisely where AI Cirku-Tech can make a difference. By leveraging AI, it enables more precise simulations to optimize various parameters, helping achieve the balance you’re aiming for. How does that sound so far?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swc4IAC",
+                "line_start": 18,
+                "line_end": 21,
+                "quote": "[2023-04-26T10:05:10] Linh Tran: That’s fantastic! Let’s keep this momentum going. How about we schedule a follow-up session to go over a tailored proposal that outlines how our solutions fit into your strategy?\n[2023-04-26T10:05:25] Samuel Okafor: Yes, that sounds like a great next step. I'm looking forward to seeing a proposal that aligns with our initiatives.\n[2023-04-26T10:05:40] Linh Tran: Perfect! I’ll prepare a proposal and send it over before our next session. Thank you for your time today, Samuel. I’ll be in touch soon."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same pain point (complexity of optimizing cost and environmental impact, feeling like trade-offs must be made, wanting solutions to bridge the gap) and the same agreed next step (schedule a follow-up session to review a tailored proposal, with Linh preparing and sending it beforehand). Answer B adds a minor extra detail about 'TechPulse's solutions' fitting TerraForm's strategy, but this is unrequested extra wording, not a substitution. The reference captures both requested facts: the forced-trade-off pain point and the commitment for Linh to prepare and send a tailored proposal before a follow-up session."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-7259bd72637c62d4",
+      "question": "What discounts did Pierre quote Wei Chen for each product in the NeonTech proposal?",
+      "gold_answer": "PulseSim Pro: 10% on ten units; SecureFlow Suite: 5% on eight units; CloudLink Designer: 10% on twelve units.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqYEIA0",
+        "b2b:a05Wt000003StXiIAK",
+        "b2b:a05Wt000003StXjIAK",
+        "b2b:a05Wt000003SubpIAC",
+        "b2b:a05Wt000003SudRIAS",
+        "b2b:a05Wt000003Suf3IAC",
+        "b2b:a05Wt000003SugfIAC",
+        "b2b:a05Wt000003SuiHIAS",
+        "b2b:a05Wt000003SujtIAC",
+        "b2b:a05Wt000003SulVIAS",
+        "b2b:a05Wt000003Sun7IAC",
+        "b2b:a05Wt000003SuojIAC",
+        "b2b:a05Wt000003SuqLIAS",
+        "b2b:a05Wt000003SurxIAC",
+        "b2b:a05Wt000003SutZIAS",
+        "b2b:a05Wt000003SuvBIAS",
+        "b2b:a05Wt000003SuwnIAC",
+        "b2b:a05Wt000003Sv01IAC",
+        "b2b:a05Wt000003Sv1dIAC",
+        "b2b:a05Wt000003Sv3FIAS",
+        "b2b:a05Wt000003Sv4rIAC",
+        "b2b:a05Wt000003Sv4sIAC",
+        "b2b:a05Wt000003Sv6TIAS",
+        "b2b:a05Wt000003Sv85IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only the 2020-11-14 call between Pierre Fontaine and Wei Chen (opportunity 'NeonTech Expansion with TechPulse') quotes per-product discounts for all three proposal products. The later 2020-12-10 Pierre–Wei call only restates the SecureFlow Suite 5% discount and mentions discounts on the other two products without figures, so it is not a competing complete answer.",
+        "answers": [
+          {
+            "answer": "In the NeonTech proposal, Pierre Fontaine quoted Wei Chen: PulseSim Pro at a 10% discount on ten units, SecureFlow Suite at a 5% discount for eight units, and CloudLink Designer at a 10% discount on twelve units.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StXjIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2020-11-14T10:03:35] Wei Chen: Got it. That makes sense. For pricing, we appreciated the proposal you sent earlier. Could you go over how the discounts work again?\n[2020-11-14T10:04:00] Pierre Fontaine: Certainly. For PulseSim Pro, you’re looking at a 10% discount on ten units. SecureFlow Suite has a 5% discount for eight units, while CloudLink Designer offers a 10% discount on twelve units. Overall, these discounts significantly lower the total investment, making the solutions even more cost-effective for NeonTech's needs."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Pierre (Fontaine) as the rep, Wei Chen as the customer, and the NeonTech proposal. Only one call matches all three qualifiers: call b2b:a05Wt000003StXjIAK (2020-11-14), where Pierre Fontaine speaks with Wei Chen about the NeonTech Expansion with TechPulse proposal. In that call, Pierre quotes specific discounts for three products. Other calls involving Wei Chen (e.g., with Sarah Johnson or Luciana Alves) or other contacts (e.g., Alejandra Torres with Junaid Khan) do not match the named salesperson Pierre, so they are excluded.",
+        "answers": [
+          {
+            "answer": "Pierre Fontaine quoted Wei Chen the following discounts in the NeonTech proposal: PulseSim Pro received a 10% discount on ten units; SecureFlow Suite received a 5% discount for eight units; and CloudLink Designer received a 10% discount on twelve units.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StXjIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2020-11-14T10:03:35] Wei Chen: Got it. That makes sense. For pricing, we appreciated the proposal you sent earlier. Could you go over how the discounts work again?\n[2020-11-14T10:04:00] Pierre Fontaine: Certainly. For PulseSim Pro, you’re looking at a 10% discount on ten units. SecureFlow Suite has a 5% discount for eight units, while CloudLink Designer offers a 10% discount on twelve units. Overall, these discounts significantly lower the total investment, making the solutions even more cost-effective for NeonTech's needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers list the same three products with identical discounts and unit quantities: PulseSim Pro 10% on ten units, SecureFlow Suite 5% on eight units, and CloudLink Designer 10% on twelve units. The reference contains exactly the same three product-discount-quantity commitments. No requested fact is missing or substituted in any version."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-936923632b6e00e5",
+      "question": "What price did Danieles quote Aisha Sanghvi for the Mercedes-Benz E-Class, and what did he say about financing options?",
+      "gold_answer": "$65,999.99, with flexible financing solutions to tailor the payment plan.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SME4IAO",
+        "b2c:a05Ws000005SOHSIA4",
+        "b2c:a05Ws000005SPVHIA4",
+        "b2c:a05Ws000005SQHfIAO",
+        "b2c:a05Ws000005SRC6IAO",
+        "b2c:a05Ws000005SRSFIA4",
+        "b2c:a05Ws000005SRf8IAG",
+        "b2c:a05Ws000005SS3KIAW",
+        "b2c:a05Ws000005SS4wIAG",
+        "b2c:a05Ws000005SSGFIA4",
+        "b2c:a05Ws000005SSwAIAW",
+        "b2c:a05Ws000005ST4FIAW",
+        "b2c:a05Ws000005STdiIAG",
+        "b2c:a05Ws000005SUEoIAO",
+        "b2c:a05Ws000005SUTKIA4",
+        "b2c:a05Ws000005SUWXIA4",
+        "b2c:a05Ws000005SUY9IAO",
+        "b2c:a05Ws000005SUYAIA4",
+        "b2c:a05Ws000005SUZlIAO",
+        "b2c:a05Ws000005SUZmIAO",
+        "b2c:a05Ws000005SUbNIAW",
+        "b2c:a05Ws000005SUczIAG",
+        "b2c:a05Ws000005SUebIAG",
+        "b2c:a05Ws000005SUgDIAW",
+        "b2c:a05Ws000005SUhpIAG",
+        "b2c:a05Ws000005SUjRIAW",
+        "b2c:a05Ws000005SUl3IAG",
+        "b2c:a05Ws000005SUmfIAG",
+        "b2c:a05Ws000005SUoHIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Danieles Silveira consistently quoted the Mercedes-Benz E-Class at $65,999.99 across his calls, always paired with flexible financing solutions. The repeated statements are the same fact, not competing answers.",
+        "answers": [
+          {
+            "answer": "Danieles quoted the Mercedes-Benz E-Class at $65,999.99 and said AutoElite provides flexible financing solutions that can be tailored to the customer's convenience/financial situation (with transparent, no-hidden-fee pricing).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPVHIA4",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2020-05-20T15:07:20] Danieles Silveira: I completely understand, and I'm pleased to say transparency is one of our strong points. We ensure that all pricing details are clear from the start. The E-Class is priced at $65,999.99, and we also provide flexible financing solutions to tailor your payment plan to your convenience."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SUEoIAO",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2020-04-04T11:47:50] Danieles Silveira: Of course. One of the things we pride ourselves on at AutoElite Motors is transparent pricing. With us, you’re never in for any surprises. The Tesla Model S is priced at $89,999.99 and the Mercedes-Benz E-Class starts at $65,999.99. Both prices, of course, are upfront with no hidden fees.\n[2020-04-04T11:48:15] Aisha Sanghvi: I appreciate the transparency. It makes budgeting so much easier."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SUebIAG",
+                "line_start": 6,
+                "line_end": 10,
+                "quote": "[2020-05-30T15:01:00] Danieles Silveira: Perfect. Let's start with the 2023 Mercedes-Benz E-Class. It's renowned for its sophisticated luxury and cutting-edge technology. We offer it in a package that includes an extended warranty plan and our comprehensive maintenance plan. It’s priced at $65,999.99.\n[2020-05-30T15:01:15] Aisha Sanghvi: That sounds impressive. What about the Genesis G80?\n[2020-05-30T15:01:30] Danieles Silveira: The 2024 Genesis G80 is also a fantastic choice. It offers a refined driving experience with a bit more sportiness. The price for this model is $50,999.99, and it equally pairs well with our maintenance plans.\n[2020-05-30T15:01:45] Aisha Sanghvi: Both sound appealing. How about the financing options? I've heard you have some flexible solutions."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Danieles Silveira spoke with Aisha Sanghvi about the Mercedes-Benz E-Class in three separate calls, each quoting the same price ($65,999.99) but providing materially different levels of detail about financing options. The question does not specify which call, so each constitutes a valid complete answer.",
+        "answers": [
+          {
+            "answer": "Danieles quoted the Mercedes-Benz E-Class at $65,999.99 and said they offer flexible financing solutions to tailor the payment plan to Aisha's convenience.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPVHIA4",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2020-05-20T15:07:20] Danieles Silveira: I completely understand, and I'm pleased to say transparency is one of our strong points. We ensure that all pricing details are clear from the start. The E-Class is priced at $65,999.99, and we also provide flexible financing solutions to tailor your payment plan to your convenience."
+              }
+            ]
+          },
+          {
+            "answer": "Danieles quoted the Mercedes-Benz E-Class starting at $65,999.99, emphasized transparent pricing with no hidden fees, and said they offer flexible financing solutions and can work out a plan that suits Aisha's financial needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUEoIAO",
+                "line_start": 8,
+                "line_end": 11,
+                "quote": "[2020-04-04T11:47:50] Danieles Silveira: Of course. One of the things we pride ourselves on at AutoElite Motors is transparent pricing. With us, you’re never in for any surprises. The Tesla Model S is priced at $89,999.99 and the Mercedes-Benz E-Class starts at $65,999.99. Both prices, of course, are upfront with no hidden fees.\n[2020-04-04T11:48:15] Aisha Sanghvi: I appreciate the transparency. It makes budgeting so much easier.\n[2020-04-04T11:48:30] Danieles Silveira: I completely agree. And speaking of budgeting, we also offer flexible financing solutions. We can work out a plan that suits your financial needs."
+              }
+            ]
+          },
+          {
+            "answer": "Danieles quoted the Mercedes-Benz E-Class at $65,999.99 (in a package including an extended warranty plan and comprehensive maintenance plan). Regarding financing, he said customers frequently mention how easy it is to tailor their financing options for long-term affordability, they offer flexible terms that can suit different financial situations, and there are no hidden fees.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUebIAG",
+                "line_start": 6,
+                "line_end": 11,
+                "quote": "[2020-05-30T15:01:00] Danieles Silveira: Perfect. Let's start with the 2023 Mercedes-Benz E-Class. It's renowned for its sophisticated luxury and cutting-edge technology. We offer it in a package that includes an extended warranty plan and our comprehensive maintenance plan. It’s priced at $65,999.99.\n[2020-05-30T15:01:15] Aisha Sanghvi: That sounds impressive. What about the Genesis G80?\n[2020-05-30T15:01:30] Danieles Silveira: The 2024 Genesis G80 is also a fantastic choice. It offers a refined driving experience with a bit more sportiness. The price for this model is $50,999.99, and it equally pairs well with our maintenance plans.\n[2020-05-30T15:01:45] Aisha Sanghvi: Both sound appealing. How about the financing options? I've heard you have some flexible solutions.\n[2020-05-30T15:02:00] Danieles Silveira: Absolutely. Our customers frequently mention how easy it is to tailor our financing options for long-term affordability. We offer flexible terms that can suit different financial situations, and there are no hidden fees, which gives you peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-06f1c5feedddcd97",
+      "question": "What pricing did Olivia Brooks get for the BMW X5 M, the Lexus RX 350, and the extended warranty?",
+      "gold_answer": "2022 BMW X5 M: $74,999.99; 2020 Lexus RX 350: $37,999.99; Extended Warranty Plan: $1,299.99 additional.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SPK6IAO",
+        "b2c:a05Ws000005SQJQIA4",
+        "b2c:a05Ws000005SQMhIAO",
+        "b2c:a05Ws000005SQnzIAG",
+        "b2c:a05Ws000005SQuPIAW",
+        "b2c:a05Ws000005SRLsIAO",
+        "b2c:a05Ws000005SRvMIAW",
+        "b2c:a05Ws000005SSkzIAG",
+        "b2c:a05Ws000005SSszIAG",
+        "b2c:a05Ws000005SSt0IAG",
+        "b2c:a05Ws000005SSxsIAG",
+        "b2c:a05Ws000005SUZvIAO",
+        "b2c:a05Ws000005SUzfIAG",
+        "b2c:a05Ws000005SVFmIAO",
+        "b2c:a05Ws000005SWAEIA4",
+        "b2c:a05Ws000005SWbcIAG",
+        "b2c:a05Ws000005SWdHIAW",
+        "b2c:a05Ws000005SWtNIAW",
+        "b2c:a05Ws000005SWzpIAG",
+        "b2c:a05Ws000005SXhMIAW",
+        "b2c:a05Ws000005SYNPIA4",
+        "b2c:a05Ws000005SYyRIAW",
+        "b2c:a05Ws000005SZ6VIAW",
+        "b2c:a05Ws000005SZ83IAG",
+        "b2c:a05Ws000005SZUhIAO",
+        "b2c:a05Ws000005Sa0wIAC",
+        "b2c:a05Ws000005SadaIAC",
+        "b2c:a05Ws000005SaleIAC",
+        "b2c:a05Ws000005SayYIAS",
+        "b2c:a05Ws000005SbWPIA0",
+        "b2c:a05Ws000005SbY1IAK",
+        "b2c:a05Ws000005SbY2IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 10,
+            "normalized_end": 11
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (Linh Nguyen, 2020-11-25, 'Family Vehicle Purchase with Enhanced Safety and Warranty Options') quotes specific prices for the 2022 BMW X5 M, the 2020 Lexus RX 350, and the Extended Warranty Plan. Other calls mention these vehicles or warranties but give no pricing figures, so there are no competing complete answers.",
+        "answers": [
+          {
+            "answer": "The 2022 BMW X5 M is priced at $74,999.99, the 2020 Lexus RX 350 at $37,999.99, and the tailored Extended Warranty Plan costs an additional $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQJQIA4",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2020-11-25T11:02:50] Linh Nguyen: Absolutely! At AutoElite, we believe in transparency. The prices we discussed come with no hidden fees, be it for the BMW or Lexus. For instance, the 2022 BMW X5 M is priced at $74,999.99, while the 2020 Lexus RX 350 is $37,999.99."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQJQIA4",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2020-11-25T11:03:35] Linh Nguyen: Of course. The Extended Warranty Plan we've tailored for you includes comprehensive coverage exactly where it matters, for an additional cost of $1,299.99. Given your focus on securing long-term value for your purchase, it's definitely worth considering."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for specific pricing on three items: the BMW X5 M, the Lexus RX 350, and the extended warranty. Only one call in the history provides concrete dollar figures for all three: call b2c:a05Ws000005SQJQIA4 (2020-11-25, Linh Nguyen, opportunity 'Family Vehicle Purchase with Enhanced Safety and Warranty Options'). In that call, Linh quotes the 2022 BMW X5 M at $74,999.99, the 2020 Lexus RX 350 at $37,999.99, and the Extended Warranty Plan at $1,299.99. No other call provides specific pricing for all three of these items together.",
+        "answers": [
+          {
+            "answer": "Olivia Brooks received the following pricing: the 2022 BMW X5 M was priced at $74,999.99, the 2020 Lexus RX 350 was priced at $37,999.99, and the Extended Warranty Plan was offered at an additional cost of $1,299.99. All prices were presented as transparent with no hidden fees.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQJQIA4",
+                "line_start": 10,
+                "line_end": 13,
+                "quote": "[2020-11-25T11:02:50] Linh Nguyen: Absolutely! At AutoElite, we believe in transparency. The prices we discussed come with no hidden fees, be it for the BMW or Lexus. For instance, the 2022 BMW X5 M is priced at $74,999.99, while the 2020 Lexus RX 350 is $37,999.99.\n[2020-11-25T11:03:15] Olivia Brooks: That's reassuring, especially knowing there won't be any surprises later. I've been thinking about extended warranties. Could we explore that a bit more?\n[2020-11-25T11:03:35] Linh Nguyen: Of course. The Extended Warranty Plan we've tailored for you includes comprehensive coverage exactly where it matters, for an additional cost of $1,299.99. Given your focus on securing long-term value for your purchase, it's definitely worth considering."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers provide the same three prices requested: BMW X5 M at $74,999.99, Lexus RX 350 at $37,999.99, and Extended Warranty Plan at $1,299.99 additional. Answer B adds a note about transparent pricing with no hidden fees, which is an unrequested extra and does not affect agreement. The reference lists all three requested prices identically, covering every fact the question asks for."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

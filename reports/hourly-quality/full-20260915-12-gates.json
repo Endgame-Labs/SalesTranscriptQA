@@ -1,0 +1,379 @@
+[
+  {
+    "question_id": "b2b-single_call-2c0923f6d2d33dd0",
+    "question": "What pain point did Samuel Okafor of TerraForm Engineering raise about balancing cost and environmental impact, and what next step was agreed with Linh Tran?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The cost-vs-environmental-impact pain point raised by Samuel Okafor of TerraForm Engineering and the agreed next step with Linh Tran",
+        "relationship": "objection and its agreed follow-up within the same discussion",
+        "reason": "The question pairs a customer's stated concern with the next step addressing that same concern, forming one coherent sales interaction rather than two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for a specific pain point and an agreed next step from a single call. The dialogue confirms Samuel stated optimizing cost and environmental impact 'feels like trade-offs have to be made' and that Linh agreed to 'prepare a proposal and send it over before our next session.' The gold answer faithfully captures both facts without adding unasked extras. The question is naturally phrased, scoped to a named contact and company, and a rep would plausibly want this information. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Samuel Okafor the statement that optimizing both cost and environmental impact involves complexity and 'feels like trade-offs have to be made,' which matches the answer_claim about forced trade-offs between cost and environmental impact."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Linh Tran explicitly stating 'I'll prepare a proposal and send it over before our next session,' which directly supports the answer_claim that Linh will prepare a proposal and send it before the next session."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer. Evidence 0 confirms Samuel Okafor's pain point about forced trade-offs between cost and environmental impact. Evidence 1 confirms the agreed next step: Linh Tran will prepare a tailored proposal and send it before a follow-up session. The word 'tailored' in the gold_answer is a minor embellishment not explicitly present in the quote, but the core factual claims (pain point + next step) are fully supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-7259bd72637c62d4",
+    "question": "What discounts did Pierre quote Wei Chen for each product in the NeonTech proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The per-product discounts Pierre quoted Wei Chen in the NeonTech proposal",
+        "relationship": "single coherent quote breakdown",
+        "reason": "One lookup of commercial terms (discounts) within a single proposal/quote, a coherent commercial quote breakdown."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the specific discounts Pierre quoted Wei Chen per product in the NeonTech proposal. The dialogue at 10:04:00 states exactly: PulseSim Pro 10% on ten units, SecureFlow Suite 5% on eight units, CloudLink Designer 10% on twelve units. The gold answer matches verbatim with no extra or missing facts. The question is naturally phrased, identifies the account (NeonTech), the rep (Pierre), the contact (Wei Chen), and the business context (proposal discounts), which a sales rep would plausibly need to recall. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Pierre Fontaine explicitly states: 'For PulseSim Pro, you're looking at a 10% discount on ten units. SecureFlow Suite has a 5% discount for eight units, while CloudLink Designer offers a 10% discount on twelve units.' This directly and fully supports the answer_claim of 10% on ten units of PulseSim Pro, 5% on eight units of SecureFlow Suite, and 10% on twelve units of CloudLink Designer. Speaker attribution (Pierre), product names, discount percentages, and unit quantities all match exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: PulseSim Pro: 10% on ten units; SecureFlow Suite: 5% on eight units; CloudLink Designer: 10% on twelve units. The single cited evidence (index 0) contains Pierre Fontaine's exact quote providing all three product discounts with matching percentages and unit counts. The context metadata confirms the call involves Wei Chen at NeonTech Industries and the opportunity is 'NeonTech Expansion with TechPulse,' consistent with the question's framing. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-3bd59aeedeca1c66",
+    "question": "In the AquaGuard Solutions partnership, which competitor did Rosa Matthews say impressed her on security, and what objection was still unresolved when she agreed to finalize terms?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Which competitor Rosa Matthews said impressed her on security, and which objection remained unresolved when she agreed to finalize terms in the AquaGuard Solutions partnership.",
+        "relationship": "Two independent fact lookups joined only by the same account/call.",
+        "reason": "The competitor's security impression and the unresolved objection at finalization are separate information needs about different aspects of the deal; being from the same partnership/call is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts: (1) which competitor impressed Rosa on security, and (2) what objection remained unresolved when she agreed to finalize terms. Call 2 (Feb 18) provides the exclusive fact that Rosa said 'we're really impressed with Quantum Circuits Inc in terms of security measures.' Call 1 (Mar 31) provides the exclusive fact that Rosa stated 'We just need to ensure that future compliance aligns perfectly with our operational goals. Right now, we're still weighing both offers on that front,' immediately before agreeing to finalize. Both sources contribute distinct, non-overlapping requested facts. The gold answer accurately reflects both claims. The question is naturally phrased, scoped to a named partnership and contact, and a rep would plausibly want to know competitive positioning and lingering objections before close. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Rosa Matthews saying 'we're really impressed with Quantum Circuits Inc in terms of security measures,' which matches the answer_claim exactly. Speaker attribution, company name, and the specific praise about security are all present."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Rosa Matthews stating 'We just need to ensure that future compliance aligns perfectly with our operational goals. Right now, we're still weighing both offers on that front.' This directly supports the claim about future compliance needing to align with operational goals and still weighing both offers. The 'still weighing' language confirms the objection was unresolved at the time of the statement."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Quantum Circuits Inc impressed Rosa on security \u2014 directly supported by evidence index 0; (2) the unresolved objection was whether future compliance would align with AquaGuard's operational goals, and she was still weighing both offers \u2014 directly supported by evidence index 1. Both factual claims in the gold_answer are covered by the cited evidence. The context metadata confirms the calls belong to the AquaGuard Solutions Partnership opportunity with Rosa Matthews as the contact, consistent with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-0d44d6c5f19d1963",
+    "question": "Across the two AeroFusion Systems calls, what issues or concerns did Nina Kovacs raise about Quantum Circuits Inc?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Issues or concerns Nina Kovacs raised about Quantum Circuits Inc across two AeroFusion Systems calls",
+        "relationship": "single coherent issue tracked across two calls",
+        "reason": "The question asks for the same business issue (Nina's concerns about Quantum Circuits) across two calls, which is a valid multi-call comparison, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrnoIAC",
+                "fact": "Quantum Circuits Inc required repeated follow-ups, and Nina hoped TechPulse would be more responsive.",
+                "why_other_call_cannot_supply_it": "The other call does not mention any follow-up or responsiveness issue with Quantum Circuits Inc."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuiNIAS",
+                "fact": "Quantum Circuits Inc offered strong security but could be too rigid to accommodate new advancements.",
+                "why_other_call_cannot_supply_it": "The other call does not discuss Quantum Circuits Inc's security or rigidity; it only mentions the follow-up issue."
+              }
+            ],
+            "reason": "The question asks for issues or concerns raised about Quantum Circuits Inc across two calls. Each call contains a distinct concern: one about responsiveness (repeated follow-ups) and the other about rigidity despite strong security. These are substantively different issues, and neither call alone provides both, so both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrnoIAC",
+                  "fact": "Quantum Circuits required repeated follow-ups",
+                  "why_other_call_cannot_supply_it": "The other call does not mention any follow-up or responsiveness issues."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuiNIAS",
+                  "fact": "Quantum Circuits offered strong security but could be too rigid to accommodate new advancements",
+                  "why_other_call_cannot_supply_it": "The other call does not mention rigidity or adaptability concerns."
+                }
+              ],
+              "reason": "The question asks for all issues raised across two calls. Each call provides a distinct concern: the first call mentions a responsiveness/follow-up issue, while the second call mentions a rigidity/adaptability concern. Neither call alone covers both issues, so both calls are necessary to fully answer the question."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrnoIAC",
+                  "fact": "Quantum Circuits Inc required repeated follow-ups, and Nina hoped TechPulse would be more responsive.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention any follow-up or responsiveness issue with Quantum Circuits Inc."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuiNIAS",
+                  "fact": "Quantum Circuits Inc offered strong security but could be too rigid to accommodate new advancements.",
+                  "why_other_call_cannot_supply_it": "The other call does not discuss Quantum Circuits Inc's security or rigidity; it only mentions the follow-up issue."
+                }
+              ],
+              "reason": "The question asks for issues or concerns raised about Quantum Circuits Inc across two calls. Each call contains a distinct concern: one about responsiveness (repeated follow-ups) and the other about rigidity despite strong security. These are substantively different issues, and neither call alone provides both, so both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrnoIAC",
+                "fact": "Nina Kovacs said Quantum Circuits Inc required repeated follow-ups, and she hoped TechPulse would be more responsive",
+                "why_other_call_cannot_supply_it": "The earlier call (a05Wt000003SuiNIAS) contains no mention of Quantum Circuits' responsiveness or follow-up issues; it only discusses security rigidity."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuiNIAS",
+                "fact": "Nina Kovacs said Quantum Circuits Inc offered strong security but could be too rigid to accommodate new advancements",
+                "why_other_call_cannot_supply_it": "The later call (a05Wt000003SrnoIAC) never mentions Quantum Circuits' security or rigidity; it only raises the responsiveness complaint."
+              }
+            ],
+            "reason": "The question asks for all concerns Nina raised about Quantum Circuits across both calls. Each call contains a distinct, non-overlapping concern (responsiveness vs. security rigidity), and neither call alone covers both, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrnoIAC",
+                  "fact": "Nina Kovacs said Quantum Circuits Inc required repeated follow-ups, and she hoped TechPulse would be more responsive",
+                  "why_other_call_cannot_supply_it": "The earlier call (a05Wt000003SuiNIAS) contains no mention of Quantum Circuits' responsiveness or follow-up issues; it only discusses security rigidity."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuiNIAS",
+                  "fact": "Nina Kovacs said Quantum Circuits Inc offered strong security but could be too rigid to accommodate new advancements",
+                  "why_other_call_cannot_supply_it": "The later call (a05Wt000003SrnoIAC) never mentions Quantum Circuits' security or rigidity; it only raises the responsiveness complaint."
+                }
+              ],
+              "reason": "The question asks for all concerns Nina raised about Quantum Circuits across both calls. Each call contains a distinct, non-overlapping concern (responsiveness vs. security rigidity), and neither call alone covers both, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both calls are from the same account (AeroFusion Systems) and contact (Nina Kovacs). In the 2024-04-08 call Nina explicitly states Quantum Circuits Inc required 'repeated follow-ups' and hopes TechPulse will be more responsive. In the 2024-03-28 call she says Quantum Circuits Inc offers 'strong security' but could be 'too rigid to accommodate new advancements.' Each source contributes an exclusive concern, the answer captures both precisely without unasked extras, and the question is naturally scoped to a rep wanting to understand competitive pain points.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Nina Kovacs stating 'One thing we found with Quantum Circuits Inc was the need for repeated follow-ups' and asking 'I'm hoping your team is more responsive?' This fully supports the claim that she cited repeated follow-ups and hoped TechPulse would be more responsive."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Nina saying 'Quantum Circuits Inc offer strong security' and expressing concern about 'perfect security that's too rigid to accommodate new advancements.' This supports the claim that she acknowledged strong security but worried about rigidity regarding new advancements."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) In the first call (April 8), Nina noted Quantum Circuits required repeated follow-ups and hoped TechPulse would be more responsive \u2014 supported by evidence index 0. (2) In the earlier call (March 28), she said Quantum Circuits offered strong security but could be too rigid to accommodate new advancements \u2014 supported by evidence index 1. Both factual claims in the gold answer are directly supported by the cited evidence. The temporal ordering ('first call' = April 8, 'earlier call' = March 28) is consistent with the metadata timestamps."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-936923632b6e00e5",
+    "question": "What price did Danieles quote Aisha Sanghvi for the Mercedes-Benz E-Class, and what did he say about financing options?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quoted price for the Mercedes-Benz E-Class and the financing options discussed",
+        "relationship": "single coherent commercial quote inquiry \u2014 price and financing are parts of one purchase discussion for the same vehicle",
+        "reason": "Price and financing options for the same quoted car form one natural sales exchange, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the quoted price and financing comment for a specific customer (Aisha Sanghvi) and vehicle (Mercedes-Benz E-Class). The dialogue confirms Danieles quoted $65,999.99 and mentioned flexible financing solutions to tailor the payment plan. The gold answer matches exactly with no extra or missing facts. The question is naturally phrased, adequately scoped to a real sales interaction, and a rep/account manager would plausibly need this pricing/financing detail. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Danieles Silveira explicitly states 'The E-Class is priced at $65,999.99, and we also provide flexible financing solutions to tailor your payment plan to your convenience.' This directly supports the answer_claim about the price and flexible financing options."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Danieles Silveira's exact quote stating the E-Class price as $65,999.99 and mentioning flexible financing solutions to tailor the payment plan. The context metadata confirms the account is Aisha Sanghvi and the call is associated with the 'Luxury Vehicle Upgrade' opportunity. The gold_answer ('$65,999.99, with flexible financing solutions to tailor the payment plan.') is a faithful, concise paraphrase of the quoted dialogue. All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-06f1c5feedddcd97",
+    "question": "What pricing did Olivia Brooks get for the BMW X5 M, the Lexus RX 350, and the extended warranty?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted to Olivia Brooks for the BMW X5 M, the Lexus RX 350, and an extended warranty",
+        "relationship": "single coherent commercial quote breakdown covering two vehicles and a related warranty add-on",
+        "reason": "One pricing request for vehicles plus a naturally related extended warranty; all items belong to the same quote context, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "A sales rep would plausibly need to confirm the specific pricing quoted to Olivia Brooks for the two vehicles and the extended warranty. The question is naturally worded, scoped to a named customer and specific products, and the answer states exactly the three requested prices with no extras. All three figures ($74,999.99 for the 2022 BMW X5 M, $37,999.99 for the 2020 Lexus RX 350, $1,299.99 for the Extended Warranty Plan) are directly stated in the single call transcript. No locator preamble, no answer leakage, no unsupported causality. Because question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Linh Nguyen explicitly states 'the 2022 BMW X5 M is priced at $74,999.99, while the 2020 Lexus RX 350 is $37,999.99,' which directly supports the answer_claim for both vehicle prices."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Linh Nguyen explicitly states 'The Extended Warranty Plan we've tailored for you includes comprehensive coverage exactly where it matters, for an additional cost of $1,299.99,' which directly supports the answer_claim for the extended warranty price."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states three prices: 2022 BMW X5 M at $74,999.99, 2020 Lexus RX 350 at $37,999.99, and Extended Warranty Plan at $1,299.99 additional. Evidence index 0 provides exact quotes for both vehicle prices, and evidence index 1 provides the exact quote for the extended warranty cost. All three factual claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms the account is Olivia Brooks, matching the question's subject."
+      }
+    }
+  }
+]
