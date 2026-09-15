@@ -1,0 +1,362 @@
+{
+  "protocol": "necessity-source-ablation-diagnostic-v1",
+  "questions": 6,
+  "estimated_usd": 0.02338975,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-7d07ac92dd739971",
+      "question": "Across the discovery and follow-up calls with Zhang Rui at BioPulse MedTech, how did he position TechPulse against competitors on security and innovation in each conversation?",
+      "gold_answer": "In discovery, Zhang Rui said competitors are strong on security but lack the innovative edge, while TechPulse balances innovation and compliance. In the follow-up, he noted Quantum Circuits Inc. offers strong security but seems less integrated with future tech trends, whereas TechPulse is clearly ahead.",
+      "protocol": "necessity-source-ablation-diagnostic-v1",
+      "sources": [
+        {
+          "call_id": "b2b:a05Wt000003T0m7IAC",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "In this follow-up call (2021-03-16), Zhang Rui said that during the discovery stage BioPulse compared TechPulse against competitors and found both TechPulse and Quantum Circuits Inc. offer strong security features, but Quantum seems less integrated with future tech trends while TechPulse's solutions are clearly ahead.",
+                "quote": "During the discovery stage, we compared it against some competitors and found both TechPulse and others like Quantum Circuits Inc. offer strong security features. However, Quantum seems less integrated with future tech trends, whereas your solutions are clearly ahead."
+              },
+              {
+                "answer": "Zhang Rui also indicated BioPulse is looking for partners who are ahead of future EDA trends, not just keeping up, framing the innovation comparison.",
+                "quote": "We’re particularly looking for partners who aren’t just keeping up but are ahead of future EDA trends."
+              },
+              {
+                "answer": "Zhang Rui emphasized wanting a solution that is secure and compliant, not just cost-effective.",
+                "quote": "We want to make sure that we’re getting not just a cost-effective solution but also one that's secure and compliant."
+              }
+            ],
+            "missing": "Only one call (the 2021-03-16 follow-up) is available; the discovery call itself is not in this input, so how Zhang Rui positioned TechPulse in that earlier conversation cannot be reported. Also, the security/innovation comparisons here are Zhang Rui's reported assessment, not independently verified."
+          },
+          "valid": true
+        },
+        {
+          "call_id": "b2b:a05Wt000003T2MUIA0",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "In the March 7, 2021 discovery call, Zhang Rui positioned TechPulse as balancing innovation and compliance, saying competitors are strong on security but lack the innovative edge he needs.",
+                "quote": "Honestly, while competitors are strong on security, they lack the innovative edge we need. Your solutions seem to balance both - innovation and compliance."
+              },
+              {
+                "answer": "Zhang Rui also said security is critical but so is staying ahead in technology, and found TechPulse's AI-powered features promising given EDA trends.",
+                "quote": "Security is critical for us, but so is staying ahead in technology. We find your AI-powered features promising, especially with the direction EDA trends are heading."
+              }
+            ],
+            "missing": "Only one call (the March 7, 2021 discovery call) is provided. The follow-up call scheduled for March 16th is not included, so how Zhang Rui positioned TechPulse in that conversation cannot be determined."
+          },
+          "valid": true
+        }
+      ],
+      "verdict": {
+        "source_coverage": [
+          {
+            "call_id": "b2b:a05Wt000003T0m7IAC",
+            "complete": false,
+            "reason": "This source covers only the follow-up call (2021-03-16). It supplies Zhang Rui's positioning of TechPulse vs. Quantum Circuits Inc. on security and innovation in the follow-up, but it does not contain the discovery-call positioning (competitors strong on security but lacking innovative edge; TechPulse balancing innovation and compliance). The extraction itself notes the discovery call is absent."
+          },
+          {
+            "call_id": "b2b:a05Wt000003T2MUIA0",
+            "complete": false,
+            "reason": "This source covers only the discovery call (2021-03-07). It supplies Zhang Rui's statement that competitors are strong on security but lack the innovative edge, and that TechPulse balances innovation and compliance. However, it does not contain the follow-up-call positioning regarding Quantum Circuits Inc. being less integrated with future tech trends while TechPulse is clearly ahead. The extraction itself notes the follow-up call is absent."
+          }
+        ],
+        "union_complete": true,
+        "coherent": true,
+        "reason": "Together the two sources cover both halves of the reference answer: the discovery-call positioning (competitors strong on security but lacking innovative edge; TechPulse balances innovation and compliance) comes from b2b:a05Wt000003T2MUIA0, and the follow-up-call positioning (Quantum Circuits Inc. offers strong security but is less integrated with future tech trends; TechPulse is clearly ahead) comes from b2b:a05Wt000003T0m7IAC. The question concerns one coherent business issue—Zhang Rui's competitive positioning of TechPulse on security and innovation across two related calls with the same prospect—so both sources are necessary and jointly sufficient."
+      },
+      "valid": true,
+      "supports_necessity": true
+    },
+    {
+      "question_id": "b2b-multi_call-9d748eb244165b8c",
+      "question": "Across the two discussions with Amelia Richardson at UrbanTech Developments, what did Luis acknowledge about early adoption experiences in the initial call, and which competitor did he name as ahead on user-friendly interfaces in the follow-up?",
+      "gold_answer": "Luis acknowledged user feedback about early adoption experiences needing improvement, and named Adaptive Design Solutions as ahead with user-friendly interfaces in the early phase.",
+      "protocol": "necessity-source-ablation-diagnostic-v1",
+      "sources": [
+        {
+          "call_id": "b2b:a05Wt000003T0ntIAC",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "Luis acknowledged that TechPulse solutions have user-friendly interfaces from initial setup, but noted areas for improvement based on user feedback about early adoption experiences, which they are actively working to enhance.",
+                "quote": "our solutions are equipped with user-friendly interfaces right from the initial setup, though we have noted some areas for improvement based on user feedback about early adoption experiences. We're actively working to enhance that aspect to ensure seamless use from day one."
+              }
+            ],
+            "missing": "The follow-up call is not included in this input, so no competitor named as ahead on user-friendly interfaces can be identified from this call."
+          },
+          "valid": true
+        },
+        {
+          "call_id": "b2b:a05Wt000003T3dVIAS",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "Luis acknowledged receiving feedback highlighting the need for more intuitive user experiences, especially in the early adoption phase.",
+                "quote": "I understand. We've received feedback highlighting the need for more intuitive user experiences. Competitors like Adaptive Design Solutions seem to be ahead with user-friendly interfaces in the early phase."
+              },
+              {
+                "answer": "Luis named Adaptive Design Solutions as the competitor ahead on user-friendly interfaces.",
+                "quote": "Competitors like Adaptive Design Solutions seem to be ahead with user-friendly interfaces in the early phase."
+              }
+            ],
+            "missing": "Only one call is present in this input; there is no evidence of two separate discussions with Amelia Richardson, so any distinction between an 'initial call' and a 'follow-up' cannot be verified from this dialogue."
+          },
+          "valid": true
+        }
+      ],
+      "verdict": {
+        "source_coverage": [
+          {
+            "call_id": "b2b:a05Wt000003T0ntIAC",
+            "complete": false,
+            "reason": "This source supplies the early-adoption acknowledgment (user feedback about early adoption experiences needing improvement) but contains no mention of any competitor named as ahead on user-friendly interfaces, so it cannot alone answer the full two-part question."
+          },
+          {
+            "call_id": "b2b:a05Wt000003T3dVIAS",
+            "complete": false,
+            "reason": "This source supplies the competitor identification (Adaptive Design Solutions ahead on user-friendly interfaces in the early phase) and also touches on early-adoption feedback, but the early-adoption acknowledgment here is framed within the same utterance as the competitor mention rather than as the distinct 'initial call' acknowledgment the reference answer attributes to the first discussion. It does not independently supply the initial-call acknowledgment as a separate, verbatim-grounded fact."
+          }
+        ],
+        "union_complete": true,
+        "coherent": true,
+        "reason": "Together the two sources cover both substantive facts in the reference answer: the initial-call acknowledgment of user feedback about early adoption experiences needing improvement (source 1) and the follow-up naming of Adaptive Design Solutions as ahead on user-friendly interfaces (source 2). The question concerns one coherent business issue—Luis's product-UX positioning across two related calls with the same contact at UrbanTech Developments."
+      },
+      "valid": true,
+      "supports_necessity": true
+    },
+    {
+      "question_id": "b2b-multi_call-e9b8e51909248fb3",
+      "question": "For SkyTech Ventures, what discounts were offered on PulseSim Pro and CloudLink Designer, and how soon after signing can PulseSim Pro integration begin?",
+      "gold_answer": "10% discount on PulseSim Pro and 15% on CloudLink Designer; PulseSim Pro integration can start within a week of signing.",
+      "protocol": "necessity-source-ablation-diagnostic-v1",
+      "sources": [
+        {
+          "call_id": "b2b:a05Wt000003SqZxIAK",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "A 10% discount was offered on PulseSim Pro.",
+                "quote": "we're offering a 10% discount on PulseSim Pro"
+              },
+              {
+                "answer": "CloudLink Designer comes with a 15% discount for the current opportunity.",
+                "quote": "CloudLink Designer comes with a 15% discount for the current opportunity"
+              },
+              {
+                "answer": "The call does not specify how soon after signing PulseSim Pro integration can begin; it only says integration will be seamless and deployment rapid.",
+                "quote": "We've deliberately streamlined our implementation processes to ensure rapid deployment. With PulseSim Pro, you can expect a seamless integration into your existing systems."
+              }
+            ],
+            "missing": "No specific timeline (e.g., days or weeks after signing) for PulseSim Pro integration was mentioned in this call."
+          },
+          "valid": true
+        },
+        {
+          "call_id": "b2b:a05Wt000003SwoyIAC",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "PulseSim Pro integration can begin within a week after the contract is signed.",
+                "quote": "For PulseSim Pro, once the contract is signed, we can start the integration within a week."
+              }
+            ],
+            "missing": "No discounts on PulseSim Pro or CloudLink Designer were mentioned in this call; CloudLink Designer is not discussed at all."
+          },
+          "valid": true
+        }
+      ],
+      "verdict": {
+        "source_coverage": [
+          {
+            "call_id": "b2b:a05Wt000003SqZxIAK",
+            "complete": false,
+            "reason": "This source provides both discount figures (10% on PulseSim Pro, 15% on CloudLink Designer) but explicitly lacks the specific timeline for PulseSim Pro integration after signing. It only mentions 'rapid deployment' and 'seamless integration' without a concrete timeframe such as 'within a week.'"
+          },
+          {
+            "call_id": "b2b:a05Wt000003SwoyIAC",
+            "complete": false,
+            "reason": "This source provides the integration timeline (within a week after signing) but contains no information about discounts on PulseSim Pro or CloudLink Designer. CloudLink Designer is not discussed at all in this call."
+          }
+        ],
+        "union_complete": true,
+        "coherent": true,
+        "reason": "The union of both sources covers all three substantive facts in the reference answer: the 10% PulseSim Pro discount and 15% CloudLink Designer discount come from the first source, while the 'within a week' integration timeline comes from the second source. All requested facts concern one coherent business issue—the commercial terms and implementation schedule for SkyTech Ventures' product purchases."
+      },
+      "valid": true,
+      "supports_necessity": true
+    },
+    {
+      "question_id": "b2b-multi_call-5f06302d43f9ff1b",
+      "question": "Laila Hassan at Horizon Tech raised the same objection about competitors offering more flexible initial configurations in both calls. How did Pedro respond to it in the first call versus the January follow-up?",
+      "gold_answer": "First call: TechPulse customizes solutions during early deployment phases with industry-specific configurations. Follow-up: the tools offer customizable features, and support helps manage additional configurations efficiently.",
+      "protocol": "necessity-source-ablation-diagnostic-v1",
+      "sources": [
+        {
+          "call_id": "b2b:a05Wt000003SthUIAS",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "In this call (dated 2023-12-18), Pedro responded to Laila's objection about competitors offering more flexible initial configurations by saying that while some setups are adaptable off the bat, TechPulse's approach is to customize solutions during early deployment phases with industry-specific configurations, ensuring streamlined and effective integrations without compromising quality or security.",
+                "quote": "Great point, Laila. While some setups are pretty adaptable off the bat, our approach is to customize solutions during the early phases of deployment, providing industry-specific configurations. This ensures that your integrations are as streamlined and effective as possible without compromising on quality or security."
+              }
+            ],
+            "missing": "This call is dated 2023-12-18 and appears to be the first call; the January follow-up call is not available, so Pedro's response to the same objection in that follow-up cannot be reported."
+          },
+          "valid": true
+        },
+        {
+          "call_id": "b2b:a05Wt000003T286IAC",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "In this call (dated 2024-01-10), when Laila noted that competitors offer really adaptable initial configurations, Pedro responded that their tools also offer customizable features that can be tailored to her needs, and that with their support any additional configurations can be managed efficiently, allowing a degree of flexibility.",
+                "quote": "That's a valuable point. Our tools also offer customizable features so they can be tailored specifically to your needs. Plus, with our support, any additional configurations can be managed efficiently, allowing for a degree of flexibility."
+              }
+            ],
+            "missing": "This call is dated 2024-01-10 and appears to be the January follow-up referenced in the question; the content of the first call is not available, so Pedro's response to the same objection in the first call cannot be reported."
+          },
+          "valid": true
+        }
+      ],
+      "verdict": {
+        "source_coverage": [
+          {
+            "call_id": "b2b:a05Wt000003SthUIAS",
+            "complete": false,
+            "reason": "This source (dated 2023-12-18) supplies only the first-call portion of the reference answer: Pedro's response that TechPulse customizes solutions during early deployment phases with industry-specific configurations. It does not contain any information about the January follow-up response (customizable features and support managing additional configurations efficiently), which is the second substantive part of the reference answer."
+          },
+          {
+            "call_id": "b2b:a05Wt000003T286IAC",
+            "complete": false,
+            "reason": "This source (dated 2024-01-10) supplies only the January follow-up portion of the reference answer: Pedro's response that tools offer customizable features and support helps manage additional configurations efficiently. It does not contain any information about the first-call response (customizing solutions during early deployment phases with industry-specific configurations), which is the first substantive part of the reference answer."
+          }
+        ],
+        "union_complete": true,
+        "coherent": true,
+        "reason": "The union of both sources fully covers the reference answer: the first source provides Pedro's first-call response (industry-specific configurations during early deployment) and the second source provides his January follow-up response (customizable features plus support for additional configurations). The question concerns one coherent business issue—how Pedro addressed the same competitive objection about flexible initial configurations across two calls—making both sources necessary and jointly sufficient."
+      },
+      "valid": true,
+      "supports_necessity": true
+    },
+    {
+      "question_id": "b2b-multi_call-263d764d90f5330c",
+      "question": "Across the two discussions with Mariko Watanabe at TrueNorth Technologies, what key requirement did she emphasize in the initial call about deployment, and what did she call mandatory in the follow-up call?",
+      "gold_answer": "In the initial call she emphasized rapid implementation speed (past solutions were slow); in the follow-up she said security is absolutely mandatory.",
+      "protocol": "necessity-source-ablation-diagnostic-v1",
+      "sources": [
+        {
+          "call_id": "b2b:a05Wt000003Su44IAC",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "In this call (the only one available), Mariko Watanabe called security mandatory: \"security is absolutely mandatory for us.\"",
+                "quote": "Yes, security is absolutely mandatory for us. How does SecureFlow stand out against other products in the market?"
+              },
+              {
+                "answer": "Regarding deployment, she asked how the implementation process is managed and noted past bad vendor support experiences, but did not state a specific key requirement in this dialogue.",
+                "quote": "And what about the deployment? How do you manage the implementation process?"
+              }
+            ],
+            "missing": "Only one call is provided; there is no evidence of a separate initial vs. follow-up call, and no explicit deployment requirement stated by Mariko in this dialogue beyond her questions and past experience comment."
+          },
+          "valid": true
+        },
+        {
+          "call_id": "b2b:a05Wt000003SyM8IAK",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "In the initial call, Mariko Watanabe emphasized rapid implementation/quick deployment, noting past solutions took much longer than expected and that speed had been a bottleneck.",
+                "quote": "We also have been looking at how quickly we can implement these solutions. Our past experiences with other solutions took much longer than expected."
+              },
+              {
+                "answer": "She reinforced that speed was a recurring pain point for TrueNorth.",
+                "quote": "That's reassuring to hear, Tariq. Speed has often been a bottleneck for us."
+              }
+            ],
+            "missing": "The follow-up call with Mariko Watanabe is not included in this input, so what she called 'mandatory' in that follow-up cannot be determined from this call."
+          },
+          "valid": true
+        }
+      ],
+      "verdict": {
+        "source_coverage": [
+          {
+            "call_id": "b2b:a05Wt000003Su44IAC",
+            "complete": false,
+            "reason": "This source contains the follow-up claim that 'security is absolutely mandatory,' but it does not contain the initial-call requirement of rapid implementation speed. The extraction explicitly notes no specific deployment requirement was stated in this dialogue beyond questions and past-experience comments. Therefore it cannot alone supply all substantive information in the reference answer."
+          },
+          {
+            "call_id": "b2b:a05Wt000003SyM8IAK",
+            "complete": false,
+            "reason": "This source contains the initial-call claim that Mariko emphasized rapid implementation/quick deployment and that past solutions were slow. However, it does not contain the follow-up claim that security is mandatory. The extraction explicitly notes the follow-up call is not included. Therefore it cannot alone supply all substantive information in the reference answer."
+          }
+        ],
+        "union_complete": true,
+        "coherent": true,
+        "reason": "The union of both sources covers the full reference answer: source b2b:a05Wt000003SyM8IAK supplies the initial-call requirement (rapid implementation speed, past solutions slow) and source b2b:a05Wt000003Su44IAC supplies the follow-up mandatory requirement (security is absolutely mandatory). Together they address both parts of the question. The requested facts concern one coherent business issue: Mariko Watanabe's key requirements across two TrueNorth Technologies discussions regarding deployment speed and security."
+      },
+      "valid": true,
+      "supports_necessity": true
+    },
+    {
+      "question_id": "b2b-multi_call-9ebaa92f47a20dbe",
+      "question": "Across the TechWave Innovations discussions, what differentiation did Dariusz cite against Quantum Circuits Inc regarding PulseSim Pro, and what limitation did he attribute to Quantum on tech trends?",
+      "gold_answer": "PulseSim Pro's seamless integration capabilities set it apart from Quantum Circuits Inc; Quantum hasn't forecasted tech trends the same way, limiting future adaptability.",
+      "protocol": "necessity-source-ablation-diagnostic-v1",
+      "sources": [
+        {
+          "call_id": "b2b:a05Wt000003SwM3IAK",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "Dariusz cited that while both companies provide robust security compliance, TechPulse's continued emphasis on integrating cutting-edge technologies into its EDA tools sets it apart from Quantum Circuits Inc.",
+                "quote": "While both companies provide robust security compliance, our continued emphasis on integrating cutting-edge technologies into our EDA tools sets us apart."
+              },
+              {
+                "answer": "Dariusz attributed to Quantum Circuits Inc a limitation regarding tech trends: they haven't forecasted tech trends in the same way, which could limit future adaptability.",
+                "quote": "It seems Quantum Circuits Inc hasn't forecasted tech trends in the same way, which could be a limitation for future adaptability."
+              }
+            ],
+            "missing": "PulseSim Pro is not mentioned anywhere in this call's dialogue; the differentiation Dariusz cited against Quantum Circuits Inc concerned EDA tools generally, not PulseSim Pro specifically."
+          },
+          "valid": true
+        },
+        {
+          "call_id": "b2b:a05Wt000003T4PtIAK",
+          "extraction": {
+            "claims": [
+              {
+                "answer": "Dariusz cited PulseSim Pro's seamless integration capabilities as its differentiator against Quantum Circuits Inc.",
+                "quote": "It’s known for its seamless integration capabilities, which sets it apart from some of our competitors like Quantum Circuits Inc."
+              }
+            ],
+            "missing": "The call contains no statement by Dariusz attributing any limitation to Quantum Circuits Inc regarding tech trends; only Rafael's general remark about limitations elsewhere on flexibility appears, without naming Quantum."
+          },
+          "valid": true
+        }
+      ],
+      "verdict": {
+        "source_coverage": [
+          {
+            "call_id": "b2b:a05Wt000003SwM3IAK",
+            "complete": false,
+            "reason": "This source supplies the tech-trend limitation claim (Quantum hasn't forecasted tech trends the same way, limiting future adaptability) but its differentiation claim concerns EDA tools generally, not PulseSim Pro specifically. The reference answer requires PulseSim Pro's seamless integration capabilities as the differentiator, which is absent here."
+          },
+          {
+            "call_id": "b2b:a05Wt000003T4PtIAK",
+            "complete": false,
+            "reason": "This source supplies the PulseSim Pro seamless-integration differentiation against Quantum Circuits Inc but contains no statement by Dariusz attributing a tech-trend limitation to Quantum. The reference answer's second component (Quantum hasn't forecasted tech trends, limiting future adaptability) is missing."
+          }
+        ],
+        "union_complete": true,
+        "coherent": true,
+        "reason": "Together the two sources cover both substantive parts of the reference answer: source b2b:a05Wt000003T4PtIAK provides the PulseSim Pro seamless-integration differentiator, and source b2b:a05Wt000003SwM3IAK provides the tech-trend forecasting limitation attributed to Quantum. Both facts concern a single coherent business issue—Dariusz's competitive positioning of TechWave/PulseSim Pro against Quantum Circuits Inc across the TechWave Innovations discussions."
+      },
+      "valid": true,
+      "supports_necessity": true
+    }
+  ],
+  "policy": "Diagnostic only; extraction omissions can cause false necessity. No production gate changes, RAG outcomes or cohort mutation."
+}
