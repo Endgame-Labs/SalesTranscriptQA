@@ -1,0 +1,290 @@
+[
+  {
+    "question_id": "b2b-single_call-09390187f543f906",
+    "question": "What discounts did Chen offer Marco on PulseSim Pro and CloudLink Designer for the SkyTech opportunity?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Chen offered Marco on two products (PulseSim Pro and CloudLink Designer) within the SkyTech opportunity",
+        "relationship": "single coherent commercial-terms lookup covering the discount terms quoted in one deal discussion",
+        "reason": "Both product discounts belong to the same quote/pricing discussion for the same opportunity, forming one commercial terms request rather than two unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific discounts Chen offered Marco on two named products for the SkyTech opportunity. The dialogue at 15:51:05 confirms Chen states '10% discount on PulseSim Pro and CloudLink Designer comes with a 15% discount for the current opportunity.' The gold answer matches exactly. The question is naturally phrased, scoped to a clear business situation (SkyTech opportunity, named rep and contact, named products), and a rep/AM would plausibly want to recall offered discounts. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Chen Lixin explicitly states 'a 10% discount on PulseSim Pro and CloudLink Designer comes with a 15% discount for the current opportunity.' The metadata confirms the opportunity is 'SkyTech Ventures EDA Transformation' and the contact is 'Marco Salvatore,' matching the question's context. The speaker is Chen, the products and percentages align exactly with the claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item directly quotes Chen offering a 10% discount on PulseSim Pro and a 15% discount on CloudLink Designer for the current opportunity. The metadata ties the call to the SkyTech opportunity and Marco Salvatore as the contact. Together these fully support the gold_answer's factual claims of '10% discount on PulseSim Pro and 15% on CloudLink Designer.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-233763d8c2cc1eee",
+    "question": "What requirements did Fatima Abdallah at Digital Horizon Media raise about scalability and security, and how did Tariq respond on security?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The scalability and security requirements Fatima Abdallah raised, and Tariq's response regarding security",
+        "relationship": "objection and response within the same discussion",
+        "reason": "This is a coherent single-issue request: the customer's requirements (scalability and security) and the salesperson's response to the security concern form one objection-and-response exchange, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer (Fatima Abdallah at Digital Horizon Media) and a concrete business situation (scalability and security requirements discussed with rep Tariq). All answer claims are verifiable in the single supplied call: Fatima states systems must handle increasing volumes seamlessly and security protocols should adapt to internal policies; Tariq responds that SecureFlow Suite provides robust, customizable security without compromising protection. No locator preamble, no answer leakage, no unsupported causality. The answer states precisely the requested facts without unasked extras. Because question_class is single_call, both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Fatima stating 'as we scale, our systems need to handle increasing volumes without a hitch' and 'We need solutions that can grow with us rather seamlessly,' which fully supports the claim about handling increasing volumes and growing seamlessly as they scale."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Fatima saying 'some flexibility to adapt security protocols according to our specific policies would be beneficial,' which directly supports the claim that she wants flexibility to adapt security protocols to their specific policies."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quote shows Tariq stating 'SecureFlow Suite, for instance, provides robust security features but is also adaptable, allowing customization to match your internal policies. This adaptability doesn't compromise security, offering the best of both worlds.' This directly supports the claim about robust, adaptable security customizable to internal policies without compromising security."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) She needs solutions that scale seamlessly with growing data volumes \u2013 supported by index 0 ('handle increasing volumes without a hitch,' 'grow with us rather seamlessly'). (2) She wants security protocols adaptable to internal policies \u2013 supported by index 1 ('flexibility to adapt security protocols according to our specific policies'). (3) Tariq said SecureFlow Suite offers robust, customizable security without compromising protection \u2013 supported by index 2 ('robust security features,' 'adaptable, allowing customization to match your internal policies,' 'doesn't compromise security'). All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-f69b99fecbf139b0",
+    "question": "What concern did Sophia Ferrari raise about customizability in the initial call with TechPulse, and what did she identify as OmegaDesign Labs' main pain points in the discovery meeting?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A customizability concern raised by Sophia Ferrari in the initial call, and the main pain points she identified in the discovery meeting",
+        "relationship": "two independent fact lookups joined by the same account/call participants",
+        "reason": "The customizability concern and the identification of main pain points are separate information needs about different business issues; sharing the same customer and rep is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (2021-02-04) contains Sophia's concern that TechPulse solutions lacked 'customizable adaptability from the get-go.' Call 2 (2021-02-15, discovery meeting) contains her explicit statement that 'Integration and data security are really our main concerns right now.' Each source contributes an exclusive requested fact. The question naturally identifies the account (OmegaDesign Labs), the contact (Sophia Ferrari), and the two distinct meetings. The gold answer accurately reflects both facts without unasked extras. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Sophia Ferrari stating 'we've been looking at options that offer more customizable adaptability from the get-go. It's been a point of concern for us.' This supports the claim that she raised a concern about lacking strong customizable adaptability from the start in the initial call (call_id b2b:a05Wt000003SuKAIA0, dated 2021-02-04). The paraphrase 'lacked strong customizable adaptability from the start' faithfully captures her expressed concern about wanting 'more customizable adaptability from the get-go.'"
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Sophia Ferrari stating 'Integration and data security are really our main concerns right now' in the discovery meeting (call_id b2b:a05Wt000003SvXvIAK, dated 2021-02-15). This supports the claim that she identified integration and data security as OmegaDesign Labs' main pain points. The word 'concerns' is a faithful paraphrase of 'pain points' in this context."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer. Evidence index 0 supports the first part: Sophia's concern that TechPulse solutions lacked strong customizable adaptability from the start (she said they've been looking at options offering more customizable adaptability from the get-go, and it's been a point of concern). Evidence index 1 supports the second part: her main pain points are integration and data security. The context metadata confirms the first call (2021-02-04) is the initial call and the second (2021-02-15) is the discovery meeting, both involving Sophia Ferrari at OmegaDesign Labs. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-70b8bd787b0ec336",
+    "question": "For the MediLux Solutions partnership, what concern did Fatema Sayeed raise about their current provider CircuitWave's security capabilities, and what discounted price did Xinyi quote for the SecureFlow Suite?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Fatema Sayeed's concern about CircuitWave's security capabilities and (2) the discounted price Xinyi quoted for the SecureFlow Suite",
+        "relationship": "two independent fact lookups (a security objection and a pricing quote) joined only by the same account",
+        "reason": "The security concern and the discounted price are unrelated information needs; sharing the MediLux account does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two distinct facts: (1) Fatema's concern about CircuitWave's security, found only in the June 17 discovery call ('supportive but maybe not innovative enough'), and (2) the discounted SecureFlow Suite price, found only in the July 4 pricing call ($5,399.91 with a 10% discount). Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally phrased, scoped to the MediLux Solutions partnership, and a rep would plausibly want to recall a customer's competitive concern and the quoted price. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Fatema Sayeed stating: 'We've had neutral opinions on our current provider, CircuitWave, when it comes to security. They're supportive but maybe not innovative enough.' This matches the answer_claim that Fatema said CircuitWave was supportive but maybe not innovative enough on security."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Xinyi Zhang explicitly states: 'The SecureFlow Suite also comes with a significant 10% discount, making it exceptionally cost-effective at $5,399.91.' This directly supports the answer_claim about the 10% discount and the $5,399.91 price."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) Fatema said CircuitWave was supportive but not innovative enough on security, and (2) the SecureFlow Suite was quoted at $5,399.91 with a 10% discount. Evidence index 0 directly supports claim (1) with Fatema's exact words. Evidence index 1 directly supports claim (2) with Xinyi's exact quote of the 10% discount and $5,399.91 price. Both factual components of the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-ddbdb859211c139e",
+    "question": "What follow-up did Lars schedule with Noah Green, and what starting price did he quote for the 2024 Tesla Model S?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The follow-up Lars scheduled with Noah Green; 2) the starting price quoted for the 2024 Tesla Model S.",
+        "relationship": "Two independent fact lookups joined by the same call/participants.",
+        "reason": "Scheduling a follow-up and quoting a vehicle's starting price are unrelated information needs; sharing the same call and customer is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts (follow-up schedule and Model S starting price) both found in the single call. The gold answer correctly states 'Monday 11:00 am call to review financing and finalize details' matching Lars's line about diving deeper and finalizing details, and '$89,999.99' matching the quoted starting price. The phrasing 'review financing' is a reasonable summary of Noah's stated need to 'crunch the numbers on the financing options' combined with Lars's offer to 'dive deeper into aligning the vehicle options with your business objectives and finalize details.' No locator preamble, no answer leakage, no unsupported causality. A rep would plausibly want to confirm the scheduled follow-up and quoted price for their account.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Lars Jensen explicitly proposes 'the upcoming Monday at 11:00 am' to 'dive deeper into aligning the vehicle options with your business objectives and finalize details.' This directly supports the claim of a Monday 11:00 am follow-up to finalize details. The gold_answer adds 'review financing,' which is not explicitly stated in this quote (it says 'aligning the vehicle options with your business objectives'), but the core scheduling facts (Monday, 11:00 am, finalize details) are fully supported."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Lars Jensen states 'our standard plan, which covers the 2024 Model S starting at 89,999.99.' This directly supports the claim that the 2024 Model S starts at $89,999.99. The dollar sign is implied by the monetary context of financing plans and pricing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) A Monday 11:00 am call to review financing and finalize details \u2013 Evidence index 0 confirms Monday at 11:00 am and 'finalize details'; while the exact phrase 'review financing' is not in the quote (it says 'aligning the vehicle options with your business objectives'), the context of the call (financing solutions discussed in index 1) and the 'dive deeper' language reasonably encompass reviewing financing as part of finalizing details. (2) The Model S starts at $89,999.99 \u2013 Evidence index 1 explicitly states 'the 2024 Model S starting at 89,999.99.' Both core factual claims are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-af0fef380ab2b573",
+    "question": "What did Laura Hernandez say matters most to her when evaluating AutoElite's pricing, and what meeting did she schedule with Hiroko Yamada?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Laura Hernandez's stated priority when evaluating AutoElite's pricing, and (2) the meeting she scheduled with Hiroko Yamada.",
+        "relationship": "Two independent fact lookups joined only by the same person/account.",
+        "reason": "The pricing-evaluation priority and the meeting-scheduling fact are unrelated information needs; sharing a customer is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Laura's pricing priority and the meeting she scheduled. The dialogue confirms she said 'Transparent pricing and knowing the total cost upfront is important to me' and agreed to 'next Monday at 10 AM' virtual meeting with Hiroko. The gold answer captures both facts accurately without extras. The question is naturally phrased, scoped to a named customer and rep, and a rep would plausibly want to recall a prospect's stated priorities and scheduled next step. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes to Laura Hernandez the statement 'Transparent pricing and knowing the total cost upfront is important to me,' which supports the answer_claim about transparent pricing and upfront total cost being important to her."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Laura Hernandez proposing 'a virtual meeting' for 'next Monday at 10 AM,' and Hiroko Yamada confirming 'Monday at 10 AM sounds perfect' and offering to send a calendar invite. This supports the claim that Laura proposed a virtual meeting next Monday at 10 AM and Hiroko confirmed."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) transparent, upfront pricing with no surprises matters most to Laura, and (2) she scheduled a virtual meeting for Monday at 10 AM. Evidence index 0 directly supports the pricing preference (transparent pricing, knowing total cost upfront). Evidence index 1 directly supports the virtual meeting scheduled for Monday at 10 AM with Hiroko's confirmation. The phrase 'no surprises' in the gold_answer is a minor embellishment not explicitly quoted, but it is a faithful paraphrase of 'knowing the total cost upfront' in context. All core factual claims are supported by the supplied citations."
+      }
+    }
+  }
+]

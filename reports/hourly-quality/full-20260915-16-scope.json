@@ -1,0 +1,317 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "8a71e3eeff7b5f01113e770cd94c0fd726489c92ec0200d1ac1bfca8a4cff839",
+  "questions": 2,
+  "counts": {
+    "pass": 1,
+    "fail": 1
+  },
+  "estimated_usd": 0.34398894999999996,
+  "results": [
+    {
+      "question_id": "b2b-single_call-09390187f543f906",
+      "question": "What discounts did Chen offer Marco on PulseSim Pro and CloudLink Designer for the SkyTech opportunity?",
+      "gold_answer": "10% discount on PulseSim Pro and 15% on CloudLink Designer.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZxIAK",
+        "b2b:a05Wt000003Sr7rIAC",
+        "b2b:a05Wt000003Sr7sIAC",
+        "b2b:a05Wt000003SsroIAC",
+        "b2b:a05Wt000003StEUIA0",
+        "b2b:a05Wt000003Su46IAC",
+        "b2b:a05Wt000003Su47IAC",
+        "b2b:a05Wt000003Sv1iIAC",
+        "b2b:a05Wt000003SvD0IAK",
+        "b2b:a05Wt000003SvHrIAK",
+        "b2b:a05Wt000003SvfzIAC",
+        "b2b:a05Wt000003Sw10IAC",
+        "b2b:a05Wt000003Sw11IAC",
+        "b2b:a05Wt000003SwDsIAK",
+        "b2b:a05Wt000003SwTzIAK",
+        "b2b:a05Wt000003SwnNIAS",
+        "b2b:a05Wt000003SwnOIAS",
+        "b2b:a05Wt000003SwoyIAC",
+        "b2b:a05Wt000003SwozIAC",
+        "b2b:a05Wt000003SwqdIAC",
+        "b2b:a05Wt000003SwqeIAC",
+        "b2b:a05Wt000003SwqfIAC",
+        "b2b:a05Wt000003Sx54IAC",
+        "b2b:a05Wt000003SxBaIAK",
+        "b2b:a05Wt000003SyFgIAK",
+        "b2b:a05Wt000003SyNiIAK",
+        "b2b:a05Wt000003SyqmIAC",
+        "b2b:a05Wt000003SzEyIAK",
+        "b2b:a05Wt000003SzEzIAK",
+        "b2b:a05Wt000003SzV6IAK",
+        "b2b:a05Wt000003SzhzIAC",
+        "b2b:a05Wt000003SzwVIAS",
+        "b2b:a05Wt000003SzwWIAS",
+        "b2b:a05Wt000003T0B1IAK",
+        "b2b:a05Wt000003T0KgIAK",
+        "b2b:a05Wt000003T0MKIA0",
+        "b2b:a05Wt000003T0NwIAK",
+        "b2b:a05Wt000003T0hGIAS",
+        "b2b:a05Wt000003T0hHIAS",
+        "b2b:a05Wt000003T0kUIAS",
+        "b2b:a05Wt000003T0kVIAS",
+        "b2b:a05Wt000003T0yzIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 6,
+            "normalized_end": 7
+          },
+          {
+            "answer": 0,
+            "evidence": 2,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across all Chen Lixin calls with Marco Salvatore on the SkyTech Ventures EDA Transformation opportunity, PulseSim Pro is consistently offered at a 10% discount and CloudLink Designer at a 15% discount; no competing figures for these two products appear.",
+        "answers": [
+          {
+            "answer": "Chen offered Marco a 10% discount on PulseSim Pro and a 15% discount on CloudLink Designer for the SkyTech Ventures EDA Transformation opportunity.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqZxIAK",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-11-08T15:51:05] Chen Lixin: Well, we're offering a 10% discount on PulseSim Pro and CloudLink Designer comes with a 15% discount for the current opportunity. This supports not only your immediate needs but also offers great value through our pricing strategy."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su46IAC",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2020-11-15T10:46:15] Chen Lixin: I'm glad to hear that. Just to recap, PulseSim Pro is designed to boost simulation accuracy, which is crucial for aerospace projects. Plus, with your volume, we’re offering a 10% discount."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-12-01T13:34:30] Chen Lixin: I'm glad you found value in our case studies. We've invested heavily in ensuring our support and SLAs are top notch. Let’s discuss how we can model an advantageous pricing structure for CloudLink Designer and OptiPower Max for you. We're offering a 15% discount on CloudLink Designer when purchased in volume – which I believe fits your scale. As for OptiPower Max, there's a 10% discount we'd like to extend."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Chen (Chen Lixin), Marco (Marco Salvatore), both products (PulseSim Pro and CloudLink Designer), and the SkyTech opportunity. The only opportunity matching all these criteria is 'SkyTech Ventures EDA Transformation' (006Wt000007B7lKIAS). Within that opportunity, Chen explicitly states the discounts for both products in the 2020-11-08 call: 10% on PulseSim Pro and 15% on CloudLink Designer. The 2020-11-15 call reiterates the 10% on PulseSim Pro but does not restate a CloudLink Designer discount. The 2020-12-01 call discusses CloudLink Designer (15%) and OptiPower Max (10%) but not PulseSim Pro. The complete answer combining both products comes from the 2020-11-08 call.",
+        "answers": [
+          {
+            "answer": "Chen offered Marco a 10% discount on PulseSim Pro and a 15% discount on CloudLink Designer for the SkyTech Ventures EDA Transformation opportunity.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqZxIAK",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2020-11-08T15:50:45] Marco Salvatore: That sounds promising, and how do the pricing and discounts shape up for these solutions?\n[2020-11-08T15:51:05] Chen Lixin: Well, we're offering a 10% discount on PulseSim Pro and CloudLink Designer comes with a 15% discount for the current opportunity. This supports not only your immediate needs but also offers great value through our pricing strategy."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state a 10% discount on PulseSim Pro and a 15% discount on CloudLink Designer for the SkyTech opportunity, which are identical. The reference also lists the same two discounts (10% on PulseSim Pro, 15% on CloudLink Designer), covering all requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-233763d8c2cc1eee",
+      "question": "What requirements did Fatima Abdallah at Digital Horizon Media raise about scalability and security, and how did Tariq respond on security?",
+      "gold_answer": "She needs solutions that scale seamlessly with growing data volumes and wants security protocols adaptable to internal policies; Tariq said SecureFlow Suite offers robust, customizable security without compromising protection.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrhLIAS",
+        "b2b:a05Wt000003SrkdIAC",
+        "b2b:a05Wt000003SsQSIA0",
+        "b2b:a05Wt000003StO8IAK",
+        "b2b:a05Wt000003SthWIAS",
+        "b2b:a05Wt000003Sto1IAC",
+        "b2b:a05Wt000003SuP7IAK",
+        "b2b:a05Wt000003SvgAIAS",
+        "b2b:a05Wt000003SvppIAC",
+        "b2b:a05Wt000003SvpqIAC",
+        "b2b:a05Wt000003SwM2IAK",
+        "b2b:a05Wt000003SxZoIAK",
+        "b2b:a05Wt000003SxjUIAS",
+        "b2b:a05Wt000003SxjVIAS",
+        "b2b:a05Wt000003SxjWIAS",
+        "b2b:a05Wt000003SxwQIAS",
+        "b2b:a05Wt000003Sy4XIAS",
+        "b2b:a05Wt000003SyFlIAK",
+        "b2b:a05Wt000003SydxIAC",
+        "b2b:a05Wt000003SyxEIAS",
+        "b2b:a05Wt000003SzF7IAK",
+        "b2b:a05Wt000003SzF8IAK",
+        "b2b:a05Wt000003SzdDIAS",
+        "b2b:a05Wt000003Szv4IAC",
+        "b2b:a05Wt000003SzzxIAC",
+        "b2b:a05Wt000003T02yIAC",
+        "b2b:a05Wt000003T0r0IAC",
+        "b2b:a05Wt000003T1GnIAK",
+        "b2b:a05Wt000003T1GoIAK",
+        "b2b:a05Wt000003T1v7IAC",
+        "b2b:a05Wt000003T1v8IAC",
+        "b2b:a05Wt000003T1v9IAC",
+        "b2b:a05Wt000003T1wiIAC",
+        "b2b:a05Wt000003T200IAC",
+        "b2b:a05Wt000003T201IAC",
+        "b2b:a05Wt000003T24sIAC",
+        "b2b:a05Wt000003T26PIAS",
+        "b2b:a05Wt000003T2ROIA0",
+        "b2b:a05Wt000003T2b1IAC",
+        "b2b:a05Wt000003T2hbIAC",
+        "b2b:a05Wt000003T3aLIAS",
+        "b2b:a05Wt000003T3jzIAC",
+        "b2b:a05Wt000003T46YIAS",
+        "b2b:a05Wt000003T49lIAC",
+        "b2b:a05Wt000003T4BNIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Fatima Abdallah appears in two calls with Tariq Hassan (2023-10-18 initial and 2023-10-20 follow-up), and both contain materially different scalability/security requirements and different security responses from Tariq.",
+        "answers": [
+          {
+            "answer": "On the initial 2023-10-18 call, Fatima raised the need to scale efficiently without compromising creativity (scalability of AI DesignShift as needs grow) and raised security/data protection as a critical concern, noting their security protocols sometimes need adjusting to fit certain projects. Tariq responded that SecureFlow Suite offers robust security compliance ensuring data protection throughout workflows, and that TechPulse's tools are adaptable, allowing fine-tuning of security settings to strike a balance between robust protection and flexibility.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 3,
+                "line_end": 6,
+                "quote": "[2023-10-18T10:00:20] Fatima Abdallah: Yeah, it’s a fast-paced environment for sure. We're always looking for ways to enhance our creative workflows and scale efficiently.\n[2023-10-18T10:00:30] Tariq Hassan: That's exactly where our solutions come in. At TechPulse, we offer tools like the AI DesignShift, which uses AI to streamline design processes—enhancing both creativity and collaboration.\n[2023-10-18T10:00:40] Fatima Abdallah: We've heard a bit about AI DesignShift. It does seem promising, especially if it can help us scale without compromising on creativity."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2023-10-18T10:01:20] Fatima Abdallah: That's good to know. Another area of concern for us is security. As you can imagine, data protection is critical in our industry.\n[2023-10-18T10:01:30] Tariq Hassan: Absolutely, and we take security very seriously. Our SecureFlow Suite offers robust security compliance that ensures data protection throughout your workflows.\n[2023-10-18T10:01:40] Fatima Abdallah: Robust security is vital, but we also value flexibility. Our security protocols sometimes need adjusting to fit certain projects."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2023-10-20 follow-up call, Fatima's scalability requirement was that systems handle increasing volumes without a hitch as they scale, needing solutions that grow with them seamlessly (a problem with current systems); on security, she wanted strong data protection plus flexibility to adapt security protocols to their specific policies. Tariq responded that AI DesignShift and CloudLink Designer were designed with scalability in mind, and that SecureFlow Suite provides robust security features that are also adaptable, allowing customization to match internal policies without compromising security.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvpqIAC",
+                "line_start": 4,
+                "line_end": 8,
+                "quote": "[2023-05-10T14:00:35] Noura Haddad: Great to hear that. We aim to align our TechPulse solutions—like our AI-powered SecureFlow Suite and CloudLink Designer—with your objectives. Can you share some specific challenges you're facing?\n[2023-05-10T14:00:50] Ahmed Karim: Sure, we've been keeping an eye on tech innovations and EDA trends recently. Staying ahead is crucial for us, but sometimes our current systems feel a bit outdated.\n[2023-05-10T14:01:05] Noura Haddad: I understand. Our clients have found our AI-driven features to be a real game-changer. They’re specifically designed to align with future EDA trends, offering a significant edge over more static options.\n[2023-05-10T14:01:20] Ahmed Karim: That's interesting. We did notice that TechPulse's solutions fit well with what the industry seems to be moving towards, though NanoDesign Systems also seems to have some impressive features recently."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Fatima Abdallah spoke with Tariq Hassan on two calls for the same opportunity 'Digital Horizon Tech Integration' (Oct 18 and Oct 20, 2023). Both calls contain Fatima raising requirements about scalability and security, and Tariq responding on security. The question does not specify which call, so both are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "On the October 18, 2023 call, Fatima Abdallah raised scalability by stating they are 'always looking for ways to enhance our creative workflows and scale efficiently' and expressed interest in AI DesignShift 'especially if it can help us scale without compromising on creativity.' She also raised the concern about 'maintaining flexibility and having solutions that specifically fit our unique requirements.' On security, Fatima said 'data protection is critical in our industry' and added that 'Our security protocols sometimes need adjusting to fit certain projects,' emphasizing the need for flexibility in security. Tariq responded on security by stating 'we take security very seriously. Our SecureFlow Suite offers robust security compliance that ensures data protection throughout your workflows.' He further addressed the flexibility concern by saying 'Our tools are designed to be adaptable, allowing you to fine-tune security settings as required, striking a balance between robust protection and the flexibility you need.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2023-10-18T10:00:20] Fatima Abdallah: Yeah, it’s a fast-paced environment for sure. We're always looking for ways to enhance our creative workflows and scale efficiently."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-10-18T10:00:40] Fatima Abdallah: We've heard a bit about AI DesignShift. It does seem promising, especially if it can help us scale without compromising on creativity."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-10-18T10:01:00] Fatima Abdallah: That sounds impressive. However, we're also concerned about maintaining flexibility and having solutions that specifically fit our unique requirements."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-10-18T10:01:20] Fatima Abdallah: That's good to know. Another area of concern for us is security. As you can imagine, data protection is critical in our industry."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-10-18T10:01:30] Tariq Hassan: Absolutely, and we take security very seriously. Our SecureFlow Suite offers robust security compliance that ensures data protection throughout your workflows."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-10-18T10:01:40] Fatima Abdallah: Robust security is vital, but we also value flexibility. Our security protocols sometimes need adjusting to fit certain projects."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sto1IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-10-18T10:01:50] Tariq Hassan: That makes sense. Our tools are designed to be adaptable, allowing you to fine-tune security settings as required, striking a balance between robust protection and the flexibility you need."
+              }
+            ]
+          },
+          {
+            "answer": "On the October 20, 2023 follow-up call, Fatima Abdallah raised scalability by explaining 'Our main concern is that as we scale, our systems need to handle increasing volumes without a hitch. We need solutions that can grow with us rather seamlessly. This has been a problem with some current systems.' On security, she stated 'While we appreciate strong data protection, some flexibility to adapt security protocols according to our specific policies would be beneficial.' Tariq responded on security by saying 'SecureFlow Suite, for instance, provides robust security features but is also adaptable, allowing customization to match your internal policies. This adaptability doesn't compromise security, offering the best of both worlds.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvppIAC",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-10-20T11:00:30] Tariq Hassan: That's fantastic to hear! I would love to dive deeper into your requirements today and see how we can align our offerings more closely with your needs. So, to recap, you'd mentioned your concerns about scalability with our current offerings, given your rapidly growing data demands. Can you share more about that?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvppIAC",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-10-20T11:00:45] Fatima Abdallah: Certainly, Tariq. Our main concern is that as we scale, our systems need to handle increasing volumes without a hitch. We need solutions that can grow with us rather seamlessly. This has been a problem with some current systems."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvppIAC",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-10-20T11:01:00] Tariq Hassan: I completely understand. A lot of our clients face similar challenges. Let me assure you, both AI DesignShift and our CloudLink Designer were designed with scalability in mind. They can easily adapt to your evolving needs, making sure you're equipped without interruptions."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvppIAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-10-20T11:01:15] Fatima Abdallah: That sounds promising. One more aspect is about the security. While we appreciate strong data protection, some flexibility to adapt security protocols according to our specific policies would be beneficial."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvppIAC",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2023-10-20T11:01:30] Tariq Hassan: Absolutely, Fatima. SecureFlow Suite, for instance, provides robust security features but is also adaptable, allowing customization to match your internal policies. This adaptability doesn't compromise security, offering the best of both worlds."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
