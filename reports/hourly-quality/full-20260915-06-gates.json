@@ -1,0 +1,341 @@
+[
+  {
+    "question_id": "b2b-single_call-07b5c33dbdd5f6fa",
+    "question": "What is Dinesh Nair's primary concern about adopting TechPulse's solutions for LiftTech Elevations?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Dinesh Nair's primary concern about adopting TechPulse's solutions for LiftTech Elevations",
+        "relationship": "single lookup of one stakeholder's concern",
+        "reason": "A single, coherent fact lookup about one person's concern within one call context."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Dinesh Nair's primary concern about adopting TechPulse's solutions for LiftTech Elevations. The dialogue at 15:01:58 has Dinesh explicitly stating: 'Our primary concern is maintaining security compliance while aligning with current EDA trends.' The gold answer reproduces this verbatim. The question is naturally worded, scoped to a named contact and account, and a rep would plausibly want to know a prospect's primary concern. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes to Dinesh Nair the statement: 'Our primary concern is maintaining security compliance while aligning with current EDA trends.' This matches the answer_claim verbatim in substance, with correct speaker attribution and no distortion of meaning."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Dinesh Nair's own words stating his primary concern is 'maintaining security compliance while aligning with current EDA trends,' which is exactly what the gold_answer asserts. The context metadata confirms the call involves Dinesh Nair at LiftTech Elevations, consistent with the question's framing. No additional factual claims in the gold_answer go beyond what the citation provides."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-a58224678f8ddf42",
+    "question": "What are OmegaDesign Labs' requirements for the CryptSecure Core purchase, including quantity, budget, and installation timeline?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "OmegaDesign Labs' purchase requirements for CryptSecure Core: quantity, budget, and installation timeline",
+        "relationship": "single coherent requirements lookup for one product purchase",
+        "reason": "Quantity, budget, and installation timeline are facets of one purchase requirement set; installation is plausible for a software/security product."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks for three specific purchase requirements (quantity, budget, installation timeline) for a named company and product, which a rep would plausibly need. The dialogue confirms all three facts: four units, ~$2,926 budget including installation, and one-day installation. The gold answer states exactly those three facts with the contact name, no extras, no leakage. Wording is natural and scoped to a clear business situation. Single-call question, so both_sources_required is set true per instructions. No artificial locator preamble, no unsupported causality, no bundled unrelated facts."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Lucas Almeida asks Priya to confirm interest in four units of CryptSecure Core, and Priya explicitly replies 'That's correct,' confirming the quantity of four units."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Lucas asks about timeline and budget, referencing installation within one day. Priya confirms 'Yes, ideally. We want the installation completed by the end of the day after setup. Our budget is around $2,926.' This directly supports both the one-day installation timeline and the ~$2,926 budget."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) four CryptSecure Core units \u2013 confirmed by index 0 where Priya says 'That's correct' to four units; (2) budget around $2,926 including installation \u2013 index 1 has Priya stating 'Our budget is around $2,926' in the context of a question about timeline and budget, and the installation is discussed in the same exchange, so 'including installation' is a reasonable reading of the combined context; (3) installation completed within one day \u2013 index 1 has Priya confirming 'installation completed by the end of the day after setup.' The metadata identifies Priya Natarajan at OmegaDesign Labs, matching the question. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-3213f9bebd744825",
+    "question": "For LiftTech Elevations, what competitor concern did Cheng Zhang raise about NanoDesign, and how did Mohammed describe TechPulse's support response times in the earlier discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Cheng Zhang's competitor concern about NanoDesign, and (2) Mohammed's description of TechPulse's support response times from an earlier discussion",
+        "relationship": "two independent fact lookups joined across calls",
+        "reason": "The competitor concern and the support response-time description are unrelated information needs; sharing the LiftTech Elevations account context does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Cheng Zhang's competitor concern about NanoDesign, found only in the Dec-20 call ('concerns about their support responsiveness'), and (2) Mohammed's description of TechPulse's support response times, found only in the Dec-10 call ('rapid response with proactive support teams trained to minimize downtime and quickly resolve issues'). Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally phrased, scoped to a named account and contact, and a rep would plausibly want to recall a customer's competitor concern and their own positioning on support speed. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Cheng Zhang stating concerns about NanoDesign's support responsiveness and noting it is vital for swift project progress, which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Mohammed El-Sayed explicitly stating 'We pride ourselves on rapid response with proactive support teams trained to minimize downtime and quickly resolve issues, contrasting with some competitors who have noticeable delays.' This directly supports the answer_claim about rapid response, proactive support teams, minimizing downtime, and quickly resolving issues."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Cheng cited concerns about NanoDesign's support responsiveness \u2013 supported by evidence index 0 where Cheng explicitly mentions concerns about NanoDesign's support responsiveness being vital for swift project progress. (2) Mohammed said TechPulse has rapid response with proactive support teams that minimize downtime and resolve issues quickly \u2013 supported by evidence index 1 where Mohammed states exactly this. Both factual claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms both calls relate to LiftTech Elevations and Cheng Zhang, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-e9b8e51909248fb3",
+    "question": "For SkyTech Ventures, what discounts were offered on PulseSim Pro and CloudLink Designer, and how soon after signing can PulseSim Pro integration begin?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Discounts quoted on PulseSim Pro and CloudLink Designer, plus the timeline for starting PulseSim Pro integration after signing",
+        "relationship": "coherent commercial quote breakdown with implementation next steps for the same deal",
+        "reason": "The question combines pricing terms from one quote with the implementation timeline for one of the quoted products, forming a single coherent sales inquiry about the same opportunity rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for discounts on PulseSim Pro and CloudLink Designer, and the integration timeline for PulseSim Pro. Both the discounts and the integration timeline are provided in the first call (b2b:a05Wt000003SqZxIAK). The second call (b2b:a05Wt000003SwoyIAC) only repeats the integration timeline and does not mention the discounts. Therefore, the first call alone is sufficient to answer the entire question, making the second call unnecessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for discounts on PulseSim Pro and CloudLink Designer, and the integration timeline for PulseSim Pro. The first call provides both discounts (10% and 15%) and states integration can start within a week. The second call also provides the integration timeline (within a week) but does not mention discounts. Since the first call alone supplies all requested information, the second call is not necessary. The two facts are not exclusive to separate calls; the discount information is only in the first call, and the timeline is in both, so no exclusive fact is required from the second call."
+            },
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for discounts on PulseSim Pro and CloudLink Designer, and the integration timeline for PulseSim Pro. Both the discounts and the integration timeline are provided in the first call (b2b:a05Wt000003SqZxIAK). The second call (b2b:a05Wt000003SwoyIAC) only repeats the integration timeline and does not mention the discounts. Therefore, the first call alone is sufficient to answer the entire question, making the second call unnecessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SqZxIAK",
+                "fact": "10% discount on PulseSim Pro and 15% discount on CloudLink Designer",
+                "why_other_call_cannot_supply_it": "The December call discusses contract scope, deployment timelines, and payment plans but never mentions any discount percentages."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwoyIAC",
+                "fact": "PulseSim Pro integration can begin within a week of contract signing",
+                "why_other_call_cannot_supply_it": "The November call only gives generic assurances of rapid, seamless implementation without any specific timeline after signing."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: product-specific discounts and a specific post-signing integration timeline. The discounts appear only in the November call and the one-week integration timeline only in the December call, so both calls are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SqZxIAK",
+                  "fact": "10% discount on PulseSim Pro and 15% discount on CloudLink Designer",
+                  "why_other_call_cannot_supply_it": "The December call discusses contract scope, deployment timelines, and payment plans but never mentions any discount percentages."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwoyIAC",
+                  "fact": "PulseSim Pro integration can begin within a week of contract signing",
+                  "why_other_call_cannot_supply_it": "The November call only gives generic assurances of rapid, seamless implementation without any specific timeline after signing."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: product-specific discounts and a specific post-signing integration timeline. The discounts appear only in the November call and the one-week integration timeline only in the December call, so both calls are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two discount figures and an integration timeline for a named account. Call 1 (Nov 8) provides the 10% PulseSim Pro and 15% CloudLink Designer discounts; Call 2 (Dec 10) provides the 'within a week of signing' integration start. Each source contributes an exclusive requested fact. The gold answer states precisely those three facts with no extras. Wording is natural, scope is clear (SkyTech Ventures, specific products), and a rep would plausibly need this info. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Chen Lixin explicitly states 'a 10% discount on PulseSim Pro and CloudLink Designer comes with a 15% discount for the current opportunity,' directly supporting the claim of 10% on PulseSim Pro and 15% on CloudLink Designer."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Chen Lixin explicitly states 'For PulseSim Pro, once the contract is signed, we can start the integration within a week,' directly supporting the claim that integration can start within a week of signing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer makes three factual claims: (1) 10% discount on PulseSim Pro, (2) 15% discount on CloudLink Designer, and (3) PulseSim Pro integration can start within a week of signing. Evidence index 0 supports claims 1 and 2 with exact percentages and product names. Evidence index 1 supports claim 3 with the exact timeline. Both citations are from calls associated with the SkyTech Ventures account (confirmed by context_metadata), and the speaker is Chen Lixin in both. All factual elements of the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-73498907777f3882",
+    "question": "What prices did Carlos quote Chloe Bennett for the Tesla Model S and the Mercedes-Benz E-Class?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The prices Carlos quoted Chloe Bennett for two vehicles (Tesla Model S and Mercedes-Benz E-Class)",
+        "relationship": "single coherent quote lookup \u2014 both prices come from the same quoting interaction",
+        "reason": "This is one commercial quote breakdown covering two vehicles quoted in the same exchange, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific prices quoted by Carlos to Chloe Bennett. The single call transcript contains both figures verbatim ($89,999.99 for the Tesla Model S and $65,999.99 for the Mercedes-Benz E-Class). The gold answer states exactly those two prices with no extra or missing information. The question is naturally worded, identifies the rep, customer, and vehicles, and reflects a plausible sales need (recalling quoted pricing). No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Carlos Ruiz explicitly states 'The Tesla Model S is listed at $89,999.99 and the Mercedes-Benz E-Class at $65,999.99,' which directly matches the answer_claim and the prices in the gold_answer."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Carlos Ruiz quoting both prices verbatim: Tesla Model S at $89,999.99 and Mercedes-Benz E-Class at $65,999.99. These are the exact figures stated in the gold_answer, and the speaker (Carlos) and context (call with Chloe Bennett's account) align with the question."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-cf9e5e6c22990fa5",
+    "question": "What is the total lease package price quoted to Eva Simmons, and what flexibility did Nora offer on the lease terms?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total lease package price quoted to Eva Simmons and the flexibility Nora offered on lease terms",
+        "relationship": "Both parts concern the same commercial lease quote: the price and the negotiable terms around it",
+        "reason": "A coherent commercial quote breakdown\u2014price plus terms flexibility\u2014about the same lease offer."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the total lease package price and the flexibility offered on lease terms. The dialogue confirms Nora quoted $195,299.94 and offered adjusting lease duration or tweaking the maintenance plan to fit Eva's budget. The gold answer matches exactly. The question is naturally phrased, scoped to a specific customer (Eva Simmons) and rep (Nora), and a sales rep would plausibly need this information. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Nora Svensson explicitly states the total lease package price as $195,299.94 and explicitly offers flexibility by 'adjusting the lease duration or tweaking the maintenance plan to better fit your budget.' This directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports both parts of the gold_answer: the $195,299.94 total lease package price and the flexibility options of adjusting lease duration or tweaking the maintenance plan to fit Eva's budget. The metadata confirms the call is associated with Eva Simmons' account, and the speaker is Nora Svensson, matching the question's participants."
+      }
+    }
+  }
+]

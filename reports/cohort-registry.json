@@ -1075,6 +1075,30 @@
       "question": "What vehicle is Harper Allen interested in, and what did Sebastian offer to arrange as a next step?",
       "reason": "Source-confirmed event ambiguity: Sebastian offers a virtual demo July 4, a follow-up meeting July 17, and finance-team coordination July 25 for the same Tesla Model S. Question does not select one event.",
       "review_report": "reports/hourly-quality/full-20260915-05-review.md"
+    },
+    {
+      "question_id": "b2b-single_call-07b5c33dbdd5f6fa",
+      "question_text": "What is Dinesh Nair's primary concern about adopting TechPulse's solutions for LiftTech Elevations?",
+      "reason": "Conservative scope exclusion: GLM treats other cost/security concerns as competing primary concerns, but cost is only called a factor and later security is compatible. Qwen selects explicit primary-concern statement. No confirmed contradiction.",
+      "review_report": "reports/hourly-quality/full-20260915-06-review.md"
+    },
+    {
+      "question_id": "b2b-single_call-a58224678f8ddf42",
+      "question_text": "What are OmegaDesign Labs' requirements for the CryptSecure Core purchase, including quantity, budget, and installation timeline?",
+      "reason": "Manual citation gap: explicit installation inclusion is on uncited line 10, despite automated citation pass. Full-source answer supported.",
+      "review_report": "reports/hourly-quality/full-20260915-06-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-3213f9bebd744825",
+      "question_text": "For LiftTech Elevations, what competitor concern did Cheng Zhang raise about NanoDesign, and how did Mohammed describe TechPulse's support response times in the earlier discussion?",
+      "reason": "Conservative coherence rejection; both issues actually concern support responsiveness. Later call also repeats proactive quick support, weakening necessity. Preserve source-supported QA and reviewer disagreement.",
+      "review_report": "reports/hourly-quality/full-20260915-06-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-e9b8e51909248fb3",
+      "question_text": "For SkyTech Ventures, what discounts were offered on PulseSim Pro and CloudLink Designer, and how soon after signing can PulseSim Pro integration begin?",
+      "reason": "Fail-closed necessity disagreement: DeepSeek incorrectly attributes one-week timeline to first call; full source shows it only in second, as GLM correctly identifies. This is a reviewer error, not a confirmed QA defect.",
+      "review_report": "reports/hourly-quality/full-20260915-06-review.md"
     }
   ],
   "retained_difficult_questions": [
