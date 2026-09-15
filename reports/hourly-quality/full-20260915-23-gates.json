@@ -1,0 +1,357 @@
+[
+  {
+    "question_id": "b2b-single_call-71595238deb43d5a",
+    "question": "What quote details did Felix give Hiroshi for the InspireTech NextGen Integration Project?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quote details Felix provided to Hiroshi for the InspireTech NextGen Integration Project",
+        "relationship": "single coherent lookup of one quote",
+        "reason": "This is a single fact lookup about one quote within one call; no unrelated requests are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks for quote/pricing details on a named opportunity, which a rep or AM would plausibly need. The dialogue at 13:50:40 has Felix listing CircuitSync Pro 10% discount/10 units, OptiPower Manager 5%/5 units, DesignWave Automation 10%/15 units, and CloudLink Designer at regular pricing\u2014matching the gold answer exactly with no extra or missing facts. Scope is adequate via the opportunity name and participants. Single-call set, so both_sources_required is true by rule. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Felix J\u00f8rgensen explicitly states: CircuitSync Pro at a 10% discount for 10 units, OptiPower Manager at a 5% discount for 5 units, DesignWave Automation at a 10% discount for 15 units, and CloudLink Designer at regular pricing. This matches the answer_claim exactly in product names, discount percentages, unit quantities, and the regular-pricing note for CloudLink Designer."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Felix's verbatim quote listing all four products with their respective discounts and unit counts, which fully supports every factual element in the gold_answer: CircuitSync Pro 10%/10 units, OptiPower Manager 5%/5 units, DesignWave Automation 10%/15 units, and CloudLink Designer at regular pricing. The context metadata confirms the call relates to the InspireTech NextGen Integration Project and contact Hiroshi Saito, aligning with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-efd1508c170a9fa1",
+    "question": "What discounts did Green Circuitry LLC get on CloudLink Designer and CollabDesign Studio?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Green Circuitry LLC received on two related products (CloudLink Designer and CollabDesign Studio)",
+        "relationship": "single coherent commercial lookup covering the discount terms for one account's product bundle",
+        "reason": "This is one pricing/discount lookup for the same account across a coherent product set, akin to a quote breakdown; not two unrelated fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific discounts for a named account (Green Circuitry LLC) on two named products. The single call transcript clearly states a 5% discount on CloudLink Designer and a 15% discount on CollabDesign Studio, matching the gold answer exactly. The rep/account manager would plausibly need this pricing information. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Olivia Nguyen explicitly states 'a 5% discount on CloudLink Designer' and 'a 15% discount considering the quantity you're looking into' on CollabDesign Studio. This directly supports the answer_claim of 5% on CloudLink Designer and 15% on CollabDesign Studio considering quantity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '5% on CloudLink Designer and 15% on CollabDesign Studio.' The single cited evidence item contains Olivia Nguyen's exact words confirming both discount percentages for the named products. The context metadata confirms the account is Green Circuitry LLC and the opportunity is 'Green Circuitry EDA Expansion,' tying the discounts to the correct entity. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-ca86fb36c8ad17fe",
+    "question": "What discount was quoted for SecureFlow Suite to BrightTech Systems in each of Pedro Almeida's two calls with Chen Wei?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount quoted for SecureFlow Suite to BrightTech Systems in each of Pedro Almeida's two calls with Chen Wei",
+        "relationship": "Same commercial term (discount) tracked across two calls on the same deal",
+        "reason": "Both lookups concern the same business issue \u2014 pricing/discount for the same product and customer \u2014 compared across two calls, which fits the multi-call acceptance criteria."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StMQIA0",
+                "fact": "SecureFlow Suite quoted at 10% discount totaling $8,099.87",
+                "why_other_call_cannot_supply_it": "The second call only mentions a 10% discount at volume without specifying the total price, so the specific total is only available in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuaFIAS",
+                "fact": "SecureFlow Suite quoted at 10% discount at volume",
+                "why_other_call_cannot_supply_it": "The first call does not mention the 'at volume' condition, so the volume-based discount detail is only present in the second call."
+              }
+            ],
+            "reason": "The question asks for the discount quoted in each of two separate calls. The first call provides a specific total price with the discount, while the second call provides a different condition (at volume) without a total. These are distinct pieces of information requested by the question, and each call supplies a fact the other does not."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StMQIA0",
+                  "fact": "SecureFlow Suite quoted at 10% discount totaling $8,099.87",
+                  "why_other_call_cannot_supply_it": "The second call only mentions a 10% discount at volume without specifying the total price, so the specific total is only available in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuaFIAS",
+                  "fact": "SecureFlow Suite quoted at 10% discount at volume",
+                  "why_other_call_cannot_supply_it": "The first call does not mention the 'at volume' condition, so the volume-based discount detail is only present in the second call."
+                }
+              ],
+              "reason": "The question asks for the discount quoted in each of two separate calls. The first call provides a specific total price with the discount, while the second call provides a different condition (at volume) without a total. These are distinct pieces of information requested by the question, and each call supplies a fact the other does not."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StMQIA0",
+                "fact": "SecureFlow Suite quoted with a 10% discount, totaling $8,099.87",
+                "why_other_call_cannot_supply_it": "The second call (2023-10-09) does not mention the $8,099.87 total or the initial 10% discount quote for SecureFlow Suite; it only references a 10% discount at volume."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuaFIAS",
+                "fact": "SecureFlow Suite quoted with a 10% discount at volume",
+                "why_other_call_cannot_supply_it": "The first call (2023-09-18) contains no mention of a volume-based 10% discount for SecureFlow Suite; that pricing condition appears only in the second call."
+              }
+            ],
+            "reason": "The question explicitly asks for the discount quoted in each of Pedro Almeida's two calls. Each call contains a distinct SecureFlow Suite discount statement (first: 10% discount with $8,099.87 total; second: 10% discount at volume), and neither call contains the other's quote, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StMQIA0",
+                  "fact": "SecureFlow Suite quoted with a 10% discount, totaling $8,099.87",
+                  "why_other_call_cannot_supply_it": "The second call (2023-10-09) does not mention the $8,099.87 total or the initial 10% discount quote for SecureFlow Suite; it only references a 10% discount at volume."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuaFIAS",
+                  "fact": "SecureFlow Suite quoted with a 10% discount at volume",
+                  "why_other_call_cannot_supply_it": "The first call (2023-09-18) contains no mention of a volume-based 10% discount for SecureFlow Suite; that pricing condition appears only in the second call."
+                }
+              ],
+              "reason": "The question explicitly asks for the discount quoted in each of Pedro Almeida's two calls. Each call contains a distinct SecureFlow Suite discount statement (first: 10% discount with $8,099.87 total; second: 10% discount at volume), and neither call contains the other's quote, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for the SecureFlow Suite discount quoted in each of two calls between Pedro Almeida (BrightTech Systems) and Chen Wei (TechPulse Solutions). Call 1 (2023-09-18) states 'SecureFlow Suite, with a 10% discount, totals $8,099.87.' Call 2 (2023-10-09) states 'SecureFlow Suite and AI Cirku-Tech, we're including a 10% discount at volume.' The gold answer accurately reflects both: first call 10%/$8,099.87, second call 10% at volume. Each call contributes an exclusive fact (the specific dollar total vs. the volume qualifier), satisfying the multi-call requirement. The question is naturally scoped to a rep tracking discount history across calls for the same account, with no artificial locator preamble, no answer leakage, and no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Chen Wei in call b2b:a05Wt000003StMQIA0 explicitly states: 'The SecureFlow Suite, with a 10% discount, totals $8,099.87.' This directly supports the answer_claim that SecureFlow Suite with a 10% discount totals $8,099.87."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Chen Wei in call b2b:a05Wt000003SuaFIAS explicitly states: 'For other solutions, like SecureFlow Suite and AI Cirku-Tech, we're including a 10% discount at volume.' This directly supports the answer_claim that SecureFlow Suite is included with a 10% discount at volume."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'First call: 10% discount, totaling $8,099.87. Second call: 10% discount at volume.' Evidence index 0 confirms the first call's 10% discount and $8,099.87 total for SecureFlow Suite. Evidence index 1 confirms the second call's 10% discount at volume for SecureFlow Suite. The context metadata confirms both calls are associated with BrightTech Systems (account_name) and Pedro Almeida (contact_name), and the question asks about Pedro Almeida's two calls with Chen Wei. Both calls are linked to the same opportunity 'BrightTech-NextGen Integration.' All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-5151127651f0e3f3",
+    "question": "For the DataWave Analytics opportunity, what weakness did Andrei Popescu note about Quantum Circuits Inc, and what security gap did he flag during the earlier discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A competitive weakness Andrei Popescu noted about Quantum Circuits Inc, plus a security gap he flagged in an earlier discussion, for the DataWave Analytics opportunity",
+        "relationship": "Two independent fact lookups (a competitor weakness and a security gap) joined only by the same opportunity",
+        "reason": "The competitive observation and the security gap are separate information needs; being about the same opportunity does not connect them, and the multi-call framing joins unrelated topics across calls."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the weakness Andrei Popescu noted about Quantum Circuits Inc, found in the Nov 1 call ('strong initial setup support but they tend to lack in ongoing assistance'), and (2) the security gap he flagged in the earlier Oct 9 call ('ensuring there are no lapses during integration with SecureAnalytics Pro and AIOptics Vision'). Both claims are verbatim-supported by their respective transcripts. Each source contributes an exclusive requested fact, satisfying the multi-call requirement. The question is scoped to the DataWave Analytics opportunity and a named contact, which a rep would plausibly track. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Andrei Popescu on 2023-11-01 explicitly states: 'Quantum Circuits Inc offers strong initial setup support, but they tend to lack in ongoing assistance.' This directly supports the answer_claim about the weakness of Quantum Circuits Inc."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Andrei Popescu on 2023-10-09 states: 'Mostly just ensuring there are no lapses during integration with SecureAnalytics Pro and AIOptics Vision.' This directly supports the answer_claim about the security gap he flagged during the earlier discussion."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms the weakness Andrei Popescu noted about Quantum Circuits Inc (strong initial setup support but lacks ongoing assistance), and evidence index 1 confirms the security gap he flagged (ensuring no lapses during integration with SecureAnalytics Pro and AIOptics Vision). The metadata confirms both calls relate to the DataWave Analytics opportunity and involve Andrei Popescu. The earlier call (2023-10-09) aligns with 'earlier discussion' and the later call (2023-11-01) provides the weakness observation. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-89f1e4af06b31461",
+    "question": "What next steps did Sebastian commit to for Aiden Harris's eco-friendly SUV package after they agreed to finalize terms?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Next steps Sebastian committed to for Aiden Harris's eco-friendly SUV package after agreeing to finalize terms",
+        "relationship": "single coherent request: follow-up commitments addressing the same deal",
+        "reason": "One coherent next-steps lookup tied to a single deal and call; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about next steps a rep committed to for a named customer's eco-friendly SUV package after agreeing to finalize terms\u2014plausible for an account manager reviewing call outcomes. The gold answer accurately reflects Sebastian's statement at 11:35:42: he will make pricing adjustments, send final documents within a couple of days, and clarify questions about the emergency roadside assistance feature. No unasked extras are included, no locator preamble is present, and the wording is natural. Since question_class is single_call with one source, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Sebastian Martinez explicitly states: (1) he will make the necessary adjustments, (2) send over the final documents for review, (3) within the next couple of days, and (4) clarify any further inquiries about the emergency roadside assistance feature included in the package. This directly supports the answer_claim verbatim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Sebastian will make pricing adjustments, send final documents within a couple of days, and clarify questions about the emergency roadside assistance feature. The single cited evidence (index 0) contains Sebastian's own words committing to all three actions: 'make the necessary adjustments,' 'send over the final documents for your review\u2026 within the next couple of days,' and 'clarify any further inquiries about the emergency roadside assistance feature included in your package.' The context metadata confirms the call involves Aiden Harris and the Eco-Friendly Luxury SUV Opportunity, matching the question's framing. All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-49febcb39ed35371",
+    "question": "For Olivia Roberts' SUV financing, what did she say about Premium Dealerships Ltd.'s offer, and which add-on options is AutoElite including in her proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Olivia Roberts' comments on Premium Dealerships Ltd.'s financing offer and the add-on options AutoElite is including in her SUV financing proposal",
+        "relationship": "Both facts concern the same financing negotiation: her reaction to a competing offer and the add-ons in the proposal being prepared for her",
+        "reason": "A single coherent financing discussion \u2014 competitor offer feedback and proposal contents for the same deal \u2014 rather than two independent lookups joined only by the customer"
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question naturally asks a rep to recall a customer's competitive comparison (Premium Dealerships Ltd.'s immediate cost savings) and the add-ons being included in the proposal (comprehensive maintenance and extended warranty). Both facts are verbatim-supported in the single call transcript. The wording is conversational, the scope identifies the customer and deal clearly, and the gold answer states exactly the two requested facts without extras. Since question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly contains Olivia Roberts saying 'Premium Dealerships Ltd. seems to offer some immediate cost benefits,' which faithfully supports the claim that she noted immediate cost benefits/savings from that competitor."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "Tariq says 'I'll make sure the financial proposal includes these options for review,' but the pronoun 'these options' is never explicitly resolved in the cited passage. The immediately preceding line (Olivia: 'having that peace of mind could be worth it') does not name 'comprehensive maintenance' or 'extended warranty plans.' No other supplied citation identifies what 'these options' refers to, so the specific add-on names cannot be confirmed from the supplied evidence alone."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer asserts the proposal will include 'comprehensive maintenance and extended warranty plans.' While evidence index 0 supports the Premium Dealerships Ltd. cost-savings portion, evidence index 1 only contains the unresolved pronoun 'these options' with no supplied citation explicitly naming comprehensive maintenance or extended warranty plans. Because the specific add-on names are not established in any supplied evidence, the combined citations do not fully support every factual claim in the gold_answer."
+      }
+    }
+  }
+]

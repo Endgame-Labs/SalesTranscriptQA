@@ -1,0 +1,218 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "eca3089becffc00ee0de6a24c2ddb510edb634bd4f54f2ebacbca0de221490f0",
+  "questions": 2,
+  "counts": {
+    "fail": 1,
+    "pass": 1
+  },
+  "estimated_usd": 0.31438158,
+  "results": [
+    {
+      "question_id": "b2b-single_call-71595238deb43d5a",
+      "question": "What quote details did Felix give Hiroshi for the InspireTech NextGen Integration Project?",
+      "gold_answer": "CircuitSync Pro at 10% discount for 10 units, OptiPower Manager at 5% for 5 units, DesignWave Automation at 10% for 15 units, and CloudLink Designer at regular pricing.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StFzIAK",
+        "b2b:a05Wt000003StcoIAC",
+        "b2b:a05Wt000003SvZZIA0",
+        "b2b:a05Wt000003SvsvIAC",
+        "b2b:a05Wt000003SwabIAC",
+        "b2b:a05Wt000003Sx5EIAS",
+        "b2b:a05Wt000003SxBbIAK",
+        "b2b:a05Wt000003Sxd4IAC",
+        "b2b:a05Wt000003SxjTIAS",
+        "b2b:a05Wt000003SySaIAK",
+        "b2b:a05Wt000003Sz3hIAC",
+        "b2b:a05Wt000003SzetIAC",
+        "b2b:a05Wt000003SzeuIAC",
+        "b2b:a05Wt000003SzgTIAS",
+        "b2b:a05Wt000003SzwaIAC",
+        "b2b:a05Wt000003SzwbIAC",
+        "b2b:a05Wt000003T09SIAS",
+        "b2b:a05Wt000003T0KjIAK",
+        "b2b:a05Wt000003T0ZIIA0",
+        "b2b:a05Wt000003T1iKIAS",
+        "b2b:a05Wt000003T1qKIAS",
+        "b2b:a05Wt000003T1v5IAC",
+        "b2b:a05Wt000003T23BIAS",
+        "b2b:a05Wt000003T2RNIA0",
+        "b2b:a05Wt000003T2XmIAK",
+        "b2b:a05Wt000003T2w0IAC",
+        "b2b:a05Wt000003T35hIAC",
+        "b2b:a05Wt000003T35iIAC",
+        "b2b:a05Wt000003T3LnIAK",
+        "b2b:a05Wt000003T3NTIA0",
+        "b2b:a05Wt000003T3TtIAK",
+        "b2b:a05Wt000003T3VUIA0",
+        "b2b:a05Wt000003T3opIAC",
+        "b2b:a05Wt000003T3s3IAC",
+        "b2b:a05Wt000003T3s4IAC",
+        "b2b:a05Wt000003T3teIAC",
+        "b2b:a05Wt000003T406IAC",
+        "b2b:a05Wt000003T41iIAC",
+        "b2b:a05Wt000003T44vIAC",
+        "b2b:a05Wt000003T46XIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Felix Jørgensen had two calls with Hiroshi Saito on the InspireTech NextGen Integration Project. The 2023-04-25 call gives a full quote breakdown for the named opportunity, while the 2023-04-27 call gives different quote details (a dollar price for CircuitSync Pro). These are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "Felix quoted CircuitSync Pro at a 10% discount for 10 units, OptiPower Manager at a 5% discount for 5 units, DesignWave Automation at a 10% discount for 15 units, plus a CloudLink Designer at regular pricing.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sxd4IAC",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-04-25T13:50:15] Hiroshi Saito: Impressive. Now, about the pricing. Can you update me on the quote details for the opportunity named InspireTech NextGen Integration Project?\n[2023-04-25T13:50:40] Felix Jørgensen: Certainly. For this project, we've prepared a competitive proposal. You'd have CircuitSync Pro at a 10% discount for 10 units, OptiPower Manager at a 5% discount for 5 units, and DesignWave Automation at a 10% discount for 15 units. Plus, a CloudLink Designer at regular pricing."
+              }
+            ]
+          },
+          {
+            "answer": "Felix quoted CircuitSync Pro with a 10% discount when purchasing in units of 10, bringing the price to $3059.91, within a transparent pricing model designed to be clear about long-term commitments.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvsvIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2024-02-28T14:00:55] Kwasi Mensah: CloudLink Designer does sound promising. Could you walk me through how it might enhance our processes specifically?\n[2024-02-28T14:01:15] Lucas Almeida: Certainly, CloudLink Designer facilitates seamless automation by providing customizable templates and real-time data integration. This helps reduce manual interventions and increases overall productivity."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Felix (Felix Jørgensen), Hiroshi (Hiroshi Saito), and the opportunity name 'InspireTech NextGen Integration Project'. Two calls match all three criteria: b2b:a05Wt000003Sxd4IAC (2023-04-25) and b2b:a05Wt000003SwabIAC (2023-04-27). In the first call, Hiroshi explicitly asks Felix to 'update me on the quote details for the opportunity named InspireTech NextGen Integration Project' and Felix provides a full multi-product quote. In the second call, Felix provides a partial pricing detail for CircuitSync Pro. Together these constitute the complete quote details Felix gave Hiroshi for this project.",
+        "answers": [
+          {
+            "answer": "Felix gave Hiroshi the following quote details for the InspireTech NextGen Integration Project: CircuitSync Pro at a 10% discount for 10 units (bringing it to $3,059.91), OptiPower Manager at a 5% discount for 5 units, DesignWave Automation at a 10% discount for 15 units, and CloudLink Designer at regular pricing. He emphasized the transparent pricing model designed to be clear about long-term commitments.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sxd4IAC",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-04-25T13:50:15] Hiroshi Saito: Impressive. Now, about the pricing. Can you update me on the quote details for the opportunity named InspireTech NextGen Integration Project?\n[2023-04-25T13:50:40] Felix Jørgensen: Certainly. For this project, we've prepared a competitive proposal. You'd have CircuitSync Pro at a 10% discount for 10 units, OptiPower Manager at a 5% discount for 5 units, and DesignWave Automation at a 10% discount for 15 units. Plus, a CloudLink Designer at regular pricing."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwabIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-04-27T09:01:55] Hiroshi Saito: That’s reassuring to hear. What about the pricing? We’re trying to understand how it compares with our long-term financial planning.\n[2023-04-27T09:02:12] Felix Jørgensen: Our clients generally appreciate our transparent pricing model, which is designed to be clear about long-term commitments. For example, with CircuitSync Pro, there's a 10% discount when purchasing in units of 10, bringing it to $3059.91. We aim to make every financial aspect crystal clear compared to other options in the market."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-efd1508c170a9fa1",
+      "question": "What discounts did Green Circuitry LLC get on CloudLink Designer and CollabDesign Studio?",
+      "gold_answer": "5% on CloudLink Designer and 15% on CollabDesign Studio.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrNDIA0",
+        "b2b:a05Wt000003SrcbIAC",
+        "b2b:a05Wt000003SrccIAC",
+        "b2b:a05Wt000003SsQUIA0",
+        "b2b:a05Wt000003StOBIA0",
+        "b2b:a05Wt000003StXrIAK",
+        "b2b:a05Wt000003Sv9mIAC",
+        "b2b:a05Wt000003SvgEIAS",
+        "b2b:a05Wt000003SvhjIAC",
+        "b2b:a05Wt000003SvrUIAS",
+        "b2b:a05Wt000003Sx5JIAS",
+        "b2b:a05Wt000003Sx5KIAS",
+        "b2b:a05Wt000003Sx5LIAS",
+        "b2b:a05Wt000003SxRlIAK",
+        "b2b:a05Wt000003SxY9IAK",
+        "b2b:a05Wt000003SxdBIAS",
+        "b2b:a05Wt000003SyHcIAK",
+        "b2b:a05Wt000003SyfdIAC",
+        "b2b:a05Wt000003SztNIAS",
+        "b2b:a05Wt000003Szv6IAC",
+        "b2b:a05Wt000003SzzzIAC",
+        "b2b:a05Wt000003T0T0IAK",
+        "b2b:a05Wt000003T0ZLIA0",
+        "b2b:a05Wt000003T0uLIAS",
+        "b2b:a05Wt000003T12LIAS",
+        "b2b:a05Wt000003T1ezIAC",
+        "b2b:a05Wt000003T1s1IAC",
+        "b2b:a05Wt000003T23GIAS",
+        "b2b:a05Wt000003T2HvIAK",
+        "b2b:a05Wt000003T2KwIAK",
+        "b2b:a05Wt000003T2WKIA0",
+        "b2b:a05Wt000003T2soIAC",
+        "b2b:a05Wt000003T2zQIAS",
+        "b2b:a05Wt000003T2zRIAS",
+        "b2b:a05Wt000003T41lIAC",
+        "b2b:a05Wt000003T4EfIAK",
+        "b2b:a05Wt000003T4OLIA0",
+        "b2b:a05Wt000003T4jFIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call addresses discounts for both named products together: the 2021-01-05 negotiation call (Olivia Nguyen with Yara Abadi, Green Circuitry EDA Expansion), which states a 5% discount on CloudLink Designer and a 15% discount on CollabDesign Studio. Other calls mentioning CloudLink Designer (e.g., 10% discount in the Expansion Partnership calls with Diego Fernández) never mention CollabDesign Studio, so they do not provide a complete answer to the two-product question; the 15% CollabDesign figure is consistent across the same rep/opportunity (2020-12-09 call).",
+        "answers": [
+          {
+            "answer": "Green Circuitry LLC was offered a 5% discount on CloudLink Designer and a 15% discount on CollabDesign Studio (the 15% on CollabDesign Studio based on the quantity being considered).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcbIAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-01-05T14:02:30] Yara Abadi: Thanks for that clarification, Olivia. Could we also discuss the pricing structure? We noticed there's a discount on CloudLink Designer.\n[2021-01-05T14:02:45] Olivia Nguyen: Certainly, we're offering a 5% discount on CloudLink Designer. This pricing aims to ensure that scalability remains affordable and doesn't diminish your ROI. On CollabDesign Studio, we’re providing a 15% discount considering the quantity you’re looking into."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyHcIAK",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2020-12-09T16:01:00] Olivia Nguyen: I’m glad you’ve noticed that. Transparency is something we highly value. Let me break down the quote for our discussion today. We have products like CloudLink Designer with a discounted rate, and with CollabDesign Studio, we're offering a 15% discount. Shall we go over the specific features of these?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about discounts on CloudLink Designer and CollabDesign Studio for Green Circuitry LLC. Only one call provides explicit discount percentages for both named products: call b2b:a05Wt000003SrcbIAC (2021-01-05, Olivia Nguyen with Yara Abadi, opportunity 'Green Circuitry EDA Expansion'), line 12, which states a 5% discount on CloudLink Designer and a 15% discount on CollabDesign Studio. Other calls mention CloudLink Designer with different discounts (10% in the Expansion Partnership opportunity) or mention CollabDesign Studio without a specific percentage, but those are different opportunities and do not provide both products' discounts together. The question names both products, making the EDA Expansion call the determinate source.",
+        "answers": [
+          {
+            "answer": "Green Circuitry LLC received a 5% discount on CloudLink Designer and a 15% discount on CollabDesign Studio. The 5% discount on CloudLink Designer was aimed at keeping scalability affordable without diminishing ROI, while the 15% discount on CollabDesign Studio was provided considering the quantity they were looking into.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcbIAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-01-05T14:02:30] Yara Abadi: Thanks for that clarification, Olivia. Could we also discuss the pricing structure? We noticed there's a discount on CloudLink Designer.\n[2021-01-05T14:02:45] Olivia Nguyen: Certainly, we're offering a 5% discount on CloudLink Designer. This pricing aims to ensure that scalability remains affordable and doesn't diminish your ROI. On CollabDesign Studio, we’re providing a 15% discount considering the quantity you’re looking into."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two discounts: 5% on CloudLink Designer and 15% on CollabDesign Studio. Answer B adds extra context about the rationale for each discount, but the core requested facts are identical. The reference also lists both discounts (5% on CloudLink Designer and 15% on CollabDesign Studio), covering all facts the question asks for."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
