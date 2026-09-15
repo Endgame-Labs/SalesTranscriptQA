@@ -1,0 +1,380 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "b81c92f7149f2f6695bd0e6ba5b5365a8e94595816a65cb0277ae95b27e10112",
+  "questions": 4,
+  "counts": {
+    "fail": 2,
+    "pass": 2
+  },
+  "estimated_usd": 0.46893524999999997,
+  "results": [
+    {
+      "question_id": "b2b-single_call-ec7a624efb1c7b3e",
+      "question": "What pricing did TechPulse quote Horizon Tech Integrations for AI Cirku-Tech, including the discount and total?",
+      "gold_answer": "A 10% discount on ten units, totaling $4769.91.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7yIAC",
+        "b2b:a05Wt000003StG0IAK",
+        "b2b:a05Wt000003SthUIAS",
+        "b2b:a05Wt000003StmLIAS",
+        "b2b:a05Wt000003StnzIAC",
+        "b2b:a05Wt000003Sto0IAC",
+        "b2b:a05Wt000003Su4AIAS",
+        "b2b:a05Wt000003SvL4IAK",
+        "b2b:a05Wt000003SvpmIAC",
+        "b2b:a05Wt000003SwVdIAK",
+        "b2b:a05Wt000003Sx0LIAS",
+        "b2b:a05Wt000003SxLIIA0",
+        "b2b:a05Wt000003Sxd5IAC",
+        "b2b:a05Wt000003Sxd6IAC",
+        "b2b:a05Wt000003Sxd7IAC",
+        "b2b:a05Wt000003Sy4WIAS",
+        "b2b:a05Wt000003SyScIAK",
+        "b2b:a05Wt000003SypKIAS",
+        "b2b:a05Wt000003SzZvIAK",
+        "b2b:a05Wt000003T0kbIAC",
+        "b2b:a05Wt000003T1DaIAK",
+        "b2b:a05Wt000003T286IAC",
+        "b2b:a05Wt000003T2BLIA0",
+        "b2b:a05Wt000003T2KtIAK",
+        "b2b:a05Wt000003T2ODIA0",
+        "b2b:a05Wt000003T2kmIAC",
+        "b2b:a05Wt000003T2zFIAS",
+        "b2b:a05Wt000003T2zGIAS",
+        "b2b:a05Wt000003T343IAC",
+        "b2b:a05Wt000003T3VVIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call contains an explicit quote for AI Cirku-Tech with a discount and total: Mohamed Ahmed's demo call with Fatima El-Sayed (2020-10-29), where he states a 10% discount for ten units and a total of $4769.91. Other calls mention AI Cirku-Tech only in general terms or quote different products/opportunities, so they are not competing answers.",
+        "answers": [
+          {
+            "answer": "TechPulse quoted a 10% discount on AI Cirku-Tech for Horizon Tech Integrations' purchase of ten units, resulting in a total of $4,769.91.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sto0IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2020-10-29T09:49:15] Mohamed Ahmed: We've structured pricing with strategic discounts, offering a clear cost advantage without compromising on quality. For AI Cirku-Tech, we applied a 10% discount for your purchase of ten units, leading to a total of $4769.91."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Two materially different complete pricing quotes for AI Cirku-Tech to Horizon Tech Integrations appear in the call history. In one call (Oct 29, 2020, Mohamed Ahmed to Fatima El-Sayed), a 10% discount on ten units yields a total of $4,769.91. In another call (Jan 10, 2024, Pedro Alvarez to Laila Hassan), AI Cirku-Tech is quoted at $1,059.98 with no discount or total mentioned. These are different opportunities, different contacts, and different reps, so they represent materially different complete answers.",
+        "answers": [
+          {
+            "answer": "TechPulse quoted Horizon Tech Integrations a 10% discount on AI Cirku-Tech for a purchase of ten units, resulting in a total of $4,769.91.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sto0IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2020-10-29T09:49:15] Mohamed Ahmed: We've structured pricing with strategic discounts, offering a clear cost advantage without compromising on quality. For AI Cirku-Tech, we applied a 10% discount for your purchase of ten units, leading to a total of $4769.91."
+              }
+            ]
+          },
+          {
+            "answer": "TechPulse quoted Horizon Tech Integrations AI Cirku-Tech at $1,059.98 (alongside DevVision IDE at $899.97). No specific discount percentage or combined total was stated for AI Cirku-Tech in this call.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T286IAC",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2024-01-10T14:31:42] Pedro Alvarez: I completely understand, Laila. Currently, we have a straightforward pricing model for AI Cirku-Tech and DevVision IDE, totaling $1059.98 and $899.97, respectively. However, we're constantly re-evaluating our offerings to include more flexible options in the future."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-b7343d65c65520e4",
+      "question": "What discount did Akira offer NeoGreen on the TechPulse quote, and on which product?",
+      "gold_answer": "A 5% discount on the CloudLink Designer package.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SsOkIAK",
+        "b2b:a05Wt000003StW8IAK",
+        "b2b:a05Wt000003StnyIAC",
+        "b2b:a05Wt000003SuP6IAK",
+        "b2b:a05Wt000003SulcIAC",
+        "b2b:a05Wt000003SvL3IAK",
+        "b2b:a05Wt000003SvswIAC",
+        "b2b:a05Wt000003SwM0IAK",
+        "b2b:a05Wt000003SyyyIAC",
+        "b2b:a05Wt000003T0XhIAK",
+        "b2b:a05Wt000003T0qyIAC",
+        "b2b:a05Wt000003T0qzIAC",
+        "b2b:a05Wt000003T1JzIAK",
+        "b2b:a05Wt000003T1qLIAS",
+        "b2b:a05Wt000003T23CIAS",
+        "b2b:a05Wt000003T2BKIA0",
+        "b2b:a05Wt000003T30qIAC",
+        "b2b:a05Wt000003T30rIAC",
+        "b2b:a05Wt000003T3NUIA0",
+        "b2b:a05Wt000003T3bvIAC",
+        "b2b:a05Wt000003T3bwIAC",
+        "b2b:a05Wt000003T3bxIAC",
+        "b2b:a05Wt000003T3tfIAC",
+        "b2b:a05Wt000003T3tgIAC",
+        "b2b:a05Wt000003T3yUIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Akira Suzuki appears in three calls with NeoGreen (Leila Aliyev, NeoGreen-TechPulse EDA Partnership). Only one of these calls mentions a discount on a TechPulse quote: a 5% discount on the CloudLink Designer package. The other Akira calls contain no discount offers, so there is no competing alternative.",
+        "answers": [
+          {
+            "answer": "Akira offered a 5% discount on the CloudLink Designer package. In the 2023-12-14 call with Leila Aliyev, Akira stated that the total for SecureFlow Suite, CloudLink Designer, and AI Cirku-Tech corresponded to the quoted price, with a 5% discount applicable on the CloudLink Designer package.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuP6IAK",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-12-14T10:38:00] Akira Suzuki: We absolutely have. Now, regarding pricing, the total amount for SecureFlow Suite, CloudLink Designer, and AI Cirku-Tech corresponds to the quoted price you received, with a 5% discount applicable on the CloudLink Designer package."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Akira as the salesperson and asks about a discount on a TechPulse quote for NeoGreen. Among all calls, only one features Akira Suzuki discussing a specific discount on a quote: call b2b:a05Wt000003SuP6IAK (2023-12-14, opportunity 'NeoGreen-TechPulse EDA Partnership'). In that call, Akira states a 5% discount applicable on the CloudLink Designer package. No other Akira call contains a discount offer on a quote.",
+        "answers": [
+          {
+            "answer": "Akira Suzuki offered NeoGreen a 5% discount on the CloudLink Designer package as part of the TechPulse quote (which also included SecureFlow Suite and AI Cirku-Tech).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuP6IAK",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-12-14T10:38:00] Akira Suzuki: We absolutely have. Now, regarding pricing, the total amount for SecureFlow Suite, CloudLink Designer, and AI Cirku-Tech corresponds to the quoted price you received, with a 5% discount applicable on the CloudLink Designer package."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Akira offered a 5% discount on the CloudLink Designer package, which are the two facts requested (the discount percentage and the product). The reference also provides both the 5% discount and the CloudLink Designer package, covering all requested facts. Additional context in the answers (other products in the quote, call details) is unrequested extra and does not affect agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-9176b9e411fda7db",
+      "question": "What concerns did Olivia Martinez raise about AutoElite's service center, and how did Tariq respond?",
+      "gold_answer": "She cited mixed online reviews; Tariq said centers have factory-trained technicians and that improving online appointment scheduling is being actively looked into.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLPbIAO",
+        "b2c:a05Ws000005SNGlIAO",
+        "b2c:a05Ws000005SORMIA4",
+        "b2c:a05Ws000005SPVbIAO",
+        "b2c:a05Ws000005SPVcIAO",
+        "b2c:a05Ws000005SPbvIAG",
+        "b2c:a05Ws000005SPiKIAW",
+        "b2c:a05Ws000005SQZdIAO",
+        "b2c:a05Ws000005SQy0IAG",
+        "b2c:a05Ws000005SRVdIAO",
+        "b2c:a05Ws000005SSgOIAW",
+        "b2c:a05Ws000005SSgPIAW",
+        "b2c:a05Ws000005SSjSIAW",
+        "b2c:a05Ws000005STNhIAO",
+        "b2c:a05Ws000005STqpIAG",
+        "b2c:a05Ws000005STqqIAG",
+        "b2c:a05Ws000005SUOjIAO",
+        "b2c:a05Ws000005SUjgIAG",
+        "b2c:a05Ws000005SWiCIAW",
+        "b2c:a05Ws000005SXKxIAO",
+        "b2c:a05Ws000005SY43IAG",
+        "b2c:a05Ws000005SZPwIAO",
+        "b2c:a05Ws000005SZmZIAW",
+        "b2c:a05Ws000005SaIiIAK",
+        "b2c:a05Ws000005SaPCIA0",
+        "b2c:a05Ws000005SaPDIA0",
+        "b2c:a05Ws000005SbI2IAK",
+        "b2c:a05Ws000005SbumIAC",
+        "b2c:a05Ws000005ScSbIAK",
+        "b2c:a05Ws000005ScaeIAC",
+        "b2c:a05Ws000005SckKIAS",
+        "b2c:a05Ws000005Sd5DIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Tariq Al-Farsi appears in two calls with Olivia Martinez. Only the 2020-09-20 call (b2c:a05Ws000005SPbvIAG) contains a concern she raised specifically about AutoElite's service center ('I've read mixed reviews online'); the 2020-09-12 call contains only a neutral question about technician expertise, not a concern. So the answer is determinate.",
+        "answers": [
+          {
+            "answer": "In the September 20, 2020 call, Olivia Martinez raised a concern about AutoElite's service center, saying she had read mixed reviews online. Tariq Al-Farsi responded that AutoElite's service centers are staffed with factory-trained technicians who prioritize quality service, acknowledged that they are always working to improve, and noted that some customer feedback has called for enhancing online appointment scheduling, which they are actively looking into. Olivia found this reassuring, saying it was nice to know they consider customer feedback.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPbvIAG",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2020-09-20T14:02:00] Olivia Martinez: That definitely sounds reassuring. How about your service center? I've read mixed reviews online.\n[2020-09-20T14:02:20] Tariq Al-Farsi: Our service centers are equipped with factory-trained technicians who prioritize quality service. That said, we're always working on improving our services. Some feedback we’ve received includes enhancing online appointment scheduling, and it’s something we’re actively looking into."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Tariq as the respondent. Only one call in the dataset features Tariq Al-Farsi speaking with Olivia Martinez: call b2c:a05Ws000005SPbvIAG (2020-09-20). In that call, Olivia raises a concern about AutoElite's service center (mixed reviews online), and Tariq responds. No other call involves Tariq, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Olivia Martinez raised the concern that she had read mixed reviews online about AutoElite's service center. Tariq Al-Farsi responded by explaining that their service centers are equipped with factory-trained technicians who prioritize quality service. He acknowledged the feedback, noting that they are always working on improving their services, and specifically mentioned that some feedback they've received includes enhancing online appointment scheduling, which is something they are actively looking into.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPbvIAG",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2020-09-20T14:02:00] Olivia Martinez: That definitely sounds reassuring. How about your service center? I've read mixed reviews online.\n[2020-09-20T14:02:20] Tariq Al-Farsi: Our service centers are equipped with factory-trained technicians who prioritize quality service. That said, we're always working on improving our services. Some feedback we’ve received includes enhancing online appointment scheduling, and it’s something we’re actively looking into."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same concern (mixed online reviews about AutoElite's service center) and the same response from Tariq (factory-trained technicians prioritizing quality service, ongoing improvement efforts, and actively looking into enhancing online appointment scheduling). The reference also covers both requested facts: the mixed online reviews concern and Tariq's response regarding factory-trained technicians and the online appointment scheduling improvement. Answer A adds Olivia's reassuring reaction, which is an unrequested extra and does not affect agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-66307cb31b9e69cd",
+      "question": "What concern did Ethan Martinez raise about AutoElite's Extended Warranty pricing, and how did Hina Patel respond?",
+      "gold_answer": "Ethan said he'd seen lower-cost warranty options elsewhere; Hina said cheaper options lack the customization and comprehensive coverage AutoElite provides, and their plans save money long-term through reduced repair costs and increased vehicle longevity.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SO9OIAW",
+        "b2c:a05Ws000005SORBIA4",
+        "b2c:a05Ws000005SOSkIAO",
+        "b2c:a05Ws000005SOuAIAW",
+        "b2c:a05Ws000005SP37IAG",
+        "b2c:a05Ws000005SPK0IAO",
+        "b2c:a05Ws000005SQ4kIAG",
+        "b2c:a05Ws000005SQ7zIAG",
+        "b2c:a05Ws000005SQMXIA4",
+        "b2c:a05Ws000005SQeFIAW",
+        "b2c:a05Ws000005SRP1IAO",
+        "b2c:a05Ws000005SSWNIA4",
+        "b2c:a05Ws000005SSjHIAW",
+        "b2c:a05Ws000005ST12IAG",
+        "b2c:a05Ws000005ST7TIAW",
+        "b2c:a05Ws000005STDwIAO",
+        "b2c:a05Ws000005STIkIAO",
+        "b2c:a05Ws000005STsEIAW",
+        "b2c:a05Ws000005STx4IAG",
+        "b2c:a05Ws000005SU9yIAG",
+        "b2c:a05Ws000005SUErIAO",
+        "b2c:a05Ws000005SUrWIAW",
+        "b2c:a05Ws000005SUukIAG",
+        "b2c:a05Ws000005SVNnIAO",
+        "b2c:a05Ws000005SVScIAO",
+        "b2c:a05Ws000005SVijIAG",
+        "b2c:a05Ws000005SVkLIAW",
+        "b2c:a05Ws000005SVlxIAG",
+        "b2c:a05Ws000005SVlyIAG",
+        "b2c:a05Ws000005SVnZIAW",
+        "b2c:a05Ws000005SVpBIAW",
+        "b2c:a05Ws000005SVqnIAG",
+        "b2c:a05Ws000005SVsPIAW",
+        "b2c:a05Ws000005SVu1IAG",
+        "b2c:a05Ws000005SVvdIAG",
+        "b2c:a05Ws000005SVxFIAW",
+        "b2c:a05Ws000005SVyrIAG",
+        "b2c:a05Ws000005SW0TIAW",
+        "b2c:a05Ws000005SW25IAG",
+        "b2c:a05Ws000005SW3hIAG",
+        "b2c:a05Ws000005SW5JIAW",
+        "b2c:a05Ws000005SW6vIAG",
+        "b2c:a05Ws000005SW8XIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Hina Patel had multiple calls with Ethan Martinez, and in two of them he raised a distinct concern about Extended Warranty pricing/value, each with a different response: (1) on 2021-08-22 he said he'd seen lower-cost warranty options elsewhere, and Hina argued cheaper plans lack customization/comprehensive coverage and that AutoElite's plans save money long-term; (2) on 2021-09-01 he questioned whether AutoElite's warranties stack up against industry standards and offer better value, and Hina acknowledged the concern and emphasized clarity and all-inclusive protection.",
+        "answers": [
+          {
+            "answer": "On the 2021-08-22 follow-up call, Ethan Martinez said that while the maintenance plan was appealing, he had seen lower-cost warranty options elsewhere. Hina Patel responded that while cheaper options are available, they often lack the customization and comprehensive coverage AutoElite provides, and that in the long run AutoElite's plans often save money through reduced repair costs and increased vehicle longevity.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOuAIAW",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-08-22T11:05:35] Ethan Martinez: Hina, I must say, the maintenance plan is appealing, but I’ve also seen lower-cost warranty options elsewhere.\n[2021-08-22T11:05:50] Hina Patel: That's a valid point, Ethan. While cheaper options are available, they often lack the customization and comprehensive coverage we provide. In the long run, our plans often save money through reduced repair costs and increased vehicle longevity."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2021-09-01 call, Ethan Martinez questioned how AutoElite's extended warranties stack up against industry standards and whether they really offer better value, noting he'd seen convoluted warranty offers from other places. Hina Patel responded that she could certainly understand that concern, that AutoElite's extended warranties are viewed as solid within the industry, and that while some might find them standard, AutoElite focuses on clarity and all-inclusive protection designed to be comprehensive right from the start.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SP37IAG",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2021-09-01T16:31:30] Ethan Martinez: Yeah, that's true. I've seen some pretty convoluted warranty offers from other places. I do wonder how your warranties stack up against the industry standards though? Are they really offering better value?\n[2021-09-01T16:32:00] Hina Patel: I can certainly understand that concern. Our extended warranties are viewed as solid within the industry. While some might find them standard, we focus on clarity and all-inclusive protection which many customers find quite beneficial. Plus, they're designed to be comprehensive right from the start."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names both Ethan Martinez and Hina Patel, and asks specifically about Extended Warranty pricing. Only one call features Hina Patel discussing Extended Warranty pricing with Ethan: call b2c:a05Ws000005SOuAIAW (2021-08-22). In that call, Ethan raises the concern that he has seen lower-cost warranty options elsewhere (line 11), and Hina responds by acknowledging the point but explaining that cheaper options often lack customization and comprehensive coverage, and that AutoElite's plans save money long-term through reduced repair costs and increased vehicle longevity (line 12). The other Hina Patel calls (b2c:a05Ws000005SP37IAG, b2c:a05Ws000005SUrWIAW, b2c:a05Ws000005SVsPIAW, b2c:a05Ws000005SVu1IAG) discuss warranties but not a pricing concern raised by Ethan about the Extended Warranty specifically.",
+        "answers": [
+          {
+            "answer": "Ethan Martinez raised the concern that he had seen lower-cost warranty options elsewhere, questioning the pricing of AutoElite's Extended Warranty. Hina Patel responded by acknowledging it as a valid point, explaining that while cheaper options are available, they often lack the customization and comprehensive coverage AutoElite provides, and that in the long run, AutoElite's plans often save money through reduced repair costs and increased vehicle longevity.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOuAIAW",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-08-22T11:05:35] Ethan Martinez: Hina, I must say, the maintenance plan is appealing, but I’ve also seen lower-cost warranty options elsewhere.\n[2021-08-22T11:05:50] Hina Patel: That's a valid point, Ethan. While cheaper options are available, they often lack the customization and comprehensive coverage we provide. In the long run, our plans often save money through reduced repair costs and increased vehicle longevity."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1,0 +1,280 @@
+[
+  {
+    "question_id": "b2b-multi_call-c45ce6967f071ba8",
+    "question": "For CraftTech Electronics, which existing systems did Jenna say the new tools must integrate with, and what process pain points did Mohamed cite in the later discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) Which existing systems Jenna said the new tools must integrate with, and 2) which process pain points Mohamed cited in a later discussion",
+        "relationship": "Two independent fact lookups (integration requirements vs. pain points) joined only by the same account, CraftTech Electronics",
+        "reason": "Integration requirements and process pain points are separate information needs; being about the same customer does not connect them into one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": false,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": false,
+        "exactly_requested_answer": false,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks what Mohamed *cited* as pain points in the later discussion. In call 2, Mohamed states 'We've learned that some of the pain points in your current processes include scalability and integration within eco-conscious manufacturing,' but Jenna never confirms or cites these herself; she merely says 'Yes, sustainability is definitely important to us.' The gold answer attributes the pain points to Mohamed, which matches the transcript wording, but the question's phrasing ('what process pain points did Mohamed cite') is slightly misleading because Mohamed is relaying pre-learned information rather than citing something new from the conversation. More critically, the gold answer says 'Mohamed cited scalability and integration within eco-conscious manufacturing as pain points,' which is factually supported by the transcript. However, the question asks what 'Jenna said the new tools must integrate with'\u2014the transcript shows Jenna said 'We need tools that won't disrupt our current systems like DevVision IDE and CircuitAI Innovator,' which is accurately captured. The answer is factually correct and exactly addresses both parts. Revising: factual_answer and exactly_requested_answer should be true. Both calls contribute exclusive facts (call 1: integration systems; call 2: pain points). The question is naturally worded, scoped to CraftTech Electronics, and a rep would plausibly want this info. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Jenna Lopez stating 'We need tools that won't disrupt our current systems like DevVision IDE and CircuitAI Innovator,' which fully supports the answer_claim that Jenna required integration with DevVision IDE and CircuitAI Innovator."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Mohamed Ahmed stating 'some of the pain points in your current processes include scalability and integration within eco-conscious manufacturing.' While Mohamed phrases this as something 'we've learned' (i.e., he is relaying/confirming pain points rather than personally experiencing them), the answer_claim says 'Mohamed cited' these pain points, which is accurate\u2014he is the speaker who names them in the later discussion. The specific pain points (scalability and integration within eco-conscious manufacturing) match exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Jenna required integration with DevVision IDE and CircuitAI Innovator\u2014supported by evidence index 0 where Jenna explicitly names both systems. (2) Mohamed cited scalability and integration within eco-conscious manufacturing as pain points\u2014supported by evidence index 1 where Mohamed names exactly those pain points in the later call (2023-02-28). Both factual claims in the gold_answer are fully covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-691e40db87f91ef8",
+    "question": "For RenewSys Corp, what challenge did Adwoa Mensah raise in the initial call about long-term system viability, and what did Omar say in the discovery meeting drives ROI for the SecureFlow Suite?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A challenge Adwoa raised about long-term system viability in the initial call, and separately, what Omar said drives ROI for the SecureFlow Suite in the discovery meeting",
+        "relationship": "two independent fact lookups joined only by the same account",
+        "reason": "The question spans two calls but the requested facts address different business issues (a viability concern vs. an ROI driver), not the same issue; same account is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Adwoa's challenge about long-term system viability from the initial call (2023-10-10) and (2) Omar's ROI explanation for SecureFlow Suite from the discovery meeting (2023-10-14). Call 1 contains Adwoa stating 'One challenge is ensuring long-term viability of our systems while keeping costs manageable.' Call 2 contains Omar stating 'Our solutions, especially with the SecureFlow Suite, are designed to enhance efficiency and integration, translating to tangible ROI. A lot of value comes from reduced operational costs over time.' Each source contributes an exclusive requested fact. The gold answer accurately captures both. The question is naturally worded, scoped to RenewSys Corp and named participants, and a rep would plausibly want to recall a customer's stated challenge and the ROI pitch delivered. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Adwoa Mensah stating: 'One challenge is ensuring long-term viability of our systems while keeping costs manageable.' This matches the answer_claim exactly, including the speaker, the challenge (long-term viability + keeping costs manageable), and the context (initial call on 2023-10-10 for RenewSys Corp)."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Omar Farouk stating: 'Our solutions, especially with the SecureFlow Suite, are designed to enhance efficiency and integration, translating to tangible ROI. A lot of value comes from reduced operational costs over time.' This directly supports the claim that ROI comes from enhanced efficiency and integration, mainly reduced operational costs over time, in the discovery meeting (2023-10-14)."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Adwoa's challenge about long-term system viability while keeping costs manageable. Evidence 1 confirms Omar's statement that SecureFlow Suite ROI is driven by enhanced efficiency and integration, with value from reduced operational costs over time. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-ec7a624efb1c7b3e",
+    "question": "What pricing did TechPulse quote Horizon Tech Integrations for AI Cirku-Tech, including the discount and total?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quoted price for AI Cirku-Tech to Horizon Tech Integrations, including discount and total",
+        "relationship": "single coherent quote lookup",
+        "reason": "One commercial quote breakdown (price, discount, total) for the same product and customer."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the pricing quote (discount and total) for AI Cirku-Tech to Horizon Tech Integrations. The dialogue explicitly states a 10% discount on ten units totaling $4769.91, matching the gold answer exactly. The question is naturally phrased, scoped to a specific account and product, and a rep/AM would plausibly need this pricing detail. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Mohamed Ahmed explicitly states a 10% discount for a purchase of ten units of AI Cirku-Tech, leading to a total of $4769.91. This directly supports the answer_claim of '10% discount for ten units, total $4769.91.' The speaker is identified, the product is named, the discount percentage, unit count, and total amount all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'A 10% discount on ten units, totaling $4769.91.' The single cited evidence item (index 0) contains a direct quote from Mohamed Ahmed confirming all three factual elements: the 10% discount, the ten units, and the $4769.91 total for AI Cirku-Tech. The context metadata confirms the call is associated with Horizon Tech Integrations, matching the question's parties. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-b7343d65c65520e4",
+    "question": "What discount did Akira offer NeoGreen on the TechPulse quote, and on which product?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount Akira offered NeoGreen on the TechPulse quote and the product it applied to",
+        "relationship": "single coherent commercial lookup: discount amount and its product on the same quote",
+        "reason": "Both parts concern the same quote's commercial terms; discount and product are naturally linked."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the discount percentage and the product it applies to. The dialogue at 10:38:00 has Akira stating 'a 5% discount applicable on the CloudLink Designer package,' which matches the gold answer exactly. The question is naturally phrased, scoped to the NeoGreen/TechPulse opportunity, and a rep would plausibly want to recall discount terms. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Akira Suzuki explicitly states 'a 5% discount applicable on the CloudLink Designer package,' which directly supports the answer_claim of a 5% discount on the CloudLink Designer package."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Akira Suzuki's exact statement offering a 5% discount on the CloudLink Designer package, which fully supports the gold_answer's two factual claims: (1) the discount percentage is 5%, and (2) it applies to the CloudLink Designer package. The context metadata confirms the call involves NeoGreen Enterprises and the TechPulse-related opportunity, aligning with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-9176b9e411fda7db",
+    "question": "What concerns did Olivia Martinez raise about AutoElite's service center, and how did Tariq respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concerns Olivia Martinez raised about AutoElite's service center and Tariq's response to them",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer's concern with the salesperson's response to that same concern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Olivia's concern about mixed online reviews of the service center and Tariq's two-part response (factory-trained technicians; actively looking into improving online appointment scheduling) are all directly stated in the single call transcript. The question is naturally phrased, scoped to a named customer and account, and the answer covers exactly what was asked without extras.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Olivia Martinez saying 'I've read mixed reviews online' in reference to the service center, directly supporting the claim that she raised mixed online reviews about the service center."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Tariq Al-Farsi explicitly states 'Our service centers are equipped with factory-trained technicians who prioritize quality service' and 'Some feedback we've received includes enhancing online appointment scheduling, and it's something we're actively looking into.' This directly supports the claim about factory-trained technicians and online appointment scheduling being actively looked into."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Olivia cited mixed online reviews \u2013 supported by index 0 where she says 'I've read mixed reviews online' about the service center; (2) Tariq said centers have factory-trained technicians \u2013 supported by index 1; (3) improving online appointment scheduling is being actively looked into \u2013 supported by index 1. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-66307cb31b9e69cd",
+    "question": "What concern did Ethan Martinez raise about AutoElite's Extended Warranty pricing, and how did Hina Patel respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Ethan Martinez raised about AutoElite's Extended Warranty pricing and Hina Patel's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent request: one pricing objection and the reply addressing it, on the same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific pricing objection about the Extended Warranty raised by Ethan Martinez and Hina Patel's rebuttal\u2014information a rep/account manager would plausibly need. The dialogue at 11:05:35 shows Ethan stating he's seen lower-cost warranty options elsewhere, and at 11:05:50 Hina responds that cheaper options lack customization and comprehensive coverage, and that AutoElite's plans save money long-term via reduced repair costs and increased vehicle longevity. The gold answer captures both parts precisely with no unasked extras. Single-call question, so both_sources_required is set true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Ethan Martinez explicitly states: 'I've also seen lower-cost warranty options elsewhere.' This directly supports the answer_claim that Ethan raised lower-cost warranty options elsewhere as a concern."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Hina Patel explicitly states: 'cheaper options are available, they often lack the customization and comprehensive coverage we provide. In the long run, our plans often save money through reduced repair costs and increased vehicle longevity.' This directly supports the answer_claim that Hina responded cheaper options lack customization and comprehensive coverage, and AutoElite plans save money long-term through reduced repair costs and increased vehicle longevity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Ethan said he'd seen lower-cost warranty options elsewhere \u2014 supported by evidence index 0. (2) Hina said cheaper options lack the customization and comprehensive coverage AutoElite provides \u2014 supported by evidence index 1. (3) Their plans save money long-term through reduced repair costs and increased vehicle longevity \u2014 supported by evidence index 1. All factual claims in the gold_answer are directly supported by the cited evidence."
+      }
+    }
+  }
+]
