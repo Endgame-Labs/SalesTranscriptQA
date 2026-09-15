@@ -1,0 +1,406 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "765d339a6c982cf4ee7abb844c2454c80bcdf69a6df5bd612eb913a716104d9c",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.44015096,
+  "results": [
+    {
+      "question_id": "b2b-single_call-d35ea77d4bb087a3",
+      "question": "What security concern did Takeshi Yamaguchi raise about CircuitWave, and which TechPulse product did Amir position as addressing data protection?",
+      "gold_answer": "Takeshi had concerns about CircuitWave's security vulnerabilities; Amir highlighted SecureFlow Suite, which secures sensitive data during electronic design processes.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SsOlIAK",
+        "b2b:a05Wt000003SthVIAS",
+        "b2b:a05Wt000003StmMIAS",
+        "b2b:a05Wt000003SvRWIA0",
+        "b2b:a05Wt000003SvRXIA0",
+        "b2b:a05Wt000003Svl2IAC",
+        "b2b:a05Wt000003SvpnIAC",
+        "b2b:a05Wt000003SvpoIAC",
+        "b2b:a05Wt000003SvsxIAC",
+        "b2b:a05Wt000003SwiaIAC",
+        "b2b:a05Wt000003SwqoIAC",
+        "b2b:a05Wt000003SxJjIAK",
+        "b2b:a05Wt000003SxQ6IAK",
+        "b2b:a05Wt000003Sz3iIAC",
+        "b2b:a05Wt000003Sz6wIAC",
+        "b2b:a05Wt000003T0ZJIA0",
+        "b2b:a05Wt000003T0sgIAC",
+        "b2b:a05Wt000003T1ARIA0",
+        "b2b:a05Wt000003T1ASIA0",
+        "b2b:a05Wt000003T24rIAC",
+        "b2b:a05Wt000003T2XnIAK",
+        "b2b:a05Wt000003T3GxIAK",
+        "b2b:a05Wt000003T3SHIA0",
+        "b2b:a05Wt000003T3dXIAS",
+        "b2b:a05Wt000003T3tiIAC",
+        "b2b:a05Wt000003T3wsIAC",
+        "b2b:a05Wt000003T489IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Takeshi Yamaguchi discussing CircuitWave with Amir Haddad (2023-09-26). In that call, Takeshi raises security vulnerabilities as the concern about CircuitWave, and Amir positions the SecureFlow Suite as the TechPulse product securing sensitive data during electronic design processes.",
+        "answers": [
+          {
+            "answer": "Takeshi Yamaguchi raised concerns about security vulnerabilities with CircuitWave (which GreenEnergy had previously considered). Amir Haddad positioned TechPulse's SecureFlow Suite as addressing data protection, describing it as designed to secure sensitive data during electronic design processes while integrating the highest industry standards for data protection, and added that TechPulse's solutions use AI for real-time adaptation to potential threats.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqoIAC",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2023-09-26T11:46:40] Amir Haddad: Certainly. Our SecureFlow Suite, for instance, is designed to secure sensitive data during electronic design processes, integrating the highest industry standards for data protection.\n[2023-09-26T11:46:55] Takeshi Yamaguchi: That's reassuring to hear. We previously considered CircuitWave, but had concerns regarding such security vulnerabilities."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwqoIAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-09-26T11:47:55] Amir Haddad: Great question, Takeshi. While both TechPulse and companies like CircuitWave offer competitive pricing, we strive to differentiate ourselves through innovation and security. Our total cost of ownership remains favorable while ensuring robust functionality."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Takeshi Yamaguchi, CircuitWave, and Amir. Only one call features both Takeshi Yamaguchi and Amir Haddad together and mentions CircuitWave: call b2b:a05Wt000003SwqoIAC (2023-09-26). In that call, Takeshi raises security vulnerabilities as his concern about CircuitWave, and Amir positions SecureFlow Suite as the TechPulse product addressing data protection.",
+        "answers": [
+          {
+            "answer": "Takeshi Yamaguchi raised the concern that CircuitWave had security vulnerabilities. Amir Haddad positioned TechPulse's SecureFlow Suite as the product addressing data protection, describing it as designed to secure sensitive data during electronic design processes and integrating the highest industry standards for data protection.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwqoIAC",
+                "line_start": 5,
+                "line_end": 10,
+                "quote": "[2023-09-26T11:45:55] Takeshi Yamaguchi: Sure, our primary focus is on sustainability and efficiency. We're looking for solutions that enhance our electronic design processes without compromising on data security.\n[2023-09-26T11:46:10] Amir Haddad: That's right up our alley. At TechPulse, we provide robust security compliance, and many of our clients appreciate this as a critical advantage for their data protection needs.\n[2023-09-26T11:46:25] Takeshi Yamaguchi: Security is definitely a top priority for us. Can you elaborate on how you ensure this with your solutions?\n[2023-09-26T11:46:40] Amir Haddad: Certainly. Our SecureFlow Suite, for instance, is designed to secure sensitive data during electronic design processes, integrating the highest industry standards for data protection.\n[2023-09-26T11:46:55] Takeshi Yamaguchi: That's reassuring to hear. We previously considered CircuitWave, but had concerns regarding such security vulnerabilities."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same security concern (security vulnerabilities with CircuitWave) and the same TechPulse product (SecureFlow Suite) as addressing data protection. Answer A adds extra detail about AI-based real-time adaptation, which is unrequested but does not conflict. The reference covers both requested facts: CircuitWave's security vulnerabilities and SecureFlow Suite securing sensitive data during electronic design processes."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-882c8785ade23644",
+      "question": "What is TechGlobal Enterprises' budget for SecureAnalytics Pro, and how quickly do they need it installed?",
+      "gold_answer": "Budget is $657, and they need installation completed within a single day.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Ss0gIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Single call with TechGlobal Enterprises; budget and timeline both stated.",
+        "answers": [
+          {
+            "answer": "TechGlobal Enterprises' budget for SecureAnalytics Pro is $657, and they need it installed within a single day (quickly).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Ss0gIAC",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2023-10-12T10:01:10] Tariq Hassan: I understand. Just to confirm, you're looking to secure your data more effectively within a single day, correct?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Ss0gIAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-10-12T10:01:45] Tariq Hassan: Absolutely, Natalie. Now, regarding the budget, I see that it's $657. Our product options can be tailored to fit within your financial parameters while still meeting key requirements."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is exactly one call in the supplied history involving TechGlobal Enterprises and SecureAnalytics Pro. The budget ($657) and the installation timeline (within a single day) are both explicitly stated in that call.",
+        "answers": [
+          {
+            "answer": "TechGlobal Enterprises' budget for SecureAnalytics Pro is $657, and they need it installed within a single day (as quickly as possible).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Ss0gIAC",
+                "line_start": 8,
+                "line_end": 13,
+                "quote": "[2023-10-12T10:01:10] Tariq Hassan: I understand. Just to confirm, you're looking to secure your data more effectively within a single day, correct?\n[2023-10-12T10:01:15] Natalie Garcia: Yes, that's correct. We need to get everything installed quickly.\n[2023-10-12T10:01:25] Tariq Hassan: Great! Our installation process is very streamlined. Typically, for a single setup, we can complete it within a day, ensuring minimal downtime.\n[2023-10-12T10:01:30] Natalie Garcia: That's good to hear. Time is of the essence for us.\n[2023-10-12T10:01:45] Tariq Hassan: Absolutely, Natalie. Now, regarding the budget, I see that it's $657. Our product options can be tailored to fit within your financial parameters while still meeting key requirements."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Ss0gIAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-10-12T10:01:45] Tariq Hassan: Absolutely, Natalie. Now, regarding the budget, I see that it's $657. Our product options can be tailored to fit within your financial parameters while still meeting key requirements."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the budget is $657 and installation is needed within a single day. The reference also states the budget is $657 and installation within a single day. All requested facts (budget amount and installation timeline) are consistently covered across both answers and the reference. Minor wording differences ('quickly' vs 'as quickly as possible') do not change the substantive meaning."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-f586b22eb0a45008",
+      "question": "What did Isaac Thompson say about AutoElite Motors' financing packages during his follow-up call with Vanessa Müller?",
+      "gold_answer": "He found the range of financing solutions impressive but said more aggressive pricing incentives could be beneficial.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOvwIAG",
+        "b2c:a05Ws000005SOvxIAG",
+        "b2c:a05Ws000005SPNQIA4",
+        "b2c:a05Ws000005SQKxIAO",
+        "b2c:a05Ws000005SQMtIAO",
+        "b2c:a05Ws000005SQZbIAO",
+        "b2c:a05Ws000005SQmUIAW",
+        "b2c:a05Ws000005SRNSIA4",
+        "b2c:a05Ws000005SRaUIAW",
+        "b2c:a05Ws000005SRopIAG",
+        "b2c:a05Ws000005SS55IAG",
+        "b2c:a05Ws000005SS6eIAG",
+        "b2c:a05Ws000005SSDFIA4",
+        "b2c:a05Ws000005SSGRIA4",
+        "b2c:a05Ws000005SSzWIAW",
+        "b2c:a05Ws000005STUGIA4",
+        "b2c:a05Ws000005STp9IAG",
+        "b2c:a05Ws000005SU3hIAG",
+        "b2c:a05Ws000005SUOhIAO",
+        "b2c:a05Ws000005SUrgIAG",
+        "b2c:a05Ws000005SUrhIAG",
+        "b2c:a05Ws000005SUuzIAG",
+        "b2c:a05Ws000005SVStIAO",
+        "b2c:a05Ws000005SWANIA4",
+        "b2c:a05Ws000005SWK0IAO",
+        "b2c:a05Ws000005SWjhIAG",
+        "b2c:a05Ws000005SWjiIAG",
+        "b2c:a05Ws000005SWonIAG",
+        "b2c:a05Ws000005SXkYIAW",
+        "b2c:a05Ws000005SXnuIAG",
+        "b2c:a05Ws000005SY8tIAG",
+        "b2c:a05Ws000005SYLpIAO",
+        "b2c:a05Ws000005SYQgIAO",
+        "b2c:a05Ws000005SYTpIAO",
+        "b2c:a05Ws000005SZJVIA4",
+        "b2c:a05Ws000005SZUnIAO",
+        "b2c:a05Ws000005SZY0IAO",
+        "b2c:a05Ws000005SZY1IAO",
+        "b2c:a05Ws000005SZeLIAW",
+        "b2c:a05Ws000005SaDwIAK",
+        "b2c:a05Ws000005SaFWIA0",
+        "b2c:a05Ws000005SaFXIA0",
+        "b2c:a05Ws000005SaP7IAK",
+        "b2c:a05Ws000005SavMIAS",
+        "b2c:a05Ws000005Sb3SIAS",
+        "b2c:a05Ws000005SbEqIAK",
+        "b2c:a05Ws000005SbxyIAC",
+        "b2c:a05Ws000005ScKTIA0",
+        "b2c:a05Ws000005ScaZIAS",
+        "b2c:a05Ws000005ScdoIAC",
+        "b2c:a05Ws000005ScttIAC",
+        "b2c:a05Ws000005ScvVIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Vanessa Müller made three calls with Isaac Thompson, but only the 2020-03-29 call is explicitly framed as a follow-up (\"I wanted to follow up on the product demonstration...\"). In that call, when Vanessa asks about AutoElite's financing packages, Isaac gives a specific assessment: the range of financing solutions is impressive, but he believes more aggressive pricing incentives could be beneficial. The other Vanessa calls are an initial discovery (2020-03-20) and a finalization call (2020-04-03), so they don't match the 'follow-up' qualifier.",
+        "answers": [
+          {
+            "answer": "Isaac Thompson said that AutoElite Motors' range of financing solutions/packages was impressive, though he believed some more aggressive pricing incentives could be beneficial. Vanessa responded that she understood his perspective, that they're always looking at ways to enhance their offerings, and that she would share his feedback with the finance team.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQMtIAO",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2020-03-29T14:31:45] Vanessa Müller: We're glad to hear that, Isaac. Security and compliance are indeed top priorities for us. Now, in terms of financing, have you had a chance to review our diverse packages?\n[2020-03-29T14:32:00] Isaac Thompson: Yes, I did. Your range of financing solutions is impressive, though I believe some more aggressive pricing incentives could be beneficial."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "There are two calls between Isaac Thompson and Vanessa Müller that qualify as follow-up calls (both follow earlier interactions on the same opportunity 'Luxury Vehicle Acquisition for Isaac Thompson'). In the 2020-03-29 call, Vanessa explicitly asks Isaac to follow up on a product demonstration, and Isaac comments on the financing packages. In the 2020-04-03 call, Vanessa references 'previous conversations' and Isaac again discusses financing. Both are follow-up calls with Vanessa Müller where Isaac says something about AutoElite Motors' financing packages, and the question does not specify which follow-up. The 2020-03-27 call is an initial proposal presentation, not a follow-up.",
+        "answers": [
+          {
+            "answer": "During the follow-up call on 2020-03-29, when Vanessa Müller asked if he had reviewed their diverse financing packages, Isaac Thompson said: 'Yes, I did. Your range of financing solutions is impressive, though I believe some more aggressive pricing incentives could be beneficial.'",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQMtIAO",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2020-03-29T14:31:45] Vanessa Müller: We're glad to hear that, Isaac. Security and compliance are indeed top priorities for us. Now, in terms of financing, have you had a chance to review our diverse packages?\n[2020-03-29T14:32:00] Isaac Thompson: Yes, I did. Your range of financing solutions is impressive, though I believe some more aggressive pricing incentives could be beneficial."
+              }
+            ]
+          },
+          {
+            "answer": "During the follow-up call on 2020-04-03, Isaac Thompson said he had 'heard good things about your financing options' and asked for more detail. After Vanessa explained the flexible plans, Isaac responded: 'I appreciate that flexibility. It provides more long-term comfort.'",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOvwIAG",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2020-04-03T11:03:25] Isaac Thompson: I've heard good things about your financing options. Can you give me a bit more detail?\n[2020-04-03T11:03:50] Vanessa Müller: Of course. Our flexible financing plans allow you to adjust terms based on your financial strategy. You can choose between a variety of payment schedules and structures, accommodating changes in your economic situation over time. We find that's really helpful for a lot of our clients.\n[2020-04-03T11:04:20] Isaac Thompson: I appreciate that flexibility. It provides more long-term comfort."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-756eff0a6cd8f631",
+      "question": "What pricing did Alejandra quote Liam Baker for the 2020 Honda Civic and the 2022 Toyota Camry Hybrid?",
+      "gold_answer": "The 2020 Honda Civic is $17,999.99 and the 2022 Toyota Camry Hybrid is $25,999.99.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLpuIAG",
+        "b2c:a05Ws000005SMvdIAG",
+        "b2c:a05Ws000005SP3IIAW",
+        "b2c:a05Ws000005SQ86IAG",
+        "b2c:a05Ws000005SQBJIA4",
+        "b2c:a05Ws000005SQb6IAG",
+        "b2c:a05Ws000005SSD8IAO",
+        "b2c:a05Ws000005SSPzIAO",
+        "b2c:a05Ws000005SSQ0IAO",
+        "b2c:a05Ws000005SSTGIA4",
+        "b2c:a05Ws000005ST1BIAW",
+        "b2c:a05Ws000005ST2kIAG",
+        "b2c:a05Ws000005ST2lIAG",
+        "b2c:a05Ws000005STU8IAO",
+        "b2c:a05Ws000005STViIAO",
+        "b2c:a05Ws000005STVjIAO",
+        "b2c:a05Ws000005STagIAG",
+        "b2c:a05Ws000005STvZIAW",
+        "b2c:a05Ws000005SU5EIAW",
+        "b2c:a05Ws000005SU5FIAW",
+        "b2c:a05Ws000005SUGWIA4",
+        "b2c:a05Ws000005SUl8IAG",
+        "b2c:a05Ws000005SUreIAG",
+        "b2c:a05Ws000005SUuuIAG",
+        "b2c:a05Ws000005SX6FIAW",
+        "b2c:a05Ws000005SX6GIAW",
+        "b2c:a05Ws000005SXPgIAO",
+        "b2c:a05Ws000005SY3yIAG",
+        "b2c:a05Ws000005SYNUIA4",
+        "b2c:a05Ws000005SYNVIA4",
+        "b2c:a05Ws000005SYSBIA4",
+        "b2c:a05Ws000005SaCCIA0",
+        "b2c:a05Ws000005SaCDIA0",
+        "b2c:a05Ws000005SbBUIA0",
+        "b2c:a05Ws000005SbD4IAK",
+        "b2c:a05Ws000005SbD5IAK",
+        "b2c:a05Ws000005SbbKIAS",
+        "b2c:a05Ws000005SbzRIAS",
+        "b2c:a05Ws000005Sc13IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 6,
+            "normalized_end": 7
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Alejandra Torres quoted the 2020 Honda Civic at $17,999.99 and the 2022 Toyota Camry Hybrid at $25,999.99; these figures are consistent across her calls (Civic price also repeated on 2023-02-13, Camry Hybrid price repeated on 2023-03-30).",
+        "answers": [
+          {
+            "answer": "Alejandra Torres quoted Liam Baker $17,999.99 for the 2020 Honda Civic and $25,999.99 for the 2022 Toyota Camry Hybrid.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SP3IIAW",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-02-08T16:00:34] Alejandra Torres: Sure thing. Based on your interest, we've identified a few options: the 2020 Honda Civic for $17,999.99, the 2022 Audi A6, and the 2021 Audi Q7. Both Audi models offer luxury and advanced features you mentioned you were interested in."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SP3IIAW",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-02-08T16:01:00] Alejandra Torres: Yes, absolutely! The 2022 Toyota Camry Hybrid is priced at $25,999.99. It's a fantastic option if you're looking for efficiency without compromising on performance."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about pricing Alejandra quoted Liam Baker for the 2020 Honda Civic and the 2022 Toyota Camry Hybrid. In call b2c:a05Ws000005SP3IIAW (2023-02-08), Alejandra Torres explicitly quotes both vehicles: the 2020 Honda Civic at $17,999.99 (line 4) and the 2022 Toyota Camry Hybrid at $25,999.99 (line 6). These same prices are confirmed in later Alejandra calls (b2c:a05Ws000005SX6GIAW line 4 for the Civic; b2c:a05Ws000005STvZIAW line 14 for the Camry Hybrid), but the primary and most direct answer comes from the single call where both were quoted together.",
+        "answers": [
+          {
+            "answer": "Alejandra Torres quoted Liam Baker $17,999.99 for the 2020 Honda Civic and $25,999.99 for the 2022 Toyota Camry Hybrid.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SP3IIAW",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2023-02-08T16:00:34] Alejandra Torres: Sure thing. Based on your interest, we've identified a few options: the 2020 Honda Civic for $17,999.99, the 2022 Audi A6, and the 2021 Audi Q7. Both Audi models offer luxury and advanced features you mentioned you were interested in.\n[2023-02-08T16:00:46] Liam Baker: I do like Audi's styling. What about the Camry Hybrid? You mentioned that last time.\n[2023-02-08T16:01:00] Alejandra Torres: Yes, absolutely! The 2022 Toyota Camry Hybrid is priced at $25,999.99. It's a fantastic option if you're looking for efficiency without compromising on performance."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers provide identical pricing: $17,999.99 for the 2020 Honda Civic and $25,999.99 for the 2022 Toyota Camry Hybrid. The reference also states both prices ($17,999.99 and $25,999.99) for the respective vehicles, covering all requested facts."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
