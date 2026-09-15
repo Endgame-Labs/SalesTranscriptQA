@@ -1,0 +1,406 @@
+[
+  {
+    "question_id": "b2b-single_call-e3ef0af78253da6b",
+    "question": "What are SafetyNet's main buying requirements for the AI solution Ravi Gupta discussed with TechPulse?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "SafetyNet's main buying requirements for the AI solution discussed by Ravi Gupta with TechPulse",
+        "relationship": "single coherent requirement lookup about one discussion",
+        "reason": "One lookup of a customer's buying requirements from a single call; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for SafetyNet's main buying requirements discussed by Ravi Gupta with TechPulse. The dialogue at 10:57:35 has Ravi stating: high data protection, cost-effectiveness for long-term sustainability, and improved data processing speed without sacrificing security or compliance. The gold answer reproduces these three requirements verbatim with no unasked extras. The question naturally identifies the account (SafetyNet), the contact (Ravi Gupta), and the vendor (TechPulse), which is realistic for a rep reviewing discovery notes. No locator preamble, no answer leakage, no unsupported causality. Single-call set, so both_sources_required is true.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Ravi Gupta explicitly states: (1) 'ensuring high data protection while remaining cost-effective for long-term sustainability' and (2) 'improve our data processing speed without sacrificing security or compliance.' This directly supports the answer_claim that Ravi's main challenge/requirements are high data protection, cost-effectiveness for long-term sustainability, and improved data processing speed without sacrificing security or compliance."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer lists three requirements: high data protection, cost-effectiveness for long-term sustainability, and improved data processing speed without sacrificing security or compliance. The single cited evidence (index 0) contains Ravi Gupta's exact words covering all three points verbatim. The context metadata confirms the account is SafetyNet Inc. and the contact is Ravi Gupta, matching the question's framing. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-384474ad36d6c10d",
+    "question": "What did Emil Johansson from SwiftTech Innovations agree to purchase, and what was the quoted total price?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What product/service Emil Johansson of SwiftTech Innovations agreed to purchase and the quoted total price",
+        "relationship": "single coherent commercial outcome: the purchase commitment and its quoted price are two facets of the same deal",
+        "reason": "The question asks for the agreed purchase and its quoted total, which are naturally connected parts of one commercial agreement, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Emil Johansson agreed to purchase and the quoted total price. The transcript confirms two licenses of FlexiDesign Pro and two of CloudInnovate Space at a combined package cost of $1691, and Emil explicitly agrees to proceed. The gold answer states precisely these facts with no extras. The question naturally identifies the customer by name and company, which is realistic for a rep reviewing their account. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue explicitly confirms: (1) Emil Johansson confirms two licenses of FlexiDesign Pro ('Yes, that's right. I'm considering two licenses for my design team.'); (2) Emil confirms two licenses of CloudInnovate Space ('Correct. With our team working remotely...'); (3) Xinyi Zhang states 'For the two licenses of FlexiDesign Pro and two of CloudInnovate Space, the combined package cost would be close to your budget at $1691.' All elements of the answer_claim\u2014product names, quantities, and the $1691 combined package cost\u2014are directly present in the cited passage."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Two licenses of FlexiDesign Pro and two of CloudInnovate Space, for a combined package cost of $1691.' The single cited evidence item contains Emil Johansson's explicit confirmation of two licenses of each product and Xinyi Zhang's explicit statement of the $1691 combined package cost. The context metadata confirms the call involves Emil Johansson from SwiftTech Innovations. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-30c634c370494140",
+    "question": "For SkyTech Ventures, what concern did Fatima raise about competitors in the initial discussion, and how did she respond to Yasmin's answer on that same point in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Fatima's competitor concern in the initial discussion and her response to Yasmin's answer on that same concern in the follow-up call",
+        "relationship": "objection and follow-up response on the same competitive concern",
+        "reason": "Both parts address the same business issue (the competitor concern) across an initial call and its follow-up, forming one coherent objection-and-response thread."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for Fatima's initial concern about competitors and her follow-up response to Yasmin's answer on the same point. The initial concern is that frequent competitor updates are appealing, and the follow-up response is that meaningful updates over frequent ones are fine as long as features enhance productivity. These are not distinct facts but rather a progression of the same concern: the initial statement expresses a concern about frequency, and the follow-up resolves it by accepting meaningful updates. The follow-up does not introduce a new outcome, numerical change, or different commercial term; it merely clarifies her stance on the same issue. Thus, one call (the initial) could supply the concern, and the follow-up only adds a resolution that is directly tied to the same point, not a separate requested fact. The question's phrasing 'same point' indicates it is not asking for two independent facts, so both calls are not necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Fatima's initial concern about competitors and her follow-up response to Yasmin's answer on the same point. The initial concern is that frequent competitor updates are appealing, and the follow-up response is that meaningful updates over frequent ones are fine as long as features enhance productivity. These are not distinct facts but rather a progression of the same concern: the initial statement expresses a concern about frequency, and the follow-up resolves it by accepting meaningful updates. The follow-up does not introduce a new outcome, numerical change, or different commercial term; it merely clarifies her stance on the same issue. Thus, one call (the initial) could supply the concern, and the follow-up only adds a resolution that is directly tied to the same point, not a separate requested fact. The question's phrasing 'same point' indicates it is not asking for two independent facts, so both calls are not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwqdIAC",
+                "fact": "In the initial call, Fatima raised the concern that competitors' frequent product updates make them appealing, especially if they address immediate needs.",
+                "why_other_call_cannot_supply_it": "The follow-up call only contains her response to Yasmin's answer; the original concern was voiced solely in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0MKIA0",
+                "fact": "In the follow-up, after Yasmin explained the focus on meaningful innovation, Fatima responded that they value meaningful updates over frequent ones, so she is satisfied as long as features enhance productivity.",
+                "why_other_call_cannot_supply_it": "This acceptance/response occurred only in the second call; the first call ends before any resolution of the concern."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: the concern raised in the initial discussion and Fatima's response to Yasmin's answer in the follow-up. Each fact exists only in one call, and together they form a concern-plus-resolution progression that neither call alone can supply."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwqdIAC",
+                  "fact": "In the initial call, Fatima raised the concern that competitors' frequent product updates make them appealing, especially if they address immediate needs.",
+                  "why_other_call_cannot_supply_it": "The follow-up call only contains her response to Yasmin's answer; the original concern was voiced solely in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0MKIA0",
+                  "fact": "In the follow-up, after Yasmin explained the focus on meaningful innovation, Fatima responded that they value meaningful updates over frequent ones, so she is satisfied as long as features enhance productivity.",
+                  "why_other_call_cannot_supply_it": "This acceptance/response occurred only in the second call; the first call ends before any resolution of the concern."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: the concern raised in the initial discussion and Fatima's response to Yasmin's answer in the follow-up. Each fact exists only in one call, and together they form a concern-plus-resolution progression that neither call alone can supply."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (2021-09-20) contains Fatima's initial concern that frequent competitor product updates are appealing; Call 2 (2021-11-18) contains her follow-up acceptance that meaningful updates over frequent ones are fine as long as features enhance productivity. Each source contributes an exclusive requested fact. The answer matches both transcripts precisely with no unasked extras.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Fatima Hassani stating 'frequent product updates do make competitors appealing, especially if they address immediate needs,' which matches the answer_claim that she noted frequent product updates make competitors appealing, especially for immediate needs."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Fatima Hassani saying 'We do value meaningful updates over frequent ones, so as long as the features enhance productivity, we're satisfied,' which matches the answer_claim that she values meaningful updates over frequent ones and is satisfied as long as features enhance productivity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Initially Fatima said frequent competitor product updates were appealing \u2014 supported by index 0 where she explicitly says 'frequent product updates do make competitors appealing, especially if they address immediate needs.' (2) In the follow-up she accepted that meaningful updates over frequent ones were fine as long as features enhance productivity \u2014 supported by index 1 where she says 'We do value meaningful updates over frequent ones, so as long as the features enhance productivity, we're satisfied.' Both parts of the gold_answer are fully supported by the cited evidence. The context metadata confirms both calls are for SkyTech Ventures with contact Fatima Hassani, and the second call (Nov 2021) follows the first (Sep 2021), consistent with 'initial discussion' and 'follow-up call.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-75f33f2c1df41ec5",
+    "question": "In NexGen Biotech's evaluation, how did Yasmine describe Quantum Circuits' solutions, and how did she characterize the pricing of the vendors she's compared?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Yasmine described Quantum Circuits' solutions and how she characterized the pricing of vendors she has compared, within NexGen Biotech's evaluation",
+        "relationship": "Both parts address the same competitive evaluation: her assessment of a specific vendor's solutions and her comparison of vendor pricing are facets of one coherent competitive-comparison request",
+        "reason": "The question combines a vendor assessment with a pricing characterization within the same evaluation process, forming one coherent competitive comparison rather than two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for Yasmine's description of Quantum Circuits' solutions and her characterization of vendor pricing. Both facts appear in the first call: she says Quantum Circuits has strong security but is less customizable, and that both evaluated companies have similar pricing. The second call only repeats the pricing statement ('Both companies we've evaluated have similar pricing points') and does not mention Quantum Circuits' solutions. Therefore, the first call alone supplies all requested information, making the second call unnecessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Yasmine's description of Quantum Circuits' solutions and her characterization of vendor pricing. Both facts are present in the first call: she states Quantum Circuits has strong security but is less customizable, and that both evaluated companies have similar pricing. The second call only repeats the pricing statement ('Both companies we've evaluated have similar pricing points') and does not mention Quantum Circuits' solutions. Therefore, the first call alone supplies all requested information, making the second call unnecessary."
+            },
+            {
+              "type": "object"
+            },
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Yasmine's description of Quantum Circuits' solutions and her characterization of vendor pricing. Both facts appear in the first call: she says Quantum Circuits has strong security but is less customizable, and that both evaluated companies have similar pricing. The second call only repeats the pricing statement ('Both companies we've evaluated have similar pricing points') and does not mention Quantum Circuits' solutions. Therefore, the first call alone supplies all requested information, making the second call unnecessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxcyIAC",
+                "fact": "Yasmine said Quantum Circuits Inc. has strong security but their solutions are less customizable than NexGen needs",
+                "why_other_call_cannot_supply_it": "The second call never mentions Quantum Circuits; the QC evaluation only appears in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2BHIA0",
+                "fact": "Yasmine said both companies she's evaluated have similar pricing, so the decision comes down to added value like customization and support",
+                "why_other_call_cannot_supply_it": "The first call contains no statement from Yasmine comparing vendors' pricing; that characterization is only made in the second call."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: Yasmine's description of Quantum Circuits' solutions (only in the first call) and her characterization of vendors' pricing (only in the second call). Neither call alone contains both facts, and the facts are not repetitions."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxcyIAC",
+                  "fact": "Yasmine said Quantum Circuits Inc. has strong security but their solutions are less customizable than NexGen needs",
+                  "why_other_call_cannot_supply_it": "The second call never mentions Quantum Circuits; the QC evaluation only appears in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2BHIA0",
+                  "fact": "Yasmine said both companies she's evaluated have similar pricing, so the decision comes down to added value like customization and support",
+                  "why_other_call_cannot_supply_it": "The first call contains no statement from Yasmine comparing vendors' pricing; that characterization is only made in the second call."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: Yasmine's description of Quantum Circuits' solutions (only in the first call) and her characterization of vendors' pricing (only in the second call). Neither call alone contains both facts, and the facts are not repetitions."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (May 16) has Yasmine stating Quantum Circuits has strong security but is less customizable. Call 2 (May 18) has Yasmine saying both evaluated companies have similar pricing and it comes down to added value like customization and support. Each source contributes an exclusive requested fact. The question is naturally phrased, scoped to NexGen Biotech's evaluation, and a rep would plausibly want to know how the customer characterizes a competitor and pricing landscape. The gold answer accurately reflects both claims without extras.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Yasmine Hassan the statement that Quantum Circuits Inc. has 'strong security' but their solutions are 'less customizable according to our needs.' This matches the answer_claim exactly, preserving speaker attribution and the characterization of both security strength and customization limitation."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Yasmine Hassan the statement that 'Both companies we've evaluated have similar pricing points, so it often comes down to those added values like customization and support.' This matches the answer_claim about similar pricing and the decision coming down to added values like customization and support."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Quantum Circuits has strong security but is less customizable \u2013 directly supported by evidence index 0; (2) both evaluated companies have similar pricing \u2013 directly supported by evidence index 1; (3) it comes down to added value like customization and support \u2013 directly supported by evidence index 1. All factual claims in the gold_answer are covered by the two cited evidence items with faithful paraphrasing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-5a70aee8531bbda7",
+    "question": "What next steps and timeline did Kaito lay out for Mohammed Khan's Lexus RX 350 / Volvo XC60 opportunity?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Next steps and timeline Kaito outlined for Mohammed Khan's Lexus RX 350 / Volvo XC60 opportunity",
+        "relationship": "single coherent request: next steps and timeline for the same opportunity",
+        "reason": "One coherent next-steps/timeline request about a single deal; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about next steps and timeline for a named customer's specific vehicle opportunity, which a rep/account manager would plausibly need. The dialogue at 13:36:10 has Kaito explicitly stating a detailed requirement analysis on March 3rd followed by a tailored proposal presentation on March 15th, matching the gold answer exactly with no extra or missing facts. Wording is natural, scope is clear (customer + vehicles), and no locator preamble or artificial framing is present. Single-call set, so both_sources_required is true by rule.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Kaito Nakamura explicitly states: 'a detailed requirement analysis discussion set for March 3rd' and 'we'll present that proposal on March 15th.' This directly supports the answer_claim about the two next steps and their dates."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Kaito's own words laying out both next steps (detailed requirement analysis on March 3rd, tailored proposal presentation on March 15th) for the opportunity tied to Mohammed Khan's account. The gold_answer faithfully summarizes these two steps and dates. The context metadata confirms the call is associated with Mohammed Khan's account and the 'Khan's Premium Pre-Owned Opportunity,' consistent with the Lexus RX 350 / Volvo XC60 opportunity referenced in the question. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-580a4fc5bacf45b2",
+    "question": "What did Liam Johnson want to know about the extended warranty plan for the Tesla Model S, and what did Nadia tell him it covers?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Liam Johnson asked about the extended warranty plan for the Tesla Model S and what Nadia said it covers",
+        "relationship": "single coherent topic: one customer inquiry about warranty coverage and the corresponding explanation",
+        "reason": "Both parts concern the same warranty topic\u2014the question raised and the coverage details provided\u2014forming one coherent sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer (Liam Johnson) and a specific product discussion (extended warranty for Tesla Model S) within a single call. The dialogue confirms Liam asked Nadia to 'elaborate a bit more, especially about the extended warranty,' and Nadia replied it 'covers major components far beyond the standard warranty period' and protects 'against unexpected repairs.' The gold answer faithfully restates both the request and the coverage description without adding unasked facts or omitting requested ones. Wording is natural, no locator preamble, no answer leakage, and the scope is clear. Because question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Liam Johnson explicitly asking Nadia to 'elaborate a bit more, especially about the extended warranty,' which directly supports the claim that he asked for more detail about the extended warranty."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Nadia's quoted response states the Extended Warranty Plan 'covers major components far beyond the standard warranty period' and that the customer is 'protected against unexpected repairs,' which directly supports the claim about coverage of major components beyond the standard warranty and protection against unexpected repairs."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Liam asked for more detail about the extended warranty (supported by index 0) and that Nadia said it covers major components beyond the standard warranty period, protecting against unexpected repairs (supported by index 1). Both factual claims in the gold_answer are fully supported by the cited evidence. The mention of 'Tesla Model S' in the question is contextually supported by the metadata (opportunity name 'Johnson Family Vehicle Upgrade', account 'Liam Johnson') and Nadia's reference to 'the luxurious features of Tesla' in index 1."
+      }
+    }
+  }
+]
