@@ -1,0 +1,417 @@
+[
+  {
+    "question_id": "b2b-single_call-298169f187dbda7d",
+    "question": "What pricing adjustment did Mei offer EcoWave for future bulk purchases, and what did Amelia identify as a key decision factor?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing adjustment Mei offered EcoWave for future bulk purchases, and the key decision factor Amelia identified",
+        "relationship": "Both items concern the same commercial negotiation with EcoWave \u2014 the concession offered and the customer's decision driver are part of one deal discussion",
+        "reason": "A pricing concession and the customer's key decision factor naturally belong to the same sales negotiation, forming one coherent commercial question rather than two unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both facts are verified in the single transcript: Mei proposes 'a larger discount on future bulk purchases' (16:02:29) and Amelia states 'TechPulse's commitment to security compliance is a key factor in our decision-making' (16:04:25). The question naturally combines a commercial-terms detail with a decision-criteria detail a rep would track. Wording is natural, scope is clear (EcoWave/Mei/Amelia), no locator preamble, no leakage, and the answer contains exactly the two requested facts with no extras.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Mei Lin explicitly asks, 'Would achieving a larger discount on future bulk purchases meet your expectations?' This is a direct offer/proposal of a larger discount on future bulk purchases, matching the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Amelia Rodriguez states verbatim, 'TechPulse's commitment to security compliance is a key factor in our decision-making,' which directly supports the claim that she identified TechPulse's security compliance as a key decision factor."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are supported: (1) Mei offered a larger discount on future bulk purchases (evidence index 0), and (2) Amelia cited TechPulse's security compliance as a key decision factor (evidence index 1). The combined citations fully substantiate the answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-c2919ae033676291",
+    "question": "What concern did Oliveira Santos raise about Quantum Circuits' support for Onyx Security Systems?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Oliveira Santos raised about Quantum Circuits' support for Onyx Security Systems",
+        "relationship": "single lookup of one concern",
+        "reason": "One coherent fact lookup about a single concern within one call context."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific concern Oliveira Santos raised regarding Quantum Circuits' support for Onyx Security Systems. The dialogue at [14:18:20] contains the exact statement: 'while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking.' The gold answer faithfully reproduces this. The question is naturally worded, scoped to a named contact and account, and a rep would plausibly want to know a customer's pain point with a competitor. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage is a direct statement by Oliveira Santos: 'We've noticed that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking.' This explicitly supports the answer_claim that Quantum Circuits offers strong initial setup assistance but their ongoing support is lacking. The speaker attribution (Oliveira Santos), the account context (Onyx Security Systems via metadata), and the specific concern about Quantum Circuits' support are all present in the citation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Quantum Circuits offers strong initial setup assistance but their ongoing support is lacking.' The single cited evidence item (index 0) contains Oliveira Santos's exact words expressing this concern, attributed to the correct speaker and in the context of the Onyx Security Systems account. The question asks what concern Oliveira Santos raised about Quantum Circuits' support for Onyx Security Systems, and the citation directly provides that concern. All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-fef883e864af1f2d",
+    "question": "For DigitalWave Solutions, what integration concern did Aliou Diallo raise in the initial discussion, and how quickly did Sarah say the products could be integrated when they later discussed terms?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The integration concern Aliou Diallo raised in the initial discussion and Sarah's later statement on how quickly the products could be integrated",
+        "relationship": "objection and its response on the same issue (integration timeline) across the initial discussion and the later terms discussion",
+        "reason": "Both parts address the same business issue\u2014integration feasibility/speed\u2014so the multi-call comparison is coherent, not two independent lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: the integration concern raised by Aliou in the initial discussion, and Sarah's response about integration speed in a later discussion. However, both pieces of information are present in the first call (b2b:a05Wt000003SswiIAC). In that call, Aliou raises the concern about seamless integration without disrupting operations, and Sarah later states that integration is streamlined for rapid deployment. The second call (b2b:a05Wt000003SxrUIAS) only contains the initial concern but does not provide the later response about speed. Therefore, the first call alone suffices to answer the entire question, making the second call unnecessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: the integration concern raised by Aliou in the initial discussion, and Sarah's response about integration speed in a later discussion. However, both pieces of information are present in the first call (b2b:a05Wt000003SswiIAC). In that call, Aliou raises the concern about seamless integration without disrupting operations, and Sarah later states that integration is streamlined for rapid deployment. The second call (b2b:a05Wt000003SxrUIAS) only contains the initial concern but does not provide the later response about speed. Therefore, the first call alone suffices to answer the entire question, making the second call unnecessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxrUIAS",
+                "fact": "Aliou's initial concern: ensuring seamless integration of new technologies without disrupting current operations, needing more integration flexibility.",
+                "why_other_call_cannot_supply_it": "The April call contains no statement of this initial concern; Aliou only asks how quickly products could be integrated."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SswiIAC",
+                "fact": "Sarah's later answer on integration speed: implementation is streamlined for rapid deployment, transition is smooth, with support on standby.",
+                "why_other_call_cannot_supply_it": "The March call only has Sarah's generic claim that products integrate smoothly with minimal disruption; no statement about speed/rapid deployment appears there."
+              }
+            ],
+            "reason": "The question requests two distinct facts across two conversations: the concern raised in the initial discussion (only in the March call) and Sarah's later statement on integration speed (only in the April call). Neither call supplies both."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxrUIAS",
+                  "fact": "Aliou's initial concern: ensuring seamless integration of new technologies without disrupting current operations, needing more integration flexibility.",
+                  "why_other_call_cannot_supply_it": "The April call contains no statement of this initial concern; Aliou only asks how quickly products could be integrated."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SswiIAC",
+                  "fact": "Sarah's later answer on integration speed: implementation is streamlined for rapid deployment, transition is smooth, with support on standby.",
+                  "why_other_call_cannot_supply_it": "The March call only has Sarah's generic claim that products integrate smoothly with minimal disruption; no statement about speed/rapid deployment appears there."
+                }
+              ],
+              "reason": "The question requests two distinct facts across two conversations: the concern raised in the initial discussion (only in the March call) and Sarah's later statement on integration speed (only in the April call). Neither call supplies both."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the integration concern Aliou raised in the initial (March) discussion, and (2) Sarah's response about integration speed in the later (April) terms discussion. Call b2b:a05Wt000003SxrUIAS (2020-03-09) contains Aliou's concern: 'ensuring seamless integration of new technologies without disrupting current operations.' Call b2b:a05Wt000003SswiIAC (2020-04-09) contains Sarah's answer about integration speed: 'We've streamlined the implementation process to ensure rapid deployment. Typically, the transition is smooth, and our support team is on standby.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally worded, scoped to a named account and contact, and a rep would plausibly want to recall a customer's stated concern and the commitment made later. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Aliou Diallo on 2020-03-09 explicitly states: 'One of our main challenges is ensuring seamless integration of new technologies without disrupting current operations' and 'we need more integration flexibility.' This directly supports the answer_claim about seamless integration without disrupting current operations and needing more integration flexibility."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Sarah Johnson on 2020-04-09 states: 'We've streamlined the implementation process to ensure rapid deployment. Typically, the transition is smooth, and our support team is on standby to assist with any challenges during the setup.' This directly supports the answer_claim about streamlined implementation for rapid deployment, smooth transitions, and support assisting during setup."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Aliou wanted seamless integration of new technologies without disrupting current operations \u2014 supported by evidence index 0 where Aliou explicitly states this challenge. (2) Sarah said implementation is streamlined for rapid, smooth deployment with support on standby \u2014 supported by evidence index 1 where Sarah states the implementation process is streamlined for rapid deployment, transitions are typically smooth, and the support team is on standby. Both parts of the gold_answer are faithfully represented by the cited evidence. The question asks about the 'initial discussion' (March 9 call) and 'later discussed terms' (April 9 call), which aligns with the chronological order of the two calls."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-94b4ae3f57d5e808",
+    "question": "For Skyline Robotics, what discount was mentioned for SecureFlow Suite in the final terms discussion, and which products did Nia say had competitive discounts when reviewing the proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount mentioned for SecureFlow Suite in the final terms discussion and which products Nia said had competitive discounts during the proposal review",
+        "relationship": "Both parts concern the same commercial issue: discount terms for Skyline Robotics' SecureFlow Suite proposal",
+        "reason": "This is a coherent comparison of discount/commercial terms for the same product and deal, not two unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyabIAC",
+                "fact": "Nia said the pricing seemed competitive, especially with the discounts offered across products like SecureFlow Suite and EcoPCB Creator.",
+                "why_other_call_cannot_supply_it": "The final terms call does not mention EcoPCB Creator or any competitive discounts across multiple products; it only confirms a 5% discount on SecureFlow Suite."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SycDIAS",
+                "fact": "Alejandro confirmed a 5% pricing discount on SecureFlow Suite in the final terms discussion.",
+                "why_other_call_cannot_supply_it": "The earlier proposal review call does not mention any specific discount percentage or final terms; it only notes that discounts were offered across products."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the specific discount mentioned in the final terms discussion (only present in the September call) and which products Nia said had competitive discounts when reviewing the proposal (only present in the May call). Each call provides a fact that the other does not, and both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyabIAC",
+                  "fact": "Nia said the pricing seemed competitive, especially with the discounts offered across products like SecureFlow Suite and EcoPCB Creator.",
+                  "why_other_call_cannot_supply_it": "The final terms call does not mention EcoPCB Creator or any competitive discounts across multiple products; it only confirms a 5% discount on SecureFlow Suite."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SycDIAS",
+                  "fact": "Alejandro confirmed a 5% pricing discount on SecureFlow Suite in the final terms discussion.",
+                  "why_other_call_cannot_supply_it": "The earlier proposal review call does not mention any specific discount percentage or final terms; it only notes that discounts were offered across products."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific discount mentioned in the final terms discussion (only present in the September call) and which products Nia said had competitive discounts when reviewing the proposal (only present in the May call). Each call provides a fact that the other does not, and both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SycDIAS",
+                "fact": "A 5% pricing discount on SecureFlow Suite was confirmed in the final terms discussion",
+                "why_other_call_cannot_supply_it": "The May proposal-review call contains no mention of the 5% discount; it only appears in the September final-terms call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyabIAC",
+                "fact": "Nia said the discounts offered across products like SecureFlow Suite and EcoPCB Creator seemed competitive when reviewing the proposal",
+                "why_other_call_cannot_supply_it": "The September final-terms call never mentions EcoPCB Creator or Nia's assessment of competitive discounts across products in the proposal"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a specific numerical discount (5%) stated only in the final-terms call, and Nia's earlier proposal-review comment about competitive discounts across SecureFlow Suite and EcoPCB Creator, which appears only in the May call. Neither call contains both facts, and they are not paraphrases of the same complaint."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SycDIAS",
+                  "fact": "A 5% pricing discount on SecureFlow Suite was confirmed in the final terms discussion",
+                  "why_other_call_cannot_supply_it": "The May proposal-review call contains no mention of the 5% discount; it only appears in the September final-terms call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyabIAC",
+                  "fact": "Nia said the discounts offered across products like SecureFlow Suite and EcoPCB Creator seemed competitive when reviewing the proposal",
+                  "why_other_call_cannot_supply_it": "The September final-terms call never mentions EcoPCB Creator or Nia's assessment of competitive discounts across products in the proposal"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a specific numerical discount (5%) stated only in the final-terms call, and Nia's earlier proposal-review comment about competitive discounts across SecureFlow Suite and EcoPCB Creator, which appears only in the May call. Neither call contains both facts, and they are not paraphrases of the same complaint."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the 5% discount on SecureFlow Suite from the final-terms call (Sep 5, Alejandro confirms 'a 5% pricing discount'), and (2) which products Nia said had competitive discounts during the proposal review (May 19, Nia states 'discounts offered across products like SecureFlow Suite and EcoPCB Creator'). Each fact is sourced exclusively from one call, both are verified verbatim in the transcripts, and the gold answer states exactly those facts with no unasked extras. The account (Skyline Robotics) and contact (Nia Adomako) are naturally referenced, the question is scoped to a specific business situation, and no locator preamble or answer leakage is present.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Nia Adomako the statement that pricing seemed competitive, especially with discounts offered across products like SecureFlow Suite and EcoPCB Creator. This matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Alejandro Ramirez stating 'we've ensured a 5% pricing discount to maintain cost-effectiveness while also offering flexibility for future updates and security enhancements.' This directly supports the claim of a 5% discount on SecureFlow Suite with flexibility for future updates and security enhancements. The context of the preceding line about SecureFlow Suite confirms the discount applies to that product."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states (1) a 5% discount on SecureFlow Suite was confirmed in the final terms discussion\u2014supported by evidence index 1 where Alejandro confirms the 5% pricing discount on SecureFlow Suite in the September 2023 call; and (2) Nia noted competitive discounts across SecureFlow Suite and EcoPCB Creator in the proposal\u2014supported by evidence index 0 where Nia explicitly says pricing seemed competitive with discounts across those two products. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-eac735e656802829",
+    "question": "For Mia Johnson's pre-owned vehicle proposal, what did Priya say about how the certified pre-owned program compares to competitors on reliability?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Priya said about how the certified pre-owned program compares to competitors on reliability, in the context of Mia Johnson's pre-owned vehicle proposal",
+        "relationship": "single coherent request: a competitive comparison tied to one proposal",
+        "reason": "This is one competitive-comparison lookup about the same proposal; no unrelated requests are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning statement Priya made during a follow-up on Mia Johnson's pre-owned vehicle proposal. The dialogue confirms Priya said each vehicle undergoes a thorough inspection by factory-trained technicians ensuring quality and reliability, while competitors cut corners for cost savings. The gold answer faithfully paraphrases this. The question is naturally scoped to a named customer and proposal, uses no artificial locator preamble, and a rep would plausibly want to recall how the CPO program was positioned against competitors. Single-call set, so both_sources_required is true by rule.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Priya Sharma explicitly states: 'Each vehicle undergoes a thorough inspection process by factory-trained technicians, ensuring high quality and reliability. While other dealerships might focus on cost savings by cutting some corners, we prioritize comprehensive checks to ensure reliability.' This directly supports the answer_claim about thorough inspection by factory-trained technicians ensuring reliability and competitors cutting corners for cost savings."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'Each vehicle undergoes a thorough inspection by factory-trained technicians, ensuring quality and reliability, unlike competitors who cut corners for cost savings.' The cited evidence (index 0) contains Priya's exact dialogue covering all these points: thorough inspection by factory-trained technicians, ensuring quality and reliability, and competitors (other dealerships) cutting corners for cost savings. The only minor difference is the gold_answer uses 'unlike competitors' while the quote says 'other dealerships might focus on cost savings by cutting some corners,' which is a faithful paraphrase. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-94eba0c7a216824b",
+    "question": "For Mohammed Khan's vehicle purchase, what topic did he ask to have covered in the scheduled Monday meeting?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The topic Mohammed Khan asked to have covered in the scheduled Monday meeting regarding his vehicle purchase.",
+        "relationship": "single lookup within one call",
+        "reason": "This is one coherent request: identifying the topic a customer requested for an upcoming meeting tied to his vehicle purchase. It is a single fact lookup, not multiple independent needs."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what topic Mohammed Khan requested for the Monday meeting. The transcript at 15:02:45 shows him saying 'going over the maintenance plans more thoroughly would be helpful, especially how they compare in the market,' which matches the gold answer exactly. The question is naturally phrased, scoped to a named customer and a specific scheduled meeting, and a rep would plausibly need this prep info. Single-call set, so both_sources_required is true. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes to Mohammed Khan the statement: 'I think going over the maintenance plans more thoroughly would be helpful, especially how they compare in the market.' This matches the answer_claim that he asked to go over maintenance plans more thoroughly, especially how they compare in the market. The speaker attribution, topic (maintenance plans), and qualifier (market comparison) are all explicitly present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Maintenance plans, especially how they compare in the market.' The single cited evidence item (index 0) contains a direct quote from Mohammed Khan requesting to go over maintenance plans more thoroughly, especially how they compare in the market. This fully supports the gold_answer. The context metadata confirms the account is Mohammed Khan and the opportunity relates to a vehicle purchase, aligning with the question's framing. All factual claims in the gold_answer are covered by the supplied evidence."
+      }
+    }
+  }
+]

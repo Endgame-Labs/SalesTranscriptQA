@@ -1,0 +1,400 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "29bee5bd76b06106f68bd01fa34602bbfa206976b5e89eb89f7a448d95d991af",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.45613366,
+  "results": [
+    {
+      "question_id": "b2b-single_call-298169f187dbda7d",
+      "question": "What pricing adjustment did Mei offer EcoWave for future bulk purchases, and what did Amelia identify as a key decision factor?",
+      "gold_answer": "Mei offered a larger discount on future bulk purchases; Amelia cited TechPulse's security compliance as a key decision factor.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003St34IAC",
+        "b2b:a05Wt000003SuyQIAS",
+        "b2b:a05Wt000003Sv1eIAC",
+        "b2b:a05Wt000003Sv6UIAS",
+        "b2b:a05Wt000003Sv9hIAC",
+        "b2b:a05Wt000003SvBJIA0",
+        "b2b:a05Wt000003SvCvIAK",
+        "b2b:a05Wt000003SvEXIA0",
+        "b2b:a05Wt000003SvG9IAK",
+        "b2b:a05Wt000003SvHlIAK",
+        "b2b:a05Wt000003SvJNIA0",
+        "b2b:a05Wt000003SvJOIA0",
+        "b2b:a05Wt000003SvKzIAK",
+        "b2b:a05Wt000003SvMbIAK",
+        "b2b:a05Wt000003SvODIA0",
+        "b2b:a05Wt000003SvPpIAK",
+        "b2b:a05Wt000003SvRRIA0",
+        "b2b:a05Wt000003SvT3IAK",
+        "b2b:a05Wt000003SvUfIAK",
+        "b2b:a05Wt000003SvWHIA0",
+        "b2b:a05Wt000003SvXtIAK",
+        "b2b:a05Wt000003SvZVIA0",
+        "b2b:a05Wt000003Svb7IAC",
+        "b2b:a05Wt000003SvcjIAC",
+        "b2b:a05Wt000003SveLIAS",
+        "b2b:a05Wt000003SvfxIAC",
+        "b2b:a05Wt000003SvhZIAS",
+        "b2b:a05Wt000003SvjBIAS",
+        "b2b:a05Wt000003SvknIAC",
+        "b2b:a05Wt000003SvmPIAS",
+        "b2b:a05Wt000003Svo1IAC",
+        "b2b:a05Wt000003SvpdIAC",
+        "b2b:a05Wt000003SvrFIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves Mei (Mei Lin) speaking with Amelia Rodriguez: the 2021-08-09 negotiation call. Mei offered a larger discount on future bulk purchases, and Amelia identified TechPulse's commitment to security compliance/data security as a key decision factor. Other 'Mei' calls (Mei Chen) involve Aarav Kumar, not Amelia, so they don't compete.",
+        "answers": [
+          {
+            "answer": "Mei Lin offered to work toward a larger discount on future bulk purchases (beyond the current 10-15% discount on key products like EcoPCB Creator and AI Cirku-Tech), and Amelia identified data security — TechPulse's commitment to security compliance — as a key factor in EcoWave's decision-making.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvPpIAK",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2021-08-09T16:01:59] Mei Lin: Sure thing. As outlined in the proposal, with the current quantities, you're getting a 10-15% discount on key products like EcoPCB Creator and AI Cirku-Tech. Does that align with your budget expectations?\n[2021-08-09T16:02:15] Amelia Rodriguez: It's a good starting point. However, given our extended purchase plans, could we consider slightly more flexible terms?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvPpIAK",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2021-08-09T16:04:10] Mei Lin: Right. While user experience is vital, our focus on robust security might interest you, especially with data protection becoming more paramount."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names 'Mei' offering a pricing adjustment for 'future bulk purchases' to EcoWave, and 'Amelia' identifying a key decision factor. The only call featuring both Mei (Mei Lin) and Amelia Rodriguez discussing bulk purchase pricing adjustments is b2b:a05Wt000003SvPpIAK (2021-08-09, TechPulse-EcoWave Strategic Collaboration). In that call, Mei Lin offers a larger discount on future bulk purchases (line 10), and Amelia Rodriguez identifies TechPulse's commitment to security compliance as a key factor in their decision-making (line 17). No other call in the dataset features both Mei and Amelia together discussing these specific topics.",
+        "answers": [
+          {
+            "answer": "Mei Lin offered EcoWave a larger discount on future bulk purchases as a pricing adjustment. Amelia Rodriguez identified TechPulse's commitment to security compliance as a key factor in their decision-making.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvPpIAK",
+                "line_start": 7,
+                "line_end": 11,
+                "quote": "[2021-08-09T16:01:42] Amelia Rodriguez: That's great to hear. Could we discuss some pricing adjustments? We're looking at bulk purchases and wondered how that might affect costs.\n[2021-08-09T16:01:59] Mei Lin: Sure thing. As outlined in the proposal, with the current quantities, you're getting a 10-15% discount on key products like EcoPCB Creator and AI Cirku-Tech. Does that align with your budget expectations?\n[2021-08-09T16:02:15] Amelia Rodriguez: It's a good starting point. However, given our extended purchase plans, could we consider slightly more flexible terms?\n[2021-08-09T16:02:29] Mei Lin: We definitely want to ensure both sides are happy, Amelia. Let's see how we can work around your requirements. Would achieving a larger discount on future bulk purchases meet your expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvPpIAK",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2021-08-09T16:04:25] Amelia Rodriguez: Data security is indeed a priority for us. TechPulse's commitment to security compliance is a key factor in our decision-making."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Mei offered a larger discount on future bulk purchases and that Amelia identified TechPulse's commitment to security compliance as a key decision factor. The reference likewise covers both requested facts: the larger discount on future bulk purchases and security compliance as the key decision factor. Answer A includes additional context (current 10-15% discount, specific product names) but these are extras that do not affect agreement. All requested facts are present and consistent across both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-c2919ae033676291",
+      "question": "What concern did Oliveira Santos raise about Quantum Circuits' support for Onyx Security Systems?",
+      "gold_answer": "Quantum Circuits offers strong initial setup assistance but their ongoing support is lacking.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrcOIAS",
+        "b2b:a05Wt000003SrhIIAS",
+        "b2b:a05Wt000003StRLIA0",
+        "b2b:a05Wt000003Stw2IAC",
+        "b2b:a05Wt000003SuDgIAK",
+        "b2b:a05Wt000003Suk1IAC",
+        "b2b:a05Wt000003SvheIAC",
+        "b2b:a05Wt000003SwLyIAK",
+        "b2b:a05Wt000003SxbMIAS",
+        "b2b:a05Wt000003SySYIA0",
+        "b2b:a05Wt000003SzdCIAS",
+        "b2b:a05Wt000003SzgPIAS",
+        "b2b:a05Wt000003T0npIAC",
+        "b2b:a05Wt000003T1iCIAS",
+        "b2b:a05Wt000003T1zvIAC",
+        "b2b:a05Wt000003T26MIAS",
+        "b2b:a05Wt000003T2JJIA0",
+        "b2b:a05Wt000003T2j6IAC",
+        "b2b:a05Wt000003T2khIAC",
+        "b2b:a05Wt000003T32QIAS",
+        "b2b:a05Wt000003T3K9IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 9,
+            "normalized_end": 10
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about a concern regarding Quantum Circuits' support. Only the 2022-01-03 call (Tariq Hassan / Onyx Security Enhancement Partnership) has Oliveira Santos directly raising a support concern about Quantum Circuits — strong initial setup assistance but lacking ongoing support. Other Quantum Circuits mentions concern pricing/flexibility or implementation timelines, which are different topics not named by the question.",
+        "answers": [
+          {
+            "answer": "Oliveira Santos said that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StRLIA0",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2022-01-03T14:18:20] Oliveira Santos: Got it. I'm particularly interested in how that adaptability extends to real-world applications and support, particularly as industries like ours evolve. We've noticed that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Oliveira Santos raised materially different concerns about Quantum Circuits Inc.'s support for Onyx Security Systems across multiple calls. In one call (2022-01-03), the concern was that Quantum Circuits' ongoing support is lacking despite strong initial setup assistance. In another call (2022-02-17), the concern was about delays in Quantum Circuits' implementation timeline. In a third call (2021-12-28), the concern was about longer-than-expected integration timelines. The question does not specify which concern or which call, so these are competing complete answers on different topics.",
+        "answers": [
+          {
+            "answer": "Oliveira Santos raised the concern that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking. Tariq Hassan responded by stating that TechPulse prides itself on a comprehensive support structure, maintaining a close partnership from implementation through continuous assistance to ensure solutions adapt to ongoing and future needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StRLIA0",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2022-01-03T14:18:20] Oliveira Santos: Got it. I'm particularly interested in how that adaptability extends to real-world applications and support, particularly as industries like ours evolve. We've noticed that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking.\n[2022-01-03T14:18:50] Tariq Hassan: That's valuable insight. At TechPulse, we pride ourselves on our comprehensive support structure. From the implementation process to continuous assistance, we maintain a close partnership to ensure our solutions adapt to your ongoing and future needs."
+              }
+            ]
+          },
+          {
+            "answer": "Oliveira Santos raised the concern that they had run into delays with Quantum Circuits Inc's implementation timeline, which put them behind schedule. Tariq Hassan responded by stating that TechPulse aims to avoid such issues, with a streamlined implementation process ensuring a quicker rollout to get them up and running as soon as possible.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzgPIAS",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2022-02-17T15:02:30] Oliveira Santos: That's reassuring, Tariq. We did run into some delays previously with Quantum Circuits Inc's implementation timeline. It put us a bit behind schedule.\n[2022-02-17T15:02:45] Tariq Hassan: Yes, we aim to avoid such issues. Our implementation process is streamlined, ensuring a quicker rollout to get you up and running asap."
+              }
+            ]
+          },
+          {
+            "answer": "Oliveira Santos raised the concern that Quantum Circuits Inc., their previous provider, had longer-than-expected integration timelines, which was less than ideal. Tariq Hassan responded by noting he has encountered that feedback often, and that TechPulse clients appreciate how their solutions integrate effortlessly into existing workflows, eliminating common delays.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2j6IAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2021-12-28T10:33:00] Oliveira Santos: That's encouraging to hear. Implementation speed is critical for us. Quantum Circuits Inc., our previous provider, had longer-than-expected integration timelines, which was less than ideal.\n[2021-12-28T10:33:30] Tariq Hassan: Yes, I’ve encountered that feedback often. Our clients tell us they appreciate how our solutions integrate effortlessly into their existing workflows, eliminating the common delays."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-multi_call-94b4ae3f57d5e808",
+      "question": "For Skyline Robotics, what discount was mentioned for SecureFlow Suite in the final terms discussion, and which products did Nia say had competitive discounts when reviewing the proposal?",
+      "gold_answer": "A 5% discount on SecureFlow Suite was confirmed in the final terms discussion; earlier Nia noted competitive discounts across SecureFlow Suite and EcoPCB Creator in the proposal.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7iIAC",
+        "b2b:a05Wt000003StENIA0",
+        "b2b:a05Wt000003StRHIA0",
+        "b2b:a05Wt000003SthPIAS",
+        "b2b:a05Wt000003StnrIAC",
+        "b2b:a05Wt000003Su3zIAC",
+        "b2b:a05Wt000003SuaGIAS",
+        "b2b:a05Wt000003SuvCIAS",
+        "b2b:a05Wt000003Sv4vIAC",
+        "b2b:a05Wt000003SvCxIAK",
+        "b2b:a05Wt000003SvHpIAK",
+        "b2b:a05Wt000003Svo3IAC",
+        "b2b:a05Wt000003Sw0wIAC",
+        "b2b:a05Wt000003SwnLIAS",
+        "b2b:a05Wt000003Sx6hIAC",
+        "b2b:a05Wt000003SxcwIAC",
+        "b2b:a05Wt000003SxgDIAS",
+        "b2b:a05Wt000003Sy18IAC",
+        "b2b:a05Wt000003Sy5yIAC",
+        "b2b:a05Wt000003Sy7aIAC",
+        "b2b:a05Wt000003SyApIAK",
+        "b2b:a05Wt000003SyCQIA0",
+        "b2b:a05Wt000003SyKUIA0",
+        "b2b:a05Wt000003SyM6IAK",
+        "b2b:a05Wt000003SyabIAC",
+        "b2b:a05Wt000003SyacIAC",
+        "b2b:a05Wt000003SycDIAS",
+        "b2b:a05Wt000003SydpIAC",
+        "b2b:a05Wt000003SyfRIAS",
+        "b2b:a05Wt000003Syh3IAC",
+        "b2b:a05Wt000003SyifIAC",
+        "b2b:a05Wt000003SykHIAS",
+        "b2b:a05Wt000003SykIIAS",
+        "b2b:a05Wt000003SykJIAS",
+        "b2b:a05Wt000003SyltIAC",
+        "b2b:a05Wt000003SyluIAC",
+        "b2b:a05Wt000003SynVIAS",
+        "b2b:a05Wt000003SynWIAS",
+        "b2b:a05Wt000003Syp7IAC",
+        "b2b:a05Wt000003Syp8IAC",
+        "b2b:a05Wt000003SyqjIAC",
+        "b2b:a05Wt000003SysLIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Both parts resolve within Nia Adomako's opportunity (Skyline Robotics EDA Partnership, 006Wt000007B8FyIAK). The final terms discussion is the 2023-09-05 call where Alejandro confirms partnership terms and states a 5% pricing discount tied to SecureFlow Suite; the proposal review is the 2023-05-19 call where Nia says pricing was competitive 'with the discounts offered across products like SecureFlow Suite and EcoPCB Creator.' No other call mentions a SecureFlow Suite discount in a final terms discussion (the Andrés negotiation mentions 10% for DesignWave Automation, a different product).",
+        "answers": [
+          {
+            "answer": "A 5% discount was mentioned for SecureFlow Suite in the final terms discussion, and Nia said the discounts across SecureFlow Suite and EcoPCB Creator were competitive when reviewing the proposal.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyCQIA0",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2022-08-22T14:02:05] Priya Choudhury: Absolutely. PulseSim Pro, for instance, offers excellent integration capabilities, ensuring seamless operation with your current systems. Plus, its robust simulation features aid in optimizing design and reducing time to market."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyabIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-05-19T10:22:05] Alejandro Ramirez: We focus on flexible partnership terms to accommodate evolving business needs. Did the pricing structure in the proposal make sense, or do you have any questions about that?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks two specific facts: (1) the discount mentioned for SecureFlow Suite in the final terms discussion, and (2) which products Nia said had competitive discounts when reviewing the proposal. The final terms discussion for Skyline Robotics involving SecureFlow Suite is call b2b:a05Wt000003SycDIAS (2023-09-05, opportunity 'Skyline Robotics EDA Partnership', contact Nia Adomako, rep Alejandro Ramirez), where a 5% discount on SecureFlow Suite is explicitly stated. The proposal review where Nia mentions competitive discounts is call b2b:a05Wt000003SyabIAC (2023-05-19, same opportunity, same contact/rep), where Nia names SecureFlow Suite and EcoPCB Creator as having competitive discounts.",
+        "answers": [
+          {
+            "answer": "In the final terms discussion (2023-09-05), Alejandro Ramirez stated a 5% pricing discount on SecureFlow Suite. When reviewing the proposal (2023-05-19), Nia Adomako said that SecureFlow Suite and EcoPCB Creator had competitive discounts.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SycDIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-09-05T14:02:06] Alejandro Ramirez: And, we've ensured a 5% pricing discount to maintain cost-effectiveness while also offering flexibility for future updates and security enhancements."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyabIAC",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2023-05-19T10:22:40] Nia Adomako: The pricing seemed competitive, especially with the discounts offered across products like SecureFlow Suite and EcoPCB Creator. It’s reassuring."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two facts: (1) a 5% discount on SecureFlow Suite in the final terms discussion, and (2) Nia identified SecureFlow Suite and EcoPCB Creator as having competitive discounts during the proposal review. The reference likewise confirms the 5% SecureFlow Suite discount and Nia's note about competitive discounts across SecureFlow Suite and EcoPCB Creator. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-94eba0c7a216824b",
+      "question": "For Mohammed Khan's vehicle purchase, what topic did he ask to have covered in the scheduled Monday meeting?",
+      "gold_answer": "Maintenance plans, especially how they compare in the market.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLPOIA4",
+        "b2c:a05Ws000005SNF0IAO",
+        "b2c:a05Ws000005SOvqIAG",
+        "b2c:a05Ws000005SPK4IAO",
+        "b2c:a05Ws000005SPbnIAG",
+        "b2c:a05Ws000005SQeGIAW",
+        "b2c:a05Ws000005SRAUIA4",
+        "b2c:a05Ws000005SRaMIAW",
+        "b2c:a05Ws000005SRfBIAW",
+        "b2c:a05Ws000005SRyaIAG",
+        "b2c:a05Ws000005SSOJIA4",
+        "b2c:a05Ws000005SSo9IAG",
+        "b2c:a05Ws000005STM0IAO",
+        "b2c:a05Ws000005STcBIAW",
+        "b2c:a05Ws000005SUOXIA4",
+        "b2c:a05Ws000005SWJsIAO",
+        "b2c:a05Ws000005SWuyIAG",
+        "b2c:a05Ws000005SYokIAG",
+        "b2c:a05Ws000005SZw6IAG",
+        "b2c:a05Ws000005Sa0vIAC",
+        "b2c:a05Ws000005SaLsIAK",
+        "b2c:a05Ws000005SavLIAS",
+        "b2c:a05Ws000005Sb3OIAS",
+        "b2c:a05Ws000005Sb50IAC",
+        "b2c:a05Ws000005Sb6cIAC",
+        "b2c:a05Ws000005SbTBIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call contains a scheduled Monday meeting where Mohammed was asked if anything specific should be covered: the 2022-02-10 call with Kwesi Mensah (Modern & Reliable Vehicle Purchase opportunity). There he asked that maintenance plans be covered, especially how they compare in the market. No other call mentions a Monday meeting.",
+        "answers": [
+          {
+            "answer": "Mohammed Khan asked that maintenance plans be covered in the scheduled Monday (11 AM) meeting — specifically going over the maintenance plans more thoroughly, especially how they compare in the market.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPbnIAG",
+                "line_start": 15,
+                "line_end": 18,
+                "quote": "[2022-02-10T15:02:25] Mohammed Khan: That sounds good. I'm available this coming Monday at 11 AM. Would that work?\n[2022-02-10T15:02:35] Kwesi Mensah: Monday at 11 AM works perfectly. I'll send you a calendar invite with the meeting link shortly. Would you like me to cover anything specific in the meeting?\n[2022-02-10T15:02:45] Mohammed Khan: I think going over the maintenance plans more thoroughly would be helpful, especially how they compare in the market."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about a 'scheduled Monday meeting' for Mohammed Khan's vehicle purchase. Only one call in the dataset contains a Monday meeting being scheduled: call b2c:a05Ws000005SPbnIAG (2022-02-10, Kwesi Mensah, opportunity 'Modern & Reliable Vehicle Purchase'). In that call, Mohammed explicitly says he is available 'this coming Monday at 11 AM' (line 15), and when asked if there's anything specific to cover, he requests going over the maintenance plans more thoroughly, especially how they compare in the market (line 17). No other call in the dataset references a Monday meeting.",
+        "answers": [
+          {
+            "answer": "Mohammed Khan asked to have the maintenance plans covered more thoroughly in the scheduled Monday meeting, especially how they compare in the market.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPbnIAG",
+                "line_start": 15,
+                "line_end": 18,
+                "quote": "[2022-02-10T15:02:25] Mohammed Khan: That sounds good. I'm available this coming Monday at 11 AM. Would that work?\n[2022-02-10T15:02:35] Kwesi Mensah: Monday at 11 AM works perfectly. I'll send you a calendar invite with the meeting link shortly. Would you like me to cover anything specific in the meeting?\n[2022-02-10T15:02:45] Mohammed Khan: I think going over the maintenance plans more thoroughly would be helpful, especially how they compare in the market."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same requested topic: maintenance plans, specifically how they compare in the market, to be covered in the scheduled Monday meeting. The reference states the same core fact ('Maintenance plans, especially how they compare in the market'). Answer A adds the time (11 AM) and slightly more phrasing, but these are extras that do not change the substance. All three align on the requested fact."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1333,6 +1333,24 @@
       "question_text": "In NexGen Biotech's evaluation, how did Yasmine describe Quantum Circuits' solutions, and how did she characterize the pricing of the vendors she's compared?",
       "reason": "Necessity gate exclusion with reviewer errors: DeepSeek retains extra type field after two format repairs and falsely attributes similar-pricing customer statement to first call. First similar-pricing statement is Sofia, not Yasmine; Yasmine characterization with support/customization appears in second. GLM accepts; preserve raw failure, no factual-error claim.",
       "review_report": "reports/hourly-quality/full-20260915-18-review.md"
+    },
+    {
+      "question_id": "b2b-single_call-c2919ae033676291",
+      "question_text": "What concern did Oliveira Santos raise about Quantum Circuits' support for Onyx Security Systems?",
+      "reason": "Conservative scope exclusion: Qwen broadens support to implementation/integration delays in Feb 17/Dec 28 calls; GLM selects explicit ongoing-support complaint Jan 3. Verified alternatives, but they may be outside support wording. No demonstrated factual contradiction.",
+      "review_report": "reports/hourly-quality/full-20260915-19-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-fef883e864af1f2d",
+      "question_text": "For DigitalWave Solutions, what integration concern did Aliou Diallo raise in the initial discussion, and how quickly did Sarah say the products could be integrated when they later discussed terms?",
+      "reason": "Conservative necessity exclusion with source-attribution error: DeepSeek says April terms call contains Aliou initial no-disruption concern, which is actually March line 5. April asks speed and Sarah gives rapid smooth deployment. GLM accepts. Generic integration overlap exists, but reject reason misattributes speaker/source.",
+      "review_report": "reports/hourly-quality/full-20260915-19-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-eac735e656802829",
+      "question_text": "For Mia Johnson's pre-owned vehicle proposal, what did Priya say about how the certified pre-owned program compares to competitors on reliability?",
+      "reason": "Manual modality hold: source says other dealerships might cut corners for cost savings; gold states competitors who cut corners as fact. Inspection/reliability details are supported, but uncertainty is lost.",
+      "review_report": "reports/hourly-quality/full-20260915-19-review.md"
     }
   ],
   "retained_difficult_questions": [
