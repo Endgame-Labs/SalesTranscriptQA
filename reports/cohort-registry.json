@@ -1387,6 +1387,24 @@
       "question_text": "What did Jack Green say he's most interested in when comparing the BMW X5 M to competitors, and what maintenance package did Andreas recommend?",
       "reason": "Coherence gate: The question bundles two unrelated information needs (customer's comparison priorities vs. a maintenance package recommendation). Sharing the same call and account is not enough to connect them.",
       "review_report": "reports/hourly-quality/full-20260915-21-review.md"
+    },
+    {
+      "question_id": "b2b-single_call-b448175b79452eef",
+      "question_text": "What products and license quantities did Mohammed Rahman from Kuala Lumpur Tech Designs agree to purchase, and what was the total cost?",
+      "reason": "Purchase agreement premise is uncited: quote contains proposed quantities and budget ceiling at line 14, while agreement is at lines 16-17. No exact total is provided; gold correctly preserves within-budget wording but question asks total cost.",
+      "review_report": "reports/hourly-quality/full-20260915-22-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-cfebb1c8659743e0",
+      "question_text": "Across the two calls with Kwasi Mensah at InspireTech Consulting, what competitor-related objection did he raise about NanoDesign Systems, and what flexibility concern did he raise in the later value-proposition discussion?",
+      "reason": "Conservative coherence hold: The competitor objection and the flexibility concern are distinct business issues, not the same issue discussed across calls; being about the same customer (Kwasi Mensah at InspireTech) is insufficient to connect them. The two concerns both involve workflow flexibility, so this rejection is debatable; preserve the existing gate without claiming a factual defect.",
+      "review_report": "reports/hourly-quality/full-20260915-22-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-74e351083a826d52",
+      "question_text": "What is Ava Brown's main concern about the vehicle she's considering, and how did Kaito address it?",
+      "reason": "Scope ambiguity: February 19 reliability/performance concern receives maintenance-plan response; February 23 tech-heavy-car reliability concern receives extended-warranty response. Both Kaito/Ava calls fit the question. GLM multiple, Qwen determinate; directly verified earlier full dialogue. Hidden-cost remarks are additional context, not necessary to establish the competing answer.",
+      "review_report": "reports/hourly-quality/full-20260915-22-review.md"
     }
   ],
   "retained_difficult_questions": [

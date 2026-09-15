@@ -1,0 +1,378 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "316f98e9072d54e04affc45af614e8f18e6641b60392931fc93e1ed67ec34875",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.32423914,
+  "results": [
+    {
+      "question_id": "b2b-single_call-98b60be440b22328",
+      "question": "What did Alice Smith at Precision Circuit Systems say she needs from DesignWave Automation, and what was the quoted total for four units?",
+      "gold_answer": "She needs a solution that integrates with existing tools and streamlines/improves design process efficiency; four units were quoted at $2,000 total ($500 each).",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SwdrIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call exists; Alice states her needs (integration with existing tools, improved efficiency, streamlined design processes) and the quoted total for four units is $2000.",
+        "answers": [
+          {
+            "answer": "Alice Smith said she needs a solution to streamline design processes that integrates with their existing tools and improves efficiency; Kimberly Lee quoted $500 per unit, totaling $2000 for four units.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwdrIAC",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-10-10T10:00:46] Alice Smith: Sure, we're aiming to streamline our design processes. We need a solution that can integrate with our existing tools and improve our efficiency."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwdrIAC",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2023-10-10T10:01:40] Alice Smith: That's good to know. Could you walk me through the pricing for four units?\n[2023-10-10T10:01:52] Kimberly Lee: Of course, Alice. Each unit of DesignWave Automation is priced at $500. For four units, that would bring your total to $2000. This is well within your specified budget of $2153, right?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is exactly one call in the supplied history involving Alice Smith at Precision Circuit Systems discussing DesignWave Automation. The call clearly states what she needs and the quoted total for four units.",
+        "answers": [
+          {
+            "answer": "Alice Smith said she needs a solution to streamline their design processes, one that can integrate with their existing tools and improve efficiency. The quoted total for four units of DesignWave Automation was $2,000 (each unit at $500).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwdrIAC",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-10-10T10:00:46] Alice Smith: Sure, we're aiming to streamline our design processes. We need a solution that can integrate with our existing tools and improve our efficiency."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwdrIAC",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-10-10T10:01:52] Kimberly Lee: Of course, Alice. Each unit of DesignWave Automation is priced at $500. For four units, that would bring your total to $2000. This is well within your specified budget of $2153, right?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Alice Smith needs a solution to streamline design processes that integrates with existing tools and improves efficiency, and both give the quoted total as $2,000 for four units ($500 each). The reference covers the same two requested facts: the integration/streamlining/efficiency need and the $2,000 total for four units at $500 each. All requested commitments are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-434fb8deae0462ff",
+      "question": "For SecureWise Solutions, what did Marcus Lund highlight as a key priority around deployment in the pre-qualification chat, and how did Aarav Sharma later position NanoDesign on flexibility and customizability?",
+      "gold_answer": "Marcus valued rapid deployment given cybersecurity agility needs; Aarav said NanoDesign's solutions often lack the flexibility to satisfy specific use cases, while TechPulse offers robust customizability.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgPIAS",
+        "b2b:a05Wt000003SrNBIA0",
+        "b2b:a05Wt000003SrcWIAS",
+        "b2b:a05Wt000003SsLeIAK",
+        "b2b:a05Wt000003SsLfIAK",
+        "b2b:a05Wt000003SvUpIAK",
+        "b2b:a05Wt000003SxQ5IAK",
+        "b2b:a05Wt000003Sxd3IAC",
+        "b2b:a05Wt000003T0SvIAK",
+        "b2b:a05Wt000003T0ZHIA0",
+        "b2b:a05Wt000003T1FEIA0",
+        "b2b:a05Wt000003T284IAC",
+        "b2b:a05Wt000003T285IAC",
+        "b2b:a05Wt000003T2BJIA0",
+        "b2b:a05Wt000003T2JPIA0",
+        "b2b:a05Wt000003T2OBIA0",
+        "b2b:a05Wt000003T2OCIA0",
+        "b2b:a05Wt000003T2klIAC",
+        "b2b:a05Wt000003T2mLIAS",
+        "b2b:a05Wt000003T2zEIAS",
+        "b2b:a05Wt000003T342IAC",
+        "b2b:a05Wt000003T3aIIAS",
+        "b2b:a05Wt000003T3s2IAC",
+        "b2b:a05Wt000003T43JIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The 'pre-qualification chat' is unambiguously the 2023-08-09 Aarav Sharma call, where Aarav explicitly says they are chatting 'before our qualification call tomorrow.' There Marcus Lund highlights rapid deployment as a key priority. The later NanoDesign discussion on flexibility/customizability occurs in the 2023-08-10 Aarav Sharma call, where Marcus asks how NanoDesign compares and Aarav responds. Other Marcus Lund calls are with different reps or not pre-qualification chats.",
+        "answers": [
+          {
+            "answer": "In the pre-qualification chat (2023-08-09), Marcus Lund highlighted rapid deployment as a key priority, saying he had heard about TechPulse's rapid deployment and that it is something SecureWise definitely values given the agility required in cybersecurity. Later (2023-08-10), when Marcus asked how competitor NanoDesign compares on flexibility and customizability, Aarav Sharma positioned NanoDesign's solutions as often lacking the flexibility necessary to satisfy specific use cases, while contrasting TechPulse's solutions as offering robust customizability tailored to SecureWise's unique technological needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcWIAS",
+                "line_start": 2,
+                "line_end": 8,
+                "quote": "[2023-08-09T10:01:10] Aarav Sharma: Things are great here, thank you for asking. I'm glad we've got some time to chat before our qualification call tomorrow. I wanted to touch base on a few things.\n[2023-08-09T10:01:30] Marcus Lund: Sure, sounds good. Where would you like to start?\n[2023-08-09T10:01:50] Aarav Sharma: First off, we've been reviewing how you're currently using our CryptSecure Core and SecureData Nexus. We're tailoring our presentation to highlight the specific benefits and enhancements these products can bring to SecureWise.\n[2023-08-09T10:02:15] Marcus Lund: That's great to hear. We're always looking for ways to optimize our processes, especially with CryptSecure Core since it's integral to our cybersecurity framework.\n[2023-08-09T10:02:35] Aarav Sharma: Absolutely, and that's where our new developments with the SecureFlow Suite and its integration capabilities come into play. Our streamlined implementation process is designed to ensure rapid deployment into your existing systems. We've had very positive feedback about this from other clients.\n[2023-08-09T10:02:55] Marcus Lund: I did hear about your rapid deployment. It's something we definitely value considering the agility required in cybersecurity."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s2IAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-08-10T10:31:55] Marcus Lund: That's good to hear because our previous experiences haven’t been as smooth with integration. But I'm curious, how do our competitors like NanoDesign compare in terms of flexibility and customizability?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Marcus Lund, the 'pre-qualification chat,' and Aarav Sharma positioning NanoDesign on flexibility/customizability. Among the calls, only b2b:a05Wt000003SrcWIAS (2023-08-09) is explicitly a pre-qualification chat (Aarav says 'before our qualification call tomorrow'), and Marcus highlights rapid deployment as a key priority. Only b2b:a05Wt000003T3s2IAC (2023-08-10) contains Aarav Sharma directly positioning against NanoDesign on flexibility and customizability. Both calls involve Marcus Lund and Aarav Sharma under the same opportunity (TechPulse-SecureWise Strategic Collaboration).",
+        "answers": [
+          {
+            "answer": "In the pre-qualification chat (2023-08-09), Marcus Lund highlighted rapid deployment as a key priority, stating: 'I did hear about your rapid deployment. It's something we definitely value considering the agility required in cybersecurity.' In the subsequent call (2023-08-10), when Marcus asked how NanoDesign compares in terms of flexibility and customizability, Aarav Sharma positioned against NanoDesign by saying: 'We've had feedback that NanoDesign's solutions often lack the flexibility necessary to satisfy specific use cases. Our solutions, on the other hand, offer robust customizability tailored to your unique technological needs.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcWIAS",
+                "line_start": 6,
+                "line_end": 8,
+                "quote": "[2023-08-09T10:02:35] Aarav Sharma: Absolutely, and that's where our new developments with the SecureFlow Suite and its integration capabilities come into play. Our streamlined implementation process is designed to ensure rapid deployment into your existing systems. We've had very positive feedback about this from other clients.\n[2023-08-09T10:02:55] Marcus Lund: I did hear about your rapid deployment. It's something we definitely value considering the agility required in cybersecurity."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s2IAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-08-10T10:31:55] Marcus Lund: That's good to hear because our previous experiences haven’t been as smooth with integration. But I'm curious, how do our competitors like NanoDesign compare in terms of flexibility and customizability?\n[2023-08-10T10:32:15] Aarav Sharma: Great question, Marcus. We’ve had feedback that NanoDesign’s solutions often lack the flexibility necessary to satisfy specific use cases. Our solutions, on the other hand, offer robust customizability tailored to your unique technological needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two requested facts: (1) Marcus Lund highlighted rapid deployment as a key priority, tied to the agility required in cybersecurity, and (2) Aarav Sharma positioned NanoDesign as often lacking the flexibility to satisfy specific use cases while contrasting TechPulse's robust customizability tailored to SecureWise's needs. The reference likewise covers both commitments—rapid deployment valued for cybersecurity agility, and NanoDesign's lack of flexibility versus TechPulse's robust customizability. Wording differences (direct quotes vs. paraphrase) do not affect agreement, and no requested fact is missing or substituted in any of the three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-051f979d65339566",
+      "question": "What objection did Aiden Fisher raise about competitors, and how did Nadia respond?",
+      "gold_answer": "Aiden said competitors' online pre-owned vehicle sections are easier to navigate; Nadia said they're always improving user experience and highlighted the certified pre-owned program's quality and reliability.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMqnIAG",
+        "b2c:a05Ws000005SPVIIA4",
+        "b2c:a05Ws000005SQCsIAO",
+        "b2c:a05Ws000005SQmQIAW",
+        "b2c:a05Ws000005SQpaIAG",
+        "b2c:a05Ws000005SRaNIAW",
+        "b2c:a05Ws000005SRgsIAG",
+        "b2c:a05Ws000005SRybIAG",
+        "b2c:a05Ws000005SS4zIAG",
+        "b2c:a05Ws000005SSjPIAW",
+        "b2c:a05Ws000005SSmcIAG",
+        "b2c:a05Ws000005SSrTIAW",
+        "b2c:a05Ws000005SSt1IAG",
+        "b2c:a05Ws000005ST2hIAG",
+        "b2c:a05Ws000005ST7ZIAW",
+        "b2c:a05Ws000005ST7aIAG",
+        "b2c:a05Ws000005SUQCIA4",
+        "b2c:a05Ws000005SUZxIAO",
+        "b2c:a05Ws000005SVEEIA4",
+        "b2c:a05Ws000005SVFoIAO",
+        "b2c:a05Ws000005SVMGIA4",
+        "b2c:a05Ws000005SWv0IAG",
+        "b2c:a05Ws000005SY8mIAG",
+        "b2c:a05Ws000005SYf5IAG",
+        "b2c:a05Ws000005SZ3GIAW",
+        "b2c:a05Ws000005SZKzIAO",
+        "b2c:a05Ws000005SZT4IAO",
+        "b2c:a05Ws000005SZWIIA4",
+        "b2c:a05Ws000005SZsvIAG",
+        "b2c:a05Ws000005Sa7PIAS",
+        "b2c:a05Ws000005SaFSIA0",
+        "b2c:a05Ws000005SaH6IAK",
+        "b2c:a05Ws000005SayZIAS",
+        "b2c:a05Ws000005Sb3PIAS",
+        "b2c:a05Ws000005SbRaIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Nadia Gonzalez appears in exactly one call (b2c:a05Ws000005SRaNIAW), where Aiden raises a single competitor-related objection: competitors' online pre-owned vehicle sections are easier to navigate. Nadia's response is unique and unambiguous.",
+        "answers": [
+          {
+            "answer": "Aiden Fisher objected that some competitors' online pre-owned vehicle sections are much easier to navigate than AutoElite's. Nadia Gonzalez responded by thanking him for the feedback, saying they're always looking to improve their user experience, and pointing to AutoElite's certified pre-owned program, which is designed to ensure quality and reliability—especially important for budget-conscious buyers.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRaNIAW",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-10-16T11:47:05] Aiden Fisher: Those services sound great. I have come across some competitors whose online pre-owned vehicle sections are much easier to navigate though."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Nadia as the rep who responded. Only one call in the dataset features Nadia (Nadia Gonzalez, call b2c:a05Ws000005SRaNIAW). In that call, Aiden raises a competitor objection about online pre-owned vehicle sections being easier to navigate, and Nadia responds by acknowledging the feedback and highlighting their certified pre-owned program's quality and reliability.",
+        "answers": [
+          {
+            "answer": "Aiden Fisher objected that some competitors' online pre-owned vehicle sections are much easier to navigate than AutoElite's. Nadia Gonzalez responded by appreciating the feedback, stating they are always looking to improve their user experience, and emphasizing that their certified pre-owned program is designed to ensure quality and reliability, which is especially important for budget-conscious buyers.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRaNIAW",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2020-10-16T11:47:05] Aiden Fisher: Those services sound great. I have come across some competitors whose online pre-owned vehicle sections are much easier to navigate though.\n[2020-10-16T11:47:20] Nadia Gonzalez: I appreciate the feedback, Aiden. We're always looking to improve our user experience. Our certified pre-owned program is designed to ensure quality and reliability, which is especially important for budget-conscious buyers."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same objection (competitors' online pre-owned vehicle sections are easier to navigate than AutoElite's) and the same response from Nadia (thanking/appreciating feedback, always looking to improve user experience, and highlighting the certified pre-owned program's quality and reliability for budget-conscious buyers). The reference covers both requested facts: the objection about easier navigation and Nadia's response about improving user experience and the certified pre-owned program's quality and reliability. The reference omits the 'budget-conscious buyers' detail and the explicit thank-you, but these are minor elaborations; the core requested facts (the objection and the response) are fully covered."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-74e351083a826d52",
+      "question": "What is Ava Brown's main concern about the vehicle she's considering, and how did Kaito address it?",
+      "gold_answer": "Reliability of tech-heavy cars; Kaito pointed to AutoElite's extended warranties with better terms and comprehensive service centers for ongoing support.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLpsIAG",
+        "b2c:a05Ws000005SNRAIA4",
+        "b2c:a05Ws000005SO9RIAW",
+        "b2c:a05Ws000005SOW4IAO",
+        "b2c:a05Ws000005SPqIIAW",
+        "b2c:a05Ws000005SPqJIAW",
+        "b2c:a05Ws000005SR2WIAW",
+        "b2c:a05Ws000005SRTxIAO",
+        "b2c:a05Ws000005SRlkIAG",
+        "b2c:a05Ws000005SSMjIAO",
+        "b2c:a05Ws000005STiiIAG",
+        "b2c:a05Ws000005SUBkIAO",
+        "b2c:a05Ws000005SV2tIAG",
+        "b2c:a05Ws000005SWn3IAG",
+        "b2c:a05Ws000005SYDdIAO",
+        "b2c:a05Ws000005SYNSIA4",
+        "b2c:a05Ws000005SZCwIAO",
+        "b2c:a05Ws000005SZXuIAO",
+        "b2c:a05Ws000005Sa2UIAS",
+        "b2c:a05Ws000005Sak7IAC",
+        "b2c:a05Ws000005Sak8IAC",
+        "b2c:a05Ws000005Sbg8IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Kaito Nakamura appears on two calls with Ava Brown. In the 2021-02-19 discovery call, Ava's main concerns were hidden costs (past experiences with unclear pricing) and dependable post-purchase service/reliability; Kaito addressed these with transparent pricing (no hidden fees) and the AutoElite Comprehensive Maintenance Plan with factory-trained service centers. In the 2021-02-23 follow-up, Ava's main concern was reliability of tech-heavy cars; Kaito addressed it with extended warranties offering better, clearer terms than the industry plus service center support. These are materially different concern/response pairs, and the question does not specify which call.",
+        "answers": [
+          {
+            "answer": "Ava's main concern was reliability — she'd heard stories about tech-heavy cars having issues and wanted to avoid headaches. Kaito addressed it by highlighting AutoElite's extended warranties, which offer better and clearer terms than many in the industry, providing extra peace of mind, and by pointing to customer testimonials about comprehensive service centers and post-purchase support.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRTxIAO",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2021-02-23T16:00:50] Kaito Nakamura: Absolutely, we can definitely cater to that. From our last conversation, I gathered you had some concerns about the reliability and technology features in today's models. Let’s tackle those today.\n[2021-02-23T16:01:05] Ava Brown: Yeah, reliability is key for me. I've heard stories about tech-heavy cars having some issues, and I’d like to avoid any headaches."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SRTxIAO",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2021-02-23T16:01:50] Kaito Nakamura: Of course! Our customer testimonials often highlight our service excellence, especially our comprehensive service centers. They really appreciate the support they receive post-purchase, which I know is important to you."
+              }
+            ]
+          },
+          {
+            "answer": "Ava's main concerns were hidden costs (she'd had past experiences with unclear final prices) and needing dependable service since she relies heavily on her car. Kaito addressed these with AutoElite's transparent pricing approach — what you see is what you get, with no hidden fees — and by describing service centers with factory-trained technicians and genuine parts, plus the AutoElite Comprehensive Maintenance Plan to keep the vehicle running smoothly long-term.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOW4IAO",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2021-02-19T14:32:50] Ava Brown: That sounds fantastic! I’ve also been reading about your transparent pricing. How does it benefit me compared to other dealerships?\n[2021-02-19T14:33:10] Kaito Nakamura: Great question, Ava! Our transparent pricing approach ensures that what you see is what you get, with no hidden fees. Many of our customers appreciate this as it simplifies the purchase process significantly compared to others."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOW4IAO",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-02-19T14:34:10] Ava Brown: Good to know! Could you explain more about what makes your service centers different?\n[2021-02-19T14:34:35] Kaito Nakamura: Our service centers are equipped with factory-trained technicians and genuine parts to ensure your vehicle stays in top condition. Customers often note how customer-friendly and efficient our service is compared to others like High-End Autos Co."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOW4IAO",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2021-02-19T14:35:20] Ava Brown: Mainly that it’s reliable and maintains its performance over time. Those are key factors for me."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names 'Kaito' as the person who addressed Ava's concern. Only two calls feature Kaito Nakamura (b2c:a05Ws000005SOW4IAO and b2c:a05Ws000005SRTxIAO), both under the same opportunity 'Ava Brown - Luxury & Technological Car Deal'. In the second call (2021-02-23), Kaito explicitly references concerns from their prior conversation and Ava articulates her main concern about reliability of tech-heavy vehicles. Kaito addresses it with extended warranties, service center excellence, and customer testimonials. This is the clearest concern/response exchange with Kaito.",
+        "answers": [
+          {
+            "answer": "Ava Brown's main concern is the reliability of technology-heavy vehicles—she has heard stories about tech-heavy cars having issues and wants to avoid headaches. Kaito addressed this by explaining that AutoElite Motors' extended warranties offer better and clearer terms than many in the industry, providing extra peace of mind. He also highlighted customer testimonials that emphasize service excellence and comprehensive service centers, assuring her that post-purchase support doesn't end once she drives the car off the lot. He further noted that competitors like High-End Autos Co. struggle to scale their service offerings, which could affect long-term service quality, whereas AutoElite's service centers are built to support vehicle performance and reliability for years to come.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRTxIAO",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2021-02-23T16:00:50] Kaito Nakamura: Absolutely, we can definitely cater to that. From our last conversation, I gathered you had some concerns about the reliability and technology features in today's models. Let’s tackle those today.\n[2021-02-23T16:01:05] Ava Brown: Yeah, reliability is key for me. I've heard stories about tech-heavy cars having some issues, and I’d like to avoid any headaches.\n[2021-02-23T16:01:20] Kaito Nakamura: I completely understand. At AutoElite Motors, our extended warranties offer better and clearer terms than many in the industry, which can really provide that extra peace of mind for you."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SRTxIAO",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2021-02-23T16:01:50] Kaito Nakamura: Of course! Our customer testimonials often highlight our service excellence, especially our comprehensive service centers. They really appreciate the support they receive post-purchase, which I know is important to you.\n[2021-02-23T16:02:05] Ava Brown: Very important, indeed. I need to know the support doesn't end once I drive the car off the lot."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SRTxIAO",
+                "line_start": 12,
+                "line_end": 15,
+                "quote": "[2021-02-23T16:02:50] Kaito Nakamura: Great question! Both models really meet the industry's expectations for modern technological features. However, I've heard some concerns from customers about competitors, like High-End Autos Co., not being able to scale their service offerings well enough, which could affect long-term service quality.\n[2021-02-23T16:03:05] Ava Brown: That's a good point. I definitely want reliable support over time.\n[2021-02-23T16:03:20] Kaito Nakamura: Exactly, and that's where we believe we have a strong edge. Our service centers are built with the goal of supporting your vehicle's performance and reliability for years to come."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SRTxIAO",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2021-02-23T16:03:50] Kaito Nakamura: Transparency is something we take very seriously. We want you to feel confident and assured throughout your ownership experience."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1,0 +1,389 @@
+[
+  {
+    "question_id": "b2b-single_call-98b60be440b22328",
+    "question": "What did Alice Smith at Precision Circuit Systems say she needs from DesignWave Automation, and what was the quoted total for four units?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Alice Smith at Precision Circuit Systems said she needs from DesignWave Automation, and the quoted total for four units",
+        "relationship": "requirement and corresponding quote for the same deal",
+        "reason": "The question asks for the customer's stated need and the quote addressing that same need within one sales interaction\u2014a coherent requirement-plus-quote request, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Alice Smith's stated need (integrate with existing tools, streamline/improve design process efficiency) and the quoted total for four units ($2,000 at $500 each). Both are directly stated in the dialogue. The answer matches precisely with no unasked extras. The question is naturally worded, scoped to a named contact and company, and represents a plausible rep/account-manager need. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Alice Smith explicitly states: 'We need a solution that can integrate with our existing tools and improve our efficiency.' and 'we're aiming to streamline our design processes.' This directly supports the answer_claim about needing integration with existing tools and improving efficiency/streamlining design processes."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Kimberly Lee explicitly states: 'Each unit of DesignWave Automation is priced at $500. For four units, that would bring your total to $2000.' This directly supports the answer_claim about $500 per unit and $2,000 total for four units."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Alice Smith needs a solution that integrates with existing tools and streamlines/improves design process efficiency, and that four units were quoted at $2,000 total ($500 each). Evidence index 0 confirms Alice Smith's stated needs (integrate with existing tools, improve efficiency, streamline design processes). Evidence index 1 confirms the pricing ($500 per unit, $2,000 total for four units). The context metadata confirms Alice Smith is at Precision Circuit Systems. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-b448175b79452eef",
+    "question": "What products and license quantities did Mohammed Rahman from Kuala Lumpur Tech Designs agree to purchase, and what was the total cost?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The products and license quantities Mohammed Rahman of Kuala Lumpur Tech Designs agreed to purchase, plus the total cost",
+        "relationship": "single coherent purchase summary from one call",
+        "reason": "Products, quantities, and total cost describe one commercial agreement, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for products, quantities, and total cost agreed upon by Mohammed Rahman. The dialogue confirms two DevVision IDE licenses, four IntegrGuard Secure, two CloudLink Designer packages, and a total within the $3637 budget. The gold answer states all requested facts precisely without unasked extras. The customer and company are clearly identified, making the scope adequate. Wording is natural and a rep would plausibly need this order-confirmation detail. Single-call question so both_sources_required is set true by rule.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Monique Dubois explicitly states 'two licenses of DevVision IDE, four of IntegrGuard Secure, and two CloudLink Designer packages, the total would be within your budget of $3637.' This directly supports the answer_claim regarding the specific products, quantities, and the total being within the $3637 budget. The context metadata confirms the lead is Mohammed Rahman from Kuala Lumpur Tech Designs, matching the question's subject."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains the exact product names, quantities (two DevVision IDE, four IntegrGuard Secure, two CloudLink Designer), and the budget figure ($3637) stated in the gold_answer. The context metadata confirms the participant is Mohammed Rahman from Kuala Lumpur Tech Designs. The gold_answer's phrasing 'totaling within his $3637 budget' is a faithful paraphrase of the quote's 'the total would be within your budget of $3637.' All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-cfebb1c8659743e0",
+    "question": "Across the two calls with Kwasi Mensah at InspireTech Consulting, what competitor-related objection did he raise about NanoDesign Systems, and what flexibility concern did he raise in the later value-proposition discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A competitor-related objection about NanoDesign Systems from one call, and a separate flexibility concern from a later value-proposition discussion in another call",
+        "relationship": "two independent fact lookups joined only by the same contact/account across two calls",
+        "reason": "The competitor objection and the flexibility concern are distinct business issues, not the same issue discussed across calls; being about the same customer (Kwasi Mensah at InspireTech) is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The Feb 18 call contains Kwasi's NanoDesign Systems objection (forced process adaptation), and the Feb 24 call contains his flexibility concern about competitors vs. TechPulse's standardized offerings. Each source contributes an exclusive requested fact. The question is naturally phrased, scoped to a named contact/account, and the gold answer states precisely the two requested facts without extras.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Kwasi Mensah the statement that 'alternative solutions, like NanoDesign Systems, required us to adapt our processes rather than the software fitting in seamlessly.' This matches the answer_claim exactly, preserving speaker, company name, and the nature of the objection."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Kwasi Mensah saying 'competitors offer more flexibility' and asking 'How do you handle specific client needs?' This supports the claim that he noted competitors offer more flexibility and questioned how TechPulse handles specific client needs. The call metadata confirms this is the later call (2024-02-24 vs. 2024-02-18)."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) NanoDesign Systems forced InspireTech to adapt their processes instead of the software fitting their workflows\u2014directly supported by evidence index 0; (2) in the later call he said competitors offer more flexibility than TechPulse's standardized offerings\u2014supported by evidence index 1, which shows Kwasi stating competitors offer more flexibility and questioning how TechPulse handles specific client needs. The phrase 'standardized offerings' is a reasonable inference from the contrast between 'competitors offer more flexibility' and the question about handling specific client needs, though the exact word 'standardized' is not in the quote. However, the core factual claims (competitor objection about NanoDesign, flexibility concern in the later call) are both substantiated by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-434fb8deae0462ff",
+    "question": "For SecureWise Solutions, what did Marcus Lund highlight as a key priority around deployment in the pre-qualification chat, and how did Aarav Sharma later position NanoDesign on flexibility and customizability?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Marcus Lund's key deployment priority in the pre-qualification chat and Aarav Sharma's later positioning of NanoDesign on flexibility and customizability",
+        "relationship": "requirement and the vendor's response to that same requirement",
+        "reason": "Both parts address the same business issue: the customer's deployment/flexibility priority and how the vendor positioned the product to meet it, forming a coherent requirement-and-response question across calls."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrcWIAS",
+                "fact": "Marcus Lund valued rapid deployment due to the agility required in cybersecurity.",
+                "why_other_call_cannot_supply_it": "The second call does not mention rapid deployment or Marcus's priority on it; it focuses on flexibility and competitor comparisons."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s2IAC",
+                "fact": "Aarav Sharma stated that NanoDesign's solutions often lack the flexibility to satisfy specific use cases, while TechPulse offers robust customizability.",
+                "why_other_call_cannot_supply_it": "The first call does not discuss NanoDesign or flexibility/customizability comparisons; it only covers deployment speed and integration."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: Marcus's deployment priority from the pre-qualification chat and Aarav's positioning of NanoDesign on flexibility from the later call. Each fact is only present in its respective call, and neither call contains the other's key fact, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrcWIAS",
+                  "fact": "Marcus Lund highlighted rapid deployment as a key priority due to cybersecurity agility needs.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention rapid deployment as a priority; it focuses on flexibility and integration concerns."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3s2IAC",
+                  "fact": "Aarav Sharma stated that NanoDesign's solutions often lack the flexibility to satisfy specific use cases, while TechPulse offers robust customizability.",
+                  "why_other_call_cannot_supply_it": "The first call does not discuss NanoDesign or compare flexibility and customizability; it only covers deployment and support."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: Marcus's deployment priority from the pre-qualification chat and Aarav's positioning of NanoDesign from a later call. Each fact is unique to its respective call and cannot be derived from the other, as the first call lacks any mention of NanoDesign or flexibility, and the second call lacks any mention of rapid deployment as a priority."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrcWIAS",
+                  "fact": "Marcus Lund valued rapid deployment due to the agility required in cybersecurity.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention rapid deployment or Marcus's priority on it; it focuses on flexibility and competitor comparisons."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3s2IAC",
+                  "fact": "Aarav Sharma stated that NanoDesign's solutions often lack the flexibility to satisfy specific use cases, while TechPulse offers robust customizability.",
+                  "why_other_call_cannot_supply_it": "The first call does not discuss NanoDesign or flexibility/customizability comparisons; it only covers deployment speed and integration."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: Marcus's deployment priority from the pre-qualification chat and Aarav's positioning of NanoDesign on flexibility from the later call. Each fact is only present in its respective call, and neither call contains the other's key fact, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrcWIAS",
+                "fact": "Marcus Lund highlighted rapid deployment as a key priority given the agility required in cybersecurity",
+                "why_other_call_cannot_supply_it": "The second call does not mention rapid deployment as Marcus's priority; it covers AI, flexibility, and competitor comparison instead."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s2IAC",
+                "fact": "Aarav Sharma stated that NanoDesign's solutions often lack the flexibility to satisfy specific use cases, while TechPulse offers robust customizability",
+                "why_other_call_cannot_supply_it": "The first call contains no discussion of NanoDesign or flexibility/customizability comparison."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: Marcus's deployment priority from the pre-qualification chat (only in call 1) and Aarav's later positioning of NanoDesign on flexibility/customizability (only in call 2). Neither call supplies the other's fact."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrcWIAS",
+                  "fact": "Marcus Lund highlighted rapid deployment as a key priority given the agility required in cybersecurity",
+                  "why_other_call_cannot_supply_it": "The second call does not mention rapid deployment as Marcus's priority; it covers AI, flexibility, and competitor comparison instead."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3s2IAC",
+                  "fact": "Aarav Sharma stated that NanoDesign's solutions often lack the flexibility to satisfy specific use cases, while TechPulse offers robust customizability",
+                  "why_other_call_cannot_supply_it": "The first call contains no discussion of NanoDesign or flexibility/customizability comparison."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: Marcus's deployment priority from the pre-qualification chat (only in call 1) and Aarav's later positioning of NanoDesign on flexibility/customizability (only in call 2). Neither call supplies the other's fact."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (pre-qualification chat) contains Marcus Lund's statement that rapid deployment is valued 'considering the agility required in cybersecurity,' which the gold answer correctly captures. Call 2 (qualification call) contains Aarav's positioning that 'NanoDesign's solutions often lack the flexibility necessary to satisfy specific use cases' while TechPulse offers 'robust customizability,' matching the gold answer. Each source contributes an exclusive requested fact. The question identifies the account (SecureWise Solutions), the contact (Marcus Lund), and the rep (Aarav Sharma) naturally without artificial locator preambles. The intent is competitive positioning (NanoDesign vs TechPulse on flexibility/customizability) combined with a deployment priority. No answer leakage, no unsupported causality, no unbound questions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Marcus Lund stating 'I did hear about your rapid deployment. It's something we definitely value considering the agility required in cybersecurity.' This matches the answer_claim that Marcus valued rapid deployment given cybersecurity agility needs."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Aarav Sharma explicitly stating 'NanoDesign's solutions often lack the flexibility necessary to satisfy specific use cases. Our solutions, on the other hand, offer robust customizability tailored to your unique technological needs.' This directly supports the answer_claim about NanoDesign lacking flexibility and TechPulse offering robust customizability."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Marcus Lund highlighted rapid deployment as a key priority tied to cybersecurity agility needs in the pre-qualification chat. Evidence 1 confirms Aarav Sharma positioned NanoDesign as lacking flexibility for specific use cases while positioning TechPulse (referred to as 'Our solutions') as offering robust customizability. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-051f979d65339566",
+    "question": "What objection did Aiden Fisher raise about competitors, and how did Nadia respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitor-related objection raised by Aiden Fisher and Nadia's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single coherent objection-and-response request about the same issue (competitor concerns) in one call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection raised by Aiden Fisher and Nadia's rebuttal, a realistic sales-QA need. The gold answer accurately captures Aiden's remark that competitors' online pre-owned sections are easier to navigate and Nadia's two-part response (continuous UX improvement plus certified pre-owned quality/reliability). No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true by convention.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Aiden Fisher stating that competitors' online pre-owned vehicle sections are 'much easier to navigate,' which matches the answer_claim that Aiden noted competitors' online pre-owned sections are easier to navigate."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Nadia saying 'I appreciate the feedback' and 'We're always looking to improve our user experience' and 'Our certified pre-owned program is designed to ensure quality and reliability,' which supports the claim that Nadia appreciated the feedback and cited the certified pre-owned program's quality and reliability."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Aiden said competitors' online pre-owned vehicle sections are easier to navigate \u2014 supported by index 0; (2) Nadia said they're always improving user experience \u2014 supported by index 1 ('We're always looking to improve our user experience'); (3) Nadia highlighted the certified pre-owned program's quality and reliability \u2014 supported by index 1 ('Our certified pre-owned program is designed to ensure quality and reliability'). All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-74e351083a826d52",
+    "question": "What is Ava Brown's main concern about the vehicle she's considering, and how did Kaito address it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Ava Brown's main concern about the vehicle she is considering and how Kaito responded to it",
+        "relationship": "single coherent objection-and-response exchange",
+        "reason": "This is one objection and its response within the same sales conversation, a natural and coherent sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about Ava Brown's main concern and how Kaito addressed it. The transcript clearly shows Ava's concern is reliability of tech-heavy cars ('I've heard stories about tech-heavy cars having some issues'). Kaito addresses it by pointing to AutoElite's extended warranties with better/clearer terms and comprehensive service centers for ongoing support. The gold answer accurately captures both elements. The question is naturally worded, scoped to a specific customer interaction, and a rep/AM would plausibly want to know a customer's key concern and how it was handled. Single-call question so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Ava Brown explicitly states 'reliability is key for me' and expresses worry about 'tech-heavy cars having some issues,' directly supporting the claim that her main concern is reliability of tech-heavy cars."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Kaito Nakamura states that AutoElite Motors' 'extended warranties offer better and clearer terms than many in the industry' to provide 'extra peace of mind,' directly supporting the claim about extended warranties with better terms."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "Kaito Nakamura states 'Our service centers are built with the goal of supporting your vehicle's performance and reliability for years to come,' directly supporting the claim about comprehensive service centers for ongoing support."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states Ava's concern is 'Reliability of tech-heavy cars' (supported by index 0) and that Kaito addressed it by pointing to 'AutoElite's extended warranties with better terms' (supported by index 1) and 'comprehensive service centers for ongoing support' (supported by index 2). All factual claims in the gold answer are covered by the supplied citations."
+      }
+    }
+  }
+]
