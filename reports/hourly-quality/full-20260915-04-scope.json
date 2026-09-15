@@ -1,0 +1,240 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "80ca4ffdeafdf7749363bae9cef36e8673a9406757927ac336e0c8b8d8fd6889",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.3395042,
+  "results": [
+    {
+      "question_id": "b2c-single_call-a02a8b71606f6c96",
+      "question": "What budget and timeline did Alice Sharp give for the family-friendly SUV fleet expansion?",
+      "gold_answer": "About $82,000 total, finalized by early March.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SM9EIAW",
+        "b2c:a05Ws000005SNEzIAO",
+        "b2c:a05Ws000005SOFyIAO",
+        "b2c:a05Ws000005SOfgIAG",
+        "b2c:a05Ws000005SPNIIA4",
+        "b2c:a05Ws000005SPeyIAG",
+        "b2c:a05Ws000005SPezIAG",
+        "b2c:a05Ws000005SQ0rIAG",
+        "b2c:a05Ws000005SQ9bIAG",
+        "b2c:a05Ws000005SQMfIAO",
+        "b2c:a05Ws000005SQZUIA4",
+        "b2c:a05Ws000005SQb4IAG",
+        "b2c:a05Ws000005SSEgIAO",
+        "b2c:a05Ws000005SSUsIAO",
+        "b2c:a05Ws000005SSrRIAW",
+        "b2c:a05Ws000005SSsyIAG",
+        "b2c:a05Ws000005STFZIA4",
+        "b2c:a05Ws000005STaeIAG",
+        "b2c:a05Ws000005STvWIAW",
+        "b2c:a05Ws000005STykIAG",
+        "b2c:a05Ws000005STylIAG",
+        "b2c:a05Ws000005SU8UIAW",
+        "b2c:a05Ws000005SU8VIAW",
+        "b2c:a05Ws000005SUBfIAO",
+        "b2c:a05Ws000005SUQBIA4",
+        "b2c:a05Ws000005SUrZIAW",
+        "b2c:a05Ws000005SVHKIA4",
+        "b2c:a05Ws000005SVJ1IAO",
+        "b2c:a05Ws000005SVXTIA4",
+        "b2c:a05Ws000005SVcKIAW",
+        "b2c:a05Ws000005SVsXIAW",
+        "b2c:a05Ws000005SWADIA4",
+        "b2c:a05Ws000005SWn1IAG",
+        "b2c:a05Ws000005SXHWIA4",
+        "b2c:a05Ws000005SXMNIA4",
+        "b2c:a05Ws000005SYGvIAO",
+        "b2c:a05Ws000005SYS8IAO",
+        "b2c:a05Ws000005SZrCIAW",
+        "b2c:a05Ws000005SZuSIAW",
+        "b2c:a05Ws000005Sa7NIAS",
+        "b2c:a05Ws000005SaCBIA0",
+        "b2c:a05Ws000005SaTvIAK",
+        "b2c:a05Ws000005SafDIAS",
+        "b2c:a05Ws000005SawxIAC",
+        "b2c:a05Ws000005SbGHIA0",
+        "b2c:a05Ws000005SbHtIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call discusses the family-friendly SUV fleet expansion with an explicit budget and timeline: the 2023-01-30 call on the 'Family-Friendly SUV and CPO Program Expansion' opportunity, where Chantal Dubois asks about budget and decision-making timeline and Alice answers. No other call mentions a fleet expansion with budget/timeline figures.",
+        "answers": [
+          {
+            "answer": "Alice Sharp said the budget is roughly $82,000 in total, and she would like the fleet expansion finalized by early March, if possible.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNEzIAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-01-30T13:45:44] Chantal Dubois: Great! Let's start by discussing your budget and decision-making timeline for this project. Understanding this can help us tailor the best vehicle options and financing solutions for you."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about budget and timeline for the 'family-friendly SUV fleet expansion.' Only one opportunity matches this description: 'Family-Friendly SUV and CPO Program Expansion' (006Ws00000ALqfOIAT). In call b2c:a05Ws000005SNEzIAO, Chantal Dubois explicitly asks Alice about her budget and decision-making timeline for the fleet expansion project, and Alice provides both figures. The earlier call on the same opportunity (b2c:a05Ws000005SQ0rIAG) discusses the fleet expansion but does not include specific budget or timeline figures from Alice.",
+        "answers": [
+          {
+            "answer": "Alice Sharp stated that her budget is roughly $82,000 in total, and she would like to have the fleet expansion finalized by early March.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNEzIAO",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2023-01-30T13:45:44] Chantal Dubois: Great! Let's start by discussing your budget and decision-making timeline for this project. Understanding this can help us tailor the best vehicle options and financing solutions for you.\n[2023-01-30T13:45:55] Alice Sharp: Sure, so, our budget is roughly around $82,000 in total. As for the timeline, we'd like to have this finalized by early March, if possible."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same budget (~$82,000 total) and the same timeline (finalized by early March). The reference also covers both requested facts: the ~$82,000 budget and the early March deadline. Minor wording differences (e.g., 'if possible' in answer_a) do not change the substantive facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-95218afabf2129a7",
+      "question": "What discounts did AutoElite offer Ethan King on the 2023 Subaru Outback and extended warranty, and on financing?",
+      "gold_answer": "5% discount on the 2023 Subaru Outback and extended warranty, plus 10% off flexible financing.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOuIIAW",
+        "b2c:a05Ws000005SPGoIAO",
+        "b2c:a05Ws000005SPGpIAO",
+        "b2c:a05Ws000005SQEVIA4",
+        "b2c:a05Ws000005SQHoIAO",
+        "b2c:a05Ws000005SQOHIA4",
+        "b2c:a05Ws000005SQclIAG",
+        "b2c:a05Ws000005SQuQIAW",
+        "b2c:a05Ws000005SRllIAG",
+        "b2c:a05Ws000005SSEiIAO",
+        "b2c:a05Ws000005SSTDIA4",
+        "b2c:a05Ws000005SSxuIAG",
+        "b2c:a05Ws000005ST4OIAW",
+        "b2c:a05Ws000005ST7dIAG",
+        "b2c:a05Ws000005STFbIAO",
+        "b2c:a05Ws000005STijIAG",
+        "b2c:a05Ws000005SUExIAO",
+        "b2c:a05Ws000005SUbSIAW",
+        "b2c:a05Ws000005SUl5IAG",
+        "b2c:a05Ws000005SUusIAG",
+        "b2c:a05Ws000005SVHRIA4",
+        "b2c:a05Ws000005SVsZIAW",
+        "b2c:a05Ws000005SW29IAG",
+        "b2c:a05Ws000005SWN8IAO",
+        "b2c:a05Ws000005SWOiIAO",
+        "b2c:a05Ws000005SWYQIA4",
+        "b2c:a05Ws000005SWv3IAG",
+        "b2c:a05Ws000005SXmGIAW",
+        "b2c:a05Ws000005SXnmIAG",
+        "b2c:a05Ws000005SYomIAG",
+        "b2c:a05Ws000005SYonIAG",
+        "b2c:a05Ws000005SZpcIAG",
+        "b2c:a05Ws000005SaVYIA0",
+        "b2c:a05Ws000005SadcIAC",
+        "b2c:a05Ws000005SafGIAS",
+        "b2c:a05Ws000005Sak9IAC",
+        "b2c:a05Ws000005SaovIAC",
+        "b2c:a05Ws000005SbBTIA0",
+        "b2c:a05Ws000005SbEiIAK",
+        "b2c:a05Ws000005SbMlIAK",
+        "b2c:a05Ws000005SbhkIAC",
+        "b2c:a05Ws000005SbmXIAS",
+        "b2c:a05Ws000005Sbo9IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (b2c:a05Ws000005SOuIIAW, 2020-10-20, Andreas Johansson, Elite Autumn Fleet Procurement) discusses discounts on the 2023 Subaru Outback, extended warranty, and financing; no other call mentions the Subaru Outback or competing discount figures.",
+        "answers": [
+          {
+            "answer": "AutoElite offered Ethan King a 5% discount on the 2023 Subaru Outback and a 5% discount on the extended warranty plan, plus a 10% discount on their flexible financing solutions.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOuIIAW",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-10-20T10:46:10] Andreas Johansson: Of course, Ethan. Flexibility is something we pride ourselves on. To give you a quick overview, we're offering a 5% discount on the 2023 Subaru Outback and the extended warranty plan. Plus, there's a 10% discount on our flexible financing solutions."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOuIIAW",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-10-20T10:49:50] Andreas Johansson: Great question, Ethan. Our extended warranty plans come at a 5% discount and include comprehensive coverage beyond the standard warranty period. Tailored servicing options are also included to ensure minimal downtime for your vehicles."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about discounts on the 2023 Subaru Outback, extended warranty, and financing offered to Ethan King by AutoElite. Only one call (b2c:a05Ws000005SOuIIAW, 2020-10-20, Andreas Johansson, Elite Autumn Fleet Procurement) contains explicit discount figures for all three items. A second call (b2c:a05Ws000005SbMlIAK, 2020-10-13) confirms the 5% extended warranty discount but does not introduce any different or additional discount figures. No other call mentions discounts on the 2023 Subaru Outback or financing.",
+        "answers": [
+          {
+            "answer": "AutoElite offered Ethan King a 5% discount on the 2023 Subaru Outback and the extended warranty plan, and a 10% discount on flexible financing solutions.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOuIIAW",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-10-20T10:46:10] Andreas Johansson: Of course, Ethan. Flexibility is something we pride ourselves on. To give you a quick overview, we're offering a 5% discount on the 2023 Subaru Outback and the extended warranty plan. Plus, there's a 10% discount on our flexible financing solutions."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOuIIAW",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-10-20T10:49:50] Andreas Johansson: Great question, Ethan. Our extended warranty plans come at a 5% discount and include comprehensive coverage beyond the standard warranty period. Tailored servicing options are also included to ensure minimal downtime for your vehicles."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SbMlIAK",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-10-13T11:05:25] Ethan King: They did. The 5% discount on the Extended Warranty Plan was a pleasant surprise, and it aligns well with our long-term fleet maintenance goals."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state a 5% discount on the 2023 Subaru Outback, a 5% discount on the extended warranty, and a 10% discount on flexible financing. The reference likewise covers all three requested facts: 5% on the Outback and extended warranty, and 10% off flexible financing. All requested commitments are present and consistent across both answers and the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

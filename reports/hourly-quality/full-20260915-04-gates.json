@@ -1,0 +1,368 @@
+[
+  {
+    "question_id": "b2b-multi_call-ee08e9357f12fc97",
+    "question": "What scalability and integration challenges did Ahmed Tariq of Precision Circuit Systems raise in the initial discovery call, and what discounted totals were quoted for the AI Cirku-Tech and CircuitAI Innovator in the negotiation call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Scalability/integration challenges from a discovery call, plus discounted totals for two products from a negotiation call",
+        "relationship": "independent fact lookups joined across calls",
+        "reason": "The discovery-call concerns (scalability/integration) and the negotiation-call pricing for two products address different business issues; the shared account does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall discovery-stage challenges and negotiation-stage pricing for a named account/contact. Call 1 exclusively supplies the scalability/integration challenges (complex circuit integration, seamless design-to-production transition); Call 2 exclusively supplies the discounted totals ($5,723.89 for AI Cirku-Tech, $4,949.91 for CircuitAI Innovator, both 10% discount). All gold-answer claims are verbatim-supported by the dialogues. No locator preamble, no answer leakage, no unsupported causality, and no unasked extras are bundled in."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Ahmed Tariq explicitly states: (1) scalability issues with in-house and third-party tools as projects grow, and (2) primary challenges being 'the integration of more complex circuits and ensuring that the transition from design to production is as seamless as possible.' This directly supports the answer_claim about scalability issues and integration/design-to-production challenges."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Diego Sanchez's quoted dialogue explicitly states: AI Cirku-Tech with a 10% discount on 12 units totals $5723.89, and 'The same discount applies to the CircuitAI Innovator, coming to $4949.91.' This directly supports the answer_claim regarding both discounted totals and the 10% discount on 12 units."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Ahmed cited scalability issues with complex circuit integration and seamless design-to-production transition, and that AI Cirku-Tech was quoted at $5,723.89 and CircuitAI Innovator at $4,949.91, both with a 10% discount. Evidence index 0 confirms Ahmed's scalability and integration challenges verbatim. Evidence index 1 confirms both dollar amounts ($5723.89 and $4949.91) and the 10% discount. All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-7d07ac92dd739971",
+    "question": "Across the discovery and follow-up calls with Zhang Rui at BioPulse MedTech, how did he position TechPulse against competitors on security and innovation in each conversation?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Zhang Rui positioned TechPulse against competitors on security and innovation in each of the discovery and follow-up calls",
+        "relationship": "Same business issue (competitive positioning on security and innovation) tracked across two related calls",
+        "reason": "The question compares the same topic\u2014TechPulse's competitive positioning on security and innovation\u2014across a discovery call and its follow-up, forming one coherent multi-call request rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0m7IAC",
+                "fact": "In the follow-up call, Zhang Rui specifically compared TechPulse to Quantum Circuits Inc., stating that Quantum offers strong security but seems less integrated with future tech trends, whereas TechPulse is clearly ahead.",
+                "why_other_call_cannot_supply_it": "The discovery call does not mention Quantum Circuits Inc. or any specific competitor by name; it only makes a general statement about competitors lacking innovative edge."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2MUIA0",
+                "fact": "In the discovery call, Zhang Rui stated that competitors are strong on security but lack the innovative edge, while TechPulse balances innovation and compliance.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not contain this general statement about competitors; it focuses on a specific competitor (Quantum Circuits Inc.) and does not mention the balance of innovation and compliance."
+              }
+            ],
+            "reason": "The question asks how Zhang Rui positioned TechPulse against competitors on security and innovation in each conversation. The two calls contain distinct statements: the discovery call has a general comparison (competitors strong on security but lack innovation, TechPulse balances both), while the follow-up call names a specific competitor (Quantum Circuits Inc.) and adds a new detail about integration with future tech trends. These are not mere paraphrases; they are different in specificity and content, and each is necessary to answer the question fully for each conversation."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks how Zhang Rui positioned TechPulse against competitors on security and innovation in each conversation. The discovery call (b2b:a05Wt000003T0m7IAC) contains the substantive comparison: 'Quantum Circuits Inc. offer strong security features. However, Quantum seems less integrated with future tech trends, whereas your solutions are clearly ahead.' The follow-up call (b2b:a05Wt000003T2MUIA0) only repeats the same general positioning: 'competitors are strong on security, but they lack the innovative edge we need. Your solutions seem to balance both - innovation and compliance.' This is a paraphrase of the same fact, not a distinct new outcome or detail. Therefore, one call suffices to answer the question, and the two calls do not provide meaningfully different requested information."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0m7IAC",
+                  "fact": "In the follow-up call, Zhang Rui specifically compared TechPulse to Quantum Circuits Inc., stating that Quantum offers strong security but seems less integrated with future tech trends, whereas TechPulse is clearly ahead.",
+                  "why_other_call_cannot_supply_it": "The discovery call does not mention Quantum Circuits Inc. or any specific competitor by name; it only makes a general statement about competitors lacking innovative edge."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2MUIA0",
+                  "fact": "In the discovery call, Zhang Rui stated that competitors are strong on security but lack the innovative edge, while TechPulse balances innovation and compliance.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not contain this general statement about competitors; it focuses on a specific competitor (Quantum Circuits Inc.) and does not mention the balance of innovation and compliance."
+                }
+              ],
+              "reason": "The question asks how Zhang Rui positioned TechPulse against competitors on security and innovation in each conversation. The two calls contain distinct statements: the discovery call has a general comparison (competitors strong on security but lack innovation, TechPulse balances both), while the follow-up call names a specific competitor (Quantum Circuits Inc.) and adds a new detail about integration with future tech trends. These are not mere paraphrases; they are different in specificity and content, and each is necessary to answer the question fully for each conversation."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2MUIA0",
+                "fact": "In the discovery call, Zhang Rui said competitors are strong on security but lack the innovative edge, while TechPulse balances innovation and compliance.",
+                "why_other_call_cannot_supply_it": "The follow-up call (Mar 16) contains no such general competitor comparison; it only references a prior analysis and names a specific competitor, so the discovery positioning exists only in the Mar 7 call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0m7IAC",
+                "fact": "In the follow-up call, Zhang Rui stated that Quantum Circuits Inc. offers strong security but seems less integrated with future tech trends, whereas TechPulse's solutions are clearly ahead.",
+                "why_other_call_cannot_supply_it": "The discovery call (Mar 7) never names Quantum Circuits Inc. or gives this specific competitor-by-competitor assessment; it only makes a generic statement about competitors."
+              }
+            ],
+            "reason": "The question explicitly asks how Zhang Rui positioned TechPulse against competitors in each of the two conversations. Each call contains a distinct competitive positioning statement: a generic security-vs-innovation comparison in discovery, and a specific named-competitor (Quantum Circuits Inc.) assessment in the follow-up. Neither call supplies the other's fact, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2MUIA0",
+                  "fact": "In the discovery call, Zhang Rui said competitors are strong on security but lack the innovative edge, while TechPulse balances innovation and compliance.",
+                  "why_other_call_cannot_supply_it": "The follow-up call (Mar 16) contains no such general competitor comparison; it only references a prior analysis and names a specific competitor, so the discovery positioning exists only in the Mar 7 call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0m7IAC",
+                  "fact": "In the follow-up call, Zhang Rui stated that Quantum Circuits Inc. offers strong security but seems less integrated with future tech trends, whereas TechPulse's solutions are clearly ahead.",
+                  "why_other_call_cannot_supply_it": "The discovery call (Mar 7) never names Quantum Circuits Inc. or gives this specific competitor-by-competitor assessment; it only makes a generic statement about competitors."
+                }
+              ],
+              "reason": "The question explicitly asks how Zhang Rui positioned TechPulse against competitors in each of the two conversations. Each call contains a distinct competitive positioning statement: a generic security-vs-innovation comparison in discovery, and a specific named-competitor (Quantum Circuits Inc.) assessment in the follow-up. Neither call supplies the other's fact, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Discovery call (Mar 7): Zhang Rui states competitors are strong on security but lack the innovative edge, and TechPulse balances innovation and compliance. Follow-up call (Mar 16): Zhang Rui names Quantum Circuits Inc. as offering strong security but being less integrated with future tech trends, while TechPulse is clearly ahead. Each call contributes an exclusive competitive-positioning fact; the gold answer accurately reflects both without extras or omissions. The question is naturally phrased, scoped to a named account/contact, and a rep would plausibly want this competitive intel.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Zhang Rui on 2021-03-07 states: 'while competitors are strong on security, they lack the innovative edge we need. Your solutions seem to balance both - innovation and compliance.' This directly supports the claim that competitors are strong on security but lack the innovative edge, and that TechPulse balances innovation and compliance. Speaker attribution, negation, and qualifiers are preserved."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Zhang Rui on 2021-03-16 states: 'we compared it against some competitors and found both TechPulse and others like Quantum Circuits Inc. offer strong security features. However, Quantum seems less integrated with future tech trends, whereas your solutions are clearly ahead.' This directly supports the claim that Quantum Circuits Inc. offers strong security but seems less integrated with future tech trends, while TechPulse is clearly ahead. Speaker attribution and qualifiers are preserved."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 (from the 2021-03-07 discovery call) supports the claim that Zhang Rui said competitors are strong on security but lack the innovative edge, while TechPulse balances innovation and compliance. Evidence index 1 (from the 2021-03-16 follow-up call) supports the claim that Zhang Rui noted Quantum Circuits Inc. offers strong security but seems less integrated with future tech trends, whereas TechPulse is clearly ahead. The context metadata confirms both calls involve Zhang Rui at BioPulse MedTech regarding the TechPulse opportunity. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-565aac24eab9847a",
+    "question": "What concerns did Sophia Andersson raise about TechPulse's feature release pace and past vendor support, and how did Noura respond to each?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Sophia Andersson's concerns about TechPulse's feature release pace and past vendor support, plus Noura's responses to each",
+        "relationship": "single coherent objection-and-response exchange on the same issue (vendor reliability concerns)",
+        "reason": "Both concerns (release pace and past vendor support) form one vendor-trust objection, and the question asks for the responses to each part of that same objection, which is a natural objection-and-response pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets two specific objections Sophia raised (slower feature-release pace and past vendor-support frustrations) and Noura's rebuttals, all clearly present in the single transcript. The gold answer accurately captures both concerns and both responses without adding unasked facts. Wording is natural, scope is clear (named contact, company, and topic), and a rep would plausibly want this objection-handling summary. Single-call set, so both_sources_required is true by rule.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Sophia Andersson stating 'you introduce features at a slower pace compared to others,' which directly supports the claim that she raised slower feature releases. However, the cited passage only contains Sophia's question (lines 7-8); Noura's response about 'meaningful, thoroughly tested advancements' is not present in the quoted text. The answer_claim bundles Noura's reply, but the quote does not include it. Since the instruction says to audit only the supplied quoted passage, Noura's portion is unsupported by this citation. Nevertheless, Sophia's concern is clearly supported. I will mark supported as true for the Sophia portion but note the Noura portion is absent from the quote. On strict reading, the answer_claim includes Noura's response which is not in the quote, so the full claim is not fully supported by this single citation. Marking as partially unsupported: the quote supports Sophia's concern but not Noura's stated response."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Sophia saying 'We've had challenges with support in the past from other vendors, and that can be frustrating,' which directly supports the claim that she raised past vendor support issues. However, the answer_claim also states 'Noura cited clear SLAs and responsive support,' but the quoted passage (lines 11-12) contains only Sophia's statement. Noura's response about SLAs and responsive support is not present in this citation. The Sophia portion is supported; the Noura portion is not in the supplied quote."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer makes four factual claims: (1) Sophia worried about slower feature releases \u2013 supported by index 0 quote. (2) Sophia cited past vendor support frustrations \u2013 supported by index 1 quote. (3) Noura said updates are thoroughly tested for robustness and scalability \u2013 NOT present in any supplied quote; index 0's answer_claim mentions this but the actual quoted text is only Sophia's question. (4) Noura said TechPulse offers clear SLAs and responsive, hands-on support \u2013 NOT present in any supplied quote; index 1's answer_claim mentions this but the quoted text is only Sophia's statement. Because the supplied citations contain only Sophia's lines and omit Noura's responses entirely, the gold_answer's claims about what Noura said cannot be verified from the provided evidence. The answer is therefore not fully supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-a3e27cdbc562d727",
+    "question": "What concerns did Lina Moreno raise during the InnovateVibes EDA proposal review, and how did Olivia address the integration issue with legacy systems like CircuitWave?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Concerns Lina Moreno raised during the InnovateVibes EDA proposal review and how Olivia addressed the legacy-system integration issue (CircuitWave)",
+        "relationship": "objection and its response within the same proposal review",
+        "reason": "The question asks for the concerns raised in one proposal review and the response to a specific integration concern from that same discussion \u2014 a coherent objection-and-response pair, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific proposal-review conversation between Olivia Nguyen and Lina Moreno at InnovateVibes. All four concerns (scalability, data-security compliance, service-vs-innovation balance, data integration) are explicitly raised by Lina in the transcript, and Olivia's response about CloudLink Designer handling legacy-system integration (mentioning CircuitWave, seamless compatibility, and deployment support) is directly stated. The answer matches the requested facts without unasked extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Lina Moreno raising scalability concerns (line 7), data security compliance concerns (line 9), and a service-vs-innovation balance concern (line 11). She also mentions 'concerns over integration' in line 11. However, the specific mention of 'CircuitWave' in the quote is in the context of scalability/roadmap concerns (line 7), not explicitly tied to data integration complexities. The answer_claim states 'data integration complexities with existing systems like CircuitWave,' but the quote only shows CircuitWave referenced regarding slower roadmap enhancements, not integration. The integration concern is raised generically without naming CircuitWave. Despite this minor overreach in the claim's phrasing, the core concerns (scalability, data security, service vs. innovation, integration) are all present in the dialogue, so the claim is substantially supported."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage from Olivia Nguyen explicitly states that 'CloudLink Designer specially addresses integration hurdles,' offers 'seamless compatibility and ease of use with legacy systems,' and that 'Our team is always ready to assist during the deployment phase to ensure there are no integration setbacks.' This directly supports the answer_claim about CloudLink Designer addressing integration hurdles with legacy systems, offering seamless compatibility and deployment assistance."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Lina raised scalability, data security compliance, service vs. innovation balance, and data integration concerns\u2014all four are evidenced in index 0's dialogue. It states Olivia said CloudLink Designer handles integration with legacy systems like CircuitWave, offering seamless compatibility and deployment support\u2014this is supported by index 1. The only minor gap is that CircuitWave is not explicitly named in the integration context within the supplied quotes (it appears in the scalability discussion), but the gold_answer's phrasing 'legacy systems like CircuitWave' is a reasonable characterization given CircuitWave is mentioned as an existing/legacy system in the conversation and Olivia's response addresses legacy system integration generally. The combined citations substantively support all factual claims in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-a02a8b71606f6c96",
+    "question": "What budget and timeline did Alice Sharp give for the family-friendly SUV fleet expansion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The budget and timeline Alice Sharp provided for the family-friendly SUV fleet expansion",
+        "relationship": "single coherent lookup: budget and timeline are two facets of the same fleet-expansion initiative",
+        "reason": "Both requested facts (budget and timeline) pertain to one business issue\u2014the SUV fleet expansion\u2014making this a natural, unified sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for budget and timeline for Alice Sharp's family-friendly SUV fleet expansion. The single call transcript clearly shows Alice stating 'roughly around $82,000 in total' and 'finalized by early March.' The gold answer accurately captures both facts without extras. The question is naturally worded, scoped to a specific customer and project, and a rep would plausibly need this info. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Alice Sharp explicitly states 'our budget is roughly around $82,000 in total' and 'we'd like to have this finalized by early March, if possible.' This directly supports the answer_claim of a budget around $82,000 and a timeline of early March. The speaker is Alice Sharp, matching the question's subject. The slight qualifier 'if possible' is a minor hedge but does not negate the stated timeline goal."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'About $82,000 total, finalized by early March.' The single cited evidence item (index 0) contains Alice Sharp's direct quote giving both the budget (~$82,000) and the timeline (early March). The context metadata confirms the account is Alice Sharp and the opportunity is 'Family-Friendly SUV and CPO Program Expansion,' aligning with the question's reference to a family-friendly SUV fleet expansion. All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-95218afabf2129a7",
+    "question": "What discounts did AutoElite offer Ethan King on the 2023 Subaru Outback and extended warranty, and on financing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts AutoElite offered Ethan King on the 2023 Subaru Outback, the extended warranty, and financing",
+        "relationship": "single coherent commercial quote breakdown covering the same deal's pricing terms",
+        "reason": "All three items (vehicle price, extended warranty, financing) are components of one purchase negotiation's discount structure, forming a coherent quote breakdown rather than unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific discounts offered to Ethan King by AutoElite on the 2023 Subaru Outback, extended warranty, and financing. The dialogue confirms a 5% discount on the 2023 Subaru Outback and extended warranty, and a 10% discount on flexible financing. The gold answer matches exactly. The question is naturally worded, scoped to a named customer and company, and a rep/AM would plausibly want to recall these discount terms. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Andreas Johansson explicitly states 'a 5% discount on the 2023 Subaru Outback and the extended warranty plan' and 'a 10% discount on our flexible financing solutions,' directly supporting the answer_claim of 5% on the vehicle/warranty and 10% on flexible financing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains the exact discount figures (5% on the 2023 Subaru Outback and extended warranty, 10% on flexible financing) attributed to the salesperson addressing Ethan King, which fully matches every factual element in the gold_answer."
+      }
+    }
+  }
+]
