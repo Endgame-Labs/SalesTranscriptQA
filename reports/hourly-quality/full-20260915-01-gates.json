@@ -1,0 +1,461 @@
+[
+  {
+    "question_id": "b2b-multi_call-8e56b10f6e59bfce",
+    "question": "Across the EcoVision Engineering discussions with Igor Petrov, what pricing concern did he raise about his current provider, and how did John respond to his pricing sustainability question in the later call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Igor Petrov's pricing concern about his current provider and John's response to his pricing sustainability question in a later call",
+        "relationship": "objection and response on the same issue (pricing) across two calls",
+        "reason": "Both parts concern the same business issue\u2014pricing concerns/sustainability\u2014so the multi-call comparison is coherent, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyxCIAS",
+                "fact": "John said TechPulse pricing is cost-effective over time with sustainable pricing models, with details to come at the Quote stage.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SzA8IAK) does not contain this response to the pricing sustainability question; it only discusses transparent pricing and total cost of ownership."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzA8IAK",
+                "fact": "Igor said his current provider offers competitive upfront pricing but lacks clarity in costs later on.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyxCIAS) does not mention this specific concern about the current provider's pricing; it only asks about pricing sustainability."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the pricing concern raised by Igor about his current provider, and John's response to the pricing sustainability question in the later call. These facts are found in different calls and are not repeated or paraphrased in the other call. The first call (2023-02-17) contains Igor's concern about the current provider's lack of later cost clarity, while the second call (2023-03-09) contains John's response about sustainable pricing models and Quote stage details. Neither call alone provides both facts, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Igor's pricing concern about his current provider and John's response to his pricing sustainability question in the later call. The pricing concern (current provider offers competitive upfront pricing but lacks later cost clarity) is only present in the first call, and John's response to the sustainability question (cost-effective over time with sustainable pricing models) is only in the second call. However, the question explicitly requests information from two different calls, and each call provides a distinct piece of requested information. The first call supplies the concern, the second call supplies the response. These are not repeated or paraphrased; they are different facts requested by the question. Therefore, both calls are necessary to answer the question fully."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyxCIAS",
+                  "fact": "John said TechPulse pricing is cost-effective over time with sustainable pricing models, with details to come at the Quote stage.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SzA8IAK) does not contain this response to the pricing sustainability question; it only discusses transparent pricing and total cost of ownership."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzA8IAK",
+                  "fact": "Igor said his current provider offers competitive upfront pricing but lacks clarity in costs later on.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyxCIAS) does not mention this specific concern about the current provider's pricing; it only asks about pricing sustainability."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the pricing concern raised by Igor about his current provider, and John's response to the pricing sustainability question in the later call. These facts are found in different calls and are not repeated or paraphrased in the other call. The first call (2023-02-17) contains Igor's concern about the current provider's lack of later cost clarity, while the second call (2023-03-09) contains John's response about sustainable pricing models and Quote stage details. Neither call alone provides both facts, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzA8IAK",
+                "fact": "Igor's current provider offers competitive upfront pricing but lacks later cost clarity",
+                "why_other_call_cannot_supply_it": "The March call contains no mention of the current provider's pricing or transparency issue; only the February call has Igor's complaint about his provider."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyxCIAS",
+                "fact": "John responded that TechPulse pricing is cost-effective over time with sustainable pricing models, with details deferred to the Quote stage",
+                "why_other_call_cannot_supply_it": "The February call contains no sustainability-of-pricing question or John's Quote-stage response; that exchange occurs only in the March call."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: Igor's pricing concern about his current provider (stated only in the February call) and John's response to the pricing sustainability question (given only in the March call). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzA8IAK",
+                  "fact": "Igor's current provider offers competitive upfront pricing but lacks later cost clarity",
+                  "why_other_call_cannot_supply_it": "The March call contains no mention of the current provider's pricing or transparency issue; only the February call has Igor's complaint about his provider."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyxCIAS",
+                  "fact": "John responded that TechPulse pricing is cost-effective over time with sustainable pricing models, with details deferred to the Quote stage",
+                  "why_other_call_cannot_supply_it": "The February call contains no sustainability-of-pricing question or John's Quote-stage response; that exchange occurs only in the March call."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: Igor's pricing concern about his current provider (stated only in the February call) and John's response to the pricing sustainability question (given only in the March call). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Igor's pricing concern about his current provider, found only in the Feb 17 call ('competitive pricing upfront but lack clarity in costs later on'), and (2) John's response to the pricing sustainability question, found only in the Mar 9 call ('cost-effective over time\u2026sustainable pricing models\u2026details at the Quote stage'). Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally phrased, scoped to a named account/contact, and a rep would plausibly want to recall this pricing objection history. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Igor Petrov stating his current provider offers 'competitive pricing upfront but lack clarity in costs later on,' which matches the answer_claim exactly. Speaker attribution (Igor Petrov), the pricing concern (competitive upfront but lacking later cost clarity), and the context (current provider) are all explicitly present."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows John Williams stating pricing specifics will be discussed 'later in the Quote stage' and that offerings are 'cost-effective over time' with 'sustainable pricing models.' This directly supports the answer_claim about John's response regarding pricing sustainability, including the deferral to the Quote stage and the cost-effectiveness/sustainability assertions."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Igor's pricing concern about his current provider\u2014competitive upfront pricing but lacking later cost clarity\u2014supported by evidence index 0; (2) John's response about TechPulse pricing being cost-effective over time with sustainable pricing models, with details at the Quote stage\u2014supported by evidence index 1. Both factual claims in the gold_answer are directly substantiated by the cited quotes. The only minor note is that the gold_answer refers to 'TechPulse pricing' while the quote says 'our offerings,' but given the context metadata identifies this as a sales discussion and John Williams is the salesperson, 'our offerings' is a faithful reference to the company's pricing. All key facts are present and supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-ec585b787ce27a6f",
+    "question": "For Vertex Engineering Corp, what UI concern did Bingwen Zhang raise in the initial discussion, and in the follow-up what reason did he give for why ease of use matters?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The UI concern Bingwen Zhang raised in the initial discussion and his follow-up explanation of why ease of use matters for Vertex Engineering Corp",
+        "relationship": "follow-up elaboration of the same UI/ease-of-use issue raised in the initial call",
+        "reason": "Both parts address the same business issue (UI ease of use) across an initial and follow-up call, forming one coherent concern-and-rationale request."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxJcIAK",
+                "fact": "Bingwen Zhang raised that the user interface had room for improvement in making early adoption smoother.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial UI concern; it only references ease of use in the context of junior developers."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3NNIA0",
+                "fact": "Bingwen Zhang stated that ease of use is crucial because some junior developers are struggling with it.",
+                "why_other_call_cannot_supply_it": "The initial call does not mention junior developers or the specific reason why ease of use matters."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: the UI concern raised initially and the reason for ease of use in the follow-up. Each fact is only present in its respective call, and neither call contains both facts, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: the UI concern raised in the initial discussion and the reason given in the follow-up for why ease of use matters. The initial discussion (first call) contains the UI concern: 'We've noticed some room for improvement in making early adoption smoother.' The follow-up (second call) contains the reason: 'ease of use is crucial for us when it comes to early adoption. It's one area where we notice some of our junior developers struggling.' These are distinct facts, each supplied by a different call, and the question explicitly requests both. The first call does not provide the reason, and the second call does not provide the initial concern. Therefore, both calls are necessary to fully answer the question."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxJcIAK",
+                  "fact": "Bingwen Zhang raised that the user interface had room for improvement in making early adoption smoother.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial UI concern; it only references ease of use in the context of junior developers."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3NNIA0",
+                  "fact": "Bingwen Zhang stated that ease of use is crucial because some junior developers are struggling with it.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention junior developers or the specific reason why ease of use matters."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: the UI concern raised initially and the reason for ease of use in the follow-up. Each fact is only present in its respective call, and neither call contains both facts, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxJcIAK",
+                "fact": "Bingwen Zhang raised that the user interface had room for improvement to make early adoption smoother",
+                "why_other_call_cannot_supply_it": "The follow-up call contains no mention of the initial UI concern; it only references competitor feedback on early adoption from the vendor's side."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3NNIA0",
+                "fact": "In the follow-up, Zhang said ease of use is crucial because junior developers struggle with it",
+                "why_other_call_cannot_supply_it": "The initial call never mentions junior developers or gives a reason why ease of use matters; this rationale appears only in the follow-up."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: the UI concern from the initial discussion and the stated reason for ease of use's importance from the follow-up. Each fact exists only in one call, and the second is a genuine new rationale (junior developers struggling), not a paraphrase of the first concern."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxJcIAK",
+                  "fact": "Bingwen Zhang raised that the user interface had room for improvement to make early adoption smoother",
+                  "why_other_call_cannot_supply_it": "The follow-up call contains no mention of the initial UI concern; it only references competitor feedback on early adoption from the vendor's side."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3NNIA0",
+                  "fact": "In the follow-up, Zhang said ease of use is crucial because junior developers struggle with it",
+                  "why_other_call_cannot_supply_it": "The initial call never mentions junior developers or gives a reason why ease of use matters; this rationale appears only in the follow-up."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: the UI concern from the initial discussion and the stated reason for ease of use's importance from the follow-up. Each fact exists only in one call, and the second is a genuine new rationale (junior developers struggling), not a paraphrase of the first concern."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: the UI concern from the initial call and the reason ease of use matters from the follow-up. Call 1 (2023-05-09) has Bingwen noting 'room for improvement in making early adoption smoother' regarding the UI. Call 2 (2023-06-11) has him stating 'junior developers struggling' as the reason ease of use is crucial. Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally scoped to a named account and contact, and a rep would plausibly want to recall these details. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Bingwen Zhang in the initial call (2023-05-09) explicitly states: 'One area we're curious about is the user interface. We've noticed some room for improvement in making early adoption smoother.' This directly supports the claim that he raised the UI concern and noted room for improvement for smoother early adoption."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Bingwen Zhang in the follow-up call (2023-06-11) explicitly states: 'ease of use is crucial for us when it comes to early adoption. It's one area where we notice some of our junior developers struggling.' This directly supports the claim that he said junior developers struggle, making ease of use crucial."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms the UI concern about room for improvement for smoother early adoption in the initial discussion. Index 1 confirms that in the follow-up, Bingwen stated junior developers struggle, making ease of use crucial. The gold_answer faithfully summarizes both points without adding unsupported facts."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-46c038d484b2019c",
+    "question": "What discount was offered on the EduTech Lab for Quantum Designs, and what follow-up did Adebola commit to after the call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) The discount offered on EduTech Lab for Quantum Designs, and (2) the follow-up Adebola committed to after the call.",
+        "relationship": "Two independent lookups joined by the same call/account: a commercial pricing term and a separate next-step commitment.",
+        "reason": "The discount is a commercial-term lookup while the follow-up commitment is a distinct next-steps lookup; they address different business issues, and sharing the same call/account is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks two specific facts from a single call: the discount on EduTech Lab (10% bulk discount, confirmed at 10:31:05 and 10:34:05) and Adebola's follow-up commitment (send a revised proposal with updated pricing and feedback by next week, stated at 10:34:45). Both claims are directly supported by the dialogue. The question naturally identifies the account (Quantum Designs) and product (EduTech Lab), which is realistic for a rep reviewing their own call. Wording is natural, scope is adequate, and the answer contains exactly the two requested facts with no extras. Since question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Adebola Adeyemi explicitly states 'The EduTech Lab is included with that 10% bulk discount,' directly supporting the claim of a 10% bulk discount on the EduTech Lab for Quantum Designs."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Adebola Adeyemi explicitly states 'I'll prepare and send a revised proposal with the updated pricing and any additional feedback by next week,' directly supporting the claim that Adebola committed to sending a revised proposal with updated pricing and feedback by next week."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms the 10% bulk discount on the EduTech Lab, and Index 1 confirms Adebola's commitment to send a revised proposal with updated pricing and feedback by next week. Together they cover all factual claims in the gold answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-e0b8696562ca0c07",
+    "question": "What discounts did Pierre offer Aisha Rahman at EnergyNova Corp, and is support included?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Pierre offered to Aisha Rahman at EnergyNova Corp and whether support is included in that offer",
+        "relationship": "single coherent commercial-offer lookup: discount terms and support inclusion are components of the same quote/proposal",
+        "reason": "Both parts concern the same commercial offer to the same customer; pricing terms and support inclusion naturally belong to one quote breakdown."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks about discounts and support inclusion for a named contact at a named account. The dialogue confirms Pierre offered a 5% volume discount and a 15% contract-length discount, and that comprehensive support with 24/7 assistance is included at no extra cost. The gold answer states exactly those facts with no unasked extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Pierre Fontaine explicitly states 'we offer volume and contract-length discounts\u2014in this case, 5% and 15% respectively,' directly supporting the claim of a 5% volume discount and a 15% contract-length discount."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Pierre Fontaine states 'Support is part of our package. Our comprehensive support services are included to ensure smooth operation from the start. You can count on 24/7 assistance as needed,' which directly supports the claim that support is included with 24/7 assistance."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer claims '5% volume and 15% contract-length discounts; comprehensive support with 24/7 assistance is included.' Evidence index 0 confirms the 5% volume and 15% contract-length discounts offered by Pierre. Evidence index 1 confirms comprehensive support is included with 24/7 assistance. The context metadata confirms the call involves Aisha Rahman at EnergyNova Corp with Pierre Fontaine as the salesperson. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d18c76a2f1e1d65e",
+    "question": "What buying requirements did Olivia Hernandez mention for her vehicle purchase, and which model did Hassan recommend as a strong contender?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Olivia Hernandez's stated buying requirements for her vehicle purchase and Hassan's recommended model as a strong contender",
+        "relationship": "requirement and corresponding recommendation within the same purchase discussion",
+        "reason": "A single coherent sales exchange: the customer's requirements and the salesperson's model recommendation addressing those requirements belong to the same buying conversation, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Olivia Hernandez's stated buying requirements and the model Hassan recommended. The transcript confirms she wants sustainability without compromising luxury/performance plus flexible financing, and Hassan explicitly calls the 2024 Tesla Model S 'a strong contender.' The gold answer matches precisely with no extra or missing facts. Single-call question, so both_sources_required is set true. The question is naturally worded, scoped to a named customer and rep, and a sales rep would plausibly need this information.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Olivia Hernandez explicitly states she is 'really focused on sustainability but without compromising on luxury and performance' and that 'having various financing options would be important to me.' This directly supports the answer_claim about sustainability without compromising luxury/performance and the importance of financing options."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Hassan Karim explicitly states 'I think our 2024 Tesla Model S could be a strong contender for you.' This directly supports the answer_claim that Hassan suggests the 2024 Tesla Model S as a strong contender."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Olivia's buying requirements were sustainability without compromising luxury and performance, plus flexible financing options; (2) Hassan recommended the 2024 Tesla Model S. Evidence index 0 directly quotes Olivia stating her focus on sustainability without compromising luxury/performance and the importance of financing options. Evidence index 1 directly quotes Hassan recommending the 2024 Tesla Model S as a strong contender. All factual claims in the gold_answer are supported by the combined cited evidence. The word 'flexible' in the gold_answer is a minor paraphrase of 'various' in the quote, which is a faithful and acceptable paraphrase."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-32e4f2d62338f8fd",
+    "question": "What did Ryan Thompson want covered in the Tesla Model S virtual demonstration?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Ryan Thompson wanted covered in the Tesla Model S virtual demonstration",
+        "relationship": "single lookup",
+        "reason": "One coherent fact lookup about a single call/topic with plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Ryan Thompson explicitly states at 14:35:10 that he wants 'more detailed insights on the autopilot features and perhaps some clarity on the charging options' for the virtual demonstration. The gold answer faithfully restates both items with no extras. The question naturally identifies the customer and the specific event (Tesla Model S virtual demo), making it a plausible rep/account-manager lookup. Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes to Ryan Thompson the statement: 'I'd like some more detailed insights on the autopilot features and perhaps some clarity on the charging options.' This matches the answer_claim that Ryan wants detailed insights on autopilot features and clarity on charging options. Speaker attribution, content, and intent all align."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item fully supports the gold_answer. Ryan Thompson explicitly requests 'detailed insights on the autopilot features' and 'clarity on the charging options,' which corresponds exactly to the gold_answer's two components. No additional facts are claimed in the gold_answer beyond what the citation provides."
+      }
+    }
+  }
+]

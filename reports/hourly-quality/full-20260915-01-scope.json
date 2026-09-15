@@ -1,0 +1,540 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "19f24a0323f44b808facce3b7ae4bfb0b14fdbeaac1654cad517b08d0bf702c7",
+  "questions": 5,
+  "counts": {
+    "pass": 3,
+    "fail": 2
+  },
+  "estimated_usd": 0.62896256,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-8e56b10f6e59bfce",
+      "question": "Across the EcoVision Engineering discussions with Igor Petrov, what pricing concern did he raise about his current provider, and how did John respond to his pricing sustainability question in the later call?",
+      "gold_answer": "Igor's current provider offers competitive upfront pricing but lacks later cost clarity; John said TechPulse pricing is cost-effective over time with sustainable pricing models, with details to come at the Quote stage.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZrIAK",
+        "b2b:a05Wt000003SswhIAC",
+        "b2b:a05Wt000003StEQIA0",
+        "b2b:a05Wt000003StcYIAS",
+        "b2b:a05Wt000003Su40IAC",
+        "b2b:a05Wt000003SuIWIA0",
+        "b2b:a05Wt000003Sv1fIAC",
+        "b2b:a05Wt000003SwSNIA0",
+        "b2b:a05Wt000003SwSOIA0",
+        "b2b:a05Wt000003SwgsIAC",
+        "b2b:a05Wt000003Sx6iIAC",
+        "b2b:a05Wt000003Sx9vIAC",
+        "b2b:a05Wt000003SxUsIAK",
+        "b2b:a05Wt000003SxUtIAK",
+        "b2b:a05Wt000003SyAqIAK",
+        "b2b:a05Wt000003SyE2IAK",
+        "b2b:a05Wt000003SyE3IAK",
+        "b2b:a05Wt000003SyxCIAS",
+        "b2b:a05Wt000003SyyoIAC",
+        "b2b:a05Wt000003SzA8IAK",
+        "b2b:a05Wt000003SzTRIA0",
+        "b2b:a05Wt000003SzTSIA0",
+        "b2b:a05Wt000003SzV3IAK",
+        "b2b:a05Wt000003SzWfIAK",
+        "b2b:a05Wt000003SzYHIA0",
+        "b2b:a05Wt000003SzZtIAK",
+        "b2b:a05Wt000003SzbVIAS",
+        "b2b:a05Wt000003SzbWIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call with Igor Petrov and John Williams raises a pricing concern about his current provider (2023-02-17: lack of cost transparency after competitive upfront pricing), and only one later John–Igor call contains the pricing sustainability question (2023-03-09), so the two-part answer is uniquely determined.",
+        "answers": [
+          {
+            "answer": "Igor's pricing concern about his current provider was that they offer competitive pricing upfront but lack transparency/clarity in costs later on. In the later 2023-03-09 call, when Igor asked whether TechPulse's pricing is sustainable for ongoing usage, John responded that while pricing specifics would be discussed in detail later in the Quote stage, TechPulse's offerings are designed to be cost-effective over time, ensuring favorable total ownership costs along with sustainable pricing models, aiming to pool cost efficiency with cutting-edge technologies.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzA8IAK",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-02-17T10:02:55] Igor Petrov: That sounds appealing, but transparency has been a sticking point with our current provider. They offer competitive pricing upfront but lack clarity in costs later on. How do you address that?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyxCIAS",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-03-09T11:03:10] Igor Petrov: Good to know. Security is non-negotiable for us. What about pricing; is it sustainable for ongoing usage?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies EcoVision Engineering discussions with Igor Petrov and John (Williams). Two calls match: b2b:a05Wt000003SzA8IAK (2023-02-17, initial) and b2b:a05Wt000003SyxCIAS (2023-03-09, later). In the initial call, Igor raises a pricing concern about his current provider lacking cost clarity after competitive upfront pricing. In the later call, Igor asks whether pricing is sustainable for ongoing usage, and John responds with assurances about cost-effectiveness and sustainable pricing models.",
+        "answers": [
+          {
+            "answer": "In the initial call (2023-02-17), Igor Petrov raised the concern that his current provider offers competitive pricing upfront but lacks clarity in costs later on, making transparency a sticking point. John Williams responded by explaining that TechPulse ensures clear cost breakdowns with a focus on total cost of ownership so Igor knows exactly where his money is going at each stage. In the later call (2023-03-09), Igor asked whether pricing is sustainable for ongoing usage. John responded by assuring him that while pricing specifics would be discussed in detail at the Quote stage, TechPulse's offerings are designed to be cost-effective over time, ensuring favorable total ownership costs along with sustainable pricing models, aiming to pool cost efficiency with cutting-edge technologies.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzA8IAK",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2023-02-17T10:02:55] Igor Petrov: That sounds appealing, but transparency has been a sticking point with our current provider. They offer competitive pricing upfront but lack clarity in costs later on. How do you address that?\n[2023-02-17T10:03:20] John Williams: We totally understand the need for transparent pricing. At TechPulse, we ensure clear cost breakdowns with a focus on the total cost of ownership, so you know exactly where your money is going at each stage."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyxCIAS",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-03-09T11:03:10] Igor Petrov: Good to know. Security is non-negotiable for us. What about pricing; is it sustainable for ongoing usage?\n[2023-03-09T11:03:30] John Williams: While we’ll discuss pricing specifics in detail later in the Quote stage, I can assure you our offerings are designed to be cost-effective over time, ensuring favorable total ownership costs along with sustainable pricing models. Our aim is to pool cost efficiency with cutting-edge technologies."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same pricing concern (competitive upfront pricing but lack of cost clarity/transparency later) and the same response to the sustainability question (cost-effective over time, sustainable pricing models, details at the Quote stage). Answer B adds John's initial-call response about clear cost breakdowns, which is extra but not contradictory. The reference covers both requested facts: the pricing concern about the current provider and John's response regarding sustainable pricing (cost-effective over time, sustainable models, Quote stage details)."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-ec585b787ce27a6f",
+      "question": "For Vertex Engineering Corp, what UI concern did Bingwen Zhang raise in the initial discussion, and in the follow-up what reason did he give for why ease of use matters?",
+      "gold_answer": "He noted the user interface had room for improvement for smoother early adoption; in the follow-up he said junior developers struggle, making ease of use crucial.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrnjIAC",
+        "b2b:a05Wt000003SrxLIAS",
+        "b2b:a05Wt000003SsNAIA0",
+        "b2b:a05Wt000003St1TIAS",
+        "b2b:a05Wt000003StO5IAK",
+        "b2b:a05Wt000003StmGIAS",
+        "b2b:a05Wt000003StmHIAS",
+        "b2b:a05Wt000003SuVOIA0",
+        "b2b:a05Wt000003Sv6XIAS",
+        "b2b:a05Wt000003Sv6YIAS",
+        "b2b:a05Wt000003SvZWIA0",
+        "b2b:a05Wt000003SwaUIAS",
+        "b2b:a05Wt000003SwdhIAC",
+        "b2b:a05Wt000003SwsJIAS",
+        "b2b:a05Wt000003SxJcIAK",
+        "b2b:a05Wt000003SxzeIAC",
+        "b2b:a05Wt000003SydrIAC",
+        "b2b:a05Wt000003SypGIAS",
+        "b2b:a05Wt000003SysMIAS",
+        "b2b:a05Wt000003SzANIA0",
+        "b2b:a05Wt000003SzQOIA0",
+        "b2b:a05Wt000003SzuxIAC",
+        "b2b:a05Wt000003SzuyIAC",
+        "b2b:a05Wt000003SzzpIAC",
+        "b2b:a05Wt000003T0MMIA0",
+        "b2b:a05Wt000003T0XgIAK",
+        "b2b:a05Wt000003T0cTIAS",
+        "b2b:a05Wt000003T1AMIA0",
+        "b2b:a05Wt000003T1FCIA0",
+        "b2b:a05Wt000003T1QQIA0",
+        "b2b:a05Wt000003T1VGIA0",
+        "b2b:a05Wt000003T1a7IAC",
+        "b2b:a05Wt000003T1a8IAC",
+        "b2b:a05Wt000003T1gbIAC",
+        "b2b:a05Wt000003T1zwIAC",
+        "b2b:a05Wt000003T282IAC",
+        "b2b:a05Wt000003T2BGIA0",
+        "b2b:a05Wt000003T2HhIAK",
+        "b2b:a05Wt000003T2JKIA0",
+        "b2b:a05Wt000003T2fwIAC",
+        "b2b:a05Wt000003T3FKIA0",
+        "b2b:a05Wt000003T3KAIA0",
+        "b2b:a05Wt000003T3NNIA0",
+        "b2b:a05Wt000003T3OzIAK",
+        "b2b:a05Wt000003T3QbIAK",
+        "b2b:a05Wt000003T3SDIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 7,
+            "normalized_end": 8
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 7,
+            "normalized_end": 8
+          },
+          {
+            "answer": 1,
+            "evidence": 1,
+            "original_end": 7,
+            "normalized_end": 8
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Bingwen Zhang has several calls. The initial discussion (2023-05-09) clearly raises the UI concern, but multiple later follow-up calls give different reasons why ease of use matters: the 2023-05-24 call says the team needs to adapt quickly during initial stages, while the 2023-06-11 call says ease of use is crucial because junior developers struggle with early adoption. The question's 'the follow-up' does not disambiguate between these.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-05-09), Bingwen Zhang raised that the user interface had room for improvement in making early adoption smoother. In the follow-up (2023-05-24), he explained that ease of use matters because one of their concerns with new tools is usability during the initial stages — their team needs to adapt quickly.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxJcIAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-05-09T14:32:50] Bingwen Zhang: That's reassuring. One area we’re curious about is the user interface. We've noticed some room for improvement in making early adoption smoother. How does TechPulse address this?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwaUIAS",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-05-24T15:31:58] Bingwen Zhang: That's good to hear. One of our concerns with new tools is often usability during the initial stages. Our team needs to adapt quickly."
+              }
+            ]
+          },
+          {
+            "answer": "In the initial discussion (2023-05-09), Bingwen Zhang raised that the user interface had room for improvement in making early adoption smoother. In the follow-up (2023-06-11), he explained that ease of use is crucial for early adoption because it is one area where their junior developers struggle.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxJcIAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-05-09T14:32:50] Bingwen Zhang: That's reassuring. One area we’re curious about is the user interface. We've noticed some room for improvement in making early adoption smoother. How does TechPulse address this?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3NNIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-06-11T12:16:55] Bingwen Zhang: Yes, ease of use is crucial for us when it comes to early adoption. It's one area where we notice some of our junior developers struggling."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Bingwen Zhang appears in two opportunity threads. The 'Vertex Engineering Corp Expansion' thread (Priyanka Iyer) has its initial discussion on 2023-05-09 where Bingwen raises a UI concern about user interface and early adoption smoothness. The follow-up on 2023-05-24 in the same opportunity is where Bingwen gives the reason ease of use matters: the team needs to adapt quickly. The other thread (EDA Enhancement, Pierre Fontaine) has its initial call on 2023-05-19 which contains no UI concern, so it does not match the question's criteria.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-05-09), Bingwen Zhang raised the UI concern that there is 'some room for improvement in making early adoption smoother' regarding the user interface, asking how TechPulse addresses this. In the follow-up (2023-05-24), he explained that ease of use matters because 'Our team needs to adapt quickly,' noting that usability during the initial stages is a concern with new tools.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxJcIAK",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-05-09T14:32:50] Bingwen Zhang: That's reassuring. One area we’re curious about is the user interface. We've noticed some room for improvement in making early adoption smoother. How does TechPulse address this?\n[2023-05-09T14:33:20] Priyanka Iyer: You're spot-on, Bingwen. We constantly work to enhance user interfaces to ensure that the adoption phase is as seamless as possible. It's something both we and other solution providers like Adaptive Design Solutions are improving. Rest assured, our dedicated support team is always on standby to facilitate smoother integrations."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwaUIAS",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-05-24T15:31:58] Bingwen Zhang: That's good to hear. One of our concerns with new tools is often usability during the initial stages. Our team needs to adapt quickly.\n[2023-05-24T15:32:14] Priyanka Iyer: I completely understand that. While TechPulse is renowned for powerful features, we do hear feedback about the need for more intuitive interfaces, especially early on. We're continuously working to enhance user experiences and support."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-e0b8696562ca0c07",
+      "question": "What discounts did Pierre offer Aisha Rahman at EnergyNova Corp, and is support included?",
+      "gold_answer": "5% volume and 15% contract-length discounts; comprehensive support with 24/7 assistance is included.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqYKIA0",
+        "b2b:a05Wt000003SsqDIAS",
+        "b2b:a05Wt000003StG1IAK",
+        "b2b:a05Wt000003StWDIA0",
+        "b2b:a05Wt000003StZMIA0",
+        "b2b:a05Wt000003StmNIAS",
+        "b2b:a05Wt000003Su2PIAS",
+        "b2b:a05Wt000003Su2QIAS",
+        "b2b:a05Wt000003SuKIIA0",
+        "b2b:a05Wt000003SuLrIAK",
+        "b2b:a05Wt000003SufAIAS",
+        "b2b:a05Wt000003SufBIAS",
+        "b2b:a05Wt000003SvBUIA0",
+        "b2b:a05Wt000003SvoAIAS",
+        "b2b:a05Wt000003SwXEIA0",
+        "b2b:a05Wt000003Sx3ZIAS",
+        "b2b:a05Wt000003SxJlIAK",
+        "b2b:a05Wt000003SxeYIAS",
+        "b2b:a05Wt000003SxgKIAS",
+        "b2b:a05Wt000003SyZ5IAK",
+        "b2b:a05Wt000003Szi1IAC",
+        "b2b:a05Wt000003T0HTIA0",
+        "b2b:a05Wt000003T0W1IAK",
+        "b2b:a05Wt000003T0W2IAK",
+        "b2b:a05Wt000003T10pIAC",
+        "b2b:a05Wt000003T15WIAS",
+        "b2b:a05Wt000003T1ATIA0",
+        "b2b:a05Wt000003T1OrIAK",
+        "b2b:a05Wt000003T1YWIA0",
+        "b2b:a05Wt000003T1iLIAS",
+        "b2b:a05Wt000003T1qMIAS",
+        "b2b:a05Wt000003T23EIAS",
+        "b2b:a05Wt000003T2MZIA0",
+        "b2b:a05Wt000003T2ZQIA0",
+        "b2b:a05Wt000003T2cfIAC",
+        "b2b:a05Wt000003T344IAC",
+        "b2b:a05Wt000003T3FMIA0",
+        "b2b:a05Wt000003T41jIAC",
+        "b2b:a05Wt000003T46bIAC",
+        "b2b:a05Wt000003T4EdIAK",
+        "b2b:a05Wt000003T4L3IAK",
+        "b2b:a05Wt000003T4MfIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Pierre Fontaine spoke with Aisha Rahman in several calls, but only the 2023-06-10 call (Renewable Energy Innovation with EnergyNova Corp) contains both parts of the question: specific discounts offered by Pierre AND an explicit statement about whether support is included. The other Pierre–Aisha calls either mention discounts without addressing support inclusion (2022-10-10, 2022-09-25) or only a bulk discount (2022-10-05), so they cannot fully answer the question as worded.",
+        "answers": [
+          {
+            "answer": "Pierre Fontaine offered Aisha Rahman a 5% volume discount on AIOptics Vision and a 15% contract-length discount on CloudLink Designer. Yes, support is included — Pierre stated that support is part of the package, with comprehensive support services included to ensure smooth operation from the start, including 24/7 assistance as needed.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuLrIAK",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-06-10T11:03:45] Aisha Rahman: Great to hear that, Pierre. And speaking of, let's discuss pricing and potential deals. Are there opportunities for discounts?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuLrIAK",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2023-06-10T11:04:20] Aisha Rahman: Those discounts look promising, especially given our scale of projects. Although, will there be any additional support costs?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Pierre Fontaine spoke with Aisha Rahman at EnergyNova Corp across multiple calls on the same opportunity (Renewable Energy Innovation with EnergyNova Corp, opp 006Wt000007B838IAC). Two calls contain materially different discount details: the 2022-09-25 proposal call lists a 5% discount on AIOptics Vision and a 15% discount on CloudLink Designer (with dollar totals), while the 2023-06-10 call describes the same 5% and 15% as 'volume and contract-length discounts' respectively. Both calls confirm support is included. The 2022-10-10 call repeats the same discount figures from the proposal. These represent two materially different framings of the discount information.",
+        "answers": [
+          {
+            "answer": "In the proposal discussion on 2022-09-25, Pierre offered Aisha Rahman a 5% discount on five AIOptics Vision modules (totaling $2,517.45) and a 15% discount on twenty CloudLink Designers (totaling $6,799.83). Other products (SecureFlow Suite at $1,799.97 for three units, EcoPCB Creator at $1,399.96 for four units, DesignEdge Pro at $459.99, AI DesignShift at $599.99) were listed without explicit percentage discounts. Support is included: Pierre stated that comprehensive support services are part of the package with 24/7 assistance.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1qMIAS",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2022-09-25T14:03:50] Pierre Fontaine: Of course. For the products we've identified for EnergyNova, we planned for three SecureFlow Suites at $1799.97, four EcoPCB Creators at $1399.96, five AIOptics Vision modules at a 5% discount totaling $2517.45, and twenty CloudLink Designers with a 15% discount totaling $6799.83. Finally, DesignEdge Pro is at $459.99 and AI DesignShift at $599.99."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T1YWIA0",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2022-10-10T16:33:45] Pierre Fontaine: Of course! As discussed, for products like the SecureFlow Suite, the price stands at $1,799.97 for three units. We are offering a 15% discount on CloudLink Designer if you purchase 20 units, which totals $6,799.83. And AIOptics Vision comes with a 5% discount, totaling $2,517.45 for five units."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuLrIAK",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-06-10T11:04:35] Pierre Fontaine: Support is part of our package. Our comprehensive support services are included to ensure smooth operation from the start. You can count on 24/7 assistance as needed."
+              }
+            ]
+          },
+          {
+            "answer": "In the 2023-06-10 call, Pierre described the discounts as volume and contract-length discounts: 5% (volume) on AIOptics Vision and 15% (contract-length) on CloudLink Designer. When Aisha asked whether there would be additional support costs, Pierre confirmed that support is included in the package at no extra charge, with comprehensive support services and 24/7 assistance provided.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuLrIAK",
+                "line_start": 13,
+                "line_end": 17,
+                "quote": "[2023-06-10T11:03:45] Aisha Rahman: Great to hear that, Pierre. And speaking of, let's discuss pricing and potential deals. Are there opportunities for discounts?\n[2023-06-10T11:04:00] Pierre Fontaine: Certainly! For the suite of products you've shown interest in, like AIOptics Vision and CloudLink Designer, we offer volume and contract-length discounts—in this case, 5% and 15% respectively.\n[2023-06-10T11:04:20] Aisha Rahman: Those discounts look promising, especially given our scale of projects. Although, will there be any additional support costs?\n[2023-06-10T11:04:35] Pierre Fontaine: Support is part of our package. Our comprehensive support services are included to ensure smooth operation from the start. You can count on 24/7 assistance as needed."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-d18c76a2f1e1d65e",
+      "question": "What buying requirements did Olivia Hernandez mention for her vehicle purchase, and which model did Hassan recommend as a strong contender?",
+      "gold_answer": "Sustainability without compromising luxury and performance, plus flexible financing options; Hassan recommended the 2024 Tesla Model S.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMAsIAO",
+        "b2c:a05Ws000005SMfXIAW",
+        "b2c:a05Ws000005SMfYIAW",
+        "b2c:a05Ws000005SMvhIAG",
+        "b2c:a05Ws000005SO1MIAW",
+        "b2c:a05Ws000005SO9TIAW",
+        "b2c:a05Ws000005SOSvIAO",
+        "b2c:a05Ws000005SQRSIA4",
+        "b2c:a05Ws000005SRYqIAO",
+        "b2c:a05Ws000005SRdaIAG",
+        "b2c:a05Ws000005SSMlIAO",
+        "b2c:a05Ws000005SSOKIA4",
+        "b2c:a05Ws000005SSl3IAG",
+        "b2c:a05Ws000005SUy3IAG",
+        "b2c:a05Ws000005SVFrIAO",
+        "b2c:a05Ws000005SVSnIAO",
+        "b2c:a05Ws000005SXnpIAG",
+        "b2c:a05Ws000005SY8qIAG",
+        "b2c:a05Ws000005SZHqIAO",
+        "b2c:a05Ws000005SZo7IAG",
+        "b2c:a05Ws000005SZo8IAG",
+        "b2c:a05Ws000005SaQjIAK",
+        "b2c:a05Ws000005Sbl0IAC",
+        "b2c:a05Ws000005ScAkIAK",
+        "b2c:a05Ws000005ScAlIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Hassan Karim recommending a model as a 'strong contender' (2022-09-04). In that call Olivia states her buying requirements (sustainability without compromising luxury and performance, plus financing options) and Hassan recommends the 2024 Tesla Model S as a strong contender. Hassan's other call (2022-08-29) contains no such recommendation, so there is no competing alternative.",
+        "answers": [
+          {
+            "answer": "Olivia Hernandez said she is focused on sustainability without compromising on luxury and performance, and that having various financing options would be important to her. Hassan Karim recommended the 2024 Tesla Model S as a strong contender for her, noting it is packed with innovative features and has excellent eco-credentials.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMfYIAW",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2022-09-04T17:16:05] Olivia Hernandez: Well, I'm really focused on sustainability but without compromising on luxury and performance. At the same time, having various financing options would be important to me."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Hassan as the rep who recommended a model. Only one call features Hassan Karim: b2c:a05Ws000005SMfYIAW (2022-09-04). In that call, Olivia states her buying requirements and Hassan recommends the 2024 Tesla Model S as a strong contender. No other call involves Hassan, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Olivia Hernandez stated that she is focused on sustainability without compromising on luxury and performance, and that having various financing options is important to her. Hassan Karim recommended the 2024 Tesla Model S as a strong contender, noting it is packed with innovative features and has excellent eco-credentials.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMfYIAW",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2022-09-04T17:16:05] Olivia Hernandez: Well, I'm really focused on sustainability but without compromising on luxury and performance. At the same time, having various financing options would be important to me.\n[2022-09-04T17:16:20] Hassan Karim: Absolutely, Olivia. It makes sense to want the best of both worlds. In fact, I think our 2024 Tesla Model S could be a strong contender for you. It's packed with innovative features and has excellent eco-credentials. Would you like to hear more about it?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same buying requirements (sustainability without compromising luxury and performance, and various/flexible financing options) and the same recommended model (2024 Tesla Model S). The reference also covers both requested facts: the sustainability/luxury/performance and flexible financing requirements, and Hassan's recommendation of the 2024 Tesla Model S. Minor wording differences (e.g., 'various' vs. 'flexible') do not change the substance."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-32e4f2d62338f8fd",
+      "question": "What did Ryan Thompson want covered in the Tesla Model S virtual demonstration?",
+      "gold_answer": "Detailed insights on the autopilot features and clarity on the charging options.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SINMIA4",
+        "b2c:a05Ws000005SMM7IAO",
+        "b2c:a05Ws000005SOtTIAW",
+        "b2c:a05Ws000005SOuCIAW",
+        "b2c:a05Ws000005SP3BIAW",
+        "b2c:a05Ws000005SQ4nIAG",
+        "b2c:a05Ws000005SQJKIA4",
+        "b2c:a05Ws000005SQj6IAG",
+        "b2c:a05Ws000005SRVSIA4",
+        "b2c:a05Ws000005SS9nIAG",
+        "b2c:a05Ws000005SSRZIA4",
+        "b2c:a05Ws000005SSjKIAW",
+        "b2c:a05Ws000005SSmVIAW",
+        "b2c:a05Ws000005ST95IAG",
+        "b2c:a05Ws000005STQqIAO",
+        "b2c:a05Ws000005SU5AIAW",
+        "b2c:a05Ws000005SUQ8IAO",
+        "b2c:a05Ws000005SUTOIA4",
+        "b2c:a05Ws000005SUgFIAW",
+        "b2c:a05Ws000005SV4SIAW",
+        "b2c:a05Ws000005SVSeIAO",
+        "b2c:a05Ws000005SVanIAG",
+        "b2c:a05Ws000005SWDRIA4",
+        "b2c:a05Ws000005SWLWIA4",
+        "b2c:a05Ws000005SWTXIA4",
+        "b2c:a05Ws000005SWV8IAO",
+        "b2c:a05Ws000005SWmxIAG",
+        "b2c:a05Ws000005SWq7IAG",
+        "b2c:a05Ws000005SXRFIA4",
+        "b2c:a05Ws000005SXcVIAW",
+        "b2c:a05Ws000005SXvsIAG",
+        "b2c:a05Ws000005SYLgIAO",
+        "b2c:a05Ws000005SYgcIAG",
+        "b2c:a05Ws000005SZOCIA4",
+        "b2c:a05Ws000005SaDlIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (b2c:a05Ws000005SMM7IAO, 2022-11-25, Hiroshi Ito) discusses scheduling a virtual demonstration of the Tesla Model S, and Ryan explicitly states what he wants covered there. No other call mentions a Model S virtual demo.",
+        "answers": [
+          {
+            "answer": "Ryan Thompson wanted more detailed insights on the autopilot features and some clarity on the charging options covered in the Tesla Model S virtual demonstration.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMM7IAO",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2022-11-25T14:34:50] Hiroshi Ito: Great! I’ll send over some potential times for the demo right after our call. Just one more thing, is there anything specific you want us to cover during the demonstration?\n[2022-11-25T14:35:10] Ryan Thompson: I'd like some more detailed insights on the autopilot features and perhaps some clarity on the charging options."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about the Tesla Model S virtual demonstration. Only one call in the dataset discusses scheduling a virtual demonstration for the Tesla Model S and asks Ryan what he wants covered: call b2c:a05Ws000005SMM7IAO (Hiroshi Ito, 2022-11-25, opportunity 'Ryan's Premium Auto Selection'). In that call, Hiroshi asks if there's anything specific Ryan wants covered during the demonstration, and Ryan responds with his requests.",
+        "answers": [
+          {
+            "answer": "Ryan Thompson wanted more detailed insights on the autopilot features and some clarity on the charging options covered during the Tesla Model S virtual demonstration.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMM7IAO",
+                "line_start": 14,
+                "line_end": 19,
+                "quote": "[2022-11-25T14:34:20] Hiroshi Ito: I completely understand, Ryan. Trust is crucial when investing in a premium vehicle. If you’d like, we can schedule a virtual demonstration to give you a closer look at the Model S and go over any specific questions you might have.\n[2022-11-25T14:34:35] Ryan Thompson: I would really like that. Let’s go ahead and schedule it. I'd love to see the features in action.\n[2022-11-25T14:34:50] Hiroshi Ito: Great! I’ll send over some potential times for the demo right after our call. Just one more thing, is there anything specific you want us to cover during the demonstration?\n[2022-11-25T14:35:10] Ryan Thompson: I'd like some more detailed insights on the autopilot features and perhaps some clarity on the charging options.\n[2022-11-25T14:35:20] Hiroshi Ito: Absolutely, I’ll make sure those are covered. Thanks for letting me know, Ryan."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Ryan Thompson wanted more detailed insights on the autopilot features and some clarity on the charging options covered in the Tesla Model S virtual demonstration. The only difference is 'in' vs 'during,' which is a trivial wording variation. The reference lists the same two requested items—detailed insights on autopilot features and clarity on charging options—fully covering the facts requested by the question."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
