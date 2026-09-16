@@ -1,0 +1,466 @@
+[
+  {
+    "question_id": "b2b-multi_call-9e7b64828ad791f1",
+    "question": "Across the two calls with Ritu Arora at Oceanic Innovation Labs, what did Terek say in each conversation about TechPulse's customization flexibility?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Terek said about TechPulse's customization flexibility in each of the two calls with Ritu Arora at Oceanic Innovation Labs",
+        "relationship": "Two-call comparison of the same business issue (TechPulse's customization flexibility) discussed with the same customer contact",
+        "reason": "Both requested facts concern the same topic\u2014customization flexibility\u2014across two conversations, which is a coherent multi-call comparison, not two unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvhkIAC",
+                "fact": "Terek acknowledged that some competitors offer more tailored solutions, while TechPulse's standardized offerings are optimized for efficiency, and they gather client feedback to expand adaptability.",
+                "why_other_call_cannot_supply_it": "The other call only mentions that customization flexibility is being improved and invested in, but does not include the acknowledgment of competitors' tailored solutions or the specific strategy of gathering feedback."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwVfIAK",
+                "fact": "Terek said implementation is fast but customization flexibility is still being improved and actively invested in.",
+                "why_other_call_cannot_supply_it": "The other call does not mention the fast implementation or the active investment in improving customization flexibility; it focuses on the competitive acknowledgment and feedback strategy."
+              }
+            ],
+            "reason": "The question asks what Terek said in each conversation about customization flexibility. The two calls contain distinct statements: the first call emphasizes ongoing improvement and investment, while the later call acknowledges competitors' tailored solutions and describes TechPulse's standardized approach with feedback collection. These are substantively different pieces of information, each exclusive to its respective call, and both are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvhkIAC",
+                  "fact": "Terek acknowledged that some competitors offer more tailored solutions, while TechPulse's standardized offerings are optimized for efficiency, and they gather client feedback to expand adaptability.",
+                  "why_other_call_cannot_supply_it": "The other call only mentions that customization flexibility is being improved and invested in, but does not include the acknowledgment of competitors' tailored solutions or the specific strategy of gathering feedback."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwVfIAK",
+                  "fact": "Terek said implementation is fast but customization flexibility is still being improved and actively invested in.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention the fast implementation or the active investment in improving customization flexibility; it focuses on the competitive acknowledgment and feedback strategy."
+                }
+              ],
+              "reason": "The question asks what Terek said in each conversation about customization flexibility. The two calls contain distinct statements: the first call emphasizes ongoing improvement and investment, while the later call acknowledges competitors' tailored solutions and describes TechPulse's standardized approach with feedback collection. These are substantively different pieces of information, each exclusive to its respective call, and both are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwVfIAK",
+                "fact": "Terek said implementation is fast but customization flexibility is still being improved and is an area of active investment.",
+                "why_other_call_cannot_supply_it": "The March 23 call contains no statement about implementation speed or active investment in improving customization; it only addresses competitor tailoring and standardized offerings."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvhkIAC",
+                "fact": "Terek acknowledged some competitors offer more tailored solutions, saying TechPulse's standardized offerings are optimized for efficiency while they gather client feedback to expand adaptability.",
+                "why_other_call_cannot_supply_it": "The March 14 call contains no mention of competitors' tailored solutions or the standardized-for-efficiency positioning; it only says customization is being improved."
+              }
+            ],
+            "reason": "The question explicitly asks what Terek said in each of the two conversations about customization flexibility. Each call contains a distinct, non-redundant statement on that topic: one about ongoing improvement/investment, the other a competitive concession about standardized offerings versus tailored competitors. Both are required to answer per-conversation."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwVfIAK",
+                  "fact": "Terek said implementation is fast but customization flexibility is still being improved and is an area of active investment.",
+                  "why_other_call_cannot_supply_it": "The March 23 call contains no statement about implementation speed or active investment in improving customization; it only addresses competitor tailoring and standardized offerings."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvhkIAC",
+                  "fact": "Terek acknowledged some competitors offer more tailored solutions, saying TechPulse's standardized offerings are optimized for efficiency while they gather client feedback to expand adaptability.",
+                  "why_other_call_cannot_supply_it": "The March 14 call contains no mention of competitors' tailored solutions or the standardized-for-efficiency positioning; it only says customization is being improved."
+                }
+              ],
+              "reason": "The question explicitly asks what Terek said in each of the two conversations about customization flexibility. Each call contains a distinct, non-redundant statement on that topic: one about ongoing improvement/investment, the other a competitive concession about standardized offerings versus tailored competitors. Both are required to answer per-conversation."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what Terek said about TechPulse's customization flexibility across two calls with Ritu Arora at Oceanic Innovation Labs\u2014a plausible rep/account-manager need. The gold answer accurately reflects both sources: the 2023-03-14 call contains Terek's statement that implementation is fast but customization flexibility is being improved and actively invested in; the 2023-03-23 call contains his acknowledgment that some competitors offer more tailored solutions while TechPulse's standardized offerings are optimized for efficiency and they gather client feedback to expand adaptability. Each call contributes an exclusive fact, satisfying the multi-call requirement. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Terek's quoted dialogue on 2023-03-14 explicitly states: 'our implementation process is designed to be fast, we are continuously working on improving customization flexibility\u2026 It's definitely an area we're actively investing in.' This directly supports the claim that implementation is fast but customization flexibility is still being improved and actively invested in."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Terek's quoted dialogue on 2023-03-23 explicitly states: 'a few competitors do offer highly tailored solutions, our standardized offerings are designed for optimal efficiency across diverse setups. However, we continually seek client feedback to expand our adaptive capabilities where it counts most.' This directly supports the claim about competitors offering more tailored solutions, standardized offerings optimized for efficiency, and gathering client feedback to expand adaptability."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer makes two factual claims: (1) In the first call (2023-03-14), Terek said implementation is fast but customization flexibility is still being improved and actively invested in\u2014fully supported by evidence index 0. (2) In the later call (2023-03-23), he acknowledged some competitors offer more tailored solutions, said TechPulse's standardized offerings are optimized for efficiency while they gather client feedback to expand adaptability\u2014fully supported by evidence index 1. The chronological ordering (first call = March 14, later call = March 23) is confirmed by the metadata timestamps. All factual elements of the gold_answer are covered by the two cited evidence items."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-4945164a55dbd778",
+    "question": "For Nova Healthcare Tech, what pricing approach did Pierre describe in the initial discussion, and what quote amount and negotiation stance did he give in the final terms call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Nova Healthcare Tech's pricing approach from the initial discussion and the quote amount plus negotiation stance from the final terms call",
+        "relationship": "evolution of the same commercial terms (pricing) across the deal lifecycle",
+        "reason": "Both parts concern the same business issue\u2014pricing terms for the same deal\u2014traced from initial discussion to final terms, which is a coherent comparison of commercial terms across calls."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGNIA0",
+                "fact": "Pierre described pricing as aligned with industry trends, focusing on favorable total cost of ownership and flexibility.",
+                "why_other_call_cannot_supply_it": "The final terms call does not mention the initial pricing approach; it only discusses the specific quote and negotiation."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy7bIAC",
+                "fact": "Pierre gave a quote of $4,389.91 and stated he was open to negotiating adjustments or added value in training or support.",
+                "why_other_call_cannot_supply_it": "The initial discussion call does not contain any specific quote amount or negotiation stance; it only provides the general pricing philosophy."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the pricing approach from the initial discussion and the quote amount plus negotiation stance from the final terms call. These facts are found in separate calls and are not repeated or paraphrased in the other call. The initial call provides the general pricing strategy, while the final call provides the concrete quote and negotiation openness. Both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGNIA0",
+                  "fact": "Pierre described the pricing approach as aligning with industry trends, focusing on favorable total cost of ownership and flexibility.",
+                  "why_other_call_cannot_supply_it": "The final terms call does not mention the initial pricing approach; it only discusses the specific quote and negotiation stance."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy7bIAC",
+                  "fact": "Pierre gave a quote amount of $4,389.91 and stated he was open to negotiating adjustments or added value in training or support.",
+                  "why_other_call_cannot_supply_it": "The initial discussion call does not contain any specific quote amount or negotiation stance; it only mentions general pricing alignment."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the pricing approach from the initial discussion and the quote amount plus negotiation stance from the final terms call. Each call provides one of these facts exclusively, and neither call contains the other's fact. Therefore, both calls are necessary to fully answer the question."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGNIA0",
+                  "fact": "Pierre described pricing as aligned with industry trends, focusing on favorable total cost of ownership and flexibility.",
+                  "why_other_call_cannot_supply_it": "The final terms call does not mention the initial pricing approach; it only discusses the specific quote and negotiation."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy7bIAC",
+                  "fact": "Pierre gave a quote of $4,389.91 and stated he was open to negotiating adjustments or added value in training or support.",
+                  "why_other_call_cannot_supply_it": "The initial discussion call does not contain any specific quote amount or negotiation stance; it only provides the general pricing philosophy."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the pricing approach from the initial discussion and the quote amount plus negotiation stance from the final terms call. These facts are found in separate calls and are not repeated or paraphrased in the other call. The initial call provides the general pricing strategy, while the final call provides the concrete quote and negotiation openness. Both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGNIA0",
+                "fact": "Pricing aligned with industry trends, emphasizing favorable total cost of ownership and flexibility",
+                "why_other_call_cannot_supply_it": "The second call discusses the specific quote and negotiation but never states the initial pricing approach described in the first discussion."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy7bIAC",
+                "fact": "Quote of $4,389.91 with openness to negotiating adjustments or added value in training or support packages",
+                "why_other_call_cannot_supply_it": "The first call contains no quote amount or negotiation stance; it only gives a general pricing philosophy."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: the general pricing approach from the initial discussion and the concrete quote amount plus negotiation stance from the final terms call. Each fact appears only in one call and neither call suffices alone."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGNIA0",
+                  "fact": "Pricing aligned with industry trends, emphasizing favorable total cost of ownership and flexibility",
+                  "why_other_call_cannot_supply_it": "The second call discusses the specific quote and negotiation but never states the initial pricing approach described in the first discussion."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy7bIAC",
+                  "fact": "Quote of $4,389.91 with openness to negotiating adjustments or added value in training or support packages",
+                  "why_other_call_cannot_supply_it": "The first call contains no quote amount or negotiation stance; it only gives a general pricing philosophy."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: the general pricing approach from the initial discussion and the concrete quote amount plus negotiation stance from the final terms call. Each fact appears only in one call and neither call suffices alone."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question targets a specific account (Nova Healthcare Tech) and asks about pricing approach in the initial discussion and the final quote/negotiation stance in the terms call\u2014information a rep would plausibly need. The gold answer accurately reflects both sources: Call 1 has Pierre stating pricing aligns with industry trends, favorable total cost of ownership, and flexibility; Call 2 has the $4,389.91 quote and Pierre's openness to adjustments or added value in training/support. Each source contributes an exclusive requested fact (initial pricing philosophy vs. final quote and negotiation stance), satisfying the multi-call requirement. No locator preamble, no answer leakage, no unsupported causality, and no unasked extras are present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Pierre Fontaine on 2020-08-07 explicitly states: 'Regarding pricing, we align with industry trends, focusing on providing a favorable total cost of ownership. It helps in long-term budgeting while allowing flexibility.' This directly supports the answer_claim about aligning with industry trends, favorable total cost of ownership, and flexibility."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Noah Singh on 2020-09-30 states: 'Regarding pricing, while your quote of $4,389.91 is reasonable, we're hoping to discuss if there could be any room for negotiation.' This confirms the quote amount of $4,389.91. However, the answer_claim attributes this as Pierre's quote amount. The quote is spoken by Noah Singh referencing 'your quote,' meaning it was Pierre's quote. The amount $4,389.91 is confirmed, and the negotiation request is from the customer side. The claim as stated is supported by the passage."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quote from Pierre Fontaine on 2020-09-30 states: 'Given the significance of this partnership, we're open to discussing terms that can work for both parties. Perhaps we can explore adjustments or added value in training or support packages.' This directly supports the answer_claim that Pierre was open to negotiating adjustments or added value in training or support."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Initially, pricing aligned with industry trends emphasizing favorable total cost of ownership and flexibility \u2014 supported by index 0. (2) The quote was $4,389.91 \u2014 supported by index 1 where Noah references 'your quote of $4,389.91' (attributed to Pierre's side). (3) Pierre was open to negotiating adjustments or added value in training or support \u2014 supported by index 2. All factual claims in the gold_answer are covered by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-ff13eada57b39ec6",
+    "question": "What pain points did Igor Sokolov of LiftTech Elevations mention about their current systems, and what follow-up was scheduled?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pain points Igor Sokolov of LiftTech Elevations raised about their current systems, and the follow-up meeting scheduled as a result",
+        "relationship": "single coherent discovery-call request: the customer's stated pain points and the resulting next step from the same conversation",
+        "reason": "The follow-up is a natural next step addressing the same discovery discussion about the customer's system pain points, not an independent fact lookup."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for pain points and a scheduled follow-up, both of which a rep would legitimately track. The dialogue confirms Igor Sokolov of LiftTech Elevations cited customizability and integration challenges with SecureFlow Suite and CircuitSync Pro, and a follow-up was set for June 23rd at 9:30 AM. The gold answer states exactly those facts with no extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly from Igor Sokolov states they are using SecureFlow Suite and CircuitSync Pro and are 'facing some challenges with customizability and seamless integration with newer technologies.' This fully supports the answer_claim about customizability and integration challenges with those two systems."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Natalia Ivanova proposes scheduling 'something for June 23rd at 9:30 AM' to discuss building automation expansion needs. While phrased as a suggestion ('How about we schedule\u2026'), in the context of a sales call this constitutes setting/proposing the follow-up time. The date, time, and purpose match the answer_claim. No contradicting evidence is supplied."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Evidence index 0 confirms Igor Sokolov of LiftTech Elevations identified customizability and integration challenges with SecureFlow Suite and CircuitSync Pro. Evidence index 1 confirms a follow-up was set for June 23rd at 9:30 AM. Together they support every factual element of the gold_answer: the two product names, the two pain-point categories, and the follow-up date/time."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-994094071265b136",
+    "question": "What next steps did Olivia commit to for ClearSky Data Solutions after the initial discussion with Shivani Desai?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next steps Olivia committed to following the initial discussion with Shivani Desai at ClearSky Data Solutions.",
+        "relationship": "single coherent request: follow-up commitments from one call",
+        "reason": "This is a single next-steps lookup tied to one discussion, which is a natural sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what next steps Olivia committed to for ClearSky after the initial discussion with Shivani Desai. The dialogue at 13:04:05 shows Olivia stating: 'The next step would be a discovery meeting where we can delve deeper into your specific needs\u2026 I'll be sending over some case studies and testimonials that highlight similar integrations.' The gold answer captures both items precisely with no unasked extras. The question is naturally phrased, identifies the account (ClearSky Data Solutions) and contact (Shivani Desai), and a rep/AM would plausibly want to recall committed next steps. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Olivia Nguyen explicitly states: (1) 'The next step would be a discovery meeting where we can delve deeper into your specific needs' and (2) 'I'll be sending over some case studies and testimonials that highlight similar integrations.' This directly supports the answer_claim of a discovery meeting plus sending case studies and testimonials highlighting similar integrations. Speaker attribution (Olivia), the commitment language ('would be', 'I'll be sending'), and the specific content all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'A discovery meeting to delve deeper into ClearSky's needs, plus sending case studies and testimonials highlighting similar integrations.' The single cited evidence (index 0) contains Olivia Nguyen's exact words committing to both a discovery meeting to 'delve deeper into your specific needs' and sending 'case studies and testimonials that highlight similar integrations.' The context metadata confirms the call is with ClearSky Data Solutions and contact Shivani Desai, matching the question's framing. All factual elements of the gold_answer are directly supported by the cited passage."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-95880a32e467e99e",
+    "question": "What did Amelie commit to doing about Michael Russell's concern that Luxury Auto Group offered a lower rate for a comparable package?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Amelie committed to doing in response to Michael Russell's concern that Luxury Auto Group offered a lower rate for a comparable package",
+        "relationship": "single coherent objection-and-response: a competitive pricing objection and the commitment made to address it",
+        "reason": "The question asks for one response to one objection (competitor's lower rate for a comparable package), which is a natural sales information need, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Amelie committed to regarding Michael Russell's competitive pricing concern. The transcript shows Michael raising Luxury Auto Group's lower rate (14:03:09), Amelie offering to talk to finance to bring pricing in line (14:03:35), and then explicitly committing to follow up immediately after the call and get back shortly (14:03:56). The gold answer captures both the finance-department follow-up and the immediacy/timeline commitment accurately. The question is naturally phrased, identifies the customer and the specific competitive concern, and a rep/AM would plausibly want to know what was promised. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Amelie Dubois stating 'I can talk to our finance department to see if we can bring the pricing more in line with what Luxury Auto Group has offered you.' This supports the answer_claim verbatim and establishes her commitment to consult finance about matching the competitor's pricing."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Amelie saying 'I will follow up with them immediately after our call and get back to you shortly.' This directly supports the answer_claim about following up immediately after the call and getting back to Michael shortly. The pronoun 'them' resolves to 'our finance department' from index 0."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Amelie agreed to (1) follow up with the finance department immediately after the call, (2) to see if pricing could be brought in line with Luxury Auto Group's offer, and (3) get back to him shortly. Index 0 supports points (1) and (2) by showing her commitment to talk to finance about matching the competitor's pricing. Index 1 supports points (1) and (3) by confirming she will follow up immediately after the call and get back to him shortly. Together, the two citations fully substantiate every factual element of the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-5132a109937f12d3",
+    "question": "When Evelyn Hodges raised Premium Dealerships Ltd. offering better technology at a lower price, how did Mohammed respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Mohammed responded to Evelyn Hodges' objection that Premium Dealerships Ltd. offered better technology at a lower price",
+        "relationship": "single coherent request: a competitive objection and the response to it",
+        "reason": "This is one objection-and-response lookup concerning the same competitive issue (a rival's better technology at a lower price), which fits the accepted pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection raised by Evelyn Hodges referencing Premium Dealerships Ltd., and Mohammed's reply in the transcript matches the gold answer: he acknowledged price variation, then pivoted to quality, advanced features, and the comprehensive maintenance plan that avoids unexpected upkeep costs and adds long-term value. No extra unasked facts are included, no locator preamble is present, and the wording is natural. Single-call set, so both_sources_required is true.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Mohammed Al-Aziz directly states: 'While prices might vary, we ensure quality and advanced features, especially with our comprehensive maintenance plan. It keeps your vehicle running smoothly without those unexpected upkeep costs, which adds tremendous value in the long term.' This matches the answer_claim almost verbatim, confirming he acknowledged price variation, emphasized quality, advanced features, the comprehensive maintenance plan, avoidance of unexpected upkeep costs, and long-term value."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element in the gold_answer: (1) acknowledging prices vary ('While prices might vary'), (2) emphasizing quality and advanced features ('we ensure quality and advanced features'), (3) the comprehensive maintenance plan ('especially with our comprehensive maintenance plan'), (4) avoiding unexpected upkeep costs ('without those unexpected upkeep costs'), and (5) adding long-term value ('adds tremendous value in the long term'). The speaker is Mohammed, responding in the context of Evelyn Hodges's opportunity, consistent with the question's framing."
+      }
+    }
+  }
+]

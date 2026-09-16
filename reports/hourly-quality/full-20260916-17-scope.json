@@ -1,0 +1,90 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "b1f5d899ded8a9938ca059196705d45e07026efcd2b71b4b14b2c0f43599a770",
+  "questions": 1,
+  "counts": {
+    "pass": 1
+  },
+  "estimated_usd": 0.13936059,
+  "results": [
+    {
+      "question_id": "b2b-single_call-994094071265b136",
+      "question": "What next steps did Olivia commit to for ClearSky Data Solutions after the initial discussion with Shivani Desai?",
+      "gold_answer": "A discovery meeting to delve deeper into ClearSky's needs, plus sending case studies and testimonials highlighting similar integrations.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkZIAS",
+        "b2b:a05Wt000003StcfIAC",
+        "b2b:a05Wt000003Su2NIAS",
+        "b2b:a05Wt000003SuDeIAK",
+        "b2b:a05Wt000003SuDfIAK",
+        "b2b:a05Wt000003SxZlIAK",
+        "b2b:a05Wt000003SynXIAS",
+        "b2b:a05Wt000003SyqqIAC",
+        "b2b:a05Wt000003SzJqIAK",
+        "b2b:a05Wt000003Szd9IAC",
+        "b2b:a05Wt000003SzepIAC",
+        "b2b:a05Wt000003T0W0IAK",
+        "b2b:a05Wt000003T0ZEIA0",
+        "b2b:a05Wt000003T0m8IAC",
+        "b2b:a05Wt000003T1AIIA0",
+        "b2b:a05Wt000003T1AJIA0",
+        "b2b:a05Wt000003T1AKIA0",
+        "b2b:a05Wt000003T2EQIA0",
+        "b2b:a05Wt000003T2MVIA0",
+        "b2b:a05Wt000003T2O7IAK",
+        "b2b:a05Wt000003T2hVIAS",
+        "b2b:a05Wt000003T2mHIAS",
+        "b2b:a05Wt000003T2ntIAC",
+        "b2b:a05Wt000003T2pVIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Olivia Nguyen spoke with Shivani Desai in three calls (2023-07-14, 2023-07-18, 2023-07-30). The initial discussion is the earliest one, 2023-07-14, where Olivia explicitly committed to next steps: a discovery meeting and sending case studies/testimonials.",
+        "answers": [
+          {
+            "answer": "After the initial discussion (2023-07-14), Olivia Nguyen committed to scheduling a discovery meeting to delve deeper into ClearSky's specific needs and discuss tailoring solutions, and to sending over case studies and testimonials highlighting similar integrations.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Szd9IAC",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2023-07-14T13:03:50] Shivani Desai: I appreciate you taking the time to explain this, Olivia. I think we’ve covered a lot. What are the next steps in your process?\n[2023-07-14T13:04:05] Olivia Nguyen: The next step would be a discovery meeting where we can delve deeper into your specific needs and discuss how we can tailor our solutions to fit. I'll be sending over some case studies and testimonials that highlight similar integrations."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Olivia (Olivia Nguyen), Shivani Desai, ClearSky Data Solutions, and the 'initial discussion.' Among all calls, Olivia Nguyen speaks with Shivani Desai in three calls on opportunity 'ClearSky Data Solutions AI & Security Enhancement': 2023-07-14, 2023-07-18, and 2023-07-30. The earliest (initial) is the 2023-07-14 call (b2b:a05Wt000003Szd9IAC). In that call, Olivia commits to two next steps: scheduling a discovery meeting to delve deeper into ClearSky's specific needs, and sending over case studies and testimonials highlighting similar integrations.",
+        "answers": [
+          {
+            "answer": "After the initial discussion with Shivani Desai on July 14, 2023, Olivia Nguyen committed to two next steps: (1) scheduling a discovery meeting to delve deeper into ClearSky's specific needs and discuss how TechPulse can tailor its solutions to fit, and (2) sending over case studies and testimonials that highlight similar integrations.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Szd9IAC",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2023-07-14T13:03:50] Shivani Desai: I appreciate you taking the time to explain this, Olivia. I think we’ve covered a lot. What are the next steps in your process?\n[2023-07-14T13:04:05] Olivia Nguyen: The next step would be a discovery meeting where we can delve deeper into your specific needs and discuss how we can tailor our solutions to fit. I'll be sending over some case studies and testimonials that highlight similar integrations."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two commitments Olivia made: (1) scheduling a discovery meeting to explore ClearSky's specific needs and discuss tailored solutions, and (2) sending case studies and testimonials highlighting similar integrations. The reference likewise lists both commitments—a discovery meeting to delve deeper into ClearSky's needs and sending case studies/testimonials highlighting similar integrations. All requested facts are present and consistent across all three texts; differences are only in wording and minor extras (e.g., naming TechPulse, the date)."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
