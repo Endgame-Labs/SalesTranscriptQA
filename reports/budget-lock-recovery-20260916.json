@@ -1,0 +1,18 @@
+{
+  "reason": "SQLite response settlement writer timeout after per-request full-ledger reservation scans",
+  "backup": "runs/sales-full-v2/before-budget-rollup-20260916.sqlite",
+  "recovered_attempts": [
+    {
+      "attempt_id": "f8ad8a1dbc4f45efb045cc3481ce7fbd",
+      "model": "accounts/fireworks/models/qwen3p8-max",
+      "estimated_usd": 0.014626,
+      "artifact": "requests/f8ad8a1dbc4f45efb045cc3481ce7fbd.json"
+    }
+  ],
+  "conservative_ledger_usd": 1823.776718718,
+  "rollup_usd": 1823.776718718,
+  "mean_lookup_seconds": 1.2860429706051945e-06,
+  "tests": "8 budget/ledger/transport tests passed",
+  "budget_usd": 4000,
+  "campaign_ceiling_usd": 5000
+}

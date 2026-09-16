@@ -13,6 +13,8 @@ from pathlib import Path
 
 import httpx
 
+from .budget_ledger import install as install_budget_ledger
+
 PRIMARY = "accounts/fireworks/models/deepseek-v4-flash-0731"
 SECONDARY = "accounts/fireworks/models/glm-5p3-flash"
 RATES = {PRIMARY: (0.22, 0.007, 0.66), SECONDARY: (0.15, 0.03, 0.50)}
@@ -82,6 +84,9 @@ class Transport:
                 CREATE INDEX IF NOT EXISTS attempts_cache ON attempts(request_key,status,started);
             """)
 
+        with self.db() as db:
+            install_budget_ledger(db)
+
     def db(self):
         db = sqlite3.connect(self.root / "progress.sqlite", timeout=60)
         db.row_factory = sqlite3.Row
@@ -96,8 +101,7 @@ class Transport:
                 a, _, c = RATES[model]
                 worst = ((len(json.dumps(payload,ensure_ascii=False).encode()) + 1024) * a
                          + payload['max_tokens'] * c) / 1e6
-                used = db.execute("SELECT COALESCE(SUM(COALESCE(a.estimated_usd,r.worst_usd,0)),0) "
-                                  "FROM attempts a LEFT JOIN budget_reservations r ON a.id=r.id").fetchone()[0]
+                used = db.execute("SELECT usd FROM budget_total WHERE id=1").fetchone()[0]
                 if used + worst > self.budget_usd:
                     raise BudgetExceededError('Run API allowance exhausted; raise the explicit budget to resume')
                 db.execute('INSERT INTO budget_reservations VALUES(?,?)',(aid,worst))
