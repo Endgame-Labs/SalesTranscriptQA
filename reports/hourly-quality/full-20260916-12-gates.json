@@ -1,0 +1,399 @@
+[
+  {
+    "question_id": "b2b-single_call-b8565f0ad2070d2c",
+    "question": "What concerns did Anita Kabir at FutureTech Innovations raise during the initial call with Chen Lixin, and what follow-up did Chen commit to?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concerns Anita Kabir raised during the initial call and the follow-up Chen Lixin committed to in response.",
+        "relationship": "objection and its response within the same call",
+        "reason": "A single coherent request: concerns raised and the corresponding follow-up commitment addressing those same concerns."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer (Anita Kabir / FutureTech Innovations) and a named rep (Chen Lixin), which a sales manager would plausibly audit. All four concerns (integration with complex systems, support, training, pricing transparency) are directly voiced or implied by Anita in the dialogue, and Chen's two follow-up commitments (introductory email, discovery meeting) are stated verbatim. The answer contains no unasked extras and no unsupported claims. Because question_class is single_call, both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Anita Kabir the statement 'Integration is definitely a key concern for us, especially given the complexity of our current systems,' which matches the answer_claim verbatim and supports the gold_answer's claim about integration with complex systems."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Anita Kabir the statement 'Support and training are very important to us,' which matches the answer_claim and supports the gold_answer's mention of support and training concerns."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quote attributes to Anita Kabir the observation 'I've noticed that some other companies seem to have straightforward pricing at the outset.' This is an implicit concern about pricing transparency (comparing others' straightforward pricing to the current vendor's), which supports the gold_answer's claim about pricing transparency concerns. The phrasing is a polite/indirect way of raising the issue, but it does constitute raising a concern."
+          },
+          {
+            "index": 3,
+            "supported": true,
+            "reason": "The quote directly attributes to Chen Lixin the commitment 'I will follow up with an introductory email, and we can schedule a discovery meeting to explore your needs in greater detail,' which matches the answer_claim and supports the gold_answer's claim about Chen committing to an introductory email and a discovery meeting."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "All four factual claims in the gold_answer are supported by the cited evidence: (1) integration with complex systems \u2013 index 0; (2) support and training \u2013 index 1; (3) pricing transparency \u2013 index 2; (4) Chen's commitment to an introductory email and discovery meeting \u2013 index 3. The context metadata confirms the call involves Anita Kabir at FutureTech Innovations, consistent with the question. No unsupported claims remain."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-cddc44dac0d649fd",
+    "question": "What pricing did Dalia quote Rajiv Kapoor at TechGrove Systems for CloudLink Designer and CollabDesign Studio?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing Dalia quoted to Rajiv Kapoor at TechGrove Systems for two products: CloudLink Designer and CollabDesign Studio",
+        "relationship": "single coherent quote lookup \u2014 one pricing quote covering two products in the same commercial exchange",
+        "reason": "This is a single pricing lookup for one quote event; asking prices for two items in the same quote is a natural commercial request, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for pricing quoted by Dalia to Rajiv Kapoor at TechGrove Systems for two specific products. The transcript confirms CloudLink Designer at $1273 and CollabDesign Studio with two licenses at a bundled discounted rate with no specific dollar amount stated. The gold answer accurately reflects both facts without adding unasked extras. The question is naturally worded, identifies the rep, customer, company, and products, and a sales rep would plausibly want to recall quoted pricing. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Dalia Herz explicitly states CloudLink Designer pricing is $1273 and that CollabDesign Studio with two licenses comes at a bundled rate with a substantial discount. This directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states CloudLink Designer is $1273 and CollabDesign Studio with two licenses gets a bundled discounted rate (amount unspecified). The cited evidence confirms both: the exact $1273 price for CloudLink Designer and the bundled discount for two CollabDesign Studio licenses without specifying a dollar amount. The speaker (Dalia), the recipient context (Rajiv Kapoor at TechGrove Systems per metadata), and all pricing details align with the gold answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-7d3952784720133e",
+    "question": "For Metro Security Systems, what discount and final price was agreed for the SecureFlow Suite in the final negotiation, and what quantity was the 10% discount based on in the earlier pricing discussion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The agreed discount and final price for SecureFlow Suite in the final negotiation, plus the quantity the 10% discount was based on in the earlier pricing discussion, for Metro Security Systems.",
+        "relationship": "Both parts concern the same commercial negotiation (discount terms and pricing for SecureFlow Suite) across two calls on the same deal.",
+        "reason": "This is a coherent comparison of the same commercial terms (discounts/pricing) across the negotiation timeline, matching the accepted pattern of comparing the same commercial terms across calls."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvT4IAK",
+                "fact": "In the final negotiation, the SecureFlow Suite was agreed with a 10% discount, resulting in a final price of $5399.91.",
+                "why_other_call_cannot_supply_it": "The earlier call only mentions a 10% discount for a quantity of 10 units but does not provide the final price or confirm the final negotiation outcome."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swk5IAC",
+                "fact": "In the earlier pricing discussion, the 10% discount for SecureFlow Suite was based on a quantity of 10 units.",
+                "why_other_call_cannot_supply_it": "The final negotiation call does not mention the quantity basis for the discount; it only states the discount and final price."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the final agreed discount and price from the final negotiation, and the quantity basis for the 10% discount from the earlier pricing discussion. Each call provides one of these facts exclusively, and neither call contains both facts. Therefore, both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvT4IAK",
+                  "fact": "In the final negotiation, the SecureFlow Suite received a 10% discount, resulting in a final price of $5399.91.",
+                  "why_other_call_cannot_supply_it": "The earlier call only mentions a 10% discount for a quantity of 10 units but does not provide the final price after discount; the final price is only stated in the final negotiation call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Swk5IAC",
+                  "fact": "The 10% discount for SecureFlow Suite was based on a quantity of 10 units.",
+                  "why_other_call_cannot_supply_it": "The final negotiation call does not mention the quantity on which the discount is based; it only states the discount and final price, so the quantity information is exclusively available in the earlier pricing discussion."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the final discount and price from the final negotiation, and the quantity basis for the 10% discount from the earlier pricing discussion. Each call provides one of these facts exclusively, and neither call contains both facts. Therefore, both calls are necessary to fully answer the question."
+            },
+            {
+              "type": "object"
+            },
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvT4IAK",
+                  "fact": "In the final negotiation, the SecureFlow Suite was agreed with a 10% discount, resulting in a final price of $5399.91.",
+                  "why_other_call_cannot_supply_it": "The earlier call only mentions a 10% discount for a quantity of 10 units but does not provide the final price or confirm the final negotiation outcome."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Swk5IAC",
+                  "fact": "In the earlier pricing discussion, the 10% discount for SecureFlow Suite was based on a quantity of 10 units.",
+                  "why_other_call_cannot_supply_it": "The final negotiation call does not mention the quantity basis for the discount; it only states the discount and final price."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the final agreed discount and price from the final negotiation, and the quantity basis for the 10% discount from the earlier pricing discussion. Each call provides one of these facts exclusively, and neither call contains both facts. Therefore, both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvT4IAK",
+                "fact": "Final negotiation agreed a 10% discount on SecureFlow Suite, resulting in a price of $5399.91",
+                "why_other_call_cannot_supply_it": "The earlier call (2022-02-19) only previews pricing and explicitly defers final negotiation to a later discussion; it contains no final agreed price."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swk5IAC",
+                "fact": "In the earlier pricing discussion, the 10% discount on SecureFlow Suite was based on a quantity of 10 units",
+                "why_other_call_cannot_supply_it": "The final negotiation call mentions the 10% discount and final price but never states the quantity the discount was based on."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: the final negotiated discount/price and the quantity basis of the 10% discount from the earlier discussion. Each fact appears only in one call, and both are explicitly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvT4IAK",
+                  "fact": "Final negotiation agreed a 10% discount on SecureFlow Suite, resulting in a price of $5399.91",
+                  "why_other_call_cannot_supply_it": "The earlier call (2022-02-19) only previews pricing and explicitly defers final negotiation to a later discussion; it contains no final agreed price."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Swk5IAC",
+                  "fact": "In the earlier pricing discussion, the 10% discount on SecureFlow Suite was based on a quantity of 10 units",
+                  "why_other_call_cannot_supply_it": "The final negotiation call mentions the 10% discount and final price but never states the quantity the discount was based on."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: the final negotiated discount/price and the quantity basis of the 10% discount from the earlier discussion. Each fact appears only in one call, and both are explicitly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question targets Metro Security Systems' SecureFlow Suite pricing across two calls. Call 1 (2022-02-28, final negotiation) confirms a 10% discount bringing the price to $5,399.91. Call 2 (2022-02-19, earlier pricing discussion) states the 10% discount was for a quantity of 10 units. Each source contributes an exclusive requested fact: the final price/discount from the negotiation call and the quantity basis from the earlier call. The gold answer matches all source claims exactly with no extras. The question is naturally scoped to a real account and product, and a rep would plausibly need to recall these terms."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Ayo Okeke on 2022-02-28 explicitly states: 'For the SecureFlow Suite, you'll receive a 10% discount from the standard price, which now becomes $5399.91.' This directly supports the answer_claim of a 10% discount and final price of $5399.91 for the SecureFlow Suite in the final negotiation."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Ayo Okeke on 2022-02-19 explicitly states: 'with SecureFlow Suite, the quoted price includes a 10% discount for a quantity of 10 units.' This directly supports the answer_claim that the 10% discount in the earlier pricing discussion was based on a quantity of 10 units."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Final negotiation: 10% discount, price $5399.91 \u2014 supported by evidence index 0. (2) Earlier discussion: the 10% discount applied to a quantity of 10 units \u2014 supported by evidence index 1. Both factual claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms both calls relate to Metro Security Systems (account_name) and the same opportunity, establishing the correct context."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-f4507e1bd5ffc0e6",
+    "question": "For Future Innovations LLC, what scalability goal did Ana Perez raise in the initial discovery call, and how did Priyanka respond to Ana's objection that competitors' roadmaps seem more accelerated during the proposal call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) The scalability goal Ana Perez raised in the discovery call, and (2) Priyanka's response to Ana's objection about competitors' roadmaps in the proposal call",
+        "relationship": "two independent fact lookups joined across calls",
+        "reason": "The scalability goal and the competitive-roadmap objection/response are distinct business issues; being from the same account across two calls does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Ana's scalability goal from the June discovery call and (2) Priyanka's response to Ana's competitor-roadmap objection in the November proposal call. Source 1 (discovery) contains Ana stating 'scalability is crucial\u2026 ensuring our tools can grow with us,' matching the gold answer. Source 2 (proposal) contains Ana raising the objection about competitors' roadmaps seeming more accelerated and Priyanka replying they 'emphasize strategic improvements that ensure sustainable growth without compromising on security or user experience,' matching the gold answer. Each source contributes an exclusive requested fact. The question is naturally worded, adequately scoped to Future Innovations LLC and named participants, and a rep would plausibly want this information. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Ana Perez on 2023-06-06 states: 'scalability is crucial. We aim to maintain a consistent pace with technology advancements, ensuring our tools can grow with us.' This directly supports the answer_claim that Ana said scalability is crucial and they aim to keep pace with technology advancements so tools can grow with them. The call metadata confirms this is the initial discovery call (June 2023) for Future Innovations LLC with contact Ana Perez."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from the November 2023 call shows Ana raising the objection that 'some competitors' roadmaps seem more accelerated' and Priyanka responding: 'While some competitors may accelerate certain enhancements, we emphasize strategic improvements that ensure sustainable growth without compromising on security or user experience.' This directly supports the answer_claim about Priyanka's response to Ana's objection. The call metadata confirms this is the proposal call (November 2023) for the same opportunity and account."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Ana's scalability goal in the initial discovery call\u2014supported by evidence index 0 where Ana states scalability is crucial and tools should grow with technology advancements; (2) Priyanka's response to Ana's competitor-roadmap objection in the proposal call\u2014supported by evidence index 1 where Priyanka says they emphasize strategic improvements ensuring sustainable growth without compromising security or user experience. Both factual claims in the gold_answer are faithfully represented by the cited evidence. The paraphrase 'grow with technology advancements' vs. 'maintain a consistent pace with technology advancements, ensuring our tools can grow with us' is a faithful condensation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-ddf8626fd2865912",
+    "question": "What did Jessica Rivera say about Prestige Car Network, and what follow-up did she schedule with Sebastian?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Jessica Rivera said about Prestige Car Network and the follow-up she scheduled with Sebastian",
+        "relationship": "single coherent call summary: the follow-up naturally stems from the discussion about Prestige Car Network",
+        "reason": "Both parts concern the same conversation \u2014 her comments on Prestige Car Network and the resulting next step \u2014 forming one natural sales recap rather than two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Jessica's comment about Prestige Car Network's stability and the follow-up she scheduled with Sebastian. The dialogue confirms she said she'd 'heard mixed reviews about Prestige Car Network's stability' and agreed to 'plan for early next week.' The gold answer captures both facts precisely without extras. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall competitive intel and next-step commitments. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jessica Rivera explicitly states 'I've heard mixed reviews about Prestige Car Network's stability,' which directly supports the claim that she heard mixed reviews about Prestige Car Network's stability."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Jessica Rivera states 'Let's plan for early next week. Thanks again, Sebastian.' This directly supports the claim that she planned to chat early next week with Sebastian, as she addresses him by name and proposes the timeframe."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two factual claims: (1) Jessica heard mixed reviews about Prestige Car Network's stability, and (2) she agreed to talk again early next week. Evidence index 0 directly supports claim (1) with Jessica's own words about mixed reviews regarding stability. Evidence index 1 directly supports claim (2) with Jessica proposing 'early next week' and addressing Sebastian by name, confirming the follow-up was scheduled with him. Both claims are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-7d17cc612921eed0",
+    "question": "What did Noah Foster say was his concern with the other options he's been considering, and what did David say AutoElite would do about it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Noah Foster's concern about the other options he's considering and David's response about what AutoElite would do about it",
+        "relationship": "single coherent objection-and-response exchange",
+        "reason": "The question asks for one customer objection and the salesperson's corresponding response to the same issue, which is a natural, coherent sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about Noah's concern with other options and David's response. The transcript shows Noah stating 'the lack of transparency in their warranty terms is definitely a concern' and David replying 'Transparency is a key principle for us at AutoElite Motors. We'll ensure you have all the details you need about our offerings.' The gold answer accurately captures both facts without extras. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall objection-handling details. Single-call set so both_sources_required is true.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage directly shows Noah Foster stating 'the lack of transparency in their warranty terms is definitely a concern' regarding other options he's been looking into, which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage shows David Ng explicitly stating 'Transparency is a key principle for us at AutoElite Motors. We'll ensure you have all the details you need about our offerings,' which directly supports the answer_claim about David saying transparency is a key principle and they'd ensure he has all the details."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Noah's concern about lack of transparency in competitors' warranty terms, and Index 1 confirms David's response that transparency is a key principle and they'll ensure he has all the details about their offerings. Together they answer both parts of the question completely."
+      }
+    }
+  }
+]

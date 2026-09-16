@@ -1,0 +1,267 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "b29ce8196c85a4cb1ebed3977e922114bd5a47881c0137f9ada2641265e1e3ab",
+  "questions": 3,
+  "counts": {
+    "pass": 2,
+    "fail": 1
+  },
+  "estimated_usd": 0.300436838,
+  "results": [
+    {
+      "question_id": "b2b-single_call-b8565f0ad2070d2c",
+      "question": "What concerns did Anita Kabir at FutureTech Innovations raise during the initial call with Chen Lixin, and what follow-up did Chen commit to?",
+      "gold_answer": "Anita raised concerns about integration with complex systems, support, training, and pricing transparency; Chen committed to sending an introductory email and scheduling a discovery meeting.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrHYIA0",
+        "b2b:a05Wt000003SrNHIA0",
+        "b2b:a05Wt000003SrSnIAK",
+        "b2b:a05Wt000003SrciIAC",
+        "b2b:a05Wt000003Ss5QIAS",
+        "b2b:a05Wt000003Ss5RIAS",
+        "b2b:a05Wt000003SsOsIAK",
+        "b2b:a05Wt000003SuIlIAK",
+        "b2b:a05Wt000003SuImIAK",
+        "b2b:a05Wt000003SuvLIAS",
+        "b2b:a05Wt000003Sv0BIAS",
+        "b2b:a05Wt000003Sv1sIAC",
+        "b2b:a05Wt000003SvhmIAC",
+        "b2b:a05Wt000003SwacIAC",
+        "b2b:a05Wt000003SwadIAC",
+        "b2b:a05Wt000003SwaeIAC",
+        "b2b:a05Wt000003SxYAIA0",
+        "b2b:a05Wt000003SxoOIAS",
+        "b2b:a05Wt000003Sye0IAC",
+        "b2b:a05Wt000003SynbIAC",
+        "b2b:a05Wt000003SyqvIAC",
+        "b2b:a05Wt000003SzTaIAK",
+        "b2b:a05Wt000003SzTbIAK",
+        "b2b:a05Wt000003Szv9IAC",
+        "b2b:a05Wt000003T10xIAC",
+        "b2b:a05Wt000003T12MIAS",
+        "b2b:a05Wt000003T1VLIA0",
+        "b2b:a05Wt000003T1dYIAS",
+        "b2b:a05Wt000003T2HyIAK",
+        "b2b:a05Wt000003T2HzIAK",
+        "b2b:a05Wt000003T2hiIAC",
+        "b2b:a05Wt000003T2xeIAC",
+        "b2b:a05Wt000003T2zWIAS",
+        "b2b:a05Wt000003T35lIAC",
+        "b2b:a05Wt000003T4EgIAK",
+        "b2b:a05Wt000003T4LAIA0",
+        "b2b:a05Wt000003T4o6IAC",
+        "b2b:a05Wt000003T4o7IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Chen Lixin spoke with Anita Kabir on three calls (2021-04-13, 2021-04-16, 2021-04-20). The 'initial call' is unambiguously the earliest, 2021-04-13 (b2b:a05Wt000003SyqvIAC), an introductory call. In it Anita raised integration complexity, the importance of support/training, and concerns about pricing complexity relative to competitors, and Chen committed to sending an introductory email and scheduling a discovery meeting.",
+        "answers": [
+          {
+            "answer": "On the initial call (2021-04-13), Anita Kabir raised three concerns: (1) integration is a key concern given the complexity of FutureTech's current systems; (2) support and training are very important to FutureTech; and (3) pricing structures can seem complex at first, noting some other companies have more straightforward pricing upfront. Chen Lixin responded that TechPulse has streamlined implementation to minimize disruptions with unmatched support services and comprehensive training, and committed to following up with an introductory email and scheduling a discovery meeting to explore FutureTech's needs in greater detail, including how solutions like AI DesignShift and CloudInnovate Space could meet her specific challenges.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyqvIAC",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2021-04-13T16:10:40] Anita Kabir: Integration is definitely a key concern for us, especially given the complexity of our current systems.\n[2021-04-13T16:10:47] Chen Lixin: I completely understand. We've streamlined our implementation processes to minimize disruptions and our support services are unmatched in the industry. Clients often appreciate our approach to rapid deployment and the comprehensive training programs we offer."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyqvIAC",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2021-04-13T16:11:05] Chen Lixin: Great to hear. Now, in terms of pricing, I know the structure can sometimes seem complex at first, but we offer a very favorable total cost of ownership when you look at the long term. Our products like the QuantumPCB Modeler and CloudInnovate Space are competitively priced considering their advanced features.\n[2021-04-13T16:11:16] Anita Kabir: Yes, I’ve noticed that some other companies seem to have straightforward pricing at the outset."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyqvIAC",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-04-13T16:11:55] Anita Kabir: It sounds like there's a good alignment between our companies. Can we potentially set up a more detailed discussion or demo?\n[2021-04-13T16:12:09] Chen Lixin: Of course, Anita. I will follow up with an introductory email, and we can schedule a discovery meeting to explore your needs in greater detail. In that meeting, we'll delve deeper into how our solutions like AI DesignShift and CloudInnovate Space can meet your specific challenges."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Anita Kabir at FutureTech Innovations, the initial call with Chen Lixin, and asks for concerns raised and follow-up committed. Among all calls, there are exactly two calls between Chen Lixin and Anita Kabir: b2b:a05Wt000003SyqvIAC (2021-04-13) and b2b:a05Wt000003Ss5RIAS (2021-04-16). The 'initial' qualifier identifies the earliest, which is the April 13 call. In that call, Anita raises concerns about integration complexity, pricing transparency, and the need for support/training. Chen commits to sending an introductory email and scheduling a discovery meeting.",
+        "answers": [
+          {
+            "answer": "During the initial call on 2021-04-13, Anita Kabir raised three main concerns: (1) Integration complexity – she noted that integrating new AI tools into FutureTech's existing complex systems is a key concern (line 5). (2) Pricing transparency – she observed that some other companies seem to have straightforward pricing at the outset, implying TechPulse's structure seemed less clear (line 9). (3) Support and training importance – she emphasized that support and training are very important to FutureTech (line 7). Chen Lixin responded to each: he explained TechPulse's streamlined implementation and unmatched support services (line 6), acknowledged the pricing concern and committed to being more transparent about value (line 10), and affirmed the importance of support. As a follow-up commitment, Chen stated he would send an introductory email and schedule a discovery meeting to explore FutureTech's needs in greater detail, specifically delving into how AI DesignShift and CloudInnovate Space can meet their specific challenges (line 14).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyqvIAC",
+                "line_start": 2,
+                "line_end": 17,
+                "quote": "[2021-04-13T16:10:10] Chen Lixin: I'm great, thanks for asking. I'm reaching out to introduce TechPulse Solutions and discuss how we might assist FutureTech Innovations with our AI-powered solutions.\n[2021-04-13T16:10:18] Anita Kabir: That sounds interesting. I've heard a bit about TechPulse before. Could you tell me more about what differentiates you from others in the industry?\n[2021-04-13T16:10:27] Chen Lixin: Absolutely, Anita. At TechPulse, we focus on not just cutting-edge technology but also on providing scalable and customizable products like our SecureFlow Suite and AI DesignShift. These solutions are designed to integrate seamlessly with existing workflows, ensuring smooth transitions and robust data security.\n[2021-04-13T16:10:40] Anita Kabir: Integration is definitely a key concern for us, especially given the complexity of our current systems.\n[2021-04-13T16:10:47] Chen Lixin: I completely understand. We've streamlined our implementation processes to minimize disruptions and our support services are unmatched in the industry. Clients often appreciate our approach to rapid deployment and the comprehensive training programs we offer.\n[2021-04-13T16:10:55] Anita Kabir: That's good to know. Support and training are very important to us.\n[2021-04-13T16:11:05] Chen Lixin: Great to hear. Now, in terms of pricing, I know the structure can sometimes seem complex at first, but we offer a very favorable total cost of ownership when you look at the long term. Our products like the QuantumPCB Modeler and CloudInnovate Space are competitively priced considering their advanced features.\n[2021-04-13T16:11:16] Anita Kabir: Yes, I’ve noticed that some other companies seem to have straightforward pricing at the outset.\n[2021-04-13T16:11:25] Chen Lixin: That's something we’re aiming to improve by being more transparent about the value you receive. Once you factor in our customization capabilities and the added innovation, the overall package we offer becomes quite compelling.\n[2021-04-13T16:11:35] Anita Kabir: Fair enough. It's important to us to partner with someone who understands the direction we’re heading in with our software solutions.\n[2021-04-13T16:11:45] Chen Lixin: Definitely. TechPulse also prioritizes future advancements in our industry, and like FutureTech, we believe in fostering innovation through technology.\n[2021-04-13T16:11:55] Anita Kabir: It sounds like there's a good alignment between our companies. Can we potentially set up a more detailed discussion or demo?\n[2021-04-13T16:12:09] Chen Lixin: Of course, Anita. I will follow up with an introductory email, and we can schedule a discovery meeting to explore your needs in greater detail. In that meeting, we'll delve deeper into how our solutions like AI DesignShift and CloudInnovate Space can meet your specific challenges.\n[2021-04-13T16:12:20] Anita Kabir: That sounds perfect. I look forward to receiving your email and discussing this further.\n[2021-04-13T16:12:28] Chen Lixin: Thank you, Anita. It was great talking with you, and I’m excited about the opportunity to work together. Have a wonderful day!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same three concerns raised by Anita Kabir: (1) integration complexity with FutureTech's existing systems, (2) the importance of support and training, and (3) pricing transparency/complexity compared to other companies. Both also state the same follow-up commitments from Chen Lixin: sending an introductory email and scheduling a discovery meeting to explore FutureTech's needs in greater detail (including how AI DesignShift and CloudInnovate Space could address their challenges). The reference covers all requested facts: the concerns (integration with complex systems, support, training, and pricing transparency) and the follow-up commitments (introductory email and discovery meeting). The additional details in answers A and B (specific product names, line references, Chen's responses to each concern) are extras that do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-cddc44dac0d649fd",
+      "question": "What pricing did Dalia quote Rajiv Kapoor at TechGrove Systems for CloudLink Designer and CollabDesign Studio?",
+      "gold_answer": "CloudLink Designer is $1273; CollabDesign Studio with two licenses gets a bundled discounted rate (amount unspecified).",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SwCPIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Single call; Dalia quotes $1273 for CloudLink Designer and a discounted bundled rate for two CollabDesign Studio licenses.",
+        "answers": [
+          {
+            "answer": "Dalia quoted $1273 for CloudLink Designer, and for CollabDesign Studio a bundled rate for two licenses that includes a substantial discount (no specific dollar figure given).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwCPIA0",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-10-07T10:02:36] Dalia Herz: Certainly. For the CloudLink Designer, the pricing is set at $1273, which fits perfectly with your budget. As for the CollabDesign Studio, with two licenses you're looking at a bundled rate that gives you a substantial discount."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is exactly one call in the supplied history involving Dalia Herz, Rajiv Kapoor, and TechGrove Systems. In that call, Dalia quotes specific pricing for CloudLink Designer and a bundled rate for CollabDesign Studio. The question matches this single call unambiguously.",
+        "answers": [
+          {
+            "answer": "Dalia quoted CloudLink Designer at $1,273. For CollabDesign Studio, she quoted a bundled rate for two licenses that provides a substantial discount (no specific dollar figure was stated for CollabDesign Studio).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwCPIA0",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-10-07T10:02:36] Dalia Herz: Certainly. For the CloudLink Designer, the pricing is set at $1273, which fits perfectly with your budget. As for the CollabDesign Studio, with two licenses you're looking at a bundled rate that gives you a substantial discount."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two facts: CloudLink Designer was quoted at $1,273, and CollabDesign Studio was quoted as a bundled rate for two licenses with a substantial discount but no specific dollar figure. The reference likewise covers both requested pricing facts: $1273 for CloudLink Designer and a bundled discounted rate (amount unspecified) for CollabDesign Studio with two licenses. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-7d17cc612921eed0",
+      "question": "What did Noah Foster say was his concern with the other options he's been considering, and what did David say AutoElite would do about it?",
+      "gold_answer": "Noah was concerned about the lack of transparency in competitors' warranty terms; David said transparency is a key principle and they'd ensure he has all the details about their offerings.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOPlIAO",
+        "b2c:a05Ws000005SOWCIA4",
+        "b2c:a05Ws000005SPVZIA4",
+        "b2c:a05Ws000005SPdXIAW",
+        "b2c:a05Ws000005SPqSIAW",
+        "b2c:a05Ws000005SRDoIAO",
+        "b2c:a05Ws000005SRNXIA4",
+        "b2c:a05Ws000005SRNYIA4",
+        "b2c:a05Ws000005SSgMIAW",
+        "b2c:a05Ws000005ST1NIAW",
+        "b2c:a05Ws000005ST2pIAG",
+        "b2c:a05Ws000005ST2qIAG",
+        "b2c:a05Ws000005SU3pIAG",
+        "b2c:a05Ws000005SUtFIAW",
+        "b2c:a05Ws000005SUyDIAW",
+        "b2c:a05Ws000005SV1LIAW",
+        "b2c:a05Ws000005SW3xIAG",
+        "b2c:a05Ws000005SWFNIA4",
+        "b2c:a05Ws000005SWtfIAG",
+        "b2c:a05Ws000005SWtgIAG",
+        "b2c:a05Ws000005SWthIAG",
+        "b2c:a05Ws000005SWyIIAW",
+        "b2c:a05Ws000005SXeEIAW",
+        "b2c:a05Ws000005SYAdIAO",
+        "b2c:a05Ws000005SYyfIAG",
+        "b2c:a05Ws000005SZ6fIAG",
+        "b2c:a05Ws000005SZbDIAW",
+        "b2c:a05Ws000005SZbEIAW",
+        "b2c:a05Ws000005SaAtIAK",
+        "b2c:a05Ws000005SaYqIAK",
+        "b2c:a05Ws000005ScxBIAS",
+        "b2c:a05Ws000005Sd3dIAC",
+        "b2c:a05Ws000005Sd6rIAC",
+        "b2c:a05Ws000005SdV1IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "There are two calls with David Ng on the same opportunity. In the 2023-10-03 call, Noah raises a concern about the lack of transparency in other options' warranty terms, and David responds about AutoElite's transparency. In the 2023-10-05 call, Noah raises a different concern — that a competitor (High-End Autos Co.) is less responsive after the sale — and David gives a different response about consistent, responsive support. The question does not disambiguate which David call is intended, so both are valid complete answers.",
+        "answers": [
+          {
+            "answer": "Noah said that with the other options he's been considering, the lack of transparency in their warranty terms is a concern. David said he understands the hesitation, that transparency is a key principle at AutoElite Motors, and that they will ensure Noah has all the details he needs about their offerings.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRNXIA4",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-10-03T11:04:20] Noah Foster: Ah, that makes sense. I’ve been looking into some other options but the lack of transparency in their warranty terms is definitely a concern."
+              }
+            ]
+          },
+          {
+            "answer": "Noah's concern with the other options was that High-End Autos Co., while offering attractive pricing, can be less responsive after the sale (customers frustrated by needing additional follow-ups). David confirmed that feedback, and said that with AutoElite Noah can expect consistent and responsive support long after the purchase.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ST2qIAG",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-10-05T15:01:30] Noah Foster: That's reassuring. I heard from a few people that High-End can be less responsive after the sale. Is that right?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks what Noah Foster said was his concern with 'the other options he's been considering' and what 'David' said AutoElite would do about it. Only one salesperson named David appears in the call history: David Ng, who spoke with Noah on two calls (2023-10-03 and 2023-10-05) for the same opportunity 'Premium Vehicle and Service Package for Winter.' On the 2023-10-03 call, Noah explicitly states he has 'been looking into some other options' and identifies 'the lack of transparency in their warranty terms' as 'definitely a concern.' David responds that transparency is a key principle at AutoElite and they will ensure Noah has all the details. The 2023-10-05 call does not contain a comparable explicit concern about 'other options' with a matching response from David. This is the only call where both elements of the question are satisfied.",
+        "answers": [
+          {
+            "answer": "Noah Foster said his concern with the other options he had been considering was the lack of transparency in their warranty terms. David Ng responded that transparency is a key principle at AutoElite Motors and that they would ensure Noah has all the details he needs about their offerings.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRNXIA4",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-10-03T11:04:20] Noah Foster: Ah, that makes sense. I’ve been looking into some other options but the lack of transparency in their warranty terms is definitely a concern.\n[2023-10-03T11:04:35] David Ng: I can understand your hesitation. Transparency is a key principle for us at AutoElite Motors. We'll ensure you have all the details you need about our offerings."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
