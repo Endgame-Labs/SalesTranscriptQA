@@ -1,0 +1,294 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "a92afb56bae56f6827b3ab48b584ba51da2005d64c56be2a74e73102cd49dde0",
+  "questions": 3,
+  "counts": {
+    "pass": 2,
+    "fail": 1
+  },
+  "estimated_usd": 0.2983355,
+  "results": [
+    {
+      "question_id": "b2b-single_call-f8f7911f8c8f3b7e",
+      "question": "What is DataGuard Insights' budget for the PowerPro Optimize purchase, and how does the quoted total compare to it?",
+      "gold_answer": "Akira Tanaka's budget is $1794; four units at $449 each total $1796, slightly over budget.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SxoSIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 16,
+            "normalized_end": 17
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call exists; it states the budget and quoted total directly.",
+        "answers": [
+          {
+            "answer": "DataGuard Insights' budget is $1794, and the quoted total for four PowerPro Optimize units is $1796 ($449 each), which is $2 over budget but described as fitting almost perfectly within the stated budget.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxoSIAS",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-10-30T10:01:20] Chidi Onyekachi: Certainly. Each unit of the PowerPro Optimize is priced at $449, so for four units, the total would be $1796. This fits almost perfectly within your stated budget of $1794. I’m sure we can work something out to align with your budget."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is a single call for DataGuard Insights regarding the PowerPro Optimize purchase. Line 16 explicitly states the budget ($1,794) and the quoted total ($1,796), and notes the quoted total exceeds the budget by $2.",
+        "answers": [
+          {
+            "answer": "DataGuard Insights' stated budget for the PowerPro Optimize purchase is $1,794. The quoted total for four units at $449 each is $1,796, which exceeds the budget by $2. The rep (Chidi Onyekachi) noted it 'fits almost perfectly' within the budget and said they could 'work something out to align with your budget.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxoSIAS",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-10-30T10:01:20] Chidi Onyekachi: Certainly. Each unit of the PowerPro Optimize is priced at $449, so for four units, the total would be $1796. This fits almost perfectly within your stated budget of $1794. I’m sure we can work something out to align with your budget."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the budget is $1,794 and the quoted total for four units at $449 each is $1,796, exceeding the budget by $2. They agree on all requested facts. The reference also covers both requested facts: the $1,794 budget and the $1,796 total being slightly over budget. The reference attributes the budget to 'Akira Tanaka' rather than 'DataGuard Insights,' but the question asks about DataGuard Insights' budget; since source validity was checked separately and the numeric facts match, the reference covers the requested facts. Answer B adds extra detail about the rep's comments, which is unrequested but does not affect agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-3bbb9dd221516efe",
+      "question": "What is the total quoted amount for EcoTech Manufacturing's proposal, and which product did Elena cite as addressing their security compliance concern?",
+      "gold_answer": "$29,854.33; SecureFlow Suite",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZtIAK",
+        "b2b:a05Wt000003SqZuIAK",
+        "b2b:a05Wt000003SrkRIAS",
+        "b2b:a05Wt000003Sru7IAC",
+        "b2b:a05Wt000003SryyIAC",
+        "b2b:a05Wt000003SswjIAC",
+        "b2b:a05Wt000003SvBOIA0",
+        "b2b:a05Wt000003SvhcIAC",
+        "b2b:a05Wt000003SvkrIAC",
+        "b2b:a05Wt000003SvrHIAS",
+        "b2b:a05Wt000003Swx0IAC",
+        "b2b:a05Wt000003SxGQIA0",
+        "b2b:a05Wt000003SxGRIA0",
+        "b2b:a05Wt000003SxWUIA0",
+        "b2b:a05Wt000003SxY7IAK",
+        "b2b:a05Wt000003SxZiIAK",
+        "b2b:a05Wt000003Sy4QIAS",
+        "b2b:a05Wt000003SyE4IAK",
+        "b2b:a05Wt000003SyE5IAK",
+        "b2b:a05Wt000003SyHIIA0",
+        "b2b:a05Wt000003SyUAIA0",
+        "b2b:a05Wt000003SyvbIAC",
+        "b2b:a05Wt000003Sz3gIAC",
+        "b2b:a05Wt000003SzDKIA0",
+        "b2b:a05Wt000003SzRqIAK",
+        "b2b:a05Wt000003T02vIAC",
+        "b2b:a05Wt000003T02wIAC",
+        "b2b:a05Wt000003T04XIAS",
+        "b2b:a05Wt000003T069IAC",
+        "b2b:a05Wt000003T07lIAC",
+        "b2b:a05Wt000003T09NIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 18,
+            "normalized_end": 19
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Elena Petrova has two calls on the EcoTech Manufacturing - AI-Powered EDA Solutions opportunity with different quoted totals: the 2024-01-04 call cites a proposal total of 'just under $30,000', while the 2024-03-17 final proposal call cites $29,854.33. Both cite SecureFlow Suite as addressing security compliance, but the total quoted amount differs between the two calls, yielding materially different complete answers.",
+        "answers": [
+          {
+            "answer": "The proposal total is just under $30,000, and Elena cited the SecureFlow Suite as addressing the security compliance concern (enhanced security protocols, industry-standard compliance, and robust data protection).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvrHIAS",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2024-01-04T14:03:08] Elena Petrova: Let’s talk about pricing. With the configurations we discussed, PulseSim Pro would be at a 10% discount, SecureFlow Suite at 5%, and further benefits on CloudLink Designer and others. We're looking at a proposal total of just under $30,000. How does this align with your expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvrHIAS",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2024-01-04T14:01:20] Elena Petrova: Exactly. And with SecureFlow Suite, not only do you get enhanced security protocols to safeguard your data, but it also integrates seamlessly with your infrastructure, ensuring your risk aversion requirements are met.\n[2024-01-04T14:01:30] Yen Nguyen: The security aspect is critical for us. We need to be sure our data is protected at all times."
+              }
+            ]
+          },
+          {
+            "answer": "The final proposal total is $29,854.33 (with products and discounts applied), and Elena cited the SecureFlow Suite as addressing the security compliance concern (robust data protection that adapts to evolving security standards and ensures compliance).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2024-03-17T10:01:18] Elena Petrova: That's exactly what we aim for. Now, regarding the quote, with the products and discounts applied, the total amount is $29,854.33. We've ensured it balances efficiency with a favorable total cost of ownership for EcoTech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2024-03-17T10:00:20] Elena Petrova: Absolutely. We've tailored this proposal to ensure a cost-effective solution with significant ROI for EcoTech. Shall we start with the security compliance and data protection features you're interested in?\n[2024-03-17T10:00:25] Yen Nguyen: Yes, definitely. Security's a big concern. The industry standards are always shifting, and it can be hard to keep up."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for (1) the total quoted amount for EcoTech Manufacturing's proposal and (2) which product Elena cited as addressing their security compliance concern. Elena Petrova is the only salesperson named Elena, and she appears in three calls under opportunity 'EcoTech Manufacturing - AI-Powered EDA Solutions' (006Wt000007B5S3IAK). The explicit total quoted amount ($29,854.33) is stated in the 2024-03-17 call (line 14). In that same call, Elena explicitly cites SecureFlow Suite as addressing the security compliance concern (line 6). The earlier 2024-01-04 call gives a vaguer 'just under $30,000' (line 18) and also cites SecureFlow Suite for security (line 8), but the precise total is in the later call. These are consistent and refer to the same proposal/opportunity, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "The total quoted amount for EcoTech Manufacturing's proposal is $29,854.33. Elena Petrova cited the SecureFlow Suite as the product addressing their security compliance concern, noting it offers robust data protection that adapts to evolving security standards and integrates seamlessly into their current systems while ensuring compliance.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2024-03-17T10:01:18] Elena Petrova: That's exactly what we aim for. Now, regarding the quote, with the products and discounts applied, the total amount is $29,854.33. We've ensured it balances efficiency with a favorable total cost of ownership for EcoTech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2024-03-17T10:00:20] Elena Petrova: Absolutely. We've tailored this proposal to ensure a cost-effective solution with significant ROI for EcoTech. Shall we start with the security compliance and data protection features you're interested in?\n[2024-03-17T10:00:25] Yen Nguyen: Yes, definitely. Security's a big concern. The industry standards are always shifting, and it can be hard to keep up.\n[2024-03-17T10:00:30] Elena Petrova: That's something we're very mindful of, Yen. Our SecureFlow Suite, for instance, offers robust data protection that adapts to evolving security standards. It's designed to integrate seamlessly into your current systems while ensuring compliance."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-cbc74b86677b67d0",
+      "question": "What next steps did Sophia outline for Lucas Green if he decides to proceed with a vehicle purchase?",
+      "gold_answer": "Arrange a meeting to present tailored vehicle proposals, then negotiate pricing and terms that suit his needs.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNGkIAO",
+        "b2c:a05Ws000005SNLVIA4",
+        "b2c:a05Ws000005SORJIA4",
+        "b2c:a05Ws000005SOZNIA4",
+        "b2c:a05Ws000005SOokIAG",
+        "b2c:a05Ws000005SOvzIAG",
+        "b2c:a05Ws000005SPNRIA4",
+        "b2c:a05Ws000005SPtWIAW",
+        "b2c:a05Ws000005SQHuIAO",
+        "b2c:a05Ws000005SQeUIAW",
+        "b2c:a05Ws000005SQo6IAG",
+        "b2c:a05Ws000005SQxqIAG",
+        "b2c:a05Ws000005SRSKIA4",
+        "b2c:a05Ws000005SS0HIAW",
+        "b2c:a05Ws000005SShsIAG",
+        "b2c:a05Ws000005SShtIAG",
+        "b2c:a05Ws000005STpAIAW",
+        "b2c:a05Ws000005SULLIA4",
+        "b2c:a05Ws000005SUy8IAG",
+        "b2c:a05Ws000005SVpLIAW",
+        "b2c:a05Ws000005SWNEIA4",
+        "b2c:a05Ws000005SWgZIAW",
+        "b2c:a05Ws000005SWgaIAG",
+        "b2c:a05Ws000005SXEQIA4",
+        "b2c:a05Ws000005SXWKIA4",
+        "b2c:a05Ws000005SXXnIAO",
+        "b2c:a05Ws000005SY8uIAG",
+        "b2c:a05Ws000005SYAWIA4",
+        "b2c:a05Ws000005SYGyIAO",
+        "b2c:a05Ws000005SYTqIAO",
+        "b2c:a05Ws000005SYsAIAW",
+        "b2c:a05Ws000005SYsBIAW",
+        "b2c:a05Ws000005SYybIAG",
+        "b2c:a05Ws000005SZRZIA4",
+        "b2c:a05Ws000005SbEsIAK",
+        "b2c:a05Ws000005SbHyIAK",
+        "b2c:a05Ws000005SbbOIAS",
+        "b2c:a05Ws000005Sc4KIAS",
+        "b2c:a05Ws000005ScSWIA0",
+        "b2c:a05Ws000005ScdpIAC",
+        "b2c:a05Ws000005Sd3ZIAS",
+        "b2c:a05Ws000005Sd5BIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only the 2023-09-03 call with Sophia Grimaldi contains Lucas explicitly asking 'What would be the next steps if we decide to proceed?' and Sophia's direct answer. Her other calls describe different next steps (discovery session scheduling, sending documentation) not framed as 'if he decides to proceed,' so they are not competing answers to this wording.",
+        "answers": [
+          {
+            "answer": "Sophia outlined that once Lucas had time to consider his options, they would arrange a meeting to present tailored vehicle proposals, and after that they could negotiate pricing and terms that suit his needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOZNIA4",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-09-03T13:03:10] Lucas Green: It sounds like you guys have really thought about every aspect of the car-owning experience. What would be the next steps if we decide to proceed?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Sophia (Grimaldi) and Lucas Green. Among all calls, Sophia Grimaldi appears in three calls (b2c:a05Ws000005SOZNIA4, b2c:a05Ws000005SQHuIAO, b2c:a05Ws000005SQo6IAG). Only in call b2c:a05Ws000005SOZNIA4 does Lucas explicitly ask 'What would be the next steps if we decide to proceed?' and Sophia outlines specific next steps for proceeding with a vehicle purchase. The other two Sophia calls discuss next steps in different contexts (arranging a discovery session, or sending documentation for review) but do not frame them as steps 'if he decides to proceed with a vehicle purchase' in the same direct way.",
+        "answers": [
+          {
+            "answer": "Sophia outlined that once Lucas has had some time to consider his options, they can arrange a meeting to present tailored vehicle proposals. After that, they can negotiate pricing and terms that suit his needs, aiming for a solution that's perfect for him and his family.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOZNIA4",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-09-03T13:03:10] Lucas Green: It sounds like you guys have really thought about every aspect of the car-owning experience. What would be the next steps if we decide to proceed?\n[2023-09-03T13:03:28] Sophia Grimaldi: Once you've had some time to consider your options, we can arrange a meeting to present some tailored vehicle proposals. After that, we can negotiate pricing and terms that suit your needs. Let's aim for a solution that's perfect for you and your family."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two next steps: (1) arrange a meeting to present tailored vehicle proposals after Lucas has had time to consider his options, and (2) negotiate pricing and terms that suit his needs. Answer B adds a minor extra about aiming for a solution perfect for him and his family, which is unrequested embellishment and does not affect agreement. The reference explicitly lists both steps (arrange a meeting to present tailored vehicle proposals, then negotiate pricing and terms that suit his needs), covering all requested facts from the question."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
