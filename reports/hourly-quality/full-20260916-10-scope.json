@@ -1,0 +1,587 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "b7791265ed607b737bb60bdd17b9e2657548bc466ff2cd60bed58ec26fefb57e",
+  "questions": 5,
+  "counts": {
+    "pass": 4,
+    "fail": 1
+  },
+  "estimated_usd": 0.68926778,
+  "results": [
+    {
+      "question_id": "b2b-single_call-88d5ec4cae3fc0f8",
+      "question": "What discounts did Carlos offer Juan on TechPulse's products for the Horizon Tech proposal?",
+      "gold_answer": "10% off CloudLink Designer and PulseSim Pro, and 5% off SecureFlow Suite and AI Cirku-Tech.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7yIAC",
+        "b2b:a05Wt000003StG0IAK",
+        "b2b:a05Wt000003SthUIAS",
+        "b2b:a05Wt000003StmLIAS",
+        "b2b:a05Wt000003StnzIAC",
+        "b2b:a05Wt000003Sto0IAC",
+        "b2b:a05Wt000003Su4AIAS",
+        "b2b:a05Wt000003SvL4IAK",
+        "b2b:a05Wt000003SvpmIAC",
+        "b2b:a05Wt000003SwVdIAK",
+        "b2b:a05Wt000003Sx0LIAS",
+        "b2b:a05Wt000003SxLIIA0",
+        "b2b:a05Wt000003Sxd5IAC",
+        "b2b:a05Wt000003Sxd6IAC",
+        "b2b:a05Wt000003Sxd7IAC",
+        "b2b:a05Wt000003Sy4WIAS",
+        "b2b:a05Wt000003SyScIAK",
+        "b2b:a05Wt000003SypKIAS",
+        "b2b:a05Wt000003SzZvIAK",
+        "b2b:a05Wt000003T0kbIAC",
+        "b2b:a05Wt000003T1DaIAK",
+        "b2b:a05Wt000003T286IAC",
+        "b2b:a05Wt000003T2BLIA0",
+        "b2b:a05Wt000003T2KtIAK",
+        "b2b:a05Wt000003T2ODIA0",
+        "b2b:a05Wt000003T2kmIAC",
+        "b2b:a05Wt000003T2zFIAS",
+        "b2b:a05Wt000003T2zGIAS",
+        "b2b:a05Wt000003T343IAC",
+        "b2b:a05Wt000003T3VVIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 6,
+            "normalized_end": 7
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call between Carlos Nunez and Juan Montoya (Oct 28, 2023, 'Enhanced Integration & Security Framework for Horizon Tech') mentions specific discounts; the earlier Sep 25 call explicitly declined to give pricing details.",
+        "answers": [
+          {
+            "answer": "Carlos offered a 10% discount on CloudLink Designer and PulseSim Pro, and a 5% discount on SecureFlow Suite and AI Cirku-Tech, ensuring a favorable total cost of ownership.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StG0IAK",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-10-28T09:35:27] Carlos Nunez: Great question, Juan. We've done a detailed competitive analysis which shows that our pricing is very much aligned with market standards. [09:35] Plus, we offer discounts - for example, a 10% discount on our CloudLink Designer and PulseSim Pro, and a 5% on SecureFlow Suite and AI Cirku-Tech, ensuring a favorable total cost of ownership."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Carlos (Nunez), Juan (Montoya), and the Horizon Tech proposal. Only one call matches all three qualifiers: call b2b:a05Wt000003StG0IAK (2023-10-28), where Carlos Nunez speaks with Juan Montoya about the 'Enhanced Integration & Security Framework for Horizon Tech' proposal and states specific discounts. The other Carlos–Juan calls (2023-09-25 and 2023-10-01) do not contain discount offers. No other call involves both Carlos and Juan together.",
+        "answers": [
+          {
+            "answer": "Carlos offered Juan a 10% discount on CloudLink Designer and PulseSim Pro, and a 5% discount on SecureFlow Suite and AI Cirku-Tech, ensuring a favorable total cost of ownership for the Horizon Tech proposal.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StG0IAK",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-10-28T09:35:27] Carlos Nunez: Great question, Juan. We've done a detailed competitive analysis which shows that our pricing is very much aligned with market standards. [09:35] Plus, we offer discounts - for example, a 10% discount on our CloudLink Designer and PulseSim Pro, and a 5% on SecureFlow Suite and AI Cirku-Tech, ensuring a favorable total cost of ownership."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same discounts: 10% on CloudLink Designer and PulseSim Pro, and 5% on SecureFlow Suite and AI Cirku-Tech. The reference lists exactly those four products with the same percentage discounts. The additional phrasing about 'favorable total cost of ownership' in both answers is an unrequested extra and does not affect agreement. All requested discount facts are present and consistent across both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-03e4a46d366c7ac5",
+      "question": "What deployment timeline did Mei Lin give Elena Grigore for AI Cirku-Tech at GreenEnergy Solutions?",
+      "gold_answer": "Full deployment within weeks rather than months, due to compatibility with existing workflows.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SsOlIAK",
+        "b2b:a05Wt000003SthVIAS",
+        "b2b:a05Wt000003StmMIAS",
+        "b2b:a05Wt000003SvRWIA0",
+        "b2b:a05Wt000003SvRXIA0",
+        "b2b:a05Wt000003Svl2IAC",
+        "b2b:a05Wt000003SvpnIAC",
+        "b2b:a05Wt000003SvpoIAC",
+        "b2b:a05Wt000003SvsxIAC",
+        "b2b:a05Wt000003SwiaIAC",
+        "b2b:a05Wt000003SwqoIAC",
+        "b2b:a05Wt000003SxJjIAK",
+        "b2b:a05Wt000003SxQ6IAK",
+        "b2b:a05Wt000003Sz3iIAC",
+        "b2b:a05Wt000003Sz6wIAC",
+        "b2b:a05Wt000003T0ZJIA0",
+        "b2b:a05Wt000003T0sgIAC",
+        "b2b:a05Wt000003T1ARIA0",
+        "b2b:a05Wt000003T1ASIA0",
+        "b2b:a05Wt000003T24rIAC",
+        "b2b:a05Wt000003T2XnIAK",
+        "b2b:a05Wt000003T3GxIAK",
+        "b2b:a05Wt000003T3SHIA0",
+        "b2b:a05Wt000003T3dXIAS",
+        "b2b:a05Wt000003T3tiIAC",
+        "b2b:a05Wt000003T3wsIAC",
+        "b2b:a05Wt000003T489IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call between Mei Lin and Elena Grigore (2023-08-01) discusses AI Cirku-Tech deployment timing; the other Mei Lin–Elena call (2023-08-14) contains no deployment timeline for AI Cirku-Tech, so the answer is unique.",
+        "answers": [
+          {
+            "answer": "Mei Lin said that for products like AI Cirku-Tech, most clients can see it fully deployed within weeks rather than months, due to its compatibility, with TechPulse's team ensuring rapid adaptation to existing workflows.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsOlIAK",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2023-08-01T16:02:35] Elena Grigore: It’s good to know TechPulse has a strong focus on support. And about integration speed, how quickly can we expect full deployment if we decide to proceed?\n[2023-08-01T16:02:55] Mei Lin: For products like AI Cirku-Tech, most clients can see it fully deployed within weeks rather than months because of its compatibility. Our team ensures rapid adaptation to existing workflows."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Mei Lin as the rep, Elena Grigore as the contact, AI Cirku-Tech as the product, and GreenEnergy Solutions as the account. Only one call matches all these criteria: b2b:a05Wt000003SsOlIAK (2023-08-01), where Mei Lin speaks with Elena Grigore about AI Cirku-Tech at GreenEnergy Solutions. In that call, Elena asks about deployment speed and Mei Lin responds that AI Cirku-Tech can be fully deployed 'within weeks rather than months.' No other call in the dataset features both Mei Lin and Elena Grigore discussing AI Cirku-Tech deployment timeline.",
+        "answers": [
+          {
+            "answer": "Mei Lin told Elena Grigore that for AI Cirku-Tech, most clients can see it fully deployed within weeks rather than months because of its compatibility, and that the team ensures rapid adaptation to existing workflows.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsOlIAK",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2023-08-01T16:02:35] Elena Grigore: It’s good to know TechPulse has a strong focus on support. And about integration speed, how quickly can we expect full deployment if we decide to proceed?\n[2023-08-01T16:02:55] Mei Lin: For products like AI Cirku-Tech, most clients can see it fully deployed within weeks rather than months because of its compatibility. Our team ensures rapid adaptation to existing workflows."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same core deployment timeline: full deployment within weeks rather than months, attributed to compatibility and rapid adaptation to existing workflows. Answer A adds 'TechPulse's team' and Answer B says 'the team,' but both agree on the timeline fact. The reference states 'Full deployment within weeks rather than months, due to compatibility with existing workflows,' which covers the requested deployment timeline fact. No requested commitment is missing from either answer or the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-dbcf99da3ae7836f",
+      "question": "What follow-up commitments did Liam make to Tania Grewal at SafetyNet Inc. in each of their two discussions?",
+      "gold_answer": "First call: send case studies and set up a next call. Second call: arrange a demo and follow up by email to schedule it.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7pIAC",
+        "b2b:a05Wt000003SslLIAS",
+        "b2b:a05Wt000003SslMIAS",
+        "b2b:a05Wt000003StETIA0",
+        "b2b:a05Wt000003StHhIAK",
+        "b2b:a05Wt000003StRIIA0",
+        "b2b:a05Wt000003StRJIA0",
+        "b2b:a05Wt000003Su43IAC",
+        "b2b:a05Wt000003SuQdIAK",
+        "b2b:a05Wt000003SwSQIA0",
+        "b2b:a05Wt000003SwTyIAK",
+        "b2b:a05Wt000003SxLCIA0",
+        "b2b:a05Wt000003SxRgIAK",
+        "b2b:a05Wt000003SxRhIAK",
+        "b2b:a05Wt000003SxRiIAK",
+        "b2b:a05Wt000003SxUvIAK",
+        "b2b:a05Wt000003SxUwIAK",
+        "b2b:a05Wt000003SxUxIAK",
+        "b2b:a05Wt000003SxrWIAS",
+        "b2b:a05Wt000003Sy2lIAC",
+        "b2b:a05Wt000003SyE7IAK",
+        "b2b:a05Wt000003SyE8IAK",
+        "b2b:a05Wt000003SyHLIA0",
+        "b2b:a05Wt000003SzACIA0",
+        "b2b:a05Wt000003SzExIAK",
+        "b2b:a05Wt000003SzV4IAK",
+        "b2b:a05Wt000003SzV5IAK",
+        "b2b:a05Wt000003SzjbIAC",
+        "b2b:a05Wt000003SzwUIAS",
+        "b2b:a05Wt000003T09OIAS",
+        "b2b:a05Wt000003T0B0IAK",
+        "b2b:a05Wt000003T0NvIAK",
+        "b2b:a05Wt000003T0R7IAK",
+        "b2b:a05Wt000003T0SjIAK",
+        "b2b:a05Wt000003T0ULIA0",
+        "b2b:a05Wt000003T0VxIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Liam O'Sullivan spoke with Tania Grewal at SafetyNet Inc. in exactly two calls (2023-12-15 and 2023-12-20, both on the SafetyNet Collaboration opportunity). Each call contains explicit follow-up commitments, which can be aggregated.",
+        "answers": [
+          {
+            "answer": "In the 2023-12-15 call, Liam committed to following up with case studies and testimonials and to setting up a next call to go deeper into the specifics (also saying he'd touch base soon). In the 2023-12-20 call, Liam committed to arranging a demo of the products and to following up via email to schedule a time that works for Tania and her team.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SslLIAS",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2023-12-15T10:35:45] Liam O'Sullivan: I'm pleased to hear that, Tania. Let’s keep this momentum going. I’ll follow up with the case studies and let's set up our next call to go deeper into the specifics.\n[2023-12-15T10:35:55] Tania Grewal: That sounds good. Thank you so much for the informative session, Liam!"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwUIAS",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2023-12-20T14:03:26] Liam O'Sullivan: And that's what we strive for with our strategic partnerships. Would you be interested in a more detailed overview or perhaps a demo of how our products can fit into your current setup?\n[2023-12-20T14:03:36] Tania Grewal: I think a demo would be very helpful. Seeing the products in action could give us a better understanding of their potential."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Liam O'Sullivan, Tania Grewal, and SafetyNet Inc. Exactly two calls in the dataset match all three criteria: b2b:a05Wt000003SslLIAS (2023-12-15, 'SafetyNet Collaboration') and b2b:a05Wt000003SzwUIAS (2023-12-20, 'SafetyNet Collaboration'). Both are Liam-to-Tania calls at SafetyNet Inc. The question asks for follow-up commitments Liam made in each of their two discussions, which is an aggregate across-calls question.",
+        "answers": [
+          {
+            "answer": "In the first discussion (2023-12-15), Liam committed to: (1) following up with case studies, and (2) setting up a next call to go deeper into the specifics. In the second discussion (2023-12-20), Liam committed to: (1) arranging a demo of the products, and (2) following up via email to schedule the demo at a time that works for Tania and her team.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SslLIAS",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-12-15T10:35:45] Liam O'Sullivan: I'm pleased to hear that, Tania. Let’s keep this momentum going. I’ll follow up with the case studies and let's set up our next call to go deeper into the specifics."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwUIAS",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-12-20T14:03:45] Liam O'Sullivan: Great, I’ll arrange for that. I’ll follow up via email to schedule something that works for you and your team."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same commitments for each discussion: first call (2023-12-15) – send case studies and set up a next call; second call (2023-12-20) – arrange a demo and follow up by email to schedule it. Answer A adds minor extras (testimonials, 'touch base soon') that are not requested but do not conflict. The reference covers all four requested commitments across both discussions."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-e54432d27fdc5689",
+      "question": "For Nova Healthcare Tech's Expansion Initiative, how did Noah Singh respond to the budget/pricing discussion in the initial call, and in the follow-up terms call what quote amount did he call reasonable and what did he want to negotiate?",
+      "gold_answer": "Initially he said transparent total cost of ownership aligned with their budgeting strategy; later he called the $4,389.91 quote reasonable but asked about room for negotiation.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7jIAC",
+        "b2b:a05Wt000003SswcIAC",
+        "b2b:a05Wt000003SswdIAC",
+        "b2b:a05Wt000003StEOIA0",
+        "b2b:a05Wt000003StEPIA0",
+        "b2b:a05Wt000003StawIAC",
+        "b2b:a05Wt000003SuQaIAK",
+        "b2b:a05Wt000003SuiIIAS",
+        "b2b:a05Wt000003Sv04IAC",
+        "b2b:a05Wt000003Sv4wIAC",
+        "b2b:a05Wt000003SvHqIAK",
+        "b2b:a05Wt000003Svb8IAC",
+        "b2b:a05Wt000003SvhbIAC",
+        "b2b:a05Wt000003Svo4IAC",
+        "b2b:a05Wt000003SvpfIAC",
+        "b2b:a05Wt000003Sx9uIAC",
+        "b2b:a05Wt000003SxElIAK",
+        "b2b:a05Wt000003SxGMIA0",
+        "b2b:a05Wt000003SxGNIA0",
+        "b2b:a05Wt000003SxGOIA0",
+        "b2b:a05Wt000003SxMoIAK",
+        "b2b:a05Wt000003SxgEIAS",
+        "b2b:a05Wt000003SxxuIAC",
+        "b2b:a05Wt000003Sy19IAC",
+        "b2b:a05Wt000003Sy4MIAS",
+        "b2b:a05Wt000003Sy7bIAC",
+        "b2b:a05Wt000003SyCRIA0",
+        "b2b:a05Wt000003SyFeIAK",
+        "b2b:a05Wt000003Syh4IAC",
+        "b2b:a05Wt000003Syh5IAC",
+        "b2b:a05Wt000003SyigIAC",
+        "b2b:a05Wt000003SyihIAC",
+        "b2b:a05Wt000003SylvIAC",
+        "b2b:a05Wt000003SytxIAC",
+        "b2b:a05Wt000003SyvZIAS",
+        "b2b:a05Wt000003SyxBIAS",
+        "b2b:a05Wt000003SyynIAC",
+        "b2b:a05Wt000003Sz0PIAS",
+        "b2b:a05Wt000003Sz21IAC",
+        "b2b:a05Wt000003Sz3dIAC",
+        "b2b:a05Wt000003Sz3eIAC",
+        "b2b:a05Wt000003Sz5FIAS",
+        "b2b:a05Wt000003Sz5GIAS",
+        "b2b:a05Wt000003Sz6rIAC",
+        "b2b:a05Wt000003Sz8TIAS",
+        "b2b:a05Wt000003SzA5IAK",
+        "b2b:a05Wt000003SzBhIAK",
+        "b2b:a05Wt000003SzDJIA0",
+        "b2b:a05Wt000003SzEvIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The question names the 'Nova Healthcare Expansion Initiative' opportunity with Noah Singh. The initial call is the 2020-08-05 discovery call (b2b:a05Wt000003Sy19IAC) where pricing was discussed, and the follow-up terms call is the 2020-09-30 final-terms call (b2b:a05Wt000003Sy7bIAC) where the $4,389.91 quote was discussed. Both events are uniquely identified.",
+        "answers": [
+          {
+            "answer": "In the initial call (2020-08-05), when Pierre Fontaine explained that TechPulse tailors pricing models to different business sizes and growth trajectories with a core philosophy of transparency and flexibility, Noah Singh responded positively, saying that was good to hear, noting that a one-size-fits-all approach doesn't fit Nova, so flexibility is a big advantage. In the follow-up final-terms call (2020-09-30), Noah said that while the quote of $4,389.91 is reasonable, they were hoping to discuss whether there could be any room for negotiation; Pierre responded that TechPulse is open to discussing terms, perhaps exploring adjustments or added value in training or support packages.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sy19IAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2020-08-05T10:32:25] Noah Singh: That's definitely reassuring. Can you walk me through how your pricing aligns with different growth plans?\n[2020-08-05T10:32:40] Pierre Fontaine: Of course. While we tailor our pricing models to different business sizes and growth trajectories, our core philosophy is transparency and flexibility. We're open to discussing more options to better align with what Nova needs."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy7bIAC",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2020-09-30T16:03:20] Noah Singh: Great, that matches up with our needs. Regarding pricing, while your quote of $4,389.91 is reasonable, we're hoping to discuss if there could be any room for negotiation.\n[2020-09-30T16:03:35] Pierre Fontaine: I understand. Given the significance of this partnership, we’re open to discussing terms that can work for both parties. Perhaps we can explore adjustments or added value in training or support packages."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies 'Nova Healthcare Tech's Expansion Initiative,' which matches the opportunity named 'Nova Healthcare Expansion Initiative' (opportunity_id 006Wt000007B5DQIA0). Noah Singh is the contact. The initial call is 2020-08-05 (b2b:a05Wt000003Sy19IAC) and the follow-up terms call is 2020-09-30 (b2b:a05Wt000003Sy7bIAC). In the initial call, Noah asked how pricing aligns with growth plans and expressed that flexibility is a big advantage over one-size-fits-all approaches. In the terms call, he called the $4,389.91 quote reasonable and wanted to negotiate for room on pricing or additional support.",
+        "answers": [
+          {
+            "answer": "In the initial call (2020-08-05), Noah Singh responded to the budget/pricing discussion by asking Pierre Fontaine to walk him through how TechPulse's pricing aligns with different growth plans. After Pierre explained their philosophy of transparency and flexibility, Noah said that was good to hear and noted that they had noticed a one-size-fits-all approach that doesn't quite fit them, so flexibility is a big advantage. In the follow-up terms call (2020-09-30), Noah called the quote of $4,389.91 reasonable and said they were hoping to discuss if there could be any room for negotiation. Pierre responded by offering to explore adjustments or added value in training or support packages, and Noah agreed, saying if they could finalize something beneficial on pricing or additional support, they could move forward quickly.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sy19IAC",
+                "line_start": 11,
+                "line_end": 14,
+                "quote": "[2020-08-05T10:32:25] Noah Singh: That's definitely reassuring. Can you walk me through how your pricing aligns with different growth plans?\n[2020-08-05T10:32:40] Pierre Fontaine: Of course. While we tailor our pricing models to different business sizes and growth trajectories, our core philosophy is transparency and flexibility. We're open to discussing more options to better align with what Nova needs.\n[2020-08-05T10:32:55] Noah Singh: That’s good to hear. We've noticed sometimes there’s a one-size-fits-all approach that doesn't quite fit us, so flexibility is a big advantage."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy7bIAC",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2020-09-30T16:03:20] Noah Singh: Great, that matches up with our needs. Regarding pricing, while your quote of $4,389.91 is reasonable, we're hoping to discuss if there could be any room for negotiation.\n[2020-09-30T16:03:35] Pierre Fontaine: I understand. Given the significance of this partnership, we’re open to discussing terms that can work for both parties. Perhaps we can explore adjustments or added value in training or support packages.\n[2020-09-30T16:03:48] Noah Singh: That sounds good. I think if we can finalize something beneficial on pricing or additional support, we can move forward pretty quickly."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": false,
+        "reason": "Both answers agree on the core facts: in the initial call Noah responded positively to the transparency/flexibility pricing philosophy, noting one-size-fits-all doesn't fit Nova; in the follow-up he called the $4,389.91 quote reasonable and asked about room for negotiation. Answer B adds extra detail (Noah asking Pierre to walk through pricing, and agreeing to move forward quickly) but these are unrequested extras that don't create disagreement. However, the reference states that in the initial call Noah said 'transparent total cost of ownership aligned with their budgeting strategy,' which is a different specific commitment than what both answers report (positive response to transparency/flexibility philosophy and one-size-fits-all not fitting Nova). The reference's characterization of the initial-call response substitutes a different concern/response (total cost of ownership / budgeting strategy) for what the answers describe, so it does not accurately cover the requested fact about how Noah responded to the budget/pricing discussion in the initial call."
+      },
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-647ad47897f467b1",
+      "question": "What are the prices for the Tesla Model S and the Mercedes-Benz E-Class that Tom Nguyen is considering, and what does the Comprehensive Maintenance Plan cost?",
+      "gold_answer": "Tesla Model S is $89,999.99, Mercedes-Benz E-Class is $65,999.99, and the Comprehensive Maintenance Plan is $1,999.99.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNJsIAO",
+        "b2c:a05Ws000005SQ0oIAG",
+        "b2c:a05Ws000005SQBEIA4",
+        "b2c:a05Ws000005SQO9IAO",
+        "b2c:a05Ws000005SQOAIA4",
+        "b2c:a05Ws000005SQPjIAO",
+        "b2c:a05Ws000005SQPkIAO",
+        "b2c:a05Ws000005SQfrIAG",
+        "b2c:a05Ws000005SQpYIAW",
+        "b2c:a05Ws000005SRYgIAO",
+        "b2c:a05Ws000005SRYhIAO",
+        "b2c:a05Ws000005SRtgIAG",
+        "b2c:a05Ws000005SRvIIAW",
+        "b2c:a05Ws000005SSD1IAO",
+        "b2c:a05Ws000005SSo6IAG",
+        "b2c:a05Ws000005SSuZIAW",
+        "b2c:a05Ws000005SSuaIAG",
+        "b2c:a05Ws000005ST4JIAW",
+        "b2c:a05Ws000005ST94IAG",
+        "b2c:a05Ws000005STIoIAO",
+        "b2c:a05Ws000005SUTLIA4",
+        "b2c:a05Ws000005SUwNIAW",
+        "b2c:a05Ws000005SUzbIAG",
+        "b2c:a05Ws000005SVMBIA4",
+        "b2c:a05Ws000005SVUEIA4",
+        "b2c:a05Ws000005SVahIAG",
+        "b2c:a05Ws000005SVcIIAW",
+        "b2c:a05Ws000005SVh9IAG",
+        "b2c:a05Ws000005SVm0IAG",
+        "b2c:a05Ws000005SVpDIAW",
+        "b2c:a05Ws000005SVsRIAW",
+        "b2c:a05Ws000005SVu2IAG",
+        "b2c:a05Ws000005SWF0IAO",
+        "b2c:a05Ws000005SWi2IAG",
+        "b2c:a05Ws000005SWriIAG",
+        "b2c:a05Ws000005SXRCIA4",
+        "b2c:a05Ws000005SXcUIAW",
+        "b2c:a05Ws000005SXe6IAG",
+        "b2c:a05Ws000005SXhKIAW",
+        "b2c:a05Ws000005SXpOIAW",
+        "b2c:a05Ws000005SXvpIAG",
+        "b2c:a05Ws000005SXxRIAW",
+        "b2c:a05Ws000005SXz3IAG",
+        "b2c:a05Ws000005SY0fIAG",
+        "b2c:a05Ws000005SY2HIAW",
+        "b2c:a05Ws000005SY3tIAG",
+        "b2c:a05Ws000005SY5VIAW",
+        "b2c:a05Ws000005SY77IAG",
+        "b2c:a05Ws000005SY8jIAG",
+        "b2c:a05Ws000005SYALIA4",
+        "b2c:a05Ws000005SYBxIAO",
+        "b2c:a05Ws000005SYDZIA4"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 14,
+            "normalized_end": 15
+          },
+          {
+            "answer": 0,
+            "evidence": 2,
+            "original_end": 12,
+            "normalized_end": 13
+          },
+          {
+            "answer": 0,
+            "evidence": 3,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 0,
+            "evidence": 4,
+            "original_end": 10,
+            "normalized_end": 11
+          },
+          {
+            "answer": 0,
+            "evidence": 5,
+            "original_end": 16,
+            "normalized_end": 17
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across multiple calls, the same consistent prices are stated for the vehicles Tom Nguyen is considering: the Tesla Model S at $89,999.99, the Mercedes-Benz E-Class at $65,999.99, and the AutoElite Comprehensive Maintenance Plan at $1,999.99. These figures are repeated consistently in several calls, so the aggregate answer is determinate.",
+        "answers": [
+          {
+            "answer": "The 2024 Tesla Model S Tom Nguyen is considering is priced at $89,999.99, the 2023 Mercedes-Benz E-Class is priced at $65,999.99, and the AutoElite Comprehensive Maintenance Plan costs $1,999.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSD1IAO",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-11-07T12:33:25] Tom Nguyen: Sounds like you have a lot to offer. With the Tesla Model S, that’s a total of $89,999.99, right?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXcUIAW",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-10-29T12:02:25] Zanele Dlamini: Sure! The Tesla Model S is priced at $89,999.99, and the Mercedes-Benz E-Class is $65,999.99. We also recommend our AutoElite Comprehensive Maintenance Plan for $1,999.99, which ensures long-term performance and generally saves our customers money on maintenance."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SVm0IAG",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2022-07-31T10:03:20] Elena Pavlova: I understand, Tom. The Model S is priced at $89,999.99, and the E-Class at $65,999.99. Together with the maintenance plan at $1,999.99, we're also offering flexible financing solutions to suit your budget."
+              },
+              {
+                "call_id": "b2c:a05Ws000005STIoIAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2024-01-27T11:31:25] Mohammed Khan: Great! So, as you know, the 2023 Mercedes-Benz E-Class is priced at $65,999.99, and we've also got our comprehensive maintenance package priced at $1,999.99, bringing your total to $67,999.98. This price is all-inclusive with no hidden fees."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXe6IAG",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2024-01-24T14:17:45] Mohammed Khan: The E-Class is priced at $65,999.99, and our comprehensive maintenance plan is an additional $1,999.99. We also provide flexible financing solutions tailored to your needs. Should we discuss any specific financing options?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SWF0IAO",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-05-08T10:03:30] Vanessa Müller: Sure, the maintenance plan costs $1,999.99, and the extended warranty is priced at $1,299.99. Given the value they add, it’s a wise choice to ensure long-term peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for three specific prices: the Tesla Model S, the Mercedes-Benz E-Class, and the Comprehensive Maintenance Plan that Tom Nguyen is considering. Multiple calls confirm these exact figures consistently. The most complete single source providing all three prices together is call b2c:a05Ws000005SXcUIAW (Zanele Dlamini, 2023-10-29), which explicitly states all three. The same figures are corroborated in calls b2c:a05Ws000005SSD1IAO, b2c:a05Ws000005SVm0IAG, b2c:a05Ws000005SQPkIAO, and others. Since all sources agree on the same numbers, there is one determinate answer.",
+        "answers": [
+          {
+            "answer": "The 2024 Tesla Model S is priced at $89,999.99, the 2023 Mercedes-Benz E-Class is priced at $65,999.99, and the AutoElite Comprehensive Maintenance Plan costs $1,999.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXcUIAW",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-10-29T12:02:25] Zanele Dlamini: Sure! The Tesla Model S is priced at $89,999.99, and the Mercedes-Benz E-Class is $65,999.99. We also recommend our AutoElite Comprehensive Maintenance Plan for $1,999.99, which ensures long-term performance and generally saves our customers money on maintenance."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSD1IAO",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-11-07T12:33:25] Tom Nguyen: Sounds like you have a lot to offer. With the Tesla Model S, that’s a total of $89,999.99, right?\n[2023-11-07T12:33:40] Zanele Dlamini: That's correct. And the Mercedes-Benz E-Class is priced at $65,999.99. With both, you also have the option to include our Comprehensive Maintenance Plan, which costs $1,999.99."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SVm0IAG",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2022-07-31T10:03:20] Elena Pavlova: I understand, Tom. The Model S is priced at $89,999.99, and the E-Class at $65,999.99. Together with the maintenance plan at $1,999.99, we're also offering flexible financing solutions to suit your budget."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQPkIAO",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2021-06-08T14:32:00] Fatima El-Masry: The Tesla Model S is priced at $89,999.99. For the maintenance plan, it's $1,999.99, and the extended warranty is $1,299.99."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers provide the same three prices: Tesla Model S at $89,999.99, Mercedes-Benz E-Class at $65,999.99, and the Comprehensive Maintenance Plan at $1,999.99. The reference also covers all three requested prices with identical values. The only differences are minor wording additions (year labels, 'AutoElite' branding, and mention of Tom Nguyen), which do not affect the core requested facts."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

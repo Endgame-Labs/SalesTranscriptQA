@@ -1,0 +1,456 @@
+[
+  {
+    "question_id": "b2b-single_call-88d5ec4cae3fc0f8",
+    "question": "What discounts did Carlos offer Juan on TechPulse's products for the Horizon Tech proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Carlos offered Juan on TechPulse products for the Horizon Tech proposal",
+        "relationship": "single coherent commercial lookup",
+        "reason": "One fact lookup about discounts in a specific proposal; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific discounts Carlos offered Juan for TechPulse products in the Horizon Tech proposal. The dialogue at 09:35:27 explicitly states '10% discount on our CloudLink Designer and PulseSim Pro, and a 5% on SecureFlow Suite and AI Cirku-Tech.' The gold answer matches this exactly with no extra or missing facts. The question is naturally phrased, scoped to a clear business situation (Horizon Tech proposal), and a rep/AM would plausibly want to recall discount terms offered. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Carlos Nunez explicitly states 'a 10% discount on our CloudLink Designer and PulseSim Pro, and a 5% on SecureFlow Suite and AI Cirku-Tech,' which directly matches the answer_claim of 10% off CloudLink Designer and PulseSim Pro, and 5% off SecureFlow Suite and AI Cirku-Tech. Speaker attribution (Carlos), recipient (Juan), product names, and discount percentages all align."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '10% off CloudLink Designer and PulseSim Pro, and 5% off SecureFlow Suite and AI Cirku-Tech.' The single cited evidence item contains Carlos's exact words offering those specific discounts on those specific products to Juan in the context of the Horizon Tech opportunity (confirmed by metadata: account_name 'Horizon Tech Integrations', contact_name 'Juan Montoya', opportunity_name 'Enhanced Integration & Security Framework for Horizon Tech'). All factual claims in the gold_answer are fully supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-03e4a46d366c7ac5",
+    "question": "What deployment timeline did Mei Lin give Elena Grigore for AI Cirku-Tech at GreenEnergy Solutions?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The deployment timeline Mei Lin provided to Elena Grigore for AI Cirku-Tech at GreenEnergy Solutions",
+        "relationship": "single lookup",
+        "reason": "One coherent fact lookup about a deployment timeline within a single sales conversation; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the deployment timeline Mei Lin communicated to Elena Grigore regarding AI Cirku-Tech at GreenEnergy Solutions. The dialogue at 16:02:55 shows Mei Lin stating 'fully deployed within weeks rather than months because of its compatibility' and 'rapid adaptation to existing workflows.' The gold answer captures both the timeline ('weeks rather than months') and the reason ('compatibility with existing workflows'). The question is naturally worded, identifies the rep, contact, product, and account, and a sales rep would plausibly want to recall this commitment. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Mei Lin explicitly states 'most clients can see it fully deployed within weeks rather than months because of its compatibility' and adds 'Our team ensures rapid adaptation to existing workflows.' This directly supports the answer_claim about full deployment within weeks rather than months due to compatibility."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Full deployment within weeks rather than months, due to compatibility with existing workflows.' The cited evidence (index 0) contains Mei Lin's exact statement to Elena Grigore (confirmed by context_metadata identifying the contact as Elena Grigore and account as GreenEnergy Solutions) that AI Cirku-Tech can be 'fully deployed within weeks rather than months because of its compatibility' with 'rapid adaptation to existing workflows.' All factual elements of the gold_answer\u2014timeline (weeks rather than months), reason (compatibility with existing workflows), and the product (AI Cirku-Tech)\u2014are directly supported by the quoted passage."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-dbcf99da3ae7836f",
+    "question": "What follow-up commitments did Liam make to Tania Grewal at SafetyNet Inc. in each of their two discussions?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The follow-up commitments Liam made to Tania Grewal at SafetyNet Inc. in each of their two discussions",
+        "relationship": "Same business issue across two calls: next-step commitments in the ongoing SafetyNet deal, compared across the two discussions",
+        "reason": "Both parts concern the same issue (Liam's follow-up commitments on the SafetyNet engagement) across the two calls, which is a coherent multi-call request rather than two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SslLIAS",
+                "fact": "Liam committed to send case studies and set up a next call.",
+                "why_other_call_cannot_supply_it": "The second call does not mention case studies or scheduling a next call; it focuses on arranging a demo."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwUIAS",
+                "fact": "Liam committed to arrange a demo and follow up by email to schedule it.",
+                "why_other_call_cannot_supply_it": "The first call does not mention a demo or email follow-up; it only covers case studies and a next call."
+              }
+            ],
+            "reason": "The question explicitly asks for follow-up commitments in each of the two discussions, and the two calls contain distinct commitments: the first call has case studies and a next call, while the second has a demo and email scheduling. These are separate, non-overlapping facts that require both calls to answer fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SslLIAS",
+                  "fact": "Liam committed to send case studies and set up a next call.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention sending case studies or setting up a next call; it only discusses arranging a demo."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzwUIAS",
+                  "fact": "Liam committed to arrange a demo and follow up by email to schedule it.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention arranging a demo or email follow-up; it only mentions sending case studies and setting up a next call."
+                }
+              ],
+              "reason": "The question asks for follow-up commitments in each of two discussions, and the two calls contain distinct commitments: the first call has case studies and next call setup, the second call has demo arrangement and email follow-up. These are separate facts that cannot be derived from the other call, so both calls are necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SslLIAS",
+                  "fact": "Liam committed to send case studies and set up a next call.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention case studies or scheduling a next call; it focuses on arranging a demo."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzwUIAS",
+                  "fact": "Liam committed to arrange a demo and follow up by email to schedule it.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention a demo or email follow-up; it only covers case studies and a next call."
+                }
+              ],
+              "reason": "The question explicitly asks for follow-up commitments in each of the two discussions, and the two calls contain distinct commitments: the first call has case studies and a next call, while the second has a demo and email scheduling. These are separate, non-overlapping facts that require both calls to answer fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SslLIAS",
+                "fact": "Liam committed to sending case studies and setting up a next call",
+                "why_other_call_cannot_supply_it": "The second call (2023-12-20) contains no mention of case studies or a next call; its commitments are a demo and an email follow-up."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwUIAS",
+                "fact": "Liam committed to arranging a demo and following up by email to schedule it",
+                "why_other_call_cannot_supply_it": "The first call (2023-12-15) contains no mention of a demo or email follow-up; its commitments are case studies and a next call."
+              }
+            ],
+            "reason": "The question explicitly asks for commitments from each of two discussions. Each call contains a distinct, non-overlapping set of follow-up commitments (case studies + next call vs. demo + email scheduling), so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SslLIAS",
+                  "fact": "Liam committed to sending case studies and setting up a next call",
+                  "why_other_call_cannot_supply_it": "The second call (2023-12-20) contains no mention of case studies or a next call; its commitments are a demo and an email follow-up."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzwUIAS",
+                  "fact": "Liam committed to arranging a demo and following up by email to schedule it",
+                  "why_other_call_cannot_supply_it": "The first call (2023-12-15) contains no mention of a demo or email follow-up; its commitments are case studies and a next call."
+                }
+              ],
+              "reason": "The question explicitly asks for commitments from each of two discussions. Each call contains a distinct, non-overlapping set of follow-up commitments (case studies + next call vs. demo + email scheduling), so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "First call: Liam says 'I'll follow up with the case studies and let's set up our next call' \u2013 matches 'send case studies and set up a next call.' Second call: Liam says 'I'll arrange for that. I'll follow up via email to schedule something' \u2013 matches 'arrange a demo and follow up by email to schedule it.' Each call contributes an exclusive set of commitments; no unasked extras; names and account are natural and useful for a rep tracking follow-ups.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Liam O'Sullivan on call b2b:a05Wt000003SslLIAS explicitly states: 'I'll follow up with the case studies and let's set up our next call to go deeper into the specifics.' This directly supports the answer_claim that Liam will follow up with case studies and set up the next call to go deeper into specifics. Speaker attribution (Liam), the two commitments (case studies + next call), and the purpose (go deeper into specifics) are all present in the quote."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003SzwUIAS shows Tania requesting a demo, and Liam responding: 'Great, I'll arrange for that. I'll follow up via email to schedule something that works for you and your team.' This directly supports the answer_claim that Liam will arrange a demo and follow up via email to schedule something that works for Tania and her team. Speaker attribution (Liam), both commitments (arrange demo + follow up via email), and the qualifier (works for you and your team) are all present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'First call: send case studies and set up a next call. Second call: arrange a demo and follow up by email to schedule it.' Evidence index 0 (first call, 2023-12-15) confirms Liam committed to following up with case studies and setting up the next call. Evidence index 1 (second call, 2023-12-20) confirms Liam committed to arranging a demo and following up via email to schedule it. The context metadata confirms both calls involve the same account (SafetyNet Inc.) and contact (Tania Grewal), and the opportunity name 'SafetyNet Collaboration' ties them together. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-e54432d27fdc5689",
+    "question": "For Nova Healthcare Tech's Expansion Initiative, how did Noah Singh respond to the budget/pricing discussion in the initial call, and in the follow-up terms call what quote amount did he call reasonable and what did he want to negotiate?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Noah Singh's response to the budget/pricing discussion in the initial call, and in the follow-up call the quote amount he deemed reasonable and what he wanted to negotiate",
+        "relationship": "same commercial/pricing negotiation thread across the initial and follow-up calls",
+        "reason": "Both calls concern the same business issue\u2014pricing/budget for the Expansion Initiative\u2014making this a coherent multi-call comparison of the same commercial discussion, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGOIA0",
+                "fact": "Noah Singh said transparent total cost of ownership aligned with their budgeting strategy.",
+                "why_other_call_cannot_supply_it": "This statement was made in the initial call on 2020-09-03; the follow-up call does not mention this specific alignment."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy7bIAC",
+                "fact": "Noah Singh called the $4,389.91 quote reasonable and asked about room for negotiation.",
+                "why_other_call_cannot_supply_it": "This quote and negotiation request occurred only in the follow-up call on 2020-09-30; the initial call did not discuss a specific quote amount."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two separate calls: Noah's initial response to budget/pricing discussion and his later reaction to a specific quote. Each fact is unique to its respective call and cannot be derived from the other."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGOIA0",
+                  "fact": "Noah Singh said transparent total cost of ownership aligned with their budgeting strategy.",
+                  "why_other_call_cannot_supply_it": "This statement was made in the initial call on 2020-09-03; the follow-up call does not mention this specific alignment."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy7bIAC",
+                  "fact": "Noah Singh called the $4,389.91 quote reasonable and asked about room for negotiation.",
+                  "why_other_call_cannot_supply_it": "This quote and negotiation request occurred only in the follow-up call on 2020-09-30; the initial call did not discuss a specific quote amount."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two separate calls: Noah's initial response to budget/pricing discussion and his later reaction to a specific quote. Each fact is unique to its respective call and cannot be derived from the other."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxGOIA0",
+                "fact": "In the initial call, Noah Singh responded positively to the budget/pricing discussion, appreciating TechPulse's transparency about total cost of ownership and noting it aligned with their budgeting strategy.",
+                "why_other_call_cannot_supply_it": "The follow-up call (2020-09-30) does not mention total cost of ownership transparency or the initial budgeting alignment; it only covers the specific quote and negotiation."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy7bIAC",
+                "fact": "In the follow-up terms call, Noah Singh called the $4,389.91 quote reasonable but asked whether there was room for negotiation.",
+                "why_other_call_cannot_supply_it": "The initial call (2020-09-03) contains no specific quote amount or negotiation request; the $4,389.91 figure appears only in the second call."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: the initial budget/pricing response (only in the first call) and the specific quote amount plus negotiation request (only in the second call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxGOIA0",
+                  "fact": "In the initial call, Noah Singh responded positively to the budget/pricing discussion, appreciating TechPulse's transparency about total cost of ownership and noting it aligned with their budgeting strategy.",
+                  "why_other_call_cannot_supply_it": "The follow-up call (2020-09-30) does not mention total cost of ownership transparency or the initial budgeting alignment; it only covers the specific quote and negotiation."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy7bIAC",
+                  "fact": "In the follow-up terms call, Noah Singh called the $4,389.91 quote reasonable but asked whether there was room for negotiation.",
+                  "why_other_call_cannot_supply_it": "The initial call (2020-09-03) contains no specific quote amount or negotiation request; the $4,389.91 figure appears only in the second call."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: the initial budget/pricing response (only in the first call) and the specific quote amount plus negotiation request (only in the second call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question targets a specific account (Nova Healthcare Tech), opportunity (Expansion Initiative), and contact (Noah Singh) across two calls. Call 1 (2020-09-03) contains Noah's budget/pricing response: he appreciated TechPulse being 'transparent about total cost ownership' and said it aligned with their budgeting strategy. Call 2 (2020-09-30) contains the quote discussion: Noah called the $4,389.91 quote 'reasonable' and asked about 'room for negotiation.' Each source contributes an exclusive requested fact\u2014call 1 supplies the initial budgeting-strategy alignment response, call 2 supplies the specific quote amount and negotiation request. The gold answer accurately captures both facts without adding unasked extras. Wording is natural, no artificial locator preamble, no answer leakage, and the scope is well-defined by account/opportunity/contact names."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Noah Singh responding 'Yes, it's definitely aligning. We do appreciate TechPulse being transparent about total cost ownership and the security benefits.' This directly supports the claim that Noah said the pricing transparency aligns with their budgeting strategy and appreciated TechPulse's transparency on total cost ownership. The speaker attribution (Noah Singh), the context (budgeting strategy alignment), and the specific mention of total cost ownership transparency are all present in the quote."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Noah Singh stating 'while your quote of $4,389.91 is reasonable, we're hoping to discuss if there could be any room for negotiation.' This directly supports the claim that Noah called the $4,389.91 quote reasonable but hoped to discuss room for negotiation. The exact dollar amount, the word 'reasonable,' and the desire to negotiate are all explicitly present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Initially he said transparent total cost of ownership aligned with their budgeting strategy \u2014 supported by evidence index 0 where Noah confirms alignment and appreciates transparency on total cost ownership. (2) Later he called the $4,389.91 quote reasonable but asked about room for negotiation \u2014 supported by evidence index 1 where Noah explicitly calls $4,389.91 reasonable and asks about room for negotiation. Both factual claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms the two calls correspond to the initial call (2020-09-03) and follow-up terms call (2020-09-30) for Nova Healthcare Tech's Expansion Initiative with Noah Singh as the contact."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-647ad47897f467b1",
+    "question": "What are the prices for the Tesla Model S and the Mercedes-Benz E-Class that Tom Nguyen is considering, and what does the Comprehensive Maintenance Plan cost?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing for the Tesla Model S and Mercedes-Benz E-Class Tom Nguyen is considering, plus the cost of the Comprehensive Maintenance Plan",
+        "relationship": "single coherent quote breakdown for the same purchase consideration",
+        "reason": "The question asks for one commercial quote: prices of the vehicles under consideration together with the associated maintenance plan cost, forming a single pricing request rather than unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for three specific prices (Tesla Model S, Mercedes-Benz E-Class, Comprehensive Maintenance Plan) tied to a named customer and opportunity. All three figures ($89,999.99, $65,999.99, $1,999.99) are explicitly stated in the single call transcript and match the gold answer exactly with no unasked extras. The rep/account-manager context (Zanele Dlamini at AutoElite Motors discussing Tom Nguyen's luxury vehicle purchase) is plausible. Wording is natural, scope is adequate via the customer name and vehicles, and no locator preamble or artificial scaffolding is present. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue explicitly states: Tom Nguyen confirms the Tesla Model S total of $89,999.99, Zanele Dlamini confirms it ('That's correct'), states the Mercedes-Benz E-Class is priced at $65,999.99, and states the Comprehensive Maintenance Plan costs $1,999.99. All three prices are directly cited with correct amounts and speaker attribution."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains all three prices exactly as stated in the gold_answer: Tesla Model S at $89,999.99, Mercedes-Benz E-Class at $65,999.99, and Comprehensive Maintenance Plan at $1,999.99. The context metadata confirms the call involves Tom Nguyen's vehicle purchase opportunity, consistent with the question. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-91b89350fe16d4e8",
+    "question": "What eco-friendly vehicle models did Nadia offer Isabella Wood, and what did she say distinguishes AutoElite's certified pre-owned program from DriveFirst Automotive's?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Which eco-friendly vehicle models Nadia offered Isabella Wood, and (2) how AutoElite's certified pre-owned program differs from DriveFirst Automotive's.",
+        "relationship": "Two independent information needs joined only by the same sales call: a product offering lookup and a competitive program comparison.",
+        "reason": "The eco-friendly model offering and the certified pre-owned program comparison address different business issues; sharing a customer/call is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: (1) the eco-friendly models offered (2024 Tesla Model S, 2023 Nissan Leaf) and (2) the CPO differentiator vs DriveFirst (rigorous inspections, detailed vehicle-condition info, which DriveFirst doesn't emphasize as strongly). Both are stated verbatim in the dialogue. The gold answer matches precisely with no unasked extras. The rep/account context (Nadia selling to Isabella Wood at AutoElite) is realistic. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadia Gonzalez explicitly names 'the 2024 Tesla Model S and the 2023 Nissan Leaf' and describes them as having 'incredible eco-friendly credentials,' directly supporting the claim that Nadia offered these two models as eco-friendly options."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadia Gonzalez states the certified pre-owned program 'emphasizes quality and reliability above all,' mentions 'rigorous inspections and provide detailed information about vehicle conditions,' and explicitly says 'It's something that DriveFirst doesn't emphasize as strongly by our client feedback.' This directly supports the claim about rigorous inspections, detailed vehicle-condition information, and the distinction from DriveFirst Automotive."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms the two eco-friendly models (2024 Tesla Model S and 2023 Nissan Leaf) offered by Nadia. Evidence index 1 confirms the certified pre-owned program's emphasis on rigorous inspections and detailed vehicle-condition information, and the explicit comparison that DriveFirst doesn't emphasize these as strongly. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]
