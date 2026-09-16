@@ -1,0 +1,384 @@
+[
+  {
+    "question_id": "b2b-multi_call-23f6d29876fe7a4b",
+    "question": "Across the BioPulse MedTech EDA opportunity, what drawback did Marco Ricci cite about Quantum Circuits Inc. in the initial requirements discussion, and what complaint about a competitor's support did he raise in the proposal review?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A drawback Marco Ricci cited about Quantum Circuits Inc. during initial requirements, and a separate complaint he raised about a competitor's support during proposal review",
+        "relationship": "two independent competitive-concern lookups joined only by the same opportunity",
+        "reason": "The two facts concern different competitors and different issues (a product drawback vs. a support complaint) raised in different calls; sharing the BioPulse MedTech opportunity does not make them one coherent information need."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct competitive-positioning facts across two calls on the same opportunity. Call 1 (2023-07-15, requirements discussion) has Marco Ricci stating 'Quantum Circuits Inc. seemed limited in this regard' regarding customizability. Call 2 (2023-09-14, proposal review) has him saying 'The SLAs were just not dependable' about a past competitor's support. Each source contributes an exclusive requested fact. The gold answer accurately captures both claims without adding unasked extras. The question scopes the situation via opportunity name, contact name, and call context (initial requirements discussion / proposal review), which is natural for a rep reviewing account history. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Marco Ricci on 2023-07-15 explicitly states 'Quantum Circuits Inc. seemed limited in this regard' referring to customizability, directly supporting the claim that Quantum Circuits Inc. seemed limited in customizability. The call metadata confirms this is the BioPulse MedTech EDA Enhancement opportunity with contact Marco Ricci, and the date (2023-07-15) aligns with an initial requirements discussion."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Marco Ricci on 2023-09-14 states 'our past experiences haven't been the best in terms of support. The SLAs were just not dependable.' This directly supports the claim that past competitor support SLAs were not dependable. The call metadata confirms this is the same BioPulse MedTech EDA Enhancement opportunity with Marco Ricci, and the date (2023-09-14) aligns with a proposal review stage."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are supported by the cited evidence. Evidence index 0 confirms Marco Ricci cited Quantum Circuits Inc. as limited in customizability during the initial requirements discussion (July 15 call). Evidence index 1 confirms he raised a complaint about a past competitor's support SLAs not being dependable during the proposal review (September 14 call). The combined citations fully support the gold_answer's two factual claims."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-67b593357a1c9dd6",
+    "question": "For the SkyTech Ventures EDA Integration deal, what discount terms did TechPulse offer in the final terms discussion, and what cost concern did Elisa Ordo\u00f1ez raise in the initial discussion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount terms TechPulse offered in the final terms discussion and the cost concern Elisa Ordo\u00f1ez raised in the initial discussion, both for the SkyTech Ventures EDA Integration deal.",
+        "relationship": "same commercial issue (pricing/cost) discussed across two calls on the same deal",
+        "reason": "Both lookups concern the pricing/cost dimension of the same deal \u2014 an initial cost objection and the final discount terms \u2014 so they address one coherent commercial thread rather than unrelated facts joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sx54IAC",
+                "fact": "TechPulse offered a 10% discount on PulseSim Pro and QuantumPCB Modeler, and a 5% discount on OptiPower Max.",
+                "why_other_call_cannot_supply_it": "The initial discussion call does not mention any specific discount percentages or product-specific pricing terms; it only discusses cost-effectiveness generally."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0hHIAS",
+                "fact": "Elisa Ordo\u00f1ez raised that cost is an important consideration due to budgeting constraints.",
+                "why_other_call_cannot_supply_it": "The final terms discussion call does not mention any cost concerns or budgeting constraints; it focuses on finalizing terms, implementation timelines, and training."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the discount terms from the final discussion and the cost concern from the initial discussion. Each fact is only present in its respective call, and neither call contains the other fact. Therefore, both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx54IAC",
+                  "fact": "TechPulse offered a 10% discount on PulseSim Pro and QuantumPCB Modeler, and a 5% discount on OptiPower Max in the final terms discussion.",
+                  "why_other_call_cannot_supply_it": "The initial discussion call does not mention any specific discount percentages or terms; it only discusses cost-effectiveness generally."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0hHIAS",
+                  "fact": "Elisa Ordo\u00f1ez raised that cost is an important consideration due to budgeting constraints in the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The final terms discussion call does not mention budgeting constraints or cost concerns; it focuses on finalizing terms and discounts."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the discount terms from the final discussion and the cost concern from the initial discussion. Each piece is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx54IAC",
+                  "fact": "TechPulse offered a 10% discount on PulseSim Pro and QuantumPCB Modeler, and a 5% discount on OptiPower Max.",
+                  "why_other_call_cannot_supply_it": "The initial discussion call does not mention any specific discount percentages or product-specific pricing terms; it only discusses cost-effectiveness generally."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0hHIAS",
+                  "fact": "Elisa Ordo\u00f1ez raised that cost is an important consideration due to budgeting constraints.",
+                  "why_other_call_cannot_supply_it": "The final terms discussion call does not mention any cost concerns or budgeting constraints; it focuses on finalizing terms, implementation timelines, and training."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the discount terms from the final discussion and the cost concern from the initial discussion. Each fact is only present in its respective call, and neither call contains the other fact. Therefore, both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sx54IAC",
+                "fact": "Final terms discussion offered a 10% discount on PulseSim Pro and QuantumPCB Modeler and a 5% discount on OptiPower Max",
+                "why_other_call_cannot_supply_it": "The June 15 initial call contains no discount percentages or final commercial terms; pricing is only discussed in general terms."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0hHIAS",
+                "fact": "In the initial discussion Elisa Ordo\u00f1ez raised that cost is an important consideration given budgeting constraints",
+                "why_other_call_cannot_supply_it": "The September 30 final-terms call does not mention budgeting constraints or her initial cost concern; it only presents the discount offer."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: specific discount percentages from the final terms call and the cost concern from the initial call. Each fact appears only in one call, and both are required to answer."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx54IAC",
+                  "fact": "Final terms discussion offered a 10% discount on PulseSim Pro and QuantumPCB Modeler and a 5% discount on OptiPower Max",
+                  "why_other_call_cannot_supply_it": "The June 15 initial call contains no discount percentages or final commercial terms; pricing is only discussed in general terms."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0hHIAS",
+                  "fact": "In the initial discussion Elisa Ordo\u00f1ez raised that cost is an important consideration given budgeting constraints",
+                  "why_other_call_cannot_supply_it": "The September 30 final-terms call does not mention budgeting constraints or her initial cost concern; it only presents the discount offer."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: specific discount percentages from the final terms call and the cost concern from the initial call. Each fact appears only in one call, and both are required to answer."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct facts across two calls on the same opportunity. Call b2b:a05Wt000003Sx54IAC (final terms, 2021-09-30) contains Luciana's explicit discount offer: 10% on PulseSim Pro and QuantumPCB Modeler, 5% on OptiPower Max. Call b2b:a05Wt000003T0hHIAS (initial discussion, 2021-06-15) contains Elisa's statement that 'cost is an important consideration for us, especially with budgeting constraints.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally phrased, scoped to a named deal and contact, and a rep would plausibly want to recall both the discount terms offered and the customer's earlier cost concern. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Luciana Alves on 2021-09-30 explicitly states '10% discount on PulseSim Pro and QuantumPCB Modeler, and a 5% discount on OptiPower Max,' which directly matches the answer_claim about the discount terms offered in the final terms discussion."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Elisa Ordo\u00f1ez on 2021-06-15 explicitly states 'cost is an important consideration for us, especially with budgeting constraints,' which directly matches the answer_claim about the cost concern she raised in the initial discussion."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms the 10% discount on PulseSim Pro and QuantumPCB Modeler and 5% on OptiPower Max from the final terms discussion (2021-09-30). Evidence index 1 confirms Elisa Ordo\u00f1ez's cost concern regarding budgeting constraints from the initial discussion (2021-06-15). The chronological ordering (June initial discussion, September final terms) aligns with the question's framing. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-f88e6b2768b4e61c",
+    "question": "What is the total quote for TechGrove Systems' requested EduFlow Academy, VeriSim Express, and TrainEDU Suite licenses, and what is their budget?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total quoted price for three requested licenses (EduFlow Academy, VeriSim Express, TrainEDU Suite) and the customer's budget",
+        "relationship": "single coherent commercial quote breakdown for the same deal",
+        "reason": "The quote total and the customer's budget both concern the same pricing negotiation for the same license request, forming one coherent commercial information need."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for the total quote and budget for TechGrove Systems' three named products\u2014information a rep would plausibly track. The dialogue confirms the $3,590 total (including installation and initial training) and Carlos's stated budget of $3,639. The gold answer states exactly those two facts with no unasked extras. Wording is natural, scope is clear via company and product names, and no locator preamble or answer leakage is present. Single-call question, so both_sources_required is set true by convention."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Priyanka Iyer explicitly states 'your total comes to $3,590. That includes the installation services and any necessary initial training.' This directly supports the answer_claim that the total is $3,590 including installation services and initial training."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Carlos Mendoza states 'that's just above our budget of $3,639.' This directly supports the answer_claim that the budget is $3,639. The phrase 'just above' is slightly odd given $3,590 < $3,639, but the explicit dollar figure '$3,639' is clearly stated as their budget, which is what the claim asserts."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '$3,590 total including installation and initial training, against a budget of $3,639.' Evidence index 0 confirms the $3,590 total including installation services and initial training. Evidence index 1 confirms the budget of $3,639. The context metadata confirms the call involves Carlos Mendoza at TechGrove Systems. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-14dd382982a0ba8c",
+    "question": "What did Liam Kwong ask about cost transparency for TerraForm Engineering's long-term projects, and what did Fatoumata commit to providing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Liam Kwong asked about cost transparency for TerraForm Engineering's long-term projects and what Fatoumata committed to providing in response",
+        "relationship": "single coherent exchange: a customer concern and the salesperson's commitment addressing it",
+        "reason": "The question pairs one objection/concern (cost transparency for long-term projects) with the response it elicited (Fatoumata's commitment), which is a natural objection-and-response pattern about the same issue, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific pricing-transparency exchange between Liam Kwong and Fatoumata Diop regarding TerraForm Engineering's long-term projects. The dialogue confirms Liam asked for 'more transparency in your costing, especially over long-term projects' and Fatoumata committed to 'providing clearer cost projections once we have a better understanding of your specific long-term requirements.' The gold answer faithfully restates both facts without adding unasked extras or omitting requested details. The question is naturally worded, adequately scoped to a named account and contact, and represents a plausible information need for an account manager tracking pricing discussions. Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Liam Kwong explicitly asks: 'Can you provide more transparency in your costing, especially over long-term projects?' This directly supports the answer_claim that Liam asks for more transparency in costing over long-term projects."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatoumata Diop states: 'We can work on providing clearer cost projections once we have a better understanding of your specific long-term requirements.' This directly supports the answer_claim that Fatoumata commits to clearer cost projections once they understand TerraForm's long-term requirements."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Liam asked for more transparency in costing over long-term projects, and Index 1 confirms Fatoumata committed to providing clearer cost projections once she understands their specific long-term requirements. The gold_answer is a faithful paraphrase of the two quoted passages combined."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-8edd63c195329d26",
+    "question": "What did Emma Daniels say she values in extended warranties, and what follow-up did she and Mohamed schedule to review the proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Emma Daniels' stated values regarding extended warranties and the follow-up she and Mohamed scheduled to review the proposal",
+        "relationship": "single coherent thread: the customer's warranty priorities and the next step (follow-up meeting) on the same proposal",
+        "reason": "Both parts concern the same business issue \u2014 the extended warranty proposal \u2014 combining the customer's requirements with the scheduled next step, which is a natural sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from the same call: Emma's stated warranty preference and the scheduled follow-up. The dialogue confirms she values customizable warranty packages tailored to her needs (11:46:23) and that they agreed on a Friday next-week call to finalize the proposal (11:50:03\u201311:50:12). The gold answer states exactly those two facts with no extras. The question is naturally phrased, scoped to a named customer and rep, and a rep would plausibly want to recall a customer's stated preferences and next-step commitment. Single-call set, so both_sources_required is true by rule.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states Emma Daniels says 'I really value having the option to customize warranty packages' and that 'coverage can be tailored to fit more closely with what I need,' which fully supports the claim that she values customizable warranty packages tailored to her needs."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote only shows Emma proposing 'Let's aim for next week. How about Friday?' This is a suggestion/question from Emma, not a confirmed agreement. There is no cited response from Mohamed accepting the Friday slot, nor any cited line stating they 'agreed' or that the purpose is to 'finalize everything.' A question does not establish its answer, and the claim of mutual agreement and the stated purpose ('go through specifics and finalize everything') are not present in the supplied quote."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The first part of the gold_answer (customizable warranty packages tailored to her needs) is fully supported by evidence index 0. However, the second part ('they scheduled a call for Friday next week to finalize the proposal') is not fully supported: evidence index 1 only shows Emma proposing Friday, with no cited confirmation from Mohamed, no cited agreement language, and no cited statement that the purpose is to 'finalize the proposal.' The supplied citations do not establish a mutual scheduling agreement or the stated purpose of the call."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-ae5cd45e3c6afec5",
+    "question": "What safety features does Oliver Bennett say are critical for his fleet, and which models did Hiroshi suggest meet them?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The safety features Oliver Bennett says are critical for his fleet, and the vehicle models Hiroshi suggested that meet those features",
+        "relationship": "requirement and corresponding recommendation within the same sales conversation",
+        "reason": "This is a coherent single issue: the customer's stated safety requirements and the salesperson's model suggestions addressing those same requirements. It is a natural requirement-plus-response pairing, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two facts (critical safety features and suggested models) that are both found in the single provided call. Oliver Bennett explicitly names lane-keeping assist and adaptive cruise control as critical, and Hiroshi Ito suggests the 2024 Tesla Model S and 2021 Volvo XC60 as meeting those features. The gold answer states precisely these facts with no unasked extras. The question is naturally worded, scoped to a specific customer/account interaction, and a rep would plausibly want to recall this information. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is solely Oliver Bennett's statement of his safety requirements (lane-keeping assist, adaptive cruise control). It contains no utterance from Hiroshi and no mention of the 2024 Tesla Model S or the 2021 Volvo XC60. The answer_claim attributes model suggestions to Hiroshi, but the cited dialogue does not include any such suggestion."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer makes two factual claims: (1) Oliver's critical safety features are lane-keeping assist and adaptive cruise control, and (2) Hiroshi suggested the 2024 Tesla Model S and 2021 Volvo XC60 as meeting those features. The single supplied citation supports claim (1) via Oliver's own words. However, no supplied evidence contains any dialogue from Hiroshi recommending specific models. The opportunity metadata ('Oliver Bennett's Ultimate Safety and Flexibility Bundle') provides context but does not substitute for the missing dialogue claim about Hiroshi's suggestions. Therefore the combined citations do not support every factual claim in the gold_answer."
+      }
+    }
+  }
+]
