@@ -1,0 +1,340 @@
+[
+  {
+    "question_id": "b2b-single_call-e6363f8087c719d9",
+    "question": "What pain point did Geoffrey Nkosi mention with the incumbent vendor Quantum Circuits Inc, and what discount did Santiago offer on TechPulse packages?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The pain point Geoffrey Nkosi raised about incumbent vendor Quantum Circuits Inc; 2) the discount Santiago offered on TechPulse packages.",
+        "relationship": "Two independent fact lookups (an objection and a commercial discount) joined only by the same call/account.",
+        "reason": "The incumbent-vendor pain point and the TechPulse package discount are unrelated information needs; no shared business issue connects them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific pain point with an incumbent vendor and a discount offer, both of which a rep/account manager would plausibly want to know. The dialogue confirms Geoffrey Nkosi stated challenges with Quantum Circuits Inc 'specifically with their flexibility' and Santiago offered 'a 10% discount on our packages.' The gold answer accurately captures both facts without extras. The question is naturally worded, scoped to a named contact and vendor, and contains no locator preamble or artificial framing. Since question_class is single_call with one call provided, both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Geoffrey Nkosi explicitly states: 'we've had some challenges with Quantum Circuits Inc, specifically with their flexibility.' This directly supports the answer_claim that Geoffrey cites challenges with Quantum Circuits Inc regarding their flexibility."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Santiago Fernandez explicitly states: 'with a 10% discount on our packages, we ensure that flexibility and value go hand in hand.' This directly supports the answer_claim that Santiago mentions a 10% discount on packages. The context of the conversation (discussing TechPulse as the alternative vendor) makes it clear these are TechPulse packages."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) Quantum Circuits Inc lacked flexibility, and (2) Santiago offered a 10% discount on TechPulse packages. Evidence index 0 directly quotes Geoffrey Nkosi identifying flexibility as the specific challenge with Quantum Circuits Inc. Evidence index 1 directly quotes Santiago Fernandez offering a 10% discount on packages in the context of discussing TechPulse solutions (SecureFlow Suite, AI Cirku-Tech). Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-ef2b80ece55c2d76",
+    "question": "What discount percentages did Liam offer on SecureFlow Suite and AI Cirku-Tech for NexGen Biotech?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Discount percentages Liam offered on two products (SecureFlow Suite and AI Cirku-Tech) for NexGen Biotech",
+        "relationship": "single coherent quote breakdown",
+        "reason": "Both discounts are part of the same commercial quote to the same customer; asking for the discount terms across the quoted products is one coherent pricing lookup, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific discount percentages tied to two named products for a named account. The single call transcript contains Liam stating '10% and 15% discounts available on products like SecureFlow Suite and AI Cirku-Tech, respectively,' which matches the gold answer exactly. The question is naturally phrased, adequately scoped to the NexGen Biotech opportunity, and a rep/AM would plausibly want to recall offered discounts. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Liam O'Sullivan explicitly states 'there're 10% and 15% discounts available on products like SecureFlow Suite and AI Cirku-Tech, respectively.' This directly supports the claim of 10% on SecureFlow Suite and 15% on AI Cirku-Tech. The speaker is Liam, the products match, and the 'respectively' qualifier correctly maps 10% to SecureFlow Suite and 15% to AI Cirku-Tech."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states '10% on SecureFlow Suite and 15% on AI Cirku-Tech.' The single cited evidence item contains Liam's exact words offering those percentages on those specific products with 'respectively' confirming the mapping. The context metadata confirms the call is associated with NexGen Biotech (account_name) and the opportunity 'NexGen Biotech Comprehensive EDA Enhancement,' establishing the account context. All factual claims in the gold answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-e5dcfc69282dd863",
+    "question": "What pricing did Isabella quote DataWave Analytics for SecureFlow Suite and for SecuManage Pro across the two discussions with Fatima Latif?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted for SecureFlow Suite and SecuManage Pro to DataWave Analytics across two discussions with Fatima Latif",
+        "relationship": "same commercial issue (pricing) for the same customer across two calls",
+        "reason": "Both lookups concern pricing quotes for the same customer's product discussions, forming one coherent commercial pricing question spanning two calls."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for pricing of two products across two discussions, but the supplied answer already contains both prices. Each price is mentioned in only one call, so both calls are needed to obtain the complete requested information. However, the question does not require any additional facts beyond the prices, and each call supplies a distinct price for a different product. Thus, both calls are necessary for the requested information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for pricing of two products across two discussions, but the supplied answer already contains both prices. Each price is mentioned in only one call, so both calls are needed to obtain the complete requested information. However, the question does not require any additional facts beyond the prices, and each call supplies a distinct price for a different product. Thus, both calls are necessary for the requested information."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvpjIAC",
+                "fact": "SecureFlow Suite quoted at $5,399.91 with a 10% discount",
+                "why_other_call_cannot_supply_it": "The 2021-12-01 call discusses SecureFlow Suite only qualitatively and never states its price or discount."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2eGIAS",
+                "fact": "SecuManage Pro priced at $17,611.69 for 37 units with a 15% discount",
+                "why_other_call_cannot_supply_it": "The 2021-12-03 call never mentions SecuManage Pro or its pricing; it only says 'discounts across all other products' without figures."
+              }
+            ],
+            "reason": "The question asks for pricing of two different products, and each call supplies the price for exactly one of them; neither call alone covers both requested facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvpjIAC",
+                  "fact": "SecureFlow Suite quoted at $5,399.91 with a 10% discount",
+                  "why_other_call_cannot_supply_it": "The 2021-12-01 call discusses SecureFlow Suite only qualitatively and never states its price or discount."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2eGIAS",
+                  "fact": "SecuManage Pro priced at $17,611.69 for 37 units with a 15% discount",
+                  "why_other_call_cannot_supply_it": "The 2021-12-03 call never mentions SecuManage Pro or its pricing; it only says 'discounts across all other products' without figures."
+                }
+              ],
+              "reason": "The question asks for pricing of two different products, and each call supplies the price for exactly one of them; neither call alone covers both requested facts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for specific pricing quotes across two calls with the same rep (Isabella) and contact (Fatima Latif) at DataWave Analytics. Call 1 (Dec 3) provides the SecureFlow Suite quote ($5,399.91, 10% discount) and Call 2 (Dec 1) provides the SecuManage Pro quote ($17,611.69, 37 units, 15% discount). Each source contributes an exclusive requested fact. The answer matches both transcripts exactly with no unasked extras. The question is naturally scoped by account, contact, and product names without artificial locator preambles."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Isabella Rossi on 2021-12-03 explicitly states: 'For SecureFlow Suite, we offer a 10% discount, bringing the total to $5,399.91.' This directly supports the answer_claim about SecureFlow Suite pricing at $5,399.91 with a 10% discount."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Isabella Rossi on 2021-12-01 explicitly states: 'with a 15% discount on SecuManage Pro, it's competitively priced at $17,611.69 for 37 units.' This directly supports the answer_claim about SecuManage Pro at $17,611.69 for 37 units with a 15% discount."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer. Evidence index 0 confirms SecureFlow Suite was quoted at $5,399.91 with a 10% discount, and evidence index 1 confirms SecuManage Pro was quoted at $17,611.69 for 37 units with a 15% discount. The context metadata confirms both calls involve Isabella (Isabella Rossi) speaking with Fatima Latif at DataWave Analytics, matching the question's framing of 'two discussions with Fatima Latif.' All factual claims in the gold_answer are accounted for by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-865496cd732cd3e3",
+    "question": "Across the NeuralWave Technologies discussions with Matthew Chen, what key design process challenge did he describe in the initial conversation, and what concern did he raise about the quote during the later review call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A design process challenge from the initial call and a separate concern about the quote from a later review call",
+        "relationship": "two independent fact lookups joined only by the same contact/account",
+        "reason": "The design process challenge and the quote concern address different business issues; being from the same account across calls does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The initial conversation (Dec 2022) has Matthew Chen explicitly stating the challenge of finding scalable solutions that integrate with existing systems. The later review call (Mar 2023) has him raising the concern that quoted implementation time is longer than anticipated and could delay the project. Both facts are directly supported by their respective transcripts, each source contributes an exclusive requested fact, and the answer contains no unasked extras.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Matthew Chen on 2022-12-23 explicitly states: 'One of our primary challenges is finding scalable solutions that seamlessly integrate with our existing systems, especially as we expand.' This directly supports the answer_claim about scalable solutions integrating with existing systems as they expand."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Matthew Chen on 2023-03-24 explicitly states: 'your implementation time seems a bit longer compared to what we originally anticipated. This could potentially delay our project's timeline.' This directly supports the answer_claim about implementation time being longer than anticipated and potentially delaying the project."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) the key design process challenge was needing scalable solutions integrating with existing systems, and (2) the concern about the quote was that implementation time was longer than anticipated and could delay the project. Evidence index 0 (from the earlier 2022-12-23 call) supports part 1, and evidence index 1 (from the later 2023-03-24 call) supports part 2. The temporal ordering is correct: the initial conversation (Dec 2022) describes the challenge, and the later review call (Mar 2023) raises the concern. All factual claims in the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-af91bdaef641c249",
+    "question": "What next step did Lena propose to David Collins after their initial discussion about premium vehicle customization?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Lena proposed to David Collins following their initial discussion about premium vehicle customization",
+        "relationship": "single coherent request: next steps addressing the same discussion",
+        "reason": "One lookup about a proposed next step tied to the same discussion; no unrelated needs joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what next step Lena proposed after the initial discussion. The transcript at 09:35:20 shows Lena proposing to schedule a follow-up meeting to dive deeper into specific pain points to tailor offerings more precisely. The gold answer faithfully captures this. The question uses natural participant names (Lena, David Collins) and references the business context (premium vehicle customization) without artificial locator preambles. Scope is adequate: it identifies the account and topic. Single-call question, so both_sources_required is set to true per instructions. No unasked extras are included in the answer, and no unsupported claims are present.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Lena Schmidt explicitly states: 'Next, we'll schedule a deeper dive into specific pain points during a follow-up meeting. This will help us tailor our offerings even more precisely to your needs.' This directly supports the answer_claim about scheduling a follow-up meeting to dive deeper into specific pain points to tailor offerings more precisely."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item fully supports the gold_answer. Lena Schmidt's quoted statement proposes scheduling a follow-up meeting to dive deeper into David's specific pain points so offerings can be tailored more precisely. The context metadata confirms the call is with account 'David Collins' regarding 'Premium Electric and Luxury Vehicle Customization,' matching the question's framing. All factual elements of the gold_answer (follow-up meeting, deeper dive into pain points, tailoring offerings more precisely) are present in the cited quote."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-1edb42a796cb6f89",
+    "question": "What follow-up meeting did Mohammed schedule with Grace Turner, and which two models will they discuss?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the follow-up meeting Mohammed scheduled with Grace Turner and the two vehicle models to be discussed at that meeting.",
+        "relationship": "single coherent request: timing/context of one meeting plus its agenda (the two models), describing the same meeting.",
+        "reason": "The question asks about one follow-up meeting \u2014 when/what it is and what will be covered (the two models) \u2014 which is a natural, coherent set of requirements about a single meeting, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The single call clearly shows Mohammed scheduling a follow-up on April 25th with Grace Turner to discuss the Tesla Model S and BMW X5 M. The gold answer states exactly those facts with no extras. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to confirm the scheduled meeting and models. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Mohammed Khan proposing to meet 'next week on the 25th.' Given the call date of 2021-04-20, 'next week on the 25th' corresponds to April 25th. The quote supports the claim that Mohammed proposed the 25th. However, the claim also states 'Grace confirmed April 25th works,' but the supplied quote (lines 20-21) only contains Mohammed's proposal; no Grace confirmation line is included in the cited text. Despite this gap, the core scheduling fact (meeting on the 25th) is supported by Mohammed's utterance."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue explicitly has Mohammed proposing 'a follow-up meeting to dive deeper into your specific requirements and discuss models like the Tesla Model S or BMW X5 M.' This directly supports the claim that the follow-up meeting will discuss the Tesla Model S and BMW X5 M."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) a meeting on April 25th, and (2) discussion of the Tesla Model S and BMW X5 M. Evidence index 0 supports the April 25th date (call on April 20, 'next week on the 25th' = April 25). Evidence index 1 explicitly names both models (Tesla Model S and BMW X5 M) as topics for the follow-up meeting. Together the two citations substantiate all factual elements of the gold answer. The minor gap\u2014Grace's explicit confirmation is not in the cited quote\u2014does not undermine the scheduling fact since Mohammed's proposal establishes the meeting date, and the question asks what Mohammed scheduled."
+      }
+    }
+  }
+]

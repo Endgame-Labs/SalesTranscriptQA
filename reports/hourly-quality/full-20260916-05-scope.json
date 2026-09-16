@@ -1,0 +1,188 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "cb39b277bf5e5bc51e96d95cedbc03fbad706991d15cd553c0d08f113165c93d",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.27303438,
+  "results": [
+    {
+      "question_id": "b2b-single_call-ef2b80ece55c2d76",
+      "question": "What discount percentages did Liam offer on SecureFlow Suite and AI Cirku-Tech for NexGen Biotech?",
+      "gold_answer": "10% on SecureFlow Suite and 15% on AI Cirku-Tech.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgNIAS",
+        "b2b:a05Wt000003SrnkIAC",
+        "b2b:a05Wt000003SsNDIA0",
+        "b2b:a05Wt000003StclIAC",
+        "b2b:a05Wt000003SuVQIA0",
+        "b2b:a05Wt000003Sv6ZIAS",
+        "b2b:a05Wt000003SvHwIAK",
+        "b2b:a05Wt000003SvhfIAC",
+        "b2b:a05Wt000003Swx6IAC",
+        "b2b:a05Wt000003Sx5CIAS",
+        "b2b:a05Wt000003SxA1IAK",
+        "b2b:a05Wt000003SxJfIAK",
+        "b2b:a05Wt000003SxcyIAC",
+        "b2b:a05Wt000003SyNpIAK",
+        "b2b:a05Wt000003SydsIAC",
+        "b2b:a05Wt000003SypIIAS",
+        "b2b:a05Wt000003SypJIAS",
+        "b2b:a05Wt000003SysNIAS",
+        "b2b:a05Wt000003SyyxIAC",
+        "b2b:a05Wt000003SzDRIA0",
+        "b2b:a05Wt000003SzuzIAC",
+        "b2b:a05Wt000003T0CgIAK",
+        "b2b:a05Wt000003T0mEIAS",
+        "b2b:a05Wt000003T0nsIAC",
+        "b2b:a05Wt000003T1QTIA0",
+        "b2b:a05Wt000003T1a9IAC",
+        "b2b:a05Wt000003T1blIAC",
+        "b2b:a05Wt000003T2BHIA0",
+        "b2b:a05Wt000003T2HjIAK",
+        "b2b:a05Wt000003T2SzIAK",
+        "b2b:a05Wt000003T2T0IAK",
+        "b2b:a05Wt000003T2UcIAK",
+        "b2b:a05Wt000003T2WCIA0",
+        "b2b:a05Wt000003T2kiIAC",
+        "b2b:a05Wt000003T3SFIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Liam O'Sullivan appears in two calls with NexGen Biotech. Only in call b2b:a05Wt000003StclIAC does he state discount percentages for both SecureFlow Suite (10%) and AI Cirku-Tech (15%). His other call (b2b:a05Wt000003T1QTIA0) mentions a 10% discount on SecureFlow Suite and CloudLink Designer but gives no AI Cirku-Tech discount, so it does not offer a competing complete answer.",
+        "answers": [
+          {
+            "answer": "Liam offered a 10% discount on SecureFlow Suite and a 15% discount on AI Cirku-Tech for NexGen Biotech.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StclIAC",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2024-05-24T14:03:06] Yasmine Hassan: It’s certainly promising to know that you’re investing forward. Given all these, what’s the pricing structure like, particularly with discounts?\n[2024-05-24T14:03:22] Liam O'Sullivan: Pricing would best be discussed in more detail at a later stage, but I can tell you that we offer competitive discounts that reflect valued partnerships. For instance, there’re 10% and 15% discounts available on products like SecureFlow Suite and AI Cirku-Tech, respectively."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Liam (O'Sullivan), the products SecureFlow Suite and AI Cirku-Tech, and the customer NexGen Biotech. Only one call features Liam O'Sullivan discussing discount percentages for both of those specific products: call b2b:a05Wt000003StclIAC (2024-05-24, opportunity 'NexGen Biotech Comprehensive EDA Enhancement'). In that call, Liam states 10% on SecureFlow Suite and 15% on AI Cirku-Tech. Other Liam calls either mention different products with the 10% discount (e.g., CloudLink Designer in b2b:a05Wt000003T1QTIA0) or do not provide specific discount percentages for both named products.",
+        "answers": [
+          {
+            "answer": "Liam O'Sullivan offered a 10% discount on SecureFlow Suite and a 15% discount on AI Cirku-Tech for NexGen Biotech.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StclIAC",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2024-05-24T14:03:06] Yasmine Hassan: It’s certainly promising to know that you’re investing forward. Given all these, what’s the pricing structure like, particularly with discounts?\n[2024-05-24T14:03:22] Liam O'Sullivan: Pricing would best be discussed in more detail at a later stage, but I can tell you that we offer competitive discounts that reflect valued partnerships. For instance, there’re 10% and 15% discounts available on products like SecureFlow Suite and AI Cirku-Tech, respectively."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two discount percentages: 10% on SecureFlow Suite and 15% on AI Cirku-Tech for NexGen Biotech. Answer B adds Liam's surname (O'Sullivan), which is an unrequested extra and does not affect agreement. The reference also provides both requested discount figures (10% on SecureFlow Suite and 15% on AI Cirku-Tech), covering all facts asked in the question."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-af91bdaef641c249",
+      "question": "What next step did Lena propose to David Collins after their initial discussion about premium vehicle customization?",
+      "gold_answer": "Schedule a follow-up meeting to dive deeper into David's specific pain points so offerings can be tailored more precisely.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMvoIAG",
+        "b2c:a05Ws000005SO9YIAW",
+        "b2c:a05Ws000005SQUqIAO",
+        "b2c:a05Ws000005SQZYIA4",
+        "b2c:a05Ws000005SS0GIAW",
+        "b2c:a05Ws000005SS54IAG",
+        "b2c:a05Ws000005SSl9IAG",
+        "b2c:a05Ws000005ST2oIAG",
+        "b2c:a05Ws000005STR4IAO",
+        "b2c:a05Ws000005STtvIAG",
+        "b2c:a05Ws000005SU3YIAW",
+        "b2c:a05Ws000005SULKIA4",
+        "b2c:a05Ws000005SUuxIAG",
+        "b2c:a05Ws000005SUy6IAG",
+        "b2c:a05Ws000005SV2yIAG",
+        "b2c:a05Ws000005SWFBIA4",
+        "b2c:a05Ws000005SWyEIAW",
+        "b2c:a05Ws000005SXnrIAG",
+        "b2c:a05Ws000005SY5iIAG",
+        "b2c:a05Ws000005SY5jIAG",
+        "b2c:a05Ws000005SYnAIAW",
+        "b2c:a05Ws000005SZRYIA4",
+        "b2c:a05Ws000005Sa2ZIAS",
+        "b2c:a05Ws000005SaAlIAK",
+        "b2c:a05Ws000005SaAmIAK",
+        "b2c:a05Ws000005SaCKIA0",
+        "b2c:a05Ws000005SbbLIAS",
+        "b2c:a05Ws000005Sbt3IAC",
+        "b2c:a05Ws000005SbzVIAS",
+        "b2c:a05Ws000005ScHDIA0",
+        "b2c:a05Ws000005ScU6IAK",
+        "b2c:a05Ws000005ScaYIAS",
+        "b2c:a05Ws000005ScfNIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Lena Schmidt appears in two calls with David Collins. The initial discussion about premium vehicle customization is the 2020-04-23 call (opportunity 'Premium Electric and Luxury Vehicle Customization'), where she explicitly proposes the next step; the 2020-04-30 call is the follow-up that resulted. The other calls involve different salespeople.",
+        "answers": [
+          {
+            "answer": "Lena proposed scheduling a follow-up meeting to do a deeper dive into David's specific pain points, which would help tailor AutoElite's offerings more precisely to his needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQUqIAO",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2020-04-23T09:35:00] David Collins: Perfect. I think we have a good baseline now. What's the next step?\n[2020-04-23T09:35:20] Lena Schmidt: Next, we’ll schedule a deeper dive into specific pain points during a follow-up meeting. This will help us tailor our offerings even more precisely to your needs."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Lena (Lena Schmidt) and David Collins, and their 'initial discussion about premium vehicle customization.' There is exactly one call between Lena Schmidt and David Collins that constitutes an initial discussion about premium vehicle customization: call b2c:a05Ws000005SQUqIAO dated 2020-04-23, with opportunity name 'Premium Electric and Luxury Vehicle Customization.' The other Lena call (b2c:a05Ws000005ScfNIAS, 2020-04-30) is explicitly a follow-up ('diving deeper into some of the pain points'), not the initial discussion. In the initial call, at line 17 David asks 'What's the next step?' and at line 18 Lena proposes scheduling a deeper dive into specific pain points during a follow-up meeting.",
+        "answers": [
+          {
+            "answer": "Lena proposed scheduling a follow-up meeting to do a deeper dive into specific pain points, which would help tailor their offerings more precisely to David's needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQUqIAO",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2020-04-23T09:35:00] David Collins: Perfect. I think we have a good baseline now. What's the next step?\n[2020-04-23T09:35:20] Lena Schmidt: Next, we’ll schedule a deeper dive into specific pain points during a follow-up meeting. This will help us tailor our offerings even more precisely to your needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Lena proposed scheduling a follow-up meeting to do a deeper dive into David's specific pain points to tailor offerings more precisely to his needs. The only difference is answer_a explicitly names 'AutoElite's offerings' while answer_b says 'their offerings,' which is a trivial wording variation conveying the same fact. The reference captures the same requested next step: schedule a follow-up meeting to dive deeper into David's specific pain points so offerings can be tailored more precisely. All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
