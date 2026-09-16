@@ -1,0 +1,461 @@
+[
+  {
+    "question_id": "b2b-multi_call-70345bf351b91238",
+    "question": "For EvoTrend Systems' expansion initiative quote, what discount did TechPulse apply to FlexiDesign Pro and what discount to EcoPCB Creator?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts TechPulse applied to FlexiDesign Pro and EcoPCB Creator in EvoTrend Systems' expansion initiative quote",
+        "relationship": "single coherent quote breakdown \u2014 two line-item discounts within the same commercial quote",
+        "reason": "Both facts are components of one quote for the same initiative, forming a coherent commercial quote breakdown rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for the discount on FlexiDesign Pro and EcoPCB Creator. The first call explicitly states a 10% discount on FlexiDesign Pro and mentions a 5% discount on SecureFlow Suite and AI Cirku-Tech, but does not mention EcoPCB Creator's discount. The second call explicitly states a 10% discount on EcoPCB Creator and mentions an 'overall discount' on FlexiDesign Pro without specifying the percentage. However, the answer provided states both have a 10% discount, which is not fully supported by either call alone. The first call provides FlexiDesign Pro's discount, and the second provides EcoPCB Creator's discount. Since the question requires both discounts, and each call supplies one of them, both calls are necessary to answer the question. The facts are distinct and not repeated across calls. Therefore, necessary is true."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the discount applied to FlexiDesign Pro and EcoPCB Creator. The first call explicitly states a 10% discount on FlexiDesign Pro and mentions EcoPCB Creator's integration but not its discount. The second call states a 10% discount on EcoPCB Creator and mentions an 'overall discount' on FlexiDesign Pro without specifying the percentage. However, the first call provides the FlexiDesign Pro discount, and the second call provides the EcoPCB Creator discount. Since each call supplies one of the two requested discounts, both are needed to answer the question fully. The facts are distinct and requested, so necessary=true."
+            },
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the discount on FlexiDesign Pro and EcoPCB Creator. The first call explicitly states a 10% discount on FlexiDesign Pro and mentions a 5% discount on SecureFlow Suite and AI Cirku-Tech, but does not mention EcoPCB Creator's discount. The second call explicitly states a 10% discount on EcoPCB Creator and mentions an 'overall discount' on FlexiDesign Pro without specifying the percentage. However, the answer provided states both have a 10% discount, which is not fully supported by either call alone. The first call provides FlexiDesign Pro's discount, and the second provides EcoPCB Creator's discount. Since the question requires both discounts, and each call supplies one of them, both calls are necessary to answer the question. The facts are distinct and not repeated across calls. Therefore, necessary is true."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrkaIAC",
+                "fact": "FlexiDesign Pro has a 10% discount on the expansion initiative quote",
+                "why_other_call_cannot_supply_it": "The 2024-04-05 call only mentions 'an overall discount on FlexiDesign Pro' without stating the percentage"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2vxIAC",
+                "fact": "EcoPCB Creator has a 10% discount on the expansion initiative quote",
+                "why_other_call_cannot_supply_it": "The 2024-04-10 call discusses EcoPCB Creator only in terms of integration, never stating its discount"
+              }
+            ],
+            "reason": "The question asks for two distinct discount figures. Each call states only one of them: the April 10 call gives the 10% discount for FlexiDesign Pro, while the April 5 call gives the 10% discount for EcoPCB Creator. Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrkaIAC",
+                  "fact": "FlexiDesign Pro has a 10% discount on the expansion initiative quote",
+                  "why_other_call_cannot_supply_it": "The 2024-04-05 call only mentions 'an overall discount on FlexiDesign Pro' without stating the percentage"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2vxIAC",
+                  "fact": "EcoPCB Creator has a 10% discount on the expansion initiative quote",
+                  "why_other_call_cannot_supply_it": "The 2024-04-10 call discusses EcoPCB Creator only in terms of integration, never stating its discount"
+                }
+              ],
+              "reason": "The question asks for two distinct discount figures. Each call states only one of them: the April 10 call gives the 10% discount for FlexiDesign Pro, while the April 5 call gives the 10% discount for EcoPCB Creator. Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two specific discount figures tied to two products in the EvoTrend Systems Expansion Initiative quote. Call 1 (2024-04-10) explicitly states a 10% discount on FlexiDesign Pro; Call 2 (2024-04-05) explicitly states a 10% discount on EcoPCB Creator. Each source contributes an exclusive requested fact, so both are required. The gold answer matches both sources exactly with no extra or missing information. The question is naturally phrased, adequately scoped by account/opportunity name, and represents a plausible commercial-terms inquiry a rep would need."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Sophia M\u00fcller explicitly states 'We've applied a 10% discount on FlexiDesign Pro,' which directly supports the answer_claim of a 10% discount on FlexiDesign Pro."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote says 'you'll see an overall discount on FlexiDesign Pro and a 10% discount on EcoPCB Creator.' The 10% discount on EcoPCB Creator is explicitly stated and supported. However, for FlexiDesign Pro, the quote only mentions 'an overall discount' without specifying a percentage. The answer_claim asserts a specific discount figure for FlexiDesign Pro, but the cited passage does not quantify it as 10%. The word 'overall' is vague and does not confirm a 10% figure."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states FlexiDesign Pro has a 10% discount and EcoPCB Creator has a 10% discount. Evidence index 0 explicitly confirms the 10% discount on FlexiDesign Pro. Evidence index 1 explicitly confirms the 10% discount on EcoPCB Creator. Although index 1's reference to FlexiDesign Pro is vague ('overall discount'), index 0 supplies the specific 10% figure for FlexiDesign Pro. Together, the two citations support both factual claims in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-b93a6b7a8b08567a",
+    "question": "For DigitalWave Solutions, what discount did Jasper offer on the SecureFlow Suite, and how did he describe TechPulse's pricing transparency in the earlier discussion with Nadia?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount Jasper offered on SecureFlow Suite and his comments on TechPulse's pricing transparency",
+        "relationship": "Both facts concern the same commercial/pricing issue (SecureFlow Suite pricing) discussed across two calls",
+        "reason": "The discount and the competitor pricing-transparency remark both address the same business issue\u2014pricing of the SecureFlow Suite\u2014so joining them across calls is coherent, not merely same-account linkage."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwowIAC",
+                "fact": "Jasper offered a 15% discount on the SecureFlow Suite.",
+                "why_other_call_cannot_supply_it": "The other call does not mention any discount on SecureFlow Suite; it only discusses pricing transparency."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxUuIAK",
+                "fact": "Jasper described TechPulse's pricing as transparent and predictable, with comprehensive quotes and clear breakdowns and no hidden surprises.",
+                "why_other_call_cannot_supply_it": "The other call does not discuss pricing transparency; it only mentions the discount on SecureFlow Suite."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the discount amount on SecureFlow Suite and the description of pricing transparency. The discount is only present in the November call, while the pricing transparency description is only in the September call. Neither call contains both facts, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwowIAC",
+                  "fact": "Jasper offered a 15% discount on the SecureFlow Suite.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention any discount on SecureFlow Suite; it only discusses pricing transparency."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxUuIAK",
+                  "fact": "Jasper described TechPulse's pricing as transparent and predictable, with comprehensive quotes and clear breakdowns and no hidden surprises.",
+                  "why_other_call_cannot_supply_it": "The other call does not discuss pricing transparency; it only mentions the discount on SecureFlow Suite."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount amount on SecureFlow Suite and the description of pricing transparency. The discount is only present in the November call, while the pricing transparency description is only in the September call. Neither call contains both facts, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwowIAC",
+                "fact": "Jasper offered a 15% discount on the SecureFlow Suite",
+                "why_other_call_cannot_supply_it": "The earlier (September) call discusses SecureFlow Suite only in terms of scalability and contains no discount or pricing figure."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxUuIAK",
+                "fact": "Jasper described TechPulse's pricing as transparent and predictable, with comprehensive quotes, clear breakdowns, and no hidden surprises",
+                "why_other_call_cannot_supply_it": "The November call never addresses pricing transparency; it only mentions the 15% discount and security/support topics."
+              }
+            ],
+            "reason": "The question requests two distinct facts: a specific discount figure (only in the November call) and a pricing-transparency description (only in the September call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwowIAC",
+                  "fact": "Jasper offered a 15% discount on the SecureFlow Suite",
+                  "why_other_call_cannot_supply_it": "The earlier (September) call discusses SecureFlow Suite only in terms of scalability and contains no discount or pricing figure."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxUuIAK",
+                  "fact": "Jasper described TechPulse's pricing as transparent and predictable, with comprehensive quotes, clear breakdowns, and no hidden surprises",
+                  "why_other_call_cannot_supply_it": "The November call never addresses pricing transparency; it only mentions the 15% discount and security/support topics."
+                }
+              ],
+              "reason": "The question requests two distinct facts: a specific discount figure (only in the November call) and a pricing-transparency description (only in the September call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two distinct facts: (1) the 15% discount on SecureFlow Suite from the Nov 5 call, and (2) Jasper's description of TechPulse's pricing transparency from the Sep 10 call. Both are verified verbatim in their respective dialogues. The Nov 5 call provides the discount figure ('15% discount offered on the SecureFlow Suite'), and the Sep 10 call provides the pricing transparency description ('transparency and predictability\u2026 comprehensive quotes with clear breakdowns\u2026 no hidden surprises'). Each source contributes an exclusive requested fact. The question is naturally scoped to DigitalWave Solutions and the rep Jasper, plausible for an account manager reviewing deal terms and prior positioning. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jasper van Dijk on call b2b:a05Wt000003SwowIAC (associated with DigitalWave Solutions / Nadia Souleyman) explicitly states 'with the 15% discount offered on the SecureFlow Suite,' directly supporting the claim of a 15% discount on SecureFlow Suite."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Jasper van Dijk on call b2b:a05Wt000003SxUuIAK (also associated with DigitalWave Solutions / Nadia Souleyman) explicitly states 'Our pricing strategy focuses on transparency and predictability. We provide comprehensive quotes with clear breakdowns, so you know exactly what you're paying for without any hidden surprises.' This directly supports the claim about transparent, predictable pricing with comprehensive quotes, clear breakdowns, and no hidden surprises."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms the 15% discount on SecureFlow Suite offered by Jasper in the DigitalWave Solutions context. Index 1 confirms Jasper's description of TechPulse's pricing as transparent and predictable, with comprehensive quotes, clear breakdowns, and no hidden surprises, from the earlier September 2023 discussion with Nadia. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-b45b23db25a1dc45",
+    "question": "What pricing did Chidi quote Ankit for AI Cirku-Tech, and what does it include?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price Chidi quoted Ankit for AI Cirku-Tech and what that price includes",
+        "relationship": "single coherent commercial quote lookup: price and its inclusions describe one quote",
+        "reason": "One quote request; price and inclusions are parts of the same commercial breakdown."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the specific pricing Chidi quoted Ankit for AI Cirku-Tech and what it includes. The dialogue at 13:32:05 states 'AI Cirku-Tech starts at 529.99 per module with no hidden fees, and we ensure support and updates are included in our package.' The gold answer faithfully reproduces all requested facts (price, no hidden fees, support and updates included) with no unasked extras. The question is naturally phrased, adequately scoped to a specific product and conversation, and a rep/AM would plausibly want to recall quoted pricing. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Chidi Onyekachi explicitly states: 'AI Cirku-Tech starts at 529.99 per module with no hidden fees, and we ensure support and updates are included in our package.' This directly supports the answer_claim regarding the price (529.99 per module), no hidden fees, and inclusion of support and updates. Speaker attribution (Chidi) and context (addressing Ankit Sharma per metadata) are consistent."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element in the gold_answer: the price of 529.99 per module, no hidden fees, and that support and updates are included. The speaker is Chidi, the recipient is Ankit Sharma (per account metadata), and the product is AI Cirku-Tech. All claims are directly present in the quoted passage."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-6347fc94bdc3690e",
+    "question": "What did Emily Chen say about CircuitWave's clients' feedback on their support and innovation?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Emily Chen said about CircuitWave's clients' feedback regarding their support and innovation",
+        "relationship": "single coherent lookup of one person's statement on one topic",
+        "reason": "This is a single fact lookup about one speaker's comments on client feedback, all within one coherent topic."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Emily Chen's remark about CircuitWave's clients appears verbatim in the single supplied call. The gold answer faithfully restates that support is strong but innovation could be improved, with no extra or missing facts. The question is naturally phrased, scoped to a named contact and competitor, and a rep would plausibly want competitive intelligence gathered during discovery. Single-call set, so both_sources_required is true by rule.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Emily Chen explicitly states: 'We have also heard from some of CircuitWave's clients that while their support is strong, their efforts in innovation could be improved.' This directly supports the answer_claim that Emily says CircuitWave's clients report strong support but innovation could be improved. Speaker attribution (Emily Chen), the subject (CircuitWave's clients), and both factual points (strong support, innovation could be improved) are all present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'CircuitWave's clients say their support is strong but their innovation efforts could be improved.' The single cited evidence (index 0) contains Emily Chen's exact words conveying this information. The quote faithfully matches the gold_answer's content: strong support and innovation efforts could be improved, attributed to CircuitWave's clients. The metadata confirms the speaker is Emily Chen and the call context is consistent. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-34814c1577f8cd81",
+    "question": "What did Emily Foster want to know about long-term affordability, and what maintenance plan did Hina offer in response?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Emily Foster's concern about long-term affordability and the maintenance plan Hina offered in response",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "The question pairs a customer's affordability concern with the salesperson's corresponding maintenance-plan response, forming one coherent objection-and-response exchange."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two specific facts from a single call: Emily's concern about long-term affordability and the maintenance plan Hina offered. The dialogue confirms Emily said 'I've been concerned about long-term affordability' and Hina described the 'AutoElite Comprehensive Maintenance Plan, which covers routine maintenance and more significant repairs at competitive rates.' The gold answer accurately captures both facts without adding unasked extras. The question is naturally phrased, scoped to a clear customer interaction, and a rep would plausibly want to recall what a prospect's concern was and what was offered. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue explicitly shows Emily Foster saying 'I've been concerned about long-term affordability,' which directly supports the claim that Emily raised concern about long-term affordability."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quoted passage is Emily Foster asking 'What kind of maintenance plans do you offer?' This is a question from Emily, not a description by Hina of the AutoElite Comprehensive Maintenance Plan. The claim states 'Hina described the AutoElite Comprehensive Maintenance Plan,' but the cited quote contains no response from Hina, no mention of 'AutoElite Comprehensive Maintenance Plan,' and no details about coverage or rates. A customer's question does not establish the salesperson's answer."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer makes two factual claims: (1) Emily was concerned about long-term affordability, and (2) Hina offered the AutoElite Comprehensive Maintenance Plan covering routine maintenance and significant repairs at competitive rates. Evidence index 0 supports claim (1). However, evidence index 1 only shows Emily asking about maintenance plans; it does not contain Hina's response describing the AutoElite Comprehensive Maintenance Plan, its coverage of routine maintenance and significant repairs, or competitive rates. No supplied citation provides Hina's actual offer, so the second factual claim in the gold_answer is unsupported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-a4499fa7b4d52b4d",
+    "question": "What is the total price for the five 2023 Nissan Leaf vehicles in Lucas Green's proposal, and what discount applies?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total price of five 2023 Nissan Leaf vehicles in Lucas Green's proposal and the applicable discount",
+        "relationship": "single coherent commercial quote breakdown (price and its discount)",
+        "reason": "Both parts concern the same proposal's pricing terms; a natural quote lookup."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the total price and discount on the five 2023 Nissan Leaf vehicles in Lucas Green's proposal. The dialogue at 10:35:50 has Keiko stating 'The 2023 Nissan Leaf has a 5% discount applied across the five vehicles, which totals up to $137,749.95.' The gold answer reproduces exactly those two facts (5% discount, $137,749.95 total) with no unasked extras. The question is naturally scoped to a specific customer and proposal, and a rep/account manager would plausibly need this pricing detail. No locator preamble, no answer leakage, no unsupported causality. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Keiko Mori explicitly states: 'The 2023 Nissan Leaf has a 5% discount applied across the five vehicles, which totals up to $137,749.95.' This directly supports the answer_claim regarding the 5% discount, five vehicles, and the total of $137,749.95."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains a direct quote from the salesperson (Keiko Mori) that states all key facts in the gold_answer: the vehicle model (2023 Nissan Leaf), the discount (5%), the quantity (five vehicles), and the total price ($137,749.95). The context metadata confirms the call is associated with Lucas Green's opportunity, aligning with the question's reference to 'Lucas Green's proposal.' All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  }
+]

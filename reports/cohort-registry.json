@@ -1957,6 +1957,18 @@
       "question_text": "What concern did Mia Thompson raise about the $91,999.98 Tesla Model S package price, and what did Nora offer to address it?",
       "reason": "Conservative citation-premise hold: question anchors specific $91,999.98 Tesla package but selected evidence omits line 4 identifying package and amount. Concern and proposed financing response supported.",
       "review_report": "reports/hourly-quality/full-20260916-21-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-70345bf351b91238",
+      "question_text": "For EvoTrend Systems' expansion initiative quote, what discount did TechPulse apply to FlexiDesign Pro and what discount to EcoPCB Creator?",
+      "reason": "Conservative automated-gate hold, confirmed reviewer errors rather than bad QA: DeepSeek necessary=false contradicts its own explanation both calls necessary, including after schema repair. Citation reviewer wrongly asserts second answer_claim supplies a numeric FlexiDesign discount; actual claim says overall discount only and correctly gives EcoPCB10%. Full pair and exact claims support gold with distinct10% discounts. GLM necessity and independent review pass. Preserve for reviewer-error analysis; do not count as factual or genuine necessity failure.",
+      "review_report": "reports/hourly-quality/full-20260916-22-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-34814c1577f8cd81",
+      "question_text": "What did Emily Foster want to know about long-term affordability, and what maintenance plan did Hina offer in response?",
+      "reason": "Citation failure: selected evidence quotes Emily questions at lines9 and11 but omits Hina answer at line12 giving named maintenance plan, routine/significant repairs and competitive rates. Full transcript supports gold.",
+      "review_report": "reports/hourly-quality/full-20260916-22-review.md"
     }
   ],
   "retained_difficult_questions": [
