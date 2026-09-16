@@ -1,0 +1,449 @@
+[
+  {
+    "question_id": "b2b-multi_call-91b5748a77af0a3d",
+    "question": "Across the two calls with NexGen Biotech's Javier Sanchez, what did Mei Lin say about how TechPulse handles implementation to minimize disruption?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Mei Lin said about how TechPulse handles implementation to minimize disruption, as stated across two calls with Javier Sanchez of NexGen Biotech",
+        "relationship": "single coherent topic (implementation/disruption-minimization approach) traced across two calls",
+        "reason": "Both calls concern the same business issue\u2014TechPulse's implementation approach to minimize disruption\u2014so combining them is a natural multi-call lookup, not two independent facts joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "Both calls contain essentially the same information about TechPulse's implementation approach: minimizing disruption through streamlined/rapid deployment and training. The first call mentions 'rapid deployment capabilities' and 'seamless integration', while the second mentions 'streamlined process' and 'comprehensive training'. These are paraphrases of the same two aspects, not distinct facts. The question asks for what Mei Lin said about handling implementation to minimize disruption, and either call alone provides the complete answer. Therefore, both calls are not necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "Both calls describe the same implementation approach: minimizing disruption through rapid deployment, reduced downtime, seamless integration, and comprehensive training. The second call's 'streamlined process' and 'comprehensive training' are paraphrases of the first call's 'rapid deployment capabilities' and 'seamless integration', not distinct facts. The question asks for what Mei Lin said about handling implementation, and either call alone provides the essential information. Therefore, both calls are not necessary."
+            },
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "Both calls contain essentially the same information about TechPulse's implementation approach: minimizing disruption through streamlined/rapid deployment and training. The first call mentions 'rapid deployment capabilities' and 'seamless integration', while the second mentions 'streamlined process' and 'comprehensive training'. These are paraphrases of the same two aspects, not distinct facts. The question asks for what Mei Lin said about handling implementation to minimize disruption, and either call alone provides the complete answer. Therefore, both calls are not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxA1IAK",
+                "fact": "Mei Lin cited rapid deployment capabilities that significantly reduce downtime and ensure seamless integration into existing workflows.",
+                "why_other_call_cannot_supply_it": "The May 11 call only mentions a streamlined process and comprehensive training; it never mentions rapid deployment, downtime reduction, or seamless integration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swx6IAC",
+                "fact": "Mei Lin described a streamlined implementation process with comprehensive training included so the team becomes adept with the tools quickly.",
+                "why_other_call_cannot_supply_it": "The May 4 call mentions minimizing downtime via rapid deployment but says nothing about training or team adoption."
+              }
+            ],
+            "reason": "The question asks what Mei Lin said across both calls about minimizing disruption during implementation. Each call contains a distinct, non-overlapping statement: the first covers rapid deployment/downtime/seamless integration, the second covers streamlined process/comprehensive training. Both are requested by the question and neither call alone suffices."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxA1IAK",
+                  "fact": "Mei Lin cited rapid deployment capabilities that significantly reduce downtime and ensure seamless integration into existing workflows.",
+                  "why_other_call_cannot_supply_it": "The May 11 call only mentions a streamlined process and comprehensive training; it never mentions rapid deployment, downtime reduction, or seamless integration."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Swx6IAC",
+                  "fact": "Mei Lin described a streamlined implementation process with comprehensive training included so the team becomes adept with the tools quickly.",
+                  "why_other_call_cannot_supply_it": "The May 4 call mentions minimizing downtime via rapid deployment but says nothing about training or team adoption."
+                }
+              ],
+              "reason": "The question asks what Mei Lin said across both calls about minimizing disruption during implementation. Each call contains a distinct, non-overlapping statement: the first covers rapid deployment/downtime/seamless integration, the second covers streamlined process/comprehensive training. Both are requested by the question and neither call alone suffices."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": false,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": false,
+        "exactly_requested_answer": false,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The gold answer swaps the two calls. In the first call (2020-05-04) Mei Lin discusses 'rapid deployment capabilities' that 'reduce downtime significantly' and ensure 'seamless integration into existing workflows.' In the second call (2020-05-11) she describes a 'streamlined' process with 'comprehensive training' so the team is 'adept at utilizing the tools in no time.' The gold answer attributes the rapid-deployment/seamless-integration language to the first call and the streamlined/training language to the second, which matches the actual chronology (May 4 is first, May 11 is second). However, the gold answer says 'in the first call she cited rapid deployment\u2026' and 'in the second she described a streamlined process\u2026'\u2014this is actually correct when ordered chronologically. Re-checking: Call 1 (May 4) = rapid deployment, reduces downtime, seamless integration. Call 2 (May 11) = streamlined, minimal disruption, comprehensive training. The gold answer states exactly this. All claims are supported. Both calls contribute exclusive facts. The question is naturally scoped to a real account/contact and a plausible rep need (understanding how implementation was pitched across calls). No locator preamble, no leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Mei Lin on 2020-05-04 explicitly states: 'We focus on rapid deployment capabilities\u2026 This approach reduces downtime significantly and ensures a seamless integration into existing workflows.' This directly supports the answer_claim about rapid deployment, significant downtime reduction, and seamless integration."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Mei Lin on 2020-05-11 explicitly states: 'Our implementation process is streamlined to ensure minimal disruption to your current workflow. Plus, with comprehensive training included, your team will be adept at utilizing the tools in no time.' This directly supports the answer_claim about a streamlined process, minimal disruption, comprehensive training, and quick team adoption."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states that in the first call Mei Lin cited rapid deployment capabilities that significantly reduce downtime and integrate seamlessly (supported by index 0, call b2b:a05Wt000003SxA1IAK dated 2020-05-04), and in the second call she described a streamlined process with comprehensive training so the team adopts the tools quickly (supported by index 1, call b2b:a05Wt000003Swx6IAC dated 2020-05-11). Both citations are from Mei Lin, both are addressed to Javier Sanchez at NexGen Biotech per metadata, and the factual content matches the gold_answer faithfully. The chronological ordering (first call = May 4, second call = May 11) is consistent with the metadata timestamps."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-660110b7b6cff5e1",
+    "question": "Across the two calls with Oliver Schmidt at Quantum Designs, what did he say about his collaboration needs in the initial discussion, and what specific goal did he raise for the CollabCircuit Hub in the follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Oliver Schmidt's stated collaboration needs in the initial call and the specific goal he raised for the CollabCircuit Hub in the follow-up call",
+        "relationship": "same business issue across two calls \u2014 his collaboration requirements and the goal for the collaboration product are part of one evolving need",
+        "reason": "Both parts concern the same business issue (collaboration needs and the CollabCircuit Hub goal), making this a coherent two-call question rather than unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2eXIAS",
+                "fact": "Collaboration tools are on top of their list.",
+                "why_other_call_cannot_supply_it": "This statement is made only in the initial call; the follow-up call does not repeat it."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2zXIAS",
+                "fact": "His main goal is to improve efficiency without imposing a steep learning curve on the team.",
+                "why_other_call_cannot_supply_it": "This specific goal is raised only in the follow-up call; the initial call does not mention it."
+              }
+            ],
+            "reason": "The question explicitly asks for what he said about collaboration needs in the initial discussion and what specific goal he raised in the follow-up. These are two distinct pieces of information, each appearing in only one of the calls, so both calls are necessary to answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information from two different calls, but the first call's 'collaboration tools are on top of our list' and the second call's 'main goal is improving efficiency without a steep learning curve' are not substantively different facts. The first is a general statement of priority, and the second is a more specific goal that is a natural elaboration of the same need. They are not distinct requested facts; the second call's goal is a refinement of the initial need, not a separate fact. Therefore, the question does not genuinely require both calls for meaningfully different information."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2eXIAS",
+                  "fact": "Collaboration tools are on top of their list.",
+                  "why_other_call_cannot_supply_it": "This statement is made only in the initial call; the follow-up call does not repeat it."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2zXIAS",
+                  "fact": "His main goal is to improve efficiency without imposing a steep learning curve on the team.",
+                  "why_other_call_cannot_supply_it": "This specific goal is raised only in the follow-up call; the initial call does not mention it."
+                }
+              ],
+              "reason": "The question explicitly asks for what he said about collaboration needs in the initial discussion and what specific goal he raised in the follow-up. These are two distinct pieces of information, each appearing in only one of the calls, so both calls are necessary to answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2eXIAS",
+                "fact": "In the initial call, Oliver said collaboration tools are on top of their list",
+                "why_other_call_cannot_supply_it": "The follow-up call never mentions this ranking; it only discusses CollabCircuit Hub features and goals."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2zXIAS",
+                "fact": "In the follow-up, Oliver stated his main goal for CollabCircuit Hub was improving efficiency without imposing a steep learning curve on the team",
+                "why_other_call_cannot_supply_it": "The initial call contains no mention of this efficiency/learning-curve goal; it predates the CollabCircuit Hub discussion."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the initial collaboration-needs statement and the follow-up specific goal. Each fact appears only in its respective call, and both are requested by the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2eXIAS",
+                  "fact": "In the initial call, Oliver said collaboration tools are on top of their list",
+                  "why_other_call_cannot_supply_it": "The follow-up call never mentions this ranking; it only discusses CollabCircuit Hub features and goals."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2zXIAS",
+                  "fact": "In the follow-up, Oliver stated his main goal for CollabCircuit Hub was improving efficiency without imposing a steep learning curve on the team",
+                  "why_other_call_cannot_supply_it": "The initial call contains no mention of this efficiency/learning-curve goal; it predates the CollabCircuit Hub discussion."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the initial collaboration-needs statement and the follow-up specific goal. Each fact appears only in its respective call, and both are requested by the question."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Nov 20) has Oliver stating 'Collaboration tools are on top of our list,' and Call 2 (Dec 1) has him saying 'Our main goal is to improve efficiency without imposing a steep learning curve on the team.' Each source contributes an exclusive requested fact; the gold answer captures both precisely without extras.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the first call (2023-11-20) has Oliver Schmidt explicitly stating 'Collaboration tools are on top of our list,' which directly supports the claim that collaboration tools are at the top of their list."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the follow-up call (2023-12-01) has Oliver Schmidt stating 'Our main goal is to improve efficiency without imposing a steep learning curve on the team,' which directly supports the claim about his specific goal for the CollabCircuit Hub."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms that in the initial discussion Oliver said collaboration tools are at the top of their list. Evidence index 1 confirms that in the follow-up his main goal was improving efficiency without a steep learning curve for the team. The two calls are correctly attributed to Oliver Schmidt at Quantum Designs via the context metadata, and the chronological order (Nov 20 initial, Dec 1 follow-up) matches the 'initial discussion' and 'follow-up' framing in the question and answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-98caa354cbd5f4e0",
+    "question": "What did Tariq say about how pricing transparency is handled in the InnoBuild Constructors contract?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Tariq said about how pricing transparency is handled in the InnoBuild Constructors contract",
+        "relationship": "single lookup",
+        "reason": "One coherent fact lookup about a single topic (pricing transparency) in one contract discussion."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Tariq said about pricing transparency in the InnoBuild Constructors contract. The dialogue at 15:47:55 shows Tariq stating: 'All discounts and their impacts on the total cost are clearly detailed in the contract, with no hidden fees. We aim to ensure you understand the full scope of both upfront and ongoing costs.' The gold answer faithfully paraphrases this. The question is naturally worded, scoped to a specific account and topic, and a rep/AM would plausibly want to recall this. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Tariq Hassan explicitly states: 'All discounts and their impacts on the total cost are clearly detailed in the contract, with no hidden fees. We aim to ensure you understand the full scope of both upfront and ongoing costs.' This directly supports the answer_claim about discounts and their impacts being clearly detailed, no hidden fees, and coverage of both upfront and ongoing costs. Speaker attribution (Tariq Hassan) matches the question's reference to Tariq, and the account metadata confirms the call is with InnoBuild Constructors."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'All discounts and their impact on total cost are clearly detailed in the contract, with no hidden fees, covering both upfront and ongoing costs.' The single cited evidence item (index 0) contains Tariq Hassan's exact words covering all these elements: discounts and impacts on total cost clearly detailed, no hidden fees, and both upfront and ongoing costs. The speaker is Tariq (matching the question), and the context metadata confirms the account is InnoBuild Constructors. Every factual claim in the gold_answer is supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-64729b56c9d16b6e",
+    "question": "What are Skyline Robotics' key buying requirements that Lu Wang raised with Pedro Alvarez?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the key buying requirements that Lu Wang raised on behalf of Skyline Robotics in the conversation with Pedro Alvarez.",
+        "relationship": "single coherent lookup of one customer's stated buying requirements from one call",
+        "reason": "This is a single, coherent information need: the buying requirements raised in one call. It is not multiple independent lookups joined together."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks what buying requirements Lu Wang raised with Pedro Alvarez, a plausible rep/account-manager need. The dialogue supports each listed requirement: seamless integration (Lu mentions wanting something that integrates more seamlessly), minimal downtime (Lu says they can't afford too much downtime), security and compliance (Lu calls it particularly vital), pricing transparency and long-term value (Lu raises it as a big factor), and training/user experience (Lu says training is crucial). The answer lists exactly these five items with no unasked extras. Wording is natural, scope is clear (named account, contact, and rep), and no locator preamble or artificial framing is present. Single-call question so both_sources_required is set true.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Lu Wang explicitly states they're 'looking for something that integrates more seamlessly with our other systems,' directly supporting the claim of seamless integration with existing systems."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Lu Wang says 'We can't afford too much downtime,' which supports the claim about minimal downtime. The same quote also includes 'And how about security and compliance? This is particularly vital for us,' which supports the security/compliance portion of the claim at index 2, though the pricing part is not in this quote."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "Lu Wang states 'Pricing transparency and value are also big factors for us,' directly supporting the pricing transparency and long-term value claim. The security/compliance portion of the combined claim is supported by the adjacent quote at index 1 where Lu says 'This is particularly vital for us' regarding security and compliance."
+          },
+          {
+            "index": 3,
+            "supported": true,
+            "reason": "Lu Wang says 'Training is indeed crucial for us,' directly supporting the claim that training is crucial. The 'user experience' aspect of the gold answer is not explicitly stated in this quote, but 'training' is clearly supported."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer lists five key buying requirements: (1) seamless integration with existing systems \u2013 supported by index 0; (2) minimal downtime during implementation \u2013 supported by index 1; (3) security and compliance \u2013 supported by index 1 where Lu says it is 'particularly vital'; (4) pricing transparency and long-term value \u2013 supported by index 2; (5) strong training/user experience \u2013 training is explicitly supported by index 3. The 'user experience' component is not explicitly quoted in the supplied evidence, but 'training' is clearly stated and the gold answer pairs them together. All major factual claims in the gold answer are substantiated by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2e2a85eb50a8f957",
+    "question": "What key requirements did David Miller mention for his luxury vehicle upgrade, and what did Vanessa offer regarding financing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Key requirements David Miller stated for his luxury vehicle upgrade and the financing terms Vanessa offered",
+        "relationship": "requirement and corresponding offer within the same upgrade discussion",
+        "reason": "Both parts address the same sales exchange: the customer's upgrade requirements and the rep's financing response to that same need."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for David Miller's key requirements and Vanessa's financing offer from a single call. The dialogue confirms David mentions performance, brand reputation, financing options, and technological advancements as requirements, and Vanessa offers flexible financing tailored to budgets plus extended warranties. All answer claims are directly supported by the transcript. The question is naturally phrased, adequately scoped to a specific customer and business situation, and a rep would plausibly want this information. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quote is Vanessa asking David what he's looking for and stating 'I know you previously mentioned performance, brand reputation, and financing options.' This is Vanessa's recollection of a prior conversation, not David's own statement in this call. Additionally, 'technological advancements' is not mentioned anywhere in the quoted passage. The answer_claim adds 'technological advancements' without textual support, and the three listed items are attributed to Vanessa's memory rather than David's direct utterance."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Vanessa stating 'We offer flexible financing solutions to tailor-fit different budgets' and 'we can discuss extended warranties to keep everything covered,' which matches the answer_claim about flexible financing tailored to budgets and extended warranties."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer lists four requirements (performance, brand reputation, financing options, and technological advancements) as things David Miller mentioned. Evidence index 0 only shows Vanessa recalling three items from a prior conversation and does not include 'technological advancements.' No supplied citation shows David himself stating these requirements or mentioning technological advancements. The financing portion (index 1) is supported, but the requirements portion is not fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b620890cb223d5ac",
+    "question": "For Anjali Kapoor's Mercedes-Benz E-Class proposal, what financing term does she prefer and what does the Comprehensive Maintenance Plan cover?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Anjali Kapoor's preferred financing term for the Mercedes-Benz E-Class proposal, and what the Comprehensive Maintenance Plan covers",
+        "relationship": "two independent fact lookups joined by the same customer/proposal",
+        "reason": "The financing preference and the maintenance plan coverage are unrelated information needs; sharing the same customer and proposal does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two specific facts (preferred financing term and maintenance plan coverage) that a rep would plausibly need to track for Anjali Kapoor's E-Class proposal. Both facts are confirmed verbatim in the single call transcript: Anjali states a 48-month preference and Ravi confirms the plan covers full routine servicing, oil changes, and factory-recommended parts replacements. The answer states exactly those facts with no extras. Wording is natural, scope is clear (named customer, named vehicle, named plan), and no locator preamble or artificial scaffolding is present.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Anjali Kapoor explicitly states 'I was thinking about a 48-month term,' directly supporting the claim that she prefers a 48-month financing term."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Ravi Chandra states the maintenance package 'includes full routine servicing, oil changes, and factory-recommended parts replacements,' which directly supports the claim about what the Comprehensive Maintenance Plan covers."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are supported: (1) Anjali's preference for a 48-month term is confirmed by her own dialogue (index 0), and (2) the maintenance plan's coverage of full routine servicing, oil changes, and factory-recommended parts replacements is confirmed by Ravi Chandra's statement (index 1). The context metadata confirms the account is Anjali Kapoor and the opportunity relates to a Premium Vehicle Purchase and Maintenance, consistent with the Mercedes-Benz E-Class proposal context."
+      }
+    }
+  }
+]

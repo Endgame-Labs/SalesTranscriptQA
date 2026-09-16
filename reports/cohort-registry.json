@@ -1969,6 +1969,30 @@
       "question_text": "What did Emily Foster want to know about long-term affordability, and what maintenance plan did Hina offer in response?",
       "reason": "Citation failure: selected evidence quotes Emily questions at lines9 and11 but omits Hina answer at line12 giving named maintenance plan, routine/significant repairs and competitive rates. Full transcript supports gold.",
       "review_report": "reports/hourly-quality/full-20260916-22-review.md"
+    },
+    {
+      "question_id": "b2b-multi_call-91b5748a77af0a3d",
+      "question_text": "Across the two calls with NexGen Biotech's Javier Sanchez, what did Mei Lin say about how TechPulse handles implementation to minimize disruption?",
+      "reason": "Conservative automated-gate hold with reviewer errors: gold chronological order May4 rapid deployment/May11 comprehensive training is correct. Independent reviewer returns factual=false while explanation explicitly concludes answer correct. DeepSeek incorrectly treats training as paraphrase of rapid deployment; GLM identifies distinct facts. Full pair supports gold; not a confirmed factual error.",
+      "review_report": "reports/hourly-quality/full-20260916-23-review.md"
+    },
+    {
+      "question_id": "b2b-single_call-64729b56c9d16b6e",
+      "question_text": "What are Skyline Robotics' key buying requirements that Lu Wang raised with Pedro Alvarez?",
+      "reason": "Citation coverage hold: selected quotes support integration, downtime, security/compliance, pricing transparency/value, and training; gold additionally specifies user experience and long-term value, supported only by omitted dialogue17/18 and14/16.",
+      "review_report": "reports/hourly-quality/full-20260916-23-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-2e2a85eb50a8f957",
+      "question_text": "What key requirements did David Miller mention for his luxury vehicle upgrade, and what did Vanessa offer regarding financing?",
+      "reason": "Citation failure: gold includes technological advancements, which David states at line5 but selected evidence only quotes Vanessa recap at4 and financing at14. Full source supports answer; cited evidence omits added requirement.",
+      "review_report": "reports/hourly-quality/full-20260916-23-review.md"
+    },
+    {
+      "question_id": "b2c-single_call-b620890cb223d5ac",
+      "question_text": "For Anjali Kapoor's Mercedes-Benz E-Class proposal, what financing term does she prefer and what does the Comprehensive Maintenance Plan cover?",
+      "reason": "Conservative coherence hold: financing term plus maintenance coverage rejected as separate needs, despite same proposal and adjacent explicit customer questions. Independent reviewer accepts, full source and quotes support48months and stated coverage. Not a factual error.",
+      "review_report": "reports/hourly-quality/full-20260916-23-review.md"
     }
   ],
   "retained_difficult_questions": [
