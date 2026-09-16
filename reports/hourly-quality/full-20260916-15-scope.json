@@ -1,0 +1,524 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "5de3b17df1df24ffec5fdf75bde35cfc1fc4c6a31b1171161ddcdbe247b5f5a1",
+  "questions": 5,
+  "counts": {
+    "pass": 4,
+    "fail": 1
+  },
+  "estimated_usd": 0.6287314900000001,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-0e0f8a9ac2ab67a2",
+      "question": "Across the two calls with Akin Batı at OmegaDesign Labs, what did Adebola say about pricing and cost transparency in the initial discussion, and how did she address Akin's budget and ROI concern in the follow-up?",
+      "gold_answer": "Initially Adebola promised transparent pricing with a clear total cost of ownership and no hidden fees; in the follow-up she said SecureFlow Suite has competitive, transparent pricing that fits budget constraints and delivers favorable ROI.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StcgIAC",
+        "b2b:a05Wt000003Stw0IAC",
+        "b2b:a05Wt000003SuKAIA0",
+        "b2b:a05Wt000003SuKBIA0",
+        "b2b:a05Wt000003SvRTIA0",
+        "b2b:a05Wt000003SvRUIA0",
+        "b2b:a05Wt000003SvUmIAK",
+        "b2b:a05Wt000003SvXvIAK",
+        "b2b:a05Wt000003Svg5IAC",
+        "b2b:a05Wt000003Svo5IAC",
+        "b2b:a05Wt000003SwfIIAS",
+        "b2b:a05Wt000003SwsEIAS",
+        "b2b:a05Wt000003Sx0JIAS",
+        "b2b:a05Wt000003Sx58IAC",
+        "b2b:a05Wt000003Sx59IAC",
+        "b2b:a05Wt000003SxMpIAK",
+        "b2b:a05Wt000003SxMqIAK",
+        "b2b:a05Wt000003SxMrIAK",
+        "b2b:a05Wt000003SxwNIAS",
+        "b2b:a05Wt000003Sy2tIAC",
+        "b2b:a05Wt000003SyNmIAK",
+        "b2b:a05Wt000003SzAJIA0",
+        "b2b:a05Wt000003SzJsIAK",
+        "b2b:a05Wt000003T0itIAC",
+        "b2b:a05Wt000003T0kXIAS",
+        "b2b:a05Wt000003T0kYIAS",
+        "b2b:a05Wt000003T0m9IAC",
+        "b2b:a05Wt000003T0mAIAS",
+        "b2b:a05Wt000003T1DXIA0",
+        "b2b:a05Wt000003T1DYIA0",
+        "b2b:a05Wt000003T1ruIAC",
+        "b2b:a05Wt000003T1zuIAC",
+        "b2b:a05Wt000003T27yIAC",
+        "b2b:a05Wt000003T29aIAC",
+        "b2b:a05Wt000003T29bIAC",
+        "b2b:a05Wt000003T2CpIAK",
+        "b2b:a05Wt000003T2CqIAK",
+        "b2b:a05Wt000003T2HfIAK",
+        "b2b:a05Wt000003T2MXIA0",
+        "b2b:a05Wt000003T2SxIAK",
+        "b2b:a05Wt000003T2b0IAC",
+        "b2b:a05Wt000003T2hWIAS",
+        "b2b:a05Wt000003T2hXIAS",
+        "b2b:a05Wt000003T2nuIAC",
+        "b2b:a05Wt000003T2nvIAC",
+        "b2b:a05Wt000003T2r7IAC",
+        "b2b:a05Wt000003T2sjIAC",
+        "b2b:a05Wt000003T2skIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Exactly two calls involve Adebola Adeyemi with Akin Batı at OmegaDesign Labs: the 2022-10-02 initial discussion and the 2022-10-05 follow-up. The initial call contains a clear pricing/cost-transparency exchange, and the follow-up contains Akin's budget/ROI concern with Adebola's response.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2022-10-02), when Akin asked about pricing and ownership costs and wanting clear budget management without hidden fees, Adebola said TechPulse prides itself on transparency in pricing, providing a total cost of ownership that is clear and straightforward, allowing easier budget management without any surprises. In the follow-up (2022-10-05), when Akin raised that they are working within a budget and need any investment to provide a solid return, Adebola acknowledged it as a very valid concern and said their products are designed to be cost-effective — for example, the SecureFlow Suite offers a robust feature set with a competitive and transparent pricing model that aligns with budget constraints while providing a favorable return on investment.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2r7IAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2022-10-02T13:47:20] Akin Batı: And in terms of pricing and ownership costs? We want to ensure clear budget management without hidden fees."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2sjIAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2022-10-05T14:01:52] Akin Batı: That sounds promising. And what about the costs around these solutions? We are working within a budget and need to ensure any investment will provide a solid return."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies two calls with Akin Batı at OmegaDesign Labs involving Adebola. There are exactly two such calls in the data: b2b:a05Wt000003T2r7IAC (2022-10-02, initial discussion) and b2b:a05Wt000003T2sjIAC (2022-10-05, follow-up/discovery). Both are under opportunity 'OmegaDesign EDA Enhancement' with contact Akin Batı and salesperson Adebola Adeyemi. The initial call contains Adebola's statements on pricing transparency and cost of ownership; the follow-up contains Akin's explicit budget and ROI concern and Adebola's response addressing cost-effectiveness and favorable ROI.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (Oct 2, 2022), when Akin asked about pricing and ownership costs and the need for clear budget management without hidden fees, Adebola said TechPulse prides itself on transparency in pricing, providing a total cost of ownership that is clear and straightforward, allowing for easier budget management without any surprises. In the follow-up (Oct 5, 2022), Akin raised the concern that they are working within a budget and need to ensure any investment will provide a solid return. Adebola addressed this by acknowledging it as a very valid concern, explaining that their products are designed to be cost-effective, and specifically noting that the SecureFlow Suite offers a robust feature set with a competitive and transparent pricing model, meaning that despite advanced capabilities it aligns well with budget constraints while providing a favorable return on investment.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2r7IAC",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2022-10-02T13:47:20] Akin Batı: And in terms of pricing and ownership costs? We want to ensure clear budget management without hidden fees.\n[2022-10-02T13:47:35] Adebola Adeyemi: That's a great point, Akin. We pride ourselves on transparency in pricing, providing a total cost of ownership that's clear and straightforward, which allows for easier budget management without any surprises."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2sjIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2022-10-05T14:01:52] Akin Batı: That sounds promising. And what about the costs around these solutions? We are working within a budget and need to ensure any investment will provide a solid return.\n[2022-10-05T14:02:13] Adebola Adeyemi: That's a very valid concern, Akin. Our products are designed to be cost-effective. For instance, the SecureFlow Suite not only offers a robust feature set but also comes with a competitive and transparent pricing model. This means that despite the advanced capabilities, it aligns well with budget constraints while providing a favorable return on investment."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same two commitments: (1) In the initial call, Adebola stated TechPulse prides itself on pricing transparency, offering a clear and straightforward total cost of ownership with no hidden fees/surprises for easier budget management. (2) In the follow-up, she acknowledged Akin's budget/ROI concern as valid, said products are cost-effective, and specifically cited SecureFlow Suite's competitive, transparent pricing model that aligns with budget constraints while delivering favorable ROI. The reference captures both requested facts: the initial promise of transparent pricing with clear total cost of ownership and no hidden fees, and the follow-up statement about SecureFlow Suite's competitive transparent pricing fitting budget constraints and delivering favorable ROI. Minor wording differences (e.g., 'despite advanced capabilities' in answer_b) are extras that do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-ef4a9a7c7a978423",
+      "question": "What follow-up steps did Mohammed commit to with Fabio Russo at SkyLevel Systems across the initial overview call and the discovery call?",
+      "gold_answer": "On the overview call he scheduled the September 10 discovery call; on that call he committed to an in-depth analysis of SkyLevel's engineering requirements later that week plus a summary email.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrNEIA0",
+        "b2b:a05Wt000003StOCIA0",
+        "b2b:a05Wt000003Su4GIAS",
+        "b2b:a05Wt000003SuIgIAK",
+        "b2b:a05Wt000003SvgFIAS",
+        "b2b:a05Wt000003SvgGIAS",
+        "b2b:a05Wt000003SvoGIAS",
+        "b2b:a05Wt000003SwAjIAK",
+        "b2b:a05Wt000003SxjbIAC",
+        "b2b:a05Wt000003SyMEIA0",
+        "b2b:a05Wt000003SysTIAS",
+        "b2b:a05Wt000003SzZyIAK",
+        "b2b:a05Wt000003SzdHIAS",
+        "b2b:a05Wt000003SzgaIAC",
+        "b2b:a05Wt000003T18kIAC",
+        "b2b:a05Wt000003T18lIAC",
+        "b2b:a05Wt000003T1AXIA0",
+        "b2b:a05Wt000003T1DeIAK",
+        "b2b:a05Wt000003T1tbIAC",
+        "b2b:a05Wt000003T21gIAC",
+        "b2b:a05Wt000003T23HIAS",
+        "b2b:a05Wt000003T2BSIA0",
+        "b2b:a05Wt000003T2HwIAK",
+        "b2b:a05Wt000003T2WLIA0",
+        "b2b:a05Wt000003T2rBIAS",
+        "b2b:a05Wt000003T3GzIAK",
+        "b2b:a05Wt000003T3dcIAC",
+        "b2b:a05Wt000003T48AIAS",
+        "b2b:a05Wt000003T4T8IAK",
+        "b2b:a05Wt000003T4WXIA0",
+        "b2b:a05Wt000003T4WYIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 20,
+            "normalized_end": 21
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 18,
+            "normalized_end": 19
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Mohammed El-Sayed had three calls with Fabio Russo on this opportunity: a 2023-09-01 call ending with a commitment to a Sept 5 call, a 2023-09-05 call that is explicitly an 'overview' call committing to the Sept 10 discovery call, and the 2023-09-10 discovery call. The question's 'initial overview call' could mean either the first call (Sept 1) or the call explicitly framed as the overview (Sept 5), yielding different complete sets of commitments.",
+        "answers": [
+          {
+            "answer": "On the initial overview call (2023-09-05), Mohammed committed to holding the initial discovery call on September 10th to delve deeper into SkyLevel's objectives and explore how TechPulse can specifically address their needs. On the discovery call (2023-09-10), Mohammed committed to (1) having his team conduct an in-depth analysis of SkyLevel's engineering requirements later that week to tailor solutions further, and (2) following up with an email summarizing the discussion.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzdHIAS",
+                "line_start": 20,
+                "line_end": 21,
+                "quote": "[2023-09-05T15:06:40] Mohammed El-Sayed: The next step would be our initial discovery call scheduled for September 10th. We’ll delve deeper into your objectives and explore how TechPulse can specifically address your needs."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su4GIAS",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2023-09-10T12:02:42] Mohammed El-Sayed: Moving forward, our team will be conducting an in-depth analysis of your engineering requirements, slated for later this week. We aim to tailor our solutions further as per your needs.\n[2023-09-10T12:02:49] Fabio Russo: Sounds like a plan, Mohammed. Looking forward to seeing how TechPulse can further tailor its offerings for us."
+              }
+            ]
+          },
+          {
+            "answer": "On the initial overview call (2023-09-01, the first Mohammed–Fabio call), Mohammed committed to a next call on the 5th of September where he would go deeper into how TechPulse's solutions fit SkyLevel's needs. On the discovery call (2023-09-10), Mohammed committed to (1) conducting an in-depth analysis of SkyLevel's engineering requirements later that week to tailor solutions further, and (2) following up with an email summarizing the discussion.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2HwIAK",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-09-01T10:04:55] Mohammed El-Sayed: Fantastic. Our next call will be on the 5th of September, where I'll go deeper into how our solutions fit your needs. Until then, feel free to reach out if anything comes to mind."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su4GIAS",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2023-09-10T12:02:42] Mohammed El-Sayed: Moving forward, our team will be conducting an in-depth analysis of your engineering requirements, slated for later this week. We aim to tailor our solutions further as per your needs.\n[2023-09-10T12:02:49] Fabio Russo: Sounds like a plan, Mohammed. Looking forward to seeing how TechPulse can further tailor its offerings for us."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Mohammed El-Sayed, Fabio Russo, and SkyLevel Systems, and asks for follow-up commitments across 'the initial overview call and the discovery call.' Among all calls, only opportunity 'SkyLevel Systems Precision & Innovation Partnership' (006Wt000007B6KhIAK) features both Mohammed and Fabio. The earliest call (2023-09-01) is an implementation/support discussion; the next (2023-09-05) is explicitly labeled an 'overview' by Mohammed (line 4) and ends with scheduling the 'initial discovery call' for September 10th (line 20). The 2023-09-10 call is explicitly a 'discovery session' (line 2). The 2023-09-20 call is a further deep-dive, not the discovery call. So the two relevant calls are b2b:a05Wt000003SzdHIAS (overview) and b2b:a05Wt000003Su4GIAS (discovery).",
+        "answers": [
+          {
+            "answer": "Across the two calls, Mohammed committed to the following follow-up steps with Fabio Russo:\n\n**Initial Overview Call (2023-09-05):**\n1. Schedule and conduct an initial discovery call on September 10th to delve deeper into Fabio's objectives and explore how TechPulse can specifically address SkyLevel's needs.\n\n**Discovery Call (2023-09-10):**\n2. Have the TechPulse team conduct an in-depth analysis of SkyLevel's engineering requirements, slated for later that week, to further tailor solutions to their needs.\n3. Follow up with an email summarizing the day's discussion.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzdHIAS",
+                "line_start": 19,
+                "line_end": 21,
+                "quote": "[2023-09-05T15:06:20] Fabio Russo: Sounds good, Mohammed. I think we’re definitely interested in learning more. What are the next steps?\n[2023-09-05T15:06:40] Mohammed El-Sayed: The next step would be our initial discovery call scheduled for September 10th. We’ll delve deeper into your objectives and explore how TechPulse can specifically address your needs."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su4GIAS",
+                "line_start": 17,
+                "line_end": 20,
+                "quote": "[2023-09-10T12:02:42] Mohammed El-Sayed: Moving forward, our team will be conducting an in-depth analysis of your engineering requirements, slated for later this week. We aim to tailor our solutions further as per your needs.\n[2023-09-10T12:02:49] Fabio Russo: Sounds like a plan, Mohammed. Looking forward to seeing how TechPulse can further tailor its offerings for us.\n[2023-09-10T12:02:55] Mohammed El-Sayed: Great, it's a pleasure working with you, Fabio. I'll follow up with an email summarizing today's discussion. Best regards!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-e1e8d8dfd4493a28",
+      "question": "What pricing did Luciana quote Mohamed for SecureFlow Suite, and what did she say about its deployment speed?",
+      "gold_answer": "Three licenses total $1799.97, with quick deployment that doesn't compromise compliance with security regulations.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Stw3IAC",
+        "b2b:a05Wt000003Su4BIAS",
+        "b2b:a05Wt000003Suf9IAC",
+        "b2b:a05Wt000003SxgJIAS",
+        "b2b:a05Wt000003Sxl0IAC",
+        "b2b:a05Wt000003SyZ4IAK",
+        "b2b:a05Wt000003SyfbIAC",
+        "b2b:a05Wt000003SyfcIAC",
+        "b2b:a05Wt000003SzgUIAS",
+        "b2b:a05Wt000003Szi0IAC",
+        "b2b:a05Wt000003T0HSIA0",
+        "b2b:a05Wt000003T0r1IAC",
+        "b2b:a05Wt000003T1WuIAK",
+        "b2b:a05Wt000003T1dNIAS",
+        "b2b:a05Wt000003T1jtIAC",
+        "b2b:a05Wt000003T1lPIAS",
+        "b2b:a05Wt000003T1tYIAS",
+        "b2b:a05Wt000003T2BMIA0",
+        "b2b:a05Wt000003T2ERIA0",
+        "b2b:a05Wt000003T2HmIAK",
+        "b2b:a05Wt000003T2KvIAK",
+        "b2b:a05Wt000003T2cdIAC",
+        "b2b:a05Wt000003T2ceIAC",
+        "b2b:a05Wt000003T2mMIAS",
+        "b2b:a05Wt000003T3P5IAK",
+        "b2b:a05Wt000003T3YgIAK",
+        "b2b:a05Wt000003T3glIAC",
+        "b2b:a05Wt000003T3nDIAS",
+        "b2b:a05Wt000003T46aIAC",
+        "b2b:a05Wt000003T4HpIAK",
+        "b2b:a05Wt000003T4JRIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Luciana Alves appears on two calls with Mohamed Youssef, but only the 2024-03-31 call contains a SecureFlow Suite pricing quote and deployment-speed remarks; the 2024-04-05 call mentions SecureFlow Suite only for scalability and quotes no price. The question is therefore answered by a single determinate source.",
+        "answers": [
+          {
+            "answer": "Luciana quoted Mohamed a competitively structured price of $1799.97 total for three licenses of SecureFlow Suite, and said the product excels in quick deployment without compromising compliance with security regulations — clients appreciate the minimal setup lag and fast implementation, which lets them use the product's features sooner rather than later.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Suf9IAC",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2024-03-31T10:17:10] Luciana Alves: Great question. SecureFlow Suite excels in its quick deployment without compromising on compliance with security regulations. Many of our clients appreciate the minimal setup lag, which enhances functionality quickly. The fast implementation is something they really value, as it allows them to utilize the product features sooner rather than later.\n[2024-03-31T10:17:37] Mohamed Youssef: That sounds promising. We've had some lengthy setups in the past, which weren't very efficient. How does pricing look compared to other products?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Luciana (Alves), Mohamed (Youssef), and the product SecureFlow Suite. Only one call in the dataset features Luciana Alves speaking with Mohamed Youssef about SecureFlow Suite pricing and deployment speed: call b2b:a05Wt000003Suf9IAC (2024-03-31). In that call, Luciana quotes $1799.97 for three licenses and describes the deployment as quick with minimal setup lag. The follow-up call between the same pair (b2b:a05Wt000003T1dNIAS, 2024-04-05) mentions SecureFlow Suite only in passing regarding scalability and does not include a pricing quote or deployment-speed statement, so it does not provide a competing answer.",
+        "answers": [
+          {
+            "answer": "Luciana Alves quoted Mohamed Youssef $1,799.97 for three licenses of SecureFlow Suite. Regarding deployment speed, she said SecureFlow Suite excels in its quick deployment without compromising on compliance with security regulations, that many clients appreciate the minimal setup lag which enhances functionality quickly, and that the fast implementation allows them to utilize the product features sooner rather than later. She also noted that given the robust capabilities and fast deployment timeline, many find it offers a favorable total cost of ownership.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Suf9IAC",
+                "line_start": 8,
+                "line_end": 11,
+                "quote": "[2024-03-31T10:17:10] Luciana Alves: Great question. SecureFlow Suite excels in its quick deployment without compromising on compliance with security regulations. Many of our clients appreciate the minimal setup lag, which enhances functionality quickly. The fast implementation is something they really value, as it allows them to utilize the product features sooner rather than later.\n[2024-03-31T10:17:37] Mohamed Youssef: That sounds promising. We've had some lengthy setups in the past, which weren't very efficient. How does pricing look compared to other products?\n[2024-03-31T10:17:54] Luciana Alves: Our pricing is competitively structured. For three licenses of SecureFlow Suite, the total is $1799.97. Given the robust capabilities and fast deployment timeline, many find it offers a favorable total cost of ownership."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same price ($1,799.97 for three licenses of SecureFlow Suite) and the same deployment-speed points: quick deployment without compromising compliance with security regulations, minimal setup lag, and fast implementation allowing clients to use features sooner. Answer B adds a note about favorable total cost of ownership, but this is an unrequested extra and does not constitute disagreement. The reference covers both requested facts: the $1799.97 pricing for three licenses and the quick deployment that doesn't compromise compliance with security regulations."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-98203be4836909ec",
+      "question": "What discounts did BrightTech Systems receive on PulseSim Pro and CloudLink Designer, and what did Dariusz say about adjusting CloudLink Designer discounts if they increase quantity?",
+      "gold_answer": "10% discount on both PulseSim Pro and CloudLink Designer; if quantity increases, discounts could be adjusted to maximize savings.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkQIAS",
+        "b2b:a05Wt000003Sru6IAC",
+        "b2b:a05Wt000003SrywIAC",
+        "b2b:a05Wt000003SryxIAC",
+        "b2b:a05Wt000003SsyEIAS",
+        "b2b:a05Wt000003StEMIA0",
+        "b2b:a05Wt000003StMQIA0",
+        "b2b:a05Wt000003SthOIAS",
+        "b2b:a05Wt000003SuQZIA0",
+        "b2b:a05Wt000003SuaFIAS",
+        "b2b:a05Wt000003Sv03IAC",
+        "b2b:a05Wt000003Sv4uIAC",
+        "b2b:a05Wt000003Sv6VIAS",
+        "b2b:a05Wt000003SvHmIAK",
+        "b2b:a05Wt000003SvHnIAK",
+        "b2b:a05Wt000003SvHoIAK",
+        "b2b:a05Wt000003SwSMIA0",
+        "b2b:a05Wt000003SwaQIAS",
+        "b2b:a05Wt000003SxTHIA0",
+        "b2b:a05Wt000003SxgCIAS",
+        "b2b:a05Wt000003SxzXIAS",
+        "b2b:a05Wt000003Sy7ZIAS",
+        "b2b:a05Wt000003Sy9BIAS",
+        "b2b:a05Wt000003SyAnIAK",
+        "b2b:a05Wt000003SyAoIAK",
+        "b2b:a05Wt000003SyCPIA0",
+        "b2b:a05Wt000003SyE1IAK",
+        "b2b:a05Wt000003SyFdIAK",
+        "b2b:a05Wt000003SyHFIA0",
+        "b2b:a05Wt000003SyHGIA0",
+        "b2b:a05Wt000003SyIrIAK",
+        "b2b:a05Wt000003SyKTIA0",
+        "b2b:a05Wt000003SyM5IAK",
+        "b2b:a05Wt000003SyNhIAK",
+        "b2b:a05Wt000003SyPJIA0",
+        "b2b:a05Wt000003SyQvIAK",
+        "b2b:a05Wt000003SySXIA0",
+        "b2b:a05Wt000003SyU9IAK",
+        "b2b:a05Wt000003SyVlIAK",
+        "b2b:a05Wt000003SyVmIAK",
+        "b2b:a05Wt000003SyXNIA0",
+        "b2b:a05Wt000003SyYzIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 8,
+            "normalized_end": 9
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (Dariusz Wisniewski with Rachel O'Neil, 2021-12-01) discusses discounts on both PulseSim Pro and CloudLink Designer and Dariusz's statement about adjusting CloudLink Designer discounts for increased quantity. Other calls mention different products, different reps, or no specific discounts on these two products.",
+        "answers": [
+          {
+            "answer": "BrightTech Systems is receiving a 10% discount on PulseSim Pro and a 10% discount on CloudLink Designer. Regarding adjusting CloudLink Designer discounts, Dariusz said that if Rachel increases the quantity, they could look at adjusting the discounts to maximize savings, and that they are open to structuring this to support BrightTech's objectives.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sv4uIAC",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2021-12-01T14:00:40] Dariusz Wisniewski: I understand. Speaking of costs, it’s been our focus to maintain a pricing structure that’s both competitive and transparent. For instance, you're receiving a 10% discount on PulseSim Pro, aligning with our commitment to provide value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sv4uIAC",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2021-12-01T14:01:15] Rachel O'Neil: Great to know. Also, regarding the CloudLink Designer, would you mind discussing how pricing and discount apply if we decide to increase our order quantity?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about discounts on PulseSim Pro and CloudLink Designer received by BrightTech Systems, and what Dariusz said about adjusting CloudLink Designer discounts if quantity increases. Only one call features Dariusz Wisniewski discussing these specific products and discounts: call b2b:a05Wt000003Sv4uIAC (2021-12-01, opportunity 'BrightTech AI Circuit Optimization', with Rachel O'Neil). In that call, Dariusz states a 10% discount on PulseSim Pro (line 8), a 10% discount on CloudLink Designer (line 16), and says that if they increase quantity, they could look at adjusting the discounts to maximize savings (line 16). While other calls mention PulseSim Pro and CloudLink Designer with 10% discounts (e.g., b2b:a05Wt000003Sy7ZIAS line 4), none involve Dariusz or the quantity-adjustment discussion. The question specifically names Dariusz, making this determinate.",
+        "answers": [
+          {
+            "answer": "BrightTech Systems received a 10% discount on PulseSim Pro and a 10% discount on CloudLink Designer. Dariusz Wisniewski said that if they increase the quantity, they could look at adjusting the discounts to maximize their savings, and that TechPulse is open to structuring this to support BrightTech's objectives.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sv4uIAC",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2021-12-01T14:00:40] Dariusz Wisniewski: I understand. Speaking of costs, it’s been our focus to maintain a pricing structure that’s both competitive and transparent. For instance, you're receiving a 10% discount on PulseSim Pro, aligning with our commitment to provide value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sv4uIAC",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2021-12-01T14:01:15] Rachel O'Neil: Great to know. Also, regarding the CloudLink Designer, would you mind discussing how pricing and discount apply if we decide to increase our order quantity?\n[2021-12-01T14:01:20] Dariusz Wisniewski: Of course, as it stands, you’re already receiving a 10% discount on CloudLink Designer. If you increase the quantity, we could look at adjusting the discounts to maximize your savings. We’re open to structuring this to support your objectives."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same discounts (10% on PulseSim Pro and 10% on CloudLink Designer) and convey the same commitment from Dariusz: if quantity increases, they could look at adjusting the discounts to maximize savings. The minor extras (naming Rachel, mentioning structuring to support BrightTech's objectives) are unrequested additions that do not affect agreement. The reference covers both requested facts: the 10% discounts on both products and the conditional adjustment of CloudLink Designer discounts upon quantity increase."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-ed24280486262bc3",
+      "question": "What did Sophia Gomez say about her timeline for purchasing a vehicle?",
+      "gold_answer": "She's aiming to have everything sorted in the next couple of months.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNRHIA4",
+        "b2c:a05Ws000005SOOqIAO",
+        "b2c:a05Ws000005SPVTIA4",
+        "b2c:a05Ws000005SPlbIAG",
+        "b2c:a05Ws000005SQHyIAO",
+        "b2c:a05Ws000005SQORIA4",
+        "b2c:a05Ws000005SRDiIAO",
+        "b2c:a05Ws000005SRc2IAG",
+        "b2c:a05Ws000005STZ1IAO",
+        "b2c:a05Ws000005STfOIAW",
+        "b2c:a05Ws000005SV2zIAG",
+        "b2c:a05Ws000005SWjmIAG",
+        "b2c:a05Ws000005SYotIAG",
+        "b2c:a05Ws000005SYqRIAW",
+        "b2c:a05Ws000005SZ1fIAG",
+        "b2c:a05Ws000005SZ50IAG",
+        "b2c:a05Ws000005SZzLIAW",
+        "b2c:a05Ws000005Sa94IAC",
+        "b2c:a05Ws000005Sa95IAC",
+        "b2c:a05Ws000005Sd6oIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call contains Sophia Gomez stating a purchase timeline: in the 2023-05-10 call with Elena Petrova she says she's aiming to have everything sorted in the next couple of months. No other call includes a timeline statement from her.",
+        "answers": [
+          {
+            "answer": "Sophia Gomez said she is aiming to have everything sorted (the vehicle purchase) in the next couple of months, in response to Elena Petrova noting the timeline depends on her schedule and preferences.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQORIA4",
+                "line_start": 17,
+                "line_end": 20,
+                "quote": "[2023-05-10T14:02:40] Sophia Gomez: I'd love that. What’s the timeline like for potentially purchasing a vehicle?\n[2023-05-10T14:02:50] Elena Petrova: It really depends on your schedule and preferences. Once you're comfortable, we can quickly move through demo drives and financing discussions. Our process is quite streamlined.\n[2023-05-10T14:03:00] Sophia Gomez: That’s good to know. I’m aiming to have everything sorted in the next couple of months."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Across all 17 calls, Sophia Gomez explicitly states her purchasing timeline in only one call: the 2023-05-10 call with Elena Petrova (opportunity 'Sophia Gomez Premium Pre-Owned Vehicle Deal'). At line 19 she says she is 'aiming to have everything sorted in the next couple of months.' No other call contains a comparable explicit timeline statement from Sophia about when she intends to purchase a vehicle.",
+        "answers": [
+          {
+            "answer": "Sophia Gomez said she was aiming to have everything sorted in the next couple of months. This was stated during her May 10, 2023 call with Elena Petrova, after Elena explained that the purchase timeline depends on Sophia's schedule and that the process is streamlined.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQORIA4",
+                "line_start": 17,
+                "line_end": 20,
+                "quote": "[2023-05-10T14:02:40] Sophia Gomez: I'd love that. What’s the timeline like for potentially purchasing a vehicle?\n[2023-05-10T14:02:50] Elena Petrova: It really depends on your schedule and preferences. Once you're comfortable, we can quickly move through demo drives and financing discussions. Our process is quite streamlined.\n[2023-05-10T14:03:00] Sophia Gomez: That’s good to know. I’m aiming to have everything sorted in the next couple of months."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Sophia Gomez said she is aiming to have everything sorted in the next couple of months, which is the core fact requested about her timeline for purchasing a vehicle. The additional context about Elena Petrova and the call date in the answers are extras that do not affect agreement. The reference directly states the same timeline commitment ('aiming to have everything sorted in the next couple of months'), fully covering the requested fact."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

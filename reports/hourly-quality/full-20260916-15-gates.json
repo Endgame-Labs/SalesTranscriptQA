@@ -1,0 +1,477 @@
+[
+  {
+    "question_id": "b2b-multi_call-0e0f8a9ac2ab67a2",
+    "question": "Across the two calls with Akin Bat\u0131 at OmegaDesign Labs, what did Adebola say about pricing and cost transparency in the initial discussion, and how did she address Akin's budget and ROI concern in the follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Adebola said about pricing and cost transparency in the initial call, and how she addressed Akin's budget and ROI concern in the follow-up call",
+        "relationship": "Same commercial issue (pricing/budget/ROI) discussed across two calls with the same customer",
+        "reason": "Both parts concern the same business issue\u2014pricing and budget/ROI concerns\u2014for the same customer, making this a coherent two-call comparison rather than unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2r7IAC",
+                "fact": "Adebola promised transparent pricing with a clear total cost of ownership and no hidden fees.",
+                "why_other_call_cannot_supply_it": "The follow-up call only mentions competitive and transparent pricing that fits budget and ROI, but does not explicitly state the initial promise of a clear total cost of ownership or no hidden fees."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2sjIAC",
+                "fact": "Adebola addressed Akin's budget and ROI concern by stating SecureFlow Suite has competitive, transparent pricing that fits budget constraints and delivers favorable ROI.",
+                "why_other_call_cannot_supply_it": "The initial call does not mention budget constraints or ROI; it only discusses general pricing transparency and total cost of ownership."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: what Adebola said about pricing and cost transparency in the initial discussion, and how she addressed Akin's budget and ROI concern in the follow-up. Each call provides a unique, non-overlapping fact that is directly requested, and neither call alone can supply both facts."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for Adebola's statements about pricing/cost transparency in the initial call and how she addressed budget/ROI in the follow-up. Both calls contain substantively similar claims: transparent pricing, no hidden fees, competitive pricing, budget alignment, and favorable ROI. The follow-up merely restates the initial transparency promise with added budget/ROI language, but the core requested information (pricing transparency and addressing budget/ROI) is essentially repeated across both calls. No distinct numerical change, new outcome, or explicit resolution is requested that requires both calls. The initial call already covers transparency and budget management, and the follow-up adds no genuinely new fact beyond paraphrasing the same commitment. Therefore, one call suffices for the actual information need."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2r7IAC",
+                  "fact": "Adebola promised transparent pricing with a clear total cost of ownership and no hidden fees.",
+                  "why_other_call_cannot_supply_it": "The follow-up call only mentions competitive and transparent pricing that fits budget and ROI, but does not explicitly state the initial promise of a clear total cost of ownership or no hidden fees."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2sjIAC",
+                  "fact": "Adebola addressed Akin's budget and ROI concern by stating SecureFlow Suite has competitive, transparent pricing that fits budget constraints and delivers favorable ROI.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention budget constraints or ROI; it only discusses general pricing transparency and total cost of ownership."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: what Adebola said about pricing and cost transparency in the initial discussion, and how she addressed Akin's budget and ROI concern in the follow-up. Each call provides a unique, non-overlapping fact that is directly requested, and neither call alone can supply both facts."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2r7IAC",
+                "fact": "Adebola stated TechPulse prides itself on pricing transparency with a clear, straightforward total cost of ownership enabling budget management without hidden fees or surprises.",
+                "why_other_call_cannot_supply_it": "The follow-up call never mentions total cost of ownership or hidden fees; it only addresses budget/ROI, so the initial pricing-transparency commitment exists only in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2sjIAC",
+                "fact": "In the follow-up, Adebola addressed Akin's budget/ROI concern by saying SecureFlow Suite has a competitive, transparent pricing model that fits budget constraints while providing a favorable return on investment.",
+                "why_other_call_cannot_supply_it": "The initial call contains no budget or ROI discussion; Akin's budget-and-return concern and Adebola's ROI response occur only in the second call."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: the initial pricing/cost-transparency statement and the follow-up response to the budget/ROI concern. Each fact appears in only one call, and the second is a distinct concern-plus-resolution (budget and ROI), not a paraphrase of the first."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2r7IAC",
+                  "fact": "Adebola stated TechPulse prides itself on pricing transparency with a clear, straightforward total cost of ownership enabling budget management without hidden fees or surprises.",
+                  "why_other_call_cannot_supply_it": "The follow-up call never mentions total cost of ownership or hidden fees; it only addresses budget/ROI, so the initial pricing-transparency commitment exists only in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2sjIAC",
+                  "fact": "In the follow-up, Adebola addressed Akin's budget/ROI concern by saying SecureFlow Suite has a competitive, transparent pricing model that fits budget constraints while providing a favorable return on investment.",
+                  "why_other_call_cannot_supply_it": "The initial call contains no budget or ROI discussion; Akin's budget-and-return concern and Adebola's ROI response occur only in the second call."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: the initial pricing/cost-transparency statement and the follow-up response to the budget/ROI concern. Each fact appears in only one call, and the second is a distinct concern-plus-resolution (budget and ROI), not a paraphrase of the first."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks a rep to recall what was said about pricing transparency in the first call and how budget/ROI concerns were handled in the follow-up\u2014both are core commercial-terms topics a sales rep would track. Call 1 (Oct 2) provides the exclusive fact: Adebola promised transparent pricing with a clear total cost of ownership and no hidden fees. Call 2 (Oct 5) provides the exclusive fact: Adebola stated SecureFlow Suite has competitive, transparent pricing that fits budget constraints and delivers favorable ROI. Each source contributes a distinct requested fact; neither alone answers the full question. The gold answer matches the dialogue verbatim in substance, adds no unasked extras, and omits nothing requested. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Adebola on 2022-10-02 explicitly states 'transparency in pricing, providing a total cost of ownership that's clear and straightforward... without any surprises,' which directly supports the claim about transparent pricing, clear total cost of ownership, and no surprises/hidden fees."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Adebola on 2022-10-05 explicitly mentions 'SecureFlow Suite... comes with a competitive and transparent pricing model... aligns well with budget constraints while providing a favorable return on investment,' which directly supports the claim about competitive transparent pricing fitting budget constraints and delivering favorable ROI."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms the initial discussion's promise of transparent pricing, clear total cost of ownership, and no hidden fees/surprises. Evidence 1 confirms the follow-up's statement about SecureFlow Suite's competitive, transparent pricing fitting budget constraints and delivering favorable ROI. Together they cover all factual claims in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-ef4a9a7c7a978423",
+    "question": "What follow-up steps did Mohammed commit to with Fabio Russo at SkyLevel Systems across the initial overview call and the discovery call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The follow-up/next-step commitments Mohammed made to Fabio Russo at SkyLevel Systems, spanning the initial overview call and the discovery call.",
+        "relationship": "Same business issue (next steps in the same sales engagement) tracked across two related calls.",
+        "reason": "Both calls concern the same engagement's next steps; comparing commitments across the overview and discovery calls is a coherent progression, not two independent fact lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzdHIAS",
+                "fact": "Mohammed committed to scheduling the initial discovery call for September 10th.",
+                "why_other_call_cannot_supply_it": "The discovery call (b2b:a05Wt000003Su4GIAS) occurs on September 10th and does not mention the scheduling of that call; it only references the call itself."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su4GIAS",
+                "fact": "Mohammed committed to conducting an in-depth analysis of SkyLevel's engineering requirements later that week and sending a summary email.",
+                "why_other_call_cannot_supply_it": "The overview call (b2b:a05Wt000003SzdHIAS) only mentions scheduling the discovery call and does not include any commitment to the analysis or summary email."
+              }
+            ],
+            "reason": "The question asks for follow-up steps committed in both the overview and discovery calls. The overview call contains the commitment to schedule the discovery call, while the discovery call contains the commitments to the analysis and summary email. These are distinct commitments made at different times, and neither call provides the other's commitment, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Su4GIAS",
+                  "fact": "Mohammed committed to an in-depth analysis of SkyLevel's engineering requirements later that week.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SzdHIAS) only mentions scheduling the discovery call and does not contain any commitment to the engineering analysis."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzdHIAS",
+                  "fact": "Mohammed scheduled the September 10 discovery call as the next step.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Su4GIAS) is the discovery call itself and does not mention scheduling it; it only references the analysis and summary email."
+                }
+              ],
+              "reason": "The question asks for follow-up steps across two distinct calls. The overview call (b2b:a05Wt000003SzdHIAS) contains the commitment to schedule the discovery call, while the discovery call (b2b:a05Wt000003Su4GIAS) contains the commitment to the engineering analysis and summary email. These are separate, substantive commitments made on different calls, and neither call alone provides both pieces of information."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzdHIAS",
+                  "fact": "Mohammed committed to scheduling the initial discovery call for September 10th.",
+                  "why_other_call_cannot_supply_it": "The discovery call (b2b:a05Wt000003Su4GIAS) occurs on September 10th and does not mention the scheduling of that call; it only references the call itself."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Su4GIAS",
+                  "fact": "Mohammed committed to conducting an in-depth analysis of SkyLevel's engineering requirements later that week and sending a summary email.",
+                  "why_other_call_cannot_supply_it": "The overview call (b2b:a05Wt000003SzdHIAS) only mentions scheduling the discovery call and does not include any commitment to the analysis or summary email."
+                }
+              ],
+              "reason": "The question asks for follow-up steps committed in both the overview and discovery calls. The overview call contains the commitment to schedule the discovery call, while the discovery call contains the commitments to the analysis and summary email. These are distinct commitments made at different times, and neither call provides the other's commitment, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzdHIAS",
+                "fact": "On the September 5 overview call, Mohammed committed to a discovery call scheduled for September 10th as the next step.",
+                "why_other_call_cannot_supply_it": "The September 10 discovery call transcript does not mention the scheduling of itself; it only contains commitments made during that call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su4GIAS",
+                "fact": "On the September 10 discovery call, Mohammed committed to an in-depth analysis of SkyLevel's engineering requirements later that week and to a follow-up summary email.",
+                "why_other_call_cannot_supply_it": "The September 5 overview call ends with only the scheduling of the discovery call and contains no mention of the analysis or summary email commitments."
+              }
+            ],
+            "reason": "The question explicitly asks for follow-up commitments across both calls. Each call contains a distinct commitment (scheduling the discovery call vs. the in-depth analysis and summary email), and neither transcript contains the other's commitment."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzdHIAS",
+                  "fact": "On the September 5 overview call, Mohammed committed to a discovery call scheduled for September 10th as the next step.",
+                  "why_other_call_cannot_supply_it": "The September 10 discovery call transcript does not mention the scheduling of itself; it only contains commitments made during that call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Su4GIAS",
+                  "fact": "On the September 10 discovery call, Mohammed committed to an in-depth analysis of SkyLevel's engineering requirements later that week and to a follow-up summary email.",
+                  "why_other_call_cannot_supply_it": "The September 5 overview call ends with only the scheduling of the discovery call and contains no mention of the analysis or summary email commitments."
+                }
+              ],
+              "reason": "The question explicitly asks for follow-up commitments across both calls. Each call contains a distinct commitment (scheduling the discovery call vs. the in-depth analysis and summary email), and neither transcript contains the other's commitment."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for follow-up commitments across two calls. The overview call (Sep 5) shows Mohammed scheduling the Sep 10 discovery call; the discovery call (Sep 10) shows him committing to an in-depth engineering-requirements analysis later that week and a summary email. Each source contributes an exclusive fact, the answer matches the transcripts precisely, and the phrasing is natural for a rep tracking next steps.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from the September 5 call (b2b:a05Wt000003SzdHIAS) shows Mohammed El-Sayed explicitly stating: 'The next step would be our initial discovery call scheduled for September 10th. We'll delve deeper into your objectives and explore how TechPulse can specifically address your needs.' This directly supports the claim that the next step was the discovery call on September 10th to delve deeper into objectives."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from the September 10 call (b2b:a05Wt000003Su4GIAS) shows Mohammed stating: 'our team will be conducting an in-depth analysis of your engineering requirements, slated for later this week' and 'I'll follow up with an email summarizing today's discussion.' This directly supports the claim about the in-depth analysis of engineering requirements later that week and the summary email follow-up."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) On the overview call he scheduled the September 10 discovery call \u2013 supported by index 0 where Mohammed on the Sept 5 call commits to the Sept 10 discovery call. (2) On that call he committed to an in-depth analysis of SkyLevel's engineering requirements later that week \u2013 supported by index 1 where Mohammed says 'our team will be conducting an in-depth analysis of your engineering requirements, slated for later this week.' (3) Plus a summary email \u2013 supported by index 1 where Mohammed says 'I'll follow up with an email summarizing today's discussion.' The context metadata confirms the calls involve Fabio Russo at SkyLevel Systems and the correct dates. All factual claims in the gold answer are supported by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-e1e8d8dfd4493a28",
+    "question": "What pricing did Luciana quote Mohamed for SecureFlow Suite, and what did she say about its deployment speed?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price Luciana quoted Mohamed for SecureFlow Suite and her comments on its deployment speed",
+        "relationship": "Both facts describe the same product quote/discussion (SecureFlow Suite)",
+        "reason": "Pricing and deployment speed are naturally part of one product quote conversation, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts from the same call: the pricing Luciana quoted Mohamed for SecureFlow Suite and her statement about deployment speed. The dialogue confirms three licenses at $1799.97 and 'quick deployment without compromising on compliance with security regulations.' The gold answer captures both facts precisely without unasked extras. The question is naturally phrased, scoped to a named rep, customer, and product, and reflects a plausible QA need for a sales manager reviewing a pitch. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Luciana Alves explicitly states: 'For three licenses of SecureFlow Suite, the total is $1799.97.' This directly supports the answer_claim about the pricing for three licenses."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Luciana Alves explicitly states: 'SecureFlow Suite excels in its quick deployment without compromising on compliance with security regulations.' This directly supports the answer_claim about quick deployment and compliance."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'Three licenses total $1799.97, with quick deployment that doesn't compromise compliance with security regulations.' Evidence index 0 confirms the exact pricing ($1799.97 for three licenses of SecureFlow Suite), and evidence index 1 confirms the quick deployment without compromising compliance with security regulations. Both factual claims in the gold_answer are fully supported by the cited evidence. The speaker is Luciana Alves, the contact is Mohamed Youssef, and the product is SecureFlow Suite, all consistent with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-98203be4836909ec",
+    "question": "What discounts did BrightTech Systems receive on PulseSim Pro and CloudLink Designer, and what did Dariusz say about adjusting CloudLink Designer discounts if they increase quantity?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Discounts on PulseSim Pro and CloudLink Designer, plus Dariusz's comment on adjusting CloudLink Designer discounts if quantity increases",
+        "relationship": "single coherent commercial discount inquiry",
+        "reason": "All parts concern the same commercial topic (discount terms) for the same account, including a conditional adjustment tied to one of the products; not independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific discount figures and a conditional statement about future discount adjustment, all of which a rep/account manager would plausibly need to track for the BrightTech Systems account. The dialogue confirms a 10% discount on PulseSim Pro (14:00:40) and a 10% discount on CloudLink Designer (14:01:20), plus Dariusz's statement that increasing quantity could lead to adjusted discounts to maximize savings (14:01:20). The gold answer states exactly those facts with no unasked extras. Wording is natural, scope is clear (named account, products, and speaker), and no locator preamble or artificial framing is present. Because question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Dariusz Wisniewski explicitly states 'you're receiving a 10% discount on PulseSim Pro,' directly supporting the claim of a 10% discount on PulseSim Pro."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Dariusz Wisniewski explicitly states 'you're already receiving a 10% discount on CloudLink Designer' and 'If you increase the quantity, we could look at adjusting the discounts to maximize your savings,' directly supporting both the 10% discount on CloudLink Designer and the conditional adjustment claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) 10% discount on PulseSim Pro \u2013 supported by index 0; (2) 10% discount on CloudLink Designer \u2013 supported by index 1; (3) if quantity increases, discounts could be adjusted to maximize savings \u2013 supported by index 1. All factual claims in the gold_answer are covered by the supplied citations. The speaker is Dariusz Wisniewski, consistent with the question's reference to 'Dariusz.' The account metadata confirms the call involves BrightTech Systems. No unsupported or contradicted claims are present."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-ed24280486262bc3",
+    "question": "What did Sophia Gomez say about her timeline for purchasing a vehicle?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Sophia Gomez said about her vehicle purchase timeline",
+        "relationship": "single lookup",
+        "reason": "One coherent fact lookup about a customer's stated purchase timeline in a sales context."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Sophia Gomez said about her purchase timeline. The transcript at 14:03:00 shows her stating 'I'm aiming to have everything sorted in the next couple of months,' which the gold answer reproduces faithfully. The question is naturally phrased, identifies the customer by name, and a rep would plausibly want to know a prospect's buying timeline. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes to Sophia Gomez the statement: 'I'm aiming to have everything sorted in the next couple of months.' This matches the answer_claim exactly, preserving speaker attribution, the uncertainty/aim qualifier ('aiming'), and the time frame ('next couple of months')."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Sophia Gomez's own words stating she is aiming to have everything sorted in the next couple of months, which fully supports the gold_answer's claim about her timeline for purchasing a vehicle."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d4e3807df9325ca2",
+    "question": "What did Sophia Turner agree to purchase in her final negotiation with AutoElite Motors, including the vehicle prices and the add-on service plans?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Sophia Turner agreed to purchase in her final negotiation with AutoElite Motors, including vehicle prices and add-on service plans",
+        "relationship": "single coherent request: one purchase agreement and its commercial terms (prices and add-on plans)",
+        "reason": "The question asks about one negotiation outcome and the terms of the same purchase; vehicle prices and add-on service plans are parts of the same deal, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific customer (Sophia Turner) and dealership (AutoElite Motors) final negotiation, a realistic scenario for an account manager reviewing deal terms. Wording is natural and not artificially padded with locator preambles. The gold answer lists both vehicles with exact prices ($89,999.99 Tesla Model S, $65,999.99 Mercedes-Benz E-Class) and both add-on plans ($1,999.99 Comprehensive Maintenance Plan, $1,299.99 Extended Warranty Plan), all directly confirmed in the dialogue. No unasked extras are included and no requested facts are missing. Because question_class is single_call with only one call supplied, both_sources_required is set to true per instructions. Intent is commercial_terms since the question focuses on agreed purchase items and pricing.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Enzo Rossi explicitly states 'The Tesla Model S is $89,999.99, and the Mercedes-Benz E-Class is $65,999.99,' which directly supports the answer_claim about both vehicle prices."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Enzo Rossi explicitly states 'Our AutoElite Comprehensive Maintenance Plan, priced at $1,999.99, and the Extended Warranty Plan for $1,299.99,' which directly supports the answer_claim about both add-on service plan prices."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "Sophia Turner's quote states 'I feel comfortable progressing with both vehicles and the additional services you've highlighted.' This confirms her agreement to proceed with both vehicles and the additional services. The pronoun 'you've highlighted' can be resolved via citations 0 and 1 to the two vehicles and two service plans discussed by Enzo Rossi. This supports the claim that Sophia is comfortable progressing with both vehicles and additional services."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer claims Sophia agreed to purchase both the 2024 Tesla Model S ($89,999.99) and 2023 Mercedes-Benz E-Class ($65,999.99), plus the Comprehensive Maintenance Plan ($1,999.99) and Extended Warranty Plan ($1,299.99). Citation 0 confirms both vehicle prices, citation 1 confirms both service plan prices, and citation 2 confirms Sophia's agreement to progress with 'both vehicles and the additional services.' The model years (2024, 2023) are not explicitly stated in the cited quotes, but the vehicle names and prices match exactly. The term 'agree to purchase' is supported by Sophia's statement of feeling 'comfortable progressing with both vehicles and the additional services.' All core factual claims (vehicle names, prices, service plan names, prices, and Sophia's agreement) are supported by the combined citations."
+      }
+    }
+  }
+]
