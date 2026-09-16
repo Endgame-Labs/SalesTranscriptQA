@@ -1,0 +1,439 @@
+[
+  {
+    "question_id": "b2b-single_call-740db24ca99e0298",
+    "question": "What did Chen Lixin say TechPulse would include in the upcoming proposal for AeroFusion Systems?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Chen Lixin said TechPulse would include in the upcoming proposal for AeroFusion Systems",
+        "relationship": "single lookup of proposal contents from one call",
+        "reason": "One coherent fact lookup about a single proposal within one call; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Chen Lixin said TechPulse would include in the upcoming proposal for AeroFusion Systems. The dialogue at 10:03:10 states: 'we'll ensure that our proposal reflects solutions that align with your strategic goals. We'll also include compelling case studies to provide a comprehensive view of our proven ROI.' The gold answer accurately captures both elements (solutions aligned with strategic goals + compelling case studies demonstrating proven ROI) without adding unasked extras. The question is naturally worded, scoped to a specific account and rep, and represents a realistic sales need (knowing what was promised in a proposal). Single-call question so both_sources_required is true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage is attributed to Chen Lixin and explicitly states: 'we'll ensure that our proposal reflects solutions that align with your strategic goals. We'll also include compelling case studies to provide a comprehensive view of our proven ROI.' This directly supports the answer_claim about including solutions aligned with strategic goals and compelling case studies demonstrating proven ROI."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Solutions aligned with AeroFusion's strategic goals plus compelling case studies demonstrating proven ROI.' The cited evidence (index 0) is a direct quote from Chen Lixin confirming both elements: (1) solutions that align with strategic goals, and (2) compelling case studies providing a comprehensive view of proven ROI. The context metadata confirms the account is AeroFusion Systems, matching the question's reference. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5d6ce0b8588cfa98",
+    "question": "What pricing did Luciana quote Elodie for the SecureFlow Suite and AI Cirku-Tech for EcoLite Innovations?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing Luciana quoted to Elodie for the SecureFlow Suite and AI Cirku-Tech for EcoLite Innovations",
+        "relationship": "single coherent quote breakdown covering two products in one commercial quote",
+        "reason": "The question asks for the pricing quoted in what appears to be one quote to one customer (EcoLite Innovations), covering two products together \u2014 a natural commercial quote breakdown, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific pricing quoted by Luciana to Elodie for two products tied to the EcoLite Innovations account. The dialogue at 14:04:30 confirms SecureFlow Suite at 10% discount on 10 licenses \u2248 $5,399.91 and AI Cirku-Tech at 10% discount on 12 units \u2248 $5,723.89, matching the gold answer exactly. The rep/account context is clear and plausible. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Luciana Alves explicitly states: SecureFlow Suite with a 10% discount on 10 licenses totaling around $5,399.91, and AI Cirku-Tech with a 10% discount for 12 units priced at approximately $5,723.89. This directly matches the answer_claim in full, including speaker, product names, discount percentages, quantities, and dollar amounts."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Luciana's exact quote providing both product prices with the specified discounts, quantities, and totals. The gold_answer's claims (SecureFlow Suite: 10% discount on 10 licenses, ~$5,399.91; AI Cirku-Tech: 10% discount on 12 units, ~$5,723.89) are fully and faithfully supported by the quoted passage. The context metadata confirms the call involves EcoLite Innovations and contact Elodie Rousseau, consistent with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-3bbc08297f8de38b",
+    "question": "What concern did Elias Wong raise about competitors during the initial GreenLeaf Engineering discussion, and which TechPulse product's response time impressed him on the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitor-related concern Elias Wong raised in the initial GreenLeaf Engineering discussion and the TechPulse product response time that impressed him on the follow-up call.",
+        "relationship": "Same business issue (competitive evaluation) tracked across two calls: the initial concern and the follow-up impression both concern how competitors/products compare.",
+        "reason": "Both facts address the same competitive-evaluation thread across the initial and follow-up calls, not merely the same account, and the wording is natural sales language."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sx8PIAS",
+                "fact": "Elias Wong raised past challenges with competitors around support responsiveness during the initial discussion.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention this specific concern; it only references support during implementations and SLAs, not past competitor challenges."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T21cIAC",
+                "fact": "Elias Wong said CircuitWave's response time was really impressive on the follow-up call.",
+                "why_other_call_cannot_supply_it": "The initial call does not mention CircuitWave or any product's response time impressing him; it only discusses OptiPower Manager and CircuitMaster Analyzer."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information from different calls: a concern raised in the initial discussion and a product impression from the follow-up. Each fact is exclusively present in its respective call, and neither call alone can supply both facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx8PIAS",
+                  "fact": "Elias Wong raised past challenges with competitors around support responsiveness during the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention this specific concern; it only references support during implementations and SLAs, not past competitor challenges."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T21cIAC",
+                  "fact": "Elias Wong said CircuitWave's response time was really impressive on the follow-up call.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention CircuitWave or any product's response time impressing him; it only discusses OptiPower Manager and CircuitMaster Analyzer."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information from different calls: a concern raised in the initial discussion and a product impression from the follow-up. Each fact is exclusively present in its respective call, and neither call alone can supply both facts."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sx8PIAS",
+                "fact": "Elias Wong raised past challenges with competitors around support responsiveness",
+                "why_other_call_cannot_supply_it": "The follow-up call only references efficiency/stagnation concerns and SLA talk generally; the competitor support-responsiveness complaint is stated only in the initial call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T21cIAC",
+                "fact": "On the follow-up call Elias said CircuitWave's response time was really impressive",
+                "why_other_call_cannot_supply_it": "The initial call never mentions CircuitWave or Elias being impressed by its response time; that statement occurs only in the follow-up."
+              }
+            ],
+            "reason": "The question asks for two distinct, time-separated facts: a competitor concern from the initial call and a product impression from the follow-up. Each fact appears in only one call, and both are explicitly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx8PIAS",
+                  "fact": "Elias Wong raised past challenges with competitors around support responsiveness",
+                  "why_other_call_cannot_supply_it": "The follow-up call only references efficiency/stagnation concerns and SLA talk generally; the competitor support-responsiveness complaint is stated only in the initial call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T21cIAC",
+                  "fact": "On the follow-up call Elias said CircuitWave's response time was really impressive",
+                  "why_other_call_cannot_supply_it": "The initial call never mentions CircuitWave or Elias being impressed by its response time; that statement occurs only in the follow-up."
+                }
+              ],
+              "reason": "The question asks for two distinct, time-separated facts: a competitor concern from the initial call and a product impression from the follow-up. Each fact appears in only one call, and both are explicitly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "First call: Elias says 'We've had some challenges in the past with competitors, especially around support responsiveness' \u2013 matches the gold answer's competitor concern. Second call: Elias says 'CircuitWave's response time is really impressive, leaving a positive impression' \u2013 matches the gold answer's product and phrasing. Each source contributes an exclusive requested fact; no locator preamble, no answer leakage, no unsupported causality. The question naturally identifies the account (GreenLeaf Engineering) and contact (Elias Wong) and a plausible rep need to recall objection history and product reception across two calls.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the initial call (2023-10-19) shows Elias Wong explicitly stating: 'We've had some challenges in the past with competitors, especially around support responsiveness.' This directly supports the answer_claim about his concern regarding competitors and support responsiveness."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the follow-up call (2023-10-24) shows Elias Wong saying: 'CircuitWave's response time is really impressive, leaving a positive impression.' This directly supports the answer_claim that CircuitWave's response time impressed him on the follow-up call."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Elias raised past challenges with competitors around support responsiveness during the initial GreenLeaf Engineering discussion. Evidence index 1 confirms that on the follow-up call, he stated CircuitWave's response time was really impressive. The metadata confirms both calls are associated with Elias Wong and the GreenLeaf Engineering opportunity, with the first call on 2023-10-19 (initial) and the second on 2023-10-24 (follow-up). All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-cb391b22530be63e",
+    "question": "Yuki Kato at InnovateVibes raised integration concerns in both discussions. What did Isabella say about handling frequent updates in the initial call, and which existing system did she cite for seamless integration during the terms negotiation?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Isabella said about handling frequent updates in the initial call, and which existing system she cited for seamless integration during terms negotiation",
+        "relationship": "Both facts address the same business issue\u2014Yuki Kato's integration concerns\u2014across two calls (initial discussion and terms negotiation)",
+        "reason": "The two lookups are tied to one coherent issue (integration/update handling), not merely the same account, and use natural follow-up wording."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyxDIAS",
+                "fact": "Isabella said their tools strive for stability and long-term efficiency despite frequent updates.",
+                "why_other_call_cannot_supply_it": "The second call does not discuss frequent updates or stability; it focuses on pricing, integration, and support."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0CfIAK",
+                "fact": "Isabella cited integration with the systems InnovateVibes uses in CloudInnovate Space, reducing downtime.",
+                "why_other_call_cannot_supply_it": "The first call does not mention CloudInnovate Space or specific existing systems; it only mentions seamless integration generally."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: Isabella's response about frequent updates in the initial call, and the specific existing system cited during terms negotiation. Each fact is only present in one call, and neither call alone can supply both requested details."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyxDIAS",
+                  "fact": "Isabella said their tools strive for stability and long-term efficiency despite frequent updates.",
+                  "why_other_call_cannot_supply_it": "The second call does not discuss frequent updates or stability; it focuses on pricing, integration, and support."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0CfIAK",
+                  "fact": "Isabella cited integration with the systems InnovateVibes uses in CloudInnovate Space, reducing downtime.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention CloudInnovate Space or specific existing systems; it only mentions seamless integration generally."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: Isabella's response about frequent updates in the initial call, and the specific existing system cited during terms negotiation. Each fact is only present in one call, and neither call alone can supply both requested details."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyxDIAS",
+                "fact": "Isabella said that although their approach might differ, they strive for stability and long-term efficiency despite frequent updates",
+                "why_other_call_cannot_supply_it": "The second call never discusses how frequent updates are handled; it only covers pricing, TCO, integration, and support."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0CfIAK",
+                "fact": "Isabella cited integration with the existing systems InnovateVibes uses in CloudInnovate Space, reducing downtime during transition",
+                "why_other_call_cannot_supply_it": "The first call only contains a generic claim of seamless integration into existing workflows, with no mention of CloudInnovate Space or downtime reduction."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the frequent-updates response from the initial call and the specific existing system cited during terms negotiation. Each fact appears only in one call and the other call cannot supply it."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyxDIAS",
+                  "fact": "Isabella said that although their approach might differ, they strive for stability and long-term efficiency despite frequent updates",
+                  "why_other_call_cannot_supply_it": "The second call never discusses how frequent updates are handled; it only covers pricing, TCO, integration, and support."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0CfIAK",
+                  "fact": "Isabella cited integration with the existing systems InnovateVibes uses in CloudInnovate Space, reducing downtime during transition",
+                  "why_other_call_cannot_supply_it": "The first call only contains a generic claim of seamless integration into existing workflows, with no mention of CloudInnovate Space or downtime reduction."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the frequent-updates response from the initial call and the specific existing system cited during terms negotiation. Each fact appears only in one call and the other call cannot supply it."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks what a rep said about handling frequent updates (initial call) and which existing system was cited for seamless integration (terms negotiation). Call 1: Isabella states 'we strive for stability and long-term efficiency' in response to Yuki's question about frequent updates\u2014matches the gold answer. Call 2: Isabella cites 'those you currently use in CloudInnovate Space' and mentions reducing downtime\u2014matches the gold answer. Each source contributes an exclusive requested fact. The question identifies the customer (Yuki Kato / InnovateVibes) and the business context (integration concerns) naturally without artificial locator preambles. The answer states precisely the two requested facts with no unasked extras. Wording is natural and scoped to a realistic sales scenario."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Isabella Rossi in the initial call (2020-06-04) explicitly states: 'Although our approach might differ, we strive for stability and long-term efficiency.' This directly supports the answer_claim that Isabella said they strive for stability and long-term efficiency regarding frequent updates. The context of frequent updates is also present in the quote ('frequent updates are crucial for evolving client needs')."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Isabella Rossi in the negotiation call (2020-07-30) explicitly states: 'Our tools are designed for optimal integration with existing systems, like those you currently use in CloudInnovate Space. This reduces downtime during transition.' This directly supports the answer_claim that Isabella cited integration with systems used in CloudInnovate Space, reducing downtime."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) In the initial call, Isabella said their tools strive for stability and long-term efficiency despite frequent updates \u2014 supported by evidence index 0. (2) In the negotiation, she cited integration with the systems InnovateVibes uses in CloudInnovate Space, reducing downtime \u2014 supported by evidence index 1. Both factual claims in the gold_answer are fully supported by the cited evidence. The context metadata confirms both calls involve Yuki Kato at InnovateVibes LLC, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-e76f322452b08406",
+    "question": "What range does the 2024 Tesla Model S offer on a single charge, and what did John say about Tesla's post-purchase software updates?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) The 2024 Tesla Model S's range on a single charge, and (2) what John said about Tesla's post-purchase software updates.",
+        "relationship": "Two independent fact lookups joined only by the same product/brand; the vehicle spec and John's commentary on software updates address different business issues.",
+        "reason": "The range specification is a standalone product lookup, while John's remarks about post-purchase software updates are a separate information need; sharing the Tesla topic is not enough to make them one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both facts (396-mile range and OTA software upgrades) are verbatim-supported in the single call. The question naturally targets product specs and post-purchase value a rep would track. No locator preamble, no answer leakage, no unsupported causality. Scope is adequate via the 2024 Tesla Model S demonstration context and named participants.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from John Smith explicitly states 'The Model S offers up to 396 miles on a single charge,' which directly supports the answer_claim about the 396-mile range."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from John Smith explicitly states 'Tesla constantly upgrades features over the air. It's like your car keeps getting better even after purchase,' which directly supports the answer_claim about over-the-air software updates improving the car post-purchase."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported by the cited evidence: (1) the 396-mile range is stated verbatim in evidence index 0, and (2) the over-the-air software updates keeping the car improving after purchase are stated verbatim in evidence index 1. The speaker is John Smith, matching the question's reference to 'John.' No unsupported claims are present in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-fcf5d65518520ffc",
+    "question": "For Mason Blake's family vehicle upgrade, what did Hina say about the reliability of AutoElite's service center technicians?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Hina said about the reliability of AutoElite's service center technicians in the context of Mason Blake's family vehicle upgrade",
+        "relationship": "single coherent lookup",
+        "reason": "One fact lookup about technician reliability, naturally scoped to the same customer's vehicle purchase/service context; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally targets a specific customer (Mason Blake) and a specific rep (Hina) discussing service-center technician reliability during a family vehicle upgrade conversation. The gold answer accurately reproduces Hina's statement at 11:12 about factory-trained technicians, continuous training/certification, and customer praise of expertise versus competitors. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true by rule.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Hina Patel explicitly states: 'Our service centers are staffed with factory-trained technicians who undergo continuous training and certification. Customers often praise their level of expertise compared to others in the market.' This directly supports the answer_claim about factory-trained technicians, continuous training and certification, and customer praise of their expertise compared to others."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence (index 0) contains Hina Patel's exact statement covering all factual elements of the gold_answer: (1) service centers staffed with factory-trained technicians, (2) continuous training and certification, and (3) customers often praise their expertise compared to others in the market. The speaker is Hina, the context is Mason Blake's account for the 'Winter Clearance Family Vehicle Upgrade' opportunity, and the quote is a direct match to the gold_answer's claims. No additional facts are asserted in the gold_answer beyond what the citation provides."
+      }
+    }
+  }
+]
