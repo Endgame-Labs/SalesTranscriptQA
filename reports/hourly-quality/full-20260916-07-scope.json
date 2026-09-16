@@ -1,0 +1,302 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "eaef00c2a51fa7f548f2adcf910b60e9c4e111956e73c1d719250f737160a7c4",
+  "questions": 3,
+  "counts": {
+    "pass": 3
+  },
+  "estimated_usd": 0.42064786,
+  "results": [
+    {
+      "question_id": "b2b-single_call-05dcb637816725ec",
+      "question": "What did Sophia Ferrari flag as a concern about TechPulse's customization, and what did Carlos say in response?",
+      "gold_answer": "She was concerned TechPulse lacks customizable adaptability from the start; Carlos said their adaptability evolves with customer needs rather than only at the start.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StcgIAC",
+        "b2b:a05Wt000003Stw0IAC",
+        "b2b:a05Wt000003SuKAIA0",
+        "b2b:a05Wt000003SuKBIA0",
+        "b2b:a05Wt000003SvRTIA0",
+        "b2b:a05Wt000003SvRUIA0",
+        "b2b:a05Wt000003SvUmIAK",
+        "b2b:a05Wt000003SvXvIAK",
+        "b2b:a05Wt000003Svg5IAC",
+        "b2b:a05Wt000003Svo5IAC",
+        "b2b:a05Wt000003SwfIIAS",
+        "b2b:a05Wt000003SwsEIAS",
+        "b2b:a05Wt000003Sx0JIAS",
+        "b2b:a05Wt000003Sx58IAC",
+        "b2b:a05Wt000003Sx59IAC",
+        "b2b:a05Wt000003SxMpIAK",
+        "b2b:a05Wt000003SxMqIAK",
+        "b2b:a05Wt000003SxMrIAK",
+        "b2b:a05Wt000003SxwNIAS",
+        "b2b:a05Wt000003Sy2tIAC",
+        "b2b:a05Wt000003SyNmIAK",
+        "b2b:a05Wt000003SzAJIA0",
+        "b2b:a05Wt000003SzJsIAK",
+        "b2b:a05Wt000003T0itIAC",
+        "b2b:a05Wt000003T0kXIAS",
+        "b2b:a05Wt000003T0kYIAS",
+        "b2b:a05Wt000003T0m9IAC",
+        "b2b:a05Wt000003T0mAIAS",
+        "b2b:a05Wt000003T1DXIA0",
+        "b2b:a05Wt000003T1DYIA0",
+        "b2b:a05Wt000003T1ruIAC",
+        "b2b:a05Wt000003T1zuIAC",
+        "b2b:a05Wt000003T27yIAC",
+        "b2b:a05Wt000003T29aIAC",
+        "b2b:a05Wt000003T29bIAC",
+        "b2b:a05Wt000003T2CpIAK",
+        "b2b:a05Wt000003T2CqIAK",
+        "b2b:a05Wt000003T2HfIAK",
+        "b2b:a05Wt000003T2MXIA0",
+        "b2b:a05Wt000003T2SxIAK",
+        "b2b:a05Wt000003T2b0IAC",
+        "b2b:a05Wt000003T2hWIAS",
+        "b2b:a05Wt000003T2hXIAS",
+        "b2b:a05Wt000003T2nuIAC",
+        "b2b:a05Wt000003T2nvIAC",
+        "b2b:a05Wt000003T2r7IAC",
+        "b2b:a05Wt000003T2sjIAC",
+        "b2b:a05Wt000003T2skIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call pairs Sophia Ferrari with Carlos Fernandez discussing a customization concern: the 2021-02-04 'OmegaDesign Labs AI-Powered EDA Enhancement' call, where Sophia raises concern about customizable adaptability from the start and Carlos responds. The other Carlos call (2021-02-23) concerns a competitor's configurations, not TechPulse's customization, so it is not a competing answer.",
+        "answers": [
+          {
+            "answer": "Sophia Ferrari flagged that TechPulse's solutions, while customizable, seemed to lack fully customizable adaptability from the very beginning — she said they had been looking at options offering 'more customizable adaptability from the get-go' and that this had been a point of concern for OmegaDesign Labs. Carlos Fernandez responded that while initial configurations are critical, TechPulse ensures that its adaptability evolves with the customer's needs rather than just at the start, and that their case studies and client feedback back up this strategy.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuKAIA0",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2021-02-04T15:17:35] Sophia Ferrari: And how customizable are your solutions? We have some specialized applications that require adaptability.\n[2021-02-04T15:18:00] Carlos Fernandez: That's a great question. Our products, like the SecureFlow Suite and CloudLink Designer, offer customizable features tailored to niche requirements, ensuring you get precisely what you need. While competitors might start off with adaptable configurations, our focus is on long-term adaptability and customization.\n[2021-02-04T15:18:20] Sophia Ferrari: That makes sense, but we've been looking at options that offer more customizable adaptability from the get-go. It's been a point of concern for us."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Sophia Ferrari, Carlos, and TechPulse's customization. Only one call features both Sophia Ferrari and Carlos Fernandez: b2b:a05Wt000003SuKAIA0 (2021-02-04). In that call, Sophia raises a concern about TechPulse's customization (lines 9–11) and Carlos responds (lines 10, 12). No other call pairs Sophia with Carlos, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Sophia Ferrari flagged that TechPulse's solutions did not seem to offer enough customizable adaptability from the very start ('from the get-go'), noting that they had been looking at options providing more initial customizable adaptability and that this was a point of concern for them. Carlos Fernandez responded by acknowledging her concern and explaining that while initial configurations are critical, TechPulse ensures its adaptability evolves with the customer's needs over time rather than only at the start, and he pointed to their case studies and client feedback as backing up this long-term adaptability strategy.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuKAIA0",
+                "line_start": 9,
+                "line_end": 13,
+                "quote": "[2021-02-04T15:17:35] Sophia Ferrari: And how customizable are your solutions? We have some specialized applications that require adaptability.\n[2021-02-04T15:18:00] Carlos Fernandez: That's a great question. Our products, like the SecureFlow Suite and CloudLink Designer, offer customizable features tailored to niche requirements, ensuring you get precisely what you need. While competitors might start off with adaptable configurations, our focus is on long-term adaptability and customization.\n[2021-02-04T15:18:20] Sophia Ferrari: That makes sense, but we've been looking at options that offer more customizable adaptability from the get-go. It's been a point of concern for us.\n[2021-02-04T15:18:50] Carlos Fernandez: I understand where you're coming from, Sophia. While initial configurations are critical, we ensure that our adaptability evolves with your needs rather than just at the start. Our case studies and client feedback back up this strategy."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same two requested facts: (1) Sophia Ferrari's concern that TechPulse's solutions lacked sufficient customizable adaptability from the very beginning ('from the get-go'), and (2) Carlos Fernandez's response that while initial configurations matter, TechPulse's adaptability evolves with the customer's needs over time, supported by case studies and client feedback. The reference also covers both requested facts: Sophia's concern about lacking customizable adaptability from the start, and Carlos's reply that adaptability evolves with customer needs rather than only at the start. Minor wording differences and the extra mention of case studies/client feedback in the answers do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-e3c3c12d1fa0286f",
+      "question": "For SkyTech Ventures, what discounts did Chen quote in the initial solution discussion versus the later negotiation call?",
+      "gold_answer": "Initial call: 10% off PulseSim Pro and 15% off CloudLink Designer. Negotiation call: 15% volume discount on CloudLink Designer and 10% on OptiPower Max.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZxIAK",
+        "b2b:a05Wt000003Sr7rIAC",
+        "b2b:a05Wt000003Sr7sIAC",
+        "b2b:a05Wt000003SsroIAC",
+        "b2b:a05Wt000003StEUIA0",
+        "b2b:a05Wt000003Su46IAC",
+        "b2b:a05Wt000003Su47IAC",
+        "b2b:a05Wt000003Sv1iIAC",
+        "b2b:a05Wt000003SvD0IAK",
+        "b2b:a05Wt000003SvHrIAK",
+        "b2b:a05Wt000003SvfzIAC",
+        "b2b:a05Wt000003Sw10IAC",
+        "b2b:a05Wt000003Sw11IAC",
+        "b2b:a05Wt000003SwDsIAK",
+        "b2b:a05Wt000003SwTzIAK",
+        "b2b:a05Wt000003SwnNIAS",
+        "b2b:a05Wt000003SwnOIAS",
+        "b2b:a05Wt000003SwoyIAC",
+        "b2b:a05Wt000003SwozIAC",
+        "b2b:a05Wt000003SwqdIAC",
+        "b2b:a05Wt000003SwqeIAC",
+        "b2b:a05Wt000003SwqfIAC",
+        "b2b:a05Wt000003Sx54IAC",
+        "b2b:a05Wt000003SxBaIAK",
+        "b2b:a05Wt000003SyFgIAK",
+        "b2b:a05Wt000003SyNiIAK",
+        "b2b:a05Wt000003SyqmIAC",
+        "b2b:a05Wt000003SzEyIAK",
+        "b2b:a05Wt000003SzEzIAK",
+        "b2b:a05Wt000003SzV6IAK",
+        "b2b:a05Wt000003SzhzIAC",
+        "b2b:a05Wt000003SzwVIAS",
+        "b2b:a05Wt000003SzwWIAS",
+        "b2b:a05Wt000003T0B1IAK",
+        "b2b:a05Wt000003T0KgIAK",
+        "b2b:a05Wt000003T0MKIA0",
+        "b2b:a05Wt000003T0NwIAK",
+        "b2b:a05Wt000003T0hGIAS",
+        "b2b:a05Wt000003T0hHIAS",
+        "b2b:a05Wt000003T0kUIAS",
+        "b2b:a05Wt000003T0kVIAS",
+        "b2b:a05Wt000003T0yzIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Chen Lixin's calls with SkyTech Ventures (Marco Salvatore, EDA Transformation opportunity) include an initial solution discussion on 2020-11-08 where discounts were first quoted, and a later negotiation meeting on 2020-12-01 explicitly framed as 'negotiation meeting today concerning the terms and pricing.' These are the only two Chen calls matching those roles, so the comparison is determinate.",
+        "answers": [
+          {
+            "answer": "In the initial solution discussion (2020-11-08), Chen quoted a 10% discount on PulseSim Pro and a 15% discount on CloudLink Designer. In the later negotiation call (2020-12-01), Chen quoted a 15% discount on CloudLink Designer when purchased in volume and a 10% discount on OptiPower Max.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqZxIAK",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2020-11-08T15:50:45] Marco Salvatore: That sounds promising, and how do the pricing and discounts shape up for these solutions?\n[2020-11-08T15:51:05] Chen Lixin: Well, we're offering a 10% discount on PulseSim Pro and CloudLink Designer comes with a 15% discount for the current opportunity. This supports not only your immediate needs but also offers great value through our pricing strategy."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "line_start": 2,
+                "line_end": 5,
+                "quote": "[2020-12-01T13:32:30] Chen Lixin: Busy as always, but that's a good thing, right? I'm excited to dive into our negotiation meeting today concerning the terms and pricing for the solutions we've discussed. Before we get into the specifics, did you have a chance to view the case studies and testimonials we sent over?\n[2020-12-01T13:33:45] Marco Salvatore: Yes, I did. I found the case studies quite compelling, especially how they highlighted proactive support and your strong SLAs. Testimonials between TechPulse and others seemed comparable, though nothing particularly stood out in terms of innovation.\n[2020-12-01T13:34:30] Chen Lixin: I'm glad you found value in our case studies. We've invested heavily in ensuring our support and SLAs are top notch. Let’s discuss how we can model an advantageous pricing structure for CloudLink Designer and OptiPower Max for you. We're offering a 15% discount on CloudLink Designer when purchased in volume – which I believe fits your scale. As for OptiPower Max, there's a 10% discount we'd like to extend."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies 'Chen' as the salesperson and 'SkyTech Ventures' as the account. Chen Lixin appears in exactly one opportunity for SkyTech Ventures: 'SkyTech Ventures EDA Transformation' (006Wt000007B7lKIAS). Within that opportunity, the earliest call where Chen quotes discounts is the 2020-11-08 solution alignment workshop (the 'initial solution discussion'), and the call explicitly framed as a 'negotiation meeting' is 2020-12-01. These two calls provide materially different discount quotes, giving a single determinate answer.",
+        "answers": [
+          {
+            "answer": "In the initial solution discussion (2020-11-08), Chen quoted a 10% discount on PulseSim Pro and a 15% discount on CloudLink Designer. In the later negotiation call (2020-12-01), Chen quoted a 15% discount on CloudLink Designer (volume purchase) and a 10% discount on OptiPower Max.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqZxIAK",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-11-08T15:51:05] Chen Lixin: Well, we're offering a 10% discount on PulseSim Pro and CloudLink Designer comes with a 15% discount for the current opportunity. This supports not only your immediate needs but also offers great value through our pricing strategy."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "line_start": 2,
+                "line_end": 5,
+                "quote": "[2020-12-01T13:32:30] Chen Lixin: Busy as always, but that's a good thing, right? I'm excited to dive into our negotiation meeting today concerning the terms and pricing for the solutions we've discussed. Before we get into the specifics, did you have a chance to view the case studies and testimonials we sent over?\n[2020-12-01T13:33:45] Marco Salvatore: Yes, I did. I found the case studies quite compelling, especially how they highlighted proactive support and your strong SLAs. Testimonials between TechPulse and others seemed comparable, though nothing particularly stood out in terms of innovation.\n[2020-12-01T13:34:30] Chen Lixin: I'm glad you found value in our case studies. We've invested heavily in ensuring our support and SLAs are top notch. Let’s discuss how we can model an advantageous pricing structure for CloudLink Designer and OptiPower Max for you. We're offering a 15% discount on CloudLink Designer when purchased in volume – which I believe fits your scale. As for OptiPower Max, there's a 10% discount we'd like to extend."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same discounts for both calls: initial discussion – 10% on PulseSim Pro and 15% on CloudLink Designer; negotiation call – 15% volume discount on CloudLink Designer and 10% on OptiPower Max. The reference lists exactly the same four discount commitments across the two calls, covering all requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-dd885a69cbcb6939",
+      "question": "What concern did Rachel Davis raise about AutoElite's service center pricing, and how did Nadia respond?",
+      "gold_answer": "Rachel said she'd heard mixed feedback that service center pricing was higher than competitors; Nadia acknowledged it, said they balance pricing with premium service standards, and emphasized delivering exceptional value rather than being cheapest.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLpqIAG",
+        "b2c:a05Ws000005SMEBIA4",
+        "b2c:a05Ws000005SOHUIA4",
+        "b2c:a05Ws000005SOSqIAO",
+        "b2c:a05Ws000005SQ0qIAG",
+        "b2c:a05Ws000005SQUZIA4",
+        "b2c:a05Ws000005SR47IAG",
+        "b2c:a05Ws000005SRYlIAO",
+        "b2c:a05Ws000005SSUrIAO",
+        "b2c:a05Ws000005SShfIAG",
+        "b2c:a05Ws000005SUoKIAW",
+        "b2c:a05Ws000005SVm4IAG",
+        "b2c:a05Ws000005SWYNIA4",
+        "b2c:a05Ws000005SX1PIAW",
+        "b2c:a05Ws000005SYFDIA4",
+        "b2c:a05Ws000005SYzyIAG",
+        "b2c:a05Ws000005SZG6IAO",
+        "b2c:a05Ws000005SZw2IAG",
+        "b2c:a05Ws000005SaH3IAK",
+        "b2c:a05Ws000005SaH4IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves Nadia Gonzalez with Rachel Davis (b2c:a05Ws000005SLpqIAG). In it Rachel raises service center pricing concerns twice, and Nadia responds each time; the complete answer aggregates both exchanges.",
+        "answers": [
+          {
+            "answer": "Rachel Davis raised concerns about AutoElite's service center pricing twice. First, she said she'd heard concerns about the maintenance plan's pricing; Nadia responded that the plan covers scheduled services with factory-trained technicians using genuine parts, acknowledged some might view pricing as higher, but argued it is competitively priced given the caliber of expertise, quality care, and convenience. Later, Rachel said she'd heard mixed feedback about service center pricing compared to others and asked if there was room for improvement; Nadia called it valid feedback, said AutoElite continually balances pricing with premium service standards and uses customer feedback to make adjustments, and acknowledged they may not always be the cheapest option but focus on delivering exceptional value for the investment.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SLpqIAG",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2024-03-21T16:47:56] Rachel Davis: Can you explain a bit more about those? Especially the maintenance plan—I've heard concerns about the pricing."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SLpqIAG",
+                "line_start": 19,
+                "line_end": 20,
+                "quote": "[2024-03-21T16:49:28] Rachel Davis: Actually, I've heard some mixed feedback about service center pricing compared to others. Do you think there's room for improvement there?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Rachel Davis, Nadia, and the topic of AutoElite's service center pricing. Only one call features Nadia (Nadia Gonzalez) speaking with Rachel Davis: call b2c:a05Ws000005SLpqIAG. Within that call, Rachel raises the service center pricing concern at line 19, and Nadia responds at line 20. No other call involves Nadia, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Rachel Davis raised the concern that she had heard mixed feedback about AutoElite's service center pricing compared to other providers, and asked whether there was room for improvement. Nadia responded by acknowledging it as valid feedback, stating that AutoElite is always looking to balance pricing with their premium service standards, that customer feedback like Rachel's is important for making necessary adjustments, and that while they might not always be the cheapest option, they focus on delivering exceptional value for the customer's investment.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SLpqIAG",
+                "line_start": 19,
+                "line_end": 21,
+                "quote": "[2024-03-21T16:49:28] Rachel Davis: Actually, I've heard some mixed feedback about service center pricing compared to others. Do you think there's room for improvement there?\n[2024-03-21T16:49:49] Nadia Gonzalez: That's valid feedback. We're always looking to balance pricing with our premium service standards and customer feedback like yours is important for us to make necessary adjustments. While we might not always be the cheapest option, we focus on delivering exceptional value for your investment."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify Rachel Davis's concern as hearing mixed feedback about AutoElite's service center pricing compared to other providers and asking whether there was room for improvement. Both describe Nadia's response as acknowledging the feedback as valid, stating AutoElite balances pricing with premium service standards, using customer feedback for adjustments, and emphasizing exceptional value over being the cheapest. Answer A includes an additional earlier exchange about maintenance plan pricing, which is extra but does not contradict or substitute the requested concern. The reference captures the same core concern (mixed feedback that pricing was higher than competitors) and Nadia's key response points (acknowledgment, balancing pricing with premium standards, delivering exceptional value rather than being cheapest). All requested facts are present in both answers and the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
