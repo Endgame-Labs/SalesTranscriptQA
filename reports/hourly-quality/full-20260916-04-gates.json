@@ -1,0 +1,355 @@
+[
+  {
+    "question_id": "b2b-single_call-cd852addafab98e7",
+    "question": "What deployment timeline did Rashid quote Natalia Kowalski at DataStream Analytics for the CloudLink Designer?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Deployment timeline quoted by Rashid to Natalia Kowalski at DataStream Analytics for CloudLink Designer",
+        "relationship": "single lookup",
+        "reason": "One coherent fact lookup about a quoted deployment timeline in a sales context; software deployment is plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for a specific deployment timeline quoted by Rashid to Natalia at DataStream Analytics for CloudLink Designer. The dialogue at 14:15:50 states '6 to 8 weeks for full deployment, depending on specific requirements,' which matches the gold answer exactly. The question is naturally worded, scoped to a clear business situation (integration timeline discussion), and a rep/AM would plausibly want to recall this. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Rashid Hadi explicitly states 'an estimated timeline of about 6 to 8 weeks for full deployment, depending on specific requirements' for the CloudLink Designer, which directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Rashid Hadi's exact quote giving the 6-to-8-week full-deployment timeline for CloudLink Designer, contingent on specific requirements. The context metadata confirms the call involves Natalia Kowalski at DataStream Analytics. All factual elements of the gold_answer (6 to 8 weeks, full deployment, depending on specific requirements) are present in the cited dialogue."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-09a7f774749f748e",
+    "question": "What concern did Hassan Mahmoud raise about competitors during the SkyLevel Systems discussion, and how did Anwar respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitive concern Hassan Mahmoud raised during the SkyLevel Systems discussion and Anwar's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent objection-and-response request about the same conversation."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive concern raised by the customer (Hassan Mahmoud) and the rep's (Anwar) rebuttal during the SkyLevel Systems call. The dialogue at 14:04:30 shows Hassan noting competitors offer more flexibility during initial setup, and at 14:05:00 Anwar responds that TechPulse's implementation is straightforward with robust support and seamless integration into existing workflows. The gold answer captures both parts precisely without extras. The question is naturally phrased, adequately scoped to the account and discussion topic, and a rep/AM would plausibly want to recall how a competitive objection was handled. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage only contains Hassan Mahmoud's statement that 'some competitors offer more flexibility during initial setup' and his question about how TechPulse handles implementation. It does not include any response from Anwar. The answer_claim asserts that 'Anwar says implementation is straightforward with robust support and seamless integration,' but no such dialogue from Anwar appears in the cited quote. A question does not establish its answer, and no adjacent uncited line may be assumed to supply the missing fact."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains two factual claims: (1) Hassan noted competitors offer more flexibility during initial setup, and (2) Anwar responded that TechPulse's implementation is straightforward with robust support and seamless integration into existing workflows. The sole cited evidence (index 0) supports claim (1) via Hassan's direct quote, but provides no dialogue or metadata from Anwar to support claim (2). Since the combined supplied citations do not cover every factual claim in the gold_answer, the answer is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-bac00bb1b3ac3fb5",
+    "question": "For Innovative Robotics, what main shortcomings with their current EDA provider did Chin Wei describe in the initial discussion, and what did Dariusz later confirm about whether the proposal pricing covers future upgrades?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Pain points Chin Wei described about the current EDA provider in the initial call, and (2) whether proposal pricing covers future upgrades, confirmed by Dariusz in a later call.",
+        "relationship": "Two independent fact lookups (competitive pain points vs. a commercial pricing-scope term) joined only by the same account.",
+        "reason": "The shortcomings discussion and the pricing-coverage confirmation address different business issues; being about Innovative Robotics across two calls is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall pain points from the initial discovery call and a pricing confirmation from a later call. The 2020 call (initial discussion) has Chin Wei citing lack of flexibility and difficulty integrating new features/technologies with the current provider. The 2024 call has Dariusz confirming proposal pricing includes future enhancements at no additional cost during the coverage plan. Each source contributes an exclusive requested fact; the answer matches both sources precisely with no unasked extras."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Chin Wei explicitly states they've been 'struggling a bit with flexibility' with their current provider, and that 'it's about integrating new features and technologies' and that 'Our current solution doesn't seem to keep up with our pace of innovation.' This directly supports the answer_claim about lack of flexibility, not keeping up with pace of innovation, and difficulty integrating new features/technologies."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Chin Wei asking whether the proposal pricing includes future upgrades, and Dariusz responding 'Yes, it does. The total for all included products like the PulseSim Pro and AI Cirku-Tech guarantees future enhancements at no additional cost during your coverage plan.' This directly supports the answer_claim that Dariusz confirmed pricing includes future enhancements at no additional cost during the coverage plan."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Chin Wei cited lack of flexibility and difficulty integrating new features/technologies, which is fully supported by evidence index 0. It also states Dariusz confirmed the proposal pricing includes future enhancements at no additional cost during the coverage plan, which is fully supported by evidence index 1. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-5da08efcd915d3c8",
+    "question": "Across the TrueNorth Technologies opportunity, how did Priya respond to Oluwaseun's concern about product roadmap and innovation \u2014 first when he raised the competitor's dynamic roadmap, and later at the kick-off when he asked about avoiding outdated tools?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Priya responded to Oluwaseun's product roadmap/innovation concerns at two points: when he raised the competitor's dynamic roadmap, and at the kick-off when he asked about avoiding outdated tools",
+        "relationship": "Same business issue (concern about product roadmap/innovation) raised and addressed across two calls on the same opportunity",
+        "reason": "Both parts concern the same objection theme \u2014 roadmap and innovation \u2014 with the responses forming a coherent objection-and-response thread across the two calls, not two independent fact lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sw2aIAC",
+                "fact": "Priya said TechPulse focuses on stable, strategically valuable advancements and relies on strong SLAs for reliability comparable to or better than competitors.",
+                "why_other_call_cannot_supply_it": "The kick-off call does not mention stability, strategic value, or SLA-based reliability comparison; it only discusses regular updates and innovations."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0pJIAS",
+                "fact": "Priya said TechPulse regularly updates solutions like AI Cirku-Tech, with a roadmap of regular updates and innovations.",
+                "why_other_call_cannot_supply_it": "The first call does not mention regular updates, a roadmap, or AI Cirku-Tech specifically in the context of future advancements; it focuses on stability and SLAs."
+              }
+            ],
+            "reason": "The question explicitly asks for Priya's responses at two distinct moments: first when the competitor's dynamic roadmap was raised, and later at kick-off about avoiding outdated tools. The two calls provide substantively different answers\u2014one emphasizing stability and SLAs, the other emphasizing regular updates and a roadmap\u2014so both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object"
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sw2aIAC",
+                  "fact": "Priya said TechPulse focuses on stable, strategically valuable advancements and relies on strong SLAs for reliability comparable to or better than competitors.",
+                  "why_other_call_cannot_supply_it": "The kick-off call does not mention stability, strategic value, or SLA-based reliability comparison; it only discusses regular updates and innovations."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0pJIAS",
+                  "fact": "Priya said TechPulse regularly updates solutions like AI Cirku-Tech, with a roadmap of regular updates and innovations.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention regular updates, a roadmap, or AI Cirku-Tech specifically in the context of future advancements; it focuses on stability and SLAs."
+                }
+              ],
+              "reason": "The question explicitly asks for Priya's responses at two distinct moments: first when the competitor's dynamic roadmap was raised, and later at kick-off about avoiding outdated tools. The two calls provide substantively different answers\u2014one emphasizing stability and SLAs, the other emphasizing regular updates and a roadmap\u2014so both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sw2aIAC",
+                "fact": "Priya said TechPulse focuses on stable, strategically valuable advancements and relies on strong SLAs for reliability comparable to or better than competitors",
+                "why_other_call_cannot_supply_it": "The kick-off call does not mention the competitor's dynamic roadmap or this stability/SLA framing; it only addresses stagnation risk with a roadmap of regular updates."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0pJIAS",
+                "fact": "At kick-off, Priya said TechPulse regularly updates solutions like AI Cirku-Tech, with a roadmap of regular updates and innovations",
+                "why_other_call_cannot_supply_it": "The earlier proposal call contains no discussion of avoiding outdated tools or the roadmap of regular updates; it only addresses the competitor comparison."
+              }
+            ],
+            "reason": "The question explicitly requests Priya's responses to two distinct concerns raised in separate conversations: the competitor's dynamic roadmap (answered with stability/SLA framing) and the risk of outdated tools (answered with a roadmap of regular updates). Each response appears only in its respective call, so both sources are needed."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sw2aIAC",
+                  "fact": "Priya said TechPulse focuses on stable, strategically valuable advancements and relies on strong SLAs for reliability comparable to or better than competitors",
+                  "why_other_call_cannot_supply_it": "The kick-off call does not mention the competitor's dynamic roadmap or this stability/SLA framing; it only addresses stagnation risk with a roadmap of regular updates."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0pJIAS",
+                  "fact": "At kick-off, Priya said TechPulse regularly updates solutions like AI Cirku-Tech, with a roadmap of regular updates and innovations",
+                  "why_other_call_cannot_supply_it": "The earlier proposal call contains no discussion of avoiding outdated tools or the roadmap of regular updates; it only addresses the competitor comparison."
+                }
+              ],
+              "reason": "The question explicitly requests Priya's responses to two distinct concerns raised in separate conversations: the competitor's dynamic roadmap (answered with stability/SLA framing) and the risk of outdated tools (answered with a roadmap of regular updates). Each response appears only in its respective call, so both sources are needed."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks how a rep addressed a customer's roadmap/innovation concern across two calls in the same opportunity. Call 1 (2021-03-14) contains Oluwaseun raising the competitor's dynamic roadmap and Priya responding about stable, strategically valuable advancements and strong SLAs comparable or superior to competitors. Call 2 (2021-06-04, kick-off) contains Oluwaseun asking about avoiding outdated tools and Priya responding about regular updates to AI Cirku-Tech and a roadmap of regular updates and innovations. Each source contributes an exclusive requested fact. The gold answer accurately reflects both exchanges without unasked extras. Wording is natural, scope is clear (TrueNorth opportunity, named participants), and no artificial locator preamble or answer leakage is present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Priya Choudhury on 2021-03-14 explicitly states that TechPulse focuses on 'stable and strategically valuable' advancements and that 'strong SLAs provide reliability... comparable if not superior to our competitors.' This directly supports the answer_claim about stable, strategically valuable advancements and strong SLAs providing reliability comparable to or better than competitors."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage from Priya Choudhury on 2021-06-04 explicitly states 'We regularly update our solutions like AI Cirku-Tech to ensure they remain cutting-edge' and 'Our roadmap includes regular updates and innovations.' This directly supports the answer_claim about regularly updating solutions like AI Cirku-Tech and a roadmap of regular updates and innovations."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 supports the first part: Priya's response about stable, strategically valuable advancements and strong SLAs providing reliability comparable to or better than competitors. Evidence index 1 supports the second part: at kick-off, Priya said TechPulse regularly updates solutions like AI Cirku-Tech with a roadmap of regular updates and innovations. The context metadata confirms both calls are tied to the TrueNorth Technologies opportunity (account_name: TrueNorth Technologies) and contact Oluwaseun Olowo, matching the question's framing. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-fae06b1560c21c27",
+    "question": "What is the total price of Mia Adams' quote for the 2023 Mercedes-Benz E-Class, including the maintenance plan and extended warranty?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total price of Mia Adams' quote for a 2023 Mercedes-Benz E-Class, including maintenance plan and extended warranty",
+        "relationship": "single coherent quote breakdown",
+        "reason": "One commercial quote lookup combining base price with add-ons for the same vehicle quote; plausible sales language with no mismatched domain terms."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the total quote price broken into three components (vehicle, maintenance plan, extended warranty) for a named customer. The single call transcript contains all three figures ($65,999.99 + $1,999.99 + $1,299.99 = $69,299.97) stated by the rep. The answer matches exactly with no extra or missing facts. The question is naturally phrased, adequately scoped by customer name and vehicle, and a rep/AM would plausibly need to confirm quote totals. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Hiroshi Ito explicitly states the 2023 Mercedes-Benz E-Class is priced at $65,999.99, the comprehensive maintenance plan at $1,999.99, and the extended warranty at $1,299.99. These three figures match the answer_claim exactly. The context metadata confirms the account is Mia Adams and the opportunity is 'Luxury Vehicle Purchase and Maintenance Deal,' tying the quote to the correct customer."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states a total of $69,299.97 broken down as $65,999.99 (E-Class) + $1,999.99 (maintenance plan) + $1,299.99 (extended warranty). The cited evidence provides all three component prices verbatim. The arithmetic sum ($65,999.99 + $1,999.99 + $1,299.99 = $69,299.97) is correct. The metadata confirms the account belongs to Mia Adams and the opportunity relates to a luxury vehicle purchase and maintenance deal, consistent with the question's subject. All factual claims in the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-abdadb0353c386a5",
+    "question": "What did Luis commit to sending Olivia after their Toyota Camry Hybrid discussion, and what did it include?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Luis committed to send Olivia after the Toyota Camry Hybrid discussion and what it included",
+        "relationship": "single coherent request: one follow-up commitment and its contents",
+        "reason": "A commitment to send something and its contents describe one follow-up item, a natural sales next step."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Luis committed to sending Olivia and what it included. The transcript at 10:08:00 shows Luis offering to email a detailed quote including the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages, and Olivia accepting. The gold answer matches exactly. The question is naturally phrased, scoped to a specific customer interaction, and a sales rep would plausibly want to confirm follow-up commitments. Single-call set, so both_sources_required is true by rule.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Luis Oliveira stating: 'I'd be happy to email you a detailed quote including the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages.' Olivia confirms with 'Yes, please.' This fully supports the claim that Luis committed to sending a detailed quote with those specific components."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states Luis committed to sending 'A detailed quote including the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages.' The cited evidence at index 0 contains Luis's exact words offering to email a detailed quote with all four listed components (2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages), and Olivia's acceptance confirms the commitment. Every factual element in the gold answer is directly supported by the supplied citation."
+      }
+    }
+  }
+]

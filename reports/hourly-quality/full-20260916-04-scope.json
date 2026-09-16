@@ -1,0 +1,415 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "f98d15a2325890d4cbbaa02db78717b48b806cafa5fb263701dd20c35d90d430",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.4949579,
+  "results": [
+    {
+      "question_id": "b2b-single_call-cd852addafab98e7",
+      "question": "What deployment timeline did Rashid quote Natalia Kowalski at DataStream Analytics for the CloudLink Designer?",
+      "gold_answer": "6 to 8 weeks for full deployment, depending on specific requirements.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StCkIAK",
+        "b2b:a05Wt000003StClIAK",
+        "b2b:a05Wt000003SuiQIAS",
+        "b2b:a05Wt000003SvrVIAS",
+        "b2b:a05Wt000003Swc8IAC",
+        "b2b:a05Wt000003Swc9IAC",
+        "b2b:a05Wt000003Syj0IAC",
+        "b2b:a05Wt000003SzdIIAS",
+        "b2b:a05Wt000003SzdJIAS",
+        "b2b:a05Wt000003SzgbIAC",
+        "b2b:a05Wt000003SzreIAC",
+        "b2b:a05Wt000003SzrfIAC",
+        "b2b:a05Wt000003SzrgIAC",
+        "b2b:a05Wt000003SzrhIAC",
+        "b2b:a05Wt000003T036IAC",
+        "b2b:a05Wt000003T0KmIAK",
+        "b2b:a05Wt000003T10uIAC",
+        "b2b:a05Wt000003T18mIAC",
+        "b2b:a05Wt000003T1WxIAK",
+        "b2b:a05Wt000003T1dVIAS",
+        "b2b:a05Wt000003T1dWIAS",
+        "b2b:a05Wt000003T2BTIA0",
+        "b2b:a05Wt000003T2KxIAK",
+        "b2b:a05Wt000003T2hfIAC",
+        "b2b:a05Wt000003T2w6IAC",
+        "b2b:a05Wt000003T2zSIAS",
+        "b2b:a05Wt000003T2zTIAS",
+        "b2b:a05Wt000003T3qSIAS",
+        "b2b:a05Wt000003T4HyIAK",
+        "b2b:a05Wt000003T4L8IAK",
+        "b2b:a05Wt000003T4OMIA0",
+        "b2b:a05Wt000003T4T9IAK",
+        "b2b:a05Wt000003T4bCIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Rashid Hadi speaking with Natalia Kowalski about the CloudLink Designer deployment timeline, where he quotes an estimated 6 to 8 weeks for full deployment.",
+        "answers": [
+          {
+            "answer": "Rashid Hadi quoted Natalia Kowalski an estimated timeline of about 6 to 8 weeks for full deployment of the CloudLink Designer, depending on specific requirements, with his team working closely with hers to ensure seamless integration.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Swc9IAC",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2020-11-09T14:15:35] Natalia Kowalski: Absolutely, I've reviewed some of the material you sent over. I'm particularly interested in understanding the integration process with our existing systems and timelines involved.\n[2020-11-09T14:15:50] Rashid Hadi: Sure, the integration process is designed to be as smooth as possible. For the CloudLink Designer, we're looking at an estimated timeline of about 6 to 8 weeks for full deployment, depending on specific requirements. Our team will work closely with yours to ensure a seamless integration."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies all key identifiers: salesperson Rashid (Hadi), customer Natalia Kowalski, account DataStream Analytics, and product CloudLink Designer. Only one call matches all these criteria: b2b:a05Wt000003Swc9IAC (2020-11-09), where Rashid Hadi explicitly quotes a deployment timeline for CloudLink Designer to Natalia Kowalski. Other calls involving Rashid and Natalia (b2b:a05Wt000003T0KmIAK, b2b:a05Wt000003T1dWIAS) mention CloudLink Designer but do not quote a deployment timeline. The 2023 call with Rashid (b2b:a05Wt000003SuiQIAS) is with Fatemeh Modaresi, not Natalia Kowalski.",
+        "answers": [
+          {
+            "answer": "Rashid Hadi quoted Natalia Kowalski an estimated deployment timeline of about 6 to 8 weeks for full deployment of the CloudLink Designer, depending on specific requirements, with his team working closely with hers to ensure seamless integration.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Swc9IAC",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-11-09T14:15:50] Rashid Hadi: Sure, the integration process is designed to be as smooth as possible. For the CloudLink Designer, we're looking at an estimated timeline of about 6 to 8 weeks for full deployment, depending on specific requirements. Our team will work closely with yours to ensure a seamless integration."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same deployment timeline: approximately 6 to 8 weeks for full deployment of the CloudLink Designer, depending on specific requirements, with teams working closely together. The reference confirms the core requested fact of '6 to 8 weeks for full deployment, depending on specific requirements.' The additional detail about teams working closely for seamless integration is extra but does not conflict. All requested facts are covered."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-5da08efcd915d3c8",
+      "question": "Across the TrueNorth Technologies opportunity, how did Priya respond to Oluwaseun's concern about product roadmap and innovation — first when he raised the competitor's dynamic roadmap, and later at the kick-off when he asked about avoiding outdated tools?",
+      "gold_answer": "First, Priya said TechPulse focuses on stable, strategically valuable advancements and relies on strong SLAs for reliability comparable to or better than competitors. At kick-off, she said TechPulse regularly updates solutions like AI Cirku-Tech, with a roadmap of regular updates and innovations.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkSIAS",
+        "b2b:a05Wt000003SrkTIAS",
+        "b2b:a05Wt000003SsrnIAC",
+        "b2b:a05Wt000003StcaIAC",
+        "b2b:a05Wt000003Su44IAC",
+        "b2b:a05Wt000003SuIXIA0",
+        "b2b:a05Wt000003SuIYIA0",
+        "b2b:a05Wt000003SuQeIAK",
+        "b2b:a05Wt000003SuiJIAS",
+        "b2b:a05Wt000003Sv4yIAC",
+        "b2b:a05Wt000003SvpgIAC",
+        "b2b:a05Wt000003Sw2aIAC",
+        "b2b:a05Wt000003Sw2bIAC",
+        "b2b:a05Wt000003Sw7QIAS",
+        "b2b:a05Wt000003SwSRIA0",
+        "b2b:a05Wt000003Sx0EIAS",
+        "b2b:a05Wt000003SxBXIA0",
+        "b2b:a05Wt000003SxBYIA0",
+        "b2b:a05Wt000003SxBZIA0",
+        "b2b:a05Wt000003SyHMIA0",
+        "b2b:a05Wt000003SyM8IAK",
+        "b2b:a05Wt000003SyfUIAS",
+        "b2b:a05Wt000003SzADIA0",
+        "b2b:a05Wt000003SzBkIAK",
+        "b2b:a05Wt000003SzJmIAK",
+        "b2b:a05Wt000003SzTUIA0",
+        "b2b:a05Wt000003SzWgIAK",
+        "b2b:a05Wt000003SzeoIAC",
+        "b2b:a05Wt000003SzjcIAC",
+        "b2b:a05Wt000003T07mIAC",
+        "b2b:a05Wt000003T07nIAC",
+        "b2b:a05Wt000003T0CcIAK",
+        "b2b:a05Wt000003T0MJIA0",
+        "b2b:a05Wt000003T0XZIA0",
+        "b2b:a05Wt000003T0ZBIA0",
+        "b2b:a05Wt000003T0anIAC",
+        "b2b:a05Wt000003T0cPIAS",
+        "b2b:a05Wt000003T0e1IAC",
+        "b2b:a05Wt000003T0fdIAC",
+        "b2b:a05Wt000003T0hFIAS",
+        "b2b:a05Wt000003T0irIAC",
+        "b2b:a05Wt000003T0kTIAS",
+        "b2b:a05Wt000003T0m5IAC",
+        "b2b:a05Wt000003T0nhIAC",
+        "b2b:a05Wt000003T0pJIAS",
+        "b2b:a05Wt000003T0qvIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Priya Choudhury and Oluwaseun Olowo appear together on the 'Integrated AI-Powered Solutions for TrueNorth' opportunity. The competitor's dynamic roadmap concern occurs in the 2021-03-14 proposal-feedback call (line 11), and the outdated-tools question occurs in the 2021-06-04 kick-off call (line 7). Both events are uniquely identifiable, so the aggregate answer is determinate.",
+        "answers": [
+          {
+            "answer": "First, when Oluwaseun noted that partners' feedback pointed to the competitor's dynamic product roadmap attracting innovation-driven clients, Priya responded that while TechPulse focuses on innovation, it ensures its advancements are stable and strategically valuable to partners, and that its strong SLAs provide reliability many clients appreciate — comparable if not superior to competitors. Later, at the kick-off meeting after the contract was signed, when Oluwaseun asked how TechPulse plans to address potential stagnation or the risk of outdated tools, Priya answered that TechPulse continuously invests in future advancements, regularly updates solutions like AI Cirku-Tech to keep them cutting-edge and address new challenges, and that their roadmap includes regular updates and innovations so customers are always ahead.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sw2aIAC",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2021-03-14T11:22:45] Oluwaseun Olowo: Impressive! Feedback from our partners also pointed to your competitor’s dynamic product roadmap attracting innovation-driven clients. How does TechPulse compare?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0pJIAS",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2021-06-04T15:02:02] Oluwaseun Olowo: That’s reassuring, Priya. And regarding future advancements, we're also interested in how TechPulse is planning to address potential stagnation or the risk of outdated tools."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Priya responding to Oluwaseun's concern about product roadmap and innovation across the TrueNorth Technologies opportunity, with two explicit events: (1) when he raised the competitor's dynamic roadmap, and (2) at the kick-off when he asked about avoiding outdated tools. Only one call matches event 1 (b2b:a05Wt000003Sw2aIAC, 2021-03-14, where Oluwaseun mentions 'your competitor's dynamic product roadmap attracting innovation-driven clients' and Priya responds), and only one call matches event 2 (b2b:a05Wt000003T0pJIAS, 2021-06-04, explicitly a kick-off meeting where Oluwaseun asks about 'potential stagnation or the risk of outdated tools' and Priya responds). Both involve Priya Choudhury and Oluwaseun Olowo under the 'Integrated AI-Powered Solutions for TrueNorth' opportunity.",
+        "answers": [
+          {
+            "answer": "First, when Oluwaseun raised the competitor's dynamic product roadmap (noting that feedback from partners pointed to the competitor's dynamic roadmap attracting innovation-driven clients), Priya responded by saying that while TechPulse focuses on innovation, they also ensure their advancements are stable and strategically valuable to partners, and that beyond features, their strong SLAs provide reliability that many clients appreciate, comparable if not superior to competitors. Later, at the kick-off meeting, when Oluwaseun asked how TechPulse is planning to address potential stagnation or the risk of outdated tools, Priya responded that TechPulse continuously invests in future advancements, regularly updates solutions like AI Cirku-Tech to ensure they remain cutting-edge and address new challenges as they arise, and that their roadmap includes regular updates and innovations so TrueNorth is always ahead.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sw2aIAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-03-14T11:22:45] Oluwaseun Olowo: Impressive! Feedback from our partners also pointed to your competitor’s dynamic product roadmap attracting innovation-driven clients. How does TechPulse compare?\n[2021-03-14T11:23:00] Priya Choudhury: Great question. While we focus on innovation, we also ensure that our advancements are stable and strategically valuable to our partners. Beyond features, our strong SLAs provide reliability that many clients appreciate, comparable if not superior to our competitors."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0pJIAS",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2021-06-04T15:02:02] Oluwaseun Olowo: That’s reassuring, Priya. And regarding future advancements, we're also interested in how TechPulse is planning to address potential stagnation or the risk of outdated tools.\n[2021-06-04T15:02:25] Priya Choudhury: Great question. TechPulse continuously invests in future advancements. We regularly update our solutions like AI Cirku-Tech to ensure they remain cutting-edge, addressing new challenges as they arise. Our roadmap includes regular updates and innovations, so you're always ahead."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers describe the same two-part response from Priya. First, when Oluwaseun raised the competitor's dynamic roadmap, Priya emphasized that TechPulse focuses on innovation while ensuring advancements are stable and strategically valuable, and that strong SLAs provide reliability comparable or superior to competitors. Second, at the kick-off, when Oluwaseun asked about avoiding outdated tools, Priya stated TechPulse continuously invests in future advancements, regularly updates solutions like AI Cirku-Tech to keep them cutting-edge, and that the roadmap includes regular updates and innovations. The two answers are substantively identical in all requested facts. The reference covers both commitments: (1) stable, strategically valuable advancements and strong SLAs for reliability comparable to or better than competitors, and (2) regular updates to solutions like AI Cirku-Tech with a roadmap of regular updates and innovations. All requested facts are present in the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-fae06b1560c21c27",
+      "question": "What is the total price of Mia Adams' quote for the 2023 Mercedes-Benz E-Class, including the maintenance plan and extended warranty?",
+      "gold_answer": "$69,299.97 total: $65,999.99 for the E-Class, $1,999.99 for the maintenance plan, and $1,299.99 for the extended warranty.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SPP2IAO",
+        "b2c:a05Ws000005SPVaIAO",
+        "b2c:a05Ws000005SRAlIAO",
+        "b2c:a05Ws000005SSDGIA4",
+        "b2c:a05Ws000005SSQEIA4",
+        "b2c:a05Ws000005SSjRIAW",
+        "b2c:a05Ws000005STdzIAG",
+        "b2c:a05Ws000005SUznIAG",
+        "b2c:a05Ws000005SWBqIAO",
+        "b2c:a05Ws000005SWQUIA4",
+        "b2c:a05Ws000005SWouIAG",
+        "b2c:a05Ws000005SWovIAG",
+        "b2c:a05Ws000005SXMTIA4",
+        "b2c:a05Ws000005SXMUIA4",
+        "b2c:a05Ws000005SY0uIAG",
+        "b2c:a05Ws000005SY0vIAG",
+        "b2c:a05Ws000005SYtiIAG",
+        "b2c:a05Ws000005SZOIIA4",
+        "b2c:a05Ws000005SanRIAS",
+        "b2c:a05Ws000005ScSaIAK",
+        "b2c:a05Ws000005ScsMIAS",
+        "b2c:a05Ws000005ScxCIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (b2c:a05Ws000005SPP2IAO, 2020-07-29, Hiroshi Ito) quotes pricing for the 2023 Mercedes-Benz E-Class with the maintenance plan and extended warranty; no other call provides a competing quote for that vehicle.",
+        "answers": [
+          {
+            "answer": "The total is $69,299.97: the 2023 Mercedes-Benz E-Class is priced at $65,999.99, plus the comprehensive maintenance plan at $1,999.99 and the extended warranty at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPP2IAO",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-07-29T10:49:35] Hiroshi Ito: Yes, we aim for transparent pricing. For the 2023 Mercedes-Benz E-Class, it’s priced at $65,999.99, and with the comprehensive maintenance plan at $1,999.99 plus the extended warranty at $1,299.99, it ensures complete peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for the total price of Mia Adams' quote for the 2023 Mercedes-Benz E-Class including the maintenance plan and extended warranty. Only one call (b2c:a05Ws000005SPP2IAO) provides specific pricing for the 2023 Mercedes-Benz E-Class with both the maintenance plan and extended warranty. In that call, Hiroshi Ito states the E-Class is $65,999.99, the maintenance plan is $1,999.99, and the extended warranty is $1,299.99, totaling $69,299.97.",
+        "answers": [
+          {
+            "answer": "The total price of Mia Adams' quote for the 2023 Mercedes-Benz E-Class, including the maintenance plan and extended warranty, is $69,299.97. This breaks down as: the 2023 Mercedes-Benz E-Class at $65,999.99, the comprehensive maintenance plan at $1,999.99, and the extended warranty at $1,299.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPP2IAO",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2020-07-29T10:49:35] Hiroshi Ito: Yes, we aim for transparent pricing. For the 2023 Mercedes-Benz E-Class, it’s priced at $65,999.99, and with the comprehensive maintenance plan at $1,999.99 plus the extended warranty at $1,299.99, it ensures complete peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same total price of $69,299.97 and provide the identical breakdown: $65,999.99 for the 2023 Mercedes-Benz E-Class, $1,999.99 for the maintenance plan, and $1,299.99 for the extended warranty. The reference also covers all requested facts: the total price and the component prices for the vehicle, maintenance plan, and extended warranty. All figures and commitments match across both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-abdadb0353c386a5",
+      "question": "What did Luis commit to sending Olivia after their Toyota Camry Hybrid discussion, and what did it include?",
+      "gold_answer": "A detailed quote including the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMfiIAG",
+        "b2c:a05Ws000005SNF8IAO",
+        "b2c:a05Ws000005SOBFIA4",
+        "b2c:a05Ws000005SOBGIA4",
+        "b2c:a05Ws000005SOiwIAG",
+        "b2c:a05Ws000005SOtaIAG",
+        "b2c:a05Ws000005SPbuIAG",
+        "b2c:a05Ws000005SRlvIAG",
+        "b2c:a05Ws000005SSV4IAO",
+        "b2c:a05Ws000005SSgLIAW",
+        "b2c:a05Ws000005SShzIAG",
+        "b2c:a05Ws000005SSzaIAG",
+        "b2c:a05Ws000005STR8IAO",
+        "b2c:a05Ws000005STgzIAG",
+        "b2c:a05Ws000005SULNIA4",
+        "b2c:a05Ws000005SUtEIAW",
+        "b2c:a05Ws000005SWFMIA4",
+        "b2c:a05Ws000005SWS4IAO",
+        "b2c:a05Ws000005SWVKIA4",
+        "b2c:a05Ws000005SWosIAG",
+        "b2c:a05Ws000005SWotIAG",
+        "b2c:a05Ws000005SY90IAG",
+        "b2c:a05Ws000005SaCNIA0",
+        "b2c:a05Ws000005SbMuIAK",
+        "b2c:a05Ws000005ScE4IAK",
+        "b2c:a05Ws000005ScadIAC",
+        "b2c:a05Ws000005ScdtIAC",
+        "b2c:a05Ws000005ScduIAC",
+        "b2c:a05Ws000005Sd0QIAS",
+        "b2c:a05Ws000005Sd0RIAS",
+        "b2c:a05Ws000005SdV0IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Luis Oliveira had four calls with Olivia involving Toyota Camry Hybrid discussions, and in each he committed to sending something different: a detailed quote (2023-07-11), an email with discussion details (2023-06-14), customer testimonials (2023-06-20), and a detailed contract draft (2023-07-20). The question does not specify which call, so these are competing complete answers.",
+        "answers": [
+          {
+            "answer": "Luis committed to emailing Olivia a detailed quote, which included the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOiwIAG",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2023-07-11T10:08:00] Luis Oliveira: We look forward to showing them to you. So, moving forward, I’d be happy to email you a detailed quote including the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages. Does that sound good?\n[2023-07-11T10:08:25] Olivia Turner: Yes, please. That would really help as I consider my options."
+              }
+            ]
+          },
+          {
+            "answer": "Luis committed to sending Olivia an email with the details for setting up a discovery meeting, including additional information on the topics they discussed (the Camry Hybrid's tech, post-purchase support, and flexible financing).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ScdtIAC",
+                "line_start": 17,
+                "line_end": 20,
+                "quote": "[2023-06-14T13:19:20] Olivia Turner: That sounds perfect. How about we touch base via email to set that up?\n[2023-06-14T13:19:35] Luis Oliveira: Sure thing, I’ll send you an email with the details and some additional information on the topics we discussed. I look forward to exploring how we can meet your needs.\n[2023-06-14T13:19:45] Olivia Turner: Thank you, Luis. I appreciate the information and am looking forward to our next conversation."
+              }
+            ]
+          },
+          {
+            "answer": "Luis committed to forwarding customer testimonials to Olivia (and to explore extended warranty details), after their discussion of the Camry Hybrid's warranty, maintenance plan, and service quality.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ScduIAC",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-06-20T14:32:05] Olivia Turner: Good to know! I would appreciate seeing some of those testimonials—it helps to hear others' experiences."
+              },
+              {
+                "call_id": "b2c:a05Ws000005ScduIAC",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-06-20T14:33:22] Luis Oliveira: Absolutely, Olivia. Your feedback is invaluable. Now, let’s summarize our discussion: we'll explore the extended warranty details and look into some testimonials for you. Does that sound good?"
+              }
+            ]
+          },
+          {
+            "answer": "Luis committed to drafting and sending a detailed contract with all the terms they discussed (Camry Hybrid purchase, maintenance plan, extended warranty, Winter Protection Package, flexible financing) for Olivia to review.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWFMIA4",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2023-07-20T14:38:05] Luis Oliveira: I’m glad to hear you have that confidence in us. So, should we discuss the next steps? We can draft a detailed contract with all the terms we've discussed for you to review.\n[2023-07-20T14:38:30] Olivia Turner: Yes, that would be great. I’d like to see everything in writing and review it carefully."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Luis (Oliveira) and Olivia, and references their Toyota Camry Hybrid discussion. Among all calls, only call b2c:a05Ws000005SOiwIAG (2023-07-11) features Luis Oliveira speaking with Olivia about the Toyota Camry Hybrid and contains a specific commitment to send something. In that call, Luis commits to emailing a detailed quote. The other Luis calls (b2c:a05Ws000005ScdtIAC, b2c:a05Ws000005ScduIAC, b2c:a05Ws000005SWFMIA4) involve different commitments (email with discovery info, testimonials, contract draft) but the 2023-07-11 call is the one where Luis explicitly commits to sending a 'detailed quote' after a product demo discussion of the Toyota Camry Hybrid, which most directly matches 'their Toyota Camry Hybrid discussion.' The question asks what Luis committed to sending and what it included, and line 18 of that call provides the complete answer.",
+        "answers": [
+          {
+            "answer": "Luis committed to emailing Olivia a detailed quote. It included the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOiwIAG",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2023-07-11T10:08:00] Luis Oliveira: We look forward to showing them to you. So, moving forward, I’d be happy to email you a detailed quote including the 2022 Toyota Camry Hybrid, financing solutions, warranty, and protection packages. Does that sound good?\n[2023-07-11T10:08:25] Olivia Turner: Yes, please. That would really help as I consider my options."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
