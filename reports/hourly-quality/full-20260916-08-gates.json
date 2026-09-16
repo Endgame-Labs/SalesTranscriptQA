@@ -1,0 +1,466 @@
+[
+  {
+    "question_id": "b2b-single_call-10900589d6d1cb30",
+    "question": "What did Elena Popescu at BrightField Ventures say she's looking for in enhancements to OptiPower Manager, and what discovery meeting was scheduled?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Elena Popescu's stated requirements for OptiPower Manager enhancements and the discovery meeting scheduled to follow up on them",
+        "relationship": "requirement and the follow-up meeting addressing that same requirement",
+        "reason": "The discovery meeting is naturally the next step for the enhancement needs Elena raised, so both parts address one coherent sales issue rather than two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what enhancements Elena Popescu wants for OptiPower Manager and what meeting was scheduled\u2014both facts a rep would track. The dialogue confirms she wants 'speed and scalability' enhancements and agrees to a 'detailed discovery meeting' on the 22nd. The gold answer states exactly those two facts with no extras. Single-call question, so both_sources_required is set true. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Elena Popescu explicitly states: 'we're always on the lookout for enhancements, particularly in speed and scalability.' This directly supports the answer_claim that Elena says they look for enhancements particularly in speed and scalability."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Natalia Ivanova proposing 'a more detailed discovery meeting' and asking 'Would you be available to meet on the 22nd?' Elena Popescu responds 'Yes, that sounds good to me. Let's go ahead with that.' This directly supports the claim that Natalia proposes a discovery meeting on the 22nd and Elena agrees."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) She wants enhancements in speed and scalability \u2013 supported by evidence index 0 where Elena explicitly mentions 'enhancements, particularly in speed and scalability.' (2) A detailed discovery meeting was set for the 22nd \u2013 supported by evidence index 1 where Natalia proposes 'a more detailed discovery meeting' on the 22nd and Elena agrees. The context metadata confirms the contact is Elena Popescu at BrightField Ventures. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-17fe35a47a439dbc",
+    "question": "What price did Elena quote Sarah for the package, and what follow-up did they schedule?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price Elena quoted Sarah for the package and the follow-up they scheduled",
+        "relationship": "quote details and its resulting next step for the same deal",
+        "reason": "A single coherent request: the quoted price and the scheduled follow-up are part of the same sales interaction on the same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the quoted package price and the scheduled follow-up. The dialogue confirms Elena quoted $5889.88 for the package and proposed a follow-up session with her team on March 29th, which Sarah accepted. Both facts are present and accurate. The question is naturally phrased, adequately scoped to the Future Innovations / TechPulse conversation, and a rep would plausibly want to recall pricing and next-step commitments. Single-call set, so both_sources_required is true by rule.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Elena Petrova explicitly states the package is 'priced competitively at $5889.88 for this package,' directly supporting the answer_claim of $5889.88 as the quoted price."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Elena Petrova's quoted dialogue proposes setting up 'a next call with my team' and asks 'Would March 29th work for a follow-up session?' This supports the claim of a follow-up session with Elena's team on March 29th. While phrased as a question/proposal rather than a confirmed agreement, the gold_answer says 'a follow-up session...on March 29th' which is consistent with Elena proposing/scheduling it. The question format is Elena offering the date, which constitutes scheduling the follow-up in context."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Evidence index 0 confirms the $5889.88 price quote for the package. Evidence index 1 confirms Elena proposed a follow-up session with her team on March 29th. Together they support both factual claims in the gold_answer: the price ($5889.88) and the follow-up (session with Elena's team on March 29th). The only minor nuance is that index 1 is phrased as a question ('Would March 29th work?'), but in context Elena is actively scheduling the follow-up, and the gold_answer's phrasing 'a follow-up session...on March 29th' is a faithful summary of this scheduling action."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-c7918c8fc70f8009",
+    "question": "For GreenStar Electronics, what discount did Akira offer on OptiEnergy Suite, and what ROI case study did he cite to Nadia earlier?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount Akira offered on OptiEnergy Suite for GreenStar Electronics and the ROI case study he cited to Nadia earlier",
+        "relationship": "Both facts address the same commercial/value discussion \u2014 the discount and supporting ROI evidence are part of one coherent sales pitch for the same product",
+        "reason": "The discount and ROI case study both concern the same product (OptiEnergy Suite) and the same business issue (justifying its value to GreenStar), making this a coherent set of requirements rather than unrelated lookups"
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SsmwIAC",
+                "fact": "Akira offered a 10% discount on OptiEnergy Suite.",
+                "why_other_call_cannot_supply_it": "The other call does not mention any discount on OptiEnergy Suite."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxWTIA0",
+                "fact": "Akira cited a case study of a consumer electronics company reducing operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler.",
+                "why_other_call_cannot_supply_it": "The other call does not mention this specific case study or the 35% reduction figure."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the discount offered on OptiEnergy Suite and the ROI case study cited earlier. The discount appears only in the first call, while the case study appears only in the second call. Neither call contains both facts, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SsmwIAC",
+                  "fact": "Akira offered a 10% discount on OptiEnergy Suite.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention any discount on OptiEnergy Suite."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxWTIA0",
+                  "fact": "Akira cited a case study of a consumer electronics company reducing operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention this specific case study or the 35% reduction figure."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount offered on OptiEnergy Suite and the ROI case study cited earlier. The discount appears only in the first call, while the case study appears only in the second call. Neither call contains both facts, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SsmwIAC",
+                "fact": "Akira offered a 10% discount on OptiEnergy Suite",
+                "why_other_call_cannot_supply_it": "The March 24 call contains no discount on OptiEnergy Suite; it only discusses transparent pricing and a 35% energy-cost case study."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxWTIA0",
+                "fact": "Akira cited a case study of a consumer electronics company cutting operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler",
+                "why_other_call_cannot_supply_it": "The April 19 call contains no case study or ROI figures; it only mentions the 10% discount and general pricing."
+              }
+            ],
+            "reason": "The question asks for two distinct requested facts: the discount (stated only in the April 19 call) and the ROI case study (stated only in the March 24 call). Neither call alone suffices."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SsmwIAC",
+                  "fact": "Akira offered a 10% discount on OptiEnergy Suite",
+                  "why_other_call_cannot_supply_it": "The March 24 call contains no discount on OptiEnergy Suite; it only discusses transparent pricing and a 35% energy-cost case study."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxWTIA0",
+                  "fact": "Akira cited a case study of a consumer electronics company cutting operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler",
+                  "why_other_call_cannot_supply_it": "The April 19 call contains no case study or ROI figures; it only mentions the 10% discount and general pricing."
+                }
+              ],
+              "reason": "The question asks for two distinct requested facts: the discount (stated only in the April 19 call) and the ROI case study (stated only in the March 24 call). Neither call alone suffices."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two specific facts: (1) the discount Akira offered on OptiEnergy Suite and (2) the ROI case study he cited to Nadia earlier. Call 1 (2021-04-19) contains the 10% discount on OptiEnergy Suite; Call 2 (2021-03-24) contains the case study of a consumer electronics company cutting operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler. Each source contributes an exclusive requested fact. The gold answer matches both sources exactly with no unasked extras. The question is naturally phrased, adequately scoped to the GreenStar Electronics account and named participants, and represents a plausible rep need to recall prior commitments and proof points. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Akira Suzuki on 2021-04-19 explicitly states 'We offer a 10% discount on OptiEnergy Suite,' directly supporting the claim of a 10% discount on OptiEnergy Suite for GreenStar Electronics (confirmed by account metadata)."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Akira Suzuki on 2021-03-24 explicitly states 'one of our case studies shows a consumer electronics company reducing their operational energy costs by 35% using our OptiEnergy Suite along with the QuantumPCB Modeler,' directly supporting the ROI case study claim. The call metadata confirms this was directed to Nadia Oliveira at GreenStar Electronics."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer: index 0 confirms the 10% discount on OptiEnergy Suite, and index 1 confirms the case study of a consumer electronics company cutting operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler. The metadata confirms both calls involve Akira speaking with Nadia Oliveira at GreenStar Electronics, and the earlier call (2021-03-24) precedes the later one (2021-04-19), consistent with 'cited to Nadia earlier.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-96f393c56895aaf1",
+    "question": "For the Altai Innovations partnership, what discount did Santiago offer in the proposal, and what pricing concern did Keiko raise about competitors in the earlier discussion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount Santiago offered in the Altai Innovations proposal and the competitor pricing concern Keiko raised in an earlier discussion",
+        "relationship": "Both facts concern the same commercial issue\u2014pricing/discounting for the Altai Innovations partnership\u2014across the proposal and the earlier call",
+        "reason": "The two lookups address one coherent pricing topic (discount offered vs. competitor pricing concern) for the same deal, not unrelated requests joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyxFIAS",
+                "fact": "Santiago offered a 5% discount on CloudLink Designer in the proposal.",
+                "why_other_call_cannot_supply_it": "The earlier discussion (b2b:a05Wt000003SzgXIAS) does not mention any discount or CloudLink Designer; it only discusses pricing transparency and competitor concerns."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzgXIAS",
+                "fact": "Keiko said competitors surprised them with unexpected costs that complicate budgeting.",
+                "why_other_call_cannot_supply_it": "The later proposal call (b2b:a05Wt000003SyxFIAS) does not mention any competitor pricing concerns; it only covers the discount and general pricing discussion."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the discount offered in the proposal (from the later call) and the pricing concern about competitors raised in the earlier discussion. Each fact appears exclusively in one call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyxFIAS",
+                  "fact": "Santiago offered a 5% discount on CloudLink Designer in the proposal.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SzgXIAS) does not mention any discount or CloudLink Designer; it only discusses SecureFlow Suite and DesignWave Automation."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzgXIAS",
+                  "fact": "Keiko raised a pricing concern that competitors surprised them with unexpected costs, complicating budgeting.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyxFIAS) does not mention any competitor pricing concerns; it only discusses the proposal and discount."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount offered in the proposal and a pricing concern raised in an earlier discussion. These facts are found in separate calls and are not repeated or paraphrased in the other call. Each call provides a unique fact that the other cannot supply."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyxFIAS",
+                  "fact": "Santiago offered a 5% discount on CloudLink Designer in the proposal.",
+                  "why_other_call_cannot_supply_it": "The earlier discussion (b2b:a05Wt000003SzgXIAS) does not mention any discount or CloudLink Designer; it only discusses pricing transparency and competitor concerns."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzgXIAS",
+                  "fact": "Keiko said competitors surprised them with unexpected costs that complicate budgeting.",
+                  "why_other_call_cannot_supply_it": "The later proposal call (b2b:a05Wt000003SyxFIAS) does not mention any competitor pricing concerns; it only covers the discount and general pricing discussion."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount offered in the proposal (from the later call) and the pricing concern about competitors raised in the earlier discussion. Each fact appears exclusively in one call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyxFIAS",
+                "fact": "Santiago offered a 5% discount on CloudLink Designer in the proposal discussion",
+                "why_other_call_cannot_supply_it": "The earlier (Nov 3) call predates the proposal and contains no mention of any discount or CloudLink Designer pricing"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzgXIAS",
+                "fact": "Keiko raised that competitors surprised them with unexpected costs, complicating budgeting",
+                "why_other_call_cannot_supply_it": "The Nov 8 proposal call contains no competitor-related pricing concern from Keiko; her pricing discussion there is about negotiation room, not competitor costs"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a specific numerical discount from the proposal call and a separate competitor-pricing concern from the earlier call. Each fact appears only in one call, and both are explicitly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyxFIAS",
+                  "fact": "Santiago offered a 5% discount on CloudLink Designer in the proposal discussion",
+                  "why_other_call_cannot_supply_it": "The earlier (Nov 3) call predates the proposal and contains no mention of any discount or CloudLink Designer pricing"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzgXIAS",
+                  "fact": "Keiko raised that competitors surprised them with unexpected costs, complicating budgeting",
+                  "why_other_call_cannot_supply_it": "The Nov 8 proposal call contains no competitor-related pricing concern from Keiko; her pricing discussion there is about negotiation room, not competitor costs"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a specific numerical discount from the proposal call and a separate competitor-pricing concern from the earlier call. Each fact appears only in one call, and both are explicitly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: the discount Santiago offered in the proposal (5% on CloudLink Designer, found in the Nov 8 call) and Keiko's pricing concern about competitors (unexpected costs complicating budgeting, found in the Nov 3 call). Each source contributes an exclusive requested fact. The answer matches both sources precisely with no unasked extras. The question is naturally scoped to the Altai Innovations partnership and uses participant names appropriately. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Santiago Fernandez explicitly states 'We've included a small discount on CloudLink Designer reflecting a 5% discount,' which directly supports the answer_claim about a 5% discount on CloudLink Designer in the proposal for Altai Innovations."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Keiko Matsui states 'Some competitors have surprised us with unexpected costs which complicates budgeting,' which directly supports the answer_claim about competitors surprising them with unexpected costs that complicate budgeting."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Santiago offered a 5% discount on CloudLink Designer in the proposal. Index 1 confirms Keiko raised the pricing concern that competitors surprised them with unexpected costs complicating budgeting. The metadata confirms both calls relate to the Altai Innovations Strategic Partnership opportunity with contact Keiko Matsui, and the earlier call (Nov 3) precedes the later proposal call (Nov 8), consistent with the question's framing of 'earlier discussion.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-9220a5d772943898",
+    "question": "What's included in Emma White's Green Drive Initiative proposal pricing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The contents/breakdown of Emma White's Green Drive Initiative proposal pricing",
+        "relationship": "single coherent request",
+        "reason": "One lookup: the pricing breakdown of a single proposal, a natural commercial quote question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks what pricing items are in a named customer's proposal. The dialogue explicitly lists the 2022 Toyota Camry Hybrid at $25,999.99, the 2023 Nissan Leaf at $28,999.99, the Extended Warranty Plan at $1,299.99, and the Comprehensive Maintenance Plan at $1,999.99. The gold answer matches these four items exactly with no unasked extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Kamila Novak explicitly states 'The 2022 Toyota Camry Hybrid is priced at $25,999.99 and the 2023 Nissan Leaf is $28,999.99,' which directly supports the answer_claim of Camry Hybrid $25,999.99 and Nissan Leaf $28,999.99. The model years, vehicle names, and prices all match exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Kamila Novak explicitly states 'We've included both the Extended Warranty Plan for $1,299.99 and the Comprehensive Maintenance Plan for $1,999.99 in your proposal,' which directly supports the answer_claim of Extended Warranty $1,299.99 and Comprehensive Maintenance Plan $1,999.99 being included. The plan names, prices, and the word 'included' all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer claims four items: 2022 Toyota Camry Hybrid at $25,999.99, 2023 Nissan Leaf at $28,999.99, Extended Warranty Plan $1,299.99, and Comprehensive Maintenance Plan $1,999.99. Evidence index 0 supports the two vehicle prices with exact model years and amounts. Evidence index 1 supports the two add-on plans with exact names and prices, and confirms they are 'included' in the proposal. The context metadata confirms the call is associated with account 'Emma White' and opportunity 'Green Drive Initiative,' matching the question's framing. All factual claims in the gold_answer are fully supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-a81c3effa99597ed",
+    "question": "What vehicles and delivery date did Ethan Rogers confirm for his fleet order, and what maintenance coverage is included?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The vehicles and confirmed delivery date for Ethan Rogers' fleet order, plus the maintenance coverage included with that order.",
+        "relationship": "single coherent order inquiry: all three facts describe the same fleet order (contents, delivery timing, and included coverage).",
+        "reason": "The question asks about one order's composition, delivery date, and included maintenance coverage \u2014 a natural, unified sales lookup rather than unrelated requests joined together."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for vehicles, delivery date, and maintenance coverage confirmed by Ethan Rogers. The single call transcript contains all three facts: March 25th delivery, three Tesla Model S, three Volkswagen ID.4s, two Lincoln Navigators, and AutoElite's Comprehensive Maintenance Plans. The gold answer matches the source exactly with no extras or omissions. The question is naturally phrased, scoped to a specific customer and fleet order, and a rep would plausibly need this confirmation summary. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Keiko Mori explicitly states: delivery scheduled for March 25th, three Tesla Model S, three Volkswagen ID.4s, two Lincoln Navigators, and all vehicles come with AutoElite's Comprehensive Maintenance Plans. This directly supports every element of the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains all factual elements of the gold_answer: the delivery date (March 25th), the exact vehicle counts and models (three Tesla Model S, three Volkswagen ID.4s, two Lincoln Navigators), and the maintenance coverage (AutoElite's Comprehensive Maintenance Plans). The context metadata confirms the account is Ethan Rogers, matching the question's subject. The gold_answer is fully supported by the supplied citations."
+      }
+    }
+  }
+]

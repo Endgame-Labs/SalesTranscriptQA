@@ -1,0 +1,295 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "9419f0c239112734a8b0f7e07501af21e518f32e68642a38d7b8b1ab2ceed1e6",
+  "questions": 3,
+  "counts": {
+    "pass": 3
+  },
+  "estimated_usd": 0.35374711999999997,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-c7918c8fc70f8009",
+      "question": "For GreenStar Electronics, what discount did Akira offer on OptiEnergy Suite, and what ROI case study did he cite to Nadia earlier?",
+      "gold_answer": "A 10% discount on OptiEnergy Suite; a case study of a consumer electronics company cutting operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SsmwIAC",
+        "b2b:a05Wt000003StB8IAK",
+        "b2b:a05Wt000003StRGIA0",
+        "b2b:a05Wt000003StvwIAC",
+        "b2b:a05Wt000003Su2MIAS",
+        "b2b:a05Wt000003Su3yIAC",
+        "b2b:a05Wt000003SuIUIA0",
+        "b2b:a05Wt000003Sv02IAC",
+        "b2b:a05Wt000003SvUgIAK",
+        "b2b:a05Wt000003Sw7PIAS",
+        "b2b:a05Wt000003SwiUIAS",
+        "b2b:a05Wt000003SxOPIA0",
+        "b2b:a05Wt000003SxQ1IAK",
+        "b2b:a05Wt000003SxQ2IAK",
+        "b2b:a05Wt000003SxRdIAK",
+        "b2b:a05Wt000003SxTFIA0",
+        "b2b:a05Wt000003SxTGIA0",
+        "b2b:a05Wt000003SxUrIAK",
+        "b2b:a05Wt000003SxWTIA0",
+        "b2b:a05Wt000003SxY5IAK",
+        "b2b:a05Wt000003SxZhIAK",
+        "b2b:a05Wt000003SxbJIAS",
+        "b2b:a05Wt000003SxcvIAC",
+        "b2b:a05Wt000003SxeXIAS",
+        "b2b:a05Wt000003Sxg9IAC",
+        "b2b:a05Wt000003SxhlIAC",
+        "b2b:a05Wt000003SxjNIAS",
+        "b2b:a05Wt000003SxkzIAC",
+        "b2b:a05Wt000003SxmbIAC",
+        "b2b:a05Wt000003SxoDIAS",
+        "b2b:a05Wt000003SxppIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Akira Suzuki's calls with Nadia Oliveira contain exactly one OptiEnergy Suite discount statement (10%, in the 2021-04-19 call) and exactly one ROI case study he cited (a consumer electronics company cutting operational energy costs by 35% with OptiEnergy Suite plus QuantumPCB Modeler, in the 2021-03-24 call). Other OptiEnergy discount mentions belong to different reps (Zainab, Fatoumata) or different contacts, so they don't compete.",
+        "answers": [
+          {
+            "answer": "Akira offered Nadia a 10% discount on the OptiEnergy Suite. Earlier, he cited an ROI case study in which a consumer electronics company reduced its operational energy costs by 35% using TechPulse's OptiEnergy Suite together with the QuantumPCB Modeler.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsmwIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2021-04-19T14:34:05] Akira Suzuki: Great to hear that! We offer a 10% discount on OptiEnergy Suite, which can be a factor in its overall cost advantage. Our solutions are scalable and integrate easily, providing ongoing benefits as your needs evolve."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxWTIA0",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2021-03-24T16:01:39] Nadia Oliveira: I’ve seen a bit of that from reviews. Do you have any case studies or testimonials that highlight ROI?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Akira (salesperson), Nadia (contact), GreenStar Electronics (account), OptiEnergy Suite (product), a discount, and an ROI case study cited 'earlier.' Only calls b2b:a05Wt000003SsmwIAC (2021-04-19) and b2b:a05Wt000003SxWTIA0 (2021-03-24) feature Akira speaking with Nadia at GreenStar. The 10% discount on OptiEnergy Suite is stated in the April 19 call (line 14). The ROI case study Akira cited to Nadia 'earlier' (i.e., before the discount discussion) is found in the March 24 call (line 10), where he describes a consumer electronics company reducing operational energy costs by 35% using OptiEnergy Suite and QuantumPCB Modeler. No other call in the dataset has Akira citing an ROI case study to Nadia.",
+        "answers": [
+          {
+            "answer": "Akira offered Nadia a 10% discount on OptiEnergy Suite. Earlier (on March 24, 2021), he cited an ROI case study showing a consumer electronics company that reduced its operational energy costs by 35% using OptiEnergy Suite together with QuantumPCB Modeler.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsmwIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2021-04-19T14:34:05] Akira Suzuki: Great to hear that! We offer a 10% discount on OptiEnergy Suite, which can be a factor in its overall cost advantage. Our solutions are scalable and integrate easily, providing ongoing benefits as your needs evolve."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxWTIA0",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2021-03-24T16:01:39] Nadia Oliveira: I’ve seen a bit of that from reviews. Do you have any case studies or testimonials that highlight ROI?\n[2021-03-24T16:01:49] Akira Suzuki: Yes, certainly. Our clients have consistently reported positive ROI outcomes. For instance, one of our case studies shows a consumer electronics company reducing their operational energy costs by 35% using our OptiEnergy Suite along with the QuantumPCB Modeler."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same 10% discount on OptiEnergy Suite and the same ROI case study (a consumer electronics company reducing operational energy costs by 35% using OptiEnergy Suite with QuantumPCB Modeler). The reference also covers both requested facts: the 10% discount and the 35% energy-cost-reduction case study involving OptiEnergy Suite and QuantumPCB Modeler. Minor extras (e.g., the date in answer_b, the mention of 'TechPulse' in answer_a) do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-96f393c56895aaf1",
+      "question": "For the Altai Innovations partnership, what discount did Santiago offer in the proposal, and what pricing concern did Keiko raise about competitors in the earlier discussion?",
+      "gold_answer": "A 5% discount on CloudLink Designer; Keiko said competitors surprised them with unexpected costs that complicate budgeting.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr82IAC",
+        "b2b:a05Wt000003SvWKIA0",
+        "b2b:a05Wt000003SvxoIAC",
+        "b2b:a05Wt000003Swc7IAC",
+        "b2b:a05Wt000003SxBdIAK",
+        "b2b:a05Wt000003SxBeIAK",
+        "b2b:a05Wt000003SxEvIAK",
+        "b2b:a05Wt000003SyHZIA0",
+        "b2b:a05Wt000003SydyIAC",
+        "b2b:a05Wt000003SysSIAS",
+        "b2b:a05Wt000003SyxFIAS",
+        "b2b:a05Wt000003SzASIA0",
+        "b2b:a05Wt000003SzgWIAS",
+        "b2b:a05Wt000003SzgXIAS",
+        "b2b:a05Wt000003T0MSIA0",
+        "b2b:a05Wt000003T0uKIAS",
+        "b2b:a05Wt000003T12JIAS",
+        "b2b:a05Wt000003T2BOIA0",
+        "b2b:a05Wt000003T2HpIAK",
+        "b2b:a05Wt000003T2hcIAC",
+        "b2b:a05Wt000003T2snIAC",
+        "b2b:a05Wt000003T3c2IAC",
+        "b2b:a05Wt000003T3nEIAS",
+        "b2b:a05Wt000003T3nFIAS",
+        "b2b:a05Wt000003T3nGIAS",
+        "b2b:a05Wt000003T4JWIA0",
+        "b2b:a05Wt000003T4UnIAK",
+        "b2b:a05Wt000003T4WSIA0",
+        "b2b:a05Wt000003T4WTIA0",
+        "b2b:a05Wt000003T4ePIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Santiago Fernandez had three calls with Keiko Matsui on the 'Altai Innovations Strategic Partnership' opportunity. The proposal review call is 2022-11-08 (b2b:a05Wt000003SyxFIAS), where Santiago states the proposal includes a 5% discount on CloudLink Designer. The earlier Santiago–Keiko discussion with a competitor pricing concern is 2022-11-03 (b2b:a05Wt000003SzgXIAS), where Keiko says competitors surprised them with unexpected costs that complicate budgeting. The 2022-10-31 call contains no competitor pricing concern, so the earlier discussion is unambiguously the 2022-11-03 call.",
+        "answers": [
+          {
+            "answer": "In the proposal, Santiago offered a 5% discount on CloudLink Designer. In the earlier discussion (2022-11-03), Keiko raised that some competitors had surprised Altai with unexpected costs, which complicated their budgeting — she valued clear, transparent pricing without hidden fees.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyxFIAS",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2022-11-08T13:04:40] Santiago Fernandez: We’ve included a small discount on CloudLink Designer reflecting a 5% discount. While we believe our pricing reflects the value delivered, we are open for discussion to make it work for Altai Innovations."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzgXIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2022-11-03T10:01:56] Keiko Matsui: Clear pricing is definitely appreciated. Some competitors have surprised us with unexpected costs which complicates budgeting."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Santiago as the person who offered a discount in a proposal, and Keiko as the person who raised a pricing concern about competitors in an earlier discussion. Santiago Fernandez appears only in the 'Altai Innovations Strategic Partnership' opportunity (006Wt000007BBQlIAO) with Keiko Matsui. The proposal discussion is in call b2b:a05Wt000003SyxFIAS (2022-11-08), where Santiago explicitly states a 5% discount on CloudLink Designer. The earlier discussion is call b2b:a05Wt000003SzgXIAS (2022-11-03), where Keiko raises the concern that competitors have surprised them with unexpected costs, complicating budgeting. These are the only calls matching all named people and event qualifiers.",
+        "answers": [
+          {
+            "answer": "In the proposal discussion (November 8, 2022), Santiago Fernandez offered a 5% discount on CloudLink Designer. In the earlier discussion (November 3, 2022), Keiko Matsui raised the pricing concern that some competitors have surprised Altai Innovations with unexpected costs, which complicates their budgeting.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyxFIAS",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2022-11-08T13:04:40] Santiago Fernandez: We’ve included a small discount on CloudLink Designer reflecting a 5% discount. While we believe our pricing reflects the value delivered, we are open for discussion to make it work for Altai Innovations."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzgXIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2022-11-03T10:01:56] Keiko Matsui: Clear pricing is definitely appreciated. Some competitors have surprised us with unexpected costs which complicates budgeting."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two requested facts: (1) Santiago offered a 5% discount on CloudLink Designer in the proposal, and (2) Keiko raised that competitors surprised Altai with unexpected costs complicating their budgeting. The reference likewise covers both facts: the 5% discount on CloudLink Designer and Keiko's concern about competitors' unexpected costs complicating budgeting. Answer A adds a minor extra about valuing transparent pricing, but this is an unrequested elaboration and does not affect agreement. All requested commitments are present and consistent across both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-9220a5d772943898",
+      "question": "What's included in Emma White's Green Drive Initiative proposal pricing?",
+      "gold_answer": "2022 Toyota Camry Hybrid at $25,999.99, 2023 Nissan Leaf at $28,999.99, plus Extended Warranty Plan $1,299.99 and Comprehensive Maintenance Plan $1,999.99.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOB7IAO",
+        "b2c:a05Ws000005SOogIAG",
+        "b2c:a05Ws000005SPdSIAW",
+        "b2c:a05Ws000005SPtVIAW",
+        "b2c:a05Ws000005SQ8DIAW",
+        "b2c:a05Ws000005SRgxIAG",
+        "b2c:a05Ws000005SS0FIAW",
+        "b2c:a05Ws000005ST1HIAW",
+        "b2c:a05Ws000005STAkIAO",
+        "b2c:a05Ws000005SUhtIAG",
+        "b2c:a05Ws000005SVBCIA4",
+        "b2c:a05Ws000005SVZBIA4",
+        "b2c:a05Ws000005SVsaIAG",
+        "b2c:a05Ws000005SWLYIA4",
+        "b2c:a05Ws000005SX1SIAW",
+        "b2c:a05Ws000005SXKvIAO",
+        "b2c:a05Ws000005SY2RIAW",
+        "b2c:a05Ws000005SYARIA4",
+        "b2c:a05Ws000005SYs6IAG",
+        "b2c:a05Ws000005SZRXIA4",
+        "b2c:a05Ws000005SZb8IAG",
+        "b2c:a05Ws000005SaU0IAK",
+        "b2c:a05Ws000005Sb9sIAC",
+        "b2c:a05Ws000005Sb9tIAC",
+        "b2c:a05Ws000005SbcwIAC",
+        "b2c:a05Ws000005SbmeIAC",
+        "b2c:a05Ws000005Sc17IAC",
+        "b2c:a05Ws000005Sc18IAC",
+        "b2c:a05Ws000005ScaXIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only the Green Drive Initiative opportunity's calls discuss proposal pricing, and only the 2023-02-02 call (b2c:a05Ws000005SOogIAG) gives the actual pricing breakdown; the other Green Drive calls (Jan 19, Jan 24) explicitly defer pricing details. The other opportunities (Luxury/Eco-Friendly Dealership, Sustainable Spring Sale, etc.) are different opportunities and not relevant.",
+        "answers": [
+          {
+            "answer": "Emma White's Green Drive Initiative proposal pricing includes the 2022 Toyota Camry Hybrid at $25,999.99, the 2023 Nissan Leaf at $28,999.99, plus the Extended Warranty Plan at $1,299.99 and the Comprehensive Maintenance Plan at $1,999.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOogIAG",
+                "line_start": 6,
+                "line_end": 8,
+                "quote": "[2023-02-02T09:31:13] Kamila Novak: Great! Let's start with going over the pricing details. The 2022 Toyota Camry Hybrid is priced at $25,999.99 and the 2023 Nissan Leaf is $28,999.99. Does that align with what you were expecting?\n[2023-02-02T09:31:32] Emma White: That sounds good. I wanted to make sure we're also including the Extended Warranty and Maintenance Plan that we talked about last time."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names 'Emma White's Green Drive Initiative proposal pricing.' Only one call (b2c:a05Ws000005SOogIAG, dated 2023-02-02, opportunity 'Green Drive Initiative') contains a detailed proposal pricing discussion. The other Green Drive Initiative calls (b2c:a05Ws000005SXKvIAO and b2c:a05Ws000005SS0FIAW) are earlier discovery/informational calls that do not present specific proposal pricing. The February 2 call explicitly walks through the pricing components of the proposal.",
+        "answers": [
+          {
+            "answer": "Emma White's Green Drive Initiative proposal pricing includes: the 2022 Toyota Camry Hybrid at $25,999.99, the 2023 Nissan Leaf at $28,999.99, the Extended Warranty Plan at $1,299.99, and the Comprehensive Maintenance Plan at $1,999.99.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOogIAG",
+                "line_start": 4,
+                "line_end": 9,
+                "quote": "[2023-02-02T09:30:45] Kamila Novak: Perfect! So, from our past conversations, I understand you're interested in the 2022 Toyota Camry Hybrid and the 2023 Nissan Leaf. Both excellent choices!\n[2023-02-02T09:30:57] Emma White: Yes, I think they fit well with our sustainability goals.\n[2023-02-02T09:31:13] Kamila Novak: Great! Let's start with going over the pricing details. The 2022 Toyota Camry Hybrid is priced at $25,999.99 and the 2023 Nissan Leaf is $28,999.99. Does that align with what you were expecting?\n[2023-02-02T09:31:32] Emma White: That sounds good. I wanted to make sure we're also including the Extended Warranty and Maintenance Plan that we talked about last time.\n[2023-02-02T09:31:46] Kamila Novak: Absolutely. We've included both the Extended Warranty Plan for $1,299.99 and the Comprehensive Maintenance Plan for $1,999.99 in your proposal."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers list the same four items with identical prices: 2022 Toyota Camry Hybrid at $25,999.99, 2023 Nissan Leaf at $28,999.99, Extended Warranty Plan at $1,299.99, and Comprehensive Maintenance Plan at $1,999.99. The reference also contains all four items with matching prices, covering every requested fact in the question."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
