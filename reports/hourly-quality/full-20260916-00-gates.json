@@ -1,0 +1,384 @@
+[
+  {
+    "question_id": "b2b-single_call-b94eb2d48c22a9e4",
+    "question": "What concern did Vladimir Orlov raise about competitors during the InnoSphere Labs discovery call, and how did Sophia respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitor-related concern Vladimir Orlov raised during the InnoSphere Labs discovery call and Sophia's response to it.",
+        "relationship": "single coherent objection-and-response exchange within one call",
+        "reason": "This is one objection and its response on the same issue (competitive concerns) from a single discovery call, matching the accepted pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection raised by Vladimir Orlov and Sophia's rebuttal during the InnoSphere Labs discovery call. The dialogue confirms Vladimir said competitors allow more flexibility in initial configurations, and Sophia responded that TechPulse provides robust customization throughout implementation rather than just initial setup. The gold answer matches the transcript precisely with no extra or missing facts. The question is naturally scoped by account and call context, and a rep would plausibly want to recall how a competitive concern was handled. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is only Vladimir Orlov's statement expressing concern that competitors allow more flexibility in initial configurations. It does not contain any response from Sophia, nor does it mention TechPulse providing robust customization throughout implementation. The answer_claim bundles both the concern and Sophia's response, but the cited dialogue only covers the concern portion."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains two factual claims: (1) Vladimir's concern about competitors allowing more flexibility in initial configurations, and (2) Sophia's response that TechPulse provides robust customization throughout implementation rather than just initial setup. The single cited evidence (index 0) only supports claim (1) via Vladimir's quoted line. There is no cited evidence containing Sophia's response about TechPulse's customization during implementation. Since the second half of the gold_answer is unsupported by any supplied citation, the combined evidence does not fully support the answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-799b6d1c43499e04",
+    "question": "What pain points did Fatima El-Sayed at Horizon Tech Integrations raise during the discovery call, and what did Mohamed say about how quickly SecureAnalytics Pro can be implemented?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Pain points Fatima El-Sayed raised during the discovery call, and (2) Mohamed's statement about how quickly SecureAnalytics Pro can be implemented.",
+        "relationship": "Two independent fact lookups joined only by the same call/account.",
+        "reason": "The pain points raised and the implementation timeline are separate information needs; nothing indicates the implementation answer addresses the pain points, so this is two unrelated lookups artificially combined, akin to the scheduling-plus-security example."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two facts from a single discovery call: Fatima's pain points and Mohamed's statement on implementation speed. The dialogue confirms Fatima raised bottlenecks integrating older systems with newer tech and data security concerns, and Mohamed cited a case study where a client significantly reduced time to market, describing implementation as 'pretty swift.' The gold answer matches these claims precisely without adding unasked extras. The question naturally identifies the account (Horizon Tech Integrations), contact (Fatima El-Sayed), and product (SecureAnalytics Pro), which is realistic for a rep reviewing their own call. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatima El-Sayed explicitly states 'bottlenecks in our tech integration, especially linking older systems with newer tech' and 'data security is always a top concern for us,' directly supporting the claim about bottlenecks integrating older systems with newer tech and data security concerns."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Mohamed Ahmed explicitly states 'a client reduced their time to market significantly compared to traditional methods' and 'you'd be looking at a pretty swift implementation,' directly supporting the claim about swift implementation and a client significantly reducing time to market."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Fatima cited bottlenecks integrating older systems with newer tech and data security concerns, and that Mohamed said SecureAnalytics Pro offers swift implementation citing a client that significantly reduced time to market. Both cited evidence items directly and fully support these claims. The context metadata confirms the call involves Fatima El-Sayed at Horizon Tech Integrations. All factual elements of the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-d4442205855e026d",
+    "question": "For the Altai Innovations opportunity, what next step did Sarah and Olga agree on in the initial discussion, and what next step did they agree on in the later call about terms and pricing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The agreed next steps from the initial Altai Innovations discussion and from the later call about terms and pricing",
+        "relationship": "Two-call comparison of next steps for the same opportunity/deal progression",
+        "reason": "Both calls concern the same business issue\u2014advancing the Altai Innovations opportunity\u2014and the question compares agreed next steps across them, which is a coherent multi-call request rather than two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0uKIAS",
+                "fact": "Sarah and Olga agreed to have a detailed discovery call the following week.",
+                "why_other_call_cannot_supply_it": "The later call does not mention any discovery call; it focuses on finalizing terms and pricing."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3nGIAS",
+                "fact": "Sarah and Olga agreed to coordinate via email to consolidate outstanding details and finalize terms soon.",
+                "why_other_call_cannot_supply_it": "The initial call does not discuss terms, pricing, or email coordination; it only sets up the discovery call."
+              }
+            ],
+            "reason": "The question explicitly asks for the next step agreed upon in the initial discussion and the next step agreed upon in the later call about terms and pricing. These are two distinct events with different outcomes: the first call ends with scheduling a discovery call, while the later call ends with an agreement to coordinate via email to finalize terms. Each fact is only present in its respective call, so both calls are necessary to answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0uKIAS",
+                  "fact": "Sarah and Olga agreed to have a detailed discovery call the following week.",
+                  "why_other_call_cannot_supply_it": "The later call does not mention any discovery call; it focuses on terms and pricing, so this specific next step is only present in the initial discussion."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3nGIAS",
+                  "fact": "Sarah and Olga agreed to coordinate via email to consolidate outstanding details and finalize terms soon.",
+                  "why_other_call_cannot_supply_it": "The initial call does not discuss terms, pricing, or email coordination; it only sets up the discovery call, so this later agreement is exclusive to the later call."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct next steps from two separate conversations, and each call provides a unique agreement that the other does not contain. The initial call's next step is a discovery call, while the later call's next step is email coordination for finalizing terms\u2014these are substantively different and both are requested."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0uKIAS",
+                  "fact": "Sarah and Olga agreed to have a detailed discovery call the following week.",
+                  "why_other_call_cannot_supply_it": "The later call does not mention any discovery call; it focuses on finalizing terms and pricing."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3nGIAS",
+                  "fact": "Sarah and Olga agreed to coordinate via email to consolidate outstanding details and finalize terms soon.",
+                  "why_other_call_cannot_supply_it": "The initial call does not discuss terms, pricing, or email coordination; it only sets up the discovery call."
+                }
+              ],
+              "reason": "The question explicitly asks for the next step agreed upon in the initial discussion and the next step agreed upon in the later call about terms and pricing. These are two distinct events with different outcomes: the first call ends with scheduling a discovery call, while the later call ends with an agreement to coordinate via email to finalize terms. Each fact is only present in its respective call, so both calls are necessary to answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0uKIAS",
+                "fact": "In the initial discussion, Sarah and Olga agreed to a detailed discovery call the following week.",
+                "why_other_call_cannot_supply_it": "The 2024 call is a later terms/pricing discussion and never mentions the discovery call; only the 2021 call records this initial next step."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3nGIAS",
+                "fact": "In the later call about terms and pricing, they agreed to coordinate via email to consolidate outstanding details and finalize terms soon.",
+                "why_other_call_cannot_supply_it": "The 2021 call predates the terms/pricing discussion and contains no mention of email coordination or finalizing terms; only the 2024 call records this next step."
+              }
+            ],
+            "reason": "The question explicitly asks for two different next steps from two different conversations. Each call supplies a distinct, requested fact (discovery call vs. email coordination to finalize terms) that the other call cannot provide."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0uKIAS",
+                  "fact": "In the initial discussion, Sarah and Olga agreed to a detailed discovery call the following week.",
+                  "why_other_call_cannot_supply_it": "The 2024 call is a later terms/pricing discussion and never mentions the discovery call; only the 2021 call records this initial next step."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3nGIAS",
+                  "fact": "In the later call about terms and pricing, they agreed to coordinate via email to consolidate outstanding details and finalize terms soon.",
+                  "why_other_call_cannot_supply_it": "The 2021 call predates the terms/pricing discussion and contains no mention of email coordination or finalizing terms; only the 2024 call records this next step."
+                }
+              ],
+              "reason": "The question explicitly asks for two different next steps from two different conversations. Each call supplies a distinct, requested fact (discovery call vs. email coordination to finalize terms) that the other call cannot provide."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks a rep to recall the agreed next steps from two distinct calls on the same opportunity. Call 1 (2021-03-25) ends with Olga confirming 'our detailed discovery call next week,' and Call 2 (2024-01-12) ends with Sarah proposing to 'coordinate through email to consolidate any outstanding details and aim to have this wrapped up soon.' Each source contributes an exclusive next-step fact; the gold answer matches both transcripts precisely without extra or missing information. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Olga Ivanova on 2021-03-25 explicitly states: 'I look forward to our detailed discovery call next week to dive deeper into our specific needs and pain points.' This directly supports the answer_claim that Olga looks forward to a detailed discovery call next week to dive deeper into specific needs and pain points. The speaker, timing ('next week'), and purpose all match."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Sarah Johnson on 2024-01-12 explicitly states: 'Let's coordinate through email to consolidate any outstanding details and aim to have this wrapped up soon.' This directly supports the answer_claim that Sarah proposes coordinating through email to consolidate outstanding details and wrap up terms soon. The method (email), purpose (consolidate outstanding details), and timeline (soon) all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'First call: a detailed discovery call the following week. Later call: coordinate via email to consolidate outstanding details and finalize terms soon.' Evidence index 0 (from the 2021-03-25 call) confirms the first-call next step of a detailed discovery call the following week. Evidence index 1 (from the 2024-01-12 call) confirms the later-call next step of coordinating via email to consolidate outstanding details and finalize/wrap up terms soon. Both parts of the gold_answer are fully supported by the cited evidence. The context metadata confirms both calls relate to the Altai Innovations Collaboration opportunity with contact Olga Ivanova, consistent with the question's framing of Sarah and Olga's discussions."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-2f5c9fbb3e4c3ff5",
+    "question": "For BrightField Ventures, what concern did Adewale Bako raise about his current provider in the initial discussion, and what quote did Amir give for CloudLink Designer in the follow-up call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Adewale Bako's concern about his current provider in the initial call, and (2) Amir's quote for CloudLink Designer in the follow-up call",
+        "relationship": "two independent fact lookups joined only by the same account",
+        "reason": "The provider concern and the CloudLink Designer quote address different business issues; being about BrightField Ventures across two calls is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Adewale's concern about his current provider from the initial call (March 20) and (2) the CloudLink Designer quote from the follow-up call (April 5). In call 1, Adewale states 'we're not sure about their tech evolution capacity,' matching the gold answer. In call 2, Amir quotes '8 licenses at $3,039.92, factoring in a 5% discount,' also matching. Each source contributes an exclusive requested fact. The question is naturally worded, scoped to a named account and contact, and a rep would plausibly want to recall both the objection and the pricing discussed. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Adewale Bako stating 'Our current provider is reliable, but we're not sure about their tech evolution capacity,' which matches the answer_claim that he was unsure about his current provider's tech evolution capacity. The speaker, account (BrightField Ventures), and call context (initial discussion on 2024-03-20) all align."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Amir Haddad explicitly stating 'For CloudLink Designer, we're offering 8 licenses at $3,039.92, factoring in a 5% discount.' This directly supports the answer_claim regarding the product (CloudLink Designer), quantity (8 licenses), price ($3,039.92), and discount (5%). The call is the follow-up on 2024-04-05 for the same BrightField Ventures opportunity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Adewale's concern about his current provider's tech evolution capacity in the initial discussion. Evidence 1 confirms Amir's quote of 8 CloudLink Designer licenses at $3,039.92 with a 5% discount in the follow-up call. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-79c0f6d50503d4b5",
+    "question": "What objection did Isaac Thompson raise about the proposal for the Tesla Model S and Porsche 911 Carrera, and how did Mohamed respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The objection Isaac Thompson raised about the proposal for the Tesla Model S and Porsche 911 Carrera, and Mohamed's response to it",
+        "relationship": "objection and its response within the same proposal discussion",
+        "reason": "This is a single coherent request pairing a customer objection with the salesperson's response about the same proposal, matching the accepted objection-and-response pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific objection and the rep's response in a proposal follow-up call\u2014plausible sales QA. The dialogue confirms Isaac said promotional incentives 'could be a bit more competitive' and Mohamed replied they'd 'take it into consideration as we refine our packages.' The gold answer matches precisely with no extra or missing facts. Single-call set, so both_sources_required is true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Isaac Thompson explicitly states 'I did feel that the promotional incentives could be a bit more competitive though,' which directly supports the claim that Isaac felt the promotional incentives could be more competitive."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Mohamed Bakr states 'We'll certainly take it into consideration as we refine our packages to offer the most value,' which directly supports the claim that Mohamed said they'd take the feedback into consideration while refining packages."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Isaac's objection about promotional incentives not being competitive enough, and Index 1 confirms Mohamed's response about taking the feedback into consideration while refining packages. The combination of both citations covers all factual claims in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-aee4afa17ce7546b",
+    "question": "What did Emma Allen want to know about financing and maintenance for the Camry Hybrid, and what did Tariq say about service quality?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Emma Allen's questions about financing and maintenance for the Camry Hybrid, plus Tariq's response regarding service quality",
+        "relationship": "objection/concern and its response within the same conversation",
+        "reason": "The question asks about a customer's concerns (financing, maintenance) and the salesperson's response on service quality in one coherent sales exchange on the same vehicle discussion."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about Emma Allen's financing/maintenance interest and Tariq's service-quality statement, all found in the single call. The gold answer accurately reflects Emma wanting to ensure the Camry Hybrid was a smart financial decision (financing + maintenance) and Tariq stating factory-trained technicians set them apart from competitors. No locator preamble, no answer leakage, no unsupported claims. Wording is natural and scoped to a specific customer interaction. For a single-call question both_sources_required is set true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Emma Allen saying she is 'curious about financing and maintenance' and wants to 'ensure it's a smart financial decision,' which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote contains Tariq Ahmed stating 'Our service centers employ factory-trained technicians, which really sets us apart from some of our competitors,' directly supporting the claim about factory-trained technicians and differentiation from competitors."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Emma wanted to ensure the Camry Hybrid was a smart financial decision and asked about financing and maintenance. Index 1 confirms Tariq said service centers use factory-trained technicians, setting them apart from competitors. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]
