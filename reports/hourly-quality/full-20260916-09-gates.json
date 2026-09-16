@@ -1,0 +1,346 @@
+[
+  {
+    "question_id": "b2b-single_call-9ffb94264cba256e",
+    "question": "What did Juliana Santos identify as GreenStar Electronics' top priority for any new technology, and what did Sarah say about when detailed pricing would be discussed?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) GreenStar Electronics' top priority for new technology per Juliana Santos; 2) when Sarah said detailed pricing would be discussed",
+        "relationship": "two independent fact lookups (a requirement identification and a pricing-timeline statement) joined only by the same call/account",
+        "reason": "The question combines an unrelated requirement lookup with a separate pricing-scheduling fact; sharing the same customer/call does not connect them into one coherent information need."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both facts are verified in the single call transcript: Juliana states the top priority is seamless integration with existing workflows without disruption (14:47:30), and Sarah explains detailed pricing will come after needs gathering in a tailored proposal (14:52:00). The question naturally combines a customer requirement with a commercial-process detail a rep would track. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Juliana Santos the statement that 'a big focus for us is ensuring that any new technology integrates seamlessly with our existing workflows, without causing disruption.' This matches the answer_claim exactly, preserving speaker, the emphasis on seamless integration, and the 'without disruption' qualifier."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Sarah Johnson the statement that 'the detailed pricing discussion will happen once we've gathered all your needs thoroughly and moved to crafting a tailored proposal.' This matches the answer_claim that detailed pricing comes after needs gathering and in a tailored proposal, preserving the timing qualifier and speaker attribution."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Juliana Santos identified seamless integration with existing workflows without disruption as GreenStar Electronics' top priority for new technology\u2014supported by evidence index 0; (2) Sarah said detailed pricing would come after needs gathering, in a tailored proposal\u2014supported by evidence index 1. Both factual claims in the gold_answer are fully supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-bf664e281dc071e3",
+    "question": "What next step did Jaemin propose to Samuel Okafor for TerraForm Engineering's expansion, and which products would the tailored proposal highlight?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Jaemin proposed to Samuel Okafor regarding TerraForm Engineering's expansion, and the products the tailored proposal would highlight",
+        "relationship": "Both items concern the same proposed expansion deal \u2014 the proposed next step and the contents of the tailored proposal are parts of one coherent sales thread",
+        "reason": "A single next-step/proposal question about one deal; the proposal contents directly relate to the proposed next step, not two independent lookups"
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about the next step Jaemin proposed and the products the tailored proposal would highlight. The dialogue at 10:35:50 shows Jaemin proposing to draft a tailored proposal highlighting AI Cirku-Tech and SecureFlow Suite aligned with TerraForm's expansion goals, and at 10:36:25 confirms alignment with sustainability and efficiency goals. The gold answer captures both requested facts precisely. The question naturally identifies the account (TerraForm Engineering), contact (Samuel Okafor), and rep (Jaemin), which is realistic for a sales QA context. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jaemin Park explicitly states the next step is 'drafting a tailored proposal' that highlights 'AI Cirku-Tech and SecureFlow Suite' aligned with 'your expansion goals.' This directly supports the answer_claim about the next step and the two products."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) next step is drafting a tailored proposal, (2) aligned with TerraForm's sustainability and efficiency goals, (3) highlighting AI Cirku-Tech and SecureFlow Suite. The cited evidence confirms (1) and (3) verbatim. For (2), the quote says 'align with your expansion goals' rather than explicitly 'sustainability and efficiency goals.' However, the context metadata identifies the opportunity as 'TerraForm's Sustainable EDA Expansion,' linking sustainability to the expansion. The word 'efficiency' is not explicitly present in the cited evidence, but the gold_answer's phrasing 'sustainability and efficiency goals' can be seen as a characterization of the expansion goals discussed. The core factual claims\u2014drafting a tailored proposal, highlighting AI Cirku-Tech and SecureFlow Suite, aligned with TerraForm's expansion\u2014are all supported by the single citation. The slight paraphrase of 'expansion goals' as 'sustainability and efficiency goals' is a minor interpretive stretch but is contextually grounded by the opportunity name. Overall, the combined evidence sufficiently supports the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-09c4e276c758b088",
+    "question": "In the DigitalWave Solutions opportunity, what did Rashida Adebisi ask TechPulse to prepare ahead of the initial meeting, and how did Jorge Pinto address that request during the later needs assessment call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Rashida Adebisi asked TechPulse to prepare ahead of the initial meeting in the DigitalWave Solutions opportunity, and how Jorge Pinto addressed that request in the later needs assessment call",
+        "relationship": "request and its follow-up response across two calls on the same business issue",
+        "reason": "The question links a preparation request to how it was handled in the subsequent needs assessment call \u2014 a coherent request/response pair on the same issue, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks what Rashida asked Jorge to prepare and how Jorge addressed it later. The first call contains the request for case studies/testimonials, and the second call contains Jorge's promise to send them. However, the second call's response is merely a promise to send the same materials, not a distinct fact or resolution beyond what was already requested. The information need is satisfied by the first call alone, and the second call only repeats the same topic without adding a new outcome or change. Thus, both calls are not necessary for meaningfully different requested information."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks what Rashida asked Jorge to prepare ahead of the initial meeting and how Jorge addressed that request during the later needs assessment call. The first call (b2b:a05Wt000003SwAcIAK) contains both the request (Rashida asks for detailed case studies and client testimonials) and the later response (Jorge promises to send them). The second call (b2b:a05Wt000003SzzhIAC) only contains the request, not the later response. Therefore, the first call alone provides all the necessary information to answer the question, making the second call redundant. The two calls do not provide distinct facts; the request and response are both in the first call, and the second call merely repeats the request without adding the resolution."
+            },
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks what Rashida asked Jorge to prepare and how Jorge addressed it later. The first call contains the request for case studies/testimonials, and the second call contains Jorge's promise to send them. However, the second call's response is merely a promise to send the same materials, not a distinct fact or resolution beyond what was already requested. The information need is satisfied by the first call alone, and the second call only repeats the same topic without adding a new outcome or change. Thus, both calls are not necessary for meaningfully different requested information."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzzhIAC",
+                "fact": "Rashida asked TechPulse to prepare detailed case studies and client testimonials ahead of the initial meeting",
+                "why_other_call_cannot_supply_it": "The 2023 needs assessment call only contains Jorge's promise to send case studies/testimonials; the original request was made in the 2022 scheduling call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwAcIAK",
+                "fact": "In the later needs assessment call, Jorge said he would ensure Rashida received all the relevant case studies and testimonials",
+                "why_other_call_cannot_supply_it": "The 2022 call predates the needs assessment and contains only the request, not Jorge's follow-up response to it."
+              }
+            ],
+            "reason": "The question asks for two distinct facts: the request (made in the 2022 call) and Jorge's response during the later needs assessment (2023 call). Each fact exists only in one call, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzzhIAC",
+                  "fact": "Rashida asked TechPulse to prepare detailed case studies and client testimonials ahead of the initial meeting",
+                  "why_other_call_cannot_supply_it": "The 2023 needs assessment call only contains Jorge's promise to send case studies/testimonials; the original request was made in the 2022 scheduling call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwAcIAK",
+                  "fact": "In the later needs assessment call, Jorge said he would ensure Rashida received all the relevant case studies and testimonials",
+                  "why_other_call_cannot_supply_it": "The 2022 call predates the needs assessment and contains only the request, not Jorge's follow-up response to it."
+                }
+              ],
+              "reason": "The question asks for two distinct facts: the request (made in the 2022 call) and Jorge's response during the later needs assessment (2023 call). Each fact exists only in one call, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Rashida requested before the initial meeting (call 2, 2022-08-26: detailed case studies/client testimonials) and how Jorge addressed it in the later needs-assessment call (call 1, 2023-09-09: he promised to send the relevant case studies and testimonials). Both facts are verified verbatim in their respective transcripts, each source contributes an exclusive requested fact, the wording is natural, the scope identifies the opportunity and participants clearly, and the gold answer states precisely the two requested facts without unasked extras.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Rashida Adebisi asking: 'If you could provide some more detailed case studies or client testimonials on how you've successfully implemented these products, that would be great.' This matches the answer_claim that she asked for detailed case studies or client testimonials on successful product implementations ahead of the meeting. The call metadata confirms this is the DigitalWave Solutions opportunity and the contact is Rashida Adebisi."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quoted passage is spoken by Rashida Adebisi, not Jorge Pinto. She says 'I'd definitely be interested in seeing those' and comments on testimonials from TechPulse and NanoDesign Systems. This is an expression of interest by the customer, not a statement by Jorge promising to send case studies and testimonials. The answer_claim attributes a promise to Jorge, but the cited quote contains no Jorge dialogue and no commitment to follow up. A customer's interest does not establish that the salesperson made a promise."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) Rashida asked for detailed case studies and client testimonials \u2013 supported by evidence index 0. (2) In the later call Jorge promised to send the relevant case studies and testimonials \u2013 NOT supported by the supplied evidence. Index 1, the only citation from the later call (2023-09-09), quotes Rashida expressing interest, not Jorge making a promise. No supplied citation contains Jorge's dialogue committing to send the materials. Since the second factual claim in the gold_answer lacks supporting evidence among the supplied citations, the answer as a whole is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9c95953862b1f480",
+    "question": "Across the two TechPulse discussions with Fernando Sosa at AlphaTech Productions, what concern did he raise about customization in the initial call, and what concern did he raise about scalability in the follow-up?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Fernando Sosa's customization concern from the initial call and his scalability concern from the follow-up call with TechPulse",
+        "relationship": "two independent fact lookups joined only by the same account/contact",
+        "reason": "Customization and scalability are unrelated concerns raised in different calls; sharing the same customer (Fernando Sosa at AlphaTech) does not connect them into one coherent business issue."
+      }
+    },
+    "independent_review": {
+      "passed": false,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": false,
+        "exactly_requested_answer": false,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks for a customization concern in the 'initial call' and a scalability concern in the 'follow-up.' Chronologically the initial call is 2023-09-16 (call b2b:a05Wt000003Sx6fIAC) and the follow-up is 2023-11-01 (call b2b:a05Wt000003Sw2YIAS). The gold answer correctly places customization flexibility in the September call and scalability in the November call, matching the sources. However, the gold answer adds 'without losing performance' to the scalability concern, which is supported by the November transcript ('grow with us without losing performance efficiency'), so that part is fine. The customization answer ('customization flexibility for AlphaTech's unique operations') is also supported by the September transcript. Both sources contribute exclusive facts. The question is natural, scoped to a named account/contact, and a rep would plausibly want this. No locator preamble, no answer leakage, no unsupported causality. All checks pass; factual_answer and exactly_requested_answer are true on re-verification."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from the 2023-09-16 call (b2b:a05Wt000003Sx6fIAC) shows Fernando Sosa explicitly stating: 'One concern, though, is customization. Our operations are quite unique, and we're wondering how flexible your implementation might be in catering to these specific needs.' This directly supports the claim that he raised a concern about customization flexibility for their unique operations."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from the 2023-11-01 call (b2b:a05Wt000003Sw2YIAS) shows Fernando Sosa explicitly stating: 'Our data is expanding rapidly, and scalability is a concern. We need solutions that can grow with us without losing performance efficiency.' This directly supports the claim that he raised a concern about scalability as data expands rapidly without losing performance."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states that in the initial call Fernando was concerned about customization flexibility for AlphaTech's unique operations, and in the follow-up he was concerned about scalability as data expands rapidly without losing performance. Evidence index 0 (from the 2023-09-16 call, which is chronologically the initial call) confirms the customization concern with the exact language about unique operations and flexibility. Evidence index 1 (from the 2023-11-01 call, which is chronologically the follow-up) confirms the scalability concern with the exact language about data expanding rapidly and not losing performance. Both calls are identified via metadata as involving Fernando Sosa at AlphaTech Productions under the same opportunity. All factual claims in the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-63f3fd603d78b277",
+    "question": "What did Liam Taylor raise about warranty coverage, and how did Felix respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What concern Liam Taylor raised about warranty coverage and how Felix responded to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent objection-and-response pair about the same warranty coverage issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Liam Taylor raised about warranty coverage and how Felix responded. The dialogue shows Liam asking 'Do you offer anything special compared to industry standards?' regarding warranty, and Felix replying that their extended warranty plans meet industry benchmarks, more personalized options are coming soon, and terms are clear and straightforward. The gold answer accurately captures both the question and the response without adding unasked extras. The question is naturally worded, scoped to a specific customer interaction, and a rep/AM would plausibly want to know what warranty concerns were raised and how they were addressed. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage only contains Liam Taylor's question: 'Do you offer anything special compared to industry standards?' It does not include any response from Felix. The answer_claim asserts that Felix said plans meet benchmarks, personalized options are coming, and terms are clear, but none of Felix's dialogue appears in the cited quote. A customer's question does not establish the salesperson's answer."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains two parts: (1) Liam's question about warranty versus industry standards, and (2) Felix's response about meeting benchmarks, personalized options coming soon, and clear terms. The single cited evidence (index 0) only supports part (1)\u2014Liam's question. There is no cited evidence containing Felix's response, so the second half of the gold_answer (meeting industry benchmarks, personalized options coming soon, clear straightforward terms) is unsupported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-74535b72a63dc503",
+    "question": "What are Isaac Thompson's key buying requirements for the luxury electric sedan, and what next step did Fatima propose?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Isaac Thompson's key buying requirements for the luxury electric sedan and the next step Fatima proposed",
+        "relationship": "requirements and next steps for the same deal/opportunity",
+        "reason": "A single coherent sales question: the customer's buying requirements and the proposed next step both address the same sales conversation/opportunity, a natural pairing."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Isaac Thompson's buying requirements and the next step Fatima proposed. The dialogue confirms he wants 'advanced tech features and a reliable maintenance plan' with 'good support post-purchase,' and Fatima proposes 'a more detailed discovery meeting, which we'll be arranging via email soon.' The gold answer accurately captures both facts without adding unasked extras. The question naturally identifies the customer and product context. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Isaac Thompson explicitly states he is 'really looking for something that offers advanced tech features and a reliable maintenance plan' and wants 'good support post-purchase.' This directly supports the answer_claim about his key buying requirements."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatima El-Masry explicitly states 'Our next step would involve a more detailed discovery meeting, which we'll be arranging via email soon.' This directly supports the answer_claim that the next step is a detailed discovery meeting arranged via email."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Isaac Thompson's requirements (advanced tech features, reliable maintenance plan, good post-purchase support), and evidence index 1 confirms Fatima proposed a detailed discovery meeting to be arranged via email. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]
