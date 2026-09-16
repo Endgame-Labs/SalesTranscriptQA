@@ -1,0 +1,259 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "623a96e4001337daf064432f002907822bbd3eb4824971b710f09f6c2921491d",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.35558458,
+  "results": [
+    {
+      "question_id": "b2b-single_call-1696a26daf1d5996",
+      "question": "What discounts did TechPulse propose to TrueNorth for EduTech Lab and CloudLink Designer, and how did Priya respond on further flexibility?",
+      "gold_answer": "15% for EduTech Lab and 5% for CloudLink Designer, with Priya offering additional flexibility on the discounts.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkSIAS",
+        "b2b:a05Wt000003SrkTIAS",
+        "b2b:a05Wt000003SsrnIAC",
+        "b2b:a05Wt000003StcaIAC",
+        "b2b:a05Wt000003Su44IAC",
+        "b2b:a05Wt000003SuIXIA0",
+        "b2b:a05Wt000003SuIYIA0",
+        "b2b:a05Wt000003SuQeIAK",
+        "b2b:a05Wt000003SuiJIAS",
+        "b2b:a05Wt000003Sv4yIAC",
+        "b2b:a05Wt000003SvpgIAC",
+        "b2b:a05Wt000003Sw2aIAC",
+        "b2b:a05Wt000003Sw2bIAC",
+        "b2b:a05Wt000003Sw7QIAS",
+        "b2b:a05Wt000003SwSRIA0",
+        "b2b:a05Wt000003Sx0EIAS",
+        "b2b:a05Wt000003SxBXIA0",
+        "b2b:a05Wt000003SxBYIA0",
+        "b2b:a05Wt000003SxBZIA0",
+        "b2b:a05Wt000003SyHMIA0",
+        "b2b:a05Wt000003SyM8IAK",
+        "b2b:a05Wt000003SyfUIAS",
+        "b2b:a05Wt000003SzADIA0",
+        "b2b:a05Wt000003SzBkIAK",
+        "b2b:a05Wt000003SzJmIAK",
+        "b2b:a05Wt000003SzTUIA0",
+        "b2b:a05Wt000003SzWgIAK",
+        "b2b:a05Wt000003SzeoIAC",
+        "b2b:a05Wt000003SzjcIAC",
+        "b2b:a05Wt000003T07mIAC",
+        "b2b:a05Wt000003T07nIAC",
+        "b2b:a05Wt000003T0CcIAK",
+        "b2b:a05Wt000003T0MJIA0",
+        "b2b:a05Wt000003T0XZIA0",
+        "b2b:a05Wt000003T0ZBIA0",
+        "b2b:a05Wt000003T0anIAC",
+        "b2b:a05Wt000003T0cPIAS",
+        "b2b:a05Wt000003T0e1IAC",
+        "b2b:a05Wt000003T0fdIAC",
+        "b2b:a05Wt000003T0hFIAS",
+        "b2b:a05Wt000003T0irIAC",
+        "b2b:a05Wt000003T0kTIAS",
+        "b2b:a05Wt000003T0m5IAC",
+        "b2b:a05Wt000003T0nhIAC",
+        "b2b:a05Wt000003T0pJIAS",
+        "b2b:a05Wt000003T0qvIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (2023-07-25, Priya Choudhury with Emily Johnson on the TrueNorth Transformation Initiative) discusses proposed discounts for both EduTech Lab and CloudLink Designer together with Priya's offer of additional flexibility. Other discount mentions involve different products, salespeople, or customers.",
+        "answers": [
+          {
+            "answer": "TechPulse proposed a 15% discount on EduTech Lab and a 5% discount on CloudLink Designer. When Emily raised pricing and terms for these products, Priya said they were open to negotiating the discounts further and that she could offer some additional flexibility beyond the proposed 15%/5%; Emily responded that they appreciated that flexibility and then asked about payment plans, to which Priya noted several flexible payment options aligned to TrueNorth's budgetary cycles.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sw7QIAS",
+                "line_start": 15,
+                "line_end": 19,
+                "quote": "[2023-07-25T10:03:40] Emily Johnson: Alright, I'll keep that in mind. Now, talking about wrapping things up, we've done some thinking about pricing and terms for EduTech Lab and CloudLink Designer.\n[2023-07-25T10:03:58] Priya Choudhury: Of course. We're open to negotiating the discounts further to suit your requirements. As you know, we've proposed a 15% discount for EduTech Lab and 5% for CloudLink Designer, but I can offer some additional flexibility.\n[2023-07-25T10:04:10] Emily Johnson: We appreciate that flexibility. We also had questions about your payment plans.\n[2023-07-25T10:04:25] Priya Choudhury: We offer several flexible payment options to align with your budgetary cycles. Additionally, our support services are comprehensive and designed to provide ongoing assistance beyond the initial deployment. This commitment ensures your team is fully empowered to maximize the solutions."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names specific products (EduTech Lab and CloudLink Designer), the seller (TechPulse), the buyer (TrueNorth), and the rep (Priya). Only one call matches all qualifiers: b2b:a05Wt000003Sw7QIAS (2023-07-25), where Priya Choudhury speaks with Emily Johnson of TrueNorth about the TrueNorth Transformation Initiative and explicitly states the proposed discounts for EduTech Lab and CloudLink Designer, then offers additional flexibility. No other call in the dataset has Priya discussing discounts on both EduTech Lab and CloudLink Designer together.",
+        "answers": [
+          {
+            "answer": "TechPulse proposed a 15% discount for EduTech Lab and a 5% discount for CloudLink Designer. When Emily Johnson raised the topic of pricing and terms for those two products, Priya responded that she was open to negotiating the discounts further and could offer some additional flexibility to suit TrueNorth's requirements.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sw7QIAS",
+                "line_start": 15,
+                "line_end": 18,
+                "quote": "[2023-07-25T10:03:40] Emily Johnson: Alright, I'll keep that in mind. Now, talking about wrapping things up, we've done some thinking about pricing and terms for EduTech Lab and CloudLink Designer.\n[2023-07-25T10:03:58] Priya Choudhury: Of course. We're open to negotiating the discounts further to suit your requirements. As you know, we've proposed a 15% discount for EduTech Lab and 5% for CloudLink Designer, but I can offer some additional flexibility.\n[2023-07-25T10:04:10] Emily Johnson: We appreciate that flexibility. We also had questions about your payment plans."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two discounts (15% for EduTech Lab, 5% for CloudLink Designer) and both report that Priya responded by indicating openness to further negotiation and additional flexibility. Answer A includes extra details about payment plans, but these are unrequested extras and do not affect agreement. The reference also captures both discount figures and Priya's offer of additional flexibility, covering all facts the question asks about."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-319f09e7a0b088a3",
+      "question": "What is included in Sophia Carter's final purchase agreement for the 2022 Toyota Camry Hybrid?",
+      "gold_answer": "The 2022 Toyota Camry Hybrid plus AutoElite's Extended Warranty Plan and Comprehensive Maintenance Plan, at the agreed price.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMMAIA4",
+        "b2c:a05Ws000005SMvjIAG",
+        "b2c:a05Ws000005SOEGIA4",
+        "b2c:a05Ws000005SOHYIA4",
+        "b2c:a05Ws000005SPdPIAW",
+        "b2c:a05Ws000005SQHqIAO",
+        "b2c:a05Ws000005SQMnIAO",
+        "b2c:a05Ws000005SQo3IAG",
+        "b2c:a05Ws000005SSBVIA4",
+        "b2c:a05Ws000005SSDCIA4",
+        "b2c:a05Ws000005SSRbIAO",
+        "b2c:a05Ws000005SSl5IAG",
+        "b2c:a05Ws000005SUF4IAO",
+        "b2c:a05Ws000005SUmtIAG",
+        "b2c:a05Ws000005SUy4IAG",
+        "b2c:a05Ws000005SVFsIAO",
+        "b2c:a05Ws000005SVJ5IAO",
+        "b2c:a05Ws000005SVKcIAO",
+        "b2c:a05Ws000005SVSoIAO",
+        "b2c:a05Ws000005SVSpIAO",
+        "b2c:a05Ws000005SVXWIA4",
+        "b2c:a05Ws000005SVZ9IAO",
+        "b2c:a05Ws000005SVmCIAW",
+        "b2c:a05Ws000005SVmDIAW",
+        "b2c:a05Ws000005SVmEIAW",
+        "b2c:a05Ws000005SW3tIAG",
+        "b2c:a05Ws000005SWtQIAW",
+        "b2c:a05Ws000005SY0mIAG",
+        "b2c:a05Ws000005SYWzIAO",
+        "b2c:a05Ws000005SYdUIAW",
+        "b2c:a05Ws000005SYopIAG",
+        "b2c:a05Ws000005SYtbIAG",
+        "b2c:a05Ws000005SZ6YIAW",
+        "b2c:a05Ws000005SZo9IAG",
+        "b2c:a05Ws000005Sa2XIAS",
+        "b2c:a05Ws000005SaCIIA0",
+        "b2c:a05Ws000005SaFTIA0",
+        "b2c:a05Ws000005Sb6iIAC",
+        "b2c:a05Ws000005SbRgIAK",
+        "b2c:a05Ws000005SbUtIAK",
+        "b2c:a05Ws000005SbZkIAK",
+        "b2c:a05Ws000005SbmbIAC",
+        "b2c:a05Ws000005Sc16IAC",
+        "b2c:a05Ws000005ScPFIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (b2c:a05Ws000005SSl5IAG, 2021-09-05, Zanele Dlamini) explicitly reviews the final purchase agreement for the 2022 Toyota Camry Hybrid; other calls are discovery, negotiation, or Tesla-related discussions.",
+        "answers": [
+          {
+            "answer": "The final purchase agreement includes the 2022 Toyota Camry Hybrid itself, the AutoElite Extended Warranty Plan (comprehensive and straightforward coverage beyond typical industry alternatives), and the AutoElite Comprehensive Maintenance Plan (covering routine services and unexpected repairs handled by trained technicians), with the price set at the agreed amount; documents were to be emailed for signature before proceeding with the delivery schedule.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSl5IAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-09-05T11:30:30] Zanele Dlamini: Perfect. Let's start by going over the terms of the 2022 Toyota Camry Hybrid. You’re going to love driving it; it’s such a fantastic choice, especially with its premium hybrid features."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSl5IAG",
+                "line_start": 6,
+                "line_end": 8,
+                "quote": "[2021-09-05T11:30:55] Zanele Dlamini: I'm glad to hear that. Our Extended Warranty Plan is structured to be comprehensive and straightforward, unlike many industry alternatives that can be quite confusing.\n[2021-09-05T11:31:05] Sophia Carter: That definitely reassures me, especially since maintenance can be a concern with hybrids."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSl5IAG",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2021-09-05T11:32:30] Zanele Dlamini: Great to hear! So, just to finalize, you're receiving the 2022 Toyota Camry Hybrid along with our Extended Warranty Plan and Comprehensive Maintenance Plan. All documents are prepared, and the price is set at the agreed amount.\n[2021-09-05T11:32:45] Sophia Carter: That sounds perfect. I'm satisfied with everything we've discussed, and I’m ready to sign the paperwork."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about Sophia Carter's 'final purchase agreement' for the 2022 Toyota Camry Hybrid. Only one call explicitly discusses a 'final purchase agreement' for the 2022 Toyota Camry Hybrid: call b2c:a05Ws000005SSl5IAG (2021-09-05, opportunity 'Sophia's Premium Hybrid Vehicle Purchase', salesperson Zanele Dlamini). In that call, Zanele explicitly states the final agreement contents at line 16. The negotiation call b2c:a05Ws000005SYopIAG (2021-08-25) provides the specific pricing breakdown for the same opportunity and vehicle, which feeds into the final agreement. Together these provide the complete answer.",
+        "answers": [
+          {
+            "answer": "Sophia Carter's final purchase agreement for the 2022 Toyota Camry Hybrid includes three components: (1) the 2022 Toyota Camry Hybrid priced at $25,999.99, (2) the AutoElite Comprehensive Maintenance Plan priced at $1,999.99, and (3) the Extended Warranty Plan priced at $1,299.99. Additionally, flexible financing solutions were offered to make the purchase easier on her budget. All documents were prepared with the price set at the agreed amount, and Sophia confirmed she was satisfied and ready to sign the paperwork.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSl5IAG",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2021-09-05T11:30:12] Zanele Dlamini: I’m great, thanks for asking! I’m excited to discuss the final purchase agreement for your new car. Are you all set to go over the details?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSl5IAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-09-05T11:30:30] Zanele Dlamini: Perfect. Let's start by going over the terms of the 2022 Toyota Camry Hybrid. You’re going to love driving it; it’s such a fantastic choice, especially with its premium hybrid features."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSl5IAG",
+                "line_start": 6,
+                "line_end": 9,
+                "quote": "[2021-09-05T11:30:55] Zanele Dlamini: I'm glad to hear that. Our Extended Warranty Plan is structured to be comprehensive and straightforward, unlike many industry alternatives that can be quite confusing.\n[2021-09-05T11:31:05] Sophia Carter: That definitely reassures me, especially since maintenance can be a concern with hybrids.\n[2021-09-05T11:31:15] Zanele Dlamini: Absolutely, and with our AutoElite Comprehensive Maintenance Plan, you're covered with both routine services and unexpected repairs, all handled by trained technicians."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSl5IAG",
+                "line_start": 13,
+                "line_end": 18,
+                "quote": "[2021-09-05T11:32:00] Sophia Carter: And about the financing; you did an excellent job explaining the options last time. It really helped me compare and make a decision.\n[2021-09-05T11:32:10] Zanele Dlamini: Thank you! We strive for transparency in our financing process. Would you like to go over any specifics of that again?\n[2021-09-05T11:32:20] Sophia Carter: No, I think we're clear on that front. It really was straightforward, which made things easier.\n[2021-09-05T11:32:30] Zanele Dlamini: Great to hear! So, just to finalize, you're receiving the 2022 Toyota Camry Hybrid along with our Extended Warranty Plan and Comprehensive Maintenance Plan. All documents are prepared, and the price is set at the agreed amount.\n[2021-09-05T11:32:45] Sophia Carter: That sounds perfect. I'm satisfied with everything we've discussed, and I’m ready to sign the paperwork."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SYopIAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-08-25T10:31:30] Zanele Dlamini: Great! As we discussed in our previous meetings, we're focusing on the 2022 Toyota Camry Hybrid. To start, let's talk about our extended warranty plans."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SYopIAG",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2021-08-25T10:34:30] Zanele Dlamini: Fantastic! Just to summarize, we’re looking at the 2022 Toyota Camry Hybrid for $25,999.99, our Comprehensive Maintenance Plan for $1,999.99, and the Extended Warranty for $1,299.99.\n[2021-08-25T10:34:50] Zanele Dlamini: Additionally, we're offering flexible financing solutions to make the purchase easier on your budget. How does this sound to you?\n[2021-08-25T10:35:05] Sophia Carter: That sounds great. I think the financing will definitely help, and the pricing seems fair to me."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same three components in the final purchase agreement: the 2022 Toyota Camry Hybrid, the AutoElite Extended Warranty Plan, and the AutoElite Comprehensive Maintenance Plan, with the price set at the agreed amount. Answer B adds specific dollar figures and mentions flexible financing, but these are extras that do not contradict Answer A. The reference succinctly lists the vehicle, the Extended Warranty Plan, and the Comprehensive Maintenance Plan at the agreed price, covering all requested facts from the question."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1,0 +1,395 @@
+[
+  {
+    "question_id": "b2b-multi_call-fc041e10edadf97e",
+    "question": "For EcoShield Technologies, what discount and pricing did Fatou quote for EcoPCB Creator and OptiPower Manager, and what discount was mentioned earlier for AI Cirku-Tech and SimuFlow Xtreme?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Discount/pricing quoted by Fatou for EcoPCB Creator and OptiPower Manager, plus an earlier discount mentioned for AI Cirku-Tech and SimuFlow Xtreme",
+        "relationship": "Two independent product-pricing lookups joined only by the same account",
+        "reason": "The question combines discount details for two different products in one call with discount details for two different products in another call. These are unrelated commercial fact lookups about different products, not the same business issue, so the shared account (EcoShield Technologies) is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 2 (2023-04-09) provides the EcoPCB Creator (30 units, 15% discount, $8,924.74) and OptiPower Manager (18 units, 10% discount, $7,289.84) pricing quoted by Fatou. Call 1 (2023-03-30) provides the earlier 15% discount for both AI Cirku-Tech and SimuFlow Xtreme. Each source contributes an exclusive requested fact. The question naturally identifies the account (EcoShield Technologies) and the rep (Fatou), and a sales rep would plausibly want to recall quoted pricing across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatou Ndiaye explicitly states 'AI Cirku-Tech and SimuFlow Xtreme both are packaged with substantial discounts\u201415% off,' which directly supports the answer_claim that both products were quoted with 15% discounts."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatou Ndiaye explicitly states 'For EcoPCB Creator, we offer a 30-unit package with a 15% discount, totaling $8,924.74. And for OptiPower Manager, the 18-unit package includes a 10% discount, pricing it at $7,289.84.' This directly supports the answer_claim with exact units, discount percentages, and dollar amounts."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: EcoPCB Creator: 30 units, 15% discount, $8,924.74; OptiPower Manager: 18 units, 10% discount, $7,289.84; AI Cirku-Tech and SimuFlow Xtreme each quoted with 15% discounts. Evidence index 1 provides the exact figures for EcoPCB Creator and OptiPower Manager. Evidence index 0 confirms both AI Cirku-Tech and SimuFlow Xtreme received 15% discounts. All factual claims in the gold_answer are supported by the supplied citations. The context metadata confirms both calls relate to EcoShield Technologies, matching the question's account."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-f12250735580b296",
+    "question": "Across the two partnership discussions with DigitalWave Solutions' Miguel Angel, what weaknesses did Anika Singh attribute to competitor CircuitWave in each call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The weaknesses Anika Singh attributed to competitor CircuitWave in each of the two partnership discussions with Miguel Angel of DigitalWave Solutions",
+        "relationship": "multi-call comparison of the same business issue (competitive positioning against CircuitWave)",
+        "reason": "Both calls concern the same issue\u2014assessing competitor CircuitWave's weaknesses\u2014so comparing statements across the two calls is a coherent competitive-comparison request, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvBMIA0",
+                "fact": "CircuitWave is slower at implementing innovative features.",
+                "why_other_call_cannot_supply_it": "The other call does not mention CircuitWave's pace of feature implementation."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sw0xIAC",
+                "fact": "CircuitWave's security during data-sensitive operations might be lacking.",
+                "why_other_call_cannot_supply_it": "The other call does not mention CircuitWave's security in data-sensitive operations."
+              }
+            ],
+            "reason": "The question asks for weaknesses attributed to CircuitWave in each of two separate calls. The first call contains a distinct weakness about slow feature implementation, and the second call contains a distinct weakness about security. Neither call mentions the other's weakness, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvBMIA0",
+                  "fact": "CircuitWave is slower at implementing innovative features.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention CircuitWave's pace of feature implementation."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sw0xIAC",
+                  "fact": "CircuitWave's security during data-sensitive operations might be lacking.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention CircuitWave's security in data-sensitive operations."
+                }
+              ],
+              "reason": "The question asks for weaknesses attributed to CircuitWave in each of two separate calls. The first call contains a distinct weakness about slow feature implementation, and the second call contains a distinct weakness about security. Neither call mentions the other's weakness, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvBMIA0",
+                "fact": "Anika said CircuitWave's users express frustration over their slower pace in implementing innovative features",
+                "why_other_call_cannot_supply_it": "The May 12 call contains no mention of slow feature implementation; its only CircuitWave weakness is security."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sw0xIAC",
+                "fact": "Anika said CircuitWave's security during data-sensitive operations might be lacking",
+                "why_other_call_cannot_supply_it": "The May 14 call contains no mention of CircuitWave security weaknesses; its only weakness is slow implementation of innovative features."
+              }
+            ],
+            "reason": "The question asks for the weakness attributed to CircuitWave in each of the two calls, and each call contains a distinct, different weakness (slow innovation implementation vs. lacking security in data-sensitive operations). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvBMIA0",
+                  "fact": "Anika said CircuitWave's users express frustration over their slower pace in implementing innovative features",
+                  "why_other_call_cannot_supply_it": "The May 12 call contains no mention of slow feature implementation; its only CircuitWave weakness is security."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sw0xIAC",
+                  "fact": "Anika said CircuitWave's security during data-sensitive operations might be lacking",
+                  "why_other_call_cannot_supply_it": "The May 14 call contains no mention of CircuitWave security weaknesses; its only weakness is slow implementation of innovative features."
+                }
+              ],
+              "reason": "The question asks for the weakness attributed to CircuitWave in each of the two calls, and each call contains a distinct, different weakness (slow innovation implementation vs. lacking security in data-sensitive operations). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": false,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": false,
+        "exactly_requested_answer": false,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question is realistic and well-scoped (account, contact, competitor, two calls). Both calls contribute an exclusive weakness. However, the gold answer mislabels the calls: it says 'In the first call she said CircuitWave is slower at implementing innovative features' but that statement appears in the 2024-05-14 call (the second/later call), and it says 'in the earlier call she said CircuitWave's security during data-sensitive operations might be lacking' which correctly refers to the 2024-05-12 call. The ordering labels ('first call' vs 'earlier call') are contradictory and inaccurate\u2014'first call' and 'earlier call' both logically point to the earlier (May 12) call, yet the answer assigns the May 14 fact to 'the first call.' The substantive facts are present in the sources but the temporal attribution is wrong, making the answer not exactly correct as stated."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from call b2b:a05Wt000003SvBMIA0 (2024-05-14) shows Anika Singh stating 'some users do express frustration over their slower pace in implementing innovative features' about CircuitWave. This directly supports the answer_claim about CircuitWave being slower at implementing innovative features. Speaker attribution (Anika Singh) and the hedging ('some users do express frustration') are preserved."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from call b2b:a05Wt000003Sw0xIAC (2024-05-12) shows Anika Singh stating 'we've heard that their security during data-sensitive operations might be lacking' about CircuitWave. This directly supports the answer_claim about CircuitWave's security during data-sensitive operations potentially being lacking. The uncertainty qualifier 'might be' and the attribution 'we've heard' are preserved."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) In the first call she said CircuitWave is slower at implementing innovative features; (2) in the earlier call she said CircuitWave's security during data-sensitive operations might be lacking. Evidence index 0 (call dated 2024-05-14) supports claim (1) with Anika Singh's statement about slower pace in implementing innovative features. Evidence index 1 (call dated 2024-05-12) supports claim (2) with Anika Singh's statement about security during data-sensitive operations might be lacking. The temporal ordering is correct: 2024-05-14 is the later call and 2024-05-12 is the earlier call. Both calls involve DigitalWave Solutions and Miguel Angel as confirmed by context_metadata. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-1696a26daf1d5996",
+    "question": "What discounts did TechPulse propose to TrueNorth for EduTech Lab and CloudLink Designer, and how did Priya respond on further flexibility?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts TechPulse proposed to TrueNorth for EduTech Lab and CloudLink Designer, and Priya's response regarding further flexibility",
+        "relationship": "single coherent commercial negotiation: proposed pricing and the counterparty's response on flexibility are part of the same discount discussion",
+        "reason": "The question asks about one pricing/discount negotiation \u2014 the quoted discounts and the response on further flexibility address the same commercial issue, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question targets specific discount figures and a flexibility response during a pricing negotiation between TechPulse and TrueNorth\u2014clearly a realistic commercial-terms inquiry for an account manager. The dialogue confirms Priya proposed 15% for EduTech Lab and 5% for CloudLink Designer and offered 'additional flexibility,' matching the gold answer exactly with no unasked extras. Wording is natural, scope is adequate (identifies the account, products, and negotiation context), and no locator preamble or answer leakage is present. Single-call question, so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Priya Choudhury explicitly states 'we've proposed a 15% discount for EduTech Lab and 5% for CloudLink Designer' and she adds 'I can offer some additional flexibility,' directly supporting the claim of 15% for EduTech Lab, 5% for CloudLink Designer, and openness to further negotiation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: the 15% discount for EduTech Lab, the 5% discount for CloudLink Designer, and Priya's offering of additional flexibility on the discounts. The quote is attributed to Priya Choudhury, matching the gold_answer's reference to Priya."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-14ea029c4a492528",
+    "question": "What did Tomohiro Ishikawa say UrbanEDGE would do after the call regarding the proposal's implementation timeline?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Tomohiro Ishikawa said UrbanEDGE would do after the call regarding the proposal's implementation timeline",
+        "relationship": "single coherent lookup about one commitment on one issue",
+        "reason": "A single next-steps lookup tied to one topic (implementation timeline of the proposal) from one call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific next-step commitment made by the customer contact (Tomohiro Ishikawa) regarding the proposal's implementation timeline. The dialogue at 14:20:30 shows him saying he'll gather internal feedback and email it shortly so they can refine the proposal together, which matches the gold answer exactly. The question is naturally worded, scoped to a named account/contact and a concrete business situation (proposal timeline adjustments), and a rep would plausibly need to track this follow-up action. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Tomohiro Ishikawa at [2023-04-10T14:20:30] states: 'I'll gather our internal feedback and email it shortly so we can refine this together.' This directly supports the answer_claim that Tomohiro will gather internal feedback and email it shortly to refine the proposal. The speaker attribution matches (Tomohiro Ishikawa), the actions match (gather internal feedback, email shortly, refine together), and the context metadata confirms this is the UrbanEDGE account and Tomohiro Ishikawa is the contact."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'He'll gather internal feedback on the timeline adjustments and email it shortly so they can refine the proposal together.' The cited evidence (index 0) directly quotes Tomohiro Ishikawa saying he'll gather internal feedback and email it shortly so they can refine it together. The phrase 'on the timeline adjustments' is a minor contextual addition (the question asks about the proposal's implementation timeline, and the quote says 'refine this together' referring to the proposal in context), but the core factual claims\u2014gathering internal feedback, emailing shortly, and refining together\u2014are all explicitly supported by the quoted passage. The speaker attribution to Tomohiro Ishikawa is confirmed by both the dialogue tag and the context metadata."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-319f09e7a0b088a3",
+    "question": "What is included in Sophia Carter's final purchase agreement for the 2022 Toyota Camry Hybrid?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Contents of Sophia Carter's final purchase agreement for the 2022 Toyota Camry Hybrid",
+        "relationship": "single coherent lookup of one document's contents",
+        "reason": "One lookup about a single agreement; plausible sales language, no mismatched domain terms."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what is included in Sophia Carter's final purchase agreement for the 2022 Toyota Camry Hybrid. The single call transcript clearly states at [11:32:30] that she is receiving the 2022 Toyota Camry Hybrid along with the Extended Warranty Plan and Comprehensive Maintenance Plan, at the agreed price. The gold answer matches this exactly. The question is naturally worded, scoped to a specific customer and vehicle, and a sales rep would plausibly want to confirm final agreement contents. No locator preamble, no answer leakage, no unsupported claims. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Zanele Dlamini explicitly states: 'you're receiving the 2022 Toyota Camry Hybrid along with our Extended Warranty Plan and Comprehensive Maintenance Plan. All documents are prepared, and the price is set at the agreed amount.' This directly supports the answer_claim of receiving the 2022 Toyota Camry Hybrid along with the Extended Warranty Plan and Comprehensive Maintenance Plan at the agreed price. The speaker is the salesperson confirming the final purchase details to the customer."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states the purchase includes the 2022 Toyota Camry Hybrid plus AutoElite's Extended Warranty Plan and Comprehensive Maintenance Plan, at the agreed price. The cited evidence confirms the vehicle (2022 Toyota Camry Hybrid), both add-on plans (Extended Warranty Plan and Comprehensive Maintenance Plan), and the agreed price. The only minor difference is the gold_answer attributes the plans to 'AutoElite,' which is not explicitly named in the quote (Zanele says 'our Extended Warranty Plan'). However, the context metadata identifies the opportunity as 'Sophia's Premium Hybrid Vehicle Purchase' under account 'Sophia Carter,' and the salesperson's use of 'our' implies the company's plans. The core factual claims\u2014vehicle, two plans, and agreed price\u2014are all directly supported by the cited dialogue. The attribution to 'AutoElite' is a reasonable inference from the salesperson saying 'our' in the context of this sales call, though it is not explicitly named in the quote. Given that the essential factual content is fully supported, the answer is supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-3fee5d8774112da7",
+    "question": "What is John Blake looking to do with his current vehicles, and what financing priority is driving his hesitation to commit?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What John Blake wants to do with his current vehicles and the financing priority behind his hesitation to commit",
+        "relationship": "single coherent need: the customer's intent and the underlying objection/hesitation driving it",
+        "reason": "Both parts address the same issue\u2014Blake's vehicle plans and the financing concern causing hesitation\u2014forming one natural sales question about intent plus objection, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two related facts from a single call: (1) what John Blake plans for his current vehicles and (2) what financing priority causes his hesitation. The dialogue confirms he wants to keep the SUV and possibly replace the sedan for better fuel economy, and that he hasn't decided on financing because he wants flexibility to accommodate unexpected changes. The gold answer states precisely these facts without unasked extras. The question is naturally phrased, scoped to a named customer and a clear business situation, and a rep would plausibly want this information. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states John Blake is 'definitely leaning towards keeping the SUV because of its practicality' and 'Might replace the sedan with something that offers better fuel economy since it's used daily.' This fully supports the answer_claim about keeping the SUV and possibly replacing the sedan for better fuel economy."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly states 'We haven't decided because we're looking for something flexible that can accommodate any unexpected changes.' This supports the answer_claim about not having decided due to wanting flexibility for unexpected changes. The context of comparing companies and the opportunity name referencing a 'Family Vehicle and Maintenance Package' aligns with this being about financing/commitment flexibility."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) He wants to keep the SUV and possibly replace the sedan for better fuel economy \u2014 supported by evidence index 0. (2) He hasn't decided because he wants flexible financing that can accommodate unexpected changes \u2014 supported by evidence index 1, where John Blake explicitly states they haven't decided because they're looking for 'something flexible that can accommodate any unexpected changes.' The word 'financing' in the gold_answer is a slight interpretive addition (the quote says 'something flexible'), but given the context of comparing companies for a vehicle purchase/maintenance package, this is a reasonable and faithful characterization of the flexibility being sought in the purchasing/financing decision. Both factual claims in the gold_answer are substantiated by the cited evidence."
+      }
+    }
+  }
+]
