@@ -1,0 +1,121 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "08aecfc81154640f30d26d4fd91f908f3c3a255edc77af4087c073b311a102b7",
+  "questions": 1,
+  "counts": {
+    "pass": 1
+  },
+  "estimated_usd": 0.1925889,
+  "results": [
+    {
+      "question_id": "b2c-single_call-b451adbaf88a48d8",
+      "question": "What concern does Liam Martinez raise about unexpected costs, and how does Mohammed Khan respond to it?",
+      "gold_answer": "Liam is wary of unexpected costs after the initial offer; Mohammed points to comprehensive post-purchase support, factory-trained technicians, and extended warranty plans covering unexpected repairs.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMqwIAG",
+        "b2c:a05Ws000005SNmwIAG",
+        "b2c:a05Ws000005SORNIA4",
+        "b2c:a05Ws000005SOWEIA4",
+        "b2c:a05Ws000005SPNXIA4",
+        "b2c:a05Ws000005SPP4IAO",
+        "b2c:a05Ws000005SPbwIAG",
+        "b2c:a05Ws000005SQ3OIAW",
+        "b2c:a05Ws000005SQ9oIAG",
+        "b2c:a05Ws000005SQI2IAO",
+        "b2c:a05Ws000005SQOWIA4",
+        "b2c:a05Ws000005SQOXIA4",
+        "b2c:a05Ws000005SQhcIAG",
+        "b2c:a05Ws000005SRh3IAG",
+        "b2c:a05Ws000005SRk8IAG",
+        "b2c:a05Ws000005SRnHIAW",
+        "b2c:a05Ws000005SSY4IAO",
+        "b2c:a05Ws000005STfSIAW",
+        "b2c:a05Ws000005STh2IAG",
+        "b2c:a05Ws000005SULRIA4",
+        "b2c:a05Ws000005SUVFIA4",
+        "b2c:a05Ws000005SWQWIA4",
+        "b2c:a05Ws000005SWgdIAG",
+        "b2c:a05Ws000005SWs5IAG",
+        "b2c:a05Ws000005SXzFIAW",
+        "b2c:a05Ws000005SY0wIAG",
+        "b2c:a05Ws000005SY2YIAW",
+        "b2c:a05Ws000005SYH5IAO",
+        "b2c:a05Ws000005SYbrIAG",
+        "b2c:a05Ws000005SYnJIAW",
+        "b2c:a05Ws000005SYnKIAW",
+        "b2c:a05Ws000005SaPFIA0",
+        "b2c:a05Ws000005SbmlIAC",
+        "b2c:a05Ws000005ScUBIA0",
+        "b2c:a05Ws000005SctyIAC",
+        "b2c:a05Ws000005ScxEIAS",
+        "b2c:a05Ws000005Sd5EIAS",
+        "b2c:a05Ws000005Sd5FIAS",
+        "b2c:a05Ws000005SdBjIAK",
+        "b2c:a05Ws000005SdBkIAK",
+        "b2c:a05Ws000005SdRoIAK",
+        "b2c:a05Ws000005SdgHIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only Mohammed Khan's 2023-02-10 call contains Liam's explicit concern about 'unexpected costs down the road' and Khan's direct response; the other Khan calls raise different topics (higher pricing, costlier warranties) and don't use the 'unexpected costs' framing.",
+        "answers": [
+          {
+            "answer": "In the 2023-02-10 call, Liam Martinez says that while initial offers are usually clear, he is wary of unexpected costs down the road. Mohammed Khan validates the concern and responds that AutoElite's comprehensive post-purchase support addresses it—customers favor their more extensive post-purchase services, with service centers staffed by factory-trained technicians providing peace of mind—and adds that their extended warranty plans further protect the investment by covering unexpected repairs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQ3OIAW",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-02-10T14:34:00] Liam Martinez: I like that approach. One thing I've noticed is that the initial offers are usually clear, but I'm wary of unexpected costs down the road."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQ3OIAW",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-02-10T14:35:10] Mohammed Khan: Indeed. Many find the competitors' post-purchase support adequate but not as comprehensive as ours, which emphasizes the long-term benefits through our service offerings. Plus, our extended warranty plans further protect your investment by covering unexpected repairs."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names both Liam Martinez and Mohammed Khan, and asks specifically about a concern regarding 'unexpected costs.' Only one call features Mohammed Khan as the salesperson where Liam Martinez raises a concern explicitly about 'unexpected costs down the road' — call b2c:a05Ws000005SQ3OIAW (2023-02-10). In other Mohammed Khan calls, Liam raises different topics (pricing being higher than competitors, warranty costs vs. industry average, initial financing offers), none of which use the phrase 'unexpected costs.'",
+        "answers": [
+          {
+            "answer": "Liam Martinez raises the concern that while initial offers are usually clear, he is wary of unexpected costs down the road. Mohammed Khan responds by acknowledging it as a valid concern and explaining that AutoElite's post-purchase support addresses this: customers frequently favor their comprehensive post-purchase services, which are more extensive than competitors', and their service centers are equipped with factory-trained technicians, providing peace of mind. He further adds that their extended warranty plans protect the investment by covering unexpected repairs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQ3OIAW",
+                "line_start": 9,
+                "line_end": 13,
+                "quote": "[2023-02-10T14:34:00] Liam Martinez: I like that approach. One thing I've noticed is that the initial offers are usually clear, but I'm wary of unexpected costs down the road.\n[2023-02-10T14:34:25] Mohammed Khan: That's definitely a valid concern, Liam. This is where our post-purchase support comes in. Customers frequently favor our comprehensive post-purchase services, which are more extensive than what many of our competitors offer. Our service centers are equipped with factory-trained technicians which provides peace of mind knowing your vehicle is in good hands.\n[2023-02-10T14:34:48] Liam Martinez: That's reassuring to hear. I've heard mixed reviews about the support from other places.\n[2023-02-10T14:35:10] Mohammed Khan: Indeed. Many find the competitors' post-purchase support adequate but not as comprehensive as ours, which emphasizes the long-term benefits through our service offerings. Plus, our extended warranty plans further protect your investment by covering unexpected repairs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same concern (Liam is wary of unexpected costs down the road despite clear initial offers) and the same response from Mohammed (validates the concern, points to comprehensive post-purchase support with factory-trained technicians providing peace of mind, and extended warranty plans covering unexpected repairs). The reference likewise captures the concern (wary of unexpected costs after the initial offer) and all three elements of Mohammed's response (comprehensive post-purchase support, factory-trained technicians, extended warranty plans covering unexpected repairs). No requested fact is missing or substituted in either answer or the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

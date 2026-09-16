@@ -1,0 +1,438 @@
+[
+  {
+    "question_id": "b2b-multi_call-afaf7b56b432f10f",
+    "question": "Across the two discussions with Samir Hussain at InnoBuild Constructors, what concern about CircuitWave did he raise in each call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Samir Hussain raised about CircuitWave in each of the two calls with InnoBuild Constructors",
+        "relationship": "same business issue (CircuitWave concerns) tracked across two calls with the same contact",
+        "reason": "Both requested facts concern the same issue\u2014concerns about CircuitWave\u2014across two calls, which is a coherent multi-call comparison rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyHQIA0",
+                "fact": "Samir said CircuitWave hasn't been as forward-looking with tech advancements recently.",
+                "why_other_call_cannot_supply_it": "The later call only mentions concerns about how quickly CircuitWave rolls out new features, not about being forward-looking with tech advancements."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0J6IAK",
+                "fact": "Samir noted concerns about how quickly CircuitWave rolls out new features.",
+                "why_other_call_cannot_supply_it": "The first call only mentions CircuitWave not being forward-looking with tech advancements, not about the speed of feature rollouts."
+              }
+            ],
+            "reason": "The question explicitly asks for the concern raised in each call, and the two calls contain distinct concerns: the first about lack of forward-looking tech advancements, the second about the speed of feature rollouts. These are substantively different aspects of CircuitWave's performance, and each is only present in one call, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The two concerns raised in the calls are substantively the same: both express that CircuitWave is not forward-looking or quick in rolling out new features. The first call states 'they haven't been as forward-looking with tech advancements recently' and the second states 'concerns about how quickly they roll out new features.' These are paraphrases of the same underlying concern about CircuitWave's pace of innovation. The question asks for the concern in each call, but since both calls express the same concern, one call would suffice to answer the actual information need. Therefore, both calls are not necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyHQIA0",
+                  "fact": "Samir said CircuitWave hasn't been as forward-looking with tech advancements recently.",
+                  "why_other_call_cannot_supply_it": "The later call only mentions concerns about how quickly CircuitWave rolls out new features, not about being forward-looking with tech advancements."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0J6IAK",
+                  "fact": "Samir noted concerns about how quickly CircuitWave rolls out new features.",
+                  "why_other_call_cannot_supply_it": "The first call only mentions CircuitWave not being forward-looking with tech advancements, not about the speed of feature rollouts."
+                }
+              ],
+              "reason": "The question explicitly asks for the concern raised in each call, and the two calls contain distinct concerns: the first about lack of forward-looking tech advancements, the second about the speed of feature rollouts. These are substantively different aspects of CircuitWave's performance, and each is only present in one call, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyHQIA0",
+                "fact": "Samir said CircuitWave hasn't been as forward-looking with tech advancements recently",
+                "why_other_call_cannot_supply_it": "The later call only mentions concerns about the speed of CircuitWave's feature rollouts, not a lack of forward-looking tech vision"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0J6IAK",
+                "fact": "Samir raised concerns about how quickly CircuitWave rolls out new features",
+                "why_other_call_cannot_supply_it": "The earlier call contains no mention of feature rollout pace; its concern is about CircuitWave's lack of forward-looking tech advancements"
+              }
+            ],
+            "reason": "The question explicitly asks for the concern raised in each of the two calls. Each call contains a distinct CircuitWave concern: the first about CircuitWave not being forward-looking with tech advancements, the second about the pace of new feature rollouts. Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyHQIA0",
+                  "fact": "Samir said CircuitWave hasn't been as forward-looking with tech advancements recently",
+                  "why_other_call_cannot_supply_it": "The later call only mentions concerns about the speed of CircuitWave's feature rollouts, not a lack of forward-looking tech vision"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0J6IAK",
+                  "fact": "Samir raised concerns about how quickly CircuitWave rolls out new features",
+                  "why_other_call_cannot_supply_it": "The earlier call contains no mention of feature rollout pace; its concern is about CircuitWave's lack of forward-looking tech advancements"
+                }
+              ],
+              "reason": "The question explicitly asks for the concern raised in each of the two calls. Each call contains a distinct CircuitWave concern: the first about CircuitWave not being forward-looking with tech advancements, the second about the pace of new feature rollouts. Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "First call: Samir says CircuitWave 'haven't been as forward-looking with tech advancements recently.' Second call: he notes 'concerns about how quickly they roll out new features.' Both are distinct competitive concerns raised by the customer, each sourced exclusively from its respective call. The question is naturally phrased, scoped to a named contact/account, and the gold answer states precisely the two concerns with no extras.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Samir Hussain the statement 'they haven't been as forward-looking with tech advancements recently' referring to CircuitWave, which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Samir Hussain the statement 'there are some concerns about how quickly they roll out new features' referring to CircuitWave, which matches the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items directly support the gold_answer. Evidence index 0 confirms that in the first call (2023-01-30), Samir said CircuitWave hadn't been as forward-looking with tech advancements recently. Evidence index 1 confirms that in the later call (2023-11-28), Samir noted concerns about how quickly CircuitWave rolls out new features. The metadata confirms both calls involve Samir Hussain at InnoBuild Constructors, and the chronological ordering (January then November) aligns with 'first call' and 'later call.' All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9f759f149a587ef1",
+    "question": "Across the initial discussion and the later proposal review with Bingwen Zhang at Vertex Engineering, what concern about Quantum Circuits Inc. did he raise in each call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Bingwen Zhang raised about Quantum Circuits Inc. in the initial discussion and in the later proposal review",
+        "relationship": "Same business issue (concern about Quantum Circuits Inc.) tracked across two calls with the same stakeholder",
+        "reason": "Both parts concern the same competitive/business issue \u2014 the concern about Quantum Circuits Inc. \u2014 making this a coherent cross-call comparison rather than two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "Both calls express the same concern about Quantum Circuits Inc.'s limited customizability/flexibility. The first call mentions 'limited customizability' as a sticking point, and the second call refers to 'restricted flexibility' during implementation. These are paraphrases of the same underlying issue, not distinct facts. The question asks for the concern in each call, but since it is the same concern, one call would suffice to answer the actual information need. Therefore, both calls are not necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "Both calls express the same concern about Quantum Circuits Inc.'s limited customizability/flexibility. The first call mentions 'limited customizability' as a sticking point, and the second call refers to 'restricted flexibility' during implementation. These are paraphrases of the same underlying issue, not distinct facts. The question asks for the concern in each call, but since it is the same concern, one call would suffice to answer the actual information need. Therefore, both calls are not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StmGIAS",
+                "fact": "Bingwen Zhang said Quantum Circuits' limited customizability was a sticking point for Vertex.",
+                "why_other_call_cannot_supply_it": "The proposal-review call only discusses implementation flexibility challenges; it never mentions the customizability concern raised in the initial discussion."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzzpIAC",
+                "fact": "In the proposal review, Bingwen Zhang raised past challenges with Quantum Circuits Inc.'s solutions due to their restricted flexibility during implementation.",
+                "why_other_call_cannot_supply_it": "The initial call predates the proposal and contains no mention of implementation-phase flexibility problems; that concern is only voiced in the later call."
+              }
+            ],
+            "reason": "The question explicitly asks for the concern raised in each of two distinct conversations. The first call's concern is about product customizability, while the second call's concern is about restricted flexibility during implementation \u2014 related but substantively different concerns, each stated only in its respective call, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StmGIAS",
+                  "fact": "Bingwen Zhang said Quantum Circuits' limited customizability was a sticking point for Vertex.",
+                  "why_other_call_cannot_supply_it": "The proposal-review call only discusses implementation flexibility challenges; it never mentions the customizability concern raised in the initial discussion."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzzpIAC",
+                  "fact": "In the proposal review, Bingwen Zhang raised past challenges with Quantum Circuits Inc.'s solutions due to their restricted flexibility during implementation.",
+                  "why_other_call_cannot_supply_it": "The initial call predates the proposal and contains no mention of implementation-phase flexibility problems; that concern is only voiced in the later call."
+                }
+              ],
+              "reason": "The question explicitly asks for the concern raised in each of two distinct conversations. The first call's concern is about product customizability, while the second call's concern is about restricted flexibility during implementation \u2014 related but substantively different concerns, each stated only in its respective call, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "First call: Bingwen explicitly says 'the limited customizability was a sticking point for us with Quantum Circuits.' Second call: he states 'We've had challenges with Quantum Circuits Inc's solutions in the past due to their restricted flexibility' in the context of implementation. Each call contributes a distinct, exclusive concern (customizability vs. restricted flexibility during implementation), matching the gold answer precisely. The question is naturally scoped to a named contact and account, and a rep would plausibly want to track competitor objections across calls.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Bingwen Zhang stating 'the limited customizability was a sticking point for us with Quantum Circuits,' which exactly matches the answer_claim about limited customizability being a sticking point."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Bingwen Zhang stating 'We've had challenges with Quantum Circuits Inc's solutions in the past due to their restricted flexibility' in the context of discussing implementation, which matches the answer_claim about past challenges due to restricted flexibility regarding implementation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms that in the first call (2023-06-04), Bingwen raised limited customizability as a sticking point with Quantum Circuits. Index 1 confirms that in the proposal review (2023-11-05), Bingwen raised past challenges with Quantum Circuits due to restricted flexibility during implementation. The metadata confirms both calls involve Bingwen Zhang at Vertex Engineering Corp under the same opportunity. The gold_answer accurately summarizes both concerns as raised in each respective call."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-f29ae7515fe84a52",
+    "question": "What discount and total price did AgroSmart Innovations agree to for the SecureFlow Suite, CloudLink Designer, and AI Cirku-Tech deal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The agreed discount and total price for a multi-product deal (SecureFlow Suite, CloudLink Designer, AI Cirku-Tech) with AgroSmart Innovations",
+        "relationship": "single coherent commercial lookup of one deal's terms",
+        "reason": "One lookup of the commercial terms (discount and total) for a single deal spanning related products; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the discount percentages and total price agreed upon for three named products in the AgroSmart Innovations deal. The dialogue explicitly states a 10% discount on SecureFlow Suite and CloudLink Designer, 5% on AI Cirku-Tech, and a total of $14,827.70. The gold answer matches these facts exactly with no unasked extras. The question is naturally worded, scoped to a specific account and deal, and a rep would plausibly need to confirm agreed pricing terms. Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatoumata Diop explicitly states a 10% discount on both SecureFlow Suite and CloudLink Designer, a 5% discount for AI Cirku-Tech, and a total of $14,827.70. This directly matches the answer_claim in full, including all three product names, both discount percentages, and the exact total price."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains a direct statement by the salesperson (Fatoumata Diop) specifying the 10% discount on SecureFlow Suite and CloudLink Designer, the 5% discount on AI Cirku-Tech, and the total price of $14,827.70. The context metadata confirms the account is AgroSmart Innovations and the opportunity is their Tech Enhancement Initiative. All factual elements of the gold_answer are explicitly present in the cited quote."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-f917556708e29c27",
+    "question": "What are SkyLink Communications' main buying requirements for the EDA integration, and what concern did Zainab raise about Quantum Circuits Inc?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) SkyLink Communications' main buying requirements for the EDA integration, and (2) the concern Zainab raised about Quantum Circuits Inc.",
+        "relationship": "two independent fact lookups joined only by the same call/account; the requirements list and the concern about a different company (Quantum Circuits Inc) address unrelated business issues",
+        "reason": "The question bundles two unrelated information needs: a requirements lookup for the EDA integration and a separate concern about another company. Sharing a call/customer context does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks for SkyLink's buying requirements and Zainab's concern about a competitor, both of which a rep would plausibly need. The dialogue confirms: (1) requirements \u2013 improved integration, robust security, and flexibility to adapt to new tech (Zainab at 16:26:20 and 16:27:00); (2) concern about Quantum Circuits Inc \u2013 impressive security but too rigid for their flexibility needs (Zainab at 16:28:20). The gold answer captures exactly these facts with no extras. Wording is natural, scope is clear (named account, named contact, named competitor), and no locator preamble or answer leakage is present. Single-call question so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states Zainab Hassan's main goal is to 'improve integration capabilities while maintaining robust security' and mentions struggling with 'the balance between security compliance and flexible integration.' This fully supports the answer_claim about improving integration while maintaining robust security and balancing security compliance with flexible integration."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Zainab expressing concern that 'some solutions hinder our ability to rapidly adapt to new tech innovations.' This supports the answer_claim about concern regarding solutions hindering rapid adaptation to new tech innovations. It also reinforces the flexibility requirement mentioned in the gold answer."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quote explicitly states Zainab's assessment of Quantum Circuits Inc: 'while their security is impressive, their rigidity doesn't match our need for flexibility.' This directly supports the answer_claim that Quantum Circuits Inc has impressive security but is too rigid for SkyLink's flexibility needs."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) SkyLink wants improved integration with robust security and flexibility to adapt to new tech \u2014 supported by evidence 0 (improved integration, robust security, flexible integration) and evidence 1 (concern about adapting to new tech innovations); (2) Quantum Circuits Inc has impressive security but is too rigid \u2014 directly supported by evidence 2. All factual claims in the gold answer are covered by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-9361aaa20c64c8fd",
+    "question": "What is the total price of William Brooks' SUV bundle and what delivery timeline was committed?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total price of William Brooks' SUV bundle and the committed delivery timeline",
+        "relationship": "single coherent commercial inquiry: price and delivery for the same purchase",
+        "reason": "Price and delivery timeline for the same SUV bundle form one coherent quote/next-steps question about the same deal."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts (bundle price and delivery timeline) that a rep/account manager would plausibly need to confirm for William Brooks' SUV deal. Both facts are found verbatim in the single supplied call: '$155,999.96 for the entire bundle' and 'delivered to you in about two weeks.' The gold answer states exactly those two facts with no unasked extras. Wording is natural, scope is clear (customer name + SUV bundle), and no locator preamble, answer leakage, or unsupported causality is present. Because question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Dmitri Volkov explicitly states 'The package stood at $155,999.96 for the entire bundle,' directly supporting the answer_claim about the total price of the bundle."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Dmitri Volkov explicitly states 'we aim to have the vehicles delivered to you in about two weeks,' directly supporting the answer_claim about the delivery timeline commitment."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer: index 0 confirms the $155,999.96 bundle price, and index 1 confirms the 'about two weeks' delivery timeline. The context metadata confirms the account is William Brooks and the opportunity relates to a Family SUV bundle, aligning with the question's subject. The gold_answer's phrasing ('$155,999.96 for the bundle, with delivery in about two weeks') is a faithful, concise summary of the two quoted statements."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b451adbaf88a48d8",
+    "question": "What concern does Liam Martinez raise about unexpected costs, and how does Mohammed Khan respond to it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Liam Martinez's concern about unexpected costs and Mohammed Khan's response to it",
+        "relationship": "objection and its response within one call",
+        "reason": "A single objection (unexpected costs) paired with the same person's response; coherent sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection (unexpected costs) raised by Liam and the rep's rebuttal, a realistic QA need. The dialogue confirms Liam says he is 'wary of unexpected costs down the road' and Mohammed responds with comprehensive post-purchase support, factory-trained technicians, and extended warranty plans covering unexpected repairs. The gold answer captures exactly those facts without extras. Single-call question, so both_sources_required is set true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Liam Martinez saying 'I'm wary of unexpected costs down the road,' which exactly matches the answer_claim that Liam is wary of unexpected costs down the road."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue contains Mohammed Khan explicitly mentioning (1) 'our post-purchase support' and 'comprehensive post-purchase services,' (2) 'factory-trained technicians,' and (3) 'our extended warranty plans further protect your investment by covering unexpected repairs.' All three elements of the answer_claim are directly present in the cited passage."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Liam is wary of unexpected costs after the initial offer, and Mohammed responds with comprehensive post-purchase support, factory-trained technicians, and extended warranty plans covering unexpected repairs. Evidence index 0 directly supports Liam's concern (including the 'initial offers are usually clear' context). Evidence index 1 directly supports all three components of Mohammed's response. Together, the two citations fully substantiate every factual claim in the gold_answer."
+      }
+    }
+  }
+]
