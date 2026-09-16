@@ -1,0 +1,472 @@
+[
+  {
+    "question_id": "b2b-multi_call-0e3a8f2af470b429",
+    "question": "For InspireTech Consulting, what integration problem did Kwasi Mensah report with NanoDesign Systems, and what specific DesignWave Automation integration requirement did he state in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The integration problem Kwasi Mensah reported with NanoDesign Systems and the specific DesignWave Automation integration requirement he stated in the follow-up call",
+        "relationship": "same business issue (DesignWave integration) across initial and follow-up calls",
+        "reason": "Both parts concern the same integration issue: the reported problem and the stated requirement in the follow-up address one coherent topic, not independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzwbIAC",
+                "fact": "Kwasi stated that they need DesignWave Automation features that integrate well with existing systems and allow changes without extensive reconfiguration.",
+                "why_other_call_cannot_supply_it": "The earlier call (b2b:a05Wt000003T406IAC) only mentions that integrating into existing workflows seems easier with TechPulse solutions, but does not specify the requirement for changes without extensive reconfiguration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T406IAC",
+                "fact": "Kwasi reported that NanoDesign Systems forced InspireTech to adapt their processes instead of fitting their workflows seamlessly.",
+                "why_other_call_cannot_supply_it": "The later call (b2b:a05Wt000003SzwbIAC) does not mention NanoDesign Systems or the specific integration problem with them."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the integration problem reported with NanoDesign Systems (from the earlier call) and the specific DesignWave Automation integration requirement stated in the follow-up call (from the later call). Each fact is only present in one call, and the other call does not contain the same information. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: the integration problem with NanoDesign Systems and the DesignWave Automation integration requirement. Both facts are present in the first call (b2b:a05Wt000003SzwbIAC). The NanoDesign problem is stated in the first call, and the DesignWave requirement is also stated in the first call. The second call (b2b:a05Wt000003T406IAC) only repeats the NanoDesign problem and does not contain the DesignWave requirement. Therefore, the first call alone suffices to answer the question, and the second call is not necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzwbIAC",
+                  "fact": "Kwasi stated that they need DesignWave Automation features that integrate well with existing systems and allow changes without extensive reconfiguration.",
+                  "why_other_call_cannot_supply_it": "The earlier call (b2b:a05Wt000003T406IAC) only mentions that integrating into existing workflows seems easier with TechPulse solutions, but does not specify the requirement for changes without extensive reconfiguration."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T406IAC",
+                  "fact": "Kwasi reported that NanoDesign Systems forced InspireTech to adapt their processes instead of fitting their workflows seamlessly.",
+                  "why_other_call_cannot_supply_it": "The later call (b2b:a05Wt000003SzwbIAC) does not mention NanoDesign Systems or the specific integration problem with them."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the integration problem reported with NanoDesign Systems (from the earlier call) and the specific DesignWave Automation integration requirement stated in the follow-up call (from the later call). Each fact is only present in one call, and the other call does not contain the same information. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T406IAC",
+                "fact": "Kwasi reported that NanoDesign Systems required InspireTech to adapt their processes rather than the software fitting their workflows seamlessly",
+                "why_other_call_cannot_supply_it": "The Feb 21 call contains no mention of NanoDesign Systems or any prior integration problem; the complaint appears only in the Feb 18 call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwbIAC",
+                "fact": "Kwasi stated he needs DesignWave Automation features that integrate with existing systems and allow changes without extensive reconfiguration",
+                "why_other_call_cannot_supply_it": "The Feb 18 call discusses DesignWave only in general terms; the specific integration requirement is stated only in the Feb 21 call."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a specific vendor complaint (NanoDesign) and a specific product requirement (DesignWave integration). Each fact appears in only one call, and neither call contains both, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T406IAC",
+                  "fact": "Kwasi reported that NanoDesign Systems required InspireTech to adapt their processes rather than the software fitting their workflows seamlessly",
+                  "why_other_call_cannot_supply_it": "The Feb 21 call contains no mention of NanoDesign Systems or any prior integration problem; the complaint appears only in the Feb 18 call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzwbIAC",
+                  "fact": "Kwasi stated he needs DesignWave Automation features that integrate with existing systems and allow changes without extensive reconfiguration",
+                  "why_other_call_cannot_supply_it": "The Feb 18 call discusses DesignWave only in general terms; the specific integration requirement is stated only in the Feb 21 call."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a specific vendor complaint (NanoDesign) and a specific product requirement (DesignWave integration). Each fact appears in only one call, and neither call contains both, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question targets a plausible rep need: understanding a customer's past integration pain with a competitor (NanoDesign Systems) and their specific product requirement for DesignWave Automation. Call 1 (2024-02-18) exclusively provides the NanoDesign Systems complaint ('required us to adapt our processes rather than the software fitting in seamlessly'), while Call 2 (2024-02-21) exclusively provides the DesignWave Automation integration requirement ('features that integrate well with our existing systems\u2026changes can be made without extensive reconfiguration'). Each source contributes a distinct requested fact. The gold answer accurately paraphrases both claims without adding unasked extras. Wording is natural, scope is clear (named account, contact, product, and competitor), and no artificial locator preamble or answer leakage is present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Kwasi Mensah the statement that 'alternative solutions, like NanoDesign Systems, required us to adapt our processes rather than the software fitting in seamlessly,' which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Kwasi Mensah the statement that they need 'features that integrate well with our existing systems, specifically in DesignWave Automation' and that 'changes can be made without extensive reconfiguration,' which matches the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms the NanoDesign Systems integration problem (forcing InspireTech to adapt their processes instead of fitting their workflows). Evidence 1 confirms the follow-up DesignWave Automation requirement (features integrating with existing systems and allowing changes without extensive reconfiguration). The call metadata confirms the correct account (InspireTech Consulting), contact (Kwasi Mensah), and chronological order (Feb 18 initial call, Feb 21 follow-up). All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-cc20ba2582fccb18",
+    "question": "What pain points did Renata Costa of PrimeEdge Technology raise about their current systems in the initial discovery call, and what demo date was scheduled in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pain points Renata Costa raised about current systems in the discovery call, and the demo date scheduled in the follow-up call.",
+        "relationship": "next steps addressing the same issue",
+        "reason": "The demo in the follow-up call is a natural next step addressing the pain points surfaced in discovery, forming one coherent sales progression rather than two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvgDIAS",
+                "fact": "A product demo was scheduled for May 15th at 1:00 PM.",
+                "why_other_call_cannot_supply_it": "The demo date is only mentioned in this follow-up call; the initial discovery call does not contain any scheduling information."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2HuIAK",
+                "fact": "Renata Costa raised pain points about scalability issues and unresponsive vendor support with their current systems.",
+                "why_other_call_cannot_supply_it": "These pain points are explicitly stated in the initial discovery call; the follow-up call does not mention any such issues."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: pain points from the initial discovery call and a demo date from the follow-up call. Each piece is only present in one of the two calls, so both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvgDIAS",
+                  "fact": "A product demo was scheduled for May 15th at 1:00 PM.",
+                  "why_other_call_cannot_supply_it": "The demo date was explicitly set in this follow-up call, and the other call (initial discovery) does not mention any demo scheduling."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2HuIAK",
+                  "fact": "Renata raised pain points about scalability issues and unresponsive vendor support with their current systems.",
+                  "why_other_call_cannot_supply_it": "These pain points were specifically discussed in the initial discovery call, and the follow-up call does not revisit or mention these issues."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: pain points from the initial discovery call and a demo date from the follow-up call. Each call provides one of these facts exclusively, and neither call contains both, so both calls are necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvgDIAS",
+                  "fact": "A product demo was scheduled for May 15th at 1:00 PM.",
+                  "why_other_call_cannot_supply_it": "The demo date is only mentioned in this follow-up call; the initial discovery call does not contain any scheduling information."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2HuIAK",
+                  "fact": "Renata Costa raised pain points about scalability issues and unresponsive vendor support with their current systems.",
+                  "why_other_call_cannot_supply_it": "These pain points are explicitly stated in the initial discovery call; the follow-up call does not mention any such issues."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: pain points from the initial discovery call and a demo date from the follow-up call. Each piece is only present in one of the two calls, so both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2HuIAK",
+                "fact": "Renata Costa raised pain points about scalability of current systems and unresponsive vendor support",
+                "why_other_call_cannot_supply_it": "The follow-up call (Apr 25) only references the prior discovery call and discusses products/pricing; it never states the specific pain points."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvgDIAS",
+                "fact": "A product demo was scheduled for May 15th at 1:00 PM",
+                "why_other_call_cannot_supply_it": "The discovery call (Apr 12) ends with only a promise to set up a next meeting; no demo date is mentioned there."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: pain points from the initial discovery call and the demo date from the follow-up call. Each fact appears only in one call, and both are directly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2HuIAK",
+                  "fact": "Renata Costa raised pain points about scalability of current systems and unresponsive vendor support",
+                  "why_other_call_cannot_supply_it": "The follow-up call (Apr 25) only references the prior discovery call and discusses products/pricing; it never states the specific pain points."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvgDIAS",
+                  "fact": "A product demo was scheduled for May 15th at 1:00 PM",
+                  "why_other_call_cannot_supply_it": "The discovery call (Apr 12) ends with only a promise to set up a next meeting; no demo date is mentioned there."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: pain points from the initial discovery call and the demo date from the follow-up call. Each fact appears only in one call, and both are directly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The initial discovery call (Apr 12) has Renata explicitly citing scalability issues and unresponsive vendor support; the follow-up call (Apr 25) contains the demo scheduling for May 15th at 1:00 PM. Each source contributes an exclusive requested fact. The answer matches both sources precisely with no extras or omissions. The question is naturally phrased, identifies the account and contact, and a rep would plausibly need this recap.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Renata Costa on 2024-04-12 explicitly states that scaling 'becomes a bit cumbersome' and that 'the support from our vendors hasn't been as responsive as we would like,' naming AI Cirku-Tech and SecureAnalytics Pro as current solutions. This directly supports the answer_claim about scalability issues and unresponsive vendor support."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from the 2024-04-25 call shows Tariq Hassan offering 'a demo session on May 15th at 1:00 PM' and Renata Costa responding 'Yes, that should fit into my schedule. I'll mark it down.' This directly supports the claim that a demo was scheduled for May 15th at 1:00 PM and that Renata accepted."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Renata cited scalability issues and unresponsive vendor support (supported by evidence index 0) and that a product demo was scheduled for May 15th at 1:00 PM (supported by evidence index 1). Both factual claims in the gold_answer are fully substantiated by the cited evidence. The context metadata confirms the calls involve Renata Costa of PrimeEdge Technology, with the April 12 call being the initial discovery and the April 25 call being the follow-up."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-41b6bd925a2d2f41",
+    "question": "What next steps did Aarav commit to for Innovative Robotics after the call with Nina Rossi?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next steps Aarav committed to for Innovative Robotics after the call with Nina Rossi",
+        "relationship": "single coherent request: one lookup of committed next steps from one call",
+        "reason": "This is a single, coherent next-steps lookup tied to one call and one account; no unrelated requests are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about next steps committed by the rep (Aarav) for a named account (Innovative Robotics) after a call with a named contact (Nina Rossi). The dialogue at 11:03:25 explicitly states: prepare a tailored proposal (Alex) and schedule a product demonstration of DesignWave Automation and CircuitAI Innovator. The gold answer matches these facts precisely with no unasked extras. Single-call question, so both_sources_required is set true. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aarav Sharma explicitly states the next steps: (1) prepare a tailored proposal, with Alex ensuring it reflects Innovative Robotics' unique needs, and (2) schedule a product demonstration showcasing DesignWave Automation and CircuitAI Innovator. This directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'Prepare a tailored proposal (Alex) and schedule a product demonstration of DesignWave Automation and CircuitAI Innovator.' The single cited evidence (index 0) contains Aarav Sharma's exact words committing to both a tailored proposal (with Alex responsible) and a product demonstration of DesignWave Automation and CircuitAI Innovator. All factual elements of the gold_answer\u2014tailored proposal, Alex's role, product demonstration, and the two product names\u2014are explicitly present in the cited quote. The speaker is Aarav, the account is Innovative Robotics, and the contact is Nina Rossi per the context metadata, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-d83feeca24fb6c61",
+    "question": "What quote did Fatima give Ahmed Farouk at Cairo Electronic Solutions, and what did she say about installation and maintenance charges?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quote Fatima provided to Ahmed Farouk of Cairo Electronic Solutions, including details on installation and maintenance charges",
+        "relationship": "single coherent request: a quote and its associated charge breakdown",
+        "reason": "The installation and maintenance charges are components of the same quote, making this one coherent commercial quote lookup."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about a specific quote and service terms discussed in a sales call. The gold answer accurately reflects the dialogue: four CircuitMaster Analyzers at $3,600, three AIOptics Vision units at $1,800, four CollabCircuit Hubs at $2,400, installation included, and first-year maintenance complimentary. All claims are directly supported by the transcript. The question is adequately scoped by naming the rep, customer, and company. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatima Al-Masri explicitly states 'four CircuitMaster Analyzers for $3,600, three AIOptics Vision units for $1,800, and four CollabCircuit Hubs for $2,400,' which directly matches the answer_claim about pricing."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatima Al-Masri explicitly states 'Installation is included in the package, and we offer a complimentary first-year maintenance service. After that, maintenance is charged annually at a competitive rate,' which directly supports the answer_claim about installation being included and first-year maintenance being complimentary, with annual charges thereafter."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: four CircuitMaster Analyzers for $3,600, three AIOptics Vision units for $1,800, four CollabCircuit Hubs for $2,400; installation is included and first-year maintenance is complimentary. Evidence index 0 directly supports the product quantities and prices. Evidence index 1 directly supports that installation is included and first-year maintenance is complimentary. The gold_answer omits the detail about annual maintenance charges after the first year, but this is a concise answer that does not misrepresent the facts; all stated claims are supported by the cited evidence. The context metadata confirms the call involves Ahmed Farouk at Cairo Electronic Solutions, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b34435c5aafef6ed",
+    "question": "What did Aiden Fisher flag as a concern about AutoElite's financing, and what did Maya say their financing packages can accommodate?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the financing concern Aiden Fisher raised and Maya's response about what their financing packages can accommodate",
+        "relationship": "objection and its response on the same financing issue",
+        "reason": "Both parts address the same business issue (financing): a concern raised and the corresponding reply about financing packages."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question targets a specific financing objection raised by Aiden Fisher and Maya Patel's response, both clearly present in the single call transcript. Aiden states 'other dealerships offer simpler financing options' (concern) and Maya replies their 'flexible financing packages' can be tailored, citing 'lower monthly payments or the possibility of early payoff without penalty.' The gold answer faithfully reproduces these facts without adding unasked extras or leaking information. The question is scoped to a named customer and rep discussing a concrete business situation (financing objection handling), which a rep or account manager would plausibly want to review. No artificial locator preamble, no unsupported causality, and no bundled unrelated facts. Because question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aiden Fisher explicitly states: 'I found that other dealerships offer simpler financing options which sometimes seem straightforward.' This directly supports the answer_claim that Aiden raised that other dealerships offer simpler financing options."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Maya Patel explicitly states: 'we've designed our flexible financing packages with variety and customization in mind, allowing you to tailor a plan that suits your financial situation. For example, whether you prefer lower monthly payments or the possibility of early payoff without penalty, we can accommodate.' This directly supports the answer_claim about flexible financing packages being customizable with examples of lower monthly payments or early payoff without penalty."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Aiden noted other dealerships offer simpler financing options \u2013 supported by evidence index 0 where Aiden says exactly this; (2) Maya said their flexible packages can be tailored, e.g., lower monthly payments or early payoff without penalty \u2013 supported by evidence index 1 where Maya explicitly mentions flexible financing packages, customization/tailoring, lower monthly payments, and early payoff without penalty. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-e017525ca5783c44",
+    "question": "How does the Nissan Leaf's range compare to the Tesla Model S for Sophia Carter, and what price positioning did Bakari cite for the Leaf?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Compare the Nissan Leaf's range to the Tesla Model S and state the price positioning Bakari cited for the Leaf, for customer Sophia Carter.",
+        "relationship": "single coherent competitive comparison: range comparison plus price positioning of the same vehicle (Leaf vs. Model S) in the same sales context.",
+        "reason": "Both parts address the same competitive evaluation of the Leaf against the Model S, a natural sales discussion combining specs and pricing."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks for a range comparison (Leaf 150 mi vs Model S 370+ mi) and the price positioning Bakari cited ('more accessible price point'), all of which are stated verbatim in the single supplied call. A rep reviewing Sophia Carter's discovery call would plausibly want to confirm how the two vehicles were positioned. The gold answer matches the transcript exactly with no extra or missing facts. Because question_class is single_call, both_sources_required is set to true per instructions. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Bakari Saidi explicitly states the Tesla Model S 'has a range of over 370 miles on a full charge,' directly supporting the answer_claim of 'Model S range over 370 miles.'"
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Bakari Saidi explicitly states the Nissan Leaf 'comes at a more accessible price point' and 'offers a range of 150 miles,' directly supporting both parts of the answer_claim: 'Leaf range 150 miles' and 'more accessible price point.'"
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer makes three factual claims: (1) Leaf offers 150-mile range \u2013 supported by index 1; (2) Model S has over 370 miles range \u2013 supported by index 0; (3) Bakari positioned the Leaf at a more accessible price point \u2013 supported by index 1 where Bakari explicitly says 'comes at a more accessible price point.' The context metadata confirms the call involves Sophia Carter's opportunity. All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  }
+]

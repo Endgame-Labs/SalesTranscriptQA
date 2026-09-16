@@ -1,0 +1,496 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "4827da26be0d27a33facff8dec855645b625dfcee8cd547c860c288111334a88",
+  "questions": 5,
+  "counts": {
+    "pass": 3,
+    "fail": 2
+  },
+  "estimated_usd": 0.59327179,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-0e3a8f2af470b429",
+      "question": "For InspireTech Consulting, what integration problem did Kwasi Mensah report with NanoDesign Systems, and what specific DesignWave Automation integration requirement did he state in the follow-up call?",
+      "gold_answer": "NanoDesign Systems forced InspireTech to adapt their processes instead of fitting their workflows; in the follow-up Kwasi asked for DesignWave features that integrate with existing systems and allow changes without extensive reconfiguration.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StFzIAK",
+        "b2b:a05Wt000003StcoIAC",
+        "b2b:a05Wt000003SvZZIA0",
+        "b2b:a05Wt000003SvsvIAC",
+        "b2b:a05Wt000003SwabIAC",
+        "b2b:a05Wt000003Sx5EIAS",
+        "b2b:a05Wt000003SxBbIAK",
+        "b2b:a05Wt000003Sxd4IAC",
+        "b2b:a05Wt000003SxjTIAS",
+        "b2b:a05Wt000003SySaIAK",
+        "b2b:a05Wt000003Sz3hIAC",
+        "b2b:a05Wt000003SzetIAC",
+        "b2b:a05Wt000003SzeuIAC",
+        "b2b:a05Wt000003SzgTIAS",
+        "b2b:a05Wt000003SzwaIAC",
+        "b2b:a05Wt000003SzwbIAC",
+        "b2b:a05Wt000003T09SIAS",
+        "b2b:a05Wt000003T0KjIAK",
+        "b2b:a05Wt000003T0ZIIA0",
+        "b2b:a05Wt000003T1iKIAS",
+        "b2b:a05Wt000003T1qKIAS",
+        "b2b:a05Wt000003T1v5IAC",
+        "b2b:a05Wt000003T23BIAS",
+        "b2b:a05Wt000003T2RNIA0",
+        "b2b:a05Wt000003T2XmIAK",
+        "b2b:a05Wt000003T2w0IAC",
+        "b2b:a05Wt000003T35hIAC",
+        "b2b:a05Wt000003T35iIAC",
+        "b2b:a05Wt000003T3LnIAK",
+        "b2b:a05Wt000003T3NTIA0",
+        "b2b:a05Wt000003T3TtIAK",
+        "b2b:a05Wt000003T3VUIA0",
+        "b2b:a05Wt000003T3opIAC",
+        "b2b:a05Wt000003T3s3IAC",
+        "b2b:a05Wt000003T3s4IAC",
+        "b2b:a05Wt000003T3teIAC",
+        "b2b:a05Wt000003T406IAC",
+        "b2b:a05Wt000003T41iIAC",
+        "b2b:a05Wt000003T44vIAC",
+        "b2b:a05Wt000003T46XIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Kwasi Mensah mentions NanoDesign Systems only in the 2024-02-18 call, and the next (follow-up) call on 2024-02-21 contains his specific DesignWave Automation integration requirement, making the pair unambiguous.",
+        "answers": [
+          {
+            "answer": "Kwasi Mensah reported that with NanoDesign Systems, InspireTech had frustrating experiences where they were required to adapt their own processes rather than the software fitting in seamlessly with their existing workflows. In the follow-up call (2024-02-21), he stated that for DesignWave Automation they need features that integrate well with their existing systems, specifically such that changes can be made without extensive reconfiguration.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T406IAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2024-02-18T15:47:15] Kwasi Mensah: Yes, actually that’s a key pain point for us. We've had some frustrating experiences where alternative solutions, like NanoDesign Systems, required us to adapt our processes rather than the software fitting in seamlessly."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwbIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2024-02-21T11:46:51] Kwasi Mensah: We’re looking for features that integrate well with our existing systems, specifically in DesignWave Automation. We need to ensure changes can be made without extensive reconfiguration."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Kwasi Mensah is the named contact. The only call where he reports an integration problem with NanoDesign Systems is b2b:a05Wt000003T406IAC (2024-02-18, InspireTech EDA Innovation, with Santiago Fernandez). The follow-up call in the same opportunity (same opportunity_id 006Wt000007B6irIAC, same salesperson Santiago Fernandez) is b2b:a05Wt000003SzwbIAC (2024-02-21), where Kwasi states a specific DesignWave Automation integration requirement. No other call in the dataset has Kwasi mentioning NanoDesign Systems or stating a DesignWave Automation integration requirement in a follow-up context.",
+        "answers": [
+          {
+            "answer": "In the initial call (2024-02-18), Kwasi Mensah reported that with NanoDesign Systems, the integration problem was that the alternative solution required InspireTech to adapt their processes to the software rather than the software fitting in seamlessly into their existing workflows. In the follow-up call (2024-02-21), Kwasi stated the specific DesignWave Automation integration requirement: they need features that integrate well with their existing systems, specifically in DesignWave Automation, and they need to ensure changes can be made without extensive reconfiguration.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T406IAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2024-02-18T15:47:15] Kwasi Mensah: Yes, actually that’s a key pain point for us. We've had some frustrating experiences where alternative solutions, like NanoDesign Systems, required us to adapt our processes rather than the software fitting in seamlessly."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwbIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2024-02-21T11:46:51] Kwasi Mensah: We’re looking for features that integrate well with our existing systems, specifically in DesignWave Automation. We need to ensure changes can be made without extensive reconfiguration."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same NanoDesign Systems integration problem (InspireTech had to adapt their processes to the software rather than the software fitting seamlessly into existing workflows) and the same DesignWave Automation requirement (features that integrate well with existing systems and allow changes without extensive reconfiguration). The reference likewise covers both requested facts: the process-adaptation problem with NanoDesign Systems and the follow-up requirement for DesignWave features integrating with existing systems and permitting changes without extensive reconfiguration. Minor wording differences and the inclusion of call dates in the answers do not affect factual agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-cc20ba2582fccb18",
+      "question": "What pain points did Renata Costa of PrimeEdge Technology raise about their current systems in the initial discovery call, and what demo date was scheduled in the follow-up call?",
+      "gold_answer": "She cited scalability issues with current systems and unresponsive vendor support; a product demo was scheduled for May 15th at 1:00 PM.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrHTIA0",
+        "b2b:a05Wt000003SrnqIAC",
+        "b2b:a05Wt000003SrnrIAC",
+        "b2b:a05Wt000003StZPIA0",
+        "b2b:a05Wt000003Su4FIAS",
+        "b2b:a05Wt000003SuDjIAK",
+        "b2b:a05Wt000003SvD9IAK",
+        "b2b:a05Wt000003SvgDIAS",
+        "b2b:a05Wt000003SxZtIAK",
+        "b2b:a05Wt000003SxjaIAC",
+        "b2b:a05Wt000003SyizIAC",
+        "b2b:a05Wt000003SzZwIAK",
+        "b2b:a05Wt000003SzwfIAC",
+        "b2b:a05Wt000003T0ChIAK",
+        "b2b:a05Wt000003T0shIAC",
+        "b2b:a05Wt000003T18jIAC",
+        "b2b:a05Wt000003T1dUIAS",
+        "b2b:a05Wt000003T204IAC",
+        "b2b:a05Wt000003T2BQIA0",
+        "b2b:a05Wt000003T2BRIA0",
+        "b2b:a05Wt000003T2HtIAK",
+        "b2b:a05Wt000003T2HuIAK",
+        "b2b:a05Wt000003T2RXIA0",
+        "b2b:a05Wt000003T4JXIA0",
+        "b2b:a05Wt000003T4OKIA0",
+        "b2b:a05Wt000003T4WWIA0",
+        "b2b:a05Wt000003T4ZeIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Renata Costa has two early discovery-style calls with Tariq Hassan (2024-04-09 and 2024-04-12) that raise different pain points, and the question's 'initial discovery call' does not disambiguate between them. The demo date, however, is determinate: the 2024-04-25 follow-up call with Tariq scheduled a demo for May 15th at 1:00 PM.",
+        "answers": [
+          {
+            "answer": "In the initial discovery call (2024-04-09, Tariq Hassan), Renata Costa said PrimeEdge was satisfied with its current setup (AI Cirku-Tech and SecureAnalytics Pro) but wanted to enhance its data protection measures, and was looking for greater compliance and new features to enhance automation workflows. In the follow-up call (2024-04-25), a product demonstration was scheduled for May 15th at 1:00 PM.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2RXIA0",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2024-04-09T10:00:50] Renata Costa: Well, while we are satisfied with the current setup, we're always looking to enhance our data protection measures. I was particularly impressed with TechPulse's transparent approach to security protocols, which I think could alleviate some of our concerns.\n[2024-04-09T10:01:00] Tariq Hassan: That’s excellent to hear. We pride ourselves on transparency and building trust with our partners. Speaking of which, how has the integration of AI Cirku-Tech and SecureAnalytics Pro been for you?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvgDIAS",
+                "line_start": 19,
+                "line_end": 21,
+                "quote": "[2024-04-25T14:05:20] Renata Costa: It's certainly something we'll consider seriously. When would be good to schedule a more detailed product demonstration?\n[2024-04-25T14:05:30] Tariq Hassan: We can definitely arrange that. I have openings for a demo session on May 15th at 1:00 PM. Does that work for you?"
+              }
+            ]
+          },
+          {
+            "answer": "In the initial discovery call (2024-04-12, Tariq Hassan), Renata Costa raised challenges with their current systems—AI Cirku-Tech and SecureAnalytics Pro—specifically that scaling had become cumbersome and that vendor support had not been as responsive as desired. In the follow-up call (2024-04-25), a product demonstration was scheduled for May 15th at 1:00 PM.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2HuIAK",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2024-04-12T11:00:40] Renata Costa: Yes, exactly. We're interested in seeing how your solutions might fit in with what we're currently doing. We've been having some challenges with our current systems, in terms of scalability and support.\n[2024-04-12T11:00:55] Tariq Hassan: Got it. Could you elaborate a bit more on those challenges?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvgDIAS",
+                "line_start": 19,
+                "line_end": 21,
+                "quote": "[2024-04-25T14:05:20] Renata Costa: It's certainly something we'll consider seriously. When would be good to schedule a more detailed product demonstration?\n[2024-04-25T14:05:30] Tariq Hassan: We can definitely arrange that. I have openings for a demo session on May 15th at 1:00 PM. Does that work for you?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Renata Costa appears in two opportunities. The question asks about 'the initial discovery call' and 'the follow-up call' (singular). For opportunity 'TechPulse-PrimeEdge Strategic Collaboration' (006Wt000007Aw3WIAS), the earliest call is 2024-04-09 (b2b:a05Wt000003T2RXIA0), which is explicitly an initial discovery call where Renata raises pain points about current systems. The follow-up call is 2024-04-12 (b2b:a05Wt000003T2HuIAK), where Tariq references 'our previous discovery call' and Renata elaborates on the same pain points. No demo date is scheduled in that follow-up. For opportunity 'PrimeEdge Tech Collaboration with TechPulse' (006Wt000007BIC5IAO), the earliest call is 2024-04-25 (b2b:a05Wt000003T4JXIA0), a discovery call, and the follow-up 2024-04-30 (b2b:a05Wt000003SvD9IAK) mentions a virtual presentation but no specific date. However, the only call where a concrete demo date is scheduled for Renata is b2b:a05Wt000003SvgDIAS (2024-04-25, TechPulse-PrimeEdge Strategic Collaboration), where Tariq schedules a demo for May 15th at 1:00 PM. This call is a follow-up to the initial discovery call (2024-04-09) in the same opportunity. The pain points from the initial discovery call (2024-04-09) are: challenges with scalability of current systems (AI Cirku-Tech and SecureAnalytics Pro) and unresponsive vendor support. The demo date scheduled in the follow-up call (2024-04-25) is May 15th at 1:00 PM.",
+        "answers": [
+          {
+            "answer": "In the initial discovery call on 2024-04-09, Renata Costa raised two main pain points about PrimeEdge's current systems: (1) scalability issues—while AI Cirku-Tech and SecureAnalytics Pro have served them well, scaling has become cumbersome; and (2) unresponsive vendor support—the support from their current vendors has not been as responsive as they would like. In the follow-up call on 2024-04-25, a product demonstration was scheduled for May 15th at 1:00 PM.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2RXIA0",
+                "line_start": 3,
+                "line_end": 6,
+                "quote": "[2024-04-09T10:00:15] Renata Costa: Yes, likewise. We’re very interested in seeing how TechPulse can complement what we’re doing here at PrimeEdge.\n[2024-04-09T10:00:20] Tariq Hassan: Absolutely. Just to give you a quick overview, at TechPulse, we focus on providing scalable and reliable AI solutions. We've had a great track record with companies looking to enhance their workflow automation. Let's start by discussing what PrimeEdge currently uses and your expectations.\n[2024-04-09T10:00:30] Renata Costa: Sure. At PrimeEdge, we are leveraging AI Cirku-Tech and SecureAnalytics Pro for our analytics and data protection needs. Our main priorities are robust security compliance and seamless integration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvgDIAS",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2024-04-25T14:00:35] Tariq Hassan: I'm good, thanks for asking. Before we start, just wanted to confirm we're speaking about the TechPulse solutions that could align with your needs, following our previous discovery call. Does that sound good?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvgDIAS",
+                "line_start": 19,
+                "line_end": 22,
+                "quote": "[2024-04-25T14:05:20] Renata Costa: It's certainly something we'll consider seriously. When would be good to schedule a more detailed product demonstration?\n[2024-04-25T14:05:30] Tariq Hassan: We can definitely arrange that. I have openings for a demo session on May 15th at 1:00 PM. Does that work for you?\n[2024-04-25T14:05:40] Renata Costa: Yes, that should fit into my schedule. I'll mark it down."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-41b6bd925a2d2f41",
+      "question": "What next steps did Aarav commit to for Innovative Robotics after the call with Nina Rossi?",
+      "gold_answer": "Prepare a tailored proposal (Alex) and schedule a product demonstration of DesignWave Automation and CircuitAI Innovator.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrhDIAS",
+        "b2b:a05Wt000003SrhEIAS",
+        "b2b:a05Wt000003SrkWIAS",
+        "b2b:a05Wt000003SrkXIAS",
+        "b2b:a05Wt000003SslPIAS",
+        "b2b:a05Wt000003SsqBIAS",
+        "b2b:a05Wt000003SsqCIAS",
+        "b2b:a05Wt000003StRKIA0",
+        "b2b:a05Wt000003StcdIAC",
+        "b2b:a05Wt000003StmFIAS",
+        "b2b:a05Wt000003Sv1jIAC",
+        "b2b:a05Wt000003SvHuIAK",
+        "b2b:a05Wt000003SvL2IAK",
+        "b2b:a05Wt000003SvOEIA0",
+        "b2b:a05Wt000003SwDvIAK",
+        "b2b:a05Wt000003SwycIAC",
+        "b2b:a05Wt000003Sx0GIAS",
+        "b2b:a05Wt000003Sx55IAC",
+        "b2b:a05Wt000003SxgGIAS",
+        "b2b:a05Wt000003Sy7cIAC",
+        "b2b:a05Wt000003SyIuIAK",
+        "b2b:a05Wt000003SyqnIAC",
+        "b2b:a05Wt000003SzRvIAK",
+        "b2b:a05Wt000003SzRwIAK",
+        "b2b:a05Wt000003SzWhIAK",
+        "b2b:a05Wt000003Szq2IAC",
+        "b2b:a05Wt000003SzzoIAC",
+        "b2b:a05Wt000003T0cQIAS",
+        "b2b:a05Wt000003T0uBIAS",
+        "b2b:a05Wt000003T1GjIAK",
+        "b2b:a05Wt000003T1ILIA0",
+        "b2b:a05Wt000003T1JxIAK",
+        "b2b:a05Wt000003T1LZIA0",
+        "b2b:a05Wt000003T1NBIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Aarav Sharma had two calls with Nina Rossi (2021-02-28 and 2021-03-09), and each ends with different next-step commitments; the question does not specify which call.",
+        "answers": [
+          {
+            "answer": "After the 2021-03-09 call, Aarav committed to preparing a tailored proposal based on the discussion (with Alex from the team ensuring it reflects Innovative Robotics' unique needs) and to scheduling a product demonstration showcasing DesignWave Automation and CircuitAI Innovator, with details to follow soon.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwycIAC",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2021-03-09T11:03:25] Aarav Sharma: The next step is to prepare a tailored proposal based on our discussions today. Alex from our team will ensure it reflects the unique needs of Innovative Robotics. We'll also schedule a product demonstration to showcase the practical applications of DesignWave Automation and CircuitAI Innovator.\n[2021-03-09T11:03:35] Nina Rossi: Sounds like a plan. I appreciate you taking the time to walk me through your offerings. Looking forward to the proposal and the demonstration session."
+              }
+            ]
+          },
+          {
+            "answer": "After the 2021-02-28 call, Aarav committed to scheduling a discovery meeting with Nina for Thursday morning at 11 AM and sending a calendar invite along with a brief agenda covering the pertinent topics.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzRvIAK",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2021-02-28T15:01:50] Aarav Sharma: Thursday morning sounds perfect. Let's schedule it for 11 AM. We can send a calendar invite and a brief agenda to cover all pertinent topics during our meeting.\n[2021-02-28T15:01:55] Nina Rossi: That sounds like a plan. I'll be looking forward to it."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Aarav (Aarav Sharma), Nina Rossi, and Innovative Robotics. Only one call in the dataset matches all three: b2b:a05Wt000003SwycIAC (2021-03-09), opportunity 'Innovative Robotics AI-Powered Integration'. The other Aarav–Nina call (b2b:a05Wt000003SzRvIAK, 2021-02-28) is an earlier scheduling call with no substantive next-step commitments beyond setting up a discovery meeting. The 2021-03-09 call contains explicit next-step commitments from Aarav.",
+        "answers": [
+          {
+            "answer": "Aarav committed to two next steps: (1) preparing a tailored proposal based on the day's discussions, with Alex from the TechPulse team ensuring it reflects the unique needs of Innovative Robotics, and (2) scheduling a product demonstration to showcase the practical applications of DesignWave Automation and CircuitAI Innovator. He also stated they would be in touch soon with all the details.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwycIAC",
+                "line_start": 17,
+                "line_end": 21,
+                "quote": "[2021-03-09T11:03:13] Nina Rossi: That's exactly what we're looking for. What are the next steps?\n[2021-03-09T11:03:25] Aarav Sharma: The next step is to prepare a tailored proposal based on our discussions today. Alex from our team will ensure it reflects the unique needs of Innovative Robotics. We'll also schedule a product demonstration to showcase the practical applications of DesignWave Automation and CircuitAI Innovator.\n[2021-03-09T11:03:35] Nina Rossi: Sounds like a plan. I appreciate you taking the time to walk me through your offerings. Looking forward to the proposal and the demonstration session.\n[2021-03-09T11:03:45] Aarav Sharma: It's my pleasure, Nina. I'm confident you'll find our solutions and support can truly benefit your operations. We'll be in touch soon with all the details."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-b34435c5aafef6ed",
+      "question": "What did Aiden Fisher flag as a concern about AutoElite's financing, and what did Maya say their financing packages can accommodate?",
+      "gold_answer": "Aiden noted other dealerships offer simpler financing options; Maya said their flexible packages can be tailored, e.g., lower monthly payments or early payoff without penalty.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMqnIAG",
+        "b2c:a05Ws000005SPVIIA4",
+        "b2c:a05Ws000005SQCsIAO",
+        "b2c:a05Ws000005SQmQIAW",
+        "b2c:a05Ws000005SQpaIAG",
+        "b2c:a05Ws000005SRaNIAW",
+        "b2c:a05Ws000005SRgsIAG",
+        "b2c:a05Ws000005SRybIAG",
+        "b2c:a05Ws000005SS4zIAG",
+        "b2c:a05Ws000005SSjPIAW",
+        "b2c:a05Ws000005SSmcIAG",
+        "b2c:a05Ws000005SSrTIAW",
+        "b2c:a05Ws000005SSt1IAG",
+        "b2c:a05Ws000005ST2hIAG",
+        "b2c:a05Ws000005ST7ZIAW",
+        "b2c:a05Ws000005ST7aIAG",
+        "b2c:a05Ws000005SUQCIA4",
+        "b2c:a05Ws000005SUZxIAO",
+        "b2c:a05Ws000005SVEEIA4",
+        "b2c:a05Ws000005SVFoIAO",
+        "b2c:a05Ws000005SVMGIA4",
+        "b2c:a05Ws000005SWv0IAG",
+        "b2c:a05Ws000005SY8mIAG",
+        "b2c:a05Ws000005SYf5IAG",
+        "b2c:a05Ws000005SZ3GIAW",
+        "b2c:a05Ws000005SZKzIAO",
+        "b2c:a05Ws000005SZT4IAO",
+        "b2c:a05Ws000005SZWIIA4",
+        "b2c:a05Ws000005SZsvIAG",
+        "b2c:a05Ws000005Sa7PIAS",
+        "b2c:a05Ws000005SaFSIA0",
+        "b2c:a05Ws000005SaH6IAK",
+        "b2c:a05Ws000005SayZIAS",
+        "b2c:a05Ws000005Sb3PIAS",
+        "b2c:a05Ws000005SbRaIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only two calls involve Maya (Maya Patel). In the 2020-11-20 call, Aiden raises a financing concern (other dealerships offer simpler, more straightforward financing) and Maya explains their flexible financing packages can accommodate lower monthly payments or early payoff without penalty. The 2024-11-24 follow-up contains no competing financing concern from Aiden.",
+        "answers": [
+          {
+            "answer": "Aiden Fisher flagged that other dealerships offer simpler financing options that sometimes seem more straightforward. Maya Patel responded that AutoElite's flexible financing packages are designed with variety and customization in mind, allowing him to tailor a plan to his financial situation — for example, whether he prefers lower monthly payments or the possibility of early payoff without penalty, they can accommodate.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ST7aIAG",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-11-20T13:02:20] Aiden Fisher: That's a good point. Now, speaking of value, I do have some questions around financing. I found that other dealerships offer simpler financing options which sometimes seem straightforward."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Maya (Maya Patel) and asks about a concern Aiden raised regarding AutoElite's financing and what Maya said their packages can accommodate. Only one call features Maya Patel discussing financing with Aiden: call b2c:a05Ws000005ST7aIAG (2020-11-20). In that call, Aiden flags that other dealerships offer simpler/more straightforward financing options, and Maya responds that their flexible financing packages can accommodate lower monthly payments or early payoff without penalty.",
+        "answers": [
+          {
+            "answer": "Aiden Fisher flagged the concern that other dealerships offer simpler financing options which sometimes seem more straightforward, implying AutoElite's multiple options might feel cumbersome to navigate. Maya Patel responded that their flexible financing packages are designed with variety and customization in mind, and can accommodate whether the customer prefers lower monthly payments or the possibility of early payoff without penalty.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005ST7aIAG",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2020-11-20T13:02:20] Aiden Fisher: That's a good point. Now, speaking of value, I do have some questions around financing. I found that other dealerships offer simpler financing options which sometimes seem straightforward.\n[2020-11-20T13:02:40] Maya Patel: I understand that navigating multiple options might feel cumbersome, but we've designed our flexible financing packages with variety and customization in mind, allowing you to tailor a plan that suits your financial situation. For example, whether you prefer lower monthly payments or the possibility of early payoff without penalty, we can accommodate."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same concern (other dealerships offer simpler/more straightforward financing options) and the same accommodation (flexible packages tailored to lower monthly payments or early payoff without penalty). The reference also covers both requested facts: Aiden's concern about simpler options elsewhere and Maya's statement that packages can be tailored, citing lower monthly payments or early payoff without penalty. Answer B adds a minor interpretive gloss ('cumbersome to navigate') but this does not change the core facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-e017525ca5783c44",
+      "question": "How does the Nissan Leaf's range compare to the Tesla Model S for Sophia Carter, and what price positioning did Bakari cite for the Leaf?",
+      "gold_answer": "The Leaf offers a 150-mile range versus over 370 miles for the Model S, and Bakari positioned the Leaf at a more accessible price point.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMCiIAO",
+        "b2c:a05Ws000005SMCjIAO",
+        "b2c:a05Ws000005SOw6IAG",
+        "b2c:a05Ws000005SRaXIAW",
+        "b2c:a05Ws000005SSy6IAG",
+        "b2c:a05Ws000005STIqIAO",
+        "b2c:a05Ws000005STe1IAG",
+        "b2c:a05Ws000005SV32IAG",
+        "b2c:a05Ws000005SWK4IAO",
+        "b2c:a05Ws000005SWiDIAW",
+        "b2c:a05Ws000005SWiEIAW",
+        "b2c:a05Ws000005SXG5IAO",
+        "b2c:a05Ws000005SXL2IAO",
+        "b2c:a05Ws000005SZMcIAO",
+        "b2c:a05Ws000005SZbIIAW",
+        "b2c:a05Ws000005Sb1vIAC",
+        "b2c:a05Ws000005Sb1wIAC",
+        "b2c:a05Ws000005SbOWIA0",
+        "b2c:a05Ws000005Sc9JIAS",
+        "b2c:a05Ws000005Sc9KIAS",
+        "b2c:a05Ws000005ScVmIAK",
+        "b2c:a05Ws000005ScVnIAK",
+        "b2c:a05Ws000005ScafIAC",
+        "b2c:a05Ws000005SckMIAS",
+        "b2c:a05Ws000005ScxDIAS",
+        "b2c:a05Ws000005SdbVIAS",
+        "b2c:a05Ws000005SdehIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Bakari Saidi discussing the Leaf's range versus the Tesla Model S with Sophia Carter (the 2020-03-20 discovery meeting). Other Bakari calls mention the Leaf but never its range or a price-positioning comparison, so there is a single complete answer.",
+        "answers": [
+          {
+            "answer": "Bakari told Sophia the Tesla Model S has a range of over 370 miles on a full charge, while the Nissan Leaf offers a range of 150 miles — great for city commutes and shorter trips. For price positioning, he cited that the Nissan Leaf 'comes at a more accessible price point' than the Model S, while still being loaded with practical features that make it one of the best in its segment.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STe1IAG",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2020-03-20T15:00:34] Bakari Saidi: Great. So, let's start with the Tesla Model S. It's packed with state-of-the-art technology and has a range of over 370 miles on a full charge. It's not only eco-friendly but also luxurious with its minimalist interior and advanced autopilot capabilities.\n[2020-03-20T15:00:50] Sophia Carter: I really like the sound of that range. Makes long trips a lot more convenient without constantly worrying about charging. How does it compare to the Nissan Leaf?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Bakari as the person who cited price positioning for the Leaf. Only one call features Bakari Saidi discussing both the Nissan Leaf's range versus the Tesla Model S and its price positioning: call b2c:a05Ws000005STe1IAG (2020-03-20). In that call, Bakari states the Tesla Model S has a range of over 370 miles, the Nissan Leaf has a range of 150 miles (great for city commutes and shorter trips), and positions the Leaf at 'a more accessible price point.' No other Bakari call provides specific range figures or explicit price-positioning language for the Leaf.",
+        "answers": [
+          {
+            "answer": "In the discovery meeting on 2020-03-20, Bakari Saidi told Sophia Carter that the Tesla Model S has a range of over 370 miles on a full charge, while the Nissan Leaf offers a range of 150 miles, which is great for city commutes and shorter trips. Regarding price positioning, Bakari cited the Nissan Leaf as coming at 'a more accessible price point' compared to the Tesla Model S, making it an affordable and practical alternative for urban driving.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STe1IAG",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2020-03-20T15:00:34] Bakari Saidi: Great. So, let's start with the Tesla Model S. It's packed with state-of-the-art technology and has a range of over 370 miles on a full charge. It's not only eco-friendly but also luxurious with its minimalist interior and advanced autopilot capabilities.\n[2020-03-20T15:00:50] Sophia Carter: I really like the sound of that range. Makes long trips a lot more convenient without constantly worrying about charging. How does it compare to the Nissan Leaf?\n[2020-03-20T15:01:02] Bakari Saidi: The Nissan Leaf is also a fantastic choice and comes at a more accessible price point. It offers a range of 150 miles, which is great for city commutes and shorter trips. Plus, it's loaded with practical features, making it one of the best in its segment."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same range comparison (Tesla Model S over 370 miles vs. Nissan Leaf 150 miles) and the same price positioning (Leaf at 'a more accessible price point' compared to the Model S), attributed to Bakari for Sophia Carter. The reference also covers both requested facts: the 150-mile vs. over-370-mile range comparison and the 'more accessible price point' positioning. Minor extras (date, meeting context, urban-driving framing) do not affect agreement or coverage."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
