@@ -1,0 +1,488 @@
+[
+  {
+    "question_id": "b2b-single_call-4d9945767299b951",
+    "question": "What next step did Zara propose to Chen Liang at InfiLink Solutions, and when did he agree it could happen?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Zara proposed to Chen Liang at InfiLink Solutions and the timing he agreed to",
+        "relationship": "single coherent request: a proposed next step and its agreed timing address the same follow-up issue",
+        "reason": "The question asks for one next step and when it was agreed to occur \u2014 a natural, unified next-steps lookup from the same conversation."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what next step Zara proposed and when Chen Liang agreed it could happen. The dialogue shows Zara proposing 'a follow-up meeting where we can delve into your specific challenges' and asking about early September; Chen Liang confirms 'Early September works for me.' The gold answer captures both facts precisely with no unasked extras. The question names the rep, contact, and account, which is natural scoping for a sales QA. No locator preamble, no answer leakage, no unsupported causality. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage shows Zara proposing a follow-up meeting in early September to discuss InfiLink's specific challenges, but it ends with a question ('Would you be available in early September?'). The cited lines (19\u201320) contain only Zara's proposal; no quoted text from Chen Liang confirms or agrees to the meeting. The answer_claim states 'Chen agrees,' but the supplied evidence does not include Chen's affirmative response. A question does not establish its answer."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer asserts two facts: (1) a follow-up meeting to discuss InfiLink's specific challenges was proposed, and (2) Chen Liang agreed it could happen in early September. The single cited evidence item supports fact (1) via Zara's quoted proposal, but it does not contain any utterance from Chen Liang confirming or agreeing to the timing. Since the instruction requires that every factual claim in the gold_answer be supported by the supplied citations, and Chen's agreement is not evidenced in the quoted dialogue, the answer is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-e36e1b95c25d57d3",
+    "question": "What did Hassan Qureshi say about how competitors' data protection compares to TechPulse's offering?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Hassan Qureshi's comments comparing competitors' data protection to TechPulse's offering",
+        "relationship": "single competitive comparison request",
+        "reason": "One coherent competitive-comparison lookup about the same topic (data protection), not multiple independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Hassan Qureshi said about competitors' data protection versus TechPulse's offering. The dialogue at 11:03:09 shows Hassan stating competitors 'stick to the standard industry-level security but lack the customization that you provide' and calling it 'a significant advantage for you.' The gold answer faithfully captures both facts (standard security without customization, and the significant-advantage characterization) with no unasked extras. The question is naturally phrased, scoped to a named contact and a specific competitive-positioning topic, and a rep would plausibly want this intelligence. Single-call set, so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is attributed to Hassan Qureshi and states: 'Many of them stick to the standard industry-level security but lack the customization that you provide. That's a significant advantage for you.' This directly supports the answer_claim that competitors stick to standard industry-level security but lack the customization TechPulse provides, which Hassan called a significant advantage. The speaker attribution, the characterization of competitors, the mention of customization, and the 'significant advantage' qualifier all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'Competitors stick to standard industry-level security but lack the customization TechPulse provides, which Hassan called a significant advantage.' The single cited evidence (index 0) is a direct quote from Hassan Qureshi that contains all these elements: competitors sticking to standard industry-level security, lacking the customization TechPulse provides, and Hassan explicitly calling it 'a significant advantage.' The pronoun 'you' in the quote refers to TechPulse (the sales-side company), consistent with the context. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-931e0964dd084ce4",
+    "question": "Across the two prep and discovery conversations with Artem Ivanov at SafetyNet, what concern did he raise about customization, and which competitor did he later name as lacking customizability?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The customization concern Artem Ivanov raised during prep/discovery, and the competitor he later named as lacking customizability",
+        "relationship": "same business issue (customizability) traced across two calls",
+        "reason": "Both requested facts concern the single issue of customization for the same customer; the multi-call comparison is coherent, not two independent lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzV5IAK",
+                "fact": "Artem said customization is something SafetyNet has found lacking elsewhere.",
+                "why_other_call_cannot_supply_it": "The other call does not contain this general statement about customization being lacking elsewhere; it only mentions NanoDesign's lack of customizability."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzExIAK",
+                "fact": "Artem specifically cited NanoDesign's solutions as lacking customizability.",
+                "why_other_call_cannot_supply_it": "The other call does not mention NanoDesign or any specific competitor by name."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the concern about customization and the specific competitor named. The first call (SzV5IAK) contains the general concern about customization lacking elsewhere, while the second call (SzExIAK) contains the specific mention of NanoDesign. Neither call provides both facts, so both are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for a concern about customization and a competitor lacking customizability. Both facts are present in the first call (b2b:a05Wt000003SzExIAK): Artem raises the concern ('We've had issues before with a lack of flexibility') and names NanoDesign as lacking customizability. The second call only repeats the concern without naming any competitor. Thus, the first call alone suffices to answer the question, so both calls are not necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzV5IAK",
+                  "fact": "Artem said customization is something SafetyNet has found lacking elsewhere.",
+                  "why_other_call_cannot_supply_it": "The other call does not contain this general statement about customization being lacking elsewhere; it only mentions NanoDesign's lack of customizability."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzExIAK",
+                  "fact": "Artem specifically cited NanoDesign's solutions as lacking customizability.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention NanoDesign or any specific competitor by name."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the concern about customization and the specific competitor named. The first call (SzV5IAK) contains the general concern about customization lacking elsewhere, while the second call (SzExIAK) contains the specific mention of NanoDesign. Neither call provides both facts, so both are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzV5IAK",
+                "fact": "Artem raised the concern that customization was something SafetyNet found lacking elsewhere (Sept 4 call).",
+                "why_other_call_cannot_supply_it": "The Sept 10 call never states the general customization concern; it only names the specific competitor."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzExIAK",
+                "fact": "Artem named NanoDesign's solutions as lacking customizability (Sept 10 call).",
+                "why_other_call_cannot_supply_it": "The Sept 4 call mentions no competitor by name, only a vague 'lacking elsewhere' remark."
+              }
+            ],
+            "reason": "The question asks for two distinct requested facts: the general customization concern (only in the Sept 4 call) and the named competitor NanoDesign (only in the Sept 10 call). Neither call alone answers both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzV5IAK",
+                  "fact": "Artem raised the concern that customization was something SafetyNet found lacking elsewhere (Sept 4 call).",
+                  "why_other_call_cannot_supply_it": "The Sept 10 call never states the general customization concern; it only names the specific competitor."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzExIAK",
+                  "fact": "Artem named NanoDesign's solutions as lacking customizability (Sept 10 call).",
+                  "why_other_call_cannot_supply_it": "The Sept 4 call mentions no competitor by name, only a vague 'lacking elsewhere' remark."
+                }
+              ],
+              "reason": "The question asks for two distinct requested facts: the general customization concern (only in the Sept 4 call) and the named competitor NanoDesign (only in the Sept 10 call). Neither call alone answers both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The prep call (Sep 4) contains Artem's statement that customization is 'something we've found lacking elsewhere,' while the discovery call (Sep 10) contains his specific naming of NanoDesign's solutions as lacking customizability. Each source contributes an exclusive requested fact. The answer accurately reflects both claims without adding unasked information. The question is naturally scoped to a named contact and account, and a rep would plausibly want to track a customer's stated pain point and the competitor they cited.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Artem Ivanov stating 'Customization is definitely something we've found lacking elsewhere,' which matches the answer_claim that customization is something they've found lacking elsewhere. Speaker, sentiment, and content all align."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote explicitly has Artem Ivanov saying 'specifically NanoDesign's solutions lacking customizability,' which directly supports the answer_claim that he cited NanoDesign's solutions as lacking customizability. The speaker attribution, competitor name, and the specific criticism all match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer makes two factual claims: (1) Artem said customization was something SafetyNet found lacking elsewhere, and (2) he later specifically cited NanoDesign's solutions as lacking customizability. Evidence index 0 supports claim (1) with a direct quote from the 2023-09-04 call, and evidence index 1 supports claim (2) with a direct quote from the 2023-09-10 call. The temporal ordering ('later') is also confirmed by the call dates (Sept 4 vs Sept 10). Both claims are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-0beed5bbc38b9d91",
+    "question": "In the EcoWave Solutions evaluation, which competitor did Aarav mention regarding future-oriented technology, and which competitor's support and service agreements is he also weighing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Which competitor Aarav mentioned regarding future-oriented technology, and which competitor's support/service agreements he is weighing, within the EcoWave Solutions evaluation",
+        "relationship": "single competitive-comparison request within the same evaluation",
+        "reason": "Both lookups concern the same competitive evaluation issue (competitor positioning in the EcoWave deal), forming one coherent competitive comparison rather than unrelated facts joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SuyQIAS",
+                "fact": "Aarav mentioned FlexEDA as a competitor focused on future-oriented tech.",
+                "why_other_call_cannot_supply_it": "The second call does not mention FlexEDA at all; it only discusses TechPulse and CircuitWave."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvjBIAS",
+                "fact": "Aarav is weighing CircuitWave's support and service agreements.",
+                "why_other_call_cannot_supply_it": "The first call does not mention CircuitWave or its support/service agreements; it only discusses TechPulse and FlexEDA."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: which competitor was mentioned regarding future-oriented technology, and which competitor's support/service agreements are being weighed. The first call contains the mention of FlexEDA in the context of future-oriented tech, while the second call contains the mention of CircuitWave's support/service agreements. Neither call provides both facts, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SuyQIAS",
+                  "fact": "Aarav mentioned FlexEDA as a competitor focused on future-oriented tech.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention FlexEDA at all; it only discusses TechPulse and CircuitWave."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvjBIAS",
+                  "fact": "Aarav is weighing CircuitWave's support and service agreements.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention CircuitWave or its support/service agreements; it only discusses TechPulse and FlexEDA."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: which competitor was mentioned regarding future-oriented technology, and which competitor's support/service agreements are being weighed. The first call contains the mention of FlexEDA in the context of future-oriented tech, while the second call contains the mention of CircuitWave's support/service agreements. Neither call provides both facts, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SuyQIAS",
+                "fact": "Aarav mentioned FlexEDA alongside TechPulse as focused on future-oriented technology",
+                "why_other_call_cannot_supply_it": "The second call never mentions FlexEDA; the future-oriented competitor comparison appears only in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvjBIAS",
+                "fact": "Aarav is also evaluating CircuitWave's support and service agreements",
+                "why_other_call_cannot_supply_it": "The first call never mentions CircuitWave or its support/service agreements; this competitor concern appears only in the second call."
+              }
+            ],
+            "reason": "The question asks for two distinct competitor facts: FlexEDA (future-oriented tech) is stated only in the first call, and CircuitWave's support/service agreements are stated only in the second call. Neither call alone contains both requested facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SuyQIAS",
+                  "fact": "Aarav mentioned FlexEDA alongside TechPulse as focused on future-oriented technology",
+                  "why_other_call_cannot_supply_it": "The second call never mentions FlexEDA; the future-oriented competitor comparison appears only in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvjBIAS",
+                  "fact": "Aarav is also evaluating CircuitWave's support and service agreements",
+                  "why_other_call_cannot_supply_it": "The first call never mentions CircuitWave or its support/service agreements; this competitor concern appears only in the second call."
+                }
+              ],
+              "reason": "The question asks for two distinct competitor facts: FlexEDA (future-oriented tech) is stated only in the first call, and CircuitWave's support/service agreements are stated only in the second call. Neither call alone contains both requested facts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Nov 9): Aarav states 'both TechPulse and FlexEDA seem focused on future-oriented tech,' identifying FlexEDA as the competitor regarding future-oriented technology. Call 2 (Nov 10): Aarav says 'we're also evaluating CircuitWave's support and service agreements, as they seem strong.' Each source contributes an exclusive requested fact. The question is naturally phrased, scoped to the EcoWave Solutions evaluation with named contact Aarav, and the gold answer states precisely the two requested facts with no extras. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Aarav Kumar stating 'both TechPulse and FlexEDA seem focused on future-oriented tech,' which supports the claim that Aarav mentions FlexEDA (alongside TechPulse) regarding future-oriented technology."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Aarav Kumar stating 'we're also evaluating CircuitWave's support and service agreements, as they seem strong,' which supports the claim that Aarav is weighing CircuitWave's support and service agreements."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states 'FlexEDA on future-oriented tech; CircuitWave's support and service agreements.' Evidence index 0 confirms Aarav mentioned FlexEDA (and TechPulse) as focused on future-oriented tech. Evidence index 1 confirms Aarav is evaluating CircuitWave's support and service agreements. Both parts of the gold answer are directly supported by the cited quotations. The answer is a faithful, concise summary of the two citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-4ce3ce9beba0d9f9",
+    "question": "What pricing did Hassan quote Sophia Gomez for the Audi Q7 and Volvo XC60, and what did he commit to sending her?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The prices Hassan quoted Sophia Gomez for the Audi Q7 and Volvo XC60, plus what he committed to sending her",
+        "relationship": "single coherent quote breakdown: pricing for the vehicles under discussion and the follow-up commitment arising from that same quote conversation",
+        "reason": "This is one commercial quote interaction \u2014 the pricing figures and the follow-up commitment (e.g., sending a formal quote) belong to the same sales exchange, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two specific prices and a follow-up commitment, all of which a rep or account manager would plausibly need to track. The dialogue confirms the Audi Q7 at $53,999.99, the Volvo XC60 at $32,999.99, and Hassan's commitment to send an updated formal proposal by the next day. The gold answer states exactly those facts with no unasked extras. Wording is natural, scope is clear (named customer, named vehicles, named rep), and no artificial locator preamble or clue list is present. Because question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Hassan Riaz explicitly states 'The Audi Q7 is priced at $53,999.99 and the Volvo XC60 at $32,999.99,' which directly supports the answer_claim about both vehicle prices."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Hassan Riaz states 'I'll get the updated details drafted and sent over to you by tomorrow,' which directly supports the claim that he committed to sending updated details by the next day."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Evidence index 0 confirms the exact prices for the Audi Q7 ($53,999.99) and Volvo XC60 ($32,999.99). Evidence index 1 confirms Hassan committed to sending updated details by tomorrow. The gold_answer states 'updated formal proposal by the next day,' which is a faithful paraphrase of 'updated details drafted and sent over to you by tomorrow' given the call date of 2020-11-12. All factual claims in the gold_answer are supported by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-e163ebf55401f45e",
+    "question": "What concerns did Sophia Carter raise about AutoElite's extended warranty pricing, and how did Fernando respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concerns Sophia Carter raised about AutoElite's extended warranty pricing and Fernando's response to them",
+        "relationship": "single coherent objection-and-response exchange about the same pricing issue",
+        "reason": "This is one objection and its response addressing the same issue (extended warranty pricing), a natural sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection (competitor pricing on extended warranties) and the rep's rebuttal, a realistic sales-QA need. The dialogue confirms Sophia noted competitors have more competitive extended-warranty prices and Fernando responded that AutoElite may not always be cheapest but covers more than basics with no hidden fees. The gold answer matches the source precisely with no extra or missing facts. Wording is natural, scope is clear (named customer, named company, specific topic), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage shows Sophia Carter explicitly stating 'I've noticed some competitors have more competitive prices for their extended warranties' and asking how AutoElite compares. This directly supports the claim that she raised a competitor price concern on extended warranties."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Fernando's quoted response states 'we may not always be the cheapest, our plans cover more than just the basics, and we avoid any hidden fees.' This directly supports the claim that Fernando responded they aren't cheapest but offer broader coverage and no hidden fees."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) She noted competitors have cheaper extended warranties \u2013 supported by index 0 where Sophia says competitors have 'more competitive prices for their extended warranties.' (2) Fernando said AutoElite isn't always cheapest but covers more than basics with no hidden fees \u2013 supported by index 1 where Fernando says 'we may not always be the cheapest, our plans cover more than just the basics, and we avoid any hidden fees.' Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  }
+]
