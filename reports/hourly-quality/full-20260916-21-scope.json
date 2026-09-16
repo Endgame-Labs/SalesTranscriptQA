@@ -1,0 +1,310 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "d5f8ea26fee1935746e20ffc74351ac58faa4ed5065c92f858e7d7a3300ff4e1",
+  "questions": 3,
+  "counts": {
+    "pass": 3
+  },
+  "estimated_usd": 0.40060333,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-c3f0de5459548398",
+      "question": "For InspireTech Consulting, what customization concern did Hiroshi Saito raise in the initial discussion, and which specific custom features did he request after the demo?",
+      "gold_answer": "Initially he was concerned about adaptability for specialized applications and said customizability was key; after the demo he requested a more intuitive UI for training modules and flexible integration with existing platforms like EduTech.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StFzIAK",
+        "b2b:a05Wt000003StcoIAC",
+        "b2b:a05Wt000003SvZZIA0",
+        "b2b:a05Wt000003SvsvIAC",
+        "b2b:a05Wt000003SwabIAC",
+        "b2b:a05Wt000003Sx5EIAS",
+        "b2b:a05Wt000003SxBbIAK",
+        "b2b:a05Wt000003Sxd4IAC",
+        "b2b:a05Wt000003SxjTIAS",
+        "b2b:a05Wt000003SySaIAK",
+        "b2b:a05Wt000003Sz3hIAC",
+        "b2b:a05Wt000003SzetIAC",
+        "b2b:a05Wt000003SzeuIAC",
+        "b2b:a05Wt000003SzgTIAS",
+        "b2b:a05Wt000003SzwaIAC",
+        "b2b:a05Wt000003SzwbIAC",
+        "b2b:a05Wt000003T09SIAS",
+        "b2b:a05Wt000003T0KjIAK",
+        "b2b:a05Wt000003T0ZIIA0",
+        "b2b:a05Wt000003T1iKIAS",
+        "b2b:a05Wt000003T1qKIAS",
+        "b2b:a05Wt000003T1v5IAC",
+        "b2b:a05Wt000003T23BIAS",
+        "b2b:a05Wt000003T2RNIA0",
+        "b2b:a05Wt000003T2XmIAK",
+        "b2b:a05Wt000003T2w0IAC",
+        "b2b:a05Wt000003T35hIAC",
+        "b2b:a05Wt000003T35iIAC",
+        "b2b:a05Wt000003T3LnIAK",
+        "b2b:a05Wt000003T3NTIA0",
+        "b2b:a05Wt000003T3TtIAK",
+        "b2b:a05Wt000003T3VUIA0",
+        "b2b:a05Wt000003T3opIAC",
+        "b2b:a05Wt000003T3s3IAC",
+        "b2b:a05Wt000003T3s4IAC",
+        "b2b:a05Wt000003T3teIAC",
+        "b2b:a05Wt000003T406IAC",
+        "b2b:a05Wt000003T41iIAC",
+        "b2b:a05Wt000003T44vIAC",
+        "b2b:a05Wt000003T46XIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 2,
+            "normalized_end": 3
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Hiroshi Saito's call history forms a clear sequence on the TechInnovation Expansion opportunity: the initial discussion (2023-04-20) is his earliest call, where he raised adaptability/customization concerns; the demo occurred 2023-05-10; and the follow-up after the demo (2023-05-15) is where he specified the custom features requested. No other call contains a post-demo feature request from Saito, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-04-20), Hiroshi Saito raised a concern about how adaptable TechPulse's solutions are, especially for specialized applications — noting customizability as a key factor and also seeking pricing flexibility aligned with business growth. After the demo (2023-05-10) of EduTech Lab and DesignWave Automation, in the 2023-05-15 follow-up he requested specific custom features: (1) a more intuitive UI for their training modules, and (2) flexibility in integrating with their existing platforms like EduTech.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sz3hIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-04-20T10:31:55] Hiroshi Saito: We've heard good things about TechPulse, but one of my concerns is how adaptable your solutions are, especially for specialized applications.\n[2023-04-20T10:32:15] Ayo Okeke: That's a great point, Hiroshi. While our implementation process is known for being efficient, we recognize that customization is important to align with unique client requirements. We're actually working on providing more adaptable initial configurations in our roadmaps."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzeuIAC",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2023-05-10T14:00:20] Ayo Okeke: I'm great, thanks for asking. I'm excited to walk you through a demo of our EduTech Lab and DesignWave Automation today. Hopefully, it’ll provide some valuable insights for InspireTech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T35iIAC",
+                "line_start": 3,
+                "line_end": 6,
+                "quote": "[2023-05-15T11:31:00] Hiroshi Saito: Overall, the demo was impressive. EduTech Lab and DesignWave Automation offer great functionalities, but we're considering some custom features to tailor them more closely to our specific use cases.\n[2023-05-15T11:31:20] Ayo Okeke: Absolutely, customization is something we can support. Could you elaborate on which specific functional areas you're thinking about?\n[2023-05-15T11:31:42] Hiroshi Saito: Mainly, we want features that cater to more intuitive UI for our training modules, and some flexibility in integrating with our existing platforms like EduTech."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Hiroshi Saito, InspireTech Consulting, an 'initial discussion' (earliest call with Hiroshi), and 'after the demo' (post-demo follow-up with the same salesperson). Hiroshi's earliest call is b2b:a05Wt000003Sz3hIAC (2023-04-20, with Ayo Okeke, opportunity 'TechInnovation Expansion with InspireTech'), where he raises a customization concern about adaptability for specialized applications. The demo occurs on 2023-05-10 (b2b:a05Wt000003SzeuIAC), and the post-demo follow-up is b2b:a05Wt000003T35iIAC (2023-05-15, same salesperson Ayo Okeke, same opportunity), where Hiroshi requests specific custom features. No other salesperson/opportunity pairing with Hiroshi has both an earlier initial discussion and a post-demo call with explicit custom feature requests.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-04-20, with Ayo Okeke), Hiroshi Saito raised the concern that TechPulse's solutions might not be adaptable enough for specialized applications, noting that competitors offer more adaptable initial configurations. After the demo (follow-up call 2023-05-15, same salesperson and opportunity), he requested two specific custom features: (1) a more intuitive UI for their training modules, and (2) flexibility in integrating with their existing platforms like EduTech.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sz3hIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-04-20T10:31:55] Hiroshi Saito: We've heard good things about TechPulse, but one of my concerns is how adaptable your solutions are, especially for specialized applications.\n[2023-04-20T10:32:15] Ayo Okeke: That's a great point, Hiroshi. While our implementation process is known for being efficient, we recognize that customization is important to align with unique client requirements. We're actually working on providing more adaptable initial configurations in our roadmaps."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T35iIAC",
+                "line_start": 3,
+                "line_end": 6,
+                "quote": "[2023-05-15T11:31:00] Hiroshi Saito: Overall, the demo was impressive. EduTech Lab and DesignWave Automation offer great functionalities, but we're considering some custom features to tailor them more closely to our specific use cases.\n[2023-05-15T11:31:20] Ayo Okeke: Absolutely, customization is something we can support. Could you elaborate on which specific functional areas you're thinking about?\n[2023-05-15T11:31:42] Hiroshi Saito: Mainly, we want features that cater to more intuitive UI for our training modules, and some flexibility in integrating with our existing platforms like EduTech."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same initial customization concern (adaptability of TechPulse's solutions for specialized applications, with customizability as a key factor) and the same two post-demo custom features: (1) a more intuitive UI for training modules and (2) flexibility in integrating with existing platforms like EduTech. Answer B adds a competitor comparison and names the salesperson, but these are extras that do not alter the core facts. The reference covers both the initial adaptability/customizability concern and both requested custom features, matching the question's requirements."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-6889a043903c2087",
+      "question": "What customizations is Yasir Khan at SolarWind Innovations looking for in the EDA solutions?",
+      "gold_answer": "Integration with existing systems and specific energy module parameters.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgOIAS",
+        "b2b:a05Wt000003SrcSIAS",
+        "b2b:a05Wt000003SsLaIAK",
+        "b2b:a05Wt000003StFyIAK",
+        "b2b:a05Wt000003StW6IAK",
+        "b2b:a05Wt000003StcnIAC",
+        "b2b:a05Wt000003StkcIAC",
+        "b2b:a05Wt000003StmKIAS",
+        "b2b:a05Wt000003Sv0AIAS",
+        "b2b:a05Wt000003SvUoIAK",
+        "b2b:a05Wt000003SwCGIA0",
+        "b2b:a05Wt000003Swc2IAC",
+        "b2b:a05Wt000003Sx5DIAS",
+        "b2b:a05Wt000003SxJgIAK",
+        "b2b:a05Wt000003Sxd0IAC",
+        "b2b:a05Wt000003SxjQIAS",
+        "b2b:a05Wt000003SxjRIAS",
+        "b2b:a05Wt000003Sy4VIAS",
+        "b2b:a05Wt000003SysPIAS",
+        "b2b:a05Wt000003Sz6uIAC",
+        "b2b:a05Wt000003SzYJIA0",
+        "b2b:a05Wt000003SztLIAS",
+        "b2b:a05Wt000003T02xIAC",
+        "b2b:a05Wt000003T0mGIAS",
+        "b2b:a05Wt000003T15VIAS",
+        "b2b:a05Wt000003T24oIAC",
+        "b2b:a05Wt000003T2eHIAS",
+        "b2b:a05Wt000003T2pXIAS",
+        "b2b:a05Wt000003T32RIAS",
+        "b2b:a05Wt000003T3tdIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Yasir Khan appears in two calls (2021-07-23 and 2021-07-24). Only the 2021-07-23 call contains a direct statement of the specific customizations he seeks; the 2021-07-24 call only discusses customizability as a general evaluation criterion, so there is no competing complete answer.",
+        "answers": [
+          {
+            "answer": "Yasir Khan says SolarWind's needs are quite specific in terms of integration with existing systems and specific energy module parameters — i.e., he wants the EDA solutions customized to integrate with SolarWind's existing systems and to support their specific energy module parameters.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzYJIA0",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2021-07-23T10:02:35] Luciana Alves: That’s our commitment. And in terms of customization, while we have a range of robust and stable solutions, we understand that niche requirements might need more options. What specific customizations are you possibly looking for?\n[2021-07-23T10:02:47] Yasir Khan: Well, our needs can be quite specific in terms of integration with existing systems and specific energy module parameters."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Yasir Khan appears in exactly two calls (b2b:a05Wt000003SzYJIA0 on 2021-07-23 and b2b:a05Wt000003StkcIAC on 2021-07-24), both under the 'SolarWind Innovations Green Energy Integration' opportunity. In the first call, Luciana explicitly asks what specific customizations Yasir is looking for, and he answers: integration with existing systems and specific energy module parameters. In the second call, Yasir reinforces that customizability is important because competitor solutions have been more adaptable to their specific/niche requirements. Together these form a single determinate answer.",
+        "answers": [
+          {
+            "answer": "Yasir Khan is looking for customizations in two main areas: (1) integration with SolarWind Innovations' existing systems, and (2) specific energy module parameters. He also emphasized that customizability is very important to them because some competitor solutions have been more adaptable to their specific niche requirements, fitting those needs better than what they had seen from TechPulse at that point.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzYJIA0",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2021-07-23T10:02:35] Luciana Alves: That’s our commitment. And in terms of customization, while we have a range of robust and stable solutions, we understand that niche requirements might need more options. What specific customizations are you possibly looking for?\n[2021-07-23T10:02:47] Yasir Khan: Well, our needs can be quite specific in terms of integration with existing systems and specific energy module parameters."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StkcIAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2021-07-24T09:02:25] Yasir Khan: Well, customizability is quite important for us since some of the competitor solutions have been more adaptable to our specific needs. We’ve noticed they tend to fit our niche requirements better."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two requested customizations: (1) integration with SolarWind Innovations' existing systems and (2) specific energy module parameters. Answer B adds extra context about competitor adaptability and the importance of customizability, but this is unrequested supplementary detail and does not alter the core facts. The reference explicitly lists both requested customizations, fully covering the question's scope."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-2d3dadff10cc14aa",
+      "question": "What concern did Zoe Martinez raise about the competitor's service center, and what did Elena say about who handles AutoElite's routine maintenance?",
+      "gold_answer": "Zoe is concerned about the competitor's future service enhancements; AutoElite's routine maintenance is handled by factory-trained technicians.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMfdIAG",
+        "b2c:a05Ws000005SOG8IAO",
+        "b2c:a05Ws000005SOZPIA4",
+        "b2c:a05Ws000005SPVUIA4",
+        "b2c:a05Ws000005SPbtIAG",
+        "b2c:a05Ws000005SPlcIAG",
+        "b2c:a05Ws000005SQxtIAG",
+        "b2c:a05Ws000005SRU7IAO",
+        "b2c:a05Ws000005SRYsIAO",
+        "b2c:a05Ws000005SRc4IAG",
+        "b2c:a05Ws000005SU6rIAG",
+        "b2c:a05Ws000005SUi0IAG",
+        "b2c:a05Ws000005SUjbIAG",
+        "b2c:a05Ws000005SUpzIAG",
+        "b2c:a05Ws000005SUrjIAG",
+        "b2c:a05Ws000005SUv3IAG",
+        "b2c:a05Ws000005SWFGIA4",
+        "b2c:a05Ws000005SWjnIAG",
+        "b2c:a05Ws000005SWopIAG",
+        "b2c:a05Ws000005SWoqIAG",
+        "b2c:a05Ws000005SX9WIAW",
+        "b2c:a05Ws000005SXr8IAG",
+        "b2c:a05Ws000005SXw3IAG",
+        "b2c:a05Ws000005SYbqIAG",
+        "b2c:a05Ws000005SYiTIAW",
+        "b2c:a05Ws000005SYovIAG",
+        "b2c:a05Ws000005SYycIAG",
+        "b2c:a05Ws000005SZRbIAO",
+        "b2c:a05Ws000005SZkrIAG",
+        "b2c:a05Ws000005SaQlIAK",
+        "b2c:a05Ws000005SalkIAC",
+        "b2c:a05Ws000005SbmiIAC",
+        "b2c:a05Ws000005SbukIAC",
+        "b2c:a05Ws000005SclvIAC",
+        "b2c:a05Ws000005Scx9IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (2022-04-13, Elena Greco) contains both a concern Zoe raises about a competitor's service center and Elena's statement about who handles AutoElite's routine maintenance, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Zoe said she had a good experience at the competitor's service center but is concerned about their future service enhancements. Elena acknowledged the point, noting AutoElite is actively enhancing its customer experience, and said AutoElite's routine maintenance plans are handled by its factory-trained technicians, ensuring the vehicle stays in top shape.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRc4IAG",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2022-04-13T10:17:00] Zoe Martinez: Not yet. I had a good experience at your competitor’s service center, but I am concerned about their future service enhancements."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Elena as the rep and asks about Zoe's concern regarding a competitor's service center and Elena's response about who handles AutoElite's routine maintenance. Only one call features Elena Greco and Zoe Martinez discussing a competitor's service center: call b2c:a05Ws000005SRc4IAG (2022-04-13). In that call, Zoe raises a concern about the competitor's future service enhancements, and Elena responds that AutoElite's routine maintenance plans are handled by factory-trained technicians.",
+        "answers": [
+          {
+            "answer": "Zoe Martinez raised the concern that while she had a good experience at the competitor's service center, she was concerned about their future service enhancements. Elena Greco responded that AutoElite's routine maintenance plans are handled by their factory-trained technicians, ensuring the vehicle stays in top shape.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRc4IAG",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2022-04-13T10:17:00] Zoe Martinez: Not yet. I had a good experience at your competitor’s service center, but I am concerned about their future service enhancements.\n[2022-04-13T10:17:15] Elena Greco: That's a fair point. While we may not yet match some competitor service centers in ease of navigation, we’re actively enhancing our customer experience. Plus, our routine maintenance plans are handled by our factory-trained technicians, ensuring your vehicle stays in top shape."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Zoe's concern was about the competitor's future service enhancements and that Elena said AutoElite's routine maintenance is handled by factory-trained technicians. The reference likewise covers both requested facts: the concern about future service enhancements and that routine maintenance is handled by factory-trained technicians. Minor extras (e.g., mentioning the good experience or 'ensuring the vehicle stays in top shape') do not affect agreement or coverage."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

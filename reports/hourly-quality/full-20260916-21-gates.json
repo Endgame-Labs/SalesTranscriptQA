@@ -1,0 +1,372 @@
+[
+  {
+    "question_id": "b2b-multi_call-c3f0de5459548398",
+    "question": "For InspireTech Consulting, what customization concern did Hiroshi Saito raise in the initial discussion, and which specific custom features did he request after the demo?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The customization concern Hiroshi Saito raised in the initial discussion and the specific custom features he requested after the demo, for InspireTech Consulting",
+        "relationship": "same business issue (customization requirements) tracked across the initial call and post-demo follow-up",
+        "reason": "Both parts concern the same issue\u2014customization needs\u2014showing its initial expression and its concrete follow-up request; this is a coherent requirement evolution, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sz3hIAC",
+                "fact": "Hiroshi Saito raised a customization concern about adaptability for specialized applications and emphasized that customizability was key.",
+                "why_other_call_cannot_supply_it": "The second call does not mention this initial concern; it only discusses custom features after the demo."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T35iIAC",
+                "fact": "After the demo, Hiroshi Saito requested specific custom features: a more intuitive UI for training modules and flexible integration with existing platforms like EduTech.",
+                "why_other_call_cannot_supply_it": "The first call occurs before the demo and does not contain these post-demo feature requests."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the customization concern raised initially and the specific custom features requested after the demo. These are temporally separated and substantively different, requiring both calls to answer fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sz3hIAC",
+                  "fact": "Hiroshi Saito raised a customization concern about adaptability for specialized applications and emphasized that customizability was key.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention this initial concern; it only discusses custom features after the demo."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T35iIAC",
+                  "fact": "After the demo, Hiroshi Saito requested specific custom features: a more intuitive UI for training modules and flexible integration with existing platforms like EduTech.",
+                  "why_other_call_cannot_supply_it": "The first call occurs before the demo and does not contain these post-demo feature requests."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the customization concern raised initially and the specific custom features requested after the demo. These are temporally separated and substantively different, requiring both calls to answer fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sz3hIAC",
+                "fact": "Hiroshi Saito's initial customization concern: adaptability of solutions for specialized applications, with customizability being a key factor",
+                "why_other_call_cannot_supply_it": "The second call (May 15) occurs after the demo and only discusses demo feedback and specific feature requests; the initial concern was raised in the April 20 call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T35iIAC",
+                "fact": "After the demo, Saito requested custom features for a more intuitive UI for training modules and flexible integration with existing platforms like EduTech",
+                "why_other_call_cannot_supply_it": "The first call predates the demo and only mentions a demo would be helpful; the specific post-demo feature requests appear only in the second call"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information across a temporal progression: the initial customization concern (only in the first call) and the specific custom features requested after the demo (only in the second call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sz3hIAC",
+                  "fact": "Hiroshi Saito's initial customization concern: adaptability of solutions for specialized applications, with customizability being a key factor",
+                  "why_other_call_cannot_supply_it": "The second call (May 15) occurs after the demo and only discusses demo feedback and specific feature requests; the initial concern was raised in the April 20 call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T35iIAC",
+                  "fact": "After the demo, Saito requested custom features for a more intuitive UI for training modules and flexible integration with existing platforms like EduTech",
+                  "why_other_call_cannot_supply_it": "The first call predates the demo and only mentions a demo would be helpful; the specific post-demo feature requests appear only in the second call"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information across a temporal progression: the initial customization concern (only in the first call) and the specific custom features requested after the demo (only in the second call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall a customer's initial customization concern and post-demo feature requests across two calls. Call 1 (2023-04-20) provides the initial concern: Hiroshi worried about adaptability for specialized applications and stated customizability was key. Call 2 (2023-05-15) provides the post-demo requests: a more intuitive UI for training modules and flexible integration with existing platforms like EduTech. Each source contributes an exclusive requested fact. The gold answer matches both transcripts precisely with no unasked extras. Wording is natural, scope is clear (named account, contact, and business context), and no locator preamble or artificial framing is present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2023-04-20 call shows Hiroshi Saito explicitly stating his concern about adaptability for specialized applications ('one of my concerns is how adaptable your solutions are, especially for specialized applications') and then saying 'Customizability is definitely a key factor for us.' This directly supports the answer_claim about his initial customization concern."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2023-05-15 call (post-demo) shows Hiroshi Saito stating: 'we want features that cater to more intuitive UI for our training modules, and some flexibility in integrating with our existing platforms like EduTech.' This directly supports the answer_claim about the specific custom features requested after the demo."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) initial concern about adaptability for specialized applications and customizability being key, and (2) post-demo requests for intuitive UI for training modules and flexible integration with existing platforms like EduTech. Evidence index 0 fully supports part (1) with Hiroshi's exact words about adaptability concerns and customizability being a key factor. Evidence index 1 fully supports part (2) with Hiroshi's explicit request for intuitive UI for training modules and flexibility integrating with existing platforms like EduTech. The context metadata confirms both calls involve Hiroshi Saito at InspireTech Consulting, and the second call (May 15) follows the first (April 20), consistent with the 'after the demo' framing. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-33b2bddbc0e83cb4",
+    "question": "For LiftTech Elevations, which competing vendor was Yara considering early on, and what discounted total did TechPulse later quote for SecureFlow Suite?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Identify the competing vendor Yara considered early on, and the discounted total TechPulse later quoted for SecureFlow Suite",
+        "relationship": "two independent fact lookups joined only by the same account",
+        "reason": "The vendor-consideration fact and the later discounted quote address different business issues (competitive evaluation vs. commercial pricing) and are artificially joined; same account is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two distinct facts: (1) the competing vendor Yara mentioned early in the relationship (Call 2, 2023-10-20: 'We've noted some upgrades from Adaptive Design Solutions but nothing definitive yet'), and (2) the discounted total TechPulse quoted for SecureFlow Suite (Call 1, 2023-11-05: '10% discount, bringing the total to $8,099.87 for 15 units'). Each source contributes an exclusive requested fact\u2014competitive vendor info appears only in the earlier call, pricing only in the later call\u2014so both_sources_required is true. The gold answer accurately reflects both transcripts with appropriate hedging ('upgrades noted, nothing definitive') matching Yara's exact wording. The question is naturally phrased, scoped to a named account (LiftTech Elevations) and contact (Yara), and a rep would plausibly want to recall competitive context and quoted pricing. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Yara Almeida stating 'We've noted some upgrades from Adaptive Design Solutions but nothing definitive yet,' which matches the answer_claim that Yara noted upgrades from Adaptive Design Solutions but nothing definitive. This supports the gold_answer's identification of Adaptive Design Solutions as the competing vendor Yara was considering early on."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Nadia Al-Balushi explicitly stating 'we can offer you SecureFlow Suite at a competitive price with a 10% discount, bringing the total to $8,099.87 for 15 units.' This directly supports the answer_claim about the 10% discount, the $8,099.87 total, and 15 units for SecureFlow Suite."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Adaptive Design Solutions as the competing vendor Yara was considering (with upgrades noted but nothing definitive), and evidence index 1 confirms the SecureFlow Suite quote of $8,099.87 for 15 units with a 10% discount. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-6889a043903c2087",
+    "question": "What customizations is Yasir Khan at SolarWind Innovations looking for in the EDA solutions?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the customizations Yasir Khan at SolarWind Innovations wants in EDA solutions",
+        "relationship": "single coherent requirement lookup",
+        "reason": "One scoped question about a single customer's customization requirements; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks what customizations a named contact at a named account is seeking in EDA solutions\u2014exactly the kind of requirement-gathering detail a rep would want. The answer ('Integration with existing systems and specific energy module parameters') is a verbatim match to Yasir Khan's statement at 10:02:47. No locator preamble, no answer leakage, no unsupported causality. Single-call set, so both_sources_required is true by rule.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Yasir Khan explicitly states: 'our needs can be quite specific in terms of integration with existing systems and specific energy module parameters.' This directly supports the answer_claim about integration with existing systems and specific energy module parameters. The speaker is confirmed as Yasir Khan, matching the contact in the metadata, and the account is SolarWind Innovations."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Integration with existing systems and specific energy module parameters.' The single cited evidence item (index 0) contains a direct quote from Yasir Khan at SolarWind Innovations stating exactly these two customization needs. The metadata confirms the call involves Yasir Khan at SolarWind Innovations regarding 'SolarWind Innovations Green Energy Integration.' All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-9e0f23a3268d0c84",
+    "question": "What concerns did Luis Rodriguez raise about adopting TechPulse's solutions, and how did Noura address them?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concerns Luis Rodriguez raised about adopting TechPulse's solutions and how Noura addressed them",
+        "relationship": "single coherent objection-and-response exchange",
+        "reason": "This is one objection and its response within the same conversation, a natural sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about objections raised by Luis Rodriguez and how Noura addressed them\u2014a classic sales-QA need. The dialogue clearly shows three concerns (cost transparency, testimonials emphasizing UX over strategic benefits, ease of use degrading over time) and three corresponding responses (upfront pricing/no hidden fees, strategic deployments with training, continuous support with scalable updates). The gold answer matches the transcript precisely with no extra or missing facts. Wording is natural, scope is adequate (named contact, company, and vendor), and no locator preamble or artificial framing is present. Single-call question so both_sources_required is set true.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage clearly shows Luis Rodriguez raising a cost transparency concern ('one concern we've faced with other solutions is cost transparency. How does TechPulse ensure economic clarity in your offerings?'). This supports the first half of the answer_claim. However, the quote only contains Luis's question (line 9); Noura's response about upfront pricing, no hidden fees, TCO, and ROI is not present in the cited text. The answer_claim attributes a response to Noura that is not in the supplied quote. Despite this, the Luis concern portion is supported. Since the claim bundles both the concern and the response, and the response is absent from the quote, I must evaluate strictly: the quote does NOT contain Noura's reply. Marking as not fully supported for the Noura portion, but the Luis concern is supported. On balance, the claim as stated includes Noura's response which is missing from the quote, so the full claim is not supported by this evidence alone."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage shows Luis noting that testimonials focus more on user experience than strategic benefits ('Adaptive Design Solutions testimonials focus more on user experience than strategic benefits'). This supports the Luis concern portion of the answer_claim. However, Noura's response about combining UX with strategic deployments and training is not present in the cited quote (only Luis's question on line 11 is quoted). The answer_claim includes Noura's response which is absent from the supplied text."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quoted passage shows Luis expressing concern about 'initial ease of use that complicates as time goes on,' which supports the Luis concern portion. However, Noura's response about continuous support, updates, and scalability is not present in the cited quote. The answer_claim includes Noura's response which is absent from the supplied text."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "Each cited evidence item only contains Luis Rodriguez's questions/concerns (lines 9, 11, 13). None of the three quotes include Noura's responses (which would be on lines 10, 12, 14 per the line_start/line_end metadata). The gold_answer makes specific claims about Noura's responses: 'upfront pricing with no hidden fees,' 'strategic deployments with training,' and 'continuous support with scalable updates.' While Luis's three concerns (cost transparency, testimonials focused on UX over strategic benefits, ease of use degrading over time) are supported by the quotes, none of Noura's rebuttals are present in the supplied evidence. The answer_claims in each evidence item assert Noura's responses, but the quoted text does not contain them. Since we must not assume adjacent uncited lines supply the fact, the gold_answer's claims about how Noura addressed the concerns are unsupported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-35fc2b4e59f2f87e",
+    "question": "What concern did Mia Thompson raise about the $91,999.98 Tesla Model S package price, and what did Nora offer to address it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Mia Thompson raised about the $91,999.98 Tesla Model S package price and what Nora offered to address it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request: a pricing objection and the salesperson's response addressing that same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question targets a specific pricing objection raised by Mia Thompson regarding the $91,999.98 Tesla Model S package and the rep's proposed remedy. The dialogue confirms Mia stated the price was 'slightly above my initial budget' and Nora offered to 'work with our finance team' on extended payment terms and to 'reconvene once I have more specifics' with tailored options. The gold answer accurately captures both facts without adding unasked extras. The question is naturally worded, adequately scoped by naming the customer, the product, and the price point, and represents a realistic sales-QA need (tracking objection handling). Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Mia Thompson explicitly states 'it's slightly above my initial budget, so I'd like to explore how we can make it work better for me,' which directly supports the answer_claim that Mia said the package is slightly above her initial budget and wants to explore making it work better."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Nora offering 'flexible financing options' and asking 'Would extending the payment period help in making things more affordable?' and then stating 'I'll work with our finance team to see how we can tailor this for you. Shall we reconvene once I have more specifics?' This directly supports the answer_claim about Nora offering flexible financing, extending the payment period, and working with the finance team for tailored options."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Mia said the price was slightly above her budget \u2013 supported by index 0 where Mia says 'it's slightly above my initial budget'; (2) Nora offered to work with finance on extended payment terms \u2013 supported by index 1 where Nora mentions 'flexible financing options,' asks about 'extending the payment period,' and says 'I'll work with our finance team to see how we can tailor this for you'; (3) Nora offered to reconvene with tailored options \u2013 supported by index 1 where Nora says 'Shall we reconvene once I have more specifics?' All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2d3dadff10cc14aa",
+    "question": "What concern did Zoe Martinez raise about the competitor's service center, and what did Elena say about who handles AutoElite's routine maintenance?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Zoe Martinez raised about the competitor's service center and Elena's explanation of who handles AutoElite's routine maintenance",
+        "relationship": "objection and response on the same service/maintenance issue",
+        "reason": "Both parts address the same business issue\u2014service center/maintenance capabilities\u2014pairing a concern with the corresponding response."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Both facts are directly supported by the single call transcript: Zoe states she is 'concerned about their future service enhancements' regarding the competitor's service center, and Elena says 'our routine maintenance plans are handled by our factory-trained technicians.' The question naturally targets competitive positioning information a rep would want to track. Wording is natural, scope is clear (named participants and topic), no locator preamble, no answer leakage, and the gold answer states precisely the two requested facts without unasked extras. Single-call question so both_sources_required is set true."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly states Zoe Martinez says 'I had a good experience at your competitor's service center, but I am concerned about their future service enhancements.' This fully supports the answer_claim that she had a good experience but is concerned about future service enhancements."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Elena Greco's quote explicitly states 'our routine maintenance plans are handled by our factory-trained technicians, ensuring your vehicle stays in top shape.' This directly supports the claim that routine maintenance is handled by factory-trained technicians."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Zoe is concerned about the competitor's future service enhancements \u2013 supported by index 0 where Zoe explicitly states this concern; (2) AutoElite's routine maintenance is handled by factory-trained technicians \u2013 supported by index 1 where Elena states 'our routine maintenance plans are handled by our factory-trained technicians.' Both factual claims in the gold_answer are directly supported by the cited evidence."
+      }
+    }
+  }
+]
