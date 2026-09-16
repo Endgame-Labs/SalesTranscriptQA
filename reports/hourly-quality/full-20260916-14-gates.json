@@ -1,0 +1,379 @@
+[
+  {
+    "question_id": "b2b-multi_call-0a33e3ea2f074984",
+    "question": "For TerraSync Solutions, what next step did Chin Ho Lee agree to during the initial discussion, and how did he later describe the setup experience with SecuManage Pro and SecureAnalytics Pro?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Chin Ho Lee agreed to in the initial TerraSync Solutions discussion, and his later description of the setup experience with SecuManage Pro and SecureAnalytics Pro",
+        "relationship": "follow-up on the same implementation/onboarding thread: the agreed next step leads into the later setup experience with the same products",
+        "reason": "Both parts concern the same business issue\u2014onboarding/setup of the agreed products\u2014where the initial next step naturally precedes the later setup feedback; this is a coherent next-steps-and-outcome question, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Suk4IAC",
+                "fact": "Chin Ho Lee said the initial setup of SecuManage Pro and SecureAnalytics Pro was a bit challenging and that improvements on guidance would be beneficial.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyaeIAC) is from 2021-11-29 and is an initial introduction; it does not mention SecuManage Pro, SecureAnalytics Pro, or any setup experience."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyaeIAC",
+                "fact": "Chin Ho Lee agreed to a discovery session, and Maya Johnson said she would email time slots for next week.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Suk4IAC) is a post-sale follow-up from 2022-01-15 and does not discuss scheduling a discovery session or emailing time slots."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the next step agreed during the initial discussion (which only appears in the 2021-11-29 call) and the later description of setup experience with specific products (which only appears in the 2022-01-15 call). Each call provides a unique fact that the other cannot supply, and both are explicitly requested."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Suk4IAC",
+                  "fact": "Chin Ho Lee said the initial setup of SecuManage Pro and SecureAnalytics Pro was a bit challenging and that guidance improvements would help.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyaeIAC) is from 2021-11-29 and is an initial sales discussion; it does not mention any setup experience or feedback about these products."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyaeIAC",
+                  "fact": "Chin Ho Lee agreed to a discovery session and asked Maya to email available time slots for next week.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Suk4IAC) is a post-sale follow-up from 2022-01-15 and does not include any agreement to a discovery session or scheduling request."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the next step agreed during the initial discussion (which only appears in the November call) and the later description of setup experience (which only appears in the January call). Each call provides a unique fact that the other cannot supply, and both are explicitly requested."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Suk4IAC",
+                  "fact": "Chin Ho Lee said the initial setup of SecuManage Pro and SecureAnalytics Pro was a bit challenging and that improvements on guidance would be beneficial.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyaeIAC) is from 2021-11-29 and is an initial introduction; it does not mention SecuManage Pro, SecureAnalytics Pro, or any setup experience."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyaeIAC",
+                  "fact": "Chin Ho Lee agreed to a discovery session, and Maya Johnson said she would email time slots for next week.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Suk4IAC) is a post-sale follow-up from 2022-01-15 and does not discuss scheduling a discovery session or emailing time slots."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the next step agreed during the initial discussion (which only appears in the 2021-11-29 call) and the later description of setup experience with specific products (which only appears in the 2022-01-15 call). Each call provides a unique fact that the other cannot supply, and both are explicitly requested."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyaeIAC",
+                "fact": "Chin Ho Lee agreed to a discovery session and asked Maya to email available time slots for next week",
+                "why_other_call_cannot_supply_it": "The 2022-01-15 call is a post-sale follow-up and contains no discussion of scheduling a discovery session or next steps for exploring collaboration"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Suk4IAC",
+                "fact": "Chin Ho Lee said the initial setup of SecuManage Pro and SecureAnalytics Pro was a bit challenging and that improvements to guidance would be beneficial",
+                "why_other_call_cannot_supply_it": "The 2021-11-29 call predates any implementation and never mentions SecuManage Pro or SecureAnalytics Pro or setup experience"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the next step agreed in the initial discussion (only in the earlier call) and the later setup feedback on the security products (only in the later call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyaeIAC",
+                  "fact": "Chin Ho Lee agreed to a discovery session and asked Maya to email available time slots for next week",
+                  "why_other_call_cannot_supply_it": "The 2022-01-15 call is a post-sale follow-up and contains no discussion of scheduling a discovery session or next steps for exploring collaboration"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Suk4IAC",
+                  "fact": "Chin Ho Lee said the initial setup of SecuManage Pro and SecureAnalytics Pro was a bit challenging and that improvements to guidance would be beneficial",
+                  "why_other_call_cannot_supply_it": "The 2021-11-29 call predates any implementation and never mentions SecuManage Pro or SecureAnalytics Pro or setup experience"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the next step agreed in the initial discussion (only in the earlier call) and the later setup feedback on the security products (only in the later call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question asks two distinct facts: (1) the next step Chin Ho Lee agreed to in the initial discussion (Nov 2021 call) and (2) his later description of the SecuManage Pro/SecureAnalytics Pro setup experience (Jan 2022 call). The Nov 2021 transcript confirms he agreed to a discovery session and asked Maya to email time slots for next week. The Jan 2022 transcript confirms he said the initial setup was 'a bit challenging' and that 'improvements on guidance there would be beneficial.' The gold answer captures both facts precisely without unasked extras. Each source contributes an exclusive requested fact, so both_sources_required is true. The question is naturally worded, adequately scoped to TerraSync Solutions and Chin Ho Lee, and represents a plausible rep need to track next-step commitments and post-sale feedback."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Maya proposing a discovery session, Chin Ho Lee agreeing ('That would be beneficial') and requesting available slots for next week, and Maya confirming she will email time options. This directly supports the claim that the next step was a discovery session with Maya emailing slots for next week."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Chin Ho Lee explicitly states 'the initial setup was a bit challenging. Some improvements on guidance there would be beneficial.' in response to Maya's question about SecuManage Pro and SecureAnalytics Pro configuration. This directly supports the claim about the setup being a bit challenging and guidance improvements being beneficial."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Chin Ho Lee agreed to a discovery session and Maya would email time slots for next week. Evidence 1 confirms he later described the initial setup of SecuManage Pro and SecureAnalytics Pro as 'a bit challenging' and said guidance improvements would be beneficial. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-716089a99e37c59d",
+    "question": "For TrueNorth Technologies, what did Liam say about addressing Thierry's interest in service level agreements, and what discount was offered on AIOptics Vision in the proposal discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) What Liam said about addressing Thierry's interest in service level agreements; 2) the discount offered on AIOptics Vision in the proposal discussion.",
+        "relationship": "Two independent fact lookups joined only by the same account (TrueNorth Technologies).",
+        "reason": "The SLA concern and the AIOptics Vision discount are separate business issues; sharing an account is not enough to connect them, and no shared issue (e.g., the same proposal term) links them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (2023-09-05) contains Liam's statement that they can 'delve deeper into that in a future meeting' regarding Thierry's interest in service level agreements. Call 2 (2023-11-01) contains the 15% discount on AIOptics Vision during the proposal discussion. Each source contributes an exclusive requested fact. The question naturally identifies the account (TrueNorth Technologies) and participants (Liam, Thierry) without artificial locator preambles. The gold answer states precisely the two requested facts with no unasked extras.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is Thierry Dupont expressing interest in learning more about the agreements ('I'm definitely interested in learning more about those agreements'). It does not contain any statement by Liam offering to delve deeper into service level agreements in a future meeting. A customer's expression of interest does not establish that the salesperson made a specific promise or offer regarding a future meeting."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage is Liam Kelly speaking directly: 'And with our 15% discount, it represents great value.' This is in the context of discussing AIOptics Vision. The speaker attribution (Liam Kelly), the product (AIOptics Vision), and the discount amount (15%) all match the answer_claim."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains two factual claims: (1) Liam said they could delve deeper into service level agreements in a future meeting, and (2) AIOptics Vision came with a 15% discount. The second claim is fully supported by evidence index 1. However, the first claim is not supported by the supplied evidence. Index 0 only shows Thierry expressing interest in the agreements; it does not contain any utterance by Liam promising to address SLAs in a future meeting. Since the supplied citations do not establish every factual claim in the gold_answer, the answer as a whole is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5c68f83f09659742",
+    "question": "What implementation challenge did Fatima Mustafa of EvoTrend Systems say they face during initial setup, and what did Sophia say about TechPulse's support in that area?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The implementation challenge Fatima Mustafa of EvoTrend Systems raised during initial setup, and Sophia's response about TechPulse's support in that area",
+        "relationship": "objection/concern and the vendor's response to it",
+        "reason": "A single coherent issue: the customer's implementation challenge and the salesperson's answer about support for that same challenge."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific implementation challenge Fatima raised and Sophia's response regarding TechPulse's support. Both facts come from the single call: Fatima states initial stages are challenging, particularly user guidance during security settings configuration (15:17:05), and Sophia replies that support is generally regarded as consistent with industry standards and they're working to make configurations more user-friendly (15:17:20). The gold answer accurately captures both claims without adding unasked extras. The question is naturally worded, scoped to a named customer and account, and a rep would plausibly want to recall this feedback. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Fatima Mustafa the statement that 'the initial stages are challenging\u2014particularly the user guidance during security settings configuration,' which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Sophia M\u00fcller the statement that 'our clients generally regard our support as consistent with industry standards' and that 'we're always striving to improve, especially in making configurations more user-friendly,' which matches the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Fatima's challenge (initial stages, user guidance during security settings configuration). Evidence 1 confirms Sophia's response about TechPulse's support being regarded as consistent with industry standards and their effort to make configurations more user-friendly. The gold_answer faithfully paraphrases both quotes without adding or omitting material facts."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-aa63dd0729b47856",
+    "question": "What is the total proposal amount for GreenEnergy Solutions, and which products received the 10% versus 5% discounts?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total proposal amount for GreenEnergy Solutions and the breakdown of which products received 10% versus 5% discounts.",
+        "relationship": "Both parts concern the same commercial quote/proposal \u2014 the overall total and its discount structure are one coherent quote breakdown.",
+        "reason": "This is a single commercial quote breakdown: the total proposal value and the per-product discount allocations belong to the same proposal, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the total proposal amount and the discount breakdown by product for GreenEnergy Solutions. The single call transcript at 12:23:30 states the total is $23,471.02, 10% discount on EcoPCB Creator, OptiEnergy Suite, and AI Cirku-Tech, and 5% on SecureAnalytics Pro and OptiPower Max. The gold answer matches exactly with no extra or missing facts. The question is naturally phrased, adequately scoped by naming the account, and a rep/AM would plausibly need this commercial detail. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aisha Ibrahim explicitly states: total proposal is $23,471.02; 10% discount on EcoPCB Creator, OptiEnergy Suite, and AI Cirku-Tech; 5% discount on SecureAnalytics Pro and OptiPower Max. This directly and fully supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains a direct quote that matches every factual element of the gold_answer: the total amount ($23,471.02), the three products receiving 10% discounts (EcoPCB Creator, OptiEnergy Suite, AI Cirku-Tech), and the two products receiving 5% discounts (SecureAnalytics Pro, OptiPower Max). The context metadata confirms the account is GreenEnergy Solutions, aligning with the question's subject."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-a79aecf4d9d5489e",
+    "question": "What buying requirements did Emily Chen share for her fleet, and what objection did she raise about AutoElite's pricing?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Emily Chen's fleet buying requirements and her pricing objection about AutoElite",
+        "relationship": "two independent fact lookups joined by the same customer",
+        "reason": "The question combines two unrelated information needs\u2014her stated buying requirements and a separate pricing objection\u2014connected only by being about the same person, which is insufficient."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts (buying requirements and a pricing objection) from a single call. The dialogue confirms Emily Chen stated she wants luxury vehicles with advanced technology and comfort features plus financing and maintenance plans (requirements), and she relayed that colleagues mentioned pricing could be more competitive (objection). The gold answer captures both facts precisely without unasked extras. The question is naturally phrased, scoped to a named account and fleet context, and a rep would plausibly need this information. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Emily Chen explicitly states interest in 'luxury vehicles that offer advanced technology and comfort features' and mentions 'additional services like financing and maintenance plans,' directly supporting the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Emily Chen states 'some colleagues mentioned your pricing could be a bit more competitive,' which directly supports the claim that she raised an objection about pricing competitiveness. The attribution to colleagues is preserved in both the quote and the claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states she wants luxury vehicles with advanced technology and comfort features, plus financing and maintenance plans (supported by index 0), and that she objected that pricing could be more competitive (supported by index 1). Both factual components of the answer are fully covered by the cited evidence. The slight nuance that the pricing objection was relayed via colleagues is captured in the evidence and does not contradict the gold_answer's phrasing 'she objected that pricing could be more competitive,' since she is the one raising it in the conversation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-52898585d1f46d42",
+    "question": "What concern did Ava Walsh raise about AutoElite's online platform compared to competitors, and how did Vanessa respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Ava Walsh raised about AutoElite's online platform relative to competitors and Vanessa's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent competitive objection paired with the rep's response addressing the same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning concern (platform intuitiveness) raised by a named customer and the rep's response. The dialogue at 15:01:35\u201315:01:48 confirms Ava asked how AutoElite's platform compares on intuitiveness and Vanessa acknowledged it isn't as intuitive as some competitors', noted they're actively working on it, and mentioned customer service assists online buyers. The gold answer captures all requested facts without extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is only Ava Walsh's question asking how AutoElite's platform compares to competitors regarding intuitiveness. It does not contain Vanessa's response acknowledging the platform isn't as intuitive, nor any mention of actively working on it or customer service assisting online buyers. A question does not establish its answer."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains multiple factual claims about Vanessa's response (acknowledging the platform isn't as intuitive, actively working on it, customer service assists online buyers). The sole cited evidence is only Ava's question and contains none of Vanessa's reply. No supplied citation supports the response portion of the answer."
+      }
+    }
+  }
+]
