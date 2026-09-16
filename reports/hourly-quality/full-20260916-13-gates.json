@@ -1,0 +1,433 @@
+[
+  {
+    "question_id": "b2b-single_call-32bd776bd5e2a55d",
+    "question": "What discounts did TechPulse offer EvoTrend Systems on FlexiDesign Pro versus SecureFlow Suite and AI Cirku-Tech?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Discounts offered by TechPulse to EvoTrend Systems on three products: FlexiDesign Pro, SecureFlow Suite, and AI Cirku-Tech",
+        "relationship": "single coherent commercial comparison of discount terms across products for the same account",
+        "reason": "The question asks for one type of fact (discounts) compared across products within the same customer relationship, which is a natural commercial quote/comparison request, not two independent lookups joined artificially."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about discount percentages on three specific products for a named account (EvoTrend Systems) from a named vendor (TechPulse). The single call transcript confirms Sophia M\u00fcller states a 10% discount on FlexiDesign Pro and a 5% discount on SecureFlow Suite and AI Cirku-Tech. The gold answer matches exactly with no extra or missing facts. The question is naturally phrased, scoped to a clear commercial/pricing situation, and a rep would plausibly need to recall these discount terms. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Sophia M\u00fcller explicitly states 'We've applied a 10% discount on FlexiDesign Pro,' directly supporting the claim of a 10% discount on FlexiDesign Pro."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quoted dialogue says 'For those solutions, we've provided competitive pricing with a 5% discount.' The pronoun 'those solutions' is not resolved within the supplied citations to SecureFlow Suite and AI Cirku-Tech. No other supplied evidence identifies what 'those solutions' refers to. While the 5% figure is present, the specific products (SecureFlow Suite and AI Cirku-Tech) are not named in this quote, and we cannot assume an adjacent uncited line supplies that identification."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold answer claims 10% on FlexiDesign Pro and 5% on SecureFlow Suite and AI Cirku-Tech. Evidence index 0 fully supports the FlexiDesign Pro portion. However, evidence index 1 only confirms a 5% discount on unspecified 'those solutions' without naming SecureFlow Suite or AI Cirku-Tech. Since the supplied citations do not resolve the pronoun to those specific products, the combined evidence does not fully support every factual claim in the gold answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-2e474f546884beac",
+    "question": "What next step did Leila Hossain agree to for evaluating TechPulse's CircuitAI Innovator?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the next step Leila Hossain agreed to for evaluating TechPulse's CircuitAI Innovator.",
+        "relationship": "single lookup of one agreed next step",
+        "reason": "A single, coherent next-step lookup about one evaluation; plausible sales language with no joined independent requests."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific next step agreed upon during a discovery call, which is a natural and realistic need for a rep/account manager tracking pipeline progression. The dialogue clearly shows Leila agreeing to a demo of CircuitAI Innovator and Jamal committing to send dates and times. The gold answer captures both facts precisely without extras. The question is adequately scoped by naming the contact, product, and vendor. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted dialogue shows Jamal proposing a demo of CircuitAI Innovator and Leila agreeing it is a good next step. However, the answer_claim also states 'Jamal will send dates and times,' which is not present anywhere in the cited passage (lines 14\u201316). The quote ends with Leila's agreement; no mention of Jamal sending dates/times appears in the supplied evidence."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains two factual claims: (1) Leila agreed to a demo of CircuitAI Innovator, and (2) Jamal will send dates and times for it. The single cited evidence supports claim (1) via Leila's statement 'That sounds like a good next step.' However, claim (2)\u2014that Jamal will send dates and times\u2014is not present in any supplied citation. Since the instructions require that every factual claim in the gold_answer be supported by the supplied evidence, the answer is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-2967c7b6dd990379",
+    "question": "What concern did Nina Kwan raise about TechPulse in the initial TerraForm Engineering discussion, and how was it addressed in the later product demo call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Nina Kwan raised about TechPulse in the initial TerraForm Engineering discussion and how it was addressed in the later product demo call",
+        "relationship": "objection and its follow-up resolution across two calls on the same business issue",
+        "reason": "The question links a single concern raised in one call to its handling in a follow-up call, forming one coherent objection-and-response thread rather than two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for the concern raised and how it was addressed. Both the concern (security compliance/data protection) and the resolution (robust security protocols, seamless secure integration) are explicitly present in the first call (b2b:a05Wt000003SxLKIA0) at lines 11:02:28-11:02:45. The second call (b2b:a05Wt000003T4BPIA0) only repeats the same concern and the same assurance, without adding any new requested information. Therefore, the first call alone suffices to answer the question, and the second call is not necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for a concern raised in the initial discussion and how it was addressed in the later demo. Both the concern (security compliance and data protection) and the resolution (robust security protocols and seamless integration) are explicitly present in the first call (b2b:a05Wt000003T4BPIA0) at lines 10:32:45 and 10:33:15. The second call (b2b:a05Wt000003SxLKIA0) merely repeats the same concern and assurance, so the second call is not necessary to answer the question."
+            },
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the concern raised and how it was addressed. Both the concern (security compliance/data protection) and the resolution (robust security protocols, seamless secure integration) are explicitly present in the first call (b2b:a05Wt000003SxLKIA0) at lines 11:02:28-11:02:45. The second call (b2b:a05Wt000003T4BPIA0) only repeats the same concern and the same assurance, without adding any new requested information. Therefore, the first call alone suffices to answer the question, and the second call is not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T4BPIA0",
+                "fact": "In the initial discussion (Feb 23), Nina Kwan raised a concern about security compliance and data protection with TechPulse solutions.",
+                "why_other_call_cannot_supply_it": "The demo call (June 20) only references the concern in recap; it does not show Nina originally raising it."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxLKIA0",
+                "fact": "In the later product demo call (June 20), Mei Lin addressed the concern by assuring Nina that the solutions have robust security protocols and seamless, secure integration.",
+                "why_other_call_cannot_supply_it": "The initial call only contains Mei's general security claims; the explicit reassurance addressing the concern occurs in the demo call."
+              }
+            ],
+            "reason": "The question explicitly asks for a concern from the initial call and its resolution in the later demo call; each fact appears only in one call and both are required to answer."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T4BPIA0",
+                  "fact": "In the initial discussion (Feb 23), Nina Kwan raised a concern about security compliance and data protection with TechPulse solutions.",
+                  "why_other_call_cannot_supply_it": "The demo call (June 20) only references the concern in recap; it does not show Nina originally raising it."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxLKIA0",
+                  "fact": "In the later product demo call (June 20), Mei Lin addressed the concern by assuring Nina that the solutions have robust security protocols and seamless, secure integration.",
+                  "why_other_call_cannot_supply_it": "The initial call only contains Mei's general security claims; the explicit reassurance addressing the concern occurs in the demo call."
+                }
+              ],
+              "reason": "The question explicitly asks for a concern from the initial call and its resolution in the later demo call; each fact appears only in one call and both are required to answer."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a concern raised in the initial discussion (Feb 23 call) and how it was addressed in the later demo (Jun 20 call). In the Feb call, Nina explicitly asks about security compliance and data protection. In the Jun call, Mei Lin references that prior concern and assures Nina of robust security protocols and seamless, secure integration. Each source contributes an exclusive requested fact (the raising vs. the addressing). The gold answer accurately reflects both transcripts without adding unasked extras. The question is naturally phrased, adequately scoped to the TerraForm Engineering account and Nina Kwan, and a rep would plausibly want to track how a concern was handled across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Nina Kwan on 2024-02-23 explicitly asks 'Can you tell me a bit more about your security compliance, though? It's critical for us to ensure data protection.' This directly supports the claim that Nina asked about security compliance and stated data protection is critical for them."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage from Mei Lin on 2024-06-20 explicitly states 'I want to assure you that our solutions are fortified with robust security protocols, ensuring seamless yet secure integration into your existing systems.' She also references Nina's prior concern about security compliance and data protection. This directly supports the claim that Mei assured Nina the solutions have robust security protocols for seamless yet secure integration."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states Nina raised security compliance and data protection concerns (supported by index 0 where Nina explicitly asks about security compliance and says data protection is critical) and that in the demo Mei Lin assured her the solutions have robust security protocols and seamless, secure integration (supported by index 1 where Mei Lin explicitly provides that assurance). Both factual claims in the gold answer are fully supported by the cited evidence. The context metadata confirms both calls involve Nina Kwan at TerraForm Engineering under the same opportunity, and the dates confirm the Feb 2024 call is the initial discussion and the June 2024 call is the later product demo."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-a6d55049017894f8",
+    "question": "Across the TerraForm Engineering opportunity, what concern did Liam Kwong raise about Quantum Circuits Inc. in the initial discussion, and how did Jaemin position TechPulse against Quantum Circuits in the later call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Liam Kwong's concern about Quantum Circuits Inc. in the initial discussion and Jaemin's positioning of TechPulse against Quantum Circuits in the later call",
+        "relationship": "objection/competitive concern and the sales response addressing the same competitor",
+        "reason": "Both parts address the same business issue\u2014competition from Quantum Circuits\u2014across the TerraForm opportunity: the concern raised and how it was countered."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxQ7IAK",
+                "fact": "Liam Kwong raised the concern that Quantum Circuits Inc.'s limited customizability did not meet TerraForm's requirements.",
+                "why_other_call_cannot_supply_it": "The later call does not mention customizability as a concern; it focuses on feature innovation and security balance."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T15XIAS",
+                "fact": "Jaemin positioned TechPulse against Quantum Circuits by stating that Quantum Circuits is strong on security but falls short on feature innovation, while TechPulse balances both.",
+                "why_other_call_cannot_supply_it": "The initial call does not contain this comparison; it only discusses customizability and other topics."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the concern raised in the initial discussion and the positioning in the later call. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxQ7IAK",
+                  "fact": "Liam Kwong raised the concern that Quantum Circuits Inc.'s limited customizability did not meet TerraForm's requirements.",
+                  "why_other_call_cannot_supply_it": "The later call does not mention customizability as a concern; it focuses on feature innovation and security balance."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T15XIAS",
+                  "fact": "Jaemin positioned TechPulse against Quantum Circuits by stating that Quantum Circuits is strong on security but falls short on feature innovation, while TechPulse balances both.",
+                  "why_other_call_cannot_supply_it": "The initial call does not contain this comparison; it only discusses customizability and other topics."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the concern raised in the initial discussion and the positioning in the later call. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T15XIAS",
+                "fact": "Liam Kwong said Quantum Circuits Inc.'s limited customizability doesn't meet TerraForm's unique requirements",
+                "why_other_call_cannot_supply_it": "The 2023-03-05 call contains no mention of customizability as Liam's concern; it only covers security vs. innovation positioning."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxQ7IAK",
+                "fact": "Jaemin positioned TechPulse against Quantum Circuits as balancing security and feature innovation, while Quantum Circuits falls short on feature innovation",
+                "why_other_call_cannot_supply_it": "The 2022-08-20 call contains no statement by Jaemin comparing TechPulse and Quantum Circuits on security vs. innovation."
+              }
+            ],
+            "reason": "The question asks for two distinct facts from different calls: Liam's initial concern (customizability, in the 2022 call) and Jaemin's later competitive positioning (security vs. innovation, in the 2023 call). Neither call contains both facts, and they are not paraphrases of the same complaint."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T15XIAS",
+                  "fact": "Liam Kwong said Quantum Circuits Inc.'s limited customizability doesn't meet TerraForm's unique requirements",
+                  "why_other_call_cannot_supply_it": "The 2023-03-05 call contains no mention of customizability as Liam's concern; it only covers security vs. innovation positioning."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxQ7IAK",
+                  "fact": "Jaemin positioned TechPulse against Quantum Circuits as balancing security and feature innovation, while Quantum Circuits falls short on feature innovation",
+                  "why_other_call_cannot_supply_it": "The 2022-08-20 call contains no statement by Jaemin comparing TechPulse and Quantum Circuits on security vs. innovation."
+                }
+              ],
+              "reason": "The question asks for two distinct facts from different calls: Liam's initial concern (customizability, in the 2022 call) and Jaemin's later competitive positioning (security vs. innovation, in the 2023 call). Neither call contains both facts, and they are not paraphrases of the same complaint."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Liam's concern about Quantum Circuits in the initial discussion and (2) Jaemin's competitive positioning of TechPulse vs. Quantum Circuits in the later call. The 2022-08-20 call (initial) contains Liam stating Quantum Circuits' 'limited customizability doesn't really meet our unique requirements.' The 2023-03-05 call (later) contains Jaemin saying Quantum Circuits 'does a commendable job with security' but 'fall[s] short on feature innovation' while TechPulse provides 'a balance of both smart innovativeness and high security standards.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is scoped to the TerraForm Engineering opportunity and names the relevant participants naturally. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Liam Kwong on 2022-08-20 explicitly states that Quantum Circuits Inc.'s 'limited customizability doesn't really meet our unique requirements' and that they've been 'leaning more towards TechPulse.' This directly supports the answer_claim about limited customizability not meeting TerraForm's requirements and leaning toward TechPulse."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from the 2023-03-05 call shows Jaemin Park stating that 'Quantum Circuits does a commendable job with security, they tend to fall short on feature innovation' and that TechPulse's solutions 'provide a balance of both smart innovativeness and high security standards.' This directly supports the answer_claim about Quantum Circuits being strong on security but falling short on feature innovation, while TechPulse balances both."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Liam raised the concern about Quantum Circuits' limited customizability not meeting TerraForm's requirements in the initial discussion\u2014supported by evidence index 0 from the 2022-08-20 call. (2) Jaemin positioned TechPulse against Quantum Circuits by acknowledging Quantum Circuits' security strength but noting their shortfall on feature innovation, while TechPulse balances both\u2014supported by evidence index 1 from the 2023-03-05 call. Both factual claims in the gold_answer are fully supported by the cited evidence. The temporal ordering (initial discussion = 2022-08-20, later call = 2023-03-05) is consistent with the metadata timestamps."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d836b037a54744c8",
+    "question": "On Mia Jefferson's luxury vehicle lease, what did she say about the warranty coverage and what customization follow-up did Rajiv commit to?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "What Mia Jefferson said about warranty coverage on her luxury vehicle lease, and what customization follow-up Rajiv committed to",
+        "relationship": "two independent fact lookups joined only by the same call/customer",
+        "reason": "Warranty coverage and a customization follow-up are unrelated topics; being from the same call is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about a customer's stated warranty preference and the rep's committed follow-up\u2014both are realistic sales-account information needs. The dialogue confirms Mia said 'the warranties are solid' but wanted 'more tailored options,' and Rajiv said 'I can discuss with our warranty team to see what customizations might be possible,' matching the gold answer precisely with no unasked extras. The question identifies the account (Mia Jefferson) and business context (luxury vehicle lease) without artificial locator preambles. Because question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Mia Jefferson saying 'While the warranties are solid, having more tailored options would definitely make them feel more suited to my needs.' This matches the answer_claim that warranties are solid but she wanted more tailored options."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Rajiv Shankar saying 'I can discuss with our warranty team to see what customizations might be possible.' This directly supports the answer_claim that Rajiv committed to checking with the warranty team about possible customizations."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Mia said warranties are solid but wanted more tailored options. Index 1 confirms Rajiv agreed to discuss with the warranty team what customizations might be possible. Together they cover every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-84fdce7560cc64a2",
+    "question": "What are the quoted prices for the 2024 Tesla Model S and the 2023 Mercedes-Benz E-Class for John Doe, and are discounts included?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Quoted prices for two vehicles (2024 Tesla Model S and 2023 Mercedes-Benz E-Class) for John Doe, including whether discounts are included",
+        "relationship": "single coherent commercial quote breakdown for the same customer",
+        "reason": "This is one quote request covering prices and discount status for the same customer's purchase; comparing quoted commercial terms across two vehicle options is a natural single inquiry, not two unrelated fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two quoted prices and discount status for a named customer (John Doe) in a vehicle-acquisition opportunity\u2014plausible for a rep/account manager. The dialogue explicitly states the Tesla Model S at $89,999.99, the Mercedes-Benz E-Class at $65,999.99, and confirms these are standard prices with no discounts at this stage. The gold answer matches all three requested facts precisely without unasked extras. Wording is natural, scope is clear (customer + vehicles + pricing context), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Priya Nair explicitly states 'The 2024 Tesla Model S is priced at $89,999.99, and the 2023 Mercedes-Benz E-Class comes in at $65,999.99,' which directly supports the answer_claim about both prices. The call metadata confirms the account is John Doe, matching the question's context."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Priya Nair states 'At this stage, these are our standard prices' and indicates negotiation will happen 'During our next conversation,' which supports the claim that these are standard prices with no discounts at this stage and that negotiation is deferred to a future conversation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Tesla Model S is $89,999.99 and Mercedes-Benz E-Class is $65,999.99, which is directly supported by evidence index 0. The claim that 'these are standard prices with no discounts at this stage' is supported by evidence index 1, where Priya Nair says 'At this stage, these are our standard prices' and defers negotiation to the next conversation. The context metadata confirms the call is associated with John Doe's account. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]

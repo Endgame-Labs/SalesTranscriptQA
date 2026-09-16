@@ -1,0 +1,211 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "046f0aee54399e4e0ce670c514f140e23ec806cec8f7b2c66a2d1af1cbd41cf0",
+  "questions": 2,
+  "counts": {
+    "fail": 1,
+    "pass": 1
+  },
+  "estimated_usd": 0.29396567,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-a6d55049017894f8",
+      "question": "Across the TerraForm Engineering opportunity, what concern did Liam Kwong raise about Quantum Circuits Inc. in the initial discussion, and how did Jaemin position TechPulse against Quantum Circuits in the later call?",
+      "gold_answer": "Initially, Liam said Quantum Circuits' limited customizability didn't meet TerraForm's requirements. Later, Jaemin said Quantum Circuits is strong on security but falls short on feature innovation, while TechPulse balances both.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkeIAC",
+        "b2b:a05Wt000003SsQTIA0",
+        "b2b:a05Wt000003SuvDIAS",
+        "b2b:a05Wt000003Sv9jIAC",
+        "b2b:a05Wt000003SvD5IAK",
+        "b2b:a05Wt000003SvGBIA0",
+        "b2b:a05Wt000003SvoBIAS",
+        "b2b:a05Wt000003SvrSIAS",
+        "b2b:a05Wt000003SwCMIA0",
+        "b2b:a05Wt000003Swc4IAC",
+        "b2b:a05Wt000003SwyeIAC",
+        "b2b:a05Wt000003SwyfIAC",
+        "b2b:a05Wt000003SxEqIAK",
+        "b2b:a05Wt000003SxLKIA0",
+        "b2b:a05Wt000003SxQ7IAK",
+        "b2b:a05Wt000003SxoFIAS",
+        "b2b:a05Wt000003SxoGIAS",
+        "b2b:a05Wt000003SxwRIAS",
+        "b2b:a05Wt000003Sz3jIAC",
+        "b2b:a05Wt000003Sz3kIAC",
+        "b2b:a05Wt000003T0HUIA0",
+        "b2b:a05Wt000003T0e3IAC",
+        "b2b:a05Wt000003T0e4IAC",
+        "b2b:a05Wt000003T0kcIAC",
+        "b2b:a05Wt000003T15XIAS",
+        "b2b:a05Wt000003T21dIAC",
+        "b2b:a05Wt000003T287IAC",
+        "b2b:a05Wt000003T2ESIA0",
+        "b2b:a05Wt000003T2zHIAS",
+        "b2b:a05Wt000003T30tIAC",
+        "b2b:a05Wt000003T3YhIAK",
+        "b2b:a05Wt000003T3dYIAS",
+        "b2b:a05Wt000003T3s6IAC",
+        "b2b:a05Wt000003T407IAC",
+        "b2b:a05Wt000003T49mIAC",
+        "b2b:a05Wt000003T4BOIA0",
+        "b2b:a05Wt000003T4BPIA0",
+        "b2b:a05Wt000003T4JSIA0",
+        "b2b:a05Wt000003T4JTIA0",
+        "b2b:a05Wt000003T4T7IAK",
+        "b2b:a05Wt000003T4UjIAK",
+        "b2b:a05Wt000003T4WLIA0",
+        "b2b:a05Wt000003T4XxIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Liam Kwong first raised Quantum Circuits Inc. in the 2022-08-20 call (opportunity 'TerraForm Engineering EDA Enhancement'), citing their limited customizability. In the later 2023-03-05 call on the same opportunity, Jaemin Park positioned TechPulse against Quantum Circuits' security emphasis by claiming TechPulse balances innovation with security. These are the only two calls pairing Liam Kwong with Quantum Circuits, and the initial/later qualifiers map cleanly to them.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2022-08-20), Liam Kwong raised that Quantum Circuits Inc. had offered them a deal, but Quantum's limited customizability didn't meet TerraForm's unique requirements, which is why they were leaning toward TechPulse's tailored solutions. In the later call (2023-03-05), when Liam noted that Quantum Circuits emphasizes security heavily, Jaemin Park positioned TechPulse by acknowledging Quantum Circuits does a commendable job with security but saying they fall short on feature innovation that adapts to new technological requirements, and that TechPulse's solutions provide a balance of both smart innovativeness and high security standards.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T15XIAS",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2022-08-20T14:11:48] Liam Kwong: Sure, we've had offers from Quantum Circuits Inc., but their limited customizability doesn’t really meet our unique requirements. That's why we've been leaning more towards TechPulse, given your tailored solutions."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxQ7IAK",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-03-05T16:44:05] Liam Kwong: Security is a plus for us. One last thing regarding Quantum Circuits Inc's offerings—I've noticed they emphasize security heavily. How does your solution stand up to theirs?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about Liam Kwong's concern about Quantum Circuits Inc. in the 'initial discussion' and how Jaemin positioned TechPulse against Quantum Circuits in 'the later call.' Across all calls, only one call features both Liam Kwong and Jaemin Park discussing Quantum Circuits Inc.: call b2b:a05Wt000003SxQ7IAK (2023-03-05, opportunity 'TerraForm Engineering EDA Enhancement'). In that call, Liam raises the concern that Quantum Circuits Inc. emphasizes security heavily and asks how TechPulse's solution compares (line 13), and Jaemin responds by positioning TechPulse as offering a balance of smart innovativeness and high security standards, noting Quantum Circuits falls short on feature innovation (line 14). The 'initial discussion' and 'later call' both refer to this single call since it is the only one where both the concern and the positioning occur. No other call in the dataset involves Liam Kwong raising a concern about Quantum Circuits Inc. or Jaemin positioning TechPulse against Quantum Circuits.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (call on 2023-03-05), Liam Kwong raised the concern that Quantum Circuits Inc. emphasizes security heavily and asked how TechPulse's solution stands up to theirs. Jaemin positioned TechPulse against Quantum Circuits by acknowledging that Quantum Circuits does a commendable job with security but tends to fall short on feature innovation that truly adapts to new technological requirements, and stated that TechPulse's solutions provide a balance of both smart innovativeness and high security standards.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxQ7IAK",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-03-05T16:44:05] Liam Kwong: Security is a plus for us. One last thing regarding Quantum Circuits Inc's offerings—I've noticed they emphasize security heavily. How does your solution stand up to theirs?\n[2023-03-05T16:44:25] Jaemin Park: That's a good question. While Quantum Circuits does a commendable job with security, they tend to fall short on feature innovation that truly adapts to new technological requirements. We believe our solutions provide a balance of both smart innovativeness and high security standards."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": false,
+        "reference_covers_requested_facts": true,
+        "reason": "The question asks for two distinct facts: (1) the concern Liam Kwong raised about Quantum Circuits in the initial discussion, and (2) how Jaemin positioned TechPulse against Quantum Circuits in the later call. Answer A attributes the customizability concern to the initial discussion (2022-08-20) and the security/innovation positioning to the later call (2023-03-05), matching the reference. Answer B, however, places the security concern in the initial discussion (dated 2023-03-05) and merges both parts into a single call, omitting the customizability concern entirely. Because Answer B misses the requested initial-discussion commitment (limited customizability) and conflates the two events, the answers do not agree. The reference covers both requested facts: the initial customizability concern and the later security-vs-innovation positioning with TechPulse's balance."
+      },
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-84fdce7560cc64a2",
+      "question": "What are the quoted prices for the 2024 Tesla Model S and the 2023 Mercedes-Benz E-Class for John Doe, and are discounts included?",
+      "gold_answer": "Tesla Model S is $89,999.99 and Mercedes-Benz E-Class is $65,999.99; these are standard prices with no discounts at this stage.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SPVGIA4",
+        "b2c:a05Ws000005SPdKIAW",
+        "b2c:a05Ws000005SQ37IAG",
+        "b2c:a05Ws000005SQ4jIAG",
+        "b2c:a05Ws000005SQ6LIAW",
+        "b2c:a05Ws000005SQ7xIAG",
+        "b2c:a05Ws000005SQ9ZIAW",
+        "b2c:a05Ws000005SQBBIA4",
+        "b2c:a05Ws000005SQBCIA4",
+        "b2c:a05Ws000005SQCnIAO",
+        "b2c:a05Ws000005SQEPIA4",
+        "b2c:a05Ws000005SQG1IAO",
+        "b2c:a05Ws000005SQHdIAO",
+        "b2c:a05Ws000005SQJFIA4",
+        "b2c:a05Ws000005SQKrIAO",
+        "b2c:a05Ws000005SQMTIA4",
+        "b2c:a05Ws000005SQMUIA4",
+        "b2c:a05Ws000005SQO5IAO",
+        "b2c:a05Ws000005SQPhIAO",
+        "b2c:a05Ws000005SQRJIA4",
+        "b2c:a05Ws000005SQSvIAO",
+        "b2c:a05Ws000005SQUXIA4",
+        "b2c:a05Ws000005SQW9IAO",
+        "b2c:a05Ws000005SQXlIAO",
+        "b2c:a05Ws000005SQZNIA4",
+        "b2c:a05Ws000005SQazIAG",
+        "b2c:a05Ws000005SQcbIAG",
+        "b2c:a05Ws000005SQeDIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call quotes prices for both the 2024 Tesla Model S and the 2023 Mercedes-Benz E-Class: the 2023-08-22 call with Priya Nair (b2c:a05Ws000005SQW9IAO). It states the Tesla is $89,999.99 and the E-Class is $65,999.99, and explicitly says these are standard prices with no discounts included at this stage. No other call mentions the Mercedes-Benz E-Class pricing, so there are no competing answers.",
+        "answers": [
+          {
+            "answer": "The 2024 Tesla Model S is quoted at $89,999.99 and the 2023 Mercedes-Benz E-Class at $65,999.99. No discounts are included — Priya Nair states these are AutoElite Motors' standard prices at this stage, with negotiation/value discussions deferred to the next conversation.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQW9IAO",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-08-22T10:02:55] Priya Nair: The 2024 Tesla Model S is priced at $89,999.99, and the 2023 Mercedes-Benz E-Class comes in at $65,999.99. We also offer a comprehensive maintenance plan and extended warranty to protect your investment."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQW9IAO",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-08-22T10:03:10] John Doe: Having a solid maintenance plan is a relief. Do these costs include any discounts?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for quoted prices of the 2024 Tesla Model S and the 2023 Mercedes-Benz E-Class for John Doe, and whether discounts are included. Only one call (b2c:a05Ws000005SQW9IAO, dated 2023-08-22, opportunity 'John Doe's Premium Vehicle Acquisition' with Priya Nair) contains both vehicles together with explicit quoted prices and a direct answer about discounts. No other call quotes both these specific models with prices.",
+        "answers": [
+          {
+            "answer": "The 2024 Tesla Model S is quoted at $89,999.99 and the 2023 Mercedes-Benz E-Class is quoted at $65,999.99. Regarding discounts, Priya Nair stated that at this stage these are standard prices with no discounts included, but committed to discussing negotiation strategies in the next conversation to see how they can best accommodate John's needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQW9IAO",
+                "line_start": 12,
+                "line_end": 15,
+                "quote": "[2023-08-22T10:02:55] Priya Nair: The 2024 Tesla Model S is priced at $89,999.99, and the 2023 Mercedes-Benz E-Class comes in at $65,999.99. We also offer a comprehensive maintenance plan and extended warranty to protect your investment.\n[2023-08-22T10:03:10] John Doe: Having a solid maintenance plan is a relief. Do these costs include any discounts?\n[2023-08-22T10:03:25] Priya Nair: At this stage, these are our standard prices, but we're committed to providing you the best value. During our next conversation, we’ll focus on negotiation strategies and see how we can best accommodate your needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers provide the same quoted prices ($89,999.99 for the 2024 Tesla Model S and $65,999.99 for the 2023 Mercedes-Benz E-Class) and both state that no discounts are included, noting these are standard prices. The additional detail about future negotiation discussions is extra context not required by the question but does not conflict. The reference covers both requested prices and confirms no discounts at this stage, addressing all facts the question asks for."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
