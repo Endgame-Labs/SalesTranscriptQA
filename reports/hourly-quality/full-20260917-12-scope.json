@@ -1,0 +1,255 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "3bc4391d991314d16f19be111453316273c2be34b42262ee298c77089ff63da9",
+  "questions": 2,
+  "counts": {
+    "pass": 1,
+    "fail": 1
+  },
+  "estimated_usd": 0.31288774,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-564d75536b59d512",
+      "question": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up, and how did that compare to what was said about pricing in the initial discussion?",
+      "gold_answer": "In the initial discussion pricing was only described as competitive with tailored proposals later; in the follow-up Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussion based on usage and partnership duration.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgNIAS",
+        "b2b:a05Wt000003SrnkIAC",
+        "b2b:a05Wt000003SsNDIA0",
+        "b2b:a05Wt000003StclIAC",
+        "b2b:a05Wt000003SuVQIA0",
+        "b2b:a05Wt000003Sv6ZIAS",
+        "b2b:a05Wt000003SvHwIAK",
+        "b2b:a05Wt000003SvhfIAC",
+        "b2b:a05Wt000003Swx6IAC",
+        "b2b:a05Wt000003Sx5CIAS",
+        "b2b:a05Wt000003SxA1IAK",
+        "b2b:a05Wt000003SxJfIAK",
+        "b2b:a05Wt000003SxcyIAC",
+        "b2b:a05Wt000003SyNpIAK",
+        "b2b:a05Wt000003SydsIAC",
+        "b2b:a05Wt000003SypIIAS",
+        "b2b:a05Wt000003SypJIAS",
+        "b2b:a05Wt000003SysNIAS",
+        "b2b:a05Wt000003SyyxIAC",
+        "b2b:a05Wt000003SzDRIA0",
+        "b2b:a05Wt000003SzuzIAC",
+        "b2b:a05Wt000003T0CgIAK",
+        "b2b:a05Wt000003T0mEIAS",
+        "b2b:a05Wt000003T0nsIAC",
+        "b2b:a05Wt000003T1QTIA0",
+        "b2b:a05Wt000003T1a9IAC",
+        "b2b:a05Wt000003T1blIAC",
+        "b2b:a05Wt000003T2BHIA0",
+        "b2b:a05Wt000003T2HjIAK",
+        "b2b:a05Wt000003T2SzIAK",
+        "b2b:a05Wt000003T2T0IAK",
+        "b2b:a05Wt000003T2UcIAK",
+        "b2b:a05Wt000003T2WCIA0",
+        "b2b:a05Wt000003T2kiIAC",
+        "b2b:a05Wt000003T3SFIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Anwar Malik appears in exactly two calls with NexGen Biotech (contact Chuke Li, opportunity NexGen-EDA-Integration): the initial discussion on 2021-05-02 and the follow-up on 2021-06-01. The follow-up contains specific pricing flexibility (discounts), while the initial discussion only gave general pricing assurances, so the comparison is uniquely determinable.",
+        "answers": [
+          {
+            "answer": "In the follow-up call (June 1, 2021), Anwar Malik offered concrete pricing flexibility: the proposal includes a 10% discount on PulseSim Pro and a 5% discount on SecureFlow Suite, and he said TechPulse is open to further discussions based on projected usage and partnership duration. By comparison, in the initial discussion (May 2, 2021), Anwar gave only a general assurance — since they were still in the discovery phase, he said the solutions are competitively priced with substantial value through capabilities and support, and that when they moved forward they could tailor proposals to optimize NexGen's ROI, without committing to any specific discounts.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1a9IAC",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2021-06-01T15:07:30] Chuke Li: Impressive. Alright, about the proposal... is there any flexibility on pricing given our long-term plans with these technologies?\n[2021-06-01T15:08:00] Anwar Malik: We're indeed flexible. The proposal does include a 10% discount on PulseSim Pro and 5% on SecureFlow Suite. We’re open to further discussions based on projected usage and partnership duration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzDRIA0",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-05-02T11:03:30] Chuke Li: Excellent. How about the pricing structure? We want to ensure it matches our strategic objectives without overwhelming our budget.\n[2021-05-02T11:03:50] Anwar Malik: While we’re in the discovery phase now, I assure you our solutions are competitively priced, offering substantial value through capabilities and support. When we move forward, we can tailor proposals to optimize your ROI."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Anwar as the salesperson and NexGen Biotech as the customer. Only one salesperson named Anwar (Anwar Malik) appears in the data, on opportunity 'NexGen-EDA-Integration' (006Wt000007B9YgIAK) with contact Chuke Li. There are exactly two calls: the initial discussion on 2021-05-02 and the follow-up on 2021-06-01. The follow-up contains explicit pricing flexibility (10% discount on PulseSim Pro, 5% on SecureFlow Suite, openness to further discussions based on projected usage and partnership duration). The initial discussion contains a general statement about competitive pricing and tailored proposals to optimize ROI, with no specific discount figures.",
+        "answers": [
+          {
+            "answer": "In the follow-up call (2021-06-01), Anwar Malik offered a 10% discount on PulseSim Pro and a 5% discount on SecureFlow Suite, and stated that TechPulse was open to further discussions based on projected usage and partnership duration. In the initial discussion (2021-05-02), Anwar had not provided any specific discount figures; he only assured Chuke Li that their solutions were competitively priced, offered substantial value through capabilities and support, and that when they moved forward they could tailor proposals to optimize NexGen's ROI. Thus the follow-up represented a concrete step beyond the initial call's general competitive-pricing assurance by naming specific percentage discounts and explicitly inviting further negotiation tied to usage volume and partnership length.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1a9IAC",
+                "line_start": 15,
+                "line_end": 18,
+                "quote": "[2021-06-01T15:07:30] Chuke Li: Impressive. Alright, about the proposal... is there any flexibility on pricing given our long-term plans with these technologies?\n[2021-06-01T15:08:00] Anwar Malik: We're indeed flexible. The proposal does include a 10% discount on PulseSim Pro and 5% on SecureFlow Suite. We’re open to further discussions based on projected usage and partnership duration.\n[2021-06-01T15:08:30] Chuke Li: Thank you for being open to that. This information gives us a lot to consider in terms of budget alignment and future integration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzDRIA0",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-05-02T11:03:30] Chuke Li: Excellent. How about the pricing structure? We want to ensure it matches our strategic objectives without overwhelming our budget.\n[2021-05-02T11:03:50] Anwar Malik: While we’re in the discovery phase now, I assure you our solutions are competitively priced, offering substantial value through capabilities and support. When we move forward, we can tailor proposals to optimize your ROI."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same follow-up pricing flexibility (10% discount on PulseSim Pro, 5% on SecureFlow Suite, openness to further discussion based on projected usage and partnership duration) and the same initial-discussion characterization (no specific discounts, only a general competitive-pricing assurance with a promise to tailor proposals later for ROI). The reference likewise covers both requested facts: the initial discussion's competitive/tailored-later language and the follow-up's specific 10%/5% discounts plus openness to further discussion based on usage and partnership duration. All requested commitments are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-2ebc8646d4c777cc",
+      "question": "What is Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, and what concern does she raise about pre-owned vehicle reliability?",
+      "gold_answer": "She's leaning toward the Model S for its luxury, and she wants assurances about the reliability of pre-owned vehicles.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMMAIA4",
+        "b2c:a05Ws000005SMvjIAG",
+        "b2c:a05Ws000005SOEGIA4",
+        "b2c:a05Ws000005SOHYIA4",
+        "b2c:a05Ws000005SPdPIAW",
+        "b2c:a05Ws000005SQHqIAO",
+        "b2c:a05Ws000005SQMnIAO",
+        "b2c:a05Ws000005SQo3IAG",
+        "b2c:a05Ws000005SSBVIA4",
+        "b2c:a05Ws000005SSDCIA4",
+        "b2c:a05Ws000005SSRbIAO",
+        "b2c:a05Ws000005SSl5IAG",
+        "b2c:a05Ws000005SUF4IAO",
+        "b2c:a05Ws000005SUmtIAG",
+        "b2c:a05Ws000005SUy4IAG",
+        "b2c:a05Ws000005SVFsIAO",
+        "b2c:a05Ws000005SVJ5IAO",
+        "b2c:a05Ws000005SVKcIAO",
+        "b2c:a05Ws000005SVSoIAO",
+        "b2c:a05Ws000005SVSpIAO",
+        "b2c:a05Ws000005SVXWIA4",
+        "b2c:a05Ws000005SVZ9IAO",
+        "b2c:a05Ws000005SVmCIAW",
+        "b2c:a05Ws000005SVmDIAW",
+        "b2c:a05Ws000005SVmEIAW",
+        "b2c:a05Ws000005SW3tIAG",
+        "b2c:a05Ws000005SWtQIAW",
+        "b2c:a05Ws000005SY0mIAG",
+        "b2c:a05Ws000005SYWzIAO",
+        "b2c:a05Ws000005SYdUIAW",
+        "b2c:a05Ws000005SYopIAG",
+        "b2c:a05Ws000005SYtbIAG",
+        "b2c:a05Ws000005SZ6YIAW",
+        "b2c:a05Ws000005SZo9IAG",
+        "b2c:a05Ws000005Sa2XIAS",
+        "b2c:a05Ws000005SaCIIA0",
+        "b2c:a05Ws000005SaFTIA0",
+        "b2c:a05Ws000005Sb6iIAC",
+        "b2c:a05Ws000005SbRgIAK",
+        "b2c:a05Ws000005SbUtIAK",
+        "b2c:a05Ws000005SbZkIAK",
+        "b2c:a05Ws000005SbmbIAC",
+        "b2c:a05Ws000005Sc16IAC",
+        "b2c:a05Ws000005ScPFIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 5,
+            "normalized_end": 6
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Across the call history, Sophia expresses different leanings between the Tesla Model S and Camry Hybrid in different calls, and raises pre-owned reliability concerns in more than one of them. The Felix Bakker call (2021-09-18) has her leaning toward the Model S for its luxury, with a pre-owned reliability concern answered via the certified pre-owned program. The Grace Chen call (2021-08-23) has her leaning toward the Camry Hybrid for its balance of luxury and efficiency, with a pre-owned program comparison concern. These are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "In the September 18, 2021 call with Felix Bakker, Sophia says she is leaning toward the Tesla Model S for its luxury strength (while wanting to make the right long-term choice). Her pre-owned reliability concern is about what assurances AutoElite provides on the reliability of pre-owned vehicles; Felix responds that the certified pre-owned program includes a thorough inspection, extended warranty options, and personalized service plans, and adds that long-term reliability is ensured through comprehensive maintenance services with proactive care and genuine parts.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQHqIAO",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2021-09-18T13:01:00] Sophia Carter: Yes, both seem like excellent options. I'm leaning towards the Model S for its luxury strength, but I want to make sure I'm making the right long-term choice."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQHqIAO",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2021-09-18T13:02:15] Sophia Carter: That’s comforting to hear. I'm also curious about the reliability of pre-owned vehicles. What kind of assurances do you provide?\n[2021-09-18T13:02:30] Felix Bakker: Our certified pre-owned program is designed for peace of mind. Besides a thorough inspection, we offer extended warranty options and personalized service plans to ensure reliability.\n[2021-09-18T13:02:45] Sophia Carter: That's helpful. Someone mentioned Exquisite Vehicles Hub has a partnership focus. How does AutoElite ensure long-term reliability for your pre-owned cars?"
+              }
+            ]
+          },
+          {
+            "answer": "In the August 23, 2021 call with Grace Chen, Sophia says she is leaning toward the Camry Hybrid because of its balance of luxury and efficiency (Grace affirms the Camry Hybrid is an excellent choice with a luxurious feel, modern amenities, and fuel savings). Her pre-owned concern is about getting a good deal and how AutoElite's pre-owned program compares with others; Grace responds that the certified pre-owned program is known for excellent long-term value due to lower maintenance costs and is crafted with transparency in mind.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQo3IAG",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2021-08-23T11:02:35] Sophia Carter: That's definitely something I'm looking for. I also want to make sure I'm getting a good deal. How does your pre-owned program compare with others?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQo3IAG",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2021-08-23T11:03:35] Sophia Carter: That's really good to hear. I’m leaning towards the Camry because of its balance of luxury and efficiency. Do you think it's a good option?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "The question asks about Sophia Carter's leaning between the Tesla Model S and the Camry Hybrid, and her concern about pre-owned vehicle reliability. Multiple calls contain both elements. In call b2c:a05Ws000005SQHqIAO (Felix Bakker, 2021-09-18), Sophia explicitly says she's 'leaning towards the Model S for its luxury strength' and raises a concern about 'the reliability of pre-owned vehicles.' In call b2c:a05Ws000005SSDCIA4 (Grace Chen, 2021-08-16), Sophia says she's 'leaning towards the Tesla Model S because of its performance' but no pre-owned reliability concern is raised in that call. In call b2c:a05Ws000005SQo3IAG (Grace Chen, 2021-08-23), Sophia says she's 'leaning towards the Camry because of its balance of luxury and efficiency' and asks about the pre-owned program. In call b2c:a05Ws000005SZo9IAG (Luis Oliveira, 2022-03-22), Sophia raises concern about 'the reliability of pre-owned options' having 'heard mixed reviews' but the Tesla vs Camry comparison isn't the focus. The two calls that most completely answer BOTH parts of the question (leaning between Tesla Model S and Camry Hybrid AND pre-owned reliability concern) are b2c:a05Ws000005SQHqIAO and b2c:a05Ws000005SQo3IAG, which give materially different leanings.",
+        "answers": [
+          {
+            "answer": "Sophia Carter is leaning towards the Tesla Model S for its luxury strength, but wants to make sure she's making the right long-term choice. She raises a concern about the reliability of pre-owned vehicles, asking what kind of assurances AutoElite provides. Felix Bakker responds that their certified pre-owned program includes a thorough inspection, extended warranty options, and personalized service plans to ensure reliability. Sophia further asks how AutoElite ensures long-term reliability for pre-owned cars compared to competitors like Exquisite Vehicles Hub, and Felix explains they use comprehensive maintenance services with proactive care and genuine parts.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQHqIAO",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2021-09-18T13:00:45] Felix Bakker: Absolutely, and that's something we specialize in. I recall you were interested in the 2024 Tesla Model S and the 2022 Toyota Camry Hybrid. Have you had a chance to think about how these might fit your lifestyle?\n[2021-09-18T13:01:00] Sophia Carter: Yes, both seem like excellent options. I'm leaning towards the Model S for its luxury strength, but I want to make sure I'm making the right long-term choice."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SQHqIAO",
+                "line_start": 9,
+                "line_end": 13,
+                "quote": "[2021-09-18T13:02:15] Sophia Carter: That’s comforting to hear. I'm also curious about the reliability of pre-owned vehicles. What kind of assurances do you provide?\n[2021-09-18T13:02:30] Felix Bakker: Our certified pre-owned program is designed for peace of mind. Besides a thorough inspection, we offer extended warranty options and personalized service plans to ensure reliability.\n[2021-09-18T13:02:45] Sophia Carter: That's helpful. Someone mentioned Exquisite Vehicles Hub has a partnership focus. How does AutoElite ensure long-term reliability for your pre-owned cars?\n[2021-09-18T13:03:00] Felix Bakker: We ensure long-term reliability through our comprehensive maintenance services, which incorporate proactive care and genuine parts, setting us apart in quality and fostering a strong customer relationship."
+              }
+            ]
+          },
+          {
+            "answer": "Sophia Carter is leaning towards the Camry Hybrid because of its balance of luxury and efficiency. She raises a concern about how AutoElite's pre-owned program compares with others, wanting to ensure she's getting a good deal. Grace Chen responds that their certified pre-owned program is known for excellent long-term value due to lower maintenance costs, and that their offerings are crafted with transparency in mind. Sophia also notes she's had issues with dealerships not being upfront about prices in the past, and Grace reassures her the process will be straightforward and transparent.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQo3IAG",
+                "line_start": 11,
+                "line_end": 16,
+                "quote": "[2021-08-23T11:02:35] Sophia Carter: That's definitely something I'm looking for. I also want to make sure I'm getting a good deal. How does your pre-owned program compare with others?\n[2021-08-23T11:02:50] Grace Chen: Great question. Our certified pre-owned program is known for its excellent long-term value due to lower maintenance costs. While some might be drawn to competitors' showroom experiences, our offerings are crafted with transparency in mind, which many customers appreciate.\n[2021-08-23T11:03:05] Sophia Carter: Transparency in pricing is definitely crucial. I've had issues with dealerships not being upfront about prices in the past.\n[2021-08-23T11:03:20] Grace Chen: I completely understand, and you won't have to worry about that with us. We strive to make the process as straightforward and transparent as possible, so you always know what to expect.\n[2021-08-23T11:03:35] Sophia Carter: That's really good to hear. I’m leaning towards the Camry because of its balance of luxury and efficiency. Do you think it's a good option?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1,0 +1,929 @@
+[
+  {
+    "job_id": "564d75536b59d512810b0d7a67981097f5a4808d378408835f5b5aeea9693ef6",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SzDRIA0",
+      "b2b:a05Wt000003T1a9IAC"
+    ],
+    "status": "accepted",
+    "question": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up, and how did that compare to what was said about pricing in the initial discussion?",
+    "gold_answer": "In the initial discussion pricing was only described as competitive with tailored proposals later; in the follow-up Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussion based on usage and partnership duration.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SzDRIA0",
+        "answer_claim": "Anwar said they are in the discovery phase, solutions are competitively priced, and proposals can be tailored to optimize ROI.",
+        "kind": "dialogue",
+        "line_start": 13,
+        "line_end": 15,
+        "quote": "[2021-05-02T11:03:30] Chuke Li: Excellent. How about the pricing structure? We want to ensure it matches our strategic objectives without overwhelming our budget.\n[2021-05-02T11:03:50] Anwar Malik: While we\u2019re in the discovery phase now, I assure you our solutions are competitively priced, offering substantial value through capabilities and support. When we move forward, we can tailor proposals to optimize your ROI.",
+        "start": 2340,
+        "end": 2759
+      },
+      {
+        "call_id": "b2b:a05Wt000003T1a9IAC",
+        "answer_claim": "Anwar said the proposal includes a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussions based on projected usage and partnership duration.",
+        "kind": "dialogue",
+        "line_start": 15,
+        "line_end": 17,
+        "quote": "[2021-06-01T15:07:30] Chuke Li: Impressive. Alright, about the proposal... is there any flexibility on pricing given our long-term plans with these technologies?\n[2021-06-01T15:08:00] Anwar Malik: We're indeed flexible. The proposal does include a 10% discount on PulseSim Pro and 5% on SecureFlow Suite. We\u2019re open to further discussions based on projected usage and partnership duration.",
+        "start": 3298,
+        "end": 3687
+      }
+    ],
+    "question_id": "b2b-multi_call-564d75536b59d512",
+    "candidate": {
+      "question": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up, and how did that compare to what was said about pricing in the initial discussion?",
+      "gold_answer": "In the initial discussion pricing was only described as competitive with tailored proposals later; in the follow-up Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussion based on usage and partnership duration.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SzDRIA0",
+          "answer_claim": "Anwar said they are in the discovery phase, solutions are competitively priced, and proposals can be tailored to optimize ROI.",
+          "kind": "dialogue",
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "[2021-05-02T11:03:30] Chuke Li: Excellent. How about the pricing structure? We want to ensure it matches our strategic objectives without overwhelming our budget.\n[2021-05-02T11:03:50] Anwar Malik: While we\u2019re in the discovery phase now, I assure you our solutions are competitively priced, offering substantial value through capabilities and support. When we move forward, we can tailor proposals to optimize your ROI.",
+          "start": 2340,
+          "end": 2759
+        },
+        {
+          "call_id": "b2b:a05Wt000003T1a9IAC",
+          "answer_claim": "Anwar said the proposal includes a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussions based on projected usage and partnership duration.",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 17,
+          "quote": "[2021-06-01T15:07:30] Chuke Li: Impressive. Alright, about the proposal... is there any flexibility on pricing given our long-term plans with these technologies?\n[2021-06-01T15:08:00] Anwar Malik: We're indeed flexible. The proposal does include a 10% discount on PulseSim Pro and 5% on SecureFlow Suite. We\u2019re open to further discussions based on projected usage and partnership duration.",
+          "start": 3298,
+          "end": 3687
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the follow-up, Anwar offered NexGen Biotech a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, with openness to further discussions based on projected usage and partnership duration. In the initial discussion, he only stated that solutions were competitively priced and that proposals could be tailored to optimize ROI, without specifying any discounts or flexibility.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "In the supplied call (2021-05-02), when Chuke Li asked about pricing, Anwar Malik said that while they are in the discovery phase, TechPulse's solutions are competitively priced, offering substantial value through capabilities and support, and that when they move forward they can tailor proposals to optimize NexGen's ROI. However, the question asks about a comparison between a follow-up call and an initial discussion \u2014 only one call is supplied, so there is no follow-up call to compare against. What is missing: the follow-up call transcript (and clarity on which call is the 'initial' one) to identify any additional pricing flexibility Anwar offered later.",
+          "answerable": false
+        },
+        {
+          "answer": "In this call (June 1, 2021), Anwar Malik offered pricing flexibility by confirming a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, and said TechPulse is open to further discussions based on projected usage and partnership duration. However, the question asks for a comparison to what was said about pricing in the initial discussion, and only one call is supplied, so the initial discussion's pricing details are missing and the comparison cannot be made.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both quotes verify: initial call (2021-05-02) has Anwar saying solutions are 'competitively priced' with tailored proposals later; follow-up (2021-06-01) has the 10% PulseSim Pro / 5% SecureFlow Suite discounts with openness based on usage and partnership duration. The question requires comparing pricing across both calls, so each call contributes a necessary distinct fact; each single-call ablation correctly fails to answer the full comparison, and no-context answers fail. The independent answer matches the gold semantically with no leakage or invented details."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SzDRIA0",
+          "b2b:a05Wt000003T1a9IAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxbQIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving NexGen Biotech. The only transcript is a conversation between Anwar Malik and Galina Petrovna of Digital Russia. Therefore, there is no evidence of any pricing flexibility Anwar offered NexGen Biotech in a follow-up, nor any initial discussion with NexGen Biotech to compare against.",
+              "evidence": [],
+              "reason": "The question asks specifically about NexGen Biotech, but the sole call transcript (b2b:a05Wt000003SxbQIAS) is with Galina Petrovna of Digital Russia. No call references NexGen Biotech, so neither the follow-up pricing flexibility nor the initial pricing discussion for that account can be answered from the supplied sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SstQIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving NexGen Biotech or a follow-up call by Anwar. The only call provided is an initial discussion between Anwar Malik (TechSystems) and Ananya Patel of EcoVision Engineering regarding VeriSim Express. In that call, Anwar mentioned three units typically cost $1,600, acknowledged a $1,533 budget, and offered to speak with his manager about adjusting pricing. However, there is no follow-up call, no mention of NexGen Biotech, and therefore no basis to answer what pricing flexibility Anwar offered NexGen Biotech in a follow-up or to compare it with an initial discussion about NexGen Biotech pricing.",
+              "evidence": [],
+              "reason": "The question asks about Anwar's pricing flexibility offered to NexGen Biotech in a follow-up and a comparison to the initial discussion. The only source call involves Ananya Patel at EcoVision Engineering, not NexGen Biotech, and is a single initial call with no follow-up. No facts about NexGen Biotech exist in the provided data, so the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuvOIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no call involving NexGen Biotech. The only transcript is between Anwar Malik and Satoshi Tanaka of NeuralWave Technologies discussing DesignWave Automation. There is no follow-up call to NexGen Biotech, no pricing flexibility offered to NexGen Biotech, and no initial discussion with NexGen Biotech to compare against. Therefore the requested comparison cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing flexibility Anwar offered NexGen Biotech in a follow-up and how it compared to pricing in an initial discussion with NexGen Biotech. The sole call provided (b2b:a05Wt000003SuvOIAS) involves Satoshi Tanaka at NeuralWave Technologies, not NexGen Biotech. No follow-up call exists in the sources, and no mention of NexGen Biotech appears anywhere. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T5DuIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Anwar offering pricing flexibility to NexGen Biotech in a follow-up call. The only call provided features Anwar Khan as a lead from Innovate Pakistan (not NexGen Biotech), speaking with Liam Kelly from TechSolutions about the CircuitMaster Analyzer. There is no follow-up call, no NexGen Biotech account, and no pricing flexibility offered by Anwar. The initial discussion mentions a price of 549 against a budget of 584, but this involves Liam Kelly (the seller) and Anwar Khan (the buyer from Innovate Pakistan), not NexGen Biotech.",
+              "evidence": [],
+              "reason": "The question asks about pricing flexibility Anwar offered NexGen Biotech in a follow-up and how it compared to the initial discussion. The sole source call (b2b:a05Wt000003T5DuIAK) involves Anwar Khan as a lead from Innovate Pakistan, not NexGen Biotech. There is no follow-up call in the sources, no NexGen Biotech entity anywhere in the metadata or transcript, and no instance of Anwar offering pricing flexibility (he is the buyer, not the seller). The draft extraction correctly identifies these gaps. Since no facts matching the exact named account (NexGen Biotech), event scope (follow-up), or role (Anwar offering flexibility) exist in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuLwIAK",
+              "b2b:a05Wt000003SwcBIAS",
+              "b2b:a05Wt000003SwdnIAC",
+              "b2b:a05Wt000003T12NIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving NexGen Biotech. All four transcripts are between Anwar Malik and Yuki Tanaka of Quantum Designs (opportunity: Quantum Designs EDA Partnership). There is no record of Anwar offering any pricing flexibility to NexGen Biotech in a follow-up, nor any initial pricing discussion with that account. Therefore, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing flexibility Anwar offered to NexGen Biotech and a comparison to an initial pricing discussion with that account. None of the four supplied calls reference NexGen Biotech; every call is with Yuki Tanaka at Quantum Designs. Because the exact named account (NexGen Biotech) does not appear in any source, no facts about pricing flexibility or initial pricing statements for that account can be supported. The draft extraction correctly identifies this mismatch."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvgGIAS",
+              "b2b:a05Wt000003SysTIAS",
+              "b2b:a05Wt000003SzgaIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no calls involving NexGen Biotech. All three calls are between Anwar Malik and Hassan Mahmoud of SkyLevel Systems under the opportunity 'SkyLevel Systems Collaboration Initiative.' While pricing is discussed (transparency vs. NanoDesign in the 2023-05-20 initial call, and specific discounts\u201410% on PulseSim Pro, DevVision IDE, and SecureFlow Suite, 5% on CollabCircuit Hub\u2014in the 2023-06-26 follow-up), none of this pertains to NexGen Biotech. Therefore, the question about pricing flexibility offered to NexGen Biotech and how it compared to the initial discussion cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about NexGen Biotech, but no call in the provided sources involves that account. All calls are with SkyLevel Systems (contact Hassan Mahmoud). Because the exact named account (NexGen Biotech) is absent, no fact about pricing flexibility offered to NexGen Biotech can be supported, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwsDIAS",
+              "b2b:a05Wt000003SzAIIA0",
+              "b2b:a05Wt000003SzJrIAK",
+              "b2b:a05Wt000003T0hIIAS",
+              "b2b:a05Wt000003T2MWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving NexGen Biotech. All five calls are between Anwar Malik and Fatima Noor of PowerGrid Innovations (account_name: PowerGrid Innovations in every call's metadata). Therefore, no pricing flexibility offered by Anwar to NexGen Biotech in a follow-up, nor any initial discussion pricing with NexGen Biotech, can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about NexGen Biotech, but every call in the dataset is associated with account_name 'PowerGrid Innovations' and contact 'Fatima Noor'. There is no mention of NexGen Biotech in any transcript or metadata. Without any source material referencing NexGen Biotech, neither the follow-up pricing flexibility nor the initial discussion pricing for that account can be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwdhIAC",
+              "b2b:a05Wt000003T0XgIAK",
+              "b2b:a05Wt000003T0cTIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve only Vertex Engineering Corp (contact Isabella Russo) and salesperson Anwar Malik from TechPulse Solutions. There is no mention of NexGen Biotech in any of the three calls. Therefore, no pricing flexibility offered to NexGen Biotech, nor any initial discussion pricing with NexGen Biotech, can be identified from these sources.",
+              "evidence": [],
+              "reason": "All three calls (b2b:a05Wt000003SwdhIAC, b2b:a05Wt000003T0XgIAK, b2b:a05Wt000003T0cTIAS) are between Anwar Malik and Isabella Russo of Vertex Engineering Corp. The account name in every call's metadata is 'Vertex Engineering Corp'. The question asks about NexGen Biotech, which does not appear anywhere in the provided sources. No facts about NexGen Biotech pricing flexibility or an initial discussion with them exist in the data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzDRIA0",
+              "b2b:a05Wt000003T1a9IAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the follow-up call (2021-06-01), Anwar offered NexGen Biotech a 10% discount on PulseSim Pro and a 5% discount on SecureFlow Suite, and stated openness to further discussions based on projected usage and partnership duration. In the initial discussion (2021-05-02), no specific discounts or pricing flexibility were offered; Anwar only stated that the solutions are competitively priced with substantial value through capabilities and support, and that tailored proposals to optimize ROI could be created once they moved past the discovery phase.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T1a9IAC",
+                  "line_start": 15,
+                  "line_end": 17,
+                  "quote": "[2021-06-01T15:07:30] Chuke Li: Impressive. Alright, about the proposal... is there any flexibility on pricing given our long-term plans with these technologies?\n[2021-06-01T15:08:00] Anwar Malik: We're indeed flexible. The proposal does include a 10% discount on PulseSim Pro and 5% on SecureFlow Suite. We\u2019re open to further discussions based on projected usage and partnership duration."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzDRIA0",
+                  "line_start": 13,
+                  "line_end": 15,
+                  "quote": "[2021-05-02T11:03:30] Chuke Li: Excellent. How about the pricing structure? We want to ensure it matches our strategic objectives without overwhelming our budget.\n[2021-05-02T11:03:50] Anwar Malik: While we\u2019re in the discovery phase now, I assure you our solutions are competitively priced, offering substantial value through capabilities and support. When we move forward, we can tailor proposals to optimize your ROI."
+                }
+              ],
+              "reason": "The follow-up call (b2b:a05Wt000003T1a9IAC) lines 15-16 show Chuke asking about pricing flexibility and Anwar responding with a 10% discount on PulseSim Pro, 5% on SecureFlow Suite, and openness to further discussions based on projected usage and partnership duration. The initial call (b2b:a05Wt000003SzDRIA0) lines 13-14 show Chuke asking about pricing structure and Anwar responding only that solutions are competitively priced with substantial value, and that tailored proposals to optimize ROI can be made when they move forward\u2014no specific discounts or flexibility were mentioned. Both facts are directly supported by the source text for the exact named people (Anwar Malik, Chuke Li), account (NexGen Biotech), and products (PulseSim Pro, SecureFlow Suite)."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same facts: in the follow-up, Anwar offered a 10% discount on PulseSim Pro and a 5% discount on SecureFlow Suite, with openness to further discussion based on usage and partnership duration. In the initial discussion, no specific discounts were offered; pricing was described as competitive with tailored proposals to come later. The only differences are wording and level of detail (e.g., dates, mention of ROI), which do not change the requested facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrnkIAC",
+              "b2b:a05Wt000003SvhfIAC",
+              "b2b:a05Wt000003SysNIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about pricing flexibility offered by 'Anwar' to NexGen Biotech in a follow-up, and how that compared to pricing statements in the initial discussion. However, no person named Anwar appears in any of the three provided call transcripts. The TechPulse Solutions representative in all calls (initial on 2023-10-18, discovery on 2023-10-25, and follow-up on 2023-11-02) is Yasmin Farouk. Because the question is scoped to a specific named individual (Anwar) who does not exist in the sources, the requested fact cannot be supported.",
+              "evidence": [],
+              "reason": "No call transcript contains a speaker or participant named Anwar. All three NexGen Biotech calls feature Yasmin Farouk as the TechPulse representative. While pricing is discussed (competitive/adaptable pricing with scalable solutions and transparent total cost of ownership in the initial call b2b:a05Wt000003SvhfIAC lines 7-8, and competitive/transparent pricing without a precise quote in the discovery session b2b:a05Wt000003SysNIAS lines 11-12), none of these statements are attributed to anyone named Anwar. The question's exact named-person scope cannot be satisfied, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsNDIA0",
+              "b2b:a05Wt000003Swx6IAC",
+              "b2b:a05Wt000003SxA1IAK",
+              "b2b:a05Wt000003SypJIAS",
+              "b2b:a05Wt000003T2HjIAK",
+              "b2b:a05Wt000003T2kiIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Anwar appears in any of the provided call transcripts or metadata for the NexGen Biotech opportunity. All six calls involve Mei Lin (TechPulse Solutions) and Javier Sanchez (NexGen Biotech). Because the question specifically asks about pricing flexibility offered by Anwar, and no such individual is present in the sources, the requested fact cannot be answered. For reference, the initial discussion (2020-05-04) contained no pricing statements, and the follow-up calls by Mei Lin referenced competitive pricing, cost transparency, and a 15% discount on a $55,376.31 quote\u2014but none of these were attributed to anyone named Anwar.",
+              "evidence": [],
+              "reason": "The question asks about pricing flexibility offered by 'Anwar' to NexGen Biotech. No call transcript, metadata, or any line in the provided sources mentions a person named Anwar. All interactions for this opportunity are between Mei Lin and Javier Sanchez. Since the exact named person (Anwar) is absent, no complete answer can be constructed from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyE8IAK",
+              "b2b:a05Wt000003T0B0IAK",
+              "b2b:a05Wt000003T0VxIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve Anwar Malik speaking with Maya Anand of SafetyNet Inc. under the 'Public Safety Innovation Partnership' opportunity. There is no mention of NexGen Biotech in any of the three calls, so no pricing flexibility offered to NexGen Biotech can be identified, nor can any comparison to an initial discussion with that account be made.",
+              "evidence": [],
+              "reason": "All three calls are between Anwar Malik and Maya Anand at SafetyNet Inc. The account name 'NexGen Biotech' does not appear anywhere in the sources. Therefore, no facts about pricing flexibility offered to NexGen Biotech or any initial discussion with that account exist in the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgNIAS",
+              "b2b:a05Wt000003Sx5CIAS",
+              "b2b:a05Wt000003T3SFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Anwar appears in any of the provided calls. The TechPulse Solutions representative across all three NexGen Biotech calls is Terek Al-Farsi. Because the question specifically asks about pricing flexibility offered by Anwar, and no such individual exists in the sources, the question cannot be answered. Additionally, pricing is mentioned only once (2021-03-19 call, line 10), where Terek briefly notes solutions are 'competitively priced with discounted options available to meet diverse budget requirements.' The initial discussion (2021-03-11) and the later follow-up (2021-07-10) contain no pricing discussion, so even for Terek there is no follow-up pricing offer to compare against the initial call.",
+              "evidence": [],
+              "reason": "The question asks about a person named Anwar, but no such person appears in any transcript. The salesperson in all calls is Terek Al-Farsi. Furthermore, pricing is only briefly touched in one call (2021-03-19, line 10) and is absent from both the initial call (2021-03-11) and the later call (2021-07-10), making any comparison of 'follow-up pricing flexibility' versus 'initial discussion pricing' impossible even for the actual representative. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StclIAC",
+              "b2b:a05Wt000003SyNpIAK",
+              "b2b:a05Wt000003T1QTIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Anwar appears in any of the three NexGen Biotech call transcripts. The TechPulse representative in every call is Liam O'Sullivan. Because the question specifically asks about pricing flexibility offered by Anwar, and no such individual is present in the sources, the requested fact cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about 'Anwar,' but all three calls (b2b:a05Wt000003T1QTIA0, b2b:a05Wt000003StclIAC, b2b:a05Wt000003SyNpIAK) involve only Liam O'Sullivan and Yasmine Hassan. No mention of anyone named Anwar exists in the provided sources, so no pricing flexibility attributed to Anwar can be identified or compared to the initial discussion."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T06CIAS",
+              "b2b:a05Wt000003T2PhIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve Anwar Malik speaking with Samir Hussain of InnoBuild Constructors. There is no mention of NexGen Biotech in either call, and therefore no information about pricing flexibility offered to NexGen Biotech or any initial discussion with that account. The question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "Both calls (b2b:a05Wt000003T06CIAS and b2b:a05Wt000003T2PhIAK) are between Anwar Malik and Samir Hussain of InnoBuild Constructors. The account name in both metadata records is 'InnoBuild Constructors' and the contact is 'Samir Hussain'. NexGen Biotech is never mentioned in any line of either transcript. Since the question specifically asks about pricing flexibility offered to NexGen Biotech and a comparison to an initial discussion with that account, and no such information exists in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv08IAC",
+              "b2b:a05Wt000003T0UPIA0",
+              "b2b:a05Wt000003T2UaIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves NexGen Biotech. All three calls are between Anwar Malik and Yasir Abdi of PowerGrid Innovations. There is no record of Anwar offering pricing flexibility to NexGen Biotech in any follow-up, nor any initial discussion with NexGen Biotech about pricing. Therefore, no comparison can be made.",
+              "evidence": [],
+              "reason": "The question asks about pricing flexibility Anwar offered to NexGen Biotech and a comparison with an initial discussion. However, all three source calls are with Yasir Abdi at PowerGrid Innovations (account_name: PowerGrid Innovations in every call's metadata). NexGen Biotech is never mentioned in any transcript or metadata. Since the exact named account (NexGen Biotech) does not appear in any source, no facts about pricing flexibility offered to that account can be established, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuVQIA0",
+              "b2b:a05Wt000003T2SzIAK",
+              "b2b:a05Wt000003T2WCIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Anwar appears in any of the provided call transcripts. All three calls involve Lucas Almeida (TechPulse Solutions) and Javier Sanchez (NexGen Biotech). Because the question specifically asks about pricing flexibility offered by Anwar, and no such individual is present in the sources, the question cannot be answered. Additionally, no specific pricing flexibility offer (e.g., a discount or concession) is made in any of the calls; pricing is discussed only in general terms such as 'transparent pricing,' 'predictable total cost of ownership,' and 'competitive pricing.'",
+              "evidence": [],
+              "reason": "The question asks about a salesperson named Anwar, but no such person appears in any of the three provided transcripts. All interactions are between Lucas Almeida and Javier Sanchez. Without any mention of Anwar, no facts about Anwar's pricing flexibility offer or comparison to an initial discussion can be extracted. The draft extraction correctly identifies this gap."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv6ZIAS",
+              "b2b:a05Wt000003T0CgIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Anwar appears in either call transcript. The TechPulse Solutions representative in both calls is Chen Wei. Because the question specifically asks about pricing flexibility offered by Anwar, and no such individual is present in the sources, the question cannot be answered as asked. Additionally, even setting aside the name mismatch, the follow-up call (2021-03-01) contains no specific pricing flexibility offer\u2014only general statements that products are 'competitively priced' with a 'transparent cost structure' and 'favorable total cost of ownership.' The initial call (2021-02-22) has Chen Wei deferring detailed pricing to follow-up discussions and mentioning EcoPCB Creator starting around $2,659.924 for eight units after a discount, but no concrete flexibility terms were stated in either call.",
+              "evidence": [],
+              "reason": "The question asks about 'Anwar,' but no person by that name appears in any of the provided call transcripts. The salesperson in both calls is Chen Wei. Since the question is scoped to a specific named individual (Anwar) and that individual does not exist in the sources, no complete answer can be provided. Furthermore, even if we considered Chen Wei as the intended person, the follow-up call lacks any specific pricing flexibility offer (e.g., a discount percentage, revised quote, or payment terms), making a comparison impossible."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvHwIAK",
+              "b2b:a05Wt000003SyyxIAC",
+              "b2b:a05Wt000003T2UcIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Anwar appears in any of the three NexGen Biotech call transcripts. The TechPulse representative on all calls is Nguyen Thi Minh. Because the question specifically asks about pricing flexibility offered by Anwar, and no such individual exists in the sources, the requested fact cannot be answered.",
+              "evidence": [],
+              "reason": "The question scopes the answer to a person named 'Anwar.' All three calls (b2b:a05Wt000003T2UcIAK, b2b:a05Wt000003SyyxIAC, b2b:a05Wt000003SvHwIAK) involve Nguyen Thi Minh and Yasmine Hassan only. No participant, mention, or reference to anyone named Anwar exists in the provided sources, so no pricing-flexibility offer by Anwar can be identified or compared to an initial discussion."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgTIAS",
+              "b2b:a05Wt000003SuvKIAS",
+              "b2b:a05Wt000003SxbOIAS",
+              "b2b:a05Wt000003T1qSIAS",
+              "b2b:a05Wt000003T2eWIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving NexGen Biotech. All four calls are between Amir Haddad (TechPulse Solutions) and Nina Anwar of Circuit Dynamics Inc. under the opportunity 'Circuit Dynamics Partnership for Enhanced EDA Tools.' Therefore, no pricing flexibility offered to NexGen Biotech in a follow-up, nor any initial discussion pricing for NexGen Biotech, can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing flexibility offered to NexGen Biotech, but none of the four call transcripts reference NexGen Biotech in any capacity. All calls involve Circuit Dynamics Inc. as the account. Since the exact named entity (NexGen Biotech) does not appear in any source, no facts can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvoGIAS",
+              "b2b:a05Wt000003T1DeIAK",
+              "b2b:a05Wt000003T3GzIAK",
+              "b2b:a05Wt000003T4T8IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no calls involving NexGen Biotech. All four calls are between Anwar Malik and Aria Kim of SkyLevel Systems regarding the 'SkyLevel Systems Partnership' opportunity. Therefore, no pricing flexibility offered to NexGen Biotech can be identified, and no comparison to an initial discussion with NexGen Biotech is possible.",
+              "evidence": [],
+              "reason": "The question asks about pricing flexibility Anwar offered to NexGen Biotech in a follow-up and how it compared to pricing in the initial discussion. However, every call in the provided sources is with Aria Kim at SkyLevel Systems (account_id 001Wt00000PH9DRIA1, opportunity 'SkyLevel Systems Partnership'). NexGen Biotech is never mentioned in any transcript. Because the exact named account (NexGen Biotech) does not appear, no facts can be supported and the answer is incomplete."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both calls are necessary and distinct: the May 2 call supports the initial 'competitively priced, tailored proposals' statement, and the June 1 call supports the specific 10%/5% discounts with openness to further discussion. The question is a realistic, self-contained sales comparison, and the gold answer is fully supported by the cited quotes."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up",
+            "explicitly_requested": true,
+            "required_fact": "Anwar said the proposal includes a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, and they are open to further discussions based on projected usage and partnership duration.",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1a9IAC"
+            ]
+          },
+          {
+            "question_span": "how did that compare to what was said about pricing in the initial discussion?",
+            "explicitly_requested": true,
+            "required_fact": "In the initial discussion, Anwar said only that solutions are competitively priced with substantial value and that proposals could be tailored to optimize ROI once past the discovery phase\u2014no specific discounts were offered.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SzDRIA0"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) pricing flexibility offered in the follow-up, and (2) comparison to initial pricing discussion. The gold_answer provides exactly these two facts without extra unrequested details. The obligations correctly map each fact to its source call. The independent answer fully addresses both parts. Each call supplies a distinct fact: the follow-up call provides the discount details, the initial call provides the initial pricing statement. No arithmetic is involved. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "In the initial discussion pricing was only described as competitive with tailored proposals later",
+            "question_span": "how did that compare to what was said about pricing in the initial discussion?",
+            "required_by_question": true
+          },
+          {
+            "claim": "in the follow-up Anwar offered a 10% discount on PulseSim Pro",
+            "question_span": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up",
+            "required_by_question": true
+          },
+          {
+            "claim": "and 5% on SecureFlow Suite",
+            "question_span": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up",
+            "required_by_question": true
+          },
+          {
+            "claim": "open to further discussion based on usage and partnership duration",
+            "question_span": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "2ebc8646d4c777cc567ddabbd355fca94b95641f35e58e6cf4aa7bdfc0e8280b",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SQHqIAO"
+    ],
+    "status": "accepted",
+    "question": "What is Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, and what concern does she raise about pre-owned vehicle reliability?",
+    "gold_answer": "She's leaning toward the Model S for its luxury, and she wants assurances about the reliability of pre-owned vehicles.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SQHqIAO",
+        "answer_claim": "Leaning towards the Model S for its luxury strength",
+        "kind": "dialogue",
+        "line_start": 5,
+        "line_end": 6,
+        "quote": "[2021-09-18T13:01:00] Sophia Carter: Yes, both seem like excellent options. I'm leaning towards the Model S for its luxury strength, but I want to make sure I'm making the right long-term choice.",
+        "start": 776,
+        "end": 971
+      },
+      {
+        "call_id": "b2c:a05Ws000005SQHqIAO",
+        "answer_claim": "Curious about the reliability of pre-owned vehicles and what assurances are provided",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2021-09-18T13:02:15] Sophia Carter: That\u2019s comforting to hear. I'm also curious about the reliability of pre-owned vehicles. What kind of assurances do you provide?",
+        "start": 1743,
+        "end": 1908
+      }
+    ],
+    "evidence_index_repairs": [
+      {
+        "evidence_index": 0,
+        "original_end": 5,
+        "normalized_end": 6
+      },
+      {
+        "evidence_index": 1,
+        "original_end": 9,
+        "normalized_end": 10
+      }
+    ],
+    "question_id": "b2c-single_call-2ebc8646d4c777cc",
+    "candidate": {
+      "question": "What is Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, and what concern does she raise about pre-owned vehicle reliability?",
+      "gold_answer": "She's leaning toward the Model S for its luxury, and she wants assurances about the reliability of pre-owned vehicles.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SQHqIAO",
+          "answer_claim": "Leaning towards the Model S for its luxury strength",
+          "kind": "dialogue",
+          "line_start": 5,
+          "line_end": 6,
+          "quote": "[2021-09-18T13:01:00] Sophia Carter: Yes, both seem like excellent options. I'm leaning towards the Model S for its luxury strength, but I want to make sure I'm making the right long-term choice.",
+          "start": 776,
+          "end": 971
+        },
+        {
+          "call_id": "b2c:a05Ws000005SQHqIAO",
+          "answer_claim": "Curious about the reliability of pre-owned vehicles and what assurances are provided",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2021-09-18T13:02:15] Sophia Carter: That\u2019s comforting to hear. I'm also curious about the reliability of pre-owned vehicles. What kind of assurances do you provide?",
+          "start": 1743,
+          "end": 1908
+        }
+      ],
+      "evidence_index_repairs": [
+        {
+          "evidence_index": 0,
+          "original_end": 5,
+          "normalized_end": 6
+        },
+        {
+          "evidence_index": 1,
+          "original_end": 9,
+          "normalized_end": 10
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Sophia Carter is leaning toward the Tesla Model S for its luxury strength. She raises a concern about the reliability of pre-owned vehicles, asking what assurances are provided.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both answer claims are directly supported by quoted dialogue lines (leaning toward Model S for luxury; reliability assurances for pre-owned vehicles). The question is a realistic sales need, names the participant, and does not leak the answer. Independent answer semantically matches gold. No-context answers ('UNKNOWN') fail to answer. Single-call QA: both two-call flags set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SQHqIAO"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMMAIA4",
+              "b2c:a05Ws000005SUy4IAG",
+              "b2c:a05Ws000005SVSoIAO",
+              "b2c:a05Ws000005SYWzIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not state which vehicle Sophia Carter is leaning toward between the Tesla Model S and the Camry Hybrid. She discusses both, asks about the Camry Hybrid's eco features, and agrees to test-drive both, but never expresses a preference. Her pre-owned vehicle concern is documented: she wants to ensure reliable options when comparing AutoElite's pre-owned vehicles with competitors. Because the 'leaning toward' portion of the question is unsupported, the full question cannot be answered.",
+              "evidence": [],
+              "reason": "The question has two parts: (1) which vehicle Sophia is leaning toward, and (2) her concern about pre-owned vehicle reliability. Part 2 is supported in call b2c:a05Ws000005SUy4IAG line 9, where Sophia says 'Can we talk a bit about your pre-owned vehicles and how they compare with competitors? I want to ensure reliable options.' However, part 1 is not supported anywhere in the four transcripts. Sophia never states a preference or leaning between the Tesla Model S and the Camry Hybrid. She expresses interest in both, asks questions about both, and agrees to a demonstration of both, but no line indicates she is leaning toward one over the other. Since the question requires both facts and one is missing, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SbOWIA0",
+              "b2c:a05Ws000005ScVmIAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Sophia Carter is leaning toward the 2024 Tesla Model S over the Toyota Camry Hybrid, stating 'I'm really interested in the Tesla Model S. What are the next steps?' Regarding pre-owned vehicle reliability, she raises it as a concern by asking about AutoElite's certified pre-owned programs, noting she has been 'considering that option' and emphasizing that 'reliability and good service' are important to her. Jamal addresses this by explaining the program includes rigorous quality checks and extended warranties.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SbOWIA0",
+                  "line_start": 5,
+                  "line_end": 6,
+                  "quote": "[2020-03-10T14:00:26] Sophia Carter: I\u2019m really into the eco-friendly aspect but also want something luxurious. I\u2019ve heard good things about the 2024 Tesla Model S and the Toyota Camry Hybrid."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SbOWIA0",
+                  "line_start": 17,
+                  "line_end": 18,
+                  "quote": "[2020-03-10T14:01:58] Sophia Carter: That's great to hear. I'm really interested in the Tesla Model S. What are the next steps?"
+                },
+                {
+                  "call_id": "b2c:a05Ws000005ScVmIAK",
+                  "line_start": 3,
+                  "line_end": 4,
+                  "quote": "[2020-03-08T15:01:30] Sophia Carter: Sure, I'm really looking for something that's environmentally friendly but still luxurious. I've been focusing on reliability and good service since those are important to me. It's not just about the price."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005ScVmIAK",
+                  "line_start": 5,
+                  "line_end": 7,
+                  "quote": "[2020-03-08T15:02:45] Sophia Carter: I've heard good things about your service quality. Can you tell me more about your pre-owned programs? I've been considering that option.\n[2020-03-08T15:03:10] Jamal Johnson: Absolutely! Our certified pre-owned program is one of the best in the market. It includes rigorous quality checks and extended warranties, giving you added peace of mind about the reliability of the vehicle."
+                }
+              ],
+              "reason": "Line 5 of call b2c:a05Ws000005SbOWIA0 shows Sophia mentioning both the 2024 Tesla Model S and the Toyota Camry Hybrid. Line 17 of the same call shows her explicitly leaning toward the Tesla Model S. Lines 3 and 5-6 of call b2c:a05Ws000005ScVmIAK show her raising reliability as a concern and asking about the certified pre-owned program, with Jamal responding about quality checks and extended warranties. All facts are directly supported by Sophia Carter's own statements in the transcripts."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers agree that Sophia Carter is leaning toward the Tesla Model S over the Camry Hybrid. Both also agree that her concern about pre-owned vehicles centers on reliability. Answer A provides additional detail (the specific quote, mention of certified pre-owned programs, and Jamal's response), while Answer B adds the reason 'luxury' and frames the concern as wanting 'assurances.' These are complementary details and different wording, not conflicting values for the requested facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQo3IAG",
+              "b2c:a05Ws000005SVSpIAO",
+              "b2c:a05Ws000005SbUtIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be fully answered from the sources. Sophia Carter is never mentioned as considering a Tesla Model S; the models discussed across all three calls are the 2023 Nissan Leaf and the 2022 Toyota Camry Hybrid. She does state she is 'leaning towards the Camry because of its balance of luxury and efficiency' (call b2c:a05Ws000005SQo3IAG, line 15), but the comparison is between the Camry Hybrid and the Nissan Leaf, not a Tesla Model S. Additionally, no specific concern about pre-owned vehicle reliability is raised by Sophia; she only asks how AutoElite's pre-owned program compares with others (line 11 of the same call), and Grace responds about long-term value and transparency, but Sophia does not voice a reliability concern. Because the Tesla Model S is absent from all transcripts and no pre-owned reliability concern is articulated by Sophia, the question as posed cannot be completely answered.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter's preference between a Tesla Model S and the Camry Hybrid, but the Tesla Model S is never mentioned in any of the three call transcripts. The vehicles discussed are the 2023 Nissan Leaf and the 2022 Toyota Camry Hybrid. While Sophia does lean toward the Camry Hybrid (line 15 of call b2c:a05Ws000005SQo3IAG), the comparison partner is wrong in the question. Furthermore, Sophia does not raise a concern about pre-owned vehicle reliability; she merely asks how the pre-owned program compares (line 11), which is a general comparison question, not a stated reliability concern. Both requested facts (Tesla Model S comparison and pre-owned reliability concern) are unsupported, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVJ5IAO",
+              "b2c:a05Ws000005SVXWIA4",
+              "b2c:a05Ws000005SbZkIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support the question as asked. Sophia Carter's stated main interests are the Tesla Model S and the Nissan Leaf, not the Camry Hybrid. The Toyota Camry Hybrid is mentioned only once by salesperson Emily Jackson (call b2c:a05Ws000005SVJ5IAO, line 16) as an additional option, and Sophia never expresses a leaning between the Tesla Model S and the Camry Hybrid. Furthermore, no concern about pre-owned vehicle reliability is raised anywhere in the three transcripts; Sophia's expressed concerns relate to Tesla's tech learning curve, service costs, service wait times, and financing flexibility.",
+              "evidence": [],
+              "reason": "The question asks about Sophia's leaning between the Tesla Model S and the Camry Hybrid and a concern about pre-owned vehicle reliability. Neither fact exists in the sources. Sophia explicitly states her main interests are the Tesla and Nissan Leaf (b2c:a05Ws000005SVJ5IAO line 17; b2c:a05Ws000005SbZkIAK lines 5, 15). The Camry Hybrid appears only as a passing mention by Emily (b2c:a05Ws000005SVJ5IAO line 16) with no response from Sophia indicating a preference. No transcript contains any reference to pre-owned/used vehicle reliability. Therefore the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005Sc9JIAS",
+              "b2c:a05Ws000005SckMIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention a Camry Hybrid at all. Sophia Carter discusses the Tesla Model S (which she likes, especially the autopilot feature, though she is concerned about Premium Dealerships Ltd.'s competitive pricing), the Nissan Leaf, and the Genesis G80, but she never compares the Tesla to a Camry Hybrid. She also asks generally about the reliability of the pre-owned program (lines 13-16 of the first call), but no Camry Hybrid preference or comparison is stated, so the question cannot be fully answered from the sources.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, and her concern about pre-owned vehicle reliability. While the sources confirm Sophia's interest in the Tesla Model S and her questions about the certified pre-owned program's reliability, the Camry Hybrid is never mentioned in either call transcript. Without any reference to a Camry Hybrid, the comparison and leaning between the two specific vehicles cannot be established, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRaXIAW",
+              "b2c:a05Ws000005SV32IAG",
+              "b2c:a05Ws000005SZMcIAO",
+              "b2c:a05Ws000005SZbIIAW",
+              "b2c:a05Ws000005ScVnIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not support the question as asked. Sophia Carter is never shown considering a Camry Hybrid; the vehicles discussed throughout all calls are the Tesla Model S and the Nissan Leaf. She expressed being impressed with the Tesla Model S (particularly its autopilot capability and premium interior finish) and ultimately purchased both the Model S and the Nissan Leaf. Regarding pre-owned vehicle reliability, Sophia did not independently raise a concern\u2014Kwesi asked her if she had reservations about the reliability of the pre-owned program, and she responded by noting a competitor had a more streamlined process that was easier to navigate. Kwesi then explained that each certified pre-owned vehicle undergoes a rigorous inspection. Because the Camry Hybrid does not appear anywhere in the sources, the comparison between the Tesla Model S and the Camry Hybrid cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, but the Camry Hybrid is never mentioned in any of the five call transcripts. The vehicles discussed are exclusively the Tesla Model S and the Nissan Leaf. Additionally, Sophia did not independently raise a concern about pre-owned vehicle reliability; rather, Kwesi asked her about it and she commented on a competitor's streamlined process. Since the Camry Hybrid is entirely absent from the sources, the question cannot be answered as framed, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSl5IAG",
+              "b2c:a05Ws000005SYopIAG",
+              "b2c:a05Ws000005SYtbIAG",
+              "b2c:a05Ws000005SaFTIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a Tesla Model S. Sophia Carter is shown considering the 2022 Toyota Camry Hybrid (alongside a 2023 Nissan Leaf in the first call), and she raises a question about the reliability of AutoElite's certified pre-owned program compared to competitors, but no Tesla Model S comparison or related concern appears in any call.",
+              "evidence": [],
+              "reason": "The question asks what Sophia Carter is leaning toward between the Tesla Model S and the Camry Hybrid, and what concern she raises about pre-owned vehicle reliability. No call transcript mentions a Tesla Model S at all. The vehicles discussed are the 2022 Toyota Camry Hybrid and the 2023 Nissan Leaf. While Sophia does ask about the reliability of the certified pre-owned program (call b2c:a05Ws000005SYtbIAG, line 3), the specific comparison requested (Tesla Model S vs. Camry Hybrid) does not exist in the sources, so the question cannot be fully answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSRbIAO",
+              "b2c:a05Ws000005SVKcIAO",
+              "b2c:a05Ws000005Sa2XIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not mention a Tesla Model S anywhere in Sophia Carter's conversations. She is only shown considering the 2022 Toyota Camry Hybrid (and comparing against a Top Line Autos proposal). She does raise a concern about pre-owned vehicle reliability, asking how AutoElite ensures reliability in its pre-owned program given that some pre-owned programs offer detailed documentation and references. However, because the question specifically asks about her leaning between a Tesla Model S and the Camry Hybrid, and no Tesla Model S appears in any transcript, the question cannot be fully answered.",
+              "evidence": [],
+              "reason": "The question asks what Sophia Carter is leaning toward between the Tesla Model S and the Camry Hybrid. No call transcript mentions a Tesla Model S at all. The only vehicle discussed is the 2022 Toyota Camry Hybrid. While Sophia does raise a pre-owned reliability concern (call b2c:a05Ws000005SVKcIAO, lines 5-6), the Tesla Model S comparison requested in the question is entirely absent from the sources, making a complete answer impossible."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STe1IAG",
+              "b2c:a05Ws000005SWK4IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. Sophia Carter is shown comparing the Tesla Model S with the Nissan Leaf (not a Camry Hybrid), and she never raises a concern about pre-owned vehicle reliability \u2014 the certified pre-owned program is only mentioned by the rep, Bakari Saidi, and she responds positively to it.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, and about a concern she raises regarding pre-owned vehicle reliability. In both calls (b2c:a05Ws000005STe1IAG and b2c:a05Ws000005SWK4IAO), the vehicles discussed are the Tesla Model S and the Nissan Leaf; the Camry Hybrid is never mentioned. Additionally, Sophia never expresses a concern about pre-owned vehicle reliability; the certified pre-owned program is introduced by Bakari Saidi (line 8 of call b2c:a05Ws000005STe1IAG) and Sophia responds positively ('I've heard good things about that program'). Since neither the Camry Hybrid comparison nor a pre-owned reliability concern from Sophia exists in the sources, the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSy6IAG",
+              "b2c:a05Ws000005SWiEIAW",
+              "b2c:a05Ws000005SdbVIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any mention of a Camry Hybrid. Sophia Carter's vehicle comparisons involve the Tesla Model S and the Audi Q7, not a Camry Hybrid. She does lean toward the Tesla Model S for its technology and eco-friendliness (2020-03-10 call), and she does raise a concern about pre-owned vehicle reliability, stating she is 'cautious about ensuring the vehicle's reliability' when asking about pre-owned programs (2020-02-25 call). However, because the Camry Hybrid is never discussed in any of the three calls, the question as posed\u2014asking about her leaning between the Tesla Model S and the Camry Hybrid\u2014cannot be fully answered.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter's leaning between the Tesla Model S and the Camry Hybrid. No call transcript mentions a Camry Hybrid at all. The vehicles discussed are the Tesla Model S and Audi Q7. While her preference for the Tesla (call b2c:a05Ws000005SdbVIAS, lines 2-4) and her pre-owned reliability concern (call b2c:a05Ws000005SWiEIAW, line 5) are documented, the specific comparison requested (Tesla Model S vs. Camry Hybrid) is absent from the sources, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SY0mIAG",
+              "b2c:a05Ws000005ScPFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any mention of a Tesla Model S. Sophia Carter's discussions with Jamal Johnson at AutoElite Motors involve the 2023 Nissan Leaf and the 2022 Toyota Camry Hybrid, not a Tesla Model S. While Sophia does raise a concern about pre-owned vehicle reliability (she mentions hearing 'mixed feelings about pre-owned reliability in general' in the first call), there is no stated leaning between a Tesla Model S and the Camry Hybrid anywhere in the transcripts. The question's premise (Tesla Model S vs. Camry Hybrid) does not match the vehicles discussed in the source material.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter's leaning between a Tesla Model S and the Camry Hybrid, but no Tesla Model S appears in either call transcript. The vehicles discussed are the 2023 Nissan Leaf and the 2022 Toyota Camry Hybrid. Although Sophia does express a general concern about pre-owned reliability (first call, lines 9 and 11), the specific comparison requested (Tesla Model S vs. Camry Hybrid) cannot be answered from these sources. Since the exact named product (Tesla Model S) is absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOw6IAG",
+              "b2c:a05Ws000005STIqIAO",
+              "b2c:a05Ws000005ScafIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain any mention of a Camry Hybrid or any concern raised by Sophia Carter about pre-owned vehicle reliability. Across all three calls, Sophia Carter discusses only the 2024 Tesla Model S (and a desire to explore other eco-friendly luxury options). Her stated concerns relate to service scalability, ongoing maintenance, warranty flexibility, financing complexity, and transparent pricing. No comparison between a Tesla Model S and a Camry Hybrid, and no discussion of pre-owned vehicle reliability, appears in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, and about a concern regarding pre-owned vehicle reliability. Neither the Camry Hybrid nor any pre-owned vehicle reliability concern is mentioned in any of the three call transcripts. Therefore the requested facts cannot be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVmDIAW",
+              "b2c:a05Ws000005SVmEIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention a Tesla Model S at all, nor any concern from Sophia Carter about pre-owned vehicle reliability. She is actually considering the 2022 Toyota Camry Hybrid and the 2024 Volkswagen ID.4, and the pre-owned program is only briefly mentioned by the rep without any reliability concern raised by Sophia.",
+              "evidence": [],
+              "reason": "The question asks about Sophia Carter's preference between a Tesla Model S and a Camry Hybrid, and a concern she raises about pre-owned vehicle reliability. Neither fact exists in the sources. The Tesla Model S is never mentioned in either call. Sophia's actual vehicle interests are the 2022 Toyota Camry Hybrid and the 2024 Volkswagen ID.4 (call b2c:a05Ws000005SVmDIAW lines 8-9; call b2c:a05Ws000005SVmEIAW lines 4-8). The certified pre-owned program is mentioned only by Abigail Johnson (call b2c:a05Ws000005SVmDIAW line 12), and Sophia does not raise any reliability concern about it. Because the exact named product (Tesla Model S) and the exact event (Sophia raising a pre-owned reliability concern) are absent from all sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SWiDIAW",
+              "b2c:a05Ws000005SXG5IAO",
+              "b2c:a05Ws000005SdehIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support the question as asked. Sophia Carter is never described as leaning toward a Tesla Model S versus a Camry Hybrid; the vehicles discussed across all three calls are the Tesla Model S and the Nissan Leaf. Additionally, she never raises a concern about pre-owned vehicle reliability; her stated concerns relate to financing options, after-sales support, transaction processes, and maintenance ease.",
+              "evidence": [],
+              "reason": "No call mentions a Camry Hybrid or any pre-owned/used vehicle reliability concern. The vehicles discussed are the Tesla Model S and the Nissan Leaf (calls b2c:a05Ws000005SWiDIAW lines 8-9, b2c:a05Ws000005SXG5IAO lines 5-6, b2c:a05Ws000005SdehIAC lines 2-8). Sophia's concerns are about financing (call 1 line 11), after-sales support (call 2 line 7), transaction processes (call 3 line 9), and maintenance (call 3 line 15). Since neither the Camry Hybrid comparison nor the pre-owned reliability concern appears in any source, the question cannot be answered and complete=false."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVFsIAO",
+              "b2c:a05Ws000005SbmbIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this. Sophia Carter is shown considering the Tesla Model S and BMW X5 M (not a Camry Hybrid), and no preference between a Tesla Model S and a Camry Hybrid is stated. She also never raises a concern about pre-owned vehicle reliability; her reliability-related comments concern service center support and mixed reviews of other service centers, not pre-owned vehicles.",
+              "evidence": [],
+              "reason": "Neither call mentions a Camry Hybrid or any pre-owned vehicle reliability concern. The vehicles discussed are the Tesla Model S and BMW X5 M, and Sophia's reliability-related remarks pertain to service-center support, not pre-owned vehicles."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOEGIA4",
+              "b2c:a05Ws000005SPdPIAW",
+              "b2c:a05Ws000005SSDCIA4",
+              "b2c:a05Ws000005SW3tIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Sophia Carter is leaning toward the Tesla Model S because of its performance, while she appreciates the Toyota Camry Hybrid for its affordability and reliability. However, none of the provided transcripts contain any statement by Sophia raising a concern about pre-owned vehicle reliability, so that part of the question cannot be answered from the sources.",
+              "evidence": [],
+              "reason": "The first part of the question is supported by call b2c:a05Ws000005SSDCIA4 line 5, where Sophia says she is leaning towards the Tesla Model S for performance but appreciates the Toyota for affordability and reliability. However, across all four calls, Sophia never mentions pre-owned vehicles or raises any concern about pre-owned vehicle reliability. The discussions cover new vehicles (2022 Toyota Camry Hybrid and 2024 Tesla Model S), maintenance plans, extended warranties, and service quality, but no reference to pre-owned/used vehicle reliability concerns exists in any transcript. Because the second requested fact is entirely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQHqIAO",
+              "b2c:a05Ws000005SUmtIAG",
+              "b2c:a05Ws000005SbRgIAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Sophia Carter is leaning toward the Tesla Model S for its luxury strength, but she wants to make sure she's making the right long-term choice. Regarding pre-owned vehicle reliability, she asks what kind of assurances AutoElite provides; Felix explains that their certified pre-owned program includes a thorough inspection, extended warranty options, and personalized service plans to ensure reliability.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SQHqIAO",
+                  "line_start": 5,
+                  "line_end": 6,
+                  "quote": "[2021-09-18T13:01:00] Sophia Carter: Yes, both seem like excellent options. I'm leaning towards the Model S for its luxury strength, but I want to make sure I'm making the right long-term choice."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SQHqIAO",
+                  "line_start": 9,
+                  "line_end": 11,
+                  "quote": "[2021-09-18T13:02:15] Sophia Carter: That\u2019s comforting to hear. I'm also curious about the reliability of pre-owned vehicles. What kind of assurances do you provide?\n[2021-09-18T13:02:30] Felix Bakker: Our certified pre-owned program is designed for peace of mind. Besides a thorough inspection, we offer extended warranty options and personalized service plans to ensure reliability."
+                }
+              ],
+              "reason": "Line 5 of call b2c:a05Ws000005SQHqIAO has Sophia stating she is leaning towards the Model S for its luxury strength while wanting to ensure the right long-term choice. Lines 9-10 of the same call capture her concern about pre-owned vehicle reliability (asking what assurances are provided) and Felix's response about the certified pre-owned program with thorough inspection, extended warranty options, and personalized service plans. Line 11 further shows her follow-up concern about long-term reliability for pre-owned cars. All facts are directly supported by the source text for Sophia Carter."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state that Sophia Carter is leaning toward the Tesla Model S for its luxury and that she raises a concern about pre-owned vehicle reliability, seeking assurances. Answer A adds extra detail about Felix's response regarding the certified pre-owned program, but this is additional unrequested information and does not conflict with Answer B's more concise statement. The core requested facts match."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly quoted from Sophia's own dialogue: she leans toward the Model S for its luxury (13:01:00) and asks about pre-owned vehicle reliability assurances (13:02:15). Question is self-contained, business-relevant, and the two evidence pieces each supply a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What is Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid",
+            "explicitly_requested": true,
+            "required_fact": "She is leaning towards the Model S for its luxury strength",
+            "source_call_ids": [
+              "b2c:a05Ws000005SQHqIAO"
+            ]
+          },
+          {
+            "question_span": "what concern does she raise about pre-owned vehicle reliability",
+            "explicitly_requested": true,
+            "required_fact": "She is curious about the reliability of pre-owned vehicles and asks what assurances are provided",
+            "source_call_ids": [
+              "b2c:a05Ws000005SQHqIAO"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks two explicit facts: (1) which car Sophia is leaning toward and why, and (2) what concern she raises about pre-owned vehicle reliability. The gold_answer provides exactly these two facts: leaning toward Model S for luxury, and wanting assurances about pre-owned reliability. No extra facts are included. The independent answer covers both facts accurately. The obligations correctly map to the two question spans and are sourced from the single call. The single call is required because it contains both facts; no other call exists. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "She's leaning toward the Model S for its luxury",
+            "question_span": "What is Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid",
+            "required_by_question": true
+          },
+          {
+            "claim": "she wants assurances about the reliability of pre-owned vehicles",
+            "question_span": "what concern does she raise about pre-owned vehicle reliability",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]

@@ -1,0 +1,471 @@
+[
+  {
+    "question_id": "b2b-multi_call-564d75536b59d512",
+    "question": "What pricing flexibility did Anwar offer NexGen Biotech in the follow-up, and how did that compare to what was said about pricing in the initial discussion?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What pricing flexibility Anwar offered NexGen Biotech in the follow-up and how it compared to pricing discussed initially",
+        "relationship": "Comparison of the same commercial terms (pricing) across the initial and follow-up calls",
+        "reason": "Both parts concern the same business issue\u2014pricing terms for the same deal\u2014compared across two calls, which fits the accepted multi-call pattern."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzDRIA0",
+                "fact": "In the initial discussion, Anwar said pricing was competitive and that tailored proposals would be provided later to optimize ROI.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial pricing statement; it only provides the specific discounts."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T1a9IAC",
+                "fact": "In the follow-up, Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, with openness to further discussion based on usage and partnership duration.",
+                "why_other_call_cannot_supply_it": "The initial call does not contain any specific discount figures or terms; it only states that pricing would be tailored later."
+              }
+            ],
+            "reason": "The question explicitly asks for both the initial pricing statement and the follow-up pricing flexibility. Each call provides a distinct piece of information: the initial call describes the general pricing approach, while the follow-up provides concrete discount numbers. Neither call contains the other's key fact, so both are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzDRIA0",
+                  "fact": "In the initial discussion, Anwar said pricing was competitive and that tailored proposals would be provided later to optimize ROI.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial pricing statement; it only provides the specific discounts."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T1a9IAC",
+                  "fact": "In the follow-up, Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, with openness to further discussion based on usage and partnership duration.",
+                  "why_other_call_cannot_supply_it": "The initial call does not contain any specific discount figures or terms; it only states that pricing would be tailored later."
+                }
+              ],
+              "reason": "The question explicitly asks for both the initial pricing statement and the follow-up pricing flexibility. Each call provides a distinct piece of information: the initial call describes the general pricing approach, while the follow-up provides concrete discount numbers. Neither call contains the other's key fact, so both are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1a9IAC",
+                "fact": "Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussion based on projected usage and partnership duration",
+                "why_other_call_cannot_supply_it": "The initial call contains no discount figures or pricing flexibility terms"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzDRIA0",
+                "fact": "In the initial discussion pricing was only described as competitive with tailored proposals to optimize ROI later",
+                "why_other_call_cannot_supply_it": "The follow-up call does not restate the initial call's general competitive-pricing stance, which the question explicitly asks to compare against"
+              }
+            ],
+            "reason": "The question requests a comparison: the follow-up's concrete discount terms exist only in the second call, while the initial call's general pricing stance exists only in the first. Both facts are requested and neither call supplies the other's."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1a9IAC",
+                  "fact": "Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussion based on projected usage and partnership duration",
+                  "why_other_call_cannot_supply_it": "The initial call contains no discount figures or pricing flexibility terms"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzDRIA0",
+                  "fact": "In the initial discussion pricing was only described as competitive with tailored proposals to optimize ROI later",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not restate the initial call's general competitive-pricing stance, which the question explicitly asks to compare against"
+                }
+              ],
+              "reason": "The question requests a comparison: the follow-up's concrete discount terms exist only in the second call, while the initial call's general pricing stance exists only in the first. Both facts are requested and neither call supplies the other's."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks a rep to compare pricing flexibility across two calls with the same account (NexGen Biotech, contact Chuke Li, rep Anwar Malik). Call 1 (2021-05-02) contains only the statement that pricing is 'competitively priced' with tailored proposals later\u2014no specific discounts. Call 2 (2021-06-01) contains the concrete 10% discount on PulseSim Pro, 5% on SecureFlow Suite, and openness to further discussion based on usage and partnership duration. Each source contributes an exclusive requested fact (initial vague pricing vs. follow-up specific discounts), satisfying the multi-call requirement. The gold answer accurately reflects both transcripts without adding unasked extras or leaking information. The question is naturally phrased, adequately scoped to a specific account/opportunity, and represents a plausible commercial-terms inquiry a sales rep would make.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the initial call (2021-05-02) shows Anwar Malik stating they are 'in the discovery phase now,' that 'our solutions are competitively priced,' and that 'we can tailor proposals to optimize your ROI.' This directly supports the answer_claim about competitive pricing and tailored proposals in the initial discussion."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the follow-up call (2021-06-01) shows Anwar Malik explicitly stating 'The proposal does include a 10% discount on PulseSim Pro and 5% on SecureFlow Suite. We're open to further discussions based on projected usage and partnership duration.' This directly supports the answer_claim about the specific discounts and openness to further discussion based on usage and partnership duration."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) In the initial discussion pricing was only described as competitive with tailored proposals later \u2014 supported by evidence index 0 where Anwar says solutions are 'competitively priced' and proposals can be 'tailored to optimize your ROI' while in the discovery phase. (2) In the follow-up Anwar offered a 10% discount on PulseSim Pro and 5% on SecureFlow Suite, open to further discussion based on usage and partnership duration \u2014 supported by evidence index 1 where Anwar explicitly states these exact figures and conditions. Both parts of the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-0ffd1bafd75b774b",
+    "question": "For UrbanTech Developments, what support concern did Tomoko Watanabe raise in the initial discussion, and what training and ongoing support did Hiroshi offer in the final details call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The support concern Tomoko Watanabe raised in the initial discussion and the training/ongoing support Hiroshi offered in the final details call for UrbanTech Developments",
+        "relationship": "objection and its response across the deal lifecycle",
+        "reason": "Both parts address the same business issue\u2014support/training needs\u2014and the final call's offer is a natural follow-up response to the initial concern, forming one coherent thread."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyZ2IAK",
+                "fact": "Tomoko Watanabe raised a support concern in the initial discussion: 'We have faced some challenges with other solutions where support during this phase was less than optimal.'",
+                "why_other_call_cannot_supply_it": "The final details call (b2b:a05Wt000003SwqnIAC) does not mention any support concern from Tomoko; it only discusses training and ongoing support offered by Hiroshi."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwqnIAC",
+                "fact": "Hiroshi offered comprehensive training packages and ongoing support and updates aligned with tech innovations and EDA trends.",
+                "why_other_call_cannot_supply_it": "The initial discussion call (b2b:a05Wt000003SyZ2IAK) does not mention training packages or ongoing support updates; it only discusses general support services and case studies."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: a support concern raised in the initial discussion and the training/ongoing support offered in the final details call. These facts are found in separate calls and are not repeated or paraphrased in the other call. The initial call contains Tomoko's concern about poor support from other solutions, while the final call contains Hiroshi's specific offer of training and ongoing support. Neither call alone provides both facts, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwqnIAC",
+                  "fact": "Hiroshi offered comprehensive training packages plus ongoing support and updates aligned with tech innovations and EDA trends.",
+                  "why_other_call_cannot_supply_it": "The initial discussion (b2b:a05Wt000003SyZ2IAK) only mentions general support services and does not specify training packages or ongoing support/updates."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyZ2IAK",
+                  "fact": "Tomoko raised a concern that other solutions gave poor support during integration.",
+                  "why_other_call_cannot_supply_it": "The final details call (b2b:a05Wt000003SwqnIAC) does not mention this specific concern; it only discusses training and ongoing support."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: a support concern raised in the initial discussion and the training/ongoing support offered in the final details call. Each fact is exclusively present in its respective call, and neither call contains both facts, so both calls are necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyZ2IAK",
+                  "fact": "Tomoko Watanabe raised a support concern in the initial discussion: 'We have faced some challenges with other solutions where support during this phase was less than optimal.'",
+                  "why_other_call_cannot_supply_it": "The final details call (b2b:a05Wt000003SwqnIAC) does not mention any support concern from Tomoko; it only discusses training and ongoing support offered by Hiroshi."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwqnIAC",
+                  "fact": "Hiroshi offered comprehensive training packages and ongoing support and updates aligned with tech innovations and EDA trends.",
+                  "why_other_call_cannot_supply_it": "The initial discussion call (b2b:a05Wt000003SyZ2IAK) does not mention training packages or ongoing support updates; it only discusses general support services and case studies."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: a support concern raised in the initial discussion and the training/ongoing support offered in the final details call. These facts are found in separate calls and are not repeated or paraphrased in the other call. The initial call contains Tomoko's concern about poor support from other solutions, while the final call contains Hiroshi's specific offer of training and ongoing support. Neither call alone provides both facts, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyZ2IAK",
+                "fact": "Tomoko raised that other solutions provided poor support during the integration phase",
+                "why_other_call_cannot_supply_it": "The final details call (Oct 8) contains no mention of the initial support concern; it only covers pricing, timelines, and training."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwqnIAC",
+                "fact": "Hiroshi offered comprehensive training packages plus ongoing support and updates aligned with tech innovations and EDA trends",
+                "why_other_call_cannot_supply_it": "The initial call (Aug 21) discusses support services generally but contains no training package or ongoing support/update commitments."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information from different calls: the support concern raised in the initial discussion (only in the Aug 21 call) and the training/ongoing support offered in the final call (only in the Oct 8 call). Neither call alone suffices."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyZ2IAK",
+                  "fact": "Tomoko raised that other solutions provided poor support during the integration phase",
+                  "why_other_call_cannot_supply_it": "The final details call (Oct 8) contains no mention of the initial support concern; it only covers pricing, timelines, and training."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwqnIAC",
+                  "fact": "Hiroshi offered comprehensive training packages plus ongoing support and updates aligned with tech innovations and EDA trends",
+                  "why_other_call_cannot_supply_it": "The initial call (Aug 21) discusses support services generally but contains no training package or ongoing support/update commitments."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information from different calls: the support concern raised in the initial discussion (only in the Aug 21 call) and the training/ongoing support offered in the final call (only in the Oct 8 call). Neither call alone suffices."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for a support concern from the initial call (Aug 21) and training/ongoing-support details from the final-details call (Oct 8). In the Aug 21 call Tomoko says 'We have faced some challenges with other solutions where support during this phase was less than optimal,' matching the gold answer's 'poor support during integration.' In the Oct 8 call Hiroshi offers 'comprehensive training packages' and 'ongoing support and updates aligning with tech innovations and EDA trends,' matching the gold answer. Each source contributes an exclusive requested fact. The question is naturally scoped to a named account and contact, uses no artificial locator preamble, and the answer states precisely the requested facts without unasked extras.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Tomoko Watanabe stating 'We have faced some challenges with other solutions where support during this phase was less than optimal,' which supports the claim that she raised challenges with other solutions where support during integration was less than optimal."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote shows Hiroshi mentioning 'comprehensive training packages' and 'extensive resources, ensuring your team achieves proficiency quickly.' However, the answer_claim also asserts 'ongoing support and updates aligned with tech innovations and EDA trends,' which is not present anywhere in the cited passage. The cited lines (10-12) only cover training packages and resources for proficiency; no mention of ongoing support, updates, tech innovations, or EDA trends appears in the supplied quote."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer claims Hiroshi offered 'comprehensive training packages plus ongoing support and updates aligned with tech innovations and EDA trends.' While the training packages portion is supported by evidence index 1, the 'ongoing support and updates aligned with tech innovations and EDA trends' portion is not present in any supplied citation. Since the instructions require that combined supplied citations support every factual claim in the gold_answer, and this portion is unsupported, the answer is not fully supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-388f87fc406670d3",
+    "question": "What discount did TechPulse offer Insight Analytics Group on CloudLink Designer and DevVision IDE, and what did Xinyi commit to regarding a further discount?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts offered on CloudLink Designer and DevVision IDE, plus Xinyi's commitment regarding a further discount",
+        "relationship": "single coherent commercial-terms discussion: product discounts and the follow-up commitment on further discounting belong to the same negotiation",
+        "reason": "The question asks about discount terms from one commercial conversation and the seller's commitment on further discounting \u2014 one coherent quote/negotiation topic, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about the discount offered on two specific products and Xinyi's commitment regarding a further discount. The dialogue confirms Adelaide states '10% on CloudLink Designer and DevVision IDE' and Xinyi says she will 'discuss your feedback with our leadership to see if an additional discount can be accommodated' and 'follow up with you by the end of this week.' The gold answer accurately captures all three requested facts (10% discount, raise with leadership, follow up by end of week) with no unasked extras. The question is naturally phrased, scoped to a specific account and product set, and a rep would plausibly need this information. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Adelaide Thompson explicitly states '10% on CloudLink Designer and DevVision IDE,' directly confirming the discount percentage and the two products named in the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "Xinyi says 'Let me get back to our team and I'll follow up with you by the end of this week.' The phrase 'get back to our team' is vague and does not explicitly state she will raise the additional-discount request with 'leadership.' The commitment to follow up by end of week is supported, but the specific claim of discussing the discount with leadership is not present in the quoted passage."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer states Xinyi 'agreed to raise the additional-discount request with leadership.' The cited quote (index 1) only shows Xinyi saying she will 'get back to our team' and follow up by end of week; it never mentions 'leadership' or explicitly references raising the additional-discount request. While the 10% discount and end-of-week follow-up are supported, the specific 'leadership' commitment is not substantiated by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-77f11c0ec0f1c3f4",
+    "question": "What is the total price Hiro Tanaka at Titan Robotics Group agreed to pay for the three OptiPower Max units, and when is the installation scheduled?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Total price agreed for three OptiPower Max units and the scheduled installation date",
+        "relationship": "single coherent lookup: commercial terms and installation for the same purchase",
+        "reason": "Price and installation schedule concern the same transaction (the three OptiPower Max units), forming one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the agreed total price and installation timing for Hiro Tanaka at Titan Robotics Group. The dialogue confirms $1,307 per unit \u00d7 3 = $3,921 total, and Carlos states he will arrange installation for 'tomorrow' (the next day). The gold answer matches these facts precisely with no unasked extras. The question is naturally scoped to a specific customer and deal, and a rep would plausibly need this information. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Carlos Nunez explicitly states 'Each unit costs $1,307, and with three units, you're looking at a total of $3,921,' which directly supports the answer_claim about per-unit price and total price for three units."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Carlos Nunez states 'I'll make arrangements for tomorrow and keep you updated. Thank you for choosing OptiPower Max, Hiro.' This supports the claim that installation is scheduled for the next day (tomorrow relative to the call date of 2023-10-17). The phrase 'make arrangements for tomorrow' in the context of a product purchase discussion reasonably refers to installation/delivery scheduling, and the address to Hiro confirms the customer context."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer claims '$3,921 total ($1,307 per unit), with installation scheduled for the next day.' Evidence index 0 directly supports the $1,307 per unit and $3,921 total for three units. Evidence index 1 supports installation scheduled for 'tomorrow' (the next day relative to the call date 2023-10-17). The context metadata confirms the lead is Hiro Tanaka at Titan Robotics Group. All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2ebc8646d4c777cc",
+    "question": "What is Sophia Carter leaning toward between the Tesla Model S and the Camry Hybrid, and what concern does she raise about pre-owned vehicle reliability?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Sophia Carter's preference between the Tesla Model S and Camry Hybrid, and her concern about pre-owned vehicle reliability",
+        "relationship": "Both items address the same purchase decision: her leaning between the two vehicles and the reliability concern shaping that decision",
+        "reason": "The question combines a customer's vehicle preference with the concern underlying it, forming one coherent sales inquiry about a single decision rather than two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "decision_criteria",
+        "locator_preamble": false,
+        "reason": "The question asks two specific decision-criteria facts (vehicle leaning and pre-owned reliability concern) that a sales rep would plausibly track. The dialogue confirms Sophia says she is 'leaning towards the Model S for its luxury strength' and asks 'What kind of assurances do you provide?' regarding pre-owned vehicle reliability. The gold answer accurately captures both facts without adding unasked extras. Wording is natural, scope is clear (named customer, named vehicles, single call), and no locator preamble or answer leakage is present. Single-call question so both_sources_required is set true by convention."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Sophia Carter explicitly states 'I'm leaning towards the Model S for its luxury strength,' which directly supports the answer_claim that she is leaning towards the Model S for its luxury strength."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Sophia Carter states 'I'm also curious about the reliability of pre-owned vehicles. What kind of assurances do you provide?' This directly supports the answer_claim that she is curious about the reliability of pre-owned vehicles and what assurances are provided. She is asking for assurances, which aligns with wanting assurances about reliability."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states she's leaning toward the Model S for its luxury (supported by index 0: 'leaning towards the Model S for its luxury strength') and that she wants assurances about the reliability of pre-owned vehicles (supported by index 1: 'curious about the reliability of pre-owned vehicles. What kind of assurances do you provide?'). Both factual claims in the gold_answer are directly supported by the cited evidence. The paraphrase 'wants assurances' is a faithful rendering of her asking 'What kind of assurances do you provide?'"
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-08f569b6946f4a83",
+    "question": "What timeline did Maria Garcia give for installation and setup, and when did she want to start the paperwork?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The timeline Maria Garcia gave for installation and setup, and when she wanted to begin the paperwork",
+        "relationship": "Both items concern the same onboarding/implementation process for one deal",
+        "reason": "Installation/setup timeline and paperwork start are parts of a single coherent next-steps/onboarding question, and installation is a valid context here."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts Maria Garcia stated: the eight-day timeline for installation/setup and her desire to start paperwork by the next day. Both are directly supported by the dialogue (10:03:35 and 10:04:05). The wording is natural, the scope identifies the customer and business context, and the answer contains exactly the requested facts with no extras. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Maria Garcia explicitly states 'my timeline of eight days for the installation and setup,' directly supporting the claim that she wants everything done within eight days for installation and setup."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Maria Garcia states 'Maybe we can begin the process by tomorrow?' which supports the claim that she wants to start the process by tomorrow. The phrasing is slightly tentative ('Maybe we can'), but it clearly expresses her desire to begin by the next day."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states 'Eight days for installation and setup; she wanted to begin the process by the next day.' Evidence index 0 directly supports the eight-day timeline for installation and setup. Evidence index 1 supports wanting to begin the process by tomorrow (the next day). Both factual claims in the gold answer are supported by the cited evidence. The slight tentativeness in Maria's phrasing ('Maybe we can') is a faithful representation of her expressed desire, and the gold answer's 'she wanted to begin' is a reasonable paraphrase."
+      }
+    }
+  }
+]
