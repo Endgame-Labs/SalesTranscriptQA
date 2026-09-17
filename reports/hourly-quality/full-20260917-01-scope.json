@@ -1,0 +1,215 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "b28a403684095a24425a7d479a74e6ec907d4817c7c9de4c170d71be7e692c8c",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.30976937,
+  "results": [
+    {
+      "question_id": "b2b-single_call-66252b3692533aa2",
+      "question": "What decision timeline did Ivan Petrov give for implementing workflow improvements at Innovative Robotics?",
+      "gold_answer": "A decision by the end of the quarter, to align with internal planning cycles.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrhDIAS",
+        "b2b:a05Wt000003SrhEIAS",
+        "b2b:a05Wt000003SrkWIAS",
+        "b2b:a05Wt000003SrkXIAS",
+        "b2b:a05Wt000003SslPIAS",
+        "b2b:a05Wt000003SsqBIAS",
+        "b2b:a05Wt000003SsqCIAS",
+        "b2b:a05Wt000003StRKIA0",
+        "b2b:a05Wt000003StcdIAC",
+        "b2b:a05Wt000003StmFIAS",
+        "b2b:a05Wt000003Sv1jIAC",
+        "b2b:a05Wt000003SvHuIAK",
+        "b2b:a05Wt000003SvL2IAK",
+        "b2b:a05Wt000003SvOEIA0",
+        "b2b:a05Wt000003SwDvIAK",
+        "b2b:a05Wt000003SwycIAC",
+        "b2b:a05Wt000003Sx0GIAS",
+        "b2b:a05Wt000003Sx55IAC",
+        "b2b:a05Wt000003SxgGIAS",
+        "b2b:a05Wt000003Sy7cIAC",
+        "b2b:a05Wt000003SyIuIAK",
+        "b2b:a05Wt000003SyqnIAC",
+        "b2b:a05Wt000003SzRvIAK",
+        "b2b:a05Wt000003SzRwIAK",
+        "b2b:a05Wt000003SzWhIAK",
+        "b2b:a05Wt000003Szq2IAC",
+        "b2b:a05Wt000003SzzoIAC",
+        "b2b:a05Wt000003T0cQIAS",
+        "b2b:a05Wt000003T0uBIAS",
+        "b2b:a05Wt000003T1GjIAK",
+        "b2b:a05Wt000003T1ILIA0",
+        "b2b:a05Wt000003T1JxIAK",
+        "b2b:a05Wt000003T1LZIA0",
+        "b2b:a05Wt000003T1NBIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Ivan Petrov appears in two calls with Alejandro Ramirez on the Workflow & Circuit Innovation opportunity. Only the 2023-10-10 call contains a timeline statement; the 2023-10-12 call contains none, so there is a single determinate answer.",
+        "answers": [
+          {
+            "answer": "Ivan Petrov said they are looking at making a decision by the end of the quarter, to align with their internal planning cycles.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SslPIAS",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-10-10T11:04:25] Alejandro Ramirez: Exactly. So, Ivan, what's your timeline for potentially implementing these improvements?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about Ivan Petrov's decision timeline for implementing workflow improvements at Innovative Robotics. Ivan Petrov appears in two calls (b2b:a05Wt000003SslPIAS on 2023-10-10 and b2b:a05Wt000003SrhDIAS on 2023-10-12), both under the opportunity 'Innovative Robotics Collaboration - Workflow & Circuit Innovation.' In the October 10 discovery call, Alejandro Ramirez explicitly asks Ivan about his timeline for implementing improvements, and Ivan responds with a clear decision timeline: 'by the end of the quarter,' aligned with internal planning cycles. The October 12 call does not contain any additional or different decision timeline statement from Ivan. This is the only call where Ivan Petrov gives a decision timeline for workflow improvements.",
+        "answers": [
+          {
+            "answer": "Ivan Petrov stated that Innovative Robotics is looking at making a decision by the end of the quarter, and that it is important to align with their internal planning cycles.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SslPIAS",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2023-10-10T11:04:25] Alejandro Ramirez: Exactly. So, Ivan, what's your timeline for potentially implementing these improvements?\n[2023-10-10T11:04:40] Ivan Petrov: We're looking at making a decision by the end of the quarter. It's important to align with our internal planning cycles."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same decision timeline: a decision by the end of the quarter, aligned with internal planning cycles. The reference also captures both the end-of-quarter timeline and the alignment with internal planning cycles, covering all requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-ab9bd9aaa0714e9b",
+      "question": "For Skyline Robotics' SecureFlow Suite deployment, when did Priya say the kickoff meeting would be scheduled and when is deployment expected to kick off?",
+      "gold_answer": "Kickoff meeting is planned for early next week, and deployment is expected to kick off within the next two weeks, pending kickoff details.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7iIAC",
+        "b2b:a05Wt000003StENIA0",
+        "b2b:a05Wt000003StRHIA0",
+        "b2b:a05Wt000003SthPIAS",
+        "b2b:a05Wt000003StnrIAC",
+        "b2b:a05Wt000003Su3zIAC",
+        "b2b:a05Wt000003SuaGIAS",
+        "b2b:a05Wt000003SuvCIAS",
+        "b2b:a05Wt000003Sv4vIAC",
+        "b2b:a05Wt000003SvCxIAK",
+        "b2b:a05Wt000003SvHpIAK",
+        "b2b:a05Wt000003Svo3IAC",
+        "b2b:a05Wt000003Sw0wIAC",
+        "b2b:a05Wt000003SwnLIAS",
+        "b2b:a05Wt000003Sx6hIAC",
+        "b2b:a05Wt000003SxcwIAC",
+        "b2b:a05Wt000003SxgDIAS",
+        "b2b:a05Wt000003Sy18IAC",
+        "b2b:a05Wt000003Sy5yIAC",
+        "b2b:a05Wt000003Sy7aIAC",
+        "b2b:a05Wt000003SyApIAK",
+        "b2b:a05Wt000003SyCQIA0",
+        "b2b:a05Wt000003SyKUIA0",
+        "b2b:a05Wt000003SyM6IAK",
+        "b2b:a05Wt000003SyabIAC",
+        "b2b:a05Wt000003SyacIAC",
+        "b2b:a05Wt000003SycDIAS",
+        "b2b:a05Wt000003SydpIAC",
+        "b2b:a05Wt000003SyfRIAS",
+        "b2b:a05Wt000003Syh3IAC",
+        "b2b:a05Wt000003SyifIAC",
+        "b2b:a05Wt000003SykHIAS",
+        "b2b:a05Wt000003SykIIAS",
+        "b2b:a05Wt000003SykJIAS",
+        "b2b:a05Wt000003SyltIAC",
+        "b2b:a05Wt000003SyluIAC",
+        "b2b:a05Wt000003SynVIAS",
+        "b2b:a05Wt000003SynWIAS",
+        "b2b:a05Wt000003Syp7IAC",
+        "b2b:a05Wt000003Syp8IAC",
+        "b2b:a05Wt000003SyqjIAC",
+        "b2b:a05Wt000003SysLIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 6,
+            "normalized_end": 7
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Priya discussing the SecureFlow Suite deployment with a kickoff meeting and deployment start (b2b:a05Wt000003SyltIAC, 2023-08-28, with Omar Khoury). She said the kickoff meeting would be scheduled for early next week and that deployment would kick off within the next two weeks.",
+        "answers": [
+          {
+            "answer": "Priya said the kickoff meeting would be scheduled for early next week, and the deployment of the SecureFlow Suite is expected to kick off within the next two weeks (with the actual start date depending on finalizing details in that kickoff meeting).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyltIAC",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-08-28T13:01:25] Priya Choudhury: We'll aim to kick off the deployment within the next two weeks. Of course, the actual start date will depend on when we finalize a few details in our kickoff meeting that we're planning. We want to ensure everything aligns with your schedule and requirements. Does that timeline suit you?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyltIAC",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2023-08-28T13:04:25] Omar Khoury: Sounds like a plan. When did you want to schedule the kickoff meeting you mentioned?\n[2023-08-28T13:04:40] Priya Choudhury: Let's aim for early next week if that works for you. This will give us time to finalize all the necessary details and address any more questions you may have."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about Priya's statements regarding the SecureFlow Suite deployment kickoff meeting scheduling and deployment start. Only one call features Priya Choudhury discussing SecureFlow Suite deployment: call b2b:a05Wt000003SyltIAC (2023-08-28) with Omar Khoury under the 'Skyline Robotics - EDA Transformation Partnership' opportunity. In that call, Priya states the kickoff meeting would be scheduled for 'early next week' and deployment would kick off 'within the next two weeks.'",
+        "answers": [
+          {
+            "answer": "Priya said the kickoff meeting would be scheduled for early next week, and deployment of the SecureFlow Suite was expected to kick off within the next two weeks.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyltIAC",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-08-28T13:01:25] Priya Choudhury: We'll aim to kick off the deployment within the next two weeks. Of course, the actual start date will depend on when we finalize a few details in our kickoff meeting that we're planning. We want to ensure everything aligns with your schedule and requirements. Does that timeline suit you?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyltIAC",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2023-08-28T13:04:25] Omar Khoury: Sounds like a plan. When did you want to schedule the kickoff meeting you mentioned?\n[2023-08-28T13:04:40] Priya Choudhury: Let's aim for early next week if that works for you. This will give us time to finalize all the necessary details and address any more questions you may have."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the kickoff meeting is scheduled for early next week and deployment is expected to kick off within the next two weeks. Answer A adds a parenthetical about the start date depending on kickoff details, which is consistent with the reference's 'pending kickoff details' and does not contradict Answer B. The reference covers both requested facts: kickoff meeting timing (early next week) and deployment start (within the next two weeks), with the same pending-kickoff caveat."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

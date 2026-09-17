@@ -1,0 +1,367 @@
+[
+  {
+    "question_id": "b2b-multi_call-6caeef2a970b62cf",
+    "question": "What support concern did Sofia Katsaros raise about NanoDesign in the initial BrightField Ventures discussion, and what did Aarav commit to regarding delivery timelines in the follow-up terms call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The support concern Sofia Katsaros raised about NanoDesign in the initial BrightField Ventures discussion; 2) Aarav's commitment regarding delivery timelines in the follow-up terms call.",
+        "relationship": "Two independent fact lookups joined across calls: a support objection from one call and a delivery-timeline commitment from another, addressing different business issues.",
+        "reason": "The support concern and the delivery-timeline commitment are unrelated information needs from two different calls; sharing the same account does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1: Sofia says 'I've also heard some feedback about NanoDesign's support issues' and earlier notes 'slow response times affecting project timelines'\u2014the gold answer merges these into one concern, which is a fair reading. Call 2: Aarav states 'Our network logistics and proactive inventory management mean we can adhere to agreed timelines reliably,' matching the gold answer. Each call contributes an exclusive requested fact (support concern vs. delivery commitment). The question naturally identifies the account (BrightField Ventures), contact (Sofia Katsaros), and the two calls by topic. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote contains Sofia saying 'One concern we've had in the past was with slow response times affecting project timelines, so strong support is crucial for us' and later 'I've also heard some feedback about NanoDesign's support issues.' Together these lines support the claim that Sofia raised concerns about NanoDesign's support issues and past slow response times affecting project timelines. The mention of NanoDesign is explicit in the second Sofia line, and the slow-response/timeline concern is explicit in the first. The answer_claim faithfully combines both statements."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Aarav's quoted line states: 'Our network logistics and proactive inventory management mean we can adhere to agreed timelines reliably,' in direct response to Sofia's question about committing to delivery timelines given supply chain issues. This directly supports the claim that Aarav committed TechPulse could adhere to agreed timelines despite supply chain issues via network logistics and proactive inventory management."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Sofia cited NanoDesign's support issues and past slow response times affecting project timelines\u2014supported by index 0 where Sofia explicitly mentions both slow response times affecting project timelines and NanoDesign's support issues. (2) Aarav committed TechPulse could reliably adhere to agreed delivery timelines despite supply chain issues via network logistics and proactive inventory management\u2014supported by index 1 where Aarav explicitly states this commitment using those exact mechanisms. Both factual claims in the gold_answer are fully supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-3335a4f79520c921",
+    "question": "For MetroGrid Networks, what discount did Noura mention for SecureFlow Suite in the initial discussion, and what SecureFlow Suite discount and quantity were included in the later proposal review?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The SecureFlow Suite discount Noura mentioned in the initial discussion and the SecureFlow Suite discount and quantity in the later proposal review for MetroGrid Networks",
+        "relationship": "Comparison of the same commercial terms (SecureFlow Suite discount) across the initial discussion and the later proposal review",
+        "reason": "Both parts concern the same commercial term\u2014the SecureFlow Suite discount\u2014traced from initial discussion to proposal review, forming one coherent commercial-terms comparison."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Stw1IAC",
+                "fact": "Noura mentioned a 10% discount on SecureFlow Suite for larger orders in the initial discussion.",
+                "why_other_call_cannot_supply_it": "The later proposal review call does not mention the initial discussion's discount context; it only states the discount in the proposal without referencing the earlier mention."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0XfIAK",
+                "fact": "The later proposal review included a 10% discount on 10 instances of SecureFlow Suite.",
+                "why_other_call_cannot_supply_it": "The initial discussion call does not specify the quantity of instances or the proposal details; it only mentions a discount for larger orders without a specific quantity."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the discount mentioned in the initial discussion and the discount plus quantity in the later proposal review. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Stw1IAC",
+                  "fact": "Noura mentioned a 10% discount on SecureFlow Suite for larger orders in the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The later proposal review call does not mention the initial discussion's discount context; it only states the discount in the proposal without referencing the earlier mention."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0XfIAK",
+                  "fact": "The later proposal review included a 10% discount on 10 instances of SecureFlow Suite.",
+                  "why_other_call_cannot_supply_it": "The initial discussion call does not specify the quantity of instances or the proposal details; it only mentions a discount for larger orders without a specific quantity."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the discount mentioned in the initial discussion and the discount plus quantity in the later proposal review. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Stw1IAC",
+                "fact": "Noura mentioned a 10% discount on SecureFlow Suite for larger orders during the initial discussion",
+                "why_other_call_cannot_supply_it": "The later proposal call does not restate the initial-discussion discount mention; it only covers proposal terms"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0XfIAK",
+                "fact": "The proposal review included a 10% discount on 10 instances of SecureFlow Suite",
+                "why_other_call_cannot_supply_it": "The initial call predates the proposal and contains no quantity or final proposal discount terms"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the discount mentioned in the initial discussion and the discount plus quantity in the later proposal. Each call supplies exactly one of these; neither call contains both facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Stw1IAC",
+                  "fact": "Noura mentioned a 10% discount on SecureFlow Suite for larger orders during the initial discussion",
+                  "why_other_call_cannot_supply_it": "The later proposal call does not restate the initial-discussion discount mention; it only covers proposal terms"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0XfIAK",
+                  "fact": "The proposal review included a 10% discount on 10 instances of SecureFlow Suite",
+                  "why_other_call_cannot_supply_it": "The initial call predates the proposal and contains no quantity or final proposal discount terms"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount mentioned in the initial discussion and the discount plus quantity in the later proposal. Each call supplies exactly one of these; neither call contains both facts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (2021-09-20) has Noura mentioning '10% off on SecureFlow Suite for larger orders' as part of the pricing/discount discussion. Call 2 (2021-10-08) has Noura stating 'with the SecureFlow Suite, you get a similar discount on 10 instances,' where 'similar discount' refers back to the 10% just mentioned for PulseSim Pro. The gold answer correctly captures both facts: initial 10% discount for larger orders, and the proposal's 10% discount on 10 instances. Each call contributes an exclusive requested fact (initial mention vs. proposal specifics). The question is naturally scoped to MetroGrid Networks and the SecureFlow Suite product, plausible for a rep tracking discount commitments across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Noura Haddad in the initial discussion (2021-09-20) explicitly states 'the 10% off on SecureFlow Suite for larger orders,' directly supporting the answer_claim about the initial 10% discount for larger orders."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Noura Haddad in the proposal review (2021-10-08) states 'with the SecureFlow Suite, you get a similar discount on 10 instances.' The 'similar discount' refers back to the 10% discount just mentioned for PulseSim Pro in the same sentence ('we are offering a 10% discount on a bulk quantity of 15 licenses'). This supports the claim of a 10% discount on 10 instances of SecureFlow Suite."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Initially 10% off SecureFlow Suite for larger orders \u2013 supported by index 0 where Noura explicitly mentions '10% off on SecureFlow Suite for larger orders.' (2) The proposal included a 10% discount on 10 instances of SecureFlow Suite \u2013 supported by index 1 where Noura says 'a similar discount on 10 instances,' with 'similar discount' resolving to the 10% discount mentioned for PulseSim Pro in the same sentence. Both parts of the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-66252b3692533aa2",
+    "question": "What decision timeline did Ivan Petrov give for implementing workflow improvements at Innovative Robotics?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The decision timeline Ivan Petrov gave for implementing workflow improvements at Innovative Robotics.",
+        "relationship": "single lookup",
+        "reason": "One coherent fact lookup about a timeline from a single call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "decision_criteria",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about a customer's decision timeline, a core sales need. The dialogue at 11:04:40 has Ivan Petrov stating 'a decision by the end of the quarter' to 'align with our internal planning cycles,' which the gold answer reproduces precisely with no extra or missing facts. The question identifies the account (Innovative Robotics) and contact (Ivan Petrov) without artificial date/title preambles. Single-call set, so both_sources_required is true by rule."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is directly attributed to Ivan Petrov and states: 'We're looking at making a decision by the end of the quarter. It's important to align with our internal planning cycles.' This matches the answer_claim verbatim and confirms both the timeline (end of the quarter) and the rationale (align with internal planning cycles)."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'A decision by the end of the quarter, to align with internal planning cycles.' The single cited evidence item (index 0) is a direct quote from Ivan Petrov in the context of the Innovative Robotics account, stating exactly that timeline and rationale. The metadata confirms the contact is Ivan Petrov and the account is Innovative Robotics. All factual elements of the gold_answer are fully supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-ab9bd9aaa0714e9b",
+    "question": "For Skyline Robotics' SecureFlow Suite deployment, when did Priya say the kickoff meeting would be scheduled and when is deployment expected to kick off?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "When Priya said the SecureFlow Suite kickoff meeting would be scheduled and when deployment is expected to begin for Skyline Robotics",
+        "relationship": "Both facts concern the same deployment timeline for the same project",
+        "reason": "Timing of the kickoff meeting and expected deployment start are two facets of one coherent deployment-schedule question about the same initiative."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific timeline facts (kickoff meeting timing and deployment start) from a single call. The dialogue confirms Priya said 'early next week' for the kickoff meeting and 'within the next two weeks' for deployment, pending kickoff details. The gold answer matches precisely. The question is naturally worded, scoped to a named account and product, and a rep would plausibly need these scheduling details. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote is attributed to Priya Choudhury and she says 'Let's aim for early next week if that works for you,' which directly supports the claim that Priya proposes scheduling the kickoff meeting early next week. The context metadata confirms the call is for Skyline Robotics, and the surrounding sentence about finalizing details aligns with a kickoff meeting context."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote is attributed to Priya Choudhury and she states 'We'll aim to kick off the deployment within the next two weeks' and adds 'the actual start date will depend on when we finalize a few details in our kickoff meeting.' This directly supports the claim that deployment will aim to kick off within the next two weeks, depending on kickoff finalization."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) Kickoff meeting is planned for early next week \u2013 supported by index 0 where Priya says 'Let's aim for early next week.' (2) Deployment is expected to kick off within the next two weeks, pending kickoff details \u2013 supported by index 1 where Priya says 'We'll aim to kick off the deployment within the next two weeks' and conditions it on finalizing details in the kickoff meeting. Both factual claims in the gold answer are fully supported by the cited evidence. The account metadata confirms this is Skyline Robotics, and the opportunity name references the partnership context. The product 'SecureFlow Suite' is not explicitly named in the quotes, but the context metadata ties the call to Skyline Robotics' engagement, and the deployment discussion is consistent with the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-43318f2160b6ca09",
+    "question": "What did Kwesi commit to doing for Emma Wilson after she raised concerns about the Tesla Model S pricing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Kwesi committed to doing in response to Emma Wilson's concerns about Tesla Model S pricing",
+        "relationship": "single coherent objection-and-response: one concern (pricing) and the commitment addressing it",
+        "reason": "The question asks for a commitment made in response to a specific objection within the same interaction, which is a natural objection-and-response lookup."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Kwesi committed to after Emma raised Tesla Model S pricing concerns. The dialogue at 14:35:55 shows Kwesi saying he'll check if pricing can be adjusted further or more incentives considered, and asks to circle back. The gold answer accurately captures both elements (check pricing/incentives and circle back with additional info). The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall commitments made. Single-call question so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage directly shows Kwesi saying 'I'll check if we can adjust pricing further or perhaps consider more incentives. Would you like me to look into that and circle back?' This supports the claim that he offers to check if pricing can be adjusted or more incentives considered and circle back."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage shows Kwesi stating 'I'll be in touch soon with the additional information.' This directly supports the claim that he says he will be in touch soon with the additional information."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Kwesi agreed to check whether pricing could be adjusted further or more incentives offered, and circle back with additional information. Evidence index 0 supports the pricing adjustment/incentives check and circling back. Evidence index 1 supports the commitment to follow up with additional information. Together, the two citations fully support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-38196539b2f66a47",
+    "question": "What did Jessica Rivera want clarified about the Tesla Model S warranty coverage, and when is her showroom demo scheduled?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) What Jessica Rivera wanted clarified about Tesla Model S warranty coverage; 2) when her showroom demo is scheduled.",
+        "relationship": "Two independent information needs joined only by the same customer.",
+        "reason": "A warranty-coverage clarification and a demo scheduling time address different business issues; sharing a customer is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Jessica's warranty concern and her demo time. The dialogue confirms she wants coverage 'without too many hoops to jump through' (14:02:15) and the demo is set for 'tomorrow' at '2 PM' (14:03:33\u201314:03:40). The gold answer captures both precisely with no unasked extras. The rep (Tariq) plausibly needs to recall the customer's specific concern and appointment. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jessica Rivera explicitly states: 'I'd like to ensure it covers everything without too many hoops to jump through.' This directly supports the answer_claim that she wants the warranty to cover everything without too many hoops to jump through. The speaker attribution, phrasing, and meaning all align."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Jessica Rivera proposing 'tomorrow afternoon' and Tariq Ahmed confirming 'Tomorrow afternoon sounds perfect. Let's set it for 2 PM?' This establishes a mutual agreement for a demo tomorrow at 2 PM. The answer_claim that the demo is scheduled for tomorrow at 2 PM is supported by this exchange."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two factual claims: (1) Jessica wants comprehensive warranty coverage without too many hoops to jump through, and (2) her showroom demo is set for tomorrow at 2 PM. Evidence index 0 directly supports claim (1) with Jessica's own words. Evidence index 1 supports claim (2) through the scheduling exchange where Jessica proposes tomorrow afternoon and Tariq confirms 2 PM. Both claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  }
+]
