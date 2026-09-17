@@ -1,0 +1,192 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "2541953129f48be2d37a2fa6003a54eef8bae3f2c9f880f24391c2eb023bddd9",
+  "questions": 2,
+  "counts": {
+    "pass": 1,
+    "fail": 1
+  },
+  "estimated_usd": 0.23435777,
+  "results": [
+    {
+      "question_id": "b2b-single_call-70d761113bf6a3d7",
+      "question": "What did Diego Martinez say makes user adoption of new tools challenging at TechSphere Design, and what did he want to enhance while keeping processes efficient?",
+      "gold_answer": "Adoption hinges on an intuitive, user-friendly interface, and they aim to enhance scalability while keeping processes efficient.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrHOIA0",
+        "b2b:a05Wt000003Sru9IAC",
+        "b2b:a05Wt000003SsyFIAS",
+        "b2b:a05Wt000003StceIAC",
+        "b2b:a05Wt000003StvyIAC",
+        "b2b:a05Wt000003SuQfIAK",
+        "b2b:a05Wt000003SuaHIAS",
+        "b2b:a05Wt000003SvstIAC",
+        "b2b:a05Wt000003SwLuIAK",
+        "b2b:a05Wt000003SwXCIA0",
+        "b2b:a05Wt000003SwljIAC",
+        "b2b:a05Wt000003SwtmIAC",
+        "b2b:a05Wt000003SxgHIAS",
+        "b2b:a05Wt000003SyKVIA0",
+        "b2b:a05Wt000003SyZ1IAK",
+        "b2b:a05Wt000003SypCIAS",
+        "b2b:a05Wt000003SyysIAC",
+        "b2b:a05Wt000003SzJoIAK",
+        "b2b:a05Wt000003SzRxIAK",
+        "b2b:a05Wt000003T06AIAS",
+        "b2b:a05Wt000003T0XbIAK",
+        "b2b:a05Wt000003T1dJIAS",
+        "b2b:a05Wt000003T1evIAC",
+        "b2b:a05Wt000003T1gXIAS",
+        "b2b:a05Wt000003T1i9IAC",
+        "b2b:a05Wt000003T1jlIAC",
+        "b2b:a05Wt000003T1lNIAS",
+        "b2b:a05Wt000003T1mzIAC",
+        "b2b:a05Wt000003T1n0IAC",
+        "b2b:a05Wt000003T1obIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Diego Martinez appears in three calls, but only the 2022-09-15 call (b2b:a05Wt000003T1gXIAS) contains both requested facts: his statement about user adoption of new tools being challenging and his desire to enhance something while keeping processes efficient. The other Diego calls (2022-10-01, 2023-11-15) do not discuss user adoption challenges or this enhancement goal, so there is no competing alternative.",
+        "answers": [
+          {
+            "answer": "Diego Martinez said that user adoption of new tools hinges heavily on how intuitive and user-friendly the interface is, noting TechSphere Design had challenging experiences in the past when deploying new tools. He also said they were aiming to enhance scalability while keeping processes efficient, and asked how customizable TechPulse's offerings were.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1gXIAS",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2022-09-15T12:46:05] Miguel Torres: Great to hear! To start, TechPulse Solutions specializes in electronic design automation, or EDA, leveraging AI-powered solutions. We focus on creating user-friendly products that allow for rapid deployment and seamless integration. From our earlier communication, you mentioned that user experience during initial adoption is crucial to you. Can you tell me more about that?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T1gXIAS",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2022-09-15T12:47:50] Diego Martinez: Interesting. We are aiming to enhance scalability as well while keeping processes efficient. How customizable are your offerings?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Diego Martinez and asks what he said about user adoption challenges and what he wanted to enhance while keeping processes efficient. Diego Martinez appears in three calls (b2b:a05Wt000003SsyFIAS, b2b:a05Wt000003SyZ1IAK, b2b:a05Wt000003T1gXIAS). Only in call b2b:a05Wt000003T1gXIAS does Diego explicitly discuss user adoption being challenging (line 7: 'the user adoption rate hinges heavily on how intuitive and user-friendly the interface is') and state what he wants to enhance while keeping processes efficient (line 11: 'We are aiming to enhance scalability as well while keeping processes efficient'). The other two Diego calls do not contain this specific language.",
+        "answers": [
+          {
+            "answer": "Diego Martinez said that user adoption of new tools at TechSphere Design is challenging because the adoption rate hinges heavily on how intuitive and user-friendly the interface is, and they have had some challenging experiences in the past when deploying new tools. He wanted to enhance scalability while keeping processes efficient.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1gXIAS",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2022-09-15T12:46:30] Diego Martinez: Sure, with our current toolset, we've noticed that the user adoption rate hinges heavily on how intuitive and user-friendly the interface is. We’ve had some challenging experiences in the past when deploying new tools."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T1gXIAS",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2022-09-15T12:47:50] Diego Martinez: Interesting. We are aiming to enhance scalability as well while keeping processes efficient. How customizable are your offerings?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Diego Martinez said user adoption hinges on how intuitive and user-friendly the interface is (with past challenging experiences deploying new tools at TechSphere Design) and that he wanted to enhance scalability while keeping processes efficient. The reference likewise covers both requested facts: the intuitive/user-friendly interface challenge and the aim to enhance scalability while keeping processes efficient. Answer A adds an unrequested detail about asking about TechPulse's customizability, but this extra does not affect agreement on the requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-8a24b199e8385d5c",
+      "question": "What financing flexibility concern did Noah Simmons raise about luxury dealerships, and how did Anastasia position AutoElite against Prestige Car Network on that?",
+      "gold_answer": "Noah worried luxury dealers aren't flexible with financing; Anastasia said Prestige Car Network doesn't negotiate financing much, while AutoElite offers more flexible arrangements.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMPZIA4",
+        "b2c:a05Ws000005SMfeIAG",
+        "b2c:a05Ws000005SPNTIA4",
+        "b2c:a05Ws000005SPiEIAW",
+        "b2c:a05Ws000005SQRYIA4",
+        "b2c:a05Ws000005STZ4IAO",
+        "b2c:a05Ws000005STu2IAG",
+        "b2c:a05Ws000005STu3IAG",
+        "b2c:a05Ws000005SUgPIAW",
+        "b2c:a05Ws000005SUn1IAG",
+        "b2c:a05Ws000005SVUMIA4",
+        "b2c:a05Ws000005SVZCIA4",
+        "b2c:a05Ws000005SWorIAG",
+        "b2c:a05Ws000005SWrvIAG",
+        "b2c:a05Ws000005SZ85IAG",
+        "b2c:a05Ws000005SZeNIAW",
+        "b2c:a05Ws000005SaQoIAK",
+        "b2c:a05Ws000005SaU4IAK",
+        "b2c:a05Ws000005Sb8LIAS",
+        "b2c:a05Ws000005SbbSIAS",
+        "b2c:a05Ws000005SbulIAC",
+        "b2c:a05Ws000005SckHIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Two different Anastasia Petrova calls address Noah's concern about luxury dealership financing flexibility versus Prestige Car Network, on different opportunities, with different positioning responses.",
+        "answers": [
+          {
+            "answer": "Noah raised that some luxury-focused dealerships aren't very flexible with financing options. Anastasia acknowledged that some dealers, like Prestige Car Network, tend not to negotiate much on financing terms because of their luxury focus, and said AutoElite Motors strives to provide more flexibility, helping customers find an arrangement that suits their financial needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMPZIA4",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2022-01-28T09:46:20] Noah Simmons: I’ve heard about the Tesla Model S. It's certainly appealing. What about financing? I’ve heard that some luxury-focused dealerships aren't very flexible with financing options."
+              }
+            ]
+          },
+          {
+            "answer": "Noah raised that he'd heard mixed things about financing with luxury options and other brands. Anastasia said AutoElite provides flexible financing options that are often more budget-friendly compared to the higher rates one might find at luxury-focused networks like Prestige, and that they aim to tailor options to fit his financial plans and make the process smooth.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SbbSIAS",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2022-02-05T15:42:22] Noah Simmons: That sounds reassuring. I've heard mixed things about financing when it comes to luxury options, especially with other brands. Any insights on that?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifically asks about Noah Simmons raising a financing flexibility concern about luxury dealerships and how Anastasia positioned AutoElite against Prestige Car Network on that topic. Only one call matches all these criteria: call b2c:a05Ws000005SMPZIA4, where Noah explicitly raises the concern that luxury-focused dealerships aren't flexible with financing, and Anastasia explicitly names Prestige Car Network as tending not to negotiate on financing terms due to their luxury focus, contrasting AutoElite's more flexible approach. While other calls involve Anastasia and Noah discussing financing or Prestige Car Network, none combine all three elements (financing flexibility concern + luxury dealerships + explicit Prestige Car Network positioning by Anastasia) in a single exchange.",
+        "answers": [
+          {
+            "answer": "Noah Simmons raised the concern that some luxury-focused dealerships aren't very flexible with financing options. Anastasia responded by acknowledging this as a valid point, specifically naming Prestige Car Network as a dealer that tends not to negotiate much on financing terms because of their luxury focus. She then positioned AutoElite Motors as providing more flexibility, helping customers find a financing arrangement that suits their financial needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMPZIA4",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2022-01-28T09:46:20] Noah Simmons: I’ve heard about the Tesla Model S. It's certainly appealing. What about financing? I’ve heard that some luxury-focused dealerships aren't very flexible with financing options.\n[2022-01-28T09:46:36] Anastasia Petrova: That’s a valid point. We understand that some dealers, like the Prestige Car Network, tend not to negotiate much on financing terms because of their luxury focus. At AutoElite Motors, we strive to provide more flexibility, helping our customers find an arrangement that suits their financial needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

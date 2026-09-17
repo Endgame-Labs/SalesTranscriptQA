@@ -1,0 +1,466 @@
+[
+  {
+    "question_id": "b2b-multi_call-9d968cc292ad394c",
+    "question": "For InspireTech, what customization commitments did Ayo give Hiroshi in the proposal follow-up call, and what customization capability was confirmed during the onboarding kick-off?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The customization commitments Ayo made to Hiroshi in the proposal follow-up call and the customization capability confirmed during InspireTech's onboarding kick-off",
+        "relationship": "same business issue (customization) tracked across the sales cycle \u2014 commitments made pre-sale and their confirmation at onboarding",
+        "reason": "Both lookups concern the same customization topic for the same customer, forming a coherent pre-sale-to-onboarding thread rather than two unrelated fact lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T35iIAC",
+                "fact": "Ayo committed to drafting an amended proposal emphasizing InspireTech's custom requests for intuitive UI in training modules and EduTech integration.",
+                "why_other_call_cannot_supply_it": "The onboarding kick-off call does not mention any proposal amendment or the specific custom requests for UI and EduTech integration; it focuses on implementation and API access."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T46XIAS",
+                "fact": "Ayo confirmed custom feature development especially with PulseSim Pro, including full API access for extensive customization.",
+                "why_other_call_cannot_supply_it": "The proposal follow-up call does not mention PulseSim Pro or API access; it only discusses general customization support and the intent to amend the proposal."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: commitments made in the proposal follow-up call and capability confirmed during the onboarding kick-off. The first call provides the commitment to amend the proposal with specific custom requests, while the second call provides the confirmed capability of custom feature development with PulseSim Pro and API access. These are substantively different facts from different calls, and neither call alone can supply both pieces of information."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T35iIAC",
+                  "fact": "Ayo committed to drafting an amended proposal emphasizing InspireTech's custom requests for intuitive UI for training modules and EduTech integration.",
+                  "why_other_call_cannot_supply_it": "The onboarding kick-off call does not mention any proposal amendment or the specific custom requests from the follow-up call; it only discusses general customization capabilities."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T46XIAS",
+                  "fact": "Ayo confirmed custom feature development especially with PulseSim Pro, and that InspireTech would have full API access for extensive customization.",
+                  "why_other_call_cannot_supply_it": "The proposal follow-up call does not mention PulseSim Pro or API access; it only discusses the intention to amend the proposal with custom requests."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: commitments made in the proposal follow-up call and capabilities confirmed during the onboarding kick-off. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T35iIAC",
+                  "fact": "Ayo committed to drafting an amended proposal emphasizing InspireTech's custom requests for intuitive UI in training modules and EduTech integration.",
+                  "why_other_call_cannot_supply_it": "The onboarding kick-off call does not mention any proposal amendment or the specific custom requests for UI and EduTech integration; it focuses on implementation and API access."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T46XIAS",
+                  "fact": "Ayo confirmed custom feature development especially with PulseSim Pro, including full API access for extensive customization.",
+                  "why_other_call_cannot_supply_it": "The proposal follow-up call does not mention PulseSim Pro or API access; it only discusses general customization support and the intent to amend the proposal."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: commitments made in the proposal follow-up call and capability confirmed during the onboarding kick-off. The first call provides the commitment to amend the proposal with specific custom requests, while the second call provides the confirmed capability of custom feature development with PulseSim Pro and API access. These are substantively different facts from different calls, and neither call alone can supply both pieces of information."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T35iIAC",
+                "fact": "In the proposal follow-up call, Ayo committed to drafting an amended proposal emphasizing InspireTech's custom requests (intuitive UI for training modules and EduTech integration).",
+                "why_other_call_cannot_supply_it": "The kick-off call (June 5) occurs after the deal closed and never mentions an amended proposal or the specific custom requests from the follow-up; it only discusses onboarding."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T46XIAS",
+                "fact": "At the onboarding kick-off, Ayo confirmed custom feature development especially with PulseSim Pro, with full API access for extensive customization.",
+                "why_other_call_cannot_supply_it": "The proposal follow-up call predates the deal and contains no mention of PulseSim Pro custom development or API access; those confirmations occur only in the kick-off call."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: customization commitments made in the proposal follow-up (amended proposal for UI/EduTech customizations) versus customization capability confirmed at the onboarding kick-off (PulseSim Pro custom development and full API access). Each fact appears only in its respective call, and both are directly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T35iIAC",
+                  "fact": "In the proposal follow-up call, Ayo committed to drafting an amended proposal emphasizing InspireTech's custom requests (intuitive UI for training modules and EduTech integration).",
+                  "why_other_call_cannot_supply_it": "The kick-off call (June 5) occurs after the deal closed and never mentions an amended proposal or the specific custom requests from the follow-up; it only discusses onboarding."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T46XIAS",
+                  "fact": "At the onboarding kick-off, Ayo confirmed custom feature development especially with PulseSim Pro, with full API access for extensive customization.",
+                  "why_other_call_cannot_supply_it": "The proposal follow-up call predates the deal and contains no mention of PulseSim Pro custom development or API access; those confirmations occur only in the kick-off call."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: customization commitments made in the proposal follow-up (amended proposal for UI/EduTech customizations) versus customization capability confirmed at the onboarding kick-off (PulseSim Pro custom development and full API access). Each fact appears only in its respective call, and both are directly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct customization facts: (1) Ayo's commitment in the proposal follow-up call (drafting an amended proposal emphasizing InspireTech's custom requests\u2014intuitive UI for training modules and EduTech integration), and (2) the customization capability confirmed at the onboarding kick-off (custom feature development especially with PulseSim Pro, with full API access). Each fact is sourced exclusively from its respective call. The gold answer accurately reflects both transcripts without adding unasked extras or omitting requested details. The question is naturally phrased, identifies the account (InspireTech), the rep (Ayo), the contact (Hiroshi), and the two call contexts clearly. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Ayo Okeke explicitly stating 'I'll make a note to draft an amended proposal to emphasize those specific customizations for you,' directly supporting the claim that Ayo committed to drafting an amended proposal emphasizing Hiroshi's custom requests. The preceding line from Hiroshi references 'these custom requests,' confirming the context. However, the specific customizations (intuitive UI for training modules and EduTech integration) are not named in this cited passage\u2014only 'those specific customizations' is referenced. The commitment to draft the amended proposal is supported, but the specific content of the custom requests is not detailed in this citation."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Ayo Okeke stating 'we do offer custom feature development, especially with PulseSim Pro. Your team will have full access to our API, allowing for extensive customization.' This directly supports the claim about custom feature development with PulseSim Pro and full API access for extensive customization. The context metadata confirms this is the onboarding kick-off call (2023-06-05) with Hiroshi Saito at InspireTech Consulting."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer states Ayo committed to drafting an amended proposal emphasizing 'InspireTech's custom requests (intuitive UI for training modules and EduTech integration).' While evidence index 0 supports the commitment to draft an amended proposal emphasizing specific customizations, the specific customizations named in the gold_answer\u2014'intuitive UI for training modules' and 'EduTech integration'\u2014are not present in any supplied citation. The quote only references 'those specific customizations' without naming them. The second part of the gold_answer regarding custom feature development with PulseSim Pro and full API access is fully supported by evidence index 1. Because the supplied citations do not contain the specific customization details (intuitive UI for training modules and EduTech integration), the gold_answer includes factual claims not supported by the provided evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-e697c71184cd3d4b",
+    "question": "Across the NeoGreen Enterprises opportunity, what competitor weakness did Leila Aliyev raise about CircuitWave, and what did she later observe about TechPulse's pricing versus competitors?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Leila Aliyev's competitive observations across the NeoGreen Enterprises opportunity: the weakness she raised about CircuitWave and her later observation about TechPulse's pricing relative to competitors",
+        "relationship": "Both items are competitive assessments within the same opportunity, forming one coherent competitive-comparison question",
+        "reason": "The question asks for two facets of the same competitive landscape discussion (one competitor's weakness and another's pricing position) tied to a single deal, not two unrelated fact lookups joined only by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1JzIAK",
+                "fact": "Leila Aliyev raised that CircuitWave is not evolving or scaling as quickly as NeoGreen needs.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyyyIAC) does not mention CircuitWave or any competitor weakness; it only discusses pricing alignment."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyyyIAC",
+                "fact": "Leila Aliyev observed that both TechPulse and competitors are aligned on pricing in the early stages.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T1JzIAK) does not mention pricing or any comparison of TechPulse's pricing with competitors."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a competitor weakness about CircuitWave and an observation about TechPulse's pricing versus competitors. These facts appear in separate calls, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1JzIAK",
+                  "fact": "Leila Aliyev raised that CircuitWave is not evolving or scaling as quickly as NeoGreen needs.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyyyIAC) does not mention CircuitWave or any competitor weakness; it only discusses pricing alignment."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyyyIAC",
+                  "fact": "Leila Aliyev observed that both TechPulse and competitors are aligned on pricing in the early stages.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T1JzIAK) does not mention pricing or any comparison of TechPulse's pricing with competitors."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a competitor weakness about CircuitWave and an observation about TechPulse's pricing versus competitors. These facts appear in separate calls, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1JzIAK",
+                "fact": "Leila raised that CircuitWave is not evolving/scaling as quickly as NeoGreen needs",
+                "why_other_call_cannot_supply_it": "The 2024 call contains no mention of CircuitWave or any competitor scalability weakness"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyyyIAC",
+                "fact": "Leila observed that both companies' pricing is aligned in the early stages",
+                "why_other_call_cannot_supply_it": "The 2020 call contains no pricing comparison or alignment observation"
+              }
+            ],
+            "reason": "The question asks for two distinct facts: a competitor weakness about CircuitWave (stated only in the 2020 call) and a pricing-alignment observation (stated only in the 2024 call). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1JzIAK",
+                  "fact": "Leila raised that CircuitWave is not evolving/scaling as quickly as NeoGreen needs",
+                  "why_other_call_cannot_supply_it": "The 2024 call contains no mention of CircuitWave or any competitor scalability weakness"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyyyIAC",
+                  "fact": "Leila observed that both companies' pricing is aligned in the early stages",
+                  "why_other_call_cannot_supply_it": "The 2020 call contains no pricing comparison or alignment observation"
+                }
+              ],
+              "reason": "The question asks for two distinct facts: a competitor weakness about CircuitWave (stated only in the 2020 call) and a pricing-alignment observation (stated only in the 2024 call). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets two distinct competitive observations Leila Aliyev made across two calls on the NeoGreen opportunity. Call 2 (2020-02-24) contains the CircuitWave weakness ('not evolving as quickly as we need'), and Call 1 (2024-01-03) contains the pricing alignment remark ('both our companies are pretty aligned on pricing in the early stages'). Each source contributes an exclusive requested fact. The gold answer accurately captures both without adding unasked extras. Wording is natural, scope is clear via opportunity and contact names, and a rep would plausibly want to track competitive intel across calls.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Leila Aliyev stating 'CircuitWave, not evolving as quickly as we need' and asking 'Can your solutions support our future growth?' This supports the claim that CircuitWave was not evolving as quickly as needed and that she asked about scalability for future growth."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Leila Aliyev stating 'it seems both our companies are pretty aligned on pricing in the early stages.' This supports the claim that their competitive analysis showed both companies are pretty aligned on pricing in the early stages."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states (1) CircuitWave wasn't evolving/scaling as quickly as NeoGreen needs, and (2) later she noted both companies' pricing is aligned in the early stages. Evidence index 0 supports the first part with Leila's direct quote about CircuitWave 'not evolving as quickly as we need' and her scalability question. Evidence index 1 supports the second part with Leila's statement that 'both our companies are pretty aligned on pricing in the early stages.' The temporal ordering is also consistent: the CircuitWave comment is from 2020-02-24 and the pricing observation is from 2024-01-03, matching 'later she noted.' All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-394c3521cc558a9e",
+    "question": "What follow-up did Jamal commit to sending Kwame after the call, and what ROI evidence did he say it would show?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the follow-up Jamal committed to sending Kwame after the call and the ROI evidence he said it would demonstrate.",
+        "relationship": "single coherent request: the follow-up commitment and the content/purpose of that same follow-up",
+        "reason": "Both parts concern one follow-up item\u2014what Jamal promised to send and what ROI evidence it would show\u2014forming one natural sales question, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific follow-up commitment and the ROI evidence it would contain. The transcript shows Jamal offering to send 'detailed documentation' with 'compelling case studies that demonstrate proven ROI' citing 'significant efficiency improvements and cost reductions shortly after implementation.' The gold answer accurately captures both the commitment (detailed documentation with case studies) and the ROI evidence (efficiency improvements and cost reductions shortly after implementation). The question is naturally phrased, scoped to a clear business interaction between named participants, and a rep/AM would plausibly want to verify what was promised. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Jamal stating he has 'compelling case studies that demonstrate proven ROI,' citing 'significant efficiency improvements and cost reductions shortly after implementation,' and offering to 'send you some detailed documentation.' This fully supports the answer_claim about detailed documentation with case studies showing proven ROI, efficiency improvements, and cost reductions."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Jamal saying 'I'll follow up soon with the information we discussed,' confirming his commitment to send the follow-up. Combined with index 0, 'the information we discussed' refers to the detailed documentation/case studies. The claim that 'Kwame looks forward to receiving the documents' is not explicitly present in the cited quote (only Jamal's line is quoted), but the core claim that Jamal confirms he will follow up is directly supported."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Jamal promised to send detailed documentation with case studies showing proven ROI\u2014significant efficiency improvements and cost reductions shortly after implementation. Index 0 provides the exact content: case studies demonstrating proven ROI, efficiency improvements, cost reductions shortly after implementation, and an offer to send detailed documentation. Index 1 confirms Jamal's commitment to follow up with 'the information we discussed.' Together, the citations support every factual element of the gold_answer: the follow-up commitment, the detailed documentation, the case studies, proven ROI, efficiency improvements, cost reductions, and the 'shortly after implementation' time qualifier."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-70d761113bf6a3d7",
+    "question": "What did Diego Martinez say makes user adoption of new tools challenging at TechSphere Design, and what did he want to enhance while keeping processes efficient?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Diego Martinez identified as the challenge to user adoption of new tools at TechSphere Design, and what he wanted to enhance while keeping processes efficient",
+        "relationship": "Both parts address the same issue: Diego's concerns about tool adoption and his corresponding goal for improving workflows",
+        "reason": "A single coherent request about one stakeholder's adoption challenge and his related enhancement objective from the same call; natural sales language, no mismatched domain terms."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Diego explicitly states adoption hinges on an intuitive, user-friendly interface and that they aim to enhance scalability while keeping processes efficient. The gold answer captures both facts precisely with no extras. The question is naturally phrased, scoped to a named contact and account, and a rep would plausibly want this information. Single-call question so both_sources_required is set true.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage directly attributes to Diego Martinez the statement that 'the user adoption rate hinges heavily on how intuitive and user-friendly the interface is' and mentions 'challenging experiences in the past when deploying new tools,' which fully supports the answer_claim about what makes user adoption challenging at TechSphere Design."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage directly attributes to Diego Martinez the statement 'We are aiming to enhance scalability as well while keeping processes efficient,' which exactly matches the answer_claim about enhancing scalability while keeping processes efficient."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer. Evidence index 0 confirms that adoption hinges on an intuitive, user-friendly interface (and that deploying new tools has been challenging), and evidence index 1 confirms they aim to enhance scalability while keeping processes efficient. Speaker attribution (Diego Martinez), account context (TechSphere Design via metadata), and all factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-8a24b199e8385d5c",
+    "question": "What financing flexibility concern did Noah Simmons raise about luxury dealerships, and how did Anastasia position AutoElite against Prestige Car Network on that?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The financing flexibility concern Noah Simmons raised about luxury dealerships and how Anastasia positioned AutoElite against Prestige Car Network on that concern",
+        "relationship": "objection and competitive response addressing the same financing-flexibility issue",
+        "reason": "A single objection (financing flexibility at luxury dealerships) paired with the salesperson's competitive positioning on that same issue forms one coherent sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning exchange within a single call. Noah's concern about luxury dealerships lacking financing flexibility and Anastasia's contrast between Prestige Car Network (doesn't negotiate financing much) and AutoElite (more flexible arrangements) are both verbatim-supported in the dialogue. The gold answer states precisely the two requested facts with no unasked extras. The question is naturally worded, adequately scoped by naming the customer, the concern, and the two competitors, and a rep would plausibly want to recall how a financing objection was handled against a named competitor. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Noah Simmons explicitly states: 'I've heard that some luxury-focused dealerships aren't very flexible with financing options.' This directly supports the answer_claim that Noah raised the concern about luxury-focused dealerships not being very flexible with financing options."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Anastasia Petrova explicitly states: 'some dealers, like the Prestige Car Network, tend not to negotiate much on financing terms because of their luxury focus. At AutoElite Motors, we strive to provide more flexibility, helping our customers find an arrangement that suits their financial needs.' This directly supports the answer_claim that Anastasia said Prestige Car Network tends not to negotiate financing terms while AutoElite strives to provide more flexibility."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Noah worried luxury dealers aren't flexible with financing \u2013 supported by index 0 where Noah says 'some luxury-focused dealerships aren't very flexible with financing options.' (2) Anastasia said Prestige Car Network doesn't negotiate financing much \u2013 supported by index 1 where she says 'Prestige Car Network, tend not to negotiate much on financing terms.' (3) AutoElite offers more flexible arrangements \u2013 supported by index 1 where she says 'At AutoElite Motors, we strive to provide more flexibility, helping our customers find an arrangement that suits their financial needs.' All factual claims in the gold_answer are supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-51aa1f834c930eb7",
+    "question": "What next step did Aleksey commit to for Lucas Turner's vehicle search?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Aleksey committed to regarding Lucas Turner's vehicle search",
+        "relationship": "single coherent lookup of a committed next step from one call",
+        "reason": "One natural sales question asking for a single commitment/next step tied to one customer's vehicle search; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about a committed next step for a named customer's vehicle search, which a rep/account manager would plausibly track. The dialogue shows Aleksey saying 'I'll follow up with some dates for a showroom visit' after Lucas agrees to discuss specific models matching his preferences. The gold answer accurately captures this commitment without adding unasked extras. Wording is natural, scope is adequate (identifies the rep, customer, and context), and no artificial locator preamble or answer leakage is present. Single-call question so both_sources_required is set true by convention."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aleksey Kozlov explicitly states 'I'll follow up with some dates for a showroom visit,' which directly supports the answer_claim. The speaker attribution (Aleksey Kozlov) and the commitment to follow up with dates for a showroom visit are clearly present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Aleksey will follow up with dates for a showroom visit to discuss specific models matching Lucas's preferences.' The cited evidence directly supports the core commitment: Aleksey says 'I'll follow up with some dates for a showroom visit.' The context metadata confirms the account is Lucas Turner and the opportunity is 'Lucas Turner's Premium Vehicle Upgrade,' establishing the vehicle search context. The phrase 'to discuss specific models matching Lucas's preferences' is a reasonable inference from the broader quote ('We can work together to make sure you find a vehicle that's not only a great fit but also offers the best value') which implies discussing models matching preferences. The essential factual claim\u2014Aleksey committing to follow up with dates for a showroom visit\u2014is fully supported by the cited evidence."
+      }
+    }
+  }
+]
