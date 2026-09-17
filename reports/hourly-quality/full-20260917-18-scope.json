@@ -1,0 +1,655 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "0b2355334b4d2d363fba5b997b3e401e44eb66874a0f541d327de2efcbcf6b9b",
+  "questions": 5,
+  "counts": {
+    "fail": 2,
+    "pass": 3
+  },
+  "estimated_usd": 0.62221638,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-764377d9c948f12b",
+      "question": "Across the two TechPulse Solutions calls with Javier Sanchez at NexGen Biotech, how did Mei Lin position TechPulse's pricing in the initial discussion, and what cost-related concern did Javier raise in the follow-up?",
+      "gold_answer": "Initially Mei emphasized competitive pricing with favorable total cost of ownership; in the follow-up Javier said competitors offer similar early pricing and he wants transparency of future cost projections.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgNIAS",
+        "b2b:a05Wt000003SrnkIAC",
+        "b2b:a05Wt000003SsNDIA0",
+        "b2b:a05Wt000003StclIAC",
+        "b2b:a05Wt000003SuVQIA0",
+        "b2b:a05Wt000003Sv6ZIAS",
+        "b2b:a05Wt000003SvHwIAK",
+        "b2b:a05Wt000003SvhfIAC",
+        "b2b:a05Wt000003Swx6IAC",
+        "b2b:a05Wt000003Sx5CIAS",
+        "b2b:a05Wt000003SxA1IAK",
+        "b2b:a05Wt000003SxJfIAK",
+        "b2b:a05Wt000003SxcyIAC",
+        "b2b:a05Wt000003SyNpIAK",
+        "b2b:a05Wt000003SydsIAC",
+        "b2b:a05Wt000003SypIIAS",
+        "b2b:a05Wt000003SypJIAS",
+        "b2b:a05Wt000003SysNIAS",
+        "b2b:a05Wt000003SyyxIAC",
+        "b2b:a05Wt000003SzDRIA0",
+        "b2b:a05Wt000003SzuzIAC",
+        "b2b:a05Wt000003T0CgIAK",
+        "b2b:a05Wt000003T0mEIAS",
+        "b2b:a05Wt000003T0nsIAC",
+        "b2b:a05Wt000003T1QTIA0",
+        "b2b:a05Wt000003T1a9IAC",
+        "b2b:a05Wt000003T1blIAC",
+        "b2b:a05Wt000003T2BHIA0",
+        "b2b:a05Wt000003T2HjIAK",
+        "b2b:a05Wt000003T2SzIAK",
+        "b2b:a05Wt000003T2T0IAK",
+        "b2b:a05Wt000003T2UcIAK",
+        "b2b:a05Wt000003T2WCIA0",
+        "b2b:a05Wt000003T2kiIAC",
+        "b2b:a05Wt000003T3SFIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 17,
+            "normalized_end": 18
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 8,
+            "normalized_end": 9
+          },
+          {
+            "answer": 1,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "The premise of exactly 'two' Mei Lin–Javier Sanchez calls does not hold: the data contains six TechPulse calls between Mei Lin and Javier Sanchez (2020-05-04, 05-06, 05-07, 05-09, 05-11, 05-18), and the earliest (05-04) contains no pricing discussion at all. Several pairings could satisfy 'initial discussion' + 'follow-up' with a cost-related concern, yielding materially different answers.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2020-05-09), Mei Lin positioned TechPulse's pricing as competitive but emphasized a favorable total cost of ownership — the products are an initial investment that deliver substantial returns through increased efficiency and productivity. In the follow-up (2020-05-11), Javier raised a concern about long-term value and cost transparency: he noted competitors offer competitive pricing early on, but NexGen is really keen on the transparency of future cost projections, and Mei Lin committed to providing more precise cost predictions over time.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2kiIAC",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2020-05-09T16:50:15] Javier Sanchez: That's certainly a significant factor for us. How do these innovations reflect in your pricing strategy?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2kiIAC",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2020-05-09T16:51:00] Javier Sanchez: Sounds reasonable. I'd be interested in reviewing more detailed proposals when we’re both ready."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swx6IAC",
+                "line_start": 7,
+                "line_end": 11,
+                "quote": "[2020-05-11T11:31:55] Javier Sanchez: Thanks for highlighting those features. It's definitely what we're interested in. However, we also need to understand the long-term value. Can you talk a bit about that?\n[2020-05-11T11:32:15] Mei Lin: Certainly. What sets us apart is our commitment to total long-term value through innovation and cost transparency. While we do have competitive pricing upfront, we focus on ensuring our solutions provide ongoing benefits, essentially giving you a better return on investment as time progresses.\n[2020-05-11T11:32:35] Javier Sanchez: I see. We’ve noticed similar offerings on competitive pricing early on from other companies but are really keen on the transparency of cost projections in the future.\n[2020-05-11T11:32:55] Mei Lin: I completely understand. While both of our companies have found areas for improvement in this regard, I'll make sure to keep you updated with the most transparent information possible. We are actively enhancing our processes to offer more precise cost predictions over time."
+              }
+            ]
+          },
+          {
+            "answer": "In the initial discussion (2020-05-11), Mei Lin positioned TechPulse's pricing as competitive upfront while stressing total long-term value through innovation and cost transparency, essentially delivering a better return on investment over time. In the follow-up (2020-05-18), Javier raised a cost-related concern about the quote itself — asking to touch on the pricing aspects and whether the SecureFlow Suite in the quote carried the full feature set discussed; Mei Lin quoted a total of $55,376.31 including a 15% discount across DevVision IDE, CircuitMaster Analyzer, AIOptics Vision, and SecureFlow Suite, which Javier accepted as competitive.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Swx6IAC",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2020-05-11T11:32:15] Mei Lin: Certainly. What sets us apart is our commitment to total long-term value through innovation and cost transparency. While we do have competitive pricing upfront, we focus on ensuring our solutions provide ongoing benefits, essentially giving you a better return on investment as time progresses."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swx6IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2020-05-11T11:33:20] Mei Lin: Exactly, and with our SecureFlow Suite, for example, you'll receive the advanced data security you need, which is a priority for many of our clients in the biotech industry. It comes at a competitive price built to suit your budget without compromising on security."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2HjIAK",
+                "line_start": 11,
+                "line_end": 15,
+                "quote": "[2020-05-18T12:03:15] Javier Sanchez: That’s very important for us. Just to clarify, with your SecureFlow Suite involved in our quote, does it come with the full spectrum of features you've talked about earlier?\n[2020-05-18T12:03:30] Mei Lin: Yes, Javier. The SecureFlow Suite in your quote includes all features—encrypted communication channels, multi-layered authentication, and real-time threat monitoring.\n[2020-05-18T12:03:45] Javier Sanchez: Perfect, that’s what we need. Speaking of the quote, can we briefly touch upon the pricing aspects?\n[2020-05-18T12:04:05] Mei Lin: Certainly! So, we’re looking at a total of $55,376.31. This includes a 15% discount across your selected products: DevVision IDE, CircuitMaster Analyzer, AIOptics Vision, and SecureFlow Suite."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies TechPulse Solutions calls with Mei Lin (rep) and Javier Sanchez (contact) at NexGen Biotech. Exactly two calls match: b2b:a05Wt000003SsNDIA0 (2020-05-06, initial) and b2b:a05Wt000003Swx6IAC (2020-05-11, follow-up), both under opportunity 'Innovative EDA Solutions for NexGen Biotech'. In the initial call, Mei Lin does not explicitly discuss pricing—she focuses on product features, customization, security, and scheduling a demo. In the follow-up, Javier raises a cost-related concern about transparency of future cost projections, and Mei Lin responds by committing to transparent information and enhanced cost prediction processes.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (May 6, 2020), Mei Lin did not explicitly position TechPulse's pricing. Instead, she focused on introducing products (AIOptics Vision, DevVision IDE, SecureFlow Suite), emphasizing customization, security compliance, and scheduling a demo for the following Thursday. Pricing was not raised by either party in that call. In the follow-up (May 11, 2020), Javier raised a cost-related concern about the transparency of future cost projections, noting that while competitive pricing early on is common among vendors, he was 'really keen on the transparency of cost projections in the future.' Mei Lin responded by acknowledging the concern, stating she would keep him updated with the most transparent information possible, and noting that TechPulse was actively enhancing processes to offer more precise cost predictions over time. She also positioned SecureFlow Suite as coming at a competitive price suited to budget without compromising security.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SsNDIA0",
+                "line_start": 0,
+                "line_end": 22,
+                "quote": "[2020-05-06T16:00:00] Mei Lin: Hi Javier, this is Mei Lin from TechPulse Solutions. How are you doing today?\n[2020-05-06T16:00:05] Javier Sanchez: Hi Mei! I'm doing well, thanks. How about you?\n[2020-05-06T16:00:10] Mei Lin: I'm great, thank you! I'm glad we could connect today. I understand we're here to discuss scheduling a meeting to dive deeper into how our solutions can support NexGen Biotech's goals.\n[2020-05-06T16:00:20] Javier Sanchez: Yes, that's correct. I'm interested to hear more about what TechPulse Solutions has to offer, especially regarding electronic design automation tools.\n[2020-05-06T16:00:30] Mei Lin: Fantastic. Let me start by introducing two of our standout products – the AIOptics Vision and DevVision IDE – which we believe will significantly enhance your R&D processes at NexGen Biotech.\n[2020-05-06T16:00:40] Javier Sanchez: Great, those sound interesting. Can you tell me more about them?\n[2020-05-06T16:00:50] Mei Lin: Certainly! AIOptics Vision is designed to provide advanced analytics and data visualization capabilities that can accelerate your development workflows. Meanwhile, DevVision IDE is a highly customizable integrated development environment that can be tailored to meet your specific needs.\n[2020-05-06T16:01:00] Javier Sanchez: Customization sounds promising. We've found that adaptability is key in sustaining our growth, especially with our innovative computational designing.\n[2020-05-06T16:01:10] Mei Lin: That's exactly our strength! Unlike some competitors, we focus on providing EDA solutions that adapt flexibly to the unique demands of our clients. Speaking of which, you might also be interested in SecureFlow Suite for its robust data protection and compliance features, which many clients have appreciated.\n[2020-05-06T16:01:20] Javier Sanchez: Security compliance is indeed very important for us, especially when dealing with sensitive data.\n[2020-05-06T16:01:30] Mei Lin: Absolutely, and it's an area where we really excel. Our solutions are built with state-of-the-art security measures, ensuring your data's safety without compromising on performance.\n[2020-05-06T16:01:40] Javier Sanchez: That's reassuring to hear. Would there be a demo or trial period for us to explore these capabilities further?\n[2020-05-06T16:01:50] Mei Lin: Yes, we can certainly arrange a demo. It'd be a great way for you to see these tools in action. How does your schedule look for next week?\n[2020-05-06T16:02:00] Javier Sanchez: Next week works fine. Maybe we could aim for Thursday?\n[2020-05-06T16:02:10] Mei Lin: Thursday sounds perfect. How about 2 PM to start with a brief overview, and we can tailor the demonstration based on what captures your interest?\n[2020-05-06T16:02:20] Javier Sanchez: That should work. And just a quick question – we heard about some user experience gaps in early adoption. Has there been any update on that front?\n[2020-05-06T16:02:30] Mei Lin: Thank you for bringing that up. We're continuously enhancing our products based on user feedback. We offer comprehensive training and support to ease the initial configuration process.\n[2020-05-06T16:02:40] Javier Sanchez: Good to know. Tailoring solutions and support to our needs is crucial for us.\n[2020-05-06T16:02:50] Mei Lin: Precisely, Javier. Our goal is to provide you with tools that not only meet but exceed your expectations. We're really looking forward to showing you the potential improvements your teams could achieve with our solutions.\n[2020-05-06T16:03:00] Javier Sanchez: Thank you, Mei. I'm looking forward to the demo and learning more about TechPulse's offerings.\n[2020-05-06T16:03:10] Mei Lin: My pleasure, Javier. Thanks again for your time. We'll send over a calendar invite for the meeting, and I'll be in touch if anything comes up before then. Have a great day!\n[2020-05-06T16:03:15] Javier Sanchez: You too, Mei. Talk soon!"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swx6IAC",
+                "line_start": 7,
+                "line_end": 13,
+                "quote": "[2020-05-11T11:31:55] Javier Sanchez: Thanks for highlighting those features. It's definitely what we're interested in. However, we also need to understand the long-term value. Can you talk a bit about that?\n[2020-05-11T11:32:15] Mei Lin: Certainly. What sets us apart is our commitment to total long-term value through innovation and cost transparency. While we do have competitive pricing upfront, we focus on ensuring our solutions provide ongoing benefits, essentially giving you a better return on investment as time progresses.\n[2020-05-11T11:32:35] Javier Sanchez: I see. We’ve noticed similar offerings on competitive pricing early on from other companies but are really keen on the transparency of cost projections in the future.\n[2020-05-11T11:32:55] Mei Lin: I completely understand. While both of our companies have found areas for improvement in this regard, I'll make sure to keep you updated with the most transparent information possible. We are actively enhancing our processes to offer more precise cost predictions over time.\n[2020-05-11T11:33:10] Javier Sanchez: That's encouraging to hear. Certainly helps us plan our budget more effectively.\n[2020-05-11T11:33:20] Mei Lin: Exactly, and with our SecureFlow Suite, for example, you'll receive the advanced data security you need, which is a priority for many of our clients in the biotech industry. It comes at a competitive price built to suit your budget without compromising on security."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-7600acdad482ee5e",
+      "question": "What pricing did Jorge quote Lina Chen at PowerGrid Innovations for SecureFlow Suite, and what next step did they agree on?",
+      "gold_answer": "SecureFlow Suite is priced at $6,479.89 for 12 units after a 10% discount; next step is scheduling a product demonstration for PowerGrid's team.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StO3IAK",
+        "b2b:a05Wt000003SuIbIAK",
+        "b2b:a05Wt000003SujwIAC",
+        "b2b:a05Wt000003Sv08IAC",
+        "b2b:a05Wt000003Sv87IAC",
+        "b2b:a05Wt000003SvEZIA0",
+        "b2b:a05Wt000003SvXuIAK",
+        "b2b:a05Wt000003SvclIAC",
+        "b2b:a05Wt000003SwfHIAS",
+        "b2b:a05Wt000003SwnTIAS",
+        "b2b:a05Wt000003SwqkIAC",
+        "b2b:a05Wt000003SwsDIAS",
+        "b2b:a05Wt000003SwydIAC",
+        "b2b:a05Wt000003Sx57IAC",
+        "b2b:a05Wt000003Sx8MIAS",
+        "b2b:a05Wt000003Sx8NIAS",
+        "b2b:a05Wt000003SxWYIA0",
+        "b2b:a05Wt000003SyyvIAC",
+        "b2b:a05Wt000003SzAIIA0",
+        "b2b:a05Wt000003SzDNIA0",
+        "b2b:a05Wt000003SzJrIAK",
+        "b2b:a05Wt000003SzgNIAS",
+        "b2b:a05Wt000003T0UPIA0",
+        "b2b:a05Wt000003T0XeIAK",
+        "b2b:a05Wt000003T0hIIAS",
+        "b2b:a05Wt000003T1DWIA0",
+        "b2b:a05Wt000003T1iAIAS",
+        "b2b:a05Wt000003T1rrIAC",
+        "b2b:a05Wt000003T1rsIAC",
+        "b2b:a05Wt000003T1rtIAC",
+        "b2b:a05Wt000003T2MWIA0",
+        "b2b:a05Wt000003T2RKIA0",
+        "b2b:a05Wt000003T2UZIA0",
+        "b2b:a05Wt000003T2UaIAK",
+        "b2b:a05Wt000003T2eEIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Jorge Pinto speaking with Lina Chen about SecureFlow Suite pricing (2023-08-28); his other call with Lina (2023-09-10) contains no pricing or next-step agreement, so the answer is uniquely determined.",
+        "answers": [
+          {
+            "answer": "Jorge Pinto quoted SecureFlow Suite at $6,479.89 for a batch of 12 units after a 10% discount, noting they would keep pricing competitive and go over full pricing details in a proposal tailored for PowerGrid. The agreed next step was to set up a product demonstration so Lina and her team could see features like enhanced configurability and intuitive interfaces, with Jorge coordinating scheduling and Lina ensuring the relevant team members attend.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuIbIAK",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-08-28T11:35:30] Jorge Pinto: Absolutely, understanding the cost perspective early on is crucial. We offer competitive pricing, and for example, our SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units. We’ll ensure to keep that competitive while giving you maximum value. Plus, we’ll go over all pricing details once we tailor the proposal specifically for PowerGrid."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuIbIAK",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2023-08-28T11:36:20] Jorge Pinto: Definitely. Our next step is to set up a product demonstration. This will give you and your team a detailed look at features like enhanced configurability and intuitive interfaces. How does that sound?\n[2023-08-28T11:36:35] Lina Chen: That sounds excellent. I’ll make sure the relevant members from our side are available for the session."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Jorge (Jorge Pinto), Lina Chen, PowerGrid Innovations, and SecureFlow Suite pricing. Only one call matches all these criteria: call b2b:a05Wt000003SuIbIAK (2023-08-28), where Jorge Pinto quotes Lina Chen a specific price for SecureFlow Suite and they agree on a product demonstration as the next step. No other call features Jorge Pinto discussing SecureFlow Suite pricing with Lina Chen.",
+        "answers": [
+          {
+            "answer": "Jorge Pinto quoted Lina Chen a price of $6,479.89 for SecureFlow Suite (after a 10% discount) for a batch of 12 units. He noted they would go over all pricing details once they tailored the proposal specifically for PowerGrid. As a next step, they agreed to set up a product demonstration so Lina and her team could get a detailed look at features like enhanced configurability and intuitive interfaces. Lina confirmed she would make sure the relevant members from her side would be available for the session, and Jorge said he would coordinate scheduling.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuIbIAK",
+                "line_start": 13,
+                "line_end": 19,
+                "quote": "[2023-08-28T11:35:00] Lina Chen: It's good to know about that focus. What about pricing? I understand we’re in early discussions, but it’s important for us to have an idea of the investment involved.\n[2023-08-28T11:35:30] Jorge Pinto: Absolutely, understanding the cost perspective early on is crucial. We offer competitive pricing, and for example, our SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units. We’ll ensure to keep that competitive while giving you maximum value. Plus, we’ll go over all pricing details once we tailor the proposal specifically for PowerGrid.\n[2023-08-28T11:36:00] Lina Chen: That's helpful, Jorge. This gives us a clearer picture. We’re also keen to see how your solutions stack up, functionally, against what we’re currently using.\n[2023-08-28T11:36:20] Jorge Pinto: Definitely. Our next step is to set up a product demonstration. This will give you and your team a detailed look at features like enhanced configurability and intuitive interfaces. How does that sound?\n[2023-08-28T11:36:35] Lina Chen: That sounds excellent. I’ll make sure the relevant members from our side are available for the session.\n[2023-08-28T11:36:50] Jorge Pinto: Perfect, Lina. I’ll coordinate with you on scheduling. We’ll make sure it’s convenient for everyone involved. Thanks for your time today, and I’m looking forward to our continued discussions."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same pricing ($6,479.89 for 12 units after a 10% discount) and the same agreed next step (a product demonstration for Lina's team, with Jorge coordinating scheduling and Lina ensuring relevant members attend). The reference also covers both requested facts: the price ($6,479.89 for 12 units after a 10% discount) and the next step (scheduling a product demonstration for PowerGrid's team). No requested commitment is missing or substituted in any of the three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-953da2095af25768",
+      "question": "What pricing did TechPulse propose to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision?",
+      "gold_answer": "AI Cirku-Tech at a 5% discounted rate and AIOptics Vision at standard pricing.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZvIAK",
+        "b2b:a05Wt000003SqZwIAK",
+        "b2b:a05Wt000003Sr7qIAC",
+        "b2b:a05Wt000003SswkIAC",
+        "b2b:a05Wt000003StntIAC",
+        "b2b:a05Wt000003Su45IAC",
+        "b2b:a05Wt000003Sv06IAC",
+        "b2b:a05Wt000003Sw7RIAS",
+        "b2b:a05Wt000003Sw7SIAS",
+        "b2b:a05Wt000003SwSSIA0",
+        "b2b:a05Wt000003SwguIAC",
+        "b2b:a05Wt000003SwgvIAC",
+        "b2b:a05Wt000003SwqcIAC",
+        "b2b:a05Wt000003Sx0FIAS",
+        "b2b:a05Wt000003SxUyIAK",
+        "b2b:a05Wt000003SxrXIAS",
+        "b2b:a05Wt000003SxtBIAS",
+        "b2b:a05Wt000003Sy2mIAC",
+        "b2b:a05Wt000003Sy2nIAC",
+        "b2b:a05Wt000003SyArIAK",
+        "b2b:a05Wt000003SyZ0IAK",
+        "b2b:a05Wt000003SypBIAS",
+        "b2b:a05Wt000003SyyqIAC",
+        "b2b:a05Wt000003SzQHIA0",
+        "b2b:a05Wt000003SzTVIA0",
+        "b2b:a05Wt000003SzziIAC",
+        "b2b:a05Wt000003SzzjIAC",
+        "b2b:a05Wt000003T0R8IAK",
+        "b2b:a05Wt000003T0XaIAK",
+        "b2b:a05Wt000003T0sXIAS",
+        "b2b:a05Wt000003T0u9IAC",
+        "b2b:a05Wt000003T0vlIAC",
+        "b2b:a05Wt000003T0xNIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call discusses pricing for both AI Cirku-Tech and AIOptics Vision together: the 2022-07-25 call where Jaemin Park tells Fatima Rahman the proposal includes AI Cirku-Tech at a 5% discount and AIOptics Vision at standard pricing. No other call mentions AIOptics Vision pricing.",
+        "answers": [
+          {
+            "answer": "TechPulse proposed AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing to maximize value, as stated in the proposal discussed with Fatima Rahman.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyyqIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2022-07-25T11:02:35] Jaemin Park: Great, I'll send over an invite later today. Briefly touching on pricing, we talked about this in our proposal—AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing to maximize value."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about pricing proposed for both AI Cirku-Tech and AIOptics Vision. Only one call in the entire history discusses both products together with pricing: the 2022-07-25 call (b2b:a05Wt000003SyyqIAC) between Jaemin Park and Fatima Rahman under the 'TechPulse Collaboration with AgroSmart Innovations' opportunity. In that call, Jaemin states AI Cirku-Tech is offered at a 5% discount and AIOptics Vision at standard pricing. Other calls mention AI Cirku-Tech pricing (e.g., 5% discount in the Tech Enhancement Initiative calls, $3,524.43 in the EDA Enhancement call) but none of those also include AIOptics Vision pricing. Since the question explicitly names both products together, only the one call satisfies the full query.",
+        "answers": [
+          {
+            "answer": "TechPulse proposed AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing to maximize value.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyyqIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2022-07-25T11:02:35] Jaemin Park: Great, I'll send over an invite later today. Briefly touching on pricing, we talked about this in our proposal—AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing to maximize value."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same pricing: AI Cirku-Tech at a 5% discounted rate and AIOptics Vision at standard pricing. Answer A adds context about Fatima Rahman and the proposal, but this is extra detail, not a different fact. The reference covers both requested pricing facts (5% discount for AI Cirku-Tech and standard pricing for AIOptics Vision). All requested facts are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-d1a4ce275ee339b5",
+      "question": "What did Sofia Kim say about how AutoElite's financing compares to High-End Autos Co., and what does she still want to review before moving forward?",
+      "gold_answer": "She finds AutoElite's financing straightforward and transparent, noting High-End Autos Co. offers similar credit approvals; she still wants to review the customization options for the vehicles.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SORKIA4",
+        "b2c:a05Ws000005SPLoIAO",
+        "b2c:a05Ws000005SS0KIAW",
+        "b2c:a05Ws000005SS6hIAG",
+        "b2c:a05Ws000005SSQCIA4",
+        "b2c:a05Ws000005STHGIA4",
+        "b2c:a05Ws000005SU3jIAG",
+        "b2c:a05Ws000005SVxPIAW",
+        "b2c:a05Ws000005SWjtIAG",
+        "b2c:a05Ws000005SWtYIAW",
+        "b2c:a05Ws000005SWyGIAW",
+        "b2c:a05Ws000005SX1UIAW",
+        "b2c:a05Ws000005SYsDIAW",
+        "b2c:a05Ws000005SYsEIAW",
+        "b2c:a05Ws000005SZ86IAG",
+        "b2c:a05Ws000005SZrOIAW",
+        "b2c:a05Ws000005SZzPIAW",
+        "b2c:a05Ws000005SaFYIA0",
+        "b2c:a05Ws000005SbGWIA0",
+        "b2c:a05Ws000005SbI1IAK",
+        "b2c:a05Ws000005Sc1FIAS",
+        "b2c:a05Ws000005Sc1GIAS",
+        "b2c:a05Ws000005Sc2lIAC",
+        "b2c:a05Ws000005ScHMIA0",
+        "b2c:a05Ws000005ScNkIAK",
+        "b2c:a05Ws000005Sch6IAC",
+        "b2c:a05Ws000005ScvaIAC",
+        "b2c:a05Ws000005ScvbIAC",
+        "b2c:a05Ws000005Sd0MIAS",
+        "b2c:a05Ws000005SdBiIAK",
+        "b2c:a05Ws000005SdEtIAK",
+        "b2c:a05Ws000005SdRlIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 15,
+            "normalized_end": 16
+          },
+          {
+            "answer": 1,
+            "evidence": 1,
+            "original_end": 17,
+            "normalized_end": 18
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "High-End Autos Co. is discussed in two different Liam Murphy calls (2024-04-07 and 2024-04-15) on the same opportunity, with different financing comparisons and different items Sofia wants to review before moving forward. The question's wording does not distinguish between them.",
+        "answers": [
+          {
+            "answer": "In the April 7, 2024 follow-up call, Sofia Kim said she had looked at options from High-End Autos Co. and noticed they offer similar credit approvals to AutoElite; Liam Murphy agreed the financing is comparable in approval rates but said AutoElite excels in transparency and ease of understanding. Before moving forward, Sofia said she wants to take more time to go through everything, particularly the customization options for the vehicles.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SU3jIAG",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2024-04-07T09:31:15] Sofia Kim: Not at the moment. Mostly, I wanted to ensure I'm making an informed choice. I've looked at options from High-End Autos Co. as well, and I noticed they offer similar credit approvals."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SU3jIAG",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2024-04-07T09:32:50] Sofia Kim: Not at this point, no. I'm going to take a bit more time to go through everything, particularly the customization options for the vehicles."
+              }
+            ]
+          },
+          {
+            "answer": "In the April 15, 2024 proposal discussion, Sofia asked how AutoElite's financing options compare, and Liam Murphy said they are on par with High-End Autos Co. in ensuring credit approval opportunities. Sofia responded that it's beneficial to have similar opportunities there, while raising a concern that some offers show reduced up-front costs but higher long-term maintenance expenses. Before moving forward, she said that after she reviews the adjusted terms, she should be able to make a final decision soon.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWyGIAW",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2024-04-15T14:33:10] Sofia Kim: That’s great. And financing options—how do they compare?\n[2024-04-15T14:33:25] Liam Murphy: Our financing options are quite flexible. They’re on par with High-End Autos Co., ensuring credit approval opportunities effectively. Feedback suggests clients find it equally productive as they match personal and organizational needs seamlessly."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SWyGIAW",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2024-04-15T14:34:20] Sofia Kim: That reassurance is valuable. So, after I review the adjusted terms, I should be able to make a final decision soon."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names 'High-End Autos Co.' as the comparison point. Only two calls in the dataset mention High-End Autos Co. by name, both within the same opportunity 'Sofia Kim - Luxury and Eco-Friendly Integration' with salesperson Liam Murphy. In the April 7 call, Sofia directly compares AutoElite's financing to High-End Autos Co. and states she wants to review customization options. In the April 15 call, Liam confirms financing is on par with High-End Autos Co. and Sofia says she needs to review the adjusted terms before making a final decision. These two calls together provide the complete answer.",
+        "answers": [
+          {
+            "answer": "Sofia Kim said that AutoElite's financing options seem straightforward and transparent, and that she noticed High-End Autos Co. offers similar credit approvals—meaning the two are comparable in that regard. Liam Murphy confirmed that AutoElite's financing is comparable in approval rates but excels in transparency and ease of understanding. Before moving forward, Sofia said she wants to take more time to review the customization options for the vehicles (April 7 call), and subsequently stated she needs to review the adjusted terms before making a final decision (April 15 call).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SU3jIAG",
+                "line_start": 5,
+                "line_end": 9,
+                "quote": "[2024-04-07T09:30:50] Sofia Kim: Well, I've been comparing your financing options with what I've seen from other companies. AutoElite's options seem straightforward and transparent, which I like.\n[2024-04-07T09:31:05] Liam Murphy: I'm glad you found that clarity useful. We really strive to make our financing as easy to understand as possible. Were there any specific options or terms you were curious about?\n[2024-04-07T09:31:15] Sofia Kim: Not at the moment. Mostly, I wanted to ensure I'm making an informed choice. I've looked at options from High-End Autos Co. as well, and I noticed they offer similar credit approvals.\n[2024-04-07T09:31:30] Liam Murphy: That's true. Our financing is comparable in approval rates, but where we excel is in transparency and ease of understanding. We've received positive feedback on that aspect."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SU3jIAG",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2024-04-07T09:32:50] Sofia Kim: Not at this point, no. I'm going to take a bit more time to go through everything, particularly the customization options for the vehicles."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SWyGIAW",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2024-04-15T14:33:10] Sofia Kim: That’s great. And financing options—how do they compare?\n[2024-04-15T14:33:25] Liam Murphy: Our financing options are quite flexible. They’re on par with High-End Autos Co., ensuring credit approval opportunities effectively. Feedback suggests clients find it equally productive as they match personal and organizational needs seamlessly."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SWyGIAW",
+                "line_start": 17,
+                "line_end": 18,
+                "quote": "[2024-04-15T14:34:20] Sofia Kim: That reassurance is valuable. So, after I review the adjusted terms, I should be able to make a final decision soon."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-f0dc9ec75004b79d",
+      "question": "Which vehicle models did Hina suggest for Olivia Wang's luxury and eco-friendly fleet enhancement, and what add-on plans are available for them?",
+      "gold_answer": "The 2024 Tesla Model S and 2023 Nissan Leaf, both supplementable with AutoElite's Comprehensive Maintenance Plan and Extended Warranty Plan.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMPXIA4",
+        "b2c:a05Ws000005SNGeIAO",
+        "b2c:a05Ws000005SPDaIAO",
+        "b2c:a05Ws000005SPK3IAO",
+        "b2c:a05Ws000005SPlOIAW",
+        "b2c:a05Ws000005SQ3DIAW",
+        "b2c:a05Ws000005SQ4qIAG",
+        "b2c:a05Ws000005SQ4rIAG",
+        "b2c:a05Ws000005SQMdIAO",
+        "b2c:a05Ws000005SQMeIAO",
+        "b2c:a05Ws000005SQODIA4",
+        "b2c:a05Ws000005SQRQIA4",
+        "b2c:a05Ws000005SQUdIAO",
+        "b2c:a05Ws000005SQfsIAG",
+        "b2c:a05Ws000005SR5mIAG",
+        "b2c:a05Ws000005SRKDIA4",
+        "b2c:a05Ws000005SRLqIAO",
+        "b2c:a05Ws000005SRQeIAO",
+        "b2c:a05Ws000005SSWTIA4",
+        "b2c:a05Ws000005ST16IAG",
+        "b2c:a05Ws000005SUQAIA4",
+        "b2c:a05Ws000005SUupIAG",
+        "b2c:a05Ws000005SUuqIAG",
+        "b2c:a05Ws000005SVSiIAO",
+        "b2c:a05Ws000005SVXSIA4",
+        "b2c:a05Ws000005SXhLIAW",
+        "b2c:a05Ws000005SXsdIAG",
+        "b2c:a05Ws000005SYAOIA4",
+        "b2c:a05Ws000005SYGtIAO",
+        "b2c:a05Ws000005SYGuIAO",
+        "b2c:a05Ws000005SYNNIA4",
+        "b2c:a05Ws000005SYlUIAW",
+        "b2c:a05Ws000005SZT1IAO",
+        "b2c:a05Ws000005SZWFIA4",
+        "b2c:a05Ws000005Sb8DIAS",
+        "b2c:a05Ws000005Sb9pIAC",
+        "b2c:a05Ws000005SbBRIA0",
+        "b2c:a05Ws000005SbD3IAK",
+        "b2c:a05Ws000005SbEfIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 0,
+            "evidence": 2,
+            "original_end": 2,
+            "normalized_end": 3
+          },
+          {
+            "answer": 0,
+            "evidence": 3,
+            "original_end": 2,
+            "normalized_end": 3
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across all of Hina Patel's calls on the 'Luxury and Eco-Friendly Portfolio Enhancement' opportunity, she consistently suggested the 2024 Tesla Model S and 2023 Nissan Leaf, with the AutoElite Comprehensive Maintenance Plan and Extended Warranty Plan as available add-ons.",
+        "answers": [
+          {
+            "answer": "Hina suggested the 2024 Tesla Model S (luxury, advanced technology) and the 2023 Nissan Leaf (eco-friendly choice) for Olivia Wang's luxury and eco-friendly fleet enhancement. Both models can be supplemented with the AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVSiIAO",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2020-09-18T11:02:50] Hina Patel: Certainly. We have several options including the 2024 Tesla Model S known for its luxury and advanced technology, and the 2023 Nissan Leaf, which is an excellent eco-friendly choice.\n[2020-09-18T11:03:05] Olivia Wang: The Tesla Model S sounds quite intriguing, given its reputation. And I’ve heard a lot about the Leaf's efficiency. Do these come with any maintenance or warranty plans?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005Sb9pIAC",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-09-22T11:31:55] Hina Patel: Perfect! Let's dive right in. We understand you’re looking at luxury and eco-friendly models. Our latest lineup includes vehicles like the 2024 Tesla Model S and the 2023 Nissan Leaf, catering to both luxury and sustainability. [pause] These models come equipped with the latest technological advancements, which are a notch above many competitors out there."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SUQAIA4",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2020-11-14T11:00:30] Hina Patel: Great to hear! Let's dive into our quote for enhancing your fleet with luxury and eco-friendly vehicles. We proposed the 2024 Tesla Model S and the 2023 Nissan Leaf."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SYlUIAW",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2020-10-02T16:00:10] Hina Patel: I’m great, thank you for asking. I wanted to follow up on our recent demo session and discuss how the Tesla Model S and Nissan Leaf might fit into your company's vehicle portfolio."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Hina (Hina Patel) and the 'luxury and eco-friendly fleet enhancement,' which uniquely identifies the opportunity 'Luxury and Eco-Friendly Portfolio Enhancement' (006Ws00000ALrzdIAD). Hina Patel is the only salesperson on this opportunity. Across the four calls in this opportunity, she consistently suggests the 2024 Tesla Model S and the 2023 Nissan Leaf, and the add-on plans available are the AutoElite Comprehensive Maintenance Plan and the Extended Warranty Plan.",
+        "answers": [
+          {
+            "answer": "Hina Patel suggested the 2024 Tesla Model S (for luxury and advanced technology) and the 2023 Nissan Leaf (as an eco-friendly choice) for Olivia Wang's luxury and eco-friendly fleet enhancement. The add-on plans available for both models are the AutoElite Comprehensive Maintenance Plan and the Extended Warranty Plan.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVSiIAO",
+                "line_start": 14,
+                "line_end": 17,
+                "quote": "[2020-09-18T11:02:50] Hina Patel: Certainly. We have several options including the 2024 Tesla Model S known for its luxury and advanced technology, and the 2023 Nissan Leaf, which is an excellent eco-friendly choice.\n[2020-09-18T11:03:05] Olivia Wang: The Tesla Model S sounds quite intriguing, given its reputation. And I’ve heard a lot about the Leaf's efficiency. Do these come with any maintenance or warranty plans?\n[2020-09-18T11:03:22] Hina Patel: Yes, both models can be supplemented with our AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan. These ensure your vehicles are always in top condition and provide peace of mind against unexpected repairs over the years."
+              },
+              {
+                "call_id": "b2c:a05Ws000005Sb9pIAC",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-09-22T11:31:55] Hina Patel: Perfect! Let's dive right in. We understand you’re looking at luxury and eco-friendly models. Our latest lineup includes vehicles like the 2024 Tesla Model S and the 2023 Nissan Leaf, catering to both luxury and sustainability. [pause] These models come equipped with the latest technological advancements, which are a notch above many competitors out there."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SYlUIAW",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2020-10-02T16:00:10] Hina Patel: I’m great, thank you for asking. I wanted to follow up on our recent demo session and discuss how the Tesla Model S and Nissan Leaf might fit into your company's vehicle portfolio."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SYlUIAW",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2020-10-02T16:01:30] Hina Patel: The Leaf is an excellent option for a reliable and eco-friendly vehicle. It’s practical yet comes with all the modern amenities. Plus, its zero emissions make it a sustainable choice, aligning well with enhancing your eco-friendly fleet."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SUQAIA4",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2020-11-14T11:00:30] Hina Patel: Great to hear! Let's dive into our quote for enhancing your fleet with luxury and eco-friendly vehicles. We proposed the 2024 Tesla Model S and the 2023 Nissan Leaf."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SUQAIA4",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2020-11-14T11:01:40] Hina Patel: And as for support, our vehicles come with exceptional post-purchase plans. For instance, our Comprehensive Maintenance Plan is designed to keep your cars in top condition, combining cost-effective solutions with high-quality service from factory-trained technicians."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SUQAIA4",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2020-11-14T11:02:40] Hina Patel: Certainly, the Extended Warranty Plan covers an additional range of repairs beyond the standard warranty period, ensuring your investment is protected well into the future. Many clients find peace of mind with this added coverage."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SYlUIAW",
+                "line_start": 14,
+                "line_end": 17,
+                "quote": "[2020-10-02T16:02:10] Hina Patel: Exactly, and we uphold all our maintained vehicles with comprehensive maintenance and extended warranty plans, ensuring smooth operation and peace of mind.\n[2020-10-02T16:02:20] Olivia Wang: Speaking of warranties, could you elaborate on what’s included in the extended warranty plans?\n[2020-10-02T16:02:30] Hina Patel: Of course! Our extended warranty covers both the mechanical and electrical components, plus it includes regular maintenance tasks, so you're covered for most situations that might arise."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two vehicle models (2024 Tesla Model S for luxury/advanced technology and 2023 Nissan Leaf as eco-friendly choice) and the same two add-on plans (AutoElite Comprehensive Maintenance Plan and Extended Warranty Plan). The reference likewise lists both models and both add-on plans, covering all facts requested by the question. Minor wording differences (e.g., 'Hina' vs. 'Hina Patel') do not affect factual agreement."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

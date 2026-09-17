@@ -1,0 +1,373 @@
+[
+  {
+    "question_id": "b2b-multi_call-ea95c6bc0aad601b",
+    "question": "For the PowerGrid Innovations partnership, what concern did Gabriel Acosta raise about data protection in the initial call, and what issue did he report in the follow-up about the competitor products he had been trying?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "Gabriel Acosta's data protection concern from the initial call and his reported issue with competitor products in the follow-up",
+        "relationship": "two independent fact lookups joined across two calls",
+        "reason": "The data protection concern and the competitor product issue are unrelated business issues; sharing the same account/call participants does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question naturally identifies the PowerGrid Innovations partnership and Gabriel Acosta, asking about a data-protection concern from the initial call (Jan 21) and a competitor-product issue from the follow-up (Feb 14). The initial call (b2b:a05Wt000003T2RKIA0) contains Gabriel's statement that 'Data protection is actually a big concern for us, especially with some of the issues we've seen in the industry recently,' matching the gold answer's first part. The follow-up call (b2b:a05Wt000003SvEZIA0) contains Gabriel's remark that competitor early engagement 'has been mixed' with 'a few hiccups in the engagement depth initially,' matching the gold answer's second part. Each source contributes an exclusive requested fact. The answer states precisely the two requested facts without unasked extras. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Gabriel Acosta on 2023-01-21 explicitly states 'Data protection is actually a big concern for us, especially with some of the issues we've seen in the industry recently,' which directly supports the answer_claim about data protection being a big concern given recent industry issues."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Gabriel Acosta on 2023-02-14 explicitly states 'It's been mixed. There are a few hiccups in the engagement depth initially, which I hope TechPulse could provide better,' which directly supports the answer_claim about competitor products having mixed early engagement with hiccups in engagement depth."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) data protection was a big concern given recent industry issues, and (2) competitor products had mixed early engagement with hiccups in engagement depth. Evidence index 0 directly supports claim (1) with Gabriel Acosta's exact words from the initial call (2023-01-21). Evidence index 1 directly supports claim (2) with Gabriel Acosta's exact words from the follow-up call (2023-02-14). The context metadata confirms both calls are associated with the PowerGrid Innovations Partnership and Gabriel Acosta. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-764377d9c948f12b",
+    "question": "Across the two TechPulse Solutions calls with Javier Sanchez at NexGen Biotech, how did Mei Lin position TechPulse's pricing in the initial discussion, and what cost-related concern did Javier raise in the follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Mei Lin positioned TechPulse's pricing in the initial call and what cost-related concern Javier raised in the follow-up call",
+        "relationship": "Both parts address the same business issue\u2014pricing/cost\u2014across the two calls",
+        "reason": "The question compares pricing positioning with a cost concern, forming one coherent commercial topic spanning the two calls, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Swx6IAC",
+                "fact": "Mei Lin positioned TechPulse's pricing as competitive upfront with a focus on total long-term value and cost transparency.",
+                "why_other_call_cannot_supply_it": "The other call only mentions competitive pricing and favorable total cost of ownership, but does not include the emphasis on cost transparency or long-term value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2kiIAC",
+                "fact": "Javier raised a cost-related concern that competitors offer similar early pricing and he wants transparency of future cost projections.",
+                "why_other_call_cannot_supply_it": "The other call does not contain any mention of competitors' pricing or a request for transparency of future cost projections."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: how Mei positioned pricing in the initial call and what cost-related concern Javier raised in the follow-up. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: Mei's initial pricing positioning and Javier's follow-up cost concern. The initial pricing positioning is found in the first call (b2b:a05Wt000003Swx6IAC) where Mei mentions competitive pricing and favorable total cost of ownership. The follow-up cost concern is also in the same call, where Javier says competitors offer similar early pricing and he wants transparency of future cost projections. The second call (b2b:a05Wt000003T2kiIAC) does not contain any cost-related concern from Javier; it only discusses product features and general pricing strategy. Therefore, the first call alone supplies all the requested information, making the second call unnecessary for the question's needs."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Swx6IAC",
+                  "fact": "Mei Lin positioned TechPulse's pricing as competitive upfront with a focus on total long-term value and cost transparency.",
+                  "why_other_call_cannot_supply_it": "The other call only mentions competitive pricing and favorable total cost of ownership, but does not include the emphasis on cost transparency or long-term value."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2kiIAC",
+                  "fact": "Javier raised a cost-related concern that competitors offer similar early pricing and he wants transparency of future cost projections.",
+                  "why_other_call_cannot_supply_it": "The other call does not contain any mention of competitors' pricing or a request for transparency of future cost projections."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: how Mei positioned pricing in the initial call and what cost-related concern Javier raised in the follow-up. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2kiIAC",
+                "fact": "Mei positioned TechPulse's pricing as competitive with a focus on favorable total cost of ownership and long-term returns",
+                "why_other_call_cannot_supply_it": "The May 11 call only briefly reiterates 'competitive pricing upfront' as part of a cost-transparency discussion; the substantive initial pricing positioning (TCO emphasis) appears only in the May 9 call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swx6IAC",
+                "fact": "Javier raised the concern that competitors offer similar early competitive pricing and that NexGen wants transparency of future cost projections",
+                "why_other_call_cannot_supply_it": "The May 9 call contains no cost-related concern from Javier; this concern appears only in the May 11 follow-up call"
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information from two different calls: Mei's initial pricing positioning (only in the May 9 call) and Javier's follow-up cost concern about future cost-projection transparency (only in the May 11 call). Neither call alone suffices, and the facts are substantively different, not paraphrases."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2kiIAC",
+                  "fact": "Mei positioned TechPulse's pricing as competitive with a focus on favorable total cost of ownership and long-term returns",
+                  "why_other_call_cannot_supply_it": "The May 11 call only briefly reiterates 'competitive pricing upfront' as part of a cost-transparency discussion; the substantive initial pricing positioning (TCO emphasis) appears only in the May 9 call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Swx6IAC",
+                  "fact": "Javier raised the concern that competitors offer similar early competitive pricing and that NexGen wants transparency of future cost projections",
+                  "why_other_call_cannot_supply_it": "The May 9 call contains no cost-related concern from Javier; this concern appears only in the May 11 follow-up call"
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information from two different calls: Mei's initial pricing positioning (only in the May 9 call) and Javier's follow-up cost concern about future cost-projection transparency (only in the May 11 call). Neither call alone suffices, and the facts are substantively different, not paraphrases."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Mei Lin's pricing positioning in the initial call and Javier's cost concern in the follow-up. Call 2 (May 9, initial) contains Mei's statement about competitive pricing and favorable total cost of ownership. Call 1 (May 11, follow-up) contains Javier's concern that competitors offer similar early pricing and his desire for transparency of future cost projections. Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is naturally scoped to a rep reviewing how pricing was framed and what objection emerged across two calls with the same contact.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2020-05-09 call shows Mei Lin explicitly stating 'we aim to remain competitive in our pricing, we focus heavily on offering a favorable total cost of ownership.' This directly supports the answer_claim that Mei said TechPulse aims to remain competitive on pricing while focusing on favorable total cost of ownership."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2020-05-11 call shows Javier Sanchez stating 'We've noticed similar offerings on competitive pricing early on from other companies but are really keen on the transparency of cost projections in the future.' This directly supports the answer_claim that Javier noted similar early competitive pricing from other companies and expressed keenness on transparency of future cost projections."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Mei emphasized competitive pricing with favorable total cost of ownership in the initial discussion, and (2) in the follow-up Javier said competitors offer similar early pricing and he wants transparency of future cost projections. Evidence index 0 (from the 2020-05-09 call, which is the earlier/initial call) directly supports part 1 with Mei Lin's exact words. Evidence index 1 (from the 2020-05-11 call, the follow-up) directly supports part 2 with Javier's exact words. The context metadata confirms both calls involve Javier Sanchez at NexGen Biotech and the same opportunity. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-7600acdad482ee5e",
+    "question": "What pricing did Jorge quote Lina Chen at PowerGrid Innovations for SecureFlow Suite, and what next step did they agree on?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price Jorge quoted Lina Chen for SecureFlow Suite and the agreed next step",
+        "relationship": "single coherent request: quote details plus the follow-up next step from the same discussion",
+        "reason": "Pricing quote and the agreed next step are part of one sales interaction on the same deal, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the specific pricing Jorge quoted and the agreed next step, both of which are clearly stated in the single transcript. The gold answer accurately reflects the dialogue: $6,479.89 for 12 units after a 10% discount, and scheduling a product demonstration. The question naturally identifies the rep (Jorge), the contact (Lina Chen), the account (PowerGrid Innovations), and the product (SecureFlow Suite), making it well-scoped. No locator preamble, no answer leakage, no unsupported claims. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jorge Pinto explicitly states: 'our SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units.' This directly supports the answer_claim about the product name, discount percentage, price, and unit quantity."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Jorge Pinto states 'Our next step is to set up a product demonstration' and Lina Chen responds 'That sounds excellent. I'll make sure the relevant members from our side are available for the session.' This confirms mutual agreement on scheduling a product demonstration for PowerGrid's team, supporting the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two factual claims: (1) SecureFlow Suite priced at $6,479.89 for 12 units after a 10% discount \u2014 directly supported by evidence index 0; (2) next step is scheduling a product demonstration for PowerGrid's team \u2014 directly supported by evidence index 1, where Jorge proposes the demo and Lina agrees, confirming it is for her team. Both claims are fully substantiated by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-953da2095af25768",
+    "question": "What pricing did TechPulse propose to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing proposed for two products (AI Cirku-Tech and AIOptics Vision) in TechPulse's proposal to AgroSmart Innovations",
+        "relationship": "single coherent commercial quote lookup covering the same proposal",
+        "reason": "One pricing lookup for products in the same quote/proposal; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about pricing proposed by TechPulse to AgroSmart Innovations for two specific products. The dialogue at 11:02:35 confirms Jaemin Park states 'AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing.' The gold answer matches this exactly. The question is naturally worded, scoped to a clear business situation (pricing proposal for named products to a named account), and a rep/AM would plausibly want to recall proposed pricing. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jaemin Park explicitly states 'AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing,' which directly matches the answer_claim. The speaker is identified, the products are named, the 5% discount is specified for AI Cirku-Tech, and standard pricing is stated for AIOptics Vision."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item fully supports the gold_answer. The quote explicitly names both products (AI Cirku-Tech and AIOptics Vision), specifies the 5% discounted rate for AI Cirku-Tech, and confirms standard pricing for AIOptics Vision. The context metadata confirms the call is between TechPulse (opportunity name 'TechPulse Collaboration with AgroSmart Innovations') and AgroSmart Innovations (account_name), matching the question's parties. All factual claims in the gold_answer are covered by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d1a4ce275ee339b5",
+    "question": "What did Sofia Kim say about how AutoElite's financing compares to High-End Autos Co., and what does she still want to review before moving forward?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Sofia Kim's comparison of AutoElite's financing versus High-End Autos Co., and what she still wants to review before moving forward",
+        "relationship": "single coherent request: competitive financing comparison plus her remaining pre-decision review items on the same deal",
+        "reason": "Both parts concern the same buying decision\u2014her competitive concern and her outstanding next steps\u2014forming one coherent sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two things from a single call: (1) Sofia's comparison of AutoElite's financing vs. High-End Autos Co., and (2) what she still wants to review. The dialogue confirms she calls AutoElite's financing 'straightforward and transparent' and notes High-End Autos Co. offers 'similar credit approvals.' She also states she wants to review 'the customization options for the vehicles.' The gold answer captures both facts precisely without extras. The question is naturally phrased, scoped to a named customer and account, and a rep would plausibly want this competitive-positioning and next-step info. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Sofia Kim stating AutoElite's options seem 'straightforward and transparent, which I like,' and that she 'looked at options from High-End Autos Co. as well, and I noticed they offer similar credit approvals.' This fully supports the answer_claim about comparing financing, noting similar credit approvals, and liking AutoElite's transparency."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Sofia Kim saying 'I'm going to take a bit more time to go through everything, particularly the customization options for the vehicles.' This directly supports the claim that she wants more time to review customization options before moving forward."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) She finds AutoElite's financing straightforward and transparent \u2013 supported by index 0 ('straightforward and transparent, which I like'). (2) High-End Autos Co. offers similar credit approvals \u2013 supported by index 0 ('they offer similar credit approvals'). (3) She still wants to review the customization options for the vehicles \u2013 supported by index 1 ('particularly the customization options for the vehicles'). All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-f0dc9ec75004b79d",
+    "question": "Which vehicle models did Hina suggest for Olivia Wang's luxury and eco-friendly fleet enhancement, and what add-on plans are available for them?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the vehicle models Hina recommended for Olivia Wang's luxury and eco-friendly fleet enhancement, along with the add-on plans available for those models.",
+        "relationship": "single coherent request: model recommendations and their associated add-on options for the same fleet enhancement need",
+        "reason": "Both parts address the same sales inquiry\u2014suggested models and the add-on plans tied to those models\u2014forming one natural recommendation question, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks which vehicle models Hina suggested for Olivia Wang's luxury/eco-friendly fleet enhancement and what add-on plans are available. The single call transcript confirms Hina recommended the 2024 Tesla Model S and 2023 Nissan Leaf, and that both can be supplemented with AutoElite's Comprehensive Maintenance Plan and Extended Warranty Plan. The gold answer states exactly these facts with no unasked extras. The question is naturally phrased, adequately scoped to a specific account and opportunity, and a rep/account manager would plausibly want this information. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Hina Patel explicitly names 'the 2024 Tesla Model S known for its luxury and advanced technology, and the 2023 Nissan Leaf, which is an excellent eco-friendly choice,' directly supporting the claim that Hina suggested those two models."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Hina Patel states 'both models can be supplemented with our AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan,' directly supporting the claim about the two add-on plans available for both vehicles."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states the 2024 Tesla Model S and 2023 Nissan Leaf were suggested, both supplementable with AutoElite's Comprehensive Maintenance Plan and Extended Warranty Plan. Evidence index 0 confirms the two vehicle models suggested by Hina, and evidence index 1 confirms both add-on plans. The context metadata confirms the account is Olivia Wang and the opportunity is 'Luxury and Eco-Friendly Portfolio Enhancement,' aligning with the question's framing. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  }
+]

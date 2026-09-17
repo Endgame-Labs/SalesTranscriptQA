@@ -1,0 +1,1727 @@
+[
+  {
+    "job_id": "764377d9c948f12bc757eabaeb88b7d5f750f3ca3c63bb5a576d48708dcb415d",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003Swx6IAC",
+      "b2b:a05Wt000003T2kiIAC"
+    ],
+    "status": "accepted",
+    "question": "Across the two TechPulse Solutions calls with Javier Sanchez at NexGen Biotech, how did Mei Lin position TechPulse's pricing in the initial discussion, and what cost-related concern did Javier raise in the follow-up?",
+    "gold_answer": "Initially Mei emphasized competitive pricing with favorable total cost of ownership; in the follow-up Javier said competitors offer similar early pricing and he wants transparency of future cost projections.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T2kiIAC",
+        "answer_claim": "Mei said TechPulse aims to remain competitive on pricing while focusing on favorable total cost of ownership.",
+        "kind": "dialogue",
+        "line_start": 15,
+        "line_end": 17,
+        "quote": "[2020-05-09T16:50:15] Javier Sanchez: That's certainly a significant factor for us. How do these innovations reflect in your pricing strategy?\n[2020-05-09T16:50:40] Mei Lin: While we aim to remain competitive in our pricing, we focus heavily on offering a favorable total cost of ownership. Our products not only represent an initial investment but provide substantial returns through increased efficiency and productivity.",
+        "start": 2737,
+        "end": 3160
+      },
+      {
+        "call_id": "b2b:a05Wt000003Swx6IAC",
+        "answer_claim": "Javier noted similar early competitive pricing from other companies and said they are keen on transparency of future cost projections.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2020-05-11T11:32:35] Javier Sanchez: I see. We\u2019ve noticed similar offerings on competitive pricing early on from other companies but are really keen on the transparency of cost projections in the future.",
+        "start": 1797,
+        "end": 2001
+      }
+    ],
+    "question_id": "b2b-multi_call-764377d9c948f12b",
+    "candidate": {
+      "question": "Across the two TechPulse Solutions calls with Javier Sanchez at NexGen Biotech, how did Mei Lin position TechPulse's pricing in the initial discussion, and what cost-related concern did Javier raise in the follow-up?",
+      "gold_answer": "Initially Mei emphasized competitive pricing with favorable total cost of ownership; in the follow-up Javier said competitors offer similar early pricing and he wants transparency of future cost projections.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T2kiIAC",
+          "answer_claim": "Mei said TechPulse aims to remain competitive on pricing while focusing on favorable total cost of ownership.",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 17,
+          "quote": "[2020-05-09T16:50:15] Javier Sanchez: That's certainly a significant factor for us. How do these innovations reflect in your pricing strategy?\n[2020-05-09T16:50:40] Mei Lin: While we aim to remain competitive in our pricing, we focus heavily on offering a favorable total cost of ownership. Our products not only represent an initial investment but provide substantial returns through increased efficiency and productivity.",
+          "start": 2737,
+          "end": 3160
+        },
+        {
+          "call_id": "b2b:a05Wt000003Swx6IAC",
+          "answer_claim": "Javier noted similar early competitive pricing from other companies and said they are keen on transparency of future cost projections.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2020-05-11T11:32:35] Javier Sanchez: I see. We\u2019ve noticed similar offerings on competitive pricing early on from other companies but are really keen on the transparency of cost projections in the future.",
+          "start": 1797,
+          "end": 2001
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the initial discussion (May 9), Mei Lin positioned TechPulse's pricing as competitive while focusing on a favorable total cost of ownership, emphasizing that products provide substantial returns through increased efficiency and productivity. In the follow-up (May 11), Javier raised a cost-related concern about the transparency of cost projections in the future, noting they had seen similar competitive pricing from other companies but were keen on transparent future cost projections.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer \u2014 only one call (2020-05-11) is supplied, so the follow-up call cannot be assessed. In the initial discussion, Mei Lin positioned TechPulse's pricing as competitive upfront, emphasizing total long-term value through innovation and cost transparency, with a better ROI over time (e.g., SecureFlow Suite at a competitive price suited to NexGen's budget without compromising security). Javier acknowledged that competitors offer similar early competitive pricing and said NexGen is keen on transparency of future cost projections. What is missing: the second (follow-up) call transcript, which would be needed to identify the cost-related concern Javier raised in the follow-up.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer. In the initial call (2020-05-09), when Javier asked how the innovations reflect in TechPulse's pricing strategy, Mei Lin positioned pricing as competitive while emphasizing a favorable total cost of ownership \u2014 noting the products represent an initial investment but deliver substantial returns through increased efficiency and productivity. However, the follow-up call with Javier Sanchez is not supplied, so the cost-related concern he raised in that follow-up cannot be determined from the provided data.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both evidence quotes directly support the gold: May 9 call shows Mei's 'competitive pricing... favorable total cost of ownership' and May 11 call shows Javier's concern about 'transparency of cost projections in the future.' The independent answer matches semantically. Each call supplies a distinct necessary fact (initial pricing positioning vs. follow-up cost concern), and each single-call ablation explicitly fails to answer the full question; no-context answers are UNKNOWN."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003Swx6IAC",
+          "b2b:a05Wt000003T2kiIAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxExIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzlMIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "javier sanchez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3aPIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4MkIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "javier sanchez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3dgIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3djIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2MdIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "javier sanchez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7xIAC",
+              "b2b:a05Wt000003Sx8QIAS",
+              "b2b:a05Wt000003T1FDIA0",
+              "b2b:a05Wt000003T41hIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "javier sanchez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsNDIA0",
+              "b2b:a05Wt000003Swx6IAC",
+              "b2b:a05Wt000003SxA1IAK",
+              "b2b:a05Wt000003SypJIAS",
+              "b2b:a05Wt000003T2HjIAK",
+              "b2b:a05Wt000003T2kiIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the initial discussion (2020-05-09 call), Mei Lin positioned TechPulse's pricing as competitive while emphasizing a favorable total cost of ownership\u2014products represent an initial investment but deliver substantial returns through increased efficiency and productivity. In the follow-up (2020-05-11 call), after Mei reiterated competitive upfront pricing focused on long-term value and cost transparency, Javier raised the concern that other companies offer similar competitive pricing early on, and NexGen Biotech is really keen on the transparency of future cost projections for effective budget planning. Mei committed to providing the most transparent information possible and more precise cost predictions over time.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T2kiIAC",
+                  "line_start": 15,
+                  "line_end": 17,
+                  "quote": "[2020-05-09T16:50:15] Javier Sanchez: That's certainly a significant factor for us. How do these innovations reflect in your pricing strategy?\n[2020-05-09T16:50:40] Mei Lin: While we aim to remain competitive in our pricing, we focus heavily on offering a favorable total cost of ownership. Our products not only represent an initial investment but provide substantial returns through increased efficiency and productivity."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Swx6IAC",
+                  "line_start": 8,
+                  "line_end": 11,
+                  "quote": "[2020-05-11T11:32:15] Mei Lin: Certainly. What sets us apart is our commitment to total long-term value through innovation and cost transparency. While we do have competitive pricing upfront, we focus on ensuring our solutions provide ongoing benefits, essentially giving you a better return on investment as time progresses.\n[2020-05-11T11:32:35] Javier Sanchez: I see. We\u2019ve noticed similar offerings on competitive pricing early on from other companies but are really keen on the transparency of cost projections in the future.\n[2020-05-11T11:32:55] Mei Lin: I completely understand. While both of our companies have found areas for improvement in this regard, I'll make sure to keep you updated with the most transparent information possible. We are actively enhancing our processes to offer more precise cost predictions over time."
+                }
+              ],
+              "reason": "The 2020-05-09 call (b2b:a05Wt000003T2kiIAC) lines 15-16 show Javier asking how innovations reflect in pricing strategy and Mei Lin responding that TechPulse aims to remain competitive in pricing while focusing on favorable total cost of ownership, with products providing substantial returns through increased efficiency and productivity. The 2020-05-11 call (b2b:a05Wt000003Swx6IAC) lines 8-10 show Mei Lin reiterating competitive upfront pricing with a focus on long-term value and cost transparency, and Javier raising the concern that other companies offer similar competitive pricing early on but NexGen is keen on transparency of future cost projections. Line 11 confirms this helps them plan their budget. All facts are directly supported by the named participants (Mei Lin and Javier Sanchez) at NexGen Biotech across these two TechPulse Solutions calls."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: Mei Lin positioned TechPulse's pricing as competitive with a favorable total cost of ownership in the initial call, and in the follow-up Javier raised the concern that competitors offer similar early pricing and emphasized the need for transparency in future cost projections. Answer A provides additional detail (dates, Mei's commitment to transparency, efficiency/productivity framing), but these are extra unrequested details that do not alter the requested facts. The semantic content of the requested facts is identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvJOIA0",
+              "b2b:a05Wt000003SvKzIAK",
+              "b2b:a05Wt000003SvMbIAK",
+              "b2b:a05Wt000003SvODIA0",
+              "b2b:a05Wt000003SvPpIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "javier sanchez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StEPIA0",
+              "b2b:a05Wt000003SxMoIAK",
+              "b2b:a05Wt000003Syh5IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "javier sanchez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwCOIA0",
+              "b2b:a05Wt000003SxoPIAS",
+              "b2b:a05Wt000003T3deIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrSpIAK",
+              "b2b:a05Wt000003SyHeIAK",
+              "b2b:a05Wt000003SyKcIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxJfIAK",
+              "b2b:a05Wt000003T0nsIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuVQIA0",
+              "b2b:a05Wt000003T2SzIAK",
+              "b2b:a05Wt000003T2WCIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mei lin"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both calls are needed and each supplies a distinct fact: the May 9 call shows Mei's initial pricing positioning (competitive pricing with favorable total cost of ownership), and the May 11 follow-up shows Javier's cost concern (similar early competitive pricing from others, wanting transparency of future cost projections). The question is self-contained, business-relevant, and the gold answer is exactly supported by the quoted dialogue with correct chronology."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "how did Mei Lin position TechPulse's pricing in the initial discussion",
+            "explicitly_requested": true,
+            "required_fact": "Mei Lin said TechPulse aims to remain competitive in pricing while focusing on a favorable total cost of ownership, with products providing substantial returns through increased efficiency and productivity",
+            "source_call_ids": [
+              "b2b:a05Wt000003T2kiIAC"
+            ]
+          },
+          {
+            "question_span": "what cost-related concern did Javier raise in the follow-up",
+            "explicitly_requested": true,
+            "required_fact": "Javier raised the need for transparency of future cost projections, noting other companies offer competitive pricing early on but NexGen is keen on transparent long-term cost projections",
+            "source_call_ids": [
+              "b2b:a05Wt000003Swx6IAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: how Mei Lin positioned pricing in the initial call, and what cost-related concern Javier raised in the follow-up. The gold answer provides exactly these two facts, with no extra unasked claims. The independent answer covers both facts accurately. The obligations correctly map to the two calls, each supplying a distinct requested fact. The reference is minimal and complete.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Initially Mei emphasized competitive pricing with favorable total cost of ownership",
+            "question_span": "how did Mei Lin position TechPulse's pricing in the initial discussion",
+            "required_by_question": true
+          },
+          {
+            "claim": "in the follow-up Javier said competitors offer similar early pricing",
+            "question_span": "what cost-related concern did Javier raise in the follow-up",
+            "required_by_question": true
+          },
+          {
+            "claim": "he wants transparency of future cost projections",
+            "question_span": "what cost-related concern did Javier raise in the follow-up",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "7600acdad482ee5e5aa4bf7e7e80c40bf53ff28202606301469a95c7227c80f5",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SuIbIAK"
+    ],
+    "status": "accepted",
+    "question": "What pricing did Jorge quote Lina Chen at PowerGrid Innovations for SecureFlow Suite, and what next step did they agree on?",
+    "gold_answer": "SecureFlow Suite is priced at $6,479.89 for 12 units after a 10% discount; next step is scheduling a product demonstration for PowerGrid's team.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SuIbIAK",
+        "answer_claim": "SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units.",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 15,
+        "quote": "[2023-08-28T11:35:30] Jorge Pinto: Absolutely, understanding the cost perspective early on is crucial. We offer competitive pricing, and for example, our SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units. We\u2019ll ensure to keep that competitive while giving you maximum value. Plus, we\u2019ll go over all pricing details once we tailor the proposal specifically for PowerGrid.",
+        "start": 3234,
+        "end": 3641
+      },
+      {
+        "call_id": "b2b:a05Wt000003SuIbIAK",
+        "answer_claim": "Next step is to set up a product demonstration showing enhanced configurability and intuitive interfaces.",
+        "kind": "dialogue",
+        "line_start": 16,
+        "line_end": 18,
+        "quote": "[2023-08-28T11:36:20] Jorge Pinto: Definitely. Our next step is to set up a product demonstration. This will give you and your team a detailed look at features like enhanced configurability and intuitive interfaces. How does that sound?\n[2023-08-28T11:36:35] Lina Chen: That sounds excellent. I\u2019ll make sure the relevant members from our side are available for the session.",
+        "start": 3833,
+        "end": 4206
+      }
+    ],
+    "question_id": "b2b-single_call-7600acdad482ee5e",
+    "candidate": {
+      "question": "What pricing did Jorge quote Lina Chen at PowerGrid Innovations for SecureFlow Suite, and what next step did they agree on?",
+      "gold_answer": "SecureFlow Suite is priced at $6,479.89 for 12 units after a 10% discount; next step is scheduling a product demonstration for PowerGrid's team.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SuIbIAK",
+          "answer_claim": "SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2023-08-28T11:35:30] Jorge Pinto: Absolutely, understanding the cost perspective early on is crucial. We offer competitive pricing, and for example, our SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units. We\u2019ll ensure to keep that competitive while giving you maximum value. Plus, we\u2019ll go over all pricing details once we tailor the proposal specifically for PowerGrid.",
+          "start": 3234,
+          "end": 3641
+        },
+        {
+          "call_id": "b2b:a05Wt000003SuIbIAK",
+          "answer_claim": "Next step is to set up a product demonstration showing enhanced configurability and intuitive interfaces.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 18,
+          "quote": "[2023-08-28T11:36:20] Jorge Pinto: Definitely. Our next step is to set up a product demonstration. This will give you and your team a detailed look at features like enhanced configurability and intuitive interfaces. How does that sound?\n[2023-08-28T11:36:35] Lina Chen: That sounds excellent. I\u2019ll make sure the relevant members from our side are available for the session.",
+          "start": 3833,
+          "end": 4206
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Jorge quoted Lina Chen $6,479.89 for a batch of 12 units of SecureFlow Suite after a 10% discount. They agreed to set up a product demonstration as the next step.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Dialogue directly supports both claims: Jorge quotes SecureFlow Suite at $6,479.89 for 12 units after 10% discount (lines 14-15) and agrees next step is a product demonstration (lines 16-18). Question is a realistic sales need, names allowed, no leakage (question asks what was quoted, not the values). Independent answer matches gold semantically. No-context answers are UNKNOWN, so they fail. This is a single-call QA, so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SuIbIAK"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0ssIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any call between Jorge and Lina Chen at PowerGrid Innovations regarding SecureFlow Suite. The only call available is between Jorge Pinto and Lina Rodr\u00edguez of Madrid Innovate, discussing CloudInnovate Space and IntegrGuard Secure. No pricing for SecureFlow Suite or agreed next step with Lina Chen can be found.",
+              "evidence": [],
+              "reason": "The question asks about Jorge quoting Lina Chen at PowerGrid Innovations for SecureFlow Suite. The sole source call (b2b:a05Wt000003T0ssIAC) involves Jorge Pinto speaking with Lina Rodr\u00edguez (not Lina Chen) at Madrid Innovate (not PowerGrid Innovations) about CloudInnovate Space and IntegrGuard Secure (not SecureFlow Suite). None of the exact named people, account, or product in the question appear in the sources, so no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2OEIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call between Jorge and Lina Chen at PowerGrid Innovations regarding SecureFlow Suite. The only call provided is between Jorge Pinto and Fiona Chen of SkyVista Technologies, discussing TrainEDU Suite, EnergyReduce Pro, and AI Cirku-Tech. No pricing for SecureFlow Suite or agreed next step with Lina Chen can be found.",
+              "evidence": [],
+              "reason": "The question asks about a specific person (Lina Chen), company (PowerGrid Innovations), and product (SecureFlow Suite). The sole source call involves Fiona Chen at SkyVista Technologies discussing entirely different products. There is no mention of Lina Chen, PowerGrid Innovations, or SecureFlow Suite anywhere in the provided transcripts, so no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T23OIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving Jorge, Lina Chen, or PowerGrid Innovations. The only transcript is between Aaliyah Jones (ABC Tech Solutions) and Lina Zhang of Beijing Tech Ventures discussing SecureFlow Suite. No pricing quote from Jorge to Lina Chen at PowerGrid Innovations, nor any agreed next step between those named parties, can be found in the provided data.",
+              "evidence": [],
+              "reason": "The question asks specifically about Jorge quoting Lina Chen at PowerGrid Innovations for SecureFlow Suite and their agreed next step. The sole call record (b2b:a05Wt000003T23OIAS) features Aaliyah Jones speaking with Lina Zhang of Beijing Tech Ventures\u2014different salesperson, different contact name, and different company. Because none of the exact named people, account, or event scope match, no complete answer can be constructed from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvXuIAK",
+              "b2b:a05Wt000003SwnTIAS",
+              "b2b:a05Wt000003SwqkIAC",
+              "b2b:a05Wt000003Sx8NIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No complete answer exists. The question asks about pricing quoted by 'Jorge' to Lina Chen at PowerGrid Innovations for SecureFlow Suite, but no salesperson named Jorge appears in any of the provided call transcripts. The representative in all four calls is Amir Haddad from TechPulse Solutions. Furthermore, no specific pricing figures were ever quoted for SecureFlow Suite in any call. SecureFlow Suite is mentioned only as a data-protection/security offering (2023-07-27 call, line 8; 2023-08-07 call, line 6) and in a case-study context (2023-10-10 call, line 4). The only pricing-related exchange (2023-10-10, lines 5\u20136) contains no dollar amounts, only general language about 'early-stage pricing' alignment. Because the named salesperson (Jorge) does not exist in these sources and no SecureFlow Suite price was quoted, the question cannot be answered.",
+              "evidence": [],
+              "reason": "The question specifies a salesperson named Jorge, but all four calls feature Amir Haddad as the TechPulse Solutions representative. No call contains any pricing quote for SecureFlow Suite. The draft extraction correctly identifies these gaps. Since the exact named person (Jorge) and the exact requested fact (a SecureFlow Suite price quote) are absent from every source, complete must be false."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuIbIAK",
+              "b2b:a05Wt000003T1rsIAC",
+              "b2b:a05Wt000003T1rtIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Jorge quoted Lina Chen SecureFlow Suite at $6,479.89 for a batch of 12 units after a 10% discount, and said full pricing details would be provided in a proposal tailored for PowerGrid. They agreed the next step would be a product demonstration for Lina's team, with Jorge coordinating scheduling.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SuIbIAK",
+                  "line_start": 14,
+                  "line_end": 15,
+                  "quote": "[2023-08-28T11:35:30] Jorge Pinto: Absolutely, understanding the cost perspective early on is crucial. We offer competitive pricing, and for example, our SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units. We\u2019ll ensure to keep that competitive while giving you maximum value. Plus, we\u2019ll go over all pricing details once we tailor the proposal specifically for PowerGrid."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuIbIAK",
+                  "line_start": 16,
+                  "line_end": 19,
+                  "quote": "[2023-08-28T11:36:20] Jorge Pinto: Definitely. Our next step is to set up a product demonstration. This will give you and your team a detailed look at features like enhanced configurability and intuitive interfaces. How does that sound?\n[2023-08-28T11:36:35] Lina Chen: That sounds excellent. I\u2019ll make sure the relevant members from our side are available for the session.\n[2023-08-28T11:36:50] Jorge Pinto: Perfect, Lina. I\u2019ll coordinate with you on scheduling. We\u2019ll make sure it\u2019s convenient for everyone involved. Thanks for your time today, and I\u2019m looking forward to our continued discussions."
+                }
+              ],
+              "reason": "Line 14 of call b2b:a05Wt000003SuIbIAK contains the exact pricing quote ($6,479.89 for 12 units after 10% discount) and the note about a tailored proposal. Lines 16-18 contain Jorge proposing a product demonstration as the next step and Lina agreeing (line 17), with Jorge confirming he will coordinate scheduling (line 18). All facts match the exact named people (Jorge Pinto, Lina Chen), account (PowerGrid Innovations), and product (SecureFlow Suite)."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same pricing ($6,479.89 for 12 units after a 10% discount) and the same next step (scheduling a product demonstration for Lina Chen's/PowerGrid's team). Answer A includes extra detail about a tailored proposal and Jorge coordinating scheduling, but these are additional unrequested details that do not conflict with Answer B. The core requested facts are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StO3IAK",
+              "b2b:a05Wt000003SwydIAC",
+              "b2b:a05Wt000003T1iAIAS",
+              "b2b:a05Wt000003T1rrIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources features a salesperson named Jorge. All four calls between Lina Chen at PowerGrid Innovations and TechPulse Solutions were conducted by Xinyi Zhang. SecureFlow Suite is mentioned only once (Aug 30 call, line 6) as a product designed for scalability and efficiency, with no pricing quoted. No specific dollar figures, discount rates, or formal pricing quotes for SecureFlow Suite appear in any call. While generic pricing language (transparent total cost of ownership, competitive pricing) and next steps (discovery meeting, proposal preparation) are discussed, none are tied to a SecureFlow Suite quote from Jorge.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted by 'Jorge' to Lina Chen for SecureFlow Suite. No person named Jorge appears in any of the four provided calls; the salesperson in all calls is Xinyi Zhang. SecureFlow Suite is mentioned only in passing (call b2b:a05Wt000003SwydIAC, line 6) without any associated price. No specific pricing figures or formal quotes for SecureFlow Suite exist in the sources. Because the exact named salesperson (Jorge) and specific pricing for SecureFlow Suite are entirely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StvxIAC",
+              "b2b:a05Wt000003Sx3TIAS",
+              "b2b:a05Wt000003SyFhIAK",
+              "b2b:a05Wt000003T0sbIAC",
+              "b2b:a05Wt000003T1BuIAK",
+              "b2b:a05Wt000003T1DVIA0",
+              "b2b:a05Wt000003T1F7IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves Jorge speaking with 'Lina Chen' at 'PowerGrid Innovations.' Every transcript is between Jorge Pinto and Ling Chen at MetaData Analytics (account_name: MetaData Analytics; contact_name: Ling Chen). Although Jorge discusses SecureFlow Suite pricing with Ling Chen (e.g., a 10% bulk-purchase discount mentioned on 2024-04-05), there is no record of any quote or agreed next step for a person named Lina Chen at an account called PowerGrid Innovations. The question's exact named scope cannot be satisfied.",
+              "evidence": [],
+              "reason": "The question asks about 'Lina Chen at PowerGrid Innovations,' but all six calls are with 'Ling Chen' at 'MetaData Analytics' per metadata and dialogue. No source mentions PowerGrid Innovations or a contact named Lina Chen. Because the exact named people, account, and event scope are absent, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvclIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call between Jorge and Lina Chen at PowerGrid Innovations, nor any mention of SecureFlow Suite. The only call provided is between Jorge Pinto and Yasir Abdi at PowerGrid Innovations, discussing OptiPower Manager and CircuitAI Innovator. Jorge explicitly stated he could not provide granular pricing at that stage (line 10). No pricing quote for SecureFlow Suite to Lina Chen and no agreed next step for that product/person combination exist in the supplied transcripts.",
+              "evidence": [],
+              "reason": "The question asks about a specific person (Lina Chen), a specific product (SecureFlow Suite), and a specific pricing quote with an agreed next step. The only call in the sources involves Yasir Abdi (not Lina Chen) and discusses OptiPower Manager and CircuitAI Innovator (not SecureFlow Suite). Jorge declined to give specific pricing (line 10). None of the requested facts\u2014Lina Chen, SecureFlow Suite, a concrete price, or an agreed next step for that pairing\u2014are present in the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1jrIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving Jorge, Lina Chen, PowerGrid Innovations, or SecureFlow Suite. The only transcript provided is a conversation between Aiko Matsumoto (TechPulse Solutions) and Lina Moreno (InnovateVibes LLC) discussing PulseSim Pro and CollabCircuit Hub. No specific pricing was quoted, and the agreed next step was a November 1st discovery session. None of the requested facts (Jorge's pricing quote for SecureFlow Suite to Lina Chen at PowerGrid Innovations, or their agreed next step) exist in the supplied sources.",
+              "evidence": [],
+              "reason": "The question asks about a specific salesperson (Jorge), a specific contact (Lina Chen), a specific account (PowerGrid Innovations), and a specific product (SecureFlow Suite). The only call in the sources involves Aiko Matsumoto speaking with Lina Moreno at InnovateVibes LLC about PulseSim Pro and CollabCircuit Hub. There is no mention of Jorge, Lina Chen, PowerGrid Innovations, or SecureFlow Suite anywhere in the provided transcripts. Therefore, no complete answer can be constructed from the available evidence."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SujwIAC",
+              "b2b:a05Wt000003Sv87IAC",
+              "b2b:a05Wt000003SwfHIAS",
+              "b2b:a05Wt000003Sx8MIAS",
+              "b2b:a05Wt000003T2eEIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No specific pricing for SecureFlow Suite was quoted to Lina Chen at PowerGrid Innovations in any of the provided calls. Furthermore, the salesperson in all calls is Ayo Okeke, not Jorge. The calls contain only general statements about competitive pricing and attractive discounts (2023-08-09 call, line 12; 2023-08-01 call, line 8), and in the 2023-09-15 call Ayo explicitly deferred exact pricing ('we don't need to dive into exact pricing in this stage', line 14). Agreed next steps included a follow-up meeting the following week (2023-08-01, lines 14-15), a follow-up meeting to discuss business challenges (2023-08-09, lines 16-17), and a scheduled October 5 connection (2023-09-15, lines 18-19), but since no concrete pricing figure was quoted and the named salesperson 'Jorge' does not appear in any call, the question cannot be fully answered.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted by 'Jorge' to Lina Chen for SecureFlow Suite. No salesperson named Jorge appears in any of the five calls; all interactions are between Ayo Okeke and Lina Chen. Additionally, no specific dollar amount, percentage discount, or concrete pricing figure for SecureFlow Suite was ever quoted\u2014only general references to competitive pricing and attractive discounts. Because both the named person (Jorge) and the specific pricing fact are absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsN9IAK",
+              "b2b:a05Wt000003SxbLIAS",
+              "b2b:a05Wt000003SzRzIAK",
+              "b2b:a05Wt000003T2JIIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves a salesperson named Jorge, a contact named Lina Chen, or an account called PowerGrid Innovations. All four calls feature Luis Rodriguez of TechPulse Solutions speaking with Lina Moreno at InnovateVibes LLC. While SecureFlow Suite is discussed, no specific dollar pricing is quoted for it, and no next step is agreed upon between Jorge and Lina Chen. The requested facts cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Jorge quoting Lina Chen at PowerGrid Innovations for SecureFlow Suite pricing and an agreed next step. None of the four call transcripts contain a person named Jorge, a contact named Lina Chen, or an account named PowerGrid Innovations. The only contact is Lina Moreno at InnovateVibes LLC, and the only salesperson is Luis Rodriguez. SecureFlow Suite is mentioned but no specific price is quoted for it. Therefore, every requested fact (Jorge, Lina Chen, PowerGrid Innovations, specific SecureFlow Suite pricing, and their agreed next step) is missing from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SthSIAS",
+              "b2b:a05Wt000003Szv1IAC",
+              "b2b:a05Wt000003T2JMIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no call involving Jorge, Lina Chen, or PowerGrid Innovations. All three calls are between Jamal Abdi (TechPulse Solutions) and Lina Mohamed of TechBridge Systems. While SecureFlow Suite pricing ($5,129.91 for nine units at a 5% discount) is mentioned in one call, it was quoted by Jamal Abdi to Lina Mohamed at TechBridge Systems\u2014not by Jorge to Lina Chen at PowerGrid Innovations. No matching salesperson, contact, or account exists in the provided transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Jorge quoting Lina Chen at PowerGrid Innovations for SecureFlow Suite and an agreed next step. None of the three calls involve a person named Jorge, a contact named Lina Chen, or an account called PowerGrid Innovations. The only SecureFlow Suite pricing appears in call b2b:a05Wt000003SthSIAS (line 10), spoken by Jamal Abdi to Lina Mohamed at TechBridge Systems. Because the exact named people, account, and event scope do not match, no complete answer can be provided."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly quoted in the same call: Jorge states SecureFlow Suite pricing ($6,479.89 for 12 units after 10% discount) and the agreed next step (product demonstration), which Lina accepts. Question is self-contained and answer is fully supported."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pricing did Jorge quote Lina Chen at PowerGrid Innovations for SecureFlow Suite",
+            "explicitly_requested": true,
+            "required_fact": "SecureFlow Suite, after a 10% discount, is priced at $6,479.89 for a batch of 12 units",
+            "source_call_ids": [
+              "b2b:a05Wt000003SuIbIAK"
+            ]
+          },
+          {
+            "question_span": "what next step did they agree on?",
+            "explicitly_requested": true,
+            "required_fact": "They agreed to set up a product demonstration, with Lina ensuring relevant team members attend and Jorge coordinating scheduling",
+            "source_call_ids": [
+              "b2b:a05Wt000003SuIbIAK"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: the pricing quoted and the agreed next step. The gold_answer provides exactly these two facts without extra unrequested details. The independent answer covers both facts accurately. The obligations correctly extract the two required facts from the single call, and the call is necessary to answer both parts. No arithmetic issues. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "SecureFlow Suite is priced at $6,479.89 for 12 units after a 10% discount",
+            "question_span": "What pricing did Jorge quote Lina Chen at PowerGrid Innovations for SecureFlow Suite",
+            "required_by_question": true
+          },
+          {
+            "claim": "next step is scheduling a product demonstration for PowerGrid's team",
+            "question_span": "what next step did they agree on?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "953da2095af2576829829d0bc58f93405e5c21240ec6fd4d0d222840c31247fc",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SyyqIAC"
+    ],
+    "status": "accepted",
+    "question": "What pricing did TechPulse propose to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision?",
+    "gold_answer": "AI Cirku-Tech at a 5% discounted rate and AIOptics Vision at standard pricing.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SyyqIAC",
+        "answer_claim": "AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 15,
+        "quote": "[2022-07-25T11:02:35] Jaemin Park: Great, I'll send over an invite later today. Briefly touching on pricing, we talked about this in our proposal\u2014AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing to maximize value.",
+        "start": 2293,
+        "end": 2538
+      }
+    ],
+    "question_id": "b2b-single_call-953da2095af25768",
+    "candidate": {
+      "question": "What pricing did TechPulse propose to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision?",
+      "gold_answer": "AI Cirku-Tech at a 5% discounted rate and AIOptics Vision at standard pricing.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SyyqIAC",
+          "answer_claim": "AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2022-07-25T11:02:35] Jaemin Park: Great, I'll send over an invite later today. Briefly touching on pricing, we talked about this in our proposal\u2014AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing to maximize value.",
+          "start": 2293,
+          "end": 2538
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The quote at 11:02:35 directly states 'AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing,' fully supporting the gold answer. The question is a realistic sales need (pricing proposed to a named account), names participants/accounts as allowed, and does not leak the answer. The independent answer matches the gold semantically and completely. No-context answers are UNKNOWN, so they fail. Single-call ablation is empty, so it fails. Since this is effectively a single-call QA (all evidence from one call), the two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SyyqIAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4xmIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source does not contain any pricing proposal from TechPulse to AgroSmart Innovations for AI Cirku-Tech or AIOptics Vision. The only call transcript involves Hana Kato from AllTech Solutions speaking with Jean Dupont of Paris Tech Hub about DesignEdge Pro, CloudInnovate Space, and AIOptics Vision. Neither TechPulse, AgroSmart Innovations, nor AI Cirku-Tech appear anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing proposed by TechPulse to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision. The sole call transcript (b2b:a05Wt000003T4xmIAC) involves a completely different seller (AllTech Solutions / Hana Kato), a different buyer (Paris Tech Hub / Jean Dupont), and different products (DesignEdge Pro, CloudInnovate Space, AIOptics Vision). AI Cirku-Tech is never mentioned, TechPulse is never mentioned, and AgroSmart Innovations is never mentioned. No relevant pricing information exists in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SukAIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call between TechPulse and AgroSmart Innovations. The only call provided is between Nikolai Volkov of 'Tech Innovations' and Alice Chen of 'CraftTech Electronics'. No specific pricing figures for AI Cirku-Tech or AIOptics Vision were quoted in that call either\u2014only a mention of a bulk purchase discount and flexible payment plans fitting a ~3200 budget. Therefore, the requested pricing proposal from TechPulse to AgroSmart Innovations cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing proposed by TechPulse to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision. The sole call in the sources involves a different company ('Tech Innovations', not 'TechPulse') and a different customer ('CraftTech Electronics' / Alice Chen, not 'AgroSmart Innovations'). Additionally, no concrete dollar amounts were stated for either product. Because neither the named seller, the named buyer, nor specific pricing figures appear in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T18lIAC",
+              "b2b:a05Wt000003T1tbIAC",
+              "b2b:a05Wt000003T2rBIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving AgroSmart Innovations, and no pricing for AI Cirku-Tech appears anywhere. All three calls are between Jorge Pinto (TechPulse Solutions) and Rina Matsui of SkyLevel Systems. The only pricing discussed is for SecureFlow Suite (20 units, 15% discount) and AIOptics Vision (25 units, 15% discount) proposed to SkyLevel Systems, not AgroSmart Innovations. No information about AI Cirku-Tech pricing exists in these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing proposed to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision. No call in the sources involves an account named AgroSmart Innovations; all calls are with SkyLevel Systems (contact Rina Matsui). Additionally, the product AI Cirku-Tech is never mentioned in any transcript. While AIOptics Vision pricing (25 units at 15% discount) was discussed, it was proposed to SkyLevel Systems, not AgroSmart Innovations. Therefore, no complete answer can be provided for the exact named account and products requested."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SypBIAS",
+              "b2b:a05Wt000003SzzjIAC",
+              "b2b:a05Wt000003T0u9IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts between TechPulse Solutions (Emmanuel Okonkwo) and AgroSmart Innovations (Ingrid Nilsen) do not mention the products 'AI Cirku-Tech' or 'AIOptics Vision' at all. The products discussed are SecureFlow Suite, OptiPower Manager, CollabCircuit Hub, and EcoPCB Creator. Pricing is only referenced in general, non-specific terms (competitive pricing, favorable total cost of ownership, volume-based discounts) with no concrete figures. Therefore, no pricing proposal for AI Cirku-Tech or AIOptics Vision can be identified from these sources.",
+              "evidence": [],
+              "reason": "Neither 'AI Cirku-Tech' nor 'AIOptics Vision' appears in any of the three call transcripts. The products named are SecureFlow Suite, OptiPower Manager, CollabCircuit Hub, and EcoPCB Creator. Since the question asks specifically about pricing for AI Cirku-Tech and AIOptics Vision, and these products are entirely absent from the sources, the answer is incomplete. No evidence can be cited for the requested products."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuKBIA0",
+              "b2b:a05Wt000003Svo5IAC",
+              "b2b:a05Wt000003T2HfIAK",
+              "b2b:a05Wt000003T2MXIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing proposal from TechPulse to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision exists in the provided sources. All four calls are between Maya Johnson (TechPulse Solutions) and Fatima Patel at OmegaDesign Labs under the opportunity 'OmegaDesign Partnership for Advanced EDA Integration.' While discounts for AI Cirku-Tech (10%) and AIOptics Vision (15%) were mentioned, they were proposed to OmegaDesign Labs, not AgroSmart Innovations.",
+              "evidence": [],
+              "reason": "The question asks specifically about pricing proposed to AgroSmart Innovations. None of the four calls involve AgroSmart Innovations; every call's metadata lists account_name as 'OmegaDesign Labs' and contact as Fatima Patel. The pricing details (10% discount on AI Cirku-Tech, 15% on AIOptics Vision) found in call b2b:a05Wt000003SuKBIA0 line 4 were directed at OmegaDesign Labs. Since the exact named account in the question (AgroSmart Innovations) does not appear anywhere in the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzTVIA0",
+              "b2b:a05Wt000003T0XaIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "TechPulse proposed AI Cirku-Tech at $3,524.43 after a 5% discount to AgroSmart Innovations. However, no pricing for AIOptics Vision appears anywhere in the provided transcripts, so the question cannot be fully answered.",
+              "evidence": [],
+              "reason": "The question asks for pricing on two products: AI Cirku-Tech and AIOptics Vision. AI Cirku-Tech pricing ($3,524.43 after a 5% discount) is found in call b2b:a05Wt000003SzTVIA0 line 10. However, AIOptics Vision is never mentioned in either call transcript. The only products discussed are SecureFlow Suite, AI Cirku-Tech, EcoPCB Creator, and OptiPower Manager. Because pricing for AIOptics Vision is entirely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0vlIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No specific pricing was proposed for either AI Cirku-Tech or AIOptics Vision. Sofia Rodriguez (TechPulse) told Aditya Kapoor (AgroSmart Innovations) that pricing would be presented later during the proposal phase, with potential discounts for volume purchases. AIOptics Vision is never mentioned in the call.",
+              "evidence": [],
+              "reason": "The question asks for pricing proposed for both AI Cirku-Tech and AIOptics Vision. In the single call provided, Sofia Rodriguez only states that pricing will be addressed in a future proposal phase (lines 16-17) and no dollar figures or specific pricing terms are given. AIOptics Vision is not mentioned at all in the transcript. Therefore the requested pricing facts for both products are absent, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7qIAC",
+              "b2b:a05Wt000003SswkIAC",
+              "b2b:a05Wt000003SxtBIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No specific pricing was proposed by TechPulse to AgroSmart Innovations for AI Cirku-Tech or AIOptics Vision. AI Cirku-Tech is discussed in general terms (described as 'competitive' in pricing and innovative), but no dollar amounts or pricing structures are quoted. AIOptics Vision is never mentioned in any of the three call transcripts. The only pricing-related references are Carlos noting TechPulse's 'transparency and cost-effectiveness' (call 1, line 9), Dalia stating pricing is 'clear and competitive' (call 1, line 10), and Dalia saying a draft contract outlining 'pricing models and delivery schedules' would be sent later (call 2, line 14). No concrete figures or proposals for either named product exist in the sources.",
+              "evidence": [],
+              "reason": "The question asks for pricing proposed for two specific products: AI Cirku-Tech and AIOptics Vision. AI Cirku-Tech appears in the transcripts but only in the context of general competitive-pricing language and scalability discussion\u2014no specific price, discount, or pricing model is quoted. AIOptics Vision does not appear in any of the three calls at all. Because neither product has a concrete pricing proposal documented, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sw7RIAS",
+              "b2b:a05Wt000003Sx0FIAS",
+              "b2b:a05Wt000003SyArIAK",
+              "b2b:a05Wt000003SyyqIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "TechPulse proposed AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing, to maximize value.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SyyqIAC",
+                  "line_start": 14,
+                  "line_end": 15,
+                  "quote": "[2022-07-25T11:02:35] Jaemin Park: Great, I'll send over an invite later today. Briefly touching on pricing, we talked about this in our proposal\u2014AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing to maximize value."
+                }
+              ],
+              "reason": "In the 2022-07-25 call between Jaemin Park (TechPulse) and Fatima Rahman (AgroSmart Innovations), Jaemin explicitly states the proposed pricing: AI Cirku-Tech at a discounted rate of 5% and AIOptics Vision at standard pricing. Fatima confirms they saw the proposal and the pricing aligns with their budget. This directly and completely answers the question about pricing proposed for both named products."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same pricing facts: AI Cirku-Tech at a 5% discounted rate and AIOptics Vision at standard pricing. Answer A adds extra phrasing ('to maximize value') but the requested pricing details are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StntIAC",
+              "b2b:a05Wt000003SxUyIAK",
+              "b2b:a05Wt000003Sy2nIAC",
+              "b2b:a05Wt000003SzQHIA0",
+              "b2b:a05Wt000003T0R8IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "TechPulse proposed AI Cirku-Tech to AgroSmart Innovations at a 5% discount (part of a package totaling $14,827.70 that also included SecureFlow Suite and CloudLink Designer at 10% discounts each). However, no product called 'AIOptics Vision' is mentioned in any of the provided call transcripts, so no pricing for AIOptics Vision can be supplied.",
+              "evidence": [],
+              "reason": "The question asks for pricing on two products: AI Cirku-Tech and AIOptics Vision. While AI Cirku-Tech pricing (5% discount) is documented in calls b2b:a05Wt000003StntIAC (line 10) and b2b:a05Wt000003SxUyIAK (line 4), the product 'AIOptics Vision' never appears in any of the five call transcripts. Because one of the two requested products has no pricing information in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwSSIA0",
+              "b2b:a05Wt000003SzziIAC",
+              "b2b:a05Wt000003T0sXIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no mention of the products 'AI Cirku-Tech' or 'AIOptics Vision' in any call with AgroSmart Innovations. The only specific pricing discussed was a 15% discount on a purchase of 20 units of OptiPower Max (call b2b:a05Wt000003SzziIAC, line 10), and general competitive-pricing statements for CloudLink Designer and SecureData Nexus. No pricing proposal for AI Cirku-Tech or AIOptics Vision exists in the provided transcripts.",
+              "evidence": [],
+              "reason": "Neither product name 'AI Cirku-Tech' nor 'AIOptics Vision' appears anywhere in the three call transcripts between TechPulse (Lara Haddad) and AgroSmart Innovations (Jamal Ali). Therefore no pricing for those specific products can be extracted. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwguIAC",
+              "b2b:a05Wt000003SwgvIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No specific pricing was proposed by TechPulse to AgroSmart Innovations for either AI Cirku-Tech or AIOptics Vision. In the second call, when Leonardo Rossi asked about pricing, Ming Zhao only gave a general statement that pricing reflects value, ROI, and total cost of ownership, with no concrete figures. Furthermore, 'AIOptics Vision' is never mentioned in either call transcript, so no pricing information for that product exists in the sources.",
+              "evidence": [],
+              "reason": "The question asks for pricing proposed for two specific products: AI Cirku-Tech and AIOptics Vision. (1) For AI Cirku-Tech, the only pricing-related exchange is in call b2b:a05Wt000003SwgvIAC lines 13-14, where Ming Zhao gives a vague statement about pricing reflecting value and ROI but provides no actual numbers or proposal. (2) 'AIOptics Vision' does not appear anywhere in either transcript; the products discussed are AI Cirku-Tech, SecureFlow Suite, and CloudLink Designer. Since no concrete pricing figures are given for AI Cirku-Tech and AIOptics Vision is entirely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqZvIAK",
+              "b2b:a05Wt000003Sw7SIAS",
+              "b2b:a05Wt000003SxrXIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No specific pricing was proposed by TechPulse for AI Cirku-Tech or AIOptics Vision to AgroSmart Innovations. AI Cirku-Tech is mentioned in the 2023-01-04 and 2023-01-08 calls, but only in general terms regarding competitive costs with no dollar figures. AIOptics Vision is never mentioned in any of the three call transcripts.",
+              "evidence": [],
+              "reason": "The question asks for pricing proposed for two specific products: AI Cirku-Tech and AIOptics Vision. AI Cirku-Tech appears in calls b2b:a05Wt000003SxrXIAS (lines 4, 6) and b2b:a05Wt000003Sw7SIAS (line 4), but no specific pricing (dollar amounts, tiers, or formal proposal figures) is ever stated\u2014only a vague assertion that 'our costs are competitive' (line 8 of the 2023-01-04 call). AIOptics Vision does not appear in any of the three transcripts at all. Therefore, the requested pricing information for both products is entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqZwIAK",
+              "b2b:a05Wt000003Su45IAC",
+              "b2b:a05Wt000003Sv06IAC",
+              "b2b:a05Wt000003Sy2mIAC",
+              "b2b:a05Wt000003SyZ0IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain specific pricing for AI Cirku-Tech or AIOptics Vision proposed to AgroSmart Innovations. AI Cirku-Tech is mentioned qualitatively (e.g., its predictive analytics capabilities) but no dollar figure is given for it. AIOptics Vision is never mentioned in any of the provided calls. The only concrete pricing stated was for SecureFlow Suite ($5,399.91 for ten seats) and CloudLink Designer ($3,039.92 for eight seats), which are different products.",
+              "evidence": [],
+              "reason": "No source line provides a price for AI Cirku-Tech or AIOptics Vision. AI Cirku-Tech appears only in qualitative discussion (call b2b:a05Wt000003SqZwIAK lines 13-14) and as part of a quote reference without figures (line 4). AIOptics Vision does not appear in any transcript. The only numeric pricing (call b2b:a05Wt000003Sv06IAC line 14) covers SecureFlow Suite and CloudLink Designer, not the two products asked about. Therefore the requested facts are missing and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwSUIA0",
+              "b2b:a05Wt000003SwiZIAS",
+              "b2b:a05Wt000003SxWbIAK",
+              "b2b:a05Wt000003T2BFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing proposal to AgroSmart Innovations for AI Cirku-Tech or AIOptics Vision appears in the provided sources. All four calls are between Mei Chen (TechPulse Solutions) and Olga Romanov of Nordic HealthTech. The products discussed are AIOptics Vision and SecureData Nexus (not AI Cirku-Tech). There is no mention of AgroSmart Innovations or a product called AI Cirku-Tech anywhere in the transcripts, so the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing proposed to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision. The sources contain only calls with Nordic HealthTech (account_name: Nordic HealthTech, contact: Olga Romanov). Neither 'AgroSmart Innovations' nor 'AI Cirku-Tech' appears in any call transcript or metadata. While AIOptics Vision pricing is discussed (20 units, 15% discount, $9,009.83), it was proposed to Nordic HealthTech, not AgroSmart Innovations. Since the exact named account and one of the two named products are entirely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Svt2IAC",
+              "b2b:a05Wt000003SvxqIAC",
+              "b2b:a05Wt000003T207IAC",
+              "b2b:a05Wt000003T3iRIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving AgroSmart Innovations. All four calls are between Mei Lin (TechPulse) and Chen Wu at Oceanic Innovation Labs, discussing CloudLink Designer, AIOptics Vision, and OptiPower Manager. There is no mention of AgroSmart Innovations or the product AI Cirku-Tech anywhere in the transcripts, so no pricing proposal to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision can be identified.",
+              "evidence": [],
+              "reason": "The question asks about pricing TechPulse proposed to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision. None of the four provided calls involve AgroSmart Innovations (all involve Oceanic Innovation Labs / Chen Wu), and the product AI Cirku-Tech is never mentioned. Therefore the requested facts are entirely absent from the sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; the quoted line directly states TechPulse proposed AI Cirku-Tech at a 5% discounted rate and AIOptics Vision at standard pricing, fully supporting the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pricing did TechPulse propose to AgroSmart Innovations for AI Cirku-Tech and AIOptics Vision?",
+            "explicitly_requested": true,
+            "required_fact": "AI Cirku-Tech was proposed at a discounted rate of 5% and AIOptics Vision at standard pricing",
+            "source_call_ids": [
+              "b2b:a05Wt000003SyyqIAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for pricing for two products. The gold answer provides exactly that: AI Cirku-Tech at 5% discount and AIOptics Vision at standard pricing. No extra facts are included. The independent answer matches the gold answer and satisfies the question. The obligation correctly captures the required facts and references the single call that contains the pricing information. The call is necessary and sufficient to answer the question.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "AI Cirku-Tech was proposed at a discounted rate of 5%",
+            "question_span": "What pricing did TechPulse propose to AgroSmart Innovations for AI Cirku-Tech",
+            "required_by_question": true
+          },
+          {
+            "claim": "AIOptics Vision was proposed at standard pricing",
+            "question_span": "and AIOptics Vision?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "d1a4ce275ee339b572c65bca61bea887861102a220a7829e3516a47f69f95f2a",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SU3jIAG"
+    ],
+    "status": "accepted",
+    "question": "What did Sofia Kim say about how AutoElite's financing compares to High-End Autos Co., and what does she still want to review before moving forward?",
+    "gold_answer": "She finds AutoElite's financing straightforward and transparent, noting High-End Autos Co. offers similar credit approvals; she still wants to review the customization options for the vehicles.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SU3jIAG",
+        "answer_claim": "Sofia compared financing with High-End Autos Co., noting similar credit approvals and liking AutoElite's transparency",
+        "kind": "dialogue",
+        "line_start": 5,
+        "line_end": 8,
+        "quote": "[2024-04-07T09:30:50] Sofia Kim: Well, I've been comparing your financing options with what I've seen from other companies. AutoElite's options seem straightforward and transparent, which I like.\n[2024-04-07T09:31:05] Liam Murphy: I'm glad you found that clarity useful. We really strive to make our financing as easy to understand as possible. Were there any specific options or terms you were curious about?\n[2024-04-07T09:31:15] Sofia Kim: Not at the moment. Mostly, I wanted to ensure I'm making an informed choice. I've looked at options from High-End Autos Co. as well, and I noticed they offer similar credit approvals.",
+        "start": 693,
+        "end": 1319
+      },
+      {
+        "call_id": "b2c:a05Ws000005SU3jIAG",
+        "answer_claim": "Sofia wants more time to review customization options",
+        "kind": "dialogue",
+        "line_start": 15,
+        "line_end": 16,
+        "quote": "[2024-04-07T09:32:50] Sofia Kim: Not at this point, no. I'm going to take a bit more time to go through everything, particularly the customization options for the vehicles.",
+        "start": 2583,
+        "end": 2755
+      }
+    ],
+    "question_id": "b2c-single_call-d1a4ce275ee339b5",
+    "candidate": {
+      "question": "What did Sofia Kim say about how AutoElite's financing compares to High-End Autos Co., and what does she still want to review before moving forward?",
+      "gold_answer": "She finds AutoElite's financing straightforward and transparent, noting High-End Autos Co. offers similar credit approvals; she still wants to review the customization options for the vehicles.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SU3jIAG",
+          "answer_claim": "Sofia compared financing with High-End Autos Co., noting similar credit approvals and liking AutoElite's transparency",
+          "kind": "dialogue",
+          "line_start": 5,
+          "line_end": 8,
+          "quote": "[2024-04-07T09:30:50] Sofia Kim: Well, I've been comparing your financing options with what I've seen from other companies. AutoElite's options seem straightforward and transparent, which I like.\n[2024-04-07T09:31:05] Liam Murphy: I'm glad you found that clarity useful. We really strive to make our financing as easy to understand as possible. Were there any specific options or terms you were curious about?\n[2024-04-07T09:31:15] Sofia Kim: Not at the moment. Mostly, I wanted to ensure I'm making an informed choice. I've looked at options from High-End Autos Co. as well, and I noticed they offer similar credit approvals.",
+          "start": 693,
+          "end": 1319
+        },
+        {
+          "call_id": "b2c:a05Ws000005SU3jIAG",
+          "answer_claim": "Sofia wants more time to review customization options",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 16,
+          "quote": "[2024-04-07T09:32:50] Sofia Kim: Not at this point, no. I'm going to take a bit more time to go through everything, particularly the customization options for the vehicles.",
+          "start": 2583,
+          "end": 2755
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Sofia Kim said AutoElite's financing options seem straightforward and transparent, which she likes, and she noted High-End Autos Co. offers similar credit approvals. She still wants to review the customization options for the vehicles before moving forward.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": false,
+        "single_call_answers_fail": true,
+        "reason": "Both answer claims are directly supported by quotes: Sofia praises AutoElite's financing as 'straightforward and transparent' and notes High-End Autos Co. offers 'similar credit approvals' (lines 5-8), and says she wants to review 'customization options for the vehicles' (lines 15-16). The question is a realistic sales follow-up need, names the participant without leaking the answer, and the independent answer matches the gold semantically. However, this is a single-call QA: all evidence comes from one call (b2c:a05Ws000005SU3jIAG), so both_calls_necessary is false; per instructions, for a single-call QA set both two-call flags true. No-context answers ('UNKNOWN') fail to answer, so no_context_answers_fail is true."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SU3jIAG"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STHGIA4",
+              "b2c:a05Ws000005SbI1IAK",
+              "b2c:a05Ws000005Sch6IAC",
+              "b2c:a05Ws000005SdRlIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention 'High-End Autos Co.' Sofia Kim discusses financing comparisons only in general terms (e.g., competitors with 'more rigid plans' and 'more polished presentation' on the 2023-08-04 call, lines 9-12), and no competitor named High-End Autos Co. appears anywhere. The only competitor named is Exquisite Vehicles Hub, in a different context (certified pre-owned program). Therefore no answer about High-End Autos Co. is supported.",
+              "evidence": [],
+              "reason": "The question asks specifically what Sofia Kim said about how AutoElite's financing compares to 'High-End Autos Co.' and what she still wants to review before moving forward. No call transcript mentions 'High-End Autos Co.' by name. The only named competitor is 'Exquisite Vehicles Hub' (calls b2c:a05Ws000005Sch6IAC line 12 and b2c:a05Ws000005SdRlIAK line 12), discussed in the context of the certified pre-owned program, not financing. Sofia's financing comparisons are generic ('competitors who often have more rigid plans,' 'other places had a more polished presentation') with no specific reference to High-End Autos Co. Additionally, no statement from Sofia identifies something she 'still wants to review before moving forward' in relation to a High-End Autos Co. comparison. Because the exact named entity in the question is absent from all sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SORKIA4",
+              "b2c:a05Ws000005SYsDIAW",
+              "b2c:a05Ws000005SZ86IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. Sofia Kim never mentions 'High-End Autos Co.' in any of the three calls. The only competitor she references is 'Luxury Auto Group,' and that comparison concerns service centers and follow-up service, not financing. Regarding financing, Sofia only asks generally about AutoElite's financing solutions (call b2c:a05Ws000005SYsDIAW, line 7) and receives a description of flexible options, but she never compares AutoElite's financing to any competitor. Additionally, she does not state a specific item she still wants to review before moving forward beyond saying she will 'take this information and discuss it internally' (call b2c:a05Ws000005SORKIA4, line 15). Because the named competitor 'High-End Autos Co.' does not appear and no financing comparison to that entity exists, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The exact entity 'High-End Autos Co.' is never mentioned in any call transcript. Sofia Kim's only competitor reference is to 'Luxury Auto Group' regarding service centers, not financing. No statement by Sofia compares AutoElite's financing to High-End Autos Co., and no specific document or item she wants to review before moving forward (beyond internal discussion) is identified. The question's premises are unsupported by the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSQCIA4",
+              "b2c:a05Ws000005ScNkIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of 'High-End Autos Co.' or any comparison of AutoElite's financing to that company. Sofia Kim only says flexible financing is 'definitely appealing' (call b2c:a05Ws000005SSQCIA4, line 15) and that she needs time to consider the details (line 19); she never names a competitor or states what she wants to review relative to High-End Autos Co.",
+              "evidence": [],
+              "reason": "Neither call transcript mentions 'High-End Autos Co.' at all. Sofia Kim never compares AutoElite's financing to any competitor by that name, nor does she state what she wants to review before moving forward in relation to such a comparison. The only financing-related statement is her remark that flexible financing is 'definitely appealing' (line 15 of call b2c:a05Ws000005SSQCIA4) and her general need for time to 'mull over these details' (line 19). Because the exact named entity 'High-End Autos Co.' and the specific comparison and review items are entirely absent from the sources, the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SS0KIAW",
+              "b2c:a05Ws000005Sc2lIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention 'High-End Autos Co.' Sofia Kim compares AutoElite's financing to an unnamed 'another dealership' (call b2c:a05Ws000005SS0KIAW, lines 9\u201311) and to 'Executive Rides LLC' (call b2c:a05Ws000005Sc2lIAC, line 7), but no competitor named High-End Autos Co. appears. Therefore the question as scoped cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The question specifically asks about Sofia Kim's comparison of AutoElite's financing to 'High-End Autos Co.' and what she still wants to review before moving forward. No source mentions 'High-End Autos Co.' by name. In call b2c:a05Ws000005SS0KIAW, Sofia references 'another dealership' (lines 9, 11) without naming it, and in call b2c:a05Ws000005Sc2lIAC she mentions 'Executive Rides LLC' (line 7) in a technology comparison, not a financing one. Because the exact named competitor in the question does not appear in any source, the requested fact cannot be supported, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZzPIAW",
+              "b2c:a05Ws000005SbGWIA0",
+              "b2c:a05Ws000005Sd0MIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention 'High-End Autos Co.' or any comparison of AutoElite's financing to that company. Sofia Kim discusses AutoElite's flexible financing (e.g., no added cost for customizing repayment terms, keeping purchases on budget) but makes no comparison to a competitor by that name, and she states no remaining items to review before moving forward\u2014she agrees to proceed under the terms on the June 1 call.",
+              "evidence": [],
+              "reason": "No source mentions 'High-End Autos Co.' or any financing comparison to it, and Sofia Kim does not identify anything she still wants to review before moving forward; she agrees to proceed on the June 1 call."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZrOIAW",
+              "b2c:a05Ws000005ScvaIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of 'High-End Autos Co.' Sofia Kim never compares AutoElite's financing to High-End Autos Co. She does express interest in AutoElite's flexible financing options (first call, lines 6\u20137) and states she wants to explore financing options more in a next conversation (second call, line 17), but the specific comparison to High-End Autos Co. and any item she wants to review before moving forward in relation to that comparison are absent from the sources.",
+              "evidence": [],
+              "reason": "Neither call transcript references 'High-End Autos Co.' by name or any competitor financing comparison. The question asks for Sofia Kim's statement comparing AutoElite's financing to High-End Autos Co. and what she still wants to review before moving forward in that context. Since no such comparison exists in the sources, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPLoIAO",
+              "b2c:a05Ws000005SVxPIAW",
+              "b2c:a05Ws000005SWtYIAW",
+              "b2c:a05Ws000005SaFYIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention 'High-End Autos Co.' Sofia Kim discusses competitor comparisons only with unnamed dealerships and Premium Dealerships Ltd. (e.g., call b2c:a05Ws000005SPLoIAO lines 11\u201312; call b2c:a05Ws000005SaFYIA0 lines 5\u20136, 9\u201310). She also never states a comparison of AutoElite's financing specifically to that company, nor a named list of items to review before moving forward beyond reviewing the proposal details with her team (call b2c:a05Ws000005SVxPIAW line 17) and re-reviewing her requirements ahead of the negotiation meeting (call b2c:a05Ws000005SaFYIA0 line 15). Since the named entity 'High-End Autos Co.' does not appear in any source, the question cannot be answered as asked.",
+              "evidence": [],
+              "reason": "The question asks specifically about Sofia Kim's comparison of AutoElite's financing to 'High-End Autos Co.' and what she still wants to review before moving forward. No call transcript contains any reference to 'High-End Autos Co.' The competitors mentioned are 'Premium Dealerships Ltd.' and unnamed 'other dealerships.' Without the exact named entity appearing in the sources, the financing comparison to High-End Autos Co. cannot be established, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SYsEIAW",
+              "b2c:a05Ws000005ScvbIAC",
+              "b2c:a05Ws000005SdEtIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention 'High-End Autos Co.' Sofia Kim discusses AutoElite's certified pre-owned program reliability, post-purchase support, pricing, and flexible financing, but makes no comparison to High-End Autos Co. specifically. She does say she wants to review the details/options before the next conversation (e.g., 'I'll review everything' on the 2021-06-08 call) and wants more details on the Tesla Model S and financing at the next step, but no comparison to that named competitor is stated.",
+              "evidence": [],
+              "reason": "No source line in any of the three calls references 'High-End Autos Co.' by name. Sofia Kim asks how AutoElite's pre-owned program 'stacks up against competitors' (call b2c:a05Ws000005ScvbIAC, line 5) and compares post-purchase support to 'what's available on the market' (line 7), but never names High-End Autos Co. Because the question specifically asks about Sofia Kim's comparison of AutoElite's financing to High-End Autos Co., and that named competitor does not appear anywhere in the transcripts, the requested fact cannot be supported. The second part of the question (what she still wants to review) is partially addressable\u2014she says 'I'll review everything' (call b2c:a05Ws000005SdEtIAK, line 17) and wants 'more details, perhaps at the next step' (call b2c:a05Ws000005SYsEIAW, line 17)\u2014but without the financing comparison to High-End Autos Co., the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SX1UIAW",
+              "b2c:a05Ws000005Sc1GIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any mention of 'High-End Autos Co.' Sofia Kim discussed AutoElite's flexible financing solutions and expressed interest in reviewing/customizing the maintenance schedule to fit her usage pattern, but she never compared AutoElite's financing to High-End Autos Co. specifically. Because the named competitor 'High-End Autos Co.' does not appear in any source, the comparison question cannot be answered.",
+              "evidence": [],
+              "reason": "Neither call transcript references 'High-End Autos Co.' by name. The 2023-06-25 call (b2c:a05Ws000005SX1UIAW) has Sofia asking about financing flexibility (line 11) and wanting to review the maintenance schedule (line 17), and the 2023-06-18 call (b2c:a05Ws000005Sc1GIAS) discusses financing options generically (lines 13-14), but no specific comparison to High-End Autos Co. is made. The exact named entity required by the question is absent from all sources, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SS6hIAG",
+              "b2c:a05Ws000005SWjtIAG",
+              "b2c:a05Ws000005Sc1FIAS",
+              "b2c:a05Ws000005ScHMIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention 'High-End Autos Co.' at all, and Sofia Kim never makes a statement comparing AutoElite's financing to that company. She only discusses AutoElite's own flexible financing solutions (e.g., lines 12\u201313 of the 2023-11-24 call and lines 12, 14, and 16 of the 2023-12-09 call) and says she wants to review everything and discuss internally with her team before moving forward (lines 15\u201317 of the 2023-12-01 call). No comparison to High-End Autos Co. is supported by the sources.",
+              "evidence": [],
+              "reason": "The question asks what Sofia Kim said about how AutoElite's financing compares to High-End Autos Co. However, 'High-End Autos Co.' is never mentioned in any of the four call transcripts. Sofia Kim discusses AutoElite's flexible financing in general terms but never compares it to a company by that name. The only competitor named is 'Prestige Car Network' (call b2c:a05Ws000005SWjtIAG, line 8), which is a different entity. Because the exact named company in the question does not appear in the sources, the requested comparison cannot be answered. The second part of the question (what she still wants to review) is partially addressable\u2014she mentions reviewing everything and discussing internally (call b2c:a05Ws000005SWjtIAG, line 15)\u2014but since the first part is entirely unsupported, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SU3jIAG",
+              "b2c:a05Ws000005SWyGIAW",
+              "b2c:a05Ws000005SdBiIAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Sofia Kim said AutoElite's financing options seem straightforward and transparent, which she likes, and she noted that High-End Autos Co. offers similar credit approvals. In the second call, Liam confirmed the financing is on par with High-End Autos Co. in credit approval opportunities, and Sofia acknowledged it is beneficial to have similar opportunities there. Before moving forward, she said she wants to take more time to go through everything, particularly the customization options for the vehicles, and in the later call she stated she needs to review the adjusted terms before making a final decision.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SU3jIAG",
+                  "line_start": 5,
+                  "line_end": 8,
+                  "quote": "[2024-04-07T09:30:50] Sofia Kim: Well, I've been comparing your financing options with what I've seen from other companies. AutoElite's options seem straightforward and transparent, which I like.\n[2024-04-07T09:31:05] Liam Murphy: I'm glad you found that clarity useful. We really strive to make our financing as easy to understand as possible. Were there any specific options or terms you were curious about?\n[2024-04-07T09:31:15] Sofia Kim: Not at the moment. Mostly, I wanted to ensure I'm making an informed choice. I've looked at options from High-End Autos Co. as well, and I noticed they offer similar credit approvals."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SU3jIAG",
+                  "line_start": 15,
+                  "line_end": 16,
+                  "quote": "[2024-04-07T09:32:50] Sofia Kim: Not at this point, no. I'm going to take a bit more time to go through everything, particularly the customization options for the vehicles."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SWyGIAW",
+                  "line_start": 14,
+                  "line_end": 15,
+                  "quote": "[2024-04-15T14:33:25] Liam Murphy: Our financing options are quite flexible. They\u2019re on par with High-End Autos Co., ensuring credit approval opportunities effectively. Feedback suggests clients find it equally productive as they match personal and organizational needs seamlessly."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SWyGIAW",
+                  "line_start": 17,
+                  "line_end": 18,
+                  "quote": "[2024-04-15T14:34:20] Sofia Kim: That reassurance is valuable. So, after I review the adjusted terms, I should be able to make a final decision soon."
+                }
+              ],
+              "reason": "All facts are directly stated by Sofia Kim in the transcripts. In call b2c:a05Ws000005SU3jIAG lines 5-7, Sofia describes AutoElite's financing as straightforward and transparent and notes High-End Autos Co. offers similar credit approvals. Line 15 shows she wants more time to review customization options. In call b2c:a05Ws000005SWyGIAW lines 14-15, the financing comparison to High-End Autos Co. is reiterated and Sofia acknowledges the similar opportunities. Line 17 shows she wants to review the adjusted terms before making a final decision. The draft extraction had line_end 15 for the customization evidence (should be 16 to include the full line) and missed the second-call financing comparison evidence; both are repaired here."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state that Sofia Kim finds AutoElite's financing straightforward and transparent, that High-End Autos Co. offers similar credit approvals, and that she wants to review the customization options for the vehicles before moving forward. Answer A includes additional detail about a later call mentioning adjusted terms, but this is extra unrequested detail and does not conflict with Answer B's content. The core requested facts are the same in both."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both parts of the question are directly supported by the same call: Sofia compares AutoElite's financing to High-End Autos Co. (straightforward/transparent, similar credit approvals) and says she wants more time to review customization options. Each evidence chunk supplies a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What did Sofia Kim say about how AutoElite's financing compares to High-End Autos Co.",
+            "explicitly_requested": true,
+            "required_fact": "Sofia Kim said AutoElite's financing options seem straightforward and transparent, and that High-End Autos Co. offers similar credit approvals",
+            "source_call_ids": [
+              "b2c:a05Ws000005SU3jIAG"
+            ]
+          },
+          {
+            "question_span": "what does she still want to review before moving forward?",
+            "explicitly_requested": true,
+            "required_fact": "She wants to take more time to go through everything, particularly the customization options for the vehicles",
+            "source_call_ids": [
+              "b2c:a05Ws000005SU3jIAG"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) Sofia Kim's comparison of AutoElite's financing to High-End Autos Co., and (2) what she still wants to review. The gold_answer provides exactly these two facts: financing is straightforward/transparent and High-End offers similar credit approvals; and she wants to review customization options. No extra facts are included. The independent answer covers both facts accurately. The obligations correctly extract the two required facts from the single call, and the call is necessary to answer both parts. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "AutoElite's financing is straightforward and transparent",
+            "question_span": "What did Sofia Kim say about how AutoElite's financing compares to High-End Autos Co.",
+            "required_by_question": true
+          },
+          {
+            "claim": "High-End Autos Co. offers similar credit approvals",
+            "question_span": "What did Sofia Kim say about how AutoElite's financing compares to High-End Autos Co.",
+            "required_by_question": true
+          },
+          {
+            "claim": "She still wants to review the customization options for the vehicles",
+            "question_span": "what does she still want to review before moving forward?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "f0dc9ec75004b79dced8b8b74bac2f459476e1ba324f22cac6d34a1f2233ace6",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SVSiIAO"
+    ],
+    "status": "accepted",
+    "question": "Which vehicle models did Hina suggest for Olivia Wang's luxury and eco-friendly fleet enhancement, and what add-on plans are available for them?",
+    "gold_answer": "The 2024 Tesla Model S and 2023 Nissan Leaf, both supplementable with AutoElite's Comprehensive Maintenance Plan and Extended Warranty Plan.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SVSiIAO",
+        "answer_claim": "Hina suggested the 2024 Tesla Model S and 2023 Nissan Leaf.",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 15,
+        "quote": "[2020-09-18T11:02:50] Hina Patel: Certainly. We have several options including the 2024 Tesla Model S known for its luxury and advanced technology, and the 2023 Nissan Leaf, which is an excellent eco-friendly choice.",
+        "start": 2581,
+        "end": 2797
+      },
+      {
+        "call_id": "b2c:a05Ws000005SVSiIAO",
+        "answer_claim": "Both models can be supplemented with the AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan.",
+        "kind": "dialogue",
+        "line_start": 16,
+        "line_end": 17,
+        "quote": "[2020-09-18T11:03:22] Hina Patel: Yes, both models can be supplemented with our AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan. These ensure your vehicles are always in top condition and provide peace of mind against unexpected repairs over the years.",
+        "start": 3002,
+        "end": 3277
+      }
+    ],
+    "question_id": "b2c-single_call-f0dc9ec75004b79d",
+    "candidate": {
+      "question": "Which vehicle models did Hina suggest for Olivia Wang's luxury and eco-friendly fleet enhancement, and what add-on plans are available for them?",
+      "gold_answer": "The 2024 Tesla Model S and 2023 Nissan Leaf, both supplementable with AutoElite's Comprehensive Maintenance Plan and Extended Warranty Plan.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SVSiIAO",
+          "answer_claim": "Hina suggested the 2024 Tesla Model S and 2023 Nissan Leaf.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2020-09-18T11:02:50] Hina Patel: Certainly. We have several options including the 2024 Tesla Model S known for its luxury and advanced technology, and the 2023 Nissan Leaf, which is an excellent eco-friendly choice.",
+          "start": 2581,
+          "end": 2797
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVSiIAO",
+          "answer_claim": "Both models can be supplemented with the AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 17,
+          "quote": "[2020-09-18T11:03:22] Hina Patel: Yes, both models can be supplemented with our AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan. These ensure your vehicles are always in top condition and provide peace of mind against unexpected repairs over the years.",
+          "start": 3002,
+          "end": 3277
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Hina suggested the 2024 Tesla Model S and the 2023 Nissan Leaf. The available add-on plans are the AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA: dialogue at 11:02:50 confirms Hina suggested the 2024 Tesla Model S and 2023 Nissan Leaf; 11:03:22 confirms both can be supplemented with the AutoElite Comprehensive Maintenance Plan and Extended Warranty Plan. Gold and independent answers match semantically; no-context answers are UNKNOWN, so they fail. Question is a realistic sales need with clear context and no answer leakage. Two-call flags set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SVSiIAO"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMPXIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript is between Danieles Silveira and Olivia Wang. There is no person named Hina in the conversation, no discussion of a 'luxury and eco-friendly fleet enhancement,' and no specific add-on plans mentioned. The vehicles discussed (Mercedes-Benz E-Class and BMW X5 M) were brought up by Olivia herself, not suggested by anyone named Hina. The only plans referenced are generic financing options and 'exclusive service plans' with no add-on details. The question cannot be answered from the given sources.",
+              "evidence": [],
+              "reason": "No person named Hina appears in the transcript. The call involves Danieles Silveira and Olivia Wang discussing the Mercedes-Benz E-Class and BMW X5 M, which Olivia raised herself. There is no mention of a 'luxury and eco-friendly fleet enhancement' scenario, and no specific add-on plans are described. All requested facts (Hina's suggestions, fleet enhancement context, and add-on plans) are absent from the source material."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRKDIA4",
+              "b2c:a05Ws000005Sb8DIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not discuss a 'luxury and eco-friendly fleet enhancement' for Olivia Wang. Hina Patel did suggest the 2024 Genesis G80, 2023 Jaguar F-Pace, and 2022 Acura RDX as part of a premium vehicle portfolio, and mentioned add-ons including a comprehensive maintenance plan and a luxury vehicle concierge service. However, no eco-friendly vehicles or fleet enhancement context appears in either call, so the question's specific scope (eco-friendly fleet enhancement) is unsupported by the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a 'luxury and eco-friendly fleet enhancement.' While Hina suggested the 2024 Genesis G80, 2023 Jaguar F-Pace, and 2022 Acura RDX (call b2c:a05Ws000005Sb8DIAS, line 4) and mentioned a comprehensive maintenance plan and luxury concierge service as add-ons (lines 4, 10, 12 of call b2c:a05Ws000005SRKDIA4), neither call references eco-friendly vehicles or a fleet enhancement. Olivia's stated needs are luxury, reliability, and technology\u2014not eco-friendliness or fleet purposes. Because the exact event scope ('eco-friendly fleet enhancement') is not present in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPK3IAO",
+              "b2c:a05Ws000005SQ4qIAG",
+              "b2c:a05Ws000005SUupIAG",
+              "b2c:a05Ws000005SYGtIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no person named Hina and no discussion of a 'luxury and eco-friendly fleet enhancement.' All four calls for Olivia Wang's opportunity ('Comprehensive Deal for Olivia Wang') were conducted by Linh Nguyen of AutoElite Motors. The only vehicle model discussed was the 2024 Tesla Model S, with add-on services including comprehensive maintenance plans, extended warranty, certified pre-owned program, flexible financing solutions, and luxury lease solutions. Because the question specifically asks about suggestions made by 'Hina' for a fleet enhancement scenario, and no such person or context exists in the provided transcripts, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about vehicle models suggested by 'Hina' for Olivia Wang's 'luxury and eco-friendly fleet enhancement.' No call transcript mentions anyone named Hina; the salesperson in all calls is Linh Nguyen. There is also no reference to a fleet enhancement\u2014only individual vehicle purchase discussions around the 2024 Tesla Model S. Since the exact named person (Hina) and the exact event scope (luxury and eco-friendly fleet enhancement) are entirely absent from the sources, the answer is incomplete and cannot be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQ3DIAW",
+              "b2c:a05Ws000005SRLqIAO",
+              "b2c:a05Ws000005SSWTIA4",
+              "b2c:a05Ws000005SbEfIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Hina appears in any of the provided call transcripts. All four calls are between Danieles Silveira (AutoElite Motors) and Olivia Wang, discussing the 2023 Mercedes-Benz E-Class with the AutoElite Comprehensive Maintenance Plan, extended warranty, and flexible financing/leasing options. There is no mention of a 'luxury and eco-friendly fleet enhancement' scenario or any vehicle models suggested by someone named Hina. The question's premise is not supported by the sources.",
+              "evidence": [],
+              "reason": "The question asks about vehicle models suggested by 'Hina' for Olivia Wang's 'luxury and eco-friendly fleet enhancement' and associated add-on plans. None of the four call transcripts contain a person named Hina. The salesperson in all calls is Danieles Silveira. The only vehicle discussed is the 2023 Mercedes-Benz E-Class, and the context is 'Premium Vehicle Purchase and Maintenance,' not a 'luxury and eco-friendly fleet enhancement.' Since the exact named person (Hina) and the exact event scope (luxury and eco-friendly fleet enhancement) are absent from all sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SR5mIAG",
+              "b2c:a05Ws000005SUuqIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no person named Hina. Both calls for Olivia Wang were conducted by Mohammed Al-Aziz of AutoElite Motors and discuss a single 2024 Tesla Model S, not a luxury and eco-friendly fleet enhancement. Because the question specifically asks about vehicle models suggested by Hina for a fleet enhancement, and no such person or fleet discussion exists in the provided transcripts, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about suggestions made by 'Hina' regarding a 'luxury and eco-friendly fleet enhancement' for Olivia Wang. Neither call transcript includes anyone named Hina; both calls feature Mohammed Al-Aziz as the salesperson. The discussions concern a single 2024 Tesla Model S acquisition, not a fleet. While add-on plans (Extended Warranty Plan, Comprehensive Maintenance Plan, Winter Protection Package) are mentioned, they are associated with Mohammed's conversation about one vehicle, not with any fleet suggestion by Hina. Since the exact named person (Hina) and the event scope (fleet enhancement) are entirely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQ4rIAG",
+              "b2c:a05Ws000005SXhLIAW",
+              "b2c:a05Ws000005SYNNIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about vehicle models suggested by 'Hina' for Olivia Wang's luxury and eco-friendly fleet enhancement. However, no person named Hina appears in any of the three provided call transcripts. The salesperson in all calls is Ravi Chandra from AutoElite Motors, who discussed the 2024 Tesla Model S and 2023 Mercedes-Benz E-Class along with the AutoElite Comprehensive Maintenance Plan and Extended Warranty. Because the question specifically asks about suggestions made by Hina, and Hina is not present in the sources, the question cannot be answered as stated.",
+              "evidence": [],
+              "reason": "The exact named person 'Hina' does not appear in any of the three call transcripts for Olivia Wang's account. All interactions are with Ravi Chandra. Since the question requires facts attributed specifically to Hina, and no such person exists in the provided sources, the answer is incomplete. A different salesperson (Ravi Chandra) cannot answer a question about Hina's suggestions."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUQAIA4",
+              "b2c:a05Ws000005SVSiIAO",
+              "b2c:a05Ws000005SYlUIAW",
+              "b2c:a05Ws000005Sb9pIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Hina Patel suggested the 2024 Tesla Model S (luxury, advanced technology) and the 2023 Nissan Leaf (eco-friendly) for Olivia Wang's luxury and eco-friendly fleet enhancement. The available add-on plans for both models are the AutoElite Comprehensive Maintenance Plan and the Extended Warranty Plan. The Extended Warranty Plan covers mechanical and electrical components plus regular maintenance tasks, providing coverage beyond the standard warranty period.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SVSiIAO",
+                  "line_start": 14,
+                  "line_end": 17,
+                  "quote": "[2020-09-18T11:02:50] Hina Patel: Certainly. We have several options including the 2024 Tesla Model S known for its luxury and advanced technology, and the 2023 Nissan Leaf, which is an excellent eco-friendly choice.\n[2020-09-18T11:03:05] Olivia Wang: The Tesla Model S sounds quite intriguing, given its reputation. And I\u2019ve heard a lot about the Leaf's efficiency. Do these come with any maintenance or warranty plans?\n[2020-09-18T11:03:22] Hina Patel: Yes, both models can be supplemented with our AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan. These ensure your vehicles are always in top condition and provide peace of mind against unexpected repairs over the years."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SUQAIA4",
+                  "line_start": 2,
+                  "line_end": 3,
+                  "quote": "[2020-11-14T11:00:30] Hina Patel: Great to hear! Let's dive into our quote for enhancing your fleet with luxury and eco-friendly vehicles. We proposed the 2024 Tesla Model S and the 2023 Nissan Leaf."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SUQAIA4",
+                  "line_start": 6,
+                  "line_end": 7,
+                  "quote": "[2020-11-14T11:01:40] Hina Patel: And as for support, our vehicles come with exceptional post-purchase plans. For instance, our Comprehensive Maintenance Plan is designed to keep your cars in top condition, combining cost-effective solutions with high-quality service from factory-trained technicians."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SUQAIA4",
+                  "line_start": 10,
+                  "line_end": 11,
+                  "quote": "[2020-11-14T11:02:40] Hina Patel: Certainly, the Extended Warranty Plan covers an additional range of repairs beyond the standard warranty period, ensuring your investment is protected well into the future. Many clients find peace of mind with this added coverage."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SYlUIAW",
+                  "line_start": 16,
+                  "line_end": 17,
+                  "quote": "[2020-10-02T16:02:30] Hina Patel: Of course! Our extended warranty covers both the mechanical and electrical components, plus it includes regular maintenance tasks, so you're covered for most situations that might arise."
+                }
+              ],
+              "reason": "All facts are directly supported: (1) Vehicle models named by Hina in call b2c:a05Ws000005SVSiIAO line 14 and b2c:a05Ws000005SUQAIA4 line 2; (2) Add-on plans (Comprehensive Maintenance Plan and Extended Warranty Plan) explicitly stated in b2c:a05Ws000005SVSiIAO lines 15-16 and b2c:a05Ws000005SUQAIA4 lines 6 and 10; (3) Extended warranty details (mechanical/electrical components, regular maintenance) in b2c:a05Ws000005SYlUIAW line 16. The draft extraction is accurate and complete."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the same two vehicle models (2024 Tesla Model S and 2023 Nissan Leaf) and the same two add-on plans (AutoElite Comprehensive Maintenance Plan and Extended Warranty Plan). Answer A provides additional descriptive detail about the models and the Extended Warranty Plan's coverage, but the core requested facts are identical in both answers."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SNGeIAO",
+              "b2c:a05Ws000005SQRQIA4",
+              "b2c:a05Ws000005SQfsIAG",
+              "b2c:a05Ws000005ST16IAG",
+              "b2c:a05Ws000005SbBRIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about vehicle models suggested by 'Hina' for Olivia Wang's 'luxury and eco-friendly fleet enhancement.' No person named Hina appears in any of the provided call transcripts. The salesperson in all calls with Olivia Wang is Priya Sharma of AutoElite Motors. Additionally, no discussion of a 'luxury and eco-friendly fleet enhancement' occurs; the calls concern Olivia Wang's individual interest in the Tesla Model S and Audi Q7. While those models and add-on plans (Extended Warranty Plan, Luxury Lease solutions, comprehensive maintenance plan, flexible financing) are discussed by Priya Sharma, the question's named person (Hina) and event scope (fleet enhancement) do not match the sources, so no complete answer can be provided.",
+              "evidence": [],
+              "reason": "The exact named person 'Hina' does not appear in any transcript; all interactions with Olivia Wang involve Priya Sharma. The event scope 'luxury and eco-friendly fleet enhancement' is also absent. Since the question requires facts attributed to Hina specifically, and no such person exists in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQODIA4",
+              "b2c:a05Ws000005SQUdIAO",
+              "b2c:a05Ws000005SYGuIAO",
+              "b2c:a05Ws000005SZWFIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no person named Hina and no discussion of a 'luxury and eco-friendly fleet enhancement' for Olivia Wang. All four calls involve Hassan Riaz of AutoElite Motors discussing a premium auto purchase (BMW X5 M, Audi Q7, Lexus RX 350) for Olivia Wang. There is no mention of eco-friendly vehicles, fleet enhancement, or add-on plans tied to a suggestion by Hina. The question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about vehicle models suggested by 'Hina' for Olivia Wang's 'luxury and eco-friendly fleet enhancement' and associated add-on plans. No call transcript contains a person named Hina; the salesperson in all calls is Hassan Riaz. The context is a premium/luxury auto purchase, not an eco-friendly fleet enhancement. While extended warranty and financing options are discussed, they are not framed as add-on plans for an eco-friendly fleet suggested by Hina. Therefore, the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPlOIAW",
+              "b2c:a05Ws000005SXsdIAG",
+              "b2c:a05Ws000005SbD3IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about vehicle models suggested by 'Hina' for Olivia Wang's 'luxury and eco-friendly fleet enhancement.' No person named Hina appears in any of the provided call transcripts. The only salesperson in all three calls is Felix Bakker of AutoElite Motors. While Felix did suggest the Tesla Model S and Mercedes-Benz E-Class and discussed extended warranty and maintenance plans (including a 10% fleet discount on the comprehensive maintenance plan), these suggestions were made by Felix, not Hina. Additionally, the specific framing of 'luxury and eco-friendly fleet enhancement' does not appear in the sources. Because the question is scoped to a named person (Hina) who does not exist in the provided data, the question cannot be answered as asked.",
+              "evidence": [],
+              "reason": "The exact named person 'Hina' does not appear in any of the three call transcripts. All conversations with Olivia Wang involve Felix Bakker. Since the question specifically asks what Hina suggested, and no such person exists in the sources, the answer is incomplete. A different salesperson (Felix) cannot answer a question about Hina's suggestions."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRQeIAO",
+              "b2c:a05Ws000005SVXSIA4",
+              "b2c:a05Ws000005SYAOIA4",
+              "b2c:a05Ws000005SZT1IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Hina appears in any of the provided call transcripts. All calls with Olivia Wang were conducted by Zanele Dlamini of AutoElite Motors. While the calls do reference the 2024 Tesla Model S (noted for eco-friendly features) and the 2023 Mercedes-Benz E-Class (noted for luxury), along with the AutoElite Comprehensive Maintenance Plan and extended warranty options, none of these suggestions were made by anyone named Hina, and the specific framing of a 'luxury and eco-friendly fleet enhancement' is not used. Because the question asks specifically about Hina's suggestions, and no such person exists in the sources, the answer cannot be completed as asked.",
+              "evidence": [],
+              "reason": "The question requires facts attributed to a person named 'Hina' regarding a 'luxury and eco-friendly fleet enhancement' for Olivia Wang. No call transcript contains any speaker or reference to 'Hina.' All interactions with Olivia Wang were handled by Zanele Dlamini. Since the exact named person (Hina) is absent from all sources, no complete answer can be provided for the question as literally asked."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly supported by the same call: Hina names the 2024 Tesla Model S and 2023 Nissan Leaf (11:02:50) and states both can be supplemented with the AutoElite Comprehensive Maintenance Plan and Extended Warranty Plan (11:03:22). The question is self-contained and answerable from the cited evidence."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "Which vehicle models did Hina suggest for Olivia Wang's luxury and eco-friendly fleet enhancement",
+            "explicitly_requested": true,
+            "required_fact": "Hina suggested the 2024 Tesla Model S (luxury) and the 2023 Nissan Leaf (eco-friendly).",
+            "source_call_ids": [
+              "b2c:a05Ws000005SVSiIAO"
+            ]
+          },
+          {
+            "question_span": "what add-on plans are available for them",
+            "explicitly_requested": true,
+            "required_fact": "Both models can be supplemented with the AutoElite Comprehensive Maintenance Plan and an Extended Warranty Plan.",
+            "source_call_ids": [
+              "b2c:a05Ws000005SVSiIAO"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) vehicle models suggested by Hina for Olivia's luxury and eco-friendly fleet enhancement, and (2) available add-on plans for those models. The gold_answer provides exactly these two facts: the 2024 Tesla Model S and 2023 Nissan Leaf, and the AutoElite Comprehensive Maintenance Plan and Extended Warranty Plan. No extra facts are included. The independent answer covers both requested facts accurately. The contract obligations correctly map to the two question spans and are supported by the single call. The single call is required to answer both parts, so each_call_required_by_question is true.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Hina suggested the 2024 Tesla Model S",
+            "question_span": "Which vehicle models did Hina suggest for Olivia Wang's luxury and eco-friendly fleet enhancement",
+            "required_by_question": true
+          },
+          {
+            "claim": "Hina suggested the 2023 Nissan Leaf",
+            "question_span": "Which vehicle models did Hina suggest for Olivia Wang's luxury and eco-friendly fleet enhancement",
+            "required_by_question": true
+          },
+          {
+            "claim": "Both models can be supplemented with AutoElite's Comprehensive Maintenance Plan",
+            "question_span": "what add-on plans are available for them",
+            "required_by_question": true
+          },
+          {
+            "claim": "Both models can be supplemented with AutoElite's Extended Warranty Plan",
+            "question_span": "what add-on plans are available for them",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]
