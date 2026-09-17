@@ -1,0 +1,475 @@
+[
+  {
+    "question_id": "b2b-multi_call-35160a3e881e8f3a",
+    "question": "Across the two Skyline Robotics calls with Omar Khoury, how did Nadia first address his concern about balancing cost with advanced features, and what differentiation did she cite in the follow-up when he noted other vendors make similar claims?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Nadia first addressed Omar's concern about balancing cost with advanced features, and what differentiation she cited in the follow-up when he said other vendors make similar claims",
+        "relationship": "objection and follow-up response on the same business issue (cost vs. advanced features and vendor differentiation) across two calls",
+        "reason": "Both parts concern the same objection thread\u2014cost/feature tradeoff and vendor differentiation\u2014with the follow-up naturally building on the initial response. This is a coherent objection-and-response comparison, not two independent lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "type": "object",
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks how Nadia first addressed the cost concern and what differentiation she cited in the follow-up. The first call provides the initial response (transparent, favorable total cost of ownership with pricing details to come). The second call provides the differentiation (competitive pricing, robust support, proven ROI track record). Both pieces of information are directly requested and are distinct, non-repetitive facts. The first call does not contain the differentiation, and the second call does not contain the initial response. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvHpIAK",
+                  "fact": "Nadia initially addressed Omar's cost concern by stating TechPulse maintains a transparent and favorable total cost of ownership, with pricing details to come in next steps.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention the initial response to the cost concern; it only addresses the differentiation when Omar notes competitors make similar claims."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SysLIAS",
+                  "fact": "In the follow-up, Nadia cited competitive pricing, robust support services for seamless implementation, and a proven ROI track record backed by case studies as differentiation.",
+                  "why_other_call_cannot_supply_it": "The first call does not contain this differentiation; it only provides the initial cost assurance without mentioning competitive pricing, support services, or ROI case studies."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the initial response to the cost concern (from the first call) and the differentiation cited in the follow-up (from the second call). Each call supplies a unique fact that the other does not, and both are necessary to fully answer the question."
+            },
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks how Nadia first addressed the cost concern and what differentiation she cited in the follow-up. The first call provides the initial response (transparent, favorable total cost of ownership with pricing details to come). The second call provides the differentiation (competitive pricing, robust support, proven ROI track record). Both pieces of information are directly requested and are distinct, non-repetitive facts. The first call does not contain the differentiation, and the second call does not contain the initial response. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvHpIAK",
+                "fact": "Nadia addressed the cost-vs-features concern by citing a transparent, favorable total cost of ownership, with pricing details deferred to next steps.",
+                "why_other_call_cannot_supply_it": "The follow-up call contains no mention of the total cost of ownership response; it only covers differentiation claims."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SysLIAS",
+                "fact": "When Omar noted other vendors make similar claims, Nadia cited competitive pricing, robust support services for seamless implementation, and a proven ROI track record backed by case studies.",
+                "why_other_call_cannot_supply_it": "The first call predates Omar's 'other vendors make similar claims' objection and contains none of these differentiation points."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct responses across two calls: the initial cost-concern handling and the later differentiation against vendor claims. Each fact appears only in its respective call and both are requested by the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvHpIAK",
+                  "fact": "Nadia addressed the cost-vs-features concern by citing a transparent, favorable total cost of ownership, with pricing details deferred to next steps.",
+                  "why_other_call_cannot_supply_it": "The follow-up call contains no mention of the total cost of ownership response; it only covers differentiation claims."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SysLIAS",
+                  "fact": "When Omar noted other vendors make similar claims, Nadia cited competitive pricing, robust support services for seamless implementation, and a proven ROI track record backed by case studies.",
+                  "why_other_call_cannot_supply_it": "The first call predates Omar's 'other vendors make similar claims' objection and contains none of these differentiation points."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct responses across two calls: the initial cost-concern handling and the later differentiation against vendor claims. Each fact appears only in its respective call and both are requested by the question."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct moments across two calls with the same account/contact: (1) Nadia's initial response to Omar's cost-vs-features concern in call 1 ('transparent and favorable total cost of ownership\u2026pricing details to come'), and (2) her differentiation pitch in call 2 when Omar noted other vendors make similar claims ('competitive pricing, robust support services for seamless implementation, proven ROI track record backed by case studies'). Each source contributes an exclusive requested fact. The gold answer matches the transcripts verbatim in substance with no unasked extras. The question is naturally phrased, adequately scoped to the Skyline Robotics opportunity, and a rep would plausibly want to recall how objections were handled across calls. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Omar raising his concern about balancing cost with advanced features, and Nadia responding that TechPulse (implied by 'we') maintains 'a transparent and favorable total cost of ownership' and that they'll 'go into more details on pricing and ensure it aligns with your budget in our next steps.' This directly supports the claim of transparent/favorable TCO with pricing details to come in next steps."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Omar noting other vendors make similar claims and asking what makes their solutions stand out. Nadia responds citing 'competitive pricing and robust support services, ensuring that implementation and integration into your existing workflows are seamless' plus 'a proven track record of ROI, backed by compelling case studies.' This directly supports the claim of competitive pricing, robust support for seamless implementation, and proven ROI backed by case studies."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence 0 confirms Nadia's initial response about transparent, favorable total cost of ownership with pricing details to come in next steps. Evidence 1 confirms the follow-up differentiation citing competitive pricing, robust support services for seamless implementation, and a proven ROI track record backed by case studies. All factual claims in the gold_answer are accounted for by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-45e236a629f67d05",
+    "question": "Across the two discovery conversations with Yvette Nkosi at AlphaWave Networks, what support-related frustration with prior providers did she raise in each call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The support-related frustration with prior providers that Yvette Nkosi raised in each of the two discovery calls",
+        "relationship": "Same business issue (support frustrations with prior providers) compared across two calls with the same contact",
+        "reason": "Both requested facts concern the same issue\u2014support frustrations with prior providers\u2014across two discovery calls, which is a valid multi-call comparison."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwsAIAS",
+                "fact": "Yvette cited competitors' limited flexibility hurting project timelines.",
+                "why_other_call_cannot_supply_it": "The second call does not mention limited flexibility or project timelines; it only mentions limited support options."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzGYIA0",
+                "fact": "Yvette cited other providers' limited support options, making responsiveness important.",
+                "why_other_call_cannot_supply_it": "The first call does not mention limited support options or responsiveness; it only mentions limited flexibility and project timelines."
+              }
+            ],
+            "reason": "The question explicitly asks for the support-related frustration raised in each of the two calls. The first call contains a distinct frustration about limited flexibility affecting timelines, while the second call contains a different frustration about limited support options and responsiveness. These are separate, non-overlapping facts, and each is only present in one call, so both calls are necessary to answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for support-related frustrations raised in each call. Both calls mention frustrations with prior providers' limited flexibility/support options, but these are substantively the same complaint about inadequate support/flexibility affecting responsiveness and timelines. The second call's 'limited support options' is a paraphrase of the first call's 'limited flexibility' in the context of support, not a distinct new fact. Therefore, one call suffices to answer the actual information need, and the two calls do not provide meaningfully different requested information."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwsAIAS",
+                  "fact": "Yvette cited competitors' limited flexibility hurting project timelines.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention limited flexibility or project timelines; it only mentions limited support options."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzGYIA0",
+                  "fact": "Yvette cited other providers' limited support options, making responsiveness important.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention limited support options or responsiveness; it only mentions limited flexibility and project timelines."
+                }
+              ],
+              "reason": "The question explicitly asks for the support-related frustration raised in each of the two calls. The first call contains a distinct frustration about limited flexibility affecting timelines, while the second call contains a different frustration about limited support options and responsiveness. These are separate, non-overlapping facts, and each is only present in one call, so both calls are necessary to answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwsAIAS",
+                "fact": "Yvette cited frustration with competitors' limited flexibility and its impact on project timelines.",
+                "why_other_call_cannot_supply_it": "The second call contains no mention of flexibility or project timeline complaints; it only discusses support options."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzGYIA0",
+                "fact": "Yvette cited frustration with other providers' limited support options, making responsiveness important.",
+                "why_other_call_cannot_supply_it": "The first call contains no complaint about limited support options or responsiveness; it only mentions flexibility and timelines."
+              }
+            ],
+            "reason": "The question explicitly asks for the support-related frustration raised in each of the two calls. Each call contains a distinct, non-redundant complaint (flexibility/timeline impact vs. limited support options/responsiveness), and neither call supplies the other's fact."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwsAIAS",
+                  "fact": "Yvette cited frustration with competitors' limited flexibility and its impact on project timelines.",
+                  "why_other_call_cannot_supply_it": "The second call contains no mention of flexibility or project timeline complaints; it only discusses support options."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzGYIA0",
+                  "fact": "Yvette cited frustration with other providers' limited support options, making responsiveness important.",
+                  "why_other_call_cannot_supply_it": "The first call contains no complaint about limited support options or responsiveness; it only mentions flexibility and timelines."
+                }
+              ],
+              "reason": "The question explicitly asks for the support-related frustration raised in each of the two calls. Each call contains a distinct, non-redundant complaint (flexibility/timeline impact vs. limited support options/responsiveness), and neither call supplies the other's fact."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1: Yvette says 'We've experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines.' Call 2: she says 'We've faced some frustrations with other providers' limited support options, so responsiveness is definitely important to us.' The gold answer accurately captures both distinct frustrations, each sourced exclusively from its respective call. The question is naturally phrased, scoped to a named contact and account, and a rep would plausibly want to track evolving support-related pain points across discovery calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Yvette Nkosi on 2020-11-24 explicitly states: 'We've experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines. So, having comprehensive support is key for us.' This directly supports the answer_claim about competitors' limited flexibility hurting project timelines and comprehensive support being key."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Yvette Nkosi on 2020-12-01 explicitly states: 'We've faced some frustrations with other providers' limited support options, so responsiveness is definitely important to us.' This directly supports the answer_claim about other providers' limited support options and responsiveness being important."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) In the first call she cited competitors' limited flexibility hurting project timelines \u2013 supported by index 0's quote. (2) In the second call, other providers' limited support options, making responsiveness important \u2013 supported by index 1's quote. Both calls are correctly attributed to Yvette Nkosi at AlphaWave Networks per the context_metadata. The two cited passages together fully substantiate every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-7cb4e99d284cc4d7",
+    "question": "What pricing did Lucas quote Vertex Engineering for the 10 AI Cirku-Tech units, and what discount applies to the CloudLink Designer and SecureFlow Suite units?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted for 10 AI Cirku-Tech units plus discounts on CloudLink Designer and SecureFlow Suite units",
+        "relationship": "coherent commercial quote breakdown for the same quote to Vertex Engineering",
+        "reason": "All items are part of one pricing/quote request within the same deal; discount and price are the same commercial issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about pricing and discount details a rep would track for the Vertex Engineering account. The dialogue confirms Lucas quoted 10 AI Cirku-Tech units at a 10% discount totaling $4,769.91, and a 5% discount on CloudLink Designer and SecureFlow Suite units. The gold answer states exactly those facts with no unasked extras. Single-call question, so both_sources_required is set true per instructions. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Lucas Almeida explicitly states: 10 units of AI Cirku-Tech qualify for a 10% discount, making the total $4,769.91, and that CloudLink Designer units and SecureFlow Suite also have a 5% discount. This directly supports the answer_claim in full, including the specific amounts, discount percentages, and product names."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains a direct quote from Lucas Almeida that covers every factual element of the gold_answer: (1) 10 units of AI Cirku-Tech, (2) 10% discount, (3) total of $4,769.91, (4) CloudLink Designer units and SecureFlow Suite receive a 5% discount. The speaker is Lucas, the account is Vertex Engineering Corp (confirmed by context metadata), and all figures and discount rates match exactly."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-0e570f5a5ec300fe",
+    "question": "What did Omar Farouk ask about how TechPulse's solutions handle future compliance needs, and how did Aarav respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Omar Farouk asked about TechPulse's solutions handling future compliance needs, and Aarav's response",
+        "relationship": "single coherent exchange: one question and its direct answer on the same compliance topic",
+        "reason": "This is an objection/concern and its response addressing the same issue (future compliance handling), a natural sales Q&A lookup."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific compliance-related exchange between Omar Farouk and Aarav Sharma. The dialogue confirms Omar asked 'How do your solutions compare in terms of future compliance needs?' and Aarav replied they meet current requirements and are continuously updated to align with the latest regulations. The gold answer faithfully captures both parts without adding unasked extras. The question is naturally phrased, scoped to a named customer and vendor, and a rep would plausibly want to recall this objection/requirement exchange. Single-call set, so both_sources_required is true by rule.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage only contains Omar Farouk's question about how TechPulse's solutions compare in terms of future compliance needs. It does not include any response from Aarav. The answer_claim asserts that 'Aarav says solutions adapt to future standards with continuously updated protocols,' but no such statement by Aarav appears in the cited quote (lines 7\u20138 contain only Omar's utterance). The question portion is supported, but the Aarav-response portion is entirely absent from the supplied evidence."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) Omar asked how the solutions compare for future compliance needs, and (2) Aarav said they meet current requirements and are continuously updated to align with the latest regulations. The single cited evidence item (index 0) only contains Omar's question. No cited passage includes Aarav's response about meeting current requirements or continuous updates to align with the latest regulations. Because the Aarav-response portion of the gold_answer is unsupported by any supplied evidence, the combined citations do not fully support the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-79859c85e5645bce",
+    "question": "What does the AutoElite Comprehensive Maintenance Plan for Noah Green's Tesla cost and what does it cover?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price and coverage details of the AutoElite Comprehensive Maintenance Plan for Noah Green's Tesla",
+        "relationship": "single coherent product lookup \u2014 cost and coverage describe the same maintenance plan offering",
+        "reason": "Both parts concern one product (the maintenance plan): its price and what it includes. This is a natural sales inquiry, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks about the cost and coverage of a specific maintenance plan for a named customer's vehicle. The dialogue clearly states the price ($1999.99) and coverage (regular maintenance checks, genuine parts, factory-trained technicians, keeping the car in prime condition). The gold answer matches the source exactly with no extra or missing facts. Single-call question so both_sources_required is set true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Priyanka Menon explicitly states the price as $1999.99 and describes the plan as covering 'regular maintenance checks to ensure optimal performance, including genuine parts and service by factory-trained technicians' and that 'your car remains in prime condition.' This directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports the gold_answer: the price ($1999.99), regular maintenance checks, genuine parts, service by factory-trained technicians, and keeping the car in prime condition are all explicitly stated in the quoted passage. The context metadata confirms the account is Noah Green, matching the question's subject."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-710e52f496f78eae",
+    "question": "What concern did Michael Russell raise about High-End Autos Co.'s pre-owned certifications, and how did Luiz respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the concern Michael Russell raised about High-End Autos Co.'s pre-owned certifications and how Luiz responded to it.",
+        "relationship": "single objection-and-response exchange within one call",
+        "reason": "This is one coherent objection and its response about the same issue (pre-owned certifications), a natural sales question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive concern raised by Michael Russell about High-End Autos Co.'s pre-owned certifications and Luiz's response. The dialogue at 10:02:05 confirms Michael's concern about less thorough certifications affecting buyer confidence, and at 10:02:25 Luiz states AutoElite follows a comprehensive inspection process for every pre-owned vehicle. The gold answer accurately captures both facts without extras. The question is naturally worded, scoped to a named customer and competitor, and represents a plausible sales/account-management inquiry about competitive positioning. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Michael Russell explicitly states 'High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing.' This directly supports the answer_claim that High-End Autos Co. might have less thorough certifications, affecting confidence. The speaker attribution (Michael Russell) matches the question's attribution."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Luiz Oliveira explicitly states 'At AutoElite Motors, we strictly adhere to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction.' This directly supports the answer_claim that AutoElite strictly adheres to a comprehensive inspection process for every pre-owned vehicle. The speaker attribution (Luiz Oliveira) matches the question's attribution of the response to Luiz."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Michael said High-End Autos Co. may have less thorough certifications affecting buyer confidence \u2014 supported by evidence index 0 where Michael Russell states exactly this; (2) Luiz said AutoElite follows a comprehensive inspection process for every pre-owned vehicle \u2014 supported by evidence index 1 where Luiz Oliveira states AutoElite Motors strictly adheres to a comprehensive inspection process for every pre-owned vehicle. Both factual claims in the gold_answer are fully supported by the cited evidence. The paraphrase 'comprehensive inspection process' faithfully represents 'strictly adhere to a comprehensive inspection process,' and 'buyer confidence' faithfully represents 'confidence in purchasing.'"
+      }
+    }
+  }
+]

@@ -1,0 +1,1153 @@
+[
+  {
+    "job_id": "45e236a629f67d059c97ad8f464ef36b31b24745189d3535f7de7b94a6af3629",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SwsAIAS",
+      "b2b:a05Wt000003SzGYIA0"
+    ],
+    "status": "accepted",
+    "question": "Across the two discovery conversations with Yvette Nkosi at AlphaWave Networks, what support-related frustration with prior providers did she raise in each call?",
+    "gold_answer": "In the first call she cited competitors' limited flexibility hurting project timelines; in the second, other providers' limited support options, making responsiveness important.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SwsAIAS",
+        "answer_claim": "Yvette cited frustrations with competitors' limited flexibility and impact on project timelines, making comprehensive support key.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2020-11-24T15:02:12] Yvette Nkosi: That\u2019s reassuring. We\u2019ve experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines. So, having comprehensive support is key for us.",
+        "start": 1685,
+        "end": 1908
+      },
+      {
+        "call_id": "b2b:a05Wt000003SzGYIA0",
+        "answer_claim": "Yvette cited frustrations with other providers' limited support options, so responsiveness is important.",
+        "kind": "dialogue",
+        "line_start": 7,
+        "line_end": 8,
+        "quote": "[2020-12-01T14:31:50] Yvette Nkosi: That\u2019s good to hear. We've faced some frustrations with other providers' limited support options, so responsiveness is definitely important to us.",
+        "start": 1251,
+        "end": 1433
+      }
+    ],
+    "question_id": "b2b-multi_call-45e236a629f67d05",
+    "candidate": {
+      "question": "Across the two discovery conversations with Yvette Nkosi at AlphaWave Networks, what support-related frustration with prior providers did she raise in each call?",
+      "gold_answer": "In the first call she cited competitors' limited flexibility hurting project timelines; in the second, other providers' limited support options, making responsiveness important.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SwsAIAS",
+          "answer_claim": "Yvette cited frustrations with competitors' limited flexibility and impact on project timelines, making comprehensive support key.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2020-11-24T15:02:12] Yvette Nkosi: That\u2019s reassuring. We\u2019ve experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines. So, having comprehensive support is key for us.",
+          "start": 1685,
+          "end": 1908
+        },
+        {
+          "call_id": "b2b:a05Wt000003SzGYIA0",
+          "answer_claim": "Yvette cited frustrations with other providers' limited support options, so responsiveness is important.",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 8,
+          "quote": "[2020-12-01T14:31:50] Yvette Nkosi: That\u2019s good to hear. We've faced some frustrations with other providers' limited support options, so responsiveness is definitely important to us.",
+          "start": 1251,
+          "end": 1433
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the first call, Yvette Nkosi mentioned frustrations with competitors' limited flexibility and its impact on project timelines. In the second call, she mentioned frustrations with other providers' limited support options, emphasizing the importance of responsiveness.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer: In the single supplied call (2020-11-24), Yvette Nkosi raised frustration with the limited flexibility of prior/competitor providers and its negative impact on project timelines, noting comprehensive support is key. The second discovery conversation with Yvette Nkosi is not included in the supplied data, so her support-related frustration in that call cannot be determined.",
+          "answerable": false
+        },
+        {
+          "answer": "Only one discovery call with Yvette Nkosi is supplied (call b2b:a05Wt000003SzGYIA0, 2020-12-01). In that call, she raised frustration with other providers' limited support options, noting that responsiveness is important to AlphaWave. A second call is not provided, so the frustration raised in the other conversation cannot be determined.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both quotes directly support the gold: 2020-11-24 call has Yvette citing 'limited flexibility of competitors and the impact on our project timelines'; 2020-12-01 call has her citing 'other providers' limited support options' with responsiveness important. The question is a realistic cross-call discovery need, doesn't leak the answer, and each call contains a distinct frustration exclusive to it, so both calls are necessary and each single-call ablation fails to answer the full question."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SwsAIAS",
+          "b2b:a05Wt000003SzGYIA0"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Swx3IAC",
+              "b2b:a05Wt000003Swx4IAC",
+              "b2b:a05Wt000003T06BIAS",
+              "b2b:a05Wt000003T1qDIAS",
+              "b2b:a05Wt000003T1qEIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "yvette nkosi"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyIwIAK",
+              "b2b:a05Wt000003SyVnIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Neither transcript records Yvette Nkosi raising a support-related frustration with prior providers. The two calls cover scalability, pricing transparency, integration flexibility, security compliance, and product fit, but no complaints about support from previous vendors appear in either call.",
+              "evidence": [],
+              "reason": "I reviewed both discovery calls with Yvette Nkosi at AlphaWave Networks (b2b:a05Wt000003SyVnIAK on 2021-01-22 and b2b:a05Wt000003SyIwIAK on 2021-01-28). In the first call, Yvette discusses expansion goals, integration ease, security, pricing flexibility, and product comparisons, but never mentions a support-related frustration with a prior provider. In the second call, she discusses scalability, pricing transparency (noting competitors' pricing is 'rather opaque' at line 9, which is a pricing complaint, not a support complaint), AI capabilities, security compliance, and integration flexibility, but again raises no support-related frustration with prior providers. The draft extraction is correct: no support-related frustration with prior providers is stated in either call, so the question cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1tSIAS",
+              "b2b:a05Wt000003T1v3IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "yvette nkosi"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv02IAC",
+              "b2b:a05Wt000003SvUgIAK",
+              "b2b:a05Wt000003SxTGIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts contain no calls with Yvette Nkosi or AlphaWave Networks. All three calls are between Ava Sullivan (TechPulse Solutions) and David Nkosi of GreenStar Electronics. Therefore, no support-related frustration raised by Yvette Nkosi at AlphaWave Networks can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks about two discovery conversations with Yvette Nkosi at AlphaWave Networks, but none of the three supplied calls involve that person or that account. Every call is with David Nkosi at GreenStar Electronics. Because the exact named person and company are absent, no relevant fact can be cited and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sw7PIAS",
+              "b2b:a05Wt000003SxmbIAC",
+              "b2b:a05Wt000003SxoDIAS",
+              "b2b:a05Wt000003SxppIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no calls with Yvette Nkosi or AlphaWave Networks. All four provided transcripts are between Fatoumata Traor\u00e9 (TechPulse Solutions) and David Nkosi of GreenStar Electronics under the opportunity 'GreenStar Electronics EDA Integration.' Because the named person (Yvette Nkosi) and account (AlphaWave Networks) do not appear anywhere in the supplied data, no support-related frustration raised by Yvette in two discovery calls can be identified or cited.",
+              "evidence": [],
+              "reason": "The question asks about Yvette Nkosi at AlphaWave Networks, but every call in the source set involves David Nkosi at GreenStar Electronics. There is no mention of Yvette Nkosi or AlphaWave Networks in any transcript or metadata. The draft extraction correctly identifies this mismatch. Since the exact named person and account are absent, the answer is necessarily incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Swx5IAC",
+              "b2b:a05Wt000003SzlGIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "yvette nkosi"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwfGIAS",
+              "b2b:a05Wt000003T0SoIAK",
+              "b2b:a05Wt000003T1wfIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "yvette nkosi"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Suk2IAC",
+              "b2b:a05Wt000003Sz23IAC",
+              "b2b:a05Wt000003T10hIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts contain no calls with Yvette Nkosi at AlphaWave Networks. All three calls are between Santiago Fernandez (TechPulse Solutions) and Geoffrey Nkosi at InnovateGrid Systems. Therefore, no support-related frustration raised by Yvette Nkosi in discovery conversations at AlphaWave Networks can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks about two discovery conversations with Yvette Nkosi at AlphaWave Networks, but the supplied call data involves only Geoffrey Nkosi at InnovateGrid Systems. The named person, account, and event scope do not match any source material, so the requested facts are entirely absent."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Swx2IAC",
+              "b2b:a05Wt000003SzJpIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Neither transcript contains Yvette Nkosi raising a support-related frustration with prior providers. In the 2021-03-08 call she mentions Adaptive Design Solutions' user-friendly interface and straightforward pricing, and discusses scalability and complexity/performance challenges, but never complains about support from a previous provider. In the 2021-03-14 call she notes that 'other vendors often start with user-friendly interfaces from the get-go,' which is a product/UX observation, not a support-related frustration. No statement in either call addresses inadequate or unsatisfactory support from prior providers.",
+              "evidence": [],
+              "reason": "The question asks for a support-related frustration with prior providers raised in each of the two calls. Reviewing both transcripts line by line, Yvette discusses integration, data analysis, cloud management, user interfaces, ROI, scalability, and competitor pricing/interface, but never expresses a frustration specifically about support (e.g., response times, ticket handling, technical assistance quality) from any prior provider. The draft extraction's conclusion is correct: the requested fact is absent from both sources, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyIvIAK",
+              "b2b:a05Wt000003T07oIAC",
+              "b2b:a05Wt000003T0ZCIA0",
+              "b2b:a05Wt000003T1rpIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "yvette nkosi"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwsAIAS",
+              "b2b:a05Wt000003SyVoIAK",
+              "b2b:a05Wt000003SzGYIA0"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the 2020-11-24 discovery call, Yvette Nkosi raised frustration with competitors' limited flexibility and its impact on AlphaWave's project timelines, emphasizing that comprehensive support is key. In the 2020-12-01 discovery call, she raised frustration with other providers' limited support options, stressing that responsiveness is important. (The 2020-12-15 call was a product demonstration, not a discovery conversation.)",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SwsAIAS",
+                  "line_start": 9,
+                  "line_end": 10,
+                  "quote": "[2020-11-24T15:02:12] Yvette Nkosi: That\u2019s reassuring. We\u2019ve experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines. So, having comprehensive support is key for us."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzGYIA0",
+                  "line_start": 7,
+                  "line_end": 8,
+                  "quote": "[2020-12-01T14:31:50] Yvette Nkosi: That\u2019s good to hear. We've faced some frustrations with other providers' limited support options, so responsiveness is definitely important to us."
+                }
+              ],
+              "reason": "The question asks about two discovery conversations. The 2020-11-24 call (b2b:a05Wt000003SwsAIAS) is explicitly framed as aligning for an 'upcoming discovery meeting' (line 2), and Yvette states frustration with 'limited flexibility of competitors and the impact on our project timelines' and that 'comprehensive support is key' (line 9). The 2020-12-01 call (b2b:a05Wt000003SzGYIA0) is a discovery call where Hana says she'd 'like to dive deeper into your specific business objectives and challenges' (line 4), and Yvette states frustration with 'other providers' limited support options' making 'responsiveness' important (line 7). The 2020-12-15 call is a product demonstration, not a discovery conversation, so it is excluded. Both support-related frustrations are directly quoted from Yvette in the respective calls."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the same two frustrations: in the first discovery call, Yvette Nkosi raised frustration with competitors' limited flexibility impacting project timelines; in the second, she raised frustration with other providers' limited support options and the importance of responsiveness. Answer A adds dates and a note about a third call being a product demo, but these are extra unrequested details. The core requested facts match in both answers."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrHPIA0",
+              "b2b:a05Wt000003Sx0HIAS",
+              "b2b:a05Wt000003T1biIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "yvette nkosi"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StXkIAK",
+              "b2b:a05Wt000003SwnPIAS",
+              "b2b:a05Wt000003SwnQIAS",
+              "b2b:a05Wt000003T0SnIAK",
+              "b2b:a05Wt000003T1tRIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "yvette nkosi"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both quotes directly support the gold answer: in the 2020-11-24 call Yvette cites competitors' limited flexibility impacting project timelines (with comprehensive support as key), and in the 2020-12-01 call she cites other providers' limited support options making responsiveness important. Each source contributes a distinct, necessary fact; the question is self-contained and business-relevant."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "what support-related frustration with prior providers did she raise in each call?",
+            "explicitly_requested": true,
+            "required_fact": "In the 2020-11-24 call, Yvette Nkosi raised frustration with the limited flexibility of competitors and its impact on project timelines, noting comprehensive support is key for them.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SwsAIAS"
+            ]
+          },
+          {
+            "question_span": "what support-related frustration with prior providers did she raise in each call?",
+            "explicitly_requested": true,
+            "required_fact": "In the 2020-12-01 call, Yvette Nkosi raised frustration with other providers' limited support options, making responsiveness important to her.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SzGYIA0"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the support-related frustration raised in each of two calls. The gold answer provides exactly two facts: one per call, both explicitly requested. The independent answer covers both facts accurately. The obligations each request a distinct fact from a distinct call, matching the question's requirement. No extra unasked facts are present in the gold answer.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "In the first call she cited competitors' limited flexibility hurting project timelines",
+            "question_span": "what support-related frustration with prior providers did she raise in each call?",
+            "required_by_question": true
+          },
+          {
+            "claim": "in the second, other providers' limited support options, making responsiveness important",
+            "question_span": "what support-related frustration with prior providers did she raise in each call?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "7cb4e99d284cc4d7ada95d78de5760a216b908a7ee58eab8613eeaa9d7e5f7e1",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T3FKIA0"
+    ],
+    "status": "accepted",
+    "question": "What pricing did Lucas quote Vertex Engineering for the 10 AI Cirku-Tech units, and what discount applies to the CloudLink Designer and SecureFlow Suite units?",
+    "gold_answer": "10 units qualify for a 10% discount, totaling $4,769.91; CloudLink Designer units and SecureFlow Suite get a 5% discount.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T3FKIA0",
+        "answer_claim": "For 10 units of AI Cirku-Tech, a 10% discount applies, total $4,769.91; CloudLink Designer units and SecureFlow Suite have a 5% discount.",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 15,
+        "quote": "[2022-04-09T11:33:20] Lucas Almeida: Certainly. For AI Cirku-Tech, since you're looking at acquiring 10 units, you're eligible for a 10% discount, making the total $4,769.91. Additionally, the CloudLink Designer units and SecureFlow Suite also have a 5% discount.",
+        "start": 2623,
+        "end": 2886
+      }
+    ],
+    "question_id": "b2b-single_call-7cb4e99d284cc4d7",
+    "candidate": {
+      "question": "What pricing did Lucas quote Vertex Engineering for the 10 AI Cirku-Tech units, and what discount applies to the CloudLink Designer and SecureFlow Suite units?",
+      "gold_answer": "10 units qualify for a 10% discount, totaling $4,769.91; CloudLink Designer units and SecureFlow Suite get a 5% discount.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T3FKIA0",
+          "answer_claim": "For 10 units of AI Cirku-Tech, a 10% discount applies, total $4,769.91; CloudLink Designer units and SecureFlow Suite have a 5% discount.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2022-04-09T11:33:20] Lucas Almeida: Certainly. For AI Cirku-Tech, since you're looking at acquiring 10 units, you're eligible for a 10% discount, making the total $4,769.91. Additionally, the CloudLink Designer units and SecureFlow Suite also have a 5% discount.",
+          "start": 2623,
+          "end": 2886
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Lucas quoted Vertex Engineering a total of $4,769.91 for 10 AI Cirku-Tech units after a 10% discount. A 5% discount applies to the CloudLink Designer and SecureFlow Suite units.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA. The dialogue (line 15) directly supports all claims: 10% discount on 10 AI Cirku-Tech units totaling $4,769.91, and 5% discount on CloudLink Designer and SecureFlow Suite units. The question is a realistic sales pricing inquiry with clear account/contact context, does not leak the answer, and the independent answer matches the gold semantically. No-context answers ('UNKNOWN') fail to answer, so no_context_answers_fail is true. Two-call flags set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T3FKIA0"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvrYIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Vertex Engineering, no quote for 10 AI Cirku-Tech units, and no mention of CloudLink Designer or SecureFlow Suite discounts in that context. The only call is between Lucas Moreira and Rahul Patel of GreenTech Dynamics discussing 2 units of SecureFlow Suite at $698 each ($1,396 total), with a possible discount still pending manager approval. None of the requested facts (Vertex Engineering pricing for 10 AI Cirku-Tech units, CloudLink Designer discount, SecureFlow Suite discount for Vertex Engineering) are present.",
+              "evidence": [],
+              "reason": "The single transcript (call b2b:a05Wt000003SvrYIAS) involves Lucas Moreira speaking with Rahul Patel of GreenTech Dynamics about 2 SecureFlow Suite units. There is no mention of Vertex Engineering, AI Cirku-Tech units, or CloudLink Designer anywhere in the source. Therefore, no part of the question can be answered from the supplied data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4LBIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Lucas Moreira and Emiko Tanaka of EcoWave Solutions discussing EcoPower Convert and EcoPCB Creator products. There is no mention of Vertex Engineering, AI Cirku-Tech units, CloudLink Designer, or SecureFlow Suite anywhere in the transcript. Therefore, the requested pricing for 10 AI Cirku-Tech units and any discount on CloudLink Designer and SecureFlow Suite units cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003T4LBIA0) involves Lucas Moreira speaking with Emiko Tanaka at EcoWave Solutions about EcoPower Convert ($645/unit) and EcoPCB Creator ($216/unit). None of the entities named in the question\u2014Vertex Engineering, AI Cirku-Tech, CloudLink Designer, or SecureFlow Suite\u2014appear in the source. No pricing or discount information for those products/accounts exists in the provided data, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3X5IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript is between Lucas Almeida and Luciano Bianchi of Torino Tech Hub, discussing NextGen IDE, AIOptics Vision, and CollabDesign Studio. There is no mention of Vertex Engineering, AI Cirku-Tech units, CloudLink Designer, SecureFlow Suite, or any pricing/discount related to those products. The requested facts are entirely absent from the source material.",
+              "evidence": [],
+              "reason": "The single call (b2b:a05Wt000003T3X5IAK) involves Lucas Almeida speaking with Luciano Bianchi at Torino Tech Hub about NextGen IDE, AIOptics Vision, and CollabDesign Studio within a $3221 budget. No reference to Vertex Engineering, 10 AI Cirku-Tech units, CloudLink Designer, SecureFlow Suite, or any associated pricing or discount exists in the transcript. Therefore the question cannot be answered from the supplied sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SysUIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript does not contain any call with Vertex Engineering. The only call is between Lucas Almeida and Samantha D'Souza of Bangalore Digital Labs, discussing the EduTech Advance package ($1,638 for four units). No pricing for 10 AI Cirku-Tech units, nor any discount for CloudLink Designer or SecureFlow Suite units, is mentioned anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite units. The sole call in the sources involves Lucas Almeida speaking with Samantha D'Souza of Bangalore Digital Labs about the EduTech Advance package. There is no mention of Vertex Engineering, AI Cirku-Tech, CloudLink Designer, or SecureFlow Suite in any provided transcript. Therefore, none of the requested facts can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T10yIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Lucas Almeida and Ling Chang of Future Innovations LLC discussing SecuManage Pro. There is no mention of Vertex Engineering, AI Cirku-Tech units, CloudLink Designer, or SecureFlow Suite in any of the supplied transcripts. Therefore, the pricing Lucas quoted Vertex Engineering for 10 AI Cirku-Tech units and any discount applicable to CloudLink Designer and SecureFlow Suite units cannot be determined from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003T10yIAC) involves Lucas Almeida speaking with Ling Chang of Future Innovations LLC about SecuManage Pro at $615/unit for 3 units. None of the requested entities\u2014Vertex Engineering, AI Cirku-Tech, CloudLink Designer, or SecureFlow Suite\u2014appear anywhere in the provided sources. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4jGIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about Vertex Engineering, AI Cirku-Tech units, or SecureFlow Suite. The only call available is between Lucas Moreira and Raj Patel of TechSavvy Innovations, discussing Workflow Genius, CloudLink Designer, and PulseSim Pro. No discount for CloudLink Designer or SecureFlow Suite is mentioned, and no pricing for 10 AI Cirku-Tech units is quoted. All requested facts are missing from the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and a discount on CloudLink Designer and SecureFlow Suite units. The sole call transcript is with Raj Patel of TechSavvy Innovations, not Vertex Engineering. There is no mention of AI Cirku-Tech, SecureFlow Suite, or any discount. The draft extraction correctly identifies these gaps. Since none of the requested facts (Vertex Engineering account, AI Cirku-Tech product, SecureFlow Suite product, applicable discount) appear in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SullIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript only covers a call between Lucas Moreira and Rajesh Patel of TechBridge Systems regarding three units of CloudInnovate Space ($1,417 total). There is no mention of Vertex Engineering, 10 AI Cirku-Tech units, or any discount on CloudLink Designer or SecureFlow Suite units, so the requested facts are missing.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003SullIAC) involves Lucas Moreira speaking with Rajesh Patel at TechBridge Systems about CloudInnovate Space. It contains no reference to Vertex Engineering, AI Cirku-Tech units, CloudLink Designer, or SecureFlow Suite. Therefore, none of the requested pricing or discount facts can be supported from the available sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuvNIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Lucas Almeida and Priya Natarajan of OmegaDesign Labs regarding CryptSecure Core. There is no mention of Vertex Engineering, AI Cirku-Tech units, CloudLink Designer, or SecureFlow Suite anywhere in the transcript. Therefore, no pricing for 10 AI Cirku-Tech units quoted to Vertex Engineering, and no discount information for CloudLink Designer or SecureFlow Suite, can be determined from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003SuvNIAS) involves Lucas Almeida speaking with Priya Natarajan at OmegaDesign Labs about four units of CryptSecure Core. The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite. None of these entities, products, or pricing details appear in the source material. The draft extraction correctly identifies this gap. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T30vIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not contain any information about Vertex Engineering, AI Cirku-Tech units, CloudLink Designer, or SecureFlow Suite. The only call available is between Lucas Moreira and Sofia Gonz\u00e1lez of EnergyNova Corp, discussing InnoTrain Hub and VerifySim Elite products. No pricing for 10 AI Cirku-Tech units or discounts for CloudLink Designer and SecureFlow Suite units can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a quote from Lucas to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite units. The sole source call (b2b:a05Wt000003T30vIAC) involves Lucas Moreira speaking with Sofia Gonz\u00e1lez of EnergyNova Corp about InnoTrain Hub and VerifySim Elite. None of the named account (Vertex Engineering), products (AI Cirku-Tech, CloudLink Designer, SecureFlow Suite), or quantities (10 units) appear anywhere in the transcript. Therefore no facts supporting the requested pricing or discounts exist in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvrXIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not contain any interaction with Vertex Engineering. The only call is between Lucas Moreira and Priya Patel of AquaGuard Solutions, discussing DesignEdge Pro and FlexiDesign Pro at a total of $1,814 for two units of each. There is no mention of 10 AI Cirku-Tech units, nor any discount for CloudLink Designer or SecureFlow Suite anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite. The sole transcript is a call with Priya Patel at AquaGuard Solutions about entirely different products (DesignEdge Pro and FlexiDesign Pro). No call involving Vertex Engineering, AI Cirku-Tech, CloudLink Designer, or SecureFlow Suite exists in the provided sources, so none of the requested facts can be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T18qIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Lucas Almeida and Emre Y\u0131lmaz of Istanbul Digital Tech discussing CircuitAI Innovator and EnergyReduce Pro. There is no mention of Vertex Engineering, AI Cirku-Tech units, CloudLink Designer, SecureFlow Suite, or any pricing/discount related to those products. The question cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003T18qIAC) involves a different company (Istanbul Digital Tech), different products (CircuitAI Innovator, EnergyReduce Pro), and a different contact (Emre Y\u0131lmaz). None of the requested entities\u2014Vertex Engineering, 10 AI Cirku-Tech units, CloudLink Designer, SecureFlow Suite, or associated discounts\u2014appear anywhere in the source material. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StODIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about Lucas quoting Vertex Engineering for 10 AI Cirku-Tech units, nor any discount for CloudLink Designer or SecureFlow Suite. The only call available is between Nina Kovalenko and Lucas Oliveira of Rio Innovations, discussing PCBProto Wizard, SecureData Nexus, and SecureAnalytics Pro. None of the named entities (Vertex Engineering, AI Cirku-Tech, CloudLink Designer, SecureFlow Suite) or the requested pricing/discount details appear in the transcript.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite. The sole source call involves Lucas Oliveira of Rio Innovations speaking with Nina Kovalenko about entirely different products (PCBProto Wizard, SecureData Nexus, SecureAnalytics Pro). There is no mention of Vertex Engineering, AI Cirku-Tech, CloudLink Designer, SecureFlow Suite, or any discount. All requested facts are missing from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T55rIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any pricing quote from Lucas to Vertex Engineering for 10 AI Cirku-Tech units, nor any discount information for CloudLink Designer or SecureFlow Suite. The only call provided is between Pedro Alvarez (SecureTech Solutions) and Lucas Fern\u00e1ndez (Oceanic Innovation Labs) discussing SecureTrack Pro at $620 per unit for two units ($1,240 total). None of the named entities (Vertex Engineering, AI Cirku-Tech, CloudLink Designer, SecureFlow Suite) appear in the transcript.",
+              "evidence": [],
+              "reason": "The question asks about a quote from Lucas to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite. The sole source call involves Lucas Fern\u00e1ndez of Oceanic Innovation Labs (not Vertex Engineering) discussing SecureTrack Pro (not AI Cirku-Tech, CloudLink Designer, or SecureFlow Suite) with Pedro Alvarez. No relevant pricing, discount, or product information matching the question exists in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SswjIAC",
+              "b2b:a05Wt000003SyE5IAK",
+              "b2b:a05Wt000003SzDKIA0",
+              "b2b:a05Wt000003T069IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve Lucas Torres of EcoTech Manufacturing, not Vertex Engineering. There is no quote for 10 AI Cirku-Tech units to Vertex Engineering, and CloudLink Designer is never mentioned in any call. The only discount information present (10% off AI Cirku-Tech and CryptGuard Module; 5% off QuantumPCB Modeler, SecureFlow Suite, and EduTech Lab) was quoted by Nguyen Thi Minh to Lucas Torres for EcoTech Manufacturing, not Vertex Engineering. No pricing for CloudLink Designer or SecureFlow Suite units specific to Vertex Engineering exists in these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite units. All four calls are between Nguyen Thi Minh (TechPulse Solutions) and Lucas Torres of EcoTech Manufacturing. Vertex Engineering is never mentioned, no quantity of 10 AI Cirku-Tech units is quoted, and CloudLink Designer does not appear in any transcript. The discount details found (10% on AI Cirku-Tech/CryptGuard; 5% on QuantumPCB Modeler/SecureFlow Suite/EduTech Lab) pertain to EcoTech, not Vertex Engineering. Therefore the requested facts cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su2TIAS",
+              "b2b:a05Wt000003SyMHIA0",
+              "b2b:a05Wt000003T2hhIAC",
+              "b2b:a05Wt000003T3iSIAS",
+              "b2b:a05Wt000003T3qUIAS",
+              "b2b:a05Wt000003T4MhIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of Vertex Engineering, 'AI Cirku-Tech' units, or a 10-unit quote. All calls are between Lucas Almeida and Isabella Rossi of Circuit Dynamics Inc. regarding the 'Circuit Dynamics EDA Expansion' opportunity. No pricing for 10 AI Cirku-Tech units to Vertex Engineering is stated anywhere. While discounts for CloudLink Designer (15%) and SecureFlow Suite (10%) are mentioned, they are quoted to Circuit Dynamics Inc., not Vertex Engineering, and are not tied to AI Cirku-Tech units.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite units in that context. None of the six call transcripts reference Vertex Engineering, AI Cirku-Tech, or a 10-unit order. All calls involve Circuit Dynamics Inc. (contact Isabella Rossi) under opportunity 'Circuit Dynamics EDA Expansion.' The discounts mentioned (e.g., 10% off SecureFlow Suite, 15% off CloudLink Designer) are for Circuit Dynamics, not Vertex Engineering. Because the exact named account, product, and quantity in the question do not appear in any source, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StmHIAS",
+              "b2b:a05Wt000003Sv6YIAS",
+              "b2b:a05Wt000003SvZWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any pricing quote from Lucas for 10 AI Cirku-Tech units to Vertex Engineering. All calls with Vertex Engineering were conducted by Mohamed Ahmed, not Lucas, and no unit price, total price, or quantity-based quote for AI Cirku-Tech appears in any transcript. The discount information is present: SecureFlow Suite carries a 10% discount and CloudLink Designer a 15% discount, as stated by Mohamed Ahmed in the 2023-03-01 call. However, because the AI Cirku-Tech pricing (and the specific salesperson Lucas) is entirely absent, the full question cannot be answered.",
+              "evidence": [],
+              "reason": "Two critical facts are missing: (1) No salesperson named Lucas appears in any of the three calls; all conversations with Vertex Engineering's Ravi Chandran were handled by Mohamed Ahmed. (2) No pricing quote for 10 AI Cirku-Tech units is mentioned anywhere in the transcripts\u2014AI Cirku-Tech is only referenced generically in a scalability discussion (call b2b:a05Wt000003StmHIAS, line 14) with no dollar figures or quantity pricing. The discount portion (SecureFlow Suite 10%, CloudLink Designer 15%) is supported by call b2b:a05Wt000003SvZWIA0 lines 5-6, but since the question also requires the AI Cirku-Tech pricing from Lucas, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsNAIA0",
+              "b2b:a05Wt000003SzANIA0",
+              "b2b:a05Wt000003T1FCIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Lucas appears in any of the provided calls. The TechPulse Solutions representative for Vertex Engineering is Xinyi Zhang. No quote for 10 AI Cirku-Tech units is given; AI Cirku-Tech is only mentioned as having 'similar discounts' to the SecureFlow Suite (10%) without a specific unit price or quantity. The CloudLink Designer is quoted at $3,039.92 with a 5% discount, and the SecureFlow Suite at $5,399.91 with a 10% discount, but these are per-unit prices stated by Xinyi Zhang, not by anyone named Lucas.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted by 'Lucas' for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite. No salesperson named Lucas exists in any transcript; the representative is Xinyi Zhang. No quantity of 10 AI Cirku-Tech units is ever discussed or priced. While CloudLink Designer (5% discount, $3,039.92) and SecureFlow Suite (10% discount, $5,399.91) pricing is mentioned, it is attributed to Xinyi Zhang, not Lucas, and no AI Cirku-Tech unit price or 10-unit total is provided. Because the exact named person (Lucas) and the exact product scope (10 AI Cirku-Tech units) cannot be satisfied, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvkrIAC",
+              "b2b:a05Wt000003SxZiIAK",
+              "b2b:a05Wt000003SzRqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve Lucas Torres of EcoTech Manufacturing, not Vertex Engineering. There is no quote for 10 AI Cirku-Tech units to Vertex Engineering, and no specific discount is stated for CloudLink Designer or SecureFlow Suite units. The only discount mentioned is a general 15% standard-package discount for AI Cirku-Tech discussed with EcoTech Manufacturing, which does not match the requested account, quantity, or product scope.",
+              "evidence": [],
+              "reason": "All three calls are between Luciana Alves (TechPulse Solutions) and Lucas Torres of EcoTech Manufacturing. No call references Vertex Engineering, no pricing quote for 10 AI Cirku-Tech units exists, and no discount figures are given for CloudLink Designer or SecureFlow Suite units. The question's exact named account (Vertex Engineering), quantity (10 units), and product-specific discounts (CloudLink Designer, SecureFlow Suite) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvBOIA0",
+              "b2b:a05Wt000003SyHIIA0",
+              "b2b:a05Wt000003T07lIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any pricing quote from Lucas for Vertex Engineering for 10 AI Cirku-Tech units, nor any discount information for CloudLink Designer or SecureFlow Suite units. All three calls involve Lucas Torres of EcoTech Manufacturing (not Vertex Engineering), and no specific unit pricing or product-specific discounts are quoted. The only pricing-related statement is a general mention of 'competitive prices with discounts for bulk purchases' (call b2b:a05Wt000003SyHIIA0, line 17), which does not constitute a specific quote for 10 AI Cirku-Tech units or a discount for CloudLink Designer or SecureFlow Suite.",
+              "evidence": [],
+              "reason": "Vertex Engineering is never mentioned in any of the three calls. The contact in all calls is Lucas Torres at EcoTech Manufacturing. No specific pricing for 10 AI Cirku-Tech units is quoted, and no discounts for CloudLink Designer or SecureFlow Suite are stated. The question asks about facts (account: Vertex Engineering, products: CloudLink Designer and SecureFlow Suite discounts, specific quote for 10 AI Cirku-Tech units) that are entirely absent from the source material."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv9nIAC",
+              "b2b:a05Wt000003T2eSIAS",
+              "b2b:a05Wt000003T3ddIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain the requested information. All three calls are between Lucas Almeida and Luis Martins of Insight Analytics Group (opportunity: Insight Analytics EDA Transformation). There is no mention of Vertex Engineering, no quote for 10 AI Cirku-Tech units, and no specific discount tied to CloudLink Designer and SecureFlow Suite units. The only discount referenced is a generic 15% discount mentioned in passing during a discussion about cost-effective pricing (call b2b:a05Wt000003T2eSIAS, line 14), which is not associated with Vertex Engineering or specific unit quantities.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and a discount on CloudLink Designer and SecureFlow Suite units. None of the three calls involve Vertex Engineering; all are with Insight Analytics Group. No unit-specific pricing for 10 AI Cirku-Tech units is given, and no discount is specified for CloudLink Designer and SecureFlow Suite units. The 15% discount mentioned in one call is generic and not tied to the requested products or account. Therefore, the answer cannot be completed from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrnjIAC",
+              "b2b:a05Wt000003SuVOIA0",
+              "b2b:a05Wt000003T3FKIA0"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Lucas quoted Vertex Engineering a total of $4,769.91 for the 10 AI Cirku-Tech units, reflecting a 10% discount. The CloudLink Designer and SecureFlow Suite units carry a 5% discount.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T3FKIA0",
+                  "line_start": 14,
+                  "line_end": 15,
+                  "quote": "[2022-04-09T11:33:20] Lucas Almeida: Certainly. For AI Cirku-Tech, since you're looking at acquiring 10 units, you're eligible for a 10% discount, making the total $4,769.91. Additionally, the CloudLink Designer units and SecureFlow Suite also have a 5% discount."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuVOIA0",
+                  "line_start": 10,
+                  "line_end": 11,
+                  "quote": "[2022-04-18T10:35:00] Lucas Almeida: Of course! The AI Cirku-Tech is priced at $4,769.91 with your 10% discount. It will provide a strong ROI through reduced time-to-market and increased operational efficiency. [10:35] We also have CloudLink Designer and SecureFlow Suite to align with your needs for secure and efficient data management."
+                }
+              ],
+              "reason": "In call b2b:a05Wt000003T3FKIA0 line 14, Lucas explicitly states that for 10 AI Cirku-Tech units the 10% discount makes the total $4,769.91, and that CloudLink Designer and SecureFlow Suite have a 5% discount. Call b2b:a05Wt000003SuVOIA0 line 10 corroborates the $4,769.91 price with the 10% discount. All requested facts (pricing for 10 AI Cirku-Tech units, and the discount on CloudLink Designer and SecureFlow Suite) are directly supported for Lucas quoting Vertex Engineering."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same pricing: $4,769.91 total for the 10 AI Cirku-Tech units with a 10% discount, and a 5% discount for the CloudLink Designer and SecureFlow Suite units. The wording differs slightly but all requested facts match."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuVQIA0",
+              "b2b:a05Wt000003T2SzIAK",
+              "b2b:a05Wt000003T2WCIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain the requested information. All three calls are between Lucas Almeida and Javier Sanchez of NexGen Biotech. There is no mention of Vertex Engineering, no quote for 10 AI Cirku-Tech units, and the products CloudLink Designer and SecureFlow Suite are never discussed. Only general statements about 'competitive pricing' and 'predictable total cost of ownership' appear, with no specific unit prices or discount percentages.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite. None of the three supplied calls involve Vertex Engineering (all involve NexGen Biotech / Javier Sanchez), none contain a specific price quote for 10 AI Cirku-Tech units, and neither CloudLink Designer nor SecureFlow Suite is mentioned anywhere in the transcripts. Therefore no complete answer can be constructed from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T21jIAC",
+              "b2b:a05Wt000003T21kIAC",
+              "b2b:a05Wt000003T4OOIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain the requested information. All three calls are between Lucas Almeida and Isabella Rossi of Circuit Dynamics Inc., not Vertex Engineering. No specific pricing is quoted for 10 AI Cirku-Tech units, no discount is mentioned for CloudLink Designer (which is never referenced in any call), and no discount is specified for SecureFlow Suite units. The only tangentially related mention is a vague reference to '10 units available at a preferential rate' for PulseSim Pro (not AI Cirku-Tech) in call b2b:a05Wt000003T4OOIA0, line 8, with no dollar figures or discount percentages given.",
+              "evidence": [],
+              "reason": "The question asks about pricing Lucas quoted to Vertex Engineering for 10 AI Cirku-Tech units and discounts on CloudLink Designer and SecureFlow Suite. None of the three calls involve Vertex Engineering (all are with Circuit Dynamics Inc./Isabella Rossi). No specific pricing figures are given for AI Cirku-Tech units. CloudLink Designer is never mentioned in any transcript. No discount percentage or amount is stated for SecureFlow Suite. Therefore, no complete answer can be constructed from these sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question about pricing quoted to Vertex Engineering; the cited dialogue line (11:33:20) directly states the 10% discount on 10 AI Cirku-Tech units totaling $4,769.91 and the 5% discount on CloudLink Designer and SecureFlow Suite units, fully supporting the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pricing did Lucas quote Vertex Engineering for the 10 AI Cirku-Tech units",
+            "explicitly_requested": true,
+            "required_fact": "10 units at a 10% discount, total $4,769.91",
+            "source_call_ids": [
+              "b2b:a05Wt000003T3FKIA0"
+            ]
+          },
+          {
+            "question_span": "what discount applies to the CloudLink Designer and SecureFlow Suite units?",
+            "explicitly_requested": true,
+            "required_fact": "A 5% discount applies to the CloudLink Designer units and SecureFlow Suite",
+            "source_call_ids": [
+              "b2b:a05Wt000003T3FKIA0"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: (1) the pricing for 10 AI Cirku-Tech units (including discount and total) and (2) the discount for CloudLink Designer and SecureFlow Suite units. The gold_answer provides exactly these two facts without any extra unrequested information. The independent answer covers both requested facts accurately. The contract obligations correctly extract the two required facts from the single call, and the call indeed contains both facts. The arithmetic ($4,769.91 total after 10% discount) is consistent with the source. No unasked gold claims are present.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "10 units qualify for a 10% discount",
+            "question_span": "What pricing did Lucas quote Vertex Engineering for the 10 AI Cirku-Tech units",
+            "required_by_question": true
+          },
+          {
+            "claim": "totaling $4,769.91",
+            "question_span": "What pricing did Lucas quote Vertex Engineering for the 10 AI Cirku-Tech units",
+            "required_by_question": true
+          },
+          {
+            "claim": "CloudLink Designer units and SecureFlow Suite get a 5% discount",
+            "question_span": "what discount applies to the CloudLink Designer and SecureFlow Suite units?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "710e52f496f78eae9f56c03f16e7985b9b1513bab7c0d581909de25a0ad00087",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005Sb0FIAS"
+    ],
+    "status": "accepted",
+    "question": "What concern did Michael Russell raise about High-End Autos Co.'s pre-owned certifications, and how did Luiz respond?",
+    "gold_answer": "Michael said High-End Autos Co. may have less thorough certifications affecting buyer confidence; Luiz said AutoElite follows a comprehensive inspection process for every pre-owned vehicle.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005Sb0FIAS",
+        "answer_claim": "High-End Autos Co. might have less thorough certifications, affecting confidence",
+        "kind": "dialogue",
+        "line_start": 7,
+        "line_end": 8,
+        "quote": "[2020-09-10T10:02:05] Michael Russell: That's reassuring to hear. But some feedback has suggested that High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing.",
+        "start": 1445,
+        "end": 1647
+      },
+      {
+        "call_id": "b2c:a05Ws000005Sb0FIAS",
+        "answer_claim": "AutoElite strictly adheres to a comprehensive inspection process for every pre-owned vehicle",
+        "kind": "dialogue",
+        "line_start": 8,
+        "line_end": 9,
+        "quote": "[2020-09-10T10:02:25] Luiz Oliveira: I understand where you're coming from. At AutoElite Motors, we strictly adhere to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction. We're keen on ensuring peace of mind for every purchase.",
+        "start": 1648,
+        "end": 1935
+      }
+    ],
+    "question_id": "b2c-single_call-710e52f496f78eae",
+    "candidate": {
+      "question": "What concern did Michael Russell raise about High-End Autos Co.'s pre-owned certifications, and how did Luiz respond?",
+      "gold_answer": "Michael said High-End Autos Co. may have less thorough certifications affecting buyer confidence; Luiz said AutoElite follows a comprehensive inspection process for every pre-owned vehicle.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005Sb0FIAS",
+          "answer_claim": "High-End Autos Co. might have less thorough certifications, affecting confidence",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 8,
+          "quote": "[2020-09-10T10:02:05] Michael Russell: That's reassuring to hear. But some feedback has suggested that High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing.",
+          "start": 1445,
+          "end": 1647
+        },
+        {
+          "call_id": "b2c:a05Ws000005Sb0FIAS",
+          "answer_claim": "AutoElite strictly adheres to a comprehensive inspection process for every pre-owned vehicle",
+          "kind": "dialogue",
+          "line_start": 8,
+          "line_end": 9,
+          "quote": "[2020-09-10T10:02:25] Luiz Oliveira: I understand where you're coming from. At AutoElite Motors, we strictly adhere to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction. We're keen on ensuring peace of mind for every purchase.",
+          "start": 1648,
+          "end": 1935
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Michael Russell raised a concern that some feedback suggested High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing. Luiz responded by stating that AutoElite Motors strictly adheres to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction, and they are keen on ensuring peace of mind for every purchase.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both answer claims are directly supported by dialogue quotes (lines 7-9): Michael's concern about High-End Autos Co.'s less thorough certifications and Luiz's response about AutoElite's comprehensive inspection process. The question is a realistic sales-call information need, names participants appropriately, and does not leak the answer. The independent answer semantically matches the gold. No-context answers ('UNKNOWN') fail to answer. This is a single-call QA (one call supplied), so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005Sb0FIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQUmIAO",
+              "b2c:a05Ws000005STAhIAO",
+              "b2c:a05Ws000005SYqOIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention any company named 'High-End Autos Co.' nor any concern raised by Michael Russell about pre-owned certifications from that entity. The only competitor discussed is Luxury Auto Group (regarding service centers and user experience). Pre-owned vehicles are mentioned only in Luiz's own pitch about AutoElite's certified pre-owned offerings (call b2c:a05Ws000005STAhIAO, lines 10-14), not as a concern about a company called High-End Autos Co. The named entity in the question cannot be matched to any source.",
+              "evidence": [],
+              "reason": "No source contains the entity 'High-End Autos Co.' Michael Russell never raises a concern about pre-owned certifications from that company. The draft extraction is correct: the question references a company and concern that do not appear in any of the three call transcripts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STsJIAW",
+              "b2c:a05Ws000005SUgGIAW",
+              "b2c:a05Ws000005SZJKIA4",
+              "b2c:a05Ws000005Sa46IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any person named Michael Russell or any salesperson named Luiz. All four calls feature Michael Williams speaking with Samuel Smith of AutoElite Motors. High-End Autos Co. is mentioned only once (call b2c:a05Ws000005SUgGIAW, line 10) as a competitor whose vehicle-tech learning curve is steeper; it is never discussed in connection with pre-owned certifications. Therefore the specific concern attributed to Michael Russell about High-End Autos Co.'s pre-owned certifications, and any response from Luiz, cannot be found in these transcripts.",
+              "evidence": [],
+              "reason": "No source mentions 'Michael Russell' or 'Luiz.' The only reference to High-End Autos Co. concerns technology usability, not pre-owned certifications. The named people, account, and event scope in the question do not match any content in the supplied calls, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STR0IAO",
+              "b2c:a05Ws000005SU8ZIAW",
+              "b2c:a05Ws000005SYWyIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any mention of High-End Autos Co., pre-owned certifications, or a person named Luiz. All three calls are between Michael Russell and Sophia Chen of AutoElite Motors, discussing eco-friendly vehicles (Tesla Model S, Nissan Leaf), maintenance/warranty plans, financing options, and environmental standards. There is no evidence of Michael Russell raising a concern about pre-owned certifications or any response from Luiz.",
+              "evidence": [],
+              "reason": "The question asks about a concern Michael Russell raised regarding High-End Autos Co.'s pre-owned certifications and how Luiz responded. None of the three call transcripts reference High-End Autos Co., pre-owned certifications, or anyone named Luiz. The calls involve only Michael Russell and Sophia Chen from AutoElite Motors discussing new eco-friendly vehicles, warranties, financing, and maintenance. The requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SLpxIAG",
+              "b2c:a05Ws000005Sbl1IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be answered from the provided sources. There is no entity called 'High-End Autos Co.' (the seller is AutoElite Motors), no person named 'Luiz' appears in any transcript (the sales representative is Lucia Alvarez), and Michael Russell does not raise a concern about pre-owned certifications. In the only mention of the certified pre-owned program (call b2c:a05Ws000005Sbl1IAC, lines 4\u20136), Michael speaks positively about its transparent pricing rather than expressing a concern.",
+              "evidence": [],
+              "reason": "The question references 'High-End Autos Co.' and a person named 'Luiz,' neither of which exist in the source transcripts. The seller is AutoElite Motors and the representative is Lucia Alvarez. Additionally, Michael Russell never raises a concern about pre-owned certifications; he only praises the certified pre-owned program's transparent pricing. Because the named entities and the described event (a concern raised and a response from Luiz) do not appear in any source, no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUF3IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not contain the requested exchange. The only call available is between Michael Russell and Chantal Dubois of AutoElite Motors discussing eco-conscious luxury vehicles (Tesla Model S and Nissan Leaf). No person named Luiz appears in the transcript, and neither 'High-End Autos Co.' nor any discussion of pre-owned certifications is mentioned anywhere in the source material.",
+              "evidence": [],
+              "reason": "The question asks about a concern Michael Russell raised regarding High-End Autos Co.'s pre-owned certifications and how Luiz responded. The sole source call (b2c:a05Ws000005SUF3IAO) features Chantal Dubois as the salesperson, not Luiz, and the account/dealership referenced is AutoElite Motors, not High-End Autos Co. There is no mention of pre-owned certifications in any line. Therefore, no evidence exists to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SKaQIAW",
+              "b2c:a05Ws000005STp2IAG",
+              "b2c:a05Ws000005SaH0IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any person named Michael Russell, any account named High-End Autos Co., or any salesperson named Luiz. All three calls involve Michael Williams (account 'Michael Williams') speaking with Kwesi Mensah of AutoElite Motors. No concern about High-End Autos Co.'s pre-owned certifications raised by a Michael Russell, nor any response by a Luiz, appears in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Michael Russell's concern regarding High-End Autos Co.'s pre-owned certifications and Luiz's response. None of these named entities (Michael Russell, High-End Autos Co., Luiz) appear anywhere in the three provided call transcripts. The calls only involve Michael Williams and Kwesi Mensah discussing AutoElite Motors offerings. Therefore the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQHpIAO",
+              "b2c:a05Ws000005SanJIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any mention of High-End Autos Co., pre-owned certifications, or a person named Luiz. Michael Russell's two calls are with Angela Okafor of AutoElite Motors and discuss eco-vehicle models (2023 Nissan Leaf, 2024 Volkswagen ID.4), extended warranties, maintenance plans, service/support, and pricing transparency. No concern about pre-owned certifications was raised, and no response from Luiz is recorded.",
+              "evidence": [],
+              "reason": "Neither call transcript references High-End Autos Co., pre-owned certifications, or anyone named Luiz. The question's named entities and topic are entirely absent from the sources, so no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SWoiIAG",
+              "b2c:a05Ws000005Sb0FIAS",
+              "b2c:a05Ws000005SbD9IAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Michael Russell raised the concern that some feedback suggested High-End Autos Co. might have less thorough pre-owned vehicle certifications, which affects confidence in purchasing. Luiz responded that AutoElite Motors strictly adheres to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction, and that they are keen on ensuring peace of mind for every purchase. Luiz also noted that their certified pre-owned program assures quality with stringent standards and that customers have praised their transparency, which fosters greater trust compared to other industry offerings.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005Sb0FIAS",
+                  "line_start": 7,
+                  "line_end": 8,
+                  "quote": "[2020-09-10T10:02:05] Michael Russell: That's reassuring to hear. But some feedback has suggested that High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005Sb0FIAS",
+                  "line_start": 8,
+                  "line_end": 9,
+                  "quote": "[2020-09-10T10:02:25] Luiz Oliveira: I understand where you're coming from. At AutoElite Motors, we strictly adhere to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction. We're keen on ensuring peace of mind for every purchase."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005Sb0FIAS",
+                  "line_start": 6,
+                  "line_end": 7,
+                  "quote": "[2020-09-10T10:01:45] Luiz Oliveira: Certainly, Michael. Our certified pre-owned program assures quality with stringent standards. Customers have praised us for our transparency, which has indeed fostered greater trust compared to some other industry offerings."
+                }
+              ],
+              "reason": "In the 2020-09-10 call, line 7 has Michael Russell stating that feedback suggested High-End Autos Co. might have less thorough certifications affecting purchasing confidence. Line 8 has Luiz responding that AutoElite Motors strictly adheres to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction, ensuring peace of mind. Line 6 provides additional context where Luiz mentions their certified pre-owned program assures quality with stringent standards and transparency fostering trust. All facts are directly supported by the source text for the exact named individuals and company."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: Michael Russell raised the concern that High-End Autos Co. may have less thorough pre-owned certifications affecting buyer confidence, and Luiz responded that AutoElite Motors follows a comprehensive inspection process for every pre-owned vehicle. Answer A includes additional detail about stringent standards, transparency, and customer praise, but these are extra unrequested details that do not conflict with Answer B. The requested facts are semantically identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSLEIA4",
+              "b2c:a05Ws000005SUjXIAW",
+              "b2c:a05Ws000005SVZ8IAO",
+              "b2c:a05Ws000005SZ03IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves 'High-End Autos Co.' or a person named 'Luiz.' The account is Michael Russell, and the salesperson in all calls is Samuel Smith from AutoElite Motors. While one call (b2c:a05Ws000005SSLEIA4) does discuss pre-owned program reliability\u2014Michael Russell asks about varying opinions on pre-owned program reliability and Samuel Smith responds about AutoElite's certified pre-owned program track record versus Prestige Car Network's vendor instability\u2014this concerns AutoElite Motors, not High-End Autos Co., and the responder is Samuel Smith, not Luiz. The question as scoped cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about a concern Michael Russell raised regarding 'High-End Autos Co.'s pre-owned certifications' and how 'Luiz' responded. No source mentions 'High-End Autos Co.' or any person named 'Luiz.' The closest content is in call b2c:a05Ws000005SSLEIA4 (lines 7-8), where Michael Russell asks about pre-owned program reliability and Samuel Smith (not Luiz) responds about AutoElite Motors' (not High-End Autos Co.'s) certified pre-owned program. Because the exact named entity (High-End Autos Co.) and person (Luiz) are absent, the question cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSV0IAO",
+              "b2c:a05Ws000005SSg9IAG",
+              "b2c:a05Ws000005SWQNIA4",
+              "b2c:a05Ws000005SYLmIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about a concern Michael Russell raised regarding 'High-End Autos Co.'s pre-owned certifications' and how 'Luiz' responded. Neither 'High-End Autos Co.' nor 'Luiz' appears in any of the provided call transcripts. The account is Michael Russell, the salesperson is Amelie Dubois from AutoElite Motors, and no concern or objection about pre-owned certifications was raised. In call b2c:a05Ws000005SWQNIA4 (line 7), Michael asked why he might choose AutoElite's certified pre-owned options, and Amelie explained the program's superior warranties, maintenance plans, and rigorous inspection standards (lines 8, 14), but this was an informational inquiry, not a concern, and neither the company name nor the responder matches the question.",
+              "evidence": [],
+              "reason": "The exact named entity 'High-End Autos Co.' does not appear in any transcript; the company referenced is AutoElite Motors. The person 'Luiz' does not appear; the salesperson is Amelie Dubois. Michael Russell never raised a concern or objection about pre-owned certifications\u2014he only asked an informational question about why to choose AutoElite's certified pre-owned program. Because the question's named company, named responder, and the nature of the interaction (a 'concern') are all unsupported by the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SY0lIAG",
+              "b2c:a05Ws000005Sbl2IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any person named Luiz or any company called 'High-End Autos Co.' The calls are between Michael Russell and Samuel Smith of AutoElite Motors, with a competing offer mentioned from DriveFirst Automotive. While there is a discussion about AutoElite Motors' certified pre-owned program (Samuel citing its quality assurance for reliability), the specific concern Michael Russell raised about 'High-End Autos Co.'s pre-owned certifications and Luiz's response cannot be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a concern regarding 'High-End Autos Co.'s pre-owned certifications and a response from 'Luiz.' Neither 'High-End Autos Co.' nor 'Luiz' appears anywhere in the two provided call transcripts. The calls involve Michael Russell and Samuel Smith of AutoElite Motors, with a competing offer from DriveFirst Automotive. Because the exact named people, account, and event scope requested do not exist in the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVEKIA4",
+              "b2c:a05Ws000005SadfIAC",
+              "b2c:a05Ws000005SadgIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain any discussion of High-End Autos Co.'s pre-owned certifications, and no person named Luiz appears in any of the three calls. The only mention of High-End Autos Co. is Kamila Novak's remark that their pricing can seem attractive initially but often comes with a reduction in service coverage (call b2c:a05Ws000005SadfIAC, line 10). Michael Russell never raises a concern about pre-owned certifications, and no Luiz responds to anything.",
+              "evidence": [],
+              "reason": "No call transcript mentions High-End Autos Co.'s pre-owned certifications, and no individual named Luiz participates in or is referenced in any of the three calls. The question's required facts (Michael Russell's concern about pre-owned certifications and Luiz's response) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRk3IAG",
+              "b2c:a05Ws000005SSHyIAO",
+              "b2c:a05Ws000005STUAIA4",
+              "b2c:a05Ws000005SUy2IAG",
+              "b2c:a05Ws000005SaTzIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "michael russell"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "The question asks about a specific concern Michael Russell raised regarding High-End Autos Co.'s certifications and Luiz's response. Both evidence quotes from the same call directly support the gold answer: Michael's concern about less thorough certifications affecting buyer confidence (10:02:05) and Luiz's response about AutoElite's comprehensive inspection process (10:02:25). Each call contributes a distinct necessary fact (the concern and the response), and the question is a realistic sales-context inquiry with a determinate answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What concern did Michael Russell raise about High-End Autos Co.'s pre-owned certifications",
+            "explicitly_requested": true,
+            "required_fact": "Michael Russell raised that feedback suggested High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing.",
+            "source_call_ids": [
+              "b2c:a05Ws000005Sb0FIAS"
+            ]
+          },
+          {
+            "question_span": "how did Luiz respond?",
+            "explicitly_requested": true,
+            "required_fact": "Luiz responded that AutoElite Motors strictly adheres to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction, aiming to give peace of mind for every purchase.",
+            "source_call_ids": [
+              "b2c:a05Ws000005Sb0FIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) the concern Michael raised about High-End Autos Co.'s pre-owned certifications, and (2) how Luiz responded. The gold_answer provides exactly these two facts, with no extra unasked claims. The independent answer covers both facts accurately. The contract obligations correctly split the two requested facts, each sourced from the single call. The single call is required because it contains both facts, and the final flag is satisfied. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Michael said High-End Autos Co. may have less thorough certifications",
+            "question_span": "What concern did Michael Russell raise about High-End Autos Co.'s pre-owned certifications",
+            "required_by_question": true
+          },
+          {
+            "claim": "affecting buyer confidence",
+            "question_span": "What concern did Michael Russell raise about High-End Autos Co.'s pre-owned certifications",
+            "required_by_question": true
+          },
+          {
+            "claim": "Luiz said AutoElite follows a comprehensive inspection process for every pre-owned vehicle",
+            "question_span": "how did Luiz respond?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]

@@ -1,0 +1,309 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "0cf3eb66814bc2fd8c593838df95df0f6595fa02dd419b93946bf4f187a6818b",
+  "questions": 3,
+  "counts": {
+    "pass": 3
+  },
+  "estimated_usd": 0.417751704,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-45e236a629f67d05",
+      "question": "Across the two discovery conversations with Yvette Nkosi at AlphaWave Networks, what support-related frustration with prior providers did she raise in each call?",
+      "gold_answer": "In the first call she cited competitors' limited flexibility hurting project timelines; in the second, other providers' limited support options, making responsiveness important.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrHPIA0",
+        "b2b:a05Wt000003SrneIAC",
+        "b2b:a05Wt000003StXkIAK",
+        "b2b:a05Wt000003SwfGIAS",
+        "b2b:a05Wt000003SwnPIAS",
+        "b2b:a05Wt000003SwnQIAS",
+        "b2b:a05Wt000003SwsAIAS",
+        "b2b:a05Wt000003Swx2IAC",
+        "b2b:a05Wt000003Swx3IAC",
+        "b2b:a05Wt000003Swx4IAC",
+        "b2b:a05Wt000003Swx5IAC",
+        "b2b:a05Wt000003Sx0HIAS",
+        "b2b:a05Wt000003Sx56IAC",
+        "b2b:a05Wt000003SyIvIAK",
+        "b2b:a05Wt000003SyIwIAK",
+        "b2b:a05Wt000003SyVnIAK",
+        "b2b:a05Wt000003SyVoIAK",
+        "b2b:a05Wt000003SzGYIA0",
+        "b2b:a05Wt000003SzJpIAK",
+        "b2b:a05Wt000003SzjdIAC",
+        "b2b:a05Wt000003SzlGIAS",
+        "b2b:a05Wt000003SzuuIAC",
+        "b2b:a05Wt000003T06BIAS",
+        "b2b:a05Wt000003T07oIAC",
+        "b2b:a05Wt000003T0J5IAK",
+        "b2b:a05Wt000003T0SnIAK",
+        "b2b:a05Wt000003T0SoIAK",
+        "b2b:a05Wt000003T0ZCIA0",
+        "b2b:a05Wt000003T1JyIAK",
+        "b2b:a05Wt000003T1biIAC",
+        "b2b:a05Wt000003T1qDIAS",
+        "b2b:a05Wt000003T1qEIAS",
+        "b2b:a05Wt000003T1rpIAC",
+        "b2b:a05Wt000003T1tRIAS",
+        "b2b:a05Wt000003T1tSIAS",
+        "b2b:a05Wt000003T1v3IAC",
+        "b2b:a05Wt000003T1wfIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 9,
+            "normalized_end": 10
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 7,
+            "normalized_end": 8
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Yvette Nkosi appears in several calls, but only two contain a support-related frustration with prior/other providers: the 2020-11-24 pre-discovery alignment call with Hana Kato and the 2020-12-01 discovery call with Hana Kato (both on the 'AlphaWave Networks Integration with TechPulse Solutions' opportunity). Her other calls raise non-support concerns (UI, rigidity, pricing opacity) or none.",
+        "answers": [
+          {
+            "answer": "In the two discovery-stage conversations with Yvette Nkosi, she raised different support-related frustrations with prior providers. In the November 24, 2020 call (aligning on the upcoming discovery meeting), she said they had 'experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines,' so having comprehensive support was key for them. In the December 1, 2020 discovery call, she said they had 'faced some frustrations with other providers' limited support options,' making responsiveness very important to them.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwsAIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-11-24T15:02:12] Yvette Nkosi: That’s reassuring. We’ve experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines. So, having comprehensive support is key for us."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzGYIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-12-01T14:31:50] Yvette Nkosi: That’s good to hear. We've faced some frustrations with other providers' limited support options, so responsiveness is definitely important to us."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about 'the two discovery conversations with Yvette Nkosi at AlphaWave Networks.' Among all calls, exactly two are explicitly framed as discovery conversations with Yvette Nkosi: (1) b2b:a05Wt000003SwsAIAS (2020-11-24, Hana Kato), where Hana states the goal is to 'align on details for our upcoming discovery meeting' and Yvette raises a support-related frustration; and (2) b2b:a05Wt000003SzGYIA0 (2020-12-01, Hana Kato), where Hana says she wants to 'dive deeper into your specific business objectives and challenges' (discovery-phase language) and Yvette raises a support-related frustration. Other Yvette calls are demos, follow-ups, or qualification calls, not discovery conversations. In both discovery calls, Yvette's support-related frustration with prior providers concerns limited/inadequate support options and responsiveness.",
+        "answers": [
+          {
+            "answer": "In the first discovery conversation (2020-11-24), Yvette Nkosi raised frustration with the limited flexibility of competitors and its impact on project timelines, stating that 'having comprehensive support is key for us.' In the second discovery conversation (2020-12-01), she raised frustration with other providers' limited support options, saying 'responsiveness is definitely important to us.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwsAIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-11-24T15:02:12] Yvette Nkosi: That’s reassuring. We’ve experienced some frustrations with the limited flexibility of competitors and the impact on our project timelines. So, having comprehensive support is key for us."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzGYIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-12-01T14:31:50] Yvette Nkosi: That’s good to hear. We've faced some frustrations with other providers' limited support options, so responsiveness is definitely important to us."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two frustrations: (1) in the first call (Nov 24, 2020), frustration with competitors' limited flexibility impacting project timelines, and (2) in the second call (Dec 1, 2020), frustration with other providers' limited support options, making responsiveness important. The reference likewise covers both requested frustrations for each call. All three sources align on the two distinct support-related frustrations raised across the two conversations."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-7cb4e99d284cc4d7",
+      "question": "What pricing did Lucas quote Vertex Engineering for the 10 AI Cirku-Tech units, and what discount applies to the CloudLink Designer and SecureFlow Suite units?",
+      "gold_answer": "10 units qualify for a 10% discount, totaling $4,769.91; CloudLink Designer units and SecureFlow Suite get a 5% discount.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrnjIAC",
+        "b2b:a05Wt000003SrxLIAS",
+        "b2b:a05Wt000003SsNAIA0",
+        "b2b:a05Wt000003St1TIAS",
+        "b2b:a05Wt000003StO5IAK",
+        "b2b:a05Wt000003StmGIAS",
+        "b2b:a05Wt000003StmHIAS",
+        "b2b:a05Wt000003SuVOIA0",
+        "b2b:a05Wt000003Sv6XIAS",
+        "b2b:a05Wt000003Sv6YIAS",
+        "b2b:a05Wt000003SvZWIA0",
+        "b2b:a05Wt000003SwaUIAS",
+        "b2b:a05Wt000003SwdhIAC",
+        "b2b:a05Wt000003SwsJIAS",
+        "b2b:a05Wt000003SxJcIAK",
+        "b2b:a05Wt000003SxzeIAC",
+        "b2b:a05Wt000003SydrIAC",
+        "b2b:a05Wt000003SypGIAS",
+        "b2b:a05Wt000003SysMIAS",
+        "b2b:a05Wt000003SzANIA0",
+        "b2b:a05Wt000003SzQOIA0",
+        "b2b:a05Wt000003SzuxIAC",
+        "b2b:a05Wt000003SzuyIAC",
+        "b2b:a05Wt000003SzzpIAC",
+        "b2b:a05Wt000003T0MMIA0",
+        "b2b:a05Wt000003T0XgIAK",
+        "b2b:a05Wt000003T0cTIAS",
+        "b2b:a05Wt000003T1AMIA0",
+        "b2b:a05Wt000003T1FCIA0",
+        "b2b:a05Wt000003T1QQIA0",
+        "b2b:a05Wt000003T1VGIA0",
+        "b2b:a05Wt000003T1a7IAC",
+        "b2b:a05Wt000003T1a8IAC",
+        "b2b:a05Wt000003T1gbIAC",
+        "b2b:a05Wt000003T1zwIAC",
+        "b2b:a05Wt000003T282IAC",
+        "b2b:a05Wt000003T2BGIA0",
+        "b2b:a05Wt000003T2HhIAK",
+        "b2b:a05Wt000003T2JKIA0",
+        "b2b:a05Wt000003T2fwIAC",
+        "b2b:a05Wt000003T3FKIA0",
+        "b2b:a05Wt000003T3KAIA0",
+        "b2b:a05Wt000003T3NNIA0",
+        "b2b:a05Wt000003T3OzIAK",
+        "b2b:a05Wt000003T3QbIAK",
+        "b2b:a05Wt000003T3SDIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only Lucas Almeida's 2022-04-09 call (b2b:a05Wt000003T3FKIA0) quotes pricing for 10 AI Cirku-Tech units and states the discounts on CloudLink Designer and SecureFlow Suite. His other call (2022-04-18) repeats the $4,769.91/10% figure but gives no discount for CloudLink Designer or SecureFlow Suite, so it is not a competing complete answer.",
+        "answers": [
+          {
+            "answer": "Lucas quoted a 10% discount on the 10 AI Cirku-Tech units, for a total of $4,769.91, and said the CloudLink Designer units and the SecureFlow Suite also carry a 5% discount.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T3FKIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2022-04-09T11:33:20] Lucas Almeida: Certainly. For AI Cirku-Tech, since you're looking at acquiring 10 units, you're eligible for a 10% discount, making the total $4,769.91. Additionally, the CloudLink Designer units and SecureFlow Suite also have a 5% discount."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifically asks about pricing Lucas quoted Vertex Engineering for 10 AI Cirku-Tech units and the discount on CloudLink Designer and SecureFlow Suite. Only one call features Lucas Almeida discussing AI Cirku-Tech pricing with Juan Diaz at Vertex Engineering: call b2b:a05Wt000003T3FKIA0 (2022-04-09). In that call, Lucas explicitly states the 10-unit AI Cirku-Tech price at $4,769.91 with a 10% discount, and that CloudLink Designer and SecureFlow Suite have a 5% discount. The follow-up call b2b:a05Wt000003SuVOIA0 (2022-04-18) by Lucas confirms the same AI Cirku-Tech price and 10% discount but does not explicitly state the CloudLink Designer/SecureFlow Suite discount percentage, only mentioning potential additional discounts if bundled. The April 9 call is the one that directly answers both parts of the question.",
+        "answers": [
+          {
+            "answer": "Lucas quoted $4,769.91 for the 10 AI Cirku-Tech units with a 10% discount applied. The CloudLink Designer and SecureFlow Suite units each carry a 5% discount.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T3FKIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2022-04-09T11:33:20] Lucas Almeida: Certainly. For AI Cirku-Tech, since you're looking at acquiring 10 units, you're eligible for a 10% discount, making the total $4,769.91. Additionally, the CloudLink Designer units and SecureFlow Suite also have a 5% discount."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same pricing for the 10 AI Cirku-Tech units ($4,769.91 with a 10% discount) and the same 5% discount for CloudLink Designer and SecureFlow Suite units. The reference likewise covers the 10% discount and $4,769.91 total for the Cirku-Tech units and the 5% discount for CloudLink Designer and SecureFlow Suite, matching all facts requested in the question."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-710e52f496f78eae",
+      "question": "What concern did Michael Russell raise about High-End Autos Co.'s pre-owned certifications, and how did Luiz respond?",
+      "gold_answer": "Michael said High-End Autos Co. may have less thorough certifications affecting buyer confidence; Luiz said AutoElite follows a comprehensive inspection process for every pre-owned vehicle.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLpxIAG",
+        "b2c:a05Ws000005SQHpIAO",
+        "b2c:a05Ws000005SQUmIAO",
+        "b2c:a05Ws000005SSLEIA4",
+        "b2c:a05Ws000005SSV0IAO",
+        "b2c:a05Ws000005SSg9IAG",
+        "b2c:a05Ws000005STAhIAO",
+        "b2c:a05Ws000005STR0IAO",
+        "b2c:a05Ws000005SU8ZIAW",
+        "b2c:a05Ws000005SUF3IAO",
+        "b2c:a05Ws000005SUjXIAW",
+        "b2c:a05Ws000005SVEKIA4",
+        "b2c:a05Ws000005SVZ8IAO",
+        "b2c:a05Ws000005SWQNIA4",
+        "b2c:a05Ws000005SWoiIAG",
+        "b2c:a05Ws000005SY0lIAG",
+        "b2c:a05Ws000005SYLmIAO",
+        "b2c:a05Ws000005SYWyIAO",
+        "b2c:a05Ws000005SYqOIAW",
+        "b2c:a05Ws000005SZ03IAG",
+        "b2c:a05Ws000005SadfIAC",
+        "b2c:a05Ws000005SadgIAC",
+        "b2c:a05Ws000005SanJIAS",
+        "b2c:a05Ws000005Sb0FIAS",
+        "b2c:a05Ws000005SbD9IAK",
+        "b2c:a05Ws000005Sbl1IAC",
+        "b2c:a05Ws000005Sbl2IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Luiz Oliveira discussing High-End Autos Co.'s pre-owned certifications with Michael Russell (2020-09-10 call b2c:a05Ws000005Sb0FIAS). Michael raises the concern at lines 5 and 7, and Luiz responds at line 8. No other call contains this exchange.",
+        "answers": [
+          {
+            "answer": "Michael Russell raised the concern that some feedback suggested High-End Autos Co. might have less thorough pre-owned vehicle certifications, which affects confidence in purchasing. Luiz responded that he understood where Michael was coming from and explained that at AutoElite Motors they strictly adhere to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction, aiming to ensure peace of mind for every purchase.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005Sb0FIAS",
+                "line_start": 5,
+                "line_end": 8,
+                "quote": "[2020-09-10T10:01:25] Michael Russell: Precisely. I also wanted to dive into how our pre-owned program compares reliability-wise to competitors since some customers have highlighted concerns over vehicle certifications.\n[2020-09-10T10:01:45] Luiz Oliveira: Certainly, Michael. Our certified pre-owned program assures quality with stringent standards. Customers have praised us for our transparency, which has indeed fostered greater trust compared to some other industry offerings.\n[2020-09-10T10:02:05] Michael Russell: That's reassuring to hear. But some feedback has suggested that High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Michael Russell, High-End Autos Co.'s pre-owned certifications, and Luiz as the responder. Only one call features Luiz Oliveira and explicitly mentions High-End Autos Co.'s pre-owned certifications: call b2c:a05Ws000005Sb0FIAS (2020-09-10). In that call, Michael raises the concern that High-End Autos Co. might have less thorough certifications affecting buyer confidence, and Luiz responds by emphasizing AutoElite's comprehensive inspection process.",
+        "answers": [
+          {
+            "answer": "Michael Russell raised the concern that High-End Autos Co. might have less thorough pre-owned vehicle certifications, which affects customer confidence in purchasing. Luiz Oliveira responded by stating that AutoElite Motors strictly adheres to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction, emphasizing their commitment to providing peace of mind for every purchase.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005Sb0FIAS",
+                "line_start": 5,
+                "line_end": 9,
+                "quote": "[2020-09-10T10:01:25] Michael Russell: Precisely. I also wanted to dive into how our pre-owned program compares reliability-wise to competitors since some customers have highlighted concerns over vehicle certifications.\n[2020-09-10T10:01:45] Luiz Oliveira: Certainly, Michael. Our certified pre-owned program assures quality with stringent standards. Customers have praised us for our transparency, which has indeed fostered greater trust compared to some other industry offerings.\n[2020-09-10T10:02:05] Michael Russell: That's reassuring to hear. But some feedback has suggested that High-End Autos Co. might have less thorough certifications, which affects confidence in purchasing.\n[2020-09-10T10:02:25] Luiz Oliveira: I understand where you're coming from. At AutoElite Motors, we strictly adhere to a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction. We're keen on ensuring peace of mind for every purchase."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same concern (High-End Autos Co. may have less thorough pre-owned vehicle certifications, affecting buyer confidence) and the same response from Luiz (AutoElite Motors follows a comprehensive inspection process for every pre-owned vehicle to ensure reliability and customer satisfaction/peace of mind). The reference also captures both requested facts: the concern about less thorough certifications affecting buyer confidence and Luiz's statement about AutoElite's comprehensive inspection process. Minor wording differences (e.g., 'Luiz Oliveira' vs. 'Luiz', 'aiming to ensure peace of mind' vs. 'emphasizing their commitment to providing peace of mind') do not change the substance."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
