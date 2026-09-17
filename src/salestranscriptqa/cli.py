@@ -609,3 +609,17 @@ def publish_full_release(
     from .full_release import publish_full
 
     emit(publish_full(output, receipt, repo))
+
+
+@app.command("prepare-reviewed-release")
+def prepare_reviewed_release(
+    project: Path = Path("."),
+    run_dir: Path = Path("runs/sales-full-v2"),
+    rag_report: Path = Path("../2026-09-12-salestranscriptqa-rag-evaluation/reports/full-v2"),
+    output: Path = Path("data/full-v2-release"),
+    pilot: Path = Path("data/release"),
+):
+    """Package completed v9 questions after replaying reviews and verifying frozen RAG input."""
+    from .reviewed_release import prepare_reviewed
+
+    emit(prepare_reviewed(project, run_dir, rag_report, output, pilot))

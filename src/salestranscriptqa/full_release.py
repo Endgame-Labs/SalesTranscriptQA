@@ -267,7 +267,7 @@ def publish_full(output, receipt, repo=DEFAULT_REPO):
     output, receipt = Path(output), Path(receipt)
     manifest = json.loads((output / "manifest.json").read_text())
     coverage = json.loads((output / "coverage.json").read_text())
-    if coverage.get("complete") is not True or manifest["release"] != "full-v1":
+    if coverage.get("complete") is not True or manifest["release"] not in {"full-v1", "full-v2"}:
         raise ValueError("Only a completed full release can be published")
     for entry in manifest["files"]:
         p = Path(entry["path"])
@@ -276,6 +276,10 @@ def publish_full(output, receipt, repo=DEFAULT_REPO):
         body = (output / p).read_bytes()
         if len(body) != entry["bytes"] or sha(body) != entry["sha256"]:
             raise ValueError("Release checksum mismatch")
+    if manifest["release"] == "full-v2":
+        from .reviewed_release import verify_package
+
+        verify_package(output, manifest)
     api = HfApi(token=hf_token())
     if receipt.exists():
         info = json.loads(receipt.read_text())

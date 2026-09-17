@@ -196,3 +196,44 @@ source/destination ledgers; the destination's generation allowance includes thos
 carried-forward costs. The new source plan must cover all eligible units, and the
 final cohort still needs selection, independent review, quarantine checks, and RAG
 verification before reporting.
+
+## Packaging the reviewed full-v2 release
+
+After the full workflow finishes, prepare the current cohort with the dedicated
+v9 packager. The legacy `prepare-full-release` command targets the retired full-v1
+format and must not be used for this run.
+
+```bash
+uv run salestranscriptqa prepare-reviewed-release \
+  --run-dir runs/sales-full-v2 \
+  --rag-report ../2026-09-12-salestranscriptqa-rag-evaluation/reports/full-v2 \
+  --output data/full-v2-release
+```
+
+This makes no model calls and does not upload. It requires completed generation,
+reviews and RAG; verifies every eligible source unit and recorded generation gate;
+replays independent source/citation reviews, quarantines and customer-history
+selection; checks the exact frozen JSON/Parquet; and requires all four RAG outcomes
+for every unchanged question, including its evidence. Incorrect RAG answers remain
+included. An unfinished run fails before creating a release directory.
+
+The package preserves the original corpus and the historical pilot separately,
+retains Salesforce attribution and CC BY-NC 4.0, and includes the exact frozen QA,
+coverage, review evidence, verification receipts and checksums. The dataset card
+describes the current GLM/DeepSeek/Qwen methodology and its automated-review and
+construction-evaluation limitations. It makes no human-gold accuracy claim.
+
+After inspecting that package, publish and verify its immutable revision:
+
+```bash
+uv run salestranscriptqa publish-full-release \
+  --output data/full-v2-release \
+  --receipt runs/sales-full-v2/publication.json \
+  --repo EndgameLabs/SalesTranscriptQA
+```
+
+Publication validates checksums and the reviewed-release receipt, uses an atomic
+Hugging Face commit with a pinned parent, then verifies anonymous downloads and
+an anonymous CLI fetch. A saved receipt resumes verification of the same revision
+without creating another publication commit. This upload is separate from the
+generation service and must only occur after the frozen cohort is reviewed.
