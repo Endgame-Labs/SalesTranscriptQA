@@ -1,0 +1,256 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "f8b3cf4f7ae696184d705dca626b6c7e07826f794d3d0fe72f535139d8703d26",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.33460242,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-cc39403bc80b2f89",
+      "question": "Across the SkyTech Ventures discussions, what discounts did Chen offer in the demo follow-up versus the negotiation call, and for which products?",
+      "gold_answer": "Demo follow-up: 10% on PulseSim Pro and 5% on SecureFlow Suite. Negotiation call: 15% volume discount on CloudLink Designer and 10% on OptiPower Max.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZxIAK",
+        "b2b:a05Wt000003Sr7rIAC",
+        "b2b:a05Wt000003Sr7sIAC",
+        "b2b:a05Wt000003SsroIAC",
+        "b2b:a05Wt000003StEUIA0",
+        "b2b:a05Wt000003Su46IAC",
+        "b2b:a05Wt000003Su47IAC",
+        "b2b:a05Wt000003Sv1iIAC",
+        "b2b:a05Wt000003SvD0IAK",
+        "b2b:a05Wt000003SvHrIAK",
+        "b2b:a05Wt000003SvfzIAC",
+        "b2b:a05Wt000003Sw10IAC",
+        "b2b:a05Wt000003Sw11IAC",
+        "b2b:a05Wt000003SwDsIAK",
+        "b2b:a05Wt000003SwTzIAK",
+        "b2b:a05Wt000003SwnNIAS",
+        "b2b:a05Wt000003SwnOIAS",
+        "b2b:a05Wt000003SwoyIAC",
+        "b2b:a05Wt000003SwozIAC",
+        "b2b:a05Wt000003SwqdIAC",
+        "b2b:a05Wt000003SwqeIAC",
+        "b2b:a05Wt000003SwqfIAC",
+        "b2b:a05Wt000003Sx54IAC",
+        "b2b:a05Wt000003SxBaIAK",
+        "b2b:a05Wt000003SyFgIAK",
+        "b2b:a05Wt000003SyNiIAK",
+        "b2b:a05Wt000003SyqmIAC",
+        "b2b:a05Wt000003SzEyIAK",
+        "b2b:a05Wt000003SzEzIAK",
+        "b2b:a05Wt000003SzV6IAK",
+        "b2b:a05Wt000003SzhzIAC",
+        "b2b:a05Wt000003SzwVIAS",
+        "b2b:a05Wt000003SzwWIAS",
+        "b2b:a05Wt000003T0B1IAK",
+        "b2b:a05Wt000003T0KgIAK",
+        "b2b:a05Wt000003T0MKIA0",
+        "b2b:a05Wt000003T0NwIAK",
+        "b2b:a05Wt000003T0hGIAS",
+        "b2b:a05Wt000003T0hHIAS",
+        "b2b:a05Wt000003T0kUIAS",
+        "b2b:a05Wt000003T0kVIAS",
+        "b2b:a05Wt000003T0yzIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 6,
+            "normalized_end": 7
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 13,
+            "normalized_end": 14
+          },
+          {
+            "answer": 0,
+            "evidence": 2,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Chen Lixin had exactly one demo follow-up call (2020-11-15) and one negotiation call (2020-12-01) with SkyTech Ventures, each containing distinct discount offers, so the comparison is unambiguous.",
+        "answers": [
+          {
+            "answer": "In the demo follow-up call (2020-11-15), Chen offered a 10% discount on PulseSim Pro (tied to SkyTech's volume) and a 5% discount on SecureFlow Suite. In the negotiation call (2020-12-01), Chen offered a 15% discount on CloudLink Designer when purchased in volume and a 10% discount on OptiPower Max.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Su46IAC",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2020-11-15T10:46:15] Chen Lixin: I'm glad to hear that. Just to recap, PulseSim Pro is designed to boost simulation accuracy, which is crucial for aerospace projects. Plus, with your volume, we’re offering a 10% discount."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su46IAC",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2020-11-15T10:48:00] Chen Lixin: Exactly. And with a 5% discount, it becomes part of a very attractive package for SkyTech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-12-01T13:34:30] Chen Lixin: I'm glad you found value in our case studies. We've invested heavily in ensuring our support and SLAs are top notch. Let’s discuss how we can model an advantageous pricing structure for CloudLink Designer and OptiPower Max for you. We're offering a 15% discount on CloudLink Designer when purchased in volume – which I believe fits your scale. As for OptiPower Max, there's a 10% discount we'd like to extend."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Chen as the rep and asks about two specific call types: the 'demo follow-up' and the 'negotiation call.' Among all SkyTech Ventures calls, Chen Lixin appears in exactly five calls on the 'SkyTech Ventures EDA Transformation' opportunity. The demo follow-up is b2b:a05Wt000003Su46IAC (2020-11-15), where Marco says 'I've been looking forward to this call after the demo session we had.' The negotiation call is b2b:a05Wt000003SzwVIAS (2020-12-01), where Chen explicitly says 'I'm excited to dive into our negotiation meeting today concerning the terms and pricing.' These are the only two calls matching the question's qualifiers.",
+        "answers": [
+          {
+            "answer": "In the demo follow-up (2020-11-15), Chen offered a 10% discount on PulseSim Pro and a 5% discount on SecureFlow Suite. In the negotiation call (2020-12-01), Chen offered a 15% discount on CloudLink Designer (volume purchase) and a 10% discount on OptiPower Max.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Su46IAC",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2020-11-15T10:46:15] Chen Lixin: I'm glad to hear that. Just to recap, PulseSim Pro is designed to boost simulation accuracy, which is crucial for aerospace projects. Plus, with your volume, we’re offering a 10% discount."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Su46IAC",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2020-11-15T10:48:00] Chen Lixin: Exactly. And with a 5% discount, it becomes part of a very attractive package for SkyTech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-12-01T13:34:30] Chen Lixin: I'm glad you found value in our case studies. We've invested heavily in ensuring our support and SLAs are top notch. Let’s discuss how we can model an advantageous pricing structure for CloudLink Designer and OptiPower Max for you. We're offering a 15% discount on CloudLink Designer when purchased in volume – which I believe fits your scale. As for OptiPower Max, there's a 10% discount we'd like to extend."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers and the reference state the same four commitments: demo follow-up – 10% on PulseSim Pro and 5% on SecureFlow Suite; negotiation call – 15% (volume) on CloudLink Designer and 10% on OptiPower Max. Answer A adds a minor qualifier ('tied to SkyTech's volume') on PulseSim Pro, but this is extra detail, not a substitution. All requested discounts and products are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-9d1eba49443d7411",
+      "question": "What did Zanele say would be included in the follow-up proposal for Sara Larson's hybrid vehicle purchase?",
+      "gold_answer": "A proposal detailing the Camry Hybrid, warranty, and maintenance options.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SJclIAG",
+        "b2c:a05Ws000005SMCUIA4",
+        "b2c:a05Ws000005SMPNIA4",
+        "b2c:a05Ws000005SORDIA4",
+        "b2c:a05Ws000005SOZDIA4",
+        "b2c:a05Ws000005SOvnIAG",
+        "b2c:a05Ws000005SQ3AIAW",
+        "b2c:a05Ws000005SQCqIAO",
+        "b2c:a05Ws000005SQxbIAG",
+        "b2c:a05Ws000005SR0pIAG",
+        "b2c:a05Ws000005SR5gIAG",
+        "b2c:a05Ws000005SRiNIAW",
+        "b2c:a05Ws000005SS4xIAG",
+        "b2c:a05Ws000005SSEcIAO",
+        "b2c:a05Ws000005SSPwIAO",
+        "b2c:a05Ws000005SSg3IAG",
+        "b2c:a05Ws000005SSwCIAW",
+        "b2c:a05Ws000005SSzPIAW",
+        "b2c:a05Ws000005ST4IIAW",
+        "b2c:a05Ws000005STInIAO",
+        "b2c:a05Ws000005STaWIAW",
+        "b2c:a05Ws000005STibIAG",
+        "b2c:a05Ws000005STicIAG",
+        "b2c:a05Ws000005STidIAG",
+        "b2c:a05Ws000005STsGIAW",
+        "b2c:a05Ws000005SUbQIAW",
+        "b2c:a05Ws000005SUjTIAW",
+        "b2c:a05Ws000005SVAtIAO",
+        "b2c:a05Ws000005SVFjIAO",
+        "b2c:a05Ws000005SVvgIAG",
+        "b2c:a05Ws000005SWdDIAW",
+        "b2c:a05Ws000005SWoUIAW",
+        "b2c:a05Ws000005SXB4IAO",
+        "b2c:a05Ws000005SXKkIAO",
+        "b2c:a05Ws000005SXW2IAO",
+        "b2c:a05Ws000005SXhJIAW",
+        "b2c:a05Ws000005SXivIAG",
+        "b2c:a05Ws000005SXkXIAW",
+        "b2c:a05Ws000005SXm9IAG",
+        "b2c:a05Ws000005SXnlIAG",
+        "b2c:a05Ws000005SXpNIAW",
+        "b2c:a05Ws000005SXqzIAG",
+        "b2c:a05Ws000005SXsbIAG",
+        "b2c:a05Ws000005SXuDIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 20,
+            "normalized_end": 21
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only two calls involve Zanele Dlamini. In the 2023-03-10 call she explicitly states the follow-up proposal will include the Camry Hybrid, warranty, and maintenance options; the 2023-04-05 call contains no proposal-content statement, so there is a single determinate answer.",
+        "answers": [
+          {
+            "answer": "Zanele said she would follow up with a proposal detailing everything they talked about, including the 2022 Toyota Camry Hybrid, the warranty, and the maintenance options.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSg3IAG",
+                "line_start": 20,
+                "line_end": 21,
+                "quote": "[2023-03-10T14:55:20] Zanele Dlamini: Fantastic. I'm here whenever you think of anything else. Next, I'll follow up with a proposal detailing everything we talked about, including the Camry Hybrid, warranty, and maintenance options. Does that sound good?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically what Zanele said would be included in the follow-up proposal for Sara Larson's hybrid vehicle purchase. Only one salesperson named Zanele (Zanele Dlamini) appears in the call history, associated with opportunity 'Sara Larson - Hybrid Luxury Vehicle & Services' (006Ws00000ALqNdIAL). In call b2c:a05Ws000005SSg3IAG (2023-03-10), Zanele explicitly states what the follow-up proposal will include. This is the only instance where Zanele commits to sending a follow-up proposal with specified contents.",
+        "answers": [
+          {
+            "answer": "Zanele Dlamini said the follow-up proposal would include the Camry Hybrid, warranty, and maintenance options.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSg3IAG",
+                "line_start": 20,
+                "line_end": 21,
+                "quote": "[2023-03-10T14:55:20] Zanele Dlamini: Fantastic. I'm here whenever you think of anything else. Next, I'll follow up with a proposal detailing everything we talked about, including the Camry Hybrid, warranty, and maintenance options. Does that sound good?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that the follow-up proposal would include the (2022 Toyota) Camry Hybrid, the warranty, and the maintenance options. The reference likewise lists the Camry Hybrid, warranty, and maintenance options. All three align on the same three requested items; the extra detail of '2022 Toyota' in answer_a and the full name 'Zanele Dlamini' in answer_b are unrequested extras that do not affect agreement."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

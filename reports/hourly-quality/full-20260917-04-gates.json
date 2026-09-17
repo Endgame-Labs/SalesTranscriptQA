@@ -1,0 +1,367 @@
+[
+  {
+    "question_id": "b2b-multi_call-5dc85b89c13c5321",
+    "question": "For the Pioneer Envisions EDA Expansion, what discounts did Nikolai say PulseSim Pro and QuantumPCB Modeler already carry, and how did Fayruz compare TechPulse's workflow integration to NanoDesign Systems?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Discounts Nikolai said PulseSim Pro and QuantumPCB Modeler already carry, and (2) Fayruz's comparison of TechPulse's workflow integration to NanoDesign Systems.",
+        "relationship": "Two independent fact lookups joined only by the same account/expansion context.",
+        "reason": "The discount status of two products and a competitive workflow-integration comparison address unrelated business issues; being tied to the same 'Pioneer Envisions EDA Expansion' does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct facts from two separate calls on the same opportunity. Call 1 (Oct 2023) has Nikolai stating PulseSim Pro carries a 10% discount and QuantumPCB Modeler a 5% discount. Call 2 (Jun 2023) has Fayruz comparing TechPulse's workflow integration to NanoDesign Systems, describing it as more intuitive and rapid with customization addressing engineering needs. Each source contributes an exclusive requested fact. The gold answer accurately reflects both transcripts without extras or omissions. The question is naturally phrased, scoped to a named opportunity and participants, and a rep would plausibly want to recall discount levels and competitive positioning feedback. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nikolai Volkov explicitly states that PulseSim Pro and QuantumPCB Modeler 'already come with a 10% and 5% discount respectively,' directly supporting the answer_claim about the discounts."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Fayruz Al-Farsi's quoted statement says 'the transition into our workflows seemed more intuitive and rapid' and 'The customizable aspects of your solutions really helped address our specific engineering needs effectively,' which directly supports the claim about TechPulse's workflow integration being more intuitive and rapid than NanoDesign Systems, with customization addressing engineering needs. Nikolai's preceding question references the comparison to NanoDesign Systems, and Fayruz's response confirms it."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Nikolai stated PulseSim Pro carries a 10% discount and QuantumPCB Modeler a 5% discount. Evidence index 1 confirms Fayruz said TechPulse's transition into their workflows felt more intuitive and rapid than NanoDesign Systems, with customization addressing their specific engineering needs. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-cc39403bc80b2f89",
+    "question": "Across the SkyTech Ventures discussions, what discounts did Chen offer in the demo follow-up versus the negotiation call, and for which products?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Chen offered in the demo follow-up versus the negotiation call, and the products each discount applied to",
+        "relationship": "Comparison of the same commercial terms (discounts) across two calls in the same deal",
+        "reason": "Both calls concern the same business issue\u2014pricing/discount terms for SkyTech Ventures\u2014so comparing discount offers across the demo follow-up and negotiation call is a coherent commercial comparison, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Su46IAC",
+                "fact": "Chen offered a 10% discount on PulseSim Pro and a 5% discount on SecureFlow Suite during the demo follow-up.",
+                "why_other_call_cannot_supply_it": "The negotiation call does not mention PulseSim Pro or SecureFlow Suite discounts; it only discusses CloudLink Designer and OptiPower Max."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "fact": "Chen offered a 15% volume discount on CloudLink Designer and a 10% discount on OptiPower Max during the negotiation call.",
+                "why_other_call_cannot_supply_it": "The demo follow-up call does not mention CloudLink Designer or OptiPower Max discounts; it only discusses PulseSim Pro and SecureFlow Suite."
+              }
+            ],
+            "reason": "The question explicitly asks for discounts offered in two distinct conversations (demo follow-up vs. negotiation call) and for which products. Each call contains unique discount offers for different products, and neither call provides the other's information. Therefore, both calls are necessary to answer the question completely."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Su46IAC",
+                  "fact": "Chen offered a 10% discount on PulseSim Pro and a 5% discount on SecureFlow Suite during the demo follow-up.",
+                  "why_other_call_cannot_supply_it": "The negotiation call does not mention PulseSim Pro or SecureFlow Suite discounts; it only discusses CloudLink Designer and OptiPower Max."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzwVIAS",
+                  "fact": "Chen offered a 15% volume discount on CloudLink Designer and a 10% discount on OptiPower Max during the negotiation call.",
+                  "why_other_call_cannot_supply_it": "The demo follow-up call does not mention CloudLink Designer or OptiPower Max discounts; it only discusses PulseSim Pro and SecureFlow Suite."
+                }
+              ],
+              "reason": "The question explicitly asks for discounts offered in two distinct conversations (demo follow-up vs. negotiation call) and for which products. Each call contains unique discount offers for different products, and neither call provides the other's information. Therefore, both calls are necessary to answer the question completely."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Su46IAC",
+                "fact": "Demo follow-up discounts: 10% on PulseSim Pro and 5% on SecureFlow Suite",
+                "why_other_call_cannot_supply_it": "The negotiation call (2020-12-01) discusses only CloudLink Designer and OptiPower Max discounts and never mentions PulseSim Pro or SecureFlow Suite pricing."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzwVIAS",
+                "fact": "Negotiation call discounts: 15% volume discount on CloudLink Designer and 10% on OptiPower Max",
+                "why_other_call_cannot_supply_it": "The demo follow-up call (2020-11-15) never mentions CloudLink Designer or OptiPower Max discounts; it only covers PulseSim Pro and SecureFlow Suite."
+              }
+            ],
+            "reason": "The question explicitly asks for discounts from two different discussions. Each call contains unique discount offers on different products (PulseSim Pro/SecureFlow Suite vs. CloudLink Designer/OptiPower Max), so both sources are required and neither suffices alone."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Su46IAC",
+                  "fact": "Demo follow-up discounts: 10% on PulseSim Pro and 5% on SecureFlow Suite",
+                  "why_other_call_cannot_supply_it": "The negotiation call (2020-12-01) discusses only CloudLink Designer and OptiPower Max discounts and never mentions PulseSim Pro or SecureFlow Suite pricing."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzwVIAS",
+                  "fact": "Negotiation call discounts: 15% volume discount on CloudLink Designer and 10% on OptiPower Max",
+                  "why_other_call_cannot_supply_it": "The demo follow-up call (2020-11-15) never mentions CloudLink Designer or OptiPower Max discounts; it only covers PulseSim Pro and SecureFlow Suite."
+                }
+              ],
+              "reason": "The question explicitly asks for discounts from two different discussions. Each call contains unique discount offers on different products (PulseSim Pro/SecureFlow Suite vs. CloudLink Designer/OptiPower Max), so both sources are required and neither suffices alone."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks a rep to compare discount offers across two calls for the same account (SkyTech Ventures), a natural sales-tracking need. Call 1 (demo follow-up) contains the 10% PulseSim Pro and 5% SecureFlow Suite discounts; Call 2 (negotiation) contains the 15% volume discount on CloudLink Designer and 10% on OptiPower Max. Each source contributes exclusive facts. The gold answer states exactly those four discount-product pairs with no extras. Wording is natural, scope is clear via account name and call-type descriptors, and no locator preamble or answer leakage is present.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003Su46IAC (dated 2020-11-15) shows Chen Lixin explicitly stating 'we're offering a 10% discount' in the context of PulseSim Pro, and later saying 'And with a 5% discount, it becomes part of a very attractive package for SkyTech' immediately after discussing SecureFlow Suite. Both discounts and their associated products are clearly stated by Chen."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003SzwVIAS (dated 2020-12-01) shows Chen Lixin stating 'We're offering a 15% discount on CloudLink Designer when purchased in volume' and 'As for OptiPower Max, there's a 10% discount we'd like to extend.' Both discounts, the volume qualifier for CloudLink Designer, and the product names are explicitly present."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer claims: Demo follow-up: 10% on PulseSim Pro and 5% on SecureFlow Suite; Negotiation call: 15% volume discount on CloudLink Designer and 10% on OptiPower Max. Evidence index 0 (call dated 2020-11-15, the earlier call) supports the demo follow-up discounts exactly. Evidence index 1 (call dated 2020-12-01, the later call) supports the negotiation call discounts exactly, including the 'volume' qualifier on CloudLink Designer. The metadata confirms both calls are under the SkyTech Ventures account and opportunity. All factual claims in the gold answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-df127903a6ab4cd1",
+    "question": "What did Anwar Bedi identify as PrimeEdge Technology's main bottleneck in rolling out new features, and which TechPulse product is he interested in for energy efficiency?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Anwar Bedi's identified main bottleneck in rolling out new features, and (2) which TechPulse product he is interested in for energy efficiency",
+        "relationship": "two independent fact lookups joined only by the same contact/call",
+        "reason": "The feature-rollout bottleneck and the energy-efficiency product interest are separate business issues; sharing a speaker and call does not make them one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two specific facts from a single call: (1) the bottleneck Anwar Bedi identified ('the speed at which we can implement cutting-edge features has been a bit of a bottleneck') and (2) the TechPulse product he's interested in for energy efficiency ('OptiPower Manager'). Both are directly stated in the dialogue. The gold answer accurately captures both facts without adding unasked extras. The question is naturally phrased, scoped to a named contact and account, and represents a plausible sales-rep need. Since question_class is single_call with one call provided, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Anwar Bedi the statement that 'the speed at which we can implement cutting-edge features has been a bit of a bottleneck,' which matches the answer_claim about speed of implementing cutting-edge features being a bottleneck. Speaker, content, and context (PrimeEdge Technology per metadata) all align."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Anwar Bedi the statement 'We're also quite interested in OptiPower Manager. Energy efficiency is becoming a bigger focus for us,' which matches the answer_claim about interest in OptiPower Manager and energy efficiency being a bigger focus."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) implementing cutting-edge features quickly is a bottleneck, and (2) he's interested in OptiPower Manager for energy efficiency. Evidence index 0 supports fact (1) with Anwar Bedi's direct quote about the speed of implementing cutting-edge features being a bottleneck. Evidence index 1 supports fact (2) with Anwar Bedi's direct quote expressing interest in OptiPower Manager and noting energy efficiency as a bigger focus. Both claims are fully supported by the cited dialogue."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-1fe68c90848bf62f",
+    "question": "What did Carlos Gomez from AgroSmart Innovations agree to buy, and what was the total price and installation timeline?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Carlos Gomez of AgroSmart Innovations agreed to purchase, the total price, and the installation timeline",
+        "relationship": "single coherent deal summary: purchase commitment with its commercial terms and installation schedule",
+        "reason": "The question asks for one deal's terms\u2014what was bought, total price, and installation timeline\u2014which form a coherent commercial quote/purchase breakdown, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what a named lead agreed to purchase, the total price, and the installation timeline\u2014standard commercial-terms information a rep would track. The dialogue confirms two units of IntegrGuard Secure at $600 each ($1,200 total) with installation by the next day, matching the gold answer exactly with no extra or missing facts. The question identifies the customer by name and company, providing adequate scope without an artificial locator preamble. Since question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Emmanuel asking Carlos to confirm interest in two units of IntegrGuard Secure, and Carlos explicitly replies 'Yes, that's correct.' This directly supports the claim that Carlos confirmed interest in two units of IntegrGuard Secure."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Emmanuel states each unit is $600, two units total $1,200, and that it fits within Carlos's budget of $1,207. This directly supports the claim about the per-unit price, total price, and budget fit."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "Emmanuel states the installation team can set up and ensure everything is operational by tomorrow, accommodating Carlos's request for installation within a day. This supports the claim that installation will be completed by the next day."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: two units of IntegrGuard Secure at $600 each, totaling $1,200, with installation completed by the next day. Evidence index 0 confirms Carlos agreed to two units of IntegrGuard Secure. Evidence index 1 confirms $600 per unit and $1,200 total. Evidence index 2 confirms installation by tomorrow (the next day). The context metadata confirms the caller is Carlos Gomez from AgroSmart Innovations. All factual claims in the gold answer are supported by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-9d1eba49443d7411",
+    "question": "What did Zanele say would be included in the follow-up proposal for Sara Larson's hybrid vehicle purchase?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The contents of the follow-up proposal for Sara Larson's hybrid vehicle purchase as described by Zanele",
+        "relationship": "single coherent lookup about one proposal",
+        "reason": "This is a single fact lookup about one proposal; no unrelated requests are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Zanele said would be in the follow-up proposal for Sara Larson's hybrid vehicle purchase. The transcript at 14:55:20 shows Zanele stating she will 'follow up with a proposal detailing everything we talked about, including the Camry Hybrid, warranty, and maintenance options.' The gold answer matches this exactly. The question is naturally worded, scoped to a specific customer and rep interaction, and a sales rep would plausibly want to confirm what was promised. Single-call question so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Zanele Dlamini explicitly states: 'I'll follow up with a proposal detailing everything we talked about, including the Camry Hybrid, warranty, and maintenance options.' This directly supports the answer_claim that the follow-up proposal would include the Camry Hybrid, warranty, and maintenance options."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'A proposal detailing the Camry Hybrid, warranty, and maintenance options.' The single cited evidence (index 0) contains Zanele's exact words confirming the follow-up proposal would detail the Camry Hybrid, warranty, and maintenance options. All factual elements of the gold_answer are directly supported by the quoted dialogue."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-764bea6eadd70b3c",
+    "question": "When Fatima Ali raised concerns about competitors' track records and case studies, how did Arjun respond on AutoElite's behalf?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Arjun responded to Fatima Ali's concerns about competitors' track records and case studies",
+        "relationship": "single objection-and-response exchange within one call",
+        "reason": "One coherent objection and its response addressing the same issue (competitive track record concerns)."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection moment in the call. Fatima Ali raises competitors' track records and case studies at 09:32:50, and Arjun's reply at 09:33:20 acknowledges AutoElite lacks the same storied history while emphasizing stable, reliable product features and vendor stability ensuring consistent quality. The gold answer captures exactly those points with no unasked extras. The question is naturally phrased, scoped to a clear business situation (competitive positioning during a proposal discussion), and a rep/account manager would plausibly want to know how a competitor objection was handled. No locator preamble, no answer leakage, no unsupported causality. Single-call set, so both_sources_required is true by rule.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Arjun Desai directly states: 'While we may not have the same storied history, our focus is on creating stable and reliable product features, as evidenced by our vendor stability. It helps ensure consistent quality.' This matches the answer_claim almost verbatim, acknowledging the lack of storied history while emphasizing stable/reliable product features, vendor stability, and consistent quality."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Arjun acknowledged AutoElite lacks the same storied history but emphasized stable, reliable product features and vendor stability ensuring consistent quality. The single cited evidence (index 0) contains Arjun's exact words covering all these points: acknowledging lack of 'same storied history,' emphasizing 'stable and reliable product features,' citing 'vendor stability,' and noting it helps 'ensure consistent quality.' The context metadata confirms the call involves Fatima Ali's account and the AutoElite opportunity, consistent with the question's framing. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  }
+]
