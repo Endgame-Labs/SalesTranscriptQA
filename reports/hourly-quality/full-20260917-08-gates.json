@@ -1,0 +1,487 @@
+[
+  {
+    "question_id": "b2b-multi_call-9f8f6303d7a417b0",
+    "question": "Across the two discussions with Laura Garcia about FusionTech's EDA integration, what did Jorge claim about how SecureFlow Suite fits existing systems in the initial call, and what past experience with new solutions did Laura raise in the follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Jorge's claim about SecureFlow Suite's fit with existing systems in the initial call, and Laura's past experience with new solutions raised in the follow-up",
+        "relationship": "Both facts concern the same business issue\u2014SecureFlow Suite's integration/adoption at FusionTech's EDA integration\u2014across an initial call and its follow-up",
+        "reason": "A multi-call comparison where both requested facts address the same issue (system fit and prior experience with new solutions) within the same engagement, not two independent lookups joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0JAIA0",
+                "fact": "Jorge claimed SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not contain Jorge's claim about perfect integration and enhancement of AI/cloud capabilities; it focuses on security features and integration with AI Cirku-Tech."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2zJIAS",
+                "fact": "Laura said FusionTech has had issues integrating new solutions smoothly in the past.",
+                "why_other_call_cannot_supply_it": "The initial call does not mention any past integration issues; Laura only expresses interest in seamless integration and asks about implementation process."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two separate conversations: Jorge's claim in the initial call and Laura's past experience in the follow-up. Each fact is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0JAIA0",
+                  "fact": "Jorge claimed SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not contain Jorge's claim about perfect integration and enhancement of AI/cloud capabilities; it focuses on security features and integration with AI Cirku-Tech."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2zJIAS",
+                  "fact": "Laura said FusionTech has had issues integrating new solutions smoothly in the past.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention any past integration issues; Laura only expresses interest in seamless integration and asks about implementation process."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two separate conversations: Jorge's claim in the initial call and Laura's past experience in the follow-up. Each fact is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0JAIA0",
+                "fact": "Jorge claimed SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities",
+                "why_other_call_cannot_supply_it": "The follow-up call only mentions SecureFlow's security features and integration with AI Cirku-Tech; the specific claim about fitting existing systems while enhancing AI/cloud capabilities appears only in the initial call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2zJIAS",
+                "fact": "Laura raised that FusionTech has had issues in the past with integrating new solutions smoothly",
+                "why_other_call_cannot_supply_it": "The initial call contains no mention of past integration difficulties; Laura raises this concern only in the follow-up."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: Jorge's fit claim from the initial call and Laura's past-experience concern from the follow-up. Each fact exists only in one call and both are requested, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0JAIA0",
+                  "fact": "Jorge claimed SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities",
+                  "why_other_call_cannot_supply_it": "The follow-up call only mentions SecureFlow's security features and integration with AI Cirku-Tech; the specific claim about fitting existing systems while enhancing AI/cloud capabilities appears only in the initial call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2zJIAS",
+                  "fact": "Laura raised that FusionTech has had issues in the past with integrating new solutions smoothly",
+                  "why_other_call_cannot_supply_it": "The initial call contains no mention of past integration difficulties; Laura raises this concern only in the follow-up."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: Jorge's fit claim from the initial call and Laura's past-experience concern from the follow-up. Each fact exists only in one call and both are requested, so both calls are necessary."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: Jorge's integration claim from the initial call and Laura's past-integration concern from the follow-up. Each fact is exclusive to its respective call. The gold answer accurately reflects both: Call 1 has Jorge stating SecureFlow Suite 'integrate[s] perfectly into existing systems while enhancing AI capabilities and cloud integration,' and Call 2 has Laura saying 'We've had issues in the past with integrating new solutions smoothly.' The question is naturally scoped to a named contact (Laura Garcia), account (FusionTech), and opportunity (EDA Integration), which a rep would plausibly reference. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jorge Pinto on 2023-05-21 explicitly states: 'Our solutions, like the SecureFlow Suite, are designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.' This directly supports the answer_claim that Jorge said SecureFlow Suite integrates perfectly into existing systems while enhancing AI capabilities and cloud integration. The speaker, product name, and specific claims all match."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Laura Garcia on 2023-05-24 explicitly states: 'We've had issues in the past with integrating new solutions smoothly.' Given the context metadata identifies this call as being with Laura Garcia at FusionTech Systems, 'We' resolves to FusionTech. This directly supports the answer_claim that Laura said FusionTech has had issues in the past with integrating new solutions smoothly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Jorge said SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities \u2014 supported by evidence index 0 which quotes Jorge saying exactly this. (2) Laura said FusionTech has had issues integrating new solutions smoothly in the past \u2014 supported by evidence index 1 which quotes Laura saying 'We've had issues in the past with integrating new solutions smoothly.' Both factual claims in the gold_answer are fully supported by the cited evidence. The paraphrase 'AI and cloud capabilities' for 'AI capabilities and cloud integration' is a faithful condensation."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9a387ae955baff85",
+    "question": "For TerraSync Solutions' Green Circuit Initiative, what next step did Dariusz schedule after the initial discussion with Sofia, and what did he schedule after the EcoPCB Creator demo?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next steps Dariusz scheduled after the initial Green Circuit Initiative discussion and after the EcoPCB Creator demo",
+        "relationship": "Progression of next steps for the same initiative across two calls",
+        "reason": "Both lookups concern the same business issue (advancing the Green Circuit Initiative), tracking how next steps evolved from initial discussion to demo follow-up."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1YUIA0",
+                "fact": "Dariusz scheduled a discovery session for March 18 at 10:30 AM after the initial discussion.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T01KIAS) only mentions a follow-up call scheduled after the demo, not the discovery session."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T01KIAS",
+                "fact": "Dariusz scheduled a follow-up call for the next day to discuss pricing and agreement terms after the EcoPCB Creator demo.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T1YUIA0) only mentions the discovery session, not the follow-up call after the demo."
+              }
+            ],
+            "reason": "The question asks for two distinct scheduled next steps: one after the initial discussion and one after the demo. These events occur in separate calls, and each call provides only one of the requested facts. Therefore, both calls are necessary to answer the question completely."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1YUIA0",
+                  "fact": "Dariusz scheduled a discovery session for March 18 at 10:30 AM after the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T01KIAS) only mentions a follow-up call scheduled after the demo, not the discovery session."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T01KIAS",
+                  "fact": "Dariusz scheduled a follow-up call for the next day to discuss pricing and agreement terms after the EcoPCB Creator demo.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T1YUIA0) only mentions the discovery session, not the follow-up call after the demo."
+                }
+              ],
+              "reason": "The question asks for two distinct scheduled next steps: one after the initial discussion and one after the demo. These events occur in separate calls, and each call provides only one of the requested facts. Therefore, both calls are necessary to answer the question completely."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1YUIA0",
+                "fact": "After the initial discussion, Dariusz scheduled a discovery session for March 18 at 10:30 AM.",
+                "why_other_call_cannot_supply_it": "The March 25 call occurs after the demo and never mentions the discovery session or its date/time."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T01KIAS",
+                "fact": "After the EcoPCB Creator demo, Dariusz scheduled a follow-up call the next day to discuss pricing and agreement terms.",
+                "why_other_call_cannot_supply_it": "The March 14 call predates the demo and only schedules the discovery session; it contains no mention of a post-demo follow-up call."
+              }
+            ],
+            "reason": "The question asks for two distinct next steps at different stages of the sales process. Each call supplies exactly one: the initial-discussion next step (discovery session, March 18, 10:30 AM) appears only in the March 14 call, and the post-demo next step (follow-up call for pricing/terms) appears only in the March 25 call. Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1YUIA0",
+                  "fact": "After the initial discussion, Dariusz scheduled a discovery session for March 18 at 10:30 AM.",
+                  "why_other_call_cannot_supply_it": "The March 25 call occurs after the demo and never mentions the discovery session or its date/time."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T01KIAS",
+                  "fact": "After the EcoPCB Creator demo, Dariusz scheduled a follow-up call the next day to discuss pricing and agreement terms.",
+                  "why_other_call_cannot_supply_it": "The March 14 call predates the demo and only schedules the discovery session; it contains no mention of a post-demo follow-up call."
+                }
+              ],
+              "reason": "The question asks for two distinct next steps at different stages of the sales process. Each call supplies exactly one: the initial-discussion next step (discovery session, March 18, 10:30 AM) appears only in the March 14 call, and the post-demo next step (follow-up call for pricing/terms) appears only in the March 25 call. Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct next-steps tied to two separate interactions (initial discussion and post-demo call). Call 2 (2022-03-14) is the initial discussion where Dariusz schedules a discovery session on March 18 at 10:30 AM. Call 1 (2022-03-25) is the post-demo follow-up where Dariusz schedules a call the next day to discuss pricing and agreement terms. Each source contributes an exclusive requested fact. The answer matches both transcripts precisely with no unasked extras. The question is naturally scoped to a named account, opportunity, and contact, and a rep would plausibly want to recall scheduled next steps. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003T1YUIA0 (dated 2022-03-14) shows Dariusz proposing 'a detailed discovery session' as the next step, Sofia agreeing to schedule it, and Dariusz confirming 'I'll send over an invitation for March 18th at 10:30 AM.' This directly supports the claim of a discovery session scheduled for March 18 at 10:30 AM after the initial discussion."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003T01KIAS (dated 2022-03-25) shows Sofia asking about pricing and agreement terms, and Dariusz responding 'I've scheduled a follow-up call tomorrow to address any additional questions you might have post-demo. We can dive deeper into the pricing and terms then.' Sofia confirms. This directly supports the claim of a follow-up call the next day to discuss pricing and agreement terms after the demo."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms the discovery session on March 18 at 10:30 AM after the initial discussion (call dated 2022-03-14). Evidence index 1 confirms the follow-up call 'tomorrow' (i.e., the next day after the 2022-03-25 demo call) to discuss pricing and agreement terms. All factual claims in the gold_answer\u2014discovery session, March 18, 10:30 AM, follow-up call the next day, pricing and agreement terms\u2014are explicitly present in the quoted passages with correct speaker attribution (Dariusz scheduling both)."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-e7c4ed78a5b27363",
+    "question": "What concern did Leah O'Connell at AeroFusion Systems raise about initial setup, and how did Santiago respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Leah O'Connell's concern about initial setup and Santiago's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single coherent objection-and-response request about the same issue (initial setup) in one call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection (initial setup user-friendliness for secure settings) raised by a named contact at a named account, which is a realistic sales-QA need. The gold answer accurately reflects the dialogue: Leah asks 'How user-friendly is it, especially regarding configuring these secure settings?' and Santiago acknowledges clients want improved user guidance but says comprehensive support services smooth the process. No extra unasked facts are included, no locator preamble, no answer leakage. Wording is natural and scoped to the business situation. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Leah O'Connell explicitly asks 'How user-friendly is it, especially regarding configuring these secure settings?' which directly supports the claim that she asks how user-friendly the initial setup is, especially configuring secure settings."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Santiago's quoted response states 'some of our clients have mentioned a desire for improved user guidance during the initial configuration' and 'we're continuously working on enhancing that experience with comprehensive support services to smoothly guide you through the process.' This directly supports the claim that he acknowledges clients want improved user guidance and that comprehensive support services help smooth the process."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Leah asked how user-friendly initial configuration of secure settings is (supported by index 0) and that Santiago acknowledged clients want improved user guidance but said comprehensive support services help smooth the process (supported by index 1). Both factual claims in the gold_answer are fully supported by the cited evidence. The paraphrase is faithful to the quoted dialogue."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-8f6e1bd5bf186b1f",
+    "question": "What did Hassan Mbeki say Nordic HealthTech prioritizes in its tech acquisitions, and what demo follow-up did Mei commit to?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) What Hassan Mbeki said Nordic HealthTech prioritizes in its tech acquisitions; 2) the demo follow-up Mei committed to.",
+        "relationship": "Two independent fact lookups joined only by the same call/account \u2014 an acquisition-priority statement and a demo follow-up commitment address different business issues.",
+        "reason": "The question bundles two unrelated information needs (vendor's acquisition priorities vs. a demo follow-up action) with no shared business issue connecting them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Hassan explicitly states Nordic HealthTech has 'prioritized a user-friendly experience in our tech acquisitions' and Mei commits to sending 'available slots via email' to arrange a detailed demonstration. Both facts are in the single supplied call, the question is naturally phrased, scoped to a named account/contact, and the answer contains exactly the two requested facts with no extras.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Hassan Mbeki the statement 'We've also prioritized a user-friendly experience in our tech acquisitions,' which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Mei Chen saying 'I'd be happy to set up a demo. Let me send over some available slots via email, and we can pick a convenient time,' which supports the claim that Mei committed to emailing demo time slots to arrange a demonstration."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are supported: (1) Hassan said Nordic HealthTech prioritizes a user-friendly experience in tech acquisitions (evidence index 0), and (2) Mei agreed to email demo time slots to arrange a detailed demonstration (evidence index 1). The gold_answer's phrasing 'detailed demonstration' is a minor embellishment over 'a demo,' but the core commitment to email available slots for a demo is faithfully captured."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-ed783bbc10a608a9",
+    "question": "What discount is AutoElite offering Zara Ahmed on the Audi Q7 fleet package, and what closing date are they targeting?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount AutoElite is offering Zara Ahmed on the Audi Q7 fleet package and the targeted closing date for that deal.",
+        "relationship": "single coherent deal lookup: commercial terms (discount) and timeline (closing date) for the same fleet package negotiation.",
+        "reason": "Both facts concern the same commercial negotiation \u2014 the discount and the targeted close are natural parts of one deal status question, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific commercial terms (discount percentage and target closing date) that a rep would plausibly track. The dialogue confirms a 5% discount on the fleet package for seven units and a target closing date of October 20th. The gold answer states exactly those facts with no unasked extras. Wording is natural, scope is clear (Audi Q7 fleet package, named customer and company), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set true by convention.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Maria Rodriguez explicitly states 'we're offering a 5% discount on the fleet package for the seven units,' which directly supports the answer_claim about the 5% discount on the fleet package for seven units. The speaker is identified as Maria Rodriguez addressing Zara, and the context metadata confirms the account is Zara Ahmed and the opportunity relates to a Luxury Vehicle Lease and Service Package. The mention of 'Audi Q7' in the quote aligns with the question's reference to the Audi Q7 fleet package."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Maria Rodriguez states 'We're aiming for October 20th, but I'll see what adjustments can be made.' This directly supports the answer_claim about targeting October 20th as the closing date. The phrase 'aiming for' is consistent with 'targeting' in the gold answer. The qualifier 'but I'll see what adjustments can be made' introduces slight uncertainty but does not negate the stated target date."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: 'A 5% discount on the fleet package for seven units, with a target closing date of October 20th.' Evidence index 0 directly supports the 5% discount on the fleet package for seven units. Evidence index 1 directly supports the target closing date of October 20th. The context metadata confirms the account is Zara Ahmed and the opportunity involves a vehicle lease/service package. All factual claims in the gold answer are supported by the combined cited evidence. The slight uncertainty in index 1 ('but I'll see what adjustments can be made') does not contradict the stated target date; 'targeting' in the gold answer appropriately captures this nuance."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-c277efbed6746217",
+    "question": "What next step did Ravi commit to for Sophia Lopez's eco-friendly vehicle opportunity?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Ravi committed to regarding Sophia Lopez's eco-friendly vehicle opportunity",
+        "relationship": "single coherent lookup of one committed next action",
+        "reason": "This is a single next-step lookup tied to one opportunity; no unrelated requests are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what next step Ravi committed to for Sophia Lopez's eco-friendly vehicle opportunity. The dialogue at 10:50:35 shows Ravi saying he'll arrange to send a proposal with comprehensive details on pricing, features, and her specific needs, and will follow up to discuss it in depth. The gold answer accurately captures both elements (sending the detailed proposal and following up). The question is naturally worded, scoped to a named rep, customer, and opportunity, and a sales rep would plausibly want to confirm committed next steps. Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Ravi Chandra explicitly states he will 'arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs' and that he will 'follow up so we can discuss it in depth soon.' This directly supports the answer_claim verbatim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Ravi committed to sending a detailed proposal covering pricing, features, and her specific needs, then following up to discuss it. The single cited evidence (index 0) contains Ravi's exact words committing to send a proposal with comprehensive details on pricing, features, and specific needs, and to follow up to discuss it in depth. The context metadata confirms the call involves Sophia Lopez and the 'Luxury Eco-Friendly Vehicle Acquisition' opportunity, aligning with the question's framing. All factual elements of the gold_answer are supported by the supplied citation."
+      }
+    }
+  }
+]

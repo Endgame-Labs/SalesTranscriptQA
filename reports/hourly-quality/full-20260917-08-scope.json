@@ -1,0 +1,455 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "e917151481fcf708e6735030fcb8d4b8dd7b1091ee2cfc72f058437179580285",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.58066534,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-9f8f6303d7a417b0",
+      "question": "Across the two discussions with Laura Garcia about FusionTech's EDA integration, what did Jorge claim about how SecureFlow Suite fits existing systems in the initial call, and what past experience with new solutions did Laura raise in the follow-up?",
+      "gold_answer": "Jorge said SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities; Laura said FusionTech has had issues integrating new solutions smoothly in the past.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrnmIAC",
+        "b2b:a05Wt000003SrxNIAS",
+        "b2b:a05Wt000003StZNIA0",
+        "b2b:a05Wt000003SuIdIAK",
+        "b2b:a05Wt000003SuvEIAS",
+        "b2b:a05Wt000003Sv1mIAC",
+        "b2b:a05Wt000003Sv1nIAC",
+        "b2b:a05Wt000003SvHxIAK",
+        "b2b:a05Wt000003SvoCIAS",
+        "b2b:a05Wt000003Sx5HIAS",
+        "b2b:a05Wt000003Sx8RIAS",
+        "b2b:a05Wt000003SxJmIAK",
+        "b2b:a05Wt000003SxJnIAK",
+        "b2b:a05Wt000003SxLLIA0",
+        "b2b:a05Wt000003SxwSIAS",
+        "b2b:a05Wt000003SyZ6IAK",
+        "b2b:a05Wt000003SyagIAC",
+        "b2b:a05Wt000003Sz8UIAS",
+        "b2b:a05Wt000003SzDUIA0",
+        "b2b:a05Wt000003SzWiIAK",
+        "b2b:a05Wt000003Szi2IAC",
+        "b2b:a05Wt000003T030IAC",
+        "b2b:a05Wt000003T0EFIA0",
+        "b2b:a05Wt000003T0HVIA0",
+        "b2b:a05Wt000003T0JAIA0",
+        "b2b:a05Wt000003T0PaIAK",
+        "b2b:a05Wt000003T0W3IAK",
+        "b2b:a05Wt000003T0kdIAC",
+        "b2b:a05Wt000003T1AVIA0",
+        "b2b:a05Wt000003T1dQIAS",
+        "b2b:a05Wt000003T21eIAC",
+        "b2b:a05Wt000003T24tIAC",
+        "b2b:a05Wt000003T2ETIA0",
+        "b2b:a05Wt000003T2mNIAS",
+        "b2b:a05Wt000003T2zIIAS",
+        "b2b:a05Wt000003T2zJIAS",
+        "b2b:a05Wt000003T3dZIAS",
+        "b2b:a05Wt000003T43KIAS",
+        "b2b:a05Wt000003T4UkIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 6,
+            "normalized_end": 7
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 7,
+            "normalized_end": 8
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "There are exactly two calls between Jorge Pinto and Laura Garcia on the 'FusionTech Systems EDA Integration' opportunity (2023-05-21 initial, 2023-06-01 follow-up). In the initial call Jorge claimed SecureFlow Suite integrates perfectly into existing systems; in the follow-up Laura raised past challenges with integrating new solutions seamlessly.",
+        "answers": [
+          {
+            "answer": "In the initial call (2023-05-21), Jorge claimed that TechPulse's solutions, like the SecureFlow Suite, are designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration. In the follow-up (2023-06-01), Laura raised that FusionTech had challenges in the past with seamlessly integrating new solutions, making seamless integration a priority (alongside data protection gaps with other vendors).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0JAIA0",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-05-21T10:16:10] Jorge Pinto: That's right in line with what TechPulse specializes in. Our solutions, like the SecureFlow Suite, are designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StZNIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-06-01T10:01:05] Laura Garcia: Yes, data protection is crucial for us. We've seen some gaps with other vendors on that front. Also, seamless integration is another priority, as we’ve had challenges in the past."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies two discussions with Laura Garcia about FusionTech's EDA integration, with Jorge as the salesperson. The opportunity 'FusionTech Systems EDA Integration' (006Wt000007BGgYIAW) has exactly two calls with Jorge Pinto and Laura Garcia: the initial call on 2023-05-21 (b2b:a05Wt000003T0JAIA0) and the follow-up on 2023-06-01 (b2b:a05Wt000003StZNIA0). In the initial call, Jorge claimed SecureFlow Suite integrates perfectly into existing systems. In the follow-up, Laura raised past experience of challenges integrating new solutions smoothly.",
+        "answers": [
+          {
+            "answer": "In the initial call (2023-05-21), Jorge Pinto claimed that SecureFlow Suite is 'designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.' In the follow-up call (2023-06-01), Laura Garcia raised that FusionTech 'had issues in the past with integrating new solutions smoothly,' referencing past challenges with seamless integration of new solutions.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0JAIA0",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-05-21T10:16:10] Jorge Pinto: That's right in line with what TechPulse specializes in. Our solutions, like the SecureFlow Suite, are designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StZNIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-06-01T10:01:05] Laura Garcia: Yes, data protection is crucial for us. We've seen some gaps with other vendors on that front. Also, seamless integration is another priority, as we’ve had challenges in the past."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StZNIA0",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-06-01T10:01:30] Laura Garcia: That’s good to hear, Jorge. It seems like you guys have really put thought into ensuring the solutions are user-friendly and align with actual business processes."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that in the initial call Jorge claimed SecureFlow Suite is designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration, and that in the follow-up Laura raised FusionTech's past issues/challenges with integrating new solutions smoothly. The reference likewise covers both requested facts: Jorge's claim about perfect integration with AI and cloud enhancement, and Laura's mention of past issues integrating new solutions smoothly. Minor extras (e.g., data protection gaps in answer_a, the company name TechPulse) do not alter the core requested facts, and both answers align with each other and the reference on all commitments."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-9a387ae955baff85",
+      "question": "For TerraSync Solutions' Green Circuit Initiative, what next step did Dariusz schedule after the initial discussion with Sofia, and what did he schedule after the EcoPCB Creator demo?",
+      "gold_answer": "After the initial discussion, a discovery session on March 18 at 10:30 AM; after the demo, a follow-up call the next day to discuss pricing and agreement terms.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqTQIA0",
+        "b2b:a05Wt000003StO6IAK",
+        "b2b:a05Wt000003StZKIA0",
+        "b2b:a05Wt000003StZLIA0",
+        "b2b:a05Wt000003StciIAC",
+        "b2b:a05Wt000003StcjIAC",
+        "b2b:a05Wt000003SuKEIA0",
+        "b2b:a05Wt000003SuLmIAK",
+        "b2b:a05Wt000003SuLnIAK",
+        "b2b:a05Wt000003SuLoIAK",
+        "b2b:a05Wt000003SuVPIA0",
+        "b2b:a05Wt000003Suk3IAC",
+        "b2b:a05Wt000003Suk4IAC",
+        "b2b:a05Wt000003SvBRIA0",
+        "b2b:a05Wt000003SwaVIAS",
+        "b2b:a05Wt000003SwqmIAC",
+        "b2b:a05Wt000003SwsKIAS",
+        "b2b:a05Wt000003SxJdIAK",
+        "b2b:a05Wt000003SxLEIA0",
+        "b2b:a05Wt000003SxLFIA0",
+        "b2b:a05Wt000003SxWcIAK",
+        "b2b:a05Wt000003SyECIA0",
+        "b2b:a05Wt000003SyNoIAK",
+        "b2b:a05Wt000003SyaeIAC",
+        "b2b:a05Wt000003SzerIAC",
+        "b2b:a05Wt000003SzgQIAS",
+        "b2b:a05Wt000003SzzqIAC",
+        "b2b:a05Wt000003T01KIAS",
+        "b2b:a05Wt000003T06DIAS",
+        "b2b:a05Wt000003T0MNIA0",
+        "b2b:a05Wt000003T0PYIA0",
+        "b2b:a05Wt000003T0nqIAC",
+        "b2b:a05Wt000003T0nrIAC",
+        "b2b:a05Wt000003T10iIAC",
+        "b2b:a05Wt000003T10jIAC",
+        "b2b:a05Wt000003T10kIAC",
+        "b2b:a05Wt000003T10lIAC",
+        "b2b:a05Wt000003T1YUIA0",
+        "b2b:a05Wt000003T1iEIAS",
+        "b2b:a05Wt000003T1iFIAS",
+        "b2b:a05Wt000003T1jsIAC",
+        "b2b:a05Wt000003T1zxIAC",
+        "b2b:a05Wt000003T21ZIAS",
+        "b2b:a05Wt000003T24mIAC",
+        "b2b:a05Wt000003T24nIAC",
+        "b2b:a05Wt000003T2JLIA0",
+        "b2b:a05Wt000003T2xaIAC",
+        "b2b:a05Wt000003T3SEIA0",
+        "b2b:a05Wt000003T3TpIAK",
+        "b2b:a05Wt000003T3TqIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The Green Circuit Initiative calls with Dariusz and Sofia form a clear sequence: the initial discussion (2022-03-14) ends with a scheduled discovery session for March 18, and the post-demo call (2022-03-25) ends with a follow-up call scheduled for the next day (March 26) to cover pricing and terms. No competing next steps exist for these two events.",
+        "answers": [
+          {
+            "answer": "After the initial discussion with Sofia (2022-03-14), Dariusz scheduled a detailed discovery session for March 18th at 10:30 AM to dive into TerraSync's specific requirements and challenges and tailor the proposal to her green initiative goals. After the EcoPCB Creator demo (2022-03-25 call), Dariusz scheduled a follow-up call for the next day (March 26) to address any additional post-demo questions and dive deeper into the pricing and agreement terms.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1YUIA0",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2022-03-14T09:35:55] Dariusz Wisniewski: The next step would be a detailed discovery session, which would allow us to dive into your specific requirements and challenges. We could then tailor our proposal to suit your needs, with a focus on your green initiative goals. How does that sound?\n[2022-03-14T09:36:15] Sofia Ramirez: Sounds promising, Dariusz. Let's schedule a time for this session."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T01KIAS",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2022-03-25T15:35:10] Dariusz Wisniewski: We can absolutely do that. I’ve scheduled a follow-up call tomorrow to address any additional questions you might have post-demo. We can dive deeper into the pricing and terms then. Does that work for you?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies TerraSync Solutions' Green Circuit Initiative (opportunity 'TerraSync Green Circuit Initiative', ID 006Wt000007BFyzIAG), Dariusz as the rep, and Sofia as the contact. The initial discussion is the earliest call (2022-03-14, b2b:a05Wt000003T1YUIA0), where Dariusz scheduled a discovery session for March 18th. The EcoPCB Creator demo is referenced in the 2022-03-25 call (b2b:a05Wt000003T01KIAS), where Dariusz scheduled a follow-up call the next day to discuss pricing and terms.",
+        "answers": [
+          {
+            "answer": "After the initial discussion with Sofia on March 14, 2022, Dariusz scheduled a detailed discovery session for March 18th at 10:30 AM to dive into TerraSync's specific requirements and challenges. After the EcoPCB Creator demo (discussed on the March 25, 2022 call), Dariusz scheduled a follow-up call for the next day (March 26) to address any additional post-demo questions and dive deeper into pricing and agreement terms.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1YUIA0",
+                "line_start": 13,
+                "line_end": 17,
+                "quote": "[2022-03-14T09:35:30] Sofia Ramirez: That aligns well with our mission at TerraSync. I'd be interested in exploring this in more detail. What's the next step?\n[2022-03-14T09:35:55] Dariusz Wisniewski: The next step would be a detailed discovery session, which would allow us to dive into your specific requirements and challenges. We could then tailor our proposal to suit your needs, with a focus on your green initiative goals. How does that sound?\n[2022-03-14T09:36:15] Sofia Ramirez: Sounds promising, Dariusz. Let's schedule a time for this session.\n[2022-03-14T09:36:30] Dariusz Wisniewski: Perfect! I'll send over an invitation for March 18th at 10:30 AM. We’re looking forward to getting into the specifics and seeing how we can contribute to TerraSync's success."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T01KIAS",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2022-03-25T15:30:30] Dariusz Wisniewski: I’m great, thanks for asking. I appreciate you making the time for today’s call. How did you feel about the EcoPCB Creator demo we held earlier?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T01KIAS",
+                "line_start": 15,
+                "line_end": 18,
+                "quote": "[2022-03-25T15:34:50] Sofia Ramirez: I’m glad we’re aligning on that front. So, when can we discuss the detailed pricing and agreement terms?\n[2022-03-25T15:35:10] Dariusz Wisniewski: We can absolutely do that. I’ve scheduled a follow-up call tomorrow to address any additional questions you might have post-demo. We can dive deeper into the pricing and terms then. Does that work for you?\n[2022-03-25T15:35:25] Sofia Ramirez: Yes, that works. I’m looking forward to it."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two next steps: (1) after the initial discussion with Sofia, Dariusz scheduled a detailed discovery session on March 18 at 10:30 AM to explore TerraSync's requirements, and (2) after the EcoPCB Creator demo, he scheduled a follow-up call the next day (March 26) to address post-demo questions and discuss pricing and agreement terms. The reference likewise covers both requested facts: the discovery session on March 18 at 10:30 AM after the initial discussion, and the follow-up call the next day after the demo to discuss pricing and agreement terms. Minor wording differences (e.g., answer_a adds 'tailor the proposal to her green initiative goals') are extras that do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-e7c4ed78a5b27363",
+      "question": "What concern did Leah O'Connell at AeroFusion Systems raise about initial setup, and how did Santiago respond?",
+      "gold_answer": "Leah asked how user-friendly initial configuration of secure settings is; Santiago acknowledged clients want improved user guidance but said comprehensive support services help smooth the process.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgSIAS",
+        "b2b:a05Wt000003SrnoIAC",
+        "b2b:a05Wt000003StG3IAK",
+        "b2b:a05Wt000003StG4IAK",
+        "b2b:a05Wt000003SuiNIAS",
+        "b2b:a05Wt000003SuleIAC",
+        "b2b:a05Wt000003SuteIAC",
+        "b2b:a05Wt000003SvhiIAC",
+        "b2b:a05Wt000003SvptIAC",
+        "b2b:a05Wt000003SvrTIAS",
+        "b2b:a05Wt000003SwVeIAK",
+        "b2b:a05Wt000003SwdlIAC",
+        "b2b:a05Wt000003SxEuIAK",
+        "b2b:a05Wt000003SxQAIA0",
+        "b2b:a05Wt000003SxZpIAK",
+        "b2b:a05Wt000003SyHXIA0",
+        "b2b:a05Wt000003SyQxIAK",
+        "b2b:a05Wt000003SypMIAS",
+        "b2b:a05Wt000003SypNIAS",
+        "b2b:a05Wt000003Sz3lIAC",
+        "b2b:a05Wt000003SzQPIA0",
+        "b2b:a05Wt000003SzdFIAS",
+        "b2b:a05Wt000003Szi5IAC",
+        "b2b:a05Wt000003SzweIAC",
+        "b2b:a05Wt000003SzzyIAC",
+        "b2b:a05Wt000003T0caIAC",
+        "b2b:a05Wt000003T18hIAC",
+        "b2b:a05Wt000003T2zPIAS",
+        "b2b:a05Wt000003T346IAC",
+        "b2b:a05Wt000003T3SIIA0",
+        "b2b:a05Wt000003T3ldIAC",
+        "b2b:a05Wt000003T4JUIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call has Leah O'Connell raising a concern about initial setup with Santiago Fernandez (2021-08-12): she asked how user-friendly the initial setup is, especially configuring secure settings, and Santiago acknowledged clients want improved user guidance during initial configuration and said they are enhancing that with comprehensive support services. The 2022-03-01 call only has Santiago mentioning this feedback himself, not Leah raising it.",
+        "answers": [
+          {
+            "answer": "Leah O'Connell raised a concern about the initial setup — specifically how user-friendly it is, especially regarding configuring the secure settings. Santiago responded that it was a fair question, acknowledged that some clients have mentioned a desire for improved user guidance during the initial configuration, and said TechPulse is continuously working on enhancing that experience with comprehensive support services to smoothly guide customers through the process.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzweIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2021-08-12T11:17:30] Leah O'Connell: That's reassuring. However, I'm curious about the initial setup. How user-friendly is it, especially regarding configuring these secure settings?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Leah O'Connell at AeroFusion Systems, the topic 'initial setup,' and the rep 'Santiago.' Only one call matches all three: b2b:a05Wt000003SzweIAC (2021-08-12), where Santiago Fernandez speaks with Leah O'Connell. At line 9 Leah asks how user-friendly the initial setup is, especially regarding configuring secure settings. Santiago responds at line 10 acknowledging that some clients have wanted improved user guidance during initial configuration and that they are continuously enhancing the experience with comprehensive support services. A second Santiago–Leah call (b2b:a05Wt000003T3ldIAC, 2022-03-01) touches on the same theme but Santiago raises it proactively rather than Leah raising a concern, so it does not fit the question's wording.",
+        "answers": [
+          {
+            "answer": "Leah O'Connell asked how user-friendly the initial setup is, specifically regarding configuring the secure settings. Santiago Fernandez acknowledged that some clients have expressed a desire for improved user guidance during the initial configuration, and responded that TechPulse is continuously working on enhancing that experience by providing comprehensive support services to smoothly guide them through the process.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzweIAC",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2021-08-12T11:17:30] Leah O'Connell: That's reassuring. However, I'm curious about the initial setup. How user-friendly is it, especially regarding configuring these secure settings?\n[2021-08-12T11:17:50] Santiago Fernandez: It's a fair question. While some of our clients have mentioned a desire for improved user guidance during the initial configuration, we're continuously working on enhancing that experience with comprehensive support services to smoothly guide you through the process."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Leah O'Connell's concern was about the user-friendliness of the initial setup, specifically configuring secure settings, and that Santiago acknowledged clients want improved user guidance during initial configuration while noting TechPulse is working on enhancing the experience with comprehensive support services. The reference captures the same two requested facts: the concern about user-friendliness of initial secure-settings configuration, and Santiago's acknowledgment of the desire for better guidance plus the mention of comprehensive support services smoothing the process. Minor wording differences (e.g., 'fair question' in answer_a, full surname in answer_b) do not affect factual agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-c277efbed6746217",
+      "question": "What next step did Ravi commit to for Sophia Lopez's eco-friendly vehicle opportunity?",
+      "gold_answer": "Ravi committed to sending a detailed proposal covering pricing, features, and her specific needs, then following up to discuss it.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOB1IAO",
+        "b2c:a05Ws000005SOobIAG",
+        "b2c:a05Ws000005SOocIAG",
+        "b2c:a05Ws000005SPqEIAW",
+        "b2c:a05Ws000005SPqFIAW",
+        "b2c:a05Ws000005SQCoIAO",
+        "b2c:a05Ws000005SQccIAG",
+        "b2c:a05Ws000005SQeEIAW",
+        "b2c:a05Ws000005SQkgIAG",
+        "b2c:a05Ws000005SQnwIAG",
+        "b2c:a05Ws000005SRteIAG",
+        "b2c:a05Ws000005SRvHIAW",
+        "b2c:a05Ws000005SS9mIAG",
+        "b2c:a05Ws000005SSMhIAO",
+        "b2c:a05Ws000005SScoIAG",
+        "b2c:a05Ws000005SSjGIAW",
+        "b2c:a05Ws000005SSksIAG",
+        "b2c:a05Ws000005STXGIA4",
+        "b2c:a05Ws000005STqcIAG",
+        "b2c:a05Ws000005STvSIAW",
+        "b2c:a05Ws000005SU6kIAG",
+        "b2c:a05Ws000005SU6lIAG",
+        "b2c:a05Ws000005SU9xIAG",
+        "b2c:a05Ws000005SUBZIA4",
+        "b2c:a05Ws000005SUDBIA4",
+        "b2c:a05Ws000005SUEnIAO",
+        "b2c:a05Ws000005SUGPIA4",
+        "b2c:a05Ws000005SUI1IAO",
+        "b2c:a05Ws000005SUI2IAO",
+        "b2c:a05Ws000005SUJdIAO",
+        "b2c:a05Ws000005SULFIA4",
+        "b2c:a05Ws000005SUMrIAO",
+        "b2c:a05Ws000005SUMsIAO",
+        "b2c:a05Ws000005SUOTIA4",
+        "b2c:a05Ws000005SUQ5IAO",
+        "b2c:a05Ws000005SURhIAO",
+        "b2c:a05Ws000005SUTJIA4",
+        "b2c:a05Ws000005SUUvIAO"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Ravi Chandra appears on three calls for the same 'Luxury Eco-Friendly Vehicle Acquisition' opportunity, and each contains a different next-step commitment (send a detailed proposal and follow up; a follow-up call; diving deeper into Luxury Lease Solutions next discussion). The question does not identify which call is intended, so materially different complete answers exist.",
+        "answers": [
+          {
+            "answer": "Ravi committed to arranging for a proposal to be sent over that includes comprehensive details on pricing, features, and Sophia's specific needs, and to following up so they could discuss it in depth soon.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUGPIA4",
+                "line_start": 20,
+                "line_end": 22,
+                "quote": "[2020-05-07T10:50:20] Sophia Lopez: I might consider a demonstration. What's the next step to get a detailed proposal?\n[2020-05-07T10:50:35] Ravi Chandra: I’ll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon."
+              }
+            ]
+          },
+          {
+            "answer": "Ravi committed to a follow-up call to address any additional thoughts or questions Sophia had after reviewing the options.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUJdIAO",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2020-05-10T14:48:55] Sophia Lopez: That sounds convenient. I really appreciate you walking me through everything. I’ll need some time to think this over and compare my options.\n[2020-05-10T14:49:10] Ravi Chandra: Of course, take all the time you need. I’m here to help with any questions or further details you might need. Our next step could be a follow-up call to address any additional thoughts or questions you have."
+              }
+            ]
+          },
+          {
+            "answer": "Ravi committed to diving into each option in more detail — particularly the Luxury Lease Solutions Sophia was interested in — during their next discussion.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUI1IAO",
+                "line_start": 20,
+                "line_end": 24,
+                "quote": "[2020-05-11T10:49:55] Ravi Chandra: I’m glad to hear that! So, moving forward, would you like to explore specific steps about leasing options or additional service plans?\n[2020-05-11T10:50:10] Sophia Lopez: Yes, I am particularly interested in your Luxury Lease Solutions and how it could fit into our budget plans.\n[2020-05-11T10:50:25] Ravi Chandra: The Luxury Lease Solutions definitely aligns well with what we’ve been discussing. It provides flexible leasing terms while making premium vehicles more accessible. Would it be helpful if we dive into each option in more detail next time?\n[2020-05-11T10:50:40] Sophia Lopez: Yes, let’s do that in our next discussion. Thank you so much for the insights, Ravi. You've given me a lot to think about."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about Ravi's commitment for Sophia Lopez's eco-friendly vehicle opportunity. Only one salesperson named Ravi (Ravi Chandra) appears in the call history, and he is associated with a single opportunity: 'Luxury Eco-Friendly Vehicle Acquisition' (006Ws00000ALowxIAD). Across his three calls, the clearest explicit next-step commitment is in the initial call (2020-05-07), where he commits to arranging a proposal with comprehensive details on pricing, features, and Sophia's specific needs, and to following up to discuss it in depth.",
+        "answers": [
+          {
+            "answer": "Ravi Chandra committed to arranging for a proposal to be sent over that includes comprehensive details on pricing, features, and Sophia's specific needs, and to following up so they can discuss it in depth soon.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUGPIA4",
+                "line_start": 20,
+                "line_end": 22,
+                "quote": "[2020-05-07T10:50:20] Sophia Lopez: I might consider a demonstration. What's the next step to get a detailed proposal?\n[2020-05-07T10:50:35] Ravi Chandra: I’ll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

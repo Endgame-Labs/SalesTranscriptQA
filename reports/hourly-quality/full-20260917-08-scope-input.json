@@ -1,0 +1,1490 @@
+[
+  {
+    "job_id": "9f8f6303d7a417b0557f2ad02f0a68f98d8cc4fd31e9e3a23bdf6ba07660250a",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T0JAIA0",
+      "b2b:a05Wt000003T2zJIAS"
+    ],
+    "status": "accepted",
+    "question": "Across the two discussions with Laura Garcia about FusionTech's EDA integration, what did Jorge claim about how SecureFlow Suite fits existing systems in the initial call, and what past experience with new solutions did Laura raise in the follow-up?",
+    "gold_answer": "Jorge said SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities; Laura said FusionTech has had issues integrating new solutions smoothly in the past.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T0JAIA0",
+        "answer_claim": "Jorge said TechPulse solutions like SecureFlow Suite integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.",
+        "kind": "dialogue",
+        "line_start": 6,
+        "line_end": 7,
+        "quote": "[2023-05-21T10:16:10] Jorge Pinto: That's right in line with what TechPulse specializes in. Our solutions, like the SecureFlow Suite, are designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.",
+        "start": 921,
+        "end": 1167
+      },
+      {
+        "call_id": "b2b:a05Wt000003T2zJIAS",
+        "answer_claim": "Laura said FusionTech has had issues in the past with integrating new solutions smoothly.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2023-05-24T14:02:05] Laura Garcia: That definitely sounds promising, especially the integration part. We've had issues in the past with integrating new solutions smoothly.",
+        "start": 1939,
+        "end": 2111
+      }
+    ],
+    "question_id": "b2b-multi_call-9f8f6303d7a417b0",
+    "candidate": {
+      "question": "Across the two discussions with Laura Garcia about FusionTech's EDA integration, what did Jorge claim about how SecureFlow Suite fits existing systems in the initial call, and what past experience with new solutions did Laura raise in the follow-up?",
+      "gold_answer": "Jorge said SecureFlow Suite integrates perfectly into existing systems while enhancing AI and cloud capabilities; Laura said FusionTech has had issues integrating new solutions smoothly in the past.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T0JAIA0",
+          "answer_claim": "Jorge said TechPulse solutions like SecureFlow Suite integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.",
+          "kind": "dialogue",
+          "line_start": 6,
+          "line_end": 7,
+          "quote": "[2023-05-21T10:16:10] Jorge Pinto: That's right in line with what TechPulse specializes in. Our solutions, like the SecureFlow Suite, are designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.",
+          "start": 921,
+          "end": 1167
+        },
+        {
+          "call_id": "b2b:a05Wt000003T2zJIAS",
+          "answer_claim": "Laura said FusionTech has had issues in the past with integrating new solutions smoothly.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2023-05-24T14:02:05] Laura Garcia: That definitely sounds promising, especially the integration part. We've had issues in the past with integrating new solutions smoothly.",
+          "start": 1939,
+          "end": 2111
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the initial call, Jorge claimed that SecureFlow Suite is designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration. In the follow-up, Laura raised that they have had issues in the past with integrating new solutions smoothly.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer: In the initial call (2023-05-21), Jorge claimed that TechPulse's SecureFlow Suite is 'designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.' However, the follow-up discussion with Laura Garcia is not included in the supplied data, so what past experience with new solutions she raised there cannot be determined.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer: In the initial call (2023-05-24), Jorge claimed that SecureFlow Suite uses AI-driven anomaly detection and real-time threat mitigation to prevent data breaches and 'seamlessly integrates into your existing AI Cirku-Tech framework.' However, the follow-up discussion with Laura Garcia is not included in the supplied data, so what past experience with new solutions she raised in that follow-up cannot be determined. Missing: the transcript of the follow-up call.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both gold claims are directly supported by verbatim quotes: Jorge's 'integrate perfectly into existing systems while enhancing AI capabilities and cloud integration' (initial call, lines 6-7) and Laura's 'We've had issues in the past with integrating new solutions smoothly' (follow-up, lines 9-10). The question is a realistic sales need (follow-up on integration concerns across two calls on the same opportunity) and names only participants/accounts, which is allowed. Each fact is exclusive to one call transcript, so both calls are necessary; each single-call ablation only answers half the question and both no-context answers are UNKNOWN. The independent answer matches the gold semantically without leaking or inventing details."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T0JAIA0",
+          "b2b:a05Wt000003T2zJIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxoTIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain only one call between Aarav Bansal and Laura Moreira of Lisbon Tech Sphere discussing VerifySim Elite, OptiPower Manager, and CloudLink Designer. There is no Laura Garcia, no FusionTech, no EDA integration topic, no SecureFlow Suite, no person named Jorge, and no follow-up call. Therefore, neither Jorge's claim about how SecureFlow Suite fits existing systems nor Laura's past experience with new solutions can be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about two discussions with Laura Garcia regarding FusionTech's EDA integration, specifically Jorge's claim about SecureFlow Suite fitting existing systems in the initial call and Laura's past experience with new solutions in the follow-up. The only call provided is between Aarav Bansal and Laura Moreira (not Laura Garcia) at Lisbon Tech Sphere (not FusionTech), discussing entirely different products (VerifySim Elite, OptiPower Manager, CloudLink Designer). None of the named people (Jorge, Laura Garcia), company (FusionTech), product (SecureFlow Suite), or topic (EDA integration) appear in the source. No follow-up call exists. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzWiIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the information needed to answer this question. The only call provided is between Anika Singh (TechPulse Solutions) and Laura Garcia (FusionTech Systems) on 2023-06-15. There is no salesperson named Jorge in any transcript, no mention of 'EDA integration,' and no follow-up call exists in the sources. While SecureFlow Suite is briefly mentioned by Anika as 'highly adaptable' (line 14), this is not a claim by Jorge. Laura's past experience with new solutions is not raised in any follow-up discussion. Therefore, neither part of the question can be answered.",
+              "evidence": [],
+              "reason": "The question asks about claims made by 'Jorge' across 'two discussions' about 'FusionTech's EDA integration.' The sources contain only one call, the speaker is Anika Singh (not Jorge), there is no reference to EDA integration, and no follow-up call exists. Both requested facts (Jorge's claim about SecureFlow Suite fitting existing systems, and Laura's past experience with new solutions in a follow-up) are entirely absent from the provided transcripts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxoNIAS",
+              "b2b:a05Wt000003T0ZMIA0",
+              "b2b:a05Wt000003T0ZNIA0",
+              "b2b:a05Wt000003T3lfIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any discussion with a person named 'Laura Garcia' about 'FusionTech's EDA integration', no speaker named 'Jorge', and no product called 'SecureFlow Suite'. All four transcripts involve Priyanka Iyer of TechPulse Solutions speaking with Laura Martinez of Circuit Dynamics Inc. about products such as PulseSim Pro, CloudLink Designer, EcoPCB Creator, and AI Cirku-Tech. Therefore, neither Jorge's claim about how SecureFlow Suite fits existing systems nor Laura Garcia's raised past experience with new solutions can be found in the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about specific named entities\u2014Laura Garcia, Jorge, FusionTech, and SecureFlow Suite\u2014none of which appear in any of the four call transcripts. The actual participants are Priyanka Iyer and Laura Martinez, the account is Circuit Dynamics Inc., and the products discussed belong to TechPulse Solutions. Because every requested fact pertains to people, a company, and a product that are entirely absent from the sources, no answer can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2wAIAS",
+              "b2b:a05Wt000003T3nKIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about discussions between Jorge and Laura Garcia regarding FusionTech's EDA integration, specifically about SecureFlow Suite and past experience with new solutions. However, the provided sources contain two calls between Liam O'Sullivan (TechPulse Solutions) and Laura Martinez (Circuit Dynamics Inc.) discussing EcoPCB Creator, CloudLink Designer, AI Cirku-Tech, and CryptGuard Module. There is no Jorge, no Laura Garcia, no FusionTech, and no SecureFlow Suite in either transcript. The requested facts cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "None of the named entities in the question (Jorge, Laura Garcia, FusionTech, SecureFlow Suite) appear in the source transcripts. The calls involve Liam O'Sullivan and Laura Martinez discussing TechPulse Solutions products for Circuit Dynamics Inc. Since the exact named people, company, and product referenced in the question are entirely absent, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Srm2IAC",
+              "b2b:a05Wt000003SyytIAC",
+              "b2b:a05Wt000003SzAGIA0",
+              "b2b:a05Wt000003T0ZDIA0",
+              "b2b:a05Wt000003T2XlIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the requested facts. The contact in all calls is Laura Gonzalez, not Laura Garcia. The salesperson is Tariq Hassan, not Jorge. The vendor is TechPulse, not FusionTech. No product called SecureFlow Suite appears in any transcript (the products discussed are CloudLink Designer, SecureTrack Pro, and OptiPower Max). There is no mention of FusionTech's EDA integration in the context of a SecureFlow Suite product. Therefore, no claim by Jorge about how SecureFlow Suite fits existing systems, and no past experience with new solutions raised by Laura Garcia in a follow-up, can be identified in these sources.",
+              "evidence": [],
+              "reason": "Every named entity in the question\u2014Laura Garcia, Jorge, FusionTech, and SecureFlow Suite\u2014is absent from the provided transcripts. The actual participants are Laura Gonzalez and Tariq Hassan at TechPulse/InnoBuild Constructors, discussing CloudLink Designer, SecureTrack Pro, and OptiPower Max. Because none of the exact named people, company, or product in the question appear in the sources, no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrniIAC",
+              "b2b:a05Wt000003SsLXIA0",
+              "b2b:a05Wt000003SxZjIAK",
+              "b2b:a05Wt000003T0qwIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about discussions between 'Jorge' and 'Laura Garcia' regarding 'FusionTech's EDA integration.' None of these named entities exist in the provided sources. The salesperson in all calls is Lucas Almeida (not Jorge), the contact is Laura Gonzalez (not Laura Garcia), and the account is InnoBuild Constructors (not FusionTech). While the opportunity is named 'Advanced EDA Partnership' and SecureFlow Suite integration is discussed, the exact named people, account, and event scope specified in the question do not match any source. Therefore, no complete answer can be provided for the exact entities requested.",
+              "evidence": [],
+              "reason": "The question specifies Jorge, Laura Garcia, and FusionTech, but the sources only contain Lucas Almeida, Laura Gonzalez, and InnoBuild Constructors. Since the instructions require that every requested fact be supported for the EXACT named people, account, products, and event scope, and a different salesperson cannot answer a question about another's promise, the answer is incomplete. No call matching 'Jorge with Laura Garcia about FusionTech's EDA integration' exists in the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwAgIAK",
+              "b2b:a05Wt000003T0XdIAK",
+              "b2b:a05Wt000003T2RJIA0",
+              "b2b:a05Wt000003T2SvIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no discussions with a person named 'Laura Garcia' about 'FusionTech's EDA integration,' no salesperson named 'Jorge,' and no product called 'SecureFlow Suite.' All four calls are between Mohamed Ahmed (TechPulse Solutions) and Laura Gonzalez (InnoBuild Constructors), discussing products CloudLink Designer, OptiPower Max, and SecureTrack Pro. The requested facts cannot be located in the provided transcripts.",
+              "evidence": [],
+              "reason": "The question asks about specific named entities\u2014Laura Garcia, Jorge, FusionTech, and SecureFlow Suite\u2014none of which appear in any of the four call transcripts. The contact in all calls is Laura Gonzalez (not Garcia), the salesperson is Mohamed Ahmed (not Jorge), the company discussed is TechPulse Solutions (not FusionTech), and the products are CloudLink Designer, OptiPower Max, and SecureTrack Pro (not SecureFlow Suite). Because none of the exact named people, account, products, or event scope match, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StO2IAK",
+              "b2b:a05Wt000003SuK7IAK",
+              "b2b:a05Wt000003T2ZNIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question's named entities do not match any source. There is no 'Laura Garcia' (the contact is Laura Gonzalez), no 'FusionTech' (the account is InnoBuild Constructors), no 'Jorge' (the salesperson is Amir Haddad of TechPulse Solutions), and no product called 'SecureFlow Suite' (products discussed are CloudLink Designer, SecureTrack Pro, and OptiPower Max). Because none of the exact named people, account, or product in the question appear in the transcripts, no claim about SecureFlow Suite fitting existing systems or any past experience Laura Garcia raised about new solutions can be identified.",
+              "evidence": [],
+              "reason": "Every key entity in the question\u2014Laura Garcia, FusionTech, Jorge, and SecureFlow Suite\u2014is absent from all three call transcripts. The sources involve Laura Gonzalez at InnoBuild Constructors speaking with Amir Haddad of TechPulse Solutions about CloudLink Designer, SecureTrack Pro, and OptiPower Max. Since the question targets a different person, company, salesperson, and product, no supported answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwsBIAS",
+              "b2b:a05Wt000003SzQIIA0",
+              "b2b:a05Wt000003T0isIAC",
+              "b2b:a05Wt000003T0nkIAC",
+              "b2b:a05Wt000003T2G2IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the requested facts. All provided calls are between Xinyi Zhang (TechPulse Solutions) and Laura Gonzalez of InnoBuild Constructors. There is no person named Jorge, no contact named Laura Garcia, no company called FusionTech, and no product called SecureFlow Suite in any transcript. Therefore, no claim by Jorge about how SecureFlow Suite fits existing systems in an initial call, nor any past experience with new solutions raised by Laura Garcia in a follow-up, can be found.",
+              "evidence": [],
+              "reason": "The question asks about two discussions with Laura Garcia about FusionTech's EDA integration, specifically what Jorge claimed about SecureFlow Suite fitting existing systems and what past experience Laura Garcia raised. None of these named entities (Jorge, Laura Garcia, FusionTech, SecureFlow Suite) appear in any of the five provided call transcripts. All calls involve Xinyi Zhang and Laura Gonzalez discussing TechPulse Solutions products (CloudLink Designer, SecureTrack Pro, OptiPower Max, AI DesignShift) for InnoBuild Constructors. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StZNIA0",
+              "b2b:a05Wt000003T0JAIA0",
+              "b2b:a05Wt000003T2zJIAS"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the initial call (2023-05-21), Jorge claimed that SecureFlow Suite is 'designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration.' In the follow-up (2023-05-24), Laura raised that FusionTech 'had issues in the past with integrating new solutions smoothly.'",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T0JAIA0",
+                  "line_start": 6,
+                  "line_end": 7,
+                  "quote": "[2023-05-21T10:16:10] Jorge Pinto: That's right in line with what TechPulse specializes in. Our solutions, like the SecureFlow Suite, are designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2zJIAS",
+                  "line_start": 9,
+                  "line_end": 10,
+                  "quote": "[2023-05-24T14:02:05] Laura Garcia: That definitely sounds promising, especially the integration part. We've had issues in the past with integrating new solutions smoothly."
+                }
+              ],
+              "reason": "The initial call (2023-05-21, b2b:a05Wt000003T0JAIA0) line 6 contains Jorge's exact claim about SecureFlow Suite integrating perfectly into existing systems. The follow-up call (2023-05-24, b2b:a05Wt000003T2zJIAS) line 9 contains Laura's statement about past issues integrating new solutions smoothly. Both facts are directly supported by the source text for the exact named people (Jorge Pinto, Laura Garcia), account (FusionTech Systems), and opportunity (EDA Integration). The draft extraction is accurate."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same two facts: (1) Jorge claimed SecureFlow Suite integrates perfectly into existing systems while enhancing AI capabilities and cloud integration, and (2) Laura raised that FusionTech had issues in the past with integrating new solutions smoothly. The wording differs slightly (e.g., 'designed to integrate perfectly' vs. 'integrates perfectly'; 'had issues in the past with integrating new solutions smoothly' vs. 'has had issues integrating new solutions smoothly in the past'), but the semantic content of the requested facts is identical."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly supported: initial call quote shows Jorge claiming SecureFlow Suite 'integrate[s] perfectly into existing systems while enhancing AI capabilities and cloud integration'; follow-up quote shows Laura stating 'We've had issues in the past with integrating new solutions smoothly.' Question is self-contained, business-relevant, and each call supplies a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "what did Jorge claim about how SecureFlow Suite fits existing systems in the initial call",
+            "explicitly_requested": true,
+            "required_fact": "Jorge claimed SecureFlow Suite is designed to integrate perfectly into existing systems while enhancing AI capabilities and cloud integration",
+            "source_call_ids": [
+              "b2b:a05Wt000003T0JAIA0"
+            ]
+          },
+          {
+            "question_span": "what past experience with new solutions did Laura raise in the follow-up",
+            "explicitly_requested": true,
+            "required_fact": "Laura said they've had issues in the past with integrating new solutions smoothly",
+            "source_call_ids": [
+              "b2b:a05Wt000003T2zJIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: Jorge's claim about SecureFlow Suite fitting existing systems in the initial call, and Laura's past experience with new solutions in the follow-up. The gold_answer contains exactly these two facts, no extras. The independent answer matches the gold_answer and directly answers the question. The obligations correctly identify the two required facts and their source calls. Each call is necessary: the first call provides Jorge's claim, the second provides Laura's past experience. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Jorge said SecureFlow Suite integrates perfectly into existing systems",
+            "question_span": "what did Jorge claim about how SecureFlow Suite fits existing systems in the initial call",
+            "required_by_question": true
+          },
+          {
+            "claim": "Jorge said SecureFlow Suite enhances AI and cloud capabilities",
+            "question_span": "what did Jorge claim about how SecureFlow Suite fits existing systems in the initial call",
+            "required_by_question": true
+          },
+          {
+            "claim": "Laura said FusionTech has had issues integrating new solutions smoothly in the past",
+            "question_span": "what past experience with new solutions did Laura raise in the follow-up",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "9a387ae955baff8512805063a8142839a64a76a6dbf589be6c9014819d529ca8",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T01KIAS",
+      "b2b:a05Wt000003T1YUIA0"
+    ],
+    "status": "accepted",
+    "question": "For TerraSync Solutions' Green Circuit Initiative, what next step did Dariusz schedule after the initial discussion with Sofia, and what did he schedule after the EcoPCB Creator demo?",
+    "gold_answer": "After the initial discussion, a discovery session on March 18 at 10:30 AM; after the demo, a follow-up call the next day to discuss pricing and agreement terms.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T1YUIA0",
+        "answer_claim": "The next step would be a detailed discovery session; invitation for March 18th at 10:30 AM.",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 17,
+        "quote": "[2022-03-14T09:35:55] Dariusz Wisniewski: The next step would be a detailed discovery session, which would allow us to dive into your specific requirements and challenges. We could then tailor our proposal to suit your needs, with a focus on your green initiative goals. How does that sound?\n[2022-03-14T09:36:15] Sofia Ramirez: Sounds promising, Dariusz. Let's schedule a time for this session.\n[2022-03-14T09:36:30] Dariusz Wisniewski: Perfect! I'll send over an invitation for March 18th at 10:30 AM. We\u2019re looking forward to getting into the specifics and seeing how we can contribute to TerraSync's success.",
+        "start": 3132,
+        "end": 3744
+      },
+      {
+        "call_id": "b2b:a05Wt000003T01KIAS",
+        "answer_claim": "I've scheduled a follow-up call tomorrow to address additional questions post-demo; dive deeper into pricing and terms then.",
+        "kind": "dialogue",
+        "line_start": 15,
+        "line_end": 18,
+        "quote": "[2022-03-25T15:34:50] Sofia Ramirez: I\u2019m glad we\u2019re aligning on that front. So, when can we discuss the detailed pricing and agreement terms?\n[2022-03-25T15:35:10] Dariusz Wisniewski: We can absolutely do that. I\u2019ve scheduled a follow-up call tomorrow to address any additional questions you might have post-demo. We can dive deeper into the pricing and terms then. Does that work for you?\n[2022-03-25T15:35:25] Sofia Ramirez: Yes, that works. I\u2019m looking forward to it.",
+        "start": 2998,
+        "end": 3468
+      }
+    ],
+    "question_id": "b2b-multi_call-9a387ae955baff85",
+    "candidate": {
+      "question": "For TerraSync Solutions' Green Circuit Initiative, what next step did Dariusz schedule after the initial discussion with Sofia, and what did he schedule after the EcoPCB Creator demo?",
+      "gold_answer": "After the initial discussion, a discovery session on March 18 at 10:30 AM; after the demo, a follow-up call the next day to discuss pricing and agreement terms.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T1YUIA0",
+          "answer_claim": "The next step would be a detailed discovery session; invitation for March 18th at 10:30 AM.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 17,
+          "quote": "[2022-03-14T09:35:55] Dariusz Wisniewski: The next step would be a detailed discovery session, which would allow us to dive into your specific requirements and challenges. We could then tailor our proposal to suit your needs, with a focus on your green initiative goals. How does that sound?\n[2022-03-14T09:36:15] Sofia Ramirez: Sounds promising, Dariusz. Let's schedule a time for this session.\n[2022-03-14T09:36:30] Dariusz Wisniewski: Perfect! I'll send over an invitation for March 18th at 10:30 AM. We\u2019re looking forward to getting into the specifics and seeing how we can contribute to TerraSync's success.",
+          "start": 3132,
+          "end": 3744
+        },
+        {
+          "call_id": "b2b:a05Wt000003T01KIAS",
+          "answer_claim": "I've scheduled a follow-up call tomorrow to address additional questions post-demo; dive deeper into pricing and terms then.",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 18,
+          "quote": "[2022-03-25T15:34:50] Sofia Ramirez: I\u2019m glad we\u2019re aligning on that front. So, when can we discuss the detailed pricing and agreement terms?\n[2022-03-25T15:35:10] Dariusz Wisniewski: We can absolutely do that. I\u2019ve scheduled a follow-up call tomorrow to address any additional questions you might have post-demo. We can dive deeper into the pricing and terms then. Does that work for you?\n[2022-03-25T15:35:25] Sofia Ramirez: Yes, that works. I\u2019m looking forward to it.",
+          "start": 2998,
+          "end": 3468
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "After the initial discussion with Sofia, Dariusz scheduled a detailed discovery session for March 18th at 10:30 AM. After the EcoPCB Creator demo, he scheduled a follow-up call for the next day to address additional questions and dive deeper into pricing and terms.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer: After the EcoPCB Creator demo, Dariusz scheduled a follow-up call for the next day (2022-03-26) to address additional post-demo questions and dive deeper into detailed pricing and agreement terms. However, the call covering the initial discussion with Sofia (and any step scheduled after it) is not included in the supplied data, so the next step after the initial discussion cannot be determined.",
+          "answerable": false
+        },
+        {
+          "answer": "After the initial discussion with Sofia, Dariusz scheduled a detailed discovery session for March 18th at 10:30 AM. However, the supplied call does not cover what he scheduled after an EcoPCB Creator demo, so that part cannot be answered from the provided data.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both facts are directly quoted: discovery session March 18 10:30 AM (call T1YUIA0, lines 14-17) and follow-up call next day for pricing/terms (call T01KIAS, lines 15-18). Each call supplies one exclusive fact, so both are necessary; each single-call ablation explicitly fails to answer the full question, and no-context answers are UNKNOWN. The independent answer matches the gold semantically, the question is a realistic sales follow-up need, and no answer leakage or invented context is present."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T01KIAS",
+          "b2b:a05Wt000003T1YUIA0"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T30vIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no information about TerraSync Solutions, the Green Circuit Initiative, a person named Dariusz, or an EcoPCB Creator demo. The only call transcript is between Lucas Moreira (Tech Solutions) and Sofia Gonz\u00e1lez (EnergyNova Corp) discussing InnoTrain Hub and VerifySim Elite products. None of the requested facts\u2014Dariusz's next step after an initial discussion with Sofia regarding the Green Circuit Initiative, nor any scheduled step after an EcoPCB Creator demo\u2014can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' Green Circuit Initiative, a salesperson named Dariusz, and an EcoPCB Creator demo. The sole source call involves Lucas Moreira and Sofia Gonz\u00e1lez at EnergyNova Corp discussing unrelated products (InnoTrain Hub, VerifySim Elite). There is no mention of TerraSync Solutions, Green Circuit Initiative, Dariusz, or EcoPCB Creator anywhere in the provided data, so the answer cannot be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvgKIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TerraSync Solutions, the Green Circuit Initiative, a person named Dariusz, or an EcoPCB Creator demo. The only call transcript is between Zainab Ali (TechSolutions) and Sofia Gupta (CyberWave Security) regarding a CollabCircuit Hub purchase. None of the requested facts\u2014Dariusz's next step after an initial discussion with Sofia, nor what he scheduled after an EcoPCB Creator demo\u2014can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Dariusz scheduling next steps for TerraSync Solutions' Green Circuit Initiative after an initial discussion with Sofia and after an EcoPCB Creator demo. The sole provided call (b2b:a05Wt000003SvgKIAS) involves Zainab Ali and Sofia Gupta discussing CollabCircuit Hub units for CyberWave Security. There is no mention of TerraSync Solutions, Green Circuit Initiative, Dariusz, or EcoPCB Creator anywhere in the sources. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3c7IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source does not contain any information about TerraSync Solutions, its Green Circuit Initiative, a person named Dariusz, or an EcoPCB Creator demo. The only call transcript is between Luis Rodriguez (EcoTech Solutions) and Sofia Zhang (MedTech Advances) discussing the EcoPower Convert product. None of the requested facts\u2014Dariusz's next step after an initial discussion with Sofia regarding the Green Circuit Initiative, nor any scheduled follow-up after an EcoPCB Creator demo\u2014can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' Green Circuit Initiative, a salesperson named Dariusz, and an EcoPCB Creator demo. The sole provided call (b2b:a05Wt000003T3c7IAC) involves Luis Rodriguez from EcoTech Solutions speaking with Sofia Zhang from MedTech Advances about the EcoPower Convert. There is no mention of TerraSync Solutions, the Green Circuit Initiative, Dariusz, or EcoPCB Creator anywhere in the source material. All requested facts are entirely absent."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4JZIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TerraSync Solutions, the Green Circuit Initiative, Dariusz, or an EcoPCB Creator demo. The only call transcript is between Carlos Nunez (EduTech Solutions) and Sofia Diaz (TechMinds) discussing the EduTech Lab product. None of the requested facts\u2014what next step Dariusz scheduled after the initial discussion with Sofia regarding the Green Circuit Initiative, or what he scheduled after the EcoPCB Creator demo\u2014can be found in the available sources.",
+              "evidence": [],
+              "reason": "The question asks about Dariusz, TerraSync Solutions, the Green Circuit Initiative, and the EcoPCB Creator demo. The sole provided call (b2b:a05Wt000003T4JZIA0) involves Carlos Nunez from EduTech Solutions speaking with Sofia Diaz from TechMinds about the EduTech Lab. There is no mention of Dariusz, TerraSync Solutions, the Green Circuit Initiative, or EcoPCB Creator anywhere in the sources. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkWIAS",
+              "b2b:a05Wt000003Sv1jIAC",
+              "b2b:a05Wt000003SwDvIAK",
+              "b2b:a05Wt000003Sx55IAC",
+              "b2b:a05Wt000003Szq2IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no information about TerraSync Solutions, its Green Circuit Initiative, a contact named Sofia, or a product called EcoPCB Creator. All five calls involve Dariusz Wisniewski of TechPulse Solutions speaking with Sara Andersson of Innovative Robotics about AI Cirku-Tech and DevVision IDE. Therefore, the requested next steps cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' Green Circuit Initiative, a contact named Sofia, and a product called EcoPCB Creator. None of these entities appear in any of the five provided call transcripts. The calls exclusively involve Dariusz Wisniewski (TechPulse Solutions) and Sara Andersson (Innovative Robotics) discussing AI Cirku-Tech and DevVision IDE. No facts matching the exact named account, initiative, contact, or product exist in the sources, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrNCIA0",
+              "b2b:a05Wt000003SuLtIAK",
+              "b2b:a05Wt000003T4WVIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TerraSync Solutions, a 'Green Circuit Initiative', or a person named Dariusz. All three calls involve Fatima Al-Masri from TechPulse Solutions speaking with Sofia Gonzales of SkyNet Technologies about EDA tools (PulseSim Pro, SecureFlow Suite, EcoPCB Creator/FastPCB Creator). There is no mention of Dariusz scheduling any next steps after an initial discussion or after an EcoPCB Creator demo in the context of TerraSync Solutions' Green Circuit Initiative.",
+              "evidence": [],
+              "reason": "The question asks about Dariusz, TerraSync Solutions, and the Green Circuit Initiative. None of these entities appear in any of the three provided call transcripts. The calls feature Fatima Al-Masri (TechPulse Solutions) and Sofia Gonzales (SkyNet Technologies). While an EcoPCB Creator is mentioned in call b2b:a05Wt000003T4WVIA0, it is discussed by Fatima, not Dariusz, and in the context of SkyNet Technologies, not TerraSync Solutions. No facts matching the exact named people, account, or initiative can be found, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzgQIAS",
+              "b2b:a05Wt000003T1jsIAC",
+              "b2b:a05Wt000003T24nIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about a 'Green Circuit Initiative' at TerraSync Solutions, nor any contact named Sofia. All three calls are between Dariusz Wisniewski and Miguel Navarro regarding the 'Green Tech Synergy for TerraSync' opportunity. No EcoPCB Creator demo is described in any call, and no next steps are scheduled after such a demo. The question's named initiative, contact, and event scope do not match the available transcripts.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' 'Green Circuit Initiative' and interactions with a person named Sofia, including a next step after an initial discussion and a next step after an EcoPCB Creator demo. None of the three source calls mention a 'Green Circuit Initiative' (they reference 'Green Tech Synergy'), none involve a contact named Sofia (all involve Miguel Navarro), and none describe an EcoPCB Creator demo followed by a scheduled next step. Therefore, no complete answer can be constructed from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Svb7IAC",
+              "b2b:a05Wt000003SvcjIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TerraSync Solutions, a 'Green Circuit Initiative,' a person named Dariusz, or any EcoPCB Creator demo with scheduled next steps. The transcripts involve EcoWave Solutions (contact Sofia Carvalho) and Hana Kato from TechPulse Solutions discussing an 'EcoWave Collaborative AI Upgrade' opportunity. There is no mention of Dariusz scheduling any next steps after an initial discussion or after an EcoPCB Creator demo.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' Green Circuit Initiative and a person named Dariusz scheduling next steps after an initial discussion with Sofia and after an EcoPCB Creator demo. The sources only contain calls between Hana Kato (TechPulse Solutions) and Sofia Carvalho (EcoWave Solutions) regarding an 'EcoWave Collaborative AI Upgrade.' There is no account named TerraSync Solutions, no initiative called Green Circuit Initiative, no salesperson named Dariusz, and no EcoPCB Creator demo with associated scheduling. The draft extraction correctly identifies these gaps. All requested facts are missing from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv4uIAC",
+              "b2b:a05Wt000003SwaQIAS",
+              "b2b:a05Wt000003SyM5IAK",
+              "b2b:a05Wt000003SyNhIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve only Dariusz Wisniewski speaking with Rachel O'Neil of BrightTech Systems under the opportunity 'BrightTech AI Circuit Optimization.' There is no mention of TerraSync Solutions, a Green Circuit Initiative, a contact named Sofia, or an EcoPCB Creator demo in any of the four calls. Therefore, the requested next steps cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "All four calls are between Dariusz Wisniewski and Rachel O'Neil at BrightTech Systems. None reference TerraSync Solutions, the Green Circuit Initiative, a person named Sofia, or an EcoPCB Creator demo. The exact named account, initiative, contact, and product/event scope required by the question are entirely absent from the supplied sources, so no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuP4IAK",
+              "b2b:a05Wt000003SwaZIAS",
+              "b2b:a05Wt000003T1qJIAS",
+              "b2b:a05Wt000003T2eIIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain only calls between Dariusz Wisniewski (TechPulse Solutions) and Maria Gonzales of GreenLeaf Engineering under the opportunity 'GreenLeaf EDA Expansion Partnership.' There is no mention of TerraSync Solutions, its Green Circuit Initiative, a contact named Sofia, or an EcoPCB Creator demo. Therefore, the requested next steps cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "All four calls involve Dariusz Wisniewski speaking with Maria Gonzales at GreenLeaf Engineering about EDA products (SecureFlow Suite, CloudLink Designer, OptiPower Manager, CircuitMaster Analyzer). None of the transcripts reference TerraSync Solutions, the Green Circuit Initiative, a person named Sofia, or an EcoPCB Creator demo. The question asks about facts for entirely different named entities and events that do not appear in any source, so no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvpsIAC",
+              "b2b:a05Wt000003SwdkIAC",
+              "b2b:a05Wt000003T1wkIAC",
+              "b2b:a05Wt000003T4HxIAK",
+              "b2b:a05Wt000003T4WNIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no information about TerraSync Solutions, the Green Circuit Initiative, a person named Dariusz, or any EcoPCB Creator demo with scheduled next steps. All five calls involve Mei Lin of TechPulse Solutions speaking with Sofia Rodriguez of NeuralWave Technologies about the 'Enhanced EDA Partnership with NeuralWave' opportunity. EcoPCB Creator is mentioned only as a product name (in calls b2b:a05Wt000003T1wkIAC line 14 and b2b:a05Wt000003T4WNIA0 line 16), never in connection with a demo or any scheduling by Dariusz. The requested facts are entirely absent from the sources.",
+              "evidence": [],
+              "reason": "No source mentions TerraSync Solutions, the Green Circuit Initiative, or anyone named Dariusz. The account in all calls is NeuralWave Technologies, the salesperson is Mei Lin, and the contact is Sofia Rodriguez. EcoPCB Creator appears only as a product reference, with no demo event or follow-up scheduling. Therefore neither the next step after an initial discussion nor the next step after an EcoPCB Creator demo can be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Svo8IAC",
+              "b2b:a05Wt000003SwdgIAC",
+              "b2b:a05Wt000003T3ATIA0",
+              "b2b:a05Wt000003T3C5IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not mention TerraSync Solutions, a Green Circuit Initiative, an EcoPCB Creator demo, or a contact named Sofia. All calls are between Dariusz Wisniewski (TechPulse Solutions) and Luis Martinez of CraftTech Electronics, so the requested next steps cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' Green Circuit Initiative, a contact named Sofia, and an EcoPCB Creator demo. None of these entities appear in any of the four provided call transcripts. All calls involve Dariusz Wisniewski speaking with Luis Martinez of CraftTech Electronics about products such as SecureFlow Suite, AI Cirku-Tech, and CloudLink Designer. There is no mention of TerraSync Solutions, Sofia, the Green Circuit Initiative, or EcoPCB Creator anywhere in the sources, so no facts can be extracted to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqTQIA0",
+              "b2b:a05Wt000003T0MNIA0",
+              "b2b:a05Wt000003T0nrIAC",
+              "b2b:a05Wt000003T2JLIA0",
+              "b2b:a05Wt000003T3TqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about a 'Green Circuit Initiative' or a contact named Sofia at TerraSync Solutions. All calls in the transcripts are between Dariusz Wisniewski and Miguel Navarro regarding the 'TerraSync Sustainability Enhancement' opportunity. There is no mention of Sofia, no 'Green Circuit Initiative,' and therefore no next steps tied to that initiative or person can be identified.",
+              "evidence": [],
+              "reason": "The question asks about Dariusz's next steps after an initial discussion with Sofia and after an EcoPCB Creator demo, specifically for TerraSync Solutions' 'Green Circuit Initiative.' None of the five call transcripts reference a person named Sofia or an initiative called 'Green Circuit Initiative.' All interactions are with Miguel Navarro under the opportunity 'TerraSync Sustainability Enhancement.' While an EcoPCB Creator demo does appear in call b2b:a05Wt000003T0nrIAC (with Miguel, not Sofia), the specific initiative and contact named in the question are entirely absent from the sources. Therefore, the requested facts cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxLFIA0",
+              "b2b:a05Wt000003T1iEIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any reference to a 'Green Circuit Initiative', a person named Dariusz, or a contact named Sofia. Both calls are between Mohamed Ahmed (TechPulse Solutions) and Oliver Green of TerraSync Solutions regarding the 'Sustainable EDA Integration for TerraSync' opportunity. There is no mention of an EcoPCB Creator demo being conducted, nor any next steps scheduled by anyone named Dariusz after an initial discussion with Sofia or after such a demo. The requested facts cannot be determined from the available sources.",
+              "evidence": [],
+              "reason": "The question asks about specific named individuals (Dariusz, Sofia), a specific initiative (Green Circuit Initiative), and specific events (initial discussion with Sofia, EcoPCB Creator demo) that do not appear anywhere in the two provided call transcripts. The calls involve Mohamed Ahmed and Oliver Green discussing the 'Sustainable EDA Integration for TerraSync' opportunity. While the EcoPCB Creator product is mentioned, no demo event or scheduling by Dariusz is documented. All requested facts are missing from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StO6IAK",
+              "b2b:a05Wt000003SwaVIAS",
+              "b2b:a05Wt000003SxWcIAK",
+              "b2b:a05Wt000003SzzqIAC",
+              "b2b:a05Wt000003T01KIAS",
+              "b2b:a05Wt000003T1YUIA0"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "After the initial discussion on 2022-03-14, Dariusz scheduled a detailed discovery session for March 18th at 10:30 AM to dive into TerraSync's specific requirements and tailor the proposal to their green initiative goals. After the EcoPCB Creator demo (discussed on 2022-03-25), he scheduled a follow-up call the next day to address any additional post-demo questions and dive deeper into pricing and agreement terms.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T1YUIA0",
+                  "line_start": 13,
+                  "line_end": 17,
+                  "quote": "[2022-03-14T09:35:30] Sofia Ramirez: That aligns well with our mission at TerraSync. I'd be interested in exploring this in more detail. What's the next step?\n[2022-03-14T09:35:55] Dariusz Wisniewski: The next step would be a detailed discovery session, which would allow us to dive into your specific requirements and challenges. We could then tailor our proposal to suit your needs, with a focus on your green initiative goals. How does that sound?\n[2022-03-14T09:36:15] Sofia Ramirez: Sounds promising, Dariusz. Let's schedule a time for this session.\n[2022-03-14T09:36:30] Dariusz Wisniewski: Perfect! I'll send over an invitation for March 18th at 10:30 AM. We\u2019re looking forward to getting into the specifics and seeing how we can contribute to TerraSync's success."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T01KIAS",
+                  "line_start": 15,
+                  "line_end": 18,
+                  "quote": "[2022-03-25T15:34:50] Sofia Ramirez: I\u2019m glad we\u2019re aligning on that front. So, when can we discuss the detailed pricing and agreement terms?\n[2022-03-25T15:35:10] Dariusz Wisniewski: We can absolutely do that. I\u2019ve scheduled a follow-up call tomorrow to address any additional questions you might have post-demo. We can dive deeper into the pricing and terms then. Does that work for you?\n[2022-03-25T15:35:25] Sofia Ramirez: Yes, that works. I\u2019m looking forward to it."
+                }
+              ],
+              "reason": "In the initial discussion call (2022-03-14), Sofia asks 'What's the next step?' (line 13) and Dariusz replies the next step is a detailed discovery session and sends an invitation for March 18th at 10:30 AM (lines 14-16). In the post-demo call (2022-03-25), Sofia asks when they can discuss detailed pricing and agreement terms (line 15), and Dariusz states he has scheduled a follow-up call tomorrow to address additional post-demo questions and dive deeper into pricing and terms (line 16). Both facts are directly supported by the named individuals (Dariusz and Sofia) for the TerraSync Green Circuit Initiative."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same two next steps: after the initial discussion, a discovery session on March 18 at 10:30 AM; after the EcoPCB Creator demo, a follow-up call the next day to discuss pricing and agreement terms. Answer A adds extra details (dates, purpose of the discovery session, post-demo questions), but the core requested facts are identical in both."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgOIAS",
+              "b2b:a05Wt000003SvUoIAK",
+              "b2b:a05Wt000003SwCGIA0",
+              "b2b:a05Wt000003Sx5DIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no information about TerraSync Solutions, a Green Circuit Initiative, or anyone named Dariusz. All four calls involve Yuki Kato of TechPulse Solutions speaking with Sofia Ribeiro of SolarWind Innovations about the SolarWind Innovations Partnership opportunity. There is no mention of an EcoPCB Creator demo scheduled by Dariusz, nor any next steps scheduled by Dariusz after an initial discussion with Sofia regarding a Green Circuit Initiative. The requested facts cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' Green Circuit Initiative and a person named Dariusz scheduling next steps after an initial discussion with Sofia and after an EcoPCB Creator demo. None of the four call transcripts reference TerraSync Solutions, the Green Circuit Initiative, or anyone named Dariusz. The salesperson in all calls is Yuki Kato, and the account is SolarWind Innovations. While EcoPCB Creator is mentioned as a product, it is discussed by Yuki Kato, not Dariusz, and no demo event is described. Therefore, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvD5IAK",
+              "b2b:a05Wt000003T2zHIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about TerraSync Solutions, a Green Circuit Initiative, or a person named Dariusz. Both calls involve John Williams of TechPulse Solutions speaking with Sofia Kim of TerraForm Engineering. There is no mention of an EcoPCB Creator demo in the context of TerraSync Solutions or a Green Circuit Initiative. Therefore, the requested next steps scheduled by Dariusz cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about TerraSync Solutions' Green Circuit Initiative and a person named Dariusz scheduling next steps after an initial discussion with Sofia and after an EcoPCB Creator demo. The provided sources only contain calls between John Williams (TechPulse Solutions) and Sofia Kim (TerraForm Engineering). There is no mention of TerraSync Solutions, Green Circuit Initiative, or Dariusz anywhere in the transcripts. The draft extraction correctly identifies this mismatch. No facts supporting the exact named entities in the question exist in the sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both calls are needed: the March 14 call shows the discovery session scheduled for March 18 at 10:30 AM after the initial discussion, and the March 25 call shows the follow-up call the next day to discuss pricing and agreement terms after the demo. The question is factual, self-contained, and the gold answer is exactly supported by the cited quotes."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "what next step did Dariusz schedule after the initial discussion with Sofia",
+            "explicitly_requested": true,
+            "required_fact": "A detailed discovery session, with an invitation sent for March 18th at 10:30 AM",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1YUIA0"
+            ]
+          },
+          {
+            "question_span": "what did he schedule after the EcoPCB Creator demo?",
+            "explicitly_requested": true,
+            "required_fact": "A follow-up call the next day (tomorrow) to address post-demo questions and dive deeper into pricing and terms",
+            "source_call_ids": [
+              "b2b:a05Wt000003T01KIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct scheduled steps: one after the initial discussion and one after the demo. The gold answer provides exactly these two facts, each sourced from a separate call. The independent answer covers both facts accurately. The obligations correctly map each fact to its source call and explicitly request the facts. No extra gold claims are present.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "After the initial discussion, a discovery session on March 18 at 10:30 AM",
+            "question_span": "what next step did Dariusz schedule after the initial discussion with Sofia",
+            "required_by_question": true
+          },
+          {
+            "claim": "after the demo, a follow-up call the next day to discuss pricing and agreement terms",
+            "question_span": "what did he schedule after the EcoPCB Creator demo?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "e7c4ed78a5b2736353b8b32faead2f461ce144e18f8400c07da5506ce2923386",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SzweIAC"
+    ],
+    "status": "accepted",
+    "question": "What concern did Leah O'Connell at AeroFusion Systems raise about initial setup, and how did Santiago respond?",
+    "gold_answer": "Leah asked how user-friendly initial configuration of secure settings is; Santiago acknowledged clients want improved user guidance but said comprehensive support services help smooth the process.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SzweIAC",
+        "answer_claim": "Leah asks how user-friendly the initial setup is, especially configuring secure settings.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2021-08-12T11:17:30] Leah O'Connell: That's reassuring. However, I'm curious about the initial setup. How user-friendly is it, especially regarding configuring these secure settings?",
+        "start": 1795,
+        "end": 1978
+      },
+      {
+        "call_id": "b2b:a05Wt000003SzweIAC",
+        "answer_claim": "Santiago says some clients want improved user guidance during initial configuration and they enhance it with comprehensive support services.",
+        "kind": "dialogue",
+        "line_start": 10,
+        "line_end": 11,
+        "quote": "[2021-08-12T11:17:50] Santiago Fernandez: It's a fair question. While some of our clients have mentioned a desire for improved user guidance during the initial configuration, we're continuously working on enhancing that experience with comprehensive support services to smoothly guide you through the process.",
+        "start": 1979,
+        "end": 2288
+      }
+    ],
+    "question_id": "b2b-single_call-e7c4ed78a5b27363",
+    "candidate": {
+      "question": "What concern did Leah O'Connell at AeroFusion Systems raise about initial setup, and how did Santiago respond?",
+      "gold_answer": "Leah asked how user-friendly initial configuration of secure settings is; Santiago acknowledged clients want improved user guidance but said comprehensive support services help smooth the process.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SzweIAC",
+          "answer_claim": "Leah asks how user-friendly the initial setup is, especially configuring secure settings.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2021-08-12T11:17:30] Leah O'Connell: That's reassuring. However, I'm curious about the initial setup. How user-friendly is it, especially regarding configuring these secure settings?",
+          "start": 1795,
+          "end": 1978
+        },
+        {
+          "call_id": "b2b:a05Wt000003SzweIAC",
+          "answer_claim": "Santiago says some clients want improved user guidance during initial configuration and they enhance it with comprehensive support services.",
+          "kind": "dialogue",
+          "line_start": 10,
+          "line_end": 11,
+          "quote": "[2021-08-12T11:17:50] Santiago Fernandez: It's a fair question. While some of our clients have mentioned a desire for improved user guidance during the initial configuration, we're continuously working on enhancing that experience with comprehensive support services to smoothly guide you through the process.",
+          "start": 1979,
+          "end": 2288
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Leah O'Connell raised a concern about the user-friendliness of the initial setup, specifically regarding configuring secure settings. Santiago responded that while some clients have mentioned a desire for improved user guidance during initial configuration, TechPulse is continuously working on enhancing that experience with comprehensive support services to smoothly guide users through the process.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA: both quotes verified in call b2b:a05Wt000003SzweIAC \u2014 Leah asks about user-friendliness of initial setup/configuring secure settings (lines 9-10) and Santiago cites client desire for improved user guidance plus comprehensive support services (lines 10-11). Gold and independent answer match semantically with no leakage or invented facts. No-context answers are both UNKNOWN, so they fail. Two-call flags set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SzweIAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0xWIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain only a call between Santiago Fernandez and Lucia Basile of Napoli Innovators regarding the SimuCheck Ultra product. There is no call transcript involving Leah O'Connell at AeroFusion Systems, so her concern about initial setup and Santiago's response cannot be determined from the available evidence.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems, but the only call transcript provided is with Lucia Basile of Napoli Innovators. No source material mentions Leah O'Connell, AeroFusion Systems, or any discussion of initial setup concerns from that person/company. The draft extraction correctly identifies this gap."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2I1IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Fatoumata Diop (TechForward) and Santiago Ramirez (Baja Designs) regarding the AutoGen IDE. There is no mention of Leah O'Connell, AeroFusion Systems, or any concern about initial setup raised by that person. Therefore, the question cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The sole call transcript involves Santiago Ramirez at Baja Designs, not Leah O'Connell at AeroFusion Systems. No person named Leah O'Connell and no company named AeroFusion Systems appear anywhere in the sources, so the requested concern and response cannot be identified or cited."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1s2IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Santiago Fernandez and Ming Zhao of SkyTech Ventures. There is no call involving Leah O'Connell at AeroFusion Systems, so her concern about initial setup and Santiago's response cannot be determined from the available sources.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems, but the only call transcript provided is between Santiago Fernandez and Ming Zhao of SkyTech Ventures (call b2b:a05Wt000003T1s2IAC). No mention of Leah O'Connell or AeroFusion Systems exists anywhere in the sources. The draft extraction correctly identifies this gap. Without any source material referencing the named person and company, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrnsIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript is a call between Santiago Fernandez and Priya Kumar of ClearSky Data Solutions. There is no call involving Leah O'Connell or AeroFusion Systems, so no concern raised by Leah O'Connell about initial setup or Santiago's response to it can be cited.",
+              "evidence": [],
+              "reason": "The only call supplied (b2b:a05Wt000003SrnsIAC) features Priya Kumar at ClearSky Data Solutions. Neither Leah O'Connell nor AeroFusion Systems appears anywhere in the source material, so the requested facts cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgSIAS",
+              "b2b:a05Wt000003SuleIAC",
+              "b2b:a05Wt000003SzzyIAC",
+              "b2b:a05Wt000003T0caIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No transcript mentions a contact named Leah O'Connell, and no one raises a concern about initial setup with a response from a Santiago. All AeroFusion Systems calls are with Kofi Nkrumah and Sarah Johnson.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems and a response from Santiago. None of the four provided call transcripts include a person named Leah O'Connell or Santiago. All AeroFusion Systems calls involve Kofi Nkrumah as the contact and Sarah Johnson as the TechPulse representative. Therefore, the requested facts cannot be supported by the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StEMIA0",
+              "b2b:a05Wt000003SvHoIAK",
+              "b2b:a05Wt000003SyYzIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain only calls between Jo\u00e3o Pereira (TechPulse Solutions) and Santiago Perez at BrightTech Systems. There is no mention of Leah O'Connell, AeroFusion Systems, or any concern about initial setup raised by her, nor any response from Santiago to such a concern. The question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "All three call transcripts involve Santiago Perez at BrightTech Systems speaking with Jo\u00e3o Pereira from TechPulse Solutions. Neither Leah O'Connell nor AeroFusion Systems appears anywhere in the provided data, so no facts about her concern regarding initial setup or Santiago's response to it can be extracted."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzGZIA0",
+              "b2b:a05Wt000003T1ewIAC",
+              "b2b:a05Wt000003T283IAC",
+              "b2b:a05Wt000003T2vyIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Leah O'Connell or AeroFusion Systems. All four calls are between Nina Kovalenko (TechPulse Solutions) and Santiago Valdez (TechBridge Systems). There is no mention of Leah O'Connell, AeroFusion Systems, or any concern about initial setup raised by that person, nor any response from Santiago to such a concern.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems raising a concern about initial setup and Santiago's response. None of the four call transcripts reference Leah O'Connell or AeroFusion Systems. All calls involve Santiago Valdez at TechBridge Systems speaking with Nina Kovalenko. The requested facts simply do not exist in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sxt8IAC",
+              "b2b:a05Wt000003Sy4PIAS",
+              "b2b:a05Wt000003T01JIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any conversation involving Leah O'Connell or AeroFusion Systems. All three calls are between Santiago Fernandez and Ivan Petrova at DigitalWave Solutions. Therefore, no concern raised by Leah O'Connell about initial setup, nor any response from Santiago to her, can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems, but none of the three supplied calls involve that person or that account. Every call is with Ivan Petrova at DigitalWave Solutions. Since the exact named person and company are absent from all sources, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StG4IAK",
+              "b2b:a05Wt000003T18hIAC",
+              "b2b:a05Wt000003T3SIIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about a concern Leah O'Connell raised about initial setup and how 'Santiago' responded. However, no person named Santiago appears in any of the three provided call transcripts. The TechPulse representative in all calls with Leah O'Connell at AeroFusion Systems is Junaid Khan. While Leah did raise a related concern about the implementation process and expected support (call b2b:a05Wt000003T3SIIA0, line 5), and Junaid Khan responded (line 6), the question specifically asks about Santiago's response, which cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "No individual named Santiago is present in any of the three call transcripts. All interactions with Leah O'Connell at AeroFusion Systems involve Junaid Khan as the TechPulse representative. Because the question explicitly asks how Santiago responded, and no such person exists in the provided data, the answer cannot be completed as scoped."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyHZIA0",
+              "b2b:a05Wt000003SyxFIAS",
+              "b2b:a05Wt000003SzgXIAS",
+              "b2b:a05Wt000003T4JWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided transcripts involves Leah O'Connell or AeroFusion Systems. All four calls are between Santiago Fernandez and Keiko Matsui of Altai Innovations. Therefore, no concern about initial setup raised by Leah O'Connell at AeroFusion Systems, nor any response from Santiago to such a concern, can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Leah O'Connell at AeroFusion Systems. None of the four provided call transcripts mention Leah O'Connell or AeroFusion Systems. Every call is with Keiko Matsui at Altai Innovations. Since the exact named person and account are absent from all sources, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuOxIAK",
+              "b2b:a05Wt000003Sy4NIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve only Santiago Fernandez speaking with Zhang Wei at DigitalWave Solutions. There is no mention of Leah O'Connell or AeroFusion Systems in any of the sources, so the concern she raised about initial setup and Santiago's response cannot be determined.",
+              "evidence": [],
+              "reason": "Neither call transcript references Leah O'Connell or AeroFusion Systems. Both calls are between Santiago Fernandez and Zhang Wei regarding DigitalWave Solutions. No facts about the requested person, company, or their discussion of initial setup exist in the supplied sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwqgIAC",
+              "b2b:a05Wt000003SyAsIAK",
+              "b2b:a05Wt000003SyHOIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Leah O'Connell or AeroFusion Systems. All three transcripts are between Santiago Fernandez and Renee Marcus at EcoLite Innovations. Therefore, no concern raised by Leah O'Connell about initial setup, nor any response from Santiago to her, can be found in the supplied data.",
+              "evidence": [],
+              "reason": "The question asks specifically about Leah O'Connell at AeroFusion Systems. None of the three call transcripts reference that person or that company; every call is with Renee Marcus at EcoLite Innovations. Because the exact named individual and account are absent, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StG1IAK",
+              "b2b:a05Wt000003SxJlIAK",
+              "b2b:a05Wt000003T1OrIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Leah O'Connell or AeroFusion Systems. All three transcripts are between Santiago Fernandez and Aisha Rahman at EnergyNova Corp. Therefore, no information exists about a concern Leah O'Connell raised regarding initial setup or how Santiago responded to her.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems, but none of the three call transcripts include that person or that company. All calls involve Aisha Rahman at EnergyNova Corp. Since the exact named person and account are absent from every source, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx3aIAC",
+              "b2b:a05Wt000003SyHVIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any mention of Leah O'Connell or AeroFusion Systems. Both calls are between Luis Rodriguez (TechPulse Solutions) and Santiago Torres of GreenTech Dynamics. There is no record of a concern raised by Leah O'Connell about initial setup, nor any response from Santiago to such a concern.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems raising a concern about initial setup and Santiago's response. Neither Leah O'Connell nor AeroFusion Systems appears anywhere in the two provided call transcripts. The only contact is Santiago Torres at GreenTech Dynamics, and the calls discuss AI-powered EDA solutions, pricing flexibility, and future roadmaps\u2014not an initial setup concern from Leah O'Connell. No source evidence supports the requested facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Szi5IAC",
+              "b2b:a05Wt000003SzweIAC",
+              "b2b:a05Wt000003T3ldIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Leah O'Connell asked how user-friendly the initial setup is, especially regarding configuring the secure settings. Santiago acknowledged that some clients have mentioned a desire for improved user guidance during initial configuration, but said TechPulse is continuously working on enhancing that experience with comprehensive support services to smoothly guide them through the process.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SzweIAC",
+                  "line_start": 9,
+                  "line_end": 11,
+                  "quote": "[2021-08-12T11:17:30] Leah O'Connell: That's reassuring. However, I'm curious about the initial setup. How user-friendly is it, especially regarding configuring these secure settings?\n[2021-08-12T11:17:50] Santiago Fernandez: It's a fair question. While some of our clients have mentioned a desire for improved user guidance during the initial configuration, we're continuously working on enhancing that experience with comprehensive support services to smoothly guide you through the process."
+                }
+              ],
+              "reason": "In the 2021-08-12 call, Leah raised the concern about initial setup user-friendliness and configuring secure settings (line 9). Santiago responded by acknowledging the feedback about improved user guidance during initial configuration and stated they are continuously enhancing the experience with comprehensive support services (line 10). Both the concern and the response are fully captured in lines 9-10 of call b2b:a05Wt000003SzweIAC."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same facts: Leah O'Connell raised a concern about the user-friendliness of initial setup/configuration of secure settings, and Santiago acknowledged that clients have expressed a desire for improved user guidance during initial configuration while noting that comprehensive support services are in place to help smooth the process. Answer A includes slightly more detail (e.g., 'TechPulse is continuously working on enhancing that experience'), but the core requested facts are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SysOIAS",
+              "b2b:a05Wt000003T1C0IAK",
+              "b2b:a05Wt000003T1qIIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Leah O'Connell or AeroFusion Systems. All three transcripts are between Lara Haddad (TechPulse Solutions) and Santiago Valdez (TechBridge Systems). Therefore, no information exists about a setup concern raised by Leah O'Connell at AeroFusion Systems or any response from Santiago to her.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems and Santiago's response to her concern about initial setup. None of the three call transcripts mention Leah O'Connell or AeroFusion Systems. The contact in all calls is Santiago Valdez of TechBridge Systems, and the salesperson is Lara Haddad of TechPulse Solutions. Since the exact named person (Leah O'Connell) and account (AeroFusion Systems) do not appear anywhere in the sources, the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuvEIAS",
+              "b2b:a05Wt000003SxLLIA0",
+              "b2b:a05Wt000003SyZ6IAK",
+              "b2b:a05Wt000003T0W3IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any conversation involving Leah O'Connell or AeroFusion Systems. All four calls are between Santiago Fernandez and Hassan Qureshi at FusionTech Systems. Therefore, no concern about initial setup raised by Leah O'Connell at AeroFusion Systems, nor any response from Santiago to such a concern, can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Leah O'Connell at AeroFusion Systems. None of the four call transcripts reference Leah O'Connell or AeroFusion Systems. All calls involve Hassan Qureshi at FusionTech Systems. Since the exact named person and account are absent from every source, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyfYIAS",
+              "b2b:a05Wt000003SyfZIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any conversation involving Leah O'Connell at AeroFusion Systems. Both calls are between Santiago Fernandez and Miguel Hernandez of Nordic HealthTech. Therefore, no information about a concern raised by Leah O'Connell regarding initial setup, nor Santiago's response to her, can be found in these sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Leah O'Connell at AeroFusion Systems, but neither call transcript includes this person or this company. The only contact in both calls is Miguel Hernandez from Nordic HealthTech. Since the exact named person and account are absent from all sources, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sqa2IAC",
+              "b2b:a05Wt000003SvD4IAK",
+              "b2b:a05Wt000003T2WFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Leah O'Connell or AeroFusion Systems. All three transcripts are between Olivia Nguyen (TechPulse Solutions) and Santiago Cruz (TechFusion Inc.). Therefore, no concern raised by Leah O'Connell about initial setup, nor any response from Santiago to such a concern, can be found in the available data.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems and her concern about initial setup, plus Santiago's response. None of the three call transcripts mention Leah O'Connell or AeroFusion Systems. The only Santiago present is Santiago Cruz of TechFusion Inc., speaking with Olivia Nguyen. Since the exact named person (Leah O'Connell) and account (AeroFusion Systems) do not appear in any source, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyEDIA0",
+              "b2b:a05Wt000003T3SGIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve only Santiago Valdez of TechBridge Systems and Fatima Al-Masri of TechPulse Solutions. There is no mention of Leah O'Connell, AeroFusion Systems, or any discussion about initial setup concerns raised by Leah O'Connell or a response from Santiago to such a concern.",
+              "evidence": [],
+              "reason": "Neither call transcript contains any reference to Leah O'Connell or AeroFusion Systems. The calls are between Fatima Al-Masri (TechPulse Solutions) and Santiago Valdez (TechBridge Systems), discussing CloudLink Designer, SecureFlow Suite, and related topics. No facts about the requested individuals, account, or event exist in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0cWIAS",
+              "b2b:a05Wt000003T2ccIAC",
+              "b2b:a05Wt000003T37IIAS",
+              "b2b:a05Wt000003T3iNIAS",
+              "b2b:a05Wt000003T46ZIAS",
+              "b2b:a05Wt000003T4CzIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Leah O'Connell or AeroFusion Systems. All calls are between Ava Sullivan of TechPulse Solutions and Santiago Cruz of TechFusion Inc. There is no information about a concern raised by Leah O'Connell at AeroFusion Systems regarding initial setup, nor any response from Santiago to such a concern.",
+              "evidence": [],
+              "reason": "The question asks about Leah O'Connell at AeroFusion Systems and Santiago's response to her concern about initial setup. None of the five call transcripts reference Leah O'Connell or AeroFusion Systems. All calls involve Santiago Cruz at TechFusion Inc. and Ava Sullivan at TechPulse Solutions. Since the exact named person (Leah O'Connell) and account (AeroFusion Systems) do not appear in any source, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4JUIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains no mention of Leah O'Connell at AeroFusion Systems, nor any concern about initial setup. The only call transcript is between Santiago Fernandez and Gita Ramesh of AeroFusion Systems, discussing scalability and integration concerns related to QuantumPCB Modeler. There is no evidence of Leah O'Connell or an initial-setup concern in any of the supplied sources.",
+              "evidence": [],
+              "reason": "The question asks about a concern raised by Leah O'Connell regarding initial setup and Santiago's response. The sole source transcript features Gita Ramesh (not Leah O'Connell) and discusses scalability/integration concerns (not initial setup). No source material mentions Leah O'Connell or an initial-setup concern, so the requested facts cannot be supported."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; both parts of the gold answer are directly supported by consecutive dialogue lines 9\u201311: Leah's setup concern and Santiago's acknowledgment plus support-services response are quoted verbatim."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What concern did Leah O'Connell at AeroFusion Systems raise about initial setup",
+            "explicitly_requested": true,
+            "required_fact": "Leah O'Connell was concerned about how user-friendly the initial setup is, especially regarding configuring the secure settings",
+            "source_call_ids": [
+              "b2b:a05Wt000003SzweIAC"
+            ]
+          },
+          {
+            "question_span": "how did Santiago respond?",
+            "explicitly_requested": true,
+            "required_fact": "Santiago acknowledged some clients desired improved user guidance during initial configuration, and said TechPulse is continuously enhancing that experience with comprehensive support services to guide users through the process",
+            "source_call_ids": [
+              "b2b:a05Wt000003SzweIAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: Leah's concern about initial setup and Santiago's response. The gold_answer contains exactly these two facts, no extras. The independent answer covers both. The obligations correctly extract the two required facts from the single call. The single call is necessary and sufficient to answer both parts. No arithmetic involved.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Leah asked how user-friendly initial configuration of secure settings is",
+            "question_span": "What concern did Leah O'Connell at AeroFusion Systems raise about initial setup",
+            "required_by_question": true
+          },
+          {
+            "claim": "Santiago acknowledged clients want improved user guidance",
+            "question_span": "how did Santiago respond?",
+            "required_by_question": true
+          },
+          {
+            "claim": "Santiago said comprehensive support services help smooth the process",
+            "question_span": "how did Santiago respond?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "c277efbed6746217cfb43767a8025a3c65559f4ee1a36654a0c2cf9a46170cb6",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SUGPIA4"
+    ],
+    "status": "accepted",
+    "question": "What next step did Ravi commit to for Sophia Lopez's eco-friendly vehicle opportunity?",
+    "gold_answer": "Ravi committed to sending a detailed proposal covering pricing, features, and her specific needs, then following up to discuss it.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SUGPIA4",
+        "answer_claim": "I\u2019ll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon.",
+        "kind": "dialogue",
+        "line_start": 21,
+        "line_end": 22,
+        "quote": "[2020-05-07T10:50:35] Ravi Chandra: I\u2019ll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon.",
+        "start": 3496,
+        "end": 3709
+      }
+    ],
+    "question_id": "b2c-single_call-c277efbed6746217",
+    "candidate": {
+      "question": "What next step did Ravi commit to for Sophia Lopez's eco-friendly vehicle opportunity?",
+      "gold_answer": "Ravi committed to sending a detailed proposal covering pricing, features, and her specific needs, then following up to discuss it.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SUGPIA4",
+          "answer_claim": "I\u2019ll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon.",
+          "kind": "dialogue",
+          "line_start": 21,
+          "line_end": 22,
+          "quote": "[2020-05-07T10:50:35] Ravi Chandra: I\u2019ll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon.",
+          "start": 3496,
+          "end": 3709
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Ravi committed to arranging for a proposal to be sent to Sophia Lopez that includes comprehensive details on pricing, features, and her specific needs, and he will follow up to discuss it in depth.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The question asks for Ravi's committed next step; the quoted dialogue (10:50:35) directly supports the gold answer: sending a proposal covering pricing, features, and her specific needs, then following up. The independent answer is a semantic match. No-context answers are UNKNOWN, so they fail. The evidence is a single call, so per the rules both two-call flags are set true for this single-call QA. Question is a realistic sales follow-up need, names participants appropriately, and does not leak the answer."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SUGPIA4"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSjGIAW",
+              "b2c:a05Ws000005SU6kIAG",
+              "b2c:a05Ws000005SUOTIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Ravi appears in any of the provided call transcripts for Sophia Lopez's eco-friendly vehicle opportunity. All three calls involve Anastasia Petrova as the salesperson. Therefore, no next step committed by Ravi can be identified from the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a commitment made by 'Ravi' regarding Sophia Lopez's eco-friendly vehicle opportunity. The three calls provided (b2c:a05Ws000005SSjGIAW, b2c:a05Ws000005SU6kIAG, b2c:a05Ws000005SUOTIA4) all feature Anastasia Petrova as the salesperson interacting with Sophia Lopez. The name 'Ravi' does not appear anywhere in the transcripts. Since the question targets a specific named individual (Ravi) and no such individual is present in the sources, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQkgIAG",
+              "b2c:a05Ws000005SRteIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention anyone named Ravi. Both calls on the Sophia Lopez eco-friendly vehicle opportunity involve Emily Jackson of AutoElite Motors, so no next step committed by Ravi can be identified from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about a next step committed by Ravi for Sophia Lopez's eco-friendly vehicle opportunity. However, neither call transcript contains any reference to a person named Ravi. Both calls (b2c:a05Ws000005SQkgIAG and b2c:a05Ws000005SRteIAG) are between Emily Jackson and Sophia Lopez. Since the exact named person (Ravi) does not appear in any source, no fact about Ravi's commitment can be supported, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STXGIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not mention anyone named Ravi. The only call provided for Sophia Lopez's opportunity is between Kamila Novak (AutoElite Motors) and Sophia Lopez. No next step is attributed to a person named Ravi for Sophia Lopez's eco-friendly vehicle opportunity.",
+              "evidence": [],
+              "reason": "The question asks about a commitment made by 'Ravi' regarding Sophia Lopez's eco-friendly vehicle opportunity. The sole transcript (call b2c:a05Ws000005STXGIA4) features Kamila Novak as the salesperson, not Ravi. There is no mention of Ravi anywhere in the provided sources, so no fact about Ravi's committed next step can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOocIAG",
+              "b2c:a05Ws000005SUMsIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Ravi appears in either call transcript for Sophia Lopez's eco-friendly vehicle opportunity. Both calls involve Samuel Smith as the salesperson. Therefore, no commitment by Ravi can be identified from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a next step committed to by Ravi. The two call transcripts for Sophia Lopez's opportunity (b2c:a05Ws000005SOocIAG and b2c:a05Ws000005SUMsIAO) only feature Samuel Smith as the salesperson. There is no mention of anyone named Ravi in any line of either transcript, so the requested fact cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STvSIAW",
+              "b2c:a05Ws000005SUMrIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No next step by Ravi is found. Both calls for the Sophia Lopez eco-friendly vehicle opportunity were conducted by Mohammed Al-Aziz, not Ravi. The commitments made were by Mohammed: scheduling a follow-up meeting (call b2c:a05Ws000005STvSIAW, lines 11\u201313) and preparing a summary email about the Mercedes-Benz E-Class, Nissan Leaf, financing, and maintenance plans (call b2c:a05Ws000005SUMrIAO, lines 18\u201319). No person named Ravi appears in the transcripts or metadata.",
+              "evidence": [],
+              "reason": "The question asks specifically about a commitment made by Ravi. Neither call transcript nor any metadata references a person named Ravi. Both calls were handled by Mohammed Al-Aziz. Because the exact named person (Ravi) is absent from all sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPqEIAW",
+              "b2c:a05Ws000005SQeEIAW",
+              "b2c:a05Ws000005SScoIAG",
+              "b2c:a05Ws000005STqcIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Ravi appears in any of the four call transcripts for Sophia Lopez's 'Premium Eco-Friendly Vehicle Acquisition' opportunity. Every call is conducted by Lena Schmidt of AutoElite Motors, so no commitment by Ravi can be identified from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a next step committed to by 'Ravi.' All four calls (b2c:a05Ws000005SPqEIAW, b2c:a05Ws000005SQeEIAW, b2c:a05Ws000005SScoIAG, b2c:a05Ws000005STqcIAG) for opportunity 006Ws00000ALoleIAD involve only Lena Schmidt and Sophia Lopez. The name Ravi does not appear anywhere in the transcripts, so the requested fact cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQnwIAG",
+              "b2c:a05Ws000005SRvHIAW",
+              "b2c:a05Ws000005SUDBIA4",
+              "b2c:a05Ws000005SUEnIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Ravi appears in any of the provided call transcripts for Sophia Lopez's eco-friendly vehicle opportunity. All calls involve Liam Murphy as the salesperson. Therefore, no next step committed by Ravi can be identified from the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a commitment made by 'Ravi' for Sophia Lopez's eco-friendly vehicle opportunity. All four calls associated with this opportunity (opportunity_id 006Ws00000ALowwIAD, account Sophia Lopez) feature Liam Murphy as the salesperson. No individual named Ravi is mentioned in any transcript. Since the exact named person (Ravi) is not present in the sources, the requested fact cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUGPIA4",
+              "b2c:a05Ws000005SUI1IAO",
+              "b2c:a05Ws000005SUJdIAO"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Ravi committed to sending Sophia Lopez a comprehensive proposal covering pricing, features, and her specific needs, and to following up so they could discuss it in depth soon.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SUGPIA4",
+                  "line_start": 20,
+                  "line_end": 22,
+                  "quote": "[2020-05-07T10:50:20] Sophia Lopez: I might consider a demonstration. What's the next step to get a detailed proposal?\n[2020-05-07T10:50:35] Ravi Chandra: I\u2019ll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon."
+                }
+              ],
+              "reason": "In the first call (2020-05-07), Sophia asks about the next step to get a detailed proposal (line 20), and Ravi explicitly commits: 'I'll arrange for us to send over a proposal that includes comprehensive details on pricing, features, and your specific needs. I'll follow up so we can discuss it in depth soon.' (line 21). This directly answers what next step Ravi committed to for Sophia Lopez's eco-friendly vehicle opportunity."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state that Ravi committed to sending Sophia Lopez a detailed/comprehensive proposal covering pricing, features, and her specific needs, and then following up to discuss it. The wording differs slightly ('comprehensive' vs 'detailed', 'in depth soon' vs no qualifier), but the requested facts are the same."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPqFIAW",
+              "b2c:a05Ws000005SQCoIAO",
+              "b2c:a05Ws000005SUI2IAO",
+              "b2c:a05Ws000005SULFIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No commitment by Ravi can be identified. All four calls on the Sophia Lopez Compact Luxury Eco-Friendly Deal opportunity were conducted by Hina Patel of AutoElite Motors; no person named Ravi appears in any transcript, so no next step committed by Ravi exists in the provided sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a next step committed by Ravi. Reviewing all four call transcripts (b2c:a05Ws000005SULFIA4, b2c:a05Ws000005SPqFIAW, b2c:a05Ws000005SQCoIAO, b2c:a05Ws000005SUI2IAO), the only salesperson present is Hina Patel. The name 'Ravi' does not appear anywhere in the sources. Because the question targets an exact named person (Ravi) and that person is absent from all evidence, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSksIAG",
+              "b2c:a05Ws000005SU6lIAG",
+              "b2c:a05Ws000005SUQ5IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Ravi appears in any of the provided call transcripts for Sophia Lopez's eco-friendly vehicle opportunity. All three calls are conducted by Youssef El-Maghreb, so no commitment by Ravi can be identified from the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a next step committed to by 'Ravi' for Sophia Lopez's eco-friendly vehicle opportunity. The three calls associated with opportunity 'Exclusive Eco-Luxury Vehicle Upgrade for Sophia Lopez' (006Ws00000ALp9pIAD) all feature Youssef El-Maghreb as the salesperson. There is no mention of anyone named Ravi in any transcript, so the requested fact cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SURhIAO",
+              "b2c:a05Ws000005SUTJIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Ravi appears in either call transcript. Both calls for Sophia Lopez's 'AutoElite Eco-Luxury Experience' opportunity involve salesperson Amina Yusuf, not Ravi. Therefore no next step committed by Ravi can be identified. (For reference, Amina Yusuf committed to arranging a showroom visit/test drive of the 2023 Nissan Leaf, scheduled for Thursday at 2:00 PM, but this is not attributable to Ravi.)",
+              "evidence": [],
+              "reason": "The question asks specifically about a commitment made by Ravi. Neither call transcript contains any mention of a person named Ravi. The salesperson in both calls is Amina Yusuf. Because the exact named person (Ravi) is not present in the sources, the requested fact cannot be supported, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOB1IAO",
+              "b2c:a05Ws000005SQccIAG",
+              "b2c:a05Ws000005SUUvIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No next step committed by Ravi can be identified. All three calls on Sophia Lopez's 'Luxury Electric Vehicle Lease' opportunity were conducted by Nora Svensson of AutoElite Motors. The name Ravi does not appear anywhere in the provided transcripts, so no commitment by Ravi regarding Sophia Lopez's eco-friendly vehicle opportunity exists in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a next step committed by Ravi. After reviewing all three call transcripts (b2c:a05Ws000005SOB1IAO, b2c:a05Ws000005SQccIAG, b2c:a05Ws000005SUUvIAO), the only salesperson present is Nora Svensson. The name 'Ravi' never appears. Because the question targets an exact named person (Ravi) and that person is absent from every source, the answer cannot be completed."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question directly answered by Ravi's quoted line at 10:50:35, where he commits to sending a proposal covering pricing, features, and her specific needs and following up; gold answer matches exactly."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What next step did Ravi commit to for Sophia Lopez's eco-friendly vehicle opportunity?",
+            "explicitly_requested": true,
+            "required_fact": "Ravi committed to sending a proposal with comprehensive details on pricing, features, and her specific needs, and following up to discuss it in depth.",
+            "source_call_ids": [
+              "b2c:a05Ws000005SUGPIA4"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the next step Ravi committed to. The gold answer states he committed to sending a detailed proposal covering pricing, features, and her specific needs, then following up to discuss it. The independent answer matches this exactly. The contract obligation correctly extracts the required fact from the single call. The call contains the dialogue where Ravi explicitly commits to sending a proposal with those details and following up. No extra facts are in the gold answer beyond what is asked. The single call is required to answer the question.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Ravi committed to sending a detailed proposal covering pricing, features, and her specific needs",
+            "question_span": "What next step did Ravi commit to for Sophia Lopez's eco-friendly vehicle opportunity?",
+            "required_by_question": true
+          },
+          {
+            "claim": "then following up to discuss it",
+            "question_span": "What next step did Ravi commit to for Sophia Lopez's eco-friendly vehicle opportunity?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]
