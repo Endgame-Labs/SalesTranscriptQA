@@ -1,0 +1,412 @@
+[
+  {
+    "question_id": "b2b-multi_call-9e88f32e485261c1",
+    "question": "For CyberPulse Security, what pricing adjustment did Mohammad Abbas request during negotiation, and how did he describe total cost of ownership after implementation?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing adjustment Mohammad Abbas requested during negotiation and his description of total cost of ownership after implementation, for CyberPulse Security.",
+        "relationship": "Both facts concern the same commercial negotiation issue (price terms and cost-of-ownership assessment) for the same customer.",
+        "reason": "The pricing request and the TCO commentary are parts of one coherent negotiation/commercial discussion, not independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzlBIAS",
+                "fact": "Mohammad Abbas requested a slight reduction in pricing to fit budget constraints during negotiation.",
+                "why_other_call_cannot_supply_it": "The other call (April 18) does not mention any pricing adjustment request; it only discusses post-implementation feedback."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SypAIAS",
+                "fact": "Mohammad Abbas described total cost of ownership as predictable, aiding long-term investment planning.",
+                "why_other_call_cannot_supply_it": "The other call (February 15) does not discuss total cost of ownership after implementation; it focuses on negotiation and deployment timelines."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the pricing adjustment requested during negotiation and the description of total cost of ownership after implementation. These facts are found in separate calls, each providing unique information that the other does not contain. The February call contains the negotiation request, while the April call contains the post-implementation TCO description. Neither call alone can answer both parts of the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzlBIAS",
+                  "fact": "Mohammad Abbas requested a slight reduction in pricing to fit budget constraints during negotiation.",
+                  "why_other_call_cannot_supply_it": "The other call (April 18) does not mention any pricing adjustment request; it only discusses post-implementation feedback."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SypAIAS",
+                  "fact": "Mohammad Abbas described total cost of ownership as predictable, aiding long-term investment planning.",
+                  "why_other_call_cannot_supply_it": "The other call (February 15) does not discuss total cost of ownership after implementation; it focuses on negotiation and deployment timelines."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the pricing adjustment requested during negotiation and the description of total cost of ownership after implementation. These facts are found in separate calls, each providing unique information that the other does not contain. The February call contains the negotiation request, while the April call contains the post-implementation TCO description. Neither call alone can answer both parts of the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzlBIAS",
+                "fact": "During negotiation, Mohammad Abbas requested a slight price reduction to fit within budget constraints.",
+                "why_other_call_cannot_supply_it": "The April call occurs after implementation and contains no mention of the negotiation or any pricing request."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SypAIAS",
+                "fact": "After implementation, Mohammad Abbas described total cost of ownership as predictable, aiding long-term investment planning.",
+                "why_other_call_cannot_supply_it": "The February call is pre-implementation negotiation and contains no post-implementation TCO assessment."
+              }
+            ],
+            "reason": "The question asks for two distinct, temporally separated facts: a pricing request made during negotiation (only in the February call) and a post-implementation TCO assessment (only in the April call). Neither call supplies both, and the facts are not paraphrases of one another."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzlBIAS",
+                  "fact": "During negotiation, Mohammad Abbas requested a slight price reduction to fit within budget constraints.",
+                  "why_other_call_cannot_supply_it": "The April call occurs after implementation and contains no mention of the negotiation or any pricing request."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SypAIAS",
+                  "fact": "After implementation, Mohammad Abbas described total cost of ownership as predictable, aiding long-term investment planning.",
+                  "why_other_call_cannot_supply_it": "The February call is pre-implementation negotiation and contains no post-implementation TCO assessment."
+                }
+              ],
+              "reason": "The question asks for two distinct, temporally separated facts: a pricing request made during negotiation (only in the February call) and a post-implementation TCO assessment (only in the April call). Neither call supplies both, and the facts are not paraphrases of one another."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct commercial facts about CyberPulse Security's negotiation and post-implementation experience. Call 2 (Feb 2023) exclusively supplies the pricing-adjustment request: Mohammad Abbas asked for 'a slight reduction' to fit budget constraints. Call 1 (Apr 2023) exclusively supplies the TCO comment: he described total cost of ownership as 'predictable' and helpful for 'long-term investment planning.' The gold answer accurately reflects both claims without adding unasked extras. The account and contact names are natural identifiers, not artificial locator preambles. Each source contributes a unique requested fact, satisfying the multi-call requirement."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Mohammad Abbas requesting 'a slight reduction' to help 'ratify this within our budget,' which matches the claim of a slight reduction to fit budget constraints. Speaker attribution, the qualifier 'slight,' and the budget rationale are all present in the cited passage."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote has Mohammad Abbas stating 'we appreciate how predictable our total cost of ownership has been' and that 'It's been a great help in planning our long-term investments.' This directly supports the claim that TCO has been predictable and aided long-term investment planning. Speaker, timing (post-implementation April call vs. February negotiation call), and sentiment are all consistent."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported by the cited evidence: (1) Index 0 confirms Mohammad Abbas asked for a slight reduction to fit budget constraints during the February negotiation call, and (2) Index 1 confirms he later described total cost of ownership as predictable, aiding long-term investment planning, during the April call. The metadata confirms both calls involve CyberPulse Security and Mohammad Abbas. No unsupported claims are present in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-840412740d22b5a2",
+    "question": "For Innovative Robotics' EDA Integration deal, what per-product pricing did Monique quote in the demo, and what final contract total was confirmed with Chin Wei at contract finalization?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Per-product pricing quoted in the demo and the final contract total confirmed at contract finalization for the EDA Integration deal",
+        "relationship": "same commercial terms (pricing) for the same deal tracked across demo and contract-finalization calls",
+        "reason": "Both lookups concern the pricing of the same EDA Integration deal; comparing quoted pricing with the final contract total is a coherent commercial-terms comparison, not two unrelated facts."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for per-product pricing quoted in the demo and the final contract total confirmed at finalization. The per-product pricing is only available in the first call, and the final total is only in the second call. However, the final total is simply the sum of the per-product prices (23,375 + 14,620 = 37,995, close to 37,994.24 due to rounding), so the second call does not provide a substantively different fact beyond what can be derived from the first call. The question's request for both is not genuinely necessary because the final total is a direct arithmetic consequence of the quoted prices, and the second call does not introduce any new requested information (e.g., a different total, a change in terms, or a resolution of a concern). Thus, one call (the first) suffices to answer the actual information need."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for per-product pricing quoted in the demo and the final contract total confirmed at finalization. The per-product pricing is only available in the first call, and the final total is only in the second call. However, the final total is simply the sum of the per-product prices (23,375 + 14,620 = 37,995, close to 37,994.24 due to rounding), so the second call does not provide a substantively different fact beyond what can be derived from the first call. The question's request for both is not genuinely necessary because the final total is a direct arithmetic consequence of the quoted prices, and the second call does not introduce any new requested information (e.g., a different total, a change in terms, or a resolution of a concern). Thus, one call (the first) suffices to answer the actual information need."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1JxIAK",
+                "fact": "Demo pricing: CircuitAI Innovator (50 units) ~$23,375 and Workflow Genius (40 units) ~$14,620, both with 15% discount",
+                "why_other_call_cannot_supply_it": "The finalization call only states the combined total of $37,994.24 and never breaks out per-product pricing or unit quantities"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T1LZIA0",
+                "fact": "Final contract total confirmed with Chin Wei at $37,994.24",
+                "why_other_call_cannot_supply_it": "The demo call only gives approximate per-product figures (~$23,375 + ~$14,620) and never states the confirmed final contract total"
+              }
+            ],
+            "reason": "The question requests two distinct data points: per-product quoted pricing from the demo and the final confirmed contract total. Each fact appears only in one call, and neither call contains both."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1JxIAK",
+                  "fact": "Demo pricing: CircuitAI Innovator (50 units) ~$23,375 and Workflow Genius (40 units) ~$14,620, both with 15% discount",
+                  "why_other_call_cannot_supply_it": "The finalization call only states the combined total of $37,994.24 and never breaks out per-product pricing or unit quantities"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T1LZIA0",
+                  "fact": "Final contract total confirmed with Chin Wei at $37,994.24",
+                  "why_other_call_cannot_supply_it": "The demo call only gives approximate per-product figures (~$23,375 + ~$14,620) and never states the confirmed final contract total"
+                }
+              ],
+              "reason": "The question requests two distinct data points: per-product quoted pricing from the demo and the final confirmed contract total. Each fact appears only in one call, and neither call contains both."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for per-product pricing quoted during the demo (Call 1: CircuitAI Innovator 50 units \u2248$23,375 and Workflow Genius 40 units \u2248$14,620, both at 15% discount) and the final contract total confirmed at contract finalization (Call 2: $37,994.24). Each source contributes an exclusive requested fact: Call 1 provides the per-product breakdown; Call 2 provides the confirmed total. All figures match the transcripts exactly. The question is naturally phrased, identifies the account (Innovative Robotics), the deal (EDA Integration), and the relevant participants (Monique, Chin Wei) without artificial locator preambles. A rep would plausibly need to recall quoted pricing and the final contract value for this account.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Monique Dubois explicitly states a 15% discount, CircuitAI Innovator at quantity 50 totaling approximately $23,375, and Workflow Genius at 40 units totaling around $14,620. This directly supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage from Monique Dubois states the pricing was agreed with the 15% discount applied and the total is $37,994.24, then asks Chin Wei if it matches expectations. The metadata confirms the contact is Chin Wei and the call is for the Innovative Robotics EDA Integration opportunity. While the quote shows Monique asking 'Does that match your expectations?' rather than explicitly quoting Chin Wei's confirmation, the answer_claim states 'Chin Wei confirmed it looks correct.' The supplied quote only contains Monique's question, not Chin Wei's affirmative response. However, the question 'Does that match your expectations?' is directed at Chin Wei (per metadata), and the answer_claim asserts confirmation. The quote does not include Chin Wei's reply. Strictly, the cited passage does not contain Chin Wei's confirmation\u2014only Monique's question. A question does not establish its answer. Therefore, the 'Chin Wei confirmed it looks correct' portion is not supported by the cited text alone."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "Evidence index 0 fully supports the per-product pricing and discount claims. Evidence index 1 supports the $37,994.24 total and the 15% discount at contract finalization, but the cited quote only contains Monique asking Chin Wei whether the total matches expectations; it does not include Chin Wei's affirmative confirmation. Since the gold_answer states the total was 'confirmed with Chin Wei,' and the supplied citation lacks Chin Wei's confirming response, the combined evidence does not fully support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-e66781b814d52a0d",
+    "question": "What pricing did Aiko quote TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing Aiko quoted TerraForm Engineering for two products (AI Cirku-Tech and SecureFlow Suite)",
+        "relationship": "single coherent quote lookup",
+        "reason": "This is one commercial quote breakdown request covering the products priced in the same quote to the same customer; both items are part of one pricing response, not independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific pricing Aiko quoted TerraForm Engineering for two named products. The dialogue confirms AI Cirku-Tech at 10 units, 10% discount, $4769.91 and SecureFlow Suite at 5% discount, $3989.93. The gold answer matches these facts exactly and omits the unasked CollabDesign Studio price. The question is naturally phrased, adequately scoped to a real account/product situation, and a rep would plausibly need this pricing detail. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aiko Matsumoto explicitly states: AI Cirku-Tech \u2013 10 units with a 10% discount, total $4769.91; SecureFlow Suite \u2013 5% discount, totaling $3989.93. This directly matches the answer_claim in full, including units, discount percentages, and dollar amounts."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Aiko's exact pricing quote for both products: AI Cirku-Tech at 10 units, 10% discount, $4769.91, and SecureFlow Suite at 5% discount, $3989.93. Every factual element in the gold_answer (product names, unit count, discount percentages, and totals) is explicitly present in the quoted passage. The additional mention of CollabDesign Studio does not contradict or undermine the claimed figures."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-c9937873c9f2e42d",
+    "question": "What next step did Yuki propose to Ming Li for the InnovateGrid EDA opportunity, and did Ming agree?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Yuki proposed for the InnovateGrid EDA opportunity and whether Ming Li agreed to it.",
+        "relationship": "single coherent request: a proposed next step and the counterpart's response on the same opportunity.",
+        "reason": "This is one issue (advancing the InnovateGrid EDA deal) with a proposal and its agreement status, matching the 'next steps addressing the SAME issue' pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about the next step proposed for the InnovateGrid EDA opportunity and whether the contact agreed\u2014information a rep would track. The gold answer accurately reflects the dialogue: Yuki proposed scheduling a detailed session with the technical team next week to address integration questions, and Ming agreed to coordinate with his team and finalize a day early next week. No locator preamble, no answer leakage, no unsupported claims. Single-call question so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage (lines 16-17) contains only Yuki's proposal to schedule a detailed technical session next week. It does not include any response from Ming Li agreeing to coordinate with his team or finalize a day early next week. The answer_claim asserts both the proposal AND Ming's agreement, but the cited dialogue only covers Yuki's side. A question ('Would next week work for a follow-up?') does not establish that Ming answered affirmatively."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer contains two factual components: (1) Yuki proposed scheduling a detailed session with the technical team next week to address integration questions, and (2) Ming agreed to coordinate with his team and finalize a day early next week. The single cited evidence (index 0) supports component (1) but provides no dialogue or metadata showing Ming's agreement or his specific commitment to coordinate and finalize a day. Since the supplied citations do not cover Ming's response, the combined evidence does not fully support the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-a4b4f730b2dc7531",
+    "question": "For Ava Cooper's eco-friendly vehicle deal, what long-term protection options did Kwame mention beyond the maintenance plan?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the long-term protection options Kwame mentioned for Ava Cooper's eco-friendly vehicle deal, beyond the maintenance plan.",
+        "relationship": "single coherent lookup within one deal discussion",
+        "reason": "The question asks for one set of options (protection offerings) discussed in the context of a single deal; no unrelated requests are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what long-term protection Kwame mentioned beyond the maintenance plan for Ava Cooper's eco-friendly vehicle deal. The transcript shows Ava asking 'Are there options to protect the vehicle long-term?' and Kwame responding with the Extended Warranty Plan covering most major repairs for long-term reliability and peace of mind. The gold answer matches exactly. The question is naturally scoped by customer name and deal context, no artificial locator preamble, no answer leakage, and the single-call class correctly sets both_sources_required=true.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Kwame Otieno explicitly states: 'Our Extended Warranty Plan is another excellent option. It provides long-term reliability and peace of mind by covering most major repairs.' This directly supports the answer_claim that the Extended Warranty Plan provides long-term reliability and peace of mind by covering most major repairs. The speaker is Kwame, the context is Ava Cooper's eco-friendly vehicle deal (confirmed by metadata), and the content matches the claim precisely."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'An Extended Warranty Plan covering most major repairs for long-term reliability and peace of mind.' The single cited evidence item (index 0) contains Kwame's exact words describing the Extended Warranty Plan as covering most major repairs and providing long-term reliability and peace of mind. The metadata confirms this is Ava Cooper's eco-friendly vehicle deal (opportunity_name: 'Eco-Friendly Luxury Winter Deal with Comprehensive Maintenance', account_name: 'Ava Cooper'). The question asks about long-term protection options beyond the maintenance plan, and the quote positions the Extended Warranty Plan as 'another excellent option,' implying it is in addition to the maintenance plan. All factual elements of the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-042a5206093e2ab6",
+    "question": "When Mia Thompson asked how AutoElite compares to High-End Autos Co., what did Sebastian say differentiated AutoElite's pricing and service approach?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Sebastian's explanation of how AutoElite's pricing and service approach differ from High-End Autos Co., in response to Mia Thompson's comparison question",
+        "relationship": "single competitive-comparison request: one question about differentiation versus a named competitor, with the answer covering both pricing and service aspects of the same comparison",
+        "reason": "This is one coherent competitive comparison addressing the same issue (AutoElite vs. High-End Autos Co. differentiation); pricing and service are facets of a single differentiation answer, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning exchange in the transcript. Mia asks how AutoElite compares to High-End Autos Co. regarding pricing, and Sebastian's reply at 10:33:25 states AutoElite is known for transparent pricing and comprehensive service coverage while High-End Autos Co. offers attractive pricing but some customers prefer AutoElite's more integrated service plans. The gold answer faithfully reproduces those facts without adding unasked extras. The question is naturally phrased, identifies the customer (Mia Thompson) and rep (Sebastian) by name, and a sales rep would plausibly want to recall how a competitor was positioned. Single-call set, so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Sebastian Martinez directly states: 'AutoElite Motors is known for our transparent pricing and comprehensive service coverage. While High-End Autos Co. does offer attractive pricing, some customers prefer our more integrated approach to service plans.' This matches the answer_claim verbatim in substance, preserving speaker attribution, the comparison structure, and all qualifiers (e.g., 'some customers prefer')."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'AutoElite offers transparent pricing and comprehensive service coverage; High-End Autos Co. has attractive pricing, but some customers prefer AutoElite's more integrated service plans.' The single cited evidence (index 0) contains Sebastian's exact dialogue that supports every factual element: transparent pricing, comprehensive service coverage for AutoElite; attractive pricing for High-End Autos Co.; and the qualifier that 'some customers prefer' AutoElite's more integrated approach to service plans. The paraphrase is faithful and no facts are missing."
+      }
+    }
+  }
+]

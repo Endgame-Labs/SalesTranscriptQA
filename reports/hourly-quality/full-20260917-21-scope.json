@@ -1,0 +1,315 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "f073a38904362a3202fc333b3b8b0f07317a62fc3c10b93a1f9ed11c01fc27a3",
+  "questions": 3,
+  "counts": {
+    "fail": 2,
+    "pass": 1
+  },
+  "estimated_usd": 0.3493335,
+  "results": [
+    {
+      "question_id": "b2b-single_call-e66781b814d52a0d",
+      "question": "What pricing did Aiko quote TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite?",
+      "gold_answer": "AI Cirku-Tech: 10 units with a 10% discount totaling $4769.91; SecureFlow Suite: 5% discount totaling $3989.93.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkeIAC",
+        "b2b:a05Wt000003SsQTIA0",
+        "b2b:a05Wt000003SuvDIAS",
+        "b2b:a05Wt000003Sv9jIAC",
+        "b2b:a05Wt000003SvD5IAK",
+        "b2b:a05Wt000003SvGBIA0",
+        "b2b:a05Wt000003SvoBIAS",
+        "b2b:a05Wt000003SvrSIAS",
+        "b2b:a05Wt000003SwCMIA0",
+        "b2b:a05Wt000003Swc4IAC",
+        "b2b:a05Wt000003SwyeIAC",
+        "b2b:a05Wt000003SwyfIAC",
+        "b2b:a05Wt000003SxEqIAK",
+        "b2b:a05Wt000003SxLKIA0",
+        "b2b:a05Wt000003SxQ7IAK",
+        "b2b:a05Wt000003SxoFIAS",
+        "b2b:a05Wt000003SxoGIAS",
+        "b2b:a05Wt000003SxwRIAS",
+        "b2b:a05Wt000003Sz3jIAC",
+        "b2b:a05Wt000003Sz3kIAC",
+        "b2b:a05Wt000003T0HUIA0",
+        "b2b:a05Wt000003T0e3IAC",
+        "b2b:a05Wt000003T0e4IAC",
+        "b2b:a05Wt000003T0kcIAC",
+        "b2b:a05Wt000003T15XIAS",
+        "b2b:a05Wt000003T21dIAC",
+        "b2b:a05Wt000003T287IAC",
+        "b2b:a05Wt000003T2ESIA0",
+        "b2b:a05Wt000003T2zHIAS",
+        "b2b:a05Wt000003T30tIAC",
+        "b2b:a05Wt000003T3YhIAK",
+        "b2b:a05Wt000003T3dYIAS",
+        "b2b:a05Wt000003T3s6IAC",
+        "b2b:a05Wt000003T407IAC",
+        "b2b:a05Wt000003T49mIAC",
+        "b2b:a05Wt000003T4BOIA0",
+        "b2b:a05Wt000003T4BPIA0",
+        "b2b:a05Wt000003T4JSIA0",
+        "b2b:a05Wt000003T4JTIA0",
+        "b2b:a05Wt000003T4T7IAK",
+        "b2b:a05Wt000003T4UjIAK",
+        "b2b:a05Wt000003T4WLIA0",
+        "b2b:a05Wt000003T4XxIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 8,
+            "normalized_end": 9
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 20,
+            "normalized_end": 21
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Aiko quoted pricing for AI Cirku-Tech and the SecureFlow Suite in two different calls with Samuel Okafor on the same opportunity (Sustainable Innovation with TechPulse). The 2023-11-15 call gives unit counts, discounts, and dollar totals for both products; the 2023-04-25 call gives a different framing (discount percentages and the AI Cirku-Tech total, without a SecureFlow Suite total). Both are complete answers to the question as worded, and neither is identified as 'the' call.",
+        "answers": [
+          {
+            "answer": "In the November 15, 2023 call, Aiko Matsumoto quoted Samuel Okafor: AI Cirku-Tech — 10 units with a 10% discount, totaling $4,769.91; SecureFlow Suite — a 5% discount, totaling $3,989.93 (she also quoted CollabDesign Studio at $3,039.92 with a similar discount).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvGBIA0",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2023-11-15T15:01:57] Aiko Matsumoto: Of course, let's discuss the pricing. For AI Cirku-Tech, given your requirements, we can offer you 10 units with a 10% discount, bringing the total to $4769.91. Additionally, the SecureFlow Suite, which complements your sustainability goals, comes with a 5% discount, totaling $3989.93. Finally, CollabDesign Studio would be similarly discounted to $3039.92."
+              }
+            ]
+          },
+          {
+            "answer": "In the April 25, 2023 proposal call, Aiko Matsumoto quoted: AI Cirku-Tech — a 10% discount on a quantity of ten units, totaling approximately $4,769.91; SecureFlow Suite — a 5% discount (no dollar total given for it in that call, and CollabDesign Studio also at 5% off).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T21dIAC",
+                "line_start": 20,
+                "line_end": 21,
+                "quote": "[2023-04-25T14:05:20] Aiko Matsumoto: Certainly, Samuel. For AI Cirku-Tech, we're offering a 10% discount on a quantity of ten units, totaling approximately $4769.91. SecureFlow Suite and CollabDesign Studio also come with a 5% discount each. Overall, the proposal ensures substantial value which aligns with your budget."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Aiko Matsumoto quoted pricing for AI Cirku-Tech and SecureFlow Suite to TerraForm Engineering in two materially different calls: one to Samuel Okafor (opportunity 'Sustainable Innovation with TechPulse', 2023-11-15) and one to Amina Chaudhry (opportunity 'Sustainable Innovation in Civil Projects', 2022-01-04). The SecureFlow Suite pricing differs between the two ($3,989.93 vs. $4,559.92), making them materially different complete answers. A third Aiko call (2023-04-25) also quotes AI Cirku-Tech and SecureFlow Suite but omits the SecureFlow Suite dollar total, so it is not a complete answer to the question.",
+        "answers": [
+          {
+            "answer": "Aiko quoted AI Cirku-Tech at 10 units with a 10% discount, totaling $4,769.91, and SecureFlow Suite with a 5% discount, totaling $3,989.93.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvGBIA0",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2023-11-15T15:01:57] Aiko Matsumoto: Of course, let's discuss the pricing. For AI Cirku-Tech, given your requirements, we can offer you 10 units with a 10% discount, bringing the total to $4769.91. Additionally, the SecureFlow Suite, which complements your sustainability goals, comes with a 5% discount, totaling $3989.93. Finally, CollabDesign Studio would be similarly discounted to $3039.92."
+              }
+            ]
+          },
+          {
+            "answer": "Aiko quoted AI Cirku-Tech at 10 units with a 10% discount, totaling $4,769.91, and SecureFlow Suite at 8 units with a 5% discount, totaling $4,559.92.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T4JTIA0",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-01-04T11:00:52] Jaemin Park: Absolutely, just to confirm, we're looking at 10 units of AI Cirku-Tech with a 10% discount which brings the total to $4769.91. SecureFlow Suite would be 8 units at a 5% discount, totaling $4559.92. Does that align with your records?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-a4b4f730b2dc7531",
+      "question": "For Ava Cooper's eco-friendly vehicle deal, what long-term protection options did Kwame mention beyond the maintenance plan?",
+      "gold_answer": "An Extended Warranty Plan covering most major repairs for long-term reliability and peace of mind.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMPeIAO",
+        "b2c:a05Ws000005SOT1IAO",
+        "b2c:a05Ws000005SPdYIAW",
+        "b2c:a05Ws000005SQ0zIAG",
+        "b2c:a05Ws000005SRVeIAO",
+        "b2c:a05Ws000005SSOLIA4",
+        "b2c:a05Ws000005SSRiIAO",
+        "b2c:a05Ws000005SULPIA4",
+        "b2c:a05Ws000005SUOkIAO",
+        "b2c:a05Ws000005SUVCIA4",
+        "b2c:a05Ws000005SWS5IAO",
+        "b2c:a05Ws000005SWWpIAO",
+        "b2c:a05Ws000005SWrzIAG",
+        "b2c:a05Ws000005SXw9IAG",
+        "b2c:a05Ws000005SYqVIAW",
+        "b2c:a05Ws000005SZ6gIAG",
+        "b2c:a05Ws000005SZZiIAO",
+        "b2c:a05Ws000005SaFcIAK",
+        "b2c:a05Ws000005Sb1tIAC",
+        "b2c:a05Ws000005SbTOIA0",
+        "b2c:a05Ws000005ScE7IAK",
+        "b2c:a05Ws000005ScvcIAC",
+        "b2c:a05Ws000005SdWdIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Kwame Otieno's calls with Ava Cooper are on the 'Eco-Friendly Luxury Winter Deal with Comprehensive Maintenance' opportunity (2020-04-19 and 2020-04-20). In the 2020-04-20 call, after discussing the Comprehensive Maintenance Plan, Ava explicitly asks about long-term protection options and Kwame mentions the Extended Warranty Plan. The 2020-04-19 call only names the Extended Warranty Plan as an agenda item for a future meeting, not as a discussed protection option, so it is not a competing answer.",
+        "answers": [
+          {
+            "answer": "Kwame mentioned the Extended Warranty Plan as the long-term protection option beyond the Comprehensive Maintenance Plan. He described it as providing long-term reliability and peace of mind by covering most major repairs, noting that many clients find it valuable down the line.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQ0zIAG",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2020-04-20T14:02:30] Ava Cooper: That’s reassuring to hear. Are there options to protect the vehicle long-term?\n[2020-04-20T14:02:40] Kwame Otieno: Yes, indeed. Our Extended Warranty Plan is another excellent option. It provides long-term reliability and peace of mind by covering most major repairs. Many of our clients find it valuable, especially down the line.\n[2020-04-20T14:02:55] Ava Cooper: I appreciate that. It's important for me to ensure everything is covered in the long run."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifically asks about Kwame's mention of long-term protection options beyond the maintenance plan for Ava Cooper's eco-friendly vehicle deal. Only one call features Kwame Otieno discussing this topic: call b2c:a05Ws000005SQ0zIAG (2020-04-20, opportunity 'Eco-Friendly Luxury Winter Deal with Comprehensive Maintenance'). In that call, Ava asks about long-term vehicle protection options (line 13), and Kwame responds with the Extended Warranty Plan (line 14). The other Kwame call (b2c:a05Ws000005SWWpIAO, 2020-04-19) only briefly mentions the Extended Warranty Plan as part of scheduling a discovery meeting (line 14) without substantive discussion of it as a long-term protection option beyond the maintenance plan. The primary and substantive answer comes from the April 20 call.",
+        "answers": [
+          {
+            "answer": "Kwame mentioned the Extended Warranty Plan as a long-term protection option beyond the maintenance plan. He described it as providing long-term reliability and peace of mind by covering most major repairs, noting that many clients find it valuable especially down the line.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQ0zIAG",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2020-04-20T14:02:30] Ava Cooper: That’s reassuring to hear. Are there options to protect the vehicle long-term?\n[2020-04-20T14:02:40] Kwame Otieno: Yes, indeed. Our Extended Warranty Plan is another excellent option. It provides long-term reliability and peace of mind by covering most major repairs. Many of our clients find it valuable, especially down the line.\n[2020-04-20T14:02:55] Ava Cooper: I appreciate that. It's important for me to ensure everything is covered in the long run."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same long-term protection option: the Extended Warranty Plan, described as covering most major repairs for long-term reliability and peace of mind. The only wording differences are trivial ('especially down the line' vs 'down the line'). The reference likewise names the Extended Warranty Plan and its key attributes (covering most major repairs, long-term reliability, peace of mind), fully covering the requested fact."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-042a5206093e2ab6",
+      "question": "When Mia Thompson asked how AutoElite compares to High-End Autos Co., what did Sebastian say differentiated AutoElite's pricing and service approach?",
+      "gold_answer": "AutoElite offers transparent pricing and comprehensive service coverage; High-End Autos Co. has attractive pricing, but some customers prefer AutoElite's more integrated service plans.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNJqIAO",
+        "b2c:a05Ws000005SPgYIAW",
+        "b2c:a05Ws000005SPqGIAW",
+        "b2c:a05Ws000005SQ4lIAG",
+        "b2c:a05Ws000005SQRKIA4",
+        "b2c:a05Ws000005SR43IAG",
+        "b2c:a05Ws000005SRlbIAG",
+        "b2c:a05Ws000005SSL4IAO",
+        "b2c:a05Ws000005SSL5IAO",
+        "b2c:a05Ws000005SSjIIAW",
+        "b2c:a05Ws000005SSswIAG",
+        "b2c:a05Ws000005SSzOIAW",
+        "b2c:a05Ws000005STNaIAO",
+        "b2c:a05Ws000005SVagIAG",
+        "b2c:a05Ws000005SVlzIAG",
+        "b2c:a05Ws000005SVsQIAW",
+        "b2c:a05Ws000005SW26IAG",
+        "b2c:a05Ws000005SWA9IAO",
+        "b2c:a05Ws000005SWBlIAO",
+        "b2c:a05Ws000005SWDNIA4",
+        "b2c:a05Ws000005SWEzIAO",
+        "b2c:a05Ws000005SWGbIAO",
+        "b2c:a05Ws000005SWIDIA4",
+        "b2c:a05Ws000005SWJpIAO",
+        "b2c:a05Ws000005SWLRIA4"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Sebastian Martinez discussed High-End Autos Co. with Mia in three separate calls, and in at least two of them he gave a distinct answer covering both pricing and service differentiation: on 2020-10-21 he cited transparent pricing and comprehensive/integrated service plans, while on 2020-10-28 he cited quality assurance and certification rigor on pricing plus consistency of service coverage. The question does not disambiguate which call is intended.",
+        "answers": [
+          {
+            "answer": "Sebastian said AutoElite is known for transparent pricing and comprehensive service coverage; while High-End Autos Co. offers attractive pricing, some customers prefer AutoElite's more integrated approach to service plans (and he added that both offer good credit-approval opportunities, though AutoElite's incentive structures are more comprehensive).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWEzIAO",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2020-10-21T10:33:00] Mia Thompson: That’s definitely appealing. I’m curious about the pricing strategy. I’ve heard mixed things about High-End Autos Co. Is AutoElite more on the competitive side?\n[2020-10-21T10:33:25] Sebastian Martinez: AutoElite Motors is known for our transparent pricing and comprehensive service coverage. While High-End Autos Co. does offer attractive pricing, some customers prefer our more integrated approach to service plans.\n[2020-10-21T10:34:00] Mia Thompson: Got it. And how about financing? How do your options compare?"
+              }
+            ]
+          },
+          {
+            "answer": "Sebastian said that while some find High-End Autos Co.'s pricing attractive, it can come with reduced certification rigor, whereas AutoElite provides quality assurance reflected in its pricing; on the service side, AutoElite's service coverage is robust and its consistency leaves a more favorable impression than High-End Autos Co.'s similar-looking coverage (and High-End's warranty coverage is perceived as less robust).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR43IAG",
+                "line_start": 4,
+                "line_end": 10,
+                "quote": "[2020-10-28T12:31:25] Sebastian Martinez: Great! When it comes to service center support, we've found that customers often feel our service coverage is quite robust compared to other options, like High-End Autos Co. While their coverage might seem similar at face value, we've heard that our consistency tends to leave a more favorable impression. Does that align with what you’ve experienced or heard?\n[2020-10-28T12:32:00] Mia Thompson: That's interesting. Consistency in service is definitely important to us. Can you tell me a little more about the features of your vehicles, especially in comparison to competitors?\n[2020-10-28T12:32:45] Sebastian Martinez: Sure thing. Our 2024 Tesla Model S is one of the highlights. It stands out for its cutting-edge technology and the comprehensive maintenance plans we offer. Customers have reported that our service processes are more streamlined, so post-purchase support requires less effort compared to what competitors demand. We also have a certified pre-owned program that's often a favorite among budget-conscious buyers for its strong quality assurance compared to others. Any particular features you’d like to dive deeper into?\n[2020-10-28T12:33:35] Mia Thompson: The pre-owned program sounds really appealing. Reliability is key. We've had concerns with other companies about the robustness of their warranty coverage.\n[2020-10-28T12:34:10] Sebastian Martinez: It is, indeed. Our warranty coverage on pre-owned vehicles is designed to be transparent and substantial, which builds trust with our customers. We've received feedback that the coverage offered by High-End Autos Co. is perceived as less robust, which can affect buyer confidence. Does that address your concerns?\n[2020-10-28T12:34:50] Mia Thompson: Yes, it does, actually. It's reassuring to hear that you focus on not only coverage but also trust. The competitive pricing of High-End Autos Co. has tempted some, though we’re careful about balancing cost and risk."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Mia Thompson had two separate calls with Sebastian Martinez (Oct 21 and Oct 28, 2020) on the same opportunity 'Premium Hybrid Vehicle and Maintenance Package.' In both calls she explicitly asked how AutoElite compares to High-End Autos Co. regarding pricing and service, and Sebastian gave materially different differentiators in each. The question does not specify which call, so both are valid complete answers.",
+        "answers": [
+          {
+            "answer": "In the October 21, 2020 call, when Mia asked whether AutoElite is more competitive on pricing compared to High-End Autos Co., Sebastian said AutoElite is known for transparent pricing and comprehensive service coverage, and that while High-End Autos Co. does offer attractive pricing, some customers prefer AutoElite's more integrated approach to service plans. On financing, he noted both companies provide good credit-approval opportunities, but some customers find AutoElite's incentive structures more comprehensive.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SWEzIAO",
+                "line_start": 9,
+                "line_end": 13,
+                "quote": "[2020-10-21T10:33:00] Mia Thompson: That’s definitely appealing. I’m curious about the pricing strategy. I’ve heard mixed things about High-End Autos Co. Is AutoElite more on the competitive side?\n[2020-10-21T10:33:25] Sebastian Martinez: AutoElite Motors is known for our transparent pricing and comprehensive service coverage. While High-End Autos Co. does offer attractive pricing, some customers prefer our more integrated approach to service plans.\n[2020-10-21T10:34:00] Mia Thompson: Got it. And how about financing? How do your options compare?\n[2020-10-21T10:34:20] Sebastian Martinez: We offer flexible financing solutions tailored to a variety of customer needs. Both AutoElite and High-End Autos Co. provide good opportunities for credit approval, though some customers find our incentive structures more comprehensive."
+              }
+            ]
+          },
+          {
+            "answer": "In the October 28, 2020 call, when Mia raised the comparison to High-End Autos Co., Sebastian differentiated AutoElite on several fronts: (1) Service consistency – he said AutoElite's service coverage is quite robust and, while High-End Autos Co.'s coverage may seem similar at face value, AutoElite's consistency leaves a more favorable impression. (2) Warranty robustness – he stated AutoElite's pre-owned warranty coverage is transparent and substantial, whereas High-End Autos Co.'s coverage is perceived as less robust, affecting buyer confidence. (3) Pricing vs. quality assurance – he acknowledged High-End Autos Co.'s pricing can seem attractive, but noted it can sometimes outweigh perceived risks because of reduced certification rigor; with AutoElite, you get quality assurance and the pricing reflects that. (4) Long-term value – he emphasized AutoElite's vehicles come with flexible financing options and extended warranties to offer value over time, aiming for a seamless experience throughout ownership.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SR43IAG",
+                "line_start": 4,
+                "line_end": 13,
+                "quote": "[2020-10-28T12:31:25] Sebastian Martinez: Great! When it comes to service center support, we've found that customers often feel our service coverage is quite robust compared to other options, like High-End Autos Co. While their coverage might seem similar at face value, we've heard that our consistency tends to leave a more favorable impression. Does that align with what you’ve experienced or heard?\n[2020-10-28T12:32:00] Mia Thompson: That's interesting. Consistency in service is definitely important to us. Can you tell me a little more about the features of your vehicles, especially in comparison to competitors?\n[2020-10-28T12:32:45] Sebastian Martinez: Sure thing. Our 2024 Tesla Model S is one of the highlights. It stands out for its cutting-edge technology and the comprehensive maintenance plans we offer. Customers have reported that our service processes are more streamlined, so post-purchase support requires less effort compared to what competitors demand. We also have a certified pre-owned program that's often a favorite among budget-conscious buyers for its strong quality assurance compared to others. Any particular features you’d like to dive deeper into?\n[2020-10-28T12:33:35] Mia Thompson: The pre-owned program sounds really appealing. Reliability is key. We've had concerns with other companies about the robustness of their warranty coverage.\n[2020-10-28T12:34:10] Sebastian Martinez: It is, indeed. Our warranty coverage on pre-owned vehicles is designed to be transparent and substantial, which builds trust with our customers. We've received feedback that the coverage offered by High-End Autos Co. is perceived as less robust, which can affect buyer confidence. Does that address your concerns?\n[2020-10-28T12:34:50] Mia Thompson: Yes, it does, actually. It's reassuring to hear that you focus on not only coverage but also trust. The competitive pricing of High-End Autos Co. has tempted some, though we’re careful about balancing cost and risk.\n[2020-10-28T12:35:25] Sebastian Martinez: Completely understandable. While some find their pricing attractive, we've noticed that it can sometimes outweigh the perceived risks because of reduced certification rigor. With AutoElite, you're getting quality assurance, and our pricing reflects that. Is the pricing concern significant for you?\n[2020-10-28T12:36:05] Mia Thompson: Pricing is always important, but so is value for money. It’s more about ensuring any investment we make will align with our long-term goals.\n[2020-10-28T12:36:40] Sebastian Martinez: Absolutely, value is key. Our vehicles, like the Tesla Model S and the Camry Hybrid, come with flexible financing options and extended warranties to offer value over time. Our aim is to provide a seamless experience all along the way. Have you had any particular challenges in advocacy or budgeting that we could help address?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

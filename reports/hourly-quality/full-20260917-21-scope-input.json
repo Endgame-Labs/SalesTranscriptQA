@@ -1,0 +1,1000 @@
+[
+  {
+    "job_id": "e66781b814d52a0df2fdc4c91b1b6e6cf6beaa635b038abf459e0a5b27306924",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SvGBIA0"
+    ],
+    "status": "accepted",
+    "question": "What pricing did Aiko quote TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite?",
+    "gold_answer": "AI Cirku-Tech: 10 units with a 10% discount totaling $4769.91; SecureFlow Suite: 5% discount totaling $3989.93.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SvGBIA0",
+        "answer_claim": "10 units with a 10% discount, total $4769.91; SecureFlow Suite with 5% discount totaling $3989.93",
+        "kind": "dialogue",
+        "line_start": 8,
+        "line_end": 9,
+        "quote": "[2023-11-15T15:01:57] Aiko Matsumoto: Of course, let's discuss the pricing. For AI Cirku-Tech, given your requirements, we can offer you 10 units with a 10% discount, bringing the total to $4769.91. Additionally, the SecureFlow Suite, which complements your sustainability goals, comes with a 5% discount, totaling $3989.93. Finally, CollabDesign Studio would be similarly discounted to $3039.92.",
+        "start": 1821,
+        "end": 2217
+      }
+    ],
+    "question_id": "b2b-single_call-e66781b814d52a0d",
+    "candidate": {
+      "question": "What pricing did Aiko quote TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite?",
+      "gold_answer": "AI Cirku-Tech: 10 units with a 10% discount totaling $4769.91; SecureFlow Suite: 5% discount totaling $3989.93.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SvGBIA0",
+          "answer_claim": "10 units with a 10% discount, total $4769.91; SecureFlow Suite with 5% discount totaling $3989.93",
+          "kind": "dialogue",
+          "line_start": 8,
+          "line_end": 9,
+          "quote": "[2023-11-15T15:01:57] Aiko Matsumoto: Of course, let's discuss the pricing. For AI Cirku-Tech, given your requirements, we can offer you 10 units with a 10% discount, bringing the total to $4769.91. Additionally, the SecureFlow Suite, which complements your sustainability goals, comes with a 5% discount, totaling $3989.93. Finally, CollabDesign Studio would be similarly discounted to $3039.92.",
+          "start": 1821,
+          "end": 2217
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "AI Cirku-Tech: $4769.91 (10 units, 10% discount); SecureFlow Suite: $3989.93 (5% discount).",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The dialogue quote directly supports both pricing claims: AI Cirku-Tech 10 units at 10% discount totaling $4769.91 and SecureFlow Suite at 5% discount totaling $3989.93. The question is a realistic sales need (pricing quoted to TerraForm Engineering), names participants/accounts appropriately, does not leak the answer, and the independent answer matches the gold semantically. No-context answers ('UNKNOWN') fail to answer, and the full answer requires the single supplied call, so both two-call flags are true for this single-call QA set."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SvGBIA0"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2xjIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Aiko for TerraForm Engineering regarding AI Cirku-Tech or the SecureFlow Suite. The only call provided features Aiko Sugiyama of Kyoto Innovations (not TerraForm Engineering) discussing SimuCheck Ultra, CircuitAI Innovator, and NextGen IDE (not AI Cirku-Tech or SecureFlow Suite) with Mohammed El-Sayed. No specific prices were stated in the call; Mohammed only promised to send a detailed quote afterward.",
+              "evidence": [],
+              "reason": "The question asks about pricing Aiko quoted to TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite. The sole source call involves Aiko Sugiyama of Kyoto Innovations, not TerraForm Engineering, and the products discussed are SimuCheck Ultra, CircuitAI Innovator, and NextGen IDE\u2014not AI Cirku-Tech or SecureFlow Suite. Furthermore, no actual pricing figures were quoted during the call. There is no source material matching the requested account, products, or pricing event, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuIoIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not contain any pricing quoted by Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite. The only call available is between Aiko Matsumoto and Sanjay Patel of EcoWave Solutions, discussing CloudInnovate Space and AI DesignShift. No mention of TerraForm Engineering, AI Cirku-Tech, or SecureFlow Suite exists in the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Aiko quoted to TerraForm Engineering for AI Cirku-Tech and SecureFlow Suite. The sole call in the sources is with Sanjay Patel at EcoWave Solutions regarding CloudInnovate Space and AI DesignShift. There is no call, account, or product matching TerraForm Engineering, AI Cirku-Tech, or SecureFlow Suite, so the requested facts cannot be answered from the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Syz2IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Aiko Matsumoto and Hans M\u00fcller of Vienna Future Hub discussing SimuCheck Ultra units. There is no mention of TerraForm Engineering, AI Cirku-Tech, or the SecureFlow Suite anywhere in the transcript, so no pricing quote for those products to that account can be determined.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003Syz2IAC) involves Aiko Matsumoto speaking with Hans M\u00fcller at Vienna Future Hub about SimuCheck Ultra units. The question asks about pricing Aiko quoted TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite. None of these entities (TerraForm Engineering, AI Cirku-Tech, SecureFlow Suite) appear in the source material. The draft extraction correctly identifies this gap. No evidence exists to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvrZIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite. The only call in the provided sources is between Aiko Matsumoto and Maria Gonzalez of Horizon Dynamics, discussing CircuitMaster Analyzer, SecureAnalytics Pro, and SimuFlow Xtreme. Neither TerraForm Engineering nor the products 'AI Cirku-Tech' and 'SecureFlow Suite' appear anywhere in the sources.",
+              "evidence": [],
+              "reason": "The sources contain a single call (b2b:a05Wt000003SvrZIAS) with Maria Gonzalez at Horizon Dynamics. There is no mention of TerraForm Engineering, AI Cirku-Tech, or SecureFlow Suite. Therefore no pricing quote for those products to that account can be found."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Syz1IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any pricing quoted by Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite. The only call available is between Aiko Matsumoto and Amanda Wu of Pacific Tech Connections, discussing EduFlow Academy ($400) and CircuitSync Pro ($336). There is no mention of TerraForm Engineering, AI Cirku-Tech, or the SecureFlow Suite in any source.",
+              "evidence": [],
+              "reason": "The question asks about pricing Aiko quoted to TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite. The sole call transcript involves Amanda Wu at Pacific Tech Connections and discusses entirely different products (EduFlow Academy and CircuitSync Pro). No source references TerraForm Engineering, AI Cirku-Tech, or the SecureFlow Suite, so the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4LHIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving TerraForm Engineering, AI Cirku-Tech, or the SecureFlow Suite. The only call provided is between Aiko Matsumoto and Miguel Pereira of Innovate Porto, discussing EcoPower Convert and VerifySim Elite. No pricing for the requested products or customer exists in the available sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Aiko quoted TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite. The sole call transcript (b2b:a05Wt000003T4LHIA0) involves Miguel Pereira at Innovate Porto and discusses entirely different products (EcoPower Convert and VerifySim Elite). There is no mention of TerraForm Engineering, AI Cirku-Tech, or SecureFlow Suite anywhere in the provided sources, so the requested facts cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4LEIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving TerraForm Engineering, nor do they mention the products AI Cirku-Tech or SecureFlow Suite. The only available call is between Aiko Matsumoto and Fiona Murdoch of Edinburgh Electronic Designs, discussing TrainEDU Suite, AI DesignShift, and CircuitMaster Analyzer. No pricing quote for the requested account and products exists in the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Aiko quoted to TerraForm Engineering for AI Cirku-Tech and SecureFlow Suite. The sole call transcript involves a different account (Edinburgh Electronic Designs), a different contact (Fiona Murdoch), and entirely different products (TrainEDU Suite, AI DesignShift, CircuitMaster Analyzer). There is no mention of TerraForm Engineering, AI Cirku-Tech, or SecureFlow Suite anywhere in the sources, so the requested facts cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyHjIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite. The only call in the sources is between Aiko Matsumoto and James Brown of TechPioneers Ltd, discussing CyberShield Core, SecureFlow Suite, and EduTech Lab. There is no mention of TerraForm Engineering or a product called AI Cirku-Tech anywhere in the provided transcripts.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite. The sole call in the sources involves James Brown at TechPioneers Ltd, not TerraForm Engineering, and the products discussed are CyberShield Core, SecureFlow Suite, and EduTech Lab\u2014AI Cirku-Tech is never mentioned. Because neither the named account (TerraForm Engineering) nor the named product (AI Cirku-Tech) appears in any source, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0MRIA0",
+              "b2b:a05Wt000003T1aAIAS",
+              "b2b:a05Wt000003T30pIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing quote from Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite exists in the provided sources. All three calls are between Aiko Matsumoto and Linda Ho at Quantum Dynamics LLC. The only pricing mentioned is a $8,699.83 total for a bundle (SecureFlow Suite, EcoPCB Creator, AI Cirku-Tech, and QuantumPCB Modeler) quoted to Quantum Dynamics LLC, not TerraForm Engineering.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to TerraForm Engineering, but no call in the sources involves that account. All three calls (b2b:a05Wt000003T0MRIA0, b2b:a05Wt000003T1aAIAS, b2b:a05Wt000003T30pIAC) are with Quantum Dynamics LLC (contact Linda Ho). Therefore, no facts about a quote to TerraForm Engineering can be supported, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SutaIAC",
+              "b2b:a05Wt000003SvxiIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing quote for AI Cirku-Tech or the SecureFlow Suite to TerraForm Engineering can be found. The provided call transcripts only show Aiko Matsumoto speaking with Mina Bakshi of Future Innovations LLC. No account named TerraForm Engineering appears in any source. Furthermore, no specific dollar amounts or pricing figures are quoted for AI Cirku-Tech or SecureFlow Suite in either call; pricing is discussed only in general terms (e.g., 'competitive' and 'transparent total cost of ownership').",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to TerraForm Engineering, but neither call involves that account\u2014both are with Future Innovations LLC (contact Mina Bakshi). Additionally, no specific pricing figures for AI Cirku-Tech or SecureFlow Suite are stated in either transcript. The draft extraction is correct: the answer is incomplete because the named account and specific pricing facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx8PIAS",
+              "b2b:a05Wt000003T21cIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing for AI Cirku-Tech or the SecureFlow Suite was quoted to TerraForm Engineering. The provided call transcripts involve Aiko Matsumoto speaking with Elias Wong of GreenLeaf Engineering, not TerraForm Engineering. Furthermore, no specific dollar amounts or pricing quotes for AI Cirku-Tech or SecureFlow Suite appear in either transcript; only a general reference to 'competitive pricing' is made.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to TerraForm Engineering, but both calls are with GreenLeaf Engineering (account_name in metadata and dialogue). Additionally, while AI Cirku-Tech and SecureFlow Suite are mentioned by name in the second call (lines 19 and 8 respectively), no specific pricing figures or quotes are given for either product. The account, products-with-pricing, and event scope (a quote to TerraForm) are all unsupported by the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzRuIAK",
+              "b2b:a05Wt000003SzzlIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing for AI Cirku-Tech or the SecureFlow Suite was quoted to TerraForm Engineering. The provided call transcripts involve Aiko Matsumoto speaking only with Zara Nassar of EcoLite Innovations. TerraForm Engineering does not appear in any source, and no specific dollar amounts or pricing figures are given for either product in any call.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to TerraForm Engineering, but neither call transcript mentions TerraForm Engineering at all. Both calls are between Aiko Matsumoto and Zara Nassar of EcoLite Innovations. Additionally, no specific pricing figures (dollar amounts, percentages, etc.) are stated for AI Cirku-Tech or the SecureFlow Suite in either transcript\u2014only general references to 'competitive pricing' and 'flexible options.' Therefore, the requested facts (specific pricing for a specific account) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SswhIAC",
+              "b2b:a05Wt000003SzTSIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite. The two provided calls are between Aiko Matsumoto and Ying Liu of EcoVision Engineering, not TerraForm Engineering. While AI Cirku-Tech is mentioned in both calls, no price is given for it, and the SecureFlow Suite is never mentioned at all.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to TerraForm Engineering, but both calls involve EcoVision Engineering (contact: Ying Liu). Neither call contains any pricing figures for AI Cirku-Tech or the SecureFlow Suite. The SecureFlow Suite does not appear in any transcript. Therefore, no complete answer can be provided from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1jrIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript is between Aiko Matsumoto and Lina Moreno of InnovateVibes LLC, not TerraForm Engineering. The products discussed are PulseSim Pro and CollabCircuit Hub, not AI Cirku-Tech or the SecureFlow Suite. No specific pricing figures are quoted for any product. Therefore, no pricing quote from Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite exists in the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Aiko quoted to TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite. The only call provided involves Aiko speaking with Lina Moreno at InnovateVibes LLC about PulseSim Pro and CollabCircuit Hub. There is no mention of TerraForm Engineering, AI Cirku-Tech, or SecureFlow Suite anywhere in the transcript, and no specific dollar amounts or pricing figures are given. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwaXIAS",
+              "b2b:a05Wt000003T3VTIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing quote to TerraForm Engineering exists in the provided transcripts. Both calls are between Aiko Matsumoto and Ananya Iyer of Quantum Dynamics LLC, not TerraForm Engineering. Furthermore, no specific dollar pricing for AI Cirku-Tech or the SecureFlow Suite is quoted in either call. The only pricing-related mention is a 10% discount on QuantumPCB Modeler and SimulateX Edge (line 6 of call b2b:a05Wt000003SwaXIAS), which are different products and a different account.",
+              "evidence": [],
+              "reason": "The question asks about pricing Aiko quoted to TerraForm Engineering for AI Cirku-Tech and the SecureFlow Suite. Neither call involves TerraForm Engineering (both are with Quantum Dynamics LLC / Ananya Iyer). AI Cirku-Tech is mentioned only in passing regarding integration (call b2b:a05Wt000003T3VTIA0, line 8) with no price. SecureFlow Suite is discussed regarding deployment timeline and security features but no price is given. No complete answer can be constructed from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvGBIA0",
+              "b2b:a05Wt000003SwCMIA0",
+              "b2b:a05Wt000003T21dIAC",
+              "b2b:a05Wt000003T3s6IAC",
+              "b2b:a05Wt000003T4BOIA0"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Aiko quoted TerraForm Engineering AI Cirku-Tech at 10 units with a 10% discount, totaling $4769.91, and the SecureFlow Suite with a 5% discount, totaling $3989.93.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SvGBIA0",
+                  "line_start": 8,
+                  "line_end": 9,
+                  "quote": "[2023-11-15T15:01:57] Aiko Matsumoto: Of course, let's discuss the pricing. For AI Cirku-Tech, given your requirements, we can offer you 10 units with a 10% discount, bringing the total to $4769.91. Additionally, the SecureFlow Suite, which complements your sustainability goals, comes with a 5% discount, totaling $3989.93. Finally, CollabDesign Studio would be similarly discounted to $3039.92."
+                }
+              ],
+              "reason": "Line 8 of call b2b:a05Wt000003SvGBIA0 contains Aiko's explicit pricing quote to Samuel Okafor at TerraForm Engineering: AI Cirku-Tech 10 units, 10% discount, total $4769.91; SecureFlow Suite 5% discount, total $3989.93. The question asks only about these two products, so CollabDesign Studio is omitted from the answer. The same figures are corroborated in call b2b:a05Wt000003T21dIAC line 20, but the primary source with both exact totals is the November 15 call."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers provide identical pricing details: AI Cirku-Tech at 10 units with a 10% discount totaling $4769.91, and SecureFlow Suite with a 5% discount totaling $3989.93. The only difference is wording/formatting."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0e3IAC",
+              "b2b:a05Wt000003T4WLIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Aiko quoted AI Cirku-Tech at a 10% discount, bringing the total to $4,769.91 for a package of ten units. However, no specific price was quoted for the SecureFlow Suite; it was only mentioned as being offered at a 'special rate' as part of a larger proposal that also included the QuantumPCB Modeler.",
+              "evidence": [],
+              "reason": "The question asks for pricing on both AI Cirku-Tech AND the SecureFlow Suite. While AI Cirku-Tech pricing is clearly stated (10% discount, $4,769.91 for ten units, line 12 of call b2b:a05Wt000003T4WLIA0), the SecureFlow Suite has no specific price quoted\u2014only a vague reference to 'special rates.' Since the question requests pricing for both products and a specific price for the SecureFlow Suite is missing from all sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwyfIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Aiko to TerraForm Engineering for AI Cirku-Tech or the SecureFlow Suite. Neither product is mentioned anywhere in the call transcript. Aiko discussed only EcoPCB Creator and OptiPower Manager, and even for those products she spoke only in general terms about 'transparent total cost of ownership' without providing any specific figures.",
+              "evidence": [],
+              "reason": "The question asks about pricing for 'AI Cirku-Tech' and 'SecureFlow Suite,' but neither product name appears in the transcript. The only products discussed are EcoPCB Creator (line 4) and OptiPower Manager (lines 6, 12), and no concrete dollar amounts or pricing structures were quoted for any product. Therefore the requested facts cannot be supported by the source material."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question about pricing quoted to TerraForm Engineering; the cited dialogue line directly states AI Cirku-Tech (10 units, 10% discount, $4769.91) and SecureFlow Suite (5% discount, $3989.93), fully supporting the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pricing did Aiko quote TerraForm Engineering for AI Cirku-Tech",
+            "explicitly_requested": true,
+            "required_fact": "AI Cirku-Tech: 10 units with a 10% discount, totaling $4769.91",
+            "source_call_ids": [
+              "b2b:a05Wt000003SvGBIA0"
+            ]
+          },
+          {
+            "question_span": "and the SecureFlow Suite?",
+            "explicitly_requested": true,
+            "required_fact": "SecureFlow Suite: 5% discount, totaling $3989.93",
+            "source_call_ids": [
+              "b2b:a05Wt000003SvGBIA0"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for pricing for two products: AI Cirku-Tech and SecureFlow Suite. The gold_answer provides exactly those two pricing facts, with no extra products (e.g., CollabDesign Studio is not included). The independent answer covers both requested prices and discounts. The obligations correctly split the two requested facts, each sourced from the single call. The call is required because it contains both facts. No arithmetic is needed beyond the stated totals. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "AI Cirku-Tech: 10 units with a 10% discount totaling $4769.91",
+            "question_span": "What pricing did Aiko quote TerraForm Engineering for AI Cirku-Tech",
+            "required_by_question": true
+          },
+          {
+            "claim": "SecureFlow Suite: 5% discount totaling $3989.93",
+            "question_span": "and the SecureFlow Suite?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "a4b4f730b2dc7531941f4d038cb3bba611b9891ecf801449013b3a70a4dcd4f0",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SQ0zIAG"
+    ],
+    "status": "accepted",
+    "question": "For Ava Cooper's eco-friendly vehicle deal, what long-term protection options did Kwame mention beyond the maintenance plan?",
+    "gold_answer": "An Extended Warranty Plan covering most major repairs for long-term reliability and peace of mind.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SQ0zIAG",
+        "answer_claim": "Extended Warranty Plan provides long-term reliability and peace of mind by covering most major repairs.",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 15,
+        "quote": "[2020-04-20T14:02:40] Kwame Otieno: Yes, indeed. Our Extended Warranty Plan is another excellent option. It provides long-term reliability and peace of mind by covering most major repairs. Many of our clients find it valuable, especially down the line.",
+        "start": 2466,
+        "end": 2718
+      }
+    ],
+    "question_id": "b2c-single_call-a4b4f730b2dc7531",
+    "candidate": {
+      "question": "For Ava Cooper's eco-friendly vehicle deal, what long-term protection options did Kwame mention beyond the maintenance plan?",
+      "gold_answer": "An Extended Warranty Plan covering most major repairs for long-term reliability and peace of mind.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SQ0zIAG",
+          "answer_claim": "Extended Warranty Plan provides long-term reliability and peace of mind by covering most major repairs.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2020-04-20T14:02:40] Kwame Otieno: Yes, indeed. Our Extended Warranty Plan is another excellent option. It provides long-term reliability and peace of mind by covering most major repairs. Many of our clients find it valuable, especially down the line.",
+          "start": 2466,
+          "end": 2718
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Kwame mentioned the Extended Warranty Plan as a long-term protection option beyond the maintenance plan, which provides long-term reliability and peace of mind by covering most major repairs.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA: the one call (b2c:a05Ws000005SQ0zIAG, account Ava Cooper, opportunity 'Eco-Friendly Luxury Winter Deal with Comprehensive Maintenance') contains Kwame's exact statement at 14:02:40 that the Extended Warranty Plan 'provides long-term reliability and peace of mind by covering most major repairs' \u2014 fully supporting the gold answer. The question is a realistic sales need (long-term protection beyond the maintenance plan), names the deal/participant with sufficient context, does not leak the answer, and the independent answer matches the gold semantically. No-context answers ('UNKNOWN') fail to answer, so no_context_answers_fail is true; two-call flags are set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SQ0zIAG"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005Sb1tIAC",
+              "b2c:a05Ws000005SdWdIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain anyone named Kwame. Both calls for Ava Cooper's opportunity (Winter Luxe Clearance Event, including the 2023 Nissan Leaf eco-friendly vehicle discussion) were with Anastasia Petrova of AutoElite Motors, so no statement by Kwame about long-term protection options beyond the maintenance plan exists in the provided sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about long-term protection options mentioned by Kwame. Neither call transcript includes a participant named Kwame; both conversations are between Ava Cooper and Anastasia Petrova. Because the exact named person (Kwame) is absent from all sources, no fact attributed to Kwame can be supported, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SS4zIAG",
+              "b2c:a05Ws000005SZKzIAO"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "ava cooper"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STqlIAG"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "ava cooper"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOZOIA4",
+              "b2c:a05Ws000005SPVRIA4",
+              "b2c:a05Ws000005SVmLIAW",
+              "b2c:a05Ws000005SbUyIAK",
+              "b2c:a05Ws000005SbrTIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "ava cooper"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOT1IAO",
+              "b2c:a05Ws000005SXw9IAG",
+              "b2c:a05Ws000005SZZiIAO",
+              "b2c:a05Ws000005SbTOIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "",
+              "evidence": [],
+              "reason": "The question asks what long-term protection options 'Kwame' mentioned for Ava Cooper's eco-friendly vehicle deal. However, in all four calls associated with Ava Cooper's opportunity (Winter Luxury Clearance - Ava Cooper), the salesperson is Carlos Ruiz from AutoElite Motors. No person named Kwame appears in any of the provided call transcripts. Since the question specifically asks about statements made by Kwame, and no such individual is present in the sources, the requested fact cannot be supported. The draft extraction incorrectly substitutes Carlos Ruiz for Kwame, but per the instructions, a different salesperson cannot answer a question about a specifically named person's statements."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPqSIAW",
+              "b2c:a05Ws000005SWtgIAG"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "ava cooper"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPdYIAW",
+              "b2c:a05Ws000005SSOLIA4",
+              "b2c:a05Ws000005SZ6gIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No salesperson named Kwame appears in any of the three calls for Ava Cooper's eco-friendly vehicle deal. All conversations are with Fatou Bamba of AutoElite Motors. Because the question specifically asks what Kwame mentioned, and no such person is present in the sources, the requested fact cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about long-term protection options mentioned by 'Kwame' beyond the maintenance plan. Reviewing all three calls (b2c:a05Ws000005SPdYIAW, b2c:a05Ws000005SSOLIA4, b2c:a05Ws000005SZ6gIAG) for Ava Cooper's opportunity 'Luxury Eco-Friendly Vehicle and Maintenance Plan,' the only salesperson is Fatou Bamba. No person named Kwame is mentioned or speaks in any transcript. While Fatou did discuss extended warranties (call b2c:a05Ws000005SSOLIA4, lines 12-14) and warranty clarity (call b2c:a05Ws000005SZ6gIAG, lines 9-11), these cannot be attributed to Kwame. The named-person scope of the question cannot be satisfied, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMPeIAO",
+              "b2c:a05Ws000005SSRiIAO",
+              "b2c:a05Ws000005SUVCIA4",
+              "b2c:a05Ws000005SWS5IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks what Kwame mentioned regarding long-term protection options beyond the maintenance plan for Ava Cooper's eco-friendly vehicle deal. However, no person named Kwame appears in any of the provided call transcripts. All four calls for Ava Cooper's Eco-Luxury Winter Clearance Deal (2023 Nissan Leaf) were conducted by Enzo Rossi. Since the question specifically attributes the information to Kwame, and no such individual is present in the sources, the requested fact cannot be verified for the exact named person.",
+              "evidence": [],
+              "reason": "The sources contain no speaker or participant named Kwame. All calls associated with Ava Cooper's account (001Ws00003sHIwBIAW) and the Eco-Luxury Winter Clearance Deal opportunity (006Ws00000ALqu1IAD) feature Enzo Rossi as the salesperson. While Enzo Rossi did discuss an extended warranty ($1299.99) as long-term protection beyond the maintenance plan, the question explicitly asks about statements made by Kwame, who does not appear in any transcript. A different salesperson cannot answer a question about Kwame's statements."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRVeIAO",
+              "b2c:a05Ws000005SYqVIAW",
+              "b2c:a05Ws000005ScvcIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Kwame appears in any of the three calls for Ava Cooper's eco-friendly vehicle deal. All conversations involve Priyanka Menon of AutoElite Motors. Because the question specifically asks what Kwame mentioned, and no such speaker exists in the sources, the requested fact cannot be answered. (Priyanka did reference Extended Warranty options as long-term protection beyond the maintenance plan, but she is not Kwame.)",
+              "evidence": [],
+              "reason": "The question asks about statements made by 'Kwame.' A thorough review of all three call transcripts (b2c:a05Ws000005SRVeIAO, b2c:a05Ws000005SYqVIAW, b2c:a05Ws000005ScvcIAC) for Ava Cooper's 'Winter Clearance Luxury Eco-Friendly Purchase' opportunity shows the only salesperson is Priyanka Menon. No individual named Kwame is present in any source, so the exact named-person requirement cannot be satisfied. The draft extraction's conclusion is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SaFcIAK",
+              "b2c:a05Ws000005ScE7IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Kwame appears in either call transcript for Ava Cooper's 'Eco-Friendly Luxury Winter Clearance Deal.' Both calls feature Lena Schmidt of AutoElite Motors as the salesperson. Because the question specifically asks what Kwame mentioned, and no such individual is present in the sources, the requested fact cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about long-term protection options mentioned by 'Kwame.' A thorough review of both call transcripts (b2c:a05Ws000005SaFcIAK and b2c:a05Ws000005ScE7IAK) shows the only salesperson is Lena Schmidt. No speaker named Kwame exists in the provided sources, so no statement attributable to Kwame about protection options beyond the maintenance plan can be cited. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPLoIAO",
+              "b2c:a05Ws000005SVxPIAW",
+              "b2c:a05Ws000005SWtYIAW",
+              "b2c:a05Ws000005SaFYIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "ava cooper"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SULPIA4",
+              "b2c:a05Ws000005SWrzIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about long-term protection options mentioned by Kwame for Ava Cooper's eco-friendly vehicle deal. However, neither call transcript involves anyone named Kwame. Both calls for Ava Cooper's 'Premium Eco-Friendly Vehicle Deal' (opportunity 006Ws00000ALtNAIA1) are conducted by Carlos Ruiz of AutoElite Motors. Carlos did mention an Extended Warranty Plan ($1,299.99) beyond the maintenance plan, but no person named Kwame appears in any of the provided sources, so no statement by Kwame can be cited.",
+              "evidence": [],
+              "reason": "The exact named person 'Kwame' does not appear in any of the provided call transcripts. Both calls feature Carlos Ruiz as the salesperson. Since the question specifically asks what Kwame mentioned, and no such individual is present in the sources, the answer cannot be completed. A different salesperson (Carlos) cannot answer a question about Kwame's statements."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQ0zIAG",
+              "b2c:a05Ws000005SWWpIAO"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Beyond the Comprehensive Maintenance Plan, Kwame mentioned the Extended Warranty Plan, which provides long-term reliability and peace of mind by covering most major repairs. He also referenced Flexible Financing Solutions as an option to explore in the discovery meeting.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SQ0zIAG",
+                  "line_start": 13,
+                  "line_end": 15,
+                  "quote": "[2020-04-20T14:02:30] Ava Cooper: That\u2019s reassuring to hear. Are there options to protect the vehicle long-term?\n[2020-04-20T14:02:40] Kwame Otieno: Yes, indeed. Our Extended Warranty Plan is another excellent option. It provides long-term reliability and peace of mind by covering most major repairs. Many of our clients find it valuable, especially down the line."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SWWpIAO",
+                  "line_start": 14,
+                  "line_end": 15,
+                  "quote": "[2020-04-19T16:04:00] Kwame Otieno: I'd love to schedule a discovery meeting where we can delve deeper into your needs and explore all the options available for you, including our Flexible Financing Solutions and Extended Warranty Plan. How does that sound?"
+                }
+              ],
+              "reason": "In the 2020-04-20 call, Ava asks about long-term protection options (line 13) and Kwame responds with the Extended Warranty Plan covering most major repairs (line 14). In the 2020-04-19 call, Kwame also mentions the Extended Warranty Plan and Flexible Financing Solutions as options to explore in the discovery meeting (line 14). The Extended Warranty Plan is the primary long-term protection option beyond the maintenance plan; Flexible Financing Solutions is mentioned as an additional option in the same context."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the Extended Warranty Plan covering most major repairs for long-term reliability and peace of mind as the long-term protection option beyond the maintenance plan. Answer A additionally mentions Flexible Financing Solutions, but this is extra unrequested detail and does not conflict with Answer B's content."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUOkIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks what long-term protection options Kwame mentioned beyond the maintenance plan for Ava Cooper's eco-friendly vehicle deal. However, the only call transcript provided for Ava Cooper's 'Exclusive Eco-Friendly Luxury Deal' features salesperson Samuel Smith, not anyone named Kwame. Because the question is scoped to statements made by Kwame, and no person by that name appears in the source, the requested fact cannot be confirmed. (Samuel Smith did discuss an Extended Warranty Plan and Flexible Financing Solutions in addition to the AutoElite Comprehensive Maintenance Plan, but attributing any of these to Kwame is unsupported by the sources.)",
+              "evidence": [],
+              "reason": "No individual named Kwame appears in any of the provided call transcripts for Ava Cooper's eco-friendly vehicle deal. The sole salesperson in the transcript is Samuel Smith. Since the question specifically asks what Kwame mentioned, and no such person is present in the sources, the answer cannot be completed."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question grounded in the dialogue: after the maintenance plan discussion, Ava asks about long-term protection and Kwame names the Extended Warranty Plan covering most major repairs; the cited quote directly supports the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "what long-term protection options did Kwame mention beyond the maintenance plan",
+            "explicitly_requested": true,
+            "required_fact": "Kwame mentioned the Extended Warranty Plan, which provides long-term reliability and peace of mind by covering most major repairs",
+            "source_call_ids": [
+              "b2c:a05Ws000005SQ0zIAG"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for long-term protection options beyond the maintenance plan. The gold answer mentions only the Extended Warranty Plan with its coverage details, which is exactly what was requested. No extra facts are included. The independent answer directly states the Extended Warranty Plan and its benefits, satisfying the question. The obligation correctly identifies the required fact and references the single call where Kwame mentions it. The call is necessary because it contains the only mention of the Extended Warranty Plan. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Kwame mentioned the Extended Warranty Plan",
+            "question_span": "what long-term protection options did Kwame mention beyond the maintenance plan",
+            "required_by_question": true
+          },
+          {
+            "claim": "The Extended Warranty Plan provides long-term reliability and peace of mind",
+            "question_span": "what long-term protection options did Kwame mention beyond the maintenance plan",
+            "required_by_question": true
+          },
+          {
+            "claim": "The Extended Warranty Plan covers most major repairs",
+            "question_span": "what long-term protection options did Kwame mention beyond the maintenance plan",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "042a5206093e2ab6ba71be7134988e867c86d96e6b0696e9324a389eea89d423",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SWEzIAO"
+    ],
+    "status": "accepted",
+    "question": "When Mia Thompson asked how AutoElite compares to High-End Autos Co., what did Sebastian say differentiated AutoElite's pricing and service approach?",
+    "gold_answer": "AutoElite offers transparent pricing and comprehensive service coverage; High-End Autos Co. has attractive pricing, but some customers prefer AutoElite's more integrated service plans.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SWEzIAO",
+        "answer_claim": "AutoElite is known for transparent pricing and comprehensive service coverage; High-End Autos Co. offers attractive pricing but some customers prefer AutoElite's integrated approach to service plans.",
+        "kind": "dialogue",
+        "line_start": 10,
+        "line_end": 11,
+        "quote": "[2020-10-21T10:33:25] Sebastian Martinez: AutoElite Motors is known for our transparent pricing and comprehensive service coverage. While High-End Autos Co. does offer attractive pricing, some customers prefer our more integrated approach to service plans.",
+        "start": 1825,
+        "end": 2081
+      }
+    ],
+    "question_id": "b2c-single_call-042a5206093e2ab6",
+    "candidate": {
+      "question": "When Mia Thompson asked how AutoElite compares to High-End Autos Co., what did Sebastian say differentiated AutoElite's pricing and service approach?",
+      "gold_answer": "AutoElite offers transparent pricing and comprehensive service coverage; High-End Autos Co. has attractive pricing, but some customers prefer AutoElite's more integrated service plans.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SWEzIAO",
+          "answer_claim": "AutoElite is known for transparent pricing and comprehensive service coverage; High-End Autos Co. offers attractive pricing but some customers prefer AutoElite's integrated approach to service plans.",
+          "kind": "dialogue",
+          "line_start": 10,
+          "line_end": 11,
+          "quote": "[2020-10-21T10:33:25] Sebastian Martinez: AutoElite Motors is known for our transparent pricing and comprehensive service coverage. While High-End Autos Co. does offer attractive pricing, some customers prefer our more integrated approach to service plans.",
+          "start": 1825,
+          "end": 2081
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Sebastian said AutoElite Motors is known for transparent pricing and comprehensive service coverage, and while High-End Autos Co. offers attractive pricing, some customers prefer AutoElite's more integrated approach to service plans.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The question asks what Sebastian said about AutoElite's pricing/service vs High-End Autos Co.; the quoted dialogue (10:33:25) directly supports every claim in the gold answer with no invented details. The question is a realistic sales inquiry naming the customer, does not leak the answer, and the independent answer is a semantic match. No-context answers are UNKNOWN (fail), and since this is a single-call QA, both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SWEzIAO"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPqGIAW",
+              "b2c:a05Ws000005SW26IAG",
+              "b2c:a05Ws000005SWA9IAO",
+              "b2c:a05Ws000005SWBlIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any speaker named Sebastian, nor any mention of a company called 'High-End Autos Co.' All of Mia Thompson's calls were conducted with Ravi Chandra from AutoElite Motors. The only competitor explicitly named in the transcripts is 'Elite Ride Motors' (call b2c:a05Ws000005SW26IAG, line 8). Because the question asks specifically about what Sebastian said regarding a comparison with High-End Autos Co., and neither that person nor that company appears in any source, the requested facts cannot be answered.",
+              "evidence": [],
+              "reason": "No call transcript includes a participant named Sebastian or references 'High-End Autos Co.' The salesperson in every call is Ravi Chandra, and the sole competitor mentioned is Elite Ride Motors. Therefore the exact named people, account, and event scope required by the question are absent from the sources, making a complete answer impossible."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVagIAG",
+              "b2c:a05Ws000005SWIDIA4",
+              "b2c:a05Ws000005SWJpIAO",
+              "b2c:a05Ws000005SWLRIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain any person named Sebastian (the AutoElite representative in all calls is Chinedu Okoye), nor any mention of a competitor called 'High-End Autos Co.' Mia Thompson never asked how AutoElite compares to that company, so no such exchange exists in the provided sources.",
+              "evidence": [],
+              "reason": "The question asks what Sebastian said when Mia Thompson asked how AutoElite compares to High-End Autos Co. However, across all four calls, the AutoElite representative is Chinedu Okoye, not Sebastian. No competitor named 'High-End Autos Co.' is mentioned in any transcript. While Mia does ask general comparison questions about service centers and competitors, none involve a person named Sebastian or a company called High-End Autos Co. Therefore, the exact named people, competitor, and event scope requested cannot be supported by the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SR5lIAG",
+              "b2c:a05Ws000005SYAMIA4",
+              "b2c:a05Ws000005SYyPIAW",
+              "b2c:a05Ws000005SaX7IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves a person named Mia Thompson. All four calls are between Sebastian Martinez and Ethan Rogers. While Ethan Rogers does ask about comparisons with 'High-End Autos' (call b2c:a05Ws000005SYAMIA4, line 5) and mentions 'High-End Autos Co.' (call b2c:a05Ws000005SYyPIAW, line 7), there is no interaction with Mia Thompson anywhere in the sources. Therefore, the specific question asked by Mia Thompson and Sebastian's response to her cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about a conversation between Mia Thompson and Sebastian regarding how AutoElite compares to High-End Autos Co. No source contains any mention of Mia Thompson. All calls are between Sebastian Martinez and Ethan Rogers. Since the exact named person (Mia Thompson) is absent from all sources, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SNJqIAO",
+              "b2c:a05Ws000005SQRKIA4",
+              "b2c:a05Ws000005SRlbIAG",
+              "b2c:a05Ws000005SSswIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain any speaker named Sebastian, nor any mention of 'High-End Autos Co.' All calls are between Arjun Desai (AutoElite Motors) and Mia Thompson, and the only competitor named is 'Exquisite Vehicles Hub'. Therefore, there is no record of Sebastian explaining how AutoElite compares to High-End Autos Co.",
+              "evidence": [],
+              "reason": "The question asks what Sebastian said when Mia Thompson asked how AutoElite compares to High-End Autos Co. However, across all four calls, the salesperson is Arjun Desai, not Sebastian. Additionally, no competitor named 'High-End Autos Co.' is mentioned in any transcript; the only competitor referenced is 'Exquisite Vehicles Hub' (call b2c:a05Ws000005SNJqIAO, line 8). Since neither the named person (Sebastian) nor the named competitor (High-End Autos Co.) appears in the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPgYIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain a person named Sebastian, nor any mention of 'High-End Autos Co.' The only call provided is between Bakari Saidi (AutoElite Motors) and Mia Thompson. Mia never asks how AutoElite compares to High-End Autos Co., and no Sebastian appears in any transcript. Therefore the specific differentiation Sebastian allegedly gave regarding AutoElite's pricing and service approach versus High-End Autos Co. cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about a statement made by 'Sebastian' in response to Mia Thompson's comparison question about 'High-End Autos Co.' The sole call transcript features Bakari Saidi, not Sebastian, and the competitor 'High-End Autos Co.' is never named. Because the exact named person (Sebastian) and the exact competitor (High-End Autos Co.) are absent, no supported answer exists in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRCBIA4",
+              "b2c:a05Ws000005SS8FIAW",
+              "b2c:a05Ws000005SWJwIAO",
+              "b2c:a05Ws000005SY7BIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about Mia Thompson asking how AutoElite compares to High-End Autos Co. and what Sebastian said differentiated AutoElite's pricing and service approach. However, none of the provided calls involve a contact named Mia Thompson. All four calls are between Sebastian Martinez and Henry Bennett. While High-End Autos Co. is mentioned once (call b2c:a05Ws000005SY7BIAW, line 8), it is in response to Henry Bennett's question, not Mia Thompson's. Therefore, no answer can be provided for the exact named person (Mia Thompson) requested in the question.",
+              "evidence": [],
+              "reason": "The question specifically asks about Mia Thompson's inquiry, but no call transcript contains a participant named Mia Thompson. All calls are with Henry Bennett. Since the exact named person (Mia Thompson) does not appear in any source, the requested fact cannot be supported, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSL4IAO",
+              "b2c:a05Ws000005SSjIIAW",
+              "b2c:a05Ws000005SSzOIAW",
+              "b2c:a05Ws000005STNaIAO",
+              "b2c:a05Ws000005SWDNIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain any speaker named Sebastian, nor any mention of 'High-End Autos Co.' All calls are between Nora Svensson (AutoElite Motors) and Mia Thompson, with competitors discussed limited to DriveFirst Automotive and unnamed rivals. Therefore, there is no record of Sebastian explaining what differentiated AutoElite's pricing and service approach versus High-End Autos Co.",
+              "evidence": [],
+              "reason": "The question asks about a specific person (Sebastian) and a specific competitor (High-End Autos Co.). Neither appears in any of the five provided call transcripts. All calls feature Nora Svensson as the AutoElite representative speaking with Mia Thompson, and the only named competitor is DriveFirst Automotive. Because the exact named people and entity scope required by the question are absent from the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQ4lIAG",
+              "b2c:a05Ws000005SSL5IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be answered from these transcripts. There is no person named Sebastian in either call \u2014 the AutoElite representative speaking with Mia Thompson is Sophia Grimaldi. Additionally, no competitor named 'High-End Autos Co.' is mentioned; the only competitor referenced is 'Luxury Auto Group' (call b2c:a05Ws000005SQ4lIAG, line 8). Therefore no statement by Sebastian comparing AutoElite to High-End Autos Co. exists in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a specific person (Sebastian) and a specific competitor (High-End Autos Co.). Neither appears in any of the provided call transcripts. The salesperson in both calls is Sophia Grimaldi, and the only competitor mentioned is 'Luxury Auto Group.' Since the exact named people and entities in the question do not match the source data, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVlzIAG",
+              "b2c:a05Ws000005SWGbIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any person named Sebastian, nor any mention of 'High-End Autos Co.' Both calls involve Emily Jackson of AutoElite Motors speaking with Mia Thompson. Mia never asks how AutoElite compares to High-End Autos Co., and no Sebastian appears in any transcript. Therefore, the specific comparison requested cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about a statement made by Sebastian regarding how AutoElite's pricing and service approach differentiates from High-End Autos Co. However, neither call transcript includes a speaker named Sebastian, nor is 'High-End Autos Co.' mentioned anywhere. The only salesperson present is Emily Jackson, and Mia's comparisons reference unnamed 'competitors' or 'other providers,' never High-End Autos Co. specifically. Since the exact named person (Sebastian) and exact competitor (High-End Autos Co.) are absent from all sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SR43IAG",
+              "b2c:a05Ws000005SVsQIAW",
+              "b2c:a05Ws000005SWEzIAO"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "When Mia Thompson asked how AutoElite compares to High-End Autos Co. regarding pricing, Sebastian said AutoElite Motors is known for transparent pricing and comprehensive service coverage; while High-End Autos Co. does offer attractive pricing, some customers prefer AutoElite's more integrated approach to service plans. On the service/financing side, he noted both companies provide good credit-approval opportunities, though some customers find AutoElite's incentive structures more comprehensive.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SWEzIAO",
+                  "line_start": 9,
+                  "line_end": 13,
+                  "quote": "[2020-10-21T10:33:00] Mia Thompson: That\u2019s definitely appealing. I\u2019m curious about the pricing strategy. I\u2019ve heard mixed things about High-End Autos Co. Is AutoElite more on the competitive side?\n[2020-10-21T10:33:25] Sebastian Martinez: AutoElite Motors is known for our transparent pricing and comprehensive service coverage. While High-End Autos Co. does offer attractive pricing, some customers prefer our more integrated approach to service plans.\n[2020-10-21T10:34:00] Mia Thompson: Got it. And how about financing? How do your options compare?\n[2020-10-21T10:34:20] Sebastian Martinez: We offer flexible financing solutions tailored to a variety of customer needs. Both AutoElite and High-End Autos Co. provide good opportunities for credit approval, though some customers find our incentive structures more comprehensive."
+                }
+              ],
+              "reason": "In the 2020-10-21 call, Mia explicitly asks about pricing strategy versus High-End Autos Co. (line 9). Sebastian's reply on line 10 addresses pricing differentiation (transparent pricing, comprehensive service coverage, more integrated service plans vs. High-End Autos Co.'s attractive pricing). Line 12 extends the comparison to financing/service approach (incentive structures more comprehensive). Lines 9\u201312 (end exclusive 13) fully support the answer for the exact named people, companies, and topic."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: AutoElite is differentiated by transparent pricing and comprehensive service coverage, High-End Autos Co. has attractive pricing, and some customers prefer AutoElite's more integrated approach to service plans. Answer A includes additional detail about financing/credit-approval and incentive structures, but this is extra unrequested detail rather than a conflicting value. The requested facts about pricing and service approach are semantically identical in both answers."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOT2IAO",
+              "b2c:a05Ws000005SVSxIAO",
+              "b2c:a05Ws000005SWS6IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about Mia Thompson and Sebastian, but no such individuals appear in any of the provided call transcripts. The customer in all three calls is Mia Johnson, and the AutoElite Motors representative is Priya Sharma. While Priya Sharma did discuss how AutoElite compares to High-End Autos Co. (mentioning pricing transparency, service quality, support, comprehensive maintenance and warranty plans saving more in the long run, advanced technology, and factory-trained technicians), the exact named people in the question\u2014Mia Thompson and Sebastian\u2014do not exist in the sources. Therefore, the question as asked cannot be answered.",
+              "evidence": [],
+              "reason": "The question specifies 'Mia Thompson' and 'Sebastian,' but the sources only contain 'Mia Johnson' as the customer and 'Priya Sharma' as the AutoElite representative. No person named Mia Thompson or Sebastian appears in any call. Since the question requires facts attributed to these exact named individuals, and they are absent from all sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMvoIAG",
+              "b2c:a05Ws000005STR4IAO",
+              "b2c:a05Ws000005SXnrIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain anyone named Mia Thompson or Sebastian. The only exchange about High-End Autos Co. occurred between Mia Johansson and David Collins (call b2c:a05Ws000005SMvoIAG, lines 11\u201312), where Mia Johansson stated that High-End Autos Co. has an attractive pricing strategy for luxury vehicles but AutoElite's more comprehensive service coverage and forward-thinking support models provide better value over time. Because the question specifically asks about Mia Thompson and Sebastian, and neither person appears in any transcript, the requested facts cannot be supported.",
+              "evidence": [],
+              "reason": "The question names 'Mia Thompson' and 'Sebastian' as participants. No transcript contains a person by either of those names. The salesperson in all three calls is Mia Johansson, and the customer is David Collins. While a comparable discussion about High-End Autos Co. exists (call b2c:a05Ws000005SMvoIAG, lines 11-12), it involves different named individuals than those specified in the question. Per the instructions, a different salesperson cannot answer a question about a specifically named person's promise or statement. Therefore the answer is incomplete."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question grounded in the dialogue: Mia asks about pricing vs High-End Autos Co. (10:33:00) and Sebastian's reply (10:33:25) directly supports the gold answer about transparent pricing and integrated service plans."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "what did Sebastian say differentiated AutoElite's pricing and service approach?",
+            "explicitly_requested": true,
+            "required_fact": "Sebastian said AutoElite is known for transparent pricing and comprehensive service coverage, and that while High-End Autos Co. offers attractive pricing, some customers prefer AutoElite's more integrated approach to service plans.",
+            "source_call_ids": [
+              "b2c:a05Ws000005SWEzIAO"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks what Sebastian said differentiated AutoElite's pricing and service approach. The gold answer and independent answer both state that AutoElite has transparent pricing and comprehensive service coverage, and that while High-End Autos Co. has attractive pricing, some customers prefer AutoElite's more integrated service plans. This directly answers the question without extra unasked facts. The reference (gold answer) contains only the requested differentiation facts, no extra claims. The single call contains the exact dialogue where Sebastian says this, so the call is required and sufficient. The obligation correctly captures the required fact and spans the question. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "AutoElite offers transparent pricing",
+            "question_span": "what did Sebastian say differentiated AutoElite's pricing and service approach?",
+            "required_by_question": true
+          },
+          {
+            "claim": "AutoElite offers comprehensive service coverage",
+            "question_span": "what did Sebastian say differentiated AutoElite's pricing and service approach?",
+            "required_by_question": true
+          },
+          {
+            "claim": "High-End Autos Co. has attractive pricing",
+            "question_span": "what did Sebastian say differentiated AutoElite's pricing and service approach?",
+            "required_by_question": true
+          },
+          {
+            "claim": "some customers prefer AutoElite's more integrated service plans",
+            "question_span": "what did Sebastian say differentiated AutoElite's pricing and service approach?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]
