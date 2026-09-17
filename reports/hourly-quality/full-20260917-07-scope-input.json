@@ -1,0 +1,1121 @@
+[
+  {
+    "job_id": "b37dde5b9a3dc0e55f4db0e43bdc2fd762d5e44848ee02ab11ab11e91dcb05ae",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003Sr7sIAC"
+    ],
+    "status": "accepted",
+    "question": "On the SkyTech Ventures call, how did Jasper respond when Mustafa asked how TechPulse's pricing compares with Quantum Circuits Inc?",
+    "gold_answer": "He said TechPulse offers transparent, cost-effective pricing; while Quantum Circuits Inc. is competitive, TechPulse's transparency and flexibility are favorable, plus discounts are available.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003Sr7sIAC",
+        "answer_claim": "TechPulse prides itself on transparent and cost-effective pricing. While Quantum Circuits Inc. offers competitive pricing, our transparency and value in terms of flexibility have been favorable points for our clients. Plus, we offer discounts that might be appealing.",
+        "kind": "dialogue",
+        "line_start": 12,
+        "line_end": 13,
+        "quote": "[2023-04-07T15:33:50] Jasper van Dijk: TechPulse prides itself on transparent and cost-effective pricing. While Quantum Circuits Inc. offers competitive pricing, our transparency and value in terms of flexibility have been favorable points for our clients. Plus, we offer discounts that might be appealing.",
+        "start": 2422,
+        "end": 2728
+      }
+    ],
+    "question_id": "b2b-single_call-b37dde5b9a3dc0e5",
+    "candidate": {
+      "question": "On the SkyTech Ventures call, how did Jasper respond when Mustafa asked how TechPulse's pricing compares with Quantum Circuits Inc?",
+      "gold_answer": "He said TechPulse offers transparent, cost-effective pricing; while Quantum Circuits Inc. is competitive, TechPulse's transparency and flexibility are favorable, plus discounts are available.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003Sr7sIAC",
+          "answer_claim": "TechPulse prides itself on transparent and cost-effective pricing. While Quantum Circuits Inc. offers competitive pricing, our transparency and value in terms of flexibility have been favorable points for our clients. Plus, we offer discounts that might be appealing.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2023-04-07T15:33:50] Jasper van Dijk: TechPulse prides itself on transparent and cost-effective pricing. While Quantum Circuits Inc. offers competitive pricing, our transparency and value in terms of flexibility have been favorable points for our clients. Plus, we offer discounts that might be appealing.",
+          "start": 2422,
+          "end": 2728
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Jasper said TechPulse prides itself on transparent and cost-effective pricing, noting that while Quantum Circuits Inc. offers competitive pricing, TechPulse's transparency and value in flexibility have been favorable for clients, plus they offer discounts.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The question asks how Jasper responded to Mustafa's pricing-comparison question on the SkyTech Ventures call. The dialogue confirms Mustafa asked exactly that at 15:33:25 and Jasper's reply at 15:33:50 matches the gold answer claim-for-claim (transparent/cost-effective pricing, Quantum Circuits competitive but TechPulse's transparency and flexibility favorable, discounts available). The independent answer is a faithful paraphrase. No-context answers are 'UNKNOWN', so they fail. Single-call ablation is empty, so single_call_answers_fail is true by rule; for a single-call QA both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003Sr7sIAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4uYIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Jasper van Dijk (SimulateX) and Raj Patel of GreenEnergy Solutions. There is no SkyTech Ventures call, no participant named Mustafa, and no mention of TechPulse or Quantum Circuits Inc. Therefore, the question about how Jasper responded to Mustafa's pricing comparison question cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003T4uYIAS) involves Jasper van Dijk and Raj Patel discussing SimulateX Edge for GreenEnergy Solutions. None of the entities in the question\u2014SkyTech Ventures, Mustafa, TechPulse, or Quantum Circuits Inc\u2014appear anywhere in the source material. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T57TIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only one call (b2b:a05Wt000003T57TIAS) between Jasper van Dijk of NextGen Solutions and Omar Sadat of FutureDesign Ltd. There is no call involving SkyTech Ventures, no participant named Mustafa, and no mention of TechPulse or Quantum Circuits Inc. Therefore, the question about how Jasper responded to Mustafa's pricing comparison question on a SkyTech Ventures call cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript provided is between Jasper van Dijk and Omar Sadat regarding OptiPower Manager and SimuCheck Ultra products for FutureDesign Ltd. The question asks about a SkyTech Ventures call with Mustafa discussing TechPulse vs. Quantum Circuits Inc pricing. None of these entities (SkyTech Ventures, Mustafa, TechPulse, Quantum Circuits Inc) appear anywhere in the source material. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7rIAC",
+              "b2b:a05Wt000003Sw11IAC",
+              "b2b:a05Wt000003SwqfIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No such exchange exists in the provided SkyTech Ventures call transcripts. There is no participant named Jasper on any of the three calls; the TechPulse representative is Jorge Pinto. Additionally, Mustafa never asked how TechPulse's pricing compares with Quantum Circuits Inc. Quantum Circuits Inc is mentioned only once (call b2b:a05Wt000003SwqfIAC, line 16) by Jorge in the context of security compliance, not pricing. Mustafa's only pricing-related question (line 13 of the same call) was about general budget alignment, not a comparison with Quantum Circuits Inc.",
+              "evidence": [],
+              "reason": "The question asks about a person named 'Jasper' responding to Mustafa's pricing comparison question about Quantum Circuits Inc. No such person or exchange exists in any of the three SkyTech Ventures calls. The salesperson is Jorge Pinto, not Jasper, and Quantum Circuits Inc is referenced only regarding security compliance, not pricing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxJnIAK",
+              "b2b:a05Wt000003T030IAC",
+              "b2b:a05Wt000003T0EFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call with SkyTech Ventures or a contact named Mustafa exists in the provided transcripts. All three calls are between Jasper van Dijk and Hassan Qureshi of FusionTech Systems. While one call (b2b:a05Wt000003T0EFIA0) does include a pricing comparison with Quantum Circuits Inc, it was Hassan (not Mustafa) who asked, and the account is FusionTech Systems (not SkyTech Ventures). The requested event scope\u2014SkyTech Ventures call with Mustafa\u2014is not supported by any source.",
+              "evidence": [],
+              "reason": "The question asks about a SkyTech Ventures call where Mustafa asks Jasper about TechPulse's pricing compared to Quantum Circuits Inc. No such call, account, or contact exists in the provided sources. All calls involve FusionTech Systems and Hassan Qureshi. The draft extraction correctly identifies this mismatch."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7sIAC",
+              "b2b:a05Wt000003Sv1iIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Jasper responded that TechPulse prides itself on transparent and cost-effective pricing. He acknowledged that Quantum Circuits Inc. offers competitive pricing, but said TechPulse's transparency and value in terms of flexibility have been favorable points for their clients, and added that they offer discounts that might be appealing.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003Sr7sIAC",
+                  "line_start": 11,
+                  "line_end": 13,
+                  "quote": "[2023-04-07T15:33:25] Mustafa Yildiz: That's good to hear. How does your pricing compare with others, particularly with Quantum Circuits Inc?\n[2023-04-07T15:33:50] Jasper van Dijk: TechPulse prides itself on transparent and cost-effective pricing. While Quantum Circuits Inc. offers competitive pricing, our transparency and value in terms of flexibility have been favorable points for our clients. Plus, we offer discounts that might be appealing."
+                }
+              ],
+              "reason": "On the SkyTech Ventures call (b2b:a05Wt000003Sr7sIAC), Mustafa asked at line 11 how TechPulse's pricing compares with Quantum Circuits Inc. Jasper's response at line 12 directly addresses the comparison: TechPulse emphasizes transparent and cost-effective pricing, acknowledges Quantum Circuits Inc.'s competitive pricing, but highlights TechPulse's transparency and flexibility as favorable differentiators, plus mentions appealing discounts. The draft extraction is accurate and fully supported by the source."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same facts: Jasper stated TechPulse has transparent and cost-effective pricing, acknowledged Quantum Circuits Inc. is competitive, highlighted TechPulse's transparency and flexibility as favorable points, and mentioned available discounts. The wording differs slightly but the requested facts are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqZxIAK",
+              "b2b:a05Wt000003Su46IAC",
+              "b2b:a05Wt000003SwTzIAK",
+              "b2b:a05Wt000003SwoyIAC",
+              "b2b:a05Wt000003SyNiIAK",
+              "b2b:a05Wt000003SzwVIAS",
+              "b2b:a05Wt000003T0B1IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No such exchange exists in the provided SkyTech Ventures call transcripts. All calls involve only Chen Lixin (TechPulse) and Marco Salvatore (SkyTech Ventures). There is no participant named Jasper or Mustafa in any of the calls, and no question comparing TechPulse's pricing with Quantum Circuits Inc is present.",
+              "evidence": [],
+              "reason": "The question asks about a response by 'Jasper' to a question from 'Mustafa' regarding TechPulse's pricing compared with Quantum Circuits Inc. After reviewing all six SkyTech Ventures call transcripts, the only participants are Chen Lixin and Marco Salvatore. Neither Jasper nor Mustafa appears in any call. While Quantum Circuits Inc is mentioned in some calls (e.g., lines 5 and 12 of call b2b:a05Wt000003SwoyIAC, line 7 of call b2b:a05Wt000003SyNiIAK, line 11 of call b2b:a05Wt000003T0B1IAK), none of these mentions involve a pricing comparison question posed by someone named Mustafa to someone named Jasper. The requested event simply does not exist in the source data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkaIAC",
+              "b2b:a05Wt000003Sx9zIAC",
+              "b2b:a05Wt000003Sy2vIAC",
+              "b2b:a05Wt000003T2HgIAK",
+              "b2b:a05Wt000003T2vxIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts contain no call with SkyTech Ventures, no participant named Jasper, and no mention of Quantum Circuits Inc. All calls are between Sophia M\u00fcller of TechPulse Solutions and Fatima Mustafa of EvoTrend Systems, so the requested exchange cannot be found.",
+              "evidence": [],
+              "reason": "None of the five supplied calls involve the account SkyTech Ventures, a person named Jasper, or the competitor Quantum Circuits Inc. Every call is with Fatima Mustafa at EvoTrend Systems and the TechPulse representative is Sophia M\u00fcller. Therefore the specific question about Jasper's response to Mustafa regarding TechPulse's pricing compared with Quantum Circuits Inc on a SkyTech Ventures call cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SruDIAS",
+              "b2b:a05Wt000003Su2SIAS",
+              "b2b:a05Wt000003T1s0IAC",
+              "b2b:a05Wt000003T2eNIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call with SkyTech Ventures, no contact named Mustafa, and no mention of Quantum Circuits Inc. All four calls are between Jasper van Dijk and Thabo Dlamini of Innovate Sphere, and the only competitor discussed is Adaptive Design Solutions. Therefore the requested exchange cannot be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a SkyTech Ventures call where Mustafa asks Jasper how TechPulse's pricing compares with Quantum Circuits Inc. None of the four supplied calls involve SkyTech Ventures, a person named Mustafa, or Quantum Circuits Inc. The account in every call is Innovate Sphere with contact Thabo Dlamini, and the only competitor referenced is Adaptive Design Solutions. No evidence exists to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrHWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only one call transcript: a conversation between Lucas Almeida (TechPulse Solutions) and Mustafa Abdallah (Insight Analytics Group) on 2023-02-04. There is no call involving SkyTech Ventures, no participant named Jasper, and no mention of Quantum Circuits Inc. Therefore, the requested exchange cannot be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a SkyTech Ventures call where Jasper responds to Mustafa about TechPulse's pricing compared with Quantum Circuits Inc. The only call provided is between Lucas Almeida and Mustafa Abdallah at Insight Analytics Group. None of the named entities (SkyTech Ventures, Jasper, Quantum Circuits Inc) appear anywhere in the source transcript, so no answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SthRIAS",
+              "b2b:a05Wt000003SxY6IAK",
+              "b2b:a05Wt000003Sxt7IAC",
+              "b2b:a05Wt000003Sy4OIAS",
+              "b2b:a05Wt000003SzelIAC",
+              "b2b:a05Wt000003SztGIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call with SkyTech Ventures or a contact named Mustafa exists in the provided transcripts. All calls are between Jasper van Dijk and Ivan Petrova of DigitalWave Solutions. While Quantum Circuits Inc. is mentioned in several calls, none involve a Mustafa asking Jasper how TechPulse's pricing compares with Quantum Circuits Inc. on a SkyTech Ventures call.",
+              "evidence": [],
+              "reason": "The question asks about a specific call with SkyTech Ventures and a contact named Mustafa. None of the six provided calls involve SkyTech Ventures or Mustafa. All calls are with Ivan Petrova at DigitalWave Solutions. Therefore, the requested event (Mustafa asking Jasper about TechPulse's pricing compared to Quantum Circuits Inc. on a SkyTech Ventures call) does not exist in the source data, and no answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwowIAC",
+              "b2b:a05Wt000003SxUuIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain a SkyTech Ventures call, a contact named Mustafa, or any discussion comparing TechPulse's pricing with Quantum Circuits Inc. Both calls are with Nadia Souleyman of DigitalWave Solutions, and no competitor pricing comparison is mentioned.",
+              "evidence": [],
+              "reason": "Neither call involves SkyTech Ventures or a person named Mustafa. Both calls are between Jasper van Dijk and Nadia Souleyman of DigitalWave Solutions. There is no mention of Quantum Circuits Inc or any pricing comparison with that company in either transcript. The requested event scope (SkyTech Ventures call, Mustafa, Quantum Circuits Inc pricing comparison) is entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzEyIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The SkyTech Ventures call transcript contains no participant named Jasper; the TechPulse representative is Santiago Fernandez. Additionally, Mustafa Yildiz never asks how TechPulse's pricing compares with Quantum Circuits Inc. The only mention of Quantum Circuits Inc. relates to flexibility and customization (lines 11\u201314), not pricing. Therefore the requested facts\u2014a person named Jasper and a pricing-comparison question\u2014are absent from the source.",
+              "evidence": [],
+              "reason": "Two required facts are missing: (1) No one named Jasper appears on the call; the salesperson is Santiago Fernandez. (2) Mustafa never asks about pricing comparison with Quantum Circuits Inc.; the Quantum Circuits discussion (lines 11-14) concerns flexibility/customization, not pricing. Since neither the named person nor the pricing question exists in the transcript, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwozIAC",
+              "b2b:a05Wt000003SzEzIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Neither of the two SkyTech Ventures calls contains a question from Mustafa asking how TechPulse's pricing compares with Quantum Circuits Inc. In the 2023-03-14 call, Mustafa asks about competitors' more frequent product updates (line 11) and Jasper responds about meaningful AI-driven enhancements (line 12), but no pricing comparison with Quantum Circuits Inc is raised. In the 2023-04-09 call, Mustafa asks about security (line 7) and support structure (line 11), but again no pricing comparison with Quantum Circuits Inc appears. Therefore, Jasper's response to that specific question cannot be provided from these sources.",
+              "evidence": [],
+              "reason": "The exact question\u2014Mustafa asking Jasper how TechPulse's pricing compares with Quantum Circuits Inc\u2014does not appear in either SkyTech Ventures call transcript. No mention of 'Quantum Circuits Inc' or any pricing comparison exists in the provided sources, so the requested fact is entirely missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1GlIAK",
+              "b2b:a05Wt000003T1IMIA0",
+              "b2b:a05Wt000003T37HIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain a SkyTech Ventures call, a contact named Mustafa, or any discussion comparing TechPulse's pricing with Quantum Circuits Inc. All three calls are with Ming Li of InnovateGrid Systems, so the requested exchange is not present in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a call with SkyTech Ventures involving a person named Mustafa asking Jasper how TechPulse's pricing compares with Quantum Circuits Inc. None of the three provided calls match this scenario. All calls are with Ming Li at InnovateGrid Systems. There is no mention of SkyTech Ventures, Mustafa, or Quantum Circuits Inc. in any transcript. Therefore, the requested fact cannot be answered from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0T1IAK",
+              "b2b:a05Wt000003T2BUIA0",
+              "b2b:a05Wt000003T3aMIAS",
+              "b2b:a05Wt000003T40CIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain a SkyTech Ventures call, a person named Jasper, or any mention of Quantum Circuits Inc. All calls are with Mustafa Abdallah of Insight Analytics Group and Xinyi Zhang of TechPulse Solutions, so the requested exchange cannot be found in the sources.",
+              "evidence": [],
+              "reason": "No call is associated with the account 'SkyTech Ventures'; no participant named 'Jasper' appears in any transcript; and 'Quantum Circuits Inc' is never mentioned. The four calls all involve Xinyi Zhang (TechPulse Solutions) and Mustafa Abdallah (Insight Analytics Group). Therefore the specific question about Jasper's response regarding TechPulse's pricing compared with Quantum Circuits Inc on a SkyTech Ventures call cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Syj1IAC",
+              "b2b:a05Wt000003SzTYIA0",
+              "b2b:a05Wt000003T37JIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call associated with SkyTech Ventures, no participant named Jasper, and no mention of Quantum Circuits Inc. All three calls are between Ayo Okeke (TechPulse Solutions) and Mustafa Abdallah (Insight Analytics Group). Therefore the requested exchange cannot be found.",
+              "evidence": [],
+              "reason": "The question asks about a SkyTech Ventures call where Jasper responds to Mustafa's question comparing TechPulse's pricing with Quantum Circuits Inc. None of the three supplied calls involve SkyTech Ventures (all are for Insight Analytics Group), none include a speaker named Jasper (all feature Ayo Okeke), and none reference Quantum Circuits Inc. The draft extraction correctly identifies these gaps. No evidence exists to answer the question."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; Mustafa's 15:33:25 question about pricing vs Quantum Circuits Inc. is directly answered by Jasper's 15:33:50 line, which fully supports the gold answer (transparent/cost-effective pricing, Quantum competitive, transparency/flexibility favorable, discounts available)."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "how did Jasper respond when Mustafa asked how TechPulse's pricing compares with Quantum Circuits Inc",
+            "explicitly_requested": true,
+            "required_fact": "Jasper said TechPulse prides itself on transparent and cost-effective pricing; while Quantum Circuits Inc. offers competitive pricing, TechPulse's transparency and flexibility-based value have been favorable with clients, and they offer discounts.",
+            "source_call_ids": [
+              "b2b:a05Wt000003Sr7sIAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks how Jasper responded to the pricing comparison question. The gold answer and independent answer both cover the same facts: transparent/cost-effective pricing, Quantum's competitive pricing, TechPulse's transparency/flexibility favorable, and discounts. No extra facts are included. The single call contains the relevant dialogue and is required. The obligation correctly requests the fact from the call.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "TechPulse offers transparent, cost-effective pricing",
+            "question_span": "how TechPulse's pricing compares with Quantum Circuits Inc",
+            "required_by_question": true
+          },
+          {
+            "claim": "Quantum Circuits Inc. is competitive",
+            "question_span": "how TechPulse's pricing compares with Quantum Circuits Inc",
+            "required_by_question": true
+          },
+          {
+            "claim": "TechPulse's transparency and flexibility are favorable",
+            "question_span": "how TechPulse's pricing compares with Quantum Circuits Inc",
+            "required_by_question": true
+          },
+          {
+            "claim": "discounts are available",
+            "question_span": "how TechPulse's pricing compares with Quantum Circuits Inc",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "5e93244b39ee57deae45b5b111b3c6ac842ead5d290d5776783c62c3368ba55c",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T1iIIAS"
+    ],
+    "status": "accepted",
+    "question": "What meeting did Rania Hassan of UrbanSmart schedule with TechPulse, and what topics are on the agenda?",
+    "gold_answer": "A meeting on Thursday at 10 AM covering future advancements and scalability, UrbanSmart's business pain points, and detailed case studies and testimonials.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T1iIIAS",
+        "answer_claim": "Thursday at 10 AM; agenda: future advancements and scalability, business problems or pain points, detailed case studies and testimonials.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 11,
+        "quote": "[2024-05-09T10:05:00] Rania Hassan: Sure, I'm mostly available Tuesday through Thursday next week. How about we schedule something on Thursday?\n[2024-05-09T10:05:30] Terek Al-Farsi: Thursday works perfectly. Let's set it for 10 AM. We\u2019ll cover future advancements and scalability, discuss any business problems or pain points you might have, and share detailed case studies and testimonials.",
+        "start": 1757,
+        "end": 2148
+      }
+    ],
+    "question_id": "b2b-single_call-5e93244b39ee57de",
+    "candidate": {
+      "question": "What meeting did Rania Hassan of UrbanSmart schedule with TechPulse, and what topics are on the agenda?",
+      "gold_answer": "A meeting on Thursday at 10 AM covering future advancements and scalability, UrbanSmart's business pain points, and detailed case studies and testimonials.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T1iIIAS",
+          "answer_claim": "Thursday at 10 AM; agenda: future advancements and scalability, business problems or pain points, detailed case studies and testimonials.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 11,
+          "quote": "[2024-05-09T10:05:00] Rania Hassan: Sure, I'm mostly available Tuesday through Thursday next week. How about we schedule something on Thursday?\n[2024-05-09T10:05:30] Terek Al-Farsi: Thursday works perfectly. Let's set it for 10 AM. We\u2019ll cover future advancements and scalability, discuss any business problems or pain points you might have, and share detailed case studies and testimonials.",
+          "start": 1757,
+          "end": 2148
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Rania Hassan of UrbanSmart scheduled an initial meeting with TechPulse Solutions for Thursday at 10 AM. The agenda includes covering future advancements and scalability, discussing business problems or pain points, and sharing detailed case studies and testimonials.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The dialogue (lines 10:05:00\u201310:05:30) explicitly supports every claim: Thursday at 10 AM, and agenda items (future advancements and scalability, business pain points, detailed case studies and testimonials). The question is a realistic sales need, names the participant/account with call context, does not leak the answer, and the independent answer matches the gold semantically. No-context answers ('UNKNOWN') fail to answer. Single-call QA: two-call flags set true."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T1iIIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyEFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Rania Hassan, UrbanSmart, TechPulse, or any meeting/agenda between those parties. The only call provided is between Maya Johnson of SimuTech Solutions and Hassan Fadel of Beirut Innovations regarding the SimuCheck Ultra system.",
+              "evidence": [],
+              "reason": "No call transcript mentions Rania Hassan, UrbanSmart, or TechPulse. The single available call involves entirely different people, companies, and subject matter, so the requested meeting details and agenda topics cannot be answered from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4D3IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no information about Rania Hassan, UrbanSmart, TechPulse, or any meeting scheduled between them. The only call provided is between Nguyen Thi Minh of GreenTech Solutions and Zaid Hassan of Lahore Digital Experts, discussing energy products. None of the requested facts (meeting details, agenda topics) are present.",
+              "evidence": [],
+              "reason": "The question asks about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. The sole source call involves entirely different people (Nguyen Thi Minh and Zaid Hassan), different companies (GreenTech Solutions and Lahore Digital Experts), and a different subject (energy product purchase). There is zero mention of Rania Hassan, UrbanSmart, TechPulse, any scheduled meeting, or any agenda. Therefore the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxJnIAK",
+              "b2b:a05Wt000003T030IAC",
+              "b2b:a05Wt000003T0EFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All three calls are between Jasper van Dijk of TechPulse Solutions and Hassan Qureshi of FusionTech Systems. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the three call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The only participants are Jasper van Dijk (TechPulse) and Hassan Qureshi (FusionTech Systems). Because the exact named person and company in the question do not appear in any source, the answer is incomplete and cannot be supplied."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2RTIA0",
+              "b2b:a05Wt000003T4HvIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no mention of Rania Hassan or UrbanSmart. The only participants are Tariq Hassan (TechPulse Solutions) and Sofia Rodriguez (NeuralWave Technologies). Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from the provided transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. Neither call transcript references anyone named Rania Hassan or any company called UrbanSmart. The calls involve Tariq Hassan (TechPulse) and Sofia Rodriguez (NeuralWave Technologies). Because the exact named person and company in the question do not appear in any source, no facts can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7xIAC",
+              "b2b:a05Wt000003Sx8QIAS",
+              "b2b:a05Wt000003T1FDIA0",
+              "b2b:a05Wt000003T41hIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "rania hassan"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvgGIAS",
+              "b2b:a05Wt000003SysTIAS",
+              "b2b:a05Wt000003SzgaIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All three calls are between Anwar Malik of TechPulse Solutions and Hassan Mahmoud of SkyLevel Systems. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the three call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The contacts in all calls are Hassan Mahmoud at SkyLevel Systems, and the salesperson is Anwar Malik at TechPulse Solutions. Because the exact named person and company in the question do not appear anywhere in the sources, the answer is incomplete and cannot be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SySZIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No meeting was scheduled between Rania Hassan of UrbanSmart and TechPulse in the provided call transcript. Rania stated she would review the discussion with her team and be in touch soon, but no specific meeting, date, time, or agenda topics were established.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003SySZIA0) is an informational conversation between Nadia Al-Balushi of TechPulse and Rania Hassan of UrbanSmart about UrbanSmart's infrastructure expansion. At line 15, Rania says she will 'review everything we've discussed with my team and we'll be in touch soon,' but no meeting is actually scheduled, no date/time is set, and no agenda topics for a future meeting are defined. The draft extraction correctly identifies this as unanswerable. Since no meeting or agenda exists in the sources, the question cannot be answered completely."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1dRIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about Rania Hassan, UrbanSmart, or a meeting scheduled between UrbanSmart and TechPulse. The only call transcript available is between Amir Haddad of TechPulse Solutions and Hassan Suleiman of GreenTech Dynamics, discussing EDA processes. No meeting with agenda topics involving Rania Hassan or UrbanSmart is mentioned anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. The sole source call (b2b:a05Wt000003T1dRIAS) involves Amir Haddad (TechPulse) and Hassan Suleiman (GreenTech Dynamics). Neither Rania Hassan nor UrbanSmart appears in any source. No meeting scheduling or agenda topics matching the query exist in the provided data. The draft extraction correctly identifies this absence."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Ss0bIAC",
+              "b2b:a05Wt000003SxQ9IAK",
+              "b2b:a05Wt000003T0cZIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All three calls are between Tariq Hassan of TechPulse Solutions and Natalia Rodriguez of NeuralWave Technologies. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the three call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The only participants are Tariq Hassan (TechPulse Solutions) and Natalia Rodriguez (NeuralWave Technologies). Because the exact named person and company in the question do not appear in any source, the answer is incomplete and cannot be fabricated."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwAjIAK",
+              "b2b:a05Wt000003SzZyIAK",
+              "b2b:a05Wt000003T2BSIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All three calls involve Tariq Hassan of TechPulse Solutions speaking with Hassan Mahmoud of SkyLevel Systems. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the three call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The calls are between Tariq Hassan (TechPulse) and Hassan Mahmoud (SkyLevel Systems). Since the exact named person and company in the question do not appear in any source, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Srm2IAC",
+              "b2b:a05Wt000003SyytIAC",
+              "b2b:a05Wt000003SzAGIA0",
+              "b2b:a05Wt000003T0ZDIA0",
+              "b2b:a05Wt000003T2XlIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All five calls are between Tariq Hassan of TechPulse and Laura Gonzalez of InnoBuild Constructors under the opportunity 'TechPulse-InnoBuild Partnership.' No meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be found in the transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the five call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The salesperson in every call is Tariq Hassan (not Rania Hassan), and the account is InnoBuild Constructors (not UrbanSmart). Because the exact named person and company are absent from all sources, no fact supporting the requested meeting or agenda can be cited, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StcbIAC",
+              "b2b:a05Wt000003SwliIAC",
+              "b2b:a05Wt000003T0xPIAS",
+              "b2b:a05Wt000003T0xQIAS",
+              "b2b:a05Wt000003T173IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of Rania Hassan or UrbanSmart. All calls are between Nguyen Thi Minh of TechPulse Solutions and Hassan Awan of TechSavvy Innovations regarding the 'TechSavvy Innovations EDA Upgrade' opportunity. No meeting scheduled by Rania Hassan of UrbanSmart with TechPulse is recorded, and therefore no agenda topics can be reported.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the five provided call transcripts mention a person named Rania Hassan or a company called UrbanSmart. The contact in all calls is Hassan Awan of TechSavvy Innovations, and the salesperson is Nguyen Thi Minh of TechPulse Solutions. Because the exact named person (Rania Hassan) and account (UrbanSmart) do not appear in any source, no facts can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzBnIAK",
+              "b2b:a05Wt000003SzBoIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not mention Rania Hassan or UrbanSmart. The calls are between Tariq Hassan of TechPulse Solutions and Ahmed Al-Hassan of TechWave Innovations. No meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. Neither call transcript contains any reference to a person named Rania Hassan, a company called UrbanSmart, or a meeting scheduled by such a person. The only participants are Tariq Hassan (TechPulse Solutions) and Ahmed Al-Hassan (TechWave Innovations). Therefore, no facts supporting the requested information exist in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su2RIAS",
+              "b2b:a05Wt000003SvBVIA0",
+              "b2b:a05Wt000003Sz6xIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All three calls are between Monique Dubois of TechPulse Solutions and Ahmed Al-Hassan of TechWave Innovations. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the three call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The only participants are Monique Dubois (TechPulse Solutions) and Ahmed Al-Hassan (TechWave Innovations). Because the exact named person and company in the question do not appear in any source, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwfJIAS",
+              "b2b:a05Wt000003SwfKIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. Both calls are between Tariq Hassan of TechPulse Solutions and Aiden Lee of MetroGrid Networks. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these transcripts.",
+              "evidence": [],
+              "reason": "The question asks about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. Neither call transcript references Rania Hassan or UrbanSmart. The only participants are Tariq Hassan (TechPulse Solutions) and Aiden Lee (MetroGrid Networks). Since the exact named person (Rania Hassan) and company (UrbanSmart) do not appear anywhere in the sources, no facts can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuvEIAS",
+              "b2b:a05Wt000003SxLLIA0",
+              "b2b:a05Wt000003SyZ6IAK",
+              "b2b:a05Wt000003T0W3IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All four calls are between Santiago Fernandez of TechPulse Solutions and Hassan Qureshi of FusionTech Systems. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the four call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The only participants are Santiago Fernandez (TechPulse Solutions) and Hassan Qureshi (FusionTech Systems). Because the exact named person and account are entirely absent from the sources, no facts can be extracted to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuaKIAS",
+              "b2b:a05Wt000003T0arIAC",
+              "b2b:a05Wt000003T29dIAC",
+              "b2b:a05Wt000003T2CrIAK",
+              "b2b:a05Wt000003T2JHIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All calls are between Mei Chen of TechPulse Solutions and Hassan Mbeki of Nordic HealthTech. Therefore, no meeting scheduled by Rania Hassan of UrbanSmart with TechPulse, nor any associated agenda topics, can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the five call transcripts reference a person named Rania Hassan or a company called UrbanSmart. The only participants are Mei Chen (TechPulse Solutions) and Hassan Mbeki (Nordic HealthTech). Because the exact named person and company in the question do not appear anywhere in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StQ0IAK",
+              "b2b:a05Wt000003T1iIIAS",
+              "b2b:a05Wt000003T3dWIAS"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Rania Hassan of UrbanSmart Inc. scheduled an initial meeting with TechPulse Solutions for Thursday at 10 AM. The agenda Terek Al-Farsi outlined covers: (1) future advancements and scalability, (2) discussion of any business problems or pain points UrbanSmart may have, and (3) sharing detailed case studies and testimonials. A calendar invite was to be sent for Thursday at 10 AM.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T1iIIAS",
+                  "line_start": 9,
+                  "line_end": 11,
+                  "quote": "[2024-05-09T10:05:00] Rania Hassan: Sure, I'm mostly available Tuesday through Thursday next week. How about we schedule something on Thursday?\n[2024-05-09T10:05:30] Terek Al-Farsi: Thursday works perfectly. Let's set it for 10 AM. We\u2019ll cover future advancements and scalability, discuss any business problems or pain points you might have, and share detailed case studies and testimonials."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T1iIIAS",
+                  "line_start": 16,
+                  "line_end": 17,
+                  "quote": "[2024-05-09T10:08:00] Terek Al-Farsi: Wonderful, Rania. Thank you for your time today. We'll send a calendar invite for Thursday at 10 AM, and I\u2019m looking forward to our conversation."
+                }
+              ],
+              "reason": "On the 2024-05-09 call, Rania Hassan proposed Thursday (line 9), Terek confirmed Thursday at 10 AM and explicitly listed the agenda topics: future advancements and scalability, business problems/pain points, and detailed case studies and testimonials (line 10). Rania confirmed the agenda as solid (line 11). Terek stated a calendar invite would be sent for Thursday at 10 AM (line 16). All facts pertain to Rania Hassan of UrbanSmart and TechPulse Solutions. The draft's inclusion of Rania's interest in preventing platforms from becoming outdated and training/integration concerns, while discussed in the call, are not part of the formally stated agenda topics Terek outlined, so they are omitted from the minimal complete answer."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the same meeting (Thursday at 10 AM) and the same three agenda topics: future advancements and scalability, UrbanSmart's business pain points/problems, and detailed case studies and testimonials. Answer A includes additional details (initial meeting, TechPulse Solutions, Terek Al-Farsi, calendar invite) but these are extra unrequested details. The core requested facts match."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxLIIA0",
+              "b2b:a05Wt000003Sxd5IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. The only calls are between Tariq Hassan of TechPulse Solutions and Omar Farouk of Horizon Tech Integrations. No meeting scheduled by Rania Hassan with TechPulse, nor any agenda topics associated with such a meeting, appear in the transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. Neither 'Rania Hassan' nor 'UrbanSmart' appears anywhere in the two call transcripts. The calls involve Tariq Hassan (TechPulse) and Omar Farouk (Horizon Tech Integrations). Because the exact named person and company are absent, no facts can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0ChIAK",
+              "b2b:a05Wt000003T204IAC",
+              "b2b:a05Wt000003T2HtIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Rania Hassan or UrbanSmart. All three calls are between Tariq Hassan of TechPulse Solutions and Laila Najjar of PrimeEdge Technology regarding the 'PrimeEdge EDA Automation Expansion' opportunity. No meeting scheduled by Rania Hassan of UrbanSmart with TechPulse is described, and therefore no agenda topics for such a meeting can be identified.",
+              "evidence": [],
+              "reason": "The question asks specifically about Rania Hassan of UrbanSmart scheduling a meeting with TechPulse and the agenda topics. None of the three call transcripts reference a person named Rania Hassan or a company named UrbanSmart. The only participants are Tariq Hassan (TechPulse Solutions) and Laila Najjar (PrimeEdge Technology). Because the exact named person and company in the question do not appear in any source, the answer cannot be completed."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question fully supported: the cited dialogue shows Rania Hassan (UrbanSmart) scheduling a Thursday 10 AM meeting with TechPulse, and Terek explicitly lists the agenda topics (future advancements and scalability, business pain points, case studies and testimonials), matching the gold answer exactly."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What meeting did Rania Hassan of UrbanSmart schedule with TechPulse",
+            "explicitly_requested": true,
+            "required_fact": "An initial meeting between TechPulse Solutions and UrbanSmart Inc. scheduled for Thursday at 10 AM",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1iIIAS"
+            ]
+          },
+          {
+            "question_span": "what topics are on the agenda?",
+            "explicitly_requested": true,
+            "required_fact": "The agenda covers future advancements and scalability, UrbanSmart's business problems or pain points, and detailed case studies and testimonials",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1iIIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the meeting details and agenda topics. The gold answer provides the meeting time (Thursday at 10 AM) and the agenda topics (future advancements and scalability, business pain points, case studies and testimonials). All these facts are explicitly requested by the question. The independent answer covers all these facts accurately. The obligations correctly extract the required facts from the gold answer. The single call provides all the necessary information, so it is required by the question. No extra unasked facts are present in the gold answer.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "A meeting on Thursday at 10 AM",
+            "question_span": "What meeting did Rania Hassan of UrbanSmart schedule with TechPulse",
+            "required_by_question": true
+          },
+          {
+            "claim": "covering future advancements and scalability",
+            "question_span": "what topics are on the agenda?",
+            "required_by_question": true
+          },
+          {
+            "claim": "UrbanSmart's business pain points",
+            "question_span": "what topics are on the agenda?",
+            "required_by_question": true
+          },
+          {
+            "claim": "detailed case studies and testimonials",
+            "question_span": "what topics are on the agenda?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "7600b0e4551cd45985692cad4fedf73b425ec79a191efc4d7735d34db2637329",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SULIIA4"
+    ],
+    "status": "accepted",
+    "question": "What did Oliver Davis ask about the financing options in the SUV proposal, and how did Youssef compare AutoElite Motors to High-End Autos Co. on credit approval?",
+    "gold_answer": "Oliver wanted to ensure he was getting the best deal; Youssef said financing options at AutoElite and High-End Autos Co. are generally similar in credit approval opportunities, though experiences vary individually.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SULIIA4",
+        "answer_claim": "Oliver asks about financing options to make sure he's getting the best deal.",
+        "kind": "dialogue",
+        "line_start": 5,
+        "line_end": 6,
+        "quote": "[2022-02-28T09:03:42] Oliver Davis: Can we talk about the financing options? I want to make sure I'm getting the best deal possible.",
+        "start": 846,
+        "end": 978
+      },
+      {
+        "call_id": "b2c:a05Ws000005SULIIA4",
+        "answer_claim": "Youssef says AutoElite and High-End Autos Co. are generally similar in credit approval opportunities, with individual variation.",
+        "kind": "dialogue",
+        "line_start": 6,
+        "line_end": 7,
+        "quote": "[2022-02-28T09:04:05] Youssef El-Maghreb: Absolutely, Oliver. We've set up various financing options. When we compared options between AutoElite Motors and High-End Autos Co., they're generally similar in terms of credit approval opportunities. But of course, experiences can vary individually.",
+        "start": 979,
+        "end": 1273
+      }
+    ],
+    "question_id": "b2c-single_call-7600b0e4551cd459",
+    "candidate": {
+      "question": "What did Oliver Davis ask about the financing options in the SUV proposal, and how did Youssef compare AutoElite Motors to High-End Autos Co. on credit approval?",
+      "gold_answer": "Oliver wanted to ensure he was getting the best deal; Youssef said financing options at AutoElite and High-End Autos Co. are generally similar in credit approval opportunities, though experiences vary individually.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SULIIA4",
+          "answer_claim": "Oliver asks about financing options to make sure he's getting the best deal.",
+          "kind": "dialogue",
+          "line_start": 5,
+          "line_end": 6,
+          "quote": "[2022-02-28T09:03:42] Oliver Davis: Can we talk about the financing options? I want to make sure I'm getting the best deal possible.",
+          "start": 846,
+          "end": 978
+        },
+        {
+          "call_id": "b2c:a05Ws000005SULIIA4",
+          "answer_claim": "Youssef says AutoElite and High-End Autos Co. are generally similar in credit approval opportunities, with individual variation.",
+          "kind": "dialogue",
+          "line_start": 6,
+          "line_end": 7,
+          "quote": "[2022-02-28T09:04:05] Youssef El-Maghreb: Absolutely, Oliver. We've set up various financing options. When we compared options between AutoElite Motors and High-End Autos Co., they're generally similar in terms of credit approval opportunities. But of course, experiences can vary individually.",
+          "start": 979,
+          "end": 1273
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Oliver Davis asked about the financing options in the SUV proposal, wanting to ensure he gets the best deal possible. Youssef compared AutoElite Motors and High-End Autos Co. by stating they are generally similar in terms of credit approval opportunities, but experiences can vary individually.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both answer claims are directly supported by quoted dialogue: Oliver's 09:03:42 line asks about financing to ensure the best deal, and Youssef's 09:04:05 line compares AutoElite and High-End Autos Co. as 'generally similar in terms of credit approval opportunities' with individual variation. The question is a realistic sales need, names participants appropriately, does not leak the answer, and the independent answer matches the gold semantically. No-context answers ('UNKNOWN') fail to answer. This is a single-call QA, so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SULIIA4"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STKSIA4",
+              "b2c:a05Ws000005SZEYIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any discussion of financing options in an SUV proposal, any question from Oliver Davis about financing, or any comparison between AutoElite Motors and High-End Autos Co. regarding credit approval. The two calls (dated 2023-10-01 and 2023-10-15) between Hiroshi Ito and Oliver Davis cover the 2023 Kia Sorento's features, extended warranty plans, customer testimonials, transparent pricing, and service center comparisons, but neither financing options nor High-End Autos Co. are mentioned.",
+              "evidence": [],
+              "reason": "Neither call transcript contains any reference to financing options, a formal SUV proposal with financing terms, or the competitor 'High-End Autos Co.' The salesperson in both calls is Hiroshi Ito (not Youssef), and the topics discussed are vehicle features, safety, maintenance/warranty, testimonials, and pricing transparency. No credit approval comparison is made. Therefore the question cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQMlIAO",
+              "b2c:a05Ws000005SRk2IAG",
+              "b2c:a05Ws000005SVu9IAG",
+              "b2c:a05Ws000005SWqEIAW",
+              "b2c:a05Ws000005SaTyIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be fully answered from the provided sources. Oliver Davis did ask about financing options in the SUV proposal \u2014 on 2024-02-24 he said, 'let's talk about the financing options. I remember seeing some flexible terms in the proposal' (call b2c:a05Ws000005SWqEIAW, line 9), and on 2024-01-26 he stated, 'I'm also interested in understanding the different financing options you can offer' (call b2c:a05Ws000005SQMlIAO, line 11). However, no person named Youssef appears in any of the transcripts; the salesperson in every call is Sebastian Martinez of AutoElite Motors. Furthermore, no entity called 'High-End Autos Co.' is mentioned anywhere, and there is no discussion of credit approval comparisons between AutoElite Motors and any competitor. The only competitor referenced is Premium Dealerships Ltd., and only in the context of pricing and financing flexibility, not credit approval. Therefore the second part of the question (Youssef's comparison of AutoElite Motors to High-End Autos Co. on credit approval) is entirely unsupported.",
+              "evidence": [],
+              "reason": "The first part (Oliver asking about financing options) is supported, but the second part requires a person named Youssef and a competitor named High-End Autos Co., neither of which exists in any transcript. No credit-approval comparison is present. Because the question demands both parts and the second is completely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STKRIA4",
+              "b2c:a05Ws000005SVuAIAW",
+              "b2c:a05Ws000005SbD6IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Oliver Davis asked about financing flexibility and installment plans in the SUV proposal (e.g., he said flexibility is crucial for his growing family's month-to-month budget and requested specific figures for installment plans), but no source mentions 'Youssef' or 'High-End Autos Co.', and no comparison of credit approval between AutoElite Motors and High-End Autos Co. appears in any transcript. The second part of the question cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The first part (Oliver's financing questions) is partially supported in calls b2c:a05Ws000005STKRIA4 (lines 8-10, 19) and b2c:a05Ws000005SVuAIAW (line 17). However, the question also asks how 'Youssef' compared AutoElite Motors to 'High-End Autos Co.' on credit approval. No person named Youssef appears in any transcript, and 'High-End Autos Co.' is never mentioned. All three calls involve Hina Patel as the salesperson. Because the second requested fact (Youssef's credit-approval comparison) is entirely absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQ0sIAG",
+              "b2c:a05Ws000005SQxgIAG",
+              "b2c:a05Ws000005SWQMIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Oliver Davis asked about the overall budget and financing options for the SUV & Maintenance Bundle, specifically requesting clarity on payment terms. Jamal Johnson responded that AutoElite Motors offers flexible financing solutions designed to fit different budgets and offered to schedule a detailed walkthrough of interest rates and payment terms. However, there is no mention of 'Youssef' or 'High-End Autos Co.' anywhere in the provided transcripts, and no credit-approval comparison between AutoElite Motors and High-End Autos Co. exists in these sources. The salesperson in all three calls is Jamal Johnson, not Youssef.",
+              "evidence": [],
+              "reason": "The first part of the question (Oliver's financing question) is supported in call b2c:a05Ws000005SQxgIAG lines 9-12. However, the second part asks how 'Youssef' compared AutoElite Motors to 'High-End Autos Co.' on credit approval. No person named Youssef appears in any transcript, and 'High-End Autos Co.' is never mentioned. The only competitors referenced are 'Top Line Autos' (call b2c:a05Ws000005SQ0sIAG line 3) and a confusing self-reference to 'AutoElite Motors' as a competitor (call b2c:a05Ws000005SWQMIA4 line 10). Since the exact named person (Youssef) and exact named company (High-End Autos Co.) and the specific topic (credit approval comparison) are entirely absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQPlIAO",
+              "b2c:a05Ws000005SS6aIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. Oliver Davis did ask about financing options in both calls (e.g., 'How do your financing options stack up against others?' and 'I'd like to know more about what options you offer'), but there is no person named Youssef in either call, and no comparison between AutoElite Motors and 'High-End Autos Co.' on credit approval appears anywhere. The salesperson in both calls is Priyanka Menon of AutoElite Motors, and no credit-approval comparison is discussed.",
+              "evidence": [],
+              "reason": "The question asks about Youssef comparing AutoElite Motors to High-End Autos Co. on credit approval. Neither call contains a person named Youssef, nor any mention of 'High-End Autos Co.' or credit approval comparisons. The salesperson in both calls is Priyanka Menon. While Oliver Davis did ask about financing options (call b2c:a05Ws000005SQPlIAO line 9; call b2c:a05Ws000005SS6aIAG line 18), the second part of the question regarding Youssef's comparison cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVZ5IAO",
+              "b2c:a05Ws000005SW3pIAG",
+              "b2c:a05Ws000005SWLXIA4",
+              "b2c:a05Ws000005SXFxIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the requested information. Oliver Davis never asked about financing options in the SUV proposal; his questions during the 2021-04-15 proposal follow-up concerned maintenance services, extended warranty options, plan coverage, and pricing. Financing is only mentioned generally by Chinonso (flexible financing on 2021-03-22, and a possible financing-term adjustment on 2021-05-01), but Oliver never poses a specific question about financing options in the proposal. Additionally, 'High-End Autos Co.' is never mentioned in any transcript, and no credit approval comparison between AutoElite Motors and High-End Autos Co. is discussed. The only competitor Oliver names is 'Top Line Autos' (2021-05-01 call, line 9), and that reference concerns the pre-owned fleet, not credit approval.",
+              "evidence": [],
+              "reason": "Both requested facts are absent from the sources: (1) Oliver Davis never asks about financing options in the SUV proposal\u2014his proposal questions (2021-04-15 call) are about maintenance services, extended warranties, coverage details, and pricing; (2) 'High-End Autos Co.' does not appear in any transcript, and no credit approval comparison is made between AutoElite Motors and that entity. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SM9IIAW",
+              "b2c:a05Ws000005SVJ4IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the requested facts. Oliver Davis never asked a specific question about financing options in the SUV proposal; financing is only mentioned by Mia Johansson as 'flexible financing solutions' (call 1 line 14, call 2 line 14). Additionally, there is no mention of 'High-End Autos Co.' or any credit-approval comparison between AutoElite Motors and High-End Autos Co. in either call transcript. The person named Youssef does not appear in any of the provided sources.",
+              "evidence": [],
+              "reason": "Two facts are missing: (1) Oliver Davis did not ask about financing options in the SUV proposal\u2014Mia merely referenced flexible financing solutions without Oliver posing a question about them. (2) No salesperson named Youssef appears in the transcripts, and 'High-End Autos Co.' is never mentioned, so no credit-approval comparison between AutoElite Motors and High-End Autos Co. exists in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SS6bIAG",
+              "b2c:a05Ws000005SULIIA4",
+              "b2c:a05Ws000005SWAHIA4",
+              "b2c:a05Ws000005SWYUIA4",
+              "b2c:a05Ws000005SZHoIAO"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the Feb 28 SUV proposal call, Oliver Davis asked to talk about the financing options, saying he wanted to make sure he was getting the best deal possible. Youssef replied that AutoElite Motors had set up various financing options and that, when comparing AutoElite Motors to High-End Autos Co., they are generally similar in terms of credit approval opportunities, though experiences can vary individually.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SULIIA4",
+                  "line_start": 5,
+                  "line_end": 7,
+                  "quote": "[2022-02-28T09:03:42] Oliver Davis: Can we talk about the financing options? I want to make sure I'm getting the best deal possible.\n[2022-02-28T09:04:05] Youssef El-Maghreb: Absolutely, Oliver. We've set up various financing options. When we compared options between AutoElite Motors and High-End Autos Co., they're generally similar in terms of credit approval opportunities. But of course, experiences can vary individually."
+                }
+              ],
+              "reason": "Line 5 of call b2c:a05Ws000005SULIIA4 shows Oliver Davis asking 'Can we talk about the financing options? I want to make sure I'm getting the best deal possible.' Line 6 shows Youssef responding that they've set up various financing options and that when comparing AutoElite Motors and High-End Autos Co., they are generally similar in terms of credit approval opportunities, but experiences can vary individually. Both parts of the question are fully answered by these two lines."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: Oliver Davis asked about financing options to ensure he was getting the best deal, and Youssef stated that AutoElite Motors and High-End Autos Co. are generally similar in credit approval opportunities, with individual experiences varying. Answer A includes extra context (the date, the call, and that AutoElite set up various financing options), but these are additional details rather than conflicting values. The requested facts match semantically."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRyeIAG",
+              "b2c:a05Ws000005ST1FIAW",
+              "b2c:a05Ws000005SY0iIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question as asked. Oliver Davis did discuss financing in the context of the SUV upgrade initiative (he said he was 'particularly interested in how the financing will work' and noted AutoElite Motors' approvals seemed 'more straightforward' than Prestige Car Network's), but the competitor named in the question\u2014'High-End Autos Co.'\u2014is never mentioned in any of the three calls. The comparison Oliver made was between AutoElite Motors and Prestige Car Network, not High-End Autos Co. Additionally, no written 'SUV proposal' document is referenced; the discussions cover the SUV upgrade initiative generally. Because the exact named entity 'High-End Autos Co.' does not appear in the sources, the question cannot be answered literally.",
+              "evidence": [],
+              "reason": "The question asks how Youssef compared AutoElite Motors to 'High-End Autos Co.' on credit approval. No person named Youssef appears in any call (the salesperson is Chinonso Eze), and 'High-End Autos Co.' is never mentioned. The only competitor comparison on financing/approvals is between AutoElite Motors and Prestige Car Network (call b2c:a05Ws000005SY0iIAG, lines 4-6). Since the exact named people (Youssef), competitor (High-End Autos Co.), and document (SUV proposal) are absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQMmIAO",
+              "b2c:a05Ws000005SSTLIA4",
+              "b2c:a05Ws000005SWYTIA4",
+              "b2c:a05Ws000005SbLAIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. There is no person named Youssef in any call (the salesperson is Amelie Beaufort), no mention of 'High-End Autos Co.', and no discussion of an 'SUV proposal' with financing questions or a credit-approval comparison. The only competitor mentioned is Top Line Autos (line 12 of call b2c:a05Ws000005SQMmIAO), and financing is discussed only generally (e.g., flexible options, rolling warranties into monthly payments), never as a proposal or credit-approval comparison.",
+              "evidence": [],
+              "reason": "The question asks about a person named Youssef and a company called High-End Autos Co., neither of which appears in any of the four call transcripts. The salesperson in all calls is Amelie Beaufort from AutoElite Motors. Oliver Davis does ask about financing options (e.g., rolling warranties into monthly payments in call b2c:a05Ws000005SQMmIAO line 7, and requesting more info on financial solutions in call b2c:a05Ws000005SWYTIA4 line 17), but there is no 'SUV proposal' document referenced, no credit-approval comparison, and no competitor named High-End Autos Co. The only competitor mentioned is Top Line Autos. Because the exact named people (Youssef), company (High-End Autos Co.), and event scope (credit-approval comparison in an SUV proposal) are entirely absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SXsgIAG",
+              "b2c:a05Ws000005SZpeIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain the information needed to answer this question. The calls are between Liu Wei (AutoElite Motors) and Oliver Davis. There is no person named Youssef in either call, and High-End Autos Co. is never mentioned. Oliver Davis expressed general interest in knowing financing details upfront (first call, line 9), but he did not specifically ask about financing options in an 'SUV proposal,' and no comparison between AutoElite Motors and High-End Autos Co. on credit approval occurs anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks about (1) what Oliver Davis asked regarding financing options in the SUV proposal and (2) how Youssef compared AutoElite Motors to High-End Autos Co. on credit approval. Neither a person named Youssef nor a company called High-End Autos Co. appears in any of the provided call transcripts. The salesperson in both calls is Liu Wei. While Oliver briefly acknowledges liking transparent financing details (call 1, line 9), there is no specific question he asks about financing in a formal 'SUV proposal,' and no credit-approval comparison is made. Because the named individual (Youssef) and the named competitor (High-End Autos Co.) are entirely absent, the answer cannot be completed from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZZaIAO",
+              "b2c:a05Ws000005SaIdIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain anyone named Youssef. Oliver Davis did ask about financing options in the SUV proposal (line 7 of call b2c:a05Ws000005SaIdIAK: 'How about the financing options? I remember you mentioning they were flexible?'), and Nadia Gonzalez of AutoElite Motors compared AutoElite to High-End Autos Co. on financing (comprehensive packages, more long-term value, no hidden fees, lower interest rates). However, the question specifically asks how Youssef compared the two companies on credit approval. No person named Youssef appears in any source, and the comparison made by Nadia concerns financing packages and incentive structures, not credit approval specifically. Therefore the question as stated cannot be answered.",
+              "evidence": [],
+              "reason": "The question attributes the comparison to 'Youssef,' but no such person exists in the provided call transcripts. The only salesperson present is Nadia Gonzalez. Additionally, the comparison Nadia made was about financing packages, incentive structures, hidden fees, and interest rates\u2014not specifically about 'credit approval.' Since the exact named person (Youssef) and the exact topic (credit approval) are both absent from the sources, the answer is incomplete."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both parts of the question are directly supported by consecutive dialogue lines: Oliver's financing question (09:03:42) and Youssef's comparison of AutoElite vs. High-End Autos Co. on credit approval (09:04:05). Answer is complete and matches the evidence."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What did Oliver Davis ask about the financing options",
+            "explicitly_requested": true,
+            "required_fact": "Oliver Davis asked to talk about the financing options because he wanted to make sure he was getting the best deal possible",
+            "source_call_ids": [
+              "b2c:a05Ws000005SULIIA4"
+            ]
+          },
+          {
+            "question_span": "how did Youssef compare AutoElite Motors to High-End Autos Co. on credit approval",
+            "explicitly_requested": true,
+            "required_fact": "Youssef said that when comparing options between AutoElite Motors and High-End Autos Co., they are generally similar in terms of credit approval opportunities, though experiences can vary individually",
+            "source_call_ids": [
+              "b2c:a05Ws000005SULIIA4"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks two distinct facts: (1) what Oliver asked about financing options, and (2) how Youssef compared the two companies on credit approval. The gold answer provides exactly these two facts: Oliver wanted the best deal, and Youssef said the companies are generally similar in credit approval opportunities with individual variation. No extra facts are included. The obligations correctly capture both required facts, each sourced from the single call. The independent answer fully addresses both parts of the question. The single call is necessary and sufficient to answer both parts.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Oliver wanted to ensure he was getting the best deal",
+            "question_span": "What did Oliver Davis ask about the financing options",
+            "required_by_question": true
+          },
+          {
+            "claim": "Youssef said financing options at AutoElite and High-End Autos Co. are generally similar in credit approval opportunities",
+            "question_span": "how did Youssef compare AutoElite Motors to High-End Autos Co. on credit approval",
+            "required_by_question": true
+          },
+          {
+            "claim": "though experiences vary individually",
+            "question_span": "how did Youssef compare AutoElite Motors to High-End Autos Co. on credit approval",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]

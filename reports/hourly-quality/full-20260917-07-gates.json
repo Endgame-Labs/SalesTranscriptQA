@@ -1,0 +1,461 @@
+[
+  {
+    "question_id": "b2b-multi_call-80be0dfff831a6f2",
+    "question": "For BrightField Ventures' renewable energy opportunity, what pricing proposal did Mei Lin promise in the initial discussion, and what discounts were ultimately agreed on the EcoPCB Creator, OptiPower Manager, and AI Cirku-Tech?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing proposal Mei Lin promised in the initial discussion and the final discounts agreed on EcoPCB Creator, OptiPower Manager, and AI Cirku-Tech for BrightField Ventures' renewable energy opportunity.",
+        "relationship": "Initial commitment vs. final agreed commercial terms for the same opportunity \u2014 a coherent evolution of one negotiation.",
+        "reason": "Both parts concern the same deal's pricing: what was promised early and what discounts were ultimately agreed, forming a natural before/after comparison of the same commercial issue."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sqa0IAC",
+                "fact": "Mei Lin promised a customized proposal breaking down offerings and pricing.",
+                "why_other_call_cannot_supply_it": "The second call only discusses the final discounts and does not mention the initial promise of a customized proposal."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyMBIA0",
+                "fact": "Agreed discounts were 10% on EcoPCB Creator and OptiPower Manager and 5% on AI Cirku-Tech.",
+                "why_other_call_cannot_supply_it": "The first call explicitly states that pricing details will not be discussed and only promises a future proposal, so it cannot provide the final discount figures."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the initial pricing proposal promise and the final agreed discounts. These are separate facts that appear in different calls, and neither call contains both facts. The first call provides the promise, the second provides the discounts, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sqa0IAC",
+                  "fact": "Mei Lin promised a customized proposal breaking down offerings and pricing.",
+                  "why_other_call_cannot_supply_it": "The second call only discusses the final discounts and does not mention the initial promise of a customized proposal."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyMBIA0",
+                  "fact": "Agreed discounts were 10% on EcoPCB Creator and OptiPower Manager and 5% on AI Cirku-Tech.",
+                  "why_other_call_cannot_supply_it": "The first call explicitly states that pricing details will not be discussed and only promises a future proposal, so it cannot provide the final discount figures."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the initial pricing proposal promise and the final agreed discounts. These are separate facts that appear in different calls, and neither call contains both facts. The first call provides the promise, the second provides the discounts, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sqa0IAC",
+                "fact": "Mei Lin promised a customized proposal breaking down offerings and pricing strategies tailored to BrightField's needs",
+                "why_other_call_cannot_supply_it": "The second call (2020-07-15) only discusses final contract terms and never mentions the initial promise of a proposal"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyMBIA0",
+                "fact": "Agreed discounts: 10% on EcoPCB Creator, 10% on OptiPower Manager, and 5% on AI Cirku-Tech",
+                "why_other_call_cannot_supply_it": "The first call explicitly defers pricing ('we won't dive into pricing details today') and contains no discount figures"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the initial pricing-proposal promise (only in the first call) and the final agreed discount percentages (only in the second call). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sqa0IAC",
+                  "fact": "Mei Lin promised a customized proposal breaking down offerings and pricing strategies tailored to BrightField's needs",
+                  "why_other_call_cannot_supply_it": "The second call (2020-07-15) only discusses final contract terms and never mentions the initial promise of a proposal"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyMBIA0",
+                  "fact": "Agreed discounts: 10% on EcoPCB Creator, 10% on OptiPower Manager, and 5% on AI Cirku-Tech",
+                  "why_other_call_cannot_supply_it": "The first call explicitly defers pricing ('we won't dive into pricing details today') and contains no discount figures"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the initial pricing-proposal promise (only in the first call) and the final agreed discount percentages (only in the second call). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the pricing commitment Mei Lin made in the initial call (a customized proposal breaking down offerings and pricing) and (2) the specific discounts agreed in the follow-up call (10% on EcoPCB Creator and OptiPower Manager, 5% on AI Cirku-Tech). Call 1 (2020-06-29) contains the promise of a customized proposal; Call 2 (2020-07-15) contains the discount figures. Each source contributes an exclusive requested fact. The gold answer matches both transcripts precisely with no extra or missing information. The question is naturally phrased, scoped to a named account and opportunity, and reflects a realistic need for a rep to recall pricing commitments and agreed terms.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Mei Lin on 2020-06-29 explicitly states 'our next step involves creating a customized proposal for you. This will break down our offerings, along with pricing strategies tailored for your specific needs.' This directly supports the claim that Mei Lin promised a customized proposal breaking down offerings and pricing strategies tailored to BrightField's needs. The call metadata confirms this is the BrightField Ventures Renewable Energy Optimization opportunity."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Mei Lin on 2020-07-15 explicitly states 'We've applied a discount of 10% on both the EcoPCB Creator and OptiPower Manager, and a 5% discount on the AI Cirku-Tech.' This directly supports the claim of 10% discount on EcoPCB Creator and OptiPower Manager, and 5% on AI Cirku-Tech. The call metadata confirms this is the same BrightField Ventures opportunity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Mei Lin promised a customized proposal breaking down offerings and pricing \u2014 supported by evidence index 0 where Mei Lin explicitly promises 'a customized proposal...break down our offerings, along with pricing strategies tailored for your specific needs.' (2) Agreed discounts were 10% on EcoPCB Creator and OptiPower Manager and 5% on AI Cirku-Tech \u2014 supported by evidence index 1 where Mei Lin states 'a discount of 10% on both the EcoPCB Creator and OptiPower Manager, and a 5% discount on the AI Cirku-Tech.' Both factual claims in the gold_answer are fully supported by the cited evidence. The only minor note is that Mei Lin's phrasing in index 1 is 'How does that sound to you?' which could imply the discounts are proposed rather than fully agreed, but the answer_claim and gold_answer use 'agreed' and the context of the conversation (Mei Lin presenting finalized terms) reasonably supports this characterization as the agreed-upon discounts."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-ae4791bf747c3ebf",
+    "question": "In the initial discussion with Anisha Gupta of InspireTech Consulting, what did she say about security compliance, and in the follow-up call which TechPulse product did Hiroshi cite for security compliance?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Anisha Gupta's comments on security compliance in the initial call, and the TechPulse product Hiroshi cited for security compliance in the follow-up call",
+        "relationship": "same business issue (security compliance) tracked across an initial call and its follow-up",
+        "reason": "Both lookups concern the same security compliance requirement and its proposed solution across two related calls, forming one coherent sales thread."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1iKIAS",
+                "fact": "Anisha Gupta stated that security compliance is non-negotiable for InspireTech.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not contain any statement from Anisha about security compliance being non-negotiable; it only mentions that security is crucial, but not the specific non-negotiable stance."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3teIAC",
+                "fact": "Hiroshi cited SecureFlow Suite as providing unmatched security compliance.",
+                "why_other_call_cannot_supply_it": "The initial call does not mention SecureFlow Suite as having unmatched security compliance; it only says both AI Cirku-Tech and SecureFlow Suite are designed with robust security compliance, but does not use the term 'unmatched'."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: Anisha's statement about security compliance in the initial call, and the specific TechPulse product Hiroshi cited for security compliance in the follow-up call. Each fact is only present in its respective call, and neither call alone provides both pieces of information."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1iKIAS",
+                  "fact": "Anisha Gupta said security compliance is non-negotiable for InspireTech.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not contain any statement from Anisha about security compliance being non-negotiable; it only mentions that security is crucial for them, which is a different, less emphatic statement."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3teIAC",
+                  "fact": "Hiroshi cited SecureFlow Suite for unmatched security compliance.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention SecureFlow Suite by name; it only refers to 'SecureFlow' in a general discussion, not as a specific product cited for unmatched compliance."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: Anisha's statement about security compliance in the initial discussion, and the specific TechPulse product Hiroshi cited in the follow-up call. Each fact is only present in its respective call, and neither call alone can provide both requested details."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1iKIAS",
+                  "fact": "Anisha Gupta stated that security compliance is non-negotiable for InspireTech.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not contain any statement from Anisha about security compliance being non-negotiable; it only mentions that security is crucial, but not the specific non-negotiable stance."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3teIAC",
+                  "fact": "Hiroshi cited SecureFlow Suite as providing unmatched security compliance.",
+                  "why_other_call_cannot_supply_it": "The initial call does not mention SecureFlow Suite as having unmatched security compliance; it only says both AI Cirku-Tech and SecureFlow Suite are designed with robust security compliance, but does not use the term 'unmatched'."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: Anisha's statement about security compliance in the initial call, and the specific TechPulse product Hiroshi cited for security compliance in the follow-up call. Each fact is only present in its respective call, and neither call alone provides both pieces of information."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1iKIAS",
+                "fact": "Anisha Gupta said security compliance is non-negotiable for InspireTech",
+                "why_other_call_cannot_supply_it": "The follow-up call contains no statement from Anisha about security compliance being non-negotiable; that remark occurs only in the initial call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3teIAC",
+                "fact": "Hiroshi cited SecureFlow Suite as providing unmatched security compliance",
+                "why_other_call_cannot_supply_it": "In the initial call Hiroshi mentions SecureFlow Suite only for data protection/international standards, never with the phrase 'unmatched security compliance'; that specific citation appears only in the follow-up call."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information from different calls: Anisha's security compliance statement (initial call) and Hiroshi's specific product citation for 'unmatched security compliance' (follow-up call). Neither call alone contains both facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1iKIAS",
+                  "fact": "Anisha Gupta said security compliance is non-negotiable for InspireTech",
+                  "why_other_call_cannot_supply_it": "The follow-up call contains no statement from Anisha about security compliance being non-negotiable; that remark occurs only in the initial call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3teIAC",
+                  "fact": "Hiroshi cited SecureFlow Suite as providing unmatched security compliance",
+                  "why_other_call_cannot_supply_it": "In the initial call Hiroshi mentions SecureFlow Suite only for data protection/international standards, never with the phrase 'unmatched security compliance'; that specific citation appears only in the follow-up call."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information from different calls: Anisha's security compliance statement (initial call) and Hiroshi's specific product citation for 'unmatched security compliance' (follow-up call). Neither call alone contains both facts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: Anisha's statement about security compliance in the first call and the specific TechPulse product Hiroshi cited for security compliance in the follow-up. Call 1 contains Anisha saying 'Security compliance is non-negotiable for us.' Call 2 contains Hiroshi stating 'SecureFlow Suite, which provides unmatched security compliance.' Each source contributes an exclusive requested fact. The answer matches both claims precisely with no unasked extras. The question is naturally scoped to a named account and contact, and a rep would plausibly want to recall these details.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003T1iKIAS is attributed to Anisha Gupta and contains the exact statement 'Security compliance is non-negotiable for us.' The metadata confirms the contact is Anisha Gupta at InspireTech Consulting, and the call date (2021-12-06) is earlier than the follow-up (2021-12-09), consistent with it being the 'initial discussion.' The answer_claim faithfully reproduces the quote."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from call b2b:a05Wt000003T3teIAC is attributed to Hiroshi Tanaka and contains the sentence 'We also have SecureFlow Suite, which provides unmatched security compliance.' The metadata confirms this is the follow-up call (2021-12-09) on the same opportunity. The answer_claim accurately extracts the relevant portion of the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two factual claims: (1) Anisha said security compliance is non-negotiable for InspireTech, and (2) Hiroshi cited SecureFlow Suite for unmatched security compliance. Evidence index 0 directly supports claim (1) with Anisha's exact words in the initial call. Evidence index 1 directly supports claim (2) with Hiroshi's exact words in the follow-up call. Both claims are fully substantiated by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-b37dde5b9a3dc0e5",
+    "question": "On the SkyTech Ventures call, how did Jasper respond when Mustafa asked how TechPulse's pricing compares with Quantum Circuits Inc?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Jasper responded to Mustafa's question comparing TechPulse's pricing with Quantum Circuits Inc on the SkyTech Ventures call",
+        "relationship": "single coherent competitive-comparison question and its response within one call",
+        "reason": "This is one competitive comparison lookup: an objection/question about pricing versus a competitor and the response to it, all on the same call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-pricing exchange on the SkyTech Ventures call. The dialogue shows Mustafa asking 'How does your pricing compare with others, particularly with Quantum Circuits Inc?' and Jasper replying that TechPulse offers transparent, cost-effective pricing, Quantum Circuits Inc. is competitive, but TechPulse's transparency and flexibility are favorable, plus discounts are available. The gold answer captures all of these points precisely without adding unasked extras. The question is naturally worded, scoped to a named account and call, and a rep/AM would plausibly want to know how a competitor was addressed. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jasper van Dijk directly states: TechPulse prides itself on transparent and cost-effective pricing; Quantum Circuits Inc. offers competitive pricing; TechPulse's transparency and flexibility are favorable points; and discounts are available. This matches the answer_claim verbatim and is attributed to Jasper on the SkyTech Ventures call (account_name: SkyTech Ventures, contact: Mustafa Yildiz)."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element in the gold_answer: (1) transparent, cost-effective pricing \u2013 quoted; (2) Quantum Circuits Inc. is competitive \u2013 quoted; (3) TechPulse's transparency and flexibility are favorable \u2013 quoted; (4) discounts are available \u2013 quoted. The speaker is Jasper van Dijk, the call is identified as SkyTech Ventures with contact Mustafa Yildiz, matching the question's context. No unsupported claims remain."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5e93244b39ee57de",
+    "question": "What meeting did Rania Hassan of UrbanSmart schedule with TechPulse, and what topics are on the agenda?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the meeting Rania Hassan of UrbanSmart scheduled with TechPulse and the topics on its agenda",
+        "relationship": "single coherent request: meeting identity and its agenda describe the same meeting",
+        "reason": "Timing/identity and agenda of one meeting form one natural lookup, analogous to the accepted meeting timing+agenda example."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what meeting was scheduled and its agenda\u2014information a rep would track for pipeline planning. The dialogue confirms Thursday at 10 AM and the three agenda items (future advancements and scalability, business pain points, detailed case studies and testimonials) verbatim at [10:05:30]. The gold answer states precisely those facts with no extras. Wording is natural, scope is clear (named contact, company, and vendor), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Rania Hassan proposing Thursday and Terek Al-Farsi confirming 'Thursday works perfectly. Let's set it for 10 AM.' He then explicitly lists the agenda: 'future advancements and scalability, discuss any business problems or pain points you might have, and share detailed case studies and testimonials.' This directly supports the answer_claim of Thursday at 10 AM with those three agenda topics."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports every factual element of the gold_answer: the meeting is on Thursday at 10 AM, and the agenda covers (1) future advancements and scalability, (2) UrbanSmart's business pain points, and (3) detailed case studies and testimonials. The context metadata confirms the participants are Rania Hassan of UrbanSmart and the opportunity involves TechPulse (via the collaboration name). All claims in the gold_answer are accounted for by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-7600b0e4551cd459",
+    "question": "What did Oliver Davis ask about the financing options in the SUV proposal, and how did Youssef compare AutoElite Motors to High-End Autos Co. on credit approval?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Oliver Davis's question about financing options in the SUV proposal and Youssef's comparison of AutoElite Motors vs. High-End Autos Co. on credit approval",
+        "relationship": "both parts address the same financing/credit-approval issue within the SUV proposal discussion",
+        "reason": "The financing question and the credit-approval comparison concern the same business issue (financing terms), making this a coherent objection-and-response/competitive-comparison request rather than two unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific financing discussion in Oliver Davis's SUV proposal call. The dialogue confirms Oliver asked about financing to ensure the best deal, and Youssef compared AutoElite Motors to High-End Autos Co. on credit approval as generally similar with individual variation. The gold answer captures both requested facts precisely without extras. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Oliver Davis explicitly states: 'Can we talk about the financing options? I want to make sure I'm getting the best deal possible.' This directly supports the answer_claim that Oliver asks about financing options to make sure he's getting the best deal."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Youssef El-Maghreb explicitly states: 'they're generally similar in terms of credit approval opportunities. But of course, experiences can vary individually.' This directly supports the answer_claim that AutoElite and High-End Autos Co. are generally similar in credit approval opportunities, with individual variation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Oliver wanted to ensure he was getting the best deal \u2013 supported by evidence index 0 where Oliver says 'I want to make sure I'm getting the best deal possible.' (2) Youssef said financing options at AutoElite and High-End Autos Co. are generally similar in credit approval opportunities, though experiences vary individually \u2013 supported by evidence index 1 where Youssef states 'they're generally similar in terms of credit approval opportunities. But of course, experiences can vary individually.' Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-546b78c80efb760d",
+    "question": "What did Liam Baker say matters most when evaluating AutoElite Motors' service compared to competitors, and what concern did Amelie acknowledge about their service?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Liam Baker said matters most when evaluating AutoElite Motors' service against competitors, and what concern Amelie acknowledged about their service",
+        "relationship": "Both parts address the same competitive evaluation of AutoElite's service: the customer's key evaluation criterion and the service concern acknowledged in that same discussion",
+        "reason": "This is a coherent competitive-comparison request about one service evaluation discussion, not two independent fact lookups joined merely by the account."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Liam explicitly states 'The quality of post-purchase support is crucial for us' when comparing AutoElite to competitors, and Amelie acknowledges 'we've received some feedback on improving our ease of online appointment scheduling.' Both facts are in the single supplied call. The question is naturally phrased, scoped to a specific customer interaction, and the gold answer states precisely the two requested facts without extras. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Liam Baker explicitly states 'The quality of post-purchase support is crucial for us,' which directly supports the answer_claim that post-purchase support quality is crucial."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Amelie Dubois explicitly states 'we've received some feedback on improving our ease of online appointment scheduling,' which directly supports the answer_claim that she acknowledged feedback about online appointment scheduling needing improvement."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are supported by the cited evidence: (1) Liam Baker's statement that post-purchase support quality is crucial (index 0), and (2) Amelie's acknowledgment of feedback regarding online appointment scheduling needing improvement (index 1). The speaker attributions match the metadata (account_name 'Liam Baker' and the dialogue speaker 'Amelie Dubois'), and the claims faithfully reflect the quoted passages without overstatement or missing facts."
+      }
+    }
+  }
+]
