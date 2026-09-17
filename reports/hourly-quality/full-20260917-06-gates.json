@@ -1,0 +1,467 @@
+[
+  {
+    "question_id": "b2b-multi_call-5d722f444620db6e",
+    "question": "For the CyberWave Security pilot project, what did Kofi say he would prepare in the initial discussion, and what next step did he recommend in the follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Kofi said he would prepare for the CyberWave Security pilot in the initial discussion and the next step he recommended in the follow-up",
+        "relationship": "same business issue (pilot project preparation and next steps) across two calls",
+        "reason": "Both parts concern the same pilot project's progression\u2014preparation commitment and recommended next step\u2014forming one coherent next-steps question, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrcYIAS",
+                "fact": "Kofi said he would prepare detailed configurations and benefits for the potential pilot project.",
+                "why_other_call_cannot_supply_it": "This statement was made in the initial discussion on 2023-10-20; the follow-up call on 2023-10-21 does not mention preparing detailed configurations and benefits."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T033IAC",
+                "fact": "Kofi recommended setting up an initial scope discussion to tailor the pilot to CyberWave's requirements.",
+                "why_other_call_cannot_supply_it": "This recommendation was made in the follow-up call on 2023-10-21; the initial discussion does not include this recommendation."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: what Kofi said he would prepare in the initial discussion, and what next step he recommended in the follow-up. Each fact is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrcYIAS",
+                  "fact": "Kofi said he would prepare detailed configurations and benefits for the potential pilot project.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention any preparation of detailed configurations and benefits; it only discusses the pilot concept and recommends a scope discussion."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T033IAC",
+                  "fact": "Kofi recommended setting up an initial scope discussion to tailor the pilot to CyberWave's requirements.",
+                  "why_other_call_cannot_supply_it": "The initial call does not include this recommendation; it only ends with Kofi agreeing to prepare details for the pilot, with no mention of a scope discussion."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: what Kofi said he would prepare in the initial discussion, and what next step he recommended in the follow-up. Each fact is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrcYIAS",
+                  "fact": "Kofi said he would prepare detailed configurations and benefits for the potential pilot project.",
+                  "why_other_call_cannot_supply_it": "This statement was made in the initial discussion on 2023-10-20; the follow-up call on 2023-10-21 does not mention preparing detailed configurations and benefits."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T033IAC",
+                  "fact": "Kofi recommended setting up an initial scope discussion to tailor the pilot to CyberWave's requirements.",
+                  "why_other_call_cannot_supply_it": "This recommendation was made in the follow-up call on 2023-10-21; the initial discussion does not include this recommendation."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: what Kofi said he would prepare in the initial discussion, and what next step he recommended in the follow-up. Each fact is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrcYIAS",
+                "fact": "Kofi said he would prepare detailed configurations and benefits for the potential pilot project",
+                "why_other_call_cannot_supply_it": "The follow-up call never mentions what Kofi prepared or promised to prepare; it only discusses the pilot generally."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T033IAC",
+                "fact": "Kofi recommended setting up an initial scope discussion to tailor the pilot to CyberWave's specific requirements",
+                "why_other_call_cannot_supply_it": "The initial call ends with only an agreement to have a follow-up; no scope discussion recommendation appears there."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: Kofi's preparation commitment from the initial call and his recommended next step from the follow-up. Each fact appears only in its respective call, and both are requested by the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrcYIAS",
+                  "fact": "Kofi said he would prepare detailed configurations and benefits for the potential pilot project",
+                  "why_other_call_cannot_supply_it": "The follow-up call never mentions what Kofi prepared or promised to prepare; it only discusses the pilot generally."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T033IAC",
+                  "fact": "Kofi recommended setting up an initial scope discussion to tailor the pilot to CyberWave's specific requirements",
+                  "why_other_call_cannot_supply_it": "The initial call ends with only an agreement to have a follow-up; no scope discussion recommendation appears there."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: Kofi's preparation commitment from the initial call and his recommended next step from the follow-up. Each fact appears only in its respective call, and both are requested by the question."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what Kofi committed to prepare (initial call) and what next step he recommended (follow-up call). Call 1 (2023-10-20) contains Kofi's statement: 'I'll be prepared to delve into the detailed configurations and benefits with our potential pilot project.' Call 2 (2023-10-21) contains his recommendation: 'I recommend setting up an initial scope discussion so we can tailor the pilot to your specific requirements.' Each source contributes an exclusive requested fact, the gold answer matches both transcripts precisely with no unasked extras, the account/project name provides adequate scope, and a rep would plausibly want to track these commitments across calls."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Kofi Adomah on 2023-10-20 states: 'I'll be prepared to delve into the detailed configurations and benefits with our potential pilot project.' This directly supports the answer_claim that Kofi said he would prepare detailed configurations and benefits for the potential pilot. The speaker is Kofi, the content matches, and the call metadata confirms it is associated with CyberWave Security."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Kofi Adomah on 2023-10-21 states: 'I recommend setting up an initial scope discussion so we can tailor the pilot to your specific requirements.' This directly supports the answer_claim that Kofi recommended setting up an initial scope discussion to tailor the pilot to CyberWave's specific requirements. The call metadata confirms the account is CyberWave Security, and 'your' refers to Anna Nikolova representing CyberWave."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) In the initial discussion Kofi said he'd prepare detailed configurations and benefits for the potential pilot \u2013 supported by evidence index 0 where Kofi explicitly states he'll be prepared to delve into detailed configurations and benefits with the potential pilot project. (2) In the follow-up he recommended setting up an initial scope discussion to tailor the pilot to CyberWave's requirements \u2013 supported by evidence index 1 where Kofi explicitly recommends setting up an initial scope discussion to tailor the pilot to their specific requirements. Both claims are faithfully represented by the cited quotes, and the call metadata confirms the correct account (CyberWave Security) and chronological order (Oct 20 initial, Oct 21 follow-up)."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-c6664f7f642ff3a2",
+    "question": "For RenewSys Corp, what discount percentages did Ming quote in the initial proposal discussion, and what total prices did he give for EcoPCB Creator, OptiEnergy Suite, and SecureFlow Suite on the demo follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount percentages Ming quoted in the initial proposal discussion and the total prices he later quoted for EcoPCB Creator, OptiEnergy Suite, and SecureFlow Suite on the demo follow-up call.",
+        "relationship": "Evolution of the same commercial terms (pricing/discounts) for the same deal across the proposal and follow-up stages.",
+        "reason": "Both parts concern the same business issue \u2014 RenewSys Corp's commercial pricing \u2014 comparing initial discount terms with the final quoted totals, which is a coherent commercial quote comparison rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SqYFIA0",
+                "fact": "Ming quoted total prices of $4,724.87 for EcoPCB Creator (10% off, 15 licenses), $4,139.91 for OptiEnergy Suite (10% off, 10 licenses), and $10,199.83 for SecureFlow Suite (15% off, 20 licenses) on the demo follow-up call.",
+                "why_other_call_cannot_supply_it": "The initial proposal call (b2b:a05Wt000003SzuvIAC) only mentions discount percentages (10% on EcoPCB Creator, 15% on SecureFlow Suite) and does not provide any total prices or license quantities for the products."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzuvIAC",
+                "fact": "Ming quoted a 10% discount on EcoPCB Creator and a 15% discount on SecureFlow Suite in the initial proposal discussion.",
+                "why_other_call_cannot_supply_it": "The demo follow-up call (b2b:a05Wt000003SqYFIA0) provides the same discount percentages but also includes total prices; however, the question specifically asks for the discounts 'in the initial proposal discussion,' which only occurs in this earlier call. The follow-up call does not contain the initial proposal discussion context."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the discount percentages quoted during the initial proposal discussion (call 2) and the total prices given on the demo follow-up call (call 1). Each call contains only one of these requested facts, and neither call provides both. The discount percentages in the initial call are not repeated in the follow-up call as a separate 'initial proposal discussion' event, and the total prices are only present in the follow-up call. Thus, both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for discount percentages from the initial proposal discussion and total prices from the demo follow-up call. However, the first call (b2b:a05Wt000003SqYFIA0) actually contains both the discount percentages (10% for EcoPCB Creator, 15% for SecureFlow Suite) and the total prices for all three products (EcoPCB Creator $4,724.87, OptiEnergy Suite $4,139.91, SecureFlow Suite $10,199.83). The second call (b2b:a05Wt000003SzuvIAC) only mentions the discount percentages but not the total prices. Therefore, the first call alone provides all the requested information, making the second call unnecessary for the answer. The two calls do not provide distinct facts that are both required; the first call is sufficient."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SqYFIA0",
+                  "fact": "Ming quoted total prices of $4,724.87 for EcoPCB Creator (10% off, 15 licenses), $4,139.91 for OptiEnergy Suite (10% off, 10 licenses), and $10,199.83 for SecureFlow Suite (15% off, 20 licenses) on the demo follow-up call.",
+                  "why_other_call_cannot_supply_it": "The initial proposal call (b2b:a05Wt000003SzuvIAC) only mentions discount percentages (10% on EcoPCB Creator, 15% on SecureFlow Suite) and does not provide any total prices or license quantities for the products."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzuvIAC",
+                  "fact": "Ming quoted a 10% discount on EcoPCB Creator and a 15% discount on SecureFlow Suite in the initial proposal discussion.",
+                  "why_other_call_cannot_supply_it": "The demo follow-up call (b2b:a05Wt000003SqYFIA0) provides the same discount percentages but also includes total prices; however, the question specifically asks for the discounts 'in the initial proposal discussion,' which only occurs in this earlier call. The follow-up call does not contain the initial proposal discussion context."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the discount percentages quoted during the initial proposal discussion (call 2) and the total prices given on the demo follow-up call (call 1). Each call contains only one of these requested facts, and neither call provides both. The discount percentages in the initial call are not repeated in the follow-up call as a separate 'initial proposal discussion' event, and the total prices are only present in the follow-up call. Thus, both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzuvIAC",
+                "fact": "Initial proposal discussion discounts: 10% on EcoPCB Creator and 15% on SecureFlow Suite",
+                "why_other_call_cannot_supply_it": "The Jan 17 demo follow-up call never states the discount percentages as quoted figures; it only embeds them implicitly in totals"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqYFIA0",
+                "fact": "Total prices on the demo follow-up: EcoPCB Creator $4,724.87, OptiEnergy Suite $4,139.91, SecureFlow Suite $10,199.83",
+                "why_other_call_cannot_supply_it": "The Jan 10 initial proposal call gives only discount percentages, no total prices for any product"
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information across two calls: discount percentages from the initial proposal discussion and total prices from the demo follow-up. Each call exclusively supplies one of these; neither alone answers the full question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzuvIAC",
+                  "fact": "Initial proposal discussion discounts: 10% on EcoPCB Creator and 15% on SecureFlow Suite",
+                  "why_other_call_cannot_supply_it": "The Jan 17 demo follow-up call never states the discount percentages as quoted figures; it only embeds them implicitly in totals"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SqYFIA0",
+                  "fact": "Total prices on the demo follow-up: EcoPCB Creator $4,724.87, OptiEnergy Suite $4,139.91, SecureFlow Suite $10,199.83",
+                  "why_other_call_cannot_supply_it": "The Jan 10 initial proposal call gives only discount percentages, no total prices for any product"
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information across two calls: discount percentages from the initial proposal discussion and total prices from the demo follow-up. Each call exclusively supplies one of these; neither alone answers the full question."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for discount percentages from the initial proposal discussion (Jan 10 call) and total prices from the demo follow-up (Jan 17 call). Source 1 (Jan 10) exclusively provides the discount percentages: 10% on EcoPCB Creator and 15% on SecureFlow Suite. Source 2 (Jan 17) exclusively provides the total prices: $4,724.87 (EcoPCB Creator, 10% off, 15 licenses), $4,139.91 (OptiEnergy Suite, 10% off, 10 licenses), $10,199.83 (SecureFlow Suite, 15% off, 20 licenses). All gold-answer claims are verified against the dialogues. The question is naturally scoped to a named account and rep, and a sales rep would plausibly need to recall quoted pricing across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Ming Zhao on 2022-01-10 explicitly states 'a 10% discount on EcoPCB Creator and a 15% discount on SecureFlow Suite' applied to 'your quantity requirements,' directly supporting the claim of 10% on EcoPCB Creator and 15% on SecureFlow Suite in the initial proposal discussion."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage from the 2022-01-17 call contains Ming Zhao stating: EcoPCB Creator '10% discount for 15 licenses, leading to a total price of about $4724.87'; OptiEnergy Suite '10% discount on 10 licenses, totaling $4139.91'; and SecureFlow Suite '15% discount for 20 licenses, setting the total at $10199.83.' All three products, discount percentages, license counts, and total prices match the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer claims: (1) Initially 10% on EcoPCB Creator and 15% on SecureFlow Suite \u2014 supported by evidence index 0. (2) Follow-up totals: EcoPCB Creator $4,724.87 (10% off, 15 licenses), OptiEnergy Suite $4,139.91 (10% off, 10 licenses), SecureFlow Suite $10,199.83 (15% off, 20 licenses) \u2014 supported by evidence index 1. All factual elements of the gold_answer are directly present in the cited evidence. The context metadata confirms both calls relate to RenewSys Corp and the same opportunity, and the dates confirm the 2022-01-10 call is the initial proposal discussion and the 2022-01-17 call is the demo follow-up."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-db7ebda68852ca14",
+    "question": "What discount is OmegaDesign Labs getting on AIOptics Vision in the proposal Fatima Patel reviewed?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount OmegaDesign Labs is receiving on AIOptics Vision in the proposal Fatima Patel reviewed",
+        "relationship": "single coherent lookup",
+        "reason": "One fact lookup about a specific commercial term (discount) in a specific proposal; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the discount on AIOptics Vision in the proposal Fatima Patel reviewed. The dialogue clearly states Maya Johnson confirms a 15% discount on AIOptics Vision. The gold answer '15%' matches exactly. The question is naturally worded, scoped to a specific account (OmegaDesign Labs), contact (Fatima Patel), and product (AIOptics Vision). A rep/account manager would plausibly want to confirm the discount level in a proposal. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Maya Johnson explicitly states 'a 15% discount on AIOptics Vision and DevVision IDE,' which directly supports the answer_claim that OmegaDesign Labs is getting a 15% discount on AIOptics Vision. The context metadata confirms the call involves account 'OmegaDesign Labs' and contact 'Fatima Patel,' matching the question's framing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer of '15%' is directly and explicitly stated in the cited evidence quote where Maya Johnson says 'a 15% discount on AIOptics Vision.' The context metadata confirms the account is OmegaDesign Labs and the contact is Fatima Patel, aligning with the question. The single cited evidence fully supports the factual claim in the gold answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-bad41e97abfcf71b",
+    "question": "What discount did Junaid offer Hussein on EcoPCB Creator and CloudLink Designer, and what next steps did he commit to for FusionTech?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount Junaid offered on EcoPCB Creator and CloudLink Designer, plus the next steps he committed to for FusionTech",
+        "relationship": "single coherent commercial discussion: pricing terms and follow-up commitments from the same sales conversation",
+        "reason": "The discounts and next steps both pertain to the same deal discussion with FusionTech, forming one coherent quote/next-steps request rather than unrelated lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the discount percentage on two named products and the committed next steps for FusionTech. The single call transcript confirms Junaid offered a 15% discount on EcoPCB Creator and CloudLink Designer (13:03:25) and committed to preparing a detailed proposal followed by arranging a product demo (13:04:10). The gold answer states exactly those facts with no extras. The question is naturally phrased, scoped to a specific account (FusionTech) and contact (Hussein), and represents a plausible rep need to recall commercial terms and follow-up actions. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Junaid Khan explicitly states 'a 15% discount on solutions like the EcoPCB Creator and CloudLink Designer,' which directly supports the answer_claim of a 15% discount on those two products."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage from Junaid Khan states 'I'll prepare a detailed proposal outlining the most suitable solutions for FusionTech. After that, we'll look at arranging a product demo,' which directly supports the claim that Junaid will prepare a detailed proposal and then arrange a product demo for FusionTech."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms the 15% discount on EcoPCB Creator and CloudLink Designer. Index 1 confirms Junaid's commitment to prepare a detailed proposal and then arrange a product demo for FusionTech. The context metadata confirms the account is FusionTech Systems and the contact is Hussein Al-Saadi, consistent with the question. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-d5a10c5f197984ec",
+    "question": "What did Mila Clark agree to include with both the Tesla Model S and Genesis G80, and when will the finalized documents be sent?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Mila Clark agreed to include with both the Tesla Model S and Genesis G80, and when the finalized documents will be sent",
+        "relationship": "single coherent request about one agreement's deliverables and follow-up timing",
+        "reason": "The question asks about one commitment (items to be included with both vehicles) plus the natural next step (document delivery timing) for the same deal, forming one coherent sales information need rather than two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Mila agreed to include with both vehicles and when finalized documents will be sent. The dialogue confirms at 16:05:37\u201316:05:47 that the extended warranty plan is included with both the Tesla Model S and Genesis G80, and at 16:06:06 Carlos states he will send finalized documents by end of day. The gold answer matches exactly. Single-call question, so both_sources_required is set true per instructions. The question is naturally worded, scoped to a specific customer and deal, and a rep would plausibly want to confirm these details.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage is Carlos Ruiz asking a confirmation question ('we're including the extended warranty plan with both vehicles, correct?'). A question does not establish Mila Clark's agreement. The cited lines (18-19) contain only Carlos's question; no response from Mila confirming the inclusion is present in the supplied quote. The answer_claim states 'Mila confirms,' but the evidence shows only Carlos asking, not Mila agreeing."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted passage contains Carlos Ruiz explicitly stating 'I'll send you the finalized documents by the end of the day,' which directly supports the answer_claim that Carlos will send the finalized documents by the end of the day."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two factual claims: (1) Mila Clark agreed to include the extended warranty plan with both vehicles, and (2) Carlos will send finalized documents by end of day. Claim (2) is supported by evidence index 1. However, claim (1) requires evidence of Mila's agreement/confirmation. Evidence index 0 only shows Carlos asking a confirmation question; no supplied citation contains Mila's affirmative response. A question does not prove its answer. Therefore the combined citations do not fully support the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-0e6afc800895c4a6",
+    "question": "What next step did Anwar commit to for Chloe Bennett's vehicle and warranty package?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the next step Anwar committed to regarding Chloe Bennett's vehicle and warranty package.",
+        "relationship": "Single coherent next-step lookup tied to one customer's deal.",
+        "reason": "This is one request about a committed follow-up action for the same customer and deal; no unrelated lookups are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks about a committed next step for a named customer's vehicle/warranty deal. The dialogue explicitly shows Anwar stating he will send Chloe a detailed proposal customizing the vehicle and warranty package to her needs, matching the gold answer precisely with no extra or missing facts. Single-call set, so both_sources_required is true by rule.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Anwar Hassan explicitly states: 'The next step would be sending you a detailed proposal that customizes the vehicle and warranty package to your needs.' This directly supports the answer_claim that the next step is sending a detailed proposal customizing the vehicle and warranty package to Chloe's needs. The speaker is Anwar, the recipient is Chloe (addressed by name), and the commitment is clearly stated."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Send Chloe a detailed proposal customizing the vehicle and warranty package to her needs.' The cited evidence (index 0) contains Anwar Hassan's direct quote committing to exactly this: 'The next step would be sending you a detailed proposal that customizes the vehicle and warranty package to your needs.' The speaker (Anwar), recipient (Chloe Bennett), action (sending a detailed proposal), and scope (customizing vehicle and warranty package to her needs) all match. The metadata confirms the account is Chloe Bennett and the opportunity is 'Luxury Vehicle and Warranty Package for Chloe Bennett,' consistent with the context. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  }
+]
