@@ -1,0 +1,357 @@
+[
+  {
+    "question_id": "b2b-multi_call-b0bcc9727da853f0",
+    "question": "Across the two TechPulse discovery calls with Samantha White at DataGuard Insights, which competitor did she cite as praised for intuitive interfaces, and what concern did she raise about early user engagement in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Which competitor Samantha White praised for intuitive interfaces and what early user engagement concern she raised in the follow-up call",
+        "relationship": "two-call comparison of the same business issue: user adoption/engagement with the product",
+        "reason": "Both facts concern the same issue (user adoption/engagement) across the two discovery calls with the same customer, forming a coherent multi-call question."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0PbIAK",
+                "fact": "Samantha White cited Adaptive Design Solutions as praised for intuitive interfaces.",
+                "why_other_call_cannot_supply_it": "The follow-up call (b2b:a05Wt000003Szv5IAC) does not mention Adaptive Design Solutions or any competitor praised for intuitive interfaces."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Szv5IAC",
+                "fact": "Samantha White raised a concern about matching what competitors offer in early user engagement.",
+                "why_other_call_cannot_supply_it": "The first call (b2b:a05Wt000003T0PbIAK) does not mention any concern about early user engagement; it only discusses intuitive interfaces and long-term stability."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the competitor cited for intuitive interfaces (from the first call) and the concern about early user engagement (from the follow-up call). Each fact appears exclusively in one call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0PbIAK",
+                  "fact": "Samantha White cited Adaptive Design Solutions as praised for intuitive interfaces.",
+                  "why_other_call_cannot_supply_it": "The follow-up call (b2b:a05Wt000003Szv5IAC) does not mention Adaptive Design Solutions or any competitor praised for intuitive interfaces."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Szv5IAC",
+                  "fact": "Samantha White raised a concern about matching what competitors offer in early user engagement.",
+                  "why_other_call_cannot_supply_it": "The first call (b2b:a05Wt000003T0PbIAK) does not mention any concern about early user engagement; it only discusses intuitive interfaces and long-term stability."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the competitor cited for intuitive interfaces (from the first call) and the concern about early user engagement (from the follow-up call). Each fact appears exclusively in one call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0PbIAK",
+                "fact": "Samantha cited Adaptive Design Solutions as praised for intuitive interfaces during early adoption",
+                "why_other_call_cannot_supply_it": "The 2023-04-10 call never mentions Adaptive Design Solutions or any praised competitor interface"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Szv5IAC",
+                "fact": "Samantha's concern about matching what competitors offer in terms of early user engagement",
+                "why_other_call_cannot_supply_it": "The 2023-04-05 call contains no such engagement concern; it only discusses competitor interface praise and long-term stability"
+              }
+            ],
+            "reason": "The question requests two distinct facts: a named competitor praised for intuitive interfaces (only in the 2023-04-05 call) and a specific early-user-engagement concern (only in the 2023-04-10 call). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0PbIAK",
+                  "fact": "Samantha cited Adaptive Design Solutions as praised for intuitive interfaces during early adoption",
+                  "why_other_call_cannot_supply_it": "The 2023-04-10 call never mentions Adaptive Design Solutions or any praised competitor interface"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Szv5IAC",
+                  "fact": "Samantha's concern about matching what competitors offer in terms of early user engagement",
+                  "why_other_call_cannot_supply_it": "The 2023-04-05 call contains no such engagement concern; it only discusses competitor interface praise and long-term stability"
+                }
+              ],
+              "reason": "The question requests two distinct facts: a named competitor praised for intuitive interfaces (only in the 2023-04-05 call) and a specific early-user-engagement concern (only in the 2023-04-10 call). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two facts: (1) the competitor praised for intuitive interfaces, and (2) the concern about early user engagement in the follow-up call. In the April 5 call, Samantha says 'some potential clients have praised Adaptive Design Solutions for their intuitive interfaces,' confirming the competitor. In the April 10 call (the follow-up), she says 'My only concern is making sure we match up with what some competitors are offering in terms of early user engagement.' The gold answer accurately captures both facts. Each source contributes an exclusive requested fact: the competitor name comes only from the first call, and the engagement concern comes only from the second call. The question is naturally scoped to a specific account/contact/opportunity, uses natural names, and a rep would plausibly want to recall competitive mentions and customer concerns across discovery calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Samantha White stating 'some potential clients have praised Adaptive Design Solutions for their intuitive interfaces,' which exactly matches the answer_claim that she noted potential clients praised Adaptive Design Solutions for intuitive interfaces."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Samantha White saying 'My only concern is making sure we match up with what some competitors are offering in terms of early user engagement,' which precisely supports the answer_claim about her concern regarding matching competitors in early user engagement."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two factual claims: (1) She cited Adaptive Design Solutions for intuitive interfaces \u2013 supported by evidence index 0 where Samantha explicitly names Adaptive Design Solutions as praised for intuitive interfaces. (2) In the follow-up she worried about matching what competitors offer in early user engagement \u2013 supported by evidence index 1 from the later call (2023-04-10) where she expresses concern about matching competitors in early user engagement. The metadata confirms the two calls are with Samantha White at DataGuard Insights under the TechPulse opportunity, and the April 10 call is indeed the follow-up to the April 5 call. All factual elements of the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-5412c49dbaddb97a",
+    "question": "For the UrbanSmart opportunity, what limitation did Mei Yun mention about Quantum Circuits Inc's support, and what discount did TechPulse later offer on its products?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) A limitation Mei Yun mentioned about Quantum Circuits Inc's support, and (2) a discount TechPulse later offered on its products.",
+        "relationship": "Two independent fact lookups about different vendors (competitor support limitation vs. TechPulse discount) joined only by the same opportunity.",
+        "reason": "The question combines an unrelated competitive-limitation lookup with a separate discount lookup; they do not address the same business issue, so 'same opportunity' is insufficient to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two distinct facts: (1) Mei Yun's comment about Quantum Circuits Inc's support limitation, found only in the 2023-03-29 call ('they tend to falter when it comes to ongoing assistance'), and (2) the discount TechPulse offered, found only in the 2023-04-06 call ('a 15% discount on products like PulseSim Pro and SecureFlow Suite'). Each source contributes an exclusive requested fact. The gold answer accurately reflects both. The question is scoped to the UrbanSmart opportunity and a named contact, which is natural for a rep reviewing account history. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly contains Mei Yun's statement: 'I've heard Quantum Circuits Inc times their setup support well, but they tend to falter when it comes to ongoing assistance.' This matches the answer_claim verbatim and supports the gold_answer's claim about the limitation."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote contains Mei Lin stating 'the sale we're offering right now involves a 15% discount on products like PulseSim Pro and SecureFlow Suite.' This directly supports the answer_claim about the 15% discount on those two products. Note: the speaker is 'Mei Lin' (not 'Mei Yun'), and the answer_claim attributes it to 'Mei Lin,' which is consistent with the quote. The gold_answer says 'TechPulse later offered'\u2014the metadata shows this is from the UrbanSmart opportunity call on 2023-04-06, and the speaker Mei Lin is offering the discount in a sales context. While the quote doesn't explicitly name 'TechPulse' as the company, the context_metadata and the product names (PulseSim Pro, SecureFlow Suite) align with TechPulse branding, and the answer_claim itself doesn't require the company name to be in the quote\u2014it attributes the offer to the salesperson in this call."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both factual claims in the gold_answer are supported: (1) Evidence index 0 confirms Mei Yun stated Quantum Circuits Inc times setup support well but falters on ongoing assistance. (2) Evidence index 1 confirms a 15% discount on PulseSim Pro and SecureFlow Suite was offered. The gold_answer attributes the discount to 'TechPulse,' which is not explicitly named in the quoted dialogue, but the product names (PulseSim Pro, SecureFlow Suite) and the sales context strongly align with TechPulse, and the answer_claim for index 1 does not contradict this attribution. The combined evidence supports the full gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-f3bb02a4a995edde",
+    "question": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pricing Sarah quoted to Hailey Robinson at DigitalWave for the products she is interested in",
+        "relationship": "single lookup of quoted pricing within one sales interaction",
+        "reason": "One coherent pricing lookup tied to a specific customer contact and their product interest; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks what pricing a rep quoted a named contact at a named account. The dialogue at 15:22:05 contains Sarah Johnson listing all five product prices verbatim, matching the gold answer exactly. No locator preamble, no answer leakage, no unsupported causality. Single-call set so both_sources_required is true by rule.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Sarah Johnson explicitly lists all five products with their exact prices: PulseSim Pro $1499.97, SecureFlow Suite $1199.98, CloudLink Designer $1599.96, AI Cirku-Tech $529.99, and QuantumPCB Modeler $1199.98. This directly matches the answer_claim verbatim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Sarah Johnson's exact quote listing all five product prices that match every figure in the gold_answer. The context metadata confirms the call involves Hailey Robinson at DigitalWave Solutions, and the speaker is Sarah Johnson, consistent with the question. All five product names and their corresponding prices are explicitly stated in the dialogue quote."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-b5629e52152258a3",
+    "question": "What scalability concern did Tariq Ali raise about TechPulse's testimonials, and what did Dariusz say in response?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The scalability concern Tariq Ali raised regarding TechPulse's testimonials and Dariusz's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "This is a single coherent objection-and-response question: one concern raised and the reply addressing that same concern. It is a natural sales-language request, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection exchange about testimonial credibility regarding scalability, a realistic concern for a rep evaluating customer hesitations. Tariq's concern ('fall a bit short when addressing unique scalability requirements') and Dariusz's response (acknowledging generality, promising case studies for high-scalability use cases in nuanced environments) are both accurately captured in the gold answer with no unasked extras. Single-call question, so both_sources_required is set true by convention.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Tariq Ali stating that testimonials 'fall a bit short when addressing unique scalability requirements,' and Dariusz Wisniewski responding that they 'mostly provide a general outlook' but that they 'plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments.' This matches the answer_claim exactly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence fully supports both parts of the gold_answer: (1) Tariq's concern that testimonials fall short on unique scalability requirements, and (2) Dariusz's acknowledgment that they are general plus his statement about planning case studies for high-scalability use cases in nuanced environments. Speaker attribution, content, and qualifiers all align."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-43910a76fc57815a",
+    "question": "What discount and total price did AutoElite quote Zara Phillips for the nine Lexus RX 350 units?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount and total price quoted by AutoElite to Zara Phillips for nine Lexus RX 350 units",
+        "relationship": "single coherent quote lookup",
+        "reason": "One commercial quote breakdown (discount and total) for the same deal; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the discount percentage and total price quoted for nine Lexus RX 350 units to Zara Phillips by AutoElite. The dialogue explicitly states a 5% discount per unit bringing the total to 324,899.91, matching the gold answer exactly. The question is naturally phrased, scoped to a specific customer and deal, and a rep would plausibly need to recall these commercial terms. Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Noah Brown explicitly states a 5% discount on each of the nine Lexus RX 350 units and gives the total as 324,899.91, directly matching the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains the exact discount percentage (5% per unit) and the exact total price (324,899.91) for nine Lexus RX 350 units, spoken by the salesperson (Noah Brown) in the context of the Zara Phillips account. This fully supports every factual element of the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-48e62b342f190334",
+    "question": "What did William Brooks ask about the maintenance packages, and how did Keiko respond regarding customization?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What William Brooks asked about the maintenance packages and how Keiko responded regarding customization",
+        "relationship": "single coherent exchange: a customer question about maintenance packages and the salesperson's response on customization for the same topic",
+        "reason": "This is one objection/question-and-response pair addressing the same issue (maintenance package customization), a natural sales conversation lookup."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks what Brooks inquired about maintenance packages and how Keiko responded on customization. The dialogue confirms Brooks asked 'are they customizable?' and Keiko replied they offer a robust comprehensive plan but customizable options are only being considered, not yet available. The gold answer matches precisely with no extra or missing facts. Single-call question, so both_sources_required is set true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows William Brooks explicitly asking 'are they customizable?' regarding maintenance packages, directly supporting the claim that Brooks asked if maintenance packages are customizable."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Keiko's quoted response states they offer 'a robust maintenance plan with comprehensive coverage' and that they are 'actively considering more customizable options.' This supports the claim about the robust comprehensive plan and that customizable options are being considered. The phrase 'actively considering' implies they are not yet available, consistent with the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Brooks asked whether maintenance packages are customizable (supported by index 0) and that Keiko said they offer a robust comprehensive plan but customizable options are only being considered, not yet available (supported by index 1). Keiko's use of 'actively considering' logically entails the options are not yet available, making the gold_answer's phrasing a faithful interpretation of the cited evidence. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]

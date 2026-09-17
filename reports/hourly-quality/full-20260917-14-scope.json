@@ -1,0 +1,403 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "57e361ebe18660068f84187a148f734708ca766901bd2626a35f7c4ccd35758e",
+  "questions": 4,
+  "counts": {
+    "pass": 3,
+    "fail": 1
+  },
+  "estimated_usd": 0.50099361,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-b0bcc9727da853f0",
+      "question": "Across the two TechPulse discovery calls with Samantha White at DataGuard Insights, which competitor did she cite as praised for intuitive interfaces, and what concern did she raise about early user engagement in the follow-up call?",
+      "gold_answer": "She cited Adaptive Design Solutions for intuitive interfaces; in the follow-up she worried about matching what competitors offer in early user engagement.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr80IAC",
+        "b2b:a05Wt000003SrSlIAK",
+        "b2b:a05Wt000003StkdIAC",
+        "b2b:a05Wt000003SvoDIAS",
+        "b2b:a05Wt000003SvpuIAC",
+        "b2b:a05Wt000003SxgOIAS",
+        "b2b:a05Wt000003SxjXIAS",
+        "b2b:a05Wt000003SxoJIAS",
+        "b2b:a05Wt000003SyisIAC",
+        "b2b:a05Wt000003Sz3mIAC",
+        "b2b:a05Wt000003SzAQIA0",
+        "b2b:a05Wt000003SzARIA0",
+        "b2b:a05Wt000003Szv5IAC",
+        "b2b:a05Wt000003T0PbIAK",
+        "b2b:a05Wt000003T10rIAC",
+        "b2b:a05Wt000003T1qNIAS",
+        "b2b:a05Wt000003T2HoIAK",
+        "b2b:a05Wt000003T2RVIA0",
+        "b2b:a05Wt000003T2eJIAS",
+        "b2b:a05Wt000003T2xdIAC",
+        "b2b:a05Wt000003T4EeIAK",
+        "b2b:a05Wt000003T4JVIA0",
+        "b2b:a05Wt000003T4UlIAK",
+        "b2b:a05Wt000003T4WOIA0",
+        "b2b:a05Wt000003T4WPIA0",
+        "b2b:a05Wt000003T4ZbIAK",
+        "b2b:a05Wt000003T4cnIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across all Samantha White calls, exactly one call contains a competitor praised for intuitive interfaces (Adaptive Design Solutions, in the 2023-04-05 discovery call with Nina Kovalenko), and exactly one call contains a concern about early user engagement (the 2023-04-10 discovery-stage call, also with Nina Kovalenko). Although the corpus contains more than two Samantha White calls, the two requested facts are each unique, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Samantha White cited Adaptive Design Solutions as the competitor praised for intuitive interfaces (noting that some potential clients had praised them for their intuitive interfaces during early adoption phases). In the follow-up discovery call, her concern about early user engagement was making sure DataGuard could match up with what some competitors were offering in terms of early user engagement — i.e., ensuring initial user adoption was engaging enough to keep clients interested beyond the start-up phase.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0PbIAK",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-04-05T15:17:50] Samantha White: That’s reassuring to hear. During the early adoption phases, some potential clients have praised Adaptive Design Solutions for their intuitive interfaces. How does TechPulse tackle that?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Szv5IAC",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2023-04-10T14:18:35] Samantha White: It’s critical for us to align with solutions that can grow with us. How do you ensure that initial user adoption is engaging enough to keep clients interested beyond the start-up phase?\n[2023-04-10T14:19:00] Nina Kovalenko: Great question—our primary focus is on creating an engaging and rewarding initial experience. This is why our solutions are designed to be user-friendly and intuitive. We've also implemented feedback loops to continue improving our engagement strategies based on direct client input.\n[2023-04-10T14:19:25] Samantha White: That approach sounds beneficial. My only concern is making sure we match up with what some competitors are offering in terms of early user engagement."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks about 'the two TechPulse discovery calls with Samantha White at DataGuard Insights.' Among the many calls with Samantha White, exactly two are explicitly framed as discovery calls: (1) b2b:a05Wt000003T0PbIAK (2023-04-05, Nina Kovalenko), where Nina states 'the purpose of our call is to discuss the potential partnership…see how our solutions might align with your needs,' and (2) b2b:a05Wt000003Szv5IAC (2023-04-10, Nina Kovalenko), where Nina explicitly says 'we're in the discovery stage of our potential partnership.' The first call is the initial discovery; the second is the follow-up discovery. In the first call, Samantha cites Adaptive Design Solutions as praised for intuitive interfaces (line 11). In the follow-up call, she raises a concern about matching competitors' early user engagement (line 11).",
+        "answers": [
+          {
+            "answer": "Samantha White cited Adaptive Design Solutions as the competitor praised for intuitive interfaces during early adoption phases. In the follow-up discovery call, she raised the concern that DataGuard needed to 'match up with what some competitors are offering in terms of early user engagement,' worrying that their current provider might offer a more engaging initial phase for users.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0PbIAK",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-04-05T15:17:50] Samantha White: That’s reassuring to hear. During the early adoption phases, some potential clients have praised Adaptive Design Solutions for their intuitive interfaces. How does TechPulse tackle that?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Szv5IAC",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2023-04-10T14:18:35] Samantha White: It’s critical for us to align with solutions that can grow with us. How do you ensure that initial user adoption is engaging enough to keep clients interested beyond the start-up phase?\n[2023-04-10T14:19:00] Nina Kovalenko: Great question—our primary focus is on creating an engaging and rewarding initial experience. This is why our solutions are designed to be user-friendly and intuitive. We've also implemented feedback loops to continue improving our engagement strategies based on direct client input.\n[2023-04-10T14:19:25] Samantha White: That approach sounds beneficial. My only concern is making sure we match up with what some competitors are offering in terms of early user engagement."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify Adaptive Design Solutions as the competitor praised for intuitive interfaces and state that in the follow-up call Samantha White's concern was about DataGuard matching what competitors offer in terms of early user engagement. The reference likewise names Adaptive Design Solutions for intuitive interfaces and notes the follow-up worry about matching competitors' early user engagement. All requested facts (competitor name, praise for intuitive interfaces, and the specific early-user-engagement concern) are present and consistent across both answers and the reference; the additional phrasing in the answers (e.g., 'early adoption phases,' 'keep clients interested beyond the start-up phase') does not alter the core facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-f3bb02a4a995edde",
+      "question": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+      "gold_answer": "PulseSim Pro $1499.97, SecureFlow Suite $1199.98, CloudLink Designer $1599.96, AI Cirku-Tech $529.99, QuantumPCB Modeler $1199.98.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7lIAC",
+        "b2b:a05Wt000003SswiIAC",
+        "b2b:a05Wt000003StcZIAS",
+        "b2b:a05Wt000003SthRIAS",
+        "b2b:a05Wt000003SuOxIAK",
+        "b2b:a05Wt000003SuQbIAK",
+        "b2b:a05Wt000003SvBKIA0",
+        "b2b:a05Wt000003SvBLIA0",
+        "b2b:a05Wt000003SvBMIA0",
+        "b2b:a05Wt000003SvBNIA0",
+        "b2b:a05Wt000003SvCyIAK",
+        "b2b:a05Wt000003Sw0xIAC",
+        "b2b:a05Wt000003Sw0yIAC",
+        "b2b:a05Wt000003SwAcIAK",
+        "b2b:a05Wt000003SwAdIAK",
+        "b2b:a05Wt000003SwAeIAK",
+        "b2b:a05Wt000003SwSPIA0",
+        "b2b:a05Wt000003SwiWIAS",
+        "b2b:a05Wt000003SwowIAC",
+        "b2b:a05Wt000003Sx8JIAS",
+        "b2b:a05Wt000003SxQ3IAK",
+        "b2b:a05Wt000003SxUuIAK",
+        "b2b:a05Wt000003SxY6IAK",
+        "b2b:a05Wt000003SxrUIAS",
+        "b2b:a05Wt000003Sxt6IAC",
+        "b2b:a05Wt000003Sxt7IAC",
+        "b2b:a05Wt000003Sxt8IAC",
+        "b2b:a05Wt000003SxwIIAS",
+        "b2b:a05Wt000003Sy2kIAC",
+        "b2b:a05Wt000003Sy4NIAS",
+        "b2b:a05Wt000003Sy4OIAS",
+        "b2b:a05Wt000003Sy4PIAS",
+        "b2b:a05Wt000003SyFfIAK",
+        "b2b:a05Wt000003SyItIAK",
+        "b2b:a05Wt000003SyvaIAC",
+        "b2b:a05Wt000003Sz3fIAC",
+        "b2b:a05Wt000003SzTTIA0",
+        "b2b:a05Wt000003Szd8IAC",
+        "b2b:a05Wt000003SzelIAC",
+        "b2b:a05Wt000003SzlCIAS",
+        "b2b:a05Wt000003Szq1IAC",
+        "b2b:a05Wt000003SzrdIAC",
+        "b2b:a05Wt000003SztFIAS",
+        "b2b:a05Wt000003SztGIAS",
+        "b2b:a05Wt000003SzurIAC",
+        "b2b:a05Wt000003SzwTIAS",
+        "b2b:a05Wt000003Szy5IAC",
+        "b2b:a05Wt000003SzzhIAC",
+        "b2b:a05Wt000003T01JIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Sarah Johnson had multiple calls with Hailey Robinson on the DigitalWave EDA Enhancement opportunity, and quoted pricing in two of them with materially different figures: per-product unit prices (2022-08-10) and a package total for specific quantities (2022-07-01). The question does not specify which call, so both are competing complete answers.",
+        "answers": [
+          {
+            "answer": "On the 2022-08-10 call, Sarah quoted per-product prices for the products Hailey is interested in: PulseSim Pro at $1,499.97, SecureFlow Suite at $1,199.98, CloudLink Designer at $1,599.96, AI Cirku-Tech at $529.99, and QuantumPCB Modeler at $1,199.98.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sx8JIAS",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2022-08-10T15:21:30] Hailey Robinson: That's promising. What about the pricing structures for these products?\n[2022-08-10T15:22:05] Sarah Johnson: Sure, let’s break it down. For the products you're interested in: PulseSim Pro is priced at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer is going for $1599.96, AI Cirku-Tech is $529.99, and QuantumPCB Modeler at $1199.98. These prices reflect not only the product’s capabilities but also our commitment to superior support and training."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2022-07-01 demo follow-up call, Sarah quoted a total package price of $6,029.88 for three PulseSim Pros, two SecureFlow Suites, and four CloudLink Designers, noting discount options could be explored to fit DigitalWave's budget.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SztFIAS",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2022-07-01T12:50:20] Hailey Robinson: That's essential for us. What would the investment look like for these products?\n[2022-07-01T12:50:40] Sarah Johnson: The total price for the package, including three PulseSim Pros, two SecureFlow Suites, and four CloudLink Designers, comes to $6,029.88. We can also explore discount options and structuring to fit your budgetary needs."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Sarah Johnson spoke with Hailey Robinson at DigitalWave in two separate calls under the same opportunity ('DigitalWave EDA Enhancement', opp 006Wt000007B5EvIAK), each quoting materially different pricing for different product sets. The question does not specify which call, so both are valid complete answers.",
+        "answers": [
+          {
+            "answer": "On 2022-07-01, Sarah Johnson quoted Hailey Robinson a total package price of $6,029.88 for three PulseSim Pros, two SecureFlow Suites, and four CloudLink Designers, with the possibility of exploring further discount options and structuring to fit budgetary needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SztFIAS",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2022-07-01T12:50:20] Hailey Robinson: That's essential for us. What would the investment look like for these products?\n[2022-07-01T12:50:40] Sarah Johnson: The total price for the package, including three PulseSim Pros, two SecureFlow Suites, and four CloudLink Designers, comes to $6,029.88. We can also explore discount options and structuring to fit your budgetary needs."
+              }
+            ]
+          },
+          {
+            "answer": "On 2022-08-10, Sarah Johnson quoted Hailey Robinson individual product prices: PulseSim Pro at $1,499.97, SecureFlow Suite at $1,199.98, CloudLink Designer at $1,599.96, AI Cirku-Tech at $529.99, and QuantumPCB Modeler at $1,199.98.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sx8JIAS",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2022-08-10T15:21:30] Hailey Robinson: That's promising. What about the pricing structures for these products?\n[2022-08-10T15:22:05] Sarah Johnson: Sure, let’s break it down. For the products you're interested in: PulseSim Pro is priced at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer is going for $1599.96, AI Cirku-Tech is $529.99, and QuantumPCB Modeler at $1199.98. These prices reflect not only the product’s capabilities but also our commitment to superior support and training."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-b5629e52152258a3",
+      "question": "What scalability concern did Tariq Ali raise about TechPulse's testimonials, and what did Dariusz say in response?",
+      "gold_answer": "Tariq said testimonials fall short on unique scalability requirements; Dariusz acknowledged they're general but said TechPulse plans case studies for high-scalability use cases in nuanced environments.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrhDIAS",
+        "b2b:a05Wt000003SrhEIAS",
+        "b2b:a05Wt000003SrkWIAS",
+        "b2b:a05Wt000003SrkXIAS",
+        "b2b:a05Wt000003SslPIAS",
+        "b2b:a05Wt000003SsqBIAS",
+        "b2b:a05Wt000003SsqCIAS",
+        "b2b:a05Wt000003StRKIA0",
+        "b2b:a05Wt000003StcdIAC",
+        "b2b:a05Wt000003StmFIAS",
+        "b2b:a05Wt000003Sv1jIAC",
+        "b2b:a05Wt000003SvHuIAK",
+        "b2b:a05Wt000003SvL2IAK",
+        "b2b:a05Wt000003SvOEIA0",
+        "b2b:a05Wt000003SwDvIAK",
+        "b2b:a05Wt000003SwycIAC",
+        "b2b:a05Wt000003Sx0GIAS",
+        "b2b:a05Wt000003Sx55IAC",
+        "b2b:a05Wt000003SxgGIAS",
+        "b2b:a05Wt000003Sy7cIAC",
+        "b2b:a05Wt000003SyIuIAK",
+        "b2b:a05Wt000003SyqnIAC",
+        "b2b:a05Wt000003SzRvIAK",
+        "b2b:a05Wt000003SzRwIAK",
+        "b2b:a05Wt000003SzWhIAK",
+        "b2b:a05Wt000003Szq2IAC",
+        "b2b:a05Wt000003SzzoIAC",
+        "b2b:a05Wt000003T0cQIAS",
+        "b2b:a05Wt000003T0uBIAS",
+        "b2b:a05Wt000003T1GjIAK",
+        "b2b:a05Wt000003T1ILIA0",
+        "b2b:a05Wt000003T1JxIAK",
+        "b2b:a05Wt000003T1LZIA0",
+        "b2b:a05Wt000003T1NBIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Tariq Ali raised a scalability concern specifically about TechPulse's testimonials in the 2021-12-07 call (b2b:a05Wt000003SrkXIAS), where he noted that TechPulse's testimonials (and others') fall short in addressing unique scalability requirements, and Dariusz responded directly. In the other Tariq/Dariusz calls, the scalability/testimonial gap is raised by Dariusz himself (2021-11-24) or concerns are about security/flexibility/training, not a Tariq-raised scalability concern about testimonials, so no competing complete answer exists.",
+        "answers": [
+          {
+            "answer": "Tariq Ali raised that TechPulse's testimonials (like other providers') fall a bit short when it comes to addressing unique scalability requirements. Dariusz Wisniewski responded that it was a valid point — while they'd love for all their case studies to directly relate to everyone's precise needs, they mostly provide a general outlook, but TechPulse plans to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrkXIAS",
+                "line_start": 9,
+                "line_end": 13,
+                "quote": "[2021-12-07T14:02:10] Tariq Ali: Interesting. I've also been looking at how testimonials support your claims. How credible are they in predicting long-term outcomes?\n[2021-12-07T14:02:30] Dariusz Wisniewski: Our testimonials highlight the flexibility and successful track records in complex projects. For example, companies like Quantum Circuits Inc., have praised our solutions for long-term security. However, they could have provided more examples regarding flexibility.\n[2021-12-07T14:02:45] Tariq Ali: That's understandable. Speaking of testimonials, I've noticed that both yours and others fall a bit short when addressing unique scalability requirements. Thoughts on that?\n[2021-12-07T14:03:05] Dariusz Wisniewski: That's a valid point, Tariq. While we'd love for all our case studies to directly relate to everyone’s precise needs, they mostly provide a general outlook. However, we do plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Tariq Ali, Dariusz, TechPulse's testimonials, and a scalability concern. Only one call features Tariq Ali speaking with Dariusz Wisniewski about TechPulse's testimonials and scalability: call b2b:a05Wt000003SrkXIAS (2021-12-07). In that call, Tariq raises the concern that TechPulse's testimonials (and others') fall short in addressing unique scalability requirements, and Dariusz responds by acknowledging the point and stating they plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+        "answers": [
+          {
+            "answer": "Tariq Ali raised the concern that TechPulse's testimonials (as well as those of other providers) fall a bit short when addressing unique scalability requirements. Dariusz responded by acknowledging it as a valid point, explaining that while they'd love all case studies to directly relate to everyone's precise needs, they mostly provide a general outlook, and that TechPulse plans to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrkXIAS",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-12-07T14:02:45] Tariq Ali: That's understandable. Speaking of testimonials, I've noticed that both yours and others fall a bit short when addressing unique scalability requirements. Thoughts on that?\n[2021-12-07T14:03:05] Dariusz Wisniewski: That's a valid point, Tariq. While we'd love for all our case studies to directly relate to everyone’s precise needs, they mostly provide a general outlook. However, we do plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same scalability concern (testimonials fall short on unique scalability requirements) and the same response from Dariusz (acknowledged as valid, case studies are general, plans to develop case studies for high-scalability use cases in nuanced environments). The reference also covers both requested facts: the scalability concern and Dariusz's acknowledgment plus the plan for high-scalability case studies in nuanced environments."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-43910a76fc57815a",
+      "question": "What discount and total price did AutoElite quote Zara Phillips for the nine Lexus RX 350 units?",
+      "gold_answer": "A 5% discount per unit, bringing the total to 324,899.91.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMCZIA4",
+        "b2c:a05Ws000005SMCaIAO",
+        "b2c:a05Ws000005SOZIIA4",
+        "b2c:a05Ws000005SQZZIA4",
+        "b2c:a05Ws000005SQuYIAW",
+        "b2c:a05Ws000005SQxnIAG",
+        "b2c:a05Ws000005SRSJIA4",
+        "b2c:a05Ws000005SSBaIAO",
+        "b2c:a05Ws000005SSMqIAO",
+        "b2c:a05Ws000005SSMrIAO",
+        "b2c:a05Ws000005SSy1IAG",
+        "b2c:a05Ws000005SVCaIAO",
+        "b2c:a05Ws000005SVEPIA4",
+        "b2c:a05Ws000005SWbeIAG",
+        "b2c:a05Ws000005SXHbIAO",
+        "b2c:a05Ws000005SXHcIAO",
+        "b2c:a05Ws000005SYQcIAO",
+        "b2c:a05Ws000005SYaBIAW",
+        "b2c:a05Ws000005SYs8IAG",
+        "b2c:a05Ws000005SZ04IAG",
+        "b2c:a05Ws000005SZJUIA4",
+        "b2c:a05Ws000005SZWQIA4",
+        "b2c:a05Ws000005SZWRIA4",
+        "b2c:a05Ws000005SZeIIAW",
+        "b2c:a05Ws000005SZrHIAW",
+        "b2c:a05Ws000005SZrIIAW",
+        "b2c:a05Ws000005Sc2iIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (2022-04-09, Noah Brown, 'Hybrid Enthusiast Luxurious Deal') discusses the nine Lexus RX 350 units with both a discount and a total price; no other call mentions Lexus RX 350 units.",
+        "answers": [
+          {
+            "answer": "AutoElite quoted a 5% discount on each of the nine Lexus RX 350 units, bringing the total price to 324,899.91.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSMrIAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-04-09T14:21:02] Noah Brown: Let’s start with going over the pricing for the nine Lexus RX 350 units. We’ve managed to apply a 5% discount on each, which brings the total to 324,899.91. Do you have any questions about this?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about the discount and total price AutoElite quoted Zara Phillips for nine Lexus RX 350 units. Only one call in the provided history contains this exact information: call b2c:a05Ws000005SSMrIAO (2022-04-09, Noah Brown, opportunity 'Hybrid Enthusiast Luxurious Deal'), where Noah explicitly states a 5% discount on each of the nine Lexus RX 350 units bringing the total to $324,899.91. An earlier call in the same opportunity (b2c:a05Ws000005SRSJIA4, 2022-03-19) references the nine Lexus RX 350 units in the proposal but does not state the discount percentage or total price. No other call mentions Lexus RX 350 units.",
+        "answers": [
+          {
+            "answer": "AutoElite quoted Zara Phillips a 5% discount on each of the nine Lexus RX 350 units, bringing the total price to $324,899.91.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSMrIAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-04-09T14:21:02] Noah Brown: Let’s start with going over the pricing for the nine Lexus RX 350 units. We’ve managed to apply a 5% discount on each, which brings the total to 324,899.91. Do you have any questions about this?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state a 5% discount on each of the nine Lexus RX 350 units and a total price of 324,899.91 (answer_b adds a dollar sign, which is a trivial formatting difference). The reference likewise specifies the 5% discount per unit and the total of 324,899.91, covering both requested facts (discount and total price)."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

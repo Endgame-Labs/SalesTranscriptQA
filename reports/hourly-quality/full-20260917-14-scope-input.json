@@ -1,0 +1,1514 @@
+[
+  {
+    "job_id": "b0bcc9727da853f01b97cddac71df450e7e341e67d1b77f597ab50de0488a259",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003Szv5IAC",
+      "b2b:a05Wt000003T0PbIAK"
+    ],
+    "status": "accepted",
+    "question": "Across the two TechPulse discovery calls with Samantha White at DataGuard Insights, which competitor did she cite as praised for intuitive interfaces, and what concern did she raise about early user engagement in the follow-up call?",
+    "gold_answer": "She cited Adaptive Design Solutions for intuitive interfaces; in the follow-up she worried about matching what competitors offer in early user engagement.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T0PbIAK",
+        "answer_claim": "Samantha noted potential clients praised Adaptive Design Solutions for their intuitive interfaces.",
+        "kind": "dialogue",
+        "line_start": 11,
+        "line_end": 12,
+        "quote": "[2023-04-05T15:17:50] Samantha White: That\u2019s reassuring to hear. During the early adoption phases, some potential clients have praised Adaptive Design Solutions for their intuitive interfaces. How does TechPulse tackle that?",
+        "start": 2253,
+        "end": 2477
+      },
+      {
+        "call_id": "b2b:a05Wt000003Szv5IAC",
+        "answer_claim": "Samantha's concern was making sure they match up with what competitors are offering in terms of early user engagement.",
+        "kind": "dialogue",
+        "line_start": 11,
+        "line_end": 12,
+        "quote": "[2023-04-10T14:19:25] Samantha White: That approach sounds beneficial. My only concern is making sure we match up with what some competitors are offering in terms of early user engagement.",
+        "start": 2768,
+        "end": 2956
+      }
+    ],
+    "question_id": "b2b-multi_call-b0bcc9727da853f0",
+    "candidate": {
+      "question": "Across the two TechPulse discovery calls with Samantha White at DataGuard Insights, which competitor did she cite as praised for intuitive interfaces, and what concern did she raise about early user engagement in the follow-up call?",
+      "gold_answer": "She cited Adaptive Design Solutions for intuitive interfaces; in the follow-up she worried about matching what competitors offer in early user engagement.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T0PbIAK",
+          "answer_claim": "Samantha noted potential clients praised Adaptive Design Solutions for their intuitive interfaces.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-04-05T15:17:50] Samantha White: That\u2019s reassuring to hear. During the early adoption phases, some potential clients have praised Adaptive Design Solutions for their intuitive interfaces. How does TechPulse tackle that?",
+          "start": 2253,
+          "end": 2477
+        },
+        {
+          "call_id": "b2b:a05Wt000003Szv5IAC",
+          "answer_claim": "Samantha's concern was making sure they match up with what competitors are offering in terms of early user engagement.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-04-10T14:19:25] Samantha White: That approach sounds beneficial. My only concern is making sure we match up with what some competitors are offering in terms of early user engagement.",
+          "start": 2768,
+          "end": 2956
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the first call, Samantha White cited Adaptive Design Solutions as praised for intuitive interfaces. In the follow-up call, she raised a concern about early user engagement, specifically mentioning that some competitors are offering better early user engagement, and she was concerned about matching up with them.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer: Only one TechPulse discovery call with Samantha White (2023-04-10) is supplied, not two. In that call, she raised a concern about early user engagement\u2014specifically, making sure they match up with what some competitors are offering in terms of early user engagement, and ensuring initial user adoption is engaging enough to keep clients interested beyond the start-up phase. However, no competitor is cited by name as praised for intuitive interfaces in the supplied call, and the second call's content is missing, so the competitor detail cannot be confirmed.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer: In the available call (2023-04-05), Samantha White cited Adaptive Design Solutions as a competitor praised by potential clients for their intuitive interfaces during early adoption phases. However, only one TechPulse discovery call with Samantha White was supplied; the follow-up call is missing, so her concern about early user engagement raised in that follow-up call cannot be determined.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported by quotes: the 2023-04-05 call has Samantha citing 'Adaptive Design Solutions for their intuitive interfaces,' and the 2023-04-10 follow-up has her concern about matching 'what some competitors are offering in terms of early user engagement.' The question is a realistic account-management need, names participants/account without leaking the answer, and each call supplies a distinct necessary fact (competitor name only in the first; engagement concern only in the second), so both ablations fail to answer the full question and no-context guesses are UNKNOWN."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003Szv5IAC",
+          "b2b:a05Wt000003T0PbIAK"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SysUIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only one call between Lucas Almeida (EduTech Solutions) and Samantha D'Souza of Bangalore Digital Labs. There are no TechPulse discovery calls with Samantha White at DataGuard Insights, no competitor cited for intuitive interfaces, and no follow-up call discussing early user engagement. The requested facts cannot be answered from the available data.",
+              "evidence": [],
+              "reason": "The question asks about two TechPulse discovery calls with Samantha White at DataGuard Insights, including a competitor praised for intuitive interfaces and a concern about early user engagement in a follow-up call. The sole source transcript is a single EduTech Solutions call with Samantha D'Souza of Bangalore Digital Labs. None of the named entities (TechPulse, Samantha White, DataGuard Insights) appear, and neither the competitor reference nor the early-user-engagement concern is present. The draft extraction's conclusion of unanswerable is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuvRIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3wuIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only one call between Fatima Al-Masri (Tech Solutions) and Samantha Johnson at MegaCorp Designs. There are no TechPulse discovery calls with Samantha White at DataGuard Insights, no mention of a competitor praised for intuitive interfaces, and no discussion of early user engagement concerns. The requested facts cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The question asks about two TechPulse discovery calls with Samantha White at DataGuard Insights, but the only call provided is a single call with Samantha Johnson at MegaCorp Designs conducted by Fatima Al-Masri from Tech Solutions. The named person (Samantha White), company (DataGuard Insights), product context (TechPulse), competitor reference, and early user engagement concern are entirely absent from the source material."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr80IAC",
+              "b2b:a05Wt000003SxgOIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T10rIAC",
+              "b2b:a05Wt000003T4EeIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsmwIAC",
+              "b2b:a05Wt000003StB8IAK",
+              "b2b:a05Wt000003SxWTIA0",
+              "b2b:a05Wt000003SxY5IAK",
+              "b2b:a05Wt000003SxZhIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrSlIAK",
+              "b2b:a05Wt000003SxoJIAS",
+              "b2b:a05Wt000003SyisIAC",
+              "b2b:a05Wt000003Sz3mIAC",
+              "b2b:a05Wt000003T2HoIAK",
+              "b2b:a05Wt000003T4cnIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support the question's premises. There are five calls with Samantha White at DataGuard Insights, not two discovery calls. No transcript shows her citing a competitor as praised for intuitive interfaces (the only UI mention is in the 2023-04-20 demo call, where she refers to unnamed reviews about 'some companies' struggling with UI friendliness, not a named competitor being praised). No call contains a concern about early user engagement in a follow-up call; the closest related content is Nadia's mention of intuitive UI for smoother early adoption, which is TechPulse's own claim, not Samantha's concern.",
+              "evidence": [],
+              "reason": "The question presupposes exactly two discovery calls, but five calls exist. No call contains Samantha praising a named competitor for intuitive interfaces; the only UI reference (call b2b:a05Wt000003Sz3mIAC, line 9) is about unnamed companies struggling with UI friendliness. No call contains Samantha raising a concern about early user engagement; the nearest mention (line 10 of the same call) is Nadia describing TechPulse's own UI efforts for early adoption. Both requested facts are absent."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgMIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvoDIAS",
+              "b2b:a05Wt000003T4WOIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4WPIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StkdIAC",
+              "b2b:a05Wt000003T2xdIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2RVIA0",
+              "b2b:a05Wt000003T4UlIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzAQIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2eJIAS",
+              "b2b:a05Wt000003T4JVIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvpuIAC",
+              "b2b:a05Wt000003SzARIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "samantha white"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxjXIAS",
+              "b2b:a05Wt000003Szv5IAC",
+              "b2b:a05Wt000003T0PbIAK",
+              "b2b:a05Wt000003T1qNIAS",
+              "b2b:a05Wt000003T4ZbIAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the first discovery call (2023-04-05), Samantha White cited Adaptive Design Solutions as the competitor praised by potential clients for their intuitive interfaces during early adoption phases. In the follow-up discovery call (2023-04-10), her concern about early user engagement was ensuring TechPulse could match what competitors are offering in terms of early user engagement, so that clients remain interested beyond the start-up phase.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T0PbIAK",
+                  "line_start": 11,
+                  "line_end": 12,
+                  "quote": "[2023-04-05T15:17:50] Samantha White: That\u2019s reassuring to hear. During the early adoption phases, some potential clients have praised Adaptive Design Solutions for their intuitive interfaces. How does TechPulse tackle that?"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Szv5IAC",
+                  "line_start": 9,
+                  "line_end": 12,
+                  "quote": "[2023-04-10T14:18:35] Samantha White: It\u2019s critical for us to align with solutions that can grow with us. How do you ensure that initial user adoption is engaging enough to keep clients interested beyond the start-up phase?\n[2023-04-10T14:19:00] Nina Kovalenko: Great question\u2014our primary focus is on creating an engaging and rewarding initial experience. This is why our solutions are designed to be user-friendly and intuitive. We've also implemented feedback loops to continue improving our engagement strategies based on direct client input.\n[2023-04-10T14:19:25] Samantha White: That approach sounds beneficial. My only concern is making sure we match up with what some competitors are offering in terms of early user engagement."
+                }
+              ],
+              "reason": "Line 11 of call b2b:a05Wt000003T0PbIAK has Samantha stating 'some potential clients have praised Adaptive Design Solutions for their intuitive interfaces.' In the follow-up call b2b:a05Wt000003Szv5IAC, line 9 shows Samantha asking how TechPulse ensures initial user adoption is engaging enough to keep clients interested beyond the start-up phase, and line 11 states her concern is 'making sure we match up with what some competitors are offering in terms of early user engagement.' Both facts are directly supported by the exact named contact Samantha White at DataGuard Insights in the two discovery calls."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify Adaptive Design Solutions as the competitor praised for intuitive interfaces and state that Samantha White's concern in the follow-up call was about matching what competitors offer in early user engagement. Answer A provides additional detail (dates, context about clients remaining interested beyond the start-up phase), but the core requested facts are the same in both answers."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly supported: the 2023-04-05 call shows Samantha citing Adaptive Design Solutions for intuitive interfaces, and the 2023-04-10 follow-up shows her concern about matching competitors on early user engagement. The question is self-contained, business-relevant, and each source contributes a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "which competitor did she cite as praised for intuitive interfaces",
+            "explicitly_requested": true,
+            "required_fact": "Adaptive Design Solutions was praised by potential clients for their intuitive interfaces during early adoption phases",
+            "source_call_ids": [
+              "b2b:a05Wt000003T0PbIAK"
+            ]
+          },
+          {
+            "question_span": "what concern did she raise about early user engagement in the follow-up call",
+            "explicitly_requested": true,
+            "required_fact": "Her concern was making sure they match up with what some competitors are offering in terms of early user engagement",
+            "source_call_ids": [
+              "b2b:a05Wt000003Szv5IAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) the competitor cited as praised for intuitive interfaces, and (2) the concern about early user engagement in the follow-up call. The gold_answer provides exactly these two facts: 'Adaptive Design Solutions' for the competitor, and 'matching what competitors offer in early user engagement' for the concern. No extra facts are included. The obligations correctly map each fact to the appropriate call: the competitor fact is sourced from the first call (b2b:a05Wt000003T0PbIAK), and the concern fact is sourced from the follow-up call (b2b:a05Wt000003Szv5IAC). Each call is required because each supplies a distinct fact not present in the other. The independent answer correctly identifies both facts and aligns with the question. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "She cited Adaptive Design Solutions for intuitive interfaces",
+            "question_span": "which competitor did she cite as praised for intuitive interfaces",
+            "required_by_question": true
+          },
+          {
+            "claim": "in the follow-up she worried about matching what competitors offer in early user engagement",
+            "question_span": "what concern did she raise about early user engagement in the follow-up call",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "f3bb02a4a995eddeb175cf7a3aa16c47758dfd8565372bacd8535e08f36db117",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003Sx8JIAS"
+    ],
+    "status": "accepted",
+    "question": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+    "gold_answer": "PulseSim Pro $1499.97, SecureFlow Suite $1199.98, CloudLink Designer $1599.96, AI Cirku-Tech $529.99, QuantumPCB Modeler $1199.98.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003Sx8JIAS",
+        "answer_claim": "PulseSim Pro is priced at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer is going for $1599.96, AI Cirku-Tech is $529.99, and QuantumPCB Modeler at $1199.98.",
+        "kind": "dialogue",
+        "line_start": 16,
+        "line_end": 17,
+        "quote": "[2022-08-10T15:22:05] Sarah Johnson: Sure, let\u2019s break it down. For the products you're interested in: PulseSim Pro is priced at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer is going for $1599.96, AI Cirku-Tech is $529.99, and QuantumPCB Modeler at $1199.98. These prices reflect not only the product\u2019s capabilities but also our commitment to superior support and training.",
+        "start": 2569,
+        "end": 2956
+      }
+    ],
+    "question_id": "b2b-single_call-f3bb02a4a995edde",
+    "candidate": {
+      "question": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+      "gold_answer": "PulseSim Pro $1499.97, SecureFlow Suite $1199.98, CloudLink Designer $1599.96, AI Cirku-Tech $529.99, QuantumPCB Modeler $1199.98.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003Sx8JIAS",
+          "answer_claim": "PulseSim Pro is priced at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer is going for $1599.96, AI Cirku-Tech is $529.99, and QuantumPCB Modeler at $1199.98.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 17,
+          "quote": "[2022-08-10T15:22:05] Sarah Johnson: Sure, let\u2019s break it down. For the products you're interested in: PulseSim Pro is priced at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer is going for $1599.96, AI Cirku-Tech is $529.99, and QuantumPCB Modeler at $1199.98. These prices reflect not only the product\u2019s capabilities but also our commitment to superior support and training.",
+          "start": 2569,
+          "end": 2956
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Sarah quoted Hailey Robinson at DigitalWave the following prices for the products she's interested in: PulseSim Pro at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer at $1599.96, AI Cirku-Tech at $529.99, and QuantumPCB Modeler at $1199.98.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The dialogue at 15:22:05 directly supports every price in the gold answer (PulseSim Pro $1499.97, SecureFlow Suite $1199.98, CloudLink Designer $1599.96, AI Cirku-Tech $529.99, QuantumPCB Modeler $1199.98), and metadata confirms Sarah Johnson, Hailey Robinson, and DigitalWave Solutions. The question is a realistic sales need, names only allowed entities, and does not leak the answer. The independent answer matches the gold semantically and fully. No-context answers are UNKNOWN, so they fail. This is a single-call QA, so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003Sx8JIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3dgIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing information for Hailey Robinson at DigitalWave exists in the provided sources. The only call transcript is between Sarah Johnson and Javier Morales at UrbanTech Developments regarding EduTech Lab products. There is no call involving Hailey Robinson or the account DigitalWave.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. The sole source call (b2b:a05Wt000003T3dgIAC) is between Sarah Johnson and Javier Morales at UrbanTech Developments. No mention of Hailey Robinson or DigitalWave appears anywhere in the provided data, so the requested facts cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvhnIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing quoted by Sarah to Hailey Robinson at DigitalWave appears in the provided sources. The only call transcript is between Sarah Johnson and Priya Sharma of GreenLeaf Engineering regarding EduTech Advance units at $449 each. There is no mention of Hailey Robinson, DigitalWave, or any pricing directed to that person/company.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. The sole source call (b2b:a05Wt000003SvhnIAC) involves Sarah Johnson speaking with Priya Sharma of GreenLeaf Engineering about EduTech Advance. Neither Hailey Robinson nor DigitalWave is mentioned anywhere in the transcript, so no relevant pricing information exists in the supplied data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su2VIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Sarah to Hailey Robinson at DigitalWave. The only call provided is between Sarah Johnson and Carlos Ramirez of Innovatech Group. There is no call involving Hailey Robinson or DigitalWave in the supplied sources, and even in the existing call Sarah did not quote specific prices\u2014she only promised to send a pricing breakdown later.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. The sole transcript is a call with Carlos Ramirez at Innovatech Group (call b2b:a05Wt000003Su2VIAS). No call with Hailey Robinson or DigitalWave exists in the provided sources, so no facts about the requested person, account, or pricing can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T21lIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Sarah to Hailey Robinson at DigitalWave in the provided sources. The only call transcript is between Sarah Johnson and Hiroshi Tanaka of Fukuoka Tech Innovations, discussing CyberShield Core products. There is no mention of Hailey Robinson or DigitalWave anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. The sole call transcript (b2b:a05Wt000003T21lIAC) involves Sarah Johnson speaking with Hiroshi Tanaka of Fukuoka Tech Innovations about CyberShield Core. Neither Hailey Robinson nor DigitalWave appears in any source, so no relevant pricing information can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx3fIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Sarah Johnson and Kenji Nakamura of Tokyo Tech Solutions. There is no call or transcript involving Hailey Robinson or DigitalWave, so no pricing quoted to Hailey Robinson can be identified.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. The only call in the sources is between Sarah Johnson and Kenji Nakamura of Tokyo Tech Solutions (call b2b:a05Wt000003Sx3fIAC). No mention of Hailey Robinson or DigitalWave exists anywhere in the provided data, so the requested facts are entirely missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgSIAS",
+              "b2b:a05Wt000003SuleIAC",
+              "b2b:a05Wt000003SzzyIAC",
+              "b2b:a05Wt000003T0caIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts only involve Sarah Johnson speaking with Kofi Nkrumah at AeroFusion Systems. There is no mention of Hailey Robinson, no account named DigitalWave, and no pricing quoted to Hailey Robinson. Therefore, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "All four calls are between Sarah Johnson and Kofi Nkrumah at AeroFusion Systems. None of the transcripts reference a contact named Hailey Robinson or an account called DigitalWave. Since the question specifically asks about pricing Sarah quoted to Hailey Robinson at DigitalWave, and no such person or account appears in any source, the answer is incomplete and cannot be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sy7dIAC",
+              "b2b:a05Wt000003T341IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Sarah to Hailey Robinson at DigitalWave. The provided call transcripts involve Sarah Johnson speaking only with Mohamed Ayoob of Titan Robotics Group. There is no mention of Hailey Robinson or DigitalWave in any of the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. Neither call transcript contains any reference to a person named Hailey Robinson or a company called DigitalWave. Both calls are between Sarah Johnson and Mohamed Ayoob of Titan Robotics Group. Therefore, no relevant facts exist in the sources to answer this question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx8JIAS",
+              "b2b:a05Wt000003SxQ3IAK",
+              "b2b:a05Wt000003SztFIAS",
+              "b2b:a05Wt000003SzurIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Sarah quoted Hailey Robinson at DigitalWave the following per-product pricing (2022-08-10 call): PulseSim Pro $1,499.97, SecureFlow Suite $1,199.98, CloudLink Designer $1,599.96, AI Cirku-Tech $529.99, and QuantumPCB Modeler $1,199.98. Earlier (2022-07-01 call), she also quoted a package total of $6,029.88 for three PulseSim Pros, two SecureFlow Suites, and four CloudLink Designers.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx8JIAS",
+                  "line_start": 15,
+                  "line_end": 17,
+                  "quote": "[2022-08-10T15:21:30] Hailey Robinson: That's promising. What about the pricing structures for these products?\n[2022-08-10T15:22:05] Sarah Johnson: Sure, let\u2019s break it down. For the products you're interested in: PulseSim Pro is priced at $1499.97, SecureFlow Suite at $1199.98, CloudLink Designer is going for $1599.96, AI Cirku-Tech is $529.99, and QuantumPCB Modeler at $1199.98. These prices reflect not only the product\u2019s capabilities but also our commitment to superior support and training."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SztFIAS",
+                  "line_start": 16,
+                  "line_end": 18,
+                  "quote": "[2022-07-01T12:50:20] Hailey Robinson: That's essential for us. What would the investment look like for these products?\n[2022-07-01T12:50:40] Sarah Johnson: The total price for the package, including three PulseSim Pros, two SecureFlow Suites, and four CloudLink Designers, comes to $6,029.88. We can also explore discount options and structuring to fit your budgetary needs."
+                }
+              ],
+              "reason": "Line 16 of call b2b:a05Wt000003Sx8JIAS contains Sarah's explicit per-product pricing for all five products Hailey is interested in. Lines 16-17 of call b2b:a05Wt000003SztFIAS contain the earlier package quote of $6,029.88 for three PulseSim Pros, two SecureFlow Suites, and four CloudLink Designers. Both quotes are from Sarah Johnson to Hailey Robinson at DigitalWave Solutions, matching the exact named people and account. The draft extraction is accurate and complete."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers provide the same per-product pricing: PulseSim Pro $1,499.97, SecureFlow Suite $1,199.98, CloudLink Designer $1,599.96, AI Cirku-Tech $529.99, and QuantumPCB Modeler $1,199.98. Answer A includes additional context (dates, a package total from an earlier call) but the core requested pricing facts are identical in both answers."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwFRIA0",
+              "b2b:a05Wt000003SwH3IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Hailey Robinson or DigitalWave. Both calls are between Natalia Ivanova (TechPulse Solutions) and Sarah Johnson of Future Innovations LLC. No specific pricing figures were quoted in either call. Therefore, no pricing quoted by Sarah to Hailey Robinson at DigitalWave can be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. Neither call involves a person named Hailey Robinson or a company called DigitalWave. The contacts are Sarah Johnson at Future Innovations LLC, and the salesperson is Natalia Ivanova. Additionally, no specific dollar amounts or pricing figures were quoted in either transcript\u2014only general statements about transparent pricing and total cost of ownership. The draft extraction is correct: the answer is not present in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvrQIAS",
+              "b2b:a05Wt000003Sx5BIAS",
+              "b2b:a05Wt000003SzF6IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Sarah to Hailey Robinson at DigitalWave. All three provided calls are between Sarah Johnson and Ming Li at InnovateGrid Systems. There is no mention of Hailey Robinson or DigitalWave in any of the source transcripts.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. However, all three calls in the sources involve Sarah Johnson speaking with Ming Li at InnovateGrid Systems. Neither Hailey Robinson nor DigitalWave appears anywhere in the provided transcripts, so no relevant pricing information can be found for the exact named person and account requested."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvBLIA0",
+              "b2b:a05Wt000003SwSPIA0",
+              "b2b:a05Wt000003SyFfIAK",
+              "b2b:a05Wt000003SzwTIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Sarah appears in any of the provided call transcripts or metadata. All calls with Hailey Robinson at DigitalWave Solutions were conducted by Yasmin Farouk from TechPulse Solutions. Therefore, no pricing quoted by 'Sarah' to Hailey Robinson at DigitalWave can be identified from these sources. (For reference, Yasmin Farouk mentioned a proposed 15% discount on PulseSim Pro and CloudLink Designer in the 2023-05-20 call, but that was not quoted by anyone named Sarah.)",
+              "evidence": [],
+              "reason": "The question asks specifically about pricing quoted by 'Sarah' to Hailey Robinson at DigitalWave. No salesperson or representative named Sarah exists in any of the four call transcripts or their metadata. The sole representative across all calls is Yasmin Farouk. Because the exact named person (Sarah) is not present in any source, the requested fact cannot be supported, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SugfIAC",
+              "b2b:a05Wt000003SuiHIAS",
+              "b2b:a05Wt000003SujtIAC",
+              "b2b:a05Wt000003SulVIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Sarah to Hailey Robinson at DigitalWave. All four provided call transcripts are between Sarah Johnson and Wei Chen of NeonTech Industries. There is no mention of Hailey Robinson or DigitalWave in any of the sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. However, every call in the provided sources involves Sarah Johnson speaking with Wei Chen at NeonTech Industries. Neither Hailey Robinson nor DigitalWave appears anywhere in the transcripts, so no relevant pricing information exists in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyiuIAC",
+              "b2b:a05Wt000003T2smIAC",
+              "b2b:a05Wt000003T3P7IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no contact named Hailey Robinson and no account named DigitalWave. Sarah Johnson's pricing quotes (a total of $3,159.93 for 3 units of SecureFlow Suite and 4 units of CircuitSync Pro, with no discounts) were directed to Svetlana Ivanova at EnviroTech Solutions, not to Hailey Robinson at DigitalWave. Therefore, the requested pricing information for Hailey Robinson at DigitalWave does not exist in the provided call transcripts.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. None of the three call transcripts involve a contact named Hailey Robinson or an account named DigitalWave. All calls are between Sarah Johnson and Svetlana Ivanova at EnviroTech Solutions. Since the exact named person and account are absent from the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvsrIAC",
+              "b2b:a05Wt000003SvuTIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any interaction involving a person named Hailey Robinson or a company called DigitalWave. The only contact in the sources is Sarah Johnson of Future Innovations LLC, speaking with Felix J\u00f8rgensen of TechPulse Solutions. No specific pricing figures were quoted in either call\u2014only a general mention of competitive pricing and discounts on DevVision IDE and EduTech Lab. Therefore, no pricing quoted by Sarah to Hailey Robinson at DigitalWave can be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. Neither Hailey Robinson nor DigitalWave appears anywhere in the two provided call transcripts. The contact is Sarah Johnson at Future Innovations LLC, and the salesperson is Felix J\u00f8rgensen at TechPulse Solutions. No specific dollar amounts or pricing details were given in either call. All requested facts (the named person Hailey Robinson, the account DigitalWave, and specific pricing figures) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SswiIAC",
+              "b2b:a05Wt000003SxrUIAS",
+              "b2b:a05Wt000003Sy2kIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Sarah to Hailey Robinson at DigitalWave. All three calls associated with the DigitalWave Solutions account (opportunity 'DigitalWave Partnership Expansion') are between Sarah Johnson and Aliou Diallo. Hailey Robinson does not appear in any of the provided call transcripts, so no pricing information directed to her can be found.",
+              "evidence": [],
+              "reason": "The question asks specifically about pricing Sarah quoted to Hailey Robinson at DigitalWave. The three provided calls (b2b:a05Wt000003SswiIAC, b2b:a05Wt000003SxrUIAS, b2b:a05Wt000003Sy2kIAC) all involve contact Aliou Diallo at DigitalWave Solutions. Hailey Robinson is not mentioned in any transcript. While detailed pricing was discussed with Aliou Diallo (e.g., AI Cirku-Tech at ~$4,769 with 10% discount, SecureFlow Suite at $6,479.92 with 10% discount, DesignWave Automation at ~$3,647.92 with 5% discount, SecuManage Pro at $16,659.70 with 15% discount), none of this was quoted to Hailey Robinson. The exact named person in the question is absent from all sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvzJIAS",
+              "b2b:a05Wt000003Sw0vIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by Sarah to Hailey Robinson at DigitalWave. The sources contain only calls between Elena Petrova (TechPulse Solutions) and Sarah Johnson (Future Innovations LLC). There is no person named Hailey Robinson, no company called DigitalWave, and no salesperson named Sarah quoting pricing to anyone. The only price mentioned ($5889.88) was quoted by Elena Petrova to Sarah Johnson.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. The provided calls involve Elena Petrova calling Sarah Johnson at Future Innovations LLC. There is no Hailey Robinson, no DigitalWave account, and no Sarah acting as a salesperson quoting prices. The draft extraction correctly identifies this mismatch. All requested facts (Sarah as quoter, Hailey Robinson as recipient, DigitalWave as account) are absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7oIAC",
+              "b2b:a05Wt000003SzRrIAK",
+              "b2b:a05Wt000003SzenIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any interaction between Sarah and Hailey Robinson at DigitalWave. All three calls are between Sarah Johnson and Vladimir Orlov of InnoSphere Labs, and no specific pricing figures were quoted in any of them. Therefore, the requested pricing information for Hailey Robinson at DigitalWave cannot be determined from the available sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. None of the three provided calls involve Hailey Robinson or DigitalWave. All calls are with Vladimir Orlov at InnoSphere Labs. Additionally, no specific dollar amounts or pricing figures were quoted in any of the calls. The draft extraction is correct: the answer is not present in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvXwIAK",
+              "b2b:a05Wt000003SxwOIAS",
+              "b2b:a05Wt000003T1tTIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Hailey Robinson or DigitalWave. All three calls are between Sarah Johnson and Ayo Ojo of Pioneer Envisions. Therefore, no pricing quoted by Sarah to Hailey Robinson at DigitalWave can be found in the available transcripts.",
+              "evidence": [],
+              "reason": "The question asks about pricing Sarah quoted to Hailey Robinson at DigitalWave. None of the three call transcripts reference Hailey Robinson or DigitalWave. The contact in all calls is Ayo Ojo at Pioneer Envisions. Since the exact named person (Hailey Robinson) and account (DigitalWave) do not appear in any source, the requested fact cannot be supported."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; Sarah's quote at 15:22:05 lists exactly the five products and prices matching the gold answer, with call metadata confirming Sarah Johnson, Hailey Robinson, and DigitalWave Solutions."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+            "explicitly_requested": true,
+            "required_fact": "Sarah quoted: PulseSim Pro $1499.97, SecureFlow Suite $1199.98, CloudLink Designer $1599.96, AI Cirku-Tech $529.99, QuantumPCB Modeler $1199.98",
+            "source_call_ids": [
+              "b2b:a05Wt000003Sx8JIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the pricing Sarah quoted for the products Hailey is interested in. The gold answer lists exactly the five product prices, all explicitly requested. The independent answer matches the gold answer exactly. The contract obligation correctly captures the required fact and references the single call that contains the quote. The call is necessary and sufficient. No extra facts are present.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "PulseSim Pro $1499.97",
+            "question_span": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+            "required_by_question": true
+          },
+          {
+            "claim": "SecureFlow Suite $1199.98",
+            "question_span": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+            "required_by_question": true
+          },
+          {
+            "claim": "CloudLink Designer $1599.96",
+            "question_span": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+            "required_by_question": true
+          },
+          {
+            "claim": "AI Cirku-Tech $529.99",
+            "question_span": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+            "required_by_question": true
+          },
+          {
+            "claim": "QuantumPCB Modeler $1199.98",
+            "question_span": "What pricing did Sarah quote Hailey Robinson at DigitalWave for the products she's interested in?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "b5629e52152258a36be14556c67399d28566656f5333458569a7a9e63689550b",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SrkXIAS"
+    ],
+    "status": "accepted",
+    "question": "What scalability concern did Tariq Ali raise about TechPulse's testimonials, and what did Dariusz say in response?",
+    "gold_answer": "Tariq said testimonials fall short on unique scalability requirements; Dariusz acknowledged they're general but said TechPulse plans case studies for high-scalability use cases in nuanced environments.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SrkXIAS",
+        "answer_claim": "Tariq notes testimonials fall short on unique scalability requirements; Dariusz says they're general and plans high-scalability case studies.",
+        "kind": "dialogue",
+        "line_start": 11,
+        "line_end": 13,
+        "quote": "[2021-12-07T14:02:45] Tariq Ali: That's understandable. Speaking of testimonials, I've noticed that both yours and others fall a bit short when addressing unique scalability requirements. Thoughts on that?\n[2021-12-07T14:03:05] Dariusz Wisniewski: That's a valid point, Tariq. While we'd love for all our case studies to directly relate to everyone\u2019s precise needs, they mostly provide a general outlook. However, we do plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+        "start": 2179,
+        "end": 2703
+      }
+    ],
+    "question_id": "b2b-single_call-b5629e52152258a3",
+    "candidate": {
+      "question": "What scalability concern did Tariq Ali raise about TechPulse's testimonials, and what did Dariusz say in response?",
+      "gold_answer": "Tariq said testimonials fall short on unique scalability requirements; Dariusz acknowledged they're general but said TechPulse plans case studies for high-scalability use cases in nuanced environments.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SrkXIAS",
+          "answer_claim": "Tariq notes testimonials fall short on unique scalability requirements; Dariusz says they're general and plans high-scalability case studies.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 13,
+          "quote": "[2021-12-07T14:02:45] Tariq Ali: That's understandable. Speaking of testimonials, I've noticed that both yours and others fall a bit short when addressing unique scalability requirements. Thoughts on that?\n[2021-12-07T14:03:05] Dariusz Wisniewski: That's a valid point, Tariq. While we'd love for all our case studies to directly relate to everyone\u2019s precise needs, they mostly provide a general outlook. However, we do plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+          "start": 2179,
+          "end": 2703
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Tariq Ali raised that both TechPulse's and others' testimonials fall short when addressing unique scalability requirements. Dariusz responded that while they'd prefer all case studies to directly relate to everyone's precise needs, they mostly provide a general outlook, but they plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The quote directly supports both parts: Tariq says testimonials 'fall a bit short when addressing unique scalability requirements' and Dariusz responds they 'mostly provide a general outlook' but TechPulse 'plan[s] to develop case studies specifically reflecting high-scalability use cases in nuanced environments.' The gold and independent answers match semantically with no invented details. The question is a realistic sales-conversation need, names participants (allowed), and does not leak the answer. No-context answers ('UNKNOWN') fail to answer. This is a single-call QA (one call supplied), so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SrkXIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Syj3IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T37SIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4cwIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SthWIAS",
+              "b2b:a05Wt000003SvgAIAS",
+              "b2b:a05Wt000003SxwQIAS",
+              "b2b:a05Wt000003T24sIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgJIAS",
+              "b2b:a05Wt000003T0apIAC",
+              "b2b:a05Wt000003T0uDIAS",
+              "b2b:a05Wt000003T2HeIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsqCIAS",
+              "b2b:a05Wt000003SvHuIAK",
+              "b2b:a05Wt000003T1ILIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkWIAS",
+              "b2b:a05Wt000003Sv1jIAC",
+              "b2b:a05Wt000003SwDvIAK",
+              "b2b:a05Wt000003Sx55IAC",
+              "b2b:a05Wt000003Szq2IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzgQIAS",
+              "b2b:a05Wt000003T1jsIAC",
+              "b2b:a05Wt000003T24nIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsLeIAK",
+              "b2b:a05Wt000003SsLfIAK",
+              "b2b:a05Wt000003T342IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv4uIAC",
+              "b2b:a05Wt000003SwaQIAS",
+              "b2b:a05Wt000003SyM5IAK",
+              "b2b:a05Wt000003SyNhIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Ss0bIAC",
+              "b2b:a05Wt000003SxQ9IAK",
+              "b2b:a05Wt000003T0cZIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any person named 'Tariq Ali' or 'Dariusz.' The only salesperson present is Tariq Hassan (TechPulse Solutions), and the only contact is Natalia Rodriguez (NeuralWave Technologies). In none of the three calls does Tariq Hassan raise a scalability concern about TechPulse's testimonials; rather, he cites testimonials and case studies positively (call b2b:a05Wt000003T0cZIAS, lines 8\u201310). Because neither the named individuals nor the described exchange exist in the sources, the question cannot be answered.",
+              "evidence": [],
+              "reason": "No person named 'Tariq Ali' or 'Dariusz' appears in any transcript. The question's premise (Tariq Ali raising a scalability concern about testimonials and Dariusz responding) is not supported by any line in the three provided calls. The closest content involves Tariq Hassan positively referencing testimonials/case studies, which is the opposite of raising a concern, and involves different named individuals."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuP4IAK",
+              "b2b:a05Wt000003SwaZIAS",
+              "b2b:a05Wt000003T1qJIAS",
+              "b2b:a05Wt000003T2eIIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Srm2IAC",
+              "b2b:a05Wt000003SyytIAC",
+              "b2b:a05Wt000003SzAGIA0",
+              "b2b:a05Wt000003T0ZDIA0",
+              "b2b:a05Wt000003T2XlIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain a person named Tariq Ali (the TechPulse representative is Tariq Hassan), and there is no discussion of testimonials or any scalability concern raised about TechPulse's testimonials in any call. Scalability is mentioned only generally (e.g., AI-powered tools being 'fantastic for scalability' and solutions 'designed for both scalability and security'), never in connection with testimonials, and no 'Dariusz' appears in any transcript.",
+              "evidence": [],
+              "reason": "The question asks about 'Tariq Ali' raising a scalability concern about TechPulse's testimonials and 'Dariusz' responding. Neither name appears in any of the five call transcripts. The salesperson is Tariq Hassan, not Tariq Ali. No person named Dariusz is present. The word 'testimonials' never appears in any transcript. Scalability is discussed only in general terms (AI tools, solution design) and is never linked to testimonials. Therefore no complete answer can be provided from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T285IAC",
+              "b2b:a05Wt000003T3aIIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrhEIAS",
+              "b2b:a05Wt000003SrkXIAS",
+              "b2b:a05Wt000003SvOEIA0",
+              "b2b:a05Wt000003T1NBIA0"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Tariq Ali raised that TechPulse's testimonials (as well as others') fall a bit short when addressing unique scalability requirements. Dariusz Wisniewski responded that it was a valid point, acknowledged that their case studies mostly provide a general outlook rather than relating to everyone's precise needs, and stated that TechPulse plans to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SrkXIAS",
+                  "line_start": 11,
+                  "line_end": 13,
+                  "quote": "[2021-12-07T14:02:45] Tariq Ali: That's understandable. Speaking of testimonials, I've noticed that both yours and others fall a bit short when addressing unique scalability requirements. Thoughts on that?\n[2021-12-07T14:03:05] Dariusz Wisniewski: That's a valid point, Tariq. While we'd love for all our case studies to directly relate to everyone\u2019s precise needs, they mostly provide a general outlook. However, we do plan to develop case studies specifically reflecting high-scalability use cases in nuanced environments."
+                }
+              ],
+              "reason": "In the 2021-12-07 call, line 11 contains Tariq Ali's scalability concern about testimonials falling short on unique scalability requirements, and line 12 contains Dariusz's response acknowledging the point and stating plans to develop high-scalability case studies. Line 13 shows Tariq's acknowledgment. All facts are directly supported by the named individuals in the correct call."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same facts: Tariq Ali raised that TechPulse's testimonials fall short on unique scalability requirements, and Dariusz acknowledged the point, noted the case studies are general, and stated TechPulse plans to develop case studies for high-scalability use cases in nuanced environments. Answer A includes slightly more detail (e.g., 'as well as others'' and 'valid point'), but the core requested facts are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Stj3IAC",
+              "b2b:a05Wt000003SxbKIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Svo8IAC",
+              "b2b:a05Wt000003SwdgIAC",
+              "b2b:a05Wt000003T3ATIA0",
+              "b2b:a05Wt000003T3C5IAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqTQIA0",
+              "b2b:a05Wt000003T0MNIA0",
+              "b2b:a05Wt000003T0nrIAC",
+              "b2b:a05Wt000003T2JLIA0",
+              "b2b:a05Wt000003T3TqIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StO6IAK",
+              "b2b:a05Wt000003SwaVIAS",
+              "b2b:a05Wt000003SxWcIAK",
+              "b2b:a05Wt000003SzzqIAC",
+              "b2b:a05Wt000003T01KIAS",
+              "b2b:a05Wt000003T1YUIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxQ5IAK",
+              "b2b:a05Wt000003T2OCIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "tariq ali"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0ChIAK",
+              "b2b:a05Wt000003T204IAC",
+              "b2b:a05Wt000003T2HtIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any person named Tariq Ali or anyone named Dariusz. The TechPulse representative in all three calls is Tariq Hassan, and the contact is Laila Najjar. There is no discussion of testimonials or a scalability concern about testimonials in any of the transcripts. Therefore, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about a scalability concern raised by 'Tariq Ali' regarding TechPulse's testimonials and a response from 'Dariusz.' None of the three call transcripts include a person named Tariq Ali (the salesperson is Tariq Hassan), no person named Dariusz appears, and there is no mention of testimonials or a scalability concern related to testimonials. The calls discuss integration, support, security compliance, pricing, and product roadmaps between Tariq Hassan and Laila Najjar. Since neither the named individuals nor the subject matter (testimonials scalability concern) exist in the sources, no complete answer can be provided."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question fully supported by the cited dialogue: Tariq raises that testimonials fall short on unique scalability requirements, and Dariusz responds that they're general but TechPulse plans case studies for high-scalability use cases in nuanced environments. The gold answer matches the evidence exactly."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What scalability concern did Tariq Ali raise about TechPulse's testimonials",
+            "explicitly_requested": true,
+            "required_fact": "Tariq Ali noted that TechPulse's testimonials (and others') fall short in addressing unique scalability requirements.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SrkXIAS"
+            ]
+          },
+          {
+            "question_span": "what did Dariusz say in response?",
+            "explicitly_requested": true,
+            "required_fact": "Dariusz agreed it was a valid point, said case studies mostly provide a general outlook rather than relating to everyone's precise needs, and said TechPulse plans to develop case studies specifically reflecting high-scalability use cases in nuanced environments.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SrkXIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: Tariq's scalability concern and Dariusz's response. The gold_answer contains exactly those two facts, no extras. The independent answer covers both. The obligations correctly extract the two requested facts from the single call. The single call is required to supply both facts, and it does. No arithmetic involved.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Tariq said testimonials fall short on unique scalability requirements",
+            "question_span": "What scalability concern did Tariq Ali raise about TechPulse's testimonials",
+            "required_by_question": true
+          },
+          {
+            "claim": "Dariusz acknowledged they're general",
+            "question_span": "what did Dariusz say in response?",
+            "required_by_question": true
+          },
+          {
+            "claim": "Dariusz said TechPulse plans case studies for high-scalability use cases in nuanced environments",
+            "question_span": "what did Dariusz say in response?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "43910a76fc57815a97bdbab97dcbf92224dd0aa990eb2de7f4b447804a6276cc",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SSMrIAO"
+    ],
+    "status": "accepted",
+    "question": "What discount and total price did AutoElite quote Zara Phillips for the nine Lexus RX 350 units?",
+    "gold_answer": "A 5% discount per unit, bringing the total to 324,899.91.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SSMrIAO",
+        "answer_claim": "5% discount on each, total 324,899.91 for nine Lexus RX 350 units",
+        "kind": "dialogue",
+        "line_start": 4,
+        "line_end": 5,
+        "quote": "[2022-04-09T14:21:02] Noah Brown: Let\u2019s start with going over the pricing for the nine Lexus RX 350 units. We\u2019ve managed to apply a 5% discount on each, which brings the total to 324,899.91. Do you have any questions about this?",
+        "start": 487,
+        "end": 715
+      }
+    ],
+    "question_id": "b2c-single_call-43910a76fc57815a",
+    "candidate": {
+      "question": "What discount and total price did AutoElite quote Zara Phillips for the nine Lexus RX 350 units?",
+      "gold_answer": "A 5% discount per unit, bringing the total to 324,899.91.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SSMrIAO",
+          "answer_claim": "5% discount on each, total 324,899.91 for nine Lexus RX 350 units",
+          "kind": "dialogue",
+          "line_start": 4,
+          "line_end": 5,
+          "quote": "[2022-04-09T14:21:02] Noah Brown: Let\u2019s start with going over the pricing for the nine Lexus RX 350 units. We\u2019ve managed to apply a 5% discount on each, which brings the total to 324,899.91. Do you have any questions about this?",
+          "start": 487,
+          "end": 715
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "AutoElite quoted Zara Phillips a 5% discount on each of the nine Lexus RX 350 units, bringing the total to 324,899.91.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA. The dialogue (2022-04-09, call b2c:a05Ws000005SSMrIAO) explicitly states Noah Brown of AutoElite applied a 5% discount on each of nine Lexus RX 350 units, totaling 324,899.91 \u2014 fully supporting the gold answer. The question is a realistic sales need (discount and total price for a specific quote), names the account Zara Phillips per metadata, does not leak the answer, and the independent answer matches semantically. No-context answers are UNKNOWN, so they fail. Since it is a single-call set, both_calls_necessary and single_call_answers_fail are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SSMrIAO"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SWbeIAG",
+              "b2c:a05Ws000005SZeIIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a Lexus RX 350, any nine-unit order, or any discount/total price quoted to Zara Phillips. The calls only discuss a Toyota Camry Hybrid, financing options, warranties, and service support, with no pricing figures given.",
+              "evidence": [],
+              "reason": "Neither call contains any reference to a Lexus RX 350, a nine-unit order, a discount percentage or amount, or a total price. The conversations between Priya Sharma and Zara Phillips focus exclusively on the Toyota Camry Hybrid, financing flexibility, extended warranties, and post-purchase support. No pricing or discount information of any kind is provided, so the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSy1IAG",
+              "b2c:a05Ws000005SVCaIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention a Lexus RX 350 or a nine-unit order. The only discount mentioned is a 5% bulk-purchase discount tied to the 2022 BMW X5 M, and no total price for any nine Lexus units is quoted, so the requested facts are missing.",
+              "evidence": [],
+              "reason": "Neither call references the Lexus RX 350 or a nine-unit quantity. The sole discount cited (5%) is explicitly linked to the 2022 BMW X5 M in call b2c:a05Ws000005SSy1IAG line 10, not to Lexus RX 350 units. No total price for nine Lexus RX 350 vehicles appears anywhere in the sources, so the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQZZIA4",
+              "b2c:a05Ws000005SQxnIAG",
+              "b2c:a05Ws000005SVEPIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of a Lexus RX 350 or any nine-unit quote. All three calls with Zara Phillips discuss only the 2022 Toyota Camry Hybrid (priced at $25,999.99 in the 2021-03-05 call), so no discount or total price for nine Lexus RX 350 units is stated.",
+              "evidence": [],
+              "reason": "The question asks about a discount and total price for nine Lexus RX 350 units quoted to Zara Phillips by AutoElite. None of the three provided call transcripts mention the Lexus RX 350, a nine-unit order, or any associated discount/total price. The calls exclusively discuss the 2022 Toyota Camry Hybrid, a Comprehensive Maintenance Plan, an Extended Service Contract, and Flexible Financing Solutions. Therefore the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZWQIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript between Anwar Hassan (AutoElite Motors) and Zara Phillips contains no mention of Lexus RX 350 vehicles, no discount, and no total price for nine units. The conversation only references a 2023 Nissan Leaf and a 2022 Toyota Camry Hybrid in general terms without specific pricing figures.",
+              "evidence": [],
+              "reason": "The question asks about a discount and total price for nine Lexus RX 350 units quoted to Zara Phillips by AutoElite. The sole call transcript (b2c:a05Ws000005SZWQIA4) discusses hybrid luxury vehicles, specifically a 2023 Nissan Leaf and 2022 Toyota Camry Hybrid, with no reference to Lexus RX 350, no quantity of nine units, no discount percentage or amount, and no total price. The draft extraction correctly identifies this as unanswerable. No source evidence supports any part of the requested facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SWWoIAO",
+              "b2c:a05Ws000005SWnCIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any quote for Zara Phillips regarding nine Lexus RX 350 units. Both calls involve a customer named Zara Ward (not Zara Phillips) discussing eco-friendly sedans (Tesla Model S and Nissan Leaf) with salesperson Hiroko Yamada at AutoElite Motors. There is no mention of Lexus RX 350, a nine-unit order, any discount, or any total price in either transcript.",
+              "evidence": [],
+              "reason": "The question asks about a discount and total price quoted to 'Zara Phillips' for 'nine Lexus RX 350 units.' The provided calls are for account 'Zara Ward' (not Zara Phillips) and discuss Tesla Model S and Nissan Leaf eco-friendly sedans. No Lexus RX 350, no nine-unit quantity, no discount percentage, and no total price appear anywhere in the transcripts. The named person, product, quantity, and pricing details are all absent, so no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZJUIA4",
+              "b2c:a05Ws000005SZrHIAW",
+              "b2c:a05Ws000005Sc2iIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Lexus RX 350, a nine-unit order, any discount, or a total price quoted to Zara Phillips. All three calls between Hina Patel (AutoElite Motors) and Zara Phillips discuss a single 2022 Toyota Camry Hybrid purchase, with no pricing figures, unit quantities, or discount terms referenced.",
+              "evidence": [],
+              "reason": "The question asks about a discount and total price for nine Lexus RX 350 units quoted by AutoElite to Zara Phillips. None of the three call transcripts reference the Lexus RX 350, a nine-unit order, any discount percentage or amount, or any total price. The conversations exclusively concern a 2022 Toyota Camry Hybrid, maintenance plans, warranties, financing options, and competitor comparisons. Therefore, no complete answer can be provided from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQuYIAW",
+              "b2c:a05Ws000005SSBaIAO",
+              "b2c:a05Ws000005SSMqIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a Lexus RX 350 or a nine-unit order. The only vehicles discussed with Zara Phillips are the 2023 Nissan Leaf and 2022 Toyota Camry Hybrid, with a quoted total of $54,999.98 for both vehicles and no discount stated.",
+              "evidence": [],
+              "reason": "No source contains any reference to a Lexus RX 350, a nine-unit quantity, or a discount/total price for such an order. The calls only discuss the 2023 Nissan Leaf and 2022 Toyota Camry Hybrid (total $54,999.98, no discount mentioned). Therefore the requested facts about nine Lexus RX 350 units cannot be answered from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMCaIAO",
+              "b2c:a05Ws000005SZWRIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of a Lexus RX 350, any nine-unit order, a discount, or a total price. The calls only discuss hybrid options, maintenance plans, and financing generally.",
+              "evidence": [],
+              "reason": "Neither call transcript references the Lexus RX 350, a nine-unit quantity, any discount percentage or amount, or a total price quoted to Zara Phillips. The conversations cover Toyota Camry Hybrid interest, pre-owned concerns, maintenance plans, service center comparisons, and financing flexibility, but no specific vehicle quote matching the question exists in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMCZIA4",
+              "b2c:a05Ws000005SYs8IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Lexus RX 350, any discount, or a total price for nine units. Both calls between Noah Brown (AutoElite Motors) and Zara Phillips discuss only the 2023 Nissan Leaf and the 2022 Toyota Camry Hybrid. No pricing figures, discounts, or nine-unit orders are referenced anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a discount and total price for nine Lexus RX 350 units quoted to Zara Phillips by AutoElite. Neither call transcript mentions the Lexus RX 350, a nine-unit order, any discount percentage or amount, or any total price. The vehicles discussed are exclusively the 2023 Nissan Leaf and 2022 Toyota Camry Hybrid, and no specific pricing is quoted. Therefore, the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SXHbIAO",
+              "b2c:a05Ws000005SZrIIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Lexus RX 350, any discount, or a quoted total price for nine units. The two calls between Danieles Silveira (AutoElite Motors) and Zara Phillips discuss only the 2022 Toyota Camry Hybrid and the Mercedes-Benz E-Class in general terms, with no specific pricing figures, unit quantities, or discount percentages quoted.",
+              "evidence": [],
+              "reason": "Neither call references a Lexus RX 350, a nine-unit order, a discount, or a total price. The conversations cover hybrid vehicles, financing, warranties, and maintenance services but never the specific product, quantity, discount, or price requested in the question. Therefore the answer cannot be completed from the supplied sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQj7IAG",
+              "b2c:a05Ws000005SQj8IAG",
+              "b2c:a05Ws000005SZG7IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no information about a person named Zara Phillips, no mention of Lexus RX 350 vehicles, and no quote for nine units of any vehicle. All three calls are between Aisha Patel of AutoElite Motors and Zara Ahmed regarding leasing a 2024 Tesla Model S and a 2023 Mercedes-Benz E-Class. The only discount mentioned is a 5% discount on each additional 2024 Tesla Model S for multi-unit leasing, with no total price stated. The requested facts (discount and total price for nine Lexus RX 350 units quoted to Zara Phillips) are entirely absent from the provided transcripts.",
+              "evidence": [],
+              "reason": "The question asks about Zara Phillips and nine Lexus RX 350 units, but the sources only reference Zara Ahmed and discuss Tesla Model S / Mercedes-Benz E-Class leasing. Neither the named person (Zara Phillips), the product (Lexus RX 350), the quantity (nine units), nor a total price appears anywhere in the transcripts. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRSJIA4",
+              "b2c:a05Ws000005SSMrIAO",
+              "b2c:a05Ws000005SXHcIAO",
+              "b2c:a05Ws000005SYQcIAO"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "AutoElite quoted Zara Phillips a 5% discount on each of the nine Lexus RX 350 units, bringing the total price to 324,899.91.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SSMrIAO",
+                  "line_start": 4,
+                  "line_end": 5,
+                  "quote": "[2022-04-09T14:21:02] Noah Brown: Let\u2019s start with going over the pricing for the nine Lexus RX 350 units. We\u2019ve managed to apply a 5% discount on each, which brings the total to 324,899.91. Do you have any questions about this?"
+                }
+              ],
+              "reason": "In the April 9, 2022 call, Noah Brown from AutoElite Motors explicitly states to Zara Phillips: 'We've managed to apply a 5% discount on each, which brings the total to 324,899.91' regarding the nine Lexus RX 350 units. This provides both the discount (5%) and the total price (324,899.91) as requested."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same requested facts: a 5% discount per unit and a total price of 324,899.91 for the nine Lexus RX 350 units. The wording differs slightly but the semantic content is identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRUCIA4",
+              "b2c:a05Ws000005SS0JIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any quote for nine Lexus RX 350 units to Zara Phillips. The calls involve Zara Ward (not Zara Phillips) and discuss a 2024 Tesla Model S purchase, not Lexus RX 350 units. No discount or total price for nine Lexus RX 350 units is mentioned anywhere in the sources.",
+              "evidence": [],
+              "reason": "The question asks about a discount and total price for nine Lexus RX 350 units quoted to Zara Phillips by AutoElite. The sources reference a different person (Zara Ward, not Zara Phillips), a different product (2024 Tesla Model S, not Lexus RX 350), and a different quantity (single vehicle, not nine units). No Lexus RX 350 is mentioned, no nine-unit quantity is discussed, and no specific discount or total price is provided. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOZIIA4",
+              "b2c:a05Ws000005SYaBIAW",
+              "b2c:a05Ws000005SZ04IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Lexus RX 350, any discount, or a total price for nine units quoted to Zara Phillips by AutoElite. All three calls between Dmitri Volkov and Zara Phillips discuss only the 2022 Toyota Camry Hybrid and the Cadillac XT6. Dmitri states he will prepare a detailed quote but no figures are given in any transcript.",
+              "evidence": [],
+              "reason": "The question asks about a discount and total price for nine Lexus RX 350 units. None of the three call transcripts reference the Lexus RX 350 model, a quantity of nine units, any discount percentage or amount, or any total price. The vehicles discussed are exclusively the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6. In the 2020-11-19 call, Dmitri says he will 'prepare a detailed quote' (line 16) but no numbers are provided. Therefore the requested facts are entirely absent from the sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single call directly states the 5% discount per unit and total of 324,899.91 for the nine Lexus RX 350 units quoted to Zara Phillips; question is factual, self-contained, and fully supported."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What discount",
+            "explicitly_requested": true,
+            "required_fact": "AutoElite applied a 5% discount on each of the nine Lexus RX 350 units",
+            "source_call_ids": [
+              "b2c:a05Ws000005SSMrIAO"
+            ]
+          },
+          {
+            "question_span": "total price",
+            "explicitly_requested": true,
+            "required_fact": "The total price quoted was 324,899.91",
+            "source_call_ids": [
+              "b2c:a05Ws000005SSMrIAO"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the discount and total price. The gold answer provides exactly those two facts: 5% discount per unit and total 324,899.91. No extra facts are included. The independent answer matches the gold answer and directly answers the question. The obligations correctly extract the two requested facts from the single call, and the call is required to supply both facts. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "A 5% discount per unit",
+            "question_span": "What discount",
+            "required_by_question": true
+          },
+          {
+            "claim": "total to 324,899.91",
+            "question_span": "total price",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]
