@@ -1,0 +1,415 @@
+[
+  {
+    "question_id": "b2b-multi_call-65f47bf036371d05",
+    "question": "For RenewSys Corp, what did Giuseppe say about implementation flexibility in the initial call, and what customization concern did Liam raise in the follow-up discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "What Giuseppe said about implementation flexibility in the initial call, and what customization concern Liam raised in the follow-up call",
+        "relationship": "two independent fact lookups across calls joined by the same account",
+        "reason": "Implementation flexibility (Giuseppe's statement) and Liam's customization concern are separate information needs from different speakers on different calls; sharing the account and a loose implementation/customization theme does not make them one coherent issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: Giuseppe's statement on implementation flexibility (found in the Feb 19 call) and Liam's customization concern (found in the Feb 26 call). Each source contributes an exclusive requested fact. The gold answer accurately reflects both: in the Feb 19 call Giuseppe says 'Our implementation process is quite flexible. We can customize the solutions to align with your specific requirements and the eco-efficiency goals RenewSys Corp prioritizes,' and in the Feb 26 call Liam says 'customization is also key for us to ensure our unique requirements are fully met.' The question is naturally scoped to a named account and participants, with no artificial locator preamble or answer leakage.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from call b2b:a05Wt000003SwFSIA0 (dated 2020-02-19, the earlier/initial call) is attributed to Giuseppe Romano and states: 'Our implementation process is quite flexible. We can customize the solutions to align with your specific requirements and the eco-efficiency goals RenewSys Corp prioritizes.' This directly supports the answer_claim about implementation flexibility and customization to RenewSys' requirements and eco-efficiency goals."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from call b2b:a05Wt000003SvckIAC (dated 2020-02-26, the later/follow-up call) is attributed to Liam McCarthy and states: 'customization is also key for us to ensure our unique requirements are fully met.' This directly supports the answer_claim that Liam raised customization as key to fully meeting their unique requirements."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Giuseppe said implementation is flexible and can be customized to RenewSys' requirements and eco-efficiency goals \u2014 supported by evidence index 0 from the initial call (2020-02-19). (2) Liam later said customization is key to fully meet their unique requirements \u2014 supported by evidence index 1 from the follow-up call (2020-02-26). Both factual claims in the gold_answer are fully supported by the cited evidence, with correct speaker attribution, correct call ordering (initial vs. follow-up), and accurate content."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-cdd368d260cf5d5d",
+    "question": "What follow-up commitments did Chidi make to Anita Jefferson at InfiLink Solutions in each of their two discussions?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The follow-up commitments Chidi made to Anita Jefferson at InfiLink Solutions in each of their two discussions.",
+        "relationship": "Same business issue (commitments made to the same customer) tracked across two calls.",
+        "reason": "Both calls concern the same ongoing issue\u2014commitments to Anita Jefferson\u2014and comparing them is a coherent multi-call request, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvkxIAC",
+                "fact": "Chidi committed to schedule a follow-up call to explore CircuitAI Innovator and PulseSim Pro.",
+                "why_other_call_cannot_supply_it": "The second call does not mention scheduling a follow-up call; it is a separate discussion where the follow-up commitments are different."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy4UIAS",
+                "fact": "Chidi committed to email client testimonials/case studies and detailed roadmap projections.",
+                "why_other_call_cannot_supply_it": "The first call does not mention emailing testimonials or roadmap projections; those commitments are unique to the second call."
+              }
+            ],
+            "reason": "The question explicitly asks for follow-up commitments in each of the two discussions, and the two calls contain distinct commitments: the first call's commitment is to schedule a follow-up call, while the second call's commitment is to email specific materials. These are substantively different requested pieces of information, and each call provides a fact that the other does not."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "necessary",
+                "exclusive_facts",
+                "reason"
+              ]
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvkxIAC",
+                  "fact": "Chidi committed to schedule a follow-up call to explore CircuitAI Innovator and PulseSim Pro.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention scheduling a follow-up call; it is a separate discussion where the follow-up commitments are different."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy4UIAS",
+                  "fact": "Chidi committed to email client testimonials/case studies and detailed roadmap projections.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention emailing testimonials or roadmap projections; those commitments are unique to the second call."
+                }
+              ],
+              "reason": "The question explicitly asks for follow-up commitments in each of the two discussions, and the two calls contain distinct commitments: the first call's commitment is to schedule a follow-up call, while the second call's commitment is to email specific materials. These are substantively different requested pieces of information, and each call provides a fact that the other does not."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvkxIAC",
+                "fact": "Chidi committed to scheduling a follow-up call to explore CircuitAI Innovator and PulseSim Pro.",
+                "why_other_call_cannot_supply_it": "The second call is that follow-up; it contains no mention of scheduling a call, only the email commitment."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sy4UIAS",
+                "fact": "Chidi committed to sending an email with client testimonials/case studies and detailed roadmap projections.",
+                "why_other_call_cannot_supply_it": "The first call ends with only the scheduling commitment; no email, testimonials, or roadmap projections are mentioned there."
+              }
+            ],
+            "reason": "The question asks for commitments from each of two discussions. Each call contains a distinct, requested commitment (schedule a follow-up call vs. send an email with testimonials and roadmap projections), and neither call contains the other's fact."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvkxIAC",
+                  "fact": "Chidi committed to scheduling a follow-up call to explore CircuitAI Innovator and PulseSim Pro.",
+                  "why_other_call_cannot_supply_it": "The second call is that follow-up; it contains no mention of scheduling a call, only the email commitment."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sy4UIAS",
+                  "fact": "Chidi committed to sending an email with client testimonials/case studies and detailed roadmap projections.",
+                  "why_other_call_cannot_supply_it": "The first call ends with only the scheduling commitment; no email, testimonials, or roadmap projections are mentioned there."
+                }
+              ],
+              "reason": "The question asks for commitments from each of two discussions. Each call contains a distinct, requested commitment (schedule a follow-up call vs. send an email with testimonials and roadmap projections), and neither call contains the other's fact."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what follow-up commitments the rep made across two calls with a named contact at a named account\u2014plausible for an account manager reviewing next steps. First call: Chidi commits to scheduling a follow-up call to explore CircuitAI Innovator and PulseSim Pro (17:05:25). Second call: Chidi commits to emailing client testimonials/case studies (14:32:10) and detailed roadmap projections (14:34:45). Each source contributes an exclusive set of commitments; the gold answer states precisely those facts with no extras. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Chidi explicitly saying 'Let's schedule a follow-up call to dive deeper into these options,' which directly supports the claim that he proposed scheduling a follow-up call to explore additional product options. The call metadata confirms it is with Anita Jefferson at InfiLink Solutions on 2021-03-04."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote contains Chidi stating 'I'll make sure to include some detailed roadmap projections in my follow-up email after the call,' and Anita's closing line 'I'll be looking forward to those case studies and the roadmap insights.' The roadmap projections commitment is explicitly stated by Chidi. The case studies/testimonials commitment is referenced by Anita as something she expects, implying it was discussed earlier in the call (though the specific Chidi line promising case studies is not in the cited passage). However, Anita's reference to 'those case studies' with the demonstrative 'those' indicates a prior commitment was made in the same conversation. Combined, the passage supports the claim about both roadmap projections and case studies being part of the follow-up email commitment."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: First call \u2013 schedule a follow-up call to explore CircuitAI Innovator and PulseSim Pro; Second call \u2013 email client testimonials/case studies and detailed roadmap projections. Evidence index 0 supports the first-call commitment to schedule a follow-up call to dive deeper into options (the specific product names CircuitAI Innovator and PulseSim Pro are not explicitly named in the cited quote, but 'these options' in context of the call about InfiLink's solution enhancement is consistent). Evidence index 1 supports the second-call commitment regarding roadmap projections (explicitly stated by Chidi) and case studies (referenced by Anita as an expected deliverable). The gold answer's mention of 'CircuitAI Innovator and PulseSim Pro' as the specific products for the first call is not explicitly named in the cited quote for index 0 (it says 'these options'), but the overall structure and commitments are supported. The answer is substantively supported by the combined evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-d87c783b312d3441",
+    "question": "What did Michael O'Connor at EcoWave Solutions say he needs before deciding on SecureData Nexus, and what did Kwame agree to provide?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the requirement Michael O'Connor at EcoWave Solutions stated he needs before deciding on SecureData Nexus, and what Kwame agreed to provide in response.",
+        "relationship": "single coherent exchange: a customer requirement and the salesperson's commitment to address it, on the same issue",
+        "reason": "The question pairs one customer requirement with the agreed follow-up action addressing that same requirement, forming one coherent sales information need."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Michael needs before deciding and what Kwame agreed to provide. The transcript shows Michael requesting 'detailed specs and maybe a demo' and Kwame agreeing to 'send you detailed specifications and arrange a virtual demo' via email. The gold answer accurately captures both facts. The question is naturally worded, scoped to a specific customer/product interaction, and a rep would plausibly want to recall next-step commitments. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Michael O'Connor explicitly states: 'I'd probably need to see detailed specs and maybe a demo to fully appreciate the value.' This directly supports the claim that Michael needs detailed specs and a demo to decide. The slight hedging ('probably,' 'maybe') is preserved but does not negate the core request."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Kwame's quoted line states: 'I can send you detailed specifications and arrange a virtual demo at your convenience.' This supports the claim that Kwame will send specs and schedule a demo. Michael's follow-up ('That would be helpful, let's do that') confirms agreement. The gold_answer specifies 'email the specifications,' but the quote only says 'send you detailed specifications' without explicitly stating the medium is email. However, 'send' in a B2B context is a reasonable paraphrase and the core commitment (provide specs + arrange virtual demo) is clearly supported. The 'virtual demo' detail is explicitly present."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Michael wants detailed specs and a demo \u2013 supported by index 0 where Michael says he needs 'detailed specs and maybe a demo.' (2) Kwame agreed to email the specifications and schedule a virtual demo \u2013 supported by index 1 where Kwame says he can 'send you detailed specifications and arrange a virtual demo.' The only minor gap is that 'email' is not explicitly stated in the quote (Kwame says 'send'), but this is a faithful, concise paraphrase of the commitment. All substantive factual claims in the gold_answer are covered by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-d67067a607227801",
+    "question": "What are NeuralWave's key buying requirements that Matthew Chen raised on the call with Ayumi Shimizu?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "NeuralWave's key buying requirements raised by Matthew Chen on the call with Ayumi Shimizu",
+        "relationship": "single coherent requirement lookup from one call",
+        "reason": "One lookup of buying requirements from a single call; natural sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks about a customer's buying requirements from a specific call, which is core sales intelligence. The dialogue confirms all four requirements: (1) fast time-to-market without sacrificing quality (11:03:20), (2) scalability to grow with the company (11:05:00), (3) comprehensive implementation support (11:05:50), and (4) customizable features (11:06:35). The gold answer lists exactly these four items with no unasked extras. The question identifies the account (NeuralWave), the contact (Matthew Chen), and the rep (Ayumi Shimizu), providing adequate scope. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Matthew Chen explicitly states their main goal is to 'reduce the time it takes to deploy new systems without sacrificing the quality of our AI products' and that 'Achieving a quick time-to-market is crucial.' This directly supports the claim about fast time-to-market deployment without sacrificing quality."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Matthew Chen says 'Scalability is a big factor for us. As we continue to grow, we need solutions that can grow with us.' This directly supports the claim that scalability is a big factor and solutions must grow with them."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "Matthew Chen states 'We would need comprehensive support to ensure a smooth deployment.' While phrased as part of a question about the implementation process, the statement 'We would need comprehensive support to ensure a smooth deployment' is a declarative expression of a requirement, not merely a question. It supports the claim about needing comprehensive support for smooth deployment."
+          },
+          {
+            "index": 3,
+            "supported": true,
+            "reason": "Matthew Chen asks 'are there specific customizable features we can leverage to better fit our unique needs?' This is phrased as a question, but it clearly expresses a buying requirement/interest in customizable features to fit their unique needs. The question implies the requirement exists\u2014they are seeking confirmation that the vendor can meet it. This supports the claim about customizable features."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "All four key buying requirements in the gold_answer are supported by the cited evidence: (1) fast time-to-market without sacrificing quality (index 0), (2) scalability to grow with the company (index 1), (3) comprehensive implementation support (index 2), and (4) customizable features (index 3). Each is explicitly stated by Matthew Chen in the dialogue. The context metadata confirms this is the NeuralWave Technologies account with contact Matthew Chen, matching the question's reference to 'NeuralWave' and 'Matthew Chen.' The call is with the opportunity 'NeuralWave EDA Enhancement Project,' consistent with the scenario described."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2283dabc2f2cac2f",
+    "question": "What did Daniel Brooks say draws him to the Ford F-150 and Chevrolet Tahoe?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Daniel Brooks said attracts him to the Ford F-150 and the Chevrolet Tahoe",
+        "relationship": "single coherent preference lookup about one customer's stated reasons for interest in two vehicles",
+        "reason": "This is one lookup of a customer's stated preferences; asking about two vehicles he is considering is a natural part of the same preference question, not two independent fact requests."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what draws Daniel Brooks to two specific vehicles. The dialogue at 13:00:35 has Daniel stating the F-150's 'durability and utility' for work and personal needs and the Tahoe's 'spacious family vehicle feel.' The gold answer captures both points precisely with no extra or missing facts. The question is naturally phrased, scoped to a named customer and opportunity, and a sales rep would plausibly want to know a prospect's attraction reasons. Single-call set, so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Daniel Brooks explicitly states the F-150's 'great reputation for durability and utility, which is important for my work and personal needs' and the Tahoe's 'spacious family vehicle feel I need,' directly supporting the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Daniel Brooks's own words attributing his draw to the F-150 to its durability and utility for work and personal needs, and his draw to the Tahoe to its spacious family-vehicle feel. This fully covers every factual element in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-6de53db9be25988a",
+    "question": "What is Jackson Clarke looking for in an eco-friendly SUV, and what concern did he raise about Exquisite Vehicles Hub?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Jackson Clarke's requirements for an eco-friendly SUV and the concern he raised about Exquisite Vehicles Hub",
+        "relationship": "coherent discovery-and-objection from the same sales conversation: the customer's stated needs and his concern about the dealership both address the same buying interaction",
+        "reason": "This is a single customer's requirements plus an objection raised in the same call, forming one coherent sales information request rather than two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two things: (1) what Jackson Clarke wants in an eco-friendly SUV and (2) what concern he raised about Exquisite Vehicles Hub. The dialogue confirms he wants something 'fuel-efficient and tech-forward' and that he noted Exquisite Vehicles Hub 'has faced challenges with security and compliance.' The gold answer captures both facts precisely with no unasked extras. The question is naturally phrased, scoped to a named customer and a specific competitor, and a rep would plausibly want to know a prospect's preferences and competitive concerns. Single-call set, so both_sources_required is true by rule.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly shows Jackson Clarke stating he is 'really keen on something that's fuel-efficient and tech-forward,' which exactly matches the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Jackson Clarke explicitly saying 'I've heard Exquisite Vehicles Hub has faced challenges with security and compliance, which is a bit concerning when considering long-term reliability,' directly supporting the answer_claim about security and compliance challenges."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states (1) he wants a fuel-efficient, tech-forward SUV and (2) he noted Exquisite Vehicles Hub has faced security and compliance challenges. Evidence index 0 directly supports claim (1) with Jackson Clarke's own words about being keen on something fuel-efficient and tech-forward. Evidence index 1 directly supports claim (2) with Jackson Clarke's statement about hearing that Exquisite Vehicles Hub has faced challenges with security and compliance. The opportunity metadata ('Jackson Clarke - Premium SUV Eco-Friendly Deal') provides additional context confirming the SUV focus. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  }
+]

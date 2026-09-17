@@ -1,0 +1,530 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "61aa33d9b73f61a56a4f6f81ec04dfe2244c3539e929b521060a682ba6d8eabe",
+  "questions": 3,
+  "counts": {
+    "fail": 1,
+    "pass": 2
+  },
+  "estimated_usd": 0.38281,
+  "results": [
+    {
+      "question_id": "b2b-single_call-d67067a607227801",
+      "question": "What are NeuralWave's key buying requirements that Matthew Chen raised on the call with Ayumi Shimizu?",
+      "gold_answer": "Fast time-to-market deployment without sacrificing quality, scalability to grow with the company, comprehensive implementation support, and customizable features.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Ss0bIAC",
+        "b2b:a05Wt000003StO9IAK",
+        "b2b:a05Wt000003SuDiIAK",
+        "b2b:a05Wt000003SuvIIAS",
+        "b2b:a05Wt000003SvHzIAK",
+        "b2b:a05Wt000003SvI0IAK",
+        "b2b:a05Wt000003SvgCIAS",
+        "b2b:a05Wt000003SvpsIAC",
+        "b2b:a05Wt000003Swc6IAC",
+        "b2b:a05Wt000003SwdkIAC",
+        "b2b:a05Wt000003Sx5IIAS",
+        "b2b:a05Wt000003SxEsIAK",
+        "b2b:a05Wt000003SxEtIAK",
+        "b2b:a05Wt000003SxQ9IAK",
+        "b2b:a05Wt000003SxgNIAS",
+        "b2b:a05Wt000003SxoIIAS",
+        "b2b:a05Wt000003SzF9IAK",
+        "b2b:a05Wt000003T031IAC",
+        "b2b:a05Wt000003T0cZIAS",
+        "b2b:a05Wt000003T0nvIAC",
+        "b2b:a05Wt000003T0uIIAS",
+        "b2b:a05Wt000003T10qIAC",
+        "b2b:a05Wt000003T1dSIAS",
+        "b2b:a05Wt000003T1wkIAC",
+        "b2b:a05Wt000003T2JRIA0",
+        "b2b:a05Wt000003T2RTIA0",
+        "b2b:a05Wt000003T2j8IAC",
+        "b2b:a05Wt000003T3P6IAK",
+        "b2b:a05Wt000003T3bzIAC",
+        "b2b:a05Wt000003T3iQIAS",
+        "b2b:a05Wt000003T3k1IAC",
+        "b2b:a05Wt000003T3vIIAS",
+        "b2b:a05Wt000003T4HvIAK",
+        "b2b:a05Wt000003T4HwIAK",
+        "b2b:a05Wt000003T4HxIAK",
+        "b2b:a05Wt000003T4WNIA0",
+        "b2b:a05Wt000003T4bBIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 3,
+            "original_end": 15,
+            "normalized_end": 16
+          },
+          {
+            "answer": 2,
+            "evidence": 0,
+            "original_end": 5,
+            "normalized_end": 6
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Matthew Chen spoke with Ayumi Shimizu on three separate calls (2022-12-23, 2023-03-24, 2023-03-29) under the NeuralWave-EDA Collaboration opportunity, and each call surfaced different buying requirements. The question does not specify which call, so materially different complete answers exist.",
+        "answers": [
+          {
+            "answer": "On the 2023-03-24 call, Matthew Chen's key buying requirements were: competitive pricing with discounts on the tailored package (including discounts on AI Cirku-Tech and OptiPower Manager), a shorter implementation timeline than originally anticipated to avoid delaying the project, thorough support and training to help the team adapt to new workflows, and security compliance that fits NeuralWave's future compliance requirements for long-term growth.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2023-03-24T09:00:40] Matthew Chen: Good, overall. We appreciate the detailed quotes and the discounts on the tailored package. The pricing seems competitive. However, I've got a few questions, especially around implementation time and support.\n[2023-03-24T09:01:00] Ayumi Shimizu: Absolutely, let's dive into that. I want to make sure we address any concerns you might have. Regarding the implementation, how do our timelines align with your expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2023-03-24T09:02:25] Ayumi Shimizu: Definitely, and we're committed to minimizing any disruptions. On the support side, we provide comprehensive training and ongoing assistance to ensure your team is confident and the transition is smooth. Does that meet your support expectations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-03-24T09:03:20] Matthew Chen: Speaking of support, how do your products align with our security compliance needs? We've looked at other options, and while security is a must-have, we're still considering what best fits our future compliance requirements.\n[2023-03-24T09:03:45] Ayumi Shimizu: Great question. Our solutions, like the SecureFlow Suite, are specifically designed to meet stringent security standards and align with evolving regulatory requirements, which we continuously enhance. It's something we take very seriously."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2023-03-24T09:04:45] Matthew Chen: We see that. The overall package, including the discounts on AI Cirku-Tech and OptiPower Manager, is appealing. We just need a bit of time to evaluate everything internally before moving forward."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2023-03-29 call, Matthew Chen's key buying requirements were: a wider range of pricing options aligned with NeuralWave's projected growth, a fast/efficient implementation process so they can start using product features quickly (having faced longer setups with other solutions), an implementation timeline that fits their upcoming product cycles, and a partner committed to continuous innovation that resonates with their strategic growth plans.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvpsIAC",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2021-11-12T11:00:30] Sofia Rodriguez: Sure, that sounds good. We definitely need to optimize our design processes and enhance power management, if that's something TechPulse can help with."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvpsIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2021-11-12T11:01:32] Sofia Rodriguez: That does sound promising. However, I’ve heard some feedback about the initial setup being a bit overwhelming due to customization needs. Can you speak to that?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvpsIAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-11-12T11:02:10] Sofia Rodriguez: Great! Support is definitely critical for us. How does that work during and after implementation?\n[2021-11-12T11:02:27] Mei Lin: During the implementation phase, our dedicated team will be with you to address any immediate issues, and post-implementation, we have a 24/7 support service that ensures you're getting the most out of your investment. We also offer training sessions to help your team become experts in using our solutions efficiently."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2022-12-23 call, Matthew Chen's key buying requirements were: scalable solutions that seamlessly integrate with existing systems as NeuralWave expands (without constant overhauls), reliable performance in high-demand scenarios, a competitive pricing model, customizable solutions to meet niche requirements, and products that stay relevant with future industry trends through continuous innovation.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2022-12-23T13:31:20] Matthew Chen: Sure. One of our primary challenges is finding scalable solutions that seamlessly integrate with our existing systems, especially as we expand. We're looking for something that can grow with us without needing constant overhauls."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2022-12-23T13:32:40] Matthew Chen: Interesting. I've noticed some competitors have innovative offerings, but their systems tend to underperform in high-demand scenarios. How do your products handle such situations?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2022-12-23T13:33:15] Matthew Chen: Good to know. Can you tell me more about your pricing model compared to what else is out there?\n[2022-12-23T13:33:35] Ayumi Shimizu: Certainly! Our pricing is competitive but what sets us apart isn’t just the cost; it’s the value you derive from our comprehensive solutions and support services. While we haven’t seen significant differentiators purely based on price in this industry, the AI-driven efficiencies and scalability we offer are game-changers for many clients."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2022-12-23T13:34:40] Matthew Chen: Customizability is a huge plus. In terms of future industry trends, how do you ensure your products remain relevant?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Matthew Chen spoke with Ayumi Shimizu on four separate calls (2022-12-23, 2023-01-23, 2023-03-10, 2023-03-24, 2023-03-29). The question says 'the call' without a date, opportunity name, or other qualifier, so it does not uniquely identify one of these calls. Each call contains materially different sets of buying requirements raised by Matthew Chen, yielding multiple valid complete answers.",
+        "answers": [
+          {
+            "answer": "On the 2023-03-24 call (NeuralWave-EDA Collaboration), Matthew Chen raised the following key buying requirements: (1) Implementation time – he noted TechPulse's implementation timeline seemed longer than anticipated and could delay their project; (2) Support and training – he asked about support coverage and appreciated the comprehensive training and ongoing assistance; (3) Security compliance – he asked how TechPulse products align with NeuralWave's security compliance needs and future regulatory requirements; (4) Competitive pricing – he acknowledged the pricing seemed competitive and appreciated the discounts on the tailored package; (5) Time to evaluate internally – he stated they needed time to evaluate everything internally before moving forward.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2023-03-24T09:00:40] Matthew Chen: Good, overall. We appreciate the detailed quotes and the discounts on the tailored package. The pricing seems competitive. However, I've got a few questions, especially around implementation time and support."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 5,
+                "line_end": 8,
+                "quote": "[2023-03-24T09:01:20] Matthew Chen: Well, I noticed that your implementation time seems a bit longer compared to what we originally anticipated. This could potentially delay our project's timeline.\n[2023-03-24T09:01:45] Ayumi Shimizu: I understand that timing is crucial. We focus on a thorough implementation to ensure the solutions are seamlessly integrated. However, we do offer flexible scheduling to accommodate key deadlines. Let's discuss this further to see how we can better align.\n[2023-03-24T09:02:05] Matthew Chen: That could work. We just want to prevent any significant hold-ups."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-03-24T09:02:45] Matthew Chen: Yes, actually, that's one of the things we appreciate about TechPulse. The support and training you offer seem very thorough, which is a big plus for us, especially in adapting to new workflows."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 11,
+                "line_end": 14,
+                "quote": "[2023-03-24T09:03:20] Matthew Chen: Speaking of support, how do your products align with our security compliance needs? We've looked at other options, and while security is a must-have, we're still considering what best fits our future compliance requirements.\n[2023-03-24T09:03:45] Ayumi Shimizu: Great question. Our solutions, like the SecureFlow Suite, are specifically designed to meet stringent security standards and align with evolving regulatory requirements, which we continuously enhance. It's something we take very seriously.\n[2023-03-24T09:04:05] Matthew Chen: That's reassuring. We've noted that both you and some other companies offer strong security measures, which is crucial as we think about long-term growth."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StO9IAK",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2023-03-24T09:04:45] Matthew Chen: We see that. The overall package, including the discounts on AI Cirku-Tech and OptiPower Manager, is appealing. We just need a bit of time to evaluate everything internally before moving forward."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2023-03-29 call (NeuralWave-EDA Collaboration), Matthew Chen raised the following key buying requirements: (1) Pricing flexibility – he asked whether TechPulse could provide a wider range of pricing options aligned with NeuralWave's projected growth; (2) Fast/efficient implementation – he stressed the importance of starting to utilize product features quickly, noting they had faced longer setups with other solutions; (3) Implementation timeline alignment – he asked about the timeline for implementations to ensure it fits their upcoming product cycles; (4) AI capabilities and security features – he expressed being impressed with these but wanted confirmation they aligned with current needs; (5) Commitment to continuous innovation – he noted their strategic growth plans include partnerships with companies committed to continuous innovation.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Swc6IAC",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-03-29T14:01:05] Matthew Chen: Definitely, Ayumi. We're impressed with the AI capabilities and the security features you've implemented. But, we have some concerns regarding pricing. Can TechPulse provide a wider range of pricing options? We want them to align more closely with our projected growth.\n[2023-03-29T14:01:30] Ayumi Shimizu: I appreciate the feedback, Matthew. We strive to offer a balance between competitive pricing and advanced features. I’m sure we can find a pricing model that suits your growth trajectory. Our aim is to have a dynamic structure where you can scale your investment over time."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swc6IAC",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2023-03-29T14:02:25] Matthew Chen: Exactly, we've read about your efficient implementation process. It's crucial for us to start utilizing the product features quickly. We've faced longer setups with other solutions, and faster deployment would be a huge advantage.\n[2023-03-29T14:02:45] Ayumi Shimizu: I understand. Our team has developed a streamlined deployment procedure that prioritizes minimizing disruptions and enabling quicker adoption of features. We also provide comprehensive training, so your team is up and running in no time."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swc6IAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-03-29T14:03:00] Matthew Chen: Great to hear that. One last thing – could we also discuss the timeline for these implementations? We are eager to integrate these solutions but need to ensure timing fits our upcoming product cycles.\n[2023-03-29T14:03:15] Ayumi Shimizu: Of course, Matthew. We aim for flexibility here. Typically, deployment would take a few weeks, but we can accelerate this process based on your needs. Let’s work out a timeline that accommodates your cycles seamlessly."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Swc6IAC",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2023-03-29T14:03:35] Matthew Chen: That’s very accommodating. Our strategic growth plans have also included potential partnerships with companies committed to continuous innovation, like TechPulse. Your dedication to advancements really resonates with our vision."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2023-03-10 call (NeuralWave EDA Enhancement Project), Matthew Chen raised the following key buying requirements: (1) Quick time-to-market / rapid deployment – reducing deployment time without sacrificing AI product quality is crucial to remain competitive; (2) Scalability – solutions must grow with NeuralWave as they expand; (3) Comprehensive implementation support – they need support to ensure smooth deployment; (4) Customizable features – they want specific customizable features to fit their unique needs; (5) Interest in adaptive design strategies – they are exploring how other companies enhance adaptive design and want to explore this more deeply.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxgNIAS",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-03-10T11:03:20] Matthew Chen: Certainly. One of our main goals is to reduce the time it takes to deploy new systems without sacrificing the quality of our AI products. Achieving a quick time-to-market is crucial for us to remain competitive.\n[2023-03-10T11:03:50] Ayumi Shimizu: I completely understand that. With TechPulse's rapid deployment capabilities, we focus on reducing downtime, which effectively speeds up integration, offering a smoother transition."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxgNIAS",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2023-03-10T11:04:15] Matthew Chen: That sounds promising. We’ve also been keeping an eye on how other companies are enhancing their adaptive design strategies. It’s an area we’re interested in exploring more deeply.\n[2023-03-10T11:04:40] Ayumi Shimizu: Our continuous investment in technology advancements ensures that we provide scalable solutions that anticipate future industry trends. This should align well with your interest in adaptive design strategies.\n[2023-03-10T11:05:00] Matthew Chen: It's good to hear that. Scalability is a big factor for us. As we continue to grow, we need solutions that can grow with us."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxgNIAS",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-03-10T11:05:50] Matthew Chen: Interesting. How about the implementation process? We would need comprehensive support to ensure a smooth deployment.\n[2023-03-10T11:06:15] Ayumi Shimizu: Of course! We pride ourselves on a streamlined implementation process, and our team is available to support you throughout the integration. Plus, we offer extensive training to help your team become proficient with our solutions quickly."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxgNIAS",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-03-10T11:06:35] Matthew Chen: Great, that’s reassuring. And about your products—are there specific customizable features we can leverage to better fit our unique needs?\n[2023-03-10T11:07:00] Ayumi Shimizu: Yes, our products allow a degree of customization. For example, with CloudLink Designer, you can tailor the solution to match your specific workflow processes, enhancing productivity while maintaining compliance and security."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2022-12-23 call (NeuralWave-EDA Collaboration), Matthew Chen raised the following key buying requirements: (1) Scalable solutions that seamlessly integrate with existing systems without needing constant overhauls; (2) Competitive pricing and value – he asked about the pricing model compared to alternatives; (3) Customizable solutions for niche requirements; (4) Handling high-demand scenarios reliably – he noted competitors underperform under high demand; (5) Future industry trend relevance – he asked how TechPulse ensures products remain relevant as the industry evolves.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2022-12-23T13:31:20] Matthew Chen: Sure. One of our primary challenges is finding scalable solutions that seamlessly integrate with our existing systems, especially as we expand. We're looking for something that can grow with us without needing constant overhauls.\n[2022-12-23T13:31:40] Ayumi Shimizu: I see. That’s quite a common issue. Our AI Cirku-Tech and OptiPower Manager are designed for optimal scalability and integration. They should mesh well with what you already have."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2022-12-23T13:32:40] Matthew Chen: Interesting. I've noticed some competitors have innovative offerings, but their systems tend to underperform in high-demand scenarios. How do your products handle such situations?\n[2022-12-23T13:33:00] Ayumi Shimizu: That's a great point, Matthew. Our products are rigorously tested against high-demand scenarios to ensure they maintain peak performance. We're committed to ensuring our solutions are reliable under all circumstances."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2022-12-23T13:33:15] Matthew Chen: Good to know. Can you tell me more about your pricing model compared to what else is out there?\n[2022-12-23T13:33:35] Ayumi Shimizu: Certainly! Our pricing is competitive but what sets us apart isn’t just the cost; it’s the value you derive from our comprehensive solutions and support services. While we haven’t seen significant differentiators purely based on price in this industry, the AI-driven efficiencies and scalability we offer are game-changers for many clients."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2022-12-23T13:34:00] Matthew Chen: That's aligned with what we've observed. It's vital to have customizable solutions, given our niche requirements. How does TechPulse accommodate these?\n[2022-12-23T13:34:20] Ayumi Shimizu: We focus significantly on adaptability. Our products, like Workflow Genius, are designed with customization in mind, allowing you to tailor functionalities to your specific needs without losing out on efficiency or integration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzF9IAK",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2022-12-23T13:34:40] Matthew Chen: Customizability is a huge plus. In terms of future industry trends, how do you ensure your products remain relevant?\n[2022-12-23T13:35:00] Ayumi Shimizu: At TechPulse, we are committed to continuous innovation. We invest heavily in R&D to keep our products in sync with the latest industry trends and advancements. Our approach ensures that we're not just keeping up but leading the charge in technological advancements."
+              }
+            ]
+          },
+          {
+            "answer": "On the 2023-01-23 call (NeuralWave EDA Enhancement Project), Matthew Chen raised the following key buying requirements: (1) Scalability – he asked how solutions handle scalability as projects grow; (2) Implementation process and sufficient support – he wanted to walk through the implementation process and ensure support is in place; (3) Pricing/budget range – since they are in earlier discovery stages, he asked what budget range to consider; (4) ROI understanding – his team is very interested in understanding potential ROI, especially as they optimize technologies like AI Cirku-Tech; (5) Data protection and security – he noted alignment with objectives around secure integration and high data protection standards.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T031IAC",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-01-23T11:01:08] Matthew Chen: Sounds interesting! How do these solutions handle scalability, especially as our projects grow?\n[2023-01-23T11:01:27] Ayumi Shimizu: Great question, Matthew. Our products are crafted with future advancements in mind but admittedly, scalability is one area we continue to enhance. We're actively working to match evolving needs more robustly. Nevertheless, our current framework allows for a certain level of scalability without compromising performance."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T031IAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-01-23T11:01:45] Matthew Chen: That's good to hear. Could you walk me through what the implementation process looks like? We want to ensure we have sufficient support in place.\n[2023-01-23T11:02:05] Ayumi Shimizu: Certainly. Our implementation process is designed to be streamlined. Once you decide on the specific solution or suite of solutions like SecureFlow and CloudLink Designer, we provide comprehensive support throughout. Our team is consistent in meeting industry expectations, making the setup experience smooth. We also back it up with detailed training sessions for your team."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T031IAC",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-01-23T11:02:41] Ayumi Shimizu: What sets us apart, I believe, is our commitment to a user-friendly experience and reliable support. Our solutions are competitively priced and adaptable. Plus, they integrate securely, respecting the high standards of data protection you might expect."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T031IAC",
+                "line_start": 11,
+                "line_end": 14,
+                "quote": "[2023-01-23T11:03:05] Matthew Chen: Okay, that aligns well with our objectives. About pricing—since we’re still in the earlier stages of discovery, what kind of budget range should we be considering for the various solutions?\n[2023-01-23T11:03:25] Ayumi Shimizu: Right now, I'd say hold off on fixating too much on exact numbers since we’re gathering insights and still need to tailor specifics to your operational goals. But I can share that we're looking into offering some percentage discounts, such as 10% on quantities like PulseSim Pro and CloudLink Designer. I'll ensure our next talks clearly address value propositions and ROI estimates.\n[2023-01-23T11:03:45] Matthew Chen: That's helpful to know. Our team is very interested in understanding more about the potential ROI, especially as we optimize technologies like AI Cirku-Tech."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-2283dabc2f2cac2f",
+      "question": "What did Daniel Brooks say draws him to the Ford F-150 and Chevrolet Tahoe?",
+      "gold_answer": "The F-150's durability and utility for work and personal needs, and the Tahoe's spacious family-vehicle feel.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMveIAG",
+        "b2c:a05Ws000005SOG0IAO",
+        "b2c:a05Ws000005SOG1IAO",
+        "b2c:a05Ws000005SPNMIA4",
+        "b2c:a05Ws000005SPbpIAG",
+        "b2c:a05Ws000005SPgbIAG",
+        "b2c:a05Ws000005SPgcIAG",
+        "b2c:a05Ws000005SPtTIAW",
+        "b2c:a05Ws000005SPtUIAW",
+        "b2c:a05Ws000005SQ88IAG",
+        "b2c:a05Ws000005SQOJIA4",
+        "b2c:a05Ws000005SQcmIAG",
+        "b2c:a05Ws000005SQpdIAG",
+        "b2c:a05Ws000005SRCCIA4",
+        "b2c:a05Ws000005SRQhIAO",
+        "b2c:a05Ws000005SRgvIAG",
+        "b2c:a05Ws000005SSBSIA4",
+        "b2c:a05Ws000005SSxwIAG",
+        "b2c:a05Ws000005SSzTIAW",
+        "b2c:a05Ws000005STM3IAO",
+        "b2c:a05Ws000005STYwIAO",
+        "b2c:a05Ws000005SUF0IAO",
+        "b2c:a05Ws000005SUmoIAG",
+        "b2c:a05Ws000005SV4ZIAW",
+        "b2c:a05Ws000005SVB7IAO",
+        "b2c:a05Ws000005SVKZIA4",
+        "b2c:a05Ws000005SVSkIAO",
+        "b2c:a05Ws000005SVvjIAG",
+        "b2c:a05Ws000005SXxYIAW",
+        "b2c:a05Ws000005SY5fIAG",
+        "b2c:a05Ws000005SYiHIAW",
+        "b2c:a05Ws000005SZCzIAO",
+        "b2c:a05Ws000005SaCFIA0",
+        "b2c:a05Ws000005SaKHIA0",
+        "b2c:a05Ws000005SagqIAC",
+        "b2c:a05Ws000005SaiRIAS",
+        "b2c:a05Ws000005SaowIAC",
+        "b2c:a05Ws000005SaoxIAC",
+        "b2c:a05Ws000005SbGMIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (b2c:a05Ws000005SVSkIAO) has Daniel Brooks explicitly stating what draws him to both the Ford F-150 and the Chevrolet Tahoe; no other call pairs these two models with his stated reasons.",
+        "answers": [
+          {
+            "answer": "Daniel Brooks said the Ford F-150 has a great reputation for durability and utility, which is important for his work and personal needs, while the Chevrolet Tahoe offers the spacious family vehicle feel he needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVSkIAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-07-22T13:00:24] Hiroko Yamada: Perfect. Last time we spoke, you showed interest in the Ford F-150 and Chevrolet Tahoe. Can you share more about what draws you to these models?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks what Daniel Brooks said draws him to the Ford F-150 and Chevrolet Tahoe. Only one call contains both vehicles together and Daniel's explicit statement of what draws him to each: call b2c:a05Ws000005SVSkIAO (Winter SUV & Truck Purchase, 2022-07-22, with Hiroko Yamada). In that call, Hiroko asks Daniel to share what draws him to these models, and Daniel responds directly. No other call pairs the Ford F-150 with the Chevrolet Tahoe in a question about what draws him to them.",
+        "answers": [
+          {
+            "answer": "Daniel Brooks said the Ford F-150 draws him because of its great reputation for durability and utility, which is important for his work and personal needs. The Chevrolet Tahoe draws him because it offers the spacious family vehicle feel he needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVSkIAO",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2022-07-22T13:00:24] Hiroko Yamada: Perfect. Last time we spoke, you showed interest in the Ford F-150 and Chevrolet Tahoe. Can you share more about what draws you to these models?\n[2022-07-22T13:00:35] Daniel Brooks: Sure. The Ford F-150 has a great reputation for durability and utility, which is important for my work and personal needs. The Tahoe, on the other hand, offers that spacious family vehicle feel I need."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two draws: the F-150's reputation for durability and utility important for work and personal needs, and the Tahoe's spacious family-vehicle feel. The reference likewise covers both requested facts (F-150 durability/utility for work and personal needs; Tahoe spacious family-vehicle feel). No requested commitment is missing or substituted in any of the three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-6de53db9be25988a",
+      "question": "What is Jackson Clarke looking for in an eco-friendly SUV, and what concern did he raise about Exquisite Vehicles Hub?",
+      "gold_answer": "He wants a fuel-efficient, tech-forward SUV; he noted Exquisite Vehicles Hub has faced security and compliance challenges.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMvmIAG",
+        "b2c:a05Ws000005SOEHIA4",
+        "b2c:a05Ws000005SQ8CIAW",
+        "b2c:a05Ws000005SQhWIAW",
+        "b2c:a05Ws000005SQxkIAG",
+        "b2c:a05Ws000005SS52IAG",
+        "b2c:a05Ws000005SSLHIA4",
+        "b2c:a05Ws000005SSxzIAG",
+        "b2c:a05Ws000005SU8aIAG",
+        "b2c:a05Ws000005SUoRIAW",
+        "b2c:a05Ws000005SUwUIAW",
+        "b2c:a05Ws000005SVNsIAO",
+        "b2c:a05Ws000005SWJyIAO",
+        "b2c:a05Ws000005SWQOIA4",
+        "b2c:a05Ws000005SYorIAG",
+        "b2c:a05Ws000005SZRVIA4",
+        "b2c:a05Ws000005SZt2IAG",
+        "b2c:a05Ws000005SZt3IAG",
+        "b2c:a05Ws000005Sb9rIAC",
+        "b2c:a05Ws000005SbpuIAC",
+        "b2c:a05Ws000005ScCOIA0",
+        "b2c:a05Ws000005ScFbIAK",
+        "b2c:a05Ws000005ScFcIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 3,
+            "normalized_end": 4
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 5,
+            "normalized_end": 6
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (b2c:a05Ws000005SSxzIAG, 2022-02-25 with Abigail Johnson) mentions Exquisite Vehicles Hub, where Jackson raises a specific concern about their security and compliance challenges. In that same call he states what he is looking for in an eco-friendly SUV: something fuel-efficient and tech-forward. No other call mentions Exquisite Vehicles Hub, so there are no competing complete answers.",
+        "answers": [
+          {
+            "answer": "Jackson Clarke is looking for an eco-friendly SUV that is fuel-efficient and tech-forward (he says he's 'really keen on something that's fuel-efficient and tech-forward'). His concern about Exquisite Vehicles Hub is that it has faced challenges with security and compliance, which worries him when considering long-term reliability. Rep Abigail Johnson responded that AutoElite's extended warranties and maintenance plans, backed by factory-trained technicians, aim to give him peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSxzIAG",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2022-02-25T15:00:35] Jackson Clarke: Absolutely, I've been reading up on various models, and I'm really keen on something that's fuel-efficient and tech-forward."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSxzIAG",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2022-02-25T15:01:10] Jackson Clarke: I've heard good things about both. But I have to say, competitors like Exquisite Vehicles Hub have a strong history and some impressive case studies, which kind of reassures me about value delivery."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSxzIAG",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2022-02-25T15:03:10] Jackson Clarke: Interesting. It’s good to know there’s a focus on support. I've heard Exquisite Vehicles Hub has faced challenges with security and compliance, which is a bit concerning when considering long-term reliability."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks two things: (1) what Jackson Clarke is looking for in an eco-friendly SUV, and (2) what concern he raised about Exquisite Vehicles Hub. Exquisite Vehicles Hub is explicitly named in only one call (b2c:a05Ws000005SSxzIAG, 2022-02-25, with Abigail Johnson). In that call, Jackson states he is looking for something 'fuel-efficient and tech-forward' (line 3) and raises the concern that Exquisite Vehicles Hub 'has faced challenges with security and compliance, which is a bit concerning when considering long-term reliability' (line 12). No other call mentions Exquisite Vehicles Hub by name, so the concern is uniquely identified. The eco-friendly SUV criteria in that same call are fuel efficiency and advanced technology.",
+        "answers": [
+          {
+            "answer": "Jackson Clarke is looking for an eco-friendly SUV that is fuel-efficient and tech-forward. His concern about Exquisite Vehicles Hub is that they have faced challenges with security and compliance, which he finds concerning when considering long-term reliability.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SSxzIAG",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2022-02-25T15:00:35] Jackson Clarke: Absolutely, I've been reading up on various models, and I'm really keen on something that's fuel-efficient and tech-forward."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SSxzIAG",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2022-02-25T15:03:10] Jackson Clarke: Interesting. It’s good to know there’s a focus on support. I've heard Exquisite Vehicles Hub has faced challenges with security and compliance, which is a bit concerning when considering long-term reliability."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state Jackson Clarke wants a fuel-efficient, tech-forward eco-friendly SUV and that his concern about Exquisite Vehicles Hub is its security and compliance challenges affecting long-term reliability. The reference likewise captures both requested facts: the fuel-efficient, tech-forward SUV preference and the security/compliance challenges concern. Answer A includes extra detail about a rep's response, but that is unrequested and does not affect agreement. All requested facts are present and consistent across both answers and the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
