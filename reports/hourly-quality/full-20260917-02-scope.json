@@ -1,0 +1,294 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "3039eb73f839520f9d347b18c44b00ff1ed1ce7b01e619d1e3d46eda9d388b47",
+  "questions": 3,
+  "counts": {
+    "pass": 2,
+    "fail": 1
+  },
+  "estimated_usd": 0.34360323,
+  "results": [
+    {
+      "question_id": "b2b-single_call-353e849be7aaf58d",
+      "question": "What discounts did Priyanka offer Ana Perez on each product in the Future Innovations proposal?",
+      "gold_answer": "10% off SecureFlow Suite, and 5% off both CloudLink Designer and CircuitAI Innovator.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sqy3IAC",
+        "b2b:a05Wt000003Sqy4IAC",
+        "b2b:a05Wt000003Suf4IAC",
+        "b2b:a05Wt000003SutaIAC",
+        "b2b:a05Wt000003Sv4tIAC",
+        "b2b:a05Wt000003SvL0IAK",
+        "b2b:a05Wt000003SvL1IAK",
+        "b2b:a05Wt000003SvsrIAC",
+        "b2b:a05Wt000003SvuTIAS",
+        "b2b:a05Wt000003Svw5IAC",
+        "b2b:a05Wt000003SvxhIAC",
+        "b2b:a05Wt000003SvxiIAC",
+        "b2b:a05Wt000003SvzJIAS",
+        "b2b:a05Wt000003Sw0vIAC",
+        "b2b:a05Wt000003Sw2XIAS",
+        "b2b:a05Wt000003Sw49IAC",
+        "b2b:a05Wt000003Sw5lIAC",
+        "b2b:a05Wt000003Sw7NIAS",
+        "b2b:a05Wt000003Sw7OIAS",
+        "b2b:a05Wt000003Sw8zIAC",
+        "b2b:a05Wt000003SwAbIAK",
+        "b2b:a05Wt000003SwCDIA0",
+        "b2b:a05Wt000003SwDpIAK",
+        "b2b:a05Wt000003SwFRIA0",
+        "b2b:a05Wt000003SwH3IAK",
+        "b2b:a05Wt000003SwIfIAK",
+        "b2b:a05Wt000003SwKHIA0",
+        "b2b:a05Wt000003SwLtIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Priyanka Iyer spoke with Ana Perez on two calls for the same opportunity (Future Innovations Digital Enhancement), and both calls state the same per-product discounts: 10% on SecureFlow Suite and 5% each on CloudLink Designer and CircuitAI Innovator. The December call adds quantities but the discount rates are consistent, so there is one complete aggregate answer.",
+        "answers": [
+          {
+            "answer": "In the Future Innovations Digital Enhancement proposal, Priyanka Iyer offered Ana Perez a 10% discount on SecureFlow Suite, a 5% discount on CloudLink Designer, and a 5% discount on CircuitAI Innovator. The follow-up call confirmed the same rates with quantities: 10 SecureFlow Suites at 10% off, 8 CloudLink Designers at 5% off, and 6 CircuitAI Innovators at 5% off.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwKHIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-11-24T11:04:40] Priyanka Iyer: Also, in terms of pricing, we're offering a 10% discount on SecureFlow Suite, with CloudLink Designer and CircuitAI Innovator both at a 5% discount. This brings your total cost to an ideal match for your budget considerations."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwLtIAK",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-12-10T14:17:35] Priyanka Iyer: Of course. We are always here to support you during the transition. Moving on, regarding quantities and pricing, you're looking at 10 SecureFlow Suites with a 10% discount, 8 CloudLink Designers with a 5% discount, and 6 CircuitAI Innovators also with a 5% discount. This package is designed to optimize both security and innovation in your processes."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about discounts Priyanka offered Ana Perez on each product in the Future Innovations proposal. Priyanka Iyer is the salesperson and Ana Perez is the contact on opportunity 'Future Innovations Digital Enhancement' (006Wt000007B5uoIAC). The proposal walkthrough call on 2023-11-24 explicitly states the per-product discounts, and the follow-up terms call on 2023-12-10 confirms the same discount rates with quantities. Both calls are consistent and part of the same proposal.",
+        "answers": [
+          {
+            "answer": "Priyanka Iyer offered Ana Perez the following discounts in the Future Innovations Digital Enhancement proposal: a 10% discount on SecureFlow Suite, a 5% discount on CloudLink Designer, and a 5% discount on CircuitAI Innovator. In the terms discussion, these were confirmed as 10 SecureFlow Suites at 10% discount, 8 CloudLink Designers at 5% discount, and 6 CircuitAI Innovators at 5% discount.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwKHIA0",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-11-24T11:04:40] Priyanka Iyer: Also, in terms of pricing, we're offering a 10% discount on SecureFlow Suite, with CloudLink Designer and CircuitAI Innovator both at a 5% discount. This brings your total cost to an ideal match for your budget considerations."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwLtIAK",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-12-10T14:17:35] Priyanka Iyer: Of course. We are always here to support you during the transition. Moving on, regarding quantities and pricing, you're looking at 10 SecureFlow Suites with a 10% discount, 8 CloudLink Designers with a 5% discount, and 6 CircuitAI Innovators also with a 5% discount. This package is designed to optimize both security and innovation in your processes."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same three discounts: 10% on SecureFlow Suite, 5% on CloudLink Designer, and 5% on CircuitAI Innovator. They also both add identical quantity/confirmation details. The reference lists exactly the three requested discount percentages (10% SecureFlow Suite, 5% CloudLink Designer, 5% CircuitAI Innovator), covering all facts the question asks for. No requested commitment is missing or substituted in either answer or the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-6068629d7b75afbb",
+      "question": "What concern did Kayla Adebayo raise about AI Cirku-Tech, and how did Fatoumata respond?",
+      "gold_answer": "Kayla asked about customization flexibility; Fatoumata said it offers a range of customizations but swift deployment limits flexibility.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZrIAK",
+        "b2b:a05Wt000003SswhIAC",
+        "b2b:a05Wt000003StEQIA0",
+        "b2b:a05Wt000003StcYIAS",
+        "b2b:a05Wt000003Su40IAC",
+        "b2b:a05Wt000003SuIWIA0",
+        "b2b:a05Wt000003Sv1fIAC",
+        "b2b:a05Wt000003SwSNIA0",
+        "b2b:a05Wt000003SwSOIA0",
+        "b2b:a05Wt000003SwgsIAC",
+        "b2b:a05Wt000003Sx6iIAC",
+        "b2b:a05Wt000003Sx9vIAC",
+        "b2b:a05Wt000003SxUsIAK",
+        "b2b:a05Wt000003SxUtIAK",
+        "b2b:a05Wt000003SyAqIAK",
+        "b2b:a05Wt000003SyE2IAK",
+        "b2b:a05Wt000003SyE3IAK",
+        "b2b:a05Wt000003SyxCIAS",
+        "b2b:a05Wt000003SyyoIAC",
+        "b2b:a05Wt000003SzA8IAK",
+        "b2b:a05Wt000003SzTRIA0",
+        "b2b:a05Wt000003SzTSIA0",
+        "b2b:a05Wt000003SzV3IAK",
+        "b2b:a05Wt000003SzWfIAK",
+        "b2b:a05Wt000003SzYHIA0",
+        "b2b:a05Wt000003SzZtIAK",
+        "b2b:a05Wt000003SzbVIAS",
+        "b2b:a05Wt000003SzbWIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Kayla Adebayo spoke with Fatoumata Diop on several calls. Two different calls contain a concern Kayla raised in the context of AI Cirku-Tech with a distinct Fatoumata response: (1) on 2020-01-21 she questioned how customizable/flexible AI Cirku-Tech is, and Fatoumata admitted limits to flexibility due to swift deployment; (2) on 2020-02-09, during the AI Cirku-Tech demo, she asked whether data-protection strategies could be made more dynamic, and Fatoumata pointed to flexible data protection in SecureFlow Suite. These are materially different concern/response pairs, so the question is ambiguous.",
+        "answers": [
+          {
+            "answer": "On the 2020-01-21 call, Kayla Adebayo raised a concern about the customization options of AI Cirku-Tech, asking how flexible it is. Fatoumata Diop responded transparently that AI Cirku-Tech provides a balance between efficiency and customization, but because it is designed for swift deployment, there are sometimes limits to its flexibility.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzbVIAS",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2020-01-21T15:02:15] Fatoumata Diop: Okay, so one of our key products is the AI Cirku-Tech. It’s designed to enhance workflow efficiency with state-of-the-art automation features. We've found it particularly beneficial for companies focusing on sustainability like EcoVision.\n[2020-01-21T15:02:45] Kayla Adebayo: That sounds interesting. Efficiency is crucial for us, but I’m curious about the customization options—how flexible is it?"
+              }
+            ]
+          },
+          {
+            "answer": "On the 2020-02-09 demo call, where Fatoumata presented AI Cirku-Tech, Kayla raised a concern about data protection, asking whether the security/data-protection strategies could be made more dynamic to meet varied security needs. Fatoumata responded that they have flexible data protection strategies built into the SecureFlow Suite to match diverse requirements, and that they continually explore ways to enhance these for even greater adaptability.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyyoIAC",
+                "line_start": 10,
+                "line_end": 12,
+                "quote": "[2020-02-09T14:01:28] Fatoumata Diop: I'm glad to hear that! Another key aspect I want to touch on is our commitment to security compliance. We understand data protection is vital, especially in your line of work, so we ensure our solutions uphold the highest standards.\n[2020-02-09T14:01:40] Kayla Adebayo: Ah, yes. Data protection is very high on our list. Is there a way to make these strategies more dynamic to meet varied security needs?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Kayla Adebayo and Fatoumata Diop spoke in three calls (2020-01-19, 2020-01-21, 2020-02-09, 2020-03-01). In two of those calls, Kayla raised materially different concerns specifically about AI Cirku-Tech, and Fatoumata responded differently each time. The question does not name a topic, so both are competing complete answers.",
+        "answers": [
+          {
+            "answer": "Kayla Adebayo raised a concern about AI Cirku-Tech's customization options and flexibility. Fatoumata Diop responded transparently, explaining that AI Cirku-Tech provides a balance between efficiency and customization, but because it is designed for swift deployment, there are sometimes limits to flexibility.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzbVIAS",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2020-01-21T15:02:15] Fatoumata Diop: Okay, so one of our key products is the AI Cirku-Tech. It’s designed to enhance workflow efficiency with state-of-the-art automation features. We've found it particularly beneficial for companies focusing on sustainability like EcoVision.\n[2020-01-21T15:02:45] Kayla Adebayo: That sounds interesting. Efficiency is crucial for us, but I’m curious about the customization options—how flexible is it?\n[2020-01-21T15:03:05] Fatoumata Diop: Great question, Kayla. AI Cirku-Tech provides a balance between efficiency and customization. However, I want to be transparent—while it offers a range of customizations, it's designed for swift deployment, which sometimes means there are limits to flexibility."
+              }
+            ]
+          },
+          {
+            "answer": "Kayla Adebayo raised a concern about customization, noting that one of their competitors offers more customizable solutions than AI Cirku-Tech. Fatoumata Diop responded by acknowledging that their standardized solutions might not match the high customizability of some competitors, but emphasized they are designed for seamless integration and enhanced performance, and that many clients face challenges with high-demand conditions which their solutions handle effectively. When Kayla pressed further on whether any customization options exist, Fatoumata confirmed they do offer customization within their frameworks, especially for top-tier/enterprise packages, and offered to explore custom options to meet EcoVision's requirements.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuIWIA0",
+                "line_start": 11,
+                "line_end": 15,
+                "quote": "[2020-03-01T14:01:44] Kayla Adebayo: I appreciate that. However, we do have some concerns about customization. One of our competitors offers more customizable solutions. Can you speak to that?\n[2020-03-01T14:01:57] Fatoumata Diop: I understand. While our standardized solutions might not match the high customizability of some competitors, they are designed for seamless integration and enhanced performance. We've found that many clients face challenges with their high-demand conditions, which our solutions can handle effectively.\n[2020-03-01T14:02:12] Kayla Adebayo: That makes sense. It's good to know you have reliable performance under pressure, but are there any customization options available?\n[2020-03-01T14:02:23] Fatoumata Diop: We do offer customization within our frameworks to suit specific needs, especially for our top-tier packages, such as the enterprise solutions. We can certainly explore this further and work on custom options that meet your requirements."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-f633d7f490ea588a",
+      "question": "What concern did David Collins raise about the competitor's post-purchase support, and how did Sebastian respond?",
+      "gold_answer": "David worried the competitor wouldn't be innovative long-term with limited roadmap affecting enhancements; Sebastian said AutoElite continuously evolves after-sales support with factory-trained technicians, warranty programs, and concierge services adding updates over time.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMvoIAG",
+        "b2c:a05Ws000005SO9YIAW",
+        "b2c:a05Ws000005SQUqIAO",
+        "b2c:a05Ws000005SQZYIA4",
+        "b2c:a05Ws000005SS0GIAW",
+        "b2c:a05Ws000005SS54IAG",
+        "b2c:a05Ws000005SSl9IAG",
+        "b2c:a05Ws000005ST2oIAG",
+        "b2c:a05Ws000005STR4IAO",
+        "b2c:a05Ws000005STtvIAG",
+        "b2c:a05Ws000005SU3YIAW",
+        "b2c:a05Ws000005SULKIA4",
+        "b2c:a05Ws000005SUuxIAG",
+        "b2c:a05Ws000005SUy6IAG",
+        "b2c:a05Ws000005SV2yIAG",
+        "b2c:a05Ws000005SWFBIA4",
+        "b2c:a05Ws000005SWyEIAW",
+        "b2c:a05Ws000005SXnrIAG",
+        "b2c:a05Ws000005SY5iIAG",
+        "b2c:a05Ws000005SY5jIAG",
+        "b2c:a05Ws000005SYnAIAW",
+        "b2c:a05Ws000005SZRYIA4",
+        "b2c:a05Ws000005Sa2ZIAS",
+        "b2c:a05Ws000005SaAlIAK",
+        "b2c:a05Ws000005SaAmIAK",
+        "b2c:a05Ws000005SaCKIA0",
+        "b2c:a05Ws000005SbbLIAS",
+        "b2c:a05Ws000005Sbt3IAC",
+        "b2c:a05Ws000005SbzVIAS",
+        "b2c:a05Ws000005ScHDIA0",
+        "b2c:a05Ws000005ScU6IAK",
+        "b2c:a05Ws000005ScaYIAS",
+        "b2c:a05Ws000005ScfNIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call with Sebastian Martinez (2022-01-24, David Collins - Premium Vehicle Acquisition) discusses a concern about a competitor's post-purchase support; the other Sebastian calls cover service centers, financing, and tech features without any competitor post-purchase support concern.",
+        "answers": [
+          {
+            "answer": "David Collins raised the concern that the competitor had a limited roadmap for post-purchase support, which he felt would affect long-term enhancements — he said the competitor 'might not be as innovative down the line.' Sebastian Martinez responded that AutoElite continuously evolves its after-sales support: service centers staffed by factory-trained technicians keep the vehicle in top condition, and warranty programs and concierge services are designed to add value over time with updates and innovations.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQZYIA4",
+                "line_start": 10,
+                "line_end": 12,
+                "quote": "[2022-01-24T15:01:39] Sebastian Martinez: Of course. We're all about making things work for you. On another note, regarding post-purchase support, you mentioned some concerns with the competitor's limited roadmap, affecting long-term enhancements.\n[2022-01-24T15:01:49] David Collins: Yes, I felt that they might not be as innovative down the line. How does AutoElite stand in terms of updating and enhancing post-purchase services?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names both David Collins and Sebastian (Martinez) and asks about a concern regarding a competitor's post-purchase support. Only one call features Sebastian Martinez as the salesperson and contains a discussion where David Collins raises a concern about a competitor's post-purchase support and Sebastian responds. This is call b2c:a05Ws000005SQZYIA4 (2022-01-24). In that call, Sebastian references David's earlier concern about the competitor's 'limited roadmap, affecting long-term enhancements,' David confirms he felt the competitor 'might not be as innovative down the line,' and Sebastian responds by describing AutoElite's continuously evolving after-sales support, factory-trained technicians, warranty programs, and concierge services designed to add value over time with updates and innovations.",
+        "answers": [
+          {
+            "answer": "David Collins raised the concern that the competitor had a limited roadmap affecting long-term enhancements, specifically that they 'might not be as innovative down the line.' Sebastian Martinez responded by explaining that AutoElite is continuously evolving its after-sales support: their service centers are manned by factory-trained technicians to keep the vehicle in top condition, and their warranty programs and concierge services are designed to add value over time with updates and innovations. He also added that they are on hand to assist with any upgrades David might want in the future.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SQZYIA4",
+                "line_start": 10,
+                "line_end": 14,
+                "quote": "[2022-01-24T15:01:39] Sebastian Martinez: Of course. We're all about making things work for you. On another note, regarding post-purchase support, you mentioned some concerns with the competitor's limited roadmap, affecting long-term enhancements.\n[2022-01-24T15:01:49] David Collins: Yes, I felt that they might not be as innovative down the line. How does AutoElite stand in terms of updating and enhancing post-purchase services?\n[2022-01-24T15:02:07] Sebastian Martinez: Great question, David. We are continuously evolving our after-sales support. Our service centers, manned by factory-trained technicians, ensure your vehicle stays in top condition. Plus, our warranty programs and concierge services are designed to add value over time with updates and innovations.\n[2022-01-24T15:02:21] David Collins: That’s reassuring to hear. Having that extra layer of support makes a difference."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same concern (competitor's limited roadmap for post-purchase support, potentially not being innovative down the line) and the same response from Sebastian (AutoElite continuously evolves after-sales support with factory-trained technicians, warranty programs, and concierge services adding value over time). Answer B adds a minor extra about assisting with future upgrades, which is an unrequested addition and does not affect agreement. The reference covers both requested facts: David's concern about limited roadmap/innovation and Sebastian's response about evolving after-sales support with the specified elements."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

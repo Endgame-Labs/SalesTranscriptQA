@@ -1,0 +1,367 @@
+[
+  {
+    "question_id": "b2b-multi_call-0da3c1b71fc76538",
+    "question": "For AgroSmart Innovations, what did Fatoumata promise to send Jamal after their initial discussion, and what discounted prices did she quote for SecureFlow Suite and CloudLink Designer in the follow-up call?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) What Fatoumata promised to send Jamal after the initial discussion, and (2) discounted prices quoted for SecureFlow Suite and CloudLink Designer in a follow-up call",
+        "relationship": "two independent fact lookups joined across calls",
+        "reason": "The promised follow-up materials and the specific discounted pricing for two products are separate information needs; sharing the same account does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 contains Fatoumata's promise to send a case study and testimonials; Call 2 contains the 10%-discounted prices ($5,399.91 for SecureFlow Suite, $5,399.87 for CloudLink Designer). Each source contributes an exclusive requested fact. The question is naturally phrased, scoped to a named account and contact, and the gold answer states precisely the requested items with no unasked extras.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatoumata Diop on 2021-12-23 explicitly states she will 'send that over along with some testimonials,' referring to a case study about reliability and efficiency gains. This directly supports the claim that she promised to send a case study and testimonials."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatoumata Diop on 2022-01-02 explicitly states SecureFlow Suite with a 10% discount is priced at $5,399.91 and CloudLink Designer discounted by 10% is $5,399.87. This directly supports the claimed prices and discount percentage."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states Fatoumata promised to send a case study and testimonials (supported by evidence index 0) and quoted SecureFlow Suite at $5,399.91 and CloudLink Designer at $5,399.87, both with a 10% discount (supported by evidence index 1). All factual claims in the gold answer are fully supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-d98e1166e0337035",
+    "question": "For CyberPulse Security, which TechPulse product did Giuseppe say offers more customization flexibility at the cost of longer deployment, and which product did he later cite as fitting naturally into existing EDA workflows?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Which TechPulse product Giuseppe described as offering more customization flexibility at the cost of longer deployment, and which product he later cited as fitting naturally into existing EDA workflows",
+        "relationship": "Both facts concern the same competitive/product-fit discussion for CyberPulse Security \u2014 comparing TechPulse products' trade-offs and workflow fit",
+        "reason": "A coherent competitive comparison about the same product evaluation issue; both lookups address the same business question of which TechPulse product suits CyberPulse's needs."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwqaIAC",
+                "fact": "DesignWave Automation offers more customization flexibility but requires longer deployment.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SwnMIAS) does not mention DesignWave Automation or its customization/deployment trade-off."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwnMIAS",
+                "fact": "CollabCircuit Hub was cited as fitting naturally into existing EDA workflows.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SwqaIAC) does not mention CollabCircuit Hub or its fit with EDA workflows."
+              }
+            ],
+            "reason": "The question asks for two distinct product attributes mentioned by Giuseppe in different conversations. The first fact (DesignWave's customization/deployment trade-off) appears only in the October 3 call, and the second fact (CollabCircuit Hub's natural fit) appears only in the October 20 call. Neither call contains both facts, so both calls are necessary to answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwqaIAC",
+                  "fact": "DesignWave Automation offers more customization flexibility but requires longer deployment.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SwnMIAS) does not mention DesignWave Automation or its customization/deployment trade-off."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwnMIAS",
+                  "fact": "CollabCircuit Hub was cited as fitting naturally into existing EDA workflows.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SwqaIAC) does not mention CollabCircuit Hub or its fit with EDA workflows."
+                }
+              ],
+              "reason": "The question asks for two distinct product attributes mentioned by Giuseppe in different conversations. The first fact (DesignWave's customization/deployment trade-off) appears only in the October 3 call, and the second fact (CollabCircuit Hub's natural fit) appears only in the October 20 call. Neither call contains both facts, so both calls are necessary to answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SwqaIAC",
+                "fact": "Giuseppe said DesignWave Automation offers more customization flexibility but requires slightly longer deployment times.",
+                "why_other_call_cannot_supply_it": "The Oct 20 call never mentions DesignWave Automation or any customization-vs-deployment tradeoff; it only discusses SecureFlow Suite and CollabCircuit Hub."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SwnMIAS",
+                "fact": "Giuseppe cited CollabCircuit Hub as fitting naturally into existing EDA workflows.",
+                "why_other_call_cannot_supply_it": "The Oct 3 call never mentions CollabCircuit Hub; it discusses AI Cirku-Tech, SecureFlow Suite, and DesignWave Automation only."
+              }
+            ],
+            "reason": "The question asks for two distinct product claims made in different conversations: the customization/longer-deployment tradeoff (DesignWave Automation, Oct 3 call) and the natural fit into EDA workflows (CollabCircuit Hub, Oct 20 call). Each fact appears in exactly one call, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SwqaIAC",
+                  "fact": "Giuseppe said DesignWave Automation offers more customization flexibility but requires slightly longer deployment times.",
+                  "why_other_call_cannot_supply_it": "The Oct 20 call never mentions DesignWave Automation or any customization-vs-deployment tradeoff; it only discusses SecureFlow Suite and CollabCircuit Hub."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SwnMIAS",
+                  "fact": "Giuseppe cited CollabCircuit Hub as fitting naturally into existing EDA workflows.",
+                  "why_other_call_cannot_supply_it": "The Oct 3 call never mentions CollabCircuit Hub; it discusses AI Cirku-Tech, SecureFlow Suite, and DesignWave Automation only."
+                }
+              ],
+              "reason": "The question asks for two distinct product claims made in different conversations: the customization/longer-deployment tradeoff (DesignWave Automation, Oct 3 call) and the natural fit into EDA workflows (CollabCircuit Hub, Oct 20 call). Each fact appears in exactly one call, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct product claims made by Giuseppe across two calls. Call 1 (Oct 3) contains the DesignWave Automation customization/longer-deployment statement; Call 2 (Oct 20) contains the CollabCircuit Hub fitting naturally into EDA workflows statement. Each source contributes an exclusive requested fact. The gold answer accurately reflects both claims without extras. The question is naturally phrased, scoped to CyberPulse Security and the rep Giuseppe, and a rep/AM would plausibly want to recall which product was positioned for which benefit.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Giuseppe Romano on 2023-10-03 explicitly states: 'We also have products like DesignWave Automation that offer more customization flexibility, though they might require slightly longer deployment times.' This directly supports the answer_claim that DesignWave Automation offers more customization flexibility at the cost of longer deployment. The speaker is Giuseppe, the account is CyberPulse Security, and the product name matches."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Giuseppe Romano on 2023-10-20 explicitly states: 'Our CollabCircuit Hub, for instance, has been specifically praised for how naturally it fits into existing EDA workflows.' This directly supports the answer_claim that CollabCircuit Hub fits naturally into existing EDA workflows. The speaker is Giuseppe, the account is CyberPulse Security, and the product name matches."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported by the cited evidence. Evidence index 0 confirms Giuseppe said DesignWave Automation offers more customization flexibility but requires longer deployment. Evidence index 1 confirms Giuseppe cited CollabCircuit Hub as fitting naturally into existing EDA workflows. Both statements are attributed to Giuseppe Romano in calls associated with CyberPulse Security, matching the question's requirements."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-353e849be7aaf58d",
+    "question": "What discounts did Priyanka offer Ana Perez on each product in the Future Innovations proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Priyanka offered Ana Perez on each product in the Future Innovations proposal",
+        "relationship": "single coherent commercial lookup",
+        "reason": "One request for the discount breakdown across products in a single proposal \u2014 a coherent quote breakdown, not multiple independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific discounts offered by Priyanka to Ana Perez on each product in the Future Innovations proposal. The dialogue at 11:04:40 clearly states '10% discount on SecureFlow Suite, with CloudLink Designer and CircuitAI Innovator both at a 5% discount.' The gold answer matches exactly. The question is naturally worded, scoped to a specific account/contact/proposal, and a rep or AM would plausibly want to recall discount terms. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Priyanka Iyer explicitly states 'a 10% discount on SecureFlow Suite, with CloudLink Designer and CircuitAI Innovator both at a 5% discount,' which directly matches the answer_claim of 10% off SecureFlow Suite and 5% off both CloudLink Designer and CircuitAI Innovator."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Priyanka Iyer's exact statement of the three discounts (10% on SecureFlow Suite, 5% on CloudLink Designer, 5% on CircuitAI Innovator), which fully supports every factual claim in the gold_answer. The context metadata confirms the call involves Ana Perez at Future Innovations LLC and the opportunity is named 'Future Innovations Digital Enhancement,' consistent with the question's reference to the Future Innovations proposal."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-6068629d7b75afbb",
+    "question": "What concern did Kayla Adebayo raise about AI Cirku-Tech, and how did Fatoumata respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Kayla Adebayo raised about AI Cirku-Tech and Fatoumata's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single coherent objection-and-response exchange addressing the same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific concern Kayla raised regarding AI Cirku-Tech and Fatoumata's response. The dialogue shows Kayla asking about customization flexibility ('how flexible is it?') and Fatoumata replying that it offers a range of customizations but swift deployment limits flexibility. The gold answer accurately captures both parts. The question is naturally worded, scoped to a named product and named participants in a plausible sales context, and contains no locator preamble or artificial framing. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage shows Kayla Adebayo explicitly asking 'I'm curious about the customization options\u2014how flexible is it?' which directly supports the claim that she asks about customization flexibility."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Fatoumata's quoted response states 'it offers a range of customizations, it's designed for swift deployment, which sometimes means there are limits to flexibility.' This directly supports the claim that customization exists but swift deployment limits flexibility."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Kayla asked about customization flexibility (supported by index 0) and that Fatoumata said it offers a range of customizations but swift deployment limits flexibility (supported by index 1). Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-f633d7f490ea588a",
+    "question": "What concern did David Collins raise about the competitor's post-purchase support, and how did Sebastian respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern David Collins raised about a competitor's post-purchase support and Sebastian's response to it",
+        "relationship": "single coherent objection-and-response exchange",
+        "reason": "This is one objection and its response within the same conversation, a natural sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning objection raised by David Collins and Sebastian's rebuttal, both clearly present in the single call transcript. The gold answer accurately captures David's concern about the competitor's limited roadmap affecting long-term innovation and Sebastian's response citing factory-trained technicians, warranty programs, and concierge services with ongoing updates. No locator preamble, no answer leakage, no unsupported causality. Scope is adequate via named participants and the business context of post-purchase support comparison.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Sebastian referencing David's earlier concern: 'you mentioned some concerns with the competitor's limited roadmap, affecting long-term enhancements.' Although Sebastian is the speaker, he is explicitly attributing the concern to David ('you mentioned'), which supports the claim that David raised concerns about the competitor's limited roadmap affecting long-term enhancements. The metadata confirms the account is David Collins."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly contains Sebastian stating: 'We are continuously evolving our after-sales support. Our service centers, manned by factory-trained technicians, ensure your vehicle stays in top condition. Plus, our warranty programs and concierge services are designed to add value over time with updates and innovations.' This supports the claim about factory-trained technicians, warranty programs, concierge services, and continuous evolution adding value over time."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states David worried the competitor wouldn't be innovative long-term with limited roadmap affecting enhancements (supported by index 0 where Sebastian references David's concern about the competitor's limited roadmap affecting long-term enhancements). It also states Sebastian said AutoElite continuously evolves after-sales support with factory-trained technicians, warranty programs, and concierge services adding updates over time (supported by index 1). The gold_answer's phrasing 'adding updates over time' is a faithful paraphrase of 'add value over time with updates and innovations.' All factual claims in the gold_answer are covered by the two cited evidence items."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-9b3256404761ee6e",
+    "question": "What are Zara Ward's top priorities for her next vehicle and her typical driving environment?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Zara Ward's top priorities for her next vehicle and her typical driving environment",
+        "relationship": "single coherent discovery lookup about one customer's needs",
+        "reason": "Both items describe the same discovery topic\u2014customer needs/preferences\u2014naturally joined in one question."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Zara Ward's top vehicle priorities and typical driving environment. The dialogue confirms sustainability and high-tech features as top priorities (Zara: 'a vehicle that's both sustainable and high-tech'; Hiroko: 'those are top priorities for you') and city/stop-and-go driving with a desire for efficiency (Zara: 'I currently drive mostly in the city\u2026 stop-and-go traffic\u2026 looking for something efficient in that environment'). The gold answer states exactly these facts with no unasked extras. The question is naturally phrased, adequately scoped by naming the customer, and a sales rep would plausibly want this information. Single-call set, so both_sources_required is true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Zara Ward explicitly states she is 'looking forward to exploring some options for a vehicle that's both sustainable and high-tech,' directly supporting the claim that sustainability and high-tech features are top priorities."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Zara Ward explicitly states she 'drive[s] mostly in the city,' spends 'a lot of time in stop-and-go traffic,' and is 'looking for something efficient in that environment,' directly supporting the claim about her typical driving environment and desire for efficiency there."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer: index 0 establishes sustainability and high-tech features as top priorities, and index 1 establishes that she mostly drives in the city in stop-and-go traffic and wants efficiency in that environment. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]
