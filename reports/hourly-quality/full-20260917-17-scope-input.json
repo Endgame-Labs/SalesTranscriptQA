@@ -1,0 +1,833 @@
+[
+  {
+    "job_id": "aed291bef4cadb3f5e83b448c0f7b750c2581f3f090a749497a18d77d71d9648",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T2ntIAC"
+    ],
+    "status": "accepted",
+    "question": "What discount is TechPulse offering ClearSky Data Solutions on AIOptics Vision, and for how many licenses?",
+    "gold_answer": "15% discount on 20 licenses.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T2ntIAC",
+        "answer_claim": "AIOptics Vision comes at a 15% discount for a purchase of 20 licenses.",
+        "kind": "dialogue",
+        "line_start": 12,
+        "line_end": 13,
+        "quote": "[2023-12-05T12:02:35] Olivia Nguyen: Sure, let's talk about the quote. Our offer includes a suite of solutions like PulseSim Pro, CloudLink Designer, AI Cirku-Tech, OptiPower Manager, and AIOptics Vision with competitive discounts. For example, AIOptics Vision comes at a 15% discount, making it quite appealing for a purchase of 20 licenses.",
+        "start": 2129,
+        "end": 2471
+      }
+    ],
+    "question_id": "b2b-single_call-aed291bef4cadb3f",
+    "candidate": {
+      "question": "What discount is TechPulse offering ClearSky Data Solutions on AIOptics Vision, and for how many licenses?",
+      "gold_answer": "15% discount on 20 licenses.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T2ntIAC",
+          "answer_claim": "AIOptics Vision comes at a 15% discount for a purchase of 20 licenses.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2023-12-05T12:02:35] Olivia Nguyen: Sure, let's talk about the quote. Our offer includes a suite of solutions like PulseSim Pro, CloudLink Designer, AI Cirku-Tech, OptiPower Manager, and AIOptics Vision with competitive discounts. For example, AIOptics Vision comes at a 15% discount, making it quite appealing for a purchase of 20 licenses.",
+          "start": 2129,
+          "end": 2471
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "TechPulse is offering ClearSky Data Solutions a 15% discount on AIOptics Vision for a purchase of 20 licenses.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA. The dialogue quote directly states AIOptics Vision comes at a 15% discount for a purchase of 20 licenses, fully supporting the gold answer. The question is a realistic sales need, names the account and product (allowed), and does not leak the answer. Independent answer matches semantically; no-context answers are UNKNOWN, so they fail. Two-call flags set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T2ntIAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3H2IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of TechPulse, ClearSky Data Solutions, or any discount on AIOptics Vision. The only call is between Isabella Rossi (Innovative Solutions) and Luis Martinez (SkyLevel Systems), discussing 4 units of AIOptics Vision within a $5,294 budget estimate, with no discount offered.",
+              "evidence": [],
+              "reason": "The question asks about a discount from TechPulse to ClearSky Data Solutions on AIOptics Vision and the number of licenses. None of the named entities (TechPulse, ClearSky Data Solutions) appear in any source. The sole call involves SkyLevel Systems and Innovative Solutions, and no discount is mentioned\u2014only a unit count (4) within a budget. Therefore the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwM5IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TechPulse offering a discount to ClearSky Data Solutions on AIOptics Vision. The only call available is between Mohammed El-Sayed (TechInnovate Solutions) and Anna M\u00fcller (Bavarian Tech Solutions), discussing two units of AIOptics Vision and two units of CollabCircuit Hub within a budget of 2031. No discount is mentioned, and neither TechPulse nor ClearSky Data Solutions appear in any source.",
+              "evidence": [],
+              "reason": "The question asks about a discount from TechPulse to ClearSky Data Solutions on AIOptics Vision and the number of licenses. The sole call transcript involves different parties (TechInnovate Solutions and Bavarian Tech Solutions), mentions no discount, and does not reference ClearSky Data Solutions or TechPulse at all. Therefore, no complete answer can be provided from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0ZEIA0",
+              "b2b:a05Wt000003T2mHIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention any discount or license count for AIOptics Vision. AIOptics Vision is only discussed as a solution with innovative features (call b2b:a05Wt000003T2mHIAS, lines 12), with no pricing, discount, or license quantity stated.",
+              "evidence": [],
+              "reason": "Neither call contains any mention of a discount percentage/amount or a number of licenses for AIOptics Vision offered to ClearSky Data Solutions. The product is referenced only in terms of features and capabilities (lines 16 and 12 of the respective calls), but no commercial terms such as discount or license quantity are discussed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxZlIAK",
+              "b2b:a05Wt000003SzJqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called AIOptics Vision, nor any discount percentage or license count for ClearSky Data Solutions. The only discounted pricing discussed is for CloudLink Designer, AI Cirku-Tech, and CircuitMaster Analyzer (total prices after discounts of $3,599.91, $4,027.92, and $5,939.89), with no discount rate or license quantity stated.",
+              "evidence": [],
+              "reason": "No source text mentions 'AIOptics Vision' at all. The products discussed for ClearSky Data Solutions are CloudLink Designer, AI Cirku-Tech, and CircuitMaster Analyzer. Because the exact product named in the question does not appear in any call transcript, neither a discount nor a license count for AIOptics Vision can be provided. The answer is therefore incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StO7IAK",
+              "b2b:a05Wt000003T0seIAC",
+              "b2b:a05Wt000003T1zyIAC",
+              "b2b:a05Wt000003T2UbIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no mention of ClearSky Data Solutions. All four calls are between Liam O'Sullivan (TechPulse) and Sven Lindstrom of Precision Circuit Systems. While a 5% discount on AIOptics Vision is discussed in the context of Precision Circuit Systems, no discount offer to ClearSky Data Solutions exists, and no license quantity is specified for any account.",
+              "evidence": [],
+              "reason": "The question asks about a discount TechPulse is offering to ClearSky Data Solutions on AIOptics Vision and the number of licenses. None of the four provided call transcripts reference ClearSky Data Solutions at all; every call involves Precision Circuit Systems (account_id 001Wt00000PHVaVIAX, contact Sven Lindstrom). Although a 5% discount on AIOptics Vision is mentioned (calls b2b:a05Wt000003T1zyIAC line 12 and b2b:a05Wt000003T2UbIAK line 14), it is directed at Precision Circuit Systems, not ClearSky Data Solutions. Additionally, no license count is stated in any transcript. Because the exact named account (ClearSky Data Solutions) and the license quantity are both absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuKBIA0",
+              "b2b:a05Wt000003Svo5IAC",
+              "b2b:a05Wt000003T2HfIAK",
+              "b2b:a05Wt000003T2MXIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided calls do not involve ClearSky Data Solutions. All four transcripts are between Maya Johnson (TechPulse Solutions) and Fatima Patel of OmegaDesign Labs. While a 15% discount on AIOptics Vision is mentioned for OmegaDesign Labs (call b2b:a05Wt000003SuKBIA0, line 4), no discount, license count, or any offer is made to ClearSky Data Solutions in any of the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a discount TechPulse is offering ClearSky Data Solutions on AIOptics Vision and the number of licenses. None of the four calls reference ClearSky Data Solutions at all; every call is with OmegaDesign Labs (contact Fatima Patel). Therefore no facts about ClearSky Data Solutions can be extracted, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su2NIAS",
+              "b2b:a05Wt000003SzepIAC",
+              "b2b:a05Wt000003T2EQIA0",
+              "b2b:a05Wt000003T2pVIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "TechPulse is offering ClearSky Data Solutions a 15% discount on AIOptics Vision (as well as SecureAnalytics Pro and CollabCircuit Hub), but no number of licenses is mentioned in any of the provided calls.",
+              "evidence": [],
+              "reason": "The 15% discount on AIOptics Vision is confirmed in call b2b:a05Wt000003T2EQIA0 line 4, where Linh Tran states 'the 15% discount on products like AIOptics Vision, SecureAnalytics Pro, and CollabCircuit Hub.' However, the question also asks 'for how many licenses?' and no call transcript mentions a specific number of licenses. Because the license count is missing, the answer is incomplete and complete is set to false."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StcfIAC",
+              "b2b:a05Wt000003T1AIIA0",
+              "b2b:a05Wt000003T2O7IAK",
+              "b2b:a05Wt000003T2ntIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "TechPulse is offering ClearSky Data Solutions a 15% discount on AIOptics Vision for a purchase of 20 licenses.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T2ntIAC",
+                  "line_start": 12,
+                  "line_end": 13,
+                  "quote": "[2023-12-05T12:02:35] Olivia Nguyen: Sure, let's talk about the quote. Our offer includes a suite of solutions like PulseSim Pro, CloudLink Designer, AI Cirku-Tech, OptiPower Manager, and AIOptics Vision with competitive discounts. For example, AIOptics Vision comes at a 15% discount, making it quite appealing for a purchase of 20 licenses."
+                }
+              ],
+              "reason": "In the December 5 call, Olivia Nguyen (TechPulse) explicitly states to Mohammed Hadi (ClearSky Data Solutions) that 'AIOptics Vision comes at a 15% discount, making it quite appealing for a purchase of 20 licenses.' This directly answers both the discount percentage and the number of licenses for the exact product, account, and vendor named in the question."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same requested facts: a 15% discount on AIOptics Vision for 20 licenses. Answer B is simply a more concise phrasing of the same information."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7uIAC",
+              "b2b:a05Wt000003Ss0ZIAS",
+              "b2b:a05Wt000003Ss0aIAC",
+              "b2b:a05Wt000003SwiXIAS",
+              "b2b:a05Wt000003T10dIAC",
+              "b2b:a05Wt000003T12EIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no dealings with ClearSky Data Solutions. All six calls are between Liam Kelly (TechPulse) and Renee Marcus of EcoLite Innovations on the 'Sustainable Lighting Revolution with TechPulse' opportunity. While a 10% discount on AIOptics Vision for 15 licenses is mentioned, it is offered to EcoLite Innovations, not ClearSky Data Solutions. Therefore, no discount or license count for ClearSky Data Solutions can be supported from these sources.",
+              "evidence": [],
+              "reason": "Every call's metadata lists account_name as 'EcoLite Innovations' and contact_name as 'Renee Marcus'. The string 'ClearSky Data Solutions' never appears in any transcript. The 10% discount on AIOptics Vision for 15 units (calls b2b:a05Wt000003Ss0aIAC line 14, b2b:a05Wt000003T10dIAC line 10, b2b:a05Wt000003Sr7uIAC lines 12-14) is explicitly tied to EcoLite Innovations, not ClearSky Data Solutions. Because the question asks about a different account, no complete answer exists in the supplied sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuDfIAK",
+              "b2b:a05Wt000003SyqqIAC",
+              "b2b:a05Wt000003T0m8IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called AIOptics Vision, nor any discount or license count for it. The only discount discussed is a 10% discount on PulseSim Pro ($4,499.91) in call b2b:a05Wt000003SuDfIAK, and no license quantities are stated for any product.",
+              "evidence": [],
+              "reason": "No source mentions 'AIOptics Vision' at all. The question asks specifically about a discount on AIOptics Vision and the number of licenses, but neither fact exists in any of the three calls. The only discount referenced is 10% on PulseSim Pro (call b2b:a05Wt000003SuDfIAK, line 17), which is a different product. No license counts are mentioned anywhere. Therefore the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1AXIA0",
+              "b2b:a05Wt000003T2WLIA0",
+              "b2b:a05Wt000003T4WXIA0",
+              "b2b:a05Wt000003T4WYIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any information about a discount offered to ClearSky Data Solutions on AIOptics Vision, nor any license count. All four calls are between Jorge Pinto (TechPulse) and Ibrahim Ahmad of SkyLevel Systems under the 'TechPulse-Aerospace Integration Boost' opportunity. ClearSky Data Solutions is never mentioned, and no specific discount percentage or license quantity for AIOptics Vision is stated in any transcript.",
+              "evidence": [],
+              "reason": "The question asks about a discount and license count for ClearSky Data Solutions on AIOptics Vision. However, all four calls involve SkyLevel Systems (account_id 001Wt00000PH9DRIA1), not ClearSky Data Solutions. No discount figure or license count for AIOptics Vision is mentioned anywhere in the transcripts. The draft extraction is correct: the answer is not present in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sru8IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about a discount offered to ClearSky Data Solutions on AIOptics Vision. The only call provided is between Pierre Fontaine (TechPulse) and Pedro Ramirez of MetaData Analytics. While line 4 mentions a discount on AIOptics Vision in the context of MetaData Analytics, no specific discount percentage or license count is stated, and the account is MetaData Analytics\u2014not ClearSky Data Solutions. No ClearSky-specific offer, discount amount, or license quantity appears anywhere in the supplied transcripts.",
+              "evidence": [],
+              "reason": "The question asks about a discount for ClearSky Data Solutions, but the sole call transcript involves MetaData Analytics (Pedro Ramirez). Even within that call, the discount on AIOptics Vision is mentioned only in passing (line 4) without a specific percentage or license count. There is no source material referencing ClearSky Data Solutions, so the requested facts (discount amount and number of licenses for ClearSky) cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwSUIA0",
+              "b2b:a05Wt000003SwiZIAS",
+              "b2b:a05Wt000003SxWbIAK",
+              "b2b:a05Wt000003T2BFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of ClearSky Data Solutions. All four calls are between Mei Chen of TechPulse Solutions and Olga Romanov of Nordic HealthTech regarding the 'Nordic HealthTech Strategic Partnership' opportunity. The AIOptics Vision discount discussed (15% on 20 units) was offered to Nordic HealthTech, not ClearSky Data Solutions. Therefore, no discount or license count for ClearSky Data Solutions can be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about a discount offered to ClearSky Data Solutions on AIOptics Vision. None of the four call transcripts reference ClearSky Data Solutions in any capacity. All calls involve the account 'Nordic HealthTech' (account_id 001Wt00000PFsmcIAD) and contact Olga Romanov. The 15% discount on 20 units of AIOptics Vision mentioned in calls b2b:a05Wt000003SwSUIA0 (line 14) and b2b:a05Wt000003SxWbIAK (line 6) pertains exclusively to Nordic HealthTech. Since the exact named account (ClearSky Data Solutions) does not appear in any source, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuDeIAK",
+              "b2b:a05Wt000003SynXIAS",
+              "b2b:a05Wt000003T2hVIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called AIOptics Vision, nor any discount or license count for ClearSky Data Solutions. The calls discuss AI Cirku-Tech, SecureFlow Suite, SecureData Nexus, and QuantumPCB Modeler, but no pricing, discount, or license terms are stated.",
+              "evidence": [],
+              "reason": "No source contains the product name 'AIOptics Vision', any discount percentage or amount, or any license quantity for ClearSky Data Solutions. All three calls (b2b:a05Wt000003SuDeIAK, b2b:a05Wt000003SynXIAS, b2b:a05Wt000003T2hVIAS) reference other TechPulse products (AI Cirku-Tech, SecureFlow Suite, SecureData Nexus, QuantumPCB Modeler) and discuss general pricing transparency, but never specify a discount or license count for AIOptics Vision."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkZIAS",
+              "b2b:a05Wt000003T0W0IAK",
+              "b2b:a05Wt000003T2MVIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called AIOptics Vision, nor any discount on it or license count. The only discount mentioned is a 'slight discount on CloudLink Designer' with no specifics (call b2b:a05Wt000003T0W0IAK, line 10).",
+              "evidence": [],
+              "reason": "No source mentions AIOptics Vision, a discount on it, or a license count for it. The only discount referenced is a vague 'slight discount on CloudLink Designer' in call b2b:a05Wt000003T0W0IAK line 10, which does not answer the question about AIOptics Vision."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Szd9IAC",
+              "b2b:a05Wt000003T1AJIA0",
+              "b2b:a05Wt000003T1AKIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not mention a product called 'AIOptics Vision,' nor do they contain any discount offer or license count for ClearSky Data Solutions. The calls between Olivia Nguyen (TechPulse) and Shivani Desai (ClearSky Data Solutions) discuss SecureFlow Suite, AI Cirku-Tech, and QuantumPCB Modeler, but no pricing, discount, or licensing details are provided.",
+              "evidence": [],
+              "reason": "None of the three calls reference 'AIOptics Vision' at all. The products discussed are SecureFlow Suite, AI Cirku-Tech, and QuantumPCB Modeler. No discount percentage or dollar amount is mentioned, and no license quantity is stated. Therefore the requested facts (discount on AIOptics Vision and number of licenses) cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv08IAC",
+              "b2b:a05Wt000003T0UPIA0",
+              "b2b:a05Wt000003T2UaIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts only involve TechPulse Solutions and PowerGrid Innovations (contact: Yasir Abdi). There is no mention of ClearSky Data Solutions in any of the three calls, and no specific discount percentage or license count for AIOptics Vision is stated. The question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "All three calls are between Anwar Malik (TechPulse) and Yasir Abdi (PowerGrid Innovations). The account name in every call's metadata is 'PowerGrid Innovations'. ClearSky Data Solutions is never mentioned. While AIOptics Vision is discussed in calls b2b:a05Wt000003T0UPIA0 and b2b:a05Wt000003T2UaIAK, no discount amount or license quantity is specified in any transcript. The requested facts (discount for ClearSky Data Solutions on AIOptics Vision and number of licenses) are entirely absent from the sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; the quoted line explicitly states AIOptics Vision comes at a 15% discount for a purchase of 20 licenses, fully supporting the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What discount is TechPulse offering ClearSky Data Solutions on AIOptics Vision",
+            "explicitly_requested": true,
+            "required_fact": "AIOptics Vision is offered at a 15% discount",
+            "source_call_ids": [
+              "b2b:a05Wt000003T2ntIAC"
+            ]
+          },
+          {
+            "question_span": "for how many licenses?",
+            "explicitly_requested": true,
+            "required_fact": "20 licenses",
+            "source_call_ids": [
+              "b2b:a05Wt000003T2ntIAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the discount percentage and the number of licenses. The gold answer provides exactly these two facts: 15% discount and 20 licenses. The independent answer includes both facts. The obligations correctly extract the discount and license count from the single call. The call contains both facts explicitly. No extra unasked facts are present in the gold answer.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "15% discount",
+            "question_span": "What discount is TechPulse offering ClearSky Data Solutions on AIOptics Vision",
+            "required_by_question": true
+          },
+          {
+            "claim": "20 licenses",
+            "question_span": "for how many licenses?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "0df91cd50ba8745bbcace17871ce0cdccc657f36359feb7418b2d6c376843ffc",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005STlmIAG"
+    ],
+    "status": "accepted",
+    "question": "What technology features did Mateo highlight for the Volvo XC60 when Mohammed asked about it?",
+    "gold_answer": "The Volvo Intellisafe package, including lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005STlmIAG",
+        "answer_claim": "The Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation.",
+        "kind": "dialogue",
+        "line_start": 8,
+        "line_end": 9,
+        "quote": "[2021-03-26T11:32:18] Mateo Ramirez: Exactly, the Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation. It\u2019s tailored for a secure driving experience.",
+        "start": 1488,
+        "end": 1713
+      }
+    ],
+    "question_id": "b2c-single_call-0df91cd50ba8745b",
+    "candidate": {
+      "question": "What technology features did Mateo highlight for the Volvo XC60 when Mohammed asked about it?",
+      "gold_answer": "The Volvo Intellisafe package, including lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005STlmIAG",
+          "answer_claim": "The Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation.",
+          "kind": "dialogue",
+          "line_start": 8,
+          "line_end": 9,
+          "quote": "[2021-03-26T11:32:18] Mateo Ramirez: Exactly, the Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation. It\u2019s tailored for a secure driving experience.",
+          "start": 1488,
+          "end": 1713
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Mateo highlighted the Volvo Intellisafe package for the Volvo XC60, including features like lane-keeping aid and oncoming lane mitigation.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA: dialogue at 11:32:18 directly supports the gold answer (Intellisafe package, lane-keeping aid, oncoming lane mitigation) in response to Mohammed's XC60 question at 11:32:01. Question is a realistic sales inquiry, names allowed, no leakage, no invented temporal changes. Independent answer matches gold semantically. Both no-context answers are UNKNOWN, so they fail. Two-call flags set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005STlmIAG"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005TtB7IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not contain any person named Mateo, nor any mention of a Volvo XC60. The only call available is between Mohammed Al-Aziz (salesperson) and Mohammed Hossain (lead), and it concerns two 2023 Mercedes-Benz E-Class vehicles. Therefore, no technology features highlighted by Mateo for a Volvo XC60 can be identified from the sources.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. The sole source call (b2c:a05Ws000005TtB7IAK) involves Mohammed Al-Aziz and Mohammed Hossain discussing Mercedes-Benz E-Class vehicles. There is no speaker named Mateo and no reference to a Volvo XC60 anywhere in the transcript. The requested facts are entirely absent from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005TtW5IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not contain any mention of a Volvo XC60, a person named Mohammed, or any technology features related to a Volvo XC60. The only call available is between Haruto Saito and Mateo Alonso discussing the AutoElite Tire Rotation Service. The requested facts are entirely absent from the sources.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. The sole source call (b2c:a05Ws000005TtW5IAK) involves Haruto Saito and Mateo Alonso discussing a Tire Rotation Service. There is no mention of Mohammed, no Volvo XC60, and no technology features of any vehicle. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUQDIA4",
+              "b2c:a05Ws000005SVm7IAG",
+              "b2c:a05Ws000005SW0YIAW",
+              "b2c:a05Ws000005SbUqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources mentions a Volvo XC60 or a person named Mohammed. All four transcripts involve Mateo Ramirez speaking with Liam Anderson about the Tesla Model S and Porsche 911 Carrera. Therefore, there is no evidence of Mateo highlighting technology features for a Volvo XC60 to Mohammed.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. None of the four calls contain any reference to a Volvo XC60 or to a person named Mohammed. The only participants are Mateo Ramirez and Liam Anderson, and the only vehicles discussed are the 2024 Tesla Model S and the Porsche 911 Carrera. The requested facts cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSg7IAG",
+              "b2c:a05Ws000005SUV6IAO",
+              "b2c:a05Ws000005SXXiIAO",
+              "b2c:a05Ws000005SZPqIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Volvo XC60 or a person named Mohammed. All four calls are between Mateo Ramirez and Mia Anderson discussing the 2024 Tesla Model S, maintenance plans, extended warranties, and financing options. Therefore, the question about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "No source transcript references a Volvo XC60, nor does any transcript involve a person named Mohammed. The named people in all calls are Mateo Ramirez and Mia Anderson, and the vehicle discussed is exclusively the 2024 Tesla Model S. The requested facts (Volvo XC60 technology features, Mohammed's inquiry) are entirely absent from the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMfUIAW",
+              "b2c:a05Ws000005SOfiIAG",
+              "b2c:a05Ws000005SXRLIA4",
+              "b2c:a05Ws000005SZZUIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources mentions a Volvo XC60 or a person named Mohammed. All four calls involve Mateo Ramirez speaking with Liam Anderson about a Tesla Model S and related financing/maintenance options. The question's premise (Mohammed asking about a Volvo XC60) is not supported by any transcript.",
+              "evidence": [],
+              "reason": "The sources contain no reference to a Volvo XC60, no person named Mohammed, and no discussion of Volvo technology features. Every call is between Mateo Ramirez and Liam Anderson regarding Tesla Model S packages, financing, and maintenance plans. Therefore the requested facts cannot be answered from the given data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STlmIAG",
+              "b2c:a05Ws000005SU6jIAG",
+              "b2c:a05Ws000005SU8LIAW"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "When Mohammed asked about the Volvo XC60's technology, Mateo highlighted the Volvo IntelliSafe package, including lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience (2021-03-26 call). In the earlier 2021-03-22 call, Mateo also noted the XC60 offers cutting-edge driver assistance systems and a powerful sound system.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005STlmIAG",
+                  "line_start": 7,
+                  "line_end": 9,
+                  "quote": "[2021-03-26T11:32:01] Mohammed Akhtar: That sounds promising. What about the Volvo XC60? I heard it\u2019s also quite advanced in terms of technology.\n[2021-03-26T11:32:18] Mateo Ramirez: Exactly, the Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation. It\u2019s tailored for a secure driving experience."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SU8LIAW",
+                  "line_start": 8,
+                  "line_end": 9,
+                  "quote": "[2021-03-22T14:51:15] Mateo Ramirez: Exactly. The Lexus RX 350 has an intuitive infotainment system and advanced safety features like lane-keeping assist. On the other hand, the Volvo XC60 offers cutting-edge driver assistance systems and a powerful sound system."
+                }
+              ],
+              "reason": "In the 2021-03-26 call, Mohammed specifically asks 'What about the Volvo XC60?' regarding technology (line 7), and Mateo responds with the Volvo IntelliSafe package including lane-keeping aid and oncoming lane mitigation (line 8). In the 2021-03-22 call, Mateo mentions the XC60 offers cutting-edge driver assistance systems and a powerful sound system (line 8). Both instances involve Mateo speaking to Mohammed about the XC60's technology features, fully answering the question."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the same core technology features: the Volvo IntelliSafe package, lane-keeping aid, and oncoming lane mitigation, tailored for a secure driving experience. Answer A adds extra unrequested detail (an earlier call mentioning driver assistance systems and a sound system, plus dates), but the requested facts about the highlighted technology features are the same in both answers."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUrhIAG",
+              "b2c:a05Ws000005SVStIAO",
+              "b2c:a05Ws000005SY8tIAG",
+              "b2c:a05Ws000005SaDwIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves a person named Mohammed or any discussion of a Volvo XC60. All four calls are between Mateo Ramirez and Isaac Thompson, covering the 2024 Tesla Model S, 2024 Porsche 911 Carrera, and 2021 Audi Q7. There is no evidence of Mateo highlighting technology features for a Volvo XC60 to Mohammed.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. None of the four provided call transcripts mention a person named Mohammed or a Volvo XC60. The calls exclusively involve Mateo Ramirez speaking with Isaac Thompson about Tesla Model S, Porsche 911 Carrera, and Audi Q7. Therefore, no complete answer can be provided from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRLrIAO",
+              "b2c:a05Ws000005SYNOIA4",
+              "b2c:a05Ws000005SZw5IAG",
+              "b2c:a05Ws000005SZxjIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves a person named Mohammed or any discussion of a Volvo XC60. All four calls are between Mateo Ramirez and Grace Turner, discussing the Tesla Model S and BMW X5 M. Therefore, the requested information about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it cannot be found in these sources.",
+              "evidence": [],
+              "reason": "The question asks about a specific interaction between Mateo and Mohammed regarding the Volvo XC60. None of the four provided call transcripts include a person named Mohammed, nor do they mention a Volvo XC60. All calls are between Mateo Ramirez and Grace Turner, covering the Tesla Model S and BMW X5 M. The named people, vehicle, and event scope in the question do not match any source content, so no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSHzIAO",
+              "b2c:a05Ws000005SY40IAG",
+              "b2c:a05Ws000005ScM2IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Volvo XC60 or a person named Mohammed. All three calls are between Mateo Ramirez and Benjamin Foster, discussing the Tesla Model S and Mercedes-Benz E-Class. There is no exchange in which Mohammed asks about a Volvo XC60 or Mateo highlights technology features for that vehicle.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. None of the three source calls involve a person named Mohammed, and none mention a Volvo XC60. The calls are exclusively between Mateo Ramirez and Benjamin Foster, covering the Tesla Model S and Mercedes-Benz E-Class. Therefore, no supporting evidence exists in the sources to answer this question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOZLIA4",
+              "b2c:a05Ws000005SW5ZIAW",
+              "b2c:a05Ws000005SYyaIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Volvo XC60 or a person named Mohammed. All three calls are between Mateo Ramirez and Ava Morgan, discussing the 2023 Nissan Leaf and related eco-friendly vehicle options. Therefore, the question about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about a specific vehicle (Volvo XC60) and a specific person (Mohammed) that do not appear anywhere in the three provided call transcripts. The calls involve Mateo Ramirez speaking with Ava Morgan about the 2023 Nissan Leaf. No facts matching the exact named people, product, or event scope exist in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SU6pIAG",
+              "b2c:a05Ws000005SWLbIAO",
+              "b2c:a05Ws000005SZwDIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Mohammed appears in any of the provided call transcripts. All three calls are between Mateo Ramirez and Grace White. Therefore, there is no record of Mateo highlighting Volvo XC60 technology features in response to a question from Mohammed. (Mateo did discuss XC60 technology with Grace White\u2014mentioning blind-spot monitoring, cross-traffic alert, a large touchscreen infotainment system with intuitive controls, and the Pilot Assist system\u2014but none of these exchanges involved anyone named Mohammed.)",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. No call transcript contains a participant named Mohammed. All calls are between Mateo Ramirez and Grace White. Since the exact named person (Mohammed) is not present in any source, the requested fact cannot be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQEZIA4",
+              "b2c:a05Ws000005SXBAIA4",
+              "b2c:a05Ws000005SYfCIAW",
+              "b2c:a05Ws000005SZt1IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No Volvo XC60 is discussed in any of the provided call transcripts, and no contact named Mohammed appears. All four calls are between Mateo Ramirez and Franklin Pierce, and the vehicle discussed is a 2022 Audi A6. Therefore, the question about technology features Mateo highlighted for a Volvo XC60 when Mohammed asked about it cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The sources contain no mention of a Volvo XC60, no person named Mohammed, and no discussion of Volvo technology features. The calls involve Mateo Ramirez speaking with Franklin Pierce about a 2022 Audi A6 and maintenance plans. The requested facts (Volvo XC60 technology features, Mohammed as the asker) are entirely absent from the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SINMIA4",
+              "b2c:a05Ws000005SQj6IAG",
+              "b2c:a05Ws000005SWLWIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Mohammed appears in any of the provided call transcripts or metadata. The only customer interacting with Mateo Ramirez about the Volvo XC60 is Ryan Thompson. Because the question specifically asks about technology features Mateo highlighted when 'Mohammed' asked about the XC60, and no such person or interaction exists in the sources, the requested fact cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about a conversation between Mateo and Mohammed regarding the Volvo XC60's technology features. All three calls involve Mateo Ramirez speaking with Ryan Thompson (account_name: Ryan Thompson). There is no mention of anyone named Mohammed in any transcript line or metadata field. Therefore, the exact named-person scope of the question cannot be satisfied, and the answer must be marked incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUTOIA4",
+              "b2c:a05Ws000005SUgFIAW",
+              "b2c:a05Ws000005SZOCIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The Volvo XC60 is never mentioned in any of the provided call transcripts, and no person named Mohammed appears in any call. All three calls involve Mateo Ramirez speaking with Ryan Thompson about the BMW X5 M and Audi Q7. There is no record of Mateo highlighting technology features for a Volvo XC60 to Mohammed.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. None of the three calls mention a Volvo XC60, and none involve a person named Mohammed. The calls only involve Mateo Ramirez and Ryan Thompson discussing the BMW X5 M and Audi Q7. Therefore, no complete answer can be provided from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQRTIA4",
+              "b2c:a05Ws000005SVEMIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves a person named Mohammed or any discussion of the Volvo XC60. The transcripts only feature Mateo Ramirez speaking with Evelyn Hodges about the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6. Therefore, the requested information about technology features Mateo highlighted for the Volvo XC60 to Mohammed cannot be found.",
+              "evidence": [],
+              "reason": "The question asks about a conversation between Mateo and Mohammed regarding the Volvo XC60. Neither call includes a participant named Mohammed, and neither call mentions the Volvo XC60. The only vehicles discussed are the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6, and the only customer is Evelyn Hodges. No source evidence supports the requested facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQ6QIAW",
+              "b2c:a05Ws000005SVKkIAO",
+              "b2c:a05Ws000005SWQSIA4",
+              "b2c:a05Ws000005SdI6IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a Volvo XC60 or a person named Mohammed. All four calls are between Mateo Ramirez and Ava Lewis, discussing the Tesla Model S and Nissan Leaf. Therefore, the question about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "No call in the supplied sources involves a person named Mohammed, and no call mentions the Volvo XC60. The named people (Mateo, Mohammed), the product (Volvo XC60), and the event (Mohammed asking about it) are entirely absent from the data, so no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SNEIIA4",
+              "b2c:a05Ws000005SQHnIAO",
+              "b2c:a05Ws000005ST7YIAW",
+              "b2c:a05Ws000005SaLqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No Volvo XC60 is mentioned in any of the provided call transcripts, and no person named Mohammed appears in any call. All four calls are between Mateo Ramirez and Isabelle Cruz, discussing the 2022 Toyota Camry Hybrid, the 2020 Honda Civic, financing options, warranties, and the certified pre-owned program. The question's premise (Mohammed asking about a Volvo XC60) is not supported by any source.",
+              "evidence": [],
+              "reason": "The sources contain no reference to a Volvo XC60, no technology features for such a vehicle, and no individual named Mohammed. Every call involves Mateo Ramirez speaking with Isabelle Cruz about different vehicles and topics. Therefore the requested facts cannot be answered from the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPlUIAW",
+              "b2c:a05Ws000005SSUzIAO",
+              "b2c:a05Ws000005SZPpIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No transcript mentions a Volvo XC60 or a contact named Mohammed; the calls are with Mia Anderson and discuss Tesla Model S and Mercedes-Benz E-Class.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. None of the three provided calls involve a person named Mohammed, and none mention a Volvo XC60. All calls are between Mateo Ramirez and Mia Anderson, discussing the Tesla Model S and Mercedes-Benz E-Class. Therefore, no evidence exists to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVCZIA4",
+              "b2c:a05Ws000005SVpJIAW",
+              "b2c:a05Ws000005SXpYIAW",
+              "b2c:a05Ws000005ScdlIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The Volvo XC60 is never mentioned in any of the provided call transcripts, and no person named Mateo appears in any of the calls. The calls feature Mohammed Khan speaking with Sophia Brown about the 2023 Nissan Leaf and the 2022 Toyota Camry Hybrid. There is no record of Mateo highlighting technology features for a Volvo XC60, nor of Mohammed asking about a Volvo XC60.",
+              "evidence": [],
+              "reason": "The question asks about technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. None of the four call transcripts mention a Volvo XC60, and none involve a person named Mateo. The salesperson in all calls is Mohammed Khan, and the customer is Sophia Brown. The vehicles discussed are the 2023 Nissan Leaf and the 2022 Toyota Camry Hybrid. Since neither the named person (Mateo), the vehicle (Volvo XC60), nor the event (Mohammed asking about it) exists in the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SXkYIAW",
+              "b2c:a05Ws000005SZUnIAO",
+              "b2c:a05Ws000005SZY1IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No Volvo XC60 is discussed in any of the provided calls, and no person named Mohammed appears. All three calls are between Mateo Ramirez and Isaac Thompson, discussing a Tesla Model S and a BMW X5 M. Therefore, there is no information about technology features Mateo highlighted for a Volvo XC60 to Mohammed.",
+              "evidence": [],
+              "reason": "The question asks about a Volvo XC60 and a person named Mohammed. None of the three call transcripts mention a Volvo XC60 or anyone named Mohammed. The calls involve Mateo Ramirez speaking with Isaac Thompson about Tesla Model S and BMW X5 M vehicles. Since the exact named people (Mohammed), product (Volvo XC60), and event scope are entirely absent from the sources, no answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRcBIAW",
+              "b2c:a05Ws000005SYqSIAW",
+              "b2c:a05Ws000005SaM1IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The Volvo XC60 is never mentioned in any of the provided call transcripts, and no person named Mohammed appears in any call. All three calls involve Mateo Ramirez speaking with Ethan Parker about the 2024 Tesla Model S and the 2023 Nissan Leaf. There is no information about technology features Mateo highlighted for a Volvo XC60 to Mohammed.",
+              "evidence": [],
+              "reason": "The question asks about a specific vehicle (Volvo XC60), a specific customer (Mohammed), and specific technology features highlighted by Mateo. None of these elements exist in the source material. The calls only involve Mateo Ramirez and Ethan Parker discussing Tesla Model S and Nissan Leaf. No Volvo XC60 or Mohammed is referenced anywhere in the transcripts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZJXIA4",
+              "b2c:a05Ws000005SaP9IAK",
+              "b2c:a05Ws000005ScNjIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No Volvo XC60 is mentioned in any of the provided call transcripts, and no person named Mohammed appears in any call. All three calls are between Mateo Ramirez and Ava Walsh discussing the 2023 Nissan Leaf. Therefore, there is no information about technology features Mateo highlighted for a Volvo XC60 in response to a question from Mohammed.",
+              "evidence": [],
+              "reason": "The question asks about a Volvo XC60 and a person named Mohammed. None of the three call transcripts involve a Volvo XC60 or a person named Mohammed. All calls are between Mateo Ramirez and Ava Walsh regarding the 2023 Nissan Leaf. The requested facts (Volvo XC60 technology features, Mohammed's question) are entirely absent from the sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; Mohammed explicitly asks about the XC60's technology, and the cited quote directly supports the gold answer (Intellisafe package, lane-keeping aid, oncoming lane mitigation, secure driving experience)."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What technology features did Mateo highlight for the Volvo XC60",
+            "explicitly_requested": true,
+            "required_fact": "The Volvo XC60 has the Volvo Intellisafe package, including lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience",
+            "source_call_ids": [
+              "b2c:a05Ws000005STlmIAG"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for technology features Mateo highlighted for the Volvo XC60. The gold answer provides exactly that: the Volvo Intellisafe package with lane-keeping aid and oncoming lane mitigation, tailored for secure driving. The independent answer covers the same facts. The obligation correctly requests the full gold fact. The single call contains the required information. No extra unasked facts are present.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "The Volvo Intellisafe package",
+            "question_span": "What technology features did Mateo highlight for the Volvo XC60",
+            "required_by_question": true
+          },
+          {
+            "claim": "including lane-keeping aid",
+            "question_span": "What technology features did Mateo highlight for the Volvo XC60",
+            "required_by_question": true
+          },
+          {
+            "claim": "and oncoming lane mitigation",
+            "question_span": "What technology features did Mateo highlight for the Volvo XC60",
+            "required_by_question": true
+          },
+          {
+            "claim": "tailored for a secure driving experience",
+            "question_span": "What technology features did Mateo highlight for the Volvo XC60",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]

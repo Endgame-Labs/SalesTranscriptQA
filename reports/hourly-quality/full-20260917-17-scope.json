@@ -1,0 +1,203 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "6d2b619bcb4d2ab69b4d146d54f4a92224e3b364f25c59d49e4b038fa55c5815",
+  "questions": 2,
+  "counts": {
+    "pass": 1,
+    "fail": 1
+  },
+  "estimated_usd": 0.23731595000000003,
+  "results": [
+    {
+      "question_id": "b2b-single_call-aed291bef4cadb3f",
+      "question": "What discount is TechPulse offering ClearSky Data Solutions on AIOptics Vision, and for how many licenses?",
+      "gold_answer": "15% discount on 20 licenses.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkZIAS",
+        "b2b:a05Wt000003StcfIAC",
+        "b2b:a05Wt000003Su2NIAS",
+        "b2b:a05Wt000003SuDeIAK",
+        "b2b:a05Wt000003SuDfIAK",
+        "b2b:a05Wt000003SxZlIAK",
+        "b2b:a05Wt000003SynXIAS",
+        "b2b:a05Wt000003SyqqIAC",
+        "b2b:a05Wt000003SzJqIAK",
+        "b2b:a05Wt000003Szd9IAC",
+        "b2b:a05Wt000003SzepIAC",
+        "b2b:a05Wt000003T0W0IAK",
+        "b2b:a05Wt000003T0ZEIA0",
+        "b2b:a05Wt000003T0m8IAC",
+        "b2b:a05Wt000003T1AIIA0",
+        "b2b:a05Wt000003T1AJIA0",
+        "b2b:a05Wt000003T1AKIA0",
+        "b2b:a05Wt000003T2EQIA0",
+        "b2b:a05Wt000003T2MVIA0",
+        "b2b:a05Wt000003T2O7IAK",
+        "b2b:a05Wt000003T2hVIAS",
+        "b2b:a05Wt000003T2mHIAS",
+        "b2b:a05Wt000003T2ntIAC",
+        "b2b:a05Wt000003T2pVIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call states both the discount on AIOptics Vision and a license count: Olivia Nguyen tells Mohammed Hadi that AIOptics Vision comes at a 15% discount for a purchase of 20 licenses. A separate call (ClearSky Analytics Expansion, 2022-03-13) mentions a 15% discount on AIOptics Vision but gives no license count, so it cannot supply the complete answer.",
+        "answers": [
+          {
+            "answer": "TechPulse is offering ClearSky Data Solutions a 15% discount on AIOptics Vision for a purchase of 20 licenses.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2ntIAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-12-05T12:02:35] Olivia Nguyen: Sure, let's talk about the quote. Our offer includes a suite of solutions like PulseSim Pro, CloudLink Designer, AI Cirku-Tech, OptiPower Manager, and AIOptics Vision with competitive discounts. For example, AIOptics Vision comes at a 15% discount, making it quite appealing for a purchase of 20 licenses."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about a discount on AIOptics Vision and the number of licenses. Only one call in the provided history mentions both a discount percentage and a license count for AIOptics Vision: the December 5, 2023 demo call (b2b:a05Wt000003T2ntIAC) under the 'TechPulse Solutions - ClearSky Data Solutions Partnership' opportunity, where Olivia Nguyen states a 15% discount for 20 licenses. Other calls mention AIOptics Vision (e.g., the March 2022 contract discussion mentions a 15% discount on AIOptics Vision but does not specify a license count) or discuss different products/discounts, but none provide both the discount and license count for AIOptics Vision.",
+        "answers": [
+          {
+            "answer": "TechPulse is offering ClearSky Data Solutions a 15% discount on AIOptics Vision for a purchase of 20 licenses.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2ntIAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-12-05T12:02:35] Olivia Nguyen: Sure, let's talk about the quote. Our offer includes a suite of solutions like PulseSim Pro, CloudLink Designer, AI Cirku-Tech, OptiPower Manager, and AIOptics Vision with competitive discounts. For example, AIOptics Vision comes at a 15% discount, making it quite appealing for a purchase of 20 licenses."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state a 15% discount on AIOptics Vision for 20 licenses, which are identical. The reference also confirms the 15% discount and 20 licenses, covering both requested facts (discount percentage and number of licenses)."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-0df91cd50ba8745b",
+      "question": "What technology features did Mateo highlight for the Volvo XC60 when Mohammed asked about it?",
+      "gold_answer": "The Volvo Intellisafe package, including lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOB0IAO",
+        "b2c:a05Ws000005SOFsIAO",
+        "b2c:a05Ws000005SPJyIAO",
+        "b2c:a05Ws000005SQHeIAO",
+        "b2c:a05Ws000005SRglIAG",
+        "b2c:a05Ws000005SSrKIAW",
+        "b2c:a05Ws000005ST10IAG",
+        "b2c:a05Ws000005ST11IAG",
+        "b2c:a05Ws000005ST7SIAW",
+        "b2c:a05Ws000005STDvIAO",
+        "b2c:a05Ws000005STc6IAG",
+        "b2c:a05Ws000005STgvIAG",
+        "b2c:a05Ws000005STiXIAW",
+        "b2c:a05Ws000005STiYIAW",
+        "b2c:a05Ws000005STiZIAW",
+        "b2c:a05Ws000005STiaIAG",
+        "b2c:a05Ws000005STk9IAG",
+        "b2c:a05Ws000005STllIAG",
+        "b2c:a05Ws000005STlmIAG",
+        "b2c:a05Ws000005STnNIAW",
+        "b2c:a05Ws000005STozIAG",
+        "b2c:a05Ws000005STqbIAG",
+        "b2c:a05Ws000005STsDIAW",
+        "b2c:a05Ws000005STtpIAG",
+        "b2c:a05Ws000005STvRIAW",
+        "b2c:a05Ws000005STx3IAG",
+        "b2c:a05Ws000005STyfIAG",
+        "b2c:a05Ws000005SU0HIAW",
+        "b2c:a05Ws000005SU1tIAG",
+        "b2c:a05Ws000005SU3VIAW",
+        "b2c:a05Ws000005SU57IAG",
+        "b2c:a05Ws000005SU6jIAG",
+        "b2c:a05Ws000005SU8LIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 8,
+            "normalized_end": 9
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Mateo Ramirez appears in three calls. In two of them Mohammed asks about the Volvo XC60's technology and Mateo gives different answers: in call b2c:a05Ws000005STlmIAG he highlights the Volvo Intellisafe package (lane-keeping aid, oncoming lane mitigation), while in call b2c:a05Ws000005SU8LIAW he highlights cutting-edge driver assistance systems and a powerful sound system. These are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "Mateo highlighted the Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STlmIAG",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2021-03-26T11:32:01] Mohammed Akhtar: That sounds promising. What about the Volvo XC60? I heard it’s also quite advanced in terms of technology."
+              }
+            ]
+          },
+          {
+            "answer": "Mateo highlighted that the Volvo XC60 offers cutting-edge driver assistance systems and a powerful sound system.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SU8LIAW",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2021-03-22T14:51:15] Mateo Ramirez: Exactly. The Lexus RX 350 has an intuitive infotainment system and advanced safety features like lane-keeping assist. On the other hand, the Volvo XC60 offers cutting-edge driver assistance systems and a powerful sound system."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "The question asks what technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it. There are two calls with Mateo Ramirez where Mohammed asks about the Volvo XC60's technology features and Mateo provides materially different specific feature descriptions. In the March 22 discovery call, Mateo mentions 'cutting-edge driver assistance systems and a powerful sound system.' In the March 26 call, Mateo specifically names the 'Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation.' These are materially different complete answers with different named features.",
+        "answers": [
+          {
+            "answer": "Mateo highlighted that the Volvo XC60 offers cutting-edge driver assistance systems and a powerful sound system.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SU8LIAW",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2021-03-22T14:51:05] Mohammed Akhtar: Great! Technology is definitely something I'm interested in after seeing what's available these days.\n[2021-03-22T14:51:15] Mateo Ramirez: Exactly. The Lexus RX 350 has an intuitive infotainment system and advanced safety features like lane-keeping assist. On the other hand, the Volvo XC60 offers cutting-edge driver assistance systems and a powerful sound system."
+              }
+            ]
+          },
+          {
+            "answer": "Mateo highlighted that the Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005STlmIAG",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2021-03-26T11:32:01] Mohammed Akhtar: That sounds promising. What about the Volvo XC60? I heard it’s also quite advanced in terms of technology.\n[2021-03-26T11:32:18] Mateo Ramirez: Exactly, the Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation. It’s tailored for a secure driving experience."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

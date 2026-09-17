@@ -1,0 +1,445 @@
+[
+  {
+    "question_id": "b2b-multi_call-550c3cbd5927f685",
+    "question": "For DataGuard Insights' Secure Integration and Optimization Initiative, what discounts did Nadia offer on SecureFlow Suite and AI DesignShift, and which competitor did she earlier cite as having less straightforward pricing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts Nadia offered on SecureFlow Suite and AI DesignShift for the Secure Integration and Optimization Initiative, plus the competitor she earlier cited as having less straightforward pricing",
+        "relationship": "single coherent commercial/pricing discussion: the discounts and the competitor-pricing comparison all concern the same SecureFlow pricing negotiation",
+        "reason": "The requested facts (quoted discounts and the competitor's pricing transparency) address the same business issue\u2014pricing for the SecureFlow deal\u2014rather than unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrSlIAK",
+                "fact": "Nadia offered a 15% discount on SecureFlow Suite and a 10% discount on AI DesignShift.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T4cnIAC) does not mention any specific discount percentages for these products; it only discusses general pricing transparency and competitive positioning."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4cnIAC",
+                "fact": "Nadia cited NanoDesign as having less straightforward pricing.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SrSlIAK) does not mention NanoDesign's pricing; it only references NanoDesign's partnership model and vendor reliability, not pricing straightforwardness."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the specific discounts offered on two products and the competitor cited for less straightforward pricing. These facts are provided in separate calls, and neither call contains both facts. The first call provides the discount details, while the second call provides the competitor pricing comparison. Therefore, both calls are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrSlIAK",
+                  "fact": "Nadia offered a 15% discount on SecureFlow Suite and a 10% discount on AI DesignShift.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003T4cnIAC) does not mention any specific discount percentages for these products; it only discusses general pricing transparency and competitive positioning."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4cnIAC",
+                  "fact": "Nadia cited NanoDesign as having less straightforward pricing.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SrSlIAK) does not mention NanoDesign's pricing; it only references NanoDesign's partnership model and vendor reliability, not pricing straightforwardness."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific discounts offered on two products and the competitor cited for less straightforward pricing. These facts are provided in separate calls, and neither call contains both facts. The first call provides the discount details, while the second call provides the competitor pricing comparison. Therefore, both calls are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrSlIAK",
+                "fact": "Nadia offered a 15% discount on SecureFlow Suite and 10% on AI DesignShift",
+                "why_other_call_cannot_supply_it": "The earlier call (2023-04-10) contains no discount offers or negotiated pricing terms; it only discusses pricing transparency and TCO generally."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4cnIAC",
+                "fact": "Nadia cited NanoDesign as a competitor whose pricing might be less straightforward",
+                "why_other_call_cannot_supply_it": "The later call (2023-04-30) mentions Adaptive Design Solutions regarding ROI but never mentions NanoDesign or pricing straightforwardness."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the specific discount percentages (only in the 2023-04-30 call) and the competitor cited for less straightforward pricing (only in the 2023-04-10 call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrSlIAK",
+                  "fact": "Nadia offered a 15% discount on SecureFlow Suite and 10% on AI DesignShift",
+                  "why_other_call_cannot_supply_it": "The earlier call (2023-04-10) contains no discount offers or negotiated pricing terms; it only discusses pricing transparency and TCO generally."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4cnIAC",
+                  "fact": "Nadia cited NanoDesign as a competitor whose pricing might be less straightforward",
+                  "why_other_call_cannot_supply_it": "The later call (2023-04-30) mentions Adaptive Design Solutions regarding ROI but never mentions NanoDesign or pricing straightforwardness."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific discount percentages (only in the 2023-04-30 call) and the competitor cited for less straightforward pricing (only in the 2023-04-10 call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two discount figures (15% SecureFlow Suite, 10% AI DesignShift) found only in the April 30 call and a competitor pricing comparison (NanoDesign's less straightforward pricing) found only in the April 10 call. Each source contributes an exclusive requested fact. The answer matches the transcripts exactly with no extra or missing information. The rep/account context (Nadia, DataGuard Insights, Secure Integration and Optimization Initiative) is natural and plausible for a sales QA audit. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadia Al-Balushi explicitly states 'a 15% discount for SecureFlow and 10% for AI DesignShift,' directly supporting the answer_claim of 15% on SecureFlow Suite and 10% on AI DesignShift. The speaker is Nadia, the products match, and the percentages are exact."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadia Al-Balushi explicitly names NanoDesign and states 'whose pricing might be less straightforward,' directly supporting the claim that NanoDesign was cited as having less straightforward pricing. The hedging word 'might' is preserved but the core factual claim (NanoDesign cited as less straightforward) is present."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer makes three factual claims: (1) 15% discount on SecureFlow Suite \u2013 supported by evidence index 0; (2) 10% discount on AI DesignShift \u2013 supported by evidence index 0; (3) NanoDesign cited as having less straightforward pricing \u2013 supported by evidence index 1. All three claims are directly substantiated by the supplied citations. The context metadata confirms the opportunity name 'Secure Integration and Optimization Initiative' and account 'DataGuard Insights,' matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-6431c0d6eff16b14",
+    "question": "Across the initial and follow-up discussions with Chuke Li at NexGen Biotech, what security-related need did he raise in the first call, and which product's data protection did his team highlight after the demo?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The security-related need Chuke Li raised in the first call and the product's data protection his team highlighted after the demo",
+        "relationship": "Same business issue (security/data protection) tracked across the initial call and the follow-up demo discussion",
+        "reason": "Both parts concern the same security/data-protection issue across the initial and follow-up calls, forming one coherent multi-call question."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SqgNIAS",
+                "fact": "After the demo, Chuke Li highlighted SecureFlow Suite's data protection capabilities.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Sx5CIAS) occurred before the demo and does not mention any product-specific data protection highlight after a demo."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sx5CIAS",
+                "fact": "In the initial call, Chuke Li stated that NexGen needed more dynamic data protection strategies.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SqgNIAS) is a follow-up after the demo and does not contain the initial request for dynamic data protection strategies."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the security-related need raised in the first call and the product's data protection highlighted after the demo. The first call contains the initial need for dynamic data protection strategies, while the second call contains the post-demo highlight of SecureFlow Suite's data protection. Neither call alone provides both facts, and the facts are not paraphrases of each other."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: the security-related need raised in the first call and the product whose data protection was highlighted after the demo. The first call (b2b:a05Wt000003Sx5CIAS) contains Chuke's statement about needing more dynamic data protection strategies, and the second call (b2b:a05Wt000003SqgNIAS) contains the team's highlight of SecureFlow Suite's data protection capabilities. However, the second call also mentions the same security need ('growing concerns about security and compliance') and the first call also mentions SecureFlow Suite's data protection. Thus, each call contains both pieces of information, so neither call is exclusively necessary for either fact. The question does not require both calls; one call would suffice to answer both parts."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SqgNIAS",
+                  "fact": "After the demo, Chuke Li highlighted SecureFlow Suite's data protection capabilities.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003Sx5CIAS) occurred before the demo and does not mention any product-specific data protection highlight after a demo."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003Sx5CIAS",
+                  "fact": "In the initial call, Chuke Li stated that NexGen needed more dynamic data protection strategies.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SqgNIAS) is a follow-up after the demo and does not contain the initial request for dynamic data protection strategies."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the security-related need raised in the first call and the product's data protection highlighted after the demo. The first call contains the initial need for dynamic data protection strategies, while the second call contains the post-demo highlight of SecureFlow Suite's data protection. Neither call alone provides both facts, and the facts are not paraphrases of each other."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sx5CIAS",
+                "fact": "In the initial call, Chuke Li said NexGen had been discussing internally needing more dynamic data protection strategies.",
+                "why_other_call_cannot_supply_it": "The later call only references the demo follow-up and SecureFlow Suite's data protection; it never mentions the initial need for more dynamic data protection strategies."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqgNIAS",
+                "fact": "After the demo, Chuke Li's team highlighted the data protection capabilities of SecureFlow Suite as critical given security and compliance concerns.",
+                "why_other_call_cannot_supply_it": "The initial call predates the demo and only discusses general security needs; SecureFlow Suite's data protection is never singled out by the team there."
+              }
+            ],
+            "reason": "The question asks for two distinct, time-separated facts: the security need raised in the first call (dynamic data protection strategies) and the product highlighted post-demo (SecureFlow Suite). Each fact appears only in one call, and both are explicitly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sx5CIAS",
+                  "fact": "In the initial call, Chuke Li said NexGen had been discussing internally needing more dynamic data protection strategies.",
+                  "why_other_call_cannot_supply_it": "The later call only references the demo follow-up and SecureFlow Suite's data protection; it never mentions the initial need for more dynamic data protection strategies."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SqgNIAS",
+                  "fact": "After the demo, Chuke Li's team highlighted the data protection capabilities of SecureFlow Suite as critical given security and compliance concerns.",
+                  "why_other_call_cannot_supply_it": "The initial call predates the demo and only discusses general security needs; SecureFlow Suite's data protection is never singled out by the team there."
+                }
+              ],
+              "reason": "The question asks for two distinct, time-separated facts: the security need raised in the first call (dynamic data protection strategies) and the product highlighted post-demo (SecureFlow Suite). Each fact appears only in one call, and both are explicitly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the security-related need Chuke raised in the first call and (2) which product's data protection the team highlighted after the demo. The March 11 call (chronologically first) contains Chuke stating 'We've been discussing internally about needing more dynamic data protection strategies.' The July 10 call (post-demo follow-up) contains Chuke saying 'The data protection capabilities of SecureFlow Suite really caught our eye.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both claims. The question is naturally worded, adequately scoped to the NexGen Biotech account and Chuke Li, and a rep would plausibly want to track how a security need evolved across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from call b2b:a05Wt000003Sx5CIAS (2021-03-11) shows Chuke Li saying 'We've been discussing internally about needing more dynamic data protection strategies.' This directly supports the answer_claim that Chuke raised the need for more dynamic data protection strategies in the first call."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from call b2b:a05Wt000003SqgNIAS (2021-07-10) shows Chuke Li saying 'The data protection capabilities of SecureFlow Suite really caught our eye.' This directly supports the answer_claim that after the demo the team highlighted SecureFlow Suite's data protection capabilities."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two facts: (1) Chuke said NexGen needed more dynamic data protection strategies initially, and (2) after the demo the team highlighted SecureFlow Suite's data protection capabilities. Evidence index 0 (from the earlier 2021-03-11 call) confirms the first claim verbatim. Evidence index 1 (from the later 2021-07-10 call) confirms the second claim verbatim. The chronological ordering (March call as 'first call', July call as 'follow-up') is consistent with the metadata timestamps. Both factual components of the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-aed291bef4cadb3f",
+    "question": "What discount is TechPulse offering ClearSky Data Solutions on AIOptics Vision, and for how many licenses?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount offered to ClearSky Data Solutions on AIOptics Vision and the number of licenses",
+        "relationship": "single coherent commercial quote lookup",
+        "reason": "Both the discount and license count describe the same quote/deal terms for one product and customer."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific discount and license count for a named product (AIOptics Vision) offered to a named account (ClearSky Data Solutions) by a named vendor (TechPulse). This is a realistic commercial-terms inquiry a rep or account manager would want. The dialogue at 12:02:35 explicitly states '15% discount' and '20 licenses' for AIOptics Vision, matching the gold answer exactly with no extra or missing facts. Wording is natural and free of locator preambles or clue lists. Because question_class is single_call with only one call supplied, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Olivia Nguyen explicitly states 'AIOptics Vision comes at a 15% discount, making it quite appealing for a purchase of 20 licenses.' This directly supports the answer_claim of a 15% discount for 20 licenses of AIOptics Vision."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '15% discount on 20 licenses.' The single cited evidence (index 0) contains Olivia Nguyen's exact words confirming both the 15% discount and the 20 licenses for AIOptics Vision. The context metadata confirms the call is between TechPulse Solutions and ClearSky Data Solutions, matching the question's parties. All factual elements of the gold_answer are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-3c890224755d8b0c",
+    "question": "What pricing did Mei Lin quote CyberPulse for the AI Cirku-Tech solution and the SecureFlow Suite?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The prices Mei Lin quoted CyberPulse for two solutions (AI Cirku-Tech and SecureFlow Suite)",
+        "relationship": "single coherent quote lookup covering the pricing breakdown of one quotation",
+        "reason": "This is a single pricing lookup framed as one quote breakdown for the same customer; asking what was quoted for two line items in the same quote is a coherent commercial request, not two unrelated fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific prices quoted by Mei Lin to CyberPulse. The dialogue confirms AI Cirku-Tech at $1589.97 and SecureFlow Suite total at $2399.96, matching the gold answer exactly. The question is naturally phrased, identifies the rep, account, and products, and a sales rep would plausibly need to recall quoted pricing. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported claims.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Mei Lin explicitly states 'AI Cirku-Tech solution at $1589.97 for your order' and 'with the SecureFlow Suite, the total comes to $2399.96,' which directly matches the answer_claim verbatim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Mei Lin's exact pricing quotes: $1589.97 for AI Cirku-Tech and $2399.96 total for SecureFlow Suite. These figures match the gold_answer precisely, and the speaker (Mei Lin) and account context (CyberPulse Security) are confirmed by the metadata and dialogue attribution."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-3ae3e81feaaa0e25",
+    "question": "What is Isabella Murphy's main concern about the Mercedes-Benz E-Class, and what did Liam offer to address it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Isabella Murphy's main concern about the Mercedes-Benz E-Class and Liam's offer to address it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single coherent objection-and-response request about the same issue (the E-Class concern)."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about Isabella Murphy's concern regarding the Mercedes-Benz E-Class and Liam's proposed solution. The transcript clearly shows Isabella stating 'the maintenance aspect is a concern for me with premium vehicles' and Liam offering 'a Comprehensive Maintenance Plan which covers regular servicing and unexpected repairs.' The gold answer accurately captures both facts without adding unasked extras. The question is naturally phrased, identifies the customer and vehicle, and a rep would plausibly want to recall this objection-handling exchange. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Isabella Murphy stating 'the maintenance aspect is a concern for me with premium vehicles,' which matches the answer_claim that she says maintenance is a concern with premium vehicles."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Liam O'Reilly explicitly offering 'a Comprehensive Maintenance Plan which covers regular servicing and unexpected repairs' at AutoElite Motors, directly supporting the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Isabella is concerned about maintenance costs on premium vehicles and Liam offered AutoElite's Comprehensive Maintenance Plan covering servicing and unexpected repairs. Evidence index 0 confirms her concern about maintenance with premium vehicles. Evidence index 1 confirms Liam offered the Comprehensive Maintenance Plan covering regular servicing and unexpected repairs. All factual claims in the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-0df91cd50ba8745b",
+    "question": "What technology features did Mateo highlight for the Volvo XC60 when Mohammed asked about it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The technology features Mateo highlighted for the Volvo XC60 when Mohammed asked about it",
+        "relationship": "single coherent lookup within one discussion",
+        "reason": "This is one fact lookup about the features discussed for a specific vehicle in a single conversation; no unrelated requests are joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks what technology features Mateo highlighted for the Volvo XC60 when Mohammed inquired. The dialogue at 11:32:18 confirms Mateo stated the Volvo Intellisafe package with lane-keeping aid and oncoming lane mitigation, tailored for a secure driving experience. The gold answer matches this verbatim content with no extras or omissions. The question is scoped to a specific customer (Mohammed Akhtar) and vehicle (Volvo XC60) within a certified pre-owned SUV sale opportunity, which is a plausible sales-rep information need. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Mateo Ramirez explicitly states: 'the Volvo XC60 stands out with its Volvo Intellisafe package, including features like lane-keeping aid and oncoming lane mitigation. It's tailored for a secure driving experience.' This directly supports the answer_claim about the Volvo Intellisafe package, lane-keeping aid, and oncoming lane mitigation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence (index 0) contains Mateo's exact words naming the Volvo Intellisafe package, lane-keeping aid, oncoming lane mitigation, and the phrase 'tailored for a secure driving experience.' These elements collectively cover every factual claim in the gold_answer: the Intellisafe package, lane-keeping aid, oncoming lane mitigation, and the secure-driving-experience framing. Speaker attribution (Mateo) and context (Volvo XC60, account Mohammed Akhtar) are consistent with the question."
+      }
+    }
+  }
+]
