@@ -1,0 +1,329 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "8bc969fb1954cd5dd0fba6e28827bf68528af02b55d4474bcbeebcb629b79ec0",
+  "questions": 3,
+  "counts": {
+    "fail": 2,
+    "pass": 1
+  },
+  "estimated_usd": 0.35338437,
+  "results": [
+    {
+      "question_id": "b2b-single_call-3107035d6a3a3c72",
+      "question": "What pricing did TechPulse quote EcoShield for the AI Cirku-Tech and OptiPower Manager, including quantities and discounts?",
+      "gold_answer": "AI Cirku-Tech: 8 units at 5% discount, $4027.92 total; OptiPower Manager: 12 units at 10% discount, $4859.89 total.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Stw3IAC",
+        "b2b:a05Wt000003Su4BIAS",
+        "b2b:a05Wt000003Suf9IAC",
+        "b2b:a05Wt000003SxgJIAS",
+        "b2b:a05Wt000003Sxl0IAC",
+        "b2b:a05Wt000003SyZ4IAK",
+        "b2b:a05Wt000003SyfbIAC",
+        "b2b:a05Wt000003SyfcIAC",
+        "b2b:a05Wt000003SzgUIAS",
+        "b2b:a05Wt000003Szi0IAC",
+        "b2b:a05Wt000003T0HSIA0",
+        "b2b:a05Wt000003T0r1IAC",
+        "b2b:a05Wt000003T1WuIAK",
+        "b2b:a05Wt000003T1dNIAS",
+        "b2b:a05Wt000003T1jtIAC",
+        "b2b:a05Wt000003T1lPIAS",
+        "b2b:a05Wt000003T1tYIAS",
+        "b2b:a05Wt000003T2BMIA0",
+        "b2b:a05Wt000003T2ERIA0",
+        "b2b:a05Wt000003T2HmIAK",
+        "b2b:a05Wt000003T2KvIAK",
+        "b2b:a05Wt000003T2cdIAC",
+        "b2b:a05Wt000003T2ceIAC",
+        "b2b:a05Wt000003T2mMIAS",
+        "b2b:a05Wt000003T3P5IAK",
+        "b2b:a05Wt000003T3YgIAK",
+        "b2b:a05Wt000003T3glIAC",
+        "b2b:a05Wt000003T3nDIAS",
+        "b2b:a05Wt000003T46aIAC",
+        "b2b:a05Wt000003T4HpIAK",
+        "b2b:a05Wt000003T4JRIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 12,
+            "normalized_end": 13
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only two calls quote pricing for both AI Cirku-Tech and OptiPower Manager with quantities and discounts (Aisha Ibrahim to Maya Dlamini on 2023-09-22 and 2023-10-10), and they state identical figures, so the answer is consistent. Other calls either omit one product, omit quantities/totals, or involve different opportunities/contacts.",
+        "answers": [
+          {
+            "answer": "TechPulse quoted EcoShield: AI Cirku-Tech at a quantity of 8 units with a 5% discount, totaling $4,027.92; and OptiPower Manager at a quantity of 12 units with a 10% discount, totaling $4,859.89.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1lPIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-09-22T14:00:45] Aisha Ibrahim: That's great to hear, Maya! Let's dive into any questions you might have. Starting with pricing, our proposal includes the AI Cirku-Tech at a quantity of 8, with a 5% discount, coming to a total of $4027.92. Similarly, the OptiPower Manager is offered under a 10% discount for 12 units, amounting to $4859.89."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0r1IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-08-10T15:04:15] Aisha Ibrahim: OptiPower Manager is specifically geared towards efficient power management. It analyzes power usage patterns in real-time and helps reduce waste, aligning perfectly with your sustainability initiatives."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "The question asks for pricing TechPulse quoted EcoShield for AI Cirku-Tech and OptiPower Manager including quantities and discounts. Two materially different complete quotes exist across different opportunities and salespeople: (1) Aisha Ibrahim's quote to Maya Dlamini under 'EcoShield Collaboration with TechPulse' (AI Cirku-Tech: 8 units, 5% discount, $4,027.92; OptiPower Manager: 12 units, 10% discount, $4,859.89), and (2) Fatou Ndiaye's quote to Kumar Shrestha under 'EcoShield Advanced EDA Partnership' (OptiPower Manager: 18 units, 10% discount, $7,289.84; AI Cirku-Tech: 15% discount, no explicit unit count or dollar total given). These are different opportunities with different contacts, reps, quantities, and discount structures, making them materially different complete answers.",
+        "answers": [
+          {
+            "answer": "TechPulse quoted EcoShield the following pricing: AI Cirku-Tech at 8 units with a 5% discount, totaling $4,027.92; OptiPower Manager at 12 units with a 10% discount, totaling $4,859.89. This was quoted by Aisha Ibrahim to Maya Dlamini under the 'EcoShield Collaboration with TechPulse' opportunity.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1lPIAS",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2023-09-22T14:00:28] Maya Dlamini: Yes, I have. Our team reviewed it, and we're quite impressed with the AI Cirku-Tech and OptiPower Manager. They seem to align well with our needs, but we do have some questions regarding pricing and potential discounts.\n[2023-09-22T14:00:45] Aisha Ibrahim: That's great to hear, Maya! Let's dive into any questions you might have. Starting with pricing, our proposal includes the AI Cirku-Tech at a quantity of 8, with a 5% discount, coming to a total of $4027.92. Similarly, the OptiPower Manager is offered under a 10% discount for 12 units, amounting to $4859.89."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0HSIA0",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-10-10T09:32:45] Maya Dlamini: Great, thanks for that breakdown. It seems quite reasonable. And about the OptiPower Manager and AI Cirku-Tech, how do they fit into the picture?\n[2023-10-10T09:33:05] Aisha Ibrahim: For OptiPower Manager, it’s again at a 10% discount for 12 units, totaling $4,859.89. AI Cirku-Tech, with 8 units, is discounted at 5%, making the total $4,027.92. These products together complete our suite offering, reinforcing your sustainability goals while optimizing energy efficiency."
+              }
+            ]
+          },
+          {
+            "answer": "TechPulse quoted EcoShield the following pricing under the 'EcoShield Advanced EDA Partnership' opportunity: OptiPower Manager at 18 units with a 10% discount, priced at $7,289.84; AI Cirku-Tech with a 15% discount (no specific unit quantity or dollar total was stated in the call). This was quoted by Fatou Ndiaye to Kumar Shrestha.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T3nDIAS",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-04-09T16:01:56] Kumar Shrestha: Transparent costs do make long-term commitments easier to plan. How does that work with the pricing options for EcoPCB Creator and OptiPower Manager?\n[2023-04-09T16:02:18] Fatou Ndiaye: For EcoPCB Creator, we offer a 30-unit package with a 15% discount, totaling $8,924.74. And for OptiPower Manager, the 18-unit package includes a 10% discount, pricing it at $7,289.84. We strive for clarity in these financial commitments."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2ceIAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-11-15T15:31:45] Kumar Shrestha: That’s definitely appealing. Could we talk a bit more about the pricing and how it compares with industry standards?\n[2023-11-15T15:32:05] Fatou Ndiaye: Certainly. Our total pricing strategy is transparent, which we find appealing to clients looking for long-term commitments. With the discounts we offer, such as 15% off for AI Cirku-Tech and SimuFlow Xtreme, we maintain competitive pricing."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3YgIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-03-30T11:48:05] Kumar Shrestha: Support is definitely a huge plus. How about pricing? We want to ensure this is cost-effective in the long run.\n[2023-03-30T11:48:30] Fatou Ndiaye: Of course. Our products offer comprehensive cost-effectiveness. For example, AI Cirku-Tech and SimuFlow Xtreme both are packaged with substantial discounts—15% off—making them very competitive in total cost of ownership. While some alternatives might have lower initial costs, we find that our competitive long-term pricing model offers compelling value."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-82fb9a84ae33219e",
+      "question": "What discount is TechSphere Design getting on DesignWave Automation, and what does that bring the total for five licenses to?",
+      "gold_answer": "A 5% discount, bringing the total for five licenses to about $2,279.95.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrHOIA0",
+        "b2b:a05Wt000003Sru9IAC",
+        "b2b:a05Wt000003SsyFIAS",
+        "b2b:a05Wt000003StceIAC",
+        "b2b:a05Wt000003StvyIAC",
+        "b2b:a05Wt000003SuQfIAK",
+        "b2b:a05Wt000003SuaHIAS",
+        "b2b:a05Wt000003SvstIAC",
+        "b2b:a05Wt000003SwLuIAK",
+        "b2b:a05Wt000003SwXCIA0",
+        "b2b:a05Wt000003SwljIAC",
+        "b2b:a05Wt000003SwtmIAC",
+        "b2b:a05Wt000003SxgHIAS",
+        "b2b:a05Wt000003SyKVIA0",
+        "b2b:a05Wt000003SyZ1IAK",
+        "b2b:a05Wt000003SypCIAS",
+        "b2b:a05Wt000003SyysIAC",
+        "b2b:a05Wt000003SzJoIAK",
+        "b2b:a05Wt000003SzRxIAK",
+        "b2b:a05Wt000003T06AIAS",
+        "b2b:a05Wt000003T0XbIAK",
+        "b2b:a05Wt000003T1dJIAS",
+        "b2b:a05Wt000003T1evIAC",
+        "b2b:a05Wt000003T1gXIAS",
+        "b2b:a05Wt000003T1i9IAC",
+        "b2b:a05Wt000003T1jlIAC",
+        "b2b:a05Wt000003T1lNIAS",
+        "b2b:a05Wt000003T1mzIAC",
+        "b2b:a05Wt000003T1n0IAC",
+        "b2b:a05Wt000003T1obIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "DesignWave Automation is only discussed with a discount in one call (b2b:a05Wt000003T1jlIAC, TechPulse Solutions - TechSphere Design Partnership, 2023-10-03), where Hana Kato states a 5% discount bringing the total for five licenses to about $2,279.95. No other call mentions DesignWave Automation pricing, so there is a single complete answer.",
+        "answers": [
+          {
+            "answer": "TechSphere Design is getting a 5% discount on DesignWave Automation, which brings the total for five licenses to about $2,279.95.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1jlIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-10-03T10:04:25] Hana Kato: Right, glad you caught that. For DesignWave Automation, we’re offering a 5% discount, which brings the total for five licenses to about $2,279.95. Moreover, with CloudLink Designer, you can leverage a 15% discount for bulk purchase."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about a discount on DesignWave Automation for TechSphere Design and the resulting total for five licenses. Only one call in the provided history mentions DesignWave Automation with a discount and a five-license total: call b2b:a05Wt000003T1jlIAC (2023-10-03), where Hana Kato tells Anju Verma that DesignWave Automation carries a 5% discount bringing five licenses to about $2,279.95. No other call references DesignWave Automation pricing.",
+        "answers": [
+          {
+            "answer": "TechSphere Design is receiving a 5% discount on DesignWave Automation, which brings the total for five licenses to about $2,279.95.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1jlIAC",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-10-03T10:04:25] Hana Kato: Right, glad you caught that. For DesignWave Automation, we’re offering a 5% discount, which brings the total for five licenses to about $2,279.95. Moreover, with CloudLink Designer, you can leverage a 15% discount for bulk purchase."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state a 5% discount on DesignWave Automation and a total of about $2,279.95 for five licenses. The reference likewise provides the 5% discount and the ~$2,279.95 total for five licenses, covering both requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-36eb53b2677a7b3e",
+      "question": "What follow-up did Lena commit to for Isabella Wood after their discussion, and what should it include?",
+      "gold_answer": "A follow-up email this Thursday summarizing eco-friendly models, the service framework, and pricing benefits.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SKaaIAG",
+        "b2c:a05Ws000005SMChIAO",
+        "b2c:a05Ws000005SMPdIAO",
+        "b2c:a05Ws000005SPiIIAW",
+        "b2c:a05Ws000005SRVcIAO",
+        "b2c:a05Ws000005SSQDIA4",
+        "b2c:a05Ws000005SSgNIAW",
+        "b2c:a05Ws000005SSlDIAW",
+        "b2c:a05Ws000005STR9IAO",
+        "b2c:a05Ws000005SUNFIA4",
+        "b2c:a05Ws000005SUq4IAG",
+        "b2c:a05Ws000005SX38IAG",
+        "b2c:a05Ws000005SXr9IAG",
+        "b2c:a05Ws000005SXrAIAW",
+        "b2c:a05Ws000005SYAgIAO",
+        "b2c:a05Ws000005SYLtIAO",
+        "b2c:a05Ws000005SYlaIAG",
+        "b2c:a05Ws000005SZOHIA4",
+        "b2c:a05Ws000005SZZhIAO",
+        "b2c:a05Ws000005SZbFIAW",
+        "b2c:a05Ws000005SaDyIAK",
+        "b2c:a05Ws000005SaQrIAK",
+        "b2c:a05Ws000005SbQDIA0",
+        "b2c:a05Ws000005ScCRIA0",
+        "b2c:a05Ws000005ScFdIAK",
+        "b2c:a05Ws000005ScFeIAK",
+        "b2c:a05Ws000005Sd5CIAS",
+        "b2c:a05Ws000005SdbSIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 19,
+            "normalized_end": 20
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Lena Schmidt appears in two calls with Isabella Wood, each with a distinct follow-up commitment: a summary email (with specified contents) on 2024-03-19, and a follow-up to discuss proposal preparation on 2024-03-24. The question does not specify which call, so both are competing complete answers.",
+        "answers": [
+          {
+            "answer": "After their March 19, 2024 discussion, Lena Schmidt committed to sending a follow-up email that Thursday summarizing the discussion, including insights on the eco-friendly models, AutoElite's service framework, and pricing benefits.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUNFIA4",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2024-03-19T13:10:15] Isabella Wood: Thanks, Lena. I have more clarity on how AutoElite Motors can fit into our strategy. Could we follow up with an email summarizing this discussion and perhaps detail some specific offerings?"
+              }
+            ]
+          },
+          {
+            "answer": "After their March 24, 2024 discussion, Lena Schmidt committed to follow up with Isabella shortly to discuss the proposal preparation and how it could be further tailored to her needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SaDyIAK",
+                "line_start": 19,
+                "line_end": 20,
+                "quote": "[2024-03-24T16:35:15] Lena Schmidt: That's great to hear! I'll follow up with you shortly to discuss the proposal preparation and how we can further tailor it to your needs. Feel free to reach out anytime if you think of any other questions."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Only one salesperson named 'Lena' (Lena Schmidt) appears in the call history, and she has three calls with Isabella Wood (2024-03-19, 2024-03-24, 2024-03-28). The question asks what follow-up Lena committed to 'after their discussion' and what it should include. The first call (2024-03-19) contains the most explicit and detailed follow-up commitment: Isabella asks for a follow-up email summarizing the discussion and detailing specific offerings, and Lena commits to sending it 'this Thursday' with specific content. The later calls contain vaguer follow-up commitments ('I'll follow up with you shortly' and 'I'll prepare a detailed proposal document and send it your way by the end of the day') but the first call is the one where the follow-up content is explicitly specified in response to Isabella's direct request. Since the question asks what the follow-up 'should include,' the 2024-03-19 call provides the definitive answer with explicit content requirements.",
+        "answers": [
+          {
+            "answer": "After their discussion on March 19, 2024, Lena Schmidt committed to sending Isabella Wood a follow-up email that Thursday. The email should include a summary of their discussion, insights on the eco-friendly models, details on AutoElite Motors' service framework, and the pricing benefits they discussed.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SUNFIA4",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2024-03-19T13:10:15] Isabella Wood: Thanks, Lena. I have more clarity on how AutoElite Motors can fit into our strategy. Could we follow up with an email summarizing this discussion and perhaps detail some specific offerings?\n[2024-03-19T13:10:45] Lena Schmidt: Of course, Isabella. I'll send over a summary, including insights on the eco-friendly models, our service framework, and pricing benefits in our follow-up email this Thursday. And feel free to reach out with any further questions!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

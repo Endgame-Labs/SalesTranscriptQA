@@ -1,0 +1,1148 @@
+[
+  {
+    "job_id": "3107035d6a3a3c72e0e0703baa800792fb02d9a7108bbf907ef60b488c370680",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T1lPIAS"
+    ],
+    "status": "accepted",
+    "question": "What pricing did TechPulse quote EcoShield for the AI Cirku-Tech and OptiPower Manager, including quantities and discounts?",
+    "gold_answer": "AI Cirku-Tech: 8 units at 5% discount, $4027.92 total; OptiPower Manager: 12 units at 10% discount, $4859.89 total.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T1lPIAS",
+        "answer_claim": "AI Cirku-Tech at quantity 8 with 5% discount totals $4027.92; OptiPower Manager at 10% discount for 12 units amounts to $4859.89.",
+        "kind": "dialogue",
+        "line_start": 4,
+        "line_end": 5,
+        "quote": "[2023-09-22T14:00:45] Aisha Ibrahim: That's great to hear, Maya! Let's dive into any questions you might have. Starting with pricing, our proposal includes the AI Cirku-Tech at a quantity of 8, with a 5% discount, coming to a total of $4027.92. Similarly, the OptiPower Manager is offered under a 10% discount for 12 units, amounting to $4859.89.",
+        "start": 628,
+        "end": 974
+      }
+    ],
+    "question_id": "b2b-single_call-3107035d6a3a3c72",
+    "candidate": {
+      "question": "What pricing did TechPulse quote EcoShield for the AI Cirku-Tech and OptiPower Manager, including quantities and discounts?",
+      "gold_answer": "AI Cirku-Tech: 8 units at 5% discount, $4027.92 total; OptiPower Manager: 12 units at 10% discount, $4859.89 total.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T1lPIAS",
+          "answer_claim": "AI Cirku-Tech at quantity 8 with 5% discount totals $4027.92; OptiPower Manager at 10% discount for 12 units amounts to $4859.89.",
+          "kind": "dialogue",
+          "line_start": 4,
+          "line_end": 5,
+          "quote": "[2023-09-22T14:00:45] Aisha Ibrahim: That's great to hear, Maya! Let's dive into any questions you might have. Starting with pricing, our proposal includes the AI Cirku-Tech at a quantity of 8, with a 5% discount, coming to a total of $4027.92. Similarly, the OptiPower Manager is offered under a 10% discount for 12 units, amounting to $4859.89.",
+          "start": 628,
+          "end": 974
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "TechPulse quoted EcoShield the AI Cirku-Tech at a quantity of 8 with a 5% discount, totaling $4027.92, and the OptiPower Manager at a quantity of 12 with a 10% discount, totaling $4859.89.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA. The dialogue (2023-09-22, line 5) explicitly states AI Cirku-Tech: quantity 8, 5% discount, $4027.92 total; OptiPower Manager: 12 units, 10% discount, $4859.89 \u2014 fully supporting every gold claim. The question is a realistic sales need (pricing follow-up on a proposal), names participants allowed by context, does not leak the answer, and the independent answer matches the gold semantically. No-context answers are UNKNOWN, so they fail. Two-call flags set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T1lPIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzlMIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any quote from TechPulse to EcoShield. The only call provided is between Mei Lin of Tech Innovators and Maria Bj\u00f6rk of Stockholm Tech Hub, discussing AI Cirku-Tech and EcoPCB Creator. There is no mention of TechPulse, EcoShield, or OptiPower Manager anywhere in the transcripts, so the requested pricing, quantities, and discounts cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks for pricing quoted by TechPulse to EcoShield for AI Cirku-Tech and OptiPower Manager. The sole call in the sources involves a different seller (Tech Innovators / Mei Lin), a different buyer (Stockholm Tech Hub / Maria Bj\u00f6rk), and a different second product (EcoPCB Creator instead of OptiPower Manager). Neither TechPulse, EcoShield, nor OptiPower Manager appears in any source line, so no part of the requested quote can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvgDIAS",
+              "b2b:a05Wt000003SyizIAC",
+              "b2b:a05Wt000003T2HuIAK",
+              "b2b:a05Wt000003T2RXIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted by TechPulse to EcoShield for AI Cirku-Tech or OptiPower Manager. All four provided calls are between Tariq Hassan (TechPulse Solutions) and Renata Costa at PrimeEdge Technology under the 'TechPulse-PrimeEdge Strategic Collaboration' opportunity. The pricing details for AI Cirku-Tech (10 units, 10% discount, $4,769.91) and OptiPower Manager (6 units, 5% discount, $2,564.94) were quoted to PrimeEdge Technology, not EcoShield. No call involving an account named EcoShield exists in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about pricing quoted to EcoShield. Every call in the provided sources involves account 'PrimeEdge Technology' (account_id 001Wt00000PGzsMIAT) and contact Renata Costa. There is no mention of any account, contact, or entity named 'EcoShield' in any of the four transcripts. Because the exact named account (EcoShield) is not present, the requested facts cannot be supported, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su4BIAS",
+              "b2b:a05Wt000003SxgJIAS",
+              "b2b:a05Wt000003T2HmIAK",
+              "b2b:a05Wt000003T46aIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No specific pricing, quantities, or discounts for the AI Cirku-Tech or OptiPower Manager were quoted by TechPulse to EcoShield in any of the provided calls. Pricing is only discussed in general terms (e.g., 'transparency and detail in our pricing strategies' and 'competitively priced'), with no dollar amounts, unit prices, quantities, or discount figures mentioned for either product.",
+              "evidence": [],
+              "reason": "All four calls between Fatoumata Traor\u00e9 (TechPulse) and Maya Dlamini (EcoShield) discuss the AI Cirku-Tech and OptiPower Manager in terms of features, integration, sustainability alignment, and support, but never provide concrete pricing figures, quantities, or discounts. The closest reference is in call b2b:a05Wt000003Su4BIAS lines 10-12, where Fatoumata mentions 'transparency and detail in our pricing strategies' and 'competitively priced,' but no actual numbers, quantities, or discount percentages are stated. Since the question asks for specific pricing including quantities and discounts, and none exist in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvrUIAS",
+              "b2b:a05Wt000003SxRlIAK",
+              "b2b:a05Wt000003SyfdIAC",
+              "b2b:a05Wt000003T12LIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any pricing quote from TechPulse to EcoShield. All calls in the provided transcripts are between Nikolai Volkov (TechPulse Solutions) and Diego Fern\u00e1ndez of Green Circuitry LLC. No account named 'EcoShield' appears anywhere. Additionally, no product called 'AI Cirku-Tech' is mentioned in any transcript. The OptiPower Manager was quoted to Green Circuitry (7 units, 5% discount, $2,992.43), but never to EcoShield. Therefore, the question as scoped cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to EcoShield for 'AI Cirku-Tech' and 'OptiPower Manager.' Neither the account 'EcoShield' nor the product 'AI Cirku-Tech' appears in any of the four call transcripts. All calls involve Green Circuitry LLC (contact Diego Fern\u00e1ndez). While OptiPower Manager pricing is discussed (call b2b:a05Wt000003SvrUIAS line 10 and call b2b:a05Wt000003SyfdIAC lines 10-11), it was quoted to Green Circuitry, not EcoShield. The draft extraction correctly identifies this mismatch. No complete answer exists for the exact named account and products requested."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuLwIAK",
+              "b2b:a05Wt000003SwcBIAS",
+              "b2b:a05Wt000003SwdnIAC",
+              "b2b:a05Wt000003T12NIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing quote from TechPulse to EcoShield for AI Cirku-Tech or OptiPower Manager exists in these sources. All four calls are between Anwar Malik (TechPulse) and Yuki Tanaka at Quantum Designs, not EcoShield. Furthermore, no specific pricing, quantities, or discounts were ever quoted for AI Cirku-Tech or OptiPower Manager; in the 2023-08-14 call, Anwar explicitly stated he could not provide specific numbers at the qualification stage.",
+              "evidence": [],
+              "reason": "The question asks about a quote to EcoShield, but every call in the provided sources involves the account 'Quantum Designs' and contact 'Yuki Tanaka'. There is no mention of EcoShield anywhere. Additionally, even for Quantum Designs, no concrete pricing, quantities, or discounts for AI Cirku-Tech or OptiPower Manager were given. The closest reference is in call b2b:a05Wt000003T12NIAS line 8, where Anwar says he 'can't provide specific numbers at this qualification stage.' Therefore the requested facts (pricing, quantities, discounts for EcoShield) are entirely absent."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzgUIAS",
+              "b2b:a05Wt000003T0HSIA0",
+              "b2b:a05Wt000003T0r1IAC",
+              "b2b:a05Wt000003T1lPIAS"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "TechPulse quoted EcoShield: AI Cirku-Tech \u2014 8 units at a 5% discount, totaling $4,027.92; OptiPower Manager \u2014 12 units at a 10% discount, totaling $4,859.89.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T1lPIAS",
+                  "line_start": 4,
+                  "line_end": 5,
+                  "quote": "[2023-09-22T14:00:45] Aisha Ibrahim: That's great to hear, Maya! Let's dive into any questions you might have. Starting with pricing, our proposal includes the AI Cirku-Tech at a quantity of 8, with a 5% discount, coming to a total of $4027.92. Similarly, the OptiPower Manager is offered under a 10% discount for 12 units, amounting to $4859.89."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0HSIA0",
+                  "line_start": 12,
+                  "line_end": 13,
+                  "quote": "[2023-10-10T09:33:05] Aisha Ibrahim: For OptiPower Manager, it\u2019s again at a 10% discount for 12 units, totaling $4,859.89. AI Cirku-Tech, with 8 units, is discounted at 5%, making the total $4,027.92. These products together complete our suite offering, reinforcing your sustainability goals while optimizing energy efficiency."
+                }
+              ],
+              "reason": "Both the 2023-09-22 call (line 4) and the 2023-10-10 call (line 12) provide identical pricing details for AI Cirku-Tech (8 units, 5% discount, $4,027.92) and OptiPower Manager (12 units, 10% discount, $4,859.89), fully answering the question about quantities, discounts, and totals for both products."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers provide identical values for all requested facts: AI Cirku-Tech at 8 units, 5% discount, $4,027.92 total; OptiPower Manager at 12 units, 10% discount, $4,859.89 total. The only differences are formatting and minor wording, which do not affect the semantic content."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StFzIAK",
+              "b2b:a05Wt000003Sz3hIAC",
+              "b2b:a05Wt000003SzeuIAC",
+              "b2b:a05Wt000003T09SIAS",
+              "b2b:a05Wt000003T35iIAC",
+              "b2b:a05Wt000003T3s4IAC",
+              "b2b:a05Wt000003T46XIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided sources involves EcoShield. All transcripts are between Ayo Okeke of TechPulse Solutions and Hiroshi Saito of InspireTech Consulting. While the 2023-05-20 call quotes AI Cirku-Tech at $4,769.91 after a 10% discount for 10 units and OptiPower Manager at $3,419.92 for 8 units with a 5% discount, that pricing was quoted to InspireTech Consulting, not EcoShield. Therefore, the question as scoped to EcoShield cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question specifically asks about pricing quoted to EcoShield. None of the six calls involve an account named EcoShield; all are associated with account 'InspireTech Consulting' (account_id 001Wt00000PH90cIAD) and contact Hiroshi Saito. The pricing details for AI Cirku-Tech and OptiPower Manager found in call b2b:a05Wt000003T3s4IAC (line 10) were directed at InspireTech, not EcoShield. Since the exact named account in the question (EcoShield) does not appear in any source, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SydrIAC",
+              "b2b:a05Wt000003T1QQIA0",
+              "b2b:a05Wt000003T1gbIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no quote to EcoShield. All three calls are between Ayumi Shimizu (TechPulse Solutions) and Isabella Russo of Vertex Engineering Corp. Pricing for AI Cirku-Tech (10% discount, $4,769.91) and OptiPower Manager (5% discount, $2,992.43) was quoted to Vertex Engineering, not EcoShield. Additionally, no quantities were stated in any call. Because the question specifically asks about pricing quoted to EcoShield, and EcoShield does not appear anywhere in the provided sources, the requested facts cannot be supported.",
+              "evidence": [],
+              "reason": "The question asks about pricing TechPulse quoted to EcoShield. However, all three call transcripts involve Vertex Engineering Corp (contact: Isabella Russo), not EcoShield. The account name 'EcoShield' never appears in any source. While pricing details for AI Cirku-Tech and OptiPower Manager exist (line 12 of call b2b:a05Wt000003SydrIAC), they were quoted to Vertex, not EcoShield. Furthermore, no quantities are mentioned in any call. Since the exact named account (EcoShield) is absent and quantities are missing, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv1eIAC",
+              "b2b:a05Wt000003SvRRIA0",
+              "b2b:a05Wt000003SvT3IAK",
+              "b2b:a05Wt000003SvUfIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain a pricing quote for the AI Cirku-Tech to EcoShield. All calls in the provided transcripts are between TechPulse (Chidi Onyekachi) and EcoWave Solutions (Olivia Williams), not EcoShield. The only specific pricing given is for the EcoPCB Creator (10 units, 10% discount, ~$3,149.91) and the OptiPower Manager (12 units, 10% discount, ~$4,859.89) quoted to EcoWave Solutions. No quantity, discount, or price was ever stated for the AI Cirku-Tech in any call. Therefore, the question cannot be answered as asked: the account name (EcoShield) does not match any source, and no AI Cirku-Tech pricing exists in the transcripts.",
+              "evidence": [],
+              "reason": "Two critical gaps prevent a complete answer: (1) The question asks about 'EcoShield,' but all four calls involve 'EcoWave Solutions'\u2014no call references an account named EcoShield. (2) The question asks for pricing on the 'AI Cirku-Tech,' but no call provides a quantity, discount, or dollar amount for that product. The only concrete pricing (call b2b:a05Wt000003Sv1eIAC, line 12) covers the EcoPCB Creator and OptiPower Manager for EcoWave, not the AI Cirku-Tech for EcoShield. The draft extraction correctly identifies the missing AI Cirku-Tech pricing but does not flag the account-name mismatch; both issues make the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sxl0IAC",
+              "b2b:a05Wt000003T2ceIAC",
+              "b2b:a05Wt000003T3P5IAK",
+              "b2b:a05Wt000003T3YgIAK",
+              "b2b:a05Wt000003T3nDIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not provide complete pricing for both requested products. For OptiPower Manager, Fatou Ndiaye quoted an 18-unit package with a 10% discount at $7,289.84 (call b2b:a05Wt000003T3nDIAS, line 8). For AI Cirku-Tech, only a 15% discount was mentioned (calls b2b:a05Wt000003T2ceIAC line 8 and b2b:a05Wt000003T3YgIAK line 12), but no quantity, unit price, or total price was ever quoted. Therefore the full pricing breakdown (quantities and discounts) for AI Cirku-Tech is missing from the transcripts.",
+              "evidence": [],
+              "reason": "The question asks for pricing including quantities and discounts for both AI Cirku-Tech and OptiPower Manager. OptiPower Manager pricing is fully specified (18 units, 10% discount, $7,289.84). However, AI Cirku-Tech only has a 15% discount mentioned without any quantity or dollar amount. Since the complete pricing for AI Cirku-Tech (quantity and total price) is absent from all five transcripts, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SulYIAS",
+              "b2b:a05Wt000003SwoxIAC",
+              "b2b:a05Wt000003T0MHIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no pricing quote from TechPulse to EcoShield. All three calls are between Aarav Sharma (TechPulse Solutions) and Vladimir Orlov of InnoSphere Labs under the opportunity 'InnoSphere-EDA-Integration.' EcoShield is never mentioned in any transcript. While pricing for AI Cirku-Tech (10% discount, 10 units, ~$4,770) and OptiPower Manager (10% discount) was discussed with InnoSphere Labs, no quote was made to EcoShield, so the question as scoped cannot be answered.",
+              "evidence": [],
+              "reason": "The question specifically asks about pricing quoted to EcoShield. All three calls involve InnoSphere Labs (account_id 001Wt00000PGeJIIA1, contact Vladimir Orlov). The account name 'EcoShield' does not appear anywhere in the provided sources. A quote to a different account cannot satisfy a question scoped to EcoShield. Therefore the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyfcIAC",
+              "b2b:a05Wt000003T2ERIA0",
+              "b2b:a05Wt000003T2mMIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention any product called 'AI Cirku-Tech', so no pricing, quantity, or discount for it can be provided. The actual quoted products for EcoShield were PulseSim Pro (10 units, $4,499.91 after 10% discount), OptiPower Manager (15 units, $6,074.87 after 10% discount), and SecureFlow Suite (8 units, $4,559.92 after 5% discount), totaling ~$15,134.70.",
+              "evidence": [],
+              "reason": "The question asks specifically about 'AI Cirku-Tech' and 'OptiPower Manager'. While OptiPower Manager pricing is found in call b2b:a05Wt000003T2mMIAS (line 12: 15 units, $6,074.87 after 10% discount), no product named 'AI Cirku-Tech' appears anywhere in the three transcripts. Because one of the two requested products cannot be answered, the response is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Suk6IAC",
+              "b2b:a05Wt000003SySbIAK",
+              "b2b:a05Wt000003T18gIAC",
+              "b2b:a05Wt000003T2w1IAC",
+              "b2b:a05Wt000003T2w2IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted to EcoShield. All provided calls are between TechPulse Solutions (Liam O'Sullivan) and NaviCorp Tech (Mohammed Bashir) for the 'Advanced Navigation Optimization Project.' The products discussed are 'CircuitAI Innovator' and 'OptiPower Manager' (not 'AI Cirku-Tech'). No call involves an account named EcoShield, so no pricing, quantities, or discounts for EcoShield can be reported.",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to EcoShield for 'AI Cirku-Tech' and 'OptiPower Manager.' Every call in the source data is with account 'NaviCorp Tech' (account_id 001Wt00000PFj4zIAD, contact Mohammed Bashir). There is no mention of an account called 'EcoShield' in any transcript. Additionally, the product name in the sources is 'CircuitAI Innovator,' not 'AI Cirku-Tech.' Because the exact named account (EcoShield) and exact product name (AI Cirku-Tech) do not appear in any source, the requested facts cannot be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzALIA0",
+              "b2b:a05Wt000003T32PIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing quote from TechPulse to EcoShield exists in the provided sources. Both calls are between Olivia Nguyen of TechPulse Solutions and Leila Shariq of Titan Robotics Group (not EcoShield). The products AI Cirku-Tech and OptiPower Manager are mentioned, but no specific pricing, quantities, or discounts are quoted. Olivia explicitly states pricing is premature in the qualification stage (2023-10-07 call, line 18) and that prices will be tailored in future discussions (2023-10-15 call, line 18).",
+              "evidence": [],
+              "reason": "The question asks about pricing quoted to EcoShield, but both calls involve Titan Robotics Group (account_name in metadata), not EcoShield. Additionally, no concrete pricing figures, quantities, or discount percentages are provided in either call\u2014Olivia defers detailed pricing to future discussions. The draft extraction is correct: the answer is incomplete because the named account (EcoShield) does not appear, and no actual pricing/quantity/discount details exist in the transcripts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyyzIAC",
+              "b2b:a05Wt000003T24qIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted to EcoShield. Both calls are between Xinyi Zhang of TechPulse Solutions and Zhi Huang of NaviCorp Tech (opportunity 'NaviCorp Tech Partnership Expansion'). The account 'EcoShield' does not appear in any metadata or transcript. While the June 15 call mentions a 10% discount on a 15-unit purchase of AI Cirku-Tech and similar discounts on OptiPower Manager, these were discussed with NaviCorp Tech, not EcoShield.",
+              "evidence": [],
+              "reason": "The question asks specifically about pricing quoted to EcoShield. Neither call involves an account named EcoShield; both are with NaviCorp Tech (account_id 001Wt00000PFj4zIAD, contact Zhi Huang). No EcoShield account, contact, or opportunity appears in any metadata or dialogue. Therefore no facts about a quote to EcoShield can be supported, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su2OIAS",
+              "b2b:a05Wt000003SvsyIAC",
+              "b2b:a05Wt000003SvszIAC",
+              "b2b:a05Wt000003T1whIAC",
+              "b2b:a05Wt000003T3aJIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing quote from TechPulse to EcoShield exists in these transcripts. All five calls are between Terek Al-Farsi (TechPulse Solutions) and Kun Zhang at QuantumLeap Computing under the 'QuantumLeap-TechPulse Strategic EDA Evolution' opportunity. EcoShield is never mentioned. Even for QuantumLeap, the transcripts only note that discounts on AI Cirku-Tech and OptiPower Manager apply primarily to bundled purchases, and provide prices only for PulseSim Pro (~$1499.97) and SecureFlow Suite ($1199.98). No specific prices, quantities, or discount amounts/percentages for AI Cirku-Tech or OptiPower Manager are stated in any call.",
+              "evidence": [],
+              "reason": "The question asks about a quote to EcoShield, but EcoShield does not appear in any of the five call transcripts. All calls involve QuantumLeap Computing (Kun Zhang). Additionally, even within the QuantumLeap calls, no specific pricing figures, quantities, or discount amounts are given for AI Cirku-Tech or OptiPower Manager\u2014only a general mention that discounts apply to those products in bundles. Therefore the requested facts (pricing, quantities, discounts for those two products quoted to EcoShield) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyZ4IAK",
+              "b2b:a05Wt000003T2KvIAK",
+              "b2b:a05Wt000003T2cdIAC",
+              "b2b:a05Wt000003T4HpIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no product called 'AI Cirku-Tech' \u2014 TechPulse never quotes pricing for such a product to EcoShield. The OptiPower Manager was quoted (2024-04-17 call) at 18 units with a 10% discount, totaling approximately $7,289.84, but since the question's scope includes the non-existent AI Cirku-Tech product, a complete answer is not supported.",
+              "evidence": [],
+              "reason": "The question asks for pricing on 'AI Cirku-Tech' and 'OptiPower Manager.' No call transcript mentions a product named 'AI Cirku-Tech.' The products discussed are SecureFlow Suite, EcoPCB Creator, and OptiPower Manager. While OptiPower Manager pricing is provided (18 units, 10% discount, ~$7,289.84 in call b2b:a05Wt000003T2KvIAK line 12), the AI Cirku-Tech component of the question cannot be answered because that product does not appear in any source. A partial answer covering only one of two requested products is incomplete per the instructions."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Suf9IAC",
+              "b2b:a05Wt000003T1dNIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing, quantities, or discounts were quoted by TechPulse for AI Cirku-Tech or OptiPower Manager in any of the provided calls. AI Cirku-Tech was discussed only in terms of features, efficiency, and deployment speed (no dollar figures or quantities). OptiPower Manager was mentioned solely as a product EcoShield already uses, not as a product being quoted. The only pricing mentioned in the transcripts is for SecureFlow Suite (three licenses at $1799.97), which is not one of the requested products.",
+              "evidence": [],
+              "reason": "The question asks for pricing, quantities, and discounts specifically for AI Cirku-Tech and OptiPower Manager. In call b2b:a05Wt000003Suf9IAC, AI Cirku-Tech is discussed at lines 13-16 but only regarding features and deployment cost mitigation\u2014no specific price, quantity, or discount is given. OptiPower Manager appears only at line 3 as an existing EcoShield product, with no TechPulse quote. The second call (b2b:a05Wt000003T1dNIAS) mentions AI Cirku-Tech at lines 6-7 again only in feature/performance terms. No pricing information for either requested product exists in the sources, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Stw3IAC",
+              "b2b:a05Wt000003SyfbIAC",
+              "b2b:a05Wt000003T1tYIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No specific pricing, quantities, or discount amounts were quoted by TechPulse to EcoShield for the AI Cirku-Tech or OptiPower Manager. The calls mention both products and reference 'discounts we're offering currently,' but no dollar figures, unit counts, or percentage discounts are stated. The details were deferred to a future Needs Assessment session.",
+              "evidence": [],
+              "reason": "Across all three calls, AI Cirku-Tech is discussed qualitatively (call b2b:a05Wt000003Stw3IAC line 7; call b2b:a05Wt000003SyfbIAC line 14) and OptiPower Manager is mentioned alongside EcoPCB Creator (call b2b:a05Wt000003T1tYIAS lines 12-14). A vague reference to 'discounts we're offering currently' appears at line 16 of call b2b:a05Wt000003T1tYIAS, but no actual price, quantity, or discount percentage/amount is ever provided. Jin Soo Park explicitly asks for 'specifics\u2026 and their financial impact in more detail' (line 17) and Nguyen defers to a later Needs Assessment session (line 18). Because the question requires concrete pricing, quantities, and discounts for both named products, and none of these facts exist in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwyeIAC",
+              "b2b:a05Wt000003T287IAC",
+              "b2b:a05Wt000003T49mIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No pricing was quoted to EcoShield. All three calls are between TechPulse (Thato Mokoena) and TerraForm Engineering (Amina Chaudhry) for the 'TerraForm Sustainable Design Expansion' opportunity. AI Cirku-Tech is mentioned once as part of a product list (call b2b:a05Wt000003T287IAC, line 10) but no price, quantity, or discount is ever stated for it. OptiPower Manager is priced at $4,859.89 after a 10% discount (line 12), but again no quantity is given. Because the question asks specifically about a quote to EcoShield for AI Cirku-Tech and OptiPower Manager including quantities and discounts, and no such quote exists in the sources, the answer is incomplete.",
+              "evidence": [],
+              "reason": "The account in every call is TerraForm Engineering, not EcoShield. AI Cirku-Tech has no price, quantity, or discount stated anywhere. OptiPower Manager has a discounted price ($4,859.89, 10% discount) but no quantity. Since the named account (EcoShield) does not appear and key facts (AI Cirku-Tech pricing, quantities for both products) are missing, the answer cannot be completed."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question about quoted pricing for two products; the cited dialogue line explicitly states AI Cirku-Tech: 8 units, 5% discount, $4027.92 total, and OptiPower Manager: 12 units, 10% discount, $4859.89 total, exactly matching the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pricing did TechPulse quote EcoShield for the AI Cirku-Tech",
+            "explicitly_requested": true,
+            "required_fact": "AI Cirku-Tech quoted at quantity 8 with a 5% discount, totaling $4027.92",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1lPIAS"
+            ]
+          },
+          {
+            "question_span": "and OptiPower Manager",
+            "explicitly_requested": true,
+            "required_fact": "OptiPower Manager quoted at 12 units with a 10% discount, totaling $4859.89",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1lPIAS"
+            ]
+          },
+          {
+            "question_span": "including quantities and discounts",
+            "explicitly_requested": true,
+            "required_fact": "Quantities (8 and 12) and discounts (5% and 10%) were explicitly stated in the quote",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1lPIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for pricing, quantities, and discounts for two products. The gold answer provides exactly those facts for both products, with no extra claims. The independent answer matches the gold answer. The obligations correctly extract the required facts for each product and the quantities/discounts, all sourced from the single call. The single call is necessary and sufficient to answer the question.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "AI Cirku-Tech: 8 units at 5% discount, $4027.92 total",
+            "question_span": "What pricing did TechPulse quote EcoShield for the AI Cirku-Tech",
+            "required_by_question": true
+          },
+          {
+            "claim": "OptiPower Manager: 12 units at 10% discount, $4859.89 total",
+            "question_span": "and OptiPower Manager",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "82fb9a84ae33219eda8d9cfe109e47179bad19d58ab88cf930a5383b1fc64046",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T1jlIAC"
+    ],
+    "status": "accepted",
+    "question": "What discount is TechSphere Design getting on DesignWave Automation, and what does that bring the total for five licenses to?",
+    "gold_answer": "A 5% discount, bringing the total for five licenses to about $2,279.95.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T1jlIAC",
+        "answer_claim": "5% discount on DesignWave Automation, total for five licenses about $2,279.95",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 15,
+        "quote": "[2023-10-03T10:04:25] Hana Kato: Right, glad you caught that. For DesignWave Automation, we\u2019re offering a 5% discount, which brings the total for five licenses to about $2,279.95. Moreover, with CloudLink Designer, you can leverage a 15% discount for bulk purchase.",
+        "start": 2938,
+        "end": 3203
+      }
+    ],
+    "question_id": "b2b-single_call-82fb9a84ae33219e",
+    "candidate": {
+      "question": "What discount is TechSphere Design getting on DesignWave Automation, and what does that bring the total for five licenses to?",
+      "gold_answer": "A 5% discount, bringing the total for five licenses to about $2,279.95.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T1jlIAC",
+          "answer_claim": "5% discount on DesignWave Automation, total for five licenses about $2,279.95",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2023-10-03T10:04:25] Hana Kato: Right, glad you caught that. For DesignWave Automation, we\u2019re offering a 5% discount, which brings the total for five licenses to about $2,279.95. Moreover, with CloudLink Designer, you can leverage a 15% discount for bulk purchase.",
+          "start": 2938,
+          "end": 3203
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "TechSphere Design is getting a 5% discount on DesignWave Automation, which brings the total for five licenses to about $2,279.95.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The dialogue at 10:04:25 explicitly states a 5% discount on DesignWave Automation bringing the total for five licenses to about $2,279.95, fully supporting the gold answer. The question is a realistic sales inquiry naming the account, is not leaked by the question, and the independent answer matches semantically. No-context answers ('UNKNOWN') fail to answer. This is a single-call QA, so both two-call flags are set true per convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T1jlIAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrSsIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TechSphere Design, a discount on DesignWave Automation, or a total price for five licenses. The only call is with Elena Petrov of ClearSky Data Solutions, where DesignWave Automation is discussed at full price ($400/unit) for three units with no discount mentioned.",
+              "evidence": [],
+              "reason": "The question asks about TechSphere Design receiving a discount on DesignWave Automation and the resulting total for five licenses. The sole source call involves Elena Petrov at ClearSky Data Solutions (not TechSphere Design), discusses three units of DesignWave Automation at $400 each with no discount, and never mentions five licenses. No facts matching the exact named account (TechSphere Design), discount, or five-license total exist in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwdrIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about TechSphere Design, a discount on DesignWave Automation for that account, or a total price for five licenses. The only call provided involves Alice Smith of Precision Circuit Systems discussing four units at $500 each ($2,000 total) with no discount mentioned. TechSphere Design is never referenced in any source.",
+              "evidence": [],
+              "reason": "The question asks specifically about TechSphere Design's discount on DesignWave Automation and the resulting total for five licenses. The sole call transcript features Alice Smith from Precision Circuit Systems, not TechSphere Design. No discount is discussed, and the pricing mentioned is for four units, not five. There is no source material that names TechSphere Design or provides the requested discount or five-license total."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4rKIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about TechSphere Design, a discount on DesignWave Automation for that account, or a total price for five licenses. The only call provided is between Luis Rodriguez and Yuki Tanaka of InnovateGrid Systems, where DesignWave Automation is listed at $750 per unit with no discount applied to it and no mention of five licenses.",
+              "evidence": [],
+              "reason": "The question asks specifically about TechSphere Design and a discount on DesignWave Automation bringing a total for five licenses to a certain amount. The sole source call involves InnovateGrid Systems (Yuki Tanaka), not TechSphere Design. No discount on DesignWave Automation is offered in this call, and no five-license total is discussed. Therefore the requested facts are entirely absent from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuvOIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TechSphere Design, a discount on DesignWave Automation, or a total price for five licenses. The only call transcript is between Anwar Malik and Satoshi Tanaka of NeuralWave Technologies, discussing the purchase of two DesignWave Automation units at $802 each with no discount mentioned and no reference to five licenses.",
+              "evidence": [],
+              "reason": "The question asks about TechSphere Design receiving a discount on DesignWave Automation and the resulting total for five licenses. The sole source call involves Satoshi Tanaka at NeuralWave Technologies purchasing two units at $802 each with no discount. There is no mention of TechSphere Design, no discount, and no five-license total anywhere in the provided data. Therefore the answer cannot be completed from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwqsIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "",
+              "evidence": [],
+              "reason": "The only call provided is between John Williams and Diego Ramirez of CreativeTech Solutions. There is no mention of an account called 'TechSphere Design' anywhere in the sources. Additionally, no discount on DesignWave Automation is discussed; the price is stated as 500 per unit with no reduction. Because the question asks about a specific account (TechSphere Design), a specific discount, and the resulting total for five licenses, and none of these facts appear in the supplied transcript, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2MdIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TechSphere Design, a discount on DesignWave Automation, or a total price for five licenses. The only call transcript involves Antonio Rossi of Quantum Leap Tech discussing three units of DesignWave Automation with a budget of 3177, with no discount or five-license pricing mentioned.",
+              "evidence": [],
+              "reason": "The question asks about TechSphere Design's discount on DesignWave Automation and the resulting total for five licenses. The sole source call is with Antonio Rossi of Quantum Leap Tech (not TechSphere Design), discusses three units (not five licenses) of DesignWave Automation, and contains no discount discussion or total price calculation. No facts matching the exact named account, product quantity, or discount event exist in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StENIA0",
+              "b2b:a05Wt000003SthPIAS",
+              "b2b:a05Wt000003SuvCIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about TechSphere Design. All three calls involve Skyline Robotics (contact Andr\u00e9s P\u00e9rez) and TechPulse Solutions (salesperson Isabella Rossi). A 10% discount on DesignWave Automation is mentioned for Skyline Robotics (call b2b:a05Wt000003SthPIAS, line 15), but no discount is stated for TechSphere Design, and no per-license price or total for five licenses is provided anywhere in the transcripts.",
+              "evidence": [],
+              "reason": "The question asks about TechSphere Design, but no call in the provided sources involves that account. The only discount mentioned (10% on DesignWave Automation) is offered to Skyline Robotics, not TechSphere Design. Additionally, even for Skyline Robotics, no per-license price or total cost for five licenses is stated, so the second part of the question cannot be answered either. Both the named account and the requested total-price fact are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StvyIAC",
+              "b2b:a05Wt000003SwtmIAC",
+              "b2b:a05Wt000003SyysIAC",
+              "b2b:a05Wt000003T1i9IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called 'DesignWave Automation', any discount, or a five-license total. Pricing is only discussed in general terms (e.g., 'competitively priced', detailed pricing deferred to the qualification stage), so no discount or total for five licenses can be determined.",
+              "evidence": [],
+              "reason": "None of the four calls between Mei Lin and Fatemeh Mehran at TechSphere Design reference a product named 'DesignWave Automation'. The products discussed are AI Cirku-Tech, OptiPower Max, Workflow Genius, FlexEDA, and SecureFlow Suite. No discount percentage or dollar amount is offered, and no five-license total is calculated. In call b2b:a05Wt000003T1i9IAC (line 15), Mei Lin explicitly defers detailed pricing to a later qualification stage. Therefore the requested facts (discount on DesignWave Automation and resulting five-license total) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwLuIAK",
+              "b2b:a05Wt000003T1evIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called DesignWave Automation, any discount, or a five-license total. The calls only discuss TechPulse Solutions products (Workflow Genius, OptiPower Manager, SecureFlow Suite, CloudInnovate Space) in general terms, with no pricing or discount figures stated.",
+              "evidence": [],
+              "reason": "Neither call transcript contains any reference to 'DesignWave Automation', any discount percentage or amount, or a total price for five licenses. The two calls between Mohammed El-Sayed and Lu\u00eds Oliveira at TechSphere Design cover general introductions, EDA trends, training, and case studies for other TechPulse products, but no specific pricing or discount negotiation occurs. Therefore the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvstIAC",
+              "b2b:a05Wt000003SypCIAS",
+              "b2b:a05Wt000003T0XbIAK",
+              "b2b:a05Wt000003T1lNIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called 'DesignWave Automation' or any discount on it, nor any total for five licenses. The only discounts mentioned are 10% on Workflow Genius and 5% on OptiPower Max (call b2b:a05Wt000003SypCIAS, line 12), with no per-license pricing or five-license total stated.",
+              "evidence": [],
+              "reason": "No source contains the product name 'DesignWave Automation', any discount associated with it, or a total price for five licenses. The only discount information in the calls pertains to Workflow Genius (10%) and OptiPower Max (5%), which are different products. Therefore the requested facts cannot be answered from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sw7PIAS",
+              "b2b:a05Wt000003SxmbIAC",
+              "b2b:a05Wt000003SxoDIAS",
+              "b2b:a05Wt000003SxppIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of an account called 'TechSphere Design' or a product called 'DesignWave Automation.' All four calls involve GreenStar Electronics (contact David Nkosi) and TechPulse Solutions products (QuantumPCB Modeler, AI DesignShift, OptiEnergy Suite). Therefore, no discount or five-license total for DesignWave Automation can be determined from these transcripts.",
+              "evidence": [],
+              "reason": "The question asks about TechSphere Design and DesignWave Automation, neither of which appears anywhere in the supplied call transcripts. The sources only discuss GreenStar Electronics and TechPulse Solutions products, so the requested facts are entirely absent."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwCOIA0",
+              "b2b:a05Wt000003SxoPIAS",
+              "b2b:a05Wt000003T3deIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no mention of an account called 'TechSphere Design.' All three calls are with Quantum Designs (contact Javier Rodriguez). In those calls, DesignWave Automation is quoted at 5 licenses with a 5% discount totaling about $2,279.95, but that pertains to Quantum Designs, not TechSphere Design. Because the question asks specifically about TechSphere Design, no supported answer can be provided.",
+              "evidence": [],
+              "reason": "The exact named account 'TechSphere Design' does not appear in any of the three call transcripts. The only account present is Quantum Designs. While a 5% discount and ~$2,279.95 total for 5 DesignWave Automation licenses are mentioned (call b2b:a05Wt000003T3deIAC, line 14), they are for Quantum Designs, not TechSphere Design. A different account cannot satisfy the question's scope, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SulYIAS",
+              "b2b:a05Wt000003SwoxIAC",
+              "b2b:a05Wt000003T0MHIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any account named 'TechSphere Design.' The only customer discussed across all three calls is InnoSphere Labs (contact Vladimir Orlov). While a 5% discount on DesignWave Automation is mentioned for InnoSphere Labs, no total price for five licenses of DesignWave Automation is stated anywhere in the transcripts. Therefore the question cannot be answered for the exact named account 'TechSphere Design,' and even for the closest matching account, the five-license total is missing.",
+              "evidence": [],
+              "reason": "The question asks about 'TechSphere Design,' which does not appear in any source. The only account is InnoSphere Labs. A 5% discount on DesignWave Automation is referenced (call b2b:a05Wt000003SulYIAS line 11; call b2b:a05Wt000003SwoxIAC line 4), but no total price for five licenses is ever given. Both the exact account name and the requested total are unsupported, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuaHIAS",
+              "b2b:a05Wt000003T1jlIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "TechSphere Design is getting a 5% discount on DesignWave Automation, which brings the total for five licenses to about $2,279.95.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T1jlIAC",
+                  "line_start": 14,
+                  "line_end": 15,
+                  "quote": "[2023-10-03T10:04:25] Hana Kato: Right, glad you caught that. For DesignWave Automation, we\u2019re offering a 5% discount, which brings the total for five licenses to about $2,279.95. Moreover, with CloudLink Designer, you can leverage a 15% discount for bulk purchase."
+                }
+              ],
+              "reason": "In the second call (proposal discussion), Hana Kato explicitly states on line 14 that for DesignWave Automation they are offering a 5% discount bringing the total for five licenses to about $2,279.95. This directly answers both parts of the question (the discount percentage and the resulting total price) for the exact account (TechSphere Design) and product (DesignWave Automation)."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same discount (5%) and the same total for five licenses (about $2,279.95). The only difference is wording and level of detail, not the requested facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzJoIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript between Mei Chen (TechPulse Solutions) and Fatemeh Mehran (TechSphere Design) does not mention DesignWave Automation, any discount, or pricing for five licenses. The conversation covers TechPulse products (AI Cirku-Tech, CircuitAI Innovator), implementation flexibility, and scheduling a follow-up meeting. No discount percentage or total price for five DesignWave Automation licenses is stated anywhere in the source material.",
+              "evidence": [],
+              "reason": "The single call transcript contains no reference to 'DesignWave Automation,' no discount figure, and no license pricing. The products discussed are AI Cirku-Tech and CircuitAI Innovator. Therefore the requested facts (discount on DesignWave Automation and resulting total for five licenses) cannot be answered from the supplied sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyKVIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcript does not mention DesignWave Automation, any discount on it, or a total price for five licenses. The only discount discussed is a ten percent discount on PulseSim Pro (line 8), which is a different product. No information about DesignWave Automation or a five-license total exists in the provided source.",
+              "evidence": [],
+              "reason": "The question asks specifically about a discount on DesignWave Automation and the resulting total for five licenses for TechSphere Design. The single call transcript between Miguel Torres and Omar Selena discusses PulseSim Pro (with a 10% discount) and AI Cirku-Tech, but never mentions DesignWave Automation, any discount on it, or a five-license total. The draft extraction correctly identifies this absence. Since no source evidence supports the requested facts, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuQfIAK",
+              "b2b:a05Wt000003T06AIAS",
+              "b2b:a05Wt000003T1mzIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called 'DesignWave Automation', any discount, or a five-license total. Pricing specifics were explicitly deferred to later discussions (call b2b:a05Wt000003SuQfIAK, line 16), and no discount or license totals are stated anywhere.",
+              "evidence": [],
+              "reason": "None of the three calls reference 'DesignWave Automation', a discount percentage or amount, or a total price for five licenses. The only pricing-related statement is Hana Kato deferring pricing specifics to later discussions (call b2b:a05Wt000003SuQfIAK, line 16). The products discussed are AI Cirku-Tech, SecureAnalytics Pro, and EcoPower Convert. Therefore the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsyFIAS",
+              "b2b:a05Wt000003SyZ1IAK",
+              "b2b:a05Wt000003T1gXIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts discuss discounts for AI Cirku-Tech (10% on 10 units), SecureFlow Suite (5% on 8 units), and CloudLink Designer (10% on 12 units) for TechSphere Design, but there is no mention of a product called 'DesignWave Automation' or any pricing for five licenses of such a product. The requested facts are not present in the sources.",
+              "evidence": [],
+              "reason": "No call transcript mentions a product named 'DesignWave Automation.' The products discussed are AI Cirku-Tech, SecureFlow Suite, and CloudLink Designer. Since the specific product and the five-license total price are entirely absent from the sources, the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrHOIA0",
+              "b2b:a05Wt000003Sru9IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not mention DesignWave Automation, any discount for TechSphere Design, or a total price for five licenses. The calls only discuss AI Cirku-Tech, CloudLink Designer, OptiPower Manager, and general pricing transparency, with no specific discount percentage or license quantity stated.",
+              "evidence": [],
+              "reason": "Neither call transcript contains any reference to a product called 'DesignWave Automation,' nor any discount offer, nor any mention of five licenses or a total price. The products discussed are AI Cirku-Tech, CloudLink Designer, and OptiPower Manager. Therefore, the requested facts (discount on DesignWave Automation and resulting total for five licenses) cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwljIAC",
+              "b2b:a05Wt000003T1n0IAC",
+              "b2b:a05Wt000003T1obIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called 'DesignWave Automation', any discount, or a five-license total. The calls discuss TechPulse products (PulseSim Pro, CircuitAI Innovator, SecureFlow Suite, CloudLink Designer) only in general terms, with pricing discussed only as 'transparent' and 'competitive' with no figures.",
+              "evidence": [],
+              "reason": "No source line mentions 'DesignWave Automation', a discount percentage or amount, or a total price for five licenses. The three calls between Carmen Silva and Fatemeh Mehran discuss TechPulse products in general terms without specific pricing figures."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvUqIAK",
+              "b2b:a05Wt000003SxJkIAK",
+              "b2b:a05Wt000003T0cVIAS",
+              "b2b:a05Wt000003T3qQIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no information about an account called TechSphere Design. All four calls involve QuantumLeap Computing (contact Ayaan Omar, salesperson Terek Al-Farsi). The only DesignWave Automation pricing mentioned is $959.98 for two units (call b2b:a05Wt000003T3qQIAS, line 14); no discount percentage for DesignWave Automation is stated, and no total price for five licenses of DesignWave Automation is given anywhere in the transcripts.",
+              "evidence": [],
+              "reason": "The question asks about TechSphere Design, but no such account appears in any of the supplied calls. The account in every call is QuantumLeap Computing. Furthermore, even for QuantumLeap, no discount on DesignWave Automation is mentioned and no five-license total for DesignWave Automation is provided. The only DesignWave figure is $959.98 for two units. Because the named account, the discount, and the five-license total are all absent, the answer is incomplete."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; the cited dialogue line directly states the 5% discount on DesignWave Automation and the ~$2,279.95 total for five licenses, exactly matching the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What discount is TechSphere Design getting on DesignWave Automation",
+            "explicitly_requested": true,
+            "required_fact": "5% discount",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1jlIAC"
+            ]
+          },
+          {
+            "question_span": "what does that bring the total for five licenses to",
+            "explicitly_requested": true,
+            "required_fact": "about $2,279.95",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1jlIAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: the discount percentage and the total for five licenses. The gold answer provides exactly these two facts without any extra information. The independent answer matches the gold answer. The contract obligations correctly identify the two required facts and their source call. The single call contains both facts, so it is required by the question. No arithmetic is needed beyond the stated total. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "A 5% discount",
+            "question_span": "What discount is TechSphere Design getting on DesignWave Automation",
+            "required_by_question": true
+          },
+          {
+            "claim": "bringing the total for five licenses to about $2,279.95",
+            "question_span": "what does that bring the total for five licenses to",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "36eb53b2677a7b3eeee2f5cb7ade33eb2399a798963c551f2877b107c98752bc",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SUNFIA4"
+    ],
+    "status": "accepted",
+    "question": "What follow-up did Lena commit to for Isabella Wood after their discussion, and what should it include?",
+    "gold_answer": "A follow-up email this Thursday summarizing eco-friendly models, the service framework, and pricing benefits.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SUNFIA4",
+        "answer_claim": "I'll send over a summary, including insights on the eco-friendly models, our service framework, and pricing benefits in our follow-up email this Thursday.",
+        "kind": "dialogue",
+        "line_start": 16,
+        "line_end": 17,
+        "quote": "[2024-03-19T13:10:45] Lena Schmidt: Of course, Isabella. I'll send over a summary, including insights on the eco-friendly models, our service framework, and pricing benefits in our follow-up email this Thursday. And feel free to reach out with any further questions!",
+        "start": 3455,
+        "end": 3721
+      }
+    ],
+    "question_id": "b2c-single_call-36eb53b2677a7b3e",
+    "candidate": {
+      "question": "What follow-up did Lena commit to for Isabella Wood after their discussion, and what should it include?",
+      "gold_answer": "A follow-up email this Thursday summarizing eco-friendly models, the service framework, and pricing benefits.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SUNFIA4",
+          "answer_claim": "I'll send over a summary, including insights on the eco-friendly models, our service framework, and pricing benefits in our follow-up email this Thursday.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 17,
+          "quote": "[2024-03-19T13:10:45] Lena Schmidt: Of course, Isabella. I'll send over a summary, including insights on the eco-friendly models, our service framework, and pricing benefits in our follow-up email this Thursday. And feel free to reach out with any further questions!",
+          "start": 3455,
+          "end": 3721
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Lena committed to sending Isabella Wood a follow-up email summarizing their discussion, including insights on eco-friendly models, service framework, and pricing benefits, to be sent this Thursday.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The dialogue quote (13:10:45) directly supports the gold answer: Lena commits to a follow-up email this Thursday covering eco-friendly models, service framework, and pricing benefits. The question is a realistic sales follow-up need, names participants appropriately, and does not leak the answer (Thursday/content not in question). The independent answer semantically matches the gold. Both no-context answers are UNKNOWN, so they fail. This is a single-call QA, so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SUNFIA4"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SX38IAG",
+              "b2c:a05Ws000005SYLtIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Lena appears in either transcript. Both calls with Isabella Wood were conducted by Mohammed Al-Aziz. Since the question asks specifically about a commitment made by Lena, and no such person is present in the provided sources, the question cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about a follow-up committed to by 'Lena' for Isabella Wood. The only salesperson in both calls is Mohammed Al-Aziz. There is no mention of anyone named Lena in either transcript, so no commitment by Lena can be identified or verified from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUNFIA4",
+              "b2c:a05Ws000005SaDyIAK",
+              "b2c:a05Ws000005Sd5CIAS"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "After their March 19 discussion, Lena committed to sending Isabella Wood a follow-up email that Thursday. It should include a summary of the discussion plus details on: (1) the eco-friendly models, (2) AutoElite Motors' service framework, and (3) pricing benefits.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SUNFIA4",
+                  "line_start": 15,
+                  "line_end": 17,
+                  "quote": "[2024-03-19T13:10:15] Isabella Wood: Thanks, Lena. I have more clarity on how AutoElite Motors can fit into our strategy. Could we follow up with an email summarizing this discussion and perhaps detail some specific offerings?\n[2024-03-19T13:10:45] Lena Schmidt: Of course, Isabella. I'll send over a summary, including insights on the eco-friendly models, our service framework, and pricing benefits in our follow-up email this Thursday. And feel free to reach out with any further questions!"
+                }
+              ],
+              "reason": "Line 15 shows Isabella requesting a follow-up email summarizing the discussion and detailing specific offerings. Line 16 shows Lena committing to send the email 'this Thursday' including insights on the eco-friendly models, the service framework, and pricing benefits. Line 17 confirms Isabella's acknowledgment. All facts are directly stated by the exact named participants (Lena Schmidt and Isabella Wood) in the first call."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state that Lena committed to sending Isabella Wood a follow-up email on Thursday, and both specify the same three inclusions: eco-friendly models, the service framework, and pricing benefits. Answer A adds extra context (the March 19 date, 'summary of the discussion,' and 'AutoElite Motors'), but these are additional details rather than different values for the requested facts. The core requested information is the same in both."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SKaaIAG",
+              "b2c:a05Ws000005SSgNIAW",
+              "b2c:a05Ws000005STR9IAO",
+              "b2c:a05Ws000005SXrAIAW",
+              "b2c:a05Ws000005SaQrIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Lena appears in any of the provided call transcripts. All five calls for Isabella Wood's opportunity are conducted by Liam Murphy of AutoElite Motors. Because the question asks specifically about a follow-up committed by Lena, and no such individual or commitment exists in the sources, the requested fact cannot be answered.",
+              "evidence": [],
+              "reason": "The sources contain only interactions between Liam Murphy and Isabella Wood. There is no mention of anyone named Lena in any call. Follow-ups referenced (e.g., Liam promising to follow up with financing terms on 2021-03-01, line 20 of call b2c:a05Ws000005SSgNIAW, or sending a finalized contract on 2021-03-05, line 18 of call b2c:a05Ws000005SaQrIAK) are all attributed to Liam Murphy, not Lena. Since the question explicitly asks about Lena's commitment, and no such person exists in the data, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMChIAO",
+              "b2c:a05Ws000005SMPdIAO",
+              "b2c:a05Ws000005SPiIIAW",
+              "b2c:a05Ws000005ScCRIA0",
+              "b2c:a05Ws000005ScFdIAK",
+              "b2c:a05Ws000005ScFeIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Lena appears in any of the provided call transcripts. All calls with Isabella Wood are conducted by Nadia Gonzalez. Therefore, no follow-up commitment by Lena to Isabella Wood can be identified from the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a follow-up that 'Lena' committed to for Isabella Wood. After reviewing all six call transcripts, the only salesperson present is Nadia Gonzalez. There is no mention of anyone named Lena in any call. Since the exact named person (Lena) is not found in the sources, the requested fact cannot be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSQDIA4",
+              "b2c:a05Ws000005SYAgIAO",
+              "b2c:a05Ws000005SZbFIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no person named Lena. All three calls with Isabella Wood involve Felix Bakker of AutoElite Motors. Therefore no follow-up commitment by Lena to Isabella Wood can be identified or described.",
+              "evidence": [],
+              "reason": "The question asks specifically about a follow-up committed to by 'Lena' for Isabella Wood. Across all three provided call transcripts (b2c:a05Ws000005SSQDIA4, b2c:a05Ws000005SYAgIAO, b2c:a05Ws000005SZbFIAW), the only salesperson speaking with Isabella Wood is Felix Bakker. No individual named Lena appears in any source, so no commitment, follow-up action, or content requirement attributable to Lena can be supported. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRVcIAO",
+              "b2c:a05Ws000005SbQDIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Lena appears in either transcript. The calls with Isabella Wood were conducted by Liu Wei of AutoElite Motors. Therefore, no follow-up commitment by Lena to Isabella Wood can be identified from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about a follow-up committed to by 'Lena' for Isabella Wood. The only salesperson in both calls is Liu Wei, not Lena. Since the exact named person (Lena) does not appear in any source, no facts about Lena's commitment can be supported. The draft extraction correctly identifies this mismatch."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOEFIA4",
+              "b2c:a05Ws000005SSHxIAO",
+              "b2c:a05Ws000005SSQ5IAO",
+              "b2c:a05Ws000005SZo5IAG",
+              "b2c:a05Ws000005SbkzIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no person named Isabella Wood. All five calls involve Lena Schmidt speaking with Isabella Murphy (account 'Isabella Murphy', account_id 001Ws00003sIXD2IAO). Because the question asks specifically about a follow-up Lena committed to for Isabella Wood, and no such person appears in any transcript, the requested fact cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The exact named individual in the question is 'Isabella Wood.' Every call in the dataset references 'Isabella Murphy' as the customer/contact. No transcript mentions an 'Isabella Wood,' so no follow-up commitment to that person can be identified or cited. The draft extraction correctly flags this mismatch; I confirm it with source evidence showing only Isabella Murphy appears."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SYlaIAG",
+              "b2c:a05Ws000005SZZhIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Lena appears in any of the provided call transcripts. Both calls are between Jin Park (AutoElite Motors) and Isabella Wood. Therefore, no follow-up commitment by Lena to Isabella Wood can be identified or described from these sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a follow-up committed to by 'Lena' for Isabella Wood. The only salesperson in both calls is Jin Park. There is no mention of anyone named Lena in either transcript, so no facts about Lena's commitments or what they should include can be supported. The draft extraction correctly identifies this absence."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZOHIA4",
+              "b2c:a05Ws000005SdbSIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Lena appears in either transcript. The calls with Isabella Wood involve Sophia Chen from AutoElite Motors. Because the question asks specifically about a follow-up commitment made by Lena, and no such individual is present in the sources, the requested fact cannot be answered.",
+              "evidence": [],
+              "reason": "The two provided calls (b2c:a05Ws000005SZOHIA4 and b2c:a05Ws000005SdbSIAS) feature Sophia Chen as the salesperson speaking with Isabella Wood. There is no mention of anyone named Lena in any line of either transcript. Therefore, no follow-up commitment by Lena to Isabella Wood can be identified or verified from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSlDIAW",
+              "b2c:a05Ws000005SUq4IAG",
+              "b2c:a05Ws000005SXr9IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no person named Lena. All three calls with Isabella Wood were conducted by Lucy Chen from AutoElite Motors. Because the question asks specifically about a commitment made by Lena, and no such individual appears in any transcript, the requested fact cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about a follow-up committed to by 'Lena' for Isabella Wood. The three call transcripts (b2c:a05Ws000005SSlDIAW, b2c:a05Ws000005SUq4IAG, b2c:a05Ws000005SXr9IAG) all involve Lucy Chen as the salesperson speaking with Isabella Wood. No individual named Lena is mentioned anywhere in the sources. Therefore, no commitment by Lena can be identified, and the answer is incomplete."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; the cited dialogue (13:10:45) directly states Lena committed to a follow-up email this Thursday including eco-friendly models, service framework, and pricing benefits, exactly matching the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What follow-up did Lena commit to for Isabella Wood after their discussion",
+            "explicitly_requested": true,
+            "required_fact": "Lena committed to sending a follow-up email this Thursday summarizing the discussion",
+            "source_call_ids": [
+              "b2c:a05Ws000005SUNFIA4"
+            ]
+          },
+          {
+            "question_span": "what should it include?",
+            "explicitly_requested": true,
+            "required_fact": "The email should include insights on the eco-friendly models, the service framework, and pricing benefits",
+            "source_call_ids": [
+              "b2c:a05Ws000005SUNFIA4"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the follow-up commitment and its contents. The gold answer provides exactly that: a follow-up email this Thursday summarizing eco-friendly models, service framework, and pricing benefits. No extra facts are included. The independent answer matches the gold answer. The contract obligations correctly extract the two required facts from the gold answer. The single call provides all necessary information, so it is required by the question.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Lena committed to sending a follow-up email this Thursday",
+            "question_span": "What follow-up did Lena commit to for Isabella Wood after their discussion",
+            "required_by_question": true
+          },
+          {
+            "claim": "The email should summarize eco-friendly models",
+            "question_span": "what should it include?",
+            "required_by_question": true
+          },
+          {
+            "claim": "The email should summarize the service framework",
+            "question_span": "what should it include?",
+            "required_by_question": true
+          },
+          {
+            "claim": "The email should summarize pricing benefits",
+            "question_span": "what should it include?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]

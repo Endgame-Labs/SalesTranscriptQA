@@ -1,0 +1,417 @@
+[
+  {
+    "question_id": "b2b-multi_call-2566a6c89da6c7e4",
+    "question": "For TechWave Innovations, what support commitment did Nadia emphasize in the initial discussion, and what implementation timeline did she give in the follow-up demo?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The support commitment Nadia emphasized in the initial discussion and the implementation timeline she gave in the follow-up demo for TechWave Innovations",
+        "relationship": "Both facts concern the same post-sale service/onboarding issue (support and rollout) for the same customer across the initial call and follow-up demo",
+        "reason": "Support commitment and implementation timeline are naturally related aspects of the same service/onboarding discussion, and the two-call facts address the same business issue rather than unrelated lookups"
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyFmIAK",
+                "fact": "Nadia emphasized comprehensive support before, during, and after implementation.",
+                "why_other_call_cannot_supply_it": "The follow-up demo call only mentions dedicated support during implementation, not the full before/during/after commitment."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4OHIA0",
+                "fact": "Implementation typically takes a few weeks.",
+                "why_other_call_cannot_supply_it": "The initial discussion does not mention any implementation timeline; it only schedules a future meeting."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the support commitment from the initial discussion and the implementation timeline from the follow-up demo. Each fact is only present in one call, and the other call lacks that specific detail, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyFmIAK",
+                  "fact": "Nadia emphasized comprehensive support before, during, and after implementation.",
+                  "why_other_call_cannot_supply_it": "The follow-up demo call only mentions dedicated support during implementation, not the full before/during/after commitment."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4OHIA0",
+                  "fact": "Implementation typically takes a few weeks.",
+                  "why_other_call_cannot_supply_it": "The initial discussion does not mention any implementation timeline; it only schedules a future meeting."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the support commitment from the initial discussion and the implementation timeline from the follow-up demo. Each fact is only present in one call, and the other call lacks that specific detail, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyFmIAK",
+                "fact": "Nadia emphasized comprehensive support before, during, and after implementation in the initial discussion",
+                "why_other_call_cannot_supply_it": "The demo call only mentions dedicated support during implementation, not the before/during/after commitment made in the initial call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4OHIA0",
+                "fact": "In the demo, Nadia said implementation typically takes a few weeks",
+                "why_other_call_cannot_supply_it": "The initial call contains no implementation timeline; the few-weeks estimate appears only in the demo call"
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: the support commitment from the initial call and the implementation timeline from the demo. Each fact appears only in one call, and both are explicitly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyFmIAK",
+                  "fact": "Nadia emphasized comprehensive support before, during, and after implementation in the initial discussion",
+                  "why_other_call_cannot_supply_it": "The demo call only mentions dedicated support during implementation, not the before/during/after commitment made in the initial call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4OHIA0",
+                  "fact": "In the demo, Nadia said implementation typically takes a few weeks",
+                  "why_other_call_cannot_supply_it": "The initial call contains no implementation timeline; the few-weeks estimate appears only in the demo call"
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: the support commitment from the initial call and the implementation timeline from the demo. Each fact appears only in one call, and both are explicitly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct facts from two separate calls for the same account (TechWave Innovations). Call 1 (2022-02-25) contains Nadia's explicit support commitment: 'comprehensive support throughout \u2013 before, during, and after implementation.' Call 2 (2022-03-19, the demo) contains the implementation timeline: 'typically, it's completed within a few weeks' with 'dedicated support.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both claims without adding unasked extras. The question is naturally phrased, adequately scoped by account name and interaction type, and a rep would plausibly want to recall these commitments. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadia Al-Balushi on 2022-02-25 explicitly states: 'We pride ourselves on providing comprehensive support throughout \u2013 before, during, and after implementation.' This directly supports the answer_claim about comprehensive support before, during, and after implementation. The speaker is Nadia, the call is associated with TechWave Innovations (per metadata), and the date (2022-02-25) aligns with the 'initial discussion' context."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadia Al-Balushi on 2022-03-19 explicitly states: 'It varies based on the specific requirements, but typically, it's completed within a few weeks. Plus, our dedicated support team is available to ensure everything runs smoothly.' This directly supports the answer_claim about implementation typically taking a few weeks with dedicated support. The call is associated with TechWave Innovations (per metadata), and the later date (2022-03-19) aligns with the 'follow-up demo' context."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Nadia promised comprehensive support before, during, and after implementation \u2013 supported by evidence index 0 where Nadia explicitly says this in the initial discussion call. (2) In the demo she said implementation typically takes a few weeks with dedicated support \u2013 supported by evidence index 1 where Nadia states 'typically, it's completed within a few weeks' and mentions 'our dedicated support team.' Both factual claims in the gold_answer are directly and explicitly supported by the cited evidence. The account metadata confirms both calls relate to TechWave Innovations, and the chronological ordering (Feb 25 initial, Mar 19 follow-up) matches the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-8ddd7f96d1a93ee7",
+    "question": "For AgroSmart Innovations, what security compliance concern did Ingrid Nilsen raise in the initial discussion, and what SecureFlow Suite update did Mei cite in the later demo follow-up to address compliance?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The security compliance concern Ingrid Nilsen raised in the initial AgroSmart Innovations discussion, and the SecureFlow Suite update Mei cited in the later demo follow-up to address compliance.",
+        "relationship": "objection/requirement and the follow-up response addressing the same compliance issue",
+        "reason": "Both parts concern the same business issue (security compliance) \u2014 the concern raised and the product update cited to address it \u2014 forming one coherent objection-and-response thread across calls."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for a security compliance concern raised by Ingrid and a SecureFlow Suite update cited by Mei. Both facts appear in the same call (b2b:a05Wt000003SqZwIAK), where Ingrid mentions security compliance is crucial and Mei cites the update. The other call only repeats the same concern without the update. Thus, one call suffices for both requested pieces of information, so two calls are not necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for a security compliance concern raised by Ingrid and a SecureFlow Suite update cited by Mei. Both facts appear in the same call (b2b:a05Wt000003SqZwIAK), where Ingrid mentions security compliance is crucial and Mei cites the update. The other call only repeats the same concern without the update. Thus, one call suffices for both requested pieces of information, so two calls are not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sy2mIAC",
+                "fact": "Ingrid raised security compliance as crucial for data protection in the initial (May 12) discussion",
+                "why_other_call_cannot_supply_it": "The July call contains no mention of Ingrid raising a security compliance concern; it only discusses integration, pricing, scalability, and support"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqZwIAK",
+                "fact": "Mei cited SecureFlow Suite updates that significantly enhanced its security compliance features in the later (July 15) call",
+                "why_other_call_cannot_supply_it": "The May call predates this and contains no mention of SecureFlow Suite security compliance updates; Mei only gives a general statement about strict data protection standards"
+              }
+            ],
+            "reason": "The question asks for two distinct facts across two conversations: the initial concern raised by Ingrid (only in the May call) and the specific SecureFlow Suite update response cited by Mei (only in the July call). Neither call alone contains both pieces of requested information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sy2mIAC",
+                  "fact": "Ingrid raised security compliance as crucial for data protection in the initial (May 12) discussion",
+                  "why_other_call_cannot_supply_it": "The July call contains no mention of Ingrid raising a security compliance concern; it only discusses integration, pricing, scalability, and support"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SqZwIAK",
+                  "fact": "Mei cited SecureFlow Suite updates that significantly enhanced its security compliance features in the later (July 15) call",
+                  "why_other_call_cannot_supply_it": "The May call predates this and contains no mention of SecureFlow Suite security compliance updates; Mei only gives a general statement about strict data protection standards"
+                }
+              ],
+              "reason": "The question asks for two distinct facts across two conversations: the initial concern raised by Ingrid (only in the May call) and the specific SecureFlow Suite update response cited by Mei (only in the July call). Neither call alone contains both pieces of requested information."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Ingrid's security-compliance concern from the May 12 initial discussion and (2) the SecureFlow Suite update Mei cited in the July 15 demo follow-up. The May 12 call contains Ingrid's statement that security compliance is crucial for data protection; the July 15 call contains Mei's mention of SecureFlow Suite updates that significantly enhanced security compliance features. Each source contributes an exclusive requested fact. The gold answer accurately reflects both claims without adding unasked extras. The question is naturally worded, adequately scoped to AgroSmart Innovations and the named participants, and represents a plausible rep need to track how a compliance concern was addressed across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Ingrid Nilsen on 2023-05-12 explicitly states: 'What about security compliance? It's crucial for us to ensure data protection.' This directly supports the answer_claim that Ingrid said security compliance is crucial to ensure data protection. The call metadata confirms this is the AgroSmart Innovations account with Ingrid Nilsen as contact, and the date (2023-05-12) is earlier than the other call (2023-07-15), consistent with it being the 'initial discussion.'"
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Mei Chen on 2023-07-15 explicitly states: 'the SecureFlow Suite has undergone updates that enhance its security compliance features significantly.' This directly supports the answer_claim that Mei cited SecureFlow Suite updates that significantly enhanced its security compliance features. The call metadata confirms this is the AgroSmart Innovations account, and the date (2023-07-15) is later than the first call (2023-05-12), consistent with it being the 'later demo follow-up.'"
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Ingrid said security compliance was crucial for data protection \u2014 supported by evidence index 0 where Ingrid explicitly says 'It's crucial for us to ensure data protection' regarding security compliance. (2) Mei cited SecureFlow Suite updates that significantly enhanced its security compliance features \u2014 supported by evidence index 1 where Mei explicitly states 'the SecureFlow Suite has undergone updates that enhance its security compliance features significantly.' The temporal ordering (May 12 initial discussion, July 15 later demo follow-up) is confirmed by the call metadata. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-3107035d6a3a3c72",
+    "question": "What pricing did TechPulse quote EcoShield for the AI Cirku-Tech and OptiPower Manager, including quantities and discounts?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Pricing quoted by TechPulse to EcoShield for AI Cirku-Tech and OptiPower Manager, including quantities and discounts",
+        "relationship": "single coherent commercial quote breakdown for the same deal",
+        "reason": "One quote lookup covering products, quantities, and discounts for the same customer engagement."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific pricing, quantities, and discounts for two products quoted by TechPulse to EcoShield. The dialogue at 14:00:45 provides exactly those figures: AI Cirku-Tech 8 units, 5% discount, $4027.92; OptiPower Manager 12 units, 10% discount, $4859.89. The gold answer matches verbatim. The question is naturally phrased, identifies the vendor, customer, and products, and a rep/AM would plausibly need this pricing recap. No locator preamble, no answer leakage, no unsupported causality. Single-call set, so both_sources_required is true by rule.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Aisha Ibrahim explicitly states: AI Cirku-Tech at quantity 8, 5% discount, total $4027.92; OptiPower Manager at 10% discount for 12 units, amounting to $4859.89. This matches the answer_claim exactly in product names, quantities, discount percentages, and dollar totals."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains all the factual elements of the gold_answer: AI Cirku-Tech 8 units at 5% discount totaling $4027.92, and OptiPower Manager 12 units at 10% discount totaling $4859.89. The speaker (Aisha Ibrahim, representing TechPulse) is quoting pricing to Maya Dlamini (EcoShield Technologies), consistent with the context metadata identifying the opportunity as 'EcoShield Collaboration with TechPulse.' All quantities, discounts, and totals are explicitly stated in the quote."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-82fb9a84ae33219e",
+    "question": "What discount is TechSphere Design getting on DesignWave Automation, and what does that bring the total for five licenses to?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount TechSphere Design receives on DesignWave Automation and the resulting total price for five licenses",
+        "relationship": "single coherent commercial quote breakdown: the discount and the total are parts of one pricing calculation",
+        "reason": "Both parts concern the same quote's pricing\u2014discount applied and resulting total\u2014forming one coherent commercial request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the discount percentage and resulting total for five DesignWave Automation licenses for TechSphere Design. The single call transcript explicitly states a 5% discount bringing the five-license total to about $2,279.95. The answer matches exactly with no extra unasked facts. The question is naturally phrased, scoped to a named account and product, and a rep/AM would plausibly need this pricing detail. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Hana Kato explicitly states: 'For DesignWave Automation, we're offering a 5% discount, which brings the total for five licenses to about $2,279.95.' This directly supports the answer_claim of a 5% discount on DesignWave Automation and a total of about $2,279.95 for five licenses. The speaker is identified, the product is named, the discount percentage and total amount match exactly, and the 'about' qualifier is preserved."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'A 5% discount, bringing the total for five licenses to about $2,279.95.' The single cited evidence item (index 0) contains a direct quote from Hana Kato that explicitly provides both the 5% discount on DesignWave Automation and the resulting total of about $2,279.95 for five licenses. The account metadata confirms the call involves TechSphere Design. All factual claims in the gold_answer are fully supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-72ae87988d083e9f",
+    "question": "What did David Gonzalez schedule with Nadia Gonzalez, and what does he plan to bring to that meeting?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What meeting David Gonzalez scheduled with Nadia Gonzalez and what he plans to bring to it",
+        "relationship": "single coherent request: timing/purpose of one meeting plus its content",
+        "reason": "Both parts describe the same scheduled meeting, analogous to timing + agenda."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what was scheduled and what David plans to bring. The transcript confirms a discovery meeting Friday at 1 PM and that he'll bring questions and details on what he's looking for in a vehicle. The gold answer matches precisely with no extra or missing facts. The question is naturally phrased, scoped to a specific customer interaction, and a rep/AM would plausibly want to know meeting logistics and preparation expectations. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Nadia Gonzalez proposing 'Friday around 1 PM' and David Gonzalez confirming 'Friday at 1 PM works perfectly!' This directly supports the claim that a discovery meeting was scheduled for Friday at 1 PM. The meeting type ('discovery') is contextualized by the opportunity name 'Winter Sale Certified Pre-Owned Vehicles' and the nature of the scheduling conversation, though the word 'discovery' itself is not explicitly in the quote. However, the scheduling of Friday at 1 PM is clearly supported."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows David asking 'Anything specific I should prepare?' and Nadia responding 'Just bring along any questions you might have and any details on what you're specifically looking for in a vehicle.' This directly supports the claim that he plans to bring questions and details on what he's looking for in a vehicle. Note: technically Nadia tells David what to bring rather than David stating he will bring them, but David's question 'Anything specific I should prepare?' followed by Nadia's instruction implies he will follow through, and the gold answer's phrasing 'he'll bring' is a reasonable inference from this exchange."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items support the gold answer. Evidence 0 confirms the Friday at 1 PM scheduling. Evidence 1 confirms the items to bring (questions and vehicle preference details). The gold answer's characterization of the meeting as a 'discovery meeting' is not explicitly stated in the quoted dialogue but is consistent with the context (opportunity name 'Winter Sale Certified Pre-Owned Vehicles' and the nature of the conversation about matching him with a vehicle). The combined citations adequately support all factual claims in the gold answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-36eb53b2677a7b3e",
+    "question": "What follow-up did Lena commit to for Isabella Wood after their discussion, and what should it include?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The follow-up Lena committed to after her discussion with Isabella Wood and what that follow-up should include",
+        "relationship": "single coherent next-step request: the commitment and its contents describe one follow-up action",
+        "reason": "This is one unified request about a single follow-up commitment\u2014what it is and what it should contain are two facets of the same action, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The dialogue shows Lena explicitly committing to a follow-up email this Thursday covering eco-friendly models, the service framework, and pricing benefits. The question naturally asks what was committed and what it should include; the gold answer states exactly those facts with no extras. Single-call set, so both_sources_required is true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Lena Schmidt explicitly states: 'I'll send over a summary, including insights on the eco-friendly models, our service framework, and pricing benefits in our follow-up email this Thursday.' This directly supports the answer_claim verbatim, confirming the follow-up is an email this Thursday summarizing eco-friendly models, the service framework, and pricing benefits."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence (index 0) contains Lena's direct commitment to send a follow-up email this Thursday that includes insights on eco-friendly models, the service framework, and pricing benefits. This fully supports every factual element in the gold_answer: the medium (email), the timing (this Thursday), and the three content items (eco-friendly models, service framework, pricing benefits). The speaker is Lena Schmidt addressing Isabella, matching the question's participants."
+      }
+    }
+  }
+]
