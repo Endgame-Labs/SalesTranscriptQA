@@ -1,0 +1,405 @@
+[
+  {
+    "question_id": "b2b-multi_call-6ec65f1cdbff81ed",
+    "question": "For EcoTech Manufacturing, what concern did Yen Nguyen raise about competitor CircuitWave, and how did innovation come up when the final proposal was reviewed?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Yen Nguyen raised about competitor CircuitWave for EcoTech Manufacturing, and how innovation was discussed during the final proposal review.",
+        "relationship": "Competitive objection and its handling in the proposal \u2014 the innovation discussion in the final proposal review addresses the same competitive issue raised about CircuitWave.",
+        "reason": "This is a coherent competitive-comparison thread: a competitor concern and how the proposal (notably its innovation angle) responded to it, addressing the same business issue rather than two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: (1) Yen's concern about CircuitWave and (2) how innovation came up in the final proposal review. The first piece is explicitly stated in the November call (lack of innovation, unsure about long-term scalability). The second piece is explicitly stated in the March call (innovation is essential, reassured by TechPulse's continuous improvement). However, the question's phrasing 'how did innovation come up' is satisfied by the March call alone, and the concern about CircuitWave is satisfied by the November call alone. The two facts are distinct and each call provides one, but the question does not require both calls to answer it\u2014each call independently answers one part. The necessity criterion is that both calls are needed for meaningfully different requested information. Here, the two parts are separate and each is fully answered by one call, so neither call is necessary for the other's information. The question could be answered by reading both calls, but it does not require both for a single integrated fact; it's a compound question with independent parts. Per instructions, if either source suffices for the actual information need, or if facts are unrelated lookups joined together, reject. Here, the two facts are unrelated (one about competitor concern, one about innovation in review), and each is supplied by a different call, but the question does not demand a synthesis that requires both. Thus, necessary=false."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: (1) Yen's concern about CircuitWave and (2) how innovation came up in the final proposal review. The first piece is explicitly stated in the November call (lack of innovation, unsure about long-term scalability). The second piece is explicitly stated in the March call (innovation is essential, reassured by TechPulse's continuous improvement). However, the question's phrasing 'how did innovation come up' is satisfied by the March call alone, and the concern about CircuitWave is satisfied by the November call alone. The two facts are distinct and each call provides one, but the question does not require both calls to answer it\u2014each call independently answers one part. The necessity criterion is that both calls are needed for meaningfully different requested information. Here, the two parts are separate and each is fully answered by one call, so neither call is necessary for the other's information. The question could be answered by reading both calls, but it does not require both for a single integrated fact; it's a compound question with independent parts. Per instructions, if either source suffices for the actual information need, or if facts are unrelated lookups joined together, reject. Here, the two facts are unrelated (one about competitor concern, one about innovation in review), and each is supplied by a different call, but the question does not demand a synthesis that requires both. Thus, necessary=false."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxWUIA0",
+                "fact": "Yen Nguyen said CircuitWave lacks innovation, making her unsure about long-term scalability",
+                "why_other_call_cannot_supply_it": "The final proposal call never mentions CircuitWave or Yen's competitor concern; it only appears in the 2023-11-30 call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxGRIA0",
+                "fact": "In the final proposal review, Yen said innovation is essential and was reassured TechPulse keeps improving to avoid outdated tools",
+                "why_other_call_cannot_supply_it": "The earlier call predates the final proposal review and contains no discussion of innovation during proposal review; that exchange occurs only in the 2024-03-17 call."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: Yen's concern about CircuitWave (stated only in the November 2023 call) and how innovation came up during the final proposal review (stated only in the March 2024 call). Neither call contains both facts, and they are not paraphrases of one another."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxWUIA0",
+                  "fact": "Yen Nguyen said CircuitWave lacks innovation, making her unsure about long-term scalability",
+                  "why_other_call_cannot_supply_it": "The final proposal call never mentions CircuitWave or Yen's competitor concern; it only appears in the 2023-11-30 call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxGRIA0",
+                  "fact": "In the final proposal review, Yen said innovation is essential and was reassured TechPulse keeps improving to avoid outdated tools",
+                  "why_other_call_cannot_supply_it": "The earlier call predates the final proposal review and contains no discussion of innovation during proposal review; that exchange occurs only in the 2024-03-17 call."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: Yen's concern about CircuitWave (stated only in the November 2023 call) and how innovation came up during the final proposal review (stated only in the March 2024 call). Neither call contains both facts, and they are not paraphrases of one another."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two distinct facts: (1) Yen's concern about CircuitWave, found only in the Nov-2023 discovery call where she says CircuitWave's 'lack of innovation' makes her 'unsure about long-term scalability'; (2) how innovation surfaced during the final-proposal review, found only in the Mar-2024 call where Yen states 'Innovation is essential' and is reassured TechPulse keeps improving to avoid outdated tools. Each source contributes an exclusive requested fact. The gold answer accurately reflects both transcripts without adding unasked extras. The question is naturally scoped to a named account and contact, and a rep would plausibly want to recall competitive objections and how they were later addressed.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Yen Nguyen stating that CircuitWave focuses on service but has 'a lack of innovation which makes us unsure about long-term scalability.' This fully supports the answer_claim about Yen noting CircuitWave's lack of innovation and the resulting uncertainty about long-term scalability."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Elena Petrova stating commitment to 'pushing future advancements' to 'avoid stagnation with outdated tools' and that they're 'always improving and innovating.' Yen Nguyen then responds 'Innovation is essential\u2014it's reassuring to know that we're investing in a solution with a forward-thinking provider.' This supports the claim that Yen said innovation is essential, was reassured about investing in a forward-thinking provider, and Elena noted commitment to future advancements to avoid outdated tools."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Yen said CircuitWave lacks innovation, making her unsure about long-term scalability\u2014directly supported by evidence index 0. (2) In the final proposal review, she said innovation is essential and was reassured TechPulse keeps improving to avoid outdated tools\u2014supported by evidence index 1, where Yen states 'Innovation is essential' and expresses reassurance about a 'forward-thinking provider,' while Elena confirms they are 'always improving and innovating' to 'avoid stagnation with outdated tools.' The gold_answer's reference to 'TechPulse' is consistent with the opportunity name 'AI-Powered EDA Solutions' and the context of the sales call, and Elena's statement about 'always improving and innovating' supports the claim that TechPulse keeps improving. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-0798273aab335ae9",
+    "question": "For TechBridge Systems' EDA upgrade, what specific discounted pricing did Akira quote Maya for PulseSim Pro and CloudLink Designer, and how did he describe TechPulse's pricing approach in their initial call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The specific discounted pricing Akira quoted Maya for PulseSim Pro and CloudLink Designer, plus how Akira described TechPulse's pricing approach in the initial call",
+        "relationship": "same commercial issue across calls \u2014 both facts concern pricing for TechBridge's EDA upgrade (quote details and pricing philosophy)",
+        "reason": "Both parts address the same business issue: pricing for the EDA upgrade deal. The quote breakdown and the description of the pricing approach are naturally connected, even if drawn from different calls."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for specific discounted pricing and a description of TechPulse's pricing approach. Both pieces of information are supplied in the first call (b2b:a05Wt000003StnxIAC), which contains the exact pricing details and the description of pricing as transparent and predictable. The second call (b2b:a05Wt000003T3qPIAS) only repeats the pricing approach description and does not contain any pricing figures. Therefore, the first call alone suffices to answer the entire question, and the second call is not necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for specific discounted pricing and a description of TechPulse's pricing approach. Both pieces of information are supplied in the first call (b2b:a05Wt000003StnxIAC), which contains the exact pricing details and the description of pricing as transparent and predictable. The second call (b2b:a05Wt000003T3qPIAS) only repeats the pricing approach description and does not contain any pricing figures. Therefore, the first call alone suffices to answer the entire question, and the second call is not necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StnxIAC",
+                "fact": "Specific discounted quotes: 10 units of PulseSim Pro at 10% discount totaling $4,499.91 and 15 units of CloudLink Designer at 10% discount totaling $5,399.87",
+                "why_other_call_cannot_supply_it": "The initial call (a05Wt000003T3qPIAS) contains no unit counts, discounts, or dollar figures\u2014only a general description of pricing philosophy."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3qPIAS",
+                "fact": "Akira described TechPulse's pricing approach as transparent and predictable, aiding straightforward budgeting, with a favorable total cost of ownership and no hidden surprises",
+                "why_other_call_cannot_supply_it": "The demo call (a05Wt000003StnxIAC) quotes specific prices but never characterizes the overall pricing approach or TCO philosophy."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: concrete discounted pricing figures (only in the demo call) and Akira's qualitative description of TechPulse's pricing approach (only in the initial call). Neither call contains both, and the facts are substantively different, not paraphrases."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StnxIAC",
+                  "fact": "Specific discounted quotes: 10 units of PulseSim Pro at 10% discount totaling $4,499.91 and 15 units of CloudLink Designer at 10% discount totaling $5,399.87",
+                  "why_other_call_cannot_supply_it": "The initial call (a05Wt000003T3qPIAS) contains no unit counts, discounts, or dollar figures\u2014only a general description of pricing philosophy."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3qPIAS",
+                  "fact": "Akira described TechPulse's pricing approach as transparent and predictable, aiding straightforward budgeting, with a favorable total cost of ownership and no hidden surprises",
+                  "why_other_call_cannot_supply_it": "The demo call (a05Wt000003StnxIAC) quotes specific prices but never characterizes the overall pricing approach or TCO philosophy."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: concrete discounted pricing figures (only in the demo call) and Akira's qualitative description of TechPulse's pricing approach (only in the initial call). Neither call contains both, and the facts are substantively different, not paraphrases."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific discounted pricing (from the May 19 demo call) and the pricing-approach description (from the April 19 initial call). Both facts are verified verbatim in their respective transcripts. Each source contributes an exclusive requested fact: call 1 provides the dollar figures and unit/discount details; call 2 provides the 'transparent and predictable\u2026favorable total cost of ownership\u2026no hidden surprises' language. The question is scoped to a named account, opportunity, and contact, making it a plausible rep lookup. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Akira Suzuki on 2021-05-19 explicitly states: 'for 10 units of PulseSim Pro, the total with our 10% discount comes to $4,499.91. For CloudLink Designer, 15 units with the same discount total $5,399.87.' This directly supports the answer_claim with matching product names, quantities, discount percentage, and dollar amounts."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Akira Suzuki on 2021-04-19 (the initial call, earlier than the May call) states: 'We ensure our pricing is transparent and predictable, which helps in straightforward budgeting. Our cost structure is designed to offer a favorable total cost of ownership without hidden surprises.' This directly supports the answer_claim about transparent, predictable pricing, favorable total cost of ownership, and no hidden surprises."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support every factual claim in the gold_answer: (1) 10 units PulseSim Pro at 10% discount totaling $4,499.91, (2) 15 units CloudLink Designer at 10% discount totaling $5,399.87, and (3) the initial call description of pricing as transparent and predictable with favorable total cost of ownership and no hidden surprises. The metadata confirms the April 19 call is the initial call and the May 19 call is the later pricing discussion, both tied to TechBridge Systems and Maya Zhang."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-c38b4285e5e8e956",
+    "question": "What concern did Zara Ahmed raise about how TechPulse's security focus might affect integration, and how did Jaemin respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Zara Ahmed's concern about TechPulse's security focus affecting integration and Jaemin's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "A single coherent objection-and-response exchange about one business issue (security vs. integration tension)."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection Zara Ahmed raised about security slowing integration and Jaemin's rebuttal, both clearly present in the single transcript. The gold answer accurately captures her concern ('security compliance would slow integration') and Jaemin's response ('implementation is streamlined for quick deployment with support-team backing for seamless integration') without adding unasked extras. The wording is natural, the scope identifies the customer and business situation, and a rep would plausibly want to review how an integration objection was handled. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Zara Ahmed explicitly raising a concern: 'I'm curious how your focus on security doesn't slow down the integration process?' This directly supports the answer_claim that she asked how the security focus doesn't slow down the integration process. The phrasing is a question expressing concern about security potentially slowing integration, which matches the claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Jaemin Park stating: 'our implementation processes are streamlined to ensure quick deployment. Our support team backs this up to facilitate as seamless an integration as possible.' This directly supports the answer_claim that Jaemin said implementation processes are streamlined for quick deployment with support team backing."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) She worried security compliance would slow integration \u2013 supported by index 0 where Zara asks how the security focus doesn't slow down integration, expressing concern. (2) Jaemin said implementation is streamlined for quick deployment with support-team backing for seamless integration \u2013 supported by index 1 where Jaemin explicitly states implementation processes are streamlined for quick deployment and the support team backs this up for seamless integration. Both factual claims in the gold_answer are fully supported by the cited evidence. The slight paraphrase of 'security compliance' vs 'focus on security' is a faithful representation of the concern raised."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-29e7f551028e2536",
+    "question": "What next step did Aiden Lee agree to for evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The next step Aiden Lee agreed to for evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks",
+        "relationship": "single coherent next-step lookup addressing the same evaluation decision",
+        "reason": "The question asks for one agreed next step concerning the same evaluation of two tools for the same account; this is a single, coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about the agreed next step for evaluating two named products at a named account, which a rep would plausibly track. The gold answer accurately captures Aiden's desire to arrange a product demo soon for his team to assess applicability to MetroGrid's projects and Pedro's commitment to follow up by email to schedule it\u2014both directly stated in the dialogue (11:04:30 and 11:04:47). No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions. Scope is adequate: the account (MetroGrid Networks), contact (Aiden Lee), and products (CircuitAI Innovator, QuantumPCB Modeler) clearly identify the business situation."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Aiden Lee saying 'We're interested in arranging a demo soon. I'd like my team to assess the specifics and the applicability to our projects at MetroGrid.' This fully supports the claim that Aiden is interested in arranging a demo soon for his team to assess applicability to MetroGrid projects."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Pedro Alvarez stating 'I'll follow up with an email to find a time that works best for your team.' This directly supports the claim that Pedro will follow up with an email to find a time that works best for Aiden's team."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Aiden wants to arrange a product demo soon so his team can assess the solutions' applicability to MetroGrid's projects \u2013 supported by evidence index 0 where Aiden explicitly says he's interested in arranging a demo soon and wants his team to assess applicability to MetroGrid projects. (2) Pedro will follow up by email to schedule it \u2013 supported by evidence index 1 where Pedro says he'll follow up with an email to find a time that works best for Aiden's team. Both factual claims in the gold_answer are fully supported by the cited evidence. The mention of 'CircuitAI Innovator and QuantumPCB Modeler' in the question is contextual (from the opportunity name 'MetroGrid Networks - Advanced EDA Integration') and the answer correctly refers to them as 'the solutions,' which is a faithful paraphrase given the demo context."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-056f78bc5c0d22f9",
+    "question": "What is Eva Simmons' main concern when comparing AutoElite Motors' pre-owned program to competitors like Luxury Auto Group?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Eva Simmons' main concern when comparing AutoElite Motors' pre-owned program to competitors like Luxury Auto Group",
+        "relationship": "single competitive-comparison lookup",
+        "reason": "One coherent competitive comparison concern about the same pre-owned program; plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about Eva Simmons' main concern when comparing AutoElite Motors' pre-owned program to competitors like Luxury Auto Group. The dialogue at 16:02:05 shows Eva stating she is 'more concerned about avoiding higher ownership costs later on' rather than initial luxury appeal, and Nora confirms the focus on long-term value and competitive long-term costs versus Luxury Auto Group. The gold answer accurately captures this. The question is naturally worded, scoped to a specific customer and business situation, and a rep would plausibly want to know a customer's primary concern in a competitive comparison. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Eva explicitly states she is 'comparing your pre-owned program to others in the market' and asks 'How do you ensure reliability?', directly supporting the claim that she is comparing programs and is concerned about reliability. Nora's response references 'Luxury Auto Group' as a competitor and states 'we make sure our long-term costs remain competitive,' which supports the claim that long-term ownership costs (rather than initial luxury appearance) are the focus of the comparison. The combination of Eva's reliability question and Nora's framing around competitive long-term costs substantiates the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states Eva's main concern is avoiding higher long-term ownership costs and wanting reliability and competitive long-term costs rather than initial luxury appeal. The cited evidence shows Eva asking about reliability while comparing the pre-owned program to others, and Nora's response explicitly contrasts with Luxury Auto Group and emphasizes competitive long-term costs. Together these support the gold answer's claims about reliability concern, long-term cost focus, and the competitor comparison. The 'rather than initial luxury appeal' framing is a reasonable inference from the emphasis on reliability and long-term costs over appearance, and no contradicting evidence is present."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-b46a3ab7723fada3",
+    "question": "How important is post-purchase support to Olivia Parker, and what did Emily say makes AutoElite's extended warranties flexible?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) How important post-purchase support is to Olivia Parker; 2) what Emily said makes AutoElite's extended warranties flexible.",
+        "relationship": "Two independent lookups (a customer priority and a product feature) joined only by the same conversation.",
+        "reason": "The customer's attitude toward post-purchase support and the flexibility of extended warranties are separate information needs; the warranty feature does not respond to or elaborate the support-priority question, so this is two unrelated fact lookups tied to the same call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two facts from a single call: Olivia's stated importance of post-purchase support and Emily's explanation of warranty flexibility. The gold answer accurately reflects Olivia's 'very important\u2026 efficiently and by experts' and Emily's 'adapt as industry standards evolve\u2026 transparency\u2026 fewer surprises.' No locator preamble, no leakage, no unsupported claims. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Olivia Parker stating post-purchase support is 'very important' and that she wants issues 'dealt with efficiently and by experts,' which matches the answer_claim exactly."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Emily Jackson's quote explicitly states warranty plans 'adapt as industry standards evolve' and are 'laid out with transparency in mind,' adding 'fewer surprises down the road.' This fully supports the claim about flexibility, transparency, and fewer surprises."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states post-purchase support is very important to Olivia and she wants issues handled efficiently by experts (supported by index 0), and that Emily said warranties adapt as industry standards evolve, are laid out transparently, with fewer surprises (supported by index 1). All factual claims in the gold_answer are covered by the two cited evidence items."
+      }
+    }
+  }
+]

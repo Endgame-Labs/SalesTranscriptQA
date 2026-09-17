@@ -1,0 +1,752 @@
+[
+  {
+    "job_id": "c38b4285e5e8e956bfa17fa0c9b983a44f88cc2caff756fe40ced4be27954bc2",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SxwNIAS"
+    ],
+    "status": "accepted",
+    "question": "What concern did Zara Ahmed raise about how TechPulse's security focus might affect integration, and how did Jaemin respond?",
+    "gold_answer": "She worried security compliance would slow integration; Jaemin said implementation is streamlined for quick deployment with support-team backing for seamless integration.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SxwNIAS",
+        "answer_claim": "Zara asked how the security focus doesn't slow down the integration process",
+        "kind": "dialogue",
+        "line_start": 11,
+        "line_end": 12,
+        "quote": "[2023-09-05T10:48:55] Zara Ahmed: Great to hear. We like that both TechPulse and NanoDesign Systems emphasize future-forward solutions. But I do have a concern; I'm curious how your focus on security doesn\u2019t slow down the integration process?",
+        "start": 2351,
+        "end": 2593
+      },
+      {
+        "call_id": "b2b:a05Wt000003SxwNIAS",
+        "answer_claim": "Jaemin said implementation processes are streamlined for quick deployment with support team backing",
+        "kind": "dialogue",
+        "line_start": 12,
+        "line_end": 13,
+        "quote": "[2023-09-05T10:49:15] Jaemin Park: I\u2019m glad you brought that up. While security is paramount, our implementation processes are streamlined to ensure quick deployment. Our support team backs this up to facilitate as seamless an integration as possible.",
+        "start": 2594,
+        "end": 2845
+      }
+    ],
+    "question_id": "b2b-single_call-c38b4285e5e8e956",
+    "candidate": {
+      "question": "What concern did Zara Ahmed raise about how TechPulse's security focus might affect integration, and how did Jaemin respond?",
+      "gold_answer": "She worried security compliance would slow integration; Jaemin said implementation is streamlined for quick deployment with support-team backing for seamless integration.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SxwNIAS",
+          "answer_claim": "Zara asked how the security focus doesn't slow down the integration process",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-09-05T10:48:55] Zara Ahmed: Great to hear. We like that both TechPulse and NanoDesign Systems emphasize future-forward solutions. But I do have a concern; I'm curious how your focus on security doesn\u2019t slow down the integration process?",
+          "start": 2351,
+          "end": 2593
+        },
+        {
+          "call_id": "b2b:a05Wt000003SxwNIAS",
+          "answer_claim": "Jaemin said implementation processes are streamlined for quick deployment with support team backing",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2023-09-05T10:49:15] Jaemin Park: I\u2019m glad you brought that up. While security is paramount, our implementation processes are streamlined to ensure quick deployment. Our support team backs this up to facilitate as seamless an integration as possible.",
+          "start": 2594,
+          "end": 2845
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Zara Ahmed raised a concern about whether TechPulse's focus on security might slow down the integration process. Jaemin responded by saying that while security is paramount, their implementation processes are streamlined to ensure quick deployment, and their support team facilitates seamless integration.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported by quoted dialogue lines: Zara's concern (10:48:55) about security slowing integration and Jaemin's response (10:49:15) about streamlined implementation and support-team backing. The question is a realistic sales-call inquiry, names participants appropriately, and does not leak the answer. The independent answer semantically matches the gold. No-context answers ('UNKNOWN') fail to answer, and the question requires both the concern and the response facts from the same call, so both calls are necessary and single-call ablations cannot answer the full question."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SxwNIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2PjIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any person named Zara Ahmed, any company named TechPulse, any person named Jaemin, or any discussion of a security focus affecting integration. The only call provided is between Isabella Rossi (Tech Solutions) and Zara Malik (TechWave Ltd) discussing SimulateX Edge, CloudLink Designer, and CircuitSync Pro. None of the named entities or the specific concern/response described in the question appear in the source material.",
+              "evidence": [],
+              "reason": "The question asks about Zara Ahmed raising a concern about TechPulse's security focus affecting integration and Jaemin's response. The sole source call involves Zara Malik (not Zara Ahmed) at TechWave Ltd (not TechPulse) speaking with Isabella Rossi (not Jaemin). There is no mention of security focus, integration concerns related to security, or any person named Jaemin. Therefore no complete answer can be constructed from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqZrIAK",
+              "b2b:a05Wt000003Su40IAC",
+              "b2b:a05Wt000003SzV3IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Zara Ahmed does not appear in any of the provided call transcripts. All three calls involve Jaemin Park speaking with Kayla Adebayo of EcoVision Engineering. Because the question specifically asks about a concern raised by Zara Ahmed regarding TechPulse's security focus affecting integration and Jaemin's response to her, and no such person or exchange exists in the sources, the question cannot be answered.",
+              "evidence": [],
+              "reason": "The named individual 'Zara Ahmed' is absent from every transcript. The only contact present is Kayla Adebayo. Since the question requires facts attributed to the exact named person Zara Ahmed, and no source supports any statement by or about her, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrcQIAS",
+              "b2b:a05Wt000003SrhKIAS",
+              "b2b:a05Wt000003SvhgIAC",
+              "b2b:a05Wt000003SxzfIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about 'Zara Ahmed' and 'Jaemin,' but neither name appears in any of the provided call transcripts. The contact in all four calls is Zara Mohsin, and the TechPulse Solutions representative is Jo\u00e3o Pereira. Because the exact named individuals in the question do not match any person in the sources, no answer can be provided about a concern raised by Zara Ahmed or a response from Jaemin.",
+              "evidence": [],
+              "reason": "The sources contain calls between Zara Mohsin and Jo\u00e3o Pereira only. No person named 'Zara Ahmed' or 'Jaemin' appears in any transcript. Per the instructions, a different person cannot answer a question about the exact named individuals requested. Therefore the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuIYIA0",
+              "b2b:a05Wt000003Sw2bIAC",
+              "b2b:a05Wt000003SzTUIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Zara Ahmed does not appear in any of the provided call transcripts. The only contact across all three calls is Emily Johnson of TrueNorth Technologies. Therefore, no concern raised by Zara Ahmed about TechPulse's security focus affecting integration, nor any response from Jaemin to such a concern, can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Zara Ahmed's concern and Jaemin's response. None of the three provided calls (b2b:a05Wt000003SuIYIA0, b2b:a05Wt000003Sw2bIAC, b2b:a05Wt000003SzTUIA0) involve Zara Ahmed. All calls are between Jaemin Park and Emily Johnson. Since the exact named person (Zara Ahmed) is absent from every source, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv4yIAC",
+              "b2b:a05Wt000003SxBZIA0",
+              "b2b:a05Wt000003T0m5IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Zara Ahmed appears in any of the provided call transcripts. The only contact on all three calls is Mariko Watanabe of TrueNorth Technologies, speaking with Jaemin Park of TechPulse Solutions. Therefore, no concern raised by Zara Ahmed about TechPulse's security focus affecting integration, nor any response by Jaemin to such a concern, can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Zara Ahmed's concern and Jaemin's response. None of the three call transcripts (b2b:a05Wt000003Sv4yIAC, b2b:a05Wt000003SxBZIA0, b2b:a05Wt000003T0m5IAC) include any participant named Zara Ahmed. The only contact present is Mariko Watanabe. Since the exact named person (Zara Ahmed) does not appear, the requested fact cannot be supported, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxQ7IAK",
+              "b2b:a05Wt000003T15XIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Zara Ahmed does not appear in either of the provided call transcripts. The only contact in both calls is Liam Kwong of TerraForm Engineering, speaking with Jaemin Park of TechPulse Solutions. No concern raised by Zara Ahmed about TechPulse's security focus affecting integration is recorded in the sources, and therefore no response from Jaemin to such a concern can be identified.",
+              "evidence": [],
+              "reason": "The question asks specifically about Zara Ahmed's concern and Jaemin's response to it. Neither call transcript contains any mention of Zara Ahmed. The participants are Jaemin Park and Liam Kwong only. Since the exact named person (Zara Ahmed) is absent from all sources, no fact about her concern or Jaemin's reply to her can be supported. The draft extraction correctly identifies this gap."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv1rIAC",
+              "b2b:a05Wt000003SwdjIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any person named Zara Ahmed. Both calls are between Jaemin Park and Maria Sanchez of GreenTech Dynamics. There is no discussion in which Zara Ahmed raises a concern about TechPulse's security focus affecting integration, nor any response from Jaemin to such a concern. The question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "No call transcript includes a participant named Zara Ahmed. The only contact in both calls is Maria Sanchez. While Jaemin does mention TechPulse's 'superior security compliance' in the second call (line 8), this is in response to Maria Sanchez's comment about flexibility, not a concern raised by Zara Ahmed about security affecting integration. Since the exact named person (Zara Ahmed) and the specific concern described in the question do not appear in any source, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkeIAC",
+              "b2b:a05Wt000003SvoBIAS",
+              "b2b:a05Wt000003T3dYIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Zara Ahmed does not appear in any of the provided call transcripts or metadata. All three calls are between Jaemin Park and Samuel Okafor of TerraForm Engineering. There is no record of Zara Ahmed raising a concern about TechPulse's security focus affecting integration, nor any response from Jaemin to such a concern.",
+              "evidence": [],
+              "reason": "The question asks about a concern raised by Zara Ahmed and Jaemin's response to her. However, none of the three provided calls involve Zara Ahmed. The contact in all calls is Samuel Okafor (contact_id 003Wt00000JqmDmIAJ) at TerraForm Engineering. Since the exact named person (Zara Ahmed) is absent from all sources, no facts about her concern or Jaemin's response to her can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sw7RIAS",
+              "b2b:a05Wt000003Sx0FIAS",
+              "b2b:a05Wt000003SyArIAK",
+              "b2b:a05Wt000003SyyqIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No call in the provided transcripts involves a person named Zara Ahmed. The only contact across all four calls is Fatima Rahman of AgroSmart Innovations. While security and integration topics are discussed (e.g., data security at lines 11\u201312 of call b2b:a05Wt000003Sx0FIAS and security protocols at lines 8\u201310 of call b2b:a05Wt000003SyyqIAC), these are raised by Fatima Rahman, not Zara Ahmed. Therefore, the question's named-person scope (Zara Ahmed) cannot be satisfied from the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about a concern raised by Zara Ahmed regarding TechPulse's security focus affecting integration, and how Jaemin responded. None of the four provided call transcripts include a participant named Zara Ahmed. All calls are between Jaemin Park and Fatima Rahman. Since the exact named person (Zara Ahmed) does not appear in any source, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxoGIAS",
+              "b2b:a05Wt000003T2ESIA0",
+              "b2b:a05Wt000003T4JSIA0",
+              "b2b:a05Wt000003T4JTIA0",
+              "b2b:a05Wt000003T4XxIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Zara Ahmed appears in any of the provided call transcripts or metadata. All five calls are between Jaemin Park and Amina Chaudhry of TerraForm Engineering. Therefore, no concern raised by Zara Ahmed about TechPulse's security focus affecting integration, nor any response from Jaemin to such a concern, can be found in the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Zara Ahmed's concern and Jaemin's response. The only contact in all provided calls is Amina Chaudhry. Since Zara Ahmed is not present in any source, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx59IAC",
+              "b2b:a05Wt000003SxwNIAS",
+              "b2b:a05Wt000003Sy2tIAC",
+              "b2b:a05Wt000003T29aIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the 2023-09-05 call, Zara Ahmed raised the concern that TechPulse's focus on security might slow down the integration process. Jaemin responded that while security is paramount, their implementation processes are streamlined to ensure quick deployment, and their support team backs this up to facilitate as seamless an integration as possible.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SxwNIAS",
+                  "line_start": 11,
+                  "line_end": 13,
+                  "quote": "[2023-09-05T10:48:55] Zara Ahmed: Great to hear. We like that both TechPulse and NanoDesign Systems emphasize future-forward solutions. But I do have a concern; I'm curious how your focus on security doesn\u2019t slow down the integration process?\n[2023-09-05T10:49:15] Jaemin Park: I\u2019m glad you brought that up. While security is paramount, our implementation processes are streamlined to ensure quick deployment. Our support team backs this up to facilitate as seamless an integration as possible."
+                }
+              ],
+              "reason": "Line 11 of call b2b:a05Wt000003SxwNIAS contains Zara Ahmed's exact concern: 'I'm curious how your focus on security doesn't slow down the integration process?' Line 12 contains Jaemin's response: 'While security is paramount, our implementation processes are streamlined to ensure quick deployment. Our support team backs this up to facilitate as seamless an integration as possible.' Both the concern and the response are fully captured in these two lines, with line 13 being Zara's acknowledgment. The draft extraction is accurate and complete."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: Zara Ahmed's concern was that TechPulse's security focus/compliance might slow down the integration process, and Jaemin responded that implementation processes are streamlined for quick deployment with support-team backing to ensure seamless integration. Answer A adds the date and slightly more phrasing, but the requested facts are identical in substance."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sw7WIAS",
+              "b2b:a05Wt000003T0PZIA0",
+              "b2b:a05Wt000003T1AOIA0",
+              "b2b:a05Wt000003T38sIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be answered from the provided sources. The contact in all transcripts is Zara Mohsin, not Zara Ahmed, and no person named Jaemin appears in any call. Furthermore, no transcript contains a concern that TechPulse's security focus might negatively affect integration. Zara Mohsin did raise data security as a compliance priority (call b2b:a05Wt000003T0PZIA0, line 7), and Luis Rodriguez responded about robust security compliance and SecureData Nexus (lines 8, 10), but this was framed as a positive differentiator, not as a concern about security impeding integration. The named individuals (Zara Ahmed, Jaemin) and the specific concern (security focus affecting integration) do not exist in the source data.",
+              "evidence": [],
+              "reason": "The question asks about 'Zara Ahmed' and 'Jaemin,' neither of whom appear in any transcript. The actual contact is Zara Mohsin and the salesperson is Luis Rodriguez. Additionally, no call contains a concern that TechPulse's security focus might affect integration; security was discussed positively as a compliance strength. Because the exact named people and the specific event scope are absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StcgIAC",
+              "b2b:a05Wt000003Sx58IAC",
+              "b2b:a05Wt000003SzAJIA0",
+              "b2b:a05Wt000003T1zuIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "",
+              "evidence": [],
+              "reason": "The question asks how 'Jaemin' responded to Zara Ahmed's concern. While Zara Ahmed did raise a concern about security focus limiting integration/rapid deployment (line 7 of call b2b:a05Wt000003StcgIAC, referencing Quantum Circuits Inc.'s security focus limiting rapid deployment of new tech trends), the person who responded was Alejandro Ramirez, not Jaemin. No individual named Jaemin appears in any of the provided call transcripts. The draft extraction incorrectly equates Jaemin with Alejandro Ramirez. Since the question specifically asks about Jaemin's response and no such person exists in the sources, the answer cannot be completed for the exact named individual requested."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx0JIAS",
+              "b2b:a05Wt000003SxMrIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Zara Ahmed does not appear in either call transcript. The only contact in both calls is Ibrahim Hassan of OmegaDesign Labs. There is no mention of Zara Ahmed raising a concern about TechPulse's security focus affecting integration, nor any response from Jaemin to such a concern. The sources do not contain the requested information.",
+              "evidence": [],
+              "reason": "The question asks about a concern raised by Zara Ahmed regarding TechPulse's security focus and its effect on integration, and Jaemin's response. Neither call transcript includes Zara Ahmed as a participant or mentions her by name. The contact in both calls is Ibrahim Hassan. While SecureFlow Suite (a security product) is mentioned, no one raises a concern about security focus negatively affecting integration. The draft extraction correctly identifies that the answer is not present in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxJjIAK",
+              "b2b:a05Wt000003T3wsIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be answered as stated because the named individuals do not match the sources. The contact in both calls is Zara Ali (not Zara Ahmed), and the TechPulse representative is Luis Rodriguez (no one named Jaemin appears in any transcript). While the transcripts contain a related exchange where Zara Ali asked whether implementing the solutions would disrupt existing workflows and Luis Rodriguez responded that integration was streamlined for minimal disruption, there is no concern specifically about TechPulse's 'security focus' affecting integration, and no person named Jaemin is present.",
+              "evidence": [],
+              "reason": "The question asks about 'Zara Ahmed' and 'Jaemin,' but the sources only contain 'Zara Ali' and 'Luis Rodriguez.' Additionally, while Zara Ali raised a general concern about workflow disruption (call b2b:a05Wt000003T3wsIAC, lines 11-12), she did not specifically raise a concern about TechPulse's security focus affecting integration. No person named Jaemin appears in any provided call. Since the exact named people and the specific concern described in the question are absent from the sources, the answer is incomplete."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both quotes directly support the question: Zara's concern about security slowing integration and Jaemin's response about streamlined implementation and support-team backing are verbatim in the same call."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What concern did Zara Ahmed raise about how TechPulse's security focus might affect integration",
+            "explicitly_requested": true,
+            "required_fact": "She was concerned that TechPulse's focus on security might slow down the integration process.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SxwNIAS"
+            ]
+          },
+          {
+            "question_span": "how did Jaemin respond?",
+            "explicitly_requested": true,
+            "required_fact": "Jaemin responded that while security is paramount, their implementation processes are streamlined for quick deployment, with their support team backing this up to facilitate as seamless an integration as possible.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SxwNIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for Zara's concern and Jaemin's response. The gold answer contains exactly those two facts, no extras. The independent answer covers both. The obligations correctly extract the two required facts from the single call. The call is the only source and supplies both facts.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "She worried security compliance would slow integration",
+            "question_span": "What concern did Zara Ahmed raise about how TechPulse's security focus might affect integration",
+            "required_by_question": true
+          },
+          {
+            "claim": "Jaemin said implementation is streamlined for quick deployment with support-team backing for seamless integration",
+            "question_span": "how did Jaemin respond?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "29e7f551028e2536e7a02389893df6a055ea2db00e5ac10ff75ce10fc872fd55",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T0mBIAS"
+    ],
+    "status": "accepted",
+    "question": "What next step did Aiden Lee agree to for evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks?",
+    "gold_answer": "Aiden wants to arrange a product demo soon so his team can assess the solutions' applicability to MetroGrid's projects; Pedro will follow up by email to schedule it.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T0mBIAS",
+        "answer_claim": "Aiden is interested in arranging a demo soon for his team to assess applicability to MetroGrid projects.",
+        "kind": "dialogue",
+        "line_start": 13,
+        "line_end": 14,
+        "quote": "[2022-04-14T11:04:30] Aiden Lee: That would be helpful. We're interested in arranging a demo soon. I'd like my team to assess the specifics and the applicability to our projects at MetroGrid.",
+        "start": 3004,
+        "end": 3195
+      },
+      {
+        "call_id": "b2b:a05Wt000003T0mBIAS",
+        "answer_claim": "Pedro will follow up with an email to find a time that works best for Aiden's team.",
+        "kind": "dialogue",
+        "line_start": 14,
+        "line_end": 15,
+        "quote": "[2022-04-14T11:04:47] Pedro Alvarez: Absolutely. Let\u2019s pencil that in. I'll follow up with an email to find a time that works best for your team. Just before we wrap up, do you have any more questions or areas you want us to cover?",
+        "start": 3196,
+        "end": 3427
+      }
+    ],
+    "question_id": "b2b-single_call-29e7f551028e2536",
+    "candidate": {
+      "question": "What next step did Aiden Lee agree to for evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks?",
+      "gold_answer": "Aiden wants to arrange a product demo soon so his team can assess the solutions' applicability to MetroGrid's projects; Pedro will follow up by email to schedule it.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T0mBIAS",
+          "answer_claim": "Aiden is interested in arranging a demo soon for his team to assess applicability to MetroGrid projects.",
+          "kind": "dialogue",
+          "line_start": 13,
+          "line_end": 14,
+          "quote": "[2022-04-14T11:04:30] Aiden Lee: That would be helpful. We're interested in arranging a demo soon. I'd like my team to assess the specifics and the applicability to our projects at MetroGrid.",
+          "start": 3004,
+          "end": 3195
+        },
+        {
+          "call_id": "b2b:a05Wt000003T0mBIAS",
+          "answer_claim": "Pedro will follow up with an email to find a time that works best for Aiden's team.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2022-04-14T11:04:47] Pedro Alvarez: Absolutely. Let\u2019s pencil that in. I'll follow up with an email to find a time that works best for your team. Just before we wrap up, do you have any more questions or areas you want us to cover?",
+          "start": 3196,
+          "end": 3427
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Aiden Lee agreed to arrange a product demo for the CircuitAI Innovator and QuantumPCB Modeler, with Pedro Alvarez to follow up via email to schedule a time for Aiden's team.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both gold claims are directly supported by quoted dialogue lines 13-15: Aiden says 'We're interested in arranging a demo soon... applicability to our projects at MetroGrid' and Pedro says 'I'll follow up with an email to find a time that works best for your team.' The question is a realistic sales follow-up need, names the contact and products without leaking the answer, and the independent answer matches the gold semantically. No-context answers ('UNKNOWN') fail to answer. Both facts (Aiden's agreement to the demo and Pedro's email follow-up) are distinct and necessary; the single-call ablation is empty, so it cannot answer the full question."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T0mBIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwdrIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler. The only call transcript is between Kimberly Lee (Tech Solutions) and Alice Smith (Precision Circuit Systems) discussing DesignWave Automation. Therefore, no next step agreed to by Aiden Lee for evaluating those products for MetroGrid Networks can be determined.",
+              "evidence": [],
+              "reason": "The question asks about Aiden Lee, MetroGrid Networks, CircuitAI Innovator, and QuantumPCB Modeler. None of these entities appear in the provided call transcript. The sole call involves Kimberly Lee and Alice Smith discussing DesignWave Automation for Precision Circuit Systems. There is no evidence to support any answer regarding the requested people, account, products, or event scope."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1QYIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source does not contain any information about Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler. The only call transcript involves Kimberly Lee and Hiroyuki Saito of Osaka Digital Solutions discussing CollabDesign Studio, EduTech Lab, and CloudLink Designer. Therefore, the next step Aiden Lee agreed to for evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks cannot be determined from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003T1QYIA0) is between Kimberly Lee and Hiroyuki Saito of Osaka Digital Solutions, discussing entirely different products (CollabDesign Studio, EduTech Lab, CloudLink Designer). There is no mention of Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler anywhere in the provided sources. The draft extraction correctly identifies this absence. No facts relevant to the question exist in the data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4ZgIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains no information about Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler. The only call transcript involves Kimberly Lee speaking with Amelia Chen of NeoGreen Enterprises about VeriSim Express and CloudInnovate Space. Therefore, no next step agreed to by Aiden Lee for evaluating those products for MetroGrid Networks can be identified.",
+              "evidence": [],
+              "reason": "The single call (b2b:a05Wt000003T4ZgIAK) features Kimberly Lee and Amelia Chen discussing VeriSim Express and CloudInnovate Space for NeoGreen Enterprises. None of the named entities in the question\u2014Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler\u2014appear anywhere in the source material. The draft extraction correctly identifies this absence. No facts supporting the requested answer exist in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Stw1IAC",
+              "b2b:a05Wt000003Svg8IAC",
+              "b2b:a05Wt000003T0XfIAK",
+              "b2b:a05Wt000003T0uEIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "aiden lee"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T10lIAC",
+              "b2b:a05Wt000003T1iFIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about Aiden Lee, CircuitAI Innovator, QuantumPCB Modeler, or MetroGrid Networks. The calls involve Aiden Sullivan of TerraSync Solutions discussing TechPulse Solutions' EcoPCB Creator and AIOptics Vision with Terek Al-Farsi. No next step for the specifically named person, products, or account can be found.",
+              "evidence": [],
+              "reason": "The question asks about Aiden Lee evaluating CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks. Neither call transcript mentions any of these entities. The contacts are Aiden Sullivan (not Aiden Lee), the account is TerraSync Solutions (not MetroGrid Networks), and the products discussed are EcoPCB Creator and AIOptics Vision (not CircuitAI Innovator or QuantumPCB Modeler). Therefore, no complete answer can be provided from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Suk4IAC",
+              "b2b:a05Wt000003SyaeIAC",
+              "b2b:a05Wt000003T06DIAS",
+              "b2b:a05Wt000003T21ZIAS",
+              "b2b:a05Wt000003T3SEIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Aiden Lee, MetroGrid Networks, or the products CircuitAI Innovator and QuantumPCB Modeler. All five transcripts feature Maya Johnson of TechPulse Solutions speaking with Chin Ho Lee of TerraSync Solutions about the EcoTech Partnership Enhancement opportunity (products: EcoPCB Creator, AIOptics Vision, OptiEnergy Suite, SecuManage Pro, SecureAnalytics Pro). Therefore, no next step agreed to by Aiden Lee for evaluating those products for MetroGrid Networks can be determined from the available evidence.",
+              "evidence": [],
+              "reason": "The question asks about a specific salesperson (Aiden Lee), a specific account (MetroGrid Networks), and specific products (CircuitAI Innovator and QuantumPCB Modeler). None of these named entities appear anywhere in the five provided call transcripts. The calls exclusively involve Maya Johnson and Chin Ho Lee discussing TerraSync Solutions and different products. Since no relevant source material exists, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzgOIAS",
+              "b2b:a05Wt000003T0nlIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention a product called 'CircuitAI Innovator' at all, nor do they record any next step Aiden Lee agreed to specifically for evaluating the CircuitAI Innovator and QuantumPCB Modeler together. The calls only discuss PulseSim Pro, SecureFlow Suite, QuantumPCB Modeler, and AIOptics Vision. While a product demo and a proposal review the following week are mentioned as next steps, these are not tied to the specific product pair 'CircuitAI Innovator and QuantumPCB Modeler' as requested.",
+              "evidence": [],
+              "reason": "The question asks about a next step for evaluating 'CircuitAI Innovator and QuantumPCB Modeler.' No call transcript mentions 'CircuitAI Innovator' by name. QuantumPCB Modeler appears in the second call (line 8 and line 12) but only alongside PulseSim Pro, SecureFlow Suite, and AIOptics Vision\u2014not paired with CircuitAI Innovator. Because the exact named product 'CircuitAI Innovator' is absent from all sources, no complete answer can be provided for the specific product pair requested."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SswfIAC",
+              "b2b:a05Wt000003St35IAC",
+              "b2b:a05Wt000003SvUhIAK",
+              "b2b:a05Wt000003SzLNIA0",
+              "b2b:a05Wt000003SzMzIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any information about Aiden Lee, MetroGrid Networks, or a next step agreed to by Aiden Lee for evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks. All calls involve Kimberly Lee and Isabelle Leclerc of Quantum Innovations Inc. The CircuitAI Innovator is mentioned only as a product in a contract for Quantum Innovations Inc., and the QuantumPCB Modeler is discussed in the context of Quantum Innovations Inc.'s needs. No person named Aiden Lee or account named MetroGrid Networks appears in any source.",
+              "evidence": [],
+              "reason": "The question asks about Aiden Lee and MetroGrid Networks, but neither entity appears in any of the five call transcripts. All calls are between Kimberly Lee (TechPulse Solutions) and Isabelle Leclerc (Quantum Innovations Inc.). While the CircuitAI Innovator and QuantumPCB Modeler are mentioned, they are discussed exclusively in the context of Quantum Innovations Inc., not MetroGrid Networks. No next step agreed to by Aiden Lee for evaluating these products for MetroGrid Networks exists in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SryyIAC",
+              "b2b:a05Wt000003SyE4IAK",
+              "b2b:a05Wt000003Sz3gIAC",
+              "b2b:a05Wt000003T02vIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Aiden Lee, no mention of the product CircuitAI Innovator, and no account named MetroGrid Networks. All four calls are between Giuseppe Romano and Ethan Lee of EcoTech Manufacturing, discussing products such as SecureFlow Suite, CloudLink Designer, QuantumPCB Modeler, and PulseSim Pro. Therefore, no next step agreed to by Aiden Lee for evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks can be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about a specific person (Aiden Lee), a specific product (CircuitAI Innovator), and a specific account (MetroGrid Networks). None of these entities appear anywhere in the four provided call transcripts. The calls involve Ethan Lee (not Aiden Lee) at EcoTech Manufacturing (not MetroGrid Networks), and while QuantumPCB Modeler is mentioned, CircuitAI Innovator is never referenced. Because every requested fact is unsupported, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkRIAS",
+              "b2b:a05Wt000003Sy4QIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any interaction involving Aiden Lee or MetroGrid Networks, nor any discussion of evaluating the CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks. The two calls feature Fatou Ndiaye of TechPulse Solutions speaking with Ethan Lee of EcoTech Manufacturing about products such as SecureFlow Suite, CloudLink Designer, CircuitAI Innovator, EcoPCB Creator, and OptiPower Manager. No next step agreed to by Aiden Lee for MetroGrid Networks can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Aiden Lee and MetroGrid Networks, but neither name appears in any of the provided call transcripts. The calls involve Ethan Lee (not Aiden Lee) at EcoTech Manufacturing (not MetroGrid Networks). While the CircuitAI Innovator is mentioned once in passing (call b2b:a05Wt000003SrkRIAS, line 8), it is in the context of EcoTech Manufacturing, and the QuantumPCB Modeler is never mentioned at all. Therefore, no facts supporting the requested next step for the exact named person, account, and products exist in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7mIAC",
+              "b2b:a05Wt000003SvBPIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any information about Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler. Both calls involve Ayumi Shimizu of TechPulse Solutions speaking with Chin Lee of InnoSphere Labs about products such as EcoPCB Creator, AI DesignShift, OptiPower Manager, and SecureFlow Suite. No next step for the named person, account, or products can be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Aiden Lee's agreed next step for evaluating CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks. Neither call transcript mentions Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler. The calls exclusively involve Chin Lee at InnoSphere Labs and TechPulse Solutions products. Therefore, no supporting evidence exists in the provided sources to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0mBIAS",
+              "b2b:a05Wt000003T1F9IAK",
+              "b2b:a05Wt000003T1rvIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Aiden Lee agreed to a product demo of the CircuitAI Innovator and QuantumPCB Modeler for his MetroGrid team. On the 2022-04-14 call he expressed interest in arranging a demo soon so his team could assess the specifics and applicability to MetroGrid projects, and Pedro agreed to follow up by email to find a suitable time. On the 2022-04-29 call the demo was confirmed for the following Thursday morning, with Pedro to email the agenda and demo details and Aiden to inform his team.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T0mBIAS",
+                  "line_start": 12,
+                  "line_end": 16,
+                  "quote": "[2022-04-14T11:04:12] Pedro Alvarez: I\u2019m glad to hear that. To help you make a more informed decision, I\u2019d suggest our upcoming product demo could be a great opportunity to see these features in action and really experience them firsthand.\n[2022-04-14T11:04:30] Aiden Lee: That would be helpful. We're interested in arranging a demo soon. I'd like my team to assess the specifics and the applicability to our projects at MetroGrid.\n[2022-04-14T11:04:47] Pedro Alvarez: Absolutely. Let\u2019s pencil that in. I'll follow up with an email to find a time that works best for your team. Just before we wrap up, do you have any more questions or areas you want us to cover?\n[2022-04-14T11:05:05] Aiden Lee: No more questions for now, Pedro. Just excited to see what the demo brings and how we can move forward. Thanks for all the information; it's been enlightening."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T1F9IAK",
+                  "line_start": 18,
+                  "line_end": 22,
+                  "quote": "[2022-04-29T09:04:05] Pedro Alvarez: Excellent. To tie it all together, shall we schedule the demo to tailor it to MetroGrid's needs, focusing on these aspects?\n[2022-04-29T09:04:15] Aiden Lee: Yes, let's plan for that. When would be convenient for you to set it up?\n[2022-04-29T09:04:25] Pedro Alvarez: How about next Thursday morning? We can have our technical team there ready to showcase everything.\n[2022-04-29T09:04:35] Aiden Lee: That works for us. Please send across the details, and I'll inform our team."
+                }
+              ],
+              "reason": "The 2022-04-14 call (lines 12-15) shows Pedro suggesting a product demo and Aiden agreeing, stating his team wants to assess specifics and applicability to MetroGrid projects, with Pedro to follow up by email. The 2022-04-29 call (lines 18-21) confirms the demo was scheduled for next Thursday morning, with Pedro to email the agenda and demo details and Aiden to inform his team. Both calls involve Aiden Lee at MetroGrid Networks discussing CircuitAI Innovator and QuantumPCB Modeler, fully answering the question."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the same next step: Aiden Lee agreed to a product demo of the CircuitAI Innovator and QuantumPCB Modeler so his MetroGrid team could assess applicability to their projects, with Pedro following up by email to schedule it. Answer A adds extra scheduling details (specific dates, confirmed Thursday morning, agenda email, Aiden informing his team), but these are additional unrequested details rather than conflicting facts. The core requested fact\u2014the agreed next step\u2014is the same in both."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwfJIAS",
+              "b2b:a05Wt000003SwfKIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention products named 'CircuitAI Innovator' or 'QuantumPCB Modeler' in any call involving Aiden Lee and MetroGrid Networks. The two calls discuss other TechPulse products (EcoPCB Creator, CircuitMaster Analyzer, SecureFlow Suite, CloudLink Designer, DesignEdge Pro) and agree to a discovery meeting (2022 call) and a product demonstration scheduling email (2023 call), but no next step is tied to the specifically named products in the question.",
+              "evidence": [],
+              "reason": "Neither call transcript contains any reference to 'CircuitAI Innovator' or 'QuantumPCB Modeler'. The products discussed are EcoPCB Creator, CircuitMaster Analyzer, SecureFlow Suite, CloudLink Designer, and DesignEdge Pro. Since the question asks about a next step for evaluating those two specific products, and no such products appear in the sources, the answer cannot be completed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Svg7IAC",
+              "b2b:a05Wt000003SvxkIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not mention products named 'CircuitAI Innovator' or 'QuantumPCB Modeler', nor any next step Aiden Lee agreed to regarding them. The calls discuss different products (AI Cirku-Tech, SecureFlow Suite, OptiPower Manager, CloudLink Designer), with agreed next steps being a tailored demo/pilot exploration of AI Cirku-Tech and a future meeting including Kevin and Lisa \u2014 but nothing about the two products named in the question.",
+              "evidence": [],
+              "reason": "Neither call transcript contains any reference to 'CircuitAI Innovator' or 'QuantumPCB Modeler'. The products discussed are AI Cirku-Tech, SecureFlow Suite, OptiPower Manager, and CloudLink Designer. Since the question asks specifically about next steps for CircuitAI Innovator and QuantumPCB Modeler, and these products are never mentioned in any source, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvBRIA0",
+              "b2b:a05Wt000003SyECIA0",
+              "b2b:a05Wt000003T24mIAC",
+              "b2b:a05Wt000003T3TpIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Aiden Lee, CircuitAI Innovator, QuantumPCB Modeler, or MetroGrid Networks. All calls involve Aiden Sullivan of TerraSync Solutions discussing TechPulse products (AI Cirku-Tech, OptiPower Manager). No next step for the exact named person, products, or account can be identified.",
+              "evidence": [],
+              "reason": "The question asks about Aiden Lee evaluating CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks. None of these names appear in any of the four call transcripts. The calls feature Aiden Sullivan (not Aiden Lee) at TerraSync Solutions (not MetroGrid Networks) discussing AI Cirku-Tech and OptiPower Manager (not CircuitAI Innovator or QuantumPCB Modeler). Because the exact named people, products, and account are absent from all sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0slIAC",
+              "b2b:a05Wt000003T4TAIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Aiden Lee, the CircuitAI Innovator, the QuantumPCB Modeler, or MetroGrid Networks. The two calls involve Aiden Murphy of Innovatech Group discussing TechPulse Solutions products (CircuitSync Pro, OptiPower Max, CloudLink Designer, SecureFlow Suite, EcoPCB Creator) with Carmen Silva. No next step for the exact named person, products, or account can be identified.",
+              "evidence": [],
+              "reason": "The question asks about Aiden Lee, CircuitAI Innovator, QuantumPCB Modeler, and MetroGrid Networks. None of these entities appear in either call transcript. The calls reference Aiden Murphy (not Aiden Lee), Innovatech Group (not MetroGrid Networks), and TechPulse products such as CircuitSync Pro, OptiPower Max, CloudLink Designer, SecureFlow Suite, and EcoPCB Creator (not CircuitAI Innovator or QuantumPCB Modeler). Because the exact named people, products, and account are absent from all sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2hfIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about Aiden Lee, MetroGrid Networks, CircuitAI Innovator, or QuantumPCB Modeler. The only call transcript is between Diego Sanchez and Hwan Lee of DataStream Analytics, discussing TechPulse Solutions' SecureFlow Suite and CloudLink Designer. No next step for the named people, account, or products can be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about a next step agreed to by Aiden Lee for evaluating CircuitAI Innovator and QuantumPCB Modeler for MetroGrid Networks. The sole source call (b2b:a05Wt000003T2hfIAC) involves Diego Sanchez and Hwan Lee at DataStream Analytics discussing entirely different products (SecureFlow Suite, CloudLink Designer). None of the named entities (Aiden Lee, MetroGrid Networks, CircuitAI Innovator, QuantumPCB Modeler) appear anywhere in the provided transcripts, so no complete answer can be constructed."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "The question is factual, self-contained, and business-relevant. The dialogue directly supports the answer: Aiden agrees to arrange a demo soon for his team to assess applicability to MetroGrid projects (lines 13-14), and Pedro commits to following up by email to schedule it (lines 14-15). Both evidence quotes are necessary and distinct, and the answer is fully supported without unsupported conclusions."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What next step did Aiden Lee agree to for evaluating the CircuitAI Innovator and QuantumPCB Modeler",
+            "explicitly_requested": true,
+            "required_fact": "Aiden Lee agreed to arrange a product demo of the solutions, with Pedro to follow up by email to schedule a time for Aiden's team to assess them",
+            "source_call_ids": [
+              "b2b:a05Wt000003T0mBIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the next step Aiden Lee agreed to for evaluating the two solutions. The gold answer states Aiden wants to arrange a product demo soon and Pedro will follow up by email to schedule it. Both facts are directly requested by the question. The independent answer covers both facts. The obligation correctly captures the required facts and references the single call. The call contains the dialogue where Aiden agrees to the demo and Pedro offers to email. No extra unasked facts are present in the gold answer. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Aiden wants to arrange a product demo soon",
+            "question_span": "What next step did Aiden Lee agree to for evaluating the CircuitAI Innovator and QuantumPCB Modeler",
+            "required_by_question": true
+          },
+          {
+            "claim": "Pedro will follow up by email to schedule it",
+            "question_span": "What next step did Aiden Lee agree to for evaluating the CircuitAI Innovator and QuantumPCB Modeler",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]
