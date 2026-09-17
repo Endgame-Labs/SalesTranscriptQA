@@ -1,0 +1,422 @@
+[
+  {
+    "question_id": "b2b-multi_call-42908795d09231d1",
+    "question": "Customizability came up with Reza Mohammed at EcoWave Solutions in both calls. What specific flexibility did he say was important in the first call, and which products did Hana cite as customizable in the follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The specific flexibility Reza Mohammed said was important in the first call, and which products Hana cited as customizable in the follow-up call",
+        "relationship": "same business issue (customizability) discussed across two calls",
+        "reason": "Both parts concern the same topic\u2014customizability/flexibility\u2014raised with the same contact at EcoWave Solutions, making this a coherent two-call comparison rather than unrelated lookups joined by account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvCvIAK",
+                "fact": "Reza said flexibility in security protocols was important given EcoWave's specific policies.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention security protocols or Reza's specific policy needs; it focuses on power optimization and PCB design."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvEXIA0",
+                "fact": "Hana cited SecureFlow Suite and EcoPCB Creator as offering customizable options.",
+                "why_other_call_cannot_supply_it": "The first call does not list these products as customizable; it only mentions SecureFlow Suite's adaptability in general terms, not EcoPCB Creator."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: Reza's stated flexibility in the first call and Hana's cited customizable products in the follow-up. Each fact is only present in one call, and neither call alone provides both pieces. The first call contains Reza's security flexibility statement, while the second call contains the product list. Thus, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvCvIAK",
+                  "fact": "Reza said flexibility in security protocols was important given EcoWave's specific policies.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention security protocols or Reza's specific policy needs; it focuses on power optimization and PCB design."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvEXIA0",
+                  "fact": "Hana cited SecureFlow Suite and EcoPCB Creator as offering customizable options.",
+                  "why_other_call_cannot_supply_it": "The first call does not list these products as customizable; it only mentions SecureFlow Suite's adaptability in general terms, not EcoPCB Creator."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: Reza's stated flexibility in the first call and Hana's cited customizable products in the follow-up. Each fact is only present in one call, and neither call alone provides both pieces. The first call contains Reza's security flexibility statement, while the second call contains the product list. Thus, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvCvIAK",
+                "fact": "Reza said flexibility in security protocols was important because EcoWave's policies are quite specific.",
+                "why_other_call_cannot_supply_it": "The follow-up call never mentions security protocol flexibility; Reza only raises competitor customizability there."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvEXIA0",
+                "fact": "Hana cited SecureFlow Suite and EcoPCB Creator as products with customizable options.",
+                "why_other_call_cannot_supply_it": "In the first call Hana only mentions SecureFlow Suite's adaptability and never lists customizable products in response to a customizability question."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: Reza's specific flexibility concern (stated only in the first call) and Hana's list of customizable products (given only in the follow-up). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvCvIAK",
+                  "fact": "Reza said flexibility in security protocols was important because EcoWave's policies are quite specific.",
+                  "why_other_call_cannot_supply_it": "The follow-up call never mentions security protocol flexibility; Reza only raises competitor customizability there."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvEXIA0",
+                  "fact": "Hana cited SecureFlow Suite and EcoPCB Creator as products with customizable options.",
+                  "why_other_call_cannot_supply_it": "In the first call Hana only mentions SecureFlow Suite's adaptability and never lists customizable products in response to a customizability question."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: Reza's specific flexibility concern (stated only in the first call) and Hana's list of customizable products (given only in the follow-up). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "decision_criteria",
+        "locator_preamble": false,
+        "reason": "The question naturally identifies the account (EcoWave Solutions), contact (Reza Mohammed), and topic (customizability) across two calls. In call 1, Reza explicitly states 'flexibility in security protocols is important to us' given their specific policies, matching the gold answer. In call 2, Hana names 'SecureFlow Suite and EcoPCB Creator' as products with customizable options, also matching. Each source contributes an exclusive requested fact (call 1 \u2192 the specific flexibility need; call 2 \u2192 the product names), so both_sources_required is true. The answer contains exactly the two requested facts with no unasked extras. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Reza Mohammed stating 'Our policies are quite specific, so flexibility in security protocols is important to us,' which matches the answer_claim that their policies are specific and flexibility in security protocols is important."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Hana Kato explicitly naming 'SecureFlow Suite and EcoPCB Creator' as products that 'come with a range of customizable options,' directly supporting the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported by the cited evidence: (1) Index 0 confirms Reza said flexibility in security protocols was important given EcoWave's specific policies, and (2) Index 1 confirms Hana cited SecureFlow Suite and EcoPCB Creator as offering customizable options. The metadata confirms the correct account (EcoWave Solutions), contact (Reza Mohammed), and two separate calls on 2021-02-17 and 2021-02-19, consistent with 'first call' and 'follow-up.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-0582313fb2c834bc",
+    "question": "For Innovatech Group's EDA opportunity, what feedback did Mikhail Volkov's technical team give about TechPulse's products, and what business challenges did he later say TechPulse should address?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Mikhail Volkov's technical team's feedback on TechPulse's products and the business challenges he later said TechPulse should address, within Innovatech Group's EDA opportunity",
+        "relationship": "same evaluation thread: technical product feedback and the resulting business challenges belong to one ongoing opportunity assessment",
+        "reason": "Both parts concern the same EDA opportunity and form a coherent evaluation narrative\u2014technical assessment of products plus the business issues to address\u2014rather than two independent lookups joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": false,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": false,
+          "verdict": {
+            "necessary": false,
+            "exclusive_facts": [],
+            "reason": "The question asks for two pieces of information: technical team feedback and business challenges. Both are supplied by the second call (b2b:a05Wt000003T2eUIAS), which contains the technical team's feedback and Mikhail's stated business challenges. The first call only contains the business challenges, not the technical feedback. Since the second call alone provides all requested information, the two calls are not both necessary."
+          },
+          "schema_attempts": [
+            {
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: technical team feedback and business challenges. Both are supplied by the second call (b2b:a05Wt000003T2eUIAS), which contains the technical team's feedback and Mikhail's stated business challenges. The first call only contains the business challenges, not the technical feedback. Since the second call alone provides all requested information, the two calls are not both necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2eUIAS",
+                "fact": "Mikhail's technical team was impressed comparing performance features and noted TechPulse products integrate easily into their systems",
+                "why_other_call_cannot_supply_it": "The April 1 call only mentions he will get team feedback later; the team's actual feedback appears only in the March 15 call"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzTZIA0",
+                "fact": "Mikhail's biggest business hurdles are reducing time-to-market and managing prototype costs",
+                "why_other_call_cannot_supply_it": "The March 15 call only mentions reducing time-to-market as an aim; the explicit statement of both business challenges (including prototype costs) is made only in the April 1 call"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the technical team's product feedback and the business challenges to address. Each is supplied by a different call, and neither call contains both facts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2eUIAS",
+                  "fact": "Mikhail's technical team was impressed comparing performance features and noted TechPulse products integrate easily into their systems",
+                  "why_other_call_cannot_supply_it": "The April 1 call only mentions he will get team feedback later; the team's actual feedback appears only in the March 15 call"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzTZIA0",
+                  "fact": "Mikhail's biggest business hurdles are reducing time-to-market and managing prototype costs",
+                  "why_other_call_cannot_supply_it": "The March 15 call only mentions reducing time-to-market as an aim; the explicit statement of both business challenges (including prototype costs) is made only in the April 1 call"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the technical team's product feedback and the business challenges to address. Each is supplied by a different call, and neither call contains both facts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two distinct facts: (1) technical-team feedback on TechPulse products and (2) business challenges Mikhail later raised. Call b2b:a05Wt000003T2eUIAS (2022-03-15) contains the technical-team feedback ('impressed when comparing performance features' and 'integrate easily into our systems'). Call b2b:a05Wt000003SzTZIA0 (2022-04-01) contains Mikhail stating 'Our biggest hurdles are reducing time-to-market and managing prototype costs.' Each source contributes an exclusive requested fact; the gold answer accurately reflects both without adding unasked extras. The question is naturally scoped to a named account, opportunity, and contact, and a rep would plausibly want this information. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Mikhail Volkov on 2022-03-15 directly states: 'Our technical team was quite impressed when comparing performance features. They also mentioned that your products integrate easily into our systems, which is definitely a plus.' This fully supports the answer_claim about the technical team being impressed by performance features and noting easy integration."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Mikhail Volkov on 2022-04-01 directly states: 'Our biggest hurdles are reducing time-to-market and managing prototype costs.' This fully supports the answer_claim about Mikhail's biggest hurdles being reducing time-to-market and managing prototype costs."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items directly support the gold_answer. Evidence index 0 confirms the technical team was impressed comparing performance features and noted easy integration into their systems. Evidence index 1 confirms Mikhail's biggest hurdles are reducing time-to-market and managing prototype costs. The gold_answer faithfully paraphrases these two facts. The context metadata confirms the calls relate to Innovatech Group's EDA opportunity and Mikhail Volkov as the contact, matching the question's framing. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-28d89f041299895c",
+    "question": "On the Digital Horizon Media opportunity, what weakness did Leonard M\u00fcller attribute to Quantum Circuits Inc. despite their competitive pricing?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The weakness Leonard M\u00fcller attributed to Quantum Circuits Inc. despite their competitive pricing on the Digital Horizon Media opportunity",
+        "relationship": "single lookup of a competitor weakness within one competitive discussion",
+        "reason": "One coherent competitive-comparison lookup about the same opportunity; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks what weakness Leonard M\u00fcller attributed to Quantum Circuits Inc. despite their competitive pricing on the Digital Horizon Media opportunity. The transcript at [15:01:40] has Leonard stating: 'Quantum Circuits has competitive pricing but it doesn't always align with our need for flexibility.' The gold answer accurately captures this: competitive pricing but misalignment with the need for flexibility. The question is naturally worded, scoped to a specific opportunity and contact, and a rep would plausibly want to know a competitor's perceived weakness. Single-call question so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is directly attributed to Leonard M\u00fcller and states: 'Quantum Circuits has competitive pricing but it doesn't always align with our need for flexibility.' This matches the answer_claim verbatim. The context metadata confirms the call is on the Digital Horizon Media opportunity (opportunity_name: 'Digital Horizon Media Transformation Project') and the speaker is Leonard M\u00fcller (contact_name). The pronoun 'our' resolves to Digital Horizon Media via the account metadata and the fact that Leonard M\u00fcller is the contact for that account."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states that Quantum Circuits' pricing is competitive but doesn't align with Digital Horizon Media's need for flexibility. The single cited evidence item is a direct quote from Leonard M\u00fcller on the Digital Horizon Media opportunity call, stating exactly that: competitive pricing but misalignment with 'our need for flexibility.' The metadata confirms the account is Digital Horizon Media and the speaker is Leonard M\u00fcller. All factual elements of the gold_answer (competitive pricing, lack of alignment with flexibility need, attributed to Leonard M\u00fcller, on the Digital Horizon Media opportunity) are supported by the supplied evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-bb350f4cfb27fcca",
+    "question": "What concern did Miguel Hernandez raise about initial security setup, and how did Santiago respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The security setup concern Miguel Hernandez raised and Santiago's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "A single coherent objection-and-response pair about the same issue (initial security setup), which is an accepted pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection (initial security setup hiccups) raised by Miguel Hernandez and Santiago's response, which a rep would plausibly want to track. The gold answer accurately reflects the dialogue: Miguel mentions 'hiccups during initial security setting configurations' and Santiago replies they are improving user guidance, making setup more intuitive, and offering real-time support. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true by convention.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Miguel Hernandez stating 'there have been mentions of some hiccups during initial security setting configurations,' which supports the claim that he raised hiccups during initial security setting configurations."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Santiago's quote explicitly states they are 'improving the initial user guidance during setup,' 'planning updates to make the configuration process more intuitive,' and 'our support team is always ready to assist in real-time,' which directly supports the claim about improving user guidance, making configuration more intuitive, and offering real-time support."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Miguel mentioned reported hiccups during initial security configuration (supported by index 0) and Santiago said they're improving user guidance, making setup more intuitive, and offering real-time support assistance (supported by index 1). All factual claims in the gold_answer are covered by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-73418c5b609d4350",
+    "question": "What concern did William Brooks raise about AutoElite's warranty compared to competitors, and what did Tariq say about the service network supporting the extended warranty?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "William Brooks's concern about AutoElite's warranty versus competitors and Tariq's response about the service network supporting the extended warranty",
+        "relationship": "objection and response on the same warranty issue",
+        "reason": "Both parts address the same business issue\u2014the warranty's competitiveness and its supporting service network\u2014forming a coherent objection-and-response exchange within one call."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both requested facts are verified in the single call transcript: Brooks states the warranty 'seems a little less robust' compared to industry standards/other offers, and Tariq confirms the extended warranty is backed by 'a comprehensive service network with factory-trained technicians.' The question is naturally phrased, scoped to a specific customer interaction, and the answer contains exactly the two requested facts without extras. Single-call question so both_sources_required is set true.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from William Brooks directly states: 'when compared to the industry standards or other offers, it seems a little less robust.' This matches the answer_claim that the warranty seems a little less robust compared to industry standards or other offers. Speaker attribution (William Brooks) is correct, and the concern is clearly expressed."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Tariq Al-Farsi explicitly states: 'Our extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians.' This directly supports the answer_claim about the extended warranty being backed by a comprehensive service network with factory-trained technicians. Speaker attribution (Tariq Al-Farsi) is correct, and the statement is a direct assertion, not a question or uncertainty."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported by the cited evidence. Index 0 confirms Brooks felt the warranty seemed less robust than industry standards/other offers. Index 1 confirms Tariq stated the extended warranty is backed by a comprehensive service network with factory-trained technicians. All factual claims in the gold_answer are present in the supplied citations with correct speaker attribution and no distortion of meaning."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-7c5864a29e643fc8",
+    "question": "For Sara Larson's Camry Hybrid, what did Vanessa say distinguishes AutoElite's financing flexibility from High-End Autos Co.?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Vanessa said distinguishes AutoElite's financing flexibility from High-End Autos Co. for Sara Larson's Camry Hybrid",
+        "relationship": "single competitive comparison on one issue (financing flexibility) within one call",
+        "reason": "A coherent competitive-differentiation question about the same financing topic; no unrelated lookups joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Vanessa said distinguishes AutoElite's financing flexibility from High-End Autos Co. for Sara Larson's Camry Hybrid. The dialogue at 10:33:02 shows Vanessa stating High-End Autos Co. offers appealing luxury vehicle prices while AutoElite's edge is personalized financing solutions\u2014customizing plans (extending terms, adjusting downpayments) and accommodating imperfect credit. The gold answer captures all these points precisely with no unasked extras. The question is naturally scoped to a specific customer, vehicle, and competitive comparison a rep would plausibly need. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Vanessa M\u00fcller explicitly states: (1) High-End Autos Co. 'might offer appealing luxury vehicle prices'; (2) AutoElite's edge is 'personalized financing solutions' with 'customizing plans' including 'extending the term, adjusting the downpayment, or anything else'; and (3) customers find AutoElite 'more accommodating if their credit isn't pristine.' All elements of the answer_claim are directly present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states that AutoElite customizes plans (extending terms, adjusting downpayments) and accommodates imperfect credit, while High-End Autos Co. mainly offers appealing luxury vehicle prices. The single cited evidence (index 0) contains Vanessa's exact words covering every factual element: customizing plans, extending the term, adjusting the downpayment, being more accommodating for non-pristine credit, and High-End Autos Co.'s appealing luxury vehicle prices. The answer is a faithful, concise paraphrase of the quote."
+      }
+    }
+  }
+]

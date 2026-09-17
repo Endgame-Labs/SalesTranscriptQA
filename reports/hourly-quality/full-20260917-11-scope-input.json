@@ -1,0 +1,1294 @@
+[
+  {
+    "job_id": "42908795d09231d18bbb4a1e0e804cca9cec176337d78b802578fe4ac977c5d1",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SvCvIAK",
+      "b2b:a05Wt000003SvEXIA0"
+    ],
+    "status": "accepted",
+    "question": "Customizability came up with Reza Mohammed at EcoWave Solutions in both calls. What specific flexibility did he say was important in the first call, and which products did Hana cite as customizable in the follow-up?",
+    "gold_answer": "Reza said flexibility in security protocols was important given EcoWave's specific policies; Hana cited SecureFlow Suite and EcoPCB Creator as offering customizable options.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SvCvIAK",
+        "answer_claim": "Reza says their policies are specific so flexibility in security protocols is important.",
+        "kind": "dialogue",
+        "line_start": 7,
+        "line_end": 8,
+        "quote": "[2021-02-17T09:17:05] Reza Mohammed: We appreciate the focus on data protection. Our policies are quite specific, so flexibility in security protocols is important to us.",
+        "start": 1168,
+        "end": 1338
+      },
+      {
+        "call_id": "b2b:a05Wt000003SvEXIA0",
+        "answer_claim": "Hana says SecureFlow Suite and EcoPCB Creator come with a range of customizable options.",
+        "kind": "dialogue",
+        "line_start": 8,
+        "line_end": 9,
+        "quote": "[2021-02-19T15:02:35] Hana Kato: Great question, Reza. While we offer a foundational standard in our solutions, products like the SecureFlow Suite and EcoPCB Creator come with a range of customizable options that allow you to tweak them according to your specific requirements. We've focused on providing flexibility without compromising performance, which many of our clients have appreciated. [15:02]",
+        "start": 1388,
+        "end": 1790
+      }
+    ],
+    "question_id": "b2b-multi_call-42908795d09231d1",
+    "candidate": {
+      "question": "Customizability came up with Reza Mohammed at EcoWave Solutions in both calls. What specific flexibility did he say was important in the first call, and which products did Hana cite as customizable in the follow-up?",
+      "gold_answer": "Reza said flexibility in security protocols was important given EcoWave's specific policies; Hana cited SecureFlow Suite and EcoPCB Creator as offering customizable options.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SvCvIAK",
+          "answer_claim": "Reza says their policies are specific so flexibility in security protocols is important.",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 8,
+          "quote": "[2021-02-17T09:17:05] Reza Mohammed: We appreciate the focus on data protection. Our policies are quite specific, so flexibility in security protocols is important to us.",
+          "start": 1168,
+          "end": 1338
+        },
+        {
+          "call_id": "b2b:a05Wt000003SvEXIA0",
+          "answer_claim": "Hana says SecureFlow Suite and EcoPCB Creator come with a range of customizable options.",
+          "kind": "dialogue",
+          "line_start": 8,
+          "line_end": 9,
+          "quote": "[2021-02-19T15:02:35] Hana Kato: Great question, Reza. While we offer a foundational standard in our solutions, products like the SecureFlow Suite and EcoPCB Creator come with a range of customizable options that allow you to tweak them according to your specific requirements. We've focused on providing flexibility without compromising performance, which many of our clients have appreciated. [15:02]",
+          "start": 1388,
+          "end": 1790
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the first call, Reza Mohammed said flexibility in security protocols was important. In the follow-up, Hana cited SecureFlow Suite and EcoPCB Creator as customizable products.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer. In the first call (2021-02-17), Reza Mohammed said flexibility in security protocols was important to them, given their specific data protection policies. However, the follow-up call is not provided, so there is no information on which products Hana cited as customizable in that follow-up conversation.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer. In the first call (2021-02-19), Reza Mohammed said competitors' customizability was important because it helps EcoWave tailor solutions to their needs. In that same call, Hana cited the SecureFlow Suite and EcoPCB Creator as products with customizable options. However, only one call is supplied, so the follow-up call's details cannot be verified from the provided data.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported: call 1 (2021-02-17) has Reza stating 'flexibility in security protocols is important to us' given their specific policies; call 2 (2021-02-19) has Hana citing 'SecureFlow Suite and EcoPCB Creator' as customizable. The question is a realistic sales need (customizability discussion across two calls with a named contact), doesn't leak the answer, and each call contains a distinct necessary fact exclusive to it. The independent answer matches the gold semantically; no-context answers (UNKNOWN) and both single-call ablations fail to answer the full two-part question."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SvCvIAK",
+          "b2b:a05Wt000003SvEXIA0"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4xmIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0PgIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Reza Mohammed at EcoWave Solutions, no discussion of customizability, no salesperson named Hana, and no follow-up call. The only transcript is a call between Sophia M\u00fcller and Mohammed Patel of TerraForm Engineering regarding CircuitSync Pro. Therefore, the specific flexibility Reza Mohammed mentioned in a first call and the products Hana cited as customizable in a follow-up cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Reza Mohammed at EcoWave Solutions, customizability discussed in two calls, and products cited by Hana. The sole provided call (b2b:a05Wt000003T0PgIAK) features Mohammed Patel at TerraForm Engineering speaking with Sophia M\u00fcller about CircuitSync Pro. None of the named individuals (Reza Mohammed, Hana), the company (EcoWave Solutions), or the topic (customizability) appear anywhere in the source text. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2hjIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any calls involving Reza Mohammed at EcoWave Solutions or a salesperson named Hana. The only call provided is between Mohammed El-Sayed (TechSolutions) and Mohammed Ali (InnovateX Solutions), discussing TrainEDU Suite and FlexiDesign Pro. No information about Reza Mohammed's customizability requirements or Hana's product citations exists in the supplied transcripts.",
+              "evidence": [],
+              "reason": "The question asks about Reza Mohammed at EcoWave Solutions and a person named Hana across two calls. The sole transcript provided features Mohammed Ali at InnovateX Solutions with salesperson Mohammed El-Sayed. There is no mention of Reza Mohammed, EcoWave Solutions, Hana, or a follow-up call. Therefore, none of the requested facts can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx3eIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T55qIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any calls involving Reza Mohammed at EcoWave Solutions, nor any speaker named Hana. The only call provided is between Fatoumata Diop and Mohammed El-Tayeb of DataStream Analytics, discussing CircuitMaster Analyzer and PCB QuickMaker. There is no mention of customizability or flexibility in that call, and no follow-up call exists in the sources. Therefore, neither the specific flexibility Reza Mohammed said was important in a first call nor the products Hana cited as customizable in a follow-up can be answered.",
+              "evidence": [],
+              "reason": "The question asks about Reza Mohammed at EcoWave Solutions and a salesperson named Hana across two calls discussing customizability. The sole source call (b2b:a05Wt000003T55qIAC) involves Mohammed El-Tayeb at DataStream Analytics with Fatoumata Diop, with no discussion of customizability, no person named Reza Mohammed, no company named EcoWave Solutions, and no speaker named Hana. All requested facts are missing from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T54EIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T02xIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwaSIAS",
+              "b2b:a05Wt000003SxV1IAK",
+              "b2b:a05Wt000003T1AHIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving Reza Mohammed at EcoWave Solutions, nor any salesperson named Hana. All three transcripts are between Pierre Fontaine (TechPulse Solutions) and Mohammed El-Khatib at MetaData Analytics. Therefore, the specific flexibility Reza Mohammed said was important in a first call, and the products Hana cited as customizable in a follow-up, cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Reza Mohammed at EcoWave Solutions and a salesperson named Hana. None of the three supplied calls match those names, account, or company. The contacts are Mohammed El-Khatib at MetaData Analytics, and the salesperson is Pierre Fontaine. No evidence exists to support any answer about the requested individuals or account."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrcTIAS",
+              "b2b:a05Wt000003SsLbIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003St34IAC",
+              "b2b:a05Wt000003SvCvIAK",
+              "b2b:a05Wt000003SvEXIA0"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the first call (2021-02-17), Reza Mohammed said that because EcoWave's policies are quite specific, flexibility in security protocols was important to them. In the follow-up call (2021-02-19), Hana cited the SecureFlow Suite and EcoPCB Creator as products that come with a range of customizable options allowing them to be tweaked to specific requirements.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SvCvIAK",
+                  "line_start": 7,
+                  "line_end": 8,
+                  "quote": "[2021-02-17T09:17:05] Reza Mohammed: We appreciate the focus on data protection. Our policies are quite specific, so flexibility in security protocols is important to us."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SvEXIA0",
+                  "line_start": 8,
+                  "line_end": 9,
+                  "quote": "[2021-02-19T15:02:35] Hana Kato: Great question, Reza. While we offer a foundational standard in our solutions, products like the SecureFlow Suite and EcoPCB Creator come with a range of customizable options that allow you to tweak them according to your specific requirements. We've focused on providing flexibility without compromising performance, which many of our clients have appreciated. [15:02]"
+                }
+              ],
+              "reason": "The first call (b2b:a05Wt000003SvCvIAK, 2021-02-17) line 7 has Reza stating 'Our policies are quite specific, so flexibility in security protocols is important to us.' The follow-up call (b2b:a05Wt000003SvEXIA0, 2021-02-19) line 8 has Hana citing 'the SecureFlow Suite and EcoPCB Creator come with a range of customizable options that allow you to tweak them according to your specific requirements.' Both facts are directly supported by the named individuals at EcoWave Solutions."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same requested facts: Reza Mohammed emphasized flexibility in security protocols due to EcoWave's specific policies in the first call, and Hana cited SecureFlow Suite and EcoPCB Creator as customizable products in the follow-up. Answer A includes additional details (dates, slightly more elaboration), but the core facts are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Svb7IAC",
+              "b2b:a05Wt000003SvcjIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvpdIAC",
+              "b2b:a05Wt000003SvrFIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be fully answered from these transcripts. In the first call, Reza Mohammed mentioned they had used 'some pretty customizable solutions' that worked well for their unique needs and expressed interest in seeing how solutions could be 'tailored to fit into our existing workflows with minimum disruption,' but he did not name a more specific flexibility beyond that. In the follow-up call, the TechPulse representative is Diego Sanchez, not Hana; no person named Hana appears in either transcript. While Reza mentions reviewing EcoPCB Creator and AI Cirku-Tech, no one cites specific products as customizable in the follow-up.",
+              "evidence": [],
+              "reason": "Two facts are missing: (1) Reza's first-call statement about customizability is general ('customizable solutions\u2026for our unique needs' and tailoring to 'existing workflows with minimum disruption') rather than naming a specific flexibility; (2) No person named Hana appears in either call\u2014the salesperson in both is Diego Sanchez\u2014so the question's premise about Hana citing customizable products in the follow-up cannot be supported by these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SypHIAS",
+              "b2b:a05Wt000003T0sdIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvL1IAK",
+              "b2b:a05Wt000003Svw5IAC",
+              "b2b:a05Wt000003SvxhIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv09IAC",
+              "b2b:a05Wt000003SwLzIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvhdIAC",
+              "b2b:a05Wt000003SzQFIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuQfIAK",
+              "b2b:a05Wt000003T06AIAS",
+              "b2b:a05Wt000003T1mzIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuLjIAK",
+              "b2b:a05Wt000003Sx6jIAC",
+              "b2b:a05Wt000003SxV0IAK",
+              "b2b:a05Wt000003T15SIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any calls involving Reza Mohammed at EcoWave Solutions, nor any speaker named Hana. All four calls are between Jorge Pinto (TechPulse Solutions) and Mohammed El-Khatib (MetaData Analytics). Therefore, the specific flexibility Reza Mohammed mentioned in a first call and the products Hana cited as customizable in a follow-up cannot be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Reza Mohammed at EcoWave Solutions and a salesperson named Hana. None of the four supplied calls involve those individuals or that account. The contacts are all Mohammed El-Khatib at MetaData Analytics, and the salesperson is Jorge Pinto. No matching facts exist in the sources, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwsAIAS",
+              "b2b:a05Wt000003SyVoIAK",
+              "b2b:a05Wt000003SzGYIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SylxIAC",
+              "b2b:a05Wt000003T18oIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Suk6IAC",
+              "b2b:a05Wt000003SySbIAK",
+              "b2b:a05Wt000003T18gIAC",
+              "b2b:a05Wt000003T2w1IAC",
+              "b2b:a05Wt000003T2w2IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving Reza Mohammed at EcoWave Solutions or a salesperson named Hana. All five transcripts are between Liam O'Sullivan (TechPulse Solutions) and Mohammed Bashir (NaviCorp Tech) regarding the 'Advanced Navigation Optimization Project.' Therefore, the specific flexibility Reza Mohammed said was important in a first call, and the products Hana cited as customizable in a follow-up, cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Reza Mohammed at EcoWave Solutions and a salesperson named Hana. None of the five provided calls match these names, account, or company. The contact in every call is Mohammed Bashir at NaviCorp Tech, and the salesperson is Liam O'Sullivan from TechPulse Solutions. No facts about Reza Mohammed, EcoWave Solutions, or Hana exist in the source data, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxJfIAK",
+              "b2b:a05Wt000003T0nsIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Svl1IAC",
+              "b2b:a05Wt000003T0sfIAC",
+              "b2b:a05Wt000003T30sIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain any calls involving Reza Mohammed at EcoWave Solutions, nor any speaker named Hana. All three calls are between Mohammed El-Sayed (TechPulse Solutions) and Mohammed Bashir (NaviCorp Tech). Therefore, the specific flexibility Reza Mohammed mentioned in a first call and the products Hana cited as customizable in a follow-up cannot be identified from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Reza Mohammed at EcoWave Solutions and a salesperson named Hana. None of the three supplied call transcripts involve those individuals or that account. The calls feature Mohammed El-Sayed and Mohammed Bashir at NaviCorp Tech. Because the exact named people, account, and event scope are absent, no supporting evidence exists and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrcVIAS",
+              "b2b:a05Wt000003SvRVIA0",
+              "b2b:a05Wt000003T2vzIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "reza mohammed"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly supported: first call quote shows Reza citing flexibility in security protocols; follow-up quote shows Hana naming SecureFlow Suite and EcoPCB Creator as customizable. Question is self-contained, business-relevant, and each call supplies a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What specific flexibility did he say was important in the first call",
+            "explicitly_requested": true,
+            "required_fact": "Reza said flexibility in security protocols was important to them",
+            "source_call_ids": [
+              "b2b:a05Wt000003SvCvIAK"
+            ]
+          },
+          {
+            "question_span": "which products did Hana cite as customizable in the follow-up",
+            "explicitly_requested": true,
+            "required_fact": "Hana cited the SecureFlow Suite and EcoPCB Creator as products with customizable options",
+            "source_call_ids": [
+              "b2b:a05Wt000003SvEXIA0"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: (1) the flexibility Reza said was important in the first call, and (2) the products Hana cited as customizable in the follow-up. The gold_answer provides exactly these two facts: 'flexibility in security protocols' and 'SecureFlow Suite and EcoPCB Creator'. No extra facts are included. The obligations correctly map each fact to its source call. The independent answer directly answers both parts. Each call is required because the first fact is only in call 1 and the second only in call 2.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Reza said flexibility in security protocols was important",
+            "question_span": "What specific flexibility did he say was important in the first call",
+            "required_by_question": true
+          },
+          {
+            "claim": "Hana cited SecureFlow Suite and EcoPCB Creator as offering customizable options",
+            "question_span": "which products did Hana cite as customizable in the follow-up",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "bb350f4cfb27fcca487c189409624badd02772498d28b82e1787133eb656a20d",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SyfZIAS"
+    ],
+    "status": "accepted",
+    "question": "What concern did Miguel Hernandez raise about initial security setup, and how did Santiago respond?",
+    "gold_answer": "Miguel mentioned reported hiccups during initial security configuration; Santiago said they're improving user guidance, making setup more intuitive, and offering real-time support assistance.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SyfZIAS",
+        "answer_claim": "Miguel raised hiccups during initial security setting configurations.",
+        "kind": "dialogue",
+        "line_start": 11,
+        "line_end": 12,
+        "quote": "[2023-10-24T14:32:39] Miguel Hernandez: That could definitely help with the learning curve. However, there have been mentions of some hiccups during initial security setting configurations. Is that something you're addressing?",
+        "start": 2488,
+        "end": 2714
+      },
+      {
+        "call_id": "b2b:a05Wt000003SyfZIAS",
+        "answer_claim": "Santiago said they are improving initial user guidance, making configuration more intuitive, with real-time support.",
+        "kind": "dialogue",
+        "line_start": 12,
+        "line_end": 13,
+        "quote": "[2023-10-24T14:32:55] Santiago Fernandez: Yes, we\u2019ve heard similar feedback and are actively working on improving the initial user guidance during setup. We're planning updates to make the configuration process more intuitive, and our support team is always ready to assist in real-time to ensure a smooth start.",
+        "start": 2715,
+        "end": 3027
+      }
+    ],
+    "question_id": "b2b-single_call-bb350f4cfb27fcca",
+    "candidate": {
+      "question": "What concern did Miguel Hernandez raise about initial security setup, and how did Santiago respond?",
+      "gold_answer": "Miguel mentioned reported hiccups during initial security configuration; Santiago said they're improving user guidance, making setup more intuitive, and offering real-time support assistance.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SyfZIAS",
+          "answer_claim": "Miguel raised hiccups during initial security setting configurations.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-10-24T14:32:39] Miguel Hernandez: That could definitely help with the learning curve. However, there have been mentions of some hiccups during initial security setting configurations. Is that something you're addressing?",
+          "start": 2488,
+          "end": 2714
+        },
+        {
+          "call_id": "b2b:a05Wt000003SyfZIAS",
+          "answer_claim": "Santiago said they are improving initial user guidance, making configuration more intuitive, with real-time support.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2023-10-24T14:32:55] Santiago Fernandez: Yes, we\u2019ve heard similar feedback and are actively working on improving the initial user guidance during setup. We're planning updates to make the configuration process more intuitive, and our support team is always ready to assist in real-time to ensure a smooth start.",
+          "start": 2715,
+          "end": 3027
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Miguel Hernandez raised a concern about 'some hiccups during initial security setting configurations.' Santiago responded that they had heard similar feedback, were actively working on improving initial user guidance during setup, planning updates to make the configuration process more intuitive, and that their support team is always ready to assist in real-time to ensure a smooth start.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA: both two-call flags set true. Question is a realistic sales need (customer concern + vendor response) with clear participants. Both answer claims are directly supported by quoted dialogue lines 11-13: Miguel's 'hiccups during initial security setting configurations' and Santiago's response about improving user guidance, intuitive configuration, and real-time support. Independent answer matches gold semantically with no extra claims. No-context answers ('UNKNOWN') fail to answer. No leakage, invented context, or temporal fabrication."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SyfZIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2I1IAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "miguel hernandez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SynfIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript does not contain any person named Miguel Hernandez or Santiago, nor does it discuss any concern about initial security setup. The only participants are Miguel Torres (salesperson) and Maria Fernandez (lead at Strategic Innovations), and their conversation covers product selection (EduTech Lab, PCB QuickMaker, DevVision IDE), pricing/budget, and a 3-day installation timeline. No security setup topic is raised.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez's concern regarding initial security setup and Santiago's response. Neither Miguel Hernandez nor Santiago appears anywhere in the single provided call transcript. The participants are Miguel Torres and Maria Fernandez, and the discussion involves products, pricing, and installation scheduling\u2014no security setup is mentioned. Therefore the requested facts cannot be answered from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrnsIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "miguel hernandez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Ss5SIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript between Kofi Adomah and Miguel Hernandez contains no mention of anyone named Santiago, nor any discussion of an initial security setup concern. The conversation covers product capabilities (SimuFlow Xtreme and AI DesignShift), budget ($3193), installation timeline (three days), and training. Therefore, the question cannot be answered from the supplied sources.",
+              "evidence": [],
+              "reason": "No person named Santiago appears in the transcript, and no topic of initial security setup is raised by Miguel Hernandez. The only call provided involves Kofi Adomah and Miguel Hernandez discussing pricing, timeline, and product features. The requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StmOIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any conversation involving Miguel Hernandez or Santiago. The only call transcript features Anwar Malik speaking with Carlos Hernandez about DevVision IDE, CircuitSync Pro, and QuantumPCB Modeler. No discussion of initial security setup concerns or any response by Santiago appears in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez's concern regarding initial security setup and Santiago's response. The sole source call (b2b:a05Wt000003StmOIAS) involves Carlos Hernandez and Anwar Malik discussing product interest, installation timeline, and budget. Neither Miguel Hernandez nor Santiago is mentioned, and no security setup topic is raised. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0KqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript does not contain any person named Miguel Hernandez or Santiago, nor any discussion of an initial security setup concern. The only participants are Carlos Hernandez (BlueSky Aerospace) and Zara Shah (Innovate Solutions), who discuss VerifySim Elite, TrainEDU Suite, and UnitySim Essentials pricing, installation timeline, and support.",
+              "evidence": [],
+              "reason": "No source mentions Miguel Hernandez, Santiago, or an initial security setup concern. The single call involves Carlos Hernandez and Zara Shah discussing product orders and installation, so the requested facts cannot be answered from the given data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4o8IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript does not contain any person named Miguel Hernandez or Santiago, nor any discussion of an initial security setup concern. The only participants are Carlos Hernandez and Elena Petrova, discussing the CloudLink Designer product. Therefore, the requested facts cannot be answered from the given sources.",
+              "evidence": [],
+              "reason": "No mention of Miguel Hernandez, Santiago, or any security-setup concern exists in the single supplied call (b2b:a05Wt000003T4o8IAC). The draft extraction correctly identifies this absence."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Syj5IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Miguel Hernandez or Santiago. The only call transcript is between Mei Chen and Sofia Hernandez of Pioneer Envisions, discussing CyberShield Core, EduTech Advance, and SecuManage Pro. No concern about initial security setup raised by Miguel Hernandez, nor any response from Santiago, appears in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez's concern regarding initial security setup and Santiago's response. Neither Miguel Hernandez nor Santiago appears anywhere in the supplied call transcript. The sole participants are Mei Chen (salesperson) and Sofia Hernandez (lead). Therefore the requested facts are entirely absent and cannot be answered from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2paIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any mention of Miguel Hernandez or Santiago, nor any discussion about initial security setup. The only call provided is between Kwame Mensah and Carlos Hernandez of InspireTech Consulting, discussing QuantumPCB Modeler and PCB QuickMaker products, installation timeline, and budget. No information matching the question exists in the supplied transcripts.",
+              "evidence": [],
+              "reason": "The question asks about a concern raised by Miguel Hernandez regarding initial security setup and Santiago's response. Neither Miguel Hernandez nor Santiago appears in any of the provided call transcripts. The sole transcript features Kwame Mensah and Carlos Hernandez discussing PCB design/fabrication tools. There is no security setup discussion. Therefore, no complete answer can be constructed from the given sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sz6zIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any person named Miguel Hernandez or Santiago, nor any discussion of an initial security setup concern. The only call provided is between Sofia Hernandez and Zainab Ali regarding the CircuitMaster Analyzer's installation timeline, pricing, and quote. Therefore, the requested facts cannot be answered from the given sources.",
+              "evidence": [],
+              "reason": "No call transcript mentions Miguel Hernandez, Santiago, or any concern about initial security setup. The sole transcript involves Sofia Hernandez and Zainab Ali discussing the CircuitMaster Analyzer. The draft extraction correctly identifies the absence of the named individuals and topic."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T37QIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Miguel Hernandez, Santiago, or any discussion about initial security setup. The only call transcript is between Aisha Ibrahim and Carlos Hernandez of ClearSky Data Solutions, discussing OptiPower Manager, AutoGen IDE, and InnoTrain Hub. There is no information to answer the question about Miguel Hernandez's concern or Santiago's response.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez and Santiago, but neither person appears in any of the provided call transcripts. The sole transcript features Carlos Hernandez and Aisha Ibrahim discussing product bundles, budget, and installation timelines. No security setup concern is raised anywhere in the sources. Therefore, no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvrWIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any mention of Miguel Hernandez, Santiago, or a discussion about initial security setup. The only call transcript is between Natalia Ivanova and Carlos Hernandez of TechFusion Inc., discussing EnergyReduce Pro installation timing and pricing. No facts relevant to the question can be extracted.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez's concern regarding initial security setup and Santiago's response. Neither Miguel Hernandez nor Santiago appears in any of the provided call transcripts. The sole transcript features Carlos Hernandez and Natalia Ivanova discussing EnergyReduce Pro. There is no mention of security setup in any source. Therefore, the question cannot be answered from the given data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4WaIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any call involving Miguel Hernandez or Santiago. The only transcript features Miguel Alvarez of InnoBuild Constructors speaking with Alejandro Ramirez of SecureTech Solutions about CryptSecure Core. Therefore, no concern raised by Miguel Hernandez about initial security setup, nor any response from Santiago, can be found in the given data.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez and Santiago, but the sole call transcript involves Miguel Alvarez and Alejandro Ramirez. There is no mention of Miguel Hernandez or Santiago anywhere in the sources, so the requested facts cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T209IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any conversation involving Miguel Hernandez or Santiago. The only call provided is between Pierre Fontaine and Miguel Gomez at Precision Circuit Systems, discussing SecureData Nexus installation timeline, pricing, and support. No mention of 'initial security setup' concerns by a Miguel Hernandez, nor any response from a Santiago, exists in the available transcripts.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez's concern regarding initial security setup and Santiago's response. The sole source call (b2b:a05Wt000003T209IAC) features Miguel Gomez (not Miguel Hernandez) and Pierre Fontaine (not Santiago). The concern raised by Miguel Gomez was about the one-day installation timeline (line 7), not 'initial security setup.' There is no person named Santiago in any source. Therefore, no facts supporting the exact named individuals, concern topic, or responder can be found, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4g5IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no mention of Miguel Hernandez, Santiago, or any discussion about initial security setup. The only call transcript is between Felix J\u00f8rgensen and Carlos Hern\u00e1ndez of UrbanSmart Inc., discussing PCB products (PCBProto Wizard, QuantumPCB Modeler, and PCB QuickMaker). There is no evidence to answer the question as asked.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez raising a concern about initial security setup and Santiago's response. The sole source call (b2b:a05Wt000003T4g5IAC) involves Felix J\u00f8rgensen and Carlos Hern\u00e1ndez discussing PCB product purchases. Neither Miguel Hernandez nor Santiago appears anywhere in the transcript, and no security setup concern is discussed. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx3eIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not contain any mention of Miguel Hernandez or Santiago. The only participants are Carlos Hernandez and Hana Kato, discussing products (SimuCheck Ultra, InnoTrain Hub, CircuitAI Innovator), pricing, and installation timelines. No concern about initial security setup is raised by anyone in this transcript.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez raising a concern about initial security setup and Santiago's response. The sole call transcript features Carlos Hernandez (not Miguel Hernandez) speaking with Hana Kato (not Santiago). There is no discussion of security setup whatsoever. The draft extraction correctly identifies that the requested individuals and topic are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3TuIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any conversation involving Miguel Hernandez or Santiago, nor any discussion of initial security setup. The only call transcript is between Miguel Torres and Noah Smith regarding product interest (PowerPro Optimize, PCB EcoModel, InnoTrain Hub), budget, installation timeline, and post-installation support. No facts matching the requested people or topic exist in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez's concern regarding initial security setup and Santiago's response. The sole call transcript features Miguel Torres (not Miguel Hernandez) and Noah Smith (not Santiago), discussing product upgrades, budget, and installation support\u2014not security setup. There is no evidence to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyHiIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any person named Miguel Hernandez or Santiago. The only call provided is between Elena Petrova and Miguel Santos of Lisbon Digital Designs. No concern about initial security setup raised by a 'Miguel Hernandez' or a response from a 'Santiago' appears anywhere in the transcript.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez and Santiago, but neither name exists in the provided call data. The sole participants are Elena Petrova and Miguel Santos. Because the exact named individuals and their exchange are absent, no complete answer can be constructed from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sqa4IAC",
+              "b2b:a05Wt000003Sz3pIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Miguel Hernandez or Santiago appears in the provided call transcripts. The only contact is Maya Hernandez and the only salesperson is Terek Al-Farsi. There is no discussion of an 'initial security setup' concern raised by Miguel Hernandez or a response from Santiago in any of the sources.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez and Santiago, but neither name exists in the two provided calls. The transcripts feature Maya Hernandez (contact) and Terek Al-Farsi (salesperson) discussing Quantum Designs' needs. While security topics are mentioned (e.g., SecureFlow Suite), they are discussed by Maya and Terek, not by Miguel or Santiago. Therefore, no complete answer can be constructed for the exact named individuals."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv1gIAC",
+              "b2b:a05Wt000003Sxt9IAC",
+              "b2b:a05Wt000003T0J3IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Miguel Hernandez or Santiago appears in any of the provided call transcripts. The only salesperson is Miguel Torres and the only contact is Amina Heba. Therefore, no concern raised by 'Miguel Hernandez' about initial security setup, nor any response from 'Santiago,' can be identified in the sources.",
+              "evidence": [],
+              "reason": "The question asks about specific named individuals\u2014Miguel Hernandez and Santiago. Neither name appears in any of the three call transcripts. The participants are Miguel Torres (TechPulse Solutions) and Amina Heba (LiftTech Elevations). Because the exact named people in the question do not match any participant in the sources, no supported answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0PWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any person named Miguel Hernandez or Santiago. The only call provided is between Miguel Torres (TechPulse Solutions) and Amir Nazir (InnoSphere Labs), discussing EDA integration, support quality, training, and competitor comparison. There is no mention of an initial security setup concern raised by a Miguel Hernandez, nor any response from a Santiago.",
+              "evidence": [],
+              "reason": "The question asks about Miguel Hernandez's concern regarding initial security setup and Santiago's response. Neither Miguel Hernandez nor Santiago appears in any of the provided call transcripts. The sole transcript features Miguel Torres and Amir Nazir discussing EDA process enhancements, integration timelines, support, training, and market alignment\u2014none of which involve the named individuals or the security setup topic. Therefore the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyHZIA0",
+              "b2b:a05Wt000003SyxFIAS",
+              "b2b:a05Wt000003SzgXIAS",
+              "b2b:a05Wt000003T4JWIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "miguel hernandez"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Szd8IAC",
+              "b2b:a05Wt000003SzlCIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any person named Miguel Hernandez or Santiago. The contact in both calls is Miguel Angel and the vendor representative is Junaid Khan. Furthermore, no concern about initial security setup is raised in either transcript. The topics discussed were scalability, AI enhancements, pricing/cost transparency, training/support, and update cadence. Therefore, the question cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about 'Miguel Hernandez' and 'Santiago,' but neither name appears in any call. The actual participants are Miguel Angel (contact) and Junaid Khan (sales rep). Additionally, no discussion of 'initial security setup' occurs in either transcript. Since the exact named people and the specific topic (security setup concern) are absent, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuKCIA0",
+              "b2b:a05Wt000003SzTXIA0",
+              "b2b:a05Wt000003T0mCIAS",
+              "b2b:a05Wt000003T2mJIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any person named Santiago. Miguel Hernandez raised security and compliance concerns (e.g., potential gaps in CircuitWave's security handling for a regulated industry, and concerns about systems not handling emerging technologies securely), but these were addressed by Liam Kelly, not Santiago. Because the question specifically asks about Santiago's response, and no such individual appears in any of the four calls, the requested fact cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "No person named Santiago appears in any of the four call transcripts. All conversations involving Miguel Hernandez are with Liam Kelly. While Miguel did raise security-related concerns (e.g., call b2b:a05Wt000003T0mCIAS line 5 about CircuitWave security gaps, and call b2b:a05Wt000003SzTXIA0 line 10 about security/compliance in a regulated industry), the responses came from Liam Kelly, not Santiago. The question's premise references a person (Santiago) who does not exist in the source data, making it impossible to provide a complete answer."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyfYIAS",
+              "b2b:a05Wt000003SyfZIAS"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Miguel Hernandez raised that there had been mentions of some hiccups during initial security setting configurations and asked if TechPulse was addressing it. Santiago responded that they've heard similar feedback and are actively working on improving the initial user guidance during setup, planning updates to make the configuration process more intuitive, and that their support team is always ready to assist in real-time to ensure a smooth start.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SyfZIAS",
+                  "line_start": 11,
+                  "line_end": 13,
+                  "quote": "[2023-10-24T14:32:39] Miguel Hernandez: That could definitely help with the learning curve. However, there have been mentions of some hiccups during initial security setting configurations. Is that something you're addressing?\n[2023-10-24T14:32:55] Santiago Fernandez: Yes, we\u2019ve heard similar feedback and are actively working on improving the initial user guidance during setup. We're planning updates to make the configuration process more intuitive, and our support team is always ready to assist in real-time to ensure a smooth start."
+                }
+              ],
+              "reason": "Line 11 of call b2b:a05Wt000003SyfZIAS contains Miguel's concern about hiccups during initial security setting configurations, and line 12 contains Santiago's response about improving initial user guidance, planning updates for a more intuitive configuration process, and real-time support. Line 13 is the next line (Miguel's follow-up), so the end index is 13 (exclusive). The draft extraction is accurate and fully supported by the source."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: Miguel Hernandez raised concerns about hiccups during initial security setup/configuration, and Santiago responded by acknowledging the feedback, stating they are improving user guidance, making the configuration process more intuitive, and offering real-time support assistance. Answer A includes slightly more detail (e.g., asking if TechPulse was addressing it, 'heard similar feedback,' 'planning updates,' 'ensure a smooth start'), but these are elaborations on the same facts rather than different values. The requested facts are semantically identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqTQIA0",
+              "b2b:a05Wt000003T0MNIA0",
+              "b2b:a05Wt000003T0nrIAC",
+              "b2b:a05Wt000003T2JLIA0",
+              "b2b:a05Wt000003T3TqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Miguel Hernandez appears in any of the provided call transcripts or metadata. The contact in all calls is Miguel Navarro. Therefore, no concern raised by 'Miguel Hernandez' about initial security setup, nor any response from a 'Santiago,' can be identified from these sources. (For reference, Miguel Navarro did raise a concern about initial security configuration guidance in call b2b:a05Wt000003T2JLIA0, and Dariusz Wisniewski responded\u2014but neither matches the names in the question.)",
+              "evidence": [],
+              "reason": "The question asks about 'Miguel Hernandez' and 'Santiago,' but neither name appears in any transcript or metadata. All calls involve Miguel Navarro and Dariusz Wisniewski. Because the exact named people in the question do not match any participant in the sources, the question cannot be answered from these materials."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both quotes directly support the question: Miguel's line 11 raises hiccups during initial security configuration, and Santiago's line 12 responds with improved user guidance, more intuitive setup, and real-time support. Single-call, self-contained, factual."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What concern did Miguel Hernandez raise about initial security setup",
+            "explicitly_requested": true,
+            "required_fact": "Miguel raised that there have been mentions of hiccups during initial security setting configurations",
+            "source_call_ids": [
+              "b2b:a05Wt000003SyfZIAS"
+            ]
+          },
+          {
+            "question_span": "how did Santiago respond?",
+            "explicitly_requested": true,
+            "required_fact": "Santiago said they've heard similar feedback and are actively improving initial user guidance during setup, planning updates to make configuration more intuitive, with real-time support assistance",
+            "source_call_ids": [
+              "b2b:a05Wt000003SyfZIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) the concern Miguel raised about initial security setup, and (2) Santiago's response. The gold_answer contains exactly these two facts, with no extra unrequested information. The independent answer fully covers both facts, matching the gold_answer. The obligations correctly map to the two question spans and are supported by the single call. The call is required because it is the only source providing both requested facts. No arithmetic is involved.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Miguel mentioned reported hiccups during initial security configuration",
+            "question_span": "What concern did Miguel Hernandez raise about initial security setup",
+            "required_by_question": true
+          },
+          {
+            "claim": "Santiago said they're improving user guidance",
+            "question_span": "how did Santiago respond?",
+            "required_by_question": true
+          },
+          {
+            "claim": "Santiago said they're making setup more intuitive",
+            "question_span": "how did Santiago respond?",
+            "required_by_question": true
+          },
+          {
+            "claim": "Santiago said they're offering real-time support assistance",
+            "question_span": "how did Santiago respond?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "73418c5b609d4350a81684db2349abac9a35f6365723c5577aa8a955ff9668f7",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SUN9IAO"
+    ],
+    "status": "accepted",
+    "question": "What concern did William Brooks raise about AutoElite's warranty compared to competitors, and what did Tariq say about the service network supporting the extended warranty?",
+    "gold_answer": "Brooks felt the warranty seemed less robust than industry standards/other offers; Tariq said the extended warranty is backed by a comprehensive service network with factory-trained technicians.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SUN9IAO",
+        "answer_claim": "Warranty seems a little less robust compared to industry standards or other offers",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2023-05-18T15:46:47] William Brooks: Well, the warranty is good, but when compared to the industry standards or other offers, it seems a little less robust. Could you explain how your warranty offerings stack up?",
+        "start": 1448,
+        "end": 1661
+      },
+      {
+        "call_id": "b2c:a05Ws000005SUN9IAO",
+        "answer_claim": "Extended warranty plans bolstered by comprehensive service network with factory-trained technicians",
+        "kind": "dialogue",
+        "line_start": 15,
+        "line_end": 17,
+        "quote": "[2023-05-18T15:48:17] William Brooks: That\u2019s reassuring to hear. I also noted your extended warranty options. They provide a decent level of comfort, but how does your service network compare?\n[2023-05-18T15:48:34] Tariq Al-Farsi: Great question. Our extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians, which ensures any necessary repairs or maintenance are handled with expertise and care. It's designed to provide peace of mind throughout ownership. How do you feel about our service after learning more?",
+        "start": 2896,
+        "end": 3457
+      }
+    ],
+    "question_id": "b2c-single_call-73418c5b609d4350",
+    "candidate": {
+      "question": "What concern did William Brooks raise about AutoElite's warranty compared to competitors, and what did Tariq say about the service network supporting the extended warranty?",
+      "gold_answer": "Brooks felt the warranty seemed less robust than industry standards/other offers; Tariq said the extended warranty is backed by a comprehensive service network with factory-trained technicians.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SUN9IAO",
+          "answer_claim": "Warranty seems a little less robust compared to industry standards or other offers",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2023-05-18T15:46:47] William Brooks: Well, the warranty is good, but when compared to the industry standards or other offers, it seems a little less robust. Could you explain how your warranty offerings stack up?",
+          "start": 1448,
+          "end": 1661
+        },
+        {
+          "call_id": "b2c:a05Ws000005SUN9IAO",
+          "answer_claim": "Extended warranty plans bolstered by comprehensive service network with factory-trained technicians",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 17,
+          "quote": "[2023-05-18T15:48:17] William Brooks: That\u2019s reassuring to hear. I also noted your extended warranty options. They provide a decent level of comfort, but how does your service network compare?\n[2023-05-18T15:48:34] Tariq Al-Farsi: Great question. Our extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians, which ensures any necessary repairs or maintenance are handled with expertise and care. It's designed to provide peace of mind throughout ownership. How do you feel about our service after learning more?",
+          "start": 2896,
+          "end": 3457
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "William Brooks raised that AutoElite's warranty seemed less robust compared to industry standards or other offers. Tariq said the extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians, ensuring repairs and maintenance are handled with expertise and care.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported by the single supplied call: Brooks says the warranty 'seems a little less robust' vs industry standards/other offers (15:46:47), and Tariq says extended warranty plans are 'bolstered by a comprehensive service network with factory-trained technicians' (15:48:34). The independent answer matches the gold semantically with no leakage or invented facts. Only one call is supplied, so per instructions both two-call flags are set true; no-context answers ('UNKNOWN') fail to answer."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SUN9IAO"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRNRIA4",
+              "b2c:a05Ws000005SULJIA4",
+              "b2c:a05Ws000005SZTCIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. There is no person named Tariq in any of the calls (the AutoElite representative is Dmitri Volkov), and William Brooks never raised a concern about AutoElite's warranty compared to competitors \u2014 the discussions covered the maintenance plan, service centers, and financing, but not an extended warranty or a service network supporting one.",
+              "evidence": [],
+              "reason": "No person named Tariq appears in any of the three calls; the AutoElite representative is Dmitri Volkov. William Brooks discussed the maintenance plan, service centers, and financing but never raised a concern about AutoElite's warranty compared to competitors, and no extended warranty or service network supporting an extended warranty is mentioned."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOSxIAO",
+              "b2c:a05Ws000005Sb0HIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. William Brooks never raised a concern comparing AutoElite's warranty to competitors; the only warranty mention is Elena Greco noting the extended warranty plan offers peace of mind against unexpected repairs (call b2c:a05Ws000005Sb0HIAS, line 11). Additionally, no person named Tariq appears in either call, so there is no statement from Tariq about the service network supporting the extended warranty. The service network discussion (nationwide locations) occurred between William Brooks and Elena Greco in call b2c:a05Ws000005SOSxIAO (lines 11-12), not with anyone named Tariq.",
+              "evidence": [],
+              "reason": "Both requested facts are missing from the sources: (1) William Brooks did not raise a warranty comparison concern against competitors in either call, and (2) no individual named Tariq appears in any transcript, so no statement from Tariq about the service network supporting the extended warranty exists."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUlBIAW",
+              "b2c:a05Ws000005SZUmIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "William Brooks raised a concern that rivals have faster service response times compared to AutoElite (line 9 of call b2c:a05Ws000005SUlBIAW). However, no person named Tariq appears in either transcript. The responses about the service network and extended warranty were given by Elena Greco, not Tariq. Therefore, the second part of the question\u2014what Tariq said about the service network supporting the extended warranty\u2014cannot be answered from the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about two things: (1) William Brooks's concern about AutoElite's warranty compared to competitors, and (2) what Tariq said about the service network supporting the extended warranty. While William Brooks did raise a concern about competitors having faster service response times (line 9, call b2c:a05Ws000005SUlBIAW), no individual named Tariq appears anywhere in the provided call transcripts. All responses regarding the service network and warranty were made by Elena Greco. Since the question specifically asks about Tariq's statements and no such person exists in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SZTBIA4",
+              "b2c:a05Ws000005SZt4IAG",
+              "b2c:a05Ws000005SbZlIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be fully answered from the provided sources. Regarding the first part, William Brooks noted (line 7, call b2c:a05Ws000005SZTBIA4) that he had heard other places don't offer as much coverage on their pre-owned vehicles, and Nadia Gonzalez confirmed competitors' warranty coverage is less comprehensive (line 8). However, the second part of the question asks what Tariq said about the service network supporting the extended warranty. No person named Tariq appears in any of the three call transcripts; the AutoElite representative in all calls is Nadia Gonzalez. Therefore, no statement by Tariq about a service network supporting the extended warranty exists in the sources.",
+              "evidence": [],
+              "reason": "The question specifically asks what Tariq said about the service network supporting the extended warranty. Tariq does not appear in any of the three provided call transcripts (b2c:a05Ws000005SZTBIA4, b2c:a05Ws000005SZt4IAG, b2c:a05Ws000005SbZlIAK). All conversations are between William Brooks and Nadia Gonzalez. While William Brooks did raise a general concern about competitors offering less warranty coverage on pre-owned vehicles (line 7 of the first call), the second requested fact\u2014Tariq's statement about the service network supporting the extended warranty\u2014is entirely absent from the sources. Since both parts of the question must be answered for completeness, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRdeIAG",
+              "b2c:a05Ws000005SWAJIA4",
+              "b2c:a05Ws000005SWQRIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. There is no person named Tariq in any of the calls; the AutoElite representative is Dmitri Volkov. William Brooks never raised a concern about AutoElite's warranty compared to competitors \u2014 it was Dmitri who proactively stated that AutoElite's warranty package is more comprehensive than competitors like DriveFirst Automotive (call b2c:a05Ws000005SWAJIA4, lines 7\u20138). No discussion of a service network supporting an extended warranty appears anywhere in the transcripts.",
+              "evidence": [],
+              "reason": "The question asks about (1) a concern William Brooks raised about AutoElite's warranty compared to competitors, and (2) what Tariq said about the service network supporting the extended warranty. Neither fact exists in the sources. No person named Tariq appears in any call. William Brooks did not raise a warranty concern; Dmitri proactively highlighted AutoElite's more comprehensive warranty package versus DriveFirst Automotive. There is no mention of a service network supporting an extended warranty. Therefore the question cannot be answered from the provided transcripts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SY5hIAG",
+              "b2c:a05Ws000005SaLwIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. William Brooks never raised a concern about AutoElite's warranty compared to competitors; he simply asked Rajeev Nair to describe the extended warranties (call b2c:a05Ws000005SY5hIAG, line 11), and Rajeev responded positively without any competitor-comparison concern from Brooks. Additionally, no person named Tariq appears in either call\u2014the salesperson is Rajeev Nair\u2014and no statement about a service network supporting the extended warranty was made. The service-center comments in the other call (b2c:a05Ws000005SaLwIAK, lines 14-15) relate to maintenance plans, not the extended warranty.",
+              "evidence": [],
+              "reason": "Two required facts are missing: (1) William Brooks never expressed a concern comparing AutoElite's warranty to competitors\u2014he only asked about extended warranties and received a positive description. (2) There is no person named Tariq in any call; the salesperson is Rajeev Nair, and no discussion of a service network specifically supporting the extended warranty exists. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRaTIAW",
+              "b2c:a05Ws000005SRsBIAW",
+              "b2c:a05Ws000005SUN8IAO",
+              "b2c:a05Ws000005SUN9IAO"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "William Brooks raised that AutoElite's warranty, while good, seemed a little less robust compared to industry standards or other offers. Tariq responded that the extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians, ensuring any necessary repairs or maintenance are handled with expertise and care, designed to provide peace of mind throughout ownership.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SUN9IAO",
+                  "line_start": 9,
+                  "line_end": 11,
+                  "quote": "[2023-05-18T15:46:47] William Brooks: Well, the warranty is good, but when compared to the industry standards or other offers, it seems a little less robust. Could you explain how your warranty offerings stack up?\n[2023-05-18T15:47:04] Tariq Al-Farsi: Absolutely, I get where you're coming from. Our warranty provides solid coverage and includes many service perks, but it might appear less comprehensive compared to some other offers depending on certain expectations. We're continuously enhancing our offerings to ensure they align more closely with industry standards. How did the maintenance and warranty options presented strike you?"
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SUN9IAO",
+                  "line_start": 15,
+                  "line_end": 17,
+                  "quote": "[2023-05-18T15:48:17] William Brooks: That\u2019s reassuring to hear. I also noted your extended warranty options. They provide a decent level of comfort, but how does your service network compare?\n[2023-05-18T15:48:34] Tariq Al-Farsi: Great question. Our extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians, which ensures any necessary repairs or maintenance are handled with expertise and care. It's designed to provide peace of mind throughout ownership. How do you feel about our service after learning more?"
+                }
+              ],
+              "reason": "In call b2c:a05Ws000005SUN9IAO, line 9 has William Brooks stating the warranty 'seems a little less robust' compared to industry standards or other offers. Line 10 has Tariq acknowledging this and explaining they are enhancing offerings. Lines 15-16 contain William asking about the service network supporting the extended warranty, and Tariq's response that extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians ensuring repairs and maintenance are handled with expertise and care, providing peace of mind throughout ownership. Line 17 confirms William felt reassured. All facts are directly supported by the source text for the exact named individuals."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same two facts: (1) Brooks raised that AutoElite's warranty seemed less robust compared to industry standards or other offers, and (2) Tariq stated the extended warranty is supported by a comprehensive service network with factory-trained technicians. Answer A includes additional elaboration (e.g., 'peace of mind throughout ownership,' 'expertise and care'), but these are extra unrequested details. The core requested facts match in both answers."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMluIAG",
+              "b2c:a05Ws000005SQKwIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support the question as asked. William Brooks never raised a concern about AutoElite's warranty compared to competitors; in the first call he asked how AutoElite's service center support compares to local rivals (line 7), and Nadia Gonzalez responded that their warranties and maintenance plans are 'quite comparable to some of our top competitors' (line 8). In the second call, William asked about maintenance and warranty packages (line 5) and Nadia described the Extended Warranty Plan (line 6), but no concern about the warranty relative to competitors was voiced by William. Furthermore, no person named Tariq appears in either transcript; the salesperson throughout is Nadia Gonzalez, and no one named Tariq made any statement about a service network supporting the extended warranty.",
+              "evidence": [],
+              "reason": "Two required facts are missing: (1) William Brooks did not raise a concern about AutoElite's warranty compared to competitors\u2014he only asked a general service-center comparison question and accepted Nadia's answer; (2) No individual named Tariq exists in either call transcript, so no statement from Tariq about a service network supporting the extended warranty can be sourced. The draft extraction's conclusion is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMMBIA4",
+              "b2c:a05Ws000005SUV8IAO",
+              "b2c:a05Ws000005SVmIIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question. William Brooks never raised a concern comparing AutoElite's warranty to competitors, and there is no person named Tariq in any of the three calls \u2014 the only AutoElite representative is Keiko Mori. The extended warranty is mentioned only as a line item in the quote ($1,299.99), with no competitor comparison of the warranty and no discussion of a service network supporting the extended warranty attributed to anyone named Tariq.",
+              "evidence": [],
+              "reason": "All three calls involve only Keiko Mori and William Brooks. No individual named Tariq appears in any transcript. William Brooks never expressed a concern about AutoElite's warranty relative to competitors; the warranty is referenced solely as part of the pricing quote (call b2c:a05Ws000005SVmIIAW, line 6). Because neither requested fact (William's warranty concern vs. competitors, nor Tariq's statement about the service network) exists in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVMKIA4",
+              "b2c:a05Ws000005SVpIIAW",
+              "b2c:a05Ws000005SYqPIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain anyone named Tariq. In all three calls, the AutoElite representative is Kwesi Mensah. William Brooks did raise a concern that competitors often provide less upfront information on extended warranties (call b2c:a05Ws000005SVMKIA4, line 14) and mentioned reviews about companies requiring multiple follow-ups to get service (line 8). However, no person named Tariq appears in any transcript, so there is no statement from Tariq about a service network supporting the extended warranty.",
+              "evidence": [],
+              "reason": "The question asks what Tariq said about the service network supporting the extended warranty. No individual named Tariq appears in any of the three call transcripts; the salesperson in all calls is Kwesi Mensah. While William Brooks's warranty concern (competitors providing less upfront information on extended warranties) is present in call b2c:a05Ws000005SVMKIA4 line 14, the second part of the question regarding Tariq's statement about the service network cannot be answered from these sources. Since a complete answer requires both parts and one part is entirely absent, complete=false."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SP3JIAW",
+              "b2c:a05Ws000005SSl8IAG",
+              "b2c:a05Ws000005STM7IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the requested information. William Brooks never raised a concern about AutoElite's warranty compared to competitors in any of the three calls. He asked about the maintenance package's comparison to other plans (call b2c:a05Ws000005STM7IAO, line 7), but this concerned the maintenance plan, not a warranty. Additionally, no speaker named Tariq appears in any of the provided call transcripts; all calls feature Keiko Mori as the AutoElite representative. Therefore, neither part of the question can be answered from these sources.",
+              "evidence": [],
+              "reason": "Two facts are missing: (1) No warranty concern raised by William Brooks comparing AutoElite's warranty to competitors exists in any transcript. The closest topic is his question about the maintenance plan comparison (call b2c:a05Ws000005STM7IAO, line 7), which is about the maintenance package, not a warranty. (2) No person named Tariq appears in any of the three calls, so no statement from Tariq about a service network supporting an extended warranty can be sourced. The draft extraction's conclusion of unanswerable is confirmed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSQ8IAO",
+              "b2c:a05Ws000005SU8bIAG",
+              "b2c:a05Ws000005SZOFIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not support this question as asked. William Brooks never raised a concern about AutoElite's warranty compared to competitors; he only asked how extended warranties compare to industry standards (call b2c:a05Ws000005SSQ8IAO, line 13), and Hiroko Yamada responded that Elite Ride Motors doesn't offer as flexible warranty terms as AutoElite (line 14). Additionally, no person named Tariq appears in any of the three transcripts; the salesperson in all calls is Hiroko Yamada, and no one discussed a service network supporting the extended warranty.",
+              "evidence": [],
+              "reason": "Two facts are missing: (1) William Brooks did not raise a 'concern' about AutoElite's warranty versus competitors\u2014he merely asked how extended warranties compare to industry standards, and Hiroko's reply was favorable to AutoElite, not a concern. (2) No individual named Tariq appears in any call; all conversations are between William Brooks and Hiroko Yamada, and no discussion of a service network supporting the extended warranty occurs. Therefore the question cannot be answered from the provided sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both parts are directly supported by the same call: Brooks states the warranty 'seems a little less robust compared to the industry standards or other offers' (15:46:47), and Tariq says the extended warranty plans are 'bolstered by a comprehensive service network with factory-trained technicians' (15:48:34). The question is self-contained, business-relevant, and the gold answer matches the evidence without leakage."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What concern did William Brooks raise about AutoElite's warranty compared to competitors",
+            "explicitly_requested": true,
+            "required_fact": "Brooks said the warranty is good but seems a little less robust compared to industry standards or other offers",
+            "source_call_ids": [
+              "b2c:a05Ws000005SUN9IAO"
+            ]
+          },
+          {
+            "question_span": "what did Tariq say about the service network supporting the extended warranty",
+            "explicitly_requested": true,
+            "required_fact": "Tariq said the extended warranty plans are bolstered by a comprehensive service network with factory-trained technicians ensuring repairs and maintenance are handled with expertise and care",
+            "source_call_ids": [
+              "b2c:a05Ws000005SUN9IAO"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: Brooks' concern about warranty robustness and Tariq's statement about the service network. The gold_answer contains exactly these two facts, no extras. The independent answer covers both. The obligations correctly extract each fact from the single call, and the call is required for both. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Brooks felt the warranty seemed less robust than industry standards/other offers",
+            "question_span": "What concern did William Brooks raise about AutoElite's warranty compared to competitors",
+            "required_by_question": true
+          },
+          {
+            "claim": "Tariq said the extended warranty is backed by a comprehensive service network with factory-trained technicians",
+            "question_span": "what did Tariq say about the service network supporting the extended warranty",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]
