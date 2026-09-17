@@ -1,0 +1,244 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "a16285948e5852af57c24255533f66fbfa496798b8892deaba7b737af03d7400",
+  "questions": 2,
+  "counts": {
+    "fail": 1,
+    "pass": 1
+  },
+  "estimated_usd": 0.23032998799999999,
+  "results": [
+    {
+      "question_id": "b2b-single_call-c1033721980c5d43",
+      "question": "What did Oliveira Santos say about why Onyx Security Systems is looking beyond Quantum Circuits Inc. for a cybersecurity solution?",
+      "gold_answer": "Quantum Circuits has competitive pricing, but Onyx wants more flexibility to match their specific needs, which they haven't found elsewhere.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrcOIAS",
+        "b2b:a05Wt000003SrhIIAS",
+        "b2b:a05Wt000003StRLIA0",
+        "b2b:a05Wt000003Stw2IAC",
+        "b2b:a05Wt000003SuDgIAK",
+        "b2b:a05Wt000003Suk1IAC",
+        "b2b:a05Wt000003SvheIAC",
+        "b2b:a05Wt000003SwLyIAK",
+        "b2b:a05Wt000003SxbMIAS",
+        "b2b:a05Wt000003SySYIA0",
+        "b2b:a05Wt000003SzdCIAS",
+        "b2b:a05Wt000003SzgPIAS",
+        "b2b:a05Wt000003T0npIAC",
+        "b2b:a05Wt000003T1iCIAS",
+        "b2b:a05Wt000003T1zvIAC",
+        "b2b:a05Wt000003T26MIAS",
+        "b2b:a05Wt000003T2JJIA0",
+        "b2b:a05Wt000003T2j6IAC",
+        "b2b:a05Wt000003T2khIAC",
+        "b2b:a05Wt000003T32QIAS",
+        "b2b:a05Wt000003T3K9IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 7,
+            "normalized_end": 8
+          },
+          {
+            "answer": 2,
+            "evidence": 1,
+            "original_end": 11,
+            "normalized_end": 12
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Oliveira Santos mentions Quantum Circuits Inc. in several calls with different stated reasons: lack of flexibility despite competitive pricing (2021-12-23 call), lacking ongoing support and scalability concerns (2022-01-03 call), and longer-than-expected implementation/integration timelines (2021-12-28 and 2022-02-17 calls). These are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "Oliveira Santos said that while Quantum Circuits Inc. has competitive pricing, Onyx is looking for more flexibility to match their specific needs, which they haven't found elsewhere.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcOIAS",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2021-12-23T12:01:35] Oliveira Santos: Yes, Quantum Circuits Inc. has competitive pricing, but we’re looking for more flexibility to match our specific needs, which we haven’t quite found elsewhere."
+              }
+            ]
+          },
+          {
+            "answer": "Oliveira Santos said that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking, and Onyx was also probing how TechPulse's scalability compares against what they'd explored with Quantum Circuits Inc.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StRLIA0",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2022-01-03T14:17:15] Oliveira Santos: I appreciate that focus on advanced cryptography. However, I've been thinking about scalability. How do your solutions compare in terms of scalability against what we've already explored with Quantum Circuits Inc?\n[2022-01-03T14:17:45] Tariq Hassan: That's a great question. Both our solutions and those of Quantum Circuits offer robust security. One thing that sets TechPulse apart is our emphasis on adaptability and future scalability. We ensure that our solutions evolve alongside technological advancements, which is vital in the dynamic EDA space."
+              }
+            ]
+          },
+          {
+            "answer": "Oliveira Santos said Quantum Circuits Inc., their previous provider, had longer-than-expected integration/implementation timelines that delayed Onyx's projects, which is why implementation speed is critical for them.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2j6IAC",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2021-12-28T10:32:00] Oliveira Santos: Sure. We’re focused on upgrading our systems with cutting-edge security features, particularly in advanced cryptography and data management. We’ve encountered issues with implementation times before, which has delayed our projects.\n[2021-12-28T10:32:30] Tariq Hassan: Understood. Based on what you've mentioned, our SecureFlow Suite and VeriSim Express might be perfect fits, considering their proven track record in fast implementation and seamless integration with existing systems."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzgPIAS",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2022-02-17T15:02:30] Oliveira Santos: That's reassuring, Tariq. We did run into some delays previously with Quantum Circuits Inc's implementation timeline. It put us a bit behind schedule."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Oliveira Santos explicitly discusses why Onyx is looking beyond Quantum Circuits Inc. in three separate calls, each highlighting materially different reasons: (1) the Dec 23, 2021 call focuses on the need for flexibility to match specific needs; (2) the Jan 3, 2022 call focuses on Quantum Circuits' lacking ongoing support and concerns about competitors' innovation capabilities; (3) the Dec 28, 2021 call focuses on longer-than-expected integration timelines and limited customization. The Feb 17, 2022 call also mentions implementation timeline delays. Since the question does not specify a particular call or topic, these constitute materially different complete answers.",
+        "answers": [
+          {
+            "answer": "Oliveira Santos said that while Quantum Circuits Inc. has competitive pricing, Onyx is looking beyond them because they need more flexibility to match their specific needs, which they haven't quite found elsewhere.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrcOIAS",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2021-12-23T12:01:35] Oliveira Santos: Yes, Quantum Circuits Inc. has competitive pricing, but we’re looking for more flexibility to match our specific needs, which we haven’t quite found elsewhere."
+              }
+            ]
+          },
+          {
+            "answer": "Oliveira Santos said that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking. Additionally, Oliveira expressed concerns about competitors' innovation capabilities, especially their lack of recent feature advancements, which is an area Onyx is closely watching.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003StRLIA0",
+                "line_start": 9,
+                "line_end": 12,
+                "quote": "[2022-01-03T14:18:20] Oliveira Santos: Got it. I'm particularly interested in how that adaptability extends to real-world applications and support, particularly as industries like ours evolve. We've noticed that while Quantum Circuits offers strong initial setup assistance, their ongoing support is lacking.\n[2022-01-03T14:18:50] Tariq Hassan: That's valuable insight. At TechPulse, we pride ourselves on our comprehensive support structure. From the implementation process to continuous assistance, we maintain a close partnership to ensure our solutions adapt to your ongoing and future needs.\n[2022-01-03T14:19:15] Oliveira Santos: Good to know. Now, regarding tech innovations, I’ve had some concerns about competitors' innovation capabilities, especially their lack of recent feature advancements. It’s an area we’re closely watching."
+              }
+            ]
+          },
+          {
+            "answer": "Oliveira Santos said that Quantum Circuits Inc., their previous provider, had longer-than-expected integration timelines which delayed projects and was less than ideal. Additionally, the limited ability to customize with other providers has been a challenge for Onyx, especially given their unique requirements.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2j6IAC",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2021-12-28T10:33:00] Oliveira Santos: That's encouraging to hear. Implementation speed is critical for us. Quantum Circuits Inc., our previous provider, had longer-than-expected integration timelines, which was less than ideal.\n[2021-12-28T10:33:30] Tariq Hassan: Yes, I’ve encountered that feedback often. Our clients tell us they appreciate how our solutions integrate effortlessly into their existing workflows, eliminating the common delays.\n[2021-12-28T10:33:50] Oliveira Santos: What about customization options? The limited ability to customize with other providers has been a challenge for us, especially given our unique requirements."
+              }
+            ]
+          },
+          {
+            "answer": "Oliveira Santos said that Onyx ran into delays with Quantum Circuits Inc's implementation timeline, which put them behind schedule. They also noted that other systems can be rigid, and their current issues involve the lack of customizable features without compromising security.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzgPIAS",
+                "line_start": 5,
+                "line_end": 10,
+                "quote": "[2022-02-17T15:01:00] Oliveira Santos: Yes, I've heard a bit about them. What makes these products stand out compared to what we've seen from competitors like Quantum Circuits Inc?\n[2022-02-17T15:01:20] Tariq Hassan: That’s a good question. One of our significant advantages is the seamless integration capability of our products. This flexibility is something we've optimized to fit smoothly into existing systems, giving you more room to customize than other offerings.\n[2022-02-17T15:01:35] Oliveira Santos: That's definitely appealing to us, especially since we've seen how rigid other systems can be. What about security compliance, though? We’re very particular about that.\n[2022-02-17T15:01:50] Tariq Hassan: Our solutions are top-notch in terms of security compliance. Both our companies prioritize this, but with our tools, you also get the ease of customization, setting us apart from others.\n[2022-02-17T15:02:05] Oliveira Santos: Makes sense. Our current issues involve the lack of customizable features without compromising security, so this sounds promising."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-c324083f4b803c47",
+      "question": "What did Olivia Brooks raise about the certified pre-owned program's documentation compared to competitors, and how did Linh respond?",
+      "gold_answer": "Olivia noted competitors' programs have more precise documentation; Linh said they're working to enhance the program and provide more detailed documentation in the future.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SPK6IAO",
+        "b2c:a05Ws000005SQJQIA4",
+        "b2c:a05Ws000005SQMhIAO",
+        "b2c:a05Ws000005SQnzIAG",
+        "b2c:a05Ws000005SQuPIAW",
+        "b2c:a05Ws000005SRLsIAO",
+        "b2c:a05Ws000005SRvMIAW",
+        "b2c:a05Ws000005SSkzIAG",
+        "b2c:a05Ws000005SSszIAG",
+        "b2c:a05Ws000005SSt0IAG",
+        "b2c:a05Ws000005SSxsIAG",
+        "b2c:a05Ws000005SUZvIAO",
+        "b2c:a05Ws000005SUzfIAG",
+        "b2c:a05Ws000005SVFmIAO",
+        "b2c:a05Ws000005SWAEIA4",
+        "b2c:a05Ws000005SWbcIAG",
+        "b2c:a05Ws000005SWdHIAW",
+        "b2c:a05Ws000005SWtNIAW",
+        "b2c:a05Ws000005SWzpIAG",
+        "b2c:a05Ws000005SXhMIAW",
+        "b2c:a05Ws000005SYNPIA4",
+        "b2c:a05Ws000005SYyRIAW",
+        "b2c:a05Ws000005SZ6VIAW",
+        "b2c:a05Ws000005SZ83IAG",
+        "b2c:a05Ws000005SZUhIAO",
+        "b2c:a05Ws000005Sa0wIAC",
+        "b2c:a05Ws000005SadaIAC",
+        "b2c:a05Ws000005SaleIAC",
+        "b2c:a05Ws000005SayYIAS",
+        "b2c:a05Ws000005SbWPIA0",
+        "b2c:a05Ws000005SbY1IAK",
+        "b2c:a05Ws000005SbY2IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call with Linh Nguyen (2020-12-15, b2c:a05Ws000005SRLsIAO) discusses the certified pre-owned program's documentation versus competitors; Olivia raised that competitors' programs have more precise documentation, and Linh acknowledged it and committed to improvement.",
+        "answers": [
+          {
+            "answer": "Olivia Brooks said that while she believes AutoElite's certified pre-owned program is reliable, she has come across testimonials indicating that competitors' programs have more precise documentation, and asked whether AutoElite was looking to improve that. Linh Nguyen responded that they are continually working to enhance the program — currently their focus is on quality and reliability, but they are also taking steps to provide more detailed documentation in the future and are committed to evolving with customer needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRLsIAO",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2020-12-15T09:32:05] Linh Nguyen: I'm glad to hear that. We take pride in our customer service and the positive feedback we receive. Now regarding the pre-owned program, I know there were some concerns about how it compares to other dealerships’ documentation and references. Is there anything more you’d like us to cover in that regard?\n[2020-12-15T09:32:25] Olivia Brooks: I believe your certified pre-owned program is reliable, but I've come across testimonials about competitors' programs having more precise documentation. Is that something you’re looking to improve?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifically asks about Olivia Brooks raising a concern about the certified pre-owned program's documentation compared to competitors, and how Linh responded. Only one call features Linh Nguyen (the rep) and Olivia Brooks discussing the certified pre-owned program's documentation relative to competitors. This is call b2c:a05Ws000005SRLsIAO (2020-12-15), where Olivia raises that competitors' programs have more precise documentation, and Linh responds about continually working to enhance the program and providing more detailed documentation in the future.",
+        "answers": [
+          {
+            "answer": "Olivia Brooks raised that while she believes AutoElite's certified pre-owned program is reliable, she has come across testimonials indicating that competitors' programs have more precise documentation, and asked if that is something AutoElite is looking to improve. Linh responded by acknowledging the concern, stating that they are continually working to enhance their program, that their current focus is on ensuring quality and reliability, but they are also taking steps to provide more detailed documentation in the future, and that they are committed to evolving with customer needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SRLsIAO",
+                "line_start": 8,
+                "line_end": 11,
+                "quote": "[2020-12-15T09:32:05] Linh Nguyen: I'm glad to hear that. We take pride in our customer service and the positive feedback we receive. Now regarding the pre-owned program, I know there were some concerns about how it compares to other dealerships’ documentation and references. Is there anything more you’d like us to cover in that regard?\n[2020-12-15T09:32:25] Olivia Brooks: I believe your certified pre-owned program is reliable, but I've come across testimonials about competitors' programs having more precise documentation. Is that something you’re looking to improve?\n[2020-12-15T09:32:40] Linh Nguyen: Indeed, we're continually working to enhance our program. Currently, our focus is on ensuring quality and reliability, but we’re also taking steps to provide more detailed documentation in the future. We're committed to evolving with customer needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same facts: Olivia Brooks raised that competitors' certified pre-owned programs have more precise documentation (per testimonials) while acknowledging AutoElite's reliability, and asked if AutoElite is looking to improve. Linh responded that they are continually enhancing the program, currently focused on quality and reliability, taking steps toward more detailed documentation in the future, and committed to evolving with customer needs. The reference captures the core requested facts: Olivia noted competitors' more precise documentation, and Linh said they're working to enhance the program and provide more detailed documentation in the future. While the reference omits some details (e.g., current focus on quality/reliability, commitment to evolving with customer needs), it covers the essential facts requested by the question regarding what Olivia raised and how Linh responded."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

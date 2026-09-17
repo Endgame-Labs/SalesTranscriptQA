@@ -1,0 +1,526 @@
+[
+  {
+    "question_id": "b2b-multi_call-5c913a6d7401ec5d",
+    "question": "For Horizon Dynamics, what PulseSim Pro pricing did Carmen quote in the proposal follow-up with Finn, and in the initial discussion what stage did she say pricing talks had to wait for?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The PulseSim Pro pricing Carmen quoted in the proposal follow-up with Finn, and the stage she said pricing talks had to wait for in the initial discussion",
+        "relationship": "Two-call comparison of the same commercial issue: the evolution of PulseSim Pro pricing talks for Horizon Dynamics, from the initial stage gate to the final quoted price",
+        "reason": "Both requested facts concern the same business issue\u2014PulseSim Pro pricing for Horizon Dynamics\u2014across an initial call and a follow-up, forming a coherent before/after commercial comparison rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003StG6IAK",
+                "fact": "Pricing discussions are typically more detailed later on, after the qualification stage.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention the qualification stage or when pricing discussions should occur; it only discusses the actual pricing details."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyKbIAK",
+                "fact": "There is a 15% discount for 20 licenses of PulseSim Pro, bringing the total to $8,499.83.",
+                "why_other_call_cannot_supply_it": "The initial call does not provide any specific pricing or discount figures; it only states that pricing discussions are deferred."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the specific pricing quoted in the follow-up and the stage mentioned in the initial discussion. Each piece is only present in one of the two calls, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StG6IAK",
+                  "fact": "Pricing discussions are typically more detailed later on, after the qualification stage.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SyKbIAK) is a follow-up after the proposal and does not mention the qualification stage or when pricing talks had to wait."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyKbIAK",
+                  "fact": "Carmen quoted a 15% discount on 20 PulseSim Pro licenses, totaling $8,499.83.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003StG6IAK) is an initial discussion where pricing is deferred and no specific pricing is provided."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the specific pricing quoted in the follow-up and the stage mentioned in the initial discussion. Each fact is only present in one call, and the other call cannot supply it because the initial call defers pricing and the follow-up does not revisit the qualification stage."
+            },
+            {
+              "type": "object",
+              "properties": {
+                "necessary": {
+                  "type": "boolean"
+                },
+                "exclusive_facts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "call_id": {
+                        "type": "string"
+                      },
+                      "fact": {
+                        "type": "string"
+                      },
+                      "why_other_call_cannot_supply_it": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "call_id",
+                      "fact",
+                      "why_other_call_cannot_supply_it"
+                    ]
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003StG6IAK",
+                  "fact": "Pricing discussions are typically more detailed later on, after the qualification stage.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention the qualification stage or when pricing discussions should occur; it only discusses the actual pricing details."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyKbIAK",
+                  "fact": "There is a 15% discount for 20 licenses of PulseSim Pro, bringing the total to $8,499.83.",
+                  "why_other_call_cannot_supply_it": "The initial call does not provide any specific pricing or discount figures; it only states that pricing discussions are deferred."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific pricing quoted in the follow-up and the stage mentioned in the initial discussion. Each piece is only present in one of the two calls, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SyKbIAK",
+                "fact": "Carmen quoted a 15% discount on 20 PulseSim Pro licenses totaling $8,499.83 in the proposal follow-up",
+                "why_other_call_cannot_supply_it": "The first call (2020-08-20) contains no pricing figures; Carmen explicitly defers pricing discussions there."
+              },
+              {
+                "call_id": "b2b:a05Wt000003StG6IAK",
+                "fact": "In the initial discussion, Carmen said pricing talks must wait until after the qualification stage",
+                "why_other_call_cannot_supply_it": "The follow-up call (2020-09-15) discusses proposal pricing but never mentions the qualification stage or the earlier gating of pricing talks."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: a specific quoted price/discount from the proposal follow-up and the stage at which pricing talks were deferred in the initial call. Each fact appears only in one call, and both are directly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SyKbIAK",
+                  "fact": "Carmen quoted a 15% discount on 20 PulseSim Pro licenses totaling $8,499.83 in the proposal follow-up",
+                  "why_other_call_cannot_supply_it": "The first call (2020-08-20) contains no pricing figures; Carmen explicitly defers pricing discussions there."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003StG6IAK",
+                  "fact": "In the initial discussion, Carmen said pricing talks must wait until after the qualification stage",
+                  "why_other_call_cannot_supply_it": "The follow-up call (2020-09-15) discusses proposal pricing but never mentions the qualification stage or the earlier gating of pricing talks."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: a specific quoted price/discount from the proposal follow-up and the stage at which pricing talks were deferred in the initial call. Each fact appears only in one call, and both are directly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the PulseSim Pro pricing quoted in the proposal follow-up (call 2: 15% discount on 20 licenses, $8,499.83) and (2) the stage pricing talks must wait for from the initial discussion (call 1: after the qualification stage). Both are verified verbatim in their respective transcripts. Each source contributes an exclusive requested fact. The question naturally identifies the account (Horizon Dynamics), the rep (Carmen), the contact (Finn), and the product (PulseSim Pro), giving adequate scope without artificial locator preambles. The gold answer states precisely the two requested facts with no unasked extras.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Carmen Silva explicitly states 'there's a 15% discount for the 20 licenses of PulseSim Pro, which brings the total to $8,499.83.' This directly supports the claim of a 15% discount on 20 PulseSim Pro licenses totaling $8,499.83. The call metadata confirms this is the proposal follow-up (2020-09-15) with Finn Andersen at Horizon Dynamics."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Carmen Silva says 'While we're in the qualification stage, we're more focused on understanding your needs. Pricing discussions are typically more detailed later on.' This supports the claim that pricing discussions wait until after the qualification stage. Finn's preceding line ('I suppose we're not quite at that stage yet') provides context but the key assertion is Carmen's own statement. The call metadata confirms this is the initial discussion (2020-08-20) with Finn Andersen at Horizon Dynamics."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer has two parts: (1) 15% discount on 20 PulseSim Pro licenses totaling $8,499.83, and (2) pricing discussions wait until after the qualification stage. Evidence index 0 directly quotes Carmen stating the 15% discount, 20 licenses, and $8,499.83 total in the proposal follow-up call. Evidence index 1 directly quotes Carmen stating that while in the qualification stage, pricing discussions come later. Both factual claims in the gold answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-3ca060fe2975e151",
+    "question": "What key requirement did Juan Diaz of Vertex Engineering emphasize in the initial discussion, and how did the AI Cirku-Tech integration ultimately perform for his team?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The key requirement Juan Diaz emphasized in the initial discussion and how the AI Cirku-Tech integration ultimately performed for his team",
+        "relationship": "requirement and its resolution \u2014 the integration's performance is the outcome of the same business issue raised in the initial requirement",
+        "reason": "Both parts concern the same business issue: the requirement that drove the Cirku-Tech integration and how that integration performed, forming a coherent need-to-outcome arc across calls."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SysMIAS",
+                "fact": "Juan Diaz emphasized the need for feature customization flexibility, specifically that FlexEDA's customization fits their tech requirements.",
+                "why_other_call_cannot_supply_it": "The second call is a post-sale follow-up and does not mention any initial requirements or FlexEDA customization; it only discusses implementation and AI integration."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzuyIAC",
+                "fact": "The AI Cirku-Tech integration was seamless, intuitive, and already optimizing workflows.",
+                "why_other_call_cannot_supply_it": "The first call is an initial discussion and does not report on the actual performance of the AI integration after implementation; it only mentions AI capabilities in general."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the key requirement emphasized in the initial discussion (from the first call) and the ultimate performance of the AI integration (from the second call). These are separate facts that cannot be derived from a single call, as the first call lacks post-implementation results and the second call lacks the initial requirement discussion."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SysMIAS",
+                  "fact": "Juan Diaz emphasized feature customization flexibility, specifically FlexEDA's customization fitting their tech requirements.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention FlexEDA or any initial discussion about feature customization requirements; it focuses on post-sale implementation and AI integration."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzuyIAC",
+                  "fact": "The AI Cirku-Tech integration was seamless, intuitive, and already optimizing workflows.",
+                  "why_other_call_cannot_supply_it": "The first call only discusses AI integration in general terms as a future consideration, not its actual performance after implementation; the outcome is only reported in the second call."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the key requirement emphasized in the initial discussion (from the first call) and the ultimate performance of the AI integration (from the second call). These are separate facts that cannot be derived from a single call, as the first call lacks the post-implementation outcome and the second call lacks the initial requirement emphasis."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SysMIAS",
+                  "fact": "Juan Diaz emphasized the need for feature customization flexibility, specifically that FlexEDA's customization fits their tech requirements.",
+                  "why_other_call_cannot_supply_it": "The second call is a post-sale follow-up and does not mention any initial requirements or FlexEDA customization; it only discusses implementation and AI integration."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzuyIAC",
+                  "fact": "The AI Cirku-Tech integration was seamless, intuitive, and already optimizing workflows.",
+                  "why_other_call_cannot_supply_it": "The first call is an initial discussion and does not report on the actual performance of the AI integration after implementation; it only mentions AI capabilities in general."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the key requirement emphasized in the initial discussion (from the first call) and the ultimate performance of the AI integration (from the second call). These are separate facts that cannot be derived from a single call, as the first call lacks post-implementation results and the second call lacks the initial requirement discussion."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SysMIAS",
+                "fact": "Juan emphasized feature customization flexibility \u2014 FlexEDA's customization fitting Vertex's tech requirements",
+                "why_other_call_cannot_supply_it": "The second call is a post-sale check-in and never discusses the initial pre-sale requirements or FlexEDA customization concerns."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzuyIAC",
+                "fact": "The AI Cirku-Tech integration was seamless, intuitive, and already optimizing workflows",
+                "why_other_call_cannot_supply_it": "The first call predates implementation; it only discusses integration as a future concern, not the actual post-sale performance."
+              }
+            ],
+            "reason": "The question explicitly asks for two temporally distinct pieces of information: an initial requirement from the first call and the ultimate integration performance from the later post-sale call. Each fact exists only in one call, and both are directly requested."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SysMIAS",
+                  "fact": "Juan emphasized feature customization flexibility \u2014 FlexEDA's customization fitting Vertex's tech requirements",
+                  "why_other_call_cannot_supply_it": "The second call is a post-sale check-in and never discusses the initial pre-sale requirements or FlexEDA customization concerns."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzuyIAC",
+                  "fact": "The AI Cirku-Tech integration was seamless, intuitive, and already optimizing workflows",
+                  "why_other_call_cannot_supply_it": "The first call predates implementation; it only discusses integration as a future concern, not the actual post-sale performance."
+                }
+              ],
+              "reason": "The question explicitly asks for two temporally distinct pieces of information: an initial requirement from the first call and the ultimate integration performance from the later post-sale call. Each fact exists only in one call, and both are directly requested."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Mar 2022) is the initial discussion where Juan Diaz explicitly states FlexEDA's feature customization fits their tech requirements, establishing the key requirement. Call 2 (Nov 2022) is the post-sale follow-up where Juan reports the AI Cirku-Tech integration has been 'quite seamless,' 'really intuitive,' and 'already showing some promise in optimizing our workflows.' Each source contributes an exclusive requested fact (requirement vs. performance outcome). The answer accurately reflects both claims without adding unasked extras. The question naturally identifies the customer (Juan Diaz, Vertex Engineering) and the business context (initial discussion + integration performance), which a rep would plausibly want to track. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Juan Diaz stating that FlexEDA offers 'a level of feature customization that's quite specific to our tech requirements' and that 'That flexibility is rather crucial for our dynamic projects.' This fully supports the answer_claim about feature customization specific to their tech requirements being crucial for dynamic projects."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Juan Diaz stating 'The AI integration has been quite seamless, actually. It's really intuitive, and the AI capabilities are already showing some promise in optimizing our workflows.' This supports the answer_claim about the integration being seamless, intuitive, and showing promise in optimizing workflows."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Juan emphasized 'feature customization flexibility, specifically FlexEDA's customization fitting their tech requirements' \u2014 supported by evidence index 0. It states the AI Cirku-Tech integration was 'seamless, intuitive, and already optimizing workflows' \u2014 supported by evidence index 1. The only minor nuance is that the quote says 'showing some promise in optimizing our workflows' while the gold_answer says 'already optimizing workflows,' but the quote does include 'already showing some promise in optimizing,' which is a faithful (if slightly condensed) paraphrase. The metadata confirms Juan Diaz of Vertex Engineering Corp is the speaker in both calls. All factual claims in the gold_answer are supported by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-6cfb5dfcedf17cdb",
+    "question": "What buying requirements did Bai Chen from AlphaWave Networks raise during the initial EDA discussion with Olivia Nguyen?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify the buying requirements Bai Chen from AlphaWave Networks raised during the initial EDA discussion with Olivia Nguyen.",
+        "relationship": "single coherent lookup of requirements from one call",
+        "reason": "One scoped fact lookup about requirements raised in a single discussion; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what buying requirements a named contact raised in a named account's initial EDA discussion\u2014plausible for a rep reviewing an account. The dialogue confirms each claimed requirement: budget-friendly pricing (11:31:08), customizable options for niche requirements (11:31:55), minimal-disruption implementation (11:32:25), strong deployment support (11:33:00), and a request for case studies (11:33:33). The gold answer lists exactly these five items with no unasked extras. Single-call question, so both_sources_required is set true. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Bai Chen explicitly states 'We need to make sure whatever we choose remains within our budget,' directly supporting the claim that he raised budget constraints as a requirement."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Bai Chen says 'we're really looking for more customizable options to fit some niche requirements we have,' which directly supports the claim about customizable options for niche requirements."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "Bai Chen states 'We need to ensure minimal disruption to our current workflows,' directly supporting the claim about minimal-disruption implementation."
+          },
+          {
+            "index": 3,
+            "supported": false,
+            "reason": "The quote shows Bai mentioning past support issues during deployment ('support wasn't up to our expectations during deployment'), which supports the deployment-support concern. However, the claim also states Bai 'requested case studies,' and nowhere in the quoted passage does Bai ask for case studies. Olivia mentions a past client's experience, but that is her statement, not a request from Bai. The case-study request is unsupported by this evidence."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer includes five requirements: budget-friendly pricing, customizable options, minimal-disruption implementation, strong deployment support, and a request for case studies. Evidence indices 0\u20132 support the first three. Index 3 partially supports the deployment-support concern but does not contain any request by Bai for case studies. Since the case-study request is a factual claim in the gold_answer and no supplied citation substantiates it, the combined evidence does not fully support the answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-c1033721980c5d43",
+    "question": "What did Oliveira Santos say about why Onyx Security Systems is looking beyond Quantum Circuits Inc. for a cybersecurity solution?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Oliveira Santos's explanation for why Onyx Security Systems is seeking a cybersecurity solution beyond Quantum Circuits Inc.",
+        "relationship": "single coherent lookup about one stated reason in one call",
+        "reason": "A single fact lookup about one stakeholder's stated rationale; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks why Onyx is looking beyond Quantum Circuits Inc., a competitive-positioning question a rep would plausibly ask. Oliveira Santos's exact quote at 12:01:35 states Quantum Circuits has competitive pricing but Onyx wants more flexibility to match specific needs not found elsewhere. The gold answer faithfully paraphrases that single statement with no extra or missing facts. No locator preamble, no answer leakage, no unsupported causality. Single-call set, so both_sources_required is true by rule.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is attributed to Oliveira Santos and states verbatim: 'Quantum Circuits Inc. has competitive pricing, but we're looking for more flexibility to match our specific needs, which we haven't quite found elsewhere.' This directly supports the answer_claim about competitive pricing, desire for more flexibility to match specific needs, and not having found it elsewhere."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'Quantum Circuits has competitive pricing, but Onyx wants more flexibility to match their specific needs, which they haven't found elsewhere.' The single cited evidence (index 0) is a direct quote from Oliveira Santos that contains all three factual elements: (1) competitive pricing at Quantum Circuits, (2) looking for more flexibility to match specific needs, and (3) haven't quite found it elsewhere. The speaker is confirmed as Oliveira Santos, and the context metadata confirms the account is Onyx Security Systems. The gold_answer is a faithful paraphrase of the quote, with 'we' resolved to Onyx via the account metadata. All claims are supported."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-c324083f4b803c47",
+    "question": "What did Olivia Brooks raise about the certified pre-owned program's documentation compared to competitors, and how did Linh respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What concern Olivia Brooks raised about the certified pre-owned program's documentation relative to competitors, and Linh's response to it",
+        "relationship": "objection and its response within the same discussion",
+        "reason": "This is a single coherent objection-and-response question about one issue (CPO documentation vs. competitors), not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning concern raised by the customer (Olivia Brooks) about certified pre-owned documentation versus competitors, and the rep's (Linh Nguyen) response. The dialogue at 09:32:25 confirms Olivia noted competitors' programs have 'more precise documentation,' and at 09:32:40 Linh replied they are 'working to enhance' the program and 'taking steps to provide more detailed documentation in the future.' The gold answer captures both parts precisely without extra unasked facts. The question is naturally worded, scoped to a named customer/account and a clear business topic, and a rep would plausibly want to know how a documentation objection was handled. Single-call question, so both_sources_required is set true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Olivia Brooks stating she's 'come across testimonials about competitors' programs having more precise documentation,' which supports the claim that she noted competitors' programs have more precise documentation."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Linh Nguyen saying 'we're continually working to enhance our program' and 'we're also taking steps to provide more detailed documentation in the future,' which directly supports the claim that Linh said they're enhancing the program and will provide more detailed documentation in the future."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Index 0 confirms Olivia raised the point about competitors having more precise documentation. Index 1 confirms Linh responded by saying they're working to enhance the program and will provide more detailed documentation in the future. Together they cover all factual claims in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-92e5e0f513861ff5",
+    "question": "What did Aisha Sanghvi say matters most to her when choosing between the Tesla Model S and Mercedes-Benz E-Class, and what did Danieles offer to address her reliability concern about pre-owned vehicles?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Aisha Sanghvi's top priority when choosing between the Tesla Model S and Mercedes-Benz E-Class, and Danieles's offer/response to her reliability concern about pre-owned vehicles",
+        "relationship": "objection/concern and the salesperson's response addressing that same concern within her vehicle decision",
+        "reason": "Both parts concern the same business issue: Aisha's decision criteria, where the reliability concern is one of those criteria and Danieles's offer is the direct response to it. This is a coherent objection-and-response request, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two things from a single call: (1) Aisha's stated priority when choosing between the Tesla Model S and Mercedes-Benz E-Class, and (2) Danieles' response to her pre-owned reliability concern. The dialogue confirms she said 'extended warranty and maintenance are pretty important to me' and Danieles replied the certified pre-owned program 'outperform[s] competitors in terms of coverage and transparency' with 'detailed inspection reports and history.' The gold answer captures both facts accurately without unasked extras. The question is naturally phrased, scoped to a named customer and specific business situation, and a rep would plausibly want this info. No locator preamble, no answer leakage, no unsupported causality. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Aisha Sanghvi the statement 'Features like extended warranty and maintenance are pretty important to me,' which supports the claim that extended warranty and maintenance coverage matter to her. The additional remark about mixed reviews at other places does not negate the stated priority."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Danieles Silveira's quote explicitly states the certified pre-owned program meets high quality and reliability standards, that they 'often outperform competitors in terms of coverage and transparency,' and that cars 'come with detailed inspection reports and history.' This directly supports the claim about detailed inspection reports, history, and outperforming competitors on coverage and transparency."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer has two parts: (1) Aisha prioritizes extended warranty and maintenance coverage\u2014supported by index 0 where she says these features are 'pretty important' to her; (2) Danieles said the certified pre-owned program includes detailed inspection reports and history, outperforming competitors on coverage and transparency\u2014supported by index 1 where Danieles explicitly states all of these points. Both factual claims in the gold answer are fully supported by the supplied citations."
+      }
+    }
+  }
+]
