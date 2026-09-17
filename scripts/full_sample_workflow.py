@@ -124,7 +124,8 @@ def main():
             questions = json.loads((ROOT / 'selected/questions.json').read_text())
             exported = json.loads(REPORT.read_text())['questions']
             registry_path = PROJECT / 'reports/cohort-registry.json'
-            registry = json.loads(registry_path.read_text())
+            registry_snapshot = registry_path.read_bytes()
+            registry = json.loads(registry_snapshot)
             # Preserve both the named historical quarantine and expanded review rejections.
             checkpoint_rejections = json.loads((PROJECT / 'reports/sales-expanded-2000-v1-review-selection.json').read_text())['rejected']
             final, rejected = reviewed_selection(questions, exported, reviews,
@@ -134,6 +135,8 @@ def main():
             run('customer-scope-review',['uv','run','python','scripts/audit_customer_scope.py',str(pre_scope),
                 '--run-dir',str(REVIEW_ROOT),'--budget-usd',str(limits['review_usd'])],paid=True)
             scope_review=json.loads((REVIEW_ROOT/'report.json').read_text())
+            if registry_path.read_bytes() != registry_snapshot:
+                raise ValueError('Quarantine registry changed during scope review; reconcile before freezing')
             if scope_review['question_sha256']!=hashlib.sha256(pre_scope.read_bytes()).hexdigest():
                 raise ValueError('Full customer-scope review hash mismatch')
             final,scope_rejected=select_reviewed(final,scope_review)
@@ -160,6 +163,8 @@ def main():
                                   '--budget-usd', str(limits['rag_usd'])], EVAL, paid=True)
             run('rag-verification', ['uv', 'run', 'python', 'sample_report.py', '--run-dir', str(EVAL_ROOT),
                                     '--report-dir', str(EVAL_REPORT)], EVAL)
+            if registry_path.read_bytes() != registry_snapshot:
+                raise ValueError('Quarantine registry changed during RAG; reconcile before activating')
             registry['active_cohort'] = {'path': str(active.relative_to(PROJECT)), 'questions': len(final), 'sha256': selection['question_sha256']}
             registry['full_run'] = {'path': str(ROOT.relative_to(PROJECT)), 'source_units': 14916,
                                     'status': 'generation, independent review, and four-arm RAG complete', 'published': False}
