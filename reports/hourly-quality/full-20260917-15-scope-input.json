@@ -1,0 +1,1163 @@
+[
+  {
+    "job_id": "f2b8d7e78e403a2b48a7ec3107332969232c6188ea7147daa96161dc1626df6f",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SzA9IAK",
+      "b2b:a05Wt000003SzAAIA0"
+    ],
+    "status": "accepted",
+    "question": "For the TechPulse-CyberPulse opportunity, what existing product did Mohammad Abbas say the AI-driven EDA tools needed to integrate with, and what problem with NanoDesign Systems did he later raise?",
+    "gold_answer": "Integration with SecuManage Pro; NanoDesign's unresponsive, slow, and shallow support services were delaying project timelines.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SzA9IAK",
+        "answer_claim": "Mohammad wants tools that integrate seamlessly with current products like SecuManage Pro.",
+        "kind": "dialogue",
+        "line_start": 3,
+        "line_end": 4,
+        "quote": "[2022-11-23T10:31:00] Mohammad Abbas: Yes, exactly. We're particularly looking at tools that can integrate seamlessly with our current products like SecuManage Pro. We want to enhance our existing security measures.",
+        "start": 471,
+        "end": 686
+      },
+      {
+        "call_id": "b2b:a05Wt000003SzAAIA0",
+        "answer_claim": "Mohammad cites NanoDesign's less responsive support causing delays and shallow fixes.",
+        "kind": "dialogue",
+        "line_start": 7,
+        "line_end": 10,
+        "quote": "[2022-12-07T14:32:10] Mohammad Abbas: That\u2019s good to hear. We\u2019ve had frustrations with NanoDesign's support services being less responsive, impacting our project timelines.\n[2022-12-07T14:32:30] Mei Lin: I understand how that can be challenging. Reliable support is crucial. We take pride in our responsive support services and streamlined SLAs. Could you share how these support issues have specifically impacted your projects?\n[2022-12-07T14:32:55] Mohammad Abbas: Well, delays occur due to slow response times, and when support finally comes, it's often not as thorough as we'd like. It pushes our timelines back and can be quite frustrating.",
+        "start": 1611,
+        "end": 2256
+      }
+    ],
+    "question_id": "b2b-multi_call-f2b8d7e78e403a2b",
+    "candidate": {
+      "question": "For the TechPulse-CyberPulse opportunity, what existing product did Mohammad Abbas say the AI-driven EDA tools needed to integrate with, and what problem with NanoDesign Systems did he later raise?",
+      "gold_answer": "Integration with SecuManage Pro; NanoDesign's unresponsive, slow, and shallow support services were delaying project timelines.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SzA9IAK",
+          "answer_claim": "Mohammad wants tools that integrate seamlessly with current products like SecuManage Pro.",
+          "kind": "dialogue",
+          "line_start": 3,
+          "line_end": 4,
+          "quote": "[2022-11-23T10:31:00] Mohammad Abbas: Yes, exactly. We're particularly looking at tools that can integrate seamlessly with our current products like SecuManage Pro. We want to enhance our existing security measures.",
+          "start": 471,
+          "end": 686
+        },
+        {
+          "call_id": "b2b:a05Wt000003SzAAIA0",
+          "answer_claim": "Mohammad cites NanoDesign's less responsive support causing delays and shallow fixes.",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 10,
+          "quote": "[2022-12-07T14:32:10] Mohammad Abbas: That\u2019s good to hear. We\u2019ve had frustrations with NanoDesign's support services being less responsive, impacting our project timelines.\n[2022-12-07T14:32:30] Mei Lin: I understand how that can be challenging. Reliable support is crucial. We take pride in our responsive support services and streamlined SLAs. Could you share how these support issues have specifically impacted your projects?\n[2022-12-07T14:32:55] Mohammad Abbas: Well, delays occur due to slow response times, and when support finally comes, it's often not as thorough as we'd like. It pushes our timelines back and can be quite frustrating.",
+          "start": 1611,
+          "end": 2256
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Mohammad Abbas said the AI-driven EDA tools needed to integrate with SecuManage Pro. He later raised the problem of NanoDesign Systems' support services being less responsive, which impacted project timelines.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Mohammad Abbas said the AI-driven EDA tools needed to integrate seamlessly with CyberPulse's current products, specifically SecuManage Pro, to enhance existing security measures. However, the call contains no mention of NanoDesign Systems or any problem with it, so that part of the question cannot be answered from the supplied call.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer. Regarding the NanoDesign Systems problem: Mohammad Abbas raised that NanoDesign's support services were less responsive \u2014 slow response times caused project delays, and when support did arrive it was often not thorough enough, pushing timelines back. However, the call does not specify a particular existing product that the AI-driven EDA tools needed to integrate with; Abbas only mentioned generally wanting tailored solutions to integrate with CyberPulse's 'existing workflows,' without naming a specific product. The name of that existing product is missing from the supplied call.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported: Call 1 (2022-11-23) has Mohammad stating tools should 'integrate seamlessly with our current products like SecuManage Pro'; Call 2 (2022-12-07) has him citing NanoDesign's unresponsive support causing delays and shallow fixes. The independent answer matches the gold semantically. Each single call covers only one of the two asked facts (each ablation explicitly notes the missing part), so both calls are necessary with distinct exclusive facts. No-context answers are UNKNOWN, correctly failing. The question is a realistic account-research need, names participants without leaking the answer, and the gold adds no unsupported detail."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SzA9IAK",
+          "b2b:a05Wt000003SzAAIA0"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Ss0iIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about a TechPulse-CyberPulse opportunity, a person named Mohammad Abbas, AI-driven EDA tools, or NanoDesign Systems. The only call transcript is with Mohammad Hassan of Tehran Future Designs discussing CloudInnovate Space and SecureAnalytics Pro. None of the requested facts can be answered from the available sources.",
+              "evidence": [],
+              "reason": "The question asks about Mohammad Abbas, the TechPulse-CyberPulse opportunity, AI-driven EDA tools integration, and a problem with NanoDesign Systems. The sole source call (b2b:a05Wt000003Ss0iIAC) involves Mohammad Hassan (not Mohammad Abbas) at Tehran Future Designs, discussing CloudInnovate Space and SecureAnalytics Pro. There is no mention of TechPulse-CyberPulse, AI-driven EDA tools, or NanoDesign Systems anywhere in the provided data. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuIpIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Carmen Silva and Fatima Abbas of LiftTech Elevations regarding the SecureData Nexus product. There is no mention of a TechPulse-CyberPulse opportunity, no person named Mohammad Abbas, no discussion of AI-driven EDA tools, and no reference to NanoDesign Systems. The requested facts cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003SuIpIAK) involves Fatima Abbas at LiftTech Elevations discussing SecureData Nexus with Carmen Silva. None of the entities or topics in the question\u2014TechPulse-CyberPulse opportunity, Mohammad Abbas, AI-driven EDA tools integration, or NanoDesign Systems problems\u2014appear anywhere in the source material."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzekIAC",
+              "b2b:a05Wt000003SzgLIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StERIA0",
+              "b2b:a05Wt000003SwnMIAS",
+              "b2b:a05Wt000003SwqaIAC",
+              "b2b:a05Wt000003SwqbIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003StEMIA0",
+              "b2b:a05Wt000003SvHoIAK",
+              "b2b:a05Wt000003SyYzIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqZsIAK",
+              "b2b:a05Wt000003SyypIAC",
+              "b2b:a05Wt000003Szd7IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvXuIAK",
+              "b2b:a05Wt000003SwnTIAS",
+              "b2b:a05Wt000003SwqkIAC",
+              "b2b:a05Wt000003Sx8NIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrxMIAS",
+              "b2b:a05Wt000003SvkzIAC",
+              "b2b:a05Wt000003T1QRIA0",
+              "b2b:a05Wt000003T3YfIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzF4IAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwgtIAC",
+              "b2b:a05Wt000003Syp9IAC",
+              "b2b:a05Wt000003SzgMIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SudRIAS",
+              "b2b:a05Wt000003Suf3IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SugfIAC",
+              "b2b:a05Wt000003SuiHIAS",
+              "b2b:a05Wt000003SujtIAC",
+              "b2b:a05Wt000003SulVIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx8HIAS",
+              "b2b:a05Wt000003Sx9tIAC",
+              "b2b:a05Wt000003SxBVIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyiwIAC",
+              "b2b:a05Wt000003T0PcIAK",
+              "b2b:a05Wt000003T1tZIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0PWIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyHHIA0",
+              "b2b:a05Wt000003SzoPIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyIsIAK",
+              "b2b:a05Wt000003SzhxIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrN7IAK",
+              "b2b:a05Wt000003SzBjIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not support a complete answer. Mohammad Abbas mentions needing integration with the existing system SecuManage Pro (call b2b:a05Wt000003SrN7IAK, line 5), but he never specifically refers to 'AI-driven EDA tools' needing to integrate with it. Furthermore, 'NanoDesign Systems' is never mentioned in either call transcript, so no problem with NanoDesign Systems was raised by Mohammad Abbas. The question's premises (AI-driven EDA tools integration requirement and a NanoDesign Systems problem) are not found in the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about two specific facts: (1) what existing product Mohammad Abbas said AI-driven EDA tools needed to integrate with, and (2) what problem with NanoDesign Systems he later raised. While SecuManage Pro is mentioned as an existing system needing integration (line 5 of call b2b:a05Wt000003SrN7IAK), it is not framed as 'AI-driven EDA tools' needing integration. More critically, 'NanoDesign Systems' does not appear anywhere in either call transcript, so the second part of the question cannot be answered. The opportunity is also named 'CyberPulse Advanced Integration' rather than 'TechPulse-CyberPulse,' though it involves TechPulse Solutions and CyberPulse Security. Since neither requested fact is fully supported as stated, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SypAIAS",
+              "b2b:a05Wt000003SzA9IAK",
+              "b2b:a05Wt000003SzAAIA0",
+              "b2b:a05Wt000003SzhyIAC",
+              "b2b:a05Wt000003SzlBIAS",
+              "b2b:a05Wt000003SzmnIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Mohammad Abbas said the AI-driven EDA tools needed to integrate seamlessly with CyberPulse's current products, specifically SecuManage Pro. He later raised that NanoDesign Systems' support services were less responsive, causing delays and pushing back project timelines due to slow response times and insufficiently thorough support.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SzA9IAK",
+                  "line_start": 2,
+                  "line_end": 4,
+                  "quote": "[2022-11-23T10:30:30] Mei Lin: I'm doing great, thank you! So, I'm glad we're having this discovery meeting to understand your security needs better. From our initial discussions, we know CyberPulse is interested in integrating some AI-driven EDA tools. Is that right?\n[2022-11-23T10:31:00] Mohammad Abbas: Yes, exactly. We're particularly looking at tools that can integrate seamlessly with our current products like SecuManage Pro. We want to enhance our existing security measures."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzAAIA0",
+                  "line_start": 7,
+                  "line_end": 10,
+                  "quote": "[2022-12-07T14:32:10] Mohammad Abbas: That\u2019s good to hear. We\u2019ve had frustrations with NanoDesign's support services being less responsive, impacting our project timelines.\n[2022-12-07T14:32:30] Mei Lin: I understand how that can be challenging. Reliable support is crucial. We take pride in our responsive support services and streamlined SLAs. Could you share how these support issues have specifically impacted your projects?\n[2022-12-07T14:32:55] Mohammad Abbas: Well, delays occur due to slow response times, and when support finally comes, it's often not as thorough as we'd like. It pushes our timelines back and can be quite frustrating."
+                }
+              ],
+              "reason": "In the Nov 23, 2022 discovery call (b2b:a05Wt000003SzA9IAK), line 3 has Mohammad Abbas stating the tools need to 'integrate seamlessly with our current products like SecuManage Pro.' In the Dec 7, 2022 call (b2b:a05Wt000003SzAAIA0), line 7 has him raising that 'NanoDesign's support services being less responsive, impacting our project timelines,' and lines 8-9 elaborate on delays from slow response times and insufficiently thorough support. Both facts are directly stated by Mohammad Abbas for the TechPulse-CyberPulse opportunity."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the same product (SecuManage Pro) as the integration target and describe the same NanoDesign Systems problem (unresponsive/slow/shallow support causing project timeline delays). Answer A simply uses more verbose phrasing, but the requested facts are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Suk6IAC",
+              "b2b:a05Wt000003SySbIAK",
+              "b2b:a05Wt000003T18gIAC",
+              "b2b:a05Wt000003T2w1IAC",
+              "b2b:a05Wt000003T2w2IAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "mohammad abbas"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly supported: call 1 (2022-11-23) has Mohammad stating the AI-driven EDA tools should integrate with current products like SecuManage Pro; call 2 (2022-12-07) has him citing NanoDesign's unresponsive, slow, and shallow support delaying project timelines. Each call supplies a distinct necessary fact, the question is self-contained and business-relevant, and the gold answer matches the evidence without leakage."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "what existing product did Mohammad Abbas say the AI-driven EDA tools needed to integrate with",
+            "explicitly_requested": true,
+            "required_fact": "SecuManage Pro",
+            "source_call_ids": [
+              "b2b:a05Wt000003SzA9IAK"
+            ]
+          },
+          {
+            "question_span": "what problem with NanoDesign Systems did he later raise",
+            "explicitly_requested": true,
+            "required_fact": "NanoDesign's support services were less responsive, causing delays and pushing back project timelines",
+            "source_call_ids": [
+              "b2b:a05Wt000003SzAAIA0"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) the existing product for integration, and (2) the problem with NanoDesign Systems. The gold_answer provides exactly these two facts, with no extra unasked claims. The independent answer covers both facts correctly. The obligations correctly map each fact to its source call, and each call supplies a distinct fact not available in the other. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Integration with SecuManage Pro",
+            "question_span": "what existing product did Mohammad Abbas say the AI-driven EDA tools needed to integrate with",
+            "required_by_question": true
+          },
+          {
+            "claim": "NanoDesign's support services were less responsive",
+            "question_span": "what problem with NanoDesign Systems did he later raise",
+            "required_by_question": true
+          },
+          {
+            "claim": "NanoDesign's support services were slow",
+            "question_span": "what problem with NanoDesign Systems did he later raise",
+            "required_by_question": true
+          },
+          {
+            "claim": "NanoDesign's support services were shallow",
+            "question_span": "what problem with NanoDesign Systems did he later raise",
+            "required_by_question": true
+          },
+          {
+            "claim": "NanoDesign's support services were delaying project timelines",
+            "question_span": "what problem with NanoDesign Systems did he later raise",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "2a3858553795230a82351f3d0dc71089b6abc1436b8717281e4b9e1c273ce6ca",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SyijIAC"
+    ],
+    "status": "accepted",
+    "question": "What pain point did Isaac Njoroge of TechGrove Systems raise about their current EDA systems, and how did Priya say PulseSim Pro addresses it?",
+    "gold_answer": "Isaac said managing security configurations and initial setup is overwhelming, slowing rollout; Priya said PulseSim Pro provides user guidance to simplify configuration.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SyijIAC",
+        "answer_claim": "Isaac: main issue is managing security configurations; initial setup overwhelming, affects rollout speed.",
+        "kind": "dialogue",
+        "line_start": 5,
+        "line_end": 6,
+        "quote": "[2021-06-24T10:00:47] Isaac Njoroge: Well, one of our main issues is managing security configurations. Our team finds the initial setup a bit overwhelming, which affects our rollout speed.",
+        "start": 659,
+        "end": 847
+      },
+      {
+        "call_id": "b2b:a05Wt000003SyijIAC",
+        "answer_claim": "Priya: PulseSim Pro provides user guidance to simplify the configuration process.",
+        "kind": "dialogue",
+        "line_start": 6,
+        "line_end": 7,
+        "quote": "[2021-06-24T10:01:03] Priya Choudhury: I see. We\u2019ve heard similar feedback before. With our PulseSim Pro, we provide user guidance to simplify the configuration process, even though there\u2019s still room for improvement.",
+        "start": 848,
+        "end": 1065
+      }
+    ],
+    "evidence_index_repairs": [
+      {
+        "evidence_index": 0,
+        "original_end": 5,
+        "normalized_end": 6
+      },
+      {
+        "evidence_index": 1,
+        "original_end": 6,
+        "normalized_end": 7
+      }
+    ],
+    "question_id": "b2b-single_call-2a3858553795230a",
+    "candidate": {
+      "question": "What pain point did Isaac Njoroge of TechGrove Systems raise about their current EDA systems, and how did Priya say PulseSim Pro addresses it?",
+      "gold_answer": "Isaac said managing security configurations and initial setup is overwhelming, slowing rollout; Priya said PulseSim Pro provides user guidance to simplify configuration.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SyijIAC",
+          "answer_claim": "Isaac: main issue is managing security configurations; initial setup overwhelming, affects rollout speed.",
+          "kind": "dialogue",
+          "line_start": 5,
+          "line_end": 6,
+          "quote": "[2021-06-24T10:00:47] Isaac Njoroge: Well, one of our main issues is managing security configurations. Our team finds the initial setup a bit overwhelming, which affects our rollout speed.",
+          "start": 659,
+          "end": 847
+        },
+        {
+          "call_id": "b2b:a05Wt000003SyijIAC",
+          "answer_claim": "Priya: PulseSim Pro provides user guidance to simplify the configuration process.",
+          "kind": "dialogue",
+          "line_start": 6,
+          "line_end": 7,
+          "quote": "[2021-06-24T10:01:03] Priya Choudhury: I see. We\u2019ve heard similar feedback before. With our PulseSim Pro, we provide user guidance to simplify the configuration process, even though there\u2019s still room for improvement.",
+          "start": 848,
+          "end": 1065
+        }
+      ],
+      "evidence_index_repairs": [
+        {
+          "evidence_index": 0,
+          "original_end": 5,
+          "normalized_end": 6
+        },
+        {
+          "evidence_index": 1,
+          "original_end": 6,
+          "normalized_end": 7
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Isaac Njoroge raised the pain point of managing security configurations, noting that the initial setup is overwhelming and affects rollout speed. Priya said PulseSim Pro addresses it by providing user guidance to simplify the configuration process, though there is still room for improvement.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both answer claims are directly supported by quoted dialogue lines 5-7: Isaac cites managing security configurations and overwhelming initial setup affecting rollout speed; Priya says PulseSim Pro provides user guidance to simplify configuration. The question is a realistic sales need, names participants allowed, does not leak the answer, and the independent answer matches the gold semantically. No-context answers are UNKNOWN, so they fail. This is a single-call QA, so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SyijIAC"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvgJIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzrkIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrnsIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T23MIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvhnIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvrXIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3H1IAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvgMIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4WbIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T597IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript does not mention Isaac Njoroge, TechGrove Systems, EDA systems, or a product called PulseSim Pro. The only call is with Isaac Brown of Boston Tech Solutions discussing Workflow Genius, so the requested facts are missing.",
+              "evidence": [],
+              "reason": "The question asks about Isaac Njoroge of TechGrove Systems raising a pain point about their current EDA systems and how Priya said PulseSim Pro addresses it. The sole call transcript (b2b:a05Wt000003T597IAC) involves Isaac Brown of Boston Tech Solutions speaking with Dalia Herz about Workflow Genius. None of the named people (Isaac Njoroge, Priya), company (TechGrove Systems), product (PulseSim Pro), or topic (EDA systems) appear anywhere in the source material. Therefore no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgJIAS",
+              "b2b:a05Wt000003T0apIAC",
+              "b2b:a05Wt000003T0uDIAS",
+              "b2b:a05Wt000003T2HeIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any mention of a person named Priya or a product called PulseSim Pro. Isaac Njoroge of TechGrove Systems does discuss pain points (e.g., optimizing their existing tech stack, resolving inefficiencies in development operations, and concerns about rigid integrations with competitors like Quantum Circuits Inc), but these are addressed by Dariusz Wisniewski\u2014not Priya\u2014and the solutions discussed are AI Cirku-Tech, CircuitAI Innovator, CollabCircuit Hub, and SecureFlow Suite\u2014not PulseSim Pro. Therefore, the specific question about Priya's response regarding PulseSim Pro cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "No call transcript includes a speaker named Priya or any reference to a product called PulseSim Pro. The salesperson in all TechGrove Systems calls is Dariusz Wisniewski, and the products discussed are AI Cirku-Tech, CircuitAI Innovator, CollabCircuit Hub, and SecureFlow Suite. The question's premise (Priya + PulseSim Pro) is not supported by any source data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SswgIAC",
+              "b2b:a05Wt000003SxGPIA0",
+              "b2b:a05Wt000003SzQDIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvUlIAK",
+              "b2b:a05Wt000003SvrMIAS",
+              "b2b:a05Wt000003SzAHIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention a product called PulseSim Pro, so no pain point tied to it or Priya's claims about it can be answered. Isaac does raise pain points (minimizing downtime during integration, scalability, managing fluctuating models, security compliance, vendor support/response times), but none are linked to PulseSim Pro, and Priya never describes how PulseSim Pro addresses anything.",
+              "evidence": [],
+              "reason": "The question asks specifically about PulseSim Pro, but this product name does not appear in any of the three call transcripts between Priya Choudhury and Isaac Njoroge of TechGrove Systems. The products discussed are SecureFlow Suite, CloudLink Designer, AI Cirku-Tech, DesignWave Automation, and OptiPower Manager. While Isaac raises several pain points (e.g., managing fluctuating models in call b2b:a05Wt000003SvrMIAS line 5, minimizing downtime in call b2b:a05Wt000003SzAHIA0 line 7, scalability in line 9), none are connected to PulseSim Pro, and Priya never explains how PulseSim Pro addresses any issue. The requested fact is entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyCQIA0",
+              "b2b:a05Wt000003SyM6IAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuQeIAK",
+              "b2b:a05Wt000003SwSRIA0",
+              "b2b:a05Wt000003SyHMIA0",
+              "b2b:a05Wt000003T0XZIA0",
+              "b2b:a05Wt000003T0ZBIA0"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsetIAC",
+              "b2b:a05Wt000003Stj0IAC",
+              "b2b:a05Wt000003T0UOIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any mention of a product called 'PulseSim Pro' nor any speaker named Priya. Isaac Njoroge of TechGrove Systems did raise pain points about enhancing development operations/workflows with more advanced AI features and improving data security (referencing AutoGen IDE and Workflow Genius), but the specific product 'PulseSim Pro' and the person 'Priya' referenced in the question do not appear in any of the provided call transcripts. Therefore, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "No call transcript mentions 'PulseSim Pro' or a person named 'Priya.' The salesperson in all three calls is Alejandro Ramirez, and the products discussed are AI Cirku-Tech, SecureFlow Suite, CollabDesign Studio, and OptiPower Manager. Since the exact named product and speaker required by the question are absent, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgKIAS",
+              "b2b:a05Wt000003SvUkIAK",
+              "b2b:a05Wt000003Svg4IAC",
+              "b2b:a05Wt000003SyijIAC"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Isaac Njoroge said one of TechGrove's main issues with their current EDA systems is managing security configurations\u2014their team finds the initial setup a bit overwhelming, which affects rollout speed. Priya responded that with PulseSim Pro, TechPulse provides user guidance to simplify the configuration process, while acknowledging there is still room for improvement.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SyijIAC",
+                  "line_start": 4,
+                  "line_end": 7,
+                  "quote": "[2021-06-24T10:00:35] Priya Choudhury: Awesome! Let's start with what specific challenges or pain points you're currently facing with your EDA systems.\n[2021-06-24T10:00:47] Isaac Njoroge: Well, one of our main issues is managing security configurations. Our team finds the initial setup a bit overwhelming, which affects our rollout speed.\n[2021-06-24T10:01:03] Priya Choudhury: I see. We\u2019ve heard similar feedback before. With our PulseSim Pro, we provide user guidance to simplify the configuration process, even though there\u2019s still room for improvement."
+                }
+              ],
+              "reason": "In call b2b:a05Wt000003SyijIAC, line 4 shows Priya asking about specific challenges/pain points with EDA systems. Line 5 has Isaac stating the pain point: managing security configurations, initial setup is overwhelming, affecting rollout speed. Line 6 has Priya explaining PulseSim Pro provides user guidance to simplify the configuration process, acknowledging room for improvement. All facts are directly supported by the exact named individuals (Isaac Njoroge of TechGrove Systems, Priya Choudhury) discussing PulseSim Pro in the context of EDA systems."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers identify the same pain point (managing security configurations / initial setup being overwhelming, slowing rollout) and the same response from Priya (PulseSim Pro provides user guidance to simplify configuration). Answer A adds minor extra detail (acknowledging room for improvement, mentioning TechPulse), but the core requested facts are identical in both."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuKEIA0",
+              "b2b:a05Wt000003T10kIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1WuIAK",
+              "b2b:a05Wt000003T1jtIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T02zIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "isaac njoroge"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Question is factual, self-contained, and business-relevant. Both evidence quotes directly support the gold answer: Isaac's pain point (security configuration management, overwhelming setup slowing rollout) and Priya's response (user guidance to simplify configuration). Each call contributes a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What pain point did Isaac Njoroge of TechGrove Systems raise about their current EDA systems",
+            "explicitly_requested": true,
+            "required_fact": "Isaac said one of their main issues is managing security configurations; the team finds the initial setup overwhelming, which affects rollout speed.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SyijIAC"
+            ]
+          },
+          {
+            "question_span": "how did Priya say PulseSim Pro addresses it?",
+            "explicitly_requested": true,
+            "required_fact": "Priya said PulseSim Pro provides user guidance to simplify the configuration process, though there's still room for improvement.",
+            "source_call_ids": [
+              "b2b:a05Wt000003SyijIAC"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two specific facts: Isaac's pain point and Priya's solution. The gold_answer contains exactly these two facts, no extras. The independent answer covers both. The obligations correctly extract the two required facts from the single call. The call provides both facts, so it is required. No arithmetic involved.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Isaac said managing security configurations and initial setup is overwhelming, slowing rollout",
+            "question_span": "What pain point did Isaac Njoroge of TechGrove Systems raise about their current EDA systems",
+            "required_by_question": true
+          },
+          {
+            "claim": "Priya said PulseSim Pro provides user guidance to simplify configuration",
+            "question_span": "how did Priya say PulseSim Pro addresses it?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "5cc79a086a12972b9921951406294bd219d31a9f919787534b5d79e7eaf5aa48",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SXKwIAO"
+    ],
+    "status": "accepted",
+    "question": "What winter-focused features did Vanessa say the 2022 Toyota Camry Hybrid offers Sophia Brown, and what did she say about the winter tire package?",
+    "gold_answer": "Heated seats and a robust all-wheel-drive system; the winter tire package is tailored for superior grip and safety.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SXKwIAO",
+        "answer_claim": "Heated seats, robust all-wheel-drive system, and a winter tire package tailored for superior grip and safety.",
+        "kind": "dialogue",
+        "line_start": 4,
+        "line_end": 5,
+        "quote": "[2020-07-19T13:00:30] Vanessa M\u00fcller: Absolutely. The 2022 Toyota Camry Hybrid is equipped with features like heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions. Plus, our winter tire package is specifically tailored to offer superior grip and safety.",
+        "start": 618,
+        "end": 917
+      }
+    ],
+    "question_id": "b2c-single_call-5cc79a086a12972b",
+    "candidate": {
+      "question": "What winter-focused features did Vanessa say the 2022 Toyota Camry Hybrid offers Sophia Brown, and what did she say about the winter tire package?",
+      "gold_answer": "Heated seats and a robust all-wheel-drive system; the winter tire package is tailored for superior grip and safety.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SXKwIAO",
+          "answer_claim": "Heated seats, robust all-wheel-drive system, and a winter tire package tailored for superior grip and safety.",
+          "kind": "dialogue",
+          "line_start": 4,
+          "line_end": 5,
+          "quote": "[2020-07-19T13:00:30] Vanessa M\u00fcller: Absolutely. The 2022 Toyota Camry Hybrid is equipped with features like heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions. Plus, our winter tire package is specifically tailored to offer superior grip and safety.",
+          "start": 618,
+          "end": 917
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Vanessa said the 2022 Toyota Camry Hybrid offers heated seats and a robust all-wheel-drive system for winter conditions. She described the winter tire package as specifically tailored to offer superior grip and safety.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA. The quote (13:00:30) directly supports both claims: heated seats and robust AWD as winter features, and the winter tire package 'tailored to offer superior grip and safety.' The question is a realistic sales inquiry with clear customer context (Sophia Brown, winter hybrid upgrade), doesn't leak the answer, and the independent answer matches the gold semantically. Both no-context answers are UNKNOWN, so neither answers correctly. Two-call flags set true per single-call convention."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SXKwIAO"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUzmIAG",
+              "b2c:a05Ws000005SVBAIA4",
+              "b2c:a05Ws000005SbkyIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any information about a 2022 Toyota Camry Hybrid, winter-focused features, or a winter tire package. The customer in all three calls is Sophia Turner (not Sophia Brown), and Vanessa M\u00fcller only discusses the 2024 Tesla Model S and 2024 Porsche 911 Carrera, extended warranties, maintenance plans, and a product demonstration. None of the requested facts exist in the sources.",
+              "evidence": [],
+              "reason": "The question asks about (1) a 2022 Toyota Camry Hybrid, (2) winter-focused features, (3) a winter tire package, and (4) a customer named Sophia Brown. None of these appear in any of the three call transcripts. The customer is Sophia Turner, the vehicles discussed are the Tesla Model S and Porsche 911 Carrera, and there is no mention of winter features or a winter tire package. The draft extraction correctly identifies these gaps. No complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQxlIAG",
+              "b2c:a05Ws000005SXKwIAO",
+              "b2c:a05Ws000005SXWIIA4"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Vanessa told Sophia Brown the 2022 Toyota Camry Hybrid is equipped with heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions. Regarding the winter tire package, she said it is specifically tailored to offer superior grip and safety; she also described the 2023 AutoElite Winter Tire Package as providing excellent traction and safety in colder months, including high-quality tires designed specifically for cold weather, priced at $699.99, and a great addition to the Camry Hybrid ensuring optimal performance.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SXKwIAO",
+                  "line_start": 4,
+                  "line_end": 5,
+                  "quote": "[2020-07-19T13:00:30] Vanessa M\u00fcller: Absolutely. The 2022 Toyota Camry Hybrid is equipped with features like heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions. Plus, our winter tire package is specifically tailored to offer superior grip and safety."
+                },
+                {
+                  "call_id": "b2c:a05Ws000005SXWIIA4",
+                  "line_start": 13,
+                  "line_end": 16,
+                  "quote": "[2020-07-14T15:04:52] Vanessa M\u00fcller: Understood. We\u2019ll make sure your financing plan complements those goals. And with the winter hybrid upgrade, the 2023 AutoElite Winter Tire Package can provide excellent traction and safety in colder months.\n[2020-07-14T15:05:12] Sophia Brown: That package sounds ideal for where I live. I'd like more details about it and the overall cost involved.\n[2020-07-14T15:05:33] Vanessa M\u00fcller: The winter tire package includes high-quality tires designed specifically for cold weather, priced at $699.99. They're a great addition to the Camry Hybrid and ensure optimal performance."
+                }
+              ],
+              "reason": "Call b2c:a05Ws000005SXKwIAO line 4 has Vanessa explicitly stating the heated seats and robust all-wheel-drive system as winter-focused features, and that the winter tire package is tailored for superior grip and safety. Call b2c:a05Ws000005SXWIIA4 lines 13-15 add that the 2023 AutoElite Winter Tire Package provides excellent traction and safety in colder months, includes high-quality cold-weather tires priced at $699.99, and is a great addition to the Camry Hybrid. All facts are attributed to Vanessa speaking to Sophia Brown about the correct vehicle and opportunity."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same winter-focused features (heated seats and a robust all-wheel-drive system) and the same description of the winter tire package (tailored for superior grip and safety). Answer A includes additional unrequested detail (the 2023 AutoElite Winter Tire Package specifics and price), but the core requested facts match."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOohIAG",
+              "b2c:a05Ws000005SQrBIAW",
+              "b2c:a05Ws000005STR3IAO",
+              "b2c:a05Ws000005SWGhIAO",
+              "b2c:a05Ws000005SWtSIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No complete answer exists. The question asks about statements made by 'Vanessa' regarding winter-focused features of the 2022 Toyota Camry Hybrid and a winter tire package for Sophia Brown. However, none of the provided call transcripts include a speaker named Vanessa. All calls are between Eoin O'Sullivan and Sophia Brown. Furthermore, there is no mention of winter-focused features or a winter tire package for the 2022 Toyota Camry Hybrid in any of the transcripts. The Camry Hybrid is discussed only in terms of fuel efficiency, reduced emissions, reliability, and eco-friendly benefits.",
+              "evidence": [],
+              "reason": "The question requires statements from a person named 'Vanessa' about winter-focused features and a winter tire package for the 2022 Toyota Camry Hybrid directed at Sophia Brown. No such person appears in any of the five call transcripts (all feature Eoin O'Sullivan as the salesperson), and no winter-related features or winter tire package are mentioned anywhere in the sources. Therefore, the requested facts cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SYK9IAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript is between Tariq Ahmed and Sophia Brown; there is no speaker named Vanessa. Additionally, the transcript contains no mention of winter-focused features for the 2022 Toyota Camry Hybrid, nor any discussion of a winter tire package. The only Camry Hybrid feature mentioned is 'excellent fuel efficiency without compromising on power' (line 6). Therefore, the question cannot be answered from the supplied sources.",
+              "evidence": [],
+              "reason": "The question asks about statements made by 'Vanessa' regarding winter-focused features of the 2022 Toyota Camry Hybrid and a winter tire package for Sophia Brown. The sole call provided features Tariq Ahmed (not Vanessa) as the salesperson, and the conversation covers only general eco-friendly vehicle features (fuel efficiency, zero emissions, electric performance) with no reference to winter features or a winter tire package. No source material supports any part of the requested information."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SYFFIA4",
+              "b2c:a05Ws000005SaCJIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain any speaker named Vanessa (the salesperson is Priya Sharma), nor any discussion of winter-focused features or a winter tire package for the 2022 Toyota Camry Hybrid. The features mentioned are general (sleek design, hybrid engine, fuel efficiency, Toyota Safety Sense, hybrid battery warranty up to 150,000 miles, infotainment systems), with no winter-related content.",
+              "evidence": [],
+              "reason": "The question asks about statements made by 'Vanessa' regarding winter-focused features and a winter tire package for the 2022 Toyota Camry Hybrid offered to Sophia Brown. Neither call transcript includes a speaker named Vanessa; the representative in both calls is Priya Sharma. Additionally, no winter-focused features or winter tire package are discussed anywhere in the provided sources. Therefore, no complete answer can be constructed from the given data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SVCZIA4",
+              "b2c:a05Ws000005SVpJIAW",
+              "b2c:a05Ws000005SXpYIAW",
+              "b2c:a05Ws000005ScdlIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No speaker named Vanessa appears in any of the provided calls. All conversations with Sophia Brown are conducted by Mohammed Khan. Furthermore, none of the transcripts mention winter-focused features or a winter tire package for the 2022 Toyota Camry Hybrid. The Camry Hybrid is discussed only in terms of fuel economy, price ($25,999.99), touch-screen interface, smartphone integration, advanced safety technology, and Toyota Safety Sense. Therefore, the requested information about Vanessa's statements regarding winter features and a winter tire package does not exist in the sources.",
+              "evidence": [],
+              "reason": "The question asks about statements made by 'Vanessa' regarding winter-focused features and a winter tire package for the 2022 Toyota Camry Hybrid. No person named Vanessa appears in any of the four call transcripts; the salesperson in all calls is Mohammed Khan. Additionally, no mention of winter features or a winter tire package is found anywhere in the sources. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRlnIAG",
+              "b2c:a05Ws000005STaiIAG",
+              "b2c:a05Ws000005SU0IIAW",
+              "b2c:a05Ws000005Sa91IAC",
+              "b2c:a05Ws000005ScCPIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No complete answer exists. The question asks what Vanessa said to Sophia Brown about winter-focused features of the 2022 Toyota Camry Hybrid and about a winter tire package. However, none of the provided call transcripts contain a speaker named Vanessa; all calls are between Santiago Valdez and Sophia Brown. Furthermore, no winter-focused features of the 2022 Toyota Camry Hybrid are discussed in any transcript (the only description given is hybrid efficiency, reliability, sleek design, and comfortable interior). There is also no mention of a 'winter tire package' anywhere; the closest reference is Santiago mentioning a 'Winter Protection Package' in passing (call b2c:a05Ws000005SU0IIAW, line 18), but this is not attributed to Vanessa and is not described as a tire package.",
+              "evidence": [],
+              "reason": "The question requires statements made by a person named Vanessa about winter-focused features of the 2022 Toyota Camry Hybrid and a winter tire package. No speaker named Vanessa appears in any of the five transcripts. The 2022 Toyota Camry Hybrid is mentioned but without any winter-specific features, and no winter tire package is discussed. Therefore the answer cannot be completed from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQ4vIAG",
+              "b2c:a05Ws000005SQ9hIAG",
+              "b2c:a05Ws000005STUDIA4",
+              "b2c:a05Ws000005SZjGIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no mention of a person named Vanessa, no discussion of a 2022 Toyota Camry Hybrid, and no winter tire package details. All four calls are between Hassan Riaz and Sophia Brown regarding a 2023 Nissan Leaf. The only winter-related reference is Hassan Riaz's brief mention of a 'Winter Protection Package' (call b2c:a05Ws000005SQ4vIAG, line 14), but this is not attributed to Vanessa, not tied to a 2022 Toyota Camry Hybrid, and no winter tire package specifics are given.",
+              "evidence": [],
+              "reason": "The question asks about winter-focused features of a 2022 Toyota Camry Hybrid as described by Vanessa to Sophia Brown, plus details about a winter tire package. None of the four transcripts include a speaker named Vanessa, a 2022 Toyota Camry Hybrid, or any winter tire package discussion. The salesperson in all calls is Hassan Riaz, and the vehicle discussed is a 2023 Nissan Leaf. Therefore, no complete answer can be constructed from the supplied sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOUSIA4",
+              "b2c:a05Ws000005SSMnIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of a person named Vanessa, no discussion of a 2022 Toyota Camry Hybrid, and no mention of winter-focused features or a winter tire package. Both calls are between Abigail Johnson and Sophia Brown about eco-friendly vehicles (2023 Nissan Leaf, 2024 Volkswagen ID.4) and service/financing plans, so the requested facts are missing.",
+              "evidence": [],
+              "reason": "The question asks about winter-focused features of a 2022 Toyota Camry Hybrid and a winter tire package as described by Vanessa to Sophia Brown. Neither call transcript includes a salesperson named Vanessa, the 2022 Toyota Camry Hybrid, any winter-focused features, or any winter tire package. The calls involve Abigail Johnson discussing the 2023 Nissan Leaf and 2024 Volkswagen ID.4 with Sophia Brown. No source evidence supports any part of the requested information."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STdsIAG",
+              "b2c:a05Ws000005SWyDIAW",
+              "b2c:a05Ws000005SYKAIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No speaker named Vanessa appears in any of the provided calls, and none of the transcripts mention winter-focused features or a winter tire package for the 2022 Toyota Camry Hybrid. The only reference to the 2022 Toyota Camry Hybrid is Chinedu Okoye noting its fuel efficiency and reduced emissions (call b2c:a05Ws000005SYKAIA4, line 4). All three calls involve Chinedu Okoye and Sophia Brown, so the question's premise\u2014Vanessa discussing winter features and a winter tire package with Sophia Brown\u2014is unsupported by the sources.",
+              "evidence": [],
+              "reason": "The question asks about statements made by 'Vanessa' regarding winter-focused features and a winter tire package for the 2022 Toyota Camry Hybrid directed at Sophia Brown. No call transcript contains a speaker named Vanessa, nor any mention of winter features or a winter tire package. The sole mention of the 2022 Toyota Camry Hybrid is by Chinedu Okoye discussing fuel efficiency and reduced emissions. Therefore the requested facts cannot be answered from these sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; Vanessa's quoted line (13:00:30) directly states heated seats, robust all-wheel-drive system, and a winter tire package tailored for superior grip and safety, exactly matching the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What winter-focused features did Vanessa say the 2022 Toyota Camry Hybrid offers Sophia Brown",
+            "explicitly_requested": true,
+            "required_fact": "Vanessa said the 2022 Toyota Camry Hybrid is equipped with heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions",
+            "source_call_ids": [
+              "b2c:a05Ws000005SXKwIAO"
+            ]
+          },
+          {
+            "question_span": "what did she say about the winter tire package?",
+            "explicitly_requested": true,
+            "required_fact": "Vanessa said the winter tire package is specifically tailored to offer superior grip and safety",
+            "source_call_ids": [
+              "b2c:a05Ws000005SXKwIAO"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two things: winter-focused features of the 2022 Toyota Camry Hybrid and what was said about the winter tire package. The gold answer provides exactly these two facts: heated seats and robust AWD, and the winter tire package tailored for superior grip and safety. No extra facts are included. The obligations correctly capture both requested facts and reference the single call. The independent answer fully addresses both parts. The single call is required to supply both facts, and it does. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Heated seats",
+            "question_span": "What winter-focused features did Vanessa say the 2022 Toyota Camry Hybrid offers Sophia Brown",
+            "required_by_question": true
+          },
+          {
+            "claim": "robust all-wheel-drive system",
+            "question_span": "What winter-focused features did Vanessa say the 2022 Toyota Camry Hybrid offers Sophia Brown",
+            "required_by_question": true
+          },
+          {
+            "claim": "the winter tire package is tailored for superior grip and safety",
+            "question_span": "what did she say about the winter tire package?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]

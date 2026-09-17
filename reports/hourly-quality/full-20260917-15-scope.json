@@ -1,0 +1,384 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "e3685d77e64e85e1ed77c65e5c1cd5a231d36f7e24c31fceb0852ae06d773953",
+  "questions": 3,
+  "counts": {
+    "pass": 1,
+    "fail": 2
+  },
+  "estimated_usd": 0.38144258,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-f2b8d7e78e403a2b",
+      "question": "For the TechPulse-CyberPulse opportunity, what existing product did Mohammad Abbas say the AI-driven EDA tools needed to integrate with, and what problem with NanoDesign Systems did he later raise?",
+      "gold_answer": "Integration with SecuManage Pro; NanoDesign's unresponsive, slow, and shallow support services were delaying project timelines.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZsIAK",
+        "b2b:a05Wt000003SrN7IAK",
+        "b2b:a05Wt000003StERIA0",
+        "b2b:a05Wt000003SwgtIAC",
+        "b2b:a05Wt000003SwnMIAS",
+        "b2b:a05Wt000003SwqZIAS",
+        "b2b:a05Wt000003SwqaIAC",
+        "b2b:a05Wt000003SwqbIAC",
+        "b2b:a05Wt000003SxrTIAS",
+        "b2b:a05Wt000003SyHHIA0",
+        "b2b:a05Wt000003SyIsIAK",
+        "b2b:a05Wt000003Syp9IAC",
+        "b2b:a05Wt000003SypAIAS",
+        "b2b:a05Wt000003SyypIAC",
+        "b2b:a05Wt000003SzA9IAK",
+        "b2b:a05Wt000003SzAAIA0",
+        "b2b:a05Wt000003SzBiIAK",
+        "b2b:a05Wt000003SzBjIAK",
+        "b2b:a05Wt000003Szd7IAC",
+        "b2b:a05Wt000003SzejIAC",
+        "b2b:a05Wt000003SzekIAC",
+        "b2b:a05Wt000003SzgLIAS",
+        "b2b:a05Wt000003SzgMIAS",
+        "b2b:a05Wt000003SzhxIAC",
+        "b2b:a05Wt000003SzhyIAC",
+        "b2b:a05Wt000003SzjZIAS",
+        "b2b:a05Wt000003SzlBIAS",
+        "b2b:a05Wt000003SzmnIAC",
+        "b2b:a05Wt000003SzoPIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Mohammad Abbas is the contact only on the 'TechPulse-CyberPulse Strategic Alliance' opportunity. In the 2022-11-23 discovery call he said the AI-driven EDA tools needed to integrate seamlessly with their existing SecuManage Pro product. In the later 2022-12-07 call he raised that NanoDesign's (NanoDesign Systems') support services were less responsive, causing delays and impacting project timelines. Both facts come from the same opportunity with no competing alternatives.",
+        "answers": [
+          {
+            "answer": "Mohammad Abbas said the AI-driven EDA tools needed to integrate seamlessly with CyberPulse's existing products, specifically SecuManage Pro, to enhance their existing security measures. Later, he raised that NanoDesign Systems' support services were less responsive — with slow response times and support that was not thorough — which caused delays and pushed back CyberPulse's project timelines.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzA9IAK",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2022-11-23T10:30:30] Mei Lin: I'm doing great, thank you! So, I'm glad we're having this discovery meeting to understand your security needs better. From our initial discussions, we know CyberPulse is interested in integrating some AI-driven EDA tools. Is that right?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzAAIA0",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2022-12-07T14:32:10] Mohammad Abbas: That’s good to hear. We’ve had frustrations with NanoDesign's support services being less responsive, impacting our project timelines.\n[2022-12-07T14:32:30] Mei Lin: I understand how that can be challenging. Reliable support is crucial. We take pride in our responsive support services and streamlined SLAs. Could you share how these support issues have specifically impacted your projects?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names the 'TechPulse-CyberPulse' opportunity, which matches the opportunity_name 'TechPulse-CyberPulse Strategic Alliance' (006Wt000007BC6fIAG). Mohammad Abbas is the contact on all calls for that opportunity. In the discovery call (2022-11-23), Mohammad explicitly states the AI-driven EDA tools need to integrate with SecuManage Pro. In the later call (2022-12-07), he raises the problem with NanoDesign Systems: their support services are less responsive, causing delays and impacting project timelines. No other opportunity name matches 'TechPulse-CyberPulse' with Mohammad Abbas as contact, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "Mohammad Abbas said the AI-driven EDA tools needed to integrate with SecuManage Pro. He later raised the problem that NanoDesign Systems' support services were less responsive, causing delays due to slow response times and insufficiently thorough support, which pushed back project timelines.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzA9IAK",
+                "line_start": 2,
+                "line_end": 4,
+                "quote": "[2022-11-23T10:30:30] Mei Lin: I'm doing great, thank you! So, I'm glad we're having this discovery meeting to understand your security needs better. From our initial discussions, we know CyberPulse is interested in integrating some AI-driven EDA tools. Is that right?\n[2022-11-23T10:31:00] Mohammad Abbas: Yes, exactly. We're particularly looking at tools that can integrate seamlessly with our current products like SecuManage Pro. We want to enhance our existing security measures."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzAAIA0",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2022-12-07T14:32:10] Mohammad Abbas: That’s good to hear. We’ve had frustrations with NanoDesign's support services being less responsive, impacting our project timelines.\n[2022-12-07T14:32:30] Mei Lin: I understand how that can be challenging. Reliable support is crucial. We take pride in our responsive support services and streamlined SLAs. Could you share how these support issues have specifically impacted your projects?\n[2022-12-07T14:32:55] Mohammad Abbas: Well, delays occur due to slow response times, and when support finally comes, it's often not as thorough as we'd like. It pushes our timelines back and can be quite frustrating."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify SecuManage Pro as the existing product the AI-driven EDA tools needed to integrate with, and both state that Mohammad Abbas raised the problem of NanoDesign Systems' support services being less responsive (slow response times, not thorough/shallow), causing delays and pushing back project timelines. The reference likewise covers both requested facts: integration with SecuManage Pro and NanoDesign's unresponsive, slow, and shallow support delaying timelines. All requested commitments are present and consistent across all three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-2a3858553795230a",
+      "question": "What pain point did Isaac Njoroge of TechGrove Systems raise about their current EDA systems, and how did Priya say PulseSim Pro addresses it?",
+      "gold_answer": "Isaac said managing security configurations and initial setup is overwhelming, slowing rollout; Priya said PulseSim Pro provides user guidance to simplify configuration.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgJIAS",
+        "b2b:a05Wt000003SqgKIAS",
+        "b2b:a05Wt000003SsLYIA0",
+        "b2b:a05Wt000003SsetIAC",
+        "b2b:a05Wt000003Stj0IAC",
+        "b2b:a05Wt000003SuIaIAK",
+        "b2b:a05Wt000003SuK8IAK",
+        "b2b:a05Wt000003SuK9IAK",
+        "b2b:a05Wt000003SuaIIAS",
+        "b2b:a05Wt000003SubqIAC",
+        "b2b:a05Wt000003SujvIAC",
+        "b2b:a05Wt000003SvUkIAK",
+        "b2b:a05Wt000003SvUlIAK",
+        "b2b:a05Wt000003Svg4IAC",
+        "b2b:a05Wt000003SvpiIAC",
+        "b2b:a05Wt000003SvrMIAS",
+        "b2b:a05Wt000003SwnRIAS",
+        "b2b:a05Wt000003SwsCIAS",
+        "b2b:a05Wt000003Sx9xIAC",
+        "b2b:a05Wt000003SxjOIAS",
+        "b2b:a05Wt000003SxzZIAS",
+        "b2b:a05Wt000003SyEAIA0",
+        "b2b:a05Wt000003SyijIAC",
+        "b2b:a05Wt000003SzAHIA0",
+        "b2b:a05Wt000003SzoRIAS",
+        "b2b:a05Wt000003T0SqIAK",
+        "b2b:a05Wt000003T0UOIA0",
+        "b2b:a05Wt000003T0apIAC",
+        "b2b:a05Wt000003T0m6IAC",
+        "b2b:a05Wt000003T0uCIAS",
+        "b2b:a05Wt000003T0uDIAS",
+        "b2b:a05Wt000003T12FIAS",
+        "b2b:a05Wt000003T1BwIAK",
+        "b2b:a05Wt000003T21XIAS",
+        "b2b:a05Wt000003T2HeIAK",
+        "b2b:a05Wt000003T2SwIAK",
+        "b2b:a05Wt000003T2UYIA0",
+        "b2b:a05Wt000003T2azIAC",
+        "b2b:a05Wt000003T2cbIAC",
+        "b2b:a05Wt000003T2eDIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 7,
+            "normalized_end": 8
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 8,
+            "normalized_end": 9
+          },
+          {
+            "answer": 0,
+            "evidence": 2,
+            "original_end": 10,
+            "normalized_end": 11
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 5,
+            "normalized_end": 6
+          },
+          {
+            "answer": 1,
+            "evidence": 1,
+            "original_end": 6,
+            "normalized_end": 7
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Priya Choudhury had multiple calls with Isaac Njoroge, and two different calls contain a pain point he raised about their current EDA systems paired with a PulseSim Pro response: the 2021-06-21 call (integration/efficiency challenge answered with PulseSim Pro's integration and scalability) and the 2021-06-24 call (security configuration setup being overwhelming answered with PulseSim Pro's user guidance). The question does not specify which call, so these are competing complete answers.",
+        "answers": [
+          {
+            "answer": "Isaac said that while TechGrove uses AutoGen IDE and Workflow Genius, one of their challenges is ensuring seamless integration with their existing technology while maintaining optimal efficiency. Priya responded that PulseSim Pro not only enhances scalability but also supports seamless integration with existing platforms like theirs (and noted TechPulse's robust security features).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SqgKIAS",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2021-06-21T13:00:55] Isaac Njoroge: Sure. At TechGrove, we're using AutoGen IDE and Workflow Genius to manage our processes. However, one of our challenges is ensuring seamless integration with our existing technology while maintaining optimal efficiency."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqgKIAS",
+                "line_start": 8,
+                "line_end": 9,
+                "quote": "[2021-06-21T13:01:10] Priya Choudhury: Thanks for that insight, Isaac. Our solutions, like PulseSim Pro and CloudLink Designer, are designed to offer robust integration and scalability, which might align well with your needs."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SqgKIAS",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2021-06-21T13:01:40] Priya Choudhury: Of course. PulseSim Pro, for instance, not only enhances scalability but also supports seamless integration with existing platforms like yours. Additionally, TechPulse Solutions prides itself on robust security features, which is often appreciated by clients, as seen in our case studies."
+              }
+            ]
+          },
+          {
+            "answer": "Isaac said one of their main issues with their current EDA systems is managing security configurations — their team finds the initial setup a bit overwhelming, which affects their rollout speed. Priya responded that with PulseSim Pro, TechPulse provides user guidance to simplify the configuration process, though she acknowledged there's still room for improvement.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyijIAC",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2021-06-24T10:00:47] Isaac Njoroge: Well, one of our main issues is managing security configurations. Our team finds the initial setup a bit overwhelming, which affects our rollout speed."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyijIAC",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2021-06-24T10:01:03] Priya Choudhury: I see. We’ve heard similar feedback before. With our PulseSim Pro, we provide user guidance to simplify the configuration process, even though there’s still room for improvement."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Isaac Njoroge, Priya, PulseSim Pro, and a pain point about current EDA systems. Only one call features both Isaac Njoroge and Priya Choudhury discussing PulseSim Pro in direct response to a stated EDA pain point: call b2b:a05Wt000003SyijIAC (2021-06-24, TechGrove EDA Enhancement). In that call, Priya explicitly asks about pain points with EDA systems, Isaac raises the issue of managing security configurations being overwhelming and affecting rollout speed, and Priya responds that PulseSim Pro provides user guidance to simplify the configuration process. Other Priya–Isaac calls mention PulseSim Pro only tangentially (e.g., as part of a product bundle) and do not contain a direct pain-point/response exchange about EDA systems.",
+        "answers": [
+          {
+            "answer": "Isaac Njoroge raised that one of TechGrove's main issues with their current EDA systems is managing security configurations—his team finds the initial setup overwhelming, which negatively affects their rollout speed. Priya Choudhury responded that with PulseSim Pro, TechPulse provides user guidance to simplify the configuration process, while acknowledging there is still room for improvement.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SyijIAC",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2021-06-24T10:00:35] Priya Choudhury: Awesome! Let's start with what specific challenges or pain points you're currently facing with your EDA systems.\n[2021-06-24T10:00:47] Isaac Njoroge: Well, one of our main issues is managing security configurations. Our team finds the initial setup a bit overwhelming, which affects our rollout speed.\n[2021-06-24T10:01:03] Priya Choudhury: I see. We’ve heard similar feedback before. With our PulseSim Pro, we provide user guidance to simplify the configuration process, even though there’s still room for improvement."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-5cc79a086a12972b",
+      "question": "What winter-focused features did Vanessa say the 2022 Toyota Camry Hybrid offers Sophia Brown, and what did she say about the winter tire package?",
+      "gold_answer": "Heated seats and a robust all-wheel-drive system; the winter tire package is tailored for superior grip and safety.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SOUSIA4",
+        "b2c:a05Ws000005SOohIAG",
+        "b2c:a05Ws000005SQ4vIAG",
+        "b2c:a05Ws000005SQ9hIAG",
+        "b2c:a05Ws000005SQrBIAW",
+        "b2c:a05Ws000005SQxlIAG",
+        "b2c:a05Ws000005SRlnIAG",
+        "b2c:a05Ws000005SSMnIAO",
+        "b2c:a05Ws000005STR3IAO",
+        "b2c:a05Ws000005STUDIA4",
+        "b2c:a05Ws000005STaiIAG",
+        "b2c:a05Ws000005STdsIAG",
+        "b2c:a05Ws000005SU0IIAW",
+        "b2c:a05Ws000005SVCZIA4",
+        "b2c:a05Ws000005SVpJIAW",
+        "b2c:a05Ws000005SWGhIAO",
+        "b2c:a05Ws000005SWtSIAW",
+        "b2c:a05Ws000005SWyDIAW",
+        "b2c:a05Ws000005SXKwIAO",
+        "b2c:a05Ws000005SXWIIA4",
+        "b2c:a05Ws000005SXpYIAW",
+        "b2c:a05Ws000005SYFFIA4",
+        "b2c:a05Ws000005SYK9IAO",
+        "b2c:a05Ws000005SYKAIA4",
+        "b2c:a05Ws000005SZjGIAW",
+        "b2c:a05Ws000005Sa91IAC",
+        "b2c:a05Ws000005SaCJIA0",
+        "b2c:a05Ws000005ScCPIA0",
+        "b2c:a05Ws000005ScdlIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 1,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Vanessa Müller had three calls with Sophia Brown on the Winter Hybrid Upgrade opportunity. Two of them contain materially different complete answers to both parts of the question: the 2020-07-19 call cites heated seats and an all-wheel-drive system as winter features and describes the winter tire package as tailored for superior grip and safety, while the 2020-07-14 call describes the 2023 AutoElite Winter Tire Package as high-quality cold-weather tires at $699.99 providing excellent traction and safety (its Camry Hybrid discussion covers fuel efficiency/environmental standards rather than winter-specific features). The 2020-07-10 call mentions a Winter Tire Package but no Camry winter features, so it is not a complete alternative. The question does not specify which call, so both complete answers stand.",
+        "answers": [
+          {
+            "answer": "Vanessa said the 2022 Toyota Camry Hybrid is equipped with features like heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions, and that the winter tire package is specifically tailored to offer superior grip and safety.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXKwIAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-07-19T13:00:30] Vanessa Müller: Absolutely. The 2022 Toyota Camry Hybrid is equipped with features like heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions. Plus, our winter tire package is specifically tailored to offer superior grip and safety."
+              }
+            ]
+          },
+          {
+            "answer": "Vanessa said the 2022 Toyota Camry Hybrid meets the latest environmental standards and offers impressive fuel efficiency, and that for the winter hybrid upgrade the 2023 AutoElite Winter Tire Package provides excellent traction and safety in colder months — it includes high-quality tires designed specifically for cold weather, priced at $699.99, and is a great addition to the Camry Hybrid ensuring optimal performance.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXWIIA4",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-07-14T15:01:43] Vanessa Müller: Absolutely, the Camry Hybrid is a fantastic choice. It not only meets the latest environmental standards but also offers impressive fuel efficiency."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXWIIA4",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2020-07-14T15:04:52] Vanessa Müller: Understood. We’ll make sure your financing plan complements those goals. And with the winter hybrid upgrade, the 2023 AutoElite Winter Tire Package can provide excellent traction and safety in colder months.\n[2020-07-14T15:05:12] Sophia Brown: That package sounds ideal for where I live. I'd like more details about it and the overall cost involved."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Vanessa Müller spoke with Sophia Brown about the 2022 Toyota Camry Hybrid and winter tire package across three calls under the 'Sophia Brown Winter Hybrid Upgrade' opportunity. Two calls (July 19 and July 14) each provide materially different complete answers: the July 19 call names heated seats and all-wheel-drive as winter features and describes the tire package as 'specifically tailored to offer superior grip and safety,' while the July 14 call emphasizes environmental standards and fuel efficiency as features and gives the 2023 AutoElite Winter Tire Package a price of $699.99 with details about high-quality cold-weather tires. The July 10 call mentions the maintenance plan for winter months and the 2023 Winter Tire Package for safety/performance but does not attribute specific winter features to the Camry Hybrid itself, making it a less complete answer to the question's first part.",
+        "answers": [
+          {
+            "answer": "Vanessa said the 2022 Toyota Camry Hybrid is equipped with heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions. Regarding the winter tire package, she said it is specifically tailored to offer superior grip and safety.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXKwIAO",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-07-19T13:00:30] Vanessa Müller: Absolutely. The 2022 Toyota Camry Hybrid is equipped with features like heated seats and a robust all-wheel-drive system that enhance its performance in winter conditions. Plus, our winter tire package is specifically tailored to offer superior grip and safety."
+              }
+            ]
+          },
+          {
+            "answer": "Vanessa said the 2022 Toyota Camry Hybrid meets the latest environmental standards and offers impressive fuel efficiency. Regarding the winter tire package, she said the 2023 AutoElite Winter Tire Package can provide excellent traction and safety in colder months, includes high-quality tires designed specifically for cold weather, is priced at $699.99, and is a great addition to the Camry Hybrid ensuring optimal performance.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXWIIA4",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-07-14T15:01:43] Vanessa Müller: Absolutely, the Camry Hybrid is a fantastic choice. It not only meets the latest environmental standards but also offers impressive fuel efficiency."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXWIIA4",
+                "line_start": 13,
+                "line_end": 16,
+                "quote": "[2020-07-14T15:04:52] Vanessa Müller: Understood. We’ll make sure your financing plan complements those goals. And with the winter hybrid upgrade, the 2023 AutoElite Winter Tire Package can provide excellent traction and safety in colder months.\n[2020-07-14T15:05:12] Sophia Brown: That package sounds ideal for where I live. I'd like more details about it and the overall cost involved.\n[2020-07-14T15:05:33] Vanessa Müller: The winter tire package includes high-quality tires designed specifically for cold weather, priced at $699.99. They're a great addition to the Camry Hybrid and ensure optimal performance."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

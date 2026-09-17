@@ -1,0 +1,374 @@
+[
+  {
+    "question_id": "b2b-multi_call-b03e3690aa109a7d",
+    "question": "Across the Precision Circuit Systems opportunity with Ahmed Tariq, what deployment concern did he raise in the follow-up call, and what did he say he valued most about CircuitAI Innovator during the product demo?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A deployment concern raised in a follow-up call, and separately, what Ahmed valued most about CircuitAI Innovator during the product demo.",
+        "relationship": "Two independent fact lookups (an objection and positive feedback) joined only by the same opportunity/account.",
+        "reason": "The deployment concern and the demo valuation are unrelated information needs about different aspects of the engagement; sharing the same opportunity does not connect them into one coherent request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets two distinct facts across two calls in the same opportunity. The follow-up call (Jan 26) contains Ahmed's deployment concern about maintaining production efficiency with minimal downtime during integration. The product demo call (Feb 28) contains his statement valuing customizability and noting past struggles with other vendors. Each source contributes an exclusive requested fact. The answer precisely states both facts without unasked extras. The question is naturally scoped by opportunity, contact, and call type. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Ahmed Tariq on 2023-01-26 explicitly states: 'Our main concern is maintaining production efficiency. We can't afford too much disruption, so knowing that there's minimal downtime is a big plus for us.' This directly supports the answer_claim about maintaining production efficiency, avoiding disruption, and minimal downtime being important. The call metadata confirms this is associated with Precision Circuit Systems and Ahmed Tariq. The call date (2023-01-26) precedes the other call (2023-02-28), making it the earlier call; however, the question asks about the 'follow-up call.' The metadata shows both calls are tied to the same opportunity. The 2023-01-26 call could be the follow-up if there was an earlier initial call not shown, but based solely on the two supplied calls, the 2023-01-26 call is actually the earlier one. That said, the question labels it 'follow-up' and the evidence content matches the deployment concern claim. The quote itself fully supports the factual content of the claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Ahmed Tariq on 2023-02-28 explicitly states: 'Customizability is definitely a big plus for us. We've struggled with that in the past with other vendors.' This directly supports the answer_claim that Ahmed valued customizability and noted past struggles with other vendors. The call metadata confirms this is associated with Precision Circuit Systems and Ahmed Tariq. The 2023-02-28 date is the later call, which the question refers to as the 'product demo' context. The quote fully supports the factual content of the claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two things: (1) In the follow-up, Ahmed's main concern was maintaining production efficiency with minimal downtime during integration, and (2) In the demo, he valued customizability, noting past struggles with other vendors. Evidence index 0 (2023-01-26 call) directly supports claim (1) with Ahmed's exact words about production efficiency, disruption, and minimal downtime. Evidence index 1 (2023-02-28 call) directly supports claim (2) with Ahmed's exact words about customizability being a big plus and struggling with other vendors. The only minor note is that the question labels the 2023-01-26 call as the 'follow-up' and the 2023-02-28 call as the 'product demo,' but the chronological order of the two supplied calls is reversed relative to those labels. However, the factual content of both claims is fully supported by the quoted passages, and the metadata confirms both calls belong to the same opportunity (Precision Circuit Partnership Expansion) with Ahmed Tariq. The gold_answer's factual assertions are substantiated by the combined evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-f2b8d7e78e403a2b",
+    "question": "For the TechPulse-CyberPulse opportunity, what existing product did Mohammad Abbas say the AI-driven EDA tools needed to integrate with, and what problem with NanoDesign Systems did he later raise?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The existing product that the AI-driven EDA tools must integrate with, and the problem Mohammad Abbas raised about NanoDesign Systems",
+        "relationship": "Both facts concern the same evaluation issue in the TechPulse-CyberPulse opportunity: requirements and concerns around the AI-driven EDA tools",
+        "reason": "The integration requirement and the NanoDesign Systems problem both address the same business issue (the EDA tools evaluation), not merely the same account; plausible sales language throughout."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzA9IAK",
+                "fact": "Mohammad Abbas said the AI-driven EDA tools needed to integrate with SecuManage Pro.",
+                "why_other_call_cannot_supply_it": "The second call does not mention SecuManage Pro or any specific existing product for integration; it only discusses general integration with workflows."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzAAIA0",
+                "fact": "Mohammad Abbas raised that NanoDesign Systems' support services were unresponsive, slow, and shallow, causing project delays.",
+                "why_other_call_cannot_supply_it": "The first call does not mention NanoDesign Systems or any support problems; it only discusses integration and product features."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the specific product for integration (from the first call) and a later-raised problem with NanoDesign (from the second call). Each fact is only present in one call, and both are explicitly requested. The first call provides the integration target, while the second call provides the support issue, which are substantively different and not repeated or paraphrased across calls."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzA9IAK",
+                  "fact": "Mohammad Abbas said the AI-driven EDA tools needed to integrate with SecuManage Pro.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention SecuManage Pro or any specific existing product for integration; it only discusses general data flow security and scalability."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzAAIA0",
+                  "fact": "Mohammad Abbas raised that NanoDesign Systems' support services were unresponsive, slow, and shallow, causing project delays.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention NanoDesign Systems or any support issues; it focuses on integration and customization needs."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific product for integration (from the first call) and a problem with NanoDesign Systems (from the second call). Each fact is only present in one call, and they are not paraphrases or repetitions. The first call provides the integration target, while the second call provides the support problem. Both are essential to fully answer the question."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzA9IAK",
+                  "fact": "Mohammad Abbas said the AI-driven EDA tools needed to integrate with SecuManage Pro.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention SecuManage Pro or any specific existing product for integration; it only discusses general integration with workflows."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzAAIA0",
+                  "fact": "Mohammad Abbas raised that NanoDesign Systems' support services were unresponsive, slow, and shallow, causing project delays.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention NanoDesign Systems or any support problems; it only discusses integration and product features."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the specific product for integration (from the first call) and a later-raised problem with NanoDesign (from the second call). Each fact is only present in one call, and both are explicitly requested. The first call provides the integration target, while the second call provides the support issue, which are substantively different and not repeated or paraphrased across calls."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SzA9IAK",
+                "fact": "The AI-driven EDA tools need to integrate with SecuManage Pro.",
+                "why_other_call_cannot_supply_it": "The second call never mentions SecuManage Pro or the integration target; it only discusses data flow security, scalability, and NanoDesign support issues."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SzAAIA0",
+                "fact": "NanoDesign Systems' support services were unresponsive, slow, and shallow, delaying project timelines.",
+                "why_other_call_cannot_supply_it": "The first call contains no mention of NanoDesign or any support-service complaints; it is a discovery meeting about integration and customization."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the integration target (stated only in the first call) and the NanoDesign support problem (raised only in the second call). Neither call supplies both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SzA9IAK",
+                  "fact": "The AI-driven EDA tools need to integrate with SecuManage Pro.",
+                  "why_other_call_cannot_supply_it": "The second call never mentions SecuManage Pro or the integration target; it only discusses data flow security, scalability, and NanoDesign support issues."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SzAAIA0",
+                  "fact": "NanoDesign Systems' support services were unresponsive, slow, and shallow, delaying project timelines.",
+                  "why_other_call_cannot_supply_it": "The first call contains no mention of NanoDesign or any support-service complaints; it is a discovery meeting about integration and customization."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the integration target (stated only in the first call) and the NanoDesign support problem (raised only in the second call). Neither call supplies both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Nov 23) has Mohammad Abbas stating the AI-driven EDA tools must integrate with SecuManage Pro. Call 2 (Dec 7) has him raising NanoDesign's unresponsive, slow, and shallow support delaying project timelines. Each source contributes an exclusive requested fact; the gold answer matches both transcripts precisely with no unasked extras. The question is scoped to a named opportunity and contact, uses natural phrasing, and contains no locator preamble or answer leakage.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Mohammad Abbas stating they are looking at tools that 'integrate seamlessly with our current products like SecuManage Pro,' which supports the claim about integration with SecuManage Pro."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Mohammad Abbas stating NanoDesign's support services are 'less responsive, impacting our project timelines' and later elaborating that 'delays occur due to slow response times, and when support finally comes, it's often not as thorough as we'd like. It pushes our timelines back.' This supports the claim about unresponsive, slow, and shallow support causing delays."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) Integration with SecuManage Pro \u2013 supported by evidence index 0 where Mohammad explicitly names SecuManage Pro as the product needing integration. (2) NanoDesign's unresponsive, slow, and shallow support services were delaying project timelines \u2013 supported by evidence index 1 where Mohammad describes less responsive support, slow response times, support not being thorough (shallow), and timelines being pushed back. All factual claims in the gold answer are covered by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-2a3858553795230a",
+    "question": "What pain point did Isaac Njoroge of TechGrove Systems raise about their current EDA systems, and how did Priya say PulseSim Pro addresses it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The pain point Isaac Njoroge raised about TechGrove's current EDA systems and how Priya said PulseSim Pro addresses it",
+        "relationship": "objection/pain point and the corresponding product response within the same discussion",
+        "reason": "A single coherent objection-and-response exchange about the same issue (current EDA system shortcomings and how PulseSim Pro addresses them), using plausible sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about a customer pain point and the rep's product response\u2014core sales-call information. The dialogue confirms Isaac Njoroge raised that managing security configurations and initial setup is overwhelming, slowing rollout, and Priya stated PulseSim Pro provides user guidance to simplify configuration. The gold answer matches these facts precisely with no unasked extras. Single-call question, so both_sources_required is set true per instructions. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Isaac Njoroge that 'one of our main issues is managing security configurations' and that 'the initial setup a bit overwhelming, which affects our rollout speed.' This matches the answer_claim about managing security configurations, initial setup being overwhelming, and affecting rollout speed."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Priya Choudhury that 'With our PulseSim Pro, we provide user guidance to simplify the configuration process.' This matches the answer_claim that PulseSim Pro provides user guidance to simplify configuration. The additional qualifier 'even though there's still room for improvement' does not contradict the claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Isaac said managing security configurations and initial setup is overwhelming, slowing rollout, and that Priya said PulseSim Pro provides user guidance to simplify configuration. Evidence index 0 directly supports Isaac's pain point (security configurations, overwhelming initial setup, affects rollout speed). Evidence index 1 directly supports Priya's response (PulseSim Pro provides user guidance to simplify configuration). All factual claims in the gold_answer are covered by the two cited evidence items."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-f05aa1f7318f9301",
+    "question": "What did Xiang Liu highlight as the most impressive part of the OptiEnergy Suite and EcoPower Convert demo for EnergyNova?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify what Xiang Liu found most impressive about the OptiEnergy Suite and EcoPower Convert demo for EnergyNova.",
+        "relationship": "single lookup within one demo discussion",
+        "reason": "One coherent question about a single stakeholder's reaction to one product demo; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Xiang Liu found most impressive about the OptiEnergy Suite and EcoPower Convert demo for EnergyNova. The dialogue at 11:16:00 shows Xiang Liu stating: 'I especially liked how the AI-driven optimization features showed real-time results. It aligns well with our sustainability goals.' The gold answer faithfully captures both the AI-driven optimization with real-time results and the alignment with sustainability goals. The question is naturally phrased, scoped to a specific demo and customer, and a rep would plausibly want to know what resonated most with the prospect. Single-call question so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is directly attributed to Xiang Liu and states: 'I especially liked how the AI-driven optimization features showed real-time results. It aligns well with our sustainability goals.' This explicitly supports the answer_claim that Xiang especially liked the AI-driven optimization features showing real-time results, aligning with sustainability goals. Speaker attribution, the specific features mentioned, the real-time results, and the sustainability alignment are all present in the quote."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'The AI-driven optimization features showing real-time results, which align with EnergyNova's sustainability goals.' The single cited evidence (index 0) contains Xiang Liu's direct quote confirming all three elements: (1) AI-driven optimization features, (2) real-time results, and (3) alignment with sustainability goals. The context metadata confirms the account is EnergyNova Corp and the contact is Xiang Liu, matching the question's framing. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-5cc79a086a12972b",
+    "question": "What winter-focused features did Vanessa say the 2022 Toyota Camry Hybrid offers Sophia Brown, and what did she say about the winter tire package?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What winter-focused features Vanessa said the 2022 Toyota Camry Hybrid offers Sophia Brown, and what she said about the winter tire package",
+        "relationship": "Both parts address the same winter-capability discussion for the same vehicle/customer \u2014 the features and the winter tire package are facets of one coherent topic",
+        "reason": "A single coherent inquiry about winter suitability of one vehicle for one customer; the winter tire package is directly related to the winter features, not an independent lookup"
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about winter features and the winter tire package for a specific customer (Sophia Brown) discussed by rep Vanessa. The dialogue confirms heated seats, robust all-wheel-drive system, and a winter tire package tailored for superior grip and safety. The gold answer matches exactly with no unasked extras. The question is naturally phrased, scoped to a clear business situation (winter hybrid upgrade discussion), and a rep/account manager would plausibly want this information. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Vanessa M\u00fcller explicitly states the 2022 Toyota Camry Hybrid has 'heated seats and a robust all-wheel-drive system' for winter conditions and that 'our winter tire package is specifically tailored to offer superior grip and safety.' This directly supports the answer_claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Vanessa's exact dialogue naming heated seats, a robust all-wheel-drive system, and a winter tire package tailored for superior grip and safety, which matches every factual element in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-dc036913938eb5c1",
+    "question": "What exclusions did Sara Larson's extended warranty for the 2021 Volvo XC60 have?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The exclusions in Sara Larson's extended warranty for her 2021 Volvo XC60",
+        "relationship": "single coherent lookup",
+        "reason": "One fact lookup about a single warranty document; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question naturally asks about warranty exclusions for a specific customer's vehicle discussed in the call. The dialogue explicitly states the extended warranty on the Volvo XC60 covers almost everything 'minus, of course, the usual exclusions like tires or brakes.' The gold answer accurately reflects this. The question is scoped by customer name (Sara Larson) and vehicle (2021 Volvo XC60), which a rep would plausibly reference. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Tariq Al-Farsi explicitly states: 'Our extended warranty on the Volvo XC60 covers almost everything you'd expect, minus, of course, the usual exclusions like tires or brakes.' This directly supports the answer_claim about the usual exclusions like tires or brakes for the Volvo XC60 extended warranty."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'The usual exclusions like tires or brakes.' The single cited evidence (index 0) contains Tariq Al-Farsi's exact statement that the extended warranty on the Volvo XC60 excludes 'the usual exclusions like tires or brakes.' The context metadata confirms the account is Sara Larson and the opportunity involves a Certified Pre-Owned SUV, consistent with the 2021 Volvo XC60. The gold_answer faithfully paraphrases the quoted dialogue, and all factual claims in the answer are supported by the supplied evidence."
+      }
+    }
+  }
+]
