@@ -1,0 +1,111 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "494455dc78a5b6657ddf491e28c7eaebce41ee9c1dcfb5592d70e92ef47f21e3",
+  "questions": 1,
+  "counts": {
+    "pass": 1
+  },
+  "estimated_usd": 0.18086595,
+  "results": [
+    {
+      "question_id": "b2c-single_call-4aa6bf602d5b7656",
+      "question": "What are the quoted prices for the Nissan Leaf and Kia Sorento for Oliver Davis, and do both fit his budget?",
+      "gold_answer": "The Leaf is $28,999.99 and the Sorento is $30,999.99, and both fit within Oliver's specified budget range.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SM9IIAW",
+        "b2c:a05Ws000005SQ0sIAG",
+        "b2c:a05Ws000005SQMlIAO",
+        "b2c:a05Ws000005SQMmIAO",
+        "b2c:a05Ws000005SQPlIAO",
+        "b2c:a05Ws000005SQxgIAG",
+        "b2c:a05Ws000005SRk2IAG",
+        "b2c:a05Ws000005SRyeIAG",
+        "b2c:a05Ws000005SS6aIAG",
+        "b2c:a05Ws000005SS6bIAG",
+        "b2c:a05Ws000005SSTLIA4",
+        "b2c:a05Ws000005ST1FIAW",
+        "b2c:a05Ws000005STKRIA4",
+        "b2c:a05Ws000005STKSIA4",
+        "b2c:a05Ws000005SULIIA4",
+        "b2c:a05Ws000005SVJ4IAO",
+        "b2c:a05Ws000005SVKaIAO",
+        "b2c:a05Ws000005SVZ5IAO",
+        "b2c:a05Ws000005SVu9IAG",
+        "b2c:a05Ws000005SVuAIAW",
+        "b2c:a05Ws000005SW3pIAG",
+        "b2c:a05Ws000005SWAHIA4",
+        "b2c:a05Ws000005SWLXIA4",
+        "b2c:a05Ws000005SWQMIA4",
+        "b2c:a05Ws000005SWYTIA4",
+        "b2c:a05Ws000005SWYUIA4",
+        "b2c:a05Ws000005SWqEIAW",
+        "b2c:a05Ws000005SXFxIAO",
+        "b2c:a05Ws000005SXsgIAG",
+        "b2c:a05Ws000005SY0iIAG",
+        "b2c:a05Ws000005SZEYIA4",
+        "b2c:a05Ws000005SZHoIAO",
+        "b2c:a05Ws000005SZZaIAO",
+        "b2c:a05Ws000005SZpeIAG",
+        "b2c:a05Ws000005SaIdIAK",
+        "b2c:a05Ws000005SaTyIAK",
+        "b2c:a05Ws000005SbD6IAK",
+        "b2c:a05Ws000005SbLAIA0",
+        "b2c:a05Ws000005SbmaIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call quotes prices for both the Nissan Leaf and the Kia Sorento together (Liu Wei, 2021-05-17), and it explicitly states both fit Oliver's specified range; his ~$34,000 budget from the related 2021-05-01 call corroborates this.",
+        "answers": [
+          {
+            "answer": "The 2023 Nissan Leaf is quoted at $28,999.99 and the 2023 Kia Sorento at $30,999.99. Yes, both fit Oliver's budget — Liu Wei confirms they 'fit well within your specified range,' and both are under the roughly $34,000 budget Oliver mentioned in the related Sorento discussion.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZpeIAG",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2021-05-17T09:03:55] Oliver Davis: That's definitely something I value. Okay, so the Leaf and Sorento – are they within my budget?\n[2021-05-17T09:04:10] Liu Wei: Yes! Both fit well within your specified range. The Nissan Leaf is priced at $28,999.99, and the Sorento at $30,999.99. With flexible financing solutions, it's convenient to manage the payments."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SW3pIAG",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-05-01T11:17:30] Oliver Davis: I appreciate that. Now, regarding the pricing. I want to make sure everything stays within my budget of around 34,000.\n[2021-05-01T11:17:45] Chinonso Eze: Certainly, let’s break that down. The 2023 Kia Sorento itself is priced at 30,999.99, and with the AutoElite Comprehensive Maintenance Plan and the Extended Warranty, the total comes to about 34,299.97."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for quoted prices of the Nissan Leaf and Kia Sorento for Oliver Davis and whether both fit his budget. Only one call (b2c:a05Ws000005SZpeIAG, Liu Wei, 2021-05-17) provides explicit quoted prices for both vehicles together and directly addresses budget fit. In that call, Oliver asks 'are they within my budget?' and Liu Wei confirms both fit, quoting the Nissan Leaf at $28,999.99 and the Kia Sorento at $30,999.99. No other call provides both prices together with a budget assessment.",
+        "answers": [
+          {
+            "answer": "The Nissan Leaf is quoted at $28,999.99 and the Kia Sorento at $30,999.99. Both fit within Oliver Davis's budget, as confirmed by Liu Wei, who stated 'Both fit well within your specified range' and noted that flexible financing solutions make it convenient to manage the payments.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZpeIAG",
+                "line_start": 15,
+                "line_end": 17,
+                "quote": "[2021-05-17T09:03:55] Oliver Davis: That's definitely something I value. Okay, so the Leaf and Sorento – are they within my budget?\n[2021-05-17T09:04:10] Liu Wei: Yes! Both fit well within your specified range. The Nissan Leaf is priced at $28,999.99, and the Sorento at $30,999.99. With flexible financing solutions, it's convenient to manage the payments."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers provide the same quoted prices ($28,999.99 for the Nissan Leaf and $30,999.99 for the Kia Sorento) and both confirm that the vehicles fit within Oliver Davis's budget. The reference also states both prices and confirms both fit within Oliver's specified budget range. All requested facts (two prices and the budget-fit determination) are consistently covered across both answers and the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

@@ -1,0 +1,285 @@
+[
+  {
+    "question_id": "b2b-multi_call-0156905f610ce317",
+    "question": "Across the two discussions with Miguel Navarro at TerraSync Solutions, what objection did he raise about Adaptive Design Solutions' user experience, and what pricing concern did he raise about TechPulse's quote?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "An objection about Adaptive Design Solutions' user experience from one call, and a pricing concern about TechPulse's quote from another call",
+        "relationship": "two independent fact lookups joined only by the same contact/account",
+        "reason": "The question spans two calls but the requested facts concern different business issues (a UX objection vs. a pricing concern about different vendors), not the same issue, so it is an artificial join."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) Miguel's objection about Adaptive Design Solutions' UX from the first call, and (2) his pricing concern about TechPulse's quote from the second call. In call 1, Miguel states 'user ease can sometimes wane after initial adoption' regarding Adaptive Design Solutions. In call 2, Miguel says 'some competitors seem to have more straightforward pricing models upfront.' The gold answer accurately captures both facts. Each source contributes an exclusive requested fact. The question is naturally scoped by naming the contact, account, and the two topics. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Miguel Navarro saying 'we've heard that user ease can sometimes wane after initial adoption,' which matches the answer_claim about Adaptive Design Solutions' user experience objection. The context metadata confirms this is from the call with Miguel Navarro at TerraSync Solutions. The quote preserves the hedging ('can sometimes') and the temporal qualifier ('after initial adoption')."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Miguel Navarro stating 'some competitors seem to have more straightforward pricing models upfront. It might make the decision process easier.' This matches the answer_claim about competitors having more straightforward upfront pricing models. The context metadata confirms this is from the second call with Miguel Navarro at TerraSync Solutions. The quote preserves the uncertainty ('seem to') and the comparative framing ('more straightforward')."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two things: (1) Miguel noted Adaptive Design's user ease can wane after initial adoption, and (2) on pricing, he said competitors have more straightforward upfront pricing models. Evidence index 0 directly supports claim (1) with the exact quote about user ease waning after initial adoption. Evidence index 1 directly supports claim (2) with the quote about competitors having more straightforward pricing models upfront. Both claims are faithfully represented in the gold_answer, preserving the hedging and qualifiers present in the original quotes. The context metadata confirms both calls involve Miguel Navarro at TerraSync Solutions, matching the question's framing of 'two discussions with Miguel Navarro at TerraSync Solutions.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-ece8d48595c83830",
+    "question": "For the Insight Analytics EDA Transformation opportunity, what meeting did Kofi schedule at the end of the initial call with Luis Martins, and what follow-up did Luis request after their later discussion?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "1) The meeting Kofi scheduled at the end of the initial call with Luis Martins, and 2) the follow-up Luis requested after a later discussion",
+        "relationship": "two independent next-step lookups from different calls, joined only by the same opportunity/account",
+        "reason": "The scheduled meeting from the initial call and the follow-up requested after a later discussion are separate facts from separate calls; they are not the same business issue, merely the same account."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "next_steps",
+        "locator_preamble": false,
+        "reason": "The question naturally asks about two next-step actions across two calls on the same opportunity. Call 1 confirms Kofi proposed a May 10th 9:50 AM meeting to explore Insight Analytics' preliminary EDA needs. Call 2 confirms Luis requested scheduling a follow-up to discuss a detailed proposal. Each source contributes an exclusive requested fact, the answer matches both transcripts precisely, and the opportunity/account names provide adequate scoping without artificial preamble."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Kofi proposing 'May 10th around 9:50 AM' to 'explore Insight Analytics' preliminary EDA needs,' and Luis responding 'That time works for me. Looking forward to it, Kofi.' This directly supports the claim that Kofi proposed that date/time for exploring preliminary EDA needs and Luis agreed."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Kofi offering 'a more detailed proposal' as a next step, and Luis responding 'Yes, that would be very helpful. Let's schedule a follow-up to discuss this in more detail.' This directly supports the claim that Luis said a detailed proposal would be helpful and asked to schedule a follow-up to discuss it."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) a meeting on May 10th at 9:50 AM to explore Insight Analytics' preliminary EDA needs \u2014 supported by evidence index 0 where Kofi proposes that exact date/time and purpose, and Luis agrees; (2) afterward Luis asked to schedule a follow-up to discuss a detailed proposal \u2014 supported by evidence index 1 where Luis says a detailed proposal would be helpful and asks to schedule a follow-up. The context metadata confirms the second call occurred on 2024-05-10 at 09:50, consistent with the scheduled meeting. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5319c52f452eae35",
+    "question": "What products and total price did TechPulse quote Oceanic Innovation Labs, and what objection did Carlos raise about competitor pricing?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "A quote breakdown (products and total price) from TechPulse to Oceanic Innovation Labs, plus a separate objection Carlos raised about competitor pricing",
+        "relationship": "Two independent information needs: a commercial quote lookup and an objection lookup, joined only by the same call/account",
+        "reason": "The quote details and the competitor-pricing objection are unrelated requests; being from the same call is not enough to connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the quoted product list, total price, and Carlos's competitor-pricing objection\u2014all clearly present in the single call. The gold answer lists PulseSim Pro, SecureFlow Suite, CloudLink Designer, and AIOptics Vision at $5539.89, matching Nadia's statement, and captures Carlos's remark that some competitors' pricing is more straightforward initially. No extraneous facts are added, no locator preamble is used, and the scope (account + contact + business situation) is sufficient for a rep to want this information.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Nadia Al-Balushi explicitly lists 'PulseSim Pro, SecureFlow Suite, CloudLink Designer, and AIOptics Vision, totaling at $5539.89,' which directly supports the answer_claim about the products and total price."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Carlos Diaz states 'We have seen some competitor pricing to be more straightforward initially,' which directly supports the answer_claim that Carlos noted some competitors' pricing is more straightforward initially."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items together fully support the gold_answer: index 0 confirms the four products (PulseSim Pro, SecureFlow Suite, CloudLink Designer, AIOptics Vision) and the total price of $5539.89 quoted by TechPulse (Nadia Al-Balushi) to Oceanic Innovation Labs (confirmed by account metadata), and index 1 confirms Carlos Diaz's objection that some competitors' pricing is more straightforward initially. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-c67e9288fdbe2a3e",
+    "question": "What did Diego Fern\u00e1ndez say was the limitation with Quantum Circuits Inc's solution, and what follow-up did Fatou commit to at the end of the call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Diego Fern\u00e1ndez's stated limitation with Quantum Circuits Inc's solution and Fatou's committed follow-up at the end of the call",
+        "relationship": "same call and same business issue \u2014 the follow-up directly addresses the limitation discussed",
+        "reason": "A single coherent objection/limitation plus the corresponding next-step commitment from the same conversation; natural sales language."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Diego explicitly states Quantum Circuits Inc's limited customizability doesn't meet Green Circuitry's unique requirements, and Fatou commits to scheduling a demonstration and following up by email. Both facts are directly supported by the single call transcript. The question naturally targets a competitive objection and a next-step commitment, which a rep would plausibly want to know. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Diego Fern\u00e1ndez explicitly states: 'One of the challenges we've faced is with Quantum Circuits Inc's limited customizability, which doesn't fully meet our unique requirements.' This directly supports the answer_claim about Quantum Circuits Inc's limited customizability not meeting their unique requirements."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatou Ndiaye explicitly states: 'I'll coordinate with our team to schedule something soon, and I'll follow up with an email.' This directly supports the answer_claim about scheduling a demonstration and following up by email. The phrase 'schedule something soon' in context of the call (about collaboration on EDA solutions) aligns with scheduling a demonstration, and 'follow up with an email' is verbatim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two things: (1) Quantum Circuits Inc's limited customizability didn't meet Green Circuitry's unique requirements \u2014 supported by index 0 where Diego Fern\u00e1ndez explicitly names this limitation; (2) Fatou agreed to schedule a demonstration and follow up by email \u2014 supported by index 1 where Fatou says she'll 'coordinate with our team to schedule something soon' and 'follow up with an email.' The context metadata confirms Diego Fern\u00e1ndez is the contact at Green Circuitry LLC, and the opportunity name references sustainable EDA solutions, making 'schedule something soon' reasonably interpreted as scheduling a demonstration. Both factual claims in the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-4aa6bf602d5b7656",
+    "question": "What are the quoted prices for the Nissan Leaf and Kia Sorento for Oliver Davis, and do both fit his budget?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The quoted prices for the Nissan Leaf and Kia Sorento for Oliver Davis and whether both fit his budget",
+        "relationship": "single coherent request: two quoted prices evaluated against the same customer's budget constraint",
+        "reason": "The two prices are not independent lookups; they are jointly assessed against Oliver Davis's budget, forming one coherent commercial evaluation for the same customer."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for two quoted prices and a budget-fit confirmation for a named customer (Oliver Davis), which is a natural commercial-terms inquiry a rep would want. The dialogue explicitly states the Leaf at $28,999.99 and the Sorento at $30,999.99, and Liu Wei confirms both fit within Oliver's specified range. The gold answer reproduces exactly those facts with no extras. Wording is natural, scope is adequate (customer name + vehicle models identify the situation), and no locator preamble or artificial framing is present. Single-call question, so both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Liu Wei explicitly states 'The Nissan Leaf is priced at $28,999.99, and the Sorento at $30,999.99' and 'Both fit well within your specified range.' This directly supports the answer_claim regarding both prices and budget fit. The account metadata confirms the call is associated with Oliver Davis, so 'your specified range' refers to Oliver's budget."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains the exact prices for both vehicles ($28,999.99 for the Leaf, $30,999.99 for the Sorento) and explicitly states both fit within the customer's specified range. The account metadata ties the call to Oliver Davis. All factual claims in the gold_answer are directly supported by the quoted passage."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-cc850d90eab43520",
+    "question": "What concerns did Isabelle Cruz raise about warranty costs, and how did Kamila respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Isabelle Cruz's concerns about warranty costs and Kamila's response to them",
+        "relationship": "objection and response within the same conversation",
+        "reason": "A single coherent objection-and-response request about one issue (warranty costs)."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific warranty-cost objection raised by Isabelle Cruz and Kamila's rebuttal, a realistic sales-QA scenario. The dialogue confirms Isabelle mentioned online comments about lower-cost industry-standard warranties, and Kamila countered that cheaper plans lack comprehensive coverage while AutoElite's plan yields greater long-term savings. The gold answer captures both parts precisely without unasked extras. Single-call question, so both_sources_required is set true by rule. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Isabelle Cruz stating she 'came across a few comments online talking about some industry standards offering lower-cost warranties,' which matches the answer_claim that she mentioned industry standards offering lower-cost warranties. The online comments aspect is also preserved."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Kamila's quote explicitly states that some industry warranties 'might appear more appealing initially due to lower upfront costs' but 'our plan provides comprehensive coverage which typically results in greater cost savings in the long run.' This supports the claim that cheaper warranties lack comprehensive coverage and that their plan provides greater long-run savings."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Isabelle noted online comments about industry standards offering lower-cost warranties \u2014 supported by evidence index 0 where she says she 'came across a few comments online talking about some industry standards offering lower-cost warranties.' (2) Kamila said cheaper warranties lack comprehensive coverage \u2014 supported by evidence index 1 where Kamila contrasts lower upfront cost warranties with their plan's 'comprehensive coverage.' (3) AutoElite's plan yields greater long-term savings \u2014 supported by evidence index 1 where Kamila says 'our plan provides comprehensive coverage which typically results in greater cost savings in the long run.' All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  }
+]
