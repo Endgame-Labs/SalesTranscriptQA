@@ -1,0 +1,467 @@
+[
+  {
+    "question_id": "b2b-multi_call-32ea016136dab439",
+    "question": "For Digital Horizon Media, how did Sara Morales describe the account's security priority in the initial discussion, and which competitor's security emphasis did she cite as a concern in the follow-up call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "How Sara Morales described Digital Horizon Media's security priority initially, and which competitor's security emphasis she cited as a concern in the follow-up",
+        "relationship": "Two-call comparison of the same business issue (security concerns) for the same account",
+        "reason": "Both parts concern the same security topic across the initial and follow-up calls, forming a coherent competitive/security concern comparison rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrhLIAS",
+                "fact": "Sara Morales cited Quantum Circuits Inc as a competitor emphasizing security adherence strongly in the follow-up call.",
+                "why_other_call_cannot_supply_it": "The initial call (b2b:a05Wt000003T1GnIAK) does not mention Quantum Circuits Inc or any competitor's security emphasis; it only discusses data protection as a priority."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T1GnIAK",
+                "fact": "Sara Morales described data protection as a critical priority for their operations in the initial discussion.",
+                "why_other_call_cannot_supply_it": "The follow-up call (b2b:a05Wt000003SrhLIAS) does not contain this specific description; it only mentions a concern about long-term security and competitor emphasis, not the initial priority statement."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the initial security priority description and the competitor cited in the follow-up. Each fact is only present in its respective call, and neither call contains both facts, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrhLIAS",
+                  "fact": "Sara Morales cited Quantum Circuits Inc as a competitor emphasizing security adherence strongly in the follow-up call.",
+                  "why_other_call_cannot_supply_it": "The initial call (b2b:a05Wt000003T1GnIAK) does not mention Quantum Circuits Inc or any competitor's security emphasis; it only discusses Sara's own security priority."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T1GnIAK",
+                  "fact": "Sara Morales described data protection as a critical priority for their operations in the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The follow-up call (b2b:a05Wt000003SrhLIAS) does not contain this specific description; it only mentions a concern about security and competitor emphasis, not the initial priority statement."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information from two different calls: the initial security priority description and the competitor cited in the follow-up. Each fact is exclusive to its respective call, and neither call alone can supply both facts, making both calls necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrhLIAS",
+                  "fact": "Sara Morales cited Quantum Circuits Inc as a competitor emphasizing security adherence strongly in the follow-up call.",
+                  "why_other_call_cannot_supply_it": "The initial call (b2b:a05Wt000003T1GnIAK) does not mention Quantum Circuits Inc or any competitor's security emphasis; it only discusses data protection as a priority."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T1GnIAK",
+                  "fact": "Sara Morales described data protection as a critical priority for their operations in the initial discussion.",
+                  "why_other_call_cannot_supply_it": "The follow-up call (b2b:a05Wt000003SrhLIAS) does not contain this specific description; it only mentions a concern about long-term security and competitor emphasis, not the initial priority statement."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different calls: the initial security priority description and the competitor cited in the follow-up. Each fact is only present in its respective call, and neither call contains both facts, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1GnIAK",
+                "fact": "Sara said data protection is a critical priority for their operations",
+                "why_other_call_cannot_supply_it": "The November call contains no statement of the account's security priority; it only mentions the competitor concern."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SrhLIAS",
+                "fact": "Sara cited Quantum Circuits Inc as a competitor emphasizing security adherence strongly",
+                "why_other_call_cannot_supply_it": "The August call contains no mention of any competitor or security-related concern about one."
+              }
+            ],
+            "reason": "The question requests two distinct facts: the initial security priority statement and the competitor named in the follow-up. Each fact appears in only one call, and both are required to answer."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1GnIAK",
+                  "fact": "Sara said data protection is a critical priority for their operations",
+                  "why_other_call_cannot_supply_it": "The November call contains no statement of the account's security priority; it only mentions the competitor concern."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SrhLIAS",
+                  "fact": "Sara cited Quantum Circuits Inc as a competitor emphasizing security adherence strongly",
+                  "why_other_call_cannot_supply_it": "The August call contains no mention of any competitor or security-related concern about one."
+                }
+              ],
+              "reason": "The question requests two distinct facts: the initial security priority statement and the competitor named in the follow-up. Each fact appears in only one call, and both are required to answer."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The initial call (2023-08-14) contains Sara's statement that 'data protection is a critical priority' for their operations, and the follow-up call (2023-11-09) contains her remark that 'Quantum Circuits Inc has been emphasizing their security adherence quite strongly.' Each source contributes an exclusive requested fact; the gold answer matches both transcripts precisely with no extra or missing information. The question is naturally phrased, scoped to a named account and contact, and reflects a plausible rep need to track security priorities and competitive concerns.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Sara Morales on 2023-08-14 explicitly states 'data protection is a critical priority for us' and 'Our operations depend on strong and reliable security measures,' directly supporting the claim that she described data protection as a critical priority and that operations depend on strong, reliable security measures."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Sara Morales on 2023-11-09 explicitly states 'I'm also concerned about the long-term security. Quantum Circuits Inc has been emphasizing their security adherence quite strongly,' directly supporting the claim that she raised a concern about long-term security and cited Quantum Circuits Inc's emphasis on security adherence."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states: (1) Initially she said data protection is a critical priority for their operations \u2013 supported by index 0 where Sara says 'data protection is a critical priority for us. Our operations depend on strong and reliable security measures.' (2) In the follow-up she noted Quantum Circuits Inc has been emphasizing security adherence strongly \u2013 supported by index 1 where Sara says 'Quantum Circuits Inc has been emphasizing their security adherence quite strongly.' The metadata confirms the account is Digital Horizon Media and the contact is Sara Morales. The August call (index 0) is the initial discussion and the November call (index 1) is the follow-up. All factual claims in the gold answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-073b1953fef3674b",
+    "question": "How did Quantum Circuits come up in TechBridge Systems' evaluation across the two discovery calls with Fatima Al-Mansoor \u2014 what was her concern about them in the first call, and what comparison did she raise in the second call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Fatima Al-Mansoor's concern about Quantum Circuits in the first discovery call and the comparison she raised about them in the second call",
+        "relationship": "same competitive issue (Quantum Circuits) tracked across two calls",
+        "reason": "Both parts address the same business issue \u2014 the competitive threat from Quantum Circuits \u2014 across the two discovery calls, forming a coherent competitive-comparison question rather than unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0mFIAS",
+                "fact": "Fatima's concern in the first call was that Quantum Circuits' offerings weren't adaptable enough for TechBridge's needs.",
+                "why_other_call_cannot_supply_it": "The second call does not mention any concern about adaptability; it only references Quantum Circuits' focus on long-term security adherence."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3P2IAK",
+                "fact": "In the second call, Fatima raised a comparison noting Quantum Circuits focuses more on long-term security adherence and asked how TechPulse compares.",
+                "why_other_call_cannot_supply_it": "The first call does not include any comparison about security adherence or a direct question about how TechPulse compares to Quantum Circuits."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two separate calls: the concern in the first call and the comparison in the second call. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0mFIAS",
+                  "fact": "Fatima's concern in the first call was that Quantum Circuits' offerings weren't adaptable enough for TechBridge's needs.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention any concern about adaptability; it only references Quantum Circuits' focus on long-term security adherence."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3P2IAK",
+                  "fact": "In the second call, Fatima raised a comparison noting Quantum Circuits focuses more on long-term security adherence and asked how TechPulse compares.",
+                  "why_other_call_cannot_supply_it": "The first call does not include any comparison about security adherence or a direct question about how TechPulse compares to Quantum Circuits."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two separate calls: the concern in the first call and the comparison in the second call. Each call provides a unique fact that the other does not contain, and both are necessary to fully answer the question."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0mFIAS",
+                "fact": "Fatima's concern in the first call: Quantum Circuits' offerings don't appear adaptable enough for TechBridge's needs",
+                "why_other_call_cannot_supply_it": "The second call never mentions adaptability concerns about Quantum Circuits; it only raises their long-term security adherence focus."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3P2IAK",
+                "fact": "In the second call Fatima raised a comparison, noting Quantum Circuits focuses more on long-term security adherence and asking how TechPulse compares",
+                "why_other_call_cannot_supply_it": "The first call contains no security-adherence comparison or comparison question about Quantum Circuits; only the adaptability concern appears there."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information about Quantum Circuits across two calls: the first call's concern (adaptability) and the second call's comparison (long-term security adherence). Each fact appears only in its respective call, and they are substantively different concerns, not paraphrases."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0mFIAS",
+                  "fact": "Fatima's concern in the first call: Quantum Circuits' offerings don't appear adaptable enough for TechBridge's needs",
+                  "why_other_call_cannot_supply_it": "The second call never mentions adaptability concerns about Quantum Circuits; it only raises their long-term security adherence focus."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3P2IAK",
+                  "fact": "In the second call Fatima raised a comparison, noting Quantum Circuits focuses more on long-term security adherence and asking how TechPulse compares",
+                  "why_other_call_cannot_supply_it": "The first call contains no security-adherence comparison or comparison question about Quantum Circuits; only the adaptability concern appears there."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information about Quantum Circuits across two calls: the first call's concern (adaptability) and the second call's comparison (long-term security adherence). Each fact appears only in its respective call, and they are substantively different concerns, not paraphrases."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall how a competitor (Quantum Circuits) surfaced across two discovery calls with the same contact. Call 1 exclusively supplies Fatima's concern that Quantum Circuits' offerings 'don't appear to be adaptable enough for our needs.' Call 2 exclusively supplies her comparison that Quantum Circuits 'focus more on long-term security adherence' and her question about how TechPulse compares, with Lara's reply about customization enhancing flexibility without compromising security. Both facts are verbatim-supported, each source contributes a unique requested fact, the answer states precisely what was asked with no unasked extras, and the question is scoped to a named account/contact/opportunity without artificial locator preambles or answer leakage."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatima Al-Mansoor on 2020-09-19 explicitly states: 'They seem to have secure partnerships, but their offerings don't appear to be adaptable enough for our needs.' This directly supports the answer_claim that Fatima said Quantum Circuits has secure partnerships but their offerings don't appear adaptable enough for TechBridge's needs. The speaker, account context (TechBridge Systems), and the concern about adaptability are all confirmed."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from 2020-09-24 shows Fatima saying 'I've heard competitors like Quantum Circuits focus more on long-term security adherence. How do you compare?' and Lara responding 'the ease of customization with TechPulse can significantly enhance flexibility without compromising security standards.' This directly supports the answer_claim that Fatima raised Quantum Circuits' focus on long-term security adherence and Lara responded about TechPulse's customization enhancing flexibility without compromising security."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) In the first call, Fatima said Quantum Circuits' offerings weren't adaptable enough for TechBridge's needs \u2014 supported by evidence index 0. (2) In the second call, she noted Quantum Circuits focuses more on long-term security adherence and asked how TechPulse compares \u2014 supported by evidence index 1. (3) Lara said TechPulse's customization enhances flexibility without compromising security \u2014 supported by evidence index 1. All factual claims in the gold_answer are directly supported by the cited evidence. The metadata confirms both calls involve TechBridge Systems and Fatima Al-Mansoor, matching the question's framing."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-f83fd26930026bbd",
+    "question": "What did Amelia Rodr\u00edguez say about NanoDesign Systems' products, and what discovery meeting date was agreed with TechPulse?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "What Amelia Rodr\u00edguez said about NanoDesign Systems' products, and the discovery meeting date agreed with TechPulse",
+        "relationship": "two independent fact lookups about different customers artificially joined",
+        "reason": "The question combines an unrelated product comment about NanoDesign Systems with a scheduling detail for TechPulse; these are separate information needs concerning different customers, not one coherent issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks two facts from a single call: (1) Amelia's comment about NanoDesign Systems' products and (2) the agreed discovery-meeting date with TechPulse. The dialogue confirms she said NanoDesign Systems' products 'require a lot of adaptation on our side' and that a virtual discovery meeting was set for July 20th at 2 PM. The gold answer states both facts precisely with no unasked extras. The question is naturally worded, scoped to a named contact and account, and reflects a realistic competitive-positioning and next-steps inquiry a rep would want. No locator preamble, no answer leakage, no unsupported causality. Because question_class is single_call, both_sources_required is set to true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Amelia Rodr\u00edguez stating: 'We've found that some competitors' products, like NanoDesign Systems, require a lot of adaptation on our side.' This matches the answer_claim that Amelia said NanoDesign Systems' products require a lot of adaptation on their side. The speaker attribution, the product name, and the claim about adaptation are all explicitly present."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Fatima Al-Masri proposing 'July 20th at 2 PM' for a virtual meeting, and Amelia Rodr\u00edguez confirming 'July 20th at 2 PM works perfectly.' This directly supports the answer_claim that Fatima proposed July 20th at 2 PM and Amelia confirmed it works. The meeting is explicitly described as virtual."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two factual claims: (1) Amelia said NanoDesign Systems' products require a lot of adaptation on Innovatech's side, and (2) a virtual discovery meeting was set for July 20th at 2 PM. Evidence index 0 directly supports claim (1) with Amelia's exact words. Evidence index 1 supports claim (2): Fatima proposes a 'virtual meeting' on July 20th at 2 PM and Amelia confirms. The context metadata confirms the account is Innovatech Group and the contact is Amelia Rodr\u00edguez, aligning 'our side' with Innovatech. The term 'discovery meeting' is a minor characterization not explicitly used in the quote (it says 'virtual meeting'), but the meeting's purpose in context of the opportunity 'AI-Powered EDA Expansion' and the discussion of products/team members is consistent with a discovery meeting. All key facts\u2014speaker, product, adaptation claim, virtual format, date, and time\u2014are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-2d96b5cb61b2a8c5",
+    "question": "What is the total quote for Chloe Dupont at Paris Tech Innovations, and what installation timeline did she request?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total quoted price for Chloe Dupont at Paris Tech Innovations and the installation timeline she requested",
+        "relationship": "Both parts concern the same commercial engagement: the quote and the requested installation schedule are components of one deal discussion",
+        "reason": "A quote total and its associated installation timeline form one coherent sales request about the same opportunity, and the language is plausible sales terminology (installation of a product/system)."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks for the total quote and installation timeline for a named lead at a named company\u2014information a rep would plausibly need. The dialogue confirms $2,400 (4 \u00d7 $600 PulseSim Pro) + $392 (2 \u00d7 $196 TrainEDU Suite) = $2,792, and Chloe explicitly requests installation within two days. The gold answer states exactly those facts with no unasked extras. Wording is natural, scope is adequate via customer/company names, and no artificial locator preamble or answer leakage is present. Single-call question, so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Carmen Silva explicitly states PulseSim Pro at $600 each, four units totaling $2,400; TrainEDU Suite licenses at $196 each, two licenses totaling $392; and a grand total of $2,792. This directly supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Chloe Dupont states 'We're hoping to have the setup completed in the next two days,' which directly supports the claim that she requested installation within two days."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Evidence index 0 fully supports the pricing breakdown ($2,400 for four PulseSim Pro units at $600 each, $392 for two TrainEDU Suite licenses at $196 each, total $2,792). Evidence index 1 supports the installation timeline request of two days. Together, the citations substantiate every factual element in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-84d64e0d2091eb8a",
+    "question": "What budget range is Franklin Pierce working with, and how do the two vehicles he's considering compare to it on price?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Franklin Pierce's budget range and a price comparison of the two vehicles he is considering against that budget",
+        "relationship": "single coherent commercial evaluation: the budget and the vehicle price comparison address the same purchasing decision",
+        "reason": "The question combines a budget lookup with a price comparison of the candidate vehicles, which together form one coherent sales question about fit to budget, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "A sales rep would naturally want to know a customer's budget and how candidate vehicles price against it. The question is naturally worded, scoped to Franklin Pierce's deal, and the answer states the $70k\u2013$80k budget, the BMW X5 M at $74,999.99 (within range), and the Audi Q7 at $53,999.99 (below range)\u2014all directly supported by the single call transcript. No locator preamble, no leakage, no unsupported claims. Because question_class is single_call, both_sources_required is set true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Franklin Pierce explicitly states: 'I'm looking to stay around the $70,000 to $80,000 range.' This directly supports the answer_claim that the budget is $70,000 to $80,000."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Liam O'Reilly explicitly states: 'The 2022 BMW X5 M is priced at $74,999.99 and the 2021 Audi Q7 at $53,999.99.' This directly supports the answer_claim regarding both vehicle prices."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Franklin Pierce wants to stay around $70,000\u2013$80,000 \u2014 supported by index 0; (2) the 2022 BMW X5 M is priced at $74,999.99 (within range) \u2014 supported by index 1, and $74,999.99 is indeed within $70,000\u2013$80,000; (3) the 2021 Audi Q7 at $53,999.99 (below it) \u2014 supported by index 1, and $53,999.99 is indeed below $70,000. All factual claims in the gold_answer are fully supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-ff5989782e7e39f6",
+    "question": "What did Fatima Ali say about DriveFirst Automotive's warranty when comparing it to our AutoElite Premium package?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Fatima Ali said about DriveFirst Automotive's warranty in comparison to the AutoElite Premium package",
+        "relationship": "single competitive comparison request",
+        "reason": "One coherent competitive comparison: warranty terms of a competitor vs. our package, same business issue.",
+        "question_class": "single_call"
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Fatima Ali said comparing DriveFirst Automotive's warranty to the AutoElite Premium package. The dialogue at 10:33:25 contains her exact statement: DriveFirst's warranty appears competitive due to low initial costs, but the rep's transparent pricing makes a difference in the long run. The gold answer faithfully paraphrases this. The question is naturally scoped to a specific customer and competitive comparison a rep would want to recall. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage is Fatima Ali's own words: 'while their warranty appears competitive due to low initial costs, your transparent pricing seems to make a difference in the long run.' This directly supports the answer_claim that DriveFirst's warranty appears competitive due to low initial costs but transparent pricing makes a difference long term. Speaker attribution (Fatima Ali), the comparison target (DriveFirst Automotive), and the hedging language ('appears,' 'seems') are all preserved."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: 'DriveFirst's warranty appears competitive due to low initial costs, but our transparent pricing makes a difference in the long run.' The single cited evidence (index 0) contains Fatima Ali's exact statement covering both parts of this claim\u2014the competitive appearance of DriveFirst's warranty due to low initial costs and the long-run difference made by transparent pricing. The context metadata confirms the account is Fatima Ali and the opportunity is the AutoElite Premium package, aligning with the question's framing. All factual elements of the gold_answer are supported by the supplied citation."
+      }
+    }
+  }
+]

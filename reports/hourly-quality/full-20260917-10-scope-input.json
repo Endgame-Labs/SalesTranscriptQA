@@ -1,0 +1,1856 @@
+[
+  {
+    "job_id": "32ea016136dab439e634b1db14b1099621d2ca59dc54d18261ebf56270c8ee09",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SrhLIAS",
+      "b2b:a05Wt000003T1GnIAK"
+    ],
+    "status": "accepted",
+    "question": "For Digital Horizon Media, how did Sara Morales describe the account's security priority in the initial discussion, and which competitor's security emphasis did she cite as a concern in the follow-up call?",
+    "gold_answer": "Initially she said data protection is a critical priority for their operations; in the follow-up she noted Quantum Circuits Inc has been emphasizing security adherence strongly.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T1GnIAK",
+        "answer_claim": "Sara says data protection is a critical priority and operations depend on strong, reliable security measures.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2023-08-14T13:32:45] Sara Morales: Absolutely, data protection is a critical priority for us. Our operations depend on strong and reliable security measures.",
+        "start": 1727,
+        "end": 1885
+      },
+      {
+        "call_id": "b2b:a05Wt000003SrhLIAS",
+        "answer_claim": "Sara raises concern about long-term security, citing Quantum Circuits Inc emphasizing their security adherence strongly.",
+        "kind": "dialogue",
+        "line_start": 7,
+        "line_end": 8,
+        "quote": "[2023-11-09T15:31:35] Sara Morales: That\u2019s definitely a plus. However, I\u2019m also concerned about the long-term security. Quantum Circuits Inc has been emphasizing their security adherence quite strongly.",
+        "start": 1363,
+        "end": 1565
+      }
+    ],
+    "question_id": "b2b-multi_call-32ea016136dab439",
+    "candidate": {
+      "question": "For Digital Horizon Media, how did Sara Morales describe the account's security priority in the initial discussion, and which competitor's security emphasis did she cite as a concern in the follow-up call?",
+      "gold_answer": "Initially she said data protection is a critical priority for their operations; in the follow-up she noted Quantum Circuits Inc has been emphasizing security adherence strongly.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T1GnIAK",
+          "answer_claim": "Sara says data protection is a critical priority and operations depend on strong, reliable security measures.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2023-08-14T13:32:45] Sara Morales: Absolutely, data protection is a critical priority for us. Our operations depend on strong and reliable security measures.",
+          "start": 1727,
+          "end": 1885
+        },
+        {
+          "call_id": "b2b:a05Wt000003SrhLIAS",
+          "answer_claim": "Sara raises concern about long-term security, citing Quantum Circuits Inc emphasizing their security adherence strongly.",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 8,
+          "quote": "[2023-11-09T15:31:35] Sara Morales: That\u2019s definitely a plus. However, I\u2019m also concerned about the long-term security. Quantum Circuits Inc has been emphasizing their security adherence quite strongly.",
+          "start": 1363,
+          "end": 1565
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the initial discussion, Sara Morales described data protection as a critical priority for Digital Horizon Media. In the follow-up call, she cited Quantum Circuits Inc's strong emphasis on security adherence as a concern.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer: In the available call (2023-11-09), Sara Morales cited Quantum Circuits Inc as the competitor whose strong emphasis on security adherence was a concern, saying 'Quantum Circuits Inc has been emphasizing their security adherence quite strongly.' However, the question asks about two calls (an initial discussion and a follow-up call), and only one call is supplied, so how she described the account's security priority in the initial discussion is missing.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer: In the initial discussion (2023-08-14 call), Sara Morales described security as a critical priority, stating 'data protection is a critical priority for us. Our operations depend on strong and reliable security measures.' However, the follow-up call is not provided, so the competitor whose security emphasis she cited as a concern cannot be determined from the supplied data.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported: the 2023-08-14 call has Sara saying 'data protection is a critical priority for us' and the 2023-11-09 call has her citing 'Quantum Circuits Inc has been emphasizing their security adherence quite strongly.' The question is a realistic sales need (security priority + competitor concern) with clear account/contact context, doesn't leak the answer, and each call supplies a distinct necessary fact (initial security priority vs. competitor concern), so both calls are required; each single-call ablation only partially answers, and no-context guesses fail. The independent answer matches the gold semantically."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SrhLIAS",
+          "b2b:a05Wt000003T1GnIAK"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SukBIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript is a single call with Sara Wong of Innovatech Group about AI DesignShift. There is no mention of Digital Horizon Media, no person named Sara Morales, and no follow-up call discussing a competitor's security emphasis, so the requested facts are missing.",
+              "evidence": [],
+              "reason": "The only call supplied involves Sara Wong at Innovatech Group discussing AI DesignShift with Priya Choudhury. The question asks about Sara Morales at Digital Horizon Media, an initial discussion describing the account's security priority, and a follow-up call citing a competitor's security emphasis. None of these named entities, events, or facts appear anywhere in the source material."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1lRIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Fatima Al-Masri and Sara Jensen of Copenhagen Digital Designs. There is no call involving Sara Morales or the account Digital Horizon Media, no discussion of a security priority in an initial discussion, and no mention of any competitor's security emphasis in a follow-up call. The question cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The single call transcript (b2b:a05Wt000003T1lRIAS) is with Sara Jensen at Copenhagen Digital Designs, not Sara Morales at Digital Horizon Media. No security priority description or competitor security concern is mentioned anywhere in the source. All requested facts (Sara Morales, Digital Horizon Media, security priority description, competitor's security emphasis) are entirely absent."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T23PIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving Digital Horizon Media or a contact named Sara Morales. The only call provided is between Linh Tran and Sara Ben-Ami of Tel Aviv Digital Designs. There is no initial discussion or follow-up call for Digital Horizon Media, and no mention of a competitor's security emphasis by Sara Morales.",
+              "evidence": [],
+              "reason": "The question asks about Sara Morales and Digital Horizon Media, but the sole transcript is for Sara Ben-Ami at Tel Aviv Digital Designs (call b2b:a05Wt000003T23PIAS). No transcript exists for the requested account, contact, or follow-up call, so neither the security-priority description nor the competitor citation can be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SthWIAS",
+              "b2b:a05Wt000003SvgAIAS",
+              "b2b:a05Wt000003SxwQIAS",
+              "b2b:a05Wt000003T24sIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "In the initial discussion (2023-08-02), Sara Morales described security as 'very important' to Digital Horizon Media, particularly because of the sensitive projects they handle, and noted they had heard good things about TechPulse's compliance capabilities. However, no follow-up call contains Sara citing a competitor's security emphasis as a concern. In the 2023-08-15 follow-up, Sara mentions other providers emphasizing 'constant technical support' (not security), and it is Dariusz\u2014not Sara\u2014who references CircuitWave. The only competitor-security remark (CircuitWave's security being 'lacking') appears in the initial 08-02 call itself, not in a follow-up. The requested follow-up competitor-security citation is therefore missing from the sources.",
+              "evidence": [],
+              "reason": "The first part of the question (Sara's description of security priority in the initial discussion) is supported by call b2b:a05Wt000003SvgAIAS line 5. However, the second part\u2014Sara citing a competitor's security emphasis as a concern in a follow-up call\u2014is not present in any source. In the 08-15 follow-up (b2b:a05Wt000003SxwQIAS line 5), Sara references competitors emphasizing 'constant technical support,' not security. The CircuitWave security-lacking comment (b2b:a05Wt000003SvgAIAS line 13) occurs in the initial call, not a follow-up. Because the exact requested fact (competitor security emphasis cited by Sara in a follow-up) cannot be found, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkWIAS",
+              "b2b:a05Wt000003Sv1jIAC",
+              "b2b:a05Wt000003SwDvIAK",
+              "b2b:a05Wt000003Sx55IAC",
+              "b2b:a05Wt000003Szq2IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain an account named 'Digital Horizon Media' or a contact named 'Sara Morales'. All five calls concern the account 'Innovative Robotics' with contact 'Sara Andersson' and salesperson Dariusz Wisniewski. Because the question asks specifically about Digital Horizon Media and Sara Morales, no matching facts exist in the provided transcripts.",
+              "evidence": [],
+              "reason": "The question targets the exact named account 'Digital Horizon Media' and person 'Sara Morales'. Every call in the source data is scoped to account 'Innovative Robotics' (account_id 001Wt00000PFsmbIAD) and contact 'Sara Andersson' (contact_id 003Wt00000Jqv0xIAB). No transcript mentions Digital Horizon Media or Sara Morales, so neither the security-priority description nor the competitor concern can be attributed to the requested entities. The draft extraction is correct."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrhLIAS",
+              "b2b:a05Wt000003T1GnIAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the initial discussion (2023-08-14), Sara Morales described the account's security priority by stating, 'data protection is a critical priority for us. Our operations depend on strong and reliable security measures.' In the follow-up call (2023-11-09), she cited Quantum Circuits Inc as the competitor whose strong emphasis on security adherence was a concern, saying, 'Quantum Circuits Inc has been emphasizing their security adherence quite strongly.'",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T1GnIAK",
+                  "line_start": 8,
+                  "line_end": 10,
+                  "quote": "[2023-08-14T13:32:30] Isabella Rossi: Yes, our Service Level Agreements ensure minimal disruption. I\u2019d also like to touch on security, which I know is crucial for you.\n[2023-08-14T13:32:45] Sara Morales: Absolutely, data protection is a critical priority for us. Our operations depend on strong and reliable security measures."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SrhLIAS",
+                  "line_start": 7,
+                  "line_end": 8,
+                  "quote": "[2023-11-09T15:31:35] Sara Morales: That\u2019s definitely a plus. However, I\u2019m also concerned about the long-term security. Quantum Circuits Inc has been emphasizing their security adherence quite strongly."
+                }
+              ],
+              "reason": "The initial discussion (2023-08-14, call b2b:a05Wt000003T1GnIAK) at lines 8-9 shows Isabella raising security and Sara responding that 'data protection is a critical priority for us. Our operations depend on strong and reliable security measures.' The follow-up call (2023-11-09, call b2b:a05Wt000003SrhLIAS) at line 7 shows Sara citing Quantum Circuits Inc's security emphasis as a concern. Both facts are directly stated by Sara Morales for Digital Horizon Media. The draft extraction is accurate."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same two requested facts: (1) Sara Morales described data protection as a critical priority for their operations in the initial discussion, and (2) she cited Quantum Circuits Inc's strong emphasis on security adherence as a concern in the follow-up call. Answer A provides direct quotes and dates while Answer B paraphrases, but the semantic content regarding the requested facts is identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrSiIAK",
+              "b2b:a05Wt000003T1AQIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve BlueSky Aerospace and contact Sara Kruger, not Digital Horizon Media or Sara Morales. There is no mention of Digital Horizon Media, no person named Sara Morales, and no discussion of that account's security priority or a competitor's security emphasis in the context requested. The sources cannot answer the question.",
+              "evidence": [],
+              "reason": "The question asks about Digital Horizon Media and Sara Morales, but both calls are for account BlueSky Aerospace with contact Sara Kruger and salesperson Yasmin Farouk. No source contains any reference to Digital Horizon Media or Sara Morales, so neither the security priority description nor the competitor's security emphasis can be identified."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvpqIAC",
+              "b2b:a05Wt000003T200IAC",
+              "b2b:a05Wt000003T3aLIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "sara morales"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwM2IAK",
+              "b2b:a05Wt000003SyxEIAS",
+              "b2b:a05Wt000003Szv4IAC",
+              "b2b:a05Wt000003T0r0IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "In the initial discussion (2023-08-23), Sara Morales described Digital Horizon Media's security priority by stating they were 'particularly interested in understanding more about your security compliance and data protection features' and asked about 'strategies for more dynamic data protection to address diverse security needs.' However, in none of the follow-up calls does Sara Morales cite a specific competitor's security emphasis as a concern. The 2023-09-01 call mentions competitors falling short in performance and scalability (line 8, but this is Tariq speaking, not Sara citing a competitor's security emphasis). The 2023-09-12 call discusses standardization, setup time, and support but no competitor's security emphasis. The 2023-10-15 call mentions competitor challenges with performance during high-demand periods (line 13) but again no competitor's security emphasis. The specific fact about which competitor's security emphasis Sara cited as a concern in a follow-up call is not present in any of the provided sources.",
+              "evidence": [],
+              "reason": "The first part of the question (Sara's description of security priority in the initial discussion) is supported by lines 5 and 7 of call b2b:a05Wt000003SwM2IAK. However, the second part\u2014which competitor's security emphasis Sara cited as a concern in a follow-up call\u2014cannot be found in any of the four calls. No follow-up call contains Sara naming a competitor in connection with security emphasis. Therefore the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuP7IAK",
+              "b2b:a05Wt000003SzF7IAK",
+              "b2b:a05Wt000003SzF8IAK",
+              "b2b:a05Wt000003T1GoIAK"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "sara morales"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuLkIAK",
+              "b2b:a05Wt000003SvHtIAK",
+              "b2b:a05Wt000003SxgFIAS",
+              "b2b:a05Wt000003SzTWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no account named 'Digital Horizon Media' and no contact named 'Sara Morales.' All four calls involve the account 'MetaData Analytics' and the contact 'Juanita Morales,' with salesperson Ayo Okeke from TechPulse Solutions. Therefore, neither Sara Morales's description of a security priority in an initial discussion nor her citation of a competitor's security emphasis in a follow-up call can be found in these transcripts.",
+              "evidence": [],
+              "reason": "The question asks specifically about Digital Horizon Media and Sara Morales. None of the four call transcripts reference that account or that person. Every call is associated with account_id 001Wt00000PGaNjIAL (MetaData Analytics) and contact Juanita Morales. Because the exact named entities in the question do not appear in any source, no fact can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrkdIAC",
+              "b2b:a05Wt000003T1v7IAC",
+              "b2b:a05Wt000003T1v8IAC",
+              "b2b:a05Wt000003T49lIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "sara morales"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0MOIA0",
+              "b2b:a05Wt000003T0MPIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts are for the account BlueSky Aerospace with contact Sara Kruger, not Digital Horizon Media, and there is no person named Sara Morales in any of the sources. No mention of Digital Horizon Media, Sara Morales, or a competitor's security emphasis cited as a concern in a follow-up call exists in the supplied data. Therefore the requested facts cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about Digital Horizon Media and a person named Sara Morales. The only calls provided involve BlueSky Aerospace and contact Sara Kruger. Neither the account, the contact name, nor the specific competitor-security-emphasis detail appears anywhere in the sources, so no complete answer can be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyqnIAC",
+              "b2b:a05Wt000003SzzoIAC",
+              "b2b:a05Wt000003T0uBIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain any account named 'Digital Horizon Media' or any contact named 'Sara Morales'. All three calls concern the account 'Innovative Robotics' with contact 'Sara Andersson' and salesperson Aarav Sharma from TechPulse Solutions. Therefore, neither Sara Morales's description of Digital Horizon Media's security priority in an initial discussion nor any competitor's security emphasis she cited in a follow-up call can be found in these sources.",
+              "evidence": [],
+              "reason": "The question asks about a specific account (Digital Horizon Media) and a specific person (Sara Morales). None of the three call transcripts reference that account or that person. All calls involve 'Innovative Robotics' and 'Sara Andersson'. Because the exact named entities are absent, no fact can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sto1IAC",
+              "b2b:a05Wt000003SvppIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "sara morales"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsQSIA0",
+              "b2b:a05Wt000003SxjUIAS",
+              "b2b:a05Wt000003SydxIAC",
+              "b2b:a05Wt000003T02yIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "In the initial discussion (2023-08-20 call), Sara Morales stated that 'Security is definitely at the forefront of our priorities,' making SecureFlow Suite a good fit. However, in none of the follow-up calls did she cite any competitor's security emphasis as a concern. The competitor-related concerns she raised were about the pace/frequency of feature updates (2023-08-20 call, line 11; 2023-09-25 call, line 5), not about security, and no specific competitor was named. The requested fact about a competitor's security emphasis cited as a concern is not present in any of the provided calls.",
+              "evidence": [],
+              "reason": "The first part of the question (security priority description) is supported at line 9 of call b2b:a05Wt000003SxjUIAS. However, the second part\u2014which competitor's security emphasis Sara Morales cited as a concern in a follow-up call\u2014cannot be answered. Across all four calls, competitor mentions relate only to the speed of feature rollouts/updates, never to security emphasis, and no competitor is ever named. Because the second requested fact is entirely absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxjWIAS",
+              "b2b:a05Wt000003SyFlIAK",
+              "b2b:a05Wt000003SzzxIAC",
+              "b2b:a05Wt000003T3jzIAC"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "sara morales"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both calls are from the same account/contact; the initial call (2023-08-14) contains Sara's statement that data protection is a critical priority, and the follow-up (2023-11-09) contains her citing Quantum Circuits Inc's strong security emphasis. Each evidence quote directly supports one distinct part of the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "how did Sara Morales describe the account's security priority in the initial discussion",
+            "explicitly_requested": true,
+            "required_fact": "Sara Morales described data protection as a critical priority, with operations depending on strong and reliable security measures",
+            "source_call_ids": [
+              "b2b:a05Wt000003T1GnIAK"
+            ]
+          },
+          {
+            "question_span": "which competitor's security emphasis did she cite as a concern in the follow-up call",
+            "explicitly_requested": true,
+            "required_fact": "Quantum Circuits Inc, which has been emphasizing their security adherence quite strongly",
+            "source_call_ids": [
+              "b2b:a05Wt000003SrhLIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for two distinct facts: (1) Sara Morales' description of the account's security priority in the initial discussion, and (2) the competitor's security emphasis cited as a concern in the follow-up call. The gold_answer provides exactly these two facts: data protection as a critical priority, and Quantum Circuits Inc's emphasis on security adherence. No extra facts are included. The obligations correctly map each fact to the appropriate call: the initial discussion (call b2b:a05Wt000003T1GnIAK) contains the data protection statement, and the follow-up call (b2b:a05Wt000003SrhLIAS) contains the Quantum Circuits Inc mention. Each call is required because each supplies a distinct fact not present in the other. The independent answer directly answers both parts of the question, matching the gold_answer. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Initially she said data protection is a critical priority for their operations",
+            "question_span": "how did Sara Morales describe the account's security priority in the initial discussion",
+            "required_by_question": true
+          },
+          {
+            "claim": "in the follow-up she noted Quantum Circuits Inc has been emphasizing security adherence strongly",
+            "question_span": "which competitor's security emphasis did she cite as a concern in the follow-up call",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "073b1953fef3674b0b74e9df9656ed8a0e528410e3de955f0d5e39c4e9c07fc2",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T0mFIAS",
+      "b2b:a05Wt000003T3P2IAK"
+    ],
+    "status": "accepted",
+    "question": "How did Quantum Circuits come up in TechBridge Systems' evaluation across the two discovery calls with Fatima Al-Mansoor \u2014 what was her concern about them in the first call, and what comparison did she raise in the second call?",
+    "gold_answer": "In the first call, Fatima said Quantum Circuits' offerings weren't adaptable enough for TechBridge's needs. In the second call, she noted Quantum Circuits focuses more on long-term security adherence and asked how TechPulse compares; Lara said TechPulse's customization enhances flexibility without compromising security.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T0mFIAS",
+        "answer_claim": "Fatima said Quantum Circuits has secure partnerships but their offerings don't appear adaptable enough for TechBridge's needs.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2020-09-19T10:02:50] Fatima Al-Mansoor: That sounds promising. We also came across Quantum Circuits Inc. They seem to have secure partnerships, but their offerings don't appear to be adaptable enough for our needs.",
+        "start": 2167,
+        "end": 2382
+      },
+      {
+        "call_id": "b2b:a05Wt000003T3P2IAK",
+        "answer_claim": "Fatima raised that Quantum Circuits focuses more on long-term security adherence; Lara responded that TechPulse's ease of customization enhances flexibility without compromising security standards.",
+        "kind": "dialogue",
+        "line_start": 13,
+        "line_end": 15,
+        "quote": "[2020-09-24T14:33:15] Fatima Al-Mansoor: Customization is a key factor for us. However, I've heard competitors like Quantum Circuits focus more on long-term security adherence. How do you compare?\n[2020-09-24T14:33:35] Lara Haddad: That's a great point. Quantum Circuits is known for that, but we believe the ease of customization with TechPulse can significantly enhance flexibility without compromising security standards. It\u2019s about providing balanced solutions for real-world challenges.",
+        "start": 2636,
+        "end": 3127
+      }
+    ],
+    "question_id": "b2b-multi_call-073b1953fef3674b",
+    "candidate": {
+      "question": "How did Quantum Circuits come up in TechBridge Systems' evaluation across the two discovery calls with Fatima Al-Mansoor \u2014 what was her concern about them in the first call, and what comparison did she raise in the second call?",
+      "gold_answer": "In the first call, Fatima said Quantum Circuits' offerings weren't adaptable enough for TechBridge's needs. In the second call, she noted Quantum Circuits focuses more on long-term security adherence and asked how TechPulse compares; Lara said TechPulse's customization enhances flexibility without compromising security.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T0mFIAS",
+          "answer_claim": "Fatima said Quantum Circuits has secure partnerships but their offerings don't appear adaptable enough for TechBridge's needs.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2020-09-19T10:02:50] Fatima Al-Mansoor: That sounds promising. We also came across Quantum Circuits Inc. They seem to have secure partnerships, but their offerings don't appear to be adaptable enough for our needs.",
+          "start": 2167,
+          "end": 2382
+        },
+        {
+          "call_id": "b2b:a05Wt000003T3P2IAK",
+          "answer_claim": "Fatima raised that Quantum Circuits focuses more on long-term security adherence; Lara responded that TechPulse's ease of customization enhances flexibility without compromising security standards.",
+          "kind": "dialogue",
+          "line_start": 13,
+          "line_end": 15,
+          "quote": "[2020-09-24T14:33:15] Fatima Al-Mansoor: Customization is a key factor for us. However, I've heard competitors like Quantum Circuits focus more on long-term security adherence. How do you compare?\n[2020-09-24T14:33:35] Lara Haddad: That's a great point. Quantum Circuits is known for that, but we believe the ease of customization with TechPulse can significantly enhance flexibility without compromising security standards. It\u2019s about providing balanced solutions for real-world challenges.",
+          "start": 2636,
+          "end": 3127
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the first call, Fatima Al-Mansoor mentioned Quantum Circuits Inc. as a competitor, noting they have secure partnerships but their offerings don't appear adaptable enough for TechBridge's needs. In the second call, she raised a comparison that Quantum Circuits focuses more on long-term security adherence, asking how TechPulse compares to that.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer. In the first discovery call (2020-09-19), Fatima Al-Mansoor mentioned Quantum Circuits Inc., noting they seem to have secure partnerships but their offerings don't appear adaptable enough for TechBridge's needs. The second call is not included in the supplied data, so the comparison she raised about Quantum Circuits in that call cannot be determined.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer only. In the first discovery call (2020-09-24), Fatima Al-Mansoor raised Quantum Circuits as a competitor, expressing concern that they 'focus more on long-term security adherence,' and asked how TechPulse compares. Lara Haddad responded that while Quantum Circuits is known for that, TechPulse's ease of customization enhances flexibility without compromising security. The second call is not supplied, so the comparison she raised in that call cannot be determined from the provided data.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported: call 1 (2020-09-19) Fatima says Quantum Circuits 'offerings don't appear to be adaptable enough for our needs'; call 2 (2020-09-24) she says Quantum Circuits 'focus more on long-term security adherence' and asks how TechPulse compares, with Lara's response matching the gold. The question is a realistic competitive-evaluation need, names participants/accounts legitimately, and requires distinct facts from each call (adaptability concern vs. security-adherence comparison), so neither single call fully answers it and the facts are not guessable without context. The independent answer matches the gold semantically with no leakage or invented details."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T0mFIAS",
+          "b2b:a05Wt000003T3P2IAK"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1tfIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the information needed to answer this question. There is only one call provided (2023-10-12) with Fatima Al-Mansour, and her company is listed as Metro Security Systems, not TechBridge Systems. Neither 'Quantum Circuits' nor 'TechBridge Systems' appears anywhere in the transcript. The single call discusses Workflow Genius requirements, installation timeline, and pricing. There is no second discovery call, no mention of Quantum Circuits, no concern raised about them, and no comparison involving them.",
+              "evidence": [],
+              "reason": "The question asks about two discovery calls with Fatima Al-Mansour at TechBridge Systems discussing Quantum Circuits. The provided sources contain only one call (b2b:a05Wt000003T1tfIAC) with Fatima Al-Mansour of Metro Security Systems, covering Workflow Genius. Quantum Circuits and TechBridge Systems are never mentioned. No second call exists in the data. Therefore no concern or comparison regarding Quantum Circuits can be cited, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sy7gIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about TechBridge Systems, Fatima Al-Mansoor, or Quantum Circuits. The only call transcript available is between Junaid Khan of Secure Solutions and Fatima Al-Farsi of SkyNet Technologies, discussing CryptSecure Core, CircuitSync Pro, and CloudInnovate Space. There is no mention of Quantum Circuits, no concern raised about them, and no comparison involving them in any call. The question cannot be answered from the given sources.",
+              "evidence": [],
+              "reason": "The question asks about Fatima Al-Mansoor at TechBridge Systems and her concern/comparison regarding Quantum Circuits across two discovery calls. However, the only source provided is a single call (b2b:a05Wt000003Sy7gIAC) between Junaid Khan and Fatima Al-Farsi of SkyNet Technologies. There is no second call, no contact named Fatima Al-Mansoor, no company named TechBridge Systems, and no product or competitor named Quantum Circuits anywhere in the transcript. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4ktIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Fatima Al-Mansoor, TechBridge Systems, or Quantum Circuits. The only call provided is with Fatima Al-Rashid of TechGrove Systems (call b2b:a05Wt000003T4ktIAC), and there is no second discovery call. Quantum Circuits is never mentioned in any transcript, so neither a concern from a first call nor a comparison from a second call can be identified.",
+              "evidence": [],
+              "reason": "The question asks about Fatima Al-Mansoor at TechBridge Systems across two discovery calls, specifically her concern about Quantum Circuits in the first call and a comparison she raised in the second call. The sole source transcript features a different person (Fatima Al-Rashid) at a different company (TechGrove Systems), involves only one call, and contains no mention of Quantum Circuits whatsoever. No facts matching the exact named people, account, or event scope exist in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Syj4IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Fatima Al-Mansoor, TechBridge Systems, or Quantum Circuits. The only call provided is between Carmen Silva and Fatima Al-Farsi of ClearSky Data Solutions, discussing CryptGuard Modules and InnoTrain Hubs. There is no second call, no mention of TechBridge Systems, no person named Fatima Al-Mansoor, and no reference to Quantum Circuits anywhere in the supplied transcripts.",
+              "evidence": [],
+              "reason": "The question asks about two discovery calls with Fatima Al-Mansoor at TechBridge Systems regarding Quantum Circuits. The provided source contains only one call with a different person (Fatima Al-Farsi) at a different company (ClearSky Data Solutions), discussing entirely different products (CryptGuard Module and InnoTrain Hub). None of the named entities in the question appear in the source material, so no facts can be extracted to answer it."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sqa5IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Fatima Al-Mansoor, TechBridge Systems, Quantum Circuits, or two discovery calls. The only call provided is between Rashmi Dey and Fatima Al-Farsi of CyberPulse Security discussing AutoLayout Master. There is no mention of Quantum Circuits, no evaluation by TechBridge Systems, no concern raised in a first call, and no comparison raised in a second call.",
+              "evidence": [],
+              "reason": "The question asks about Fatima Al-Mansoor at TechBridge Systems and her concern about Quantum Circuits in a first discovery call and a comparison she raised in a second call. The sole source transcript is a call with a different person (Fatima Al-Farsi) at a different company (CyberPulse Security) about a different product (AutoLayout Master). None of the named entities, events, or facts requested appear anywhere in the provided sources, so the answer cannot be constructed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuDmIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about TechBridge Systems, Quantum Circuits, or a second discovery call with Fatima Al-Mansoor. The only call provided (b2b:a05Wt000003SuDmIAK) features Fatima Al-Mansouri of AgroSmart Innovations speaking with Nadia Al-Balushi of SecureTech Solutions about the CryptGuard Module. Neither 'TechBridge Systems' nor 'Quantum Circuits' appears anywhere in the transcript, and no second call exists in the supplied data. Therefore, no concern about Quantum Circuits in a first call or comparison raised in a second call can be identified.",
+              "evidence": [],
+              "reason": "The question asks about TechBridge Systems' evaluation of Quantum Circuits across two discovery calls with Fatima Al-Mansoor. The only source call involves a different company (AgroSmart Innovations), a different vendor (SecureTech Solutions), a different product (CryptGuard Module), and neither TechBridge Systems nor Quantum Circuits is mentioned. There is also no second call provided. All requested facts are missing from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzvBIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about TechBridge Systems, Quantum Circuits, or two discovery calls with Fatima Al-Mansoor. The only call provided is between Mohammed El-Sayed (SecureData Solutions) and Fatima Al-Mansouri of MetroGrid Networks regarding SecureData Nexus. Neither 'TechBridge Systems' nor 'Quantum Circuits' is mentioned anywhere in the transcript or metadata, and only one call is supplied rather than the two referenced in the question.",
+              "evidence": [],
+              "reason": "The question asks about Quantum Circuits in TechBridge Systems' evaluation across two discovery calls with Fatima Al-Mansoor, including her concern in the first call and a comparison in the second call. The sole source call (b2b:a05Wt000003SzvBIAS) involves Fatima Al-Mansouri at MetroGrid Networks discussing SecureData Nexus with Mohammed El-Sayed. There is no mention of TechBridge Systems, Quantum Circuits, a second call, or any of the specific facts requested. The draft extraction's conclusion is correct: the premises of the question cannot be verified from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su2XIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain the information needed to answer this question. The only call provided is between Fatima Al-Masri (of 'Tech Solutions') and Aisha Abdullah of E-Tech Dynamics. There is no mention of 'Fatima Al-Mansoor,' 'TechBridge Systems,' or 'Quantum Circuits' anywhere in the transcript. Furthermore, only one call is supplied rather than the two discovery calls referenced in the question. No competitor concern or comparison involving Quantum Circuits can be cited.",
+              "evidence": [],
+              "reason": "The question asks about two discovery calls with Fatima Al-Mansoor at TechBridge Systems discussing Quantum Circuits. The sole source call features a different person (Fatima Al-Masri), a different company (Tech Solutions), a different contact (Aisha Abdullah / E-Tech Dynamics), and contains zero references to Quantum Circuits or TechBridge Systems. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4mYIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources do not contain any information about Fatima Al-Mansoor, TechBridge Systems, or Quantum Circuits. The only call transcript available is between Jamal Abdi of Secure Solutions and Fatima Al-Salem of CraftTech Electronics, discussing SecureTrack Pro. There is no mention of TechBridge Systems' evaluation, no discovery calls with Fatima Al-Mansoor, no concern about Quantum Circuits in a first call, and no comparison raised in a second call. The question cannot be answered from the given sources.",
+              "evidence": [],
+              "reason": "The question asks about two discovery calls with Fatima Al-Mansoor at TechBridge Systems regarding Quantum Circuits. The sole source provided is a single call (b2b:a05Wt000003T4mYIAS) between Jamal Abdi and Fatima Al-Salem of CraftTech Electronics about SecureTrack Pro. None of the named entities (Fatima Al-Mansoor, TechBridge Systems, Quantum Circuits) appear anywhere in the transcript. There is no second call at all. Therefore, neither the first-call concern nor the second-call comparison can be identified, and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T52bIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Fatima Al-Mansoor, TechBridge Systems, or Quantum Circuits. The only call provided is between Carlos Nunez (Power Solutions) and Fatima Al-Rashid of AeroFusion Systems, discussing PowerPro Optimize, SimuCheck Ultra, and OptiPower Manager. There is no second discovery call, no mention of Quantum Circuits, and no person named Fatima Al-Mansoor. Therefore, her concern in a first call and her comparison in a second call cannot be determined.",
+              "evidence": [],
+              "reason": "The question asks about Fatima Al-Mansoor at TechBridge Systems and her concerns/comparisons regarding Quantum Circuits across two discovery calls. The sole source call involves a different person (Fatima Al-Rashid), a different company (AeroFusion Systems), a different salesperson (Carlos Nunez from Power Solutions), and entirely different products. No mention of Quantum Circuits, TechBridge Systems, or Fatima Al-Mansoor exists anywhere in the provided data. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxF0IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about Fatima Al-Mansoor, TechBridge Systems, or Quantum Circuits. The only call provided is between Fatima Al-Masri of TechSolutions and Ahmed Farouk of Cairo Electronic Solutions, discussing CircuitMaster Analyzer, AIOptics Vision, and CollabCircuit Hub. There is no second call, no mention of Quantum Circuits, no concern raised about them, and no comparison involving them. The question's named person (Fatima Al-Mansoor), company (TechBridge Systems), and subject (Quantum Circuits) do not appear anywhere in the supplied transcript.",
+              "evidence": [],
+              "reason": "The question asks about two discovery calls with Fatima Al-Mansoor at TechBridge Systems regarding Quantum Circuits. The only source call features Fatima Al-Masri (a different person) at TechSolutions (a different company) speaking with Ahmed Farouk of Cairo Electronic Solutions. Quantum Circuits is never mentioned, no competitor concern or comparison is discussed, and there is only one call rather than two. All requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T3wuIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source does not contain the requested information. The only call transcript is between Fatima Al-Masri (Tech Solutions) and Samantha Johnson (MegaCorp Designs), not Fatima Al-Mansoor of TechBridge Systems. There is no mention of Quantum Circuits, no competitor concern, and no comparison raised in a second call. The question asks about two discovery calls with Fatima Al-Mansoor at TechBridge Systems discussing Quantum Circuits, but none of these elements appear in the supplied data.",
+              "evidence": [],
+              "reason": "The source contains a single call (b2b:a05Wt000003T3wuIAC) between Fatima Al-Masri and Samantha Johnson of MegaCorp Designs. The question asks about Fatima Al-Mansoor at TechBridge Systems, Quantum Circuits as a competitor, a concern in a first call, and a comparison in a second call. None of these named entities, products, or events appear anywhere in the transcript. The draft extraction correctly identifies this mismatch. No facts can be cited to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su4CIAS",
+              "b2b:a05Wt000003T4HqIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be answered as scoped. The two provided discovery calls are between Pierre Fontaine of TechPulse Solutions and Fatima al-Farouq of AquaGuard Solutions \u2014 not TechBridge Systems and not Fatima Al-Mansoor. Because the question specifies a different company (TechBridge Systems) and a different person (Fatima Al-Mansoor), no facts in the sources support the exact named entities requested. For reference only: in the first call (b2b:a05Wt000003Su4CIAS) Quantum Circuits is never mentioned; in the second call (b2b:a05Wt000003T4HqIAK) Fatima al-Farouq notes Quantum Circuits Inc was on their list but found their solutions 'a bit too rigid' (line 7) and compares both TechPulse and Quantum Circuits as having strong security and compliance records while emphasizing customizability as the differentiator (line 9). However, these facts belong to a different account and contact than those named in the question.",
+              "evidence": [],
+              "reason": "The sources contain no calls involving TechBridge Systems or a contact named Fatima Al-Mansoor. The calls are between TechPulse Solutions and AquaGuard Solutions with contact Fatima al-Farouq. Since the question explicitly names TechBridge Systems and Fatima Al-Mansoor, and the instructions require every fact to be supported for the EXACT named people, account, products, and event scope, the answer is incomplete. No evidence can be cited for the requested entities."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrNCIA0",
+              "b2b:a05Wt000003SuLtIAK",
+              "b2b:a05Wt000003T4WVIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question asks about 'TechBridge Systems' and 'Fatima Al-Mansoor' discussing 'Quantum Circuits' across two discovery calls. None of these entities appear in the provided sources. The calls are between Fatima Al-Masri (of TechPulse Solutions) and Sofia Gonzales (of SkyNet Technologies). The term 'Quantum Circuits' is never mentioned in any transcript; the closest reference is 'QuantumPCB Modeler' (a tool SkyNet currently uses, mentioned in call b2b:a05Wt000003T4WVIA0 line 5). The account 'TechBridge Systems' does not exist in the data, and the contact name 'Fatima Al-Mansoor' does not match 'Fatima Al-Masri.' No concern about Quantum Circuits in a first call or comparison raised in a second call can be identified.",
+              "evidence": [],
+              "reason": "The exact named account (TechBridge Systems), contact (Fatima Al-Mansoor), and competitor (Quantum Circuits) specified in the question are absent from all three call transcripts. The sources involve a different account (SkyNet Technologies), a differently-named salesperson (Fatima Al-Masri of TechPulse Solutions), and different competitor references (CircuitWave, QuantumPCB Modeler). Because none of the requested facts can be supported for the exact entities named, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SynaIAC",
+              "b2b:a05Wt000003T01MIAS",
+              "b2b:a05Wt000003T2pWIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Quantum Circuits is never mentioned in any of the three provided call transcripts between Junaid Khan and Fatima Al-Mansoor. In the first call (2020-09-17), the only competitor/vendor discussed is NanoDesign (lines 14\u201315), where Fatima noted 'inconsistencies' regarding vendor stability and future plans. In the second call (2020-09-22), no specific competitor comparison involving Quantum Circuits is raised; Fatima discusses general issues with unpredictable pricing models (line 9) and lacking support from other solutions (line 13). Therefore, neither a concern about Quantum Circuits in the first call nor a comparison involving them in the second call can be identified from the sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Quantum Circuits, but this entity does not appear in any of the three transcripts. The first call mentions NanoDesign (not Quantum Circuits) at lines 14-15, and the second call contains no named competitor comparison involving Quantum Circuits. Since no source text supports any fact about Quantum Circuits in relation to Fatima Al-Mansoor's concerns or comparisons, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvhhIAC",
+              "b2b:a05Wt000003Szv0IAC",
+              "b2b:a05Wt000003T0mFIAS",
+              "b2b:a05Wt000003T3P2IAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the first discovery call (2020-09-19), Fatima Al-Mansoor said TechBridge had come across Quantum Circuits Inc., noting they 'seem to have secure partnerships, but their offerings don't appear to be adaptable enough for our needs' \u2014 her concern was insufficient adaptability. In the second discovery call (2020-09-24), she raised a comparison, saying she'd heard competitors like Quantum Circuits 'focus more on long-term security adherence' and asked Lara Haddad how TechPulse compares; Lara acknowledged Quantum is known for that but argued TechPulse's ease of customization enhances flexibility without compromising security standards.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T0mFIAS",
+                  "line_start": 9,
+                  "line_end": 10,
+                  "quote": "[2020-09-19T10:02:50] Fatima Al-Mansoor: That sounds promising. We also came across Quantum Circuits Inc. They seem to have secure partnerships, but their offerings don't appear to be adaptable enough for our needs."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3P2IAK",
+                  "line_start": 13,
+                  "line_end": 15,
+                  "quote": "[2020-09-24T14:33:15] Fatima Al-Mansoor: Customization is a key factor for us. However, I've heard competitors like Quantum Circuits focus more on long-term security adherence. How do you compare?\n[2020-09-24T14:33:35] Lara Haddad: That's a great point. Quantum Circuits is known for that, but we believe the ease of customization with TechPulse can significantly enhance flexibility without compromising security standards. It\u2019s about providing balanced solutions for real-world challenges."
+                }
+              ],
+              "reason": "The question asks about two discovery calls. Chronologically, the first discovery call is 2020-09-19 (b2b:a05Wt000003T0mFIAS) where Fatima's concern about Quantum Circuits was lack of adaptability (line 9). The second discovery call is 2020-09-24 (b2b:a05Wt000003T3P2IAK) where she compared Quantum Circuits' focus on long-term security adherence against TechPulse's customization (lines 13-14). Both facts are directly stated by Fatima Al-Mansoor in the correct calls. The draft extraction is accurate and well-supported."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: in the first call Fatima's concern was that Quantum Circuits' offerings were not adaptable enough for TechBridge's needs, and in the second call she raised a comparison noting Quantum Circuits focuses more on long-term security adherence and asked how TechPulse compares, with Lara responding that TechPulse's customization enhances flexibility without compromising security. Answer A includes additional details (dates, the phrase 'secure partnerships,' Lara's acknowledgment of Quantum's reputation) but these are extra unrequested details that do not conflict with Answer B. The requested facts match semantically."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsrqIAC",
+              "b2b:a05Wt000003Sx3VIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcripts do not contain any discovery calls with Fatima Al-Mansoor of TechBridge Systems, nor any mention of Quantum Circuits. Both calls are between Jasper van Dijk (TechPulse Solutions) and Khalid Al-Mansoor (Titan Robotics Group) regarding a TechPulse Solutions partnership. There is no reference to Quantum Circuits, TechBridge Systems, or Fatima Al-Mansoor anywhere in the source material, so the requested facts about her concern in a first call and her comparison in a second call cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about Quantum Circuits in TechBridge Systems' evaluation across two discovery calls with Fatima Al-Mansoor. The sources contain two calls (b2b:a05Wt000003SsrqIAC and b2b:a05Wt000003Sx3VIAS) between Jasper van Dijk and Khalid Al-Mansoor of Titan Robotics Group, discussing TechPulse Solutions products. Neither call mentions Fatima Al-Mansoor, TechBridge Systems, or Quantum Circuits. All requested facts are absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvHvIAK",
+              "b2b:a05Wt000003T3NOIA0",
+              "b2b:a05Wt000003T3VSIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any mention of 'Quantum Circuits,' 'TechBridge Systems,' or 'Fatima Al-Mansoor.' The three calls provided are between Fatima Al-Masri (of TechPulse Solutions) and Priya Nair (of Precision Circuit Systems). The only competitor referenced is NanoDesign/NanoDesign Systems. Because the exact named account (TechBridge Systems), person (Fatima Al-Mansoor), and competitor (Quantum Circuits) do not appear anywhere in the transcripts, no answer can be constructed.",
+              "evidence": [],
+              "reason": "The question asks about Quantum Circuits in TechBridge Systems' evaluation across two discovery calls with Fatima Al-Mansoor. None of these entities exist in the provided sources. The calls feature Fatima Al-Masri from TechPulse Solutions speaking with Priya Nair from Precision Circuit Systems, and the only competitor mentioned is NanoDesign. Since the exact named people, account, and competitor are absent, the answer is incomplete and cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyEDIA0",
+              "b2b:a05Wt000003T3SGIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Quantum Circuits is never mentioned in either of the two discovery calls. The calls are between Fatima Al-Masri (TechPulse Solutions) and Santiago Valdez (TechBridge Systems). The only competitors referenced are NanoDesign and TechPulse (call b2b:a05Wt000003SyEDIA0, line 11). No concern about Quantum Circuits in the first call and no comparison involving Quantum Circuits in the second call can be found in the provided transcripts.",
+              "evidence": [],
+              "reason": "The question asks about Fatima Al-Mansoor's concern about Quantum Circuits in the first call and a comparison she raised in the second call. However, (1) the person in both calls is Fatima Al-Masri, not Fatima Al-Mansoor; (2) the string 'Quantum Circuits' does not appear anywhere in either transcript; (3) the only competitor names mentioned are NanoDesign and TechPulse (line 11 of call b2b:a05Wt000003SyEDIA0). Because neither the named person nor the named company appears in the sources, no fact supporting the requested concern or comparison exists, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyiyIAC",
+              "b2b:a05Wt000003T10tIAC",
+              "b2b:a05Wt000003T347IAC",
+              "b2b:a05Wt000003T3c3IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The question cannot be answered as scoped. The sources contain no contact named 'Fatima Al-Mansoor' and no account named 'TechBridge Systems.' All four discovery calls are between Nadia Al-Balushi (TechPulse Solutions) and Fatima Al-Hassan of SkyNet Technologies. While Quantum Circuits Inc is discussed in those calls (e.g., Fatima Al-Hassan's concern about needing to follow up for ongoing support in the 2022-06-28 call, and a comparison regarding longer-than-expected implementation times raised in the 2022-07-02 call), these facts belong to a different named person and account than those specified in the question. No evidence exists for Fatima Al-Mansoor or TechBridge Systems.",
+              "evidence": [],
+              "reason": "The exact named person (Fatima Al-Mansoor) and account (TechBridge Systems) requested in the question do not appear anywhere in the provided call transcripts. The contact in all calls is Fatima Al-Hassan and the account is SkyNet Technologies. Per the instructions, a different person/account cannot satisfy the question's scope, so the answer is incomplete."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both calls are cited: first call (2020-09-19) Fatima says Quantum Circuits' offerings 'don't appear to be adaptable enough for our needs'; second call (2020-09-24) she raises Quantum Circuits' long-term security adherence and asks how TechPulse compares, and Lara answers about customization enhancing flexibility without compromising security. Question is factual, self-contained, and each call contributes a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "what was her concern about them in the first call",
+            "explicitly_requested": true,
+            "required_fact": "Fatima said Quantum Circuits Inc. seem to have secure partnerships, but their offerings don't appear adaptable enough for TechBridge's needs",
+            "source_call_ids": [
+              "b2b:a05Wt000003T0mFIAS"
+            ]
+          },
+          {
+            "question_span": "what comparison did she raise in the second call",
+            "explicitly_requested": true,
+            "required_fact": "Fatima noted competitors like Quantum Circuits focus more on long-term security adherence and asked how TechPulse compares",
+            "source_call_ids": [
+              "b2b:a05Wt000003T3P2IAK"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question explicitly asks for two distinct facts from two separate calls: (1) Fatima's concern about Quantum Circuits in the first call, and (2) the comparison she raised in the second call. The gold_answer provides exactly these two facts, with no extra unrequested information. The independent_answer covers both facts accurately. The obligations correctly map each required fact to its source call. Each call is necessary because the first call contains the concern and the second call contains the comparison; neither fact is available in the other call. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "In the first call, Fatima said Quantum Circuits' offerings weren't adaptable enough for TechBridge's needs.",
+            "question_span": "what was her concern about them in the first call",
+            "required_by_question": true
+          },
+          {
+            "claim": "In the second call, she noted Quantum Circuits focuses more on long-term security adherence",
+            "question_span": "what comparison did she raise in the second call",
+            "required_by_question": true
+          },
+          {
+            "claim": "and asked how TechPulse compares",
+            "question_span": "what comparison did she raise in the second call",
+            "required_by_question": true
+          },
+          {
+            "claim": "Lara said TechPulse's customization enhances flexibility without compromising security.",
+            "question_span": "what comparison did she raise in the second call",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "2d96b5cb61b2a8c51ff7847a26af11456ae08a673f3660cfd5ab902f9eb79ab0",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SteAIAS"
+    ],
+    "status": "accepted",
+    "question": "What is the total quote for Chloe Dupont at Paris Tech Innovations, and what installation timeline did she request?",
+    "gold_answer": "$2,792 total ($2,400 for four PulseSim Pro units, $392 for two TrainEDU Suite licenses); installation within two days.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SteAIAS",
+        "answer_claim": "PulseSim Pro four units at $600 each ($2,400) plus two TrainEDU Suite licenses at $196 each ($392), total $2,792.",
+        "kind": "dialogue",
+        "line_start": 8,
+        "line_end": 9,
+        "quote": "[2023-10-10T10:02:05] Carmen Silva: Of course. For the PulseSim Pro, each unit is priced at $600, and for four units, you\u2019ll be looking at $2,400. The TrainEDU Suite licenses are priced at $196 each, so two licenses would total $392. That brings your total to $2,792, right within the budget you mentioned.",
+        "start": 1675,
+        "end": 1981
+      },
+      {
+        "call_id": "b2b:a05Wt000003SteAIAS",
+        "answer_claim": "Chloe asked for setup completed in the next two days.",
+        "kind": "dialogue",
+        "line_start": 9,
+        "line_end": 10,
+        "quote": "[2023-10-10T10:02:22] Chloe Dupont: That fits perfectly. What about the installation? We\u2019re hoping to have the setup completed in the next two days.",
+        "start": 1982,
+        "end": 2130
+      }
+    ],
+    "question_id": "b2b-single_call-2d96b5cb61b2a8c5",
+    "candidate": {
+      "question": "What is the total quote for Chloe Dupont at Paris Tech Innovations, and what installation timeline did she request?",
+      "gold_answer": "$2,792 total ($2,400 for four PulseSim Pro units, $392 for two TrainEDU Suite licenses); installation within two days.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SteAIAS",
+          "answer_claim": "PulseSim Pro four units at $600 each ($2,400) plus two TrainEDU Suite licenses at $196 each ($392), total $2,792.",
+          "kind": "dialogue",
+          "line_start": 8,
+          "line_end": 9,
+          "quote": "[2023-10-10T10:02:05] Carmen Silva: Of course. For the PulseSim Pro, each unit is priced at $600, and for four units, you\u2019ll be looking at $2,400. The TrainEDU Suite licenses are priced at $196 each, so two licenses would total $392. That brings your total to $2,792, right within the budget you mentioned.",
+          "start": 1675,
+          "end": 1981
+        },
+        {
+          "call_id": "b2b:a05Wt000003SteAIAS",
+          "answer_claim": "Chloe asked for setup completed in the next two days.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2023-10-10T10:02:22] Chloe Dupont: That fits perfectly. What about the installation? We\u2019re hoping to have the setup completed in the next two days.",
+          "start": 1982,
+          "end": 2130
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "The total quote for Chloe Dupont at Paris Tech Innovations is $2,792, and she requested installation to be completed within the next two days.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both claims are directly supported by the transcript: Carmen's pricing breakdown ($600\u00d74=$2,400 + $196\u00d72=$392 = $2,792) and Chloe's request for setup 'in the next two days'. The question is a realistic sales need naming the lead and company, doesn't leak the answer, and the independent answer matches the gold semantically. No-context answers are UNKNOWN, so they fail. Since this is a single-call QA, both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SteAIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4pkIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Chloe Dupont or Paris Tech Innovations. The only transcript is with Jacqueline Dupont of Paris Digital Creators, discussing EduTech Advance and QuantumPCB Modeler with a budget of $2679 and a four-day installation timeline. Because the question specifically asks about Chloe Dupont at Paris Tech Innovations, neither her total quote nor her requested installation timeline can be determined from the available sources.",
+              "evidence": [],
+              "reason": "The sole call (b2b:a05Wt000003T4pkIAC) involves Jacqueline Dupont at Paris Digital Creators, not Chloe Dupont at Paris Tech Innovations. No source mentions Chloe Dupont or Paris Tech Innovations, so the requested facts (total quote and installation timeline for that specific person and account) are entirely missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T4xmIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only a call between Hana Kato and Jean Dupont at Paris Tech Hub. There is no mention of Chloe Dupont or Paris Tech Innovations in any of the supplied transcripts. Therefore, neither a total quote for Chloe Dupont nor an installation timeline she requested can be identified.",
+              "evidence": [],
+              "reason": "The question asks about Chloe Dupont at Paris Tech Innovations, but the only call transcript provided involves Jean Dupont at Paris Tech Hub. No data about Chloe Dupont, Paris Tech Innovations, her quote total, or her requested installation timeline exists in the sources. The draft extraction correctly identifies this mismatch."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2hmIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no call involving Chloe Dupont at Paris Tech Innovations. The only call is with Chloe Dupuis of Digital Edge Inc., a different person and company. Therefore, neither a total quote nor a requested installation timeline for Chloe Dupont at Paris Tech Innovations can be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Chloe Dupont at Paris Tech Innovations, but the sole transcript is a conversation between Liam O'Sullivan and Chloe Dupuis of Digital Edge Inc. (call b2b:a05Wt000003T2hmIAC). The names, company, and account do not match the requested entity, so no facts about Chloe Dupont's quote or installation timeline exist in the supplied data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sx8TIAS"
+            ],
+            "classification": "insufficient",
+            "method": "explicit-speaker-absence-v1",
+            "absent_required_speakers": [
+              "chloe dupont"
+            ],
+            "reason": "Every token of an explicitly required full speaker name is absent from the complete group metadata/dialogue."
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SteAIAS"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "The total quote for Chloe Dupont at Paris Tech Innovations is $2,792 ($2,400 for four PulseSim Pro units at $600 each plus $392 for two TrainEDU Suite licenses at $196 each). She requested installation be completed within the next two days.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SteAIAS",
+                  "line_start": 8,
+                  "line_end": 10,
+                  "quote": "[2023-10-10T10:02:05] Carmen Silva: Of course. For the PulseSim Pro, each unit is priced at $600, and for four units, you\u2019ll be looking at $2,400. The TrainEDU Suite licenses are priced at $196 each, so two licenses would total $392. That brings your total to $2,792, right within the budget you mentioned.\n[2023-10-10T10:02:22] Chloe Dupont: That fits perfectly. What about the installation? We\u2019re hoping to have the setup completed in the next two days."
+                }
+              ],
+              "reason": "Line 8 provides the full pricing breakdown and total of $2,792. Line 9 contains Chloe's request for installation within the next two days. Line 10 confirms Carmen can meet that timeline. All facts pertain to the exact named contact (Chloe Dupont) and company (Paris Tech Innovations)."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same total quote of $2,792 (broken down as $2,400 for four PulseSim Pro units and $392 for two TrainEDU Suite licenses) and the same installation timeline of two days. The only differences are wording and level of detail (e.g., per-unit prices in answer_a), which do not change the requested facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T5CIIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving Chloe Dupont at Paris Tech Innovations. The only call provided is with Chloe Dubois of Tech Vision France (call b2b:a05Wt000003T5CIIA0). Because the question asks specifically about Chloe Dupont and Paris Tech Innovations, no total quote or installation timeline can be attributed to the exact named person and account. The draft extraction is correct.",
+              "evidence": [],
+              "reason": "The question names 'Chloe Dupont' at 'Paris Tech Innovations.' The sole source call features 'Chloe Dubois' at 'Tech Vision France'\u2014a different person and a different company. No source mentions Chloe Dupont, Paris Tech Innovations, a total quote for that account, or an installation timeline requested by that individual. Therefore the requested facts are entirely missing from the provided data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsrnIAC",
+              "b2b:a05Wt000003SvpgIAC",
+              "b2b:a05Wt000003T0irIAC",
+              "b2b:a05Wt000003T0kTIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no call involving Chloe Dupont or Paris Tech Innovations. All four calls are between Liam Kelly and Thierry Dupont at TrueNorth Technologies (opportunity 'TrueNorth Tech-EDA Integration'). A preliminary quote of $27,391.47 was mentioned to Thierry Dupont, not Chloe Dupont, and no installation timeline was requested by anyone named Chloe Dupont. The exact named person and account in the question do not appear in any source.",
+              "evidence": [],
+              "reason": "The question asks specifically about Chloe Dupont at Paris Tech Innovations. None of the four call transcripts reference a person named Chloe Dupont or an account called Paris Tech Innovations. All calls involve Thierry Dupont at TrueNorth Technologies. Because the exact named person and account are absent from the sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvUmIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any call involving Chloe Dupont at Paris Tech Innovations. The only call provided is between Maya Johnson and Chloe Kim at OmegaDesign Labs, which discusses EDA solutions but includes no total quote figure and no installation timeline request. Therefore, neither the total quote for Chloe Dupont nor her requested installation timeline can be answered from the given sources.",
+              "evidence": [],
+              "reason": "The question asks specifically about Chloe Dupont at Paris Tech Innovations, including a total quote and an installation timeline she requested. The sole call in the sources involves Chloe Kim at OmegaDesign Labs (call b2b:a05Wt000003SvUmIAK). No person named Chloe Dupont, no account named Paris Tech Innovations, no dollar-amount quote, and no installation timeline appear anywhere in the provided text. The draft extraction correctly identifies these missing facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SztNIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript involves Antoine Dupont at Green Circuitry LLC, not Chloe Dupont at Paris Tech Innovations. There is no mention of Chloe Dupont, Paris Tech Innovations, a total quote for her, or any installation timeline she requested. Therefore, the requested facts cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The only call supplied (b2b:a05Wt000003SztNIAS) is between Chen Lixin and Antoine Dupont regarding Green Circuitry LLC. Neither Chloe Dupont nor Paris Tech Innovations appears anywhere in the transcript, so no quote total or installation timeline for the named person/account can be extracted."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzBkIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript involves Thierry Dupont at TrueNorth Technologies, not Chloe Dupont at Paris Tech Innovations. There is no mention of Chloe Dupont, Paris Tech Innovations, any total quote, or any installation timeline request in the available sources.",
+              "evidence": [],
+              "reason": "The only call supplied is between Liam Kelly and Thierry Dupont regarding TrueNorth Technologies. No source references Chloe Dupont, Paris Tech Innovations, a total quote amount, or an installation timeline. Therefore the requested facts cannot be answered from the given data."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr7iIAC",
+              "b2b:a05Wt000003Sv4vIAC",
+              "b2b:a05Wt000003SyfRIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve Chloe Park at Skyline Robotics, not Chloe Dupont at Paris Tech Innovations. None of the three calls mention a total quote amount or a requested installation timeline for anyone named Chloe Dupont or any account called Paris Tech Innovations. The question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Chloe Dupont at Paris Tech Innovations, but all three calls are with Chloe Park at Skyline Robotics (contact_name: 'Chloe Park', account_name: 'Skyline Robotics'). No call contains a total quote figure or an installation timeline request. The draft extraction correctly identifies this mismatch. Since the exact named person (Chloe Dupont), account (Paris Tech Innovations), total quote, and installation timeline are all absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvD6IAK",
+              "b2b:a05Wt000003SvxpIAC",
+              "b2b:a05Wt000003SzATIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided calls involve Chloe Xu at MedTech Advances, not Chloe Dupont at Paris Tech Innovations. No total quote amount or installation timeline request for Chloe Dupont at Paris Tech Innovations appears in any of the supplied transcripts.",
+              "evidence": [],
+              "reason": "All three calls are between John Williams and Chloe Xu (contact_id 003Wt00000JqqneIAB) at account 'MedTech Advances'. The question asks about Chloe Dupont at Paris Tech Innovations, a different person and account. Additionally, no total quote figure or specific installation timeline request is stated in any of the transcripts; only percentage discounts are mentioned. Therefore the requested facts cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1ruIAC",
+              "b2b:a05Wt000003T29bIAC",
+              "b2b:a05Wt000003T2hWIAS",
+              "b2b:a05Wt000003T2hXIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources do not contain any information about a person named 'Chloe Dupont' or an account called 'Paris Tech Innovations'. All calls involve Chloe Kim at OmegaDesign Labs. Furthermore, no total quote amount or specific installation timeline requested by the contact is stated in any of the provided transcripts. Pricing is discussed only in general terms (e.g., a 10% discount on SecureFlow Suite), and no installation timeline is mentioned.",
+              "evidence": [],
+              "reason": "The question asks about 'Chloe Dupont' at 'Paris Tech Innovations', but no such person or account appears in any of the four call transcripts. The only contact is Chloe Kim at OmegaDesign Labs. Additionally, no total quote figure or requested installation timeline is provided in any call. The draft extraction is correct: the answer is incomplete because the exact named people, account, and requested facts (total quote, installation timeline) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrnpIAC",
+              "b2b:a05Wt000003St1VIAS",
+              "b2b:a05Wt000003Suk7IAC",
+              "b2b:a05Wt000003Sz3nIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no information about a person named Chloe Dupont or an account called Paris Tech Innovations. All four calls involve Chloe Xu at MedTech Advances, with salesperson Fatoumata Traor\u00e9 from TechPulse Solutions. No total quote figure or installation timeline request is mentioned in any transcript. Therefore, the question cannot be answered from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Chloe Dupont at Paris Tech Innovations, including a total quote and a requested installation timeline. None of the four call transcripts reference anyone named Chloe Dupont, any account named Paris Tech Innovations, a specific total quote amount, or an installation timeline request. The contacts in all calls are Chloe Xu at MedTech Advances. Since the exact named person, account, and requested facts are entirely absent, the answer is incomplete and cannot be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrccIAC",
+              "b2b:a05Wt000003SxdBIAS",
+              "b2b:a05Wt000003T23GIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve only Antoine Dupont at Green Circuitry LLC and salesperson Akira Suzuki from TechPulse Solutions. There is no mention of Chloe Dupont, Paris Tech Innovations, a total quote amount, or a requested installation timeline in any of the three calls.",
+              "evidence": [],
+              "reason": "None of the three calls reference Chloe Dupont or Paris Tech Innovations. All calls are between Akira Suzuki and Antoine Dupont regarding Green Circuitry LLC's 'Green Circuitry Sustainable EDA Enhancement' opportunity. No total quote figure is stated, and no installation timeline request is made by any party named Chloe Dupont. The requested facts are entirely absent from the sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly supported by the same call: the $2,792 total breakdown ($2,400 + $392) and Chloe's request for installation within two days. The question is a realistic sales need, self-contained, and each evidence quote supplies a distinct necessary fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What is the total quote for Chloe Dupont at Paris Tech Innovations",
+            "explicitly_requested": true,
+            "required_fact": "Total quote of $2,792 ($2,400 for four PulseSim Pro units plus $392 for two TrainEDU Suite licenses)",
+            "source_call_ids": [
+              "b2b:a05Wt000003SteAIAS"
+            ]
+          },
+          {
+            "question_span": "what installation timeline did she request?",
+            "explicitly_requested": true,
+            "required_fact": "She requested the setup be completed within the next two days",
+            "source_call_ids": [
+              "b2b:a05Wt000003SteAIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the total quote and the installation timeline. The gold answer provides exactly these two facts: the total quote ($2,792) with a breakdown, and the installation timeline (within two days). No extra facts are included. The independent answer correctly states both the total quote and the installation timeline. The obligations correctly map to the question spans and required facts. The single call is necessary and sufficient to answer both parts of the question.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Total quote is $2,792",
+            "question_span": "What is the total quote for Chloe Dupont at Paris Tech Innovations",
+            "required_by_question": true
+          },
+          {
+            "claim": "$2,400 for four PulseSim Pro units",
+            "question_span": "What is the total quote for Chloe Dupont at Paris Tech Innovations",
+            "required_by_question": true
+          },
+          {
+            "claim": "$392 for two TrainEDU Suite licenses",
+            "question_span": "What is the total quote for Chloe Dupont at Paris Tech Innovations",
+            "required_by_question": true
+          },
+          {
+            "claim": "installation within two days",
+            "question_span": "what installation timeline did she request?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "84d64e0d2091eb8ac5a4c92fbd8e7199ead1a57c9b672fb2e259db4456090e83",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005SPOyIAO"
+    ],
+    "status": "accepted",
+    "question": "What budget range is Franklin Pierce working with, and how do the two vehicles he's considering compare to it on price?",
+    "gold_answer": "Franklin Pierce wants to stay around $70,000\u2013$80,000; the 2022 BMW X5 M is priced at $74,999.99 (within range) and the 2021 Audi Q7 at $53,999.99 (below it).",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005SPOyIAO",
+        "answer_claim": "Budget is $70,000 to $80,000.",
+        "kind": "dialogue",
+        "line_start": 17,
+        "line_end": 18,
+        "quote": "[2020-11-23T14:35:35] Franklin Pierce: I'm looking to stay around the $70,000 to $80,000 range. I want to ensure I'm getting the best value for that investment.",
+        "start": 3527,
+        "end": 3687
+      },
+      {
+        "call_id": "b2c:a05Ws000005SPOyIAO",
+        "answer_claim": "BMW X5 M priced at $74,999.99 and Audi Q7 at $53,999.99.",
+        "kind": "dialogue",
+        "line_start": 18,
+        "line_end": 19,
+        "quote": "[2020-11-23T14:36:00] Liam O'Reilly: We can definitely work within that range. The 2022 BMW X5 M is priced at $74,999.99 and the 2021 Audi Q7 at $53,999.99, both are great values given their features and reliability.",
+        "start": 3688,
+        "end": 3904
+      }
+    ],
+    "evidence_index_repairs": [
+      {
+        "evidence_index": 0,
+        "original_end": 17,
+        "normalized_end": 18
+      },
+      {
+        "evidence_index": 1,
+        "original_end": 18,
+        "normalized_end": 19
+      }
+    ],
+    "question_id": "b2c-single_call-84d64e0d2091eb8a",
+    "candidate": {
+      "question": "What budget range is Franklin Pierce working with, and how do the two vehicles he's considering compare to it on price?",
+      "gold_answer": "Franklin Pierce wants to stay around $70,000\u2013$80,000; the 2022 BMW X5 M is priced at $74,999.99 (within range) and the 2021 Audi Q7 at $53,999.99 (below it).",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SPOyIAO",
+          "answer_claim": "Budget is $70,000 to $80,000.",
+          "kind": "dialogue",
+          "line_start": 17,
+          "line_end": 18,
+          "quote": "[2020-11-23T14:35:35] Franklin Pierce: I'm looking to stay around the $70,000 to $80,000 range. I want to ensure I'm getting the best value for that investment.",
+          "start": 3527,
+          "end": 3687
+        },
+        {
+          "call_id": "b2c:a05Ws000005SPOyIAO",
+          "answer_claim": "BMW X5 M priced at $74,999.99 and Audi Q7 at $53,999.99.",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 19,
+          "quote": "[2020-11-23T14:36:00] Liam O'Reilly: We can definitely work within that range. The 2022 BMW X5 M is priced at $74,999.99 and the 2021 Audi Q7 at $53,999.99, both are great values given their features and reliability.",
+          "start": 3688,
+          "end": 3904
+        }
+      ],
+      "evidence_index_repairs": [
+        {
+          "evidence_index": 0,
+          "original_end": 17,
+          "normalized_end": 18
+        },
+        {
+          "evidence_index": 1,
+          "original_end": 18,
+          "normalized_end": 19
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Franklin Pierce's budget is $70,000 to $80,000. The 2022 BMW X5 M is priced at $74,999.99, which is within his budget, while the 2021 Audi Q7 at $53,999.99 is below his budget range.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Single-call QA: both two-call flags set true. Budget ($70k\u2013$80k) and both vehicle prices ($74,999.99 BMW X5 M; $53,999.99 Audi Q7) are directly quoted in the dialogue, so all answer claims are supported. The question is a realistic sales need (budget vs. vehicle price comparison), names the customer appropriately, and does not leak the answer. The independent answer semantically matches the gold (within range / below range). No-context answers are UNKNOWN, so they fail. Evidence index repairs are consistent with the dialogue lines."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005SPOyIAO"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005Ts8bIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no mention of anyone named Franklin Pierce. The only buyer in the provided call is Elena Petrova, who discusses a budget of $97,715 and considers a 2022 Audi A6 ($55,000) and a 2023 Mercedes-Benz E-Class (starting around $70,000). Because the question specifically asks about Franklin Pierce's budget range and the two vehicles he is considering, and no such person appears in any source, the question cannot be answered as scoped.",
+              "evidence": [],
+              "reason": "No call transcript references a person named Franklin Pierce, his budget, or vehicles he is considering. The sole lead in the data is Elena Petrova. Since the question is scoped to Franklin Pierce, no facts can be supplied for the exact named individual, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPOyIAO",
+              "b2c:a05Ws000005SQssIAG"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Franklin Pierce's budget is around $70,000 to $80,000. The 2022 BMW X5 M is priced at $74,999.99, which falls within his budget range. The 2021 Audi Q7 is priced at $53,999.99, which is well below his budget range (approximately $16,000 under the low end).",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005SPOyIAO",
+                  "line_start": 17,
+                  "line_end": 19,
+                  "quote": "[2020-11-23T14:35:35] Franklin Pierce: I'm looking to stay around the $70,000 to $80,000 range. I want to ensure I'm getting the best value for that investment.\n[2020-11-23T14:36:00] Liam O'Reilly: We can definitely work within that range. The 2022 BMW X5 M is priced at $74,999.99 and the 2021 Audi Q7 at $53,999.99, both are great values given their features and reliability."
+                }
+              ],
+              "reason": "Line 17 of call b2c:a05Ws000005SPOyIAO has Franklin Pierce stating his budget is around $70,000 to $80,000. Line 18 has Liam O'Reilly providing the prices: 2022 BMW X5 M at $74,999.99 (within budget) and 2021 Audi Q7 at $53,999.99 (below budget). The draft extraction is accurate and complete."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers state the same budget range ($70,000\u2013$80,000), the same price for the 2022 BMW X5 M ($74,999.99, within budget), and the same price for the 2021 Audi Q7 ($53,999.99, below budget). Answer A adds the approximate dollar amount under the low end, but that is extra detail, not a conflicting fact."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSBWIA4",
+              "b2c:a05Ws000005SVENIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state a specific budget range for Franklin Pierce, nor do they provide prices for the two vehicles he is considering. In the second call, Franklin mentions wanting something 'reliable and luxury-oriented, without breaking the bank' (call b2c:a05Ws000005SVENIA4, line 3), and the 2020 Lexus RX 350 is discussed (line 4), but no dollar figures, budget range, or vehicle prices are given anywhere in either call. The second vehicle is not explicitly named or priced. Therefore, no price comparison to a budget can be made.",
+              "evidence": [],
+              "reason": "No specific budget range (dollar figures) is stated by Franklin Pierce in either call. Only one vehicle (2020 Lexus RX 350) is explicitly named, and no price is given for it. A second vehicle is never clearly identified or priced. Without a stated budget and without prices for both vehicles, the question cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SRNRIA4",
+              "b2c:a05Ws000005SULJIA4",
+              "b2c:a05Ws000005SZTCIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no mention of anyone named Franklin Pierce. All three calls involve William Brooks and Dmitri Volkov of AutoElite Motors. No budget range is stated for any customer, and no individual vehicle prices are given (only a $155,999.96 bundle price for two 2021 Audi Q7s and one 2020 Chevrolet Tahoe). Because the named person does not appear in the sources, the question cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about Franklin Pierce's budget range and how two vehicles compare to it on price. None of the three call transcripts reference a person named Franklin Pierce; the only customer is William Brooks. Additionally, no explicit budget range is stated in any call, and individual vehicle prices are not provided\u2014only a combined bundle price. Since the exact named person is absent and the requested budget/price-comparison facts do not exist in the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SNRFIA4",
+              "b2c:a05Ws000005SSl7IAG",
+              "b2c:a05Ws000005ST2nIAG",
+              "b2c:a05Ws000005SVCXIA4",
+              "b2c:a05Ws000005SbMpIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state an explicit budget range for Franklin Pierce. The Nov 1 call gives the two vehicles' prices (2022 BMW X5 M at $74,999.99 and 2024 Tesla Model S at $89,999.99, both with included plans), and Franklin calls the pricing 'fair' and 'reasonable,' but no specific budget figure or range is mentioned in any of the five calls, so a comparison of the vehicles' prices to a stated budget cannot be made.",
+              "evidence": [],
+              "reason": "No call contains an explicit budget range for Franklin Pierce. The closest information is on the Nov 1 call (b2c:a05Ws000005SVCXIA4, line 12) where Levi states the prices ($74,999.99 for the BMW X5 M and $89,999.99 for the Tesla Model S) and Franklin responds that the pricing 'seems reasonable' (line 13), and on the Oct 28 call (b2c:a05Ws000005SNRFIA4, line 11) where Franklin says the pricing 'seemed aligned with what we were expecting.' However, neither statement provides a numeric budget range. Because the question asks for the budget range AND how the vehicles compare to it, and the budget range is never stated, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STyvIAG",
+              "b2c:a05Ws000005SUBmIAO",
+              "b2c:a05Ws000005SYIUIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state a specific budget range for Franklin Pierce \u2014 he only mentions 'sticking to my budget' without figures. Additionally, only one vehicle (the 2021 Infiniti QX80, priced at $57,999.99 plus a $1,999.99 maintenance plan, totaling just under $60,000) is discussed; no second vehicle with a price is mentioned, so no price comparison between two vehicles is possible.",
+              "evidence": [],
+              "reason": "Franklin Pierce mentions 'sticking to my budget' (call b2c:a05Ws000005STyvIAG, line 5) but never provides a numeric budget range. Only one vehicle, the 2021 Infiniti QX80 at $57,999.99 (call b2c:a05Ws000005SUBmIAO, line 6), is discussed across all three calls. No second vehicle is introduced or priced, making a two-vehicle price comparison impossible. Both the budget range and the second vehicle's price are missing facts."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SQEZIA4",
+              "b2c:a05Ws000005SXBAIA4",
+              "b2c:a05Ws000005SYfCIAW",
+              "b2c:a05Ws000005SZt1IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state a specific budget range for Franklin Pierce, and only one vehicle (the 2022 Audi A6, priced at $48,999.99) is discussed with a price. There is no second vehicle with a stated price to compare against the budget. The only budget-related mention is generic: Mateo says financing terms can be adjusted to 'best fit your budget' without any figures.",
+              "evidence": [],
+              "reason": "No call contains an explicit budget range for Franklin Pierce. While the 2022 Audi A6 is priced at $48,999.99 (call b2c:a05Ws000005SXBAIA4, line 10), no second vehicle is ever named with a price in any of the four transcripts. Without both a stated budget range and two vehicle prices, the question cannot be fully answered from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOOpIAO",
+              "b2c:a05Ws000005SRQiIAO",
+              "b2c:a05Ws000005SRqVIAW",
+              "b2c:a05Ws000005ST4TIAW",
+              "b2c:a05Ws000005SXhQIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No person named Franklin Pierce appears in any of the provided call transcripts. All five calls are between Kwame Otieno (AutoElite Motors) and Mia Jefferson under account 001Ws00003sIrhzIAC. While Mia Jefferson states a budget of $200,000\u2013$220,000 (call b2c:a05Ws000005SOOpIAO, line 13), no budget, vehicle prices, or price comparisons can be attributed to Franklin Pierce. Additionally, no specific vehicle prices are stated anywhere in the transcripts, so even for Mia Jefferson a price comparison to her budget is not available.",
+              "evidence": [],
+              "reason": "The question asks about Franklin Pierce's budget range and how two vehicles he is considering compare to it on price. Franklin Pierce is not mentioned in any of the five calls; the only customer is Mia Jefferson. Furthermore, no vehicle prices are quoted in any transcript, making a price-to-budget comparison impossible even for the actual customer. The answer is therefore incomplete for the exact named person requested."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SO9WIAW",
+              "b2c:a05Ws000005SPdRIAW",
+              "b2c:a05Ws000005SRsAIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state a budget range for Franklin Pierce. Vehicle prices are given (Volvo XC60 at $32,999.99 and Audi A6 at $48,999.99), but no budget figure or range is mentioned, so no comparison to a budget can be made.",
+              "evidence": [],
+              "reason": "No source line contains a stated budget range for Franklin Pierce. The calls mention flexible financing and tailoring plans to his budget, but never specify an actual dollar range. Without a budget figure, the comparison portion of the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUmvIAG",
+              "b2c:a05Ws000005SbrPIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state a budget range for Franklin Pierce, nor any specific prices for the 2020 Lexus RX 350 or the 2022 Cadillac XT6. The only pricing discussion is qualitative: Franklin notes that 'the initial costs seem a bit higher compared to some alternative options' (call b2c:a05Ws000005SUmvIAG, line 5), and John responds that the absence of hidden fees makes their deals more competitive long-term (line 6). No numeric budget range or vehicle prices are provided, so the requested comparison cannot be made.",
+              "evidence": [],
+              "reason": "No source line contains a stated budget range for Franklin Pierce or dollar prices for either the 2020 Lexus RX 350 or the 2022 Cadillac XT6. The draft extraction correctly identifies this gap. Without those facts, the question cannot be answered completely."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SUmuIAG",
+              "b2c:a05Ws000005SZPsIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state a budget range for Franklin Pierce, and only one vehicle (the 2020 Lexus RX 350, priced at $37,999.99, $41,299.99 total with warranty and maintenance plans) is discussed. No second vehicle or budget figure appears, so the comparison cannot be made.",
+              "evidence": [],
+              "reason": "The question asks for (1) Franklin Pierce's budget range and (2) how two vehicles he's considering compare to it on price. Neither call transcript contains an explicit budget range stated by or for Franklin Pierce. Additionally, only one vehicle\u2014the 2020 Lexus RX 350\u2014is discussed across both calls; no second vehicle is mentioned. Without a stated budget range and without a second vehicle, the requested comparison cannot be constructed from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SLPcIAO",
+              "b2c:a05Ws000005SPP3IAO",
+              "b2c:a05Ws000005SYLvIAO",
+              "b2c:a05Ws000005Sc2oIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts involve Lucas Turner and salesperson Elena Petrova at AutoElite Motors. There is no mention of a person named Franklin Pierce in any of the four calls. Consequently, no budget range, vehicle considerations, or price comparisons for Franklin Pierce can be identified from these sources.",
+              "evidence": [],
+              "reason": "All four calls are between Elena Petrova and Lucas Turner regarding Lucas Turner's Premium Vehicle Purchase. The name 'Franklin Pierce' does not appear anywhere in the transcripts. Since the question asks specifically about Franklin Pierce's budget range and the two vehicles he is considering, and no such person or associated data exists in the sources, the question cannot be answered."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STyuIAG",
+              "b2c:a05Ws000005SZWNIA4",
+              "b2c:a05Ws000005SZb6IAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never state a budget range for Franklin Pierce, nor any prices for the 2020 Lexus RX 350 or 2021 Volvo XC60. Pricing is only discussed in general terms (transparent pricing, flexible financing) and for add-on plans (maintenance plan $1,999.99, extended warranty $1,299.99), so the budget and vehicle price comparison cannot be determined from the sources.",
+              "evidence": [],
+              "reason": "No call transcript contains a stated budget range for Franklin Pierce, and neither the 2020 Lexus RX 350 nor the 2021 Volvo XC60 is given a specific price. The only dollar figures mentioned are for the AutoElite Comprehensive Maintenance Plan ($1,999.99, call b2c:a05Ws000005SZb6IAG line 6) and the Extended Warranty Plan ($1,299.99, same call line 8). Without a budget range or vehicle prices, the requested comparison cannot be made."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both facts are directly quoted in the same call: Pierce states his $70,000\u2013$80,000 budget, and the rep gives the BMW X5 M at $74,999.99 and Audi Q7 at $53,999.99, allowing the price comparison in the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What budget range is Franklin Pierce working with",
+            "explicitly_requested": true,
+            "required_fact": "Franklin Pierce is looking to stay around the $70,000 to $80,000 range",
+            "source_call_ids": [
+              "b2c:a05Ws000005SPOyIAO"
+            ]
+          },
+          {
+            "question_span": "how do the two vehicles he's considering compare to it on price",
+            "explicitly_requested": true,
+            "required_fact": "The 2022 BMW X5 M is priced at $74,999.99 (within the range) and the 2021 Audi Q7 at $53,999.99 (below the range)",
+            "source_call_ids": [
+              "b2c:a05Ws000005SPOyIAO"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for the budget range and how the two vehicles compare to it on price. The gold answer provides exactly these facts: budget range ($70,000-$80,000) and the prices of the two vehicles with their relation to the range. No extra facts are included. The independent answer fully addresses the question. The obligations correctly extract the two requested facts from the single call, and the call indeed contains both facts. The final flag is true because the single call is required to answer the question.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "Franklin Pierce wants to stay around $70,000\u2013$80,000",
+            "question_span": "What budget range is Franklin Pierce working with",
+            "required_by_question": true
+          },
+          {
+            "claim": "the 2022 BMW X5 M is priced at $74,999.99 (within range)",
+            "question_span": "how do the two vehicles he's considering compare to it on price",
+            "required_by_question": true
+          },
+          {
+            "claim": "the 2021 Audi Q7 at $53,999.99 (below it)",
+            "question_span": "how do the two vehicles he's considering compare to it on price",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "ff5989782e7e39f6e95997584d2d42208f4356a3f3a7f29d0632d7558eb91433",
+    "domain": "b2c",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2c:a05Ws000005STXFIA4"
+    ],
+    "status": "accepted",
+    "question": "What did Fatima Ali say about DriveFirst Automotive's warranty when comparing it to our AutoElite Premium package?",
+    "gold_answer": "DriveFirst's warranty appears competitive due to low initial costs, but our transparent pricing makes a difference in the long run.",
+    "evidence": [
+      {
+        "call_id": "b2c:a05Ws000005STXFIA4",
+        "answer_claim": "DriveFirst warranty appears competitive due to low initial costs, but transparent pricing makes a difference long term.",
+        "kind": "dialogue",
+        "line_start": 11,
+        "line_end": 12,
+        "quote": "[2023-03-28T10:33:25] Fatima Ali: The clarity is refreshing, to be honest. I\u2019ve looked at competitors like DriveFirst Automotive, and while their warranty appears competitive due to low initial costs, your transparent pricing seems to make a difference in the long run.",
+        "start": 2304,
+        "end": 2573
+      }
+    ],
+    "question_id": "b2c-single_call-ff5989782e7e39f6",
+    "candidate": {
+      "question": "What did Fatima Ali say about DriveFirst Automotive's warranty when comparing it to our AutoElite Premium package?",
+      "gold_answer": "DriveFirst's warranty appears competitive due to low initial costs, but our transparent pricing makes a difference in the long run.",
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005STXFIA4",
+          "answer_claim": "DriveFirst warranty appears competitive due to low initial costs, but transparent pricing makes a difference long term.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-03-28T10:33:25] Fatima Ali: The clarity is refreshing, to be honest. I\u2019ve looked at competitors like DriveFirst Automotive, and while their warranty appears competitive due to low initial costs, your transparent pricing seems to make a difference in the long run.",
+          "start": 2304,
+          "end": 2573
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "Fatima Ali said that DriveFirst Automotive's warranty appears competitive due to low initial costs, but she found the transparent pricing of AutoElite Premium to make a difference in the long run.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The dialogue (10:33:25) directly supports the gold answer: Fatima says DriveFirst's warranty 'appears competitive due to low initial costs' while AutoElite's 'transparent pricing seems to make a difference in the long run.' The question is a realistic sales-context inquiry naming a customer and competitor, doesn't leak the answer, and the independent answer matches semantically. No-context answers ('UNKNOWN') fail to answer. This is a single-call QA, so both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2c:a05Ws000005STXFIA4"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SR5eIAG",
+              "b2c:a05Ws000005STLxIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of DriveFirst Automotive or any warranty comparison Fatima Ali made between DriveFirst Automotive's warranty and the AutoElite Premium package. Fatima discusses warranties only generally (line 17 of the 2023-03-25 call), and competitors mentioned are High-End Autos Co. and Premium Dealerships Ltd., not DriveFirst Automotive.",
+              "evidence": [],
+              "reason": "Neither call transcript mentions DriveFirst Automotive or an 'AutoElite Premium package.' The only competitors referenced are High-End Autos Co. (call b2c:a05Ws000005SR5eIAG, line 10) and Premium Dealerships Ltd. (same call, lines 15-16). The only warranty discussion is a generic mention of an Extended Warranty Plan by Lena Schmidt (call b2c:a05Ws000005STLxIAO, lines 17-18), with no comparison to DriveFirst Automotive. Therefore, no complete answer can be provided for the exact entities named in the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMfSIAW",
+              "b2c:a05Ws000005SQG2IAO",
+              "b2c:a05Ws000005SRnCIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no mention of 'DriveFirst Automotive' or an 'AutoElite Premium package.' Fatima Ali discusses extended warranties and the AutoElite Comprehensive Maintenance Plan in general terms across the three calls, but she never compares DriveFirst Automotive's warranty to any AutoElite Premium package. The requested fact is not present in the provided transcripts.",
+              "evidence": [],
+              "reason": "Neither 'DriveFirst Automotive' nor 'AutoElite Premium package' appears in any of the three call transcripts. Fatima Ali references extended warranties (call b2c:a05Ws000005SMfSIAW lines 7-8; call b2c:a05Ws000005SQG2IAO lines 12-13, 15-16) and the AutoElite Comprehensive Maintenance Plan, but no comparison involving DriveFirst Automotive or a product named 'AutoElite Premium package' is made. Therefore the specific comparison requested cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOFqIAO",
+              "b2c:a05Ws000005SQ39IAG",
+              "b2c:a05Ws000005SRbvIAG",
+              "b2c:a05Ws000005STDtIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No statement by Fatima Ali about DriveFirst Automotive's warranty or any comparison to an 'AutoElite Premium package' exists in the provided call transcripts. DriveFirst Automotive is never mentioned in any of the four calls. The product referenced throughout is the 'AutoElite Comprehensive Maintenance Plan,' not an 'AutoElite Premium package.' Fatima's only warranty-related remark (call b2c:a05Ws000005SOFqIAO, line 9) asks generically how AutoElite's extended warranties compare, without naming DriveFirst Automotive.",
+              "evidence": [],
+              "reason": "The question asks about Fatima Ali's comments on DriveFirst Automotive's warranty compared to an 'AutoElite Premium package.' Neither 'DriveFirst Automotive' nor 'AutoElite Premium package' appears anywhere in the four transcripts. The closest content is a general question about extended warranties (line 9, call b2c:a05Ws000005SOFqIAO) and references to the 'AutoElite Comprehensive Maintenance Plan,' but these do not match the specific entities named in the question. Therefore no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STU1IAO",
+              "b2c:a05Ws000005STVdIAO",
+              "b2c:a05Ws000005STXFIA4"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "Fatima Ali said she had looked at competitors like DriveFirst Automotive, and while their warranty appears competitive due to low initial costs, AutoElite's transparent pricing seems to make a difference in the long run.",
+              "evidence": [
+                {
+                  "call_id": "b2c:a05Ws000005STXFIA4",
+                  "line_start": 11,
+                  "line_end": 12,
+                  "quote": "[2023-03-28T10:33:25] Fatima Ali: The clarity is refreshing, to be honest. I\u2019ve looked at competitors like DriveFirst Automotive, and while their warranty appears competitive due to low initial costs, your transparent pricing seems to make a difference in the long run."
+                }
+              ],
+              "reason": "In the third call (2023-03-28), Fatima Ali directly compares DriveFirst Automotive's warranty to AutoElite's offering at line 11, stating that DriveFirst's warranty appears competitive due to low initial costs but AutoElite's transparent pricing makes a difference in the long run. This is the exact named person (Fatima Ali), the exact competitor (DriveFirst Automotive), and the exact product context (AutoElite Premium Vehicle & Maintenance Package). The draft extraction is accurate and fully supported by the source."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts: DriveFirst Automotive's warranty appears competitive due to low initial costs, but AutoElite's (our) transparent pricing makes a difference in the long run. Answer A adds attribution to Fatima Ali and mentions she looked at competitors, but the substantive comparison facts are identical in both."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SOFrIAO",
+              "b2c:a05Ws000005STSPIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Fatima Ali never mentioned an 'AutoElite Premium package' in either call. In the first call she said, 'I've looked into both AutoElite Motors and DriveFirst Automotive, and it seems they both have good warranty commitments,' and added that 'DriveFirst's pricing seemed more aggressive' while she was still evaluating the best fit. In the second call she asked Chinedu to walk her through extended warranties and noted that 'It's often confusing dealing with warranties from other places,' but she made no specific statement comparing DriveFirst Automotive's warranty to an AutoElite Premium package. Because the question asks about a comparison to a product ('AutoElite Premium package') that is never named or discussed by Fatima Ali in the sources, the requested fact cannot be fully answered.",
+              "evidence": [],
+              "reason": "The sources contain no mention of an 'AutoElite Premium package' by Fatima Ali or anyone else. While Fatima did comment generally that both AutoElite Motors and DriveFirst Automotive have 'good warranty commitments' (call b2c:a05Ws000005SOFrIAO, lines 7-9), she never compared DriveFirst's warranty specifically to an 'AutoElite Premium package.' The exact product named in the question does not appear in the transcripts, so the requested comparison cannot be confirmed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMfTIAW",
+              "b2c:a05Ws000005STFVIA4",
+              "b2c:a05Ws000005STH7IAO",
+              "b2c:a05Ws000005STIjIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "Fatima Ali never commented on DriveFirst Automotive's warranty in comparison to the AutoElite Premium package. The only mention of DriveFirst Automotive occurs in call b2c:a05Ws000005SMfTIAW at line 11, where Fatima notes that DriveFirst has 'more aggressive pricing strategies'\u2014a pricing comparison, not a warranty comparison. Her warranty-related remarks (lines 5\u20136 of the same call) compare AutoElite's extended warranties to generic 'others' or 'industry standards' without naming DriveFirst. Additionally, no product called 'AutoElite Premium package' is mentioned in any call; the closest references are the 'AutoElite Comprehensive Maintenance Plan' and the 'AutoElite Loyalty & Maintenance Package' opportunity name. Therefore, the specific comparison requested (DriveFirst's warranty vs. an 'AutoElite Premium package') does not exist in the source data.",
+              "evidence": [],
+              "reason": "The question asks what Fatima Ali said about DriveFirst Automotive's warranty when comparing it to 'our AutoElite Premium package.' No such statement exists in any of the four calls. DriveFirst is mentioned only once (line 11 of call b2c:a05Ws000005SMfTIAW) in the context of pricing, not warranty. Furthermore, no product named 'AutoElite Premium package' appears in the transcripts. The draft extraction correctly identifies this as unanswerable."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005STaTIAW",
+              "b2c:a05Ws000005STc5IAG",
+              "b2c:a05Ws000005STdhIAG",
+              "b2c:a05Ws000005STfJIAW"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts never mention 'DriveFirst Automotive' at all, and Fatima Ali never compares any warranty to it. She discusses AutoElite's Extended Warranty Plan and comparisons to other dealers (High-End Autos Co., Exquisite Vehicles Hub), but no statement about DriveFirst Automotive's warranty exists in the sources.",
+              "evidence": [],
+              "reason": "The question asks what Fatima Ali said about DriveFirst Automotive's warranty when comparing it to the AutoElite Premium package. After reviewing all four calls, the competitor names mentioned are 'High-End Autos Co.' and 'Exquisite Vehicles Hub.' The name 'DriveFirst Automotive' does not appear anywhere in the provided transcripts, so no statement by Fatima Ali about that entity's warranty can be found or verified."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SSGEIA4",
+              "b2c:a05Ws000005SSPuIAO",
+              "b2c:a05Ws000005STDuIAO",
+              "b2c:a05Ws000005STNZIA4",
+              "b2c:a05Ws000005STPBIA4",
+              "b2c:a05Ws000005STQnIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of DriveFirst Automotive or any comparison Fatima Ali made about its warranty versus the AutoElite Premium package. Fatima discusses warranties generally and mentions competitors like Prestige Car Network and Elite Ride Motors, but never DriveFirst Automotive, and no 'AutoElite Premium' package is named.",
+              "evidence": [],
+              "reason": "No source mentions DriveFirst Automotive or an AutoElite Premium package, so the requested comparison cannot be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SPDWIA4",
+              "b2c:a05Ws000005STKLIA4"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain any statement by Fatima Ali comparing DriveFirst Automotive's warranty to the AutoElite Premium package. DriveFirst Automotive is never mentioned in either call, and the product 'AutoElite Premium package' is never referenced by that name. The only competitor discussed is High-End Autos Co. (second call, line 7\u20138), and the warranty discussion is general (second call, lines 9\u201310). No facts matching the exact named entities in the question exist in the sources.",
+              "evidence": [],
+              "reason": "The question asks about Fatima Ali's comments on DriveFirst Automotive's warranty compared to the AutoElite Premium package. Neither 'DriveFirst Automotive' nor 'AutoElite Premium package' appears anywhere in the two call transcripts. The only competitor mentioned is High-End Autos Co., and the only warranty discussion is a general question from Fatima Ali about extended warranties versus industry standards (call b2c:a05Ws000005STKLIA4, lines 9-10). Because the exact named entities (DriveFirst Automotive, AutoElite Premium package) are absent, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SLPJIA4",
+              "b2c:a05Ws000005ST4EIAW",
+              "b2c:a05Ws000005STYrIAO"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no mention of DriveFirst Automotive or its warranty, and Fatima Ali never compares a DriveFirst warranty to the AutoElite Premium package. Warranty discussion (second call) only covers AutoElite's extended warranties vs. industry standards, with no DriveFirst reference.",
+              "evidence": [],
+              "reason": "Across all three calls with Fatima Ali, there is no reference to 'DriveFirst Automotive' or any comparison between a DriveFirst warranty and an 'AutoElite Premium package.' The only warranty discussion occurs in call b2c:a05Ws000005ST4EIAW (lines 9-12), where Fatima asks about AutoElite's extended warranties versus industry standards, and Aleksey responds about AutoElite's Extended Warranty Plan. No competitor named DriveFirst Automotive is mentioned, and no product called 'AutoElite Premium package' is discussed. Therefore the requested fact cannot be answered from these sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2c:a05Ws000005SMCSIA4",
+              "b2c:a05Ws000005SRlaIAG"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain any statement by Fatima Ali comparing DriveFirst Automotive's warranty to an 'AutoElite Premium package.' In the first call, Priya Desai (not Fatima) mentions DriveFirst Automotive in a general warranty comparison (line 12), and Fatima only responds generically about warranties making a difference in maintenance costs and peace of mind (line 13). In the second call, Fatima mentions DriveFirst only regarding security features (line 7) and unclear pricing (line 11). The specific product name 'AutoElite Premium package' never appears in either transcript, and Fatima never makes a warranty comparison between DriveFirst and any named AutoElite package.",
+              "evidence": [],
+              "reason": "No source line contains Fatima Ali discussing DriveFirst Automotive's warranty in comparison to an 'AutoElite Premium package.' The exact product name 'AutoElite Premium package' is absent from both calls. The only DriveFirst-related remarks by Fatima concern security features and pricing transparency, not warranties. The only warranty mention involving DriveFirst is Priya's general statement in call 1 line 12, not a statement by Fatima. Therefore the requested fact cannot be answered from these sources."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Single-call question; Fatima Ali's quote at 10:33:25 directly states DriveFirst's warranty appears competitive due to low initial costs while transparent pricing makes a difference long run, exactly matching the gold answer."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What did Fatima Ali say about DriveFirst Automotive's warranty when comparing it to our AutoElite Premium package?",
+            "explicitly_requested": true,
+            "required_fact": "Fatima Ali said DriveFirst Automotive's warranty appears competitive due to low initial costs, but AutoElite's transparent pricing makes a difference in the long run.",
+            "source_call_ids": [
+              "b2c:a05Ws000005STXFIA4"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks specifically what Fatima Ali said about DriveFirst's warranty compared to AutoElite. The gold answer contains exactly that: DriveFirst's warranty appears competitive due to low initial costs, but AutoElite's transparent pricing makes a difference in the long run. No extra facts are included. The independent answer matches the gold answer and directly answers the question. The obligation correctly extracts the required fact from the single call, and that call is the only source of the fact. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "DriveFirst's warranty appears competitive due to low initial costs",
+            "question_span": "What did Fatima Ali say about DriveFirst Automotive's warranty when comparing it to our AutoElite Premium package?",
+            "required_by_question": true
+          },
+          {
+            "claim": "our transparent pricing makes a difference in the long run",
+            "question_span": "What did Fatima Ali say about DriveFirst Automotive's warranty when comparing it to our AutoElite Premium package?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]
