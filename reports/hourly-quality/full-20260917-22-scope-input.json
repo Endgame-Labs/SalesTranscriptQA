@@ -1,0 +1,834 @@
+[
+  {
+    "job_id": "8003cf84c0ab7e10a58ca62f45c5406df1a36c741dee7aeb4435ad05b0a07006",
+    "domain": "b2b",
+    "question_class": "multi_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003T0MTIA0",
+      "b2b:a05Wt000003T4ZcIAK"
+    ],
+    "status": "accepted",
+    "question": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+    "gold_answer": "First call: pricing is designed to be transparent and comprehensive to help budget planning. Second call: no detailed pricing yet during discovery, but competitive and flexible pricing models are planned.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003T0MTIA0",
+        "answer_claim": "Pricing strategy is designed to be clear and comprehensive, helping plan budgets effectively.",
+        "kind": "dialogue",
+        "line_start": 10,
+        "line_end": 11,
+        "quote": "[2024-03-13T09:53:05] Amir Haddad: I understand that concern. Transparency and predictability are key to us, which is why our pricing strategy is designed to be clear and comprehensive, helping you plan budgets effectively. But we can go over that in more detail later.",
+        "start": 2022,
+        "end": 2291
+      },
+      {
+        "call_id": "b2b:a05Wt000003T4ZcIAK",
+        "answer_claim": "No detailed pricing yet in discovery, but aims to provide competitive and flexible pricing models.",
+        "kind": "dialogue",
+        "line_start": 12,
+        "line_end": 13,
+        "quote": "[2024-03-20T14:02:38] Amir Haddad: While we\u2019re still in the discovery phase and won\u2019t go into detailed pricing just yet, I can assure you we aim to provide competitive and flexible pricing models. This way, you can scale according to your needs without overextending your budget.",
+        "start": 2387,
+        "end": 2666
+      }
+    ],
+    "question_id": "b2b-multi_call-8003cf84c0ab7e10",
+    "candidate": {
+      "question": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+      "gold_answer": "First call: pricing is designed to be transparent and comprehensive to help budget planning. Second call: no detailed pricing yet during discovery, but competitive and flexible pricing models are planned.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T0MTIA0",
+          "answer_claim": "Pricing strategy is designed to be clear and comprehensive, helping plan budgets effectively.",
+          "kind": "dialogue",
+          "line_start": 10,
+          "line_end": 11,
+          "quote": "[2024-03-13T09:53:05] Amir Haddad: I understand that concern. Transparency and predictability are key to us, which is why our pricing strategy is designed to be clear and comprehensive, helping you plan budgets effectively. But we can go over that in more detail later.",
+          "start": 2022,
+          "end": 2291
+        },
+        {
+          "call_id": "b2b:a05Wt000003T4ZcIAK",
+          "answer_claim": "No detailed pricing yet in discovery, but aims to provide competitive and flexible pricing models.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2024-03-20T14:02:38] Amir Haddad: While we\u2019re still in the discovery phase and won\u2019t go into detailed pricing just yet, I can assure you we aim to provide competitive and flexible pricing models. This way, you can scale according to your needs without overextending your budget.",
+          "start": 2387,
+          "end": 2666
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "In the first call (March 13), Amir told Yusuf that TechPulse's pricing strategy is designed to be clear and comprehensive, helping plan budgets effectively, but deferred detailed discussion. In the second call (March 20), Amir said they are still in the discovery phase and won't go into detailed pricing yet, but assured competitive and flexible pricing models to scale without overextending budget.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [
+        {
+          "answer": "Partial answer: Only one call between Amir Haddad and Yusuf Al-Hassan at MedTech Advances is supplied (March 13, 2024). In that call, Amir told Yusuf that transparency and predictability are key to TechPulse, and that their pricing strategy is designed to be clear and comprehensive to help with budget planning, with more detail to be covered later. A second call is not provided, so what Amir said about pricing in the other call is missing.",
+          "answerable": false
+        },
+        {
+          "answer": "Partial answer: Only one call is supplied (2024-03-20). In it, when Yusuf asked about flexible pricing, Amir said that since they're still in the discovery phase he wouldn't go into detailed pricing yet, but assured Yusuf that TechPulse aims to provide competitive and flexible pricing models so MedTech Advances can scale according to needs without overextending their budget. The question asks about two calls, but only one call with MedTech Advances/Yusuf Al-Hassan is provided, so Amir's pricing statements in the second call are missing.",
+          "answerable": false
+        }
+      ],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "Both quotes are verbatim in the dialogues: call 1 (2024-03-13) Amir says pricing strategy is 'designed to be clear and comprehensive, helping you plan budgets effectively'; call 2 (2024-03-20) he says 'won't go into detailed pricing just yet' but aims for 'competitive and flexible pricing models'. The question is a realistic sales need (pricing discussion across two calls with the same contact/account), doesn't leak the answer, and each ablation only recovers one call's pricing statement, so both calls are necessary and neither single call answers the full question. Independent answer matches the gold semantically with no invented details."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003T0MTIA0",
+          "b2b:a05Wt000003T4ZcIAK"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwFTIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided transcript is a single call between Amir Haddad and Tariq Al-Farsi of Muscat Innovations. There is no call with Yusuf Al-Hassan of MedTech Advances, so nothing can be reported about pricing discussions with him.",
+              "evidence": [],
+              "reason": "The question asks about two calls between Amir and Yusuf Al-Hassan at MedTech Advances. The only call supplied is between Amir Haddad and Tariq Al-Farsi of Muscat Innovations. No transcript involving Yusuf Al-Hassan or MedTech Advances exists in the sources, so no pricing information for the requested person/account can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sz8VIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no call between Amir and Yusuf Al-Hassan at MedTech Advances. The only call provided is between Dalia Herz (SecureTech Solutions) and Amir Gupta (Onyx Security Systems), in which Dalia\u2014not Amir\u2014discusses pricing. There is no mention of Yusuf Al-Hassan or MedTech Advances anywhere in the transcript, so no pricing statements by Amir to that person can be identified.",
+              "evidence": [],
+              "reason": "The question asks what Amir told Yusuf Al-Hassan at MedTech Advances about pricing in two calls. The sole transcript supplied features Dalia Herz calling Amir Gupta at Onyx Security Systems; Yusuf Al-Hassan and MedTech Advances never appear, and there is no second call. Therefore the requested facts are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SxMvIAK",
+              "b2b:a05Wt000003SysRIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls between Amir and Yusuf Al-Hassan, no account named MedTech Advances, and no pricing discussion. Both calls are between Amir Haddad and Jamal Okoro of GreenTech Dynamics, and neither call includes any pricing information. Therefore the question cannot be answered from the available sources.",
+              "evidence": [],
+              "reason": "The question asks about pricing statements Amir made to Yusuf Al-Hassan at MedTech Advances across two calls. The two supplied calls (b2b:a05Wt000003SxMvIAK and b2b:a05Wt000003SysRIAS) are both with contact Jamal Okoro at account GreenTech Dynamics. There is no mention of Yusuf Al-Hassan, no account called MedTech Advances, and no pricing discussion in either transcript. The draft extraction is correct; no repair is needed."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrxMIAS",
+              "b2b:a05Wt000003SvkzIAC",
+              "b2b:a05Wt000003T1QRIA0",
+              "b2b:a05Wt000003T3YfIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no calls between Amir and Yusuf Al-Hassan at MedTech Advances. All four calls are between Amir Haddad (TechPulse Solutions) and Zainab Hassan of SkyLink Communications. There is no information about pricing discussions with Yusuf Al-Hassan or MedTech Advances in any of the supplied sources.",
+              "evidence": [],
+              "reason": "The question asks about two calls between Amir and Yusuf Al-Hassan at MedTech Advances regarding pricing. However, every call in the source data involves Zainab Hassan at SkyLink Communications, not Yusuf Al-Hassan at MedTech Advances. No matching person, account, or event scope exists in the sources, so no facts can be cited."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1dRIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only one call (b2b:a05Wt000003T1dRIAS) between Amir Haddad and Hassan Suleiman of GreenTech Dynamics on 2022-01-25. There is no call involving Yusuf Al-Hassan or MedTech Advances, and no pricing discussion appears in the transcript. Therefore, no information exists about what Amir told Yusuf Al-Hassan at MedTech Advances about pricing in two calls.",
+              "evidence": [],
+              "reason": "The question asks about two calls between Amir and Yusuf Al-Hassan at MedTech Advances regarding pricing. The only call provided is with Hassan Suleiman at GreenTech Dynamics, a different person, different account, and different company. The transcript contains no pricing discussion whatsoever. No facts matching the requested people, account, or topic are present in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0MTIA0",
+              "b2b:a05Wt000003T4ZcIAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "In the first call (2024-03-13), Amir told Yusuf that transparency and predictability are key to TechPulse, and that their pricing strategy is designed to be clear and comprehensive to help MedTech Advances plan budgets effectively, but deferred detailed pricing discussion to later. In the second call (2024-03-20), Amir said they were still in the discovery phase and would not go into detailed pricing yet, but assured Yusuf that TechPulse aims to provide competitive and flexible pricing models so MedTech Advances can scale according to its needs without overextending its budget.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003T0MTIA0",
+                  "line_start": 9,
+                  "line_end": 11,
+                  "quote": "[2024-03-13T09:52:50] Yusuf Al-Hassan: I see. One thing we've noticed is that some companies aren't very transparent with pricing, which complicates our financial forecasting.\n[2024-03-13T09:53:05] Amir Haddad: I understand that concern. Transparency and predictability are key to us, which is why our pricing strategy is designed to be clear and comprehensive, helping you plan budgets effectively. But we can go over that in more detail later."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4ZcIAK",
+                  "line_start": 11,
+                  "line_end": 13,
+                  "quote": "[2024-03-20T14:02:20] Yusuf Al-Hassan: Customization is crucial for us since our projects can vary greatly. What about pricing? Are there flexible pricing options?\n[2024-03-20T14:02:38] Amir Haddad: While we\u2019re still in the discovery phase and won\u2019t go into detailed pricing just yet, I can assure you we aim to provide competitive and flexible pricing models. This way, you can scale according to your needs without overextending your budget."
+                }
+              ],
+              "reason": "Both calls are between Amir Haddad and Yusuf Al-Hassan at MedTech Advances. In call 1, line 9 shows Yusuf raising the pricing transparency concern and line 10 shows Amir's response about clear/comprehensive pricing and deferring details. In call 2, line 11 shows Yusuf asking about flexible pricing and line 12 shows Amir's response about being in discovery phase, not giving detailed pricing yet, but assuring competitive and flexible pricing models. The draft extraction is accurate; I expanded evidence to include the triggering question lines (9 and 11) for full context."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers convey the same core facts for each call. First call: pricing is transparent/comprehensive to help MedTech Advances plan budgets, with detailed pricing deferred. Second call: still in discovery phase, no detailed pricing yet, but competitive and flexible pricing models are offered so MedTech Advances can scale without overextending its budget. Answer A includes extra details (dates, the phrase 'transparency and predictability are key to TechPulse,' and the scaling/budget language), but these are additional unrequested details rather than different values for the requested facts. The semantic content regarding what Amir told Yusuf about pricing in each call is the same."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0PWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided source contains only one call transcript between Amir Nazir (InnoSphere Labs) and Miguel Torres (TechPulse Solutions). There is no mention of Yusuf Al-Hassan, MedTech Advances, or any pricing discussion. The question asks about two calls between Amir and Yusuf Al-Hassan at MedTech Advances regarding pricing, but no such calls exist in the supplied data.",
+              "evidence": [],
+              "reason": "The single call provided (b2b:a05Wt000003T0PWIA0) involves Amir Nazir at InnoSphere Labs speaking with Miguel Torres of TechPulse Solutions. There is no contact named Yusuf Al-Hassan, no account named MedTech Advances, no second call, and no pricing discussion anywhere in the transcript. All requested facts (two calls, Yusuf Al-Hassan, MedTech Advances, pricing content) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwAjIAK",
+              "b2b:a05Wt000003SzZyIAK",
+              "b2b:a05Wt000003T2BSIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving a person named Amir, no contact named Yusuf Al-Hassan, and no account or company called MedTech Advances. All three calls are between Tariq Hassan (TechPulse Solutions) and Hassan Mahmoud (SkyLevel Systems). Therefore, no information about what Amir told Yusuf Al-Hassan at MedTech Advances regarding pricing can be extracted from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Amir speaking to Yusuf Al-Hassan at MedTech Advances across two calls. None of the three supplied call transcripts involve anyone named Amir, anyone named Yusuf Al-Hassan, or any entity called MedTech Advances. The participants in all calls are Tariq Hassan and Hassan Mahmoud, and the account is SkyLevel Systems. Because the exact named people, account, and event scope do not match any source, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzzkIAC",
+              "b2b:a05Wt000003T0MLIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any calls between Amir and Yusuf Al-Hassan at MedTech Advances. Both calls are between Amir Haddad and Yasmine Khalil of MediLux Solutions. There is no information about pricing discussions with Yusuf Al-Hassan or MedTech Advances in the supplied sources.",
+              "evidence": [],
+              "reason": "The question asks about what Amir told Yusuf Al-Hassan at MedTech Advances about pricing in two calls. However, both provided calls (b2b:a05Wt000003SzzkIAC and b2b:a05Wt000003T0MLIA0) are between Amir Haddad and Yasmine Khalil at MediLux Solutions. Neither call involves Yusuf Al-Hassan or MedTech Advances. The draft extraction correctly identifies this mismatch. No facts about the requested person, account, or event scope exist in the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SsOnIAK",
+              "b2b:a05Wt000003StG2IAK",
+              "b2b:a05Wt000003T24uIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no calls between Amir and Yusuf Al-Hassan, nor any mention of MedTech Advances. All three calls are between Amir Haddad and Samuel Osei of AquaGuard Solutions. Therefore, no information about pricing discussions with Yusuf Al-Hassan at MedTech Advances can be extracted from these sources.",
+              "evidence": [],
+              "reason": "The question asks about two calls between Amir and Yusuf Al-Hassan at MedTech Advances. However, all three supplied calls (b2b:a05Wt000003SsOnIAK, b2b:a05Wt000003StG2IAK, b2b:a05Wt000003T24uIAC) are between Amir Haddad and Samuel Osei of AquaGuard Solutions. Neither 'Yusuf Al-Hassan' nor 'MedTech Advances' appears anywhere in the source data. The draft extraction is correct: the requested facts simply do not exist in the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvRSIA0",
+              "b2b:a05Wt000003SyHQIA0",
+              "b2b:a05Wt000003SyNlIAK",
+              "b2b:a05Wt000003T0J6IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No transcript involves Yusuf Al-Hassan or MedTech Advances. All provided calls are between Amir Haddad and Samir Hussain of InnoBuild Constructors regarding the CloudLink Enhancement Deal. There is no information about what Amir told Yusuf Al-Hassan at MedTech Advances about pricing in any calls.",
+              "evidence": [],
+              "reason": "The question asks about Amir's pricing discussions with Yusuf Al-Hassan at MedTech Advances across two calls. However, none of the four provided call transcripts involve Yusuf Al-Hassan or MedTech Advances. All calls are with Samir Hussain at InnoBuild Constructors. Since the exact named person (Yusuf Al-Hassan) and account (MedTech Advances) do not appear in any source, no facts can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzBnIAK",
+              "b2b:a05Wt000003SzBoIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts do not contain any calls involving Amir or Yusuf Al-Hassan, nor any account named MedTech Advances. Both calls are between Tariq Hassan (TechPulse Solutions) and Ahmed Al-Hassan of TechWave Innovations. Therefore, no pricing statements made by Amir to Yusuf Al-Hassan at MedTech Advances can be identified or cited from these sources.",
+              "evidence": [],
+              "reason": "The question asks about Amir speaking to Yusuf Al-Hassan at MedTech Advances. The two supplied calls feature Tariq Hassan speaking with Ahmed Al-Hassan at TechWave Innovations. None of the named people (Amir, Yusuf Al-Hassan), the account (MedTech Advances), or the relevant pricing discussion exist in the provided sources. The draft extraction correctly identifies this mismatch."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Su2RIAS",
+              "b2b:a05Wt000003SvBVIA0",
+              "b2b:a05Wt000003Sz6xIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving a salesperson named Amir, no contact named Yusuf Al-Hassan, and no account or event called MedTech Advances. All three calls are between Monique Dubois (TechPulse Solutions) and Ahmed Al-Hassan of TechWave Innovations. Therefore, no pricing statements made by Amir to Yusuf Al-Hassan at MedTech Advances can be identified.",
+              "evidence": [],
+              "reason": "The question asks about Amir speaking to Yusuf Al-Hassan at MedTech Advances across two calls. The sources only contain calls between Monique Dubois and Ahmed Al-Hassan at TechWave Innovations. The named people (Amir, Yusuf Al-Hassan), the account/event (MedTech Advances), and the salesperson (Amir) do not appear anywhere in the provided transcripts. No relevant facts exist to answer the question."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvEZIA0",
+              "b2b:a05Wt000003SzDNIA0",
+              "b2b:a05Wt000003SzgNIAS",
+              "b2b:a05Wt000003T2RKIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving Yusuf Al-Hassan or any account called MedTech Advances. All four calls are between Amir Haddad and Gabriel Acosta of PowerGrid Innovations. Therefore, no pricing statements made by Amir to Yusuf Al-Hassan at MedTech Advances can be identified or reported.",
+              "evidence": [],
+              "reason": "The question asks about two calls between Amir and Yusuf Al-Hassan at MedTech Advances. None of the four supplied call transcripts involve a contact named Yusuf Al-Hassan or an account named MedTech Advances; every call is with Gabriel Acosta at PowerGrid Innovations. Because the exact named person and account are absent from all sources, no facts can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqgTIAS",
+              "b2b:a05Wt000003SuvKIAS",
+              "b2b:a05Wt000003SxbOIAS",
+              "b2b:a05Wt000003T1qSIAS",
+              "b2b:a05Wt000003T2eWIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No transcript involves Yusuf Al-Hassan or MedTech Advances. All four provided calls are between Amir Haddad and Nina Anwar of Circuit Dynamics Inc., so there is no information about what Amir told Yusuf Al-Hassan about pricing at MedTech Advances.",
+              "evidence": [],
+              "reason": "The question asks about pricing information Amir conveyed to Yusuf Al-Hassan at MedTech Advances across two calls. However, every call in the supplied sources is between Amir Haddad and Nina Anwar at Circuit Dynamics Inc. (account_id 001Wt00000PGHsyIAH). Neither the contact name 'Yusuf Al-Hassan' nor the account 'MedTech Advances' appears anywhere in the transcripts or metadata. Because the exact named person and account are absent, no fact can be supported and the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SvxmIAC",
+              "b2b:a05Wt000003T1VJIA0",
+              "b2b:a05Wt000003T1WvIAK",
+              "b2b:a05Wt000003T3gmIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving Amir or Yusuf Al-Hassan, and no account or event named MedTech Advances. All four calls are between Priya Choudhury (TechPulse Solutions) and Ahmed Al-Hassan of TechWave Innovations. Therefore, no information exists about what Amir told Yusuf Al-Hassan at MedTech Advances regarding pricing in any calls.",
+              "evidence": [],
+              "reason": "The question asks about a salesperson named Amir speaking to Yusuf Al-Hassan at MedTech Advances. The sources only contain calls between Priya Choudhury and Ahmed Al-Hassan at TechWave Innovations. The named people (Amir, Yusuf Al-Hassan), the account (MedTech Advances), and the event scope do not match any content in the provided transcripts. No facts can be extracted for the exact entities requested."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SyiyIAC",
+              "b2b:a05Wt000003T10tIAC",
+              "b2b:a05Wt000003T347IAC",
+              "b2b:a05Wt000003T3c3IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts contain no salesperson named Amir, no contact named Yusuf Al-Hassan, and no account or event called MedTech Advances. All four calls are between Nadia Al-Balushi (TechPulse Solutions) and Fatima Al-Hassan of SkyNet Technologies. Therefore, no pricing statements by Amir to Yusuf Al-Hassan at MedTech Advances can be found in these sources.",
+              "evidence": [],
+              "reason": "The question asks about Amir speaking to Yusuf Al-Hassan at MedTech Advances across two calls. None of the four supplied transcripts involve a person named Amir, a contact named Yusuf Al-Hassan, or an account/event named MedTech Advances. The only participants are Nadia Al-Balushi and Fatima Al-Hassan, and the only account is SkyNet Technologies. Because the exact named people, account, and event scope are entirely absent, no complete answer can be constructed."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Both calls are with Yusuf Al-Hassan at MedTech Advances and each contains a distinct pricing statement by Amir: call 1 (2024-03-13) says pricing is clear/comprehensive for budget planning; call 2 (2024-03-20) says no detailed pricing yet in discovery but competitive, flexible models planned. The gold answer matches both quotes exactly, and each call contributes a necessary distinct fact."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+            "explicitly_requested": true,
+            "required_fact": "In the March 13 call, Amir said TechPulse's pricing strategy is designed to be clear and comprehensive to help with budget planning (with details deferred to a later discussion).",
+            "source_call_ids": [
+              "b2b:a05Wt000003T0MTIA0"
+            ]
+          },
+          {
+            "question_span": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+            "explicitly_requested": true,
+            "required_fact": "In the March 20 call, Amir said they wouldn't go into detailed pricing yet during discovery, but that TechPulse aims to provide competitive and flexible pricing models allowing scaling without overextending the budget.",
+            "source_call_ids": [
+              "b2b:a05Wt000003T4ZcIAK"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question explicitly asks for pricing information from each of the two calls. The gold answer provides exactly that: one fact per call, both directly about pricing. No extra facts are included. The independent answer covers both calls with the same pricing details. The obligations correctly reference the two calls and request the pricing facts. Each call is required because the question asks for 'each of their two calls', and each call supplies a distinct pricing fact not present in the other. All checks pass.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "First call: pricing is designed to be transparent and comprehensive to help budget planning.",
+            "question_span": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+            "required_by_question": true
+          },
+          {
+            "claim": "Second call: no detailed pricing yet during discovery, but competitive and flexible pricing models are planned.",
+            "question_span": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  },
+  {
+    "job_id": "83aad5202f9c63d7ec3d611497e5c38c5ad3f2e9a64503a796053051799a928e",
+    "domain": "b2b",
+    "question_class": "single_call",
+    "supporting_call_ids": [
+      "b2b:a05Wt000003SuiMIAS"
+    ],
+    "status": "accepted",
+    "question": "What discounted prices did TechPulse quote GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and what discount applies to CircuitAI Innovator?",
+    "gold_answer": "EcoPCB Creator at $3,149.91 and AI Cirku-Tech at $7,154.87 with 10% discounts; CircuitAI Innovator has a 5% discount.",
+    "evidence": [
+      {
+        "call_id": "b2b:a05Wt000003SuiMIAS",
+        "answer_claim": "10% discount brings EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87",
+        "kind": "dialogue",
+        "line_start": 4,
+        "line_end": 5,
+        "quote": "[2023-03-15T09:31:30] Carlos Nunez: Of course, Hiroko. I can walk you through that. Currently, we're proposing a 10% discount on the EcoPCB Creator and AI Cirku-Tech. This brings EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87 for your quantities. OptiPower Max also comes with a 10% discount.",
+        "start": 729,
+        "end": 1033
+      },
+      {
+        "call_id": "b2b:a05Wt000003SuiMIAS",
+        "answer_claim": "CircuitAI Innovator comes with a 5% discount due to high demand",
+        "kind": "dialogue",
+        "line_start": 10,
+        "line_end": 11,
+        "quote": "[2023-03-15T09:34:30] Carlos Nunez: Yes, CircuitAI Innovator stands out for its advanced algorithms which enhance design precision. It\u2019s optimized for creating sustainable electronic products, aligning perfectly with your goals. While it comes with a 5% discount due to high demand, the investment pays off with increased efficiency and reduced errors in your design process.",
+        "start": 2396,
+        "end": 2771
+      }
+    ],
+    "question_id": "b2b-single_call-83aad5202f9c63d7",
+    "candidate": {
+      "question": "What discounted prices did TechPulse quote GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and what discount applies to CircuitAI Innovator?",
+      "gold_answer": "EcoPCB Creator at $3,149.91 and AI Cirku-Tech at $7,154.87 with 10% discounts; CircuitAI Innovator has a 5% discount.",
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SuiMIAS",
+          "answer_claim": "10% discount brings EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87",
+          "kind": "dialogue",
+          "line_start": 4,
+          "line_end": 5,
+          "quote": "[2023-03-15T09:31:30] Carlos Nunez: Of course, Hiroko. I can walk you through that. Currently, we're proposing a 10% discount on the EcoPCB Creator and AI Cirku-Tech. This brings EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87 for your quantities. OptiPower Max also comes with a 10% discount.",
+          "start": 729,
+          "end": 1033
+        },
+        {
+          "call_id": "b2b:a05Wt000003SuiMIAS",
+          "answer_claim": "CircuitAI Innovator comes with a 5% discount due to high demand",
+          "kind": "dialogue",
+          "line_start": 10,
+          "line_end": 11,
+          "quote": "[2023-03-15T09:34:30] Carlos Nunez: Yes, CircuitAI Innovator stands out for its advanced algorithms which enhance design precision. It\u2019s optimized for creating sustainable electronic products, aligning perfectly with your goals. While it comes with a 5% discount due to high demand, the investment pays off with increased efficiency and reduced errors in your design process.",
+          "start": 2396,
+          "end": 2771
+        }
+      ]
+    },
+    "stages": {
+      "mechanical": true,
+      "independent_answer": {
+        "answer": "TechPulse quoted GreenWave Circuits a 10% discount on EcoPCB Creator, bringing it to $3,149.91, and a 10% discount on AI Cirku-Tech, bringing it to $7,154.87. CircuitAI Innovator has a 5% discount due to high demand.",
+        "answerable": true
+      },
+      "no_context": [
+        {
+          "answer": "UNKNOWN"
+        },
+        {
+          "answer": "UNKNOWN"
+        }
+      ],
+      "ablations": [],
+      "quality_audit": {
+        "factual": true,
+        "complete_evidence": true,
+        "clear_specific_question": true,
+        "concise_answer": true,
+        "independent_answer_matches": true,
+        "no_context_answers_fail": true,
+        "both_calls_necessary": true,
+        "single_call_answers_fail": true,
+        "reason": "The dialogue directly supports all claims: 10% discount bringing EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87 (09:31:30), and CircuitAI Innovator at 5% discount (09:34:30). The question is a realistic sales pricing inquiry with clear account context (GreenWave Circuits), names only allowed participants, and does not leak the answer. The independent answer matches the gold semantically and fully. No-context answers are 'UNKNOWN', so they fail. Since this is a single-call QA, both two-call flags are set true per instructions."
+      },
+      "specificity": {
+        "call_ids": [
+          "b2b:a05Wt000003SuiMIAS"
+        ],
+        "ambiguous": false,
+        "reason": "consistent_in_pool",
+        "method": "reference-blind-group-consistency-v2",
+        "groups": [
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T2hoIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no call involving GreenWave Circuits or TechPulse. The only call is between Aisha Ibrahim (TechConnect) and Tumi Ndlovu of Cape Town Dynamic Tech, discussing CollabDesign Studio, CircuitAI Innovator, and AI DesignShift. No discounted prices for EcoPCB Creator or AI Cirku-Tech were quoted to GreenWave Circuits, and no specific discount percentage or amount for CircuitAI Innovator is stated anywhere in the provided transcript.",
+              "evidence": [],
+              "reason": "The question asks about discounted prices quoted by TechPulse to GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and a discount for CircuitAI Innovator. The sole source call involves a different company (Cape Town Dynamic Tech), a different vendor (TechConnect), and different products (CollabDesign Studio, CircuitAI Innovator, AI DesignShift). No mention of GreenWave Circuits, TechPulse, EcoPCB Creator, or AI Cirku-Tech exists. The only discount reference is a vague promise to 'explore possible discounts for a package purchase' with no figures given. All requested facts are missing."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SzlMIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcript does not involve GreenWave Circuits. The only call is between Mei Lin (Tech Innovators) and Maria Bj\u00f6rk of Stockholm Tech Hub. It quotes standard (non-discounted) prices: AI Cirku-Tech at $500 per unit ($1,000 for two) and EcoPCB Creator at $400. No discounted prices for GreenWave Circuits are mentioned, and CircuitAI Innovator is never discussed in any call.",
+              "evidence": [],
+              "reason": "The question asks about discounted prices quoted by TechPulse to GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and a discount on CircuitAI Innovator. The sole source call involves a different company (Stockholm Tech Hub), a different contact (Maria Bj\u00f6rk), a different seller (Tech Innovators, not TechPulse), standard (not discounted) pricing, and no mention of CircuitAI Innovator. None of the requested facts can be supported."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1F8IAK",
+              "b2b:a05Wt000003T1YTIA0",
+              "b2b:a05Wt000003T1a5IAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no quoted prices or discounts for GreenWave Circuits. The products 'EcoPCB Creator' and 'CircuitAI Innovator' are never mentioned in any of the three calls. Alejandro Ramirez explicitly states they are still in the qualification stage and 'not discussing detailed numbers.' No discounted price for EcoPCB Creator, no discounted price for AI Cirku-Tech, and no discount percentage for CircuitAI Innovator can be reported.",
+              "evidence": [],
+              "reason": "All three calls between Alejandro Ramirez (TechPulse) and Hiroko Matsumoto (GreenWave Circuits) discuss products qualitatively (AI Cirku-Tech, QuantumPCB Modeler, SecureFlow Suite) without any pricing or discount figures. The specific products asked about\u2014EcoPCB Creator and CircuitAI Innovator\u2014do not appear anywhere in the transcripts. Line 12 of call b2b:a05Wt000003T1F8IAK confirms they are 'still in the qualification stage and not discussing detailed numbers.' Therefore no discounted prices or discount rates can be supplied."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwaWIAS",
+              "b2b:a05Wt000003T09PIAS",
+              "b2b:a05Wt000003T0mDIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving GreenWave Circuits. All three calls are between Diego Sanchez of TechPulse Solutions and Ahmed Tariq of Precision Circuit Systems. No product called EcoPCB Creator is mentioned or quoted in any transcript. Therefore, no discounted prices for EcoPCB Creator or AI Cirku-Tech quoted to GreenWave Circuits, nor any discount for CircuitAI Innovator applicable to GreenWave Circuits, can be identified.",
+              "evidence": [],
+              "reason": "The question asks about quotes to GreenWave Circuits, but every call in the sources is with Precision Circuit Systems (account_id 001Wt00000PHVaVIAX, contact Ahmed Tariq). The product EcoPCB Creator never appears in any transcript. While AI Cirku-Tech ($5723.89) and CircuitAI Innovator ($4949.91) with a 10% discount are mentioned in call b2b:a05Wt000003T0mDIAS line 8, those prices were quoted to Precision Circuit Systems, not GreenWave Circuits. Because the named account and one of the named products are entirely absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuLvIAK",
+              "b2b:a05Wt000003SzZxIAK",
+              "b2b:a05Wt000003SzwgIAC",
+              "b2b:a05Wt000003T0ZKIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no calls with or quotes to GreenWave Circuits. All four provided calls are between Jo\u00e3o Pereira of TechPulse Solutions and Isabella Ruiz of Innovate Sphere (opportunity 'Innovate Sphere's Advanced EDA Transformation'). While the July 5, 2023 call does quote discounted prices for EcoPCB Creator ($8,924.74 for 30 licenses) and CircuitAI Innovator ($11,687.29 for 25 licenses) with a 15% discount, these were quoted to Innovate Sphere, not GreenWave Circuits. No mention of GreenWave Circuits, nor any product called 'AI Cirku-Tech,' appears anywhere in the sources. Therefore the question as scoped to GreenWave Circuits cannot be answered.",
+              "evidence": [],
+              "reason": "The question asks about discounted prices quoted to GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and a discount for CircuitAI Innovator. None of the four call transcripts involve GreenWave Circuits; all involve Innovate Sphere. Additionally, no product named 'AI Cirku-Tech' is mentioned in any transcript. Because the exact named account (GreenWave Circuits) and one of the exact named products (AI Cirku-Tech) are absent from all sources, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sv9iIAC",
+              "b2b:a05Wt000003SyfWIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no pricing, discount, or quote information for EcoPCB Creator, AI Cirku-Tech, or CircuitAI Innovator. CircuitAI Innovator is not mentioned at all in either call.",
+              "evidence": [],
+              "reason": "Neither call transcript includes any discounted prices quoted by TechPulse to GreenWave Circuits for EcoPCB Creator or AI Cirku-Tech, nor any discount percentage or terms for CircuitAI Innovator. The product 'CircuitAI Innovator' does not appear in either call. All requested facts (discounted prices for two products and a discount for a third) are entirely absent from the sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuKHIA0",
+              "b2b:a05Wt000003T1v4IAC",
+              "b2b:a05Wt000003T2O9IAK",
+              "b2b:a05Wt000003T3lZIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "No complete answer exists. All four calls are between TechPulse (Ayumi Shimizu) and DataWave Analytics (Andrei Popescu) under the 'Advanced EDA Integration with DataWave Analytics' opportunity. There is no call involving GreenWave Circuits, so no discounted prices quoted to that account can be identified. Additionally, no product called 'CircuitAI Innovator' is mentioned in any transcript, so no discount for it can be determined. Pricing was discussed only for DataWave Analytics (AI Cirku-Tech: 10 units, 10% discount, $4769.91; EcoPCB Creator: 7 units, 5% discount, $2327.43), which does not satisfy the question's requirement for GreenWave Circuits.",
+              "evidence": [],
+              "reason": "The question asks about quotes to GreenWave Circuits and a discount for CircuitAI Innovator. None of the provided calls involve GreenWave Circuits (all are with DataWave Analytics/Andrei Popescu), and no product named 'CircuitAI Innovator' appears in any transcript. The draft extraction correctly identifies these gaps. Since the exact named account and product are absent from all sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sxl0IAC",
+              "b2b:a05Wt000003T2ceIAC",
+              "b2b:a05Wt000003T3P5IAK",
+              "b2b:a05Wt000003T3YgIAK",
+              "b2b:a05Wt000003T3nDIAS"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no calls involving an account named GreenWave Circuits. All five transcripts are between Fatou Ndiaye (TechPulse Solutions) and Kumar Shrestha of EcoShield Technologies under the opportunity 'EcoShield Advanced EDA Partnership.' Therefore, no discounted prices quoted to GreenWave Circuits for EcoPCB Creator or AI Cirku-Tech, and no discount for CircuitAI Innovator, can be established. The pricing information present (e.g., EcoPCB Creator 30-unit package at 15% discount totaling $8,924.74; 15% off AI Cirku-Tech and SimuFlow Xtreme) applies exclusively to EcoShield Technologies, not GreenWave Circuits. Additionally, no product called 'CircuitAI Innovator' appears in any transcript.",
+              "evidence": [],
+              "reason": "The question asks about quotes to GreenWave Circuits, but no such account exists in any of the provided call transcripts. All calls are with EcoShield Technologies (Kumar Shrestha). Furthermore, the product 'CircuitAI Innovator' is never mentioned in any source. Because the exact named account and one of the named products are entirely absent, no complete answer can be provided."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuiPIAS",
+              "b2b:a05Wt000003T1exIAC",
+              "b2b:a05Wt000003T3dbIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no quotes to GreenWave Circuits. All three calls are between Junaid Khan (TechPulse) and Fatou Ngom at Innovate Sphere. The only pricing discussed (call b2b:a05Wt000003T1exIAC, line 6) is a 15% discount on EcoPCB Creator ($5,949.83 total) and CircuitAI Innovator ($11,687.29 total) for Innovate Sphere. No discounted price is quoted for AI Cirku-Tech in any call, and no information about GreenWave Circuits exists in the provided sources.",
+              "evidence": [],
+              "reason": "The question asks about quotes to GreenWave Circuits, but all calls are with Innovate Sphere (account_id 001Wt00000PHHXXIA5, contact Fatou Ngom). No call references GreenWave Circuits. Additionally, no price or discount is given for AI Cirku-Tech in any transcript. The only pricing (15% discount, EcoPCB Creator $5,949.83, CircuitAI Innovator $11,687.29) was quoted to Innovate Sphere, not GreenWave Circuits. Therefore the question cannot be answered as scoped."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T1QPIA0",
+              "b2b:a05Wt000003T1S1IAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no quoted discounted prices for EcoPCB Creator or AI Cirku-Tech, and no discount information for CircuitAI Innovator. EcoPCB Creator and CircuitAI Innovator are never mentioned in either call. AI Cirku-Tech is referenced only as a product feature (integration process and scalability) without any pricing. The only pricing discussion is a generic statement about CircuitSync Pro being 'competitively priced' with no specific figures given.",
+              "evidence": [],
+              "reason": "The question asks for specific discounted prices for EcoPCB Creator and AI Cirku-Tech, and a discount for CircuitAI Innovator, all quoted by TechPulse to GreenWave Circuits. Neither call transcript mentions EcoPCB Creator or CircuitAI Innovator at all. AI Cirku-Tech is mentioned in call b2b:a05Wt000003T1QPIA0 (lines 4 and 10) but only in the context of integration capabilities and scalability\u2014no price or discount is quoted. The only pricing reference is in call b2b:a05Wt000003T1S1IAK line 14, where Alejandro says it is 'early to delve into specific pricing' regarding CircuitSync Pro. No complete answer can be constructed from the available sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrcMIAS",
+              "b2b:a05Wt000003SuiMIAS",
+              "b2b:a05Wt000003SwDwIAK",
+              "b2b:a05Wt000003T1WrIAK"
+            ],
+            "classification": "equivalent",
+            "verification": {
+              "complete": true,
+              "answer": "TechPulse quoted GreenWave Circuits a 10% discount on EcoPCB Creator, bringing it to $3,149.91, and a 10% discount on AI Cirku-Tech, bringing it to $7,154.87. CircuitAI Innovator comes with a 5% discount due to high demand.",
+              "evidence": [
+                {
+                  "call_id": "b2b:a05Wt000003SuiMIAS",
+                  "line_start": 4,
+                  "line_end": 5,
+                  "quote": "[2023-03-15T09:31:30] Carlos Nunez: Of course, Hiroko. I can walk you through that. Currently, we're proposing a 10% discount on the EcoPCB Creator and AI Cirku-Tech. This brings EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87 for your quantities. OptiPower Max also comes with a 10% discount."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuiMIAS",
+                  "line_start": 10,
+                  "line_end": 11,
+                  "quote": "[2023-03-15T09:34:30] Carlos Nunez: Yes, CircuitAI Innovator stands out for its advanced algorithms which enhance design precision. It\u2019s optimized for creating sustainable electronic products, aligning perfectly with your goals. While it comes with a 5% discount due to high demand, the investment pays off with increased efficiency and reduced errors in your design process."
+                }
+              ],
+              "reason": "In the March 15, 2023 call (b2b:a05Wt000003SuiMIAS), Carlos Nunez explicitly states the 10% discount on EcoPCB Creator ($3,149.91) and AI Cirku-Tech ($7,154.87) at line 4, and the 5% discount on CircuitAI Innovator due to high demand at line 10. All three requested facts are directly supported for the exact account (GreenWave Circuits) and products named in the question."
+            },
+            "comparison": {
+              "classification": "equivalent",
+              "reason": "Both answers provide the same requested facts: EcoPCB Creator at $3,149.91 with a 10% discount, AI Cirku-Tech at $7,154.87 with a 10% discount, and CircuitAI Innovator with a 5% discount. Answer A includes extra detail (the reason for the 5% discount being 'high demand'), but the core values are identical."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SwSTIA0",
+              "b2b:a05Wt000003SyfVIAS",
+              "b2b:a05Wt000003T0J4IAK",
+              "b2b:a05Wt000003T1OnIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain discounted prices for EcoPCB Creator or a discount for CircuitAI Innovator. The only product matching part of the question is AI Cirku-Tech, for which TechPulse quoted GreenWave Circuits a 10% discount on 12 units, bringing the total to $5,723.89 (call b2b:a05Wt000003T0J4IAK, lines 5\u20136). However, EcoPCB Creator is never mentioned in any of the four calls, and CircuitAI Innovator is also never mentioned. The other products discussed with pricing are PulseSim Pro (10% discount, 10 units, $4,499.91) and CloudLink Designer (5% discount, 5 units, $1,899.95), neither of which matches the requested products.",
+              "evidence": [],
+              "reason": "The question asks for three specific facts: (1) discounted price for EcoPCB Creator, (2) discounted price for AI Cirku-Tech, and (3) discount for CircuitAI Innovator. Only fact (2) is present in the sources (AI Cirku-Tech: 10% discount, 12 units, $5,723.89 in call b2b:a05Wt000003T0J4IAK lines 5-6). EcoPCB Creator and CircuitAI Innovator are never mentioned in any of the four call transcripts, so the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SrhFIAS",
+              "b2b:a05Wt000003SztJIAS",
+              "b2b:a05Wt000003T1TdIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts contain no quoted discounted prices for EcoPCB Creator or AI Cirku-Tech, and no discount percentage or terms for CircuitAI Innovator. Mei Chen only references 'competitive rates,' 'favorable total cost of ownership,' and pricing transparency in general terms. The product 'CircuitAI Innovator' is never mentioned in any of the three calls.",
+              "evidence": [],
+              "reason": "All three calls between Mei Chen (TechPulse) and Hiroko Matsumoto (GreenWave Circuits) discuss AI Cirku-Tech, EcoPCB Creator, SecureFlow Suite, and OptiPower Manager in qualitative terms (competitive pricing, transparency, favorable TCO) but never state a specific discounted dollar amount or percentage. CircuitAI Innovator does not appear in any transcript. Therefore none of the three requested facts (discounted price for EcoPCB Creator, discounted price for AI Cirku-Tech, discount for CircuitAI Innovator) can be answered from the provided sources."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0aoIAC",
+              "b2b:a05Wt000003T15TIAS",
+              "b2b:a05Wt000003T1VFIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided call transcripts between TechPulse Solutions (Carmen Silva) and GreenWave Circuits (Hiroko Matsumoto) do not mention products named EcoPCB Creator, AI Cirku-Tech, or CircuitAI Innovator. No discounted prices are quoted in any of the three calls. The products discussed are SecureFlow Suite, PulseSim Pro, CloudLink Designer, and CryptGuard Module, with no specific pricing or discount figures stated.",
+              "evidence": [],
+              "reason": "All three calls (b2b:a05Wt000003T0aoIAC, b2b:a05Wt000003T15TIAS, b2b:a05Wt000003T1VFIA0) discuss TechPulse products such as SecureFlow Suite, PulseSim Pro, CloudLink Designer, and CryptGuard Module. None of the transcripts contain any reference to 'EcoPCB Creator,' 'AI Cirku-Tech,' or 'CircuitAI Innovator,' nor do they include any quoted prices or discount percentages. The requested facts are entirely absent from the source material."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003T0SlIAK",
+              "b2b:a05Wt000003T0SmIAK",
+              "b2b:a05Wt000003T1bhIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The transcripts do not contain discounted prices for EcoPCB Creator or AI Cirku-Tech quoted to GreenWave Circuits, and no product called CircuitAI Innovator is mentioned in any of the calls. The only discounted price quoted to GreenWave Circuits is for CloudLink Designer (15% discount on 20 units, totaling $6799.83).",
+              "evidence": [],
+              "reason": "The question asks for three specific facts: (1) the discounted price for EcoPCB Creator, (2) the discounted price for AI Cirku-Tech, and (3) the discount for CircuitAI Innovator. None of these are present in the sources. EcoPCB Creator is mentioned only in passing (call b2b:a05Wt000003T0SlIAK line 14 and call b2b:a05Wt000003T0SmIAK line 14) without any pricing. AI Cirku-Tech is described functionally (call b2b:a05Wt000003T0SlIAK line 16) but no price or discount is given. CircuitAI Innovator does not appear in any transcript. The only discount discussed is for CloudLink Designer (15% on 20 units, $6799.83), which is a different product. Since none of the three requested facts can be answered, the response is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SuLnIAK",
+              "b2b:a05Wt000003SxJdIAK",
+              "b2b:a05Wt000003T0nqIAC"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided sources contain no calls involving GreenWave Circuits; all three calls are between Ayumi Shimizu (TechPulse Solutions) and Miguel Navarro of TerraSync Solutions. Furthermore, no product named 'AI Cirku-Tech' or 'CircuitAI Innovator' appears in any transcript. The only products discussed are EcoPCB Creator and OptiEnergy Suite (with a 10% discount, EcoPCB Creator priced at $3,149.91). Therefore, the discounted prices TechPulse quoted GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and the discount for CircuitAI Innovator, cannot be determined from these sources.",
+              "evidence": [],
+              "reason": "The question asks about quotes to GreenWave Circuits for EcoPCB Creator, AI Cirku-Tech, and CircuitAI Innovator. None of the three calls involve GreenWave Circuits (all are with TerraSync Solutions / Miguel Navarro). The products 'AI Cirku-Tech' and 'CircuitAI Innovator' are never mentioned. Because the exact named account and two of the three named products are absent from every source, no requested fact can be supported, making the answer incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003SqTRIA0",
+              "b2b:a05Wt000003SxLGIA0",
+              "b2b:a05Wt000003SzDQIA0",
+              "b2b:a05Wt000003T3TrIAK"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The provided calls do not contain any quotes to GreenWave Circuits. All four calls are between Hana Kato (TechPulse Solutions) and Ana Sofia at Precision Circuit Systems. Discounted prices for EcoPCB Creator ($1,662.45 total, 5% discount on 5 units) and AI Cirku-Tech ($3,524.43 total, 5% discount on 7 units) were quoted to Precision Circuit Systems, not GreenWave Circuits. No product called CircuitAI Innovator is mentioned in any of the transcripts, so no discount for it can be identified.",
+              "evidence": [],
+              "reason": "The question asks about quotes to GreenWave Circuits, but no call involves that account. All calls are with Precision Circuit Systems (account_id 001Wt00000PHVaVIAX, contact Ana Sofia). Additionally, the product 'CircuitAI Innovator' does not appear in any transcript. Because the exact named account (GreenWave Circuits) and product (CircuitAI Innovator) are absent from the sources, the answer is incomplete."
+            }
+          },
+          {
+            "call_ids": [
+              "b2b:a05Wt000003Sr84IAC",
+              "b2b:a05Wt000003SwcAIAS",
+              "b2b:a05Wt000003T2eTIAS",
+              "b2b:a05Wt000003T3VWIA0"
+            ],
+            "classification": "insufficient",
+            "verification": {
+              "complete": false,
+              "answer": "The sources contain no information about GreenWave Circuits or a product called CircuitAI Innovator. All calls are between TechPulse Solutions (Fatima Al-Masri) and Innovatech Group (Amelia Rodr\u00edguez). The only discounted prices mentioned are for Innovatech Group: EcoPCB Creator at a 10% discount (~$3,779.89) and AI Cirku-Tech at a 5% discount (~$4,027.92). No quote, discount, or product named CircuitAI Innovator for GreenWave Circuits exists in the provided transcripts.",
+              "evidence": [],
+              "reason": "The question asks about TechPulse quotes to GreenWave Circuits for EcoPCB Creator, AI Cirku-Tech, and a discount on CircuitAI Innovator. None of the four calls involve GreenWave Circuits; all involve Innovatech Group. Additionally, no product called 'CircuitAI Innovator' appears anywhere in the sources. Because the exact named account (GreenWave Circuits) and product (CircuitAI Innovator) are absent, no complete answer can be provided."
+            }
+          }
+        ]
+      },
+      "final_audit": {
+        "pass": true,
+        "reason": "Realistic pricing question about a specific quote. First evidence call supplies the discounted prices ($3,149.91 and $7,154.87 at 10% off) for EcoPCB Creator and AI Cirku-Tech; second call supplies the distinct 5% discount for CircuitAI Innovator. Each call contributes a necessary fact the other cannot, and the gold answer is exactly supported."
+      },
+      "question_contract": {
+        "obligations": [
+          {
+            "question_span": "What discounted prices did TechPulse quote GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech",
+            "explicitly_requested": true,
+            "required_fact": "EcoPCB Creator was quoted at $3,149.91 and AI Cirku-Tech at $7,154.87 (with a 10% discount)",
+            "source_call_ids": [
+              "b2b:a05Wt000003SuiMIAS"
+            ]
+          },
+          {
+            "question_span": "what discount applies to CircuitAI Innovator?",
+            "explicitly_requested": true,
+            "required_fact": "CircuitAI Innovator comes with a 5% discount",
+            "source_call_ids": [
+              "b2b:a05Wt000003SuiMIAS"
+            ]
+          }
+        ]
+      },
+      "contract_audit": {
+        "type": "object",
+        "question_answer_aligned": true,
+        "no_unasked_required_facts": true,
+        "complete_minimal_reference": true,
+        "independent_answer_satisfies_question": true,
+        "obligations_correct": true,
+        "each_call_required_by_question": true,
+        "reason": "The question asks for discounted prices for EcoPCB Creator and AI Cirku-Tech, and the discount for CircuitAI Innovator. The gold answer provides exactly these facts: EcoPCB Creator at $3,149.91, AI Cirku-Tech at $7,154.87, both with 10% discounts, and CircuitAI Innovator with a 5% discount. No extra facts are included. The independent answer covers all requested items accurately. The obligations correctly extract the required facts from the single call, which supplies all requested information. The call is necessary and sufficient.",
+        "unasked_gold_claims": [],
+        "gold_claim_checks": [
+          {
+            "claim": "EcoPCB Creator at $3,149.91",
+            "question_span": "What discounted prices did TechPulse quote GreenWave Circuits for EcoPCB Creator",
+            "required_by_question": true
+          },
+          {
+            "claim": "AI Cirku-Tech at $7,154.87",
+            "question_span": "and AI Cirku-Tech",
+            "required_by_question": true
+          },
+          {
+            "claim": "10% discounts on EcoPCB Creator and AI Cirku-Tech",
+            "question_span": "What discounted prices did TechPulse quote GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech",
+            "required_by_question": true
+          },
+          {
+            "claim": "CircuitAI Innovator has a 5% discount",
+            "question_span": "what discount applies to CircuitAI Innovator?",
+            "required_by_question": true
+          }
+        ]
+      }
+    },
+    "contract_checked": true
+  }
+]

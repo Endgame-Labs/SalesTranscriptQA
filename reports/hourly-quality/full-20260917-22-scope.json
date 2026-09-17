@@ -1,0 +1,222 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "dab13a32115a62126a6147a4e7844ced7b7208df23dd70219083785131fad51f",
+  "questions": 2,
+  "counts": {
+    "pass": 2
+  },
+  "estimated_usd": 0.28000796,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-8003cf84c0ab7e10",
+      "question": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+      "gold_answer": "First call: pricing is designed to be transparent and comprehensive to help budget planning. Second call: no detailed pricing yet during discovery, but competitive and flexible pricing models are planned.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrnpIAC",
+        "b2b:a05Wt000003St1VIAS",
+        "b2b:a05Wt000003StOAIA0",
+        "b2b:a05Wt000003SuLsIAK",
+        "b2b:a05Wt000003Suk7IAC",
+        "b2b:a05Wt000003SvD6IAK",
+        "b2b:a05Wt000003SvRbIAK",
+        "b2b:a05Wt000003SvoEIAS",
+        "b2b:a05Wt000003SvxpIAC",
+        "b2b:a05Wt000003SxBfIAK",
+        "b2b:a05Wt000003SxZqIAK",
+        "b2b:a05Wt000003SxZrIAK",
+        "b2b:a05Wt000003SxjYIAS",
+        "b2b:a05Wt000003SxjZIAS",
+        "b2b:a05Wt000003SyHaIAK",
+        "b2b:a05Wt000003SyHbIAK",
+        "b2b:a05Wt000003SyMDIA0",
+        "b2b:a05Wt000003SydzIAC",
+        "b2b:a05Wt000003SyivIAC",
+        "b2b:a05Wt000003SyxGIAS",
+        "b2b:a05Wt000003Sz3nIAC",
+        "b2b:a05Wt000003SzATIA0",
+        "b2b:a05Wt000003SzQQIA0",
+        "b2b:a05Wt000003T035IAC",
+        "b2b:a05Wt000003T0MTIA0",
+        "b2b:a05Wt000003T10sIAC",
+        "b2b:a05Wt000003T1DdIAK",
+        "b2b:a05Wt000003T2HqIAK",
+        "b2b:a05Wt000003T2HrIAK",
+        "b2b:a05Wt000003T2HsIAK",
+        "b2b:a05Wt000003T2hdIAC",
+        "b2b:a05Wt000003T41kIAC",
+        "b2b:a05Wt000003T4L6IAK",
+        "b2b:a05Wt000003T4WUIA0",
+        "b2b:a05Wt000003T4ZcIAK",
+        "b2b:a05Wt000003T4ZdIAK",
+        "b2b:a05Wt000003T4coIAC",
+        "b2b:a05Wt000003T4cpIAC",
+        "b2b:a05Wt000003T4cqIAC",
+        "b2b:a05Wt000003T4eQIAS",
+        "b2b:a05Wt000003T4g1IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Amir Haddad spoke with Yusuf Al-Hassan at MedTech Advances in exactly two calls (2024-03-13 and 2024-03-20, opportunity MedTech EDA Expansion). In the first he addressed pricing transparency; in the second he deferred detailed pricing but promised competitive, flexible pricing models.",
+        "answers": [
+          {
+            "answer": "In their first call (March 13, 2024), Amir told Yusuf that transparency and predictability are key to TechPulse, and that their pricing strategy is designed to be clear and comprehensive to help MedTech plan budgets effectively, with more detail to come later. In their second call (March 20, 2024), when Yusuf asked about flexible pricing options, Amir said that since they were still in the discovery phase he wouldn't go into detailed pricing yet, but assured Yusuf that TechPulse aims to provide competitive and flexible pricing models so MedTech can scale according to its needs without overextending its budget.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0MTIA0",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2024-03-13T09:52:50] Yusuf Al-Hassan: I see. One thing we've noticed is that some companies aren't very transparent with pricing, which complicates our financial forecasting."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4ZcIAK",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2024-03-20T14:02:20] Yusuf Al-Hassan: Customization is crucial for us since our projects can vary greatly. What about pricing? Are there flexible pricing options?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Amir (Haddad), Yusuf Al-Hassan, and MedTech Advances, and asks about 'their two calls.' Exactly two calls in the data feature Amir Haddad speaking with Yusuf Al-Hassan at MedTech Advances: b2b:a05Wt000003T0MTIA0 (2024-03-13) and b2b:a05Wt000003T4ZcIAK (2024-03-20), both under opportunity 'MedTech EDA Expansion.' In the first call, Amir told Yusuf that TechPulse's pricing strategy is designed to be clear and comprehensive to help with budget planning, but deferred detailed pricing to a later discussion. In the second call, Amir stated they were still in the discovery phase and would not go into detailed pricing yet, but assured Yusuf of competitive and flexible pricing models that allow scaling without overextending the budget.",
+        "answers": [
+          {
+            "answer": "In the first call (2024-03-13), Amir told Yusuf that transparency and predictability are key to TechPulse, and that their pricing strategy is designed to be clear and comprehensive to help MedTech plan budgets effectively, but he deferred going over pricing in more detail to a later time. In the second call (2024-03-20), Amir told Yusuf that they were still in the discovery phase and would not go into detailed pricing just yet, but assured him that TechPulse aims to provide competitive and flexible pricing models so MedTech can scale according to its needs without overextending its budget.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0MTIA0",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2024-03-13T09:52:50] Yusuf Al-Hassan: I see. One thing we've noticed is that some companies aren't very transparent with pricing, which complicates our financial forecasting.\n[2024-03-13T09:53:05] Amir Haddad: I understand that concern. Transparency and predictability are key to us, which is why our pricing strategy is designed to be clear and comprehensive, helping you plan budgets effectively. But we can go over that in more detail later."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4ZcIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2024-03-20T14:02:20] Yusuf Al-Hassan: Customization is crucial for us since our projects can vary greatly. What about pricing? Are there flexible pricing options?\n[2024-03-20T14:02:38] Amir Haddad: While we’re still in the discovery phase and won’t go into detailed pricing just yet, I can assure you we aim to provide competitive and flexible pricing models. This way, you can scale according to your needs without overextending your budget."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same two commitments: (1) In the first call, Amir stated pricing is designed to be transparent/clear and comprehensive to help MedTech plan budgets, with more detail deferred; (2) In the second call, Amir said they were still in the discovery phase so no detailed pricing yet, but assured competitive and flexible pricing models so MedTech can scale without overextending its budget. The reference captures both requested facts: first call – transparent and comprehensive pricing for budget planning; second call – no detailed pricing during discovery but competitive and flexible models planned. Minor wording differences (e.g., 'predictability' mentioned in answers but not reference) do not alter the core requested facts, and no requested commitment is missing or substituted."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-83aad5202f9c63d7",
+      "question": "What discounted prices did TechPulse quote GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and what discount applies to CircuitAI Innovator?",
+      "gold_answer": "EcoPCB Creator at $3,149.91 and AI Cirku-Tech at $7,154.87 with 10% discounts; CircuitAI Innovator has a 5% discount.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrcMIAS",
+        "b2b:a05Wt000003SrhFIAS",
+        "b2b:a05Wt000003SuiMIAS",
+        "b2b:a05Wt000003Sv9iIAC",
+        "b2b:a05Wt000003SwDwIAK",
+        "b2b:a05Wt000003SwSTIA0",
+        "b2b:a05Wt000003SyfVIAS",
+        "b2b:a05Wt000003SyfWIAS",
+        "b2b:a05Wt000003SztJIAS",
+        "b2b:a05Wt000003T0J4IAK",
+        "b2b:a05Wt000003T0SlIAK",
+        "b2b:a05Wt000003T0SmIAK",
+        "b2b:a05Wt000003T0aoIAC",
+        "b2b:a05Wt000003T15TIAS",
+        "b2b:a05Wt000003T1F8IAK",
+        "b2b:a05Wt000003T1OnIAK",
+        "b2b:a05Wt000003T1QPIA0",
+        "b2b:a05Wt000003T1S1IAK",
+        "b2b:a05Wt000003T1TdIAK",
+        "b2b:a05Wt000003T1VFIA0",
+        "b2b:a05Wt000003T1WrIAK",
+        "b2b:a05Wt000003T1YTIA0",
+        "b2b:a05Wt000003T1a5IAC",
+        "b2b:a05Wt000003T1bhIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 4,
+            "normalized_end": 5
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 10,
+            "normalized_end": 11
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (2023-03-15, Carlos Nunez, GreenWave Digital Transformation opportunity) quotes discounted prices for EcoPCB Creator and AI Cirku-Tech and states the discount on CircuitAI Innovator. Other calls mention the 10% discount without prices or discuss different products/opportunities.",
+        "answers": [
+          {
+            "answer": "TechPulse quoted a 10% discount on both products: EcoPCB Creator at $3,149.91 and AI Cirku-Tech at $7,154.87 for GreenWave's quantities. CircuitAI Innovator comes with a 5% discount due to high demand.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuiMIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-03-15T09:31:30] Carlos Nunez: Of course, Hiroko. I can walk you through that. Currently, we're proposing a 10% discount on the EcoPCB Creator and AI Cirku-Tech. This brings EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87 for your quantities. OptiPower Max also comes with a 10% discount."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuiMIAS",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-03-15T09:34:30] Carlos Nunez: Yes, CircuitAI Innovator stands out for its advanced algorithms which enhance design precision. It’s optimized for creating sustainable electronic products, aligning perfectly with your goals. While it comes with a 5% discount due to high demand, the investment pays off with increased efficiency and reduced errors in your design process."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks for discounted prices quoted by TechPulse to GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, plus the discount on CircuitAI Innovator. The only call that provides all three specific figures is b2b:a05Wt000003SuiMIAS (2023-03-15, Carlos Nunez with Hiroko Matsumoto, opportunity 'GreenWave Digital Transformation'). Line 4 gives the 10% discount bringing EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87, and line 10 states CircuitAI Innovator carries a 5% discount. No other call supplies these exact dollar amounts or the CircuitAI Innovator discount percentage for GreenWave Circuits.",
+        "answers": [
+          {
+            "answer": "TechPulse quoted GreenWave Circuits a 10% discount on both EcoPCB Creator and AI Cirku-Tech, bringing EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87 for the proposed quantities. CircuitAI Innovator carries a 5% discount (due to high demand).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuiMIAS",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2023-03-15T09:31:30] Carlos Nunez: Of course, Hiroko. I can walk you through that. Currently, we're proposing a 10% discount on the EcoPCB Creator and AI Cirku-Tech. This brings EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87 for your quantities. OptiPower Max also comes with a 10% discount."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuiMIAS",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2023-03-15T09:34:30] Carlos Nunez: Yes, CircuitAI Innovator stands out for its advanced algorithms which enhance design precision. It’s optimized for creating sustainable electronic products, aligning perfectly with your goals. While it comes with a 5% discount due to high demand, the investment pays off with increased efficiency and reduced errors in your design process."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same discounted prices (EcoPCB Creator at $3,149.91 and AI Cirku-Tech at $7,154.87) with a 10% discount for GreenWave Circuits, and both state CircuitAI Innovator carries a 5% discount due to high demand. The reference also covers all three requested facts: the two discounted prices with the 10% discount and the 5% discount for CircuitAI Innovator. No requested commitment is missing or substituted in either answer or the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

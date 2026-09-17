@@ -1,0 +1,461 @@
+[
+  {
+    "question_id": "b2b-multi_call-9152363818a97e8a",
+    "question": "Across the two EvoTrend Systems calls with Hans Fischer, what flexibility concern did Hans raise about competitors in the initial discussion, and which competitor did he later name as adaptable, with what differentiation did Kwame offer against it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Hans Fischer's flexibility concern about competitors in the initial EvoTrend Systems call, the competitor he later named as adaptable, and the differentiation Kwame offered against that competitor",
+        "relationship": "single competitive-comparison issue tracked across two calls: the concern, the named competitor, and the response are all parts of the same competitive positioning discussion",
+        "reason": "The question ties together one coherent business issue\u2014competitive flexibility and how to differentiate against it\u2014across two calls, not merely the same account."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sy2uIAC",
+                "fact": "Hans raised a flexibility concern that competitors tailor features to specific niche needs.",
+                "why_other_call_cannot_supply_it": "The second call does not mention this initial concern about competitors tailoring features to niche needs; it focuses on security and later names FlexEDA."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T10fIAC",
+                "fact": "Hans later named FlexEDA as adaptable, and Kwame differentiated by offering customizable, user-friendly products like OptiPower Manager with abundant support and training.",
+                "why_other_call_cannot_supply_it": "The first call does not mention FlexEDA or the specific differentiation regarding support and training for OptiPower Manager."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the initial flexibility concern and the later named competitor with differentiation. These facts are sourced from different calls and are not redundant; each call provides unique information that the other lacks."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sy2uIAC",
+                  "fact": "Hans raised a flexibility concern that competitors tailor features to specific niche needs.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention this initial concern about competitors tailoring features to niche needs; it focuses on security and later names FlexEDA."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T10fIAC",
+                  "fact": "Hans later named FlexEDA as adaptable, and Kwame differentiated by offering customizable, user-friendly products like OptiPower Manager with abundant support and training.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention FlexEDA or the specific differentiation regarding support and training for OptiPower Manager."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the initial flexibility concern and the later named competitor with differentiation. These facts are sourced from different calls and are not redundant; each call provides unique information that the other lacks."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sy2uIAC",
+                "fact": "Hans raised that competitors are accommodating in tailoring features to specific niche needs (flexibility concern in the initial call)",
+                "why_other_call_cannot_supply_it": "The second call contains no mention of competitors tailoring features to niche needs; it only discusses security comparisons and FlexEDA adaptability."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T10fIAC",
+                "fact": "Hans later named FlexEDA as adaptable, and Kwame differentiated via a customizable, user-friendly approach with products like OptiPower Manager that include abundant support and training",
+                "why_other_call_cannot_supply_it": "The first call never names FlexEDA and contains no differentiation response against it."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information across two calls: the initial flexibility concern (only in call 1) and the later naming of FlexEDA plus Kwame's differentiation (only in call 2). Neither call alone suffices."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sy2uIAC",
+                  "fact": "Hans raised that competitors are accommodating in tailoring features to specific niche needs (flexibility concern in the initial call)",
+                  "why_other_call_cannot_supply_it": "The second call contains no mention of competitors tailoring features to niche needs; it only discusses security comparisons and FlexEDA adaptability."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T10fIAC",
+                  "fact": "Hans later named FlexEDA as adaptable, and Kwame differentiated via a customizable, user-friendly approach with products like OptiPower Manager that include abundant support and training",
+                  "why_other_call_cannot_supply_it": "The first call never names FlexEDA and contains no differentiation response against it."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information across two calls: the initial flexibility concern (only in call 1) and the later naming of FlexEDA plus Kwame's differentiation (only in call 2). Neither call alone suffices."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Call 1 (2023-09-25) provides the initial flexibility concern: Hans notes competitors are 'quite accommodating in tailoring features to specific niche needs.' Call 2 (2023-10-01) provides the named competitor FlexEDA ('quite adaptable to our specific tech requirements') and Kwame's differentiation ('customizable and user-friendly approach\u2026 OptiPower Manager\u2026 abundant support and training'). Each source contributes an exclusive requested fact. The question is scoped to a specific account/contact and a plausible competitive-intelligence need. The gold answer accurately reflects all three requested elements without unasked extras. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Hans Fischer stating 'some competitors are quite accommodating in tailoring features to specific niche needs' and asking how CloudLink Designer handles flexibility, which matches the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": false,
+            "reason": "The quote only contains Hans Fischer's question naming FlexEDA as 'quite adaptable to our specific tech requirements.' The answer_claim also asserts that Kwame differentiated via a customizable, user-friendly approach, abundant support and training, and cited OptiPower Manager. None of Kwame's response appears in the cited passage (lines 11\u201312 only). A question does not establish its answer, and no adjacent uncited line may be assumed to supply those facts."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer's first part (competitors tailor features to niche needs) is supported by index 0, and the naming of FlexEDA as adaptable is supported by index 1. However, the gold_answer's claim that Kwame differentiated via customizable, user-friendly products like OptiPower Manager with abundant support and training is not present in any supplied citation. Index 1's quote ends with Hans's question; Kwame's response is never quoted. Therefore the combined evidence does not support every factual claim in the gold_answer."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-8003cf84c0ab7e10",
+    "question": "What did Amir tell Yusuf Al-Hassan at MedTech Advances about pricing in each of their two calls?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Amir told Yusuf Al-Hassan about pricing across their two calls",
+        "relationship": "Two-call comparison of the same business issue (pricing) with the same contact",
+        "reason": "Both calls concern the same topic\u2014pricing\u2014so the multi-call request addresses one coherent business issue, not two unrelated lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0MTIA0",
+                "fact": "Amir stated pricing strategy is designed to be clear and comprehensive, helping budget planning.",
+                "why_other_call_cannot_supply_it": "The second call explicitly defers detailed pricing and only mentions competitive/flexible models, not the transparency/comprehensiveness for budget planning."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4ZcIAK",
+                "fact": "Amir said they are still in discovery phase and won't go into detailed pricing yet, but aim to provide competitive and flexible pricing models.",
+                "why_other_call_cannot_supply_it": "The first call does not mention discovery phase deferral or competitive/flexible models; it only discusses transparency and budget planning."
+              }
+            ],
+            "reason": "The question asks for pricing information in each of the two calls, and the two calls provide substantively different pricing statements: the first emphasizes transparency/comprehensiveness for budget planning, while the second explicitly defers detailed pricing and introduces competitive/flexible models. These are distinct requested facts, each only present in one call, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0MTIA0",
+                  "fact": "Pricing is designed to be transparent and comprehensive to help budget planning.",
+                  "why_other_call_cannot_supply_it": "The second call only mentions that detailed pricing is not yet available and that competitive/flexible models are planned, without stating the transparency/comprehensiveness aspect."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4ZcIAK",
+                  "fact": "No detailed pricing yet during discovery, but competitive and flexible pricing models are planned.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention the lack of detailed pricing or the planned competitive/flexible models; it only states the transparency/comprehensiveness of the pricing strategy."
+                }
+              ],
+              "reason": "The question explicitly asks for what Amir told Yusuf about pricing in each of the two calls, and the two calls contain substantively different statements about pricing: the first describes the pricing strategy as transparent and comprehensive, while the second indicates that detailed pricing is not yet available but competitive and flexible models are planned. These are distinct facts that cannot be derived from the other call, so both calls are necessary to answer the question fully."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0MTIA0",
+                  "fact": "Amir stated pricing strategy is designed to be clear and comprehensive, helping budget planning.",
+                  "why_other_call_cannot_supply_it": "The second call explicitly defers detailed pricing and only mentions competitive/flexible models, not the transparency/comprehensiveness for budget planning."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4ZcIAK",
+                  "fact": "Amir said they are still in discovery phase and won't go into detailed pricing yet, but aim to provide competitive and flexible pricing models.",
+                  "why_other_call_cannot_supply_it": "The first call does not mention discovery phase deferral or competitive/flexible models; it only discusses transparency and budget planning."
+                }
+              ],
+              "reason": "The question asks for pricing information in each of the two calls, and the two calls provide substantively different pricing statements: the first emphasizes transparency/comprehensiveness for budget planning, while the second explicitly defers detailed pricing and introduces competitive/flexible models. These are distinct requested facts, each only present in one call, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0MTIA0",
+                "fact": "Amir said the pricing strategy is designed to be clear/transparent and comprehensive to help with budget planning.",
+                "why_other_call_cannot_supply_it": "The second call only discusses pricing during discovery (no detailed pricing yet, competitive/flexible models planned) and never mentions transparency or budget-planning design."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4ZcIAK",
+                "fact": "Amir said they won't go into detailed pricing yet during the discovery phase, but aim to provide competitive and flexible pricing models for scaling.",
+                "why_other_call_cannot_supply_it": "The first call contains no mention of the discovery-phase pricing stance or competitive/flexible models; it only addresses pricing transparency."
+              }
+            ],
+            "reason": "The question explicitly asks what Amir said about pricing in each of the two calls. Each call contains a distinct pricing statement (transparency/comprehensiveness vs. deferred detailed pricing with competitive/flexible models), and neither call contains the other's statement, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0MTIA0",
+                  "fact": "Amir said the pricing strategy is designed to be clear/transparent and comprehensive to help with budget planning.",
+                  "why_other_call_cannot_supply_it": "The second call only discusses pricing during discovery (no detailed pricing yet, competitive/flexible models planned) and never mentions transparency or budget-planning design."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T4ZcIAK",
+                  "fact": "Amir said they won't go into detailed pricing yet during the discovery phase, but aim to provide competitive and flexible pricing models for scaling.",
+                  "why_other_call_cannot_supply_it": "The first call contains no mention of the discovery-phase pricing stance or competitive/flexible models; it only addresses pricing transparency."
+                }
+              ],
+              "reason": "The question explicitly asks what Amir said about pricing in each of the two calls. Each call contains a distinct pricing statement (transparency/comprehensiveness vs. deferred detailed pricing with competitive/flexible models), and neither call contains the other's statement, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Amir told Yusuf about pricing in each of two calls. Call 1 (2024-03-13): Amir states pricing strategy is 'designed to be clear and comprehensive, helping you plan budgets effectively' \u2014 matches gold answer's 'transparent and comprehensive to help budget planning.' Call 2 (2024-03-20): Amir says 'we're still in the discovery phase and won't go into detailed pricing just yet' but assures 'competitive and flexible pricing models' \u2014 matches gold answer. Each call contributes an exclusive pricing fact; both sources are required. The question naturally identifies the rep, contact, and account, and a sales rep would plausibly want to recall pricing commitments across calls. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Amir Haddad in call b2b:a05Wt000003T0MTIA0 (2024-03-13) explicitly states 'our pricing strategy is designed to be clear and comprehensive, helping you plan budgets effectively.' This directly supports the answer_claim that pricing is designed to be clear/comprehensive to help budget planning. The speaker is Amir, the contact is Yusuf Al-Hassan at MedTech Advances per metadata, and this is the first call chronologically."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Amir Haddad in call b2b:a05Wt000003T4ZcIAK (2024-03-20) explicitly states 'While we're still in the discovery phase and won't go into detailed pricing just yet, I can assure you we aim to provide competitive and flexible pricing models.' This directly supports the answer_claim that no detailed pricing is provided during discovery but competitive and flexible pricing models are planned. The speaker is Amir, the contact is Yusuf Al-Hassan at MedTech Advances per metadata, and this is the second call chronologically."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 supports the first-call claim (transparent, comprehensive pricing to help budget planning), and evidence index 1 supports the second-call claim (no detailed pricing yet during discovery, but competitive and flexible pricing models are planned). The metadata confirms both calls involve Amir Haddad speaking with Yusuf Al-Hassan at MedTech Advances, and the chronological order (March 13 then March 20) matches 'first call' and 'second call' in the gold_answer. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5bf157cc5add1cf5",
+    "question": "What discounts did TechPulse offer Circuit Dynamics on the AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro packages, and what did Mohamed commit to regarding a longer-term relationship discount?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discounts offered on the AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro packages, plus Mohamed's commitment regarding a longer-term relationship discount",
+        "relationship": "single coherent commercial negotiation: the package discounts and the longer-term relationship discount are parts of the same pricing discussion",
+        "reason": "All requested facts concern the same commercial quote/negotiation between TechPulse and Circuit Dynamics; the multi-package discount lookup and the relationship-discount commitment are one pricing topic, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about specific discounts (10% and 5%) on three named packages and Mohamed's commitment regarding a longer-term relationship discount. The transcript confirms Mohamed offered 'competitive discounts of 10% and 5%' on the AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro packages, and agreed to 'take this back for internal consideration' regarding a longer-term relationship discount. The gold answer accurately reflects these facts. The question is naturally worded, scoped to a specific account (Circuit Dynamics) and opportunity, and a rep/AM would plausibly want to recall these pricing terms. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Mohamed Ahmed explicitly states 'we're offering competitive discounts of 10% and 5%' on the 'AI Cirku-Tech, VeriSim Express, and SecureAnalytics Pro packages,' directly supporting the answer_claim about the specific discount percentages and the three named packages."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Mohamed Ahmed says 'Let me take this back for internal consideration, and we can see what the best path forward is' in the context of 'longer-term collaboration' pricing adjustments. This supports the claim that he will take the longer-term relationship discount request back for internal consideration and loop back. The phrase 'we can see what the best path forward is' implies a follow-up, consistent with 'loop back.'"
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states '10% and 5% discounts on the three packages' which is directly supported by evidence index 0. It also states 'Mohamed agreed to take a possible longer-term relationship discount back for internal consideration and follow up,' which is supported by evidence index 1 where Mohamed says he will take it back for internal consideration and see the best path forward. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-83aad5202f9c63d7",
+    "question": "What discounted prices did TechPulse quote GreenWave Circuits for EcoPCB Creator and AI Cirku-Tech, and what discount applies to CircuitAI Innovator?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Discounted prices quoted for EcoPCB Creator and AI Cirku-Tech, plus the discount applicable to CircuitAI Innovator, all quoted by TechPulse to GreenWave Circuits",
+        "relationship": "single coherent commercial quote breakdown covering products in the same quote",
+        "reason": "The question asks for a quote breakdown (discounted prices and discount) for products in one commercial quote to the same customer; this is a coherent set of commercial terms, not independent lookups joined artificially."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for specific discounted prices and discount percentages for three products quoted by TechPulse to GreenWave Circuits. The dialogue confirms EcoPCB Creator at $3,149.91 and AI Cirku-Tech at $7,154.87 (both 10% discounts) and CircuitAI Innovator at 5% discount. The gold answer matches exactly. The question is naturally phrased, scoped to a clear account/vendor relationship, and a rep would plausibly need to recall these pricing details. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Carlos Nunez explicitly states a 10% discount on EcoPCB Creator and AI Cirku-Tech, bringing EcoPCB Creator to $3,149.91 and AI Cirku-Tech to $7,154.87. This directly supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Carlos Nunez explicitly states that CircuitAI Innovator 'comes with a 5% discount due to high demand.' This directly supports the answer_claim of a 5% discount for CircuitAI Innovator."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states EcoPCB Creator at $3,149.91 and AI Cirku-Tech at $7,154.87 with 10% discounts, and CircuitAI Innovator has a 5% discount. Evidence index 0 confirms the 10% discount and exact prices for EcoPCB Creator and AI Cirku-Tech. Evidence index 1 confirms the 5% discount for CircuitAI Innovator. All factual claims in the gold_answer are fully supported by the combined cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-853d3fa9393161ac",
+    "question": "What showroom appointment was scheduled with Oliver Davis, and which two vehicles will be ready for him to see?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Details of the showroom appointment scheduled with Oliver Davis and the two vehicles that will be ready for him to view",
+        "relationship": "single coherent request: timing/logistics and content of one appointment",
+        "reason": "Both parts describe the same single meeting\u2014when it is scheduled and what will be shown\u2014so it is one coherent lookup, not two independent requests."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the scheduled showroom appointment time and the two vehicles to be ready. The transcript confirms Friday 2 PM and both the 2021 Audi Q7 and 2021 Volvo XC60. A sales rep would plausibly need to confirm appointment logistics and vehicle prep. Wording is natural, scope is clear (named customer, specific appointment), and the answer states exactly the requested facts with no extras. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jamal Johnson explicitly states 'Friday afternoon fits perfectly. Let's set it for 2 PM. I'll have both the Audi Q7 and the Volvo XC60 ready for you to check out.' This directly supports the claim of a Friday 2 PM appointment with two vehicles (Audi Q7 and Volvo XC60) ready. The metadata confirms the account is Oliver Davis and the call date is 2023-02-22, consistent with scheduling a Friday appointment. The quote names both vehicles and the time, matching the answer_claim."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer specifies 'the 2021 Audi Q7 and the 2021 Volvo XC60,' including the model year '2021' for both vehicles. However, the cited evidence only mentions 'the Audi Q7 and the Volvo XC60' without any year designation. Since no supplied citation establishes the 2021 model year for either vehicle, the gold_answer contains factual claims (the specific year) not supported by the provided evidence. The Friday 2 PM appointment and the two vehicle models are supported, but the year qualifier is not."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-0864c689170634f0",
+    "question": "What did Mia Anderson raise about AutoElite's service delivery, and how did Mohammed respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What concern Mia Anderson raised about AutoElite's service delivery and how Mohammed responded to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer's concern with the rep's response to that same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection raised by Mia Anderson about AutoElite's service delivery and Mohammed's response, which a rep/account manager would plausibly want to review for QA. The dialogue at 16:03:05 shows Mia citing feedback about inconsistent service delivery, and at 16:03:25 Mohammed acknowledges internal policy miscommunications while affirming ongoing improvement efforts. The gold answer captures both parts precisely without unasked extras. Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": false,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": false,
+            "reason": "The quoted passage only contains Mia Anderson's statement raising feedback about inconsistent service delivery. It does not include any response from Mohammed. The answer_claim attributes to Mohammed an acknowledgment of internal policy miscommunications and a statement about working to improve, but none of that appears in the cited quote. The quote is solely Mia's question/observation (lines 11-12), and no adjacent or additional cited line supplies Mohammed's reply."
+          }
+        ],
+        "answer_supported": false,
+        "reason": "The gold_answer has two parts: (1) Mia cited feedback about inconsistent service delivery, and (2) Mohammed acknowledged internal policy miscommunications and said they are continually working to improve and ensure satisfaction. The single cited evidence (index 0) only supports part (1). There is no cited evidence containing Mohammed's response, so the second half of the gold_answer\u2014his acknowledgment of policy miscommunications and commitment to improvement\u2014is unsupported by the supplied citations."
+      }
+    }
+  }
+]
