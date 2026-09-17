@@ -1,0 +1,357 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "1290eace19ef6b42f041c51ffe1c442d859a0dd66d5b139c8b2d99414a19994f",
+  "questions": 3,
+  "counts": {
+    "pass": 2,
+    "fail": 1
+  },
+  "estimated_usd": 0.37439519,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-af2ba0e681fad38c",
+      "question": "For CyberWave Security, what competitor concern did Lucas raise about Adaptive Design Solutions, and what two things did Chung Wei ask to see in the future proposal?",
+      "gold_answer": "Lucas noted clients' concerns about Adaptive Design Solutions' total cost of ownership; Chung asked for detailed scalability scenarios and clearly defined cost structures in the proposal.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7zIAC",
+        "b2b:a05Wt000003SrcYIAS",
+        "b2b:a05Wt000003StXpIAK",
+        "b2b:a05Wt000003Sto3IAC",
+        "b2b:a05Wt000003SvRZIA0",
+        "b2b:a05Wt000003SxWfIAK",
+        "b2b:a05Wt000003SyHWIA0",
+        "b2b:a05Wt000003SyKZIA0",
+        "b2b:a05Wt000003SyNrIAK",
+        "b2b:a05Wt000003SypLIAS",
+        "b2b:a05Wt000003T032IAC",
+        "b2b:a05Wt000003T033IAC",
+        "b2b:a05Wt000003T0EHIA0",
+        "b2b:a05Wt000003T1DcIAK",
+        "b2b:a05Wt000003T23FIAS",
+        "b2b:a05Wt000003T2JSIA0",
+        "b2b:a05Wt000003T2JTIA0",
+        "b2b:a05Wt000003T2RUIA0",
+        "b2b:a05Wt000003T2WIIA0",
+        "b2b:a05Wt000003T2WJIA0",
+        "b2b:a05Wt000003T2w5IAC",
+        "b2b:a05Wt000003T3vJIAS",
+        "b2b:a05Wt000003T4ZaIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Lucas Almeida appears in calls with Chung Wei; only one of those calls mentions Adaptive Design Solutions (2024-02-19), where he cites total cost of ownership concerns. Only one call (2024-03-01) has Chung Wei stating what he wants in a future proposal: detailed scalability scenarios and clearly defined cost structures.",
+        "answers": [
+          {
+            "answer": "Lucas raised that many of TechPulse's clients have noted concerns about Adaptive Design Solutions' total cost of ownership, contrasting it with TechPulse's AI-powered EDA tools that offer a more favorable TCO. In the later follow-up, Chung Wei asked to see (1) detailed scalability scenarios and (2) clearly defined cost structures in the future proposal, to help internally justify the investment.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvRZIA0",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-03-18T09:31:35] Fatima Hassan: Perfect! I've read some positive things about TechPulse's rapid deployment and innovation. We currently use CircuitWave's services, but their pace in feature introduction has been a bit slow lately."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2JTIA0",
+                "line_start": 14,
+                "line_end": 16,
+                "quote": "[2024-03-01T11:34:00] Lucas Almeida: I'm really glad to hear that feedback. It validates our approach of staying ahead in the market. Is there anything specific you're looking for in our future proposals that we should consider?\n[2024-03-01T11:34:15] Chung Wei: I’d like to see detailed scalability scenarios within the proposal along with clearly defined cost structures. This will help us internally justify the investment."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names specific people (Lucas, Chung Wei) and a specific competitor (Adaptive Design Solutions). Only one call features Lucas Almeida speaking with Chung Wei and mentions Adaptive Design Solutions: call b2b:a05Wt000003SypLIAS (2024-02-19). In that call, Lucas raises the concern about Adaptive Design Solutions' total cost of ownership. The two things Chung Wei asks to see in the future proposal are found in the follow-up call b2b:a05Wt000003T2JTIA0 (2024-03-01), also between Lucas and Chung Wei on the same opportunity, where Chung Wei explicitly requests detailed scalability scenarios and clearly defined cost structures.",
+        "answers": [
+          {
+            "answer": "Lucas raised the concern that many clients have noted issues with Adaptive Design Solutions' total cost of ownership (TCO), contrasting it with TechPulse's more favorable TCO through AI-powered EDA tools. Chung Wei asked to see two things in the future proposal: (1) detailed scalability scenarios and (2) clearly defined cost structures, to help internally justify the investment.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SypLIAS",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2024-02-19T09:46:27] Chung Wei: I see. How does that compare with what Adaptive Design Solutions is doing?\n[2024-02-19T09:46:40] Lucas Almeida: Good question. While Adaptive Design Solutions is making efforts to enhance their offerings, many of our clients have noted concerns about their total cost of ownership. In contrast, our AI-powered EDA tools provide a more favorable TCO, enhancing value right from the start."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2JTIA0",
+                "line_start": 14,
+                "line_end": 17,
+                "quote": "[2024-03-01T11:34:00] Lucas Almeida: I'm really glad to hear that feedback. It validates our approach of staying ahead in the market. Is there anything specific you're looking for in our future proposals that we should consider?\n[2024-03-01T11:34:15] Chung Wei: I’d like to see detailed scalability scenarios within the proposal along with clearly defined cost structures. This will help us internally justify the investment.\n[2024-03-01T11:34:30] Lucas Almeida: Absolutely, Chung. We will ensure that the proposal framework we prepare will address those aspects with clarity and detail. I’ll collaborate closely with our team to tailor it to your specifications."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same competitor concern (clients' concerns about Adaptive Design Solutions' total cost of ownership, contrasted with TechPulse's more favorable TCO via AI-powered EDA tools) and the same two items Chung Wei requested (detailed scalability scenarios and clearly defined cost structures). The reference also covers both requested facts: the TCO concern and the two proposal items. Minor wording differences (e.g., 'Chung' vs. 'Chung Wei') do not affect factual coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-48880a8b7c2003e5",
+      "question": "What customization concern did Aadesh Gupta raise about TechPulse's solutions, and what did Carmen Silva say in response?",
+      "gold_answer": "Aadesh said TechPulse's solutions seem more standardized than competitors'; Carmen responded that a modular approach allows layers of customization to meet specific requirements.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgRIAS",
+        "b2b:a05Wt000003SrSkIAK",
+        "b2b:a05Wt000003SsQRIA0",
+        "b2b:a05Wt000003StWAIA0",
+        "b2b:a05Wt000003StWBIA0",
+        "b2b:a05Wt000003StWCIA0",
+        "b2b:a05Wt000003Su2OIAS",
+        "b2b:a05Wt000003SuldIAC",
+        "b2b:a05Wt000003SvUqIAK",
+        "b2b:a05Wt000003SvUrIAK",
+        "b2b:a05Wt000003SvsyIAC",
+        "b2b:a05Wt000003SvszIAC",
+        "b2b:a05Wt000003SwqpIAC",
+        "b2b:a05Wt000003SxJkIAK",
+        "b2b:a05Wt000003Sxd8IAC",
+        "b2b:a05Wt000003Sxd9IAC",
+        "b2b:a05Wt000003SxoEIAS",
+        "b2b:a05Wt000003T0cUIAS",
+        "b2b:a05Wt000003T0cVIAS",
+        "b2b:a05Wt000003T1C3IAK",
+        "b2b:a05Wt000003T1aBIAS",
+        "b2b:a05Wt000003T1whIAC",
+        "b2b:a05Wt000003T2KuIAK",
+        "b2b:a05Wt000003T2WEIA0",
+        "b2b:a05Wt000003T2j7IAC",
+        "b2b:a05Wt000003T2knIAC",
+        "b2b:a05Wt000003T2xcIAC",
+        "b2b:a05Wt000003T32SIAS",
+        "b2b:a05Wt000003T3aJIAS",
+        "b2b:a05Wt000003T3aKIAS",
+        "b2b:a05Wt000003T3qQIAS",
+        "b2b:a05Wt000003T3s5IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Aadesh Gupta appears in three calls with Carmen Silva, and each contains a distinct customization concern and Carmen's distinct response: (1) 2023-06-28 concern about AI Cirku-Tech's customization flexibility vs. its fast implementation; (2) 2023-07-19 feedback that TechPulse's solutions are more standardized than competitors'; (3) 2023-10-01 question about how customizable the solutions are given competitors' adaptable innovations. The question does not specify which call, so these are competing complete answers.",
+        "answers": [
+          {
+            "answer": "Aadesh Gupta raised that flexibility in customization is crucial in their industry and asked how AI Cirku-Tech handles customization. Carmen Silva responded that while TechPulse's implementation process is faster and can at times compromise customization flexibility, they offer robust support to tailor their solutions as closely as possible to his needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0cUIAS",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-06-28T14:17:42] Aadesh Gupta: That’s encouraging. However, in our industry, flexibility in customization is crucial. How does AI Cirku-Tech handle customization?"
+              }
+            ]
+          },
+          {
+            "answer": "Aadesh Gupta raised the concern that TechPulse's solutions seem a bit more standardized compared to the competition, based on feedback he had received. Carmen Silva acknowledged the need for adaptable solutions, explaining that while some products maintain standardization for efficiency, their modular approach allows layers of customization to meet specific requirements, and proposed exploring which options best fit his needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2xcIAC",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-07-19T10:57:05] Aadesh Gupta: Sounds promising. Customizability is another aspect we've been exploring. Some feedback I've received is that your solutions are a bit more standardized compared to the competition."
+              }
+            ]
+          },
+          {
+            "answer": "Aadesh Gupta raised that QuantumLeap is interested in how customizable TechPulse's solutions are, since some competitors offer quite adaptable innovations. Carmen Silva responded that customizability is key in a continuously evolving field like quantum technology, and that while their solutions are robust and standardized to ensure reliability, they offer extensive customization features that can be tailored to his specific tech requirements (offering to prepare case studies showing real-world applications).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2knIAC",
+                "line_start": 5,
+                "line_end": 8,
+                "quote": "[2023-10-01T10:31:50] Aadesh Gupta: Sounds like a plan. One of the things we've been evaluating is tech innovations and EDA trends. Particularly, we’re interested in how customizable your solutions are since some competitors offer quite adaptable innovations.\n[2023-10-01T10:32:15] Carmen Silva: Absolutely. We understand that customizability is key, especially in a continuously evolving field like quantum technology. While our solutions are very robust and standardized to ensure reliability, we do offer extensive customization features that can be tailored to your specific tech requirements.\n[2023-10-01T10:32:40] Aadesh Gupta: That’s good to hear. It's just that some of the custom options from other providers seemed more aligned with our unique demands. I’m hoping you can illustrate how these features would look in practice."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "multiple",
+        "reason": "Aadesh Gupta raised customization concerns in three separate calls with Carmen Silva (2023-06-28, 2023-07-19, 2023-10-01), all under the same opportunity 'Quantum Leap Design Enhancement.' The question does not specify which call, and each call contains a materially different customization concern and a materially different response from Carmen Silva.",
+        "answers": [
+          {
+            "answer": "In the 2023-06-28 call, Aadesh Gupta asked how AI Cirku-Tech handles customization, noting that 'in our industry, flexibility in customization is crucial.' Carmen Silva responded by acknowledging that while TechPulse's process is faster, 'there can be times where it compromises on customization flexibility,' but added that they 'do offer robust support to tailor our solutions as closely as possible to your needs.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0cUIAS",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-06-28T14:17:42] Aadesh Gupta: That’s encouraging. However, in our industry, flexibility in customization is crucial. How does AI Cirku-Tech handle customization?\n[2023-06-28T14:18:02] Carmen Silva: That's a great question, Aadesh. While our process is faster, there can be times where it compromises on customization flexibility. However, we do offer robust support to tailor our solutions as closely as possible to your needs."
+              }
+            ]
+          },
+          {
+            "answer": "In the 2023-07-19 call, Aadesh Gupta raised the concern that 'some feedback I've received is that your solutions are a bit more standardized compared to the competition.' Carmen Silva responded: 'I understand the need for adaptable solutions. While some of our products maintain standardization for efficiency, our modular approach allows layers of customization to meet specific requirements. Perhaps we could further explore these options to see which best fit your needs.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2xcIAC",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2023-07-19T10:57:05] Aadesh Gupta: Sounds promising. Customizability is another aspect we've been exploring. Some feedback I've received is that your solutions are a bit more standardized compared to the competition.\n[2023-07-19T10:57:25] Carmen Silva: I understand the need for adaptable solutions. While some of our products maintain standardization for efficiency, our modular approach allows layers of customization to meet specific requirements. Perhaps we could further explore these options to see which best fit your needs."
+              }
+            ]
+          },
+          {
+            "answer": "In the 2023-10-01 call, Aadesh Gupta expressed concern about customizability, stating 'some competitors offer quite adaptable innovations' and that 'some of the custom options from other providers seemed more aligned with our unique demands,' hoping Carmen could 'illustrate how these features would look in practice.' Carmen Silva responded that 'customizability is key, especially in a continuously evolving field like quantum technology,' acknowledged their solutions are 'very robust and standardized to ensure reliability,' but emphasized they 'do offer extensive customization features that can be tailored to your specific tech requirements,' and offered to 'prepare some case studies to walk you through real-world applications.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2knIAC",
+                "line_start": 5,
+                "line_end": 8,
+                "quote": "[2023-10-01T10:31:50] Aadesh Gupta: Sounds like a plan. One of the things we've been evaluating is tech innovations and EDA trends. Particularly, we’re interested in how customizable your solutions are since some competitors offer quite adaptable innovations.\n[2023-10-01T10:32:15] Carmen Silva: Absolutely. We understand that customizability is key, especially in a continuously evolving field like quantum technology. While our solutions are very robust and standardized to ensure reliability, we do offer extensive customization features that can be tailored to your specific tech requirements.\n[2023-10-01T10:32:40] Aadesh Gupta: That’s good to hear. It's just that some of the custom options from other providers seemed more aligned with our unique demands. I’m hoping you can illustrate how these features would look in practice."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2c-single_call-c456794682c8894f",
+      "question": "What is the price of the 2024 Tesla Model S in Sara Larson's proposal, and what does the extended warranty cover?",
+      "gold_answer": "$89,999.99; the extended warranty covers electrical and mechanical components against unforeseen repairs.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SJclIAG",
+        "b2c:a05Ws000005SMCUIA4",
+        "b2c:a05Ws000005SMPNIA4",
+        "b2c:a05Ws000005SORDIA4",
+        "b2c:a05Ws000005SOZDIA4",
+        "b2c:a05Ws000005SOvnIAG",
+        "b2c:a05Ws000005SQ3AIAW",
+        "b2c:a05Ws000005SQCqIAO",
+        "b2c:a05Ws000005SQxbIAG",
+        "b2c:a05Ws000005SR0pIAG",
+        "b2c:a05Ws000005SR5gIAG",
+        "b2c:a05Ws000005SRiNIAW",
+        "b2c:a05Ws000005SS4xIAG",
+        "b2c:a05Ws000005SSEcIAO",
+        "b2c:a05Ws000005SSPwIAO",
+        "b2c:a05Ws000005SSg3IAG",
+        "b2c:a05Ws000005SSwCIAW",
+        "b2c:a05Ws000005SSzPIAW",
+        "b2c:a05Ws000005ST4IIAW",
+        "b2c:a05Ws000005STInIAO",
+        "b2c:a05Ws000005STaWIAW",
+        "b2c:a05Ws000005STibIAG",
+        "b2c:a05Ws000005STicIAG",
+        "b2c:a05Ws000005STidIAG",
+        "b2c:a05Ws000005STsGIAW",
+        "b2c:a05Ws000005SUbQIAW",
+        "b2c:a05Ws000005SUjTIAW",
+        "b2c:a05Ws000005SVAtIAO",
+        "b2c:a05Ws000005SVFjIAO",
+        "b2c:a05Ws000005SVvgIAG",
+        "b2c:a05Ws000005SWdDIAW",
+        "b2c:a05Ws000005SWoUIAW",
+        "b2c:a05Ws000005SXB4IAO",
+        "b2c:a05Ws000005SXKkIAO",
+        "b2c:a05Ws000005SXW2IAO",
+        "b2c:a05Ws000005SXhJIAW",
+        "b2c:a05Ws000005SXivIAG",
+        "b2c:a05Ws000005SXkXIAW",
+        "b2c:a05Ws000005SXm9IAG",
+        "b2c:a05Ws000005SXnlIAG",
+        "b2c:a05Ws000005SXpNIAW",
+        "b2c:a05Ws000005SXqzIAG",
+        "b2c:a05Ws000005SXsbIAG",
+        "b2c:a05Ws000005SXuDIAW"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 12,
+            "normalized_end": 13
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 14,
+            "normalized_end": 15
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call (b2c:a05Ws000005SXkXIAW, 2021-12-04, 'Hybrid Luxury Vehicle Acquisition for Sara Larson') states a price for the 2024 Tesla Model S in a proposal and describes what the extended warranty covers. Other calls mention the Tesla without pricing, or give warranty prices for other vehicles, so there is no competing complete answer.",
+        "answers": [
+          {
+            "answer": "In Fatima El-Masry's proposal, the 2024 Tesla Model S is listed at $89,999.99 (with flexible financing and bundled offers including a comprehensive maintenance plan and an extended warranty). The extended warranty plan covers a range of essential components — both electrical and mechanical elements — offering peace of mind against unforeseen repairs so the vehicle remains in peak condition throughout its lifespan.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXkXIAW",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2021-12-04T13:03:40] Fatima El-Masry: For pricing, the 2024 Tesla Model S is listed at $89,999.99, and we also offer flexible financing solutions to help fit this into your budget comfortably. Plus, there are bundled offers that include our comprehensive maintenance plan and an extended warranty to ensure your investment is well protected."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXkXIAW",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2021-12-04T13:04:25] Fatima El-Masry: The extended warranty plan covers a range of essential components, offering peace of mind against unforeseen repairs. This includes both electrical and mechanical elements, ensuring that your vehicle remains in peak condition throughout its lifespan."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about the 2024 Tesla Model S price in Sara Larson's proposal and what the extended warranty covers. Only one call (b2c:a05Ws000005SXkXIAW, dated 2021-12-04, opportunity 'Hybrid Luxury Vehicle Acquisition for Sara Larson') contains a proposal that explicitly includes the 2024 Tesla Model S with a stated price and a description of the extended warranty's coverage. Other calls mention the Tesla Model S but do not provide a proposal price or warranty coverage details for it.",
+        "answers": [
+          {
+            "answer": "In Sara Larson's proposal (presented by Fatima El-Masry on 2021-12-04 under the 'Hybrid Luxury Vehicle Acquisition for Sara Larson' opportunity), the 2024 Tesla Model S is priced at $89,999.99. The extended warranty plan covers a range of essential components, offering peace of mind against unforeseen repairs, including both electrical and mechanical elements, ensuring the vehicle remains in peak condition throughout its lifespan.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXkXIAW",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2021-12-04T13:00:45] Fatima El-Masry: Fantastic! So, we've put together an all-inclusive proposal featuring the 2020 Lexus RX 350, the 2022 Toyota Camry Hybrid, and the 2024 Tesla Model S. We've also included some comprehensive financing solutions, maintenance plans, and extended warranties that align with what we discussed previously."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXkXIAW",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2021-12-04T13:03:40] Fatima El-Masry: For pricing, the 2024 Tesla Model S is listed at $89,999.99, and we also offer flexible financing solutions to help fit this into your budget comfortably. Plus, there are bundled offers that include our comprehensive maintenance plan and an extended warranty to ensure your investment is well protected."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXkXIAW",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2021-12-04T13:04:05] Sara Larson: Thank you, Fatima. I'm interested in learning more about this warranty plan. What does it cover?\n[2021-12-04T13:04:25] Fatima El-Masry: The extended warranty plan covers a range of essential components, offering peace of mind against unforeseen repairs. This includes both electrical and mechanical elements, ensuring that your vehicle remains in peak condition throughout its lifespan."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the price as $89,999.99 and describe the extended warranty as covering electrical and mechanical components against unforeseen repairs. Answer A incorrectly attributes the proposal to Fatima El-Masry rather than Sara Larson, but the substantive facts (price and warranty coverage) match Answer B and the reference. The reference covers both requested facts: the price ($89,999.99) and the warranty coverage (electrical and mechanical components against unforeseen repairs)."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

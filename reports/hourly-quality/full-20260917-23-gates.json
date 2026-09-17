@@ -1,0 +1,466 @@
+[
+  {
+    "question_id": "b2b-multi_call-084aa8f75123be99",
+    "question": "What concern about TechPulse's solutions did Jiro Nakayama of CraftTech Electronics raise in the initial discovery call, and how did his feedback after the product demo address it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Jiro Nakayama raised about TechPulse's solutions in the discovery call and how his post-demo feedback addressed that same concern",
+        "relationship": "objection and follow-up response on the same issue across two calls",
+        "reason": "Both parts concern the same business issue (the raised concern and the demo feedback responding to it), forming a coherent objection-and-response request."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SsQNIA0",
+                "fact": "Jiro Nakayama expressed concern that standardized offerings might lack the customizability and smooth integration CraftTech needs.",
+                "why_other_call_cannot_supply_it": "The second call does not mention any concern about standardized offerings; it only contains positive feedback after the demo."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0pOIAS",
+                "fact": "After the demo, Jiro Nakayama said CloudLink Designer and OptiPower Max integrated seamlessly with existing systems and the interface was user-friendly.",
+                "why_other_call_cannot_supply_it": "The first call does not contain any post-demo feedback; it only includes the initial concern and discussion of needs."
+              }
+            ],
+            "reason": "The question explicitly asks for both the initial concern and how the post-demo feedback addressed it. The first call provides the concern, and the second call provides the feedback. Neither call contains both pieces of information, so both are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SsQNIA0",
+                  "fact": "Jiro Nakayama expressed concern that standardized offerings might lack the customizability and smooth integration CraftTech needs.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention any concern about standardized offerings; it focuses on post-demo feedback and pricing."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0pOIAS",
+                  "fact": "Jiro Nakayama said after the demo that CloudLink Designer and OptiPower Max integrated seamlessly with existing systems and the interface was user-friendly.",
+                  "why_other_call_cannot_supply_it": "The first call does not contain any post-demo feedback; it is the initial discovery call where the concern was raised."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the concern raised in the initial discovery call and the feedback after the product demo. These are temporally separated events with different content, and each call provides one of them exclusively."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SsQNIA0",
+                  "fact": "Jiro Nakayama expressed concern that standardized offerings might lack the customizability and smooth integration CraftTech needs.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention any concern about standardized offerings; it only contains positive feedback after the demo."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0pOIAS",
+                  "fact": "After the demo, Jiro Nakayama said CloudLink Designer and OptiPower Max integrated seamlessly with existing systems and the interface was user-friendly.",
+                  "why_other_call_cannot_supply_it": "The first call does not contain any post-demo feedback; it only includes the initial concern and discussion of needs."
+                }
+              ],
+              "reason": "The question explicitly asks for both the initial concern and how the post-demo feedback addressed it. The first call provides the concern, and the second call provides the feedback. Neither call contains both pieces of information, so both are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SsQNIA0",
+                "fact": "Jiro raised concern that standardized offerings may lack the customizability and smooth integration CraftTech needs",
+                "why_other_call_cannot_supply_it": "The demo follow-up call contains no mention of the initial concern; it only reports positive demo feedback"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T0pOIAS",
+                "fact": "After the demo, Jiro said CloudLink Designer and OptiPower Max integrated seamlessly with existing systems and the interface was user-friendly",
+                "why_other_call_cannot_supply_it": "The discovery call predates the demo and only contains the concern, not the post-demo resolution"
+              }
+            ],
+            "reason": "The question explicitly asks for a concern plus its explicit resolution across two calls: the discovery call supplies the concern about customizability/integration, and the demo follow-up supplies the resolution (seamless integration, user-friendly interface). This is a genuine concern-plus-resolution pair, not a repeated complaint."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SsQNIA0",
+                  "fact": "Jiro raised concern that standardized offerings may lack the customizability and smooth integration CraftTech needs",
+                  "why_other_call_cannot_supply_it": "The demo follow-up call contains no mention of the initial concern; it only reports positive demo feedback"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T0pOIAS",
+                  "fact": "After the demo, Jiro said CloudLink Designer and OptiPower Max integrated seamlessly with existing systems and the interface was user-friendly",
+                  "why_other_call_cannot_supply_it": "The discovery call predates the demo and only contains the concern, not the post-demo resolution"
+                }
+              ],
+              "reason": "The question explicitly asks for a concern plus its explicit resolution across two calls: the discovery call supplies the concern about customizability/integration, and the demo follow-up supplies the resolution (seamless integration, user-friendly interface). This is a genuine concern-plus-resolution pair, not a repeated complaint."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for a concern raised in the discovery call and how post-demo feedback addressed it. Call 1 (2020-09-09) shows Jiro stating 'Standardized offerings sometimes leave us concerned about adaptability' and emphasizing customizability and smooth integration. Call 2 (2020-09-30) shows him confirming CloudLink Designer and OptiPower Max 'integrated seamlessly with our existing systems' and that the interface was 'very user-friendly.' Each call contributes an exclusive requested fact (concern vs. resolution). The gold answer accurately captures both without unasked extras. The question naturally identifies the account (CraftTech Electronics), contact (Jiro Nakayama), and vendor (TechPulse), and a rep would plausibly want to track how an initial objection was resolved. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Jiro Nakayama stating they appreciate high customizability, that competitors offer tailored solutions making integration smoother, and that 'Standardized offerings sometimes leave us concerned about adaptability.' This supports the answer_claim about valuing customizability, concerns about standardized offerings' adaptability, and smoother integration of tailored competitor solutions."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Jiro stating he was 'particularly impressed by how the CloudLink Designer and OptiPower Max integrated seamlessly with our existing systems' and that 'The interface is very user-friendly, which is a big plus.' This directly supports the answer_claim about seamless integration of those two products and the user-friendly interface after the demo."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Jiro was concerned standardized offerings might lack customizability and smooth integration CraftTech needs, and after the demo he said CloudLink Designer and OptiPower Max integrated seamlessly with existing systems and the interface was user-friendly. Evidence index 0 supports the concern about standardized offerings lacking adaptability/customizability and the preference for smoother integration. Evidence index 1 supports the post-demo feedback about seamless integration of CloudLink Designer and OptiPower Max and the user-friendly interface. All factual claims in the gold_answer are covered by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-af2ba0e681fad38c",
+    "question": "For CyberWave Security, what competitor concern did Lucas raise about Adaptive Design Solutions, and what two things did Chung Wei ask to see in the future proposal?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitor concern Lucas raised about Adaptive Design Solutions and the two items Chung Wei asked to see in the future proposal, for CyberWave Security.",
+        "relationship": "Objection and follow-up next steps on the same competitive issue: the proposal requests plausibly respond to the competitor concern about Adaptive Design Solutions.",
+        "reason": "Both parts address the same business issue (the competitive threat from Adaptive Design Solutions and how the proposal should counter it), forming one coherent objection-and-response request rather than two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SypLIAS",
+                "fact": "Lucas raised that clients have concerns about Adaptive Design Solutions' total cost of ownership.",
+                "why_other_call_cannot_supply_it": "The second call does not mention Adaptive Design Solutions or any competitor concern; it only discusses TechPulse's own cost transparency."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2JTIA0",
+                "fact": "Chung Wei asked for detailed scalability scenarios and clearly defined cost structures in the future proposal.",
+                "why_other_call_cannot_supply_it": "The first call does not contain any request for future proposal contents; it only discusses general pricing and scalability without specifying proposal requirements."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a competitor concern raised by Lucas and two specific requests from Chung Wei for the future proposal. These facts are found in separate calls and are not repeated or paraphrased in the other call. The first call contains the competitor concern about Adaptive Design Solutions' TCO, while the second call contains Chung Wei's explicit request for scalability scenarios and cost structures. Neither call provides both facts, so both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SypLIAS",
+                  "fact": "Lucas raised that clients have concerns about Adaptive Design Solutions' total cost of ownership.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention Adaptive Design Solutions or any competitor concern; it only discusses TechPulse's own cost transparency."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2JTIA0",
+                  "fact": "Chung Wei asked for detailed scalability scenarios and clearly defined cost structures in the future proposal.",
+                  "why_other_call_cannot_supply_it": "The first call does not contain any request for future proposal contents; it only discusses general pricing and scalability without specifying proposal requirements."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a competitor concern raised by Lucas and two specific requests from Chung Wei for the future proposal. These facts are found in separate calls and are not repeated or paraphrased in the other call. The first call contains the competitor concern about Adaptive Design Solutions' TCO, while the second call contains Chung Wei's explicit request for scalability scenarios and cost structures. Neither call provides both facts, so both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SypLIAS",
+                "fact": "Lucas noted that many clients have raised concerns about Adaptive Design Solutions' total cost of ownership",
+                "why_other_call_cannot_supply_it": "The second call only contains Chung's generic complaint that competitors haven't been straightforward with costs, with no mention of Adaptive Design Solutions or the TCO concern attributed to clients"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2JTIA0",
+                "fact": "Chung Wei asked to see detailed scalability scenarios and clearly defined cost structures in the future proposal",
+                "why_other_call_cannot_supply_it": "The first call contains no discussion of proposal contents or requests; the proposal request only arises in the follow-up call"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the competitor concern about Adaptive Design Solutions (stated only in the first call) and Chung's two specific proposal requests (stated only in the second call). Neither call alone answers both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SypLIAS",
+                  "fact": "Lucas noted that many clients have raised concerns about Adaptive Design Solutions' total cost of ownership",
+                  "why_other_call_cannot_supply_it": "The second call only contains Chung's generic complaint that competitors haven't been straightforward with costs, with no mention of Adaptive Design Solutions or the TCO concern attributed to clients"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2JTIA0",
+                  "fact": "Chung Wei asked to see detailed scalability scenarios and clearly defined cost structures in the future proposal",
+                  "why_other_call_cannot_supply_it": "The first call contains no discussion of proposal contents or requests; the proposal request only arises in the follow-up call"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the competitor concern about Adaptive Design Solutions (stated only in the first call) and Chung's two specific proposal requests (stated only in the second call). Neither call alone answers both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Call 1: Lucas states 'many of our clients have noted concerns about their total cost of ownership' regarding Adaptive Design Solutions, matching the gold answer. Call 2: Chung Wei explicitly requests 'detailed scalability scenarios within the proposal along with clearly defined cost structures,' matching the gold answer. Each call contributes an exclusive requested fact (competitor TCO concern vs. two proposal items), so both sources are genuinely required. The question naturally identifies the account (CyberWave Security) and participants without artificial date/title preambles, and the answer states precisely the requested facts with no unasked extras."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Lucas Almeida stating 'many of our clients have noted concerns about their total cost of ownership' referring to Adaptive Design Solutions, and contrasting with their own AI-powered EDA tools providing a more favorable TCO. This fully supports the answer_claim about clients' concerns regarding Adaptive Design Solutions' total cost of ownership."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Chung Wei saying 'I'd like to see detailed scalability scenarios within the proposal along with clearly defined cost structures. This will help us internally justify the investment.' This fully supports the answer_claim about Chung Wei asking for detailed scalability scenarios and clearly defined cost structures in the proposal."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Lucas noted clients' concerns about Adaptive Design Solutions' total cost of ownership \u2014 supported by evidence index 0 where Lucas explicitly says 'many of our clients have noted concerns about their total cost of ownership' regarding Adaptive Design Solutions. (2) Chung asked for detailed scalability scenarios and clearly defined cost structures in the proposal \u2014 supported by evidence index 1 where Chung Wei explicitly requests both items. All factual claims in the gold_answer are directly supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-249a85a9267d7c82",
+    "question": "What package did Kofi propose for SkyNet Technologies' $3193 budget, and what installation timeline did he commit to?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The package Kofi proposed for SkyNet Technologies within their $3193 budget and the installation timeline he committed to",
+        "relationship": "Both facts concern the same proposal/deal for the same customer",
+        "reason": "Package and installation timeline are parts of one coherent sales proposal addressing the same opportunity"
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the specific package Kofi proposed within the $3193 budget and the installation timeline commitment. The dialogue confirms Kofi proposed four units of SimuFlow Xtreme plus one AI DesignShift fitting the $3193 budget, and committed to installation within three days. The gold answer states exactly these two facts with no unasked extras. The question naturally identifies the customer (SkyNet Technologies), the rep (Kofi), and the budget, giving adequate scope. Wording is natural and a rep/AM would plausibly want to recall this proposal detail. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Kofi Adomah explicitly states 'four units of SimuFlow Xtreme and one AI DesignShift' and says the package 'perfectly fits your budget.' The context metadata confirms the company is SkyNet Technologies. While the exact dollar figure $3193 is not spoken in this quote, the claim that the package fits the budget is directly supported; the specific budget amount is contextual metadata from the question framing and the quote confirms the package fits 'your budget.'"
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Kofi Adomah states 'we can ensure the process is swift and within your timeline of three days,' directly supporting the claim that installation will be completed within a three-day timeline. The speaker is the salesperson (Kofi) committing to the timeline."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer claims: (1) Four units of SimuFlow Xtreme plus one AI DesignShift \u2013 supported by index 0; (2) within the $3193 budget \u2013 index 0 confirms the package 'perfectly fits your budget' and the metadata identifies the account as SkyNet Technologies; the $3193 figure is the budget referenced in the question and the quote confirms the package fits it; (3) installation completed within three days \u2013 supported by index 1 where Kofi commits to 'within your timeline of three days.' All factual elements of the gold answer are supported by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-48880a8b7c2003e5",
+    "question": "What customization concern did Aadesh Gupta raise about TechPulse's solutions, and what did Carmen Silva say in response?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The customization concern Aadesh Gupta raised about TechPulse's solutions and Carmen Silva's response to it",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer objection with the salesperson's response to that same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific objection (customization/standardization) raised by a named contact and the rep's rebuttal, both clearly present in the single transcript. The gold answer accurately captures Aadesh's concern ('more standardized compared to the competition') and Carmen's response ('modular approach allows layers of customization to meet specific requirements') without adding unasked extras. The question is naturally phrased, adequately scoped to the account/contact, and a rep or AM would plausibly want to review how a customization objection was handled.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Aadesh Gupta stating: 'Some feedback I've received is that your solutions are a bit more standardized compared to the competition.' This matches the answer_claim that Aadesh notes feedback that TechPulse solutions are more standardized than the competition. Speaker attribution, the hedging ('a bit more'), and the framing as received feedback are all preserved."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Carmen Silva saying: 'our modular approach allows layers of customization to meet specific requirements.' This directly supports the answer_claim that Carmen says their modular approach allows layers of customization to meet specific requirements. Speaker attribution and the exact phrasing align."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states (1) Aadesh said TechPulse's solutions seem more standardized than competitors' \u2014 supported by evidence index 0 where Aadesh relays feedback that solutions are 'a bit more standardized compared to the competition.' (2) Carmen responded that a modular approach allows layers of customization to meet specific requirements \u2014 supported by evidence index 1 with Carmen's exact words. Both factual claims in the gold_answer are fully supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-c39dd1fbc18cd357",
+    "question": "What budget and purchase timeline did Henry Thompson give for the Genesis G80?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Henry Thompson's stated budget and purchase timeline for the Genesis G80",
+        "relationship": "single coherent lookup about one customer's purchase intent",
+        "reason": "Budget and timeline are both parts of the same purchase-intent disclosure from one customer regarding one vehicle; natural sales language, no mismatched domain terms."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for budget and purchase timeline for the Genesis G80 from Henry Thompson. The dialogue at 14:32:35 has Henry stating '$50,000 to $55,000' and 'within the next few months,' which the gold answer reproduces precisely with no extra or missing facts. The question is naturally phrased, identifies the customer and vehicle, and a sales rep would plausibly need this info. Single-call set, so both_sources_required is true. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Henry Thompson explicitly states: 'I'm looking to spend around $50,000 to $55,000 and hoping to purchase within the next few months.' This directly supports the answer_claim regarding both the budget range ($50,000\u2013$55,000) and the purchase timeline (within the next few months). The speaker is identified as Henry Thompson, matching the question's subject."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains Henry Thompson's own words stating his budget of $50,000 to $55,000 and his intention to purchase within the next few months. This fully supports the gold_answer's two factual claims: the budget range and the purchase timeline. No additional facts are asserted in the gold_answer beyond what the citation provides."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-c456794682c8894f",
+    "question": "What is the price of the 2024 Tesla Model S in Sara Larson's proposal, and what does the extended warranty cover?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The price of the 2024 Tesla Model S in Sara Larson's proposal and what the extended warranty covers",
+        "relationship": "Both items are components of the same commercial proposal/quote breakdown",
+        "reason": "Price and warranty coverage are parts of one coherent quote breakdown for the same vehicle in the same proposal, not independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the Tesla Model S price and extended-warranty coverage from Sara Larson's proposal. The single call transcript confirms the price as $89,999.99 and the warranty covering electrical and mechanical components against unforeseen repairs. The gold answer matches exactly with no extra or missing facts. The question is naturally phrased, scoped to a specific customer and proposal, and a rep would plausibly need this info. Since question_class is single_call, both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatima El-Masry explicitly states 'the 2024 Tesla Model S is listed at $89,999.99,' which directly supports the answer_claim about the price."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Fatima El-Masry explicitly states the extended warranty 'covers a range of essential components, offering peace of mind against unforeseen repairs. This includes both electrical and mechanical elements,' which directly supports the answer_claim about electrical and mechanical elements against unforeseen repairs."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states the price is $89,999.99 and the extended warranty covers electrical and mechanical components against unforeseen repairs. Evidence index 0 confirms the exact price of $89,999.99 for the 2024 Tesla Model S. Evidence index 1 confirms the extended warranty covers electrical and mechanical elements against unforeseen repairs. The context metadata confirms the call is associated with Sara Larson's account and the opportunity 'Hybrid Luxury Vehicle Acquisition for Sara Larson,' tying the proposal to Sara Larson. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  }
+]
