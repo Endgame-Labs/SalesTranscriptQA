@@ -1,0 +1,487 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "1edb289640756ea7cae91035bb5c2204c6608ed21114dfdef8686ab8ab4021ea",
+  "questions": 5,
+  "counts": {
+    "pass": 4,
+    "fail": 1
+  },
+  "estimated_usd": 0.57608408,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-235bc3c82355a21b",
+      "question": "Across the LiftTech Elevations discussions, what did Terek say about NanoDesign's support services, and what did Cheng Zhang say was appealing about NanoDesign?",
+      "gold_answer": "Terek said NanoDesign's support lacks the responsiveness expected in SLA agreements; Cheng found NanoDesign's vendor model reliability appealing.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sqy5IAC",
+        "b2b:a05Wt000003SrN8IAK",
+        "b2b:a05Wt000003SrN9IAK",
+        "b2b:a05Wt000003SrxKIAS",
+        "b2b:a05Wt000003SsqAIAS",
+        "b2b:a05Wt000003StHdIAK",
+        "b2b:a05Wt000003StHeIAK",
+        "b2b:a05Wt000003StHfIAK",
+        "b2b:a05Wt000003StHgIAK",
+        "b2b:a05Wt000003SuOyIAK",
+        "b2b:a05Wt000003SuOzIAK",
+        "b2b:a05Wt000003SulWIAS",
+        "b2b:a05Wt000003SulXIAS",
+        "b2b:a05Wt000003Sv05IAC",
+        "b2b:a05Wt000003Sv1gIAC",
+        "b2b:a05Wt000003SvCzIAK",
+        "b2b:a05Wt000003SvT5IAK",
+        "b2b:a05Wt000003SvhdIAC",
+        "b2b:a05Wt000003SvrIIAS",
+        "b2b:a05Wt000003Sw0zIAC",
+        "b2b:a05Wt000003Sw2ZIAS",
+        "b2b:a05Wt000003SwAfIAK",
+        "b2b:a05Wt000003SwDrIAK",
+        "b2b:a05Wt000003Swx1IAC",
+        "b2b:a05Wt000003Sx8KIAS",
+        "b2b:a05Wt000003SxEmIAK",
+        "b2b:a05Wt000003SxEnIAK",
+        "b2b:a05Wt000003SxrVIAS",
+        "b2b:a05Wt000003Sxt9IAC",
+        "b2b:a05Wt000003SyHJIA0",
+        "b2b:a05Wt000003SyM7IAK",
+        "b2b:a05Wt000003SyfSIAS",
+        "b2b:a05Wt000003SyfTIAS",
+        "b2b:a05Wt000003SyvcIAC",
+        "b2b:a05Wt000003SyvdIAC",
+        "b2b:a05Wt000003SzDLIA0",
+        "b2b:a05Wt000003SzEwIAK",
+        "b2b:a05Wt000003SzQFIA0",
+        "b2b:a05Wt000003SzemIAC",
+        "b2b:a05Wt000003SzlDIAS",
+        "b2b:a05Wt000003T0AzIAK",
+        "b2b:a05Wt000003T0CbIAK",
+        "b2b:a05Wt000003T0EDIA0",
+        "b2b:a05Wt000003T0FpIAK",
+        "b2b:a05Wt000003T0HRIA0",
+        "b2b:a05Wt000003T0J3IAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Terek Al-Farsi appears in exactly two LiftTech calls, but only in the 2020-11-09 11:30 discovery call does he comment on NanoDesign's support services (line 12). Cheng Zhang's statement about what was appealing about NanoDesign appears only in the 2020-11-09 14:00 call (line 9), where he says NanoDesign's vendor model reliability is appealing. These are unique, non-competing facts that together form one complete aggregate answer.",
+        "answers": [
+          {
+            "answer": "Terek Al-Farsi said that NanoDesign has a solid reputation for vendor stability and a forward-thinking roadmap, but that they often hear NanoDesign's support services lack the responsiveness expected in SLA agreements — an area where TechPulse stands out with its efficient support system. Cheng Zhang said that while TechPulse seems strong with support, the reliability of NanoDesign's vendor model was quite appealing to him.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrN8IAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2020-11-09T11:32:40] Cheng Zhang: That sounds impressive. We're also interested in understanding how your products fare against others like NanoDesign, especially in terms of support services.\n[2020-11-09T11:32:55] Terek Al-Farsi: NanoDesign has a solid reputation for vendor stability and a forward-thinking roadmap. However, we often hear that their support services lack the responsiveness expected in SLA agreements. That's where we stand out with our efficient support system."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyfSIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-11-09T14:02:00] Cheng Zhang: That ties in well. We've been looking at various options, and while TechPulse seems strong with support, the reliability with NanoDesign's vendor model is quite appealing."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about Terek's statements on NanoDesign's support services and Cheng Zhang's statements on what was appealing about NanoDesign. Terek Al-Farsi appears in exactly two calls, both with Cheng Zhang on 2020-11-09 under the 'LiftTech Elevations EDA Partnership' opportunity. In the first call (b2b:a05Wt000003SrN8IAK), Terek directly addresses NanoDesign's support services at line 12. In the second call (b2b:a05Wt000003SyfSIAS), Cheng Zhang states what he finds appealing about NanoDesign at line 9. These are the only calls featuring both named individuals, and the relevant statements are unambiguous.",
+        "answers": [
+          {
+            "answer": "Across the LiftTech Elevations discussions, Terek Al-Farsi said that NanoDesign has a solid reputation for vendor stability and a forward-thinking roadmap, but that their support services often lack the responsiveness expected in SLA agreements, which is where TechPulse stands out with its efficient support system. Cheng Zhang said that the reliability of NanoDesign's vendor model was quite appealing, even while acknowledging that TechPulse seemed strong with support.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SrN8IAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2020-11-09T11:32:40] Cheng Zhang: That sounds impressive. We're also interested in understanding how your products fare against others like NanoDesign, especially in terms of support services.\n[2020-11-09T11:32:55] Terek Al-Farsi: NanoDesign has a solid reputation for vendor stability and a forward-thinking roadmap. However, we often hear that their support services lack the responsiveness expected in SLA agreements. That's where we stand out with our efficient support system."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyfSIAS",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2020-11-09T14:02:00] Cheng Zhang: That ties in well. We've been looking at various options, and while TechPulse seems strong with support, the reliability with NanoDesign's vendor model is quite appealing."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same two requested facts: (1) Terek said NanoDesign's support services lack the responsiveness expected in SLA agreements, and (2) Cheng Zhang said NanoDesign's vendor model reliability was appealing. The wording differs slightly (answer_a frames TechPulse's support as a contrast, answer_b frames it as an acknowledgment), but the core commitments are identical. The reference also captures both requested facts: Terek's comment about support lacking SLA responsiveness and Cheng's finding of vendor model reliability appealing. No requested commitment is missing or substituted in either answer or the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-b48cb123f70f9b7f",
+      "question": "What concern did Zara Nassar raise about Quantum Circuits Inc, and how did Aiko respond?",
+      "gold_answer": "Zara was concerned about long-term security adherence, noting Quantum Circuits emphasizes it; Aiko said SecureFlow Suite has future-proof security features that adapt to emerging threats.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7uIAC",
+        "b2b:a05Wt000003SrkVIAS",
+        "b2b:a05Wt000003Ss0YIAS",
+        "b2b:a05Wt000003Ss0ZIAS",
+        "b2b:a05Wt000003Ss0aIAC",
+        "b2b:a05Wt000003StEXIA0",
+        "b2b:a05Wt000003StEYIA0",
+        "b2b:a05Wt000003StEZIA0",
+        "b2b:a05Wt000003StnuIAC",
+        "b2b:a05Wt000003StnvIAC",
+        "b2b:a05Wt000003SuP0IAK",
+        "b2b:a05Wt000003SuiKIAS",
+        "b2b:a05Wt000003SulZIAS",
+        "b2b:a05Wt000003SvD1IAK",
+        "b2b:a05Wt000003SvD2IAK",
+        "b2b:a05Wt000003SvD3IAK",
+        "b2b:a05Wt000003Svg1IAC",
+        "b2b:a05Wt000003SvrLIAS",
+        "b2b:a05Wt000003Sw7UIAS",
+        "b2b:a05Wt000003SwDtIAK",
+        "b2b:a05Wt000003SwDuIAK",
+        "b2b:a05Wt000003SwaRIAS",
+        "b2b:a05Wt000003SwiXIAS",
+        "b2b:a05Wt000003SwqgIAC",
+        "b2b:a05Wt000003Sx8LIAS",
+        "b2b:a05Wt000003SxwJIAS",
+        "b2b:a05Wt000003Sy2pIAC",
+        "b2b:a05Wt000003Sy4SIAS",
+        "b2b:a05Wt000003SyAsIAK",
+        "b2b:a05Wt000003SyHOIA0",
+        "b2b:a05Wt000003SyM9IAK",
+        "b2b:a05Wt000003SyvfIAC",
+        "b2b:a05Wt000003SzAEIA0",
+        "b2b:a05Wt000003SzAFIA0",
+        "b2b:a05Wt000003SzF1IAK",
+        "b2b:a05Wt000003SzRuIAK",
+        "b2b:a05Wt000003SzzlIAC",
+        "b2b:a05Wt000003T0B3IAK",
+        "b2b:a05Wt000003T0R9IAK",
+        "b2b:a05Wt000003T0UMIA0",
+        "b2b:a05Wt000003T0pLIAS",
+        "b2b:a05Wt000003T0pMIAS",
+        "b2b:a05Wt000003T0sZIAS",
+        "b2b:a05Wt000003T0xOIAS",
+        "b2b:a05Wt000003T10dIAC",
+        "b2b:a05Wt000003T12EIAS",
+        "b2b:a05Wt000003T13pIAC",
+        "b2b:a05Wt000003T15RIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Zara Nassar spoke with Aiko Matsumoto on two calls (2023-09-25 and 2023-09-28). Only the 2023-09-28 call mentions Quantum Circuits Inc, but Zara raised two distinct concerns about QCI there — long-term security adherence and rigid pricing — each with a different Aiko response. Since the question does not name which concern, both are competing complete answers.",
+        "answers": [
+          {
+            "answer": "Zara Nassar raised a concern about long-term security adherence, noting that Quantum Circuits Inc seems to place a greater emphasis on that aspect. Aiko Matsumoto responded that while Quantum Circuits Inc may highlight security adherence, TechPulse's SecureFlow Suite specifically includes future-proof security features that continuously adapt to emerging threats, which could offer long-term peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzRuIAK",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-09-28T13:31:40] Zara Nassar: We’ve noted the robust features of your products. However, one of our concerns is long-term security adherence as mentioned by other competitors. Quantum Circuits Inc, for example, seems to place a greater emphasis on that aspect."
+              }
+            ]
+          },
+          {
+            "answer": "Zara Nassar raised a concern that Quantum Circuits' pricing was rigid, which could be challenging for EcoLite's custom projects. Aiko Matsumoto responded that TechPulse aims to provide flexibility so Zara's projects can scale and evolve without hitting a pricing wall, and noted that CloudLink Designer and EcoPCB Creator come with additional customization options for different project needs.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzRuIAK",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2023-09-28T13:32:50] Aiko Matsumoto: Absolutely, we’re quite proud of that. Plus, our CloudLink Designer and EcoPCB Creator come with additional customization options which, as you know, can be quite flexible for different project needs.\n[2023-09-28T13:33:15] Zara Nassar: We did find Quantum Circuits' pricing a bit rigid, which could be challenging for our custom projects. Your flexible options add significant value to our intentions with bespoke lighting solutions."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names both Zara Nassar and Aiko. Only one call in the dataset features both participants: b2b:a05Wt000003SzRuIAK (2023-09-28, opportunity 'EcoLite Innovations Partnership'). In that call, Zara raises a concern about Quantum Circuits Inc placing greater emphasis on long-term security adherence, and Aiko responds by explaining that TechPulse's SecureFlow Suite includes future-proof security features that continuously adapt to emerging threats.",
+        "answers": [
+          {
+            "answer": "Zara Nassar raised the concern that Quantum Circuits Inc seems to place a greater emphasis on long-term security adherence compared to TechPulse. Aiko Matsumoto responded by acknowledging the concern and explaining that while Quantum Circuits Inc may highlight security adherence, TechPulse's SecureFlow Suite specifically includes future-proof security features that continuously adapt to emerging threats, which could offer Zara long-term peace of mind.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SzRuIAK",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-09-28T13:31:40] Zara Nassar: We’ve noted the robust features of your products. However, one of our concerns is long-term security adherence as mentioned by other competitors. Quantum Circuits Inc, for example, seems to place a greater emphasis on that aspect.\n[2023-09-28T13:32:10] Aiko Matsumoto: I understand your concern, Zara. While Quantum Circuits Inc may highlight security adherence, our SecureFlow Suite specifically includes future-proof security features that continuously adapt to emerging threats, which could offer you long-term peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-cea3678b5388b8f1",
+      "question": "What is Rajesh Kumar's budget for the AlphaWave Networks purchase, and which payment option did he prefer?",
+      "gold_answer": "Budget of 2909; he preferred monthly installments.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SxBjIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 18,
+            "normalized_end": 19
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Single call with Rajesh Kumar of AlphaWave Networks; budget and payment preference are both stated.",
+        "answers": [
+          {
+            "answer": "Rajesh Kumar's budget for the purchase is 2909, and he preferred monthly installments to help manage cash flow.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxBjIAK",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-03-15T10:01:35] Rajesh Kumar: Perfect. That works well for us. What about the budget? We’re looking to keep it within 2909."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxBjIAK",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-03-15T10:02:42] Rajesh Kumar: Monthly installments would be ideal, helps us manage cash flow better."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "There is exactly one call in the supplied history involving Rajesh Kumar at AlphaWave Networks. In that call, Rajesh explicitly states his budget as 2909 and expresses a preference for monthly installments. No other calls or opportunities exist to create ambiguity.",
+        "answers": [
+          {
+            "answer": "Rajesh Kumar's budget for the AlphaWave Networks purchase is 2909, and he preferred monthly installments as the payment option because it helps manage cash flow better.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxBjIAK",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2023-03-15T10:01:35] Rajesh Kumar: Perfect. That works well for us. What about the budget? We’re looking to keep it within 2909."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxBjIAK",
+                "line_start": 17,
+                "line_end": 19,
+                "quote": "[2023-03-15T10:02:35] Patricia Gonzalez: We offer flexible payment options to suit your preferences, including monthly installments if that’s more convenient.\n[2023-03-15T10:02:42] Rajesh Kumar: Monthly installments would be ideal, helps us manage cash flow better."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same budget (2909) and the same preferred payment option (monthly installments), with only minor wording differences about cash flow. The reference also covers both requested facts: the budget of 2909 and the preference for monthly installments."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-9377968da02f2b2b",
+      "question": "What technology features did Haruto highlight on the 2021 Audi Q7 for Liam Martinez?",
+      "gold_answer": "A Virtual Cockpit digital instrument cluster displaying navigation, plus Audi Pre Sense collision-avoidance safety system.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMqwIAG",
+        "b2c:a05Ws000005SNmwIAG",
+        "b2c:a05Ws000005SORNIA4",
+        "b2c:a05Ws000005SOWEIA4",
+        "b2c:a05Ws000005SPNXIA4",
+        "b2c:a05Ws000005SPP4IAO",
+        "b2c:a05Ws000005SPbwIAG",
+        "b2c:a05Ws000005SQ3OIAW",
+        "b2c:a05Ws000005SQ9oIAG",
+        "b2c:a05Ws000005SQI2IAO",
+        "b2c:a05Ws000005SQOWIA4",
+        "b2c:a05Ws000005SQOXIA4",
+        "b2c:a05Ws000005SQhcIAG",
+        "b2c:a05Ws000005SRh3IAG",
+        "b2c:a05Ws000005SRk8IAG",
+        "b2c:a05Ws000005SRnHIAW",
+        "b2c:a05Ws000005SSY4IAO",
+        "b2c:a05Ws000005STfSIAW",
+        "b2c:a05Ws000005STh2IAG",
+        "b2c:a05Ws000005SULRIA4",
+        "b2c:a05Ws000005SUVFIA4",
+        "b2c:a05Ws000005SWQWIA4",
+        "b2c:a05Ws000005SWgdIAG",
+        "b2c:a05Ws000005SWs5IAG",
+        "b2c:a05Ws000005SXzFIAW",
+        "b2c:a05Ws000005SY0wIAG",
+        "b2c:a05Ws000005SY2YIAW",
+        "b2c:a05Ws000005SYH5IAO",
+        "b2c:a05Ws000005SYbrIAG",
+        "b2c:a05Ws000005SYnJIAW",
+        "b2c:a05Ws000005SYnKIAW",
+        "b2c:a05Ws000005SaPFIA0",
+        "b2c:a05Ws000005SbmlIAC",
+        "b2c:a05Ws000005ScUBIA0",
+        "b2c:a05Ws000005SctyIAC",
+        "b2c:a05Ws000005ScxEIAS",
+        "b2c:a05Ws000005Sd5EIAS",
+        "b2c:a05Ws000005Sd5FIAS",
+        "b2c:a05Ws000005SdBjIAK",
+        "b2c:a05Ws000005SdBkIAK",
+        "b2c:a05Ws000005SdRoIAK",
+        "b2c:a05Ws000005SdgHIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 6,
+            "normalized_end": 7
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call features Haruto Saito discussing the 2021 Audi Q7's technology with Liam Martinez (2023-03-23), where he specifically highlights the Virtual Cockpit and Audi Pre Sense safety system.",
+        "answers": [
+          {
+            "answer": "On the 2021 Audi Q7, Haruto highlighted the Virtual Cockpit — a fully digital instrument cluster that can display navigation and other important information — and Audi's Pre Sense safety system, which enhances collision avoidance.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNmwIAG",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2023-03-23T14:01:10] Haruto Saito: Certainly! The 2021 Audi Q7, for instance, offers a Virtual Cockpit, which is a fully digital instrument cluster that can display navigation and other important information. It also includes Audi's Pre Sense safety system, which enhances collision avoidance. As for the 2020 Lexus RX 350, it features a large touchscreen display with integration for both Apple CarPlay and Android Auto, and the Lexus Safety System+ for added peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Haruto (Saito), the 2021 Audi Q7, and Liam Martinez. Only one call in the dataset features Haruto Saito speaking with Liam Martinez and highlighting specific technology features of the 2021 Audi Q7: call b2c:a05Ws000005SNmwIAG (2023-03-23). In that call, Haruto describes the Virtual Cockpit (fully digital instrument cluster displaying navigation and other important information) and Audi's Pre Sense safety system (enhancing collision avoidance). A second Haruto call (b2c:a05Ws000005SWQWIA4, 2023-03-30) mentions the Audi Q7 but only in the context of warranty/maintenance, not specific technology features. Other calls mentioning the Audi Q7 involve different salespeople (Hiroko, Dmitri) and are therefore excluded by the explicit 'Haruto' qualifier.",
+        "answers": [
+          {
+            "answer": "Haruto Saito highlighted two technology features of the 2021 Audi Q7 for Liam Martinez: (1) the Virtual Cockpit, a fully digital instrument cluster that can display navigation and other important information, and (2) Audi's Pre Sense safety system, which enhances collision avoidance.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SNmwIAG",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-03-23T14:00:54] Liam Martinez: I'm interested in both of those. Can you tell me more about the technology features, like the infotainment and safety systems, on these models?\n[2023-03-23T14:01:10] Haruto Saito: Certainly! The 2021 Audi Q7, for instance, offers a Virtual Cockpit, which is a fully digital instrument cluster that can display navigation and other important information. It also includes Audi's Pre Sense safety system, which enhances collision avoidance. As for the 2020 Lexus RX 350, it features a large touchscreen display with integration for both Apple CarPlay and Android Auto, and the Lexus Safety System+ for added peace of mind."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same two technology features: the Virtual Cockpit (a fully digital instrument cluster displaying navigation and other important information) and Audi's Pre Sense safety system (enhancing collision avoidance). The reference likewise lists both the Virtual Cockpit digital instrument cluster displaying navigation and the Audi Pre Sense collision-avoidance safety system. All requested facts are covered consistently across both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-39c5955e12b3317a",
+      "question": "What is the total quote for Ava Brown's Tesla Model S and Mercedes-Benz E-Class, and does it include any discounts?",
+      "gold_answer": "$157,999.97 with no discounts included, for transparent pricing.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SLpsIAG",
+        "b2c:a05Ws000005SNRAIA4",
+        "b2c:a05Ws000005SO9RIAW",
+        "b2c:a05Ws000005SOW4IAO",
+        "b2c:a05Ws000005SPqIIAW",
+        "b2c:a05Ws000005SPqJIAW",
+        "b2c:a05Ws000005SR2WIAW",
+        "b2c:a05Ws000005SRTxIAO",
+        "b2c:a05Ws000005SRlkIAG",
+        "b2c:a05Ws000005SSMjIAO",
+        "b2c:a05Ws000005STiiIAG",
+        "b2c:a05Ws000005SUBkIAO",
+        "b2c:a05Ws000005SV2tIAG",
+        "b2c:a05Ws000005SWn3IAG",
+        "b2c:a05Ws000005SYDdIAO",
+        "b2c:a05Ws000005SYNSIA4",
+        "b2c:a05Ws000005SZCwIAO",
+        "b2c:a05Ws000005SZXuIAO",
+        "b2c:a05Ws000005Sa2UIAS",
+        "b2c:a05Ws000005Sak7IAC",
+        "b2c:a05Ws000005Sak8IAC",
+        "b2c:a05Ws000005Sbg8IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call discusses a combined quote for the Tesla Model S and Mercedes-Benz E-Class: Kaito Nakamura's 2021-03-01 call, where Ava confirms the total of $157,999.97 and Kaito confirms no discounts were included. Other calls pair the Tesla with the BMW X5 M or the E-Class with the Porsche, so they don't match the question's vehicle pair.",
+        "answers": [
+          {
+            "answer": "The total quote for the Tesla Model S and Mercedes-Benz E-Class is $157,999.97, and it includes no discounts — Kaito Nakamura confirmed no discounts were included to ensure transparent pricing.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPqIIAW",
+                "line_start": 3,
+                "line_end": 4,
+                "quote": "[2021-03-01T10:00:50] Ava Brown: Yes, definitely. I reviewed the initial quote for the Tesla Model S and Mercedes-Benz E-Class. It sums up to $157,999.97, right?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about a quote for Ava Brown's Tesla Model S and Mercedes-Benz E-Class, and whether it includes discounts. Only one call in the history discusses a quote for exactly those two vehicles together: call b2c:a05Ws000005SPqIIAW (2021-03-01, opportunity 'Ava Brown - Luxury & Technological Car Deal' with Kaito Nakamura). In that call, Ava confirms the quote is $157,999.97 and Kaito explicitly states no discounts are included. Other calls involving a Tesla Model S pair it with a BMW X5 M (not Mercedes-Benz E-Class), or mention Tesla and Mercedes separately without a combined quote. No other call provides a total quote for the Tesla Model S + Mercedes-Benz E-Class combination.",
+        "answers": [
+          {
+            "answer": "The total quote for Ava Brown's Tesla Model S and Mercedes-Benz E-Class is $157,999.97. It does not include any discounts; Kaito Nakamura confirmed that no discounts were applied in order to ensure transparent pricing.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SPqIIAW",
+                "line_start": 3,
+                "line_end": 5,
+                "quote": "[2021-03-01T10:00:50] Ava Brown: Yes, definitely. I reviewed the initial quote for the Tesla Model S and Mercedes-Benz E-Class. It sums up to $157,999.97, right?\n[2021-03-01T10:01:10] Kaito Nakamura: That's correct, Ava. We have included no discounts to ensure transparent pricing. How do you feel about the prices for these models?"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same total quote of $157,999.97 for Ava Brown's Tesla Model S and Mercedes-Benz E-Class, and both confirm no discounts were included, citing Kaito Nakamura's confirmation for transparent pricing. The reference also covers the total ($157,999.97), the absence of discounts, and the transparent-pricing rationale. All requested facts (total quote amount and whether discounts are included) are present and consistent across both answers and the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

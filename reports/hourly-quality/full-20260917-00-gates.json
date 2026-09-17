@@ -1,0 +1,378 @@
+[
+  {
+    "question_id": "b2b-multi_call-235bc3c82355a21b",
+    "question": "Across the LiftTech Elevations discussions, what did Terek say about NanoDesign's support services, and what did Cheng Zhang say was appealing about NanoDesign?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Terek's comments on NanoDesign's support services and Cheng Zhang's stated reasons for finding NanoDesign appealing",
+        "relationship": "both facts address the same business issue: stakeholder assessments of NanoDesign as a vendor across LiftTech Elevations discussions",
+        "reason": "The two lookups are not merely tied to the same account; they both concern evaluations of NanoDesign (support quality and appeal), forming one coherent vendor-assessment question across calls."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrN8IAK",
+                "fact": "Terek said NanoDesign's support services lack the responsiveness expected in SLA agreements.",
+                "why_other_call_cannot_supply_it": "The second call only mentions Cheng's anecdotal hearsay about NanoDesign's support, not Terek's direct statement."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyfSIAS",
+                "fact": "Cheng Zhang said the reliability of NanoDesign's vendor model is appealing.",
+                "why_other_call_cannot_supply_it": "The first call does not contain any statement from Cheng about what he finds appealing about NanoDesign."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: Terek's opinion on NanoDesign's support services and Cheng's view on what is appealing about NanoDesign. These facts are provided by different speakers in different calls, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for two pieces of information: Terek's statement about NanoDesign's support services and Cheng's statement about what was appealing about NanoDesign. Both facts are present in the first call: Terek says NanoDesign's support lacks responsiveness, and Cheng says NanoDesign's vendor model reliability is appealing. The second call repeats the same two facts (Cheng mentions reliability and less responsive support). Therefore, the first call alone suffices to answer the question, and the second call is not necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrN8IAK",
+                  "fact": "Terek said NanoDesign's support services lack the responsiveness expected in SLA agreements.",
+                  "why_other_call_cannot_supply_it": "The second call only mentions Cheng's anecdotal hearsay about NanoDesign's support, not Terek's direct statement."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyfSIAS",
+                  "fact": "Cheng Zhang said the reliability of NanoDesign's vendor model is appealing.",
+                  "why_other_call_cannot_supply_it": "The first call does not contain any statement from Cheng about what he finds appealing about NanoDesign."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: Terek's opinion on NanoDesign's support services and Cheng's view on what is appealing about NanoDesign. These facts are provided by different speakers in different calls, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SrN8IAK",
+                "fact": "Terek said NanoDesign's support services lack the responsiveness expected in SLA agreements.",
+                "why_other_call_cannot_supply_it": "The second call only contains Cheng's anecdotal mention of NanoDesign's less responsive support; Terek's specific SLA-responsiveness critique appears only in the first call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SyfSIAS",
+                "fact": "Cheng Zhang said the reliability of NanoDesign's vendor model is quite appealing.",
+                "why_other_call_cannot_supply_it": "The first call contains no statement by Cheng about what he finds appealing about NanoDesign; that sentiment appears only in the second call."
+              }
+            ],
+            "reason": "The question asks for two distinct requested facts: Terek's characterization of NanoDesign's support (only in call 1) and Cheng's stated appeal of NanoDesign's vendor model reliability (only in call 2). Neither call alone supplies both, and the facts are not paraphrases of one another."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SrN8IAK",
+                  "fact": "Terek said NanoDesign's support services lack the responsiveness expected in SLA agreements.",
+                  "why_other_call_cannot_supply_it": "The second call only contains Cheng's anecdotal mention of NanoDesign's less responsive support; Terek's specific SLA-responsiveness critique appears only in the first call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SyfSIAS",
+                  "fact": "Cheng Zhang said the reliability of NanoDesign's vendor model is quite appealing.",
+                  "why_other_call_cannot_supply_it": "The first call contains no statement by Cheng about what he finds appealing about NanoDesign; that sentiment appears only in the second call."
+                }
+              ],
+              "reason": "The question asks for two distinct requested facts: Terek's characterization of NanoDesign's support (only in call 1) and Cheng's stated appeal of NanoDesign's vendor model reliability (only in call 2). Neither call alone supplies both, and the facts are not paraphrases of one another."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "Call 1: Terek states NanoDesign's support 'lack[s] the responsiveness expected in SLA agreements' (11:32:55). Call 2: Cheng says 'the reliability with NanoDesign's vendor model is quite appealing' (14:02:00). Each source contributes an exclusive requested fact; the gold answer matches both verbatim claims with no extras. The question naturally scopes to the LiftTech Elevations account and a competitive comparison a rep would track."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Terek Al-Farsi explicitly states 'their support services lack the responsiveness expected in SLA agreements,' which directly supports the answer_claim about NanoDesign's support lacking responsiveness in SLA agreements. The speaker attribution (Terek) and the content match."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Cheng Zhang explicitly states 'the reliability with NanoDesign's vendor model is quite appealing,' which directly supports the answer_claim about Cheng finding NanoDesign's vendor model reliability appealing. The speaker attribution (Cheng Zhang) and the content match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Terek said NanoDesign's support lacks the responsiveness expected in SLA agreements \u2014 supported by evidence index 0 where Terek Al-Farsi states exactly this; (2) Cheng found NanoDesign's vendor model reliability appealing \u2014 supported by evidence index 1 where Cheng Zhang states 'the reliability with NanoDesign's vendor model is quite appealing.' Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-997fa903b3e75b4f",
+    "question": "What pain points did Lara Ivanova of TechWave Innovations raise about their current tools, and what total price was quoted in the later demo for PulseSim Pro, CircuitAI Innovator, and SecureData Nexus?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) Pain points Lara Ivanova raised about current tools; (2) total quoted price in a later demo for PulseSim Pro, CircuitAI Innovator, and SecureData Nexus",
+        "relationship": "two independent fact lookups joined only by the same customer",
+        "reason": "The pain-point discussion about existing tools and the pricing of three specific products are unrelated information needs; sharing the same account does not connect them."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The June 18 discovery call is the sole source for Lara's two pain points (limited customizability and performance under peak loads), while the July 15 demo call is the sole source for the $14,332.22 total quote. Each source contributes an exclusive requested fact. The answer states precisely the two pain points and the total price with no unasked extras. The question naturally identifies the account (TechWave Innovations) and contact (Lara Ivanova) without artificial locator preambles, and a rep would plausibly want to recall a prospect's stated pain points alongside the quoted price.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Lara Ivanova stating that 'the current solutions don't fully accommodate the customizable needs specific to our projects as effectively as we'd like,' which matches the answer_claim about limited customizability for their projects."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Lara Ivanova confirming 'we've experienced some challenges related to performance under peak loads, which can disrupt our workflow significantly,' which matches the answer_claim about performance issues under peak loads."
+          },
+          {
+            "index": 2,
+            "supported": true,
+            "reason": "The quote directly shows Terek Al-Farsi stating 'With PulseSim Pro, CircuitAI Innovator, and SecureData Nexus, you're looking at a total of $14,332.22 with included discounts,' which matches the answer_claim about the total price quoted for those three products with included discounts."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "All three evidence items are supported by their quoted passages. Combined, they cover every factual claim in the gold_answer: (1) limited customizability for their projects (index 0), (2) performance issues under peak loads (index 1), and (3) the later demo quoted $14,332.22 total with included discounts for PulseSim Pro, CircuitAI Innovator, and SecureData Nexus (index 2). The metadata confirms the participants (Lara Ivanova, TechWave Innovations) and that the pricing call (2021-07-15) is later than the pain-points call (2021-06-18), consistent with 'the later demo.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-b48cb123f70f9b7f",
+    "question": "What concern did Zara Nassar raise about Quantum Circuits Inc, and how did Aiko respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Zara Nassar raised about Quantum Circuits Inc and Aiko's response to it",
+        "relationship": "single coherent objection-and-response exchange",
+        "reason": "This is one objection and its response on the same issue, which is an accepted pattern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific objection raised by Zara Nassar regarding Quantum Circuits Inc's security emphasis and Aiko's rebuttal. The dialogue at 13:31:40 shows Zara expressing concern about long-term security adherence, noting Quantum Circuits Inc places greater emphasis on it. At 13:32:10 Aiko responds that SecureFlow Suite includes future-proof security features that continuously adapt to emerging threats. The gold answer accurately captures both parts. The question is naturally phrased, scoped to a named contact and competitor, and a rep would plausibly want to recall how a security objection was handled. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "objection",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Zara Nassar expressing concern about 'long-term security adherence' and stating that 'Quantum Circuits Inc, for example, seems to place a greater emphasis on that aspect.' This fully supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Aiko Matsumoto responding that 'our SecureFlow Suite specifically includes future-proof security features that continuously adapt to emerging threats, which could offer you long-term peace of mind.' This directly supports the answer_claim about Aiko's response regarding future-proof security features adapting to emerging threats."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Zara was concerned about long-term security adherence, noting Quantum Circuits emphasizes it (supported by index 0), and that Aiko said SecureFlow Suite has future-proof security features that adapt to emerging threats (supported by index 1). Both factual claims in the gold_answer are fully supported by the cited evidence. The slight paraphrase ('adapts to emerging threats' vs. 'continuously adapt to emerging threats') is faithful and not penalized."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-cea3678b5388b8f1",
+    "question": "What is Rajesh Kumar's budget for the AlphaWave Networks purchase, and which payment option did he prefer?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Rajesh Kumar's budget for the AlphaWave Networks purchase and his preferred payment option",
+        "relationship": "single coherent commercial inquiry: budget amount and payment preference for the same purchase",
+        "reason": "Both facts concern the same commercial transaction (budget and payment terms), forming one coherent sales information request."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Rajesh Kumar's budget and preferred payment option for AlphaWave Networks. The dialogue confirms a budget of 2909 (stated by Rajesh at 10:01:35) and his preference for monthly installments (stated at 10:02:42). The gold answer matches both facts precisely with no extra or missing information. The question is naturally phrased, scoped to a named contact and company, and represents a plausible sales-rep need (knowing budget and payment preference). Single-call question, so both_sources_required is set to true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Rajesh Kumar the statement 'We're looking to keep it within 2909,' which matches the answer_claim about the budget of 2909. The speaker is confirmed as Rajesh Kumar and the context metadata confirms the call is associated with AlphaWave Networks."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Rajesh Kumar the statement 'Monthly installments would be ideal, helps us manage cash flow better,' which matches the answer_claim about preferring monthly installments. The speaker is confirmed as Rajesh Kumar."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'Budget of 2909; he preferred monthly installments.' Evidence index 0 supports the budget figure of 2909 as stated by Rajesh Kumar. Evidence index 1 supports the preference for monthly installments as stated by Rajesh Kumar. The context metadata confirms the call involves Rajesh Kumar and AlphaWave Networks. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-9377968da02f2b2b",
+    "question": "What technology features did Haruto highlight on the 2021 Audi Q7 for Liam Martinez?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The technology features Haruto highlighted on the 2021 Audi Q7 for Liam Martinez",
+        "relationship": "single lookup of one presentation's content",
+        "reason": "One coherent fact lookup about a single vehicle presentation in one call; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about technology features Haruto highlighted for the 2021 Audi Q7 to Liam Martinez. The dialogue confirms Haruto described the Virtual Cockpit (fully digital instrument cluster displaying navigation) and Audi Pre Sense collision-avoidance system. The gold answer matches these two features precisely with no unasked extras. The question is naturally worded, scoped to a specific customer interaction, and a sales rep would plausibly want to recall what was pitched. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted passage from Haruto Saito explicitly states the 2021 Audi Q7 'offers a Virtual Cockpit, which is a fully digital instrument cluster that can display navigation and other important information' and 'also includes Audi's Pre Sense safety system, which enhances collision avoidance.' This directly supports the answer_claim about Virtual Cockpit digital instrument cluster and Audi Pre Sense collision-avoidance safety system."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states two technology features: (1) a Virtual Cockpit digital instrument cluster displaying navigation, and (2) Audi Pre Sense collision-avoidance safety system. The single cited evidence item contains Haruto's exact dialogue naming both features with matching descriptions\u2014'fully digital instrument cluster that can display navigation' and 'Pre Sense safety system, which enhances collision avoidance.' The context metadata confirms the call involves Liam Martinez and the opportunity is a vehicle sale, consistent with the question's framing. All factual claims in the gold_answer are supported by the supplied citation."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-39c5955e12b3317a",
+    "question": "What is the total quote for Ava Brown's Tesla Model S and Mercedes-Benz E-Class, and does it include any discounts?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The total quoted price for Ava Brown's Tesla Model S and Mercedes-Benz E-Class, including whether any discounts apply",
+        "relationship": "single coherent commercial quote breakdown covering one customer's quote with its discount terms",
+        "reason": "This is one quote lookup: the total price and associated discounts for the same customer's quote, not two independent fact lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the total quote and discount status for Ava Brown's two vehicles. The dialogue confirms the $157,999.97 total and explicitly states no discounts are included for transparent pricing. The gold answer matches precisely with no unasked extras. The question is naturally scoped to a specific customer and deal, and a rep would plausibly want to confirm quote details. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Ava Brown explicitly states the quote for the Tesla Model S and Mercedes-Benz E-Class 'sums up to $157,999.97,' directly supporting the total amount claimed."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Kaito Nakamura confirms 'We have included no discounts to ensure transparent pricing,' directly supporting the claim of no discounts and the transparent-pricing rationale."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold answer states the total is $157,999.97 with no discounts included, for transparent pricing. Evidence index 0 provides the exact dollar figure tied to the two vehicles, and evidence index 1 explicitly confirms no discounts and the transparent-pricing justification. Together they fully substantiate every factual element of the gold answer."
+      }
+    }
+  }
+]
