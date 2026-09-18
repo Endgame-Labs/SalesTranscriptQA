@@ -1,0 +1,620 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "7c4dba21b863645cd264444e8e40c6fbcf8b75ec1e6072678b494d59ddd751fe",
+  "questions": 6,
+  "counts": {
+    "pass": 6
+  },
+  "estimated_usd": 0,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-38e96976162ab22e",
+      "question": "For the NexGen Biotech opportunity, what next step was scheduled in the initial call with Mia Nguyen, and what follow-up meetings did Yasmin set up during the discovery session?",
+      "gold_answer": "The initial call set a discovery session for October 25th; the discovery session set a proposal preparation discussion for November 2nd and a product demo on November 6th at 11:00 AM.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgNIAS",
+        "b2b:a05Wt000003SrnkIAC",
+        "b2b:a05Wt000003SsNDIA0",
+        "b2b:a05Wt000003StclIAC",
+        "b2b:a05Wt000003SuVQIA0",
+        "b2b:a05Wt000003Sv6ZIAS",
+        "b2b:a05Wt000003SvHwIAK",
+        "b2b:a05Wt000003SvhfIAC",
+        "b2b:a05Wt000003Swx6IAC",
+        "b2b:a05Wt000003Sx5CIAS",
+        "b2b:a05Wt000003SxA1IAK",
+        "b2b:a05Wt000003SxJfIAK",
+        "b2b:a05Wt000003SxcyIAC",
+        "b2b:a05Wt000003SyNpIAK",
+        "b2b:a05Wt000003SydsIAC",
+        "b2b:a05Wt000003SypIIAS",
+        "b2b:a05Wt000003SypJIAS",
+        "b2b:a05Wt000003SysNIAS",
+        "b2b:a05Wt000003SyyxIAC",
+        "b2b:a05Wt000003SzDRIA0",
+        "b2b:a05Wt000003SzuzIAC",
+        "b2b:a05Wt000003T0CgIAK",
+        "b2b:a05Wt000003T0mEIAS",
+        "b2b:a05Wt000003T0nsIAC",
+        "b2b:a05Wt000003T1QTIA0",
+        "b2b:a05Wt000003T1a9IAC",
+        "b2b:a05Wt000003T1blIAC",
+        "b2b:a05Wt000003T2BHIA0",
+        "b2b:a05Wt000003T2HjIAK",
+        "b2b:a05Wt000003T2SzIAK",
+        "b2b:a05Wt000003T2T0IAK",
+        "b2b:a05Wt000003T2UcIAK",
+        "b2b:a05Wt000003T2WCIA0",
+        "b2b:a05Wt000003T2kiIAC",
+        "b2b:a05Wt000003T3SFIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 2,
+            "normalized_end": 3
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The Mia Nguyen opportunity with Yasmin Farouk is 'NexGen Biotech Partnership' (006Wt000007B9YhIAK). The initial call (2023-10-18) scheduled a discovery session for October 25th. The discovery session itself is the 2023-10-25 call, where Yasmin explicitly states she is 'glad to have this discovery session' and sets up two follow-ups: a demo on November 6th at 11:00 AM and a November 2nd proposal-preparation discussion. The 2023-11-02 call is the proposal recap, not the discovery session, so it is not a competing source.",
+        "answers": [
+          {
+            "answer": "In the initial call with Mia Nguyen (October 18, 2023), the next step scheduled was a discovery session set for October 25th. During that discovery session (October 25, 2023), Yasmin set up two follow-up meetings: a product demo for NexGen's team on November 6th at 11:00 AM (with a detailed schedule to be sent), and a discussion on proposal preparations prior to the demo on November 2nd.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvhfIAC",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2023-10-18T10:33:45] Yasmin Farouk: I'm glad to hear that, Mia. How about setting up a discovery session next week? We can delve deeper into your specific objectives and challenges then, perhaps on October 25th?\n[2023-10-18T10:34:00] Mia Nguyen: That sounds reasonable. October 25th works for me. Let\u2019s use that time to go more in-depth."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SysNIAS",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2023-10-25T16:00:22] Yasmin Farouk: I'm good, thanks for asking! I'm glad to have this discovery session with you. We can explore how to align our solutions with NexGen Biotech's objectives. So, to get started, can you share a bit more about your current challenges with computational design and how you're currently addressing them?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SysNIAS",
+                "line_start": 14,
+                "line_end": 17,
+                "quote": "[2023-10-25T16:03:58] Yasmin Farouk: We can certainly highlight that in the product demo. Let's ensure we showcase these benefits. Speaking of which, we'll organize a demo so your team can experience our solutions firsthand. How does that sound?\n[2023-10-25T16:04:10] Mia Nguyen: That would be great. We're looking forward to it. When do you plan to have this arranged?\n[2023-10-25T16:04:25] Yasmin Farouk: We'll have it all set up for November 6th at 11:00 AM, and we'll send a detailed schedule soon. Prior to that, on November 2nd, we\u2019ll discuss proposal preparations to tailor what's best for you."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies the 'NexGen Biotech' opportunity with Mia Nguyen and Yasmin. Only opportunity 'NexGen Biotech Partnership' (006Wt000007B9YhIAK) involves both Mia Nguyen and Yasmin Farouk. The initial call is b2b:a05Wt000003SvhfIAC (2023-10-18), where Yasmin introduces TechPulse and schedules a discovery session. The discovery session is b2b:a05Wt000003SysNIAS (2023-10-25), where Yasmin sets up two follow-up meetings. No other calls match all the named people and opportunity.",
+        "answers": [
+          {
+            "answer": "In the initial call (October 18, 2023), Yasmin Farouk scheduled a discovery session for October 25th to delve deeper into Mia Nguyen's specific objectives and challenges. During the discovery session (October 25, 2023), Yasmin set up two follow-up meetings: (1) a proposal preparation discussion on November 2nd to tailor the best proposal for NexGen Biotech, and (2) a virtual product demo on November 6th at 11:00 AM so the team could experience the solutions firsthand.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvhfIAC",
+                "line_start": 12,
+                "line_end": 15,
+                "quote": "[2023-10-18T10:33:45] Yasmin Farouk: I'm glad to hear that, Mia. How about setting up a discovery session next week? We can delve deeper into your specific objectives and challenges then, perhaps on October 25th?\n[2023-10-18T10:34:00] Mia Nguyen: That sounds reasonable. October 25th works for me. Let\u2019s use that time to go more in-depth.\n[2023-10-18T10:34:15] Yasmin Farouk: Perfect. I'll have my team coordinate the details and objectives for the discovery session, ensuring we cover what matters most to you. Thank you for your time today, Mia."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SysNIAS",
+                "line_start": 14,
+                "line_end": 18,
+                "quote": "[2023-10-25T16:03:58] Yasmin Farouk: We can certainly highlight that in the product demo. Let's ensure we showcase these benefits. Speaking of which, we'll organize a demo so your team can experience our solutions firsthand. How does that sound?\n[2023-10-25T16:04:10] Mia Nguyen: That would be great. We're looking forward to it. When do you plan to have this arranged?\n[2023-10-25T16:04:25] Yasmin Farouk: We'll have it all set up for November 6th at 11:00 AM, and we'll send a detailed schedule soon. Prior to that, on November 2nd, we\u2019ll discuss proposal preparations to tailor what's best for you.\n[2023-10-25T16:04:35] Mia Nguyen: Sounds perfect, Yasmin. Thanks for coordinating everything. Looking forward to the demo and continuing this collaboration."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same next step from the initial call with Mia Nguyen (a discovery session scheduled for October 25th) and the same two follow-up meetings set during the discovery session (a proposal preparation discussion on November 2nd and a product demo on November 6th at 11:00 AM). The reference also covers both requested facts: the discovery session as the next step from the initial call, and the two follow-up meetings (November 2nd proposal prep and November 6th 11:00 AM product demo). Minor wording differences and extra details (e.g., 'virtual,' 'detailed schedule to be sent') do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-d508df2c647f2247",
+      "question": "What next step did Mei Lin propose to Andr\u00e9s P\u00e9rez at Skyline Robotics in the initial discussion, and what follow-up did she commit to after the product demo?",
+      "gold_answer": "First, a site visit/discovery meeting on February 9th; after the demo, she'll send detailed product documentation and schedule a negotiation call to discuss terms and pricing.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr7iIAC",
+        "b2b:a05Wt000003StENIA0",
+        "b2b:a05Wt000003StRHIA0",
+        "b2b:a05Wt000003SthPIAS",
+        "b2b:a05Wt000003StnrIAC",
+        "b2b:a05Wt000003Su3zIAC",
+        "b2b:a05Wt000003SuaGIAS",
+        "b2b:a05Wt000003SuvCIAS",
+        "b2b:a05Wt000003Sv4vIAC",
+        "b2b:a05Wt000003SvCxIAK",
+        "b2b:a05Wt000003SvHpIAK",
+        "b2b:a05Wt000003Svo3IAC",
+        "b2b:a05Wt000003Sw0wIAC",
+        "b2b:a05Wt000003SwnLIAS",
+        "b2b:a05Wt000003Sx6hIAC",
+        "b2b:a05Wt000003SxcwIAC",
+        "b2b:a05Wt000003SxgDIAS",
+        "b2b:a05Wt000003Sy18IAC",
+        "b2b:a05Wt000003Sy5yIAC",
+        "b2b:a05Wt000003Sy7aIAC",
+        "b2b:a05Wt000003SyApIAK",
+        "b2b:a05Wt000003SyCQIA0",
+        "b2b:a05Wt000003SyKUIA0",
+        "b2b:a05Wt000003SyM6IAK",
+        "b2b:a05Wt000003SyabIAC",
+        "b2b:a05Wt000003SyacIAC",
+        "b2b:a05Wt000003SycDIAS",
+        "b2b:a05Wt000003SydpIAC",
+        "b2b:a05Wt000003SyfRIAS",
+        "b2b:a05Wt000003Syh3IAC",
+        "b2b:a05Wt000003SyifIAC",
+        "b2b:a05Wt000003SykHIAS",
+        "b2b:a05Wt000003SykIIAS",
+        "b2b:a05Wt000003SykJIAS",
+        "b2b:a05Wt000003SyltIAC",
+        "b2b:a05Wt000003SyluIAC",
+        "b2b:a05Wt000003SynVIAS",
+        "b2b:a05Wt000003SynWIAS",
+        "b2b:a05Wt000003Syp7IAC",
+        "b2b:a05Wt000003Syp8IAC",
+        "b2b:a05Wt000003SyqjIAC",
+        "b2b:a05Wt000003SysLIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only Mei Lin spoke with Andr\u00e9s P\u00e9rez in two calls: the initial discussion (2023-02-06, Skyline Robotics Expansion Collaboration) where she proposed a site visit/discovery meeting on February 9th, and the product demo (2023-02-24) where she committed to following up with detailed product documentation and scheduling a negotiation call to discuss terms and pricing.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-02-06), Mei Lin proposed a site visit on February 9th \u2014 a discovery meeting to delve deeper into Skyline Robotics' specific needs and how TechPulse's solutions could be tailored to meet them. After the product demo (2023-02-24), Mei Lin committed to following up with detailed product documentation and scheduling a negotiation call to discuss terms and pricing when Andr\u00e9s was ready.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvCxIAK",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-02-06T15:01:48] Mei Lin: We're planning a site visit on February 9th. During that discovery meeting, we'll delve deeper into your specific needs and how our solutions can be tailored to meet them. Does that sound good?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sw0wIAC",
+                "line_start": 16,
+                "line_end": 17,
+                "quote": "[2023-02-24T14:05:15] Mei Lin: Thank you, Andr\u00e9s! I\u2019ll follow up with detailed product documentation and we can schedule a negotiation call to discuss terms and pricing when you\u2019re ready."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Mei Lin as the salesperson, Andr\u00e9s P\u00e9rez as the contact, and Skyline Robotics as the account. Among all calls, only two feature Mei Lin speaking with Andr\u00e9s P\u00e9rez at Skyline Robotics: (1) b2b:a05Wt000003SvCxIAK on 2023-02-06 (the initial discussion, opportunity 'Skyline Robotics Expansion Collaboration') and (2) b2b:a05Wt000003Sw0wIAC on 2023-02-24 (the virtual product demo, same opportunity). The 'initial discussion' qualifier clearly identifies the earliest Mei Lin\u2013Andr\u00e9s P\u00e9rez call. The 'product demo' qualifier clearly identifies the second call, which Mei Lin explicitly describes as a 'virtual product demo.' No other calls match all three named entities simultaneously.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2023-02-06), Mei Lin proposed a site visit on February 9th as the next step, during which they would hold a discovery meeting to delve deeper into Skyline Robotics' specific needs and how TechPulse's solutions could be tailored to meet them. After the product demo (2023-02-24), Mei Lin committed to following up with detailed product documentation and scheduling a negotiation call to discuss terms and pricing when Andr\u00e9s was ready.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvCxIAK",
+                "line_start": 17,
+                "line_end": 20,
+                "quote": "[2023-02-06T15:01:42] Andr\u00e9s P\u00e9rez: That's definitely an advantage. Well, I think I've got a better picture now. What's the next step in this process?\n[2023-02-06T15:01:48] Mei Lin: We're planning a site visit on February 9th. During that discovery meeting, we'll delve deeper into your specific needs and how our solutions can be tailored to meet them. Does that sound good?\n[2023-02-06T15:01:52] Andr\u00e9s P\u00e9rez: That sounds perfect, Mei. Looking forward to it!"
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sw0wIAC",
+                "line_start": 2,
+                "line_end": 3,
+                "quote": "[2023-02-24T14:00:25] Mei Lin: I'm great, thank you! I\u2019m excited to walk you through the virtual product demo today. We\u2019ll be discussing how TechPulse Solutions' offerings can enhance your workflows, specifically focusing on Workflow Genius and CircuitAI Innovator."
+              },
+              {
+                "call_id": "b2b:a05Wt000003Sw0wIAC",
+                "line_start": 16,
+                "line_end": 18,
+                "quote": "[2023-02-24T14:05:15] Mei Lin: Thank you, Andr\u00e9s! I\u2019ll follow up with detailed product documentation and we can schedule a negotiation call to discuss terms and pricing when you\u2019re ready.\n[2023-02-24T14:05:25] Andr\u00e9s P\u00e9rez: That sounds like a plan. Looking forward to it!"
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two commitments: (1) in the initial discussion Mei Lin proposed a site visit/discovery meeting on February 9th to explore Skyline Robotics' needs and tailor TechPulse solutions, and (2) after the product demo she committed to sending detailed product documentation and scheduling a negotiation call to discuss terms and pricing when Andr\u00e9s was ready. The reference likewise covers both requested facts: the site visit/discovery meeting on Feb 9 and the post-demo follow-up of detailed documentation plus a negotiation call for terms and pricing. No requested commitment is missing or substituted in any of the three texts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-408c91cbeb0ea493",
+      "question": "What next step did Ayumi propose to Amelia Richardson for the UrbanTech Smart City Integration opportunity, and what did Amelia agree to look for?",
+      "gold_answer": "A discovery meeting next week; Amelia will look for Ayumi's email with case studies and suggested meeting times.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrShIAK",
+        "b2b:a05Wt000003SrcQIAS",
+        "b2b:a05Wt000003SrcRIAS",
+        "b2b:a05Wt000003SrhKIAS",
+        "b2b:a05Wt000003Ss5OIAS",
+        "b2b:a05Wt000003StcmIAC",
+        "b2b:a05Wt000003SuDhIAK",
+        "b2b:a05Wt000003SuKFIA0",
+        "b2b:a05Wt000003SuKGIA0",
+        "b2b:a05Wt000003SuLpIAK",
+        "b2b:a05Wt000003SuaLIAS",
+        "b2b:a05Wt000003SvhgIAC",
+        "b2b:a05Wt000003Sw7WIAS",
+        "b2b:a05Wt000003SwSWIA0",
+        "b2b:a05Wt000003SwqnIAC",
+        "b2b:a05Wt000003SxWdIAK",
+        "b2b:a05Wt000003SxzfIAC",
+        "b2b:a05Wt000003SyZ2IAK",
+        "b2b:a05Wt000003SyafIAC",
+        "b2b:a05Wt000003SydtIAC",
+        "b2b:a05Wt000003SyduIAC",
+        "b2b:a05Wt000003SzDSIA0",
+        "b2b:a05Wt000003T0PZIA0",
+        "b2b:a05Wt000003T0ntIAC",
+        "b2b:a05Wt000003T1AOIA0",
+        "b2b:a05Wt000003T1APIA0",
+        "b2b:a05Wt000003T1VHIA0",
+        "b2b:a05Wt000003T1dMIAS",
+        "b2b:a05Wt000003T1gcIAC",
+        "b2b:a05Wt000003T1iGIAS",
+        "b2b:a05Wt000003T1iHIAS",
+        "b2b:a05Wt000003T2KsIAK",
+        "b2b:a05Wt000003T2MYIA0",
+        "b2b:a05Wt000003T38sIAC",
+        "b2b:a05Wt000003T3FLIA0",
+        "b2b:a05Wt000003T3NQIA0",
+        "b2b:a05Wt000003T3NRIA0",
+        "b2b:a05Wt000003T3NSIA0",
+        "b2b:a05Wt000003T3P0IAK",
+        "b2b:a05Wt000003T3TsIAK",
+        "b2b:a05Wt000003T3aHIAS",
+        "b2b:a05Wt000003T3btIAC",
+        "b2b:a05Wt000003T3dVIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only two calls involve Ayumi Shimizu with Amelia Richardson on the UrbanTech Smart City Integration opportunity. The September 23, 2023 call contains the exact exchange: Ayumi proposes a discovery meeting next week, and Amelia says she will 'look for' Ayumi's email with the case studies and suggested meeting times. The October 6, 2023 call has a different next step (a follow-up call with customized options) but no statement of Amelia agreeing to 'look for' anything, so it does not match the question's wording.",
+        "answers": [
+          {
+            "answer": "Ayumi proposed scheduling a discovery meeting sometime the following week to dive deeper into UrbanTech's specific needs and explore how TechPulse's solutions could address them, and Amelia agreed to look for Ayumi's email containing the case studies and suggested meeting times.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuDhIAK",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-09-23T10:20:20] Ayumi Shimizu: Next, I'd love to schedule a discovery meeting sometime next week to dive deeper into your specific needs and explore how our solutions can address them effectively. Does that sound like a good plan?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Ayumi, Amelia Richardson, and the 'UrbanTech Smart City Integration' opportunity. Only one call matches all three: b2b:a05Wt000003SuDhIAK (2023-09-23), with opportunity_id 006Wt000007BETTIA4 and opportunity_name 'UrbanTech Smart City Integration'. A second call (b2b:a05Wt000003T2MYIA0, 2023-10-06) also matches the same opportunity, salesperson, and contact, but it is a follow-up discovery meeting, not the initial call where the next step was first proposed. The question asks what next step Ayumi 'proposed' and what Amelia 'agreed to look for,' which aligns with the initial call where Ayumi proposed scheduling a discovery meeting and sending case studies, and Amelia agreed to look for the email with case studies and suggested meeting times.",
+        "answers": [
+          {
+            "answer": "Ayumi proposed scheduling a discovery meeting the following week to dive deeper into UrbanTech's specific needs and explore how TechPulse's solutions could address them. She also offered to send over relevant case studies. Amelia agreed to look for Ayumi's email containing the case studies and suggested meeting times.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SuDhIAK",
+                "line_start": 18,
+                "line_end": 20,
+                "quote": "[2023-09-23T10:20:20] Ayumi Shimizu: Next, I'd love to schedule a discovery meeting sometime next week to dive deeper into your specific needs and explore how our solutions can address them effectively. Does that sound like a good plan?\n[2023-09-23T10:20:30] Amelia Richardson: Yes, it does. I'll look for your email with the case studies and suggested meeting times."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Ayumi proposed scheduling a discovery meeting the following week to explore UrbanTech's needs and TechPulse's solutions, and that Amelia agreed to look for Ayumi's email containing case studies and suggested meeting times. Answer B additionally mentions Ayumi offering to send case studies, which is a minor extra detail consistent with the email content but does not conflict. The reference captures both requested facts: the discovery meeting next week and Amelia looking for the email with case studies and suggested meeting times."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-894bcccef53c3032",
+      "question": "What discounts did Mohamed offer Ravi on the SecureFlow Suite and CloudLink Designer in the Vertex Engineering proposal?",
+      "gold_answer": "SecureFlow Suite has a 10% discount and CloudLink Designer a 15% discount.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrnjIAC",
+        "b2b:a05Wt000003SrxLIAS",
+        "b2b:a05Wt000003SsNAIA0",
+        "b2b:a05Wt000003St1TIAS",
+        "b2b:a05Wt000003StO5IAK",
+        "b2b:a05Wt000003StmGIAS",
+        "b2b:a05Wt000003StmHIAS",
+        "b2b:a05Wt000003SuVOIA0",
+        "b2b:a05Wt000003Sv6XIAS",
+        "b2b:a05Wt000003Sv6YIAS",
+        "b2b:a05Wt000003SvZWIA0",
+        "b2b:a05Wt000003SwaUIAS",
+        "b2b:a05Wt000003SwdhIAC",
+        "b2b:a05Wt000003SwsJIAS",
+        "b2b:a05Wt000003SxJcIAK",
+        "b2b:a05Wt000003SxzeIAC",
+        "b2b:a05Wt000003SydrIAC",
+        "b2b:a05Wt000003SypGIAS",
+        "b2b:a05Wt000003SysMIAS",
+        "b2b:a05Wt000003SzANIA0",
+        "b2b:a05Wt000003SzQOIA0",
+        "b2b:a05Wt000003SzuxIAC",
+        "b2b:a05Wt000003SzuyIAC",
+        "b2b:a05Wt000003SzzpIAC",
+        "b2b:a05Wt000003T0MMIA0",
+        "b2b:a05Wt000003T0XgIAK",
+        "b2b:a05Wt000003T0cTIAS",
+        "b2b:a05Wt000003T1AMIA0",
+        "b2b:a05Wt000003T1FCIA0",
+        "b2b:a05Wt000003T1QQIA0",
+        "b2b:a05Wt000003T1VGIA0",
+        "b2b:a05Wt000003T1a7IAC",
+        "b2b:a05Wt000003T1a8IAC",
+        "b2b:a05Wt000003T1gbIAC",
+        "b2b:a05Wt000003T1zwIAC",
+        "b2b:a05Wt000003T282IAC",
+        "b2b:a05Wt000003T2BGIA0",
+        "b2b:a05Wt000003T2HhIAK",
+        "b2b:a05Wt000003T2JKIA0",
+        "b2b:a05Wt000003T2fwIAC",
+        "b2b:a05Wt000003T3FKIA0",
+        "b2b:a05Wt000003T3KAIA0",
+        "b2b:a05Wt000003T3NNIA0",
+        "b2b:a05Wt000003T3OzIAK",
+        "b2b:a05Wt000003T3QbIAK",
+        "b2b:a05Wt000003T3SDIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call between Mohamed Ahmed and Ravi Chandran discusses the proposal discounts for both SecureFlow Suite and CloudLink Designer (2023-03-01, Vertex Engineering Tech Enhancement), where Mohamed states SecureFlow Suite has a 10% discount and CloudLink Designer a 15% discount.",
+        "answers": [
+          {
+            "answer": "In the Vertex Engineering proposal, Mohamed offered Ravi a 10% discount on the SecureFlow Suite and a 15% discount on the CloudLink Designer.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvZWIA0",
+                "line_start": 5,
+                "line_end": 6,
+                "quote": "[2023-03-01T16:00:52] Ravi Chandran: Thanks, Mohamed. I did notice in the proposal that the SecureFlow Suite and CloudLink Designer are bundled with certain discounts. How flexible are those offers?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Mohamed (Ahmed), Ravi (Chandran), the products SecureFlow Suite and CloudLink Designer, and the Vertex Engineering proposal. Only one call matches all these criteria: call b2b:a05Wt000003SvZWIA0 (2023-03-01), where Mohamed Ahmed discusses proposal details with Ravi Chandran and explicitly states the discounts for both products. The other Mohamed-Ravi calls (b2b:a05Wt000003Sv6YIAS and b2b:a05Wt000003StmHIAS) do not contain specific discount figures for these two products.",
+        "answers": [
+          {
+            "answer": "Mohamed offered Ravi a 10% discount on the SecureFlow Suite and a 15% discount on the CloudLink Designer in the Vertex Engineering proposal.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvZWIA0",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2023-03-01T16:00:52] Ravi Chandran: Thanks, Mohamed. I did notice in the proposal that the SecureFlow Suite and CloudLink Designer are bundled with certain discounts. How flexible are those offers?\n[2023-03-01T16:01:10] Mohamed Ahmed: I'm glad you noticed those. We provide those discounts to make our high-quality solutions more accessible. Right now, SecureFlow Suite comes with a 10% discount, and CloudLink Designer at 15%. We try to maintain great value while offering competitive pricing."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same two discounts: 10% on SecureFlow Suite and 15% on CloudLink Designer, matching each other exactly. The reference also specifies the same two discounts (10% for SecureFlow Suite, 15% for CloudLink Designer), covering all facts requested by the question."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-17c4a372553eb134",
+      "question": "What did Lucas Wright say about a competitor's pre-owned website experience, and what did Ivan commit to preparing for him?",
+      "gold_answer": "Lucas noted a competitor had a more streamlined, easier-to-navigate pre-owned section; Ivan committed to preparing a proposal for the 2021 Audi Q7 with maintenance plan and extended warranty options.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SQ4oIAG",
+        "b2c:a05Ws000005SQJLIA4",
+        "b2c:a05Ws000005SQMcIAO",
+        "b2c:a05Ws000005SQSzIAO",
+        "b2c:a05Ws000005SSctIAG",
+        "b2c:a05Ws000005STp5IAG",
+        "b2c:a05Ws000005STttIAG",
+        "b2c:a05Ws000005SV4TIAW",
+        "b2c:a05Ws000005SVAxIAO",
+        "b2c:a05Ws000005SVIyIAO",
+        "b2c:a05Ws000005SVR2IAO",
+        "b2c:a05Ws000005SX1QIAW",
+        "b2c:a05Ws000005SXe8IAG",
+        "b2c:a05Ws000005SXpRIAW",
+        "b2c:a05Ws000005SYQXIA4",
+        "b2c:a05Ws000005SYTiIAO",
+        "b2c:a05Ws000005SZKxIAO",
+        "b2c:a05Ws000005SZhYIAW",
+        "b2c:a05Ws000005SaAZIA0",
+        "b2c:a05Ws000005SaAaIAK",
+        "b2c:a05Ws000005SaP3IAK",
+        "b2c:a05Ws000005SaQfIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call involves Ivan Kovalchuk discussing a competitor's pre-owned website experience with Lucas Wright (2021-05-23 call). Lucas notes a competitor had a more streamlined, easier-to-navigate pre-owned section, and Ivan commits to preparing a proposal for the 2021 Audi Q7 with comprehensive maintenance plan and extended warranty options, to be sent via email.",
+        "answers": [
+          {
+            "answer": "Lucas Wright said that a competitor had a more streamlined user experience on their pre-owned section of the website, which was easier to navigate. Ivan Kovalchuk appreciated the feedback, said it's valuable as they work on continuously improving their platform, and committed to preparing a proposal for Lucas based on the 2021 Audi Q7 he's interested in, coupled with AutoElite's comprehensive maintenance plan and extended warranty options \u2014 saying he'd work on the proposal right away and keep Lucas updated through email.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVIyIAO",
+                "line_start": 13,
+                "line_end": 17,
+                "quote": "[2021-05-23T17:04:30] Lucas Wright: Makes sense. One thing I noticed, though, was that a competitor has a more streamlined user experience on their pre-owned section. It was easier to navigate.\n[2021-05-23T17:04:45] Ivan Kovalchuk: I appreciate that feedback, Lucas. It's valuable for us as we work on continuously improving our platform. Your smooth experience is a top priority for us.\n[2021-05-23T17:05:00] Ivan Kovalchuk: So, moving forward, we'll prepare a proposal for you based on the 2021 Audi Q7 you\u2019re interested in, coupled with our comprehensive maintenance plan and extended warranty options.\n[2021-05-23T17:05:15] Lucas Wright: Sounds great. I\u2019m looking forward to seeing what you put together."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Only one call features Ivan Kovalchuk as the salesperson and contains Lucas Wright's comment about a competitor's pre-owned website experience. In call b2c:a05Ws000005SVIyIAO (2021-05-23), Lucas says a competitor has a more streamlined user experience on their pre-owned section that was easier to navigate (line 13). Ivan acknowledges the feedback and then commits to preparing a proposal based on the 2021 Audi Q7 coupled with the comprehensive maintenance plan and extended warranty options (lines 14-17). No other call with Ivan contains a competitor pre-owned website/UX comment paired with a preparation commitment.",
+        "answers": [
+          {
+            "answer": "Lucas Wright told Ivan Kovalchuk that a competitor has a more streamlined user experience on their pre-owned section and that it was easier to navigate. Ivan acknowledged the feedback as valuable for improving their platform, then committed to preparing a proposal for Lucas based on the 2021 Audi Q7, coupled with AutoElite's comprehensive maintenance plan and extended warranty options, and said he would work on it right away and keep Lucas updated through email.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SVIyIAO",
+                "line_start": 13,
+                "line_end": 18,
+                "quote": "[2021-05-23T17:04:30] Lucas Wright: Makes sense. One thing I noticed, though, was that a competitor has a more streamlined user experience on their pre-owned section. It was easier to navigate.\n[2021-05-23T17:04:45] Ivan Kovalchuk: I appreciate that feedback, Lucas. It's valuable for us as we work on continuously improving our platform. Your smooth experience is a top priority for us.\n[2021-05-23T17:05:00] Ivan Kovalchuk: So, moving forward, we'll prepare a proposal for you based on the 2021 Audi Q7 you\u2019re interested in, coupled with our comprehensive maintenance plan and extended warranty options.\n[2021-05-23T17:05:15] Lucas Wright: Sounds great. I\u2019m looking forward to seeing what you put together.\n[2021-05-23T17:05:30] Ivan Kovalchuk: Perfect, I\u2019ll work on that proposal right away and keep you updated through email. Feel free to reach out if you have any more questions or need further clarification in the meantime."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Lucas Wright said a competitor had a more streamlined, easier-to-navigate pre-owned section of the website, and that Ivan committed to preparing a proposal for the 2021 Audi Q7 coupled with AutoElite's comprehensive maintenance plan and extended warranty options. The reference covers both requested facts: the competitor's pre-owned website experience (streamlined, easier to navigate) and Ivan's commitment (proposal for the 2021 Audi Q7 with maintenance plan and extended warranty options). The additional details in answers A and B (working on it right away, keeping Lucas updated via email, acknowledging feedback as valuable) are extras that do not affect agreement or coverage."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-c893960958329bbb",
+      "question": "What did Mason Williams say would most help sway his decision on the Camry Hybrid, and what did Enzo offer to do about the service package costs?",
+      "gold_answer": "Mason said immediate cost savings would really help sway his decision; Enzo said he'd take the service package cost concern back to his team to see if a more competitive tailored package was possible.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMvpIAG",
+        "b2c:a05Ws000005SOvvIAG",
+        "b2c:a05Ws000005SPK9IAO",
+        "b2c:a05Ws000005SPKAIA4",
+        "b2c:a05Ws000005SPLiIAO",
+        "b2c:a05Ws000005SQOOIA4",
+        "b2c:a05Ws000005SQkkIAG",
+        "b2c:a05Ws000005SR2YIAW",
+        "b2c:a05Ws000005SS8HIAW",
+        "b2c:a05Ws000005SSMoIAO",
+        "b2c:a05Ws000005STtwIAG",
+        "b2c:a05Ws000005SU3aIAG",
+        "b2c:a05Ws000005SUF7IAO",
+        "b2c:a05Ws000005SUNAIA4",
+        "b2c:a05Ws000005SUOeIAO",
+        "b2c:a05Ws000005SUOfIAO",
+        "b2c:a05Ws000005SUhvIAG",
+        "b2c:a05Ws000005SWolIAG",
+        "b2c:a05Ws000005SWomIAG",
+        "b2c:a05Ws000005SXEPIA4",
+        "b2c:a05Ws000005SXPiIAO",
+        "b2c:a05Ws000005SY5kIAG",
+        "b2c:a05Ws000005SYLoIAO",
+        "b2c:a05Ws000005SYX1IAO",
+        "b2c:a05Ws000005SYteIAG",
+        "b2c:a05Ws000005SZEaIAO",
+        "b2c:a05Ws000005SZJSIA4",
+        "b2c:a05Ws000005SZTDIA4",
+        "b2c:a05Ws000005SaHEIA0",
+        "b2c:a05Ws000005SaYoIAK",
+        "b2c:a05Ws000005SaiTIAS",
+        "b2c:a05Ws000005SbgBIAS",
+        "b2c:a05Ws000005SbzWIAS",
+        "b2c:a05Ws000005Sch1IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 7,
+            "normalized_end": 8
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call contains both requested facts: in the 2020-03-15 Enzo Rossi call, Mason says immediate cost savings would most help sway his decision, and Enzo offers to take the service-package cost concern back to his team to see about a more competitive, tailored package. Other Enzo calls lack the 'sway my decision' statement paired with the service-package cost discussion.",
+        "answers": [
+          {
+            "answer": "Mason Williams said that immediate cost savings would really help sway his decision on the Camry Hybrid. When Mason asked about incentives on the service package costs, Enzo Rossi said that while AutoElite provides competitive pricing on maintenance plans, he would take Mason's concern back to the team to see if they could offer a more competitive package tailored to his needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMvpIAG",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-03-15T15:02:15] Mason Williams: That's good to hear. While I appreciate transparency, immediate cost savings would really help sway my decision."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMvpIAG",
+                "line_start": 11,
+                "line_end": 12,
+                "quote": "[2020-03-15T15:03:40] Mason Williams: It\u2019s reassuring to know the support is there, but I am wondering about the costs associated with these service packages. Are there any incentives?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names both Mason Williams and Enzo, and asks about the Camry Hybrid decision-sway factor and Enzo's offer regarding service package costs. Only call b2c:a05Ws000005SMvpIAG features Enzo Rossi discussing the Camry Hybrid with Mason. In that call, Mason explicitly states 'immediate cost savings would really help sway my decision' (line 7), and when Mason asks about service package costs/incentives (line 11), Enzo offers to take the concern back to his team to see if a more competitive package tailored to Mason's needs can be offered (line 12). No other call with Enzo contains both elements together in this specific phrasing.",
+        "answers": [
+          {
+            "answer": "Mason Williams said that immediate cost savings would most help sway his decision on the Camry Hybrid. In response to Mason's question about service package costs and whether there were any incentives, Enzo Rossi offered to take Mason's concern back to his team to see if they could offer a more competitive package tailored to his needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SMvpIAG",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-03-15T15:02:15] Mason Williams: That's good to hear. While I appreciate transparency, immediate cost savings would really help sway my decision."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SMvpIAG",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2020-03-15T15:03:40] Mason Williams: It\u2019s reassuring to know the support is there, but I am wondering about the costs associated with these service packages. Are there any incentives?\n[2020-03-15T15:04:00] Enzo Rossi: Great question! While we provide competitive pricing for our maintenance plans, we\u2019re always looking for ways to add more value for our customers. I'll take your concern back to our team to see if there's a way we can offer a more competitive package tailored to your needs."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Mason Williams said immediate cost savings would most help sway his decision on the Camry Hybrid, and both state that Enzo offered to take the service package cost concern back to his team to see if a more competitive package tailored to his needs could be offered. The reference likewise covers both requested facts: immediate cost savings as the sway factor and Enzo's offer to bring the concern to his team for a more competitive tailored package. All requested commitments are present and consistent across all three texts."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Read-only reuse of existing source-history judgments; no additional API calls; all original costs remain in the full review ledger. Assistant separately inspects sources and matching histories."
+}

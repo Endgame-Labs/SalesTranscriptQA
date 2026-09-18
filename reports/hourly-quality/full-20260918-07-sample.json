@@ -1,0 +1,247 @@
+{
+  "seed": 2026091807,
+  "stage": "Full-history-reviewed frozen RAG cohort; generation and automated review complete",
+  "inspection_started_utc": "2026-09-18T07:28:10Z",
+  "scheduled_hour": "07:00 UTC; delayed inspection",
+  "source": "runs/sales-full-v2/reviewed/questions.json",
+  "source_sha256": "32b6a9ccf28f63f1838e21e873a7ad0c7cb17f028419d4fd2804429071207293",
+  "eligible_pools": {
+    "b2b/multi_call": 385,
+    "b2b/single_call": 1126,
+    "b2c/single_call": 1241
+  },
+  "questions": [
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-d508df2c647f2247",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "What next step did Mei Lin propose to Andr\u00e9s P\u00e9rez at Skyline Robotics in the initial discussion, and what follow-up did she commit to after the product demo?",
+      "gold_answer": "First, a site visit/discovery meeting on February 9th; after the demo, she'll send detailed product documentation and schedule a negotiation call to discuss terms and pricing.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SvCxIAK",
+        "b2b:a05Wt000003Sw0wIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SvCxIAK",
+          "answer_claim": "We're planning a site visit on February 9th. During that discovery meeting, we'll delve deeper into your specific needs",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 19,
+          "quote": "[2023-02-06T15:01:48] Mei Lin: We're planning a site visit on February 9th. During that discovery meeting, we'll delve deeper into your specific needs and how our solutions can be tailored to meet them. Does that sound good?",
+          "start": 3539,
+          "end": 3763
+        },
+        {
+          "call_id": "b2b:a05Wt000003Sw0wIAC",
+          "answer_claim": "I'll follow up with detailed product documentation and we can schedule a negotiation call to discuss terms and pricing when you're ready.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 17,
+          "quote": "[2023-02-24T14:05:15] Mei Lin: Thank you, Andr\u00e9s! I\u2019ll follow up with detailed product documentation and we can schedule a negotiation call to discuss terms and pricing when you\u2019re ready.",
+          "start": 3033,
+          "end": 3220
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "d508df2c647f22474be060b35af5705554bd0d5f5db1b16df532f3c7e502a87b",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-38e96976162ab22e",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "For the NexGen Biotech opportunity, what next step was scheduled in the initial call with Mia Nguyen, and what follow-up meetings did Yasmin set up during the discovery session?",
+      "gold_answer": "The initial call set a discovery session for October 25th; the discovery session set a proposal preparation discussion for November 2nd and a product demo on November 6th at 11:00 AM.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SvhfIAC",
+        "b2b:a05Wt000003SysNIAS"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SvhfIAC",
+          "answer_claim": "Yasmin proposed a discovery session on October 25th and Mia agreed.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 14,
+          "quote": "[2023-10-18T10:33:45] Yasmin Farouk: I'm glad to hear that, Mia. How about setting up a discovery session next week? We can delve deeper into your specific objectives and challenges then, perhaps on October 25th?\n[2023-10-18T10:34:00] Mia Nguyen: That sounds reasonable. October 25th works for me. Let\u2019s use that time to go more in-depth.",
+          "start": 2738,
+          "end": 3076
+        },
+        {
+          "call_id": "b2b:a05Wt000003SysNIAS",
+          "answer_claim": "Yasmin scheduled a demo for November 6th at 11:00 AM and a proposal preparation discussion on November 2nd.",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 18,
+          "quote": "[2023-10-25T16:04:25] Yasmin Farouk: We'll have it all set up for November 6th at 11:00 AM, and we'll send a detailed schedule soon. Prior to that, on November 2nd, we\u2019ll discuss proposal preparations to tailor what's best for you.\n[2023-10-25T16:04:35] Mia Nguyen: Sounds perfect, Yasmin. Thanks for coordinating everything. Looking forward to the demo and continuing this collaboration.",
+          "start": 3607,
+          "end": 3995
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "38e96976162ab22ed00be0cc29a2f23b6a585abb60ae6bec7a22c27f06d1943e",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-408c91cbeb0ea493",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What next step did Ayumi propose to Amelia Richardson for the UrbanTech Smart City Integration opportunity, and what did Amelia agree to look for?",
+      "gold_answer": "A discovery meeting next week; Amelia will look for Ayumi's email with case studies and suggested meeting times.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SuDhIAK"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SuDhIAK",
+          "answer_claim": "Ayumi proposed scheduling a discovery meeting next week to dive deeper into needs.",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 19,
+          "quote": "[2023-09-23T10:20:20] Ayumi Shimizu: Next, I'd love to schedule a discovery meeting sometime next week to dive deeper into your specific needs and explore how our solutions can address them effectively. Does that sound like a good plan?",
+          "start": 3983,
+          "end": 4219
+        },
+        {
+          "call_id": "b2b:a05Wt000003SuDhIAK",
+          "answer_claim": "Amelia agreed to look for the email with case studies and suggested meeting times.",
+          "kind": "dialogue",
+          "line_start": 19,
+          "line_end": 20,
+          "quote": "[2023-09-23T10:20:30] Amelia Richardson: Yes, it does. I'll look for your email with the case studies and suggested meeting times.",
+          "start": 4220,
+          "end": 4350
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "408c91cbeb0ea493af8b34809a2166a83ffede8206014b9cccf73e9ea4ad15dd",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-894bcccef53c3032",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What discounts did Mohamed offer Ravi on the SecureFlow Suite and CloudLink Designer in the Vertex Engineering proposal?",
+      "gold_answer": "SecureFlow Suite has a 10% discount and CloudLink Designer a 15% discount.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SvZWIA0"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SvZWIA0",
+          "answer_claim": "SecureFlow Suite comes with a 10% discount, and CloudLink Designer at 15%.",
+          "kind": "dialogue",
+          "line_start": 6,
+          "line_end": 7,
+          "quote": "[2023-03-01T16:01:10] Mohamed Ahmed: I'm glad you noticed those. We provide those discounts to make our high-quality solutions more accessible. Right now, SecureFlow Suite comes with a 10% discount, and CloudLink Designer at 15%. We try to maintain great value while offering competitive pricing.",
+          "start": 949,
+          "end": 1245
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "894bcccef53c3032bbec86523d80869623e29459264de16c4736f15c0b2809c0",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-c893960958329bbb",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What did Mason Williams say would most help sway his decision on the Camry Hybrid, and what did Enzo offer to do about the service package costs?",
+      "gold_answer": "Mason said immediate cost savings would really help sway his decision; Enzo said he'd take the service package cost concern back to his team to see if a more competitive tailored package was possible.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SMvpIAG"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SMvpIAG",
+          "answer_claim": "Mason says immediate cost savings would help sway his decision",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 8,
+          "quote": "[2020-03-15T15:02:15] Mason Williams: That's good to hear. While I appreciate transparency, immediate cost savings would really help sway my decision.",
+          "start": 1488,
+          "end": 1638
+        },
+        {
+          "call_id": "b2c:a05Ws000005SMvpIAG",
+          "answer_claim": "Enzo will take the service package cost concern back to his team to explore a more competitive tailored package",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2020-03-15T15:04:00] Enzo Rossi: Great question! While we provide competitive pricing for our maintenance plans, we\u2019re always looking for ways to add more value for our customers. I'll take your concern back to our team to see if there's a way we can offer a more competitive package tailored to your needs.",
+          "start": 2530,
+          "end": 2838
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "c893960958329bbb64ff68e6b3fabb9a1ff7df7d7f735937e76319f08c88482d",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-17c4a372553eb134",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What did Lucas Wright say about a competitor's pre-owned website experience, and what did Ivan commit to preparing for him?",
+      "gold_answer": "Lucas noted a competitor had a more streamlined, easier-to-navigate pre-owned section; Ivan committed to preparing a proposal for the 2021 Audi Q7 with maintenance plan and extended warranty options.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SVIyIAO"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SVIyIAO",
+          "answer_claim": "Competitor has a more streamlined user experience on their pre-owned section, easier to navigate.",
+          "kind": "dialogue",
+          "line_start": 13,
+          "line_end": 14,
+          "quote": "[2021-05-23T17:04:30] Lucas Wright: Makes sense. One thing I noticed, though, was that a competitor has a more streamlined user experience on their pre-owned section. It was easier to navigate.",
+          "start": 2323,
+          "end": 2516
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVIyIAO",
+          "answer_claim": "Will prepare a proposal for the 2021 Audi Q7 with comprehensive maintenance plan and extended warranty options.",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 16,
+          "quote": "[2021-05-23T17:05:00] Ivan Kovalchuk: So, moving forward, we'll prepare a proposal for you based on the 2021 Audi Q7 you\u2019re interested in, coupled with our comprehensive maintenance plan and extended warranty options.",
+          "start": 2711,
+          "end": 2928
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "17c4a372553eb13425acff092284b5cf8cbdf4743c6d6851aab8229e7f29f464",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    }
+  ]
+}
