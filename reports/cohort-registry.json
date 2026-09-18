@@ -2712,9 +2712,9 @@
   "artifact_policy": "Historical source artifacts remain immutable for audit; retired questions must not be mixed into the new active cohort. HF pilot remains available as a legacy release until replacement publication.",
   "tracking_issue": "https://github.com/Endgame-Labs/SalesTranscriptQA/issues/3",
   "active_cohort": {
-    "path": "runs/sales-expanded-2000-v1/scope-reviewed",
-    "questions": 410,
-    "sha256": "95239b487791476b35d6cac6e0a8ba7c7b22e7793ce417b957a63f5a4da62e41"
+    "path": "runs/sales-full-v2/reviewed",
+    "questions": 2962,
+    "sha256": "f4d05d886ff2807a7eb9e2fe36541e7ef4e92d73922a150958c1cb53c9b0e31d"
   },
   "resolved_quarantines": [
     {
@@ -2722,5 +2722,12 @@
       "reason": "Strict decision schema triggered the existing bounded repair; both necessity judges and full customer-history review now pass. No QA content changed.",
       "review_report": "reports/necessity-schema-scope-regression-20260914.json"
     }
-  ]
+  ],
+  "full_run": {
+    "path": "runs/sales-full-v2",
+    "source_units": 14916,
+    "status": "generation, independent review, and four-arm RAG complete",
+    "published": true,
+    "publication_revision": "183bd79178a3555351d25400225001a9b27ecc2f"
+  }
 }

@@ -2,9 +2,9 @@
 
 A dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales calls, with separate B2B and B2C question sets and a companion CLI in this repository.
 
-**Resumed after disk expansion (September 18, 2026, 06:29 UTC).** Full v9 generation and automated review have finished; RAG evaluation is partially complete. See the checkpoint and resume instructions below. B2C is single-call only; B2B supports single- and two-call questions. [Generation guide](docs/GENERATION.md) · [Cohort registry](reports/cohort-registry.json).
+**Full v2 published September 18, 2026.** All 14,916 eligible source units were processed. The reviewed release contains **2,962 QA pairs**: 1,215 B2B single-call, 428 B2B multi-call, and 1,319 B2C single-call. [Pinned Hugging Face release](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA/tree/183bd79178a3555351d25400225001a9b27ecc2f) · [Generation guide](docs/GENERATION.md) · [Cohort registry](reports/cohort-registry.json).
 
-The earlier 200-question Hugging Face pilot and stopped legacy full-generation run are retired for new research. They remain historical artifacts; they will not be mixed into the revised cohort. The published [Hugging Face dataset](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA) still serves that legacy pilot pending replacement publication. The revised 37-question sample yielded 36 active seed questions after quarantining one ambiguous package question.
+The earlier 200-question pilot and legacy generation run are retired from active use. Historical pilot files are preserved under `pilot/` in the dataset; they are not mixed into the revised cohort.
 
 The CLI is implemented and tested. [Legacy CLI release](https://github.com/Endgame-Labs/SalesTranscriptQA/releases/tag/v0.1.0) · [Historical pilot report](reports/PILOT.md) · [Revised generator readiness report](reports/GENERATOR_READINESS.md).
 
@@ -19,78 +19,44 @@ The corpus preserves dialogue verbatim. Linked IDs are resolved into separate id
 
 Publication uses canonical Parquet plus Markdown transcript exports with YAML frontmatter. The `salestranscriptqa` CLI fetches pinned Hugging Face releases, exports corpora/questions, validates submissions, and supports answer judging in the style of [EnronQA-cli](https://github.com/dorkitude/EnronQA-cli).
 
-## Current run and saved reboot checkpoint
+## Full release and evaluation
 
-The user has resumed the work. The service and hourly timer are active again;
-2,967 unchanged QA pairs remain after the three quality holds were reconciled.
-The private evaluator now has a tested `reconcile_partial.py` migration that maps
-cached embeddings by original question ID and preserves API receipts and costs.
-Migration made no model calls. Disk space is now about 405 GB free. The managed
-workflow replays cached reviews before resuming RAG. Next assistant inspection:
-07:00 UTC. The notes below preserve the pause checkpoint and recovery procedure;
-the previously outstanding partial-cache reconciliation is now implemented.
+Generation used the v9 prompt and independent source/citation and customer-history
+reviews. Hourly source inspections added quality exclusions. No question was
+removed because of its RAG score. Dialogue and identifying metadata remain
+unchanged from the source corpus.
 
-### Historical pause checkpoint and resumption
+A four-configuration evaluation used the full 10,829-call corpus, 1,042-token
+chunks with 260-token overlap, hybrid dense/BM25 retrieval, and 4,096-token
+contexts. GLM 5.3 Flash answered; Qwen 3.8 Max judged.
 
-All 14,916 eligible source units have been processed. Generation selected 4,932
-questions; source/citation and customer-history reviews reduced these to 2,970
-frozen QA pairs (1,217 B2B single, 1,323 B2C single, 430 B2B multi). The latest
-assistant sample added three evidence-context holds, leaving **2,967 eligible**
-questions pending reconciliation. See the [latest quality inspection](reports/hourly-quality/full-20260918-04-review.md).
-The 04 UTC inspection was performed early, before the user-requested pause.
+| Configuration | Correct / questions | Judged accuracy |
+| --- | ---: | ---: |
+| hybrid | 2,593 / 2,962 | 87.5% |
+| hybrid-rerank | 2,851 / 2,962 | 96.3% |
+| oracle | 2,959 / 2,962 | 99.9% |
+| no-context | 0 / 2,962 | 0.0% |
 
-The private sibling `../2026-09-12-salestranscriptqa-rag-evaluation/` owns RAG
-execution. It has completed all 93 query-embedding batches and 845 successful
-reranker requests against the frozen 2,970-question input; answering/judging has
-not started. Its README contains the detailed resume requirements. Historical
-results and dashboard links are earlier experiments, not this unfinished run.
+These are construction diagnostics on an automatically reviewed synthetic
+cohort, not held-out results or human gold. Reranked multi-call accuracy is
+348/428 (81.3%); questions can remain difficult despite passing source review.
+All 11,848 retained outcomes passed exact-context and coverage verification.
+The final quality reconciliation reused cached outcomes with zero new API calls.
 
-Campaign API estimates at pause: **$4,541.95 recorded / $4,561.26 conservative**,
-including unknown/in-flight reservations, against the shared **$5,000 ceiling**.
-These are configured-rate Fireworks estimates, not an invoice; VM/storage,
-Turbopuffer and assistant costs, and earlier pre-campaign work are excluded.
-No revised full dataset has been published; Hugging Face still serves the legacy
-200-question pilot. Final RAG verification, publication and secret-gist report
-remain unfinished.
+Anonymous checksums and a pinned CLI download were verified after publication.
+To fetch this exact release:
 
-The generation/RAG service and hourly timer were stopped and disabled so reboot
-will not restart paid work. Request-log compression was also stopped: 124,655
-artifacts compressed losslessly, approximately 962 MB recovered. JSON and JSON.gz
-artifacts are both supported. Preserve this repository's ignored `runs/`, `data/`,
-SQLite databases and any WAL/SHM files, plus the private evaluator's ignored
-`runs/`, `data/` and unfinished reports. **GitHub is not a backup of those caches.**
-Resize the existing persistent disk; do not replace these directories with a
-fresh clone. Credentials remain local in `~/.secrets/keys.env`.
+```sh
+uv run salestranscriptqa fetch --repo EndgameLabs/SalesTranscriptQA --revision 183bd79178a3555351d25400225001a9b27ecc2f
+```
 
-After disk expansion and reboot:
-
-1. Check disk space and that both repositories, local caches and credentials
-   survived. Run `uv sync --frozen` in each Python repository.
-2. Reconcile the three new ID holds before restarting the full workflow. The
-   existing frozen file and RAG configuration still describe 2,970 questions;
-   blindly starting the service will hit intentional quarantine/hash guards.
-   Preserve the old cohort and query-to-vector/cache mapping. A safe cached
-   subset-resume path is **not yet implemented**; implement and verify it first,
-   retaining unchanged QA content and all historical costs. Do not remove holds,
-   bypass guards, delete caches or regenerate the dataset to make it resume.
-3. Once the cohort/cache reconciliation is verified, check the budget and resume
-   from this repository:
-
-   ```sh
-   uv run python scripts/full_sample_workflow.py --checkpoint-review reports/expanded-2000-full-checkpoint.json --check-only
-   systemctl --user reset-failed salestranscriptqa-full-v2.service
-   systemctl --user start salestranscriptqa-full-v2.service
-   systemctl --user enable --now salestranscriptqa-full-hourly.timer
-   tail -f runs/sales-full-v2/rag-evaluation.log
-   ```
-
-   The service remains disabled for boot unless explicitly enabled later. The
-   timer is a supplemental budget/health check, not a substitute for the requested
-   assistant's hourly source-quality inspection. Resume those inspections too.
-4. Complete all four RAG arms for the reconciled cohort, verify actual results,
-   publish the reviewed release to `EndgameLabs/SalesTranscriptQA`, verify an
-   anonymous CLI fetch, and create the final secret gist with an HTMLPreview link.
-   Never select questions based on their RAG score.
+See the [publication receipt](reports/full-v2-publication.json) and
+[release verification](reports/full-v2-release-verification.json). The managed
+full workflow is complete. Preserve local `runs/`, `data/`, SQLite files and API
+artifacts for reproducibility; GitHub does not contain the entire resumable cache.
+[Historical reboot checkpoint and recovery notes](docs/REBOOT-CHECKPOINT-20260918.md)
+remain available. The project ran on `tango-middlegame` (exe.dev); the private
+workspace README maintains the shared machine inventory.
 
 ## Attribution and licensing
 

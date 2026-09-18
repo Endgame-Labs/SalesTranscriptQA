@@ -1,6 +1,6 @@
 {
   "before_review": 4932,
-  "accepted": 2967,
+  "accepted": 2962,
   "rejected": [
     {
       "item": 2,
@@ -631,6 +631,48 @@
       },
       "question_id": "b2b-multi_call-240ef8516f2e6808",
       "prior_quarantine": false
+    },
+    {
+      "item": 112,
+      "original_status": "accepted",
+      "question": "For TrueNorth Technologies, what deployment-pace concern did Oluwaseun raise in the initial discussion, and what onboarding timeline did Priya commit to at the kick-off meeting?",
+      "gold_answer": "Oluwaseun said delays in feature introduction could hold them back; Priya committed to completing full onboarding within six to eight weeks.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "requirements",
+        "locator_preamble": false,
+        "reason": "The question asks for two distinct facts tied to TrueNorth Technologies: (1) Oluwaseun's deployment-pace concern from the initial discussion (call 1, 2021-02-28: 'any delays in feature introduction could hold us back') and (2) Priya's onboarding timeline commitment at the kick-off meeting (call 2, 2021-06-04: 'complete the full onboarding within six to eight weeks'). Both claims are directly supported by the respective transcripts. Each source contributes an exclusive requested fact—call 1 provides the concern, call 2 provides the timeline—so both_sources_required is true. The question is naturally worded, adequately scoped by naming the account and the two meeting contexts, and the gold answer states precisely the two requested facts without unasked extras. A rep/account manager would plausibly want to recall a customer's deployment concern and the committed onboarding timeline. No artificial locator preamble, no answer leakage, no unsupported causality."
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quote directly shows Oluwaseun Olowo stating 'any delays in feature introduction could hold us back,' which matches the answer_claim about the deployment-pace concern. The speaker, account (TrueNorth Technologies via metadata), and call context (initial discussion dated 2021-02-28) all align."
+            },
+            {
+              "index": 1,
+              "supported": true,
+              "reason": "The quote shows Priya Choudhury explicitly stating 'We aim to complete the full onboarding within six to eight weeks,' which directly supports the answer_claim about the onboarding timeline commitment at the kick-off meeting (call dated 2021-06-04, same opportunity/account)."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "Both parts of the gold_answer are fully supported by the cited evidence: (1) Oluwaseun's concern about delays in feature introduction holding them back is verbatim in evidence index 0, and (2) Priya's commitment to completing full onboarding within six to eight weeks is verbatim in evidence index 1. The metadata confirms the correct account (TrueNorth Technologies) and the chronological ordering (initial discussion Feb 2021, kick-off June 2021)."
+        }
+      },
+      "question_id": "b2b-multi_call-24603f294d505376",
+      "prior_quarantine": true
     },
     {
       "item": 117,
@@ -4425,6 +4467,48 @@
         }
       },
       "question_id": "b2b-multi_call-d4442205855e026d",
+      "prior_quarantine": true
+    },
+    {
+      "item": 616,
+      "original_status": "accepted",
+      "question": "What next step did Mei Lin propose to Andrés Pérez at Skyline Robotics in the initial discussion, and what follow-up did she commit to after the product demo?",
+      "gold_answer": "First, a site visit/discovery meeting on February 9th; after the demo, she'll send detailed product documentation and schedule a negotiation call to discuss terms and pricing.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Call 1 (Feb 6) contains Mei Lin proposing a site visit/discovery meeting on February 9th as the next step. Call 2 (Feb 24, the product demo) contains her commitment to send detailed product documentation and schedule a negotiation call for terms and pricing. Each source contributes an exclusive requested fact; the gold answer matches both transcripts precisely with no extras or omissions. The question naturally identifies the rep, contact, and account, and a sales rep would plausibly need to recall these next-step commitments.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quote from Mei Lin on 2023-02-06 explicitly states 'We're planning a site visit on February 9th. During that discovery meeting, we'll delve deeper into your specific needs...' This directly supports the answer_claim about a site visit/discovery meeting on February 9th. The speaker is Mei Lin, the call metadata confirms the account is Skyline Robotics and the contact is Andrés Pérez, matching the question context."
+            },
+            {
+              "index": 1,
+              "supported": true,
+              "reason": "The quote from Mei Lin on 2023-02-24 explicitly states 'I'll follow up with detailed product documentation and we can schedule a negotiation call to discuss terms and pricing when you're ready.' This directly supports the answer_claim about sending detailed product documentation and scheduling a negotiation call to discuss terms and pricing. The call metadata confirms this is the second call with Andrés Pérez at Skyline Robotics, consistent with a post-demo follow-up."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "The gold_answer has two parts: (1) a site visit/discovery meeting on February 9th as the next step in the initial discussion, and (2) after the demo, sending detailed product documentation and scheduling a negotiation call to discuss terms and pricing. Evidence index 0 fully supports part (1) with the exact date and characterization as a discovery meeting. Evidence index 1 fully supports part (2) with the commitment to send detailed product documentation and schedule a negotiation call for terms and pricing. The metadata confirms the first call (Feb 6) is the initial discussion and the second call (Feb 24) is the follow-up after the product demo. All factual claims in the gold_answer are covered by the supplied citations."
+        }
+      },
+      "question_id": "b2b-multi_call-d508df2c647f2247",
       "prior_quarantine": true
     },
     {
@@ -10997,6 +11081,43 @@
         }
       },
       "question_id": "b2b-single_call-68df6fb5ccfc04d1",
+      "prior_quarantine": true
+    },
+    {
+      "item": 1505,
+      "original_status": "accepted",
+      "question": "What did Laila Hassan want the demo of SecureFlow Suite and AI Cirku-Tech to cover?",
+      "gold_answer": "More on customization options, since Horizon Tech wants products tailored to their unique processes.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Laila Hassan wanted the demo to cover. The transcript at 14:04:40 shows her requesting 'a bit more on customization options' because Horizon Tech wants products 'tailored to fit our unique processes.' The gold answer captures both the topic (customization options) and the rationale (tailored to unique processes) accurately. The question is naturally phrased, adequately scoped by naming the contact, products, and account context, and a rep would plausibly want to know demo focus areas. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quoted dialogue directly shows Laila Hassan saying 'Perhaps just a bit more on customization options. We're quite keen on products that can be tailored to fit our unique processes.' This matches the answer_claim that she asked for more on customization options and was keen on products tailored to their unique processes. Speaker attribution, the request content, and the rationale are all present in the quote."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "The gold_answer states Laila wanted the demo to cover 'more on customization options, since Horizon Tech wants products tailored to their unique processes.' The cited evidence (index 0) contains Laila Hassan's exact words requesting 'a bit more on customization options' and expressing keenness on 'products that can be tailored to fit our unique processes.' The context metadata confirms the account is Horizon Tech Integrations and the contact is Laila Hassan, supporting the attribution. All factual elements of the gold_answer are covered by the supplied evidence."
+        }
+      },
+      "question_id": "b2b-single_call-68eff374d3e711ce",
       "prior_quarantine": true
     },
     {
@@ -31408,6 +31529,48 @@
       "prior_quarantine": false
     },
     {
+      "item": 4442,
+      "original_status": "accepted",
+      "question": "What did Mason Williams say would most help sway his decision on the Camry Hybrid, and what did Enzo offer to do about the service package costs?",
+      "gold_answer": "Mason said immediate cost savings would really help sway his decision; Enzo said he'd take the service package cost concern back to his team to see if a more competitive tailored package was possible.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Both requested facts are verified in the single transcript: Mason states 'immediate cost savings would really help sway my decision' and Enzo says 'I'll take your concern back to our team to see if there's a way we can offer a more competitive package tailored to your needs.' The question is naturally phrased, scoped to a specific customer and vehicle, and the answer contains exactly the two requested facts with no extras. Single-call set so both_sources_required is true.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quoted dialogue from Mason Williams explicitly states 'immediate cost savings would really help sway my decision,' which directly supports the answer_claim that Mason says immediate cost savings would help sway his decision."
+            },
+            {
+              "index": 1,
+              "supported": true,
+              "reason": "The quoted dialogue from Enzo Rossi explicitly states 'I'll take your concern back to our team to see if there's a way we can offer a more competitive package tailored to your needs,' which directly supports the answer_claim that Enzo will take the service package cost concern back to his team to explore a more competitive tailored package."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "Both cited evidence items fully support the gold_answer. Evidence index 0 confirms Mason said immediate cost savings would really help sway his decision. Evidence index 1 confirms Enzo offered to take the service package cost concern back to his team to see if a more competitive tailored package was possible. Together they cover every factual claim in the gold_answer."
+        }
+      },
+      "question_id": "b2c-single_call-c893960958329bbb",
+      "prior_quarantine": true
+    },
+    {
       "item": 4446,
       "original_status": "accepted",
       "question": "What next step did Abigail commit to for Sophia Carter's test drives of the Tesla Model S and Camry Hybrid?",
@@ -32485,6 +32648,48 @@
       },
       "question_id": "b2c-single_call-da908052123fdc76",
       "prior_quarantine": false
+    },
+    {
+      "item": 4605,
+      "original_status": "accepted",
+      "question": "What did Emma Daniels flag about scheduling service appointments compared to other providers, and how did Aisha respond?",
+      "gold_answer": "Emma noted some other providers make scheduling appointments easier; Aisha said AutoElite is actively streamlining its appointment processes while emphasizing thoroughness and reliability.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "Emma's remark about other providers making scheduling easier is a mild competitive objection; Aisha's reply about streamlining while emphasizing thoroughness/reliability is accurately captured. The question names the participants and topic naturally, the answer states exactly the two requested facts with no extras, and the single-call setting makes both_sources_required true by rule."
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quote directly shows Emma Daniels saying she's 'noted some feedback around scheduling appointments being a bit easier with some other providers,' which matches the answer_claim that Emma noted feedback that scheduling appointments is easier with some other providers."
+            },
+            {
+              "index": 1,
+              "supported": true,
+              "reason": "The quote shows Aisha Patel stating 'We're actively working on streamlining our appointment processes to make them as efficient as possible. We believe the thoroughness and reliability we offer are worth the effort,' which directly supports the answer_claim about Aisha saying they are actively working on streamlining appointment processes and believe their thoroughness and reliability are worth the effort."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "The gold_answer states Emma noted some other providers make scheduling appointments easier, which is supported by evidence index 0. It also states Aisha said AutoElite is actively streamlining its appointment processes while emphasizing thoroughness and reliability, which is supported by evidence index 1. The account metadata confirms the account name is 'Emma Daniels,' consistent with the question. All factual claims in the gold_answer are covered by the supplied citations."
+        }
+      },
+      "question_id": "b2c-single_call-dab19992b53e5d13",
+      "prior_quarantine": true
     },
     {
       "item": 4612,
@@ -173415,7 +173620,7 @@
       }
     }
   ],
-  "question_sha256": "32b6a9ccf28f63f1838e21e873a7ad0c7cb17f028419d4fd2804429071207293",
+  "question_sha256": "f4d05d886ff2807a7eb9e2fe36541e7ef4e92d73922a150958c1cb53c9b0e31d",
   "policy": "Independent source/citation and complete customer-history scope review plus prior quarantines; RAG failures never remove questions.",
   "scope_protocol": "customer-event-scope-v2"
 }
