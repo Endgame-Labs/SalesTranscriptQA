@@ -1,6 +1,6 @@
 {
   "before_review": 4932,
-  "accepted": 2970,
+  "accepted": 2967,
   "rejected": [
     {
       "item": 2,
@@ -10708,6 +10708,48 @@
         }
       },
       "question_id": "b2b-single_call-62b0aefbc9355df2",
+      "prior_quarantine": true
+    },
+    {
+      "item": 1457,
+      "original_status": "accepted",
+      "question": "What budget and installation timeline did Liam Zheng from AquaGuard Solutions give for the EcoPower Convert and SecureFlow Suite?",
+      "gold_answer": "Budget of 2934 and installation completed within four days.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two specific facts (budget and installation timeline) that a rep would plausibly need to track. The dialogue confirms Liam Zheng states a budget of 2934 and a four-day installation requirement. The gold answer matches exactly with no extra or missing information. The question is naturally worded, scoped to a named contact/company and products, and contains no artificial locator preamble or answer leakage. Single-call set, so both_sources_required is true by rule.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quote directly contains Liam Zheng stating 'We're working with a budget of 2934,' which matches the answer_claim exactly. The speaker is confirmed as Liam Zheng from AquaGuard Solutions via metadata."
+            },
+            {
+              "index": 1,
+              "supported": true,
+              "reason": "The quote contains Liam Zheng saying 'we need it completed within four days,' which directly supports the answer_claim. The context is about installation, as he says 'And the installation?' immediately before the timeline statement."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "The gold_answer states 'Budget of 2934 and installation completed within four days.' Evidence index 0 confirms the budget of 2934 stated by Liam Zheng. Evidence index 1 confirms the four-day installation timeline stated by Liam Zheng. The metadata confirms the speaker is Liam Zheng from AquaGuard Solutions. The question asks about 'EcoPower Convert and SecureFlow Suite' specifically, and while the quotes don't explicitly name those products, the context metadata and the flow of conversation (pricing and installation discussion) are consistent with the call context. The two factual claims in the gold_answer (budget of 2934, four-day installation) are both directly supported by the cited evidence."
+        }
+      },
+      "question_id": "b2b-single_call-62f53ad6d74eb244",
       "prior_quarantine": true
     },
     {
@@ -24273,6 +24315,43 @@
       "prior_quarantine": false
     },
     {
+      "item": 3470,
+      "original_status": "accepted",
+      "question": "What is Lucas Wright's budget range for the premium pre-owned Audi Q7, and is he open to financing?",
+      "gold_answer": "$55,000 to $60,000, and yes, he's open to hearing about financing options.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for Lucas Wright's budget range and financing openness for the premium pre-owned Audi Q7. The dialogue at 10:56:17 states '$55,000 to $60,000' and 'open to hearing about financing options,' matching the gold answer exactly. A sales rep at AutoElite Motors would plausibly need this info to prepare a proposal. The question is naturally worded, scoped to a named customer and vehicle, and the answer contains precisely the two requested facts with no extras. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quoted dialogue from Lucas Wright explicitly states his budget range as '$55,000 to $60,000' and that he is 'open to hearing about financing options and how they might help.' This directly supports the answer_claim about both the budget range and openness to financing."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "The single cited evidence item contains Lucas Wright's own words stating his budget range of $55,000 to $60,000 and his openness to hearing about financing options. This fully supports the gold_answer's two factual claims: (1) the budget range is $55,000 to $60,000, and (2) he is open to hearing about financing options. The context metadata confirms the call involves Lucas Wright and a premium pre-owned vehicle acquisition, consistent with the question's subject."
+        }
+      },
+      "question_id": "b2c-single_call-5e6d3f6366f27b12",
+      "prior_quarantine": true
+    },
+    {
       "item": 3476,
       "original_status": "accepted",
       "question": "What did James Nelson say about incentives when discussing the BMW X5 M pricing, and when is the proposal follow-up scheduled?",
@@ -29057,6 +29136,48 @@
         }
       },
       "question_id": "b2c-single_call-9d8a0db060fe4743",
+      "prior_quarantine": true
+    },
+    {
+      "item": 4068,
+      "original_status": "accepted",
+      "question": "What financing flexibility does AutoElite offer Liam Anderson that competitors don't, and what did Enzo promise to send after the call?",
+      "gold_answer": "Clients can adjust financing terms mid-contract without penalties, a flexibility competitor plans lack; Enzo promised to send a detailed email summarizing the conversation.",
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks two specific facts from the same call: (1) the financing flexibility AutoElite offers Liam Anderson that competitors lack, and (2) what Enzo promised to send after the call. The dialogue at 15:17:00 confirms clients can adjust terms mid-contract without penalties, a flexibility competitor plans lack. At 15:18:00 Enzo promises to send a detailed email summarizing the conversation. The gold answer states both facts precisely with no unasked extras. The question is naturally worded, scoped to a named account (Liam Anderson) and rep (Enzo), and a sales rep would plausibly want to recall these details. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      },
+      "mechanical_locator_flags": [],
+      "citation_audit": {
+        "method": "quoted-evidence-audit-v1",
+        "passed": true,
+        "schema_valid": true,
+        "verdict": {
+          "evidence_support": [
+            {
+              "index": 0,
+              "supported": true,
+              "reason": "The quoted dialogue from Enzo Rossi explicitly states that clients can 'adjust terms mid-contract without penalties' and that this is 'a level of flexibility that many competitor plans don't provide.' This directly supports the answer_claim about mid-contract adjustment without penalties being a differentiator from competitors."
+            },
+            {
+              "index": 1,
+              "supported": true,
+              "reason": "The quoted dialogue from Enzo Rossi explicitly states 'I'll also send over a detailed email summarizing our conversation today.' This directly supports the answer_claim that Enzo promised to send a detailed email summarizing the conversation."
+            }
+          ],
+          "answer_supported": true,
+          "reason": "Both factual claims in the gold_answer are fully supported by the cited evidence: (1) Index 0 confirms that clients can adjust financing terms mid-contract without penalties and that competitor plans lack this flexibility; (2) Index 1 confirms Enzo promised to send a detailed email summarizing the conversation. The account metadata confirms the call involves Liam Anderson, matching the question's subject."
+        }
+      },
+      "question_id": "b2c-single_call-9e8ef9d0bcad546f",
       "prior_quarantine": true
     },
     {
@@ -173294,7 +173415,7 @@
       }
     }
   ],
-  "question_sha256": "e53ec6c1655b2e41888781260ec0a742d078af5a3c45bfd1bb66925549a74a9a",
+  "question_sha256": "32b6a9ccf28f63f1838e21e873a7ad0c7cb17f028419d4fd2804429071207293",
   "policy": "Independent source/citation and complete customer-history scope review plus prior quarantines; RAG failures never remove questions.",
   "scope_protocol": "customer-event-scope-v2"
 }
