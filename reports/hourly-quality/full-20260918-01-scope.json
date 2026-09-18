@@ -1,0 +1,445 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "9abbc2b3012acff85c540df271ff400bce370ccbc68f071db77bf3acaee9d7fe",
+  "questions": 4,
+  "counts": {
+    "fail": 2,
+    "pass": 2
+  },
+  "estimated_usd": 0.46200776,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-16dad8914fd71060",
+      "question": "What deployment concern did Ayaan Omar of QuantumLeap Computing raise in the initial discussion, and what full-setup deployment timeframe did Terek quote in the proposal follow-up?",
+      "gold_answer": "Ayaan said deployments were cumbersome and they needed a more streamlined solution; Terek quoted a typical full deployment of about 6-8 weeks.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqgRIAS",
+        "b2b:a05Wt000003SrSkIAK",
+        "b2b:a05Wt000003SsQRIA0",
+        "b2b:a05Wt000003StWAIA0",
+        "b2b:a05Wt000003StWBIA0",
+        "b2b:a05Wt000003StWCIA0",
+        "b2b:a05Wt000003Su2OIAS",
+        "b2b:a05Wt000003SuldIAC",
+        "b2b:a05Wt000003SvUqIAK",
+        "b2b:a05Wt000003SvUrIAK",
+        "b2b:a05Wt000003SvsyIAC",
+        "b2b:a05Wt000003SvszIAC",
+        "b2b:a05Wt000003SwqpIAC",
+        "b2b:a05Wt000003SxJkIAK",
+        "b2b:a05Wt000003Sxd8IAC",
+        "b2b:a05Wt000003Sxd9IAC",
+        "b2b:a05Wt000003SxoEIAS",
+        "b2b:a05Wt000003T0cUIAS",
+        "b2b:a05Wt000003T0cVIAS",
+        "b2b:a05Wt000003T1C3IAK",
+        "b2b:a05Wt000003T1aBIAS",
+        "b2b:a05Wt000003T1whIAC",
+        "b2b:a05Wt000003T2KuIAK",
+        "b2b:a05Wt000003T2WEIA0",
+        "b2b:a05Wt000003T2j7IAC",
+        "b2b:a05Wt000003T2knIAC",
+        "b2b:a05Wt000003T2xcIAC",
+        "b2b:a05Wt000003T32SIAS",
+        "b2b:a05Wt000003T3aJIAS",
+        "b2b:a05Wt000003T3aKIAS",
+        "b2b:a05Wt000003T3qQIAS",
+        "b2b:a05Wt000003T3s5IAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Ayaan Omar's earliest (initial) discussion with Terek is the 2020-03-10 discovery call on the QuantumLeap-TechPulse Integration opportunity, where he raised cumbersome deployments needing a streamlined solution. The proposal follow-up is the 2020-04-15 call on the same opportunity, where Terek quotes a 6-8 week full-setup deployment timeframe. Both facts come from the same opportunity's call sequence, so the answer is determinate.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2020-03-10), Ayaan Omar raised that QuantumLeap's deployments were cumbersome and they needed a more streamlined solution \u2014 implementation complexities were challenging them. In the proposal follow-up (2020-04-15), Terek Al-Farsi quoted that their typical deployment process from start to finish for a full setup takes about 6-8 weeks, depending on the specifics of integration into existing infrastructure.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003Sxd8IAC",
+                "line_start": 5,
+                "line_end": 7,
+                "quote": "[2020-03-10T13:31:10] Ayaan Omar: Sure. We're currently focused on advancing our AI Cirku-Tech line and improving the adaptive capabilities of our QuantumPCB Modeler. However, the implementation complexities have been challenging.\n[2020-03-10T13:31:35] Terek Al-Farsi: I see. At TechPulse, we focus heavily on streamlined implementation. Our solutions, like the SecureFlow Suite, are designed to integrate seamlessly, minimizing downtime and complexity. How does your current system handle deployments?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s5IAC",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2020-04-15T09:41:35] Ayaan Omar: That\u2019s reassuring. We\u2019ve also noticed from your case studies that clients often commend your security features. How about the integration timelines? You mention rapid deployment, but what are the expected timeframes for a full setup?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Ayaan Omar's earliest call with Terek Al-Farsi is b2b:a05Wt000003T0cVIAS (2020-03-18), where Ayaan raises a deployment concern about implementation and deployment complexity. The proposal follow-up is b2b:a05Wt000003T3s5IAC (2020-04-15), where Ayaan explicitly asks about 'expected timeframes for a full setup' and Terek quotes 6-8 weeks.",
+        "answers": [
+          {
+            "answer": "In the initial discussion (2020-03-18), Ayaan Omar raised the deployment concern of how TechPulse's solutions would stack up against others in terms of implementation and deployment, noting that some of their past systems had been lacking in user interfaces. In the proposal follow-up (2020-04-15), when Ayaan asked about expected timeframes for a full setup, Terek Al-Farsi quoted a typical deployment process of about 6-8 weeks from start to finish, depending on the specifics of integration into existing infrastructure.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0cVIAS",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2020-03-18T14:11:05] Ayaan Omar: Okay, that makes sense. I'm particularly interested in how your solutions would stack up against others in terms of implementation and deployment.\n[2020-03-18T14:11:15] Terek Al-Farsi: Great point. We've found that our streamlined processes often present a more favorable option, especially when compared to the complexities others face, like those in Adaptive Design Solutions. Our clients appreciate the rapid deployment capabilities, allowing for quick time-to-market strategies."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s5IAC",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2020-04-15T09:41:35] Ayaan Omar: That\u2019s reassuring. We\u2019ve also noticed from your case studies that clients often commend your security features. How about the integration timelines? You mention rapid deployment, but what are the expected timeframes for a full setup?\n[2020-04-15T09:41:55] Terek Al-Farsi: Good question. Our typical deployment process from start to finish can take about 6-8 weeks, depending on the specifics of the integration into your existing infrastructure."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": false,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers agree on the full-setup deployment timeframe (about 6-8 weeks, depending on integration specifics). However, they disagree on the deployment concern Ayaan Omar raised: Answer A states deployments were cumbersome and a more streamlined solution was needed (matching the reference), while Answer B describes a concern about how TechPulse's solutions would compare to others in implementation/deployment and mentions lacking user interfaces\u2014a different concern not aligned with Answer A or the reference. The reference covers both requested facts: the cumbersome/streamlined-solution concern and the 6-8 week timeframe."
+      },
+      "passed": false
+    },
+    {
+      "question_id": "b2b-single_call-7ab4858a767b2da9",
+      "question": "What did Charles Dubois say about MediLux Solutions' frustrations with support from other vendors, and what did Jorge highlight about their own support services?",
+      "gold_answer": "Charles said poor support from other companies was a frustration area; Jorge noted clients praise their responsiveness and strong SLAs, addressing concerns swiftly.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqZyIAK",
+        "b2b:a05Wt000003SqZzIAK",
+        "b2b:a05Wt000003Sr7tIAC",
+        "b2b:a05Wt000003SrkUIAS",
+        "b2b:a05Wt000003SslNIAS",
+        "b2b:a05Wt000003SswlIAC",
+        "b2b:a05Wt000003SswmIAC",
+        "b2b:a05Wt000003StEVIA0",
+        "b2b:a05Wt000003StEWIA0",
+        "b2b:a05Wt000003Su48IAC",
+        "b2b:a05Wt000003Su49IAC",
+        "b2b:a05Wt000003Svg0IAC",
+        "b2b:a05Wt000003SvrJIAS",
+        "b2b:a05Wt000003SvrKIAS",
+        "b2b:a05Wt000003Sw7TIAS",
+        "b2b:a05Wt000003SwgwIAC",
+        "b2b:a05Wt000003SwgxIAC",
+        "b2b:a05Wt000003Swp0IAC",
+        "b2b:a05Wt000003Sx9wIAC",
+        "b2b:a05Wt000003SxUzIAK",
+        "b2b:a05Wt000003SxY8IAK",
+        "b2b:a05Wt000003Sy2oIAC",
+        "b2b:a05Wt000003Sy4RIAS",
+        "b2b:a05Wt000003SyHNIA0",
+        "b2b:a05Wt000003SyveIAC",
+        "b2b:a05Wt000003SzBlIAK",
+        "b2b:a05Wt000003SzF0IAK",
+        "b2b:a05Wt000003SzJnIAK",
+        "b2b:a05Wt000003SzRsIAK",
+        "b2b:a05Wt000003SzRtIAK",
+        "b2b:a05Wt000003SzV7IAK",
+        "b2b:a05Wt000003SzYIIA0",
+        "b2b:a05Wt000003SzlEIAS",
+        "b2b:a05Wt000003SztHIAS",
+        "b2b:a05Wt000003SzzkIAC",
+        "b2b:a05Wt000003T0B2IAK",
+        "b2b:a05Wt000003T0CdIAK",
+        "b2b:a05Wt000003T0FqIAK",
+        "b2b:a05Wt000003T0MLIA0",
+        "b2b:a05Wt000003T0VyIAK",
+        "b2b:a05Wt000003T0pKIAS",
+        "b2b:a05Wt000003T0sYIAS",
+        "b2b:a05Wt000003T10bIAC",
+        "b2b:a05Wt000003T10cIAC",
+        "b2b:a05Wt000003T12DIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only in the 2020-12-24 call (b2b:a05Wt000003T12DIAS) does Charles Dubois explicitly state that support was an area of frustration with other companies they've worked with, and Jorge Pinto responds by highlighting TechPulse's support (responsiveness and strong service level agreements). Other Charles Dubois calls discuss different vendor issues (customizability, delays, pricing flexibility), not support frustrations.",
+        "answers": [
+          {
+            "answer": "In the December 24, 2020 call, Charles Dubois said that support was one of the areas where MediLux had frustrations with some of the other companies they had worked with, so he was glad to hear about TechPulse's support reputation. Jorge Pinto responded that TechPulse takes pride in its customer support, noting that clients often praise their responsiveness and the strength of their service level agreements, and that they aim to address any concerns swiftly and effectively.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T12DIAS",
+                "line_start": 11,
+                "line_end": 14,
+                "quote": "[2020-12-24T10:17:40] Charles Dubois: That's definitely helpful. And how about your support services? I've heard good things about them.\n[2020-12-24T10:17:55] Jorge Pinto: Yes, we take pride in our customer support. Our clients often praise our responsiveness and the strength of our service level agreements. We aim to address any concerns swiftly and effectively.\n[2020-12-24T10:18:10] Charles Dubois: That\u2019s actually one of the areas we had frustrations with some of the other companies we've worked with, so that\u2019s good to know."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Charles Dubois and Jorge (Pinto). Only one call features both: b2b:a05Wt000003T12DIAS (2020-12-24, MediLux EDA Transformation). In that call, Charles states MediLux had frustrations with support from other companies, and Jorge highlights TechPulse's responsiveness and strong service level agreements. No other call pairs Charles with Jorge on this specific topic.",
+        "answers": [
+          {
+            "answer": "Charles Dubois said that support was 'actually one of the areas we had frustrations with some of the other companies we've worked with.' In response, Jorge Pinto highlighted that TechPulse takes pride in its customer support, noting that clients often praise their responsiveness and the strength of their service level agreements, and that they aim to address any concerns swiftly and effectively.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T12DIAS",
+                "line_start": 11,
+                "line_end": 14,
+                "quote": "[2020-12-24T10:17:40] Charles Dubois: That's definitely helpful. And how about your support services? I've heard good things about them.\n[2020-12-24T10:17:55] Jorge Pinto: Yes, we take pride in our customer support. Our clients often praise our responsiveness and the strength of our service level agreements. We aim to address any concerns swiftly and effectively.\n[2020-12-24T10:18:10] Charles Dubois: That\u2019s actually one of the areas we had frustrations with some of the other companies we've worked with, so that\u2019s good to know."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers convey the same two requested facts: (1) Charles Dubois stated that support was an area where MediLux had frustrations with other vendors, and (2) Jorge highlighted that TechPulse takes pride in customer support, with clients praising responsiveness and strong SLAs, and that they address concerns swiftly. The reference likewise covers both commitments\u2014Charles's frustration with poor support from other companies and Jorge's points about responsiveness, strong SLAs, and swift concern resolution. Minor wording differences (e.g., answer_a adds the date and 'glad to hear' phrasing) do not alter the core facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-1e3785884df45f85",
+      "question": "What features is Jacob Manning mainly looking for in a high-performance safety vehicle, and which model did Mia suggest as a match?",
+      "gold_answer": "Jacob is focused on performance and safety; Mia suggested the 2022 BMW X5 M.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SKaTIAW",
+        "b2c:a05Ws000005SLPLIA4",
+        "b2c:a05Ws000005SNVBIA4",
+        "b2c:a05Ws000005SPNHIA4",
+        "b2c:a05Ws000005SRthIAG",
+        "b2c:a05Ws000005SUrYIAW",
+        "b2c:a05Ws000005SV2pIAG",
+        "b2c:a05Ws000005SWgSIAW",
+        "b2c:a05Ws000005SWoaIAG",
+        "b2c:a05Ws000005SXB6IAO",
+        "b2c:a05Ws000005SXFwIAO",
+        "b2c:a05Ws000005SXRIIA4",
+        "b2c:a05Ws000005SXpWIAW",
+        "b2c:a05Ws000005SXvuIAG",
+        "b2c:a05Ws000005SYNMIA4",
+        "b2c:a05Ws000005SZOEIA4",
+        "b2c:a05Ws000005SZmNIAW",
+        "b2c:a05Ws000005SZpaIAG",
+        "b2c:a05Ws000005SZstIAG",
+        "b2c:a05Ws000005Sa47IAC",
+        "b2c:a05Ws000005SaqTIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Across the 'High-Performance Safety Vehicle Deal' calls with Mia Johansson, Jacob consistently states he is mainly looking for performance and safety, and Mia consistently suggests the 2022 BMW X5 M as the matching model. The Jan 15 discovery call states this most explicitly, and the later calls repeat the same facts rather than offering competing answers.",
+        "answers": [
+          {
+            "answer": "Jacob Manning is mainly looking for a vehicle that stands out in performance and safety (with safety and performance being really important to him), and Mia Johansson suggested the 2022 BMW X5 M as a great match, combining high performance with advanced safety features (adaptive cruise control, lane keeping assist, etc.).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXRIIA4",
+                "line_start": 4,
+                "line_end": 8,
+                "quote": "[2023-01-15T10:51:50] Mia Johansson: That's wonderful to hear! At AutoElite Motors, we pride ourselves on offering a great selection of vehicles with transparent pricing and exceptional customer service. Could you share a little about what specific features you're particularly interested in?\n[2023-01-15T10:52:10] Jacob Manning: Well, I'm mainly focused on performance and safety. I'm not really sold on one specific brand yet, but I'm looking for something that stands out in those areas.\n[2023-01-15T10:52:30] Mia Johansson: Absolutely, prioritizing safety and performance makes perfect sense. One model that might be a great match is the 2022 BMW X5 M. It combines high performance with advanced safety features.\n[2023-01-15T10:52:50] Jacob Manning: I've heard good things about that model. Can you tell me more about the overall package it comes with?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005Sa47IAC",
+                "line_start": 2,
+                "line_end": 6,
+                "quote": "[2023-01-20T09:50:20] Mia Johansson: I'm doing great, thank you! I appreciate you taking the time to speak with me. Shall we dive into the details of the 2022 BMW X5 M today?\n[2023-01-20T09:50:35] Jacob Manning: Absolutely, I'm excited to hear more about the features, especially around safety and performance. These are really important to me.\n[2023-01-20T09:51:00] Mia Johansson: Great! So, let's begin with some of the technological advancements in the newer models of the BMW X5 M. One feature that stands out is the advanced driving assistance system, which significantly enhances both safety and ease of driving. Compared to competitors, our models also integrate the latest tech like adaptive cruise control and lane-keeping assist.\n[2023-01-20T09:51:25] Jacob Manning: That sounds impressive. I've noticed your showrooms always showcase the latest technology, which keeps you ahead of the curve."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SXpWIAW",
+                "line_start": 2,
+                "line_end": 4,
+                "quote": "[2023-01-18T14:02:00] Mia Johansson: Great to hear. I wanted to thank you for taking the time to meet virtually today. Our focus is on understanding your preferences for a high-performance safety vehicle. Have you had a chance to consider any models particularly?\n[2023-01-18T14:02:30] Jacob Manning: Yes, I have. I've been looking into the 2022 BMW X5 M that you mentioned in our previous chats. It seems like a solid fit for what I need."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifically asks about a 'high-performance safety vehicle' and what 'Mia suggested as a match.' Only one opportunity is named 'Jacob Manning's High-Performance Safety Vehicle Deal' (006Ws00000ALrl7IAD), and the salesperson is Mia Johansson. The initial/first call in that opportunity is b2c:a05Ws000005SXRIIA4 (2023-01-15), where Mia asks Jacob what features he's looking for and he states he is 'mainly focused on performance and safety.' Mia then suggests the 2022 BMW X5 M as a match, saying it 'combines high performance with advanced safety features.'",
+        "answers": [
+          {
+            "answer": "Jacob Manning is mainly looking for performance and safety in a high-performance safety vehicle. He stated he is 'mainly focused on performance and safety' and is 'not really sold on one specific brand yet, but looking for something that stands out in those areas.' Mia Johansson suggested the 2022 BMW X5 M as a match, explaining that it 'combines high performance with advanced safety features.'",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SXRIIA4",
+                "line_start": 4,
+                "line_end": 7,
+                "quote": "[2023-01-15T10:51:50] Mia Johansson: That's wonderful to hear! At AutoElite Motors, we pride ourselves on offering a great selection of vehicles with transparent pricing and exceptional customer service. Could you share a little about what specific features you're particularly interested in?\n[2023-01-15T10:52:10] Jacob Manning: Well, I'm mainly focused on performance and safety. I'm not really sold on one specific brand yet, but I'm looking for something that stands out in those areas.\n[2023-01-15T10:52:30] Mia Johansson: Absolutely, prioritizing safety and performance makes perfect sense. One model that might be a great match is the 2022 BMW X5 M. It combines high performance with advanced safety features."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers identify the same requested features (performance and safety) and the same suggested model (2022 BMW X5 M). Answer A adds extra detail about specific safety features (adaptive cruise control, lane keeping assist) and Answer B includes direct quotes, but these are extras that do not change the core facts. The reference concisely states both requested facts: Jacob's focus on performance and safety, and Mia's suggestion of the 2022 BMW X5 M."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-2ad3bf02c24b4559",
+      "question": "What did Zara Phillips say she wants in a vehicle, and which two models did Dmitri suggest as a fit?",
+      "gold_answer": "She wants luxury with top-notch technological features; Dmitri suggested the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SMCZIA4",
+        "b2c:a05Ws000005SMCaIAO",
+        "b2c:a05Ws000005SOZIIA4",
+        "b2c:a05Ws000005SQZZIA4",
+        "b2c:a05Ws000005SQuYIAW",
+        "b2c:a05Ws000005SQxnIAG",
+        "b2c:a05Ws000005SRSJIA4",
+        "b2c:a05Ws000005SSBaIAO",
+        "b2c:a05Ws000005SSMqIAO",
+        "b2c:a05Ws000005SSMrIAO",
+        "b2c:a05Ws000005SSy1IAG",
+        "b2c:a05Ws000005SVCaIAO",
+        "b2c:a05Ws000005SVEPIA4",
+        "b2c:a05Ws000005SWbeIAG",
+        "b2c:a05Ws000005SXHbIAO",
+        "b2c:a05Ws000005SXHcIAO",
+        "b2c:a05Ws000005SYQcIAO",
+        "b2c:a05Ws000005SYaBIAW",
+        "b2c:a05Ws000005SYs8IAG",
+        "b2c:a05Ws000005SZ04IAG",
+        "b2c:a05Ws000005SZJUIA4",
+        "b2c:a05Ws000005SZWQIA4",
+        "b2c:a05Ws000005SZWRIA4",
+        "b2c:a05Ws000005SZeIIAW",
+        "b2c:a05Ws000005SZrHIAW",
+        "b2c:a05Ws000005SZrIIAW",
+        "b2c:a05Ws000005Sc2iIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 13,
+            "normalized_end": 14
+          },
+          {
+            "answer": 2,
+            "evidence": 1,
+            "original_end": 15,
+            "normalized_end": 16
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "multiple",
+        "reason": "Dmitri Volkov appears in three calls with Zara Phillips, and in each he suggests the same two models (2022 Toyota Camry Hybrid and Cadillac XT6), but Zara's stated vehicle wants differ across those calls (advanced technology vs. latest features vs. confirming fit with her needs), so there are materially different complete answers.",
+        "answers": [
+          {
+            "answer": "In the October 24, 2020 call, Zara Phillips said she is particularly interested in vehicles with advanced technology (and later, a vehicle with both luxury and top-notch technological features), and Dmitri suggested the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6 as fits.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SZ04IAG",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-10-24T14:30:45] Dmitri Volkov: Fantastic. Let's dive right in. I understand you're interested in learning about some of the new models we have available. We\u2019ve got the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6 that I think might align with what you\u2019re looking for."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SZ04IAG",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2020-10-24T14:33:55] Zara Phillips: Sounds fantastic. I'm interested in having a vehicle that has both luxury and top-notch technological features."
+              }
+            ]
+          },
+          {
+            "answer": "In the October 22, 2020 call, Zara Phillips said she wants the latest vehicle technologies (likes driving something equipped with the latest features), and Dmitri suggested the 2022 Toyota Camry Hybrid and the Cadillac XT6, packed with cutting-edge tech.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SYaBIAW",
+                "line_start": 8,
+                "line_end": 10,
+                "quote": "[2020-10-22T10:17:05] Dmitri Volkov: Absolutely, and having a trustworthy service team is key. Now, let's talk about the technological side of things. Are you looking for the latest vehicle technologies?\n[2020-10-22T10:17:20] Zara Phillips: Yes, indeed. I like to know I\u2019m driving something equipped with the latest features."
+              }
+            ]
+          },
+          {
+            "answer": "In the November 19, 2020 needs-analysis call, Dmitri noted that based on their previous discussions they were looking at the 2022 Toyota Camry Hybrid and the Cadillac XT6, and Zara confirmed those models seem like a good fit for what she needs (with the lineup fitting her expectations).",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SOZIIA4",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-11-19T13:15:34] Dmitri Volkov: Great! Based on our previous discussions, we're looking at the 2022 Toyota Camry Hybrid and the Cadillac XT6. Does that still align with your preferences?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOZIIA4",
+                "line_start": 15,
+                "line_end": 16,
+                "quote": "[2020-11-19T13:17:40] Zara Phillips: The lineup looks good to me. I think the combination of the Toyota and Cadillac, plus the other services, fits perfectly with my expectations."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question explicitly names Dmitri as the salesperson who suggested two models. Only calls with Dmitri Volkov are relevant. In the 'Spring Hybrid Luxury Opportunity' calls, Dmitri suggests the 2022 Toyota Camry Hybrid and the Cadillac XT6. Zara's stated wants (advanced technology, luxury, top-notch tech features, keeping vehicle in top condition) are expressed across those same calls with Dmitri. The earliest Dmitri call (2020-10-22) establishes her wants and his two-model suggestion; the follow-up calls (2020-10-24, 2020-11-19) confirm the same pairing.",
+        "answers": [
+          {
+            "answer": "Zara Phillips said she wants a vehicle with advanced/latest technology, luxury, and top-notch technological features, and she is very particular about keeping her vehicle in top condition. Dmitri Volkov suggested the 2022 Toyota Camry Hybrid and the Cadillac XT6 as a fit for her needs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SYaBIAW",
+                "line_start": 7,
+                "line_end": 10,
+                "quote": "[2020-10-22T10:16:50] Zara Phillips: That's reassuring. I'm very particular about keeping my vehicle in top condition.\n[2020-10-22T10:17:05] Dmitri Volkov: Absolutely, and having a trustworthy service team is key. Now, let's talk about the technological side of things. Are you looking for the latest vehicle technologies?\n[2020-10-22T10:17:20] Zara Phillips: Yes, indeed. I like to know I\u2019m driving something equipped with the latest features."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SYaBIAW",
+                "line_start": 10,
+                "line_end": 11,
+                "quote": "[2020-10-22T10:17:40] Dmitri Volkov: You're in luck! Our latest models, like the 2022 Toyota Camry Hybrid and the Cadillac XT6, are packed with cutting-edge tech that gives you an edge over other options out there."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SZ04IAG",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2020-10-24T14:30:45] Dmitri Volkov: Fantastic. Let's dive right in. I understand you're interested in learning about some of the new models we have available. We\u2019ve got the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6 that I think might align with what you\u2019re looking for.\n[2020-10-24T14:31:05] Zara Phillips: Yes, I'm particularly interested in vehicles with advanced technology. How do these models compare with others on the market?"
+              },
+              {
+                "call_id": "b2c:a05Ws000005SZ04IAG",
+                "line_start": 13,
+                "line_end": 14,
+                "quote": "[2020-10-24T14:33:55] Zara Phillips: Sounds fantastic. I'm interested in having a vehicle that has both luxury and top-notch technological features."
+              },
+              {
+                "call_id": "b2c:a05Ws000005SOZIIA4",
+                "line_start": 4,
+                "line_end": 6,
+                "quote": "[2020-11-19T13:15:34] Dmitri Volkov: Great! Based on our previous discussions, we're looking at the 2022 Toyota Camry Hybrid and the Cadillac XT6. Does that still align with your preferences?\n[2020-11-19T13:15:42] Zara Phillips: Yes, those models seem like a good fit for what I need."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": null,
+      "passed": false
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

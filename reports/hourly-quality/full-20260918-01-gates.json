@@ -1,0 +1,466 @@
+[
+  {
+    "question_id": "b2b-multi_call-16dad8914fd71060",
+    "question": "What deployment concern did Ayaan Omar of QuantumLeap Computing raise in the initial discussion, and what full-setup deployment timeframe did Terek quote in the proposal follow-up?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The deployment concern Ayaan Omar raised initially and the full-setup deployment timeframe Terek quoted in the proposal follow-up",
+        "relationship": "objection/concern and its resolution (quoted deployment timeframe) addressing the same deployment issue across the initial call and proposal follow-up",
+        "reason": "Both parts concern the same business issue\u2014deployment/setup\u2014linking the raised concern with the quoted timeframe in the follow-up proposal; this is a coherent concern-and-response pair, not two independent lookups."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sxd8IAC",
+                "fact": "Ayaan Omar said deployments were cumbersome and they needed a more streamlined solution.",
+                "why_other_call_cannot_supply_it": "The second call does not mention any deployment concern or complaint from Ayaan; it only discusses security, timelines, training, and support."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s5IAC",
+                "fact": "Terek quoted a typical full deployment timeframe of about 6-8 weeks.",
+                "why_other_call_cannot_supply_it": "The first call does not contain any specific deployment timeframe; Terek only discusses streamlined implementation generally without giving a duration."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: a deployment concern raised in the initial discussion (which appears only in the first call) and a full-setup deployment timeframe quoted in the proposal follow-up (which appears only in the second call). Each fact is unique to its respective call and cannot be derived from the other, so both calls are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sxd8IAC",
+                  "fact": "Ayaan Omar raised that deployments are cumbersome and they need a more streamlined solution.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention any deployment concern; it focuses on security, timelines, training, and support."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3s5IAC",
+                  "fact": "Terek quoted a typical full deployment timeframe of about 6-8 weeks.",
+                  "why_other_call_cannot_supply_it": "The first call does not provide any specific deployment timeframe; it only discusses general implementation complexity."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: a deployment concern from the initial discussion and a full-setup timeframe from the proposal follow-up. Each fact is exclusively present in one call, and neither call contains both facts, so both calls are necessary."
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sxd8IAC",
+                  "fact": "Ayaan Omar said deployments were cumbersome and they needed a more streamlined solution.",
+                  "why_other_call_cannot_supply_it": "The second call does not mention any deployment concern or complaint from Ayaan; it only discusses security, timelines, training, and support."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3s5IAC",
+                  "fact": "Terek quoted a typical full deployment timeframe of about 6-8 weeks.",
+                  "why_other_call_cannot_supply_it": "The first call does not contain any specific deployment timeframe; Terek only discusses streamlined implementation generally without giving a duration."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: a deployment concern raised in the initial discussion (which appears only in the first call) and a full-setup deployment timeframe quoted in the proposal follow-up (which appears only in the second call). Each fact is unique to its respective call and cannot be derived from the other, so both calls are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003Sxd8IAC",
+                "fact": "Ayaan Omar said deployments were cumbersome and they needed a more streamlined solution",
+                "why_other_call_cannot_supply_it": "The second call contains no mention of the initial deployment concern; it only discusses proposal feedback, security, and timelines."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T3s5IAC",
+                "fact": "Terek quoted a typical full deployment timeframe of about 6-8 weeks",
+                "why_other_call_cannot_supply_it": "The first call contains no deployment timeframe; the 6-8 week quote appears only in the proposal follow-up call."
+              }
+            ],
+            "reason": "The question requests two distinct pieces of information: the deployment concern raised in the initial discussion (only in call 1) and the specific 6-8 week deployment timeframe quoted in the proposal follow-up (only in call 2). Neither call contains both facts, so both sources are required."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003Sxd8IAC",
+                  "fact": "Ayaan Omar said deployments were cumbersome and they needed a more streamlined solution",
+                  "why_other_call_cannot_supply_it": "The second call contains no mention of the initial deployment concern; it only discusses proposal feedback, security, and timelines."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T3s5IAC",
+                  "fact": "Terek quoted a typical full deployment timeframe of about 6-8 weeks",
+                  "why_other_call_cannot_supply_it": "The first call contains no deployment timeframe; the 6-8 week quote appears only in the proposal follow-up call."
+                }
+              ],
+              "reason": "The question requests two distinct pieces of information: the deployment concern raised in the initial discussion (only in call 1) and the specific 6-8 week deployment timeframe quoted in the proposal follow-up (only in call 2). Neither call contains both facts, so both sources are required."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two distinct facts: (1) the deployment concern Ayaan Omar raised in the initial call and (2) the full-setup deployment timeframe Terek quoted in the proposal follow-up. Call 1 (2020-03-10) contains Ayaan stating 'Deployments are a bit cumbersome at the moment and we're noticing a need for a more streamlined solution.' Call 2 (2020-04-15) contains Terek stating 'Our typical deployment process from start to finish can take about 6-8 weeks.' Each source contributes an exclusive requested fact. The gold answer accurately reflects both claims. The question names the contact and account naturally, identifies the business situation (deployment concern and timeline), and does not include artificial locator preambles, clue lists, or answer leakage. A rep/account manager would plausibly want to recall a customer's stated pain point and the timeline they were quoted.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Ayaan Omar the statement that 'Deployments are a bit cumbersome at the moment and we're noticing a need for a more streamlined solution,' which matches the answer_claim. The call metadata confirms this is the initial discussion (2020-03-10) with Ayaan Omar of QuantumLeap Computing."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Terek Al-Farsi the statement that 'Our typical deployment process from start to finish can take about 6-8 weeks,' which matches the answer_claim. The call metadata confirms this is the proposal follow-up (2020-04-15) on the same opportunity."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported: (1) Ayaan Omar raised the concern that deployments were cumbersome and they needed a more streamlined solution (evidence index 0), and (2) Terek quoted a typical full deployment of about 6-8 weeks (evidence index 1). The metadata confirms the correct participants, company, and call sequence (initial discussion on 2020-03-10, proposal follow-up on 2020-04-15)."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-9aeef8addda00366",
+    "question": "Across the MedTech Advances discussions, what concern did Leonardo Mendes raise about Quantum Circuits Inc's implementation, and what did Alejandro say when Leonardo noted competitors seemed more customizable?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Leonardo Mendes's concern about Quantum Circuits Inc's implementation and Alejandro's response to the objection that competitors seemed more customizable",
+        "relationship": "objection and its response within the same competitive/customization discussion",
+        "reason": "Both parts address the same business issue\u2014customization/implementation concerns versus competitors\u2014and the response directly answers the objection raised."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SxBfIAK",
+                "fact": "Alejandro responded to Leonardo's comment about competitors' customizability by saying TechPulse blends flexibility with user-friendly experience and has transparent, favorable total cost of ownership.",
+                "why_other_call_cannot_supply_it": "The other call does not contain any mention of competitors' customizability or Alejandro's response to that specific comment."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T1DdIAK",
+                "fact": "Leonardo raised a concern that Quantum Circuits Inc's implementation requires considerable internal adjustments they'd prefer to avoid.",
+                "why_other_call_cannot_supply_it": "The other call does not mention Quantum Circuits Inc or any concern about its implementation requiring internal adjustments."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: Leonardo's concern about Quantum Circuits Inc's implementation and Alejandro's response to Leonardo's comment about competitors' customizability. These facts are found in different calls and are not repeated or paraphrased in the other call. Each call provides a unique fact that the other cannot supply."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SxBfIAK",
+                  "fact": "Alejandro responded to Leonardo's comment about competitors' customizability by saying TechPulse blends flexibility with user-friendly experience and has transparent, favorable total cost of ownership.",
+                  "why_other_call_cannot_supply_it": "The other call does not contain any mention of competitors' customizability or Alejandro's response to that specific comment."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T1DdIAK",
+                  "fact": "Leonardo raised a concern that Quantum Circuits Inc's implementation requires considerable internal adjustments they'd prefer to avoid.",
+                  "why_other_call_cannot_supply_it": "The other call does not mention Quantum Circuits Inc or any concern about its implementation requiring internal adjustments."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: Leonardo's concern about Quantum Circuits Inc's implementation and Alejandro's response to Leonardo's comment about competitors' customizability. These facts are found in different calls and are not repeated or paraphrased in the other call. Each call provides a unique fact that the other cannot supply."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T1DdIAK",
+                "fact": "Leonardo Mendes said Quantum Circuits Inc's implementation, while consistent, requires considerable internal adjustments they'd prefer to avoid.",
+                "why_other_call_cannot_supply_it": "The Dec 20 call never mentions Quantum Circuits Inc or any implementation concern about them; it only discusses general customizability of competitors."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxBfIAK",
+                "fact": "When Leonardo noted competitors seemed more customizable, Alejandro responded that TechPulse blends flexibility with a streamlined, user-friendly experience and has transparent, favorable total cost of ownership.",
+                "why_other_call_cannot_supply_it": "The Dec 10 call contains no exchange about competitors being more customizable and no such response from Alejandro; his Dec 10 remarks concern implementation speed and scalability instead."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: a specific concern about Quantum Circuits Inc's implementation (stated only in the Dec 10 call) and Alejandro's rebuttal to the competitor-customizability remark (given only in the Dec 20 call). Neither call contains both facts, and they are not paraphrases of one concern."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T1DdIAK",
+                  "fact": "Leonardo Mendes said Quantum Circuits Inc's implementation, while consistent, requires considerable internal adjustments they'd prefer to avoid.",
+                  "why_other_call_cannot_supply_it": "The Dec 20 call never mentions Quantum Circuits Inc or any implementation concern about them; it only discusses general customizability of competitors."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SxBfIAK",
+                  "fact": "When Leonardo noted competitors seemed more customizable, Alejandro responded that TechPulse blends flexibility with a streamlined, user-friendly experience and has transparent, favorable total cost of ownership.",
+                  "why_other_call_cannot_supply_it": "The Dec 10 call contains no exchange about competitors being more customizable and no such response from Alejandro; his Dec 10 remarks concern implementation speed and scalability instead."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: a specific concern about Quantum Circuits Inc's implementation (stated only in the Dec 10 call) and Alejandro's rebuttal to the competitor-customizability remark (given only in the Dec 20 call). Neither call contains both facts, and they are not paraphrases of one concern."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question targets two specific competitive-positioning facts across two MedTech Advances calls. Call 2 (Dec 10) exclusively supplies Leonardo's concern that Quantum Circuits Inc's implementation 'requires considerable internal adjustments' they'd prefer to avoid. Call 1 (Dec 20) exclusively supplies Alejandro's response when Leonardo noted competitors seemed more customizable: TechPulse 'emphasizes a blend of flexibility and streamlined, user-friendly experiences' and 'total cost of ownership is quite transparent and favorable.' The gold answer accurately captures both facts with no unasked extras. The question scopes by account name and topic ('MedTech Advances discussions'), which is natural for a rep reviewing competitive intel. No artificial locator preamble, no answer leakage, no unsupported causality. Both sources contribute exclusive requested facts, confirming multi-call necessity."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly attributes to Leonardo Mendes the statement that Quantum Circuits Inc 'often requires considerable internal adjustments on our end' and that 'It's something we'd prefer to avoid if possible.' This fully supports the answer_claim about considerable internal adjustments they'd prefer to avoid."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly attributes to Alejandro Ramirez the statement that competitors 'may purport high customizability' but 'TechPulse emphasizes a blend of flexibility and streamlined, user-friendly experiences' and that 'our total cost of ownership is quite transparent and favorable.' This fully supports the answer_claim about TechPulse blending flexibility with user-friendly experience and having transparent, favorable total cost of ownership."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Leonardo's concern about Quantum Circuits' implementation requiring considerable internal adjustments they'd prefer to avoid\u2014supported by evidence index 0; (2) Alejandro's response about TechPulse blending flexibility with user-friendly experience and transparent, favorable total cost of ownership\u2014supported by evidence index 1. The question also asks what Alejandro said 'when Leonardo noted competitors seemed more customizable,' and evidence index 1 shows Alejandro responding to that framing ('While our direct competitors may purport high customizability...'), which is consistent with the context. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-7ab4858a767b2da9",
+    "question": "What did Charles Dubois say about MediLux Solutions' frustrations with support from other vendors, and what did Jorge highlight about their own support services?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Charles Dubois said about MediLux Solutions' frustrations with support from other vendors, and what Jorge highlighted about their own support services",
+        "relationship": "objection/pain point and the salesperson's corresponding response on the same support issue",
+        "reason": "This is a coherent objection-and-response pair: the customer's frustration with competitor support and the vendor's own support offering address the same business issue within one conversation."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about two specific statements from the same call: Charles's frustration with other vendors' support and Jorge's description of their own support. Both facts are verified in the dialogue (Charles at 10:18:10 mentions frustrations with other companies' support; Jorge at 10:17:55 mentions client praise for responsiveness and strong SLAs). The answer captures both facts precisely without unasked extras. The question is naturally worded, scoped to a named account and contact, and represents a plausible sales-rep interest in understanding customer pain points and competitive positioning around support. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote directly shows Charles Dubois stating 'That's actually one of the areas we had frustrations with some of the other companies we've worked with,' which supports the claim that Charles expressed support frustrations with other companies. The context metadata confirms the account is MediLux Solutions and the contact is Charles Dubois."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote directly shows Jorge Pinto stating 'Our clients often praise our responsiveness and the strength of our service level agreements. We aim to address any concerns swiftly and effectively.' This supports the claim about clients praising responsiveness and SLAs, and addressing concerns swiftly."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Charles said poor support from other companies was a frustration area \u2013 supported by index 0 where Charles explicitly mentions frustrations with other companies; (2) Jorge noted clients praise their responsiveness and strong SLAs, addressing concerns swiftly \u2013 supported by index 1 where Jorge states clients praise responsiveness and strength of SLAs, and they aim to address concerns swiftly. Both factual claims in the gold_answer are fully supported by the cited evidence. The word 'poor' in the gold_answer is a reasonable inference from 'frustrations' but the core meaning is preserved."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-65da9249c6f0445c",
+    "question": "What focus area did Zain Khan ask TechPulse to cover in the follow-up meeting about UrbanTech's smart city initiatives?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The focus area Zain Khan asked TechPulse to cover in the follow-up meeting about UrbanTech's smart city initiatives",
+        "relationship": "single lookup of one requirement/request from one meeting",
+        "reason": "A single, coherent fact lookup about one follow-up meeting's focus area; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what focus area Zain Khan requested for the follow-up meeting. The transcript shows Aaliyah asking 'Any particular aspect you'd like us to focus on?' and Zain replying 'Yes, enhancing citywide connectivity is key for us.' The gold answer matches exactly. The question is naturally worded, scoped to a specific customer/account interaction, and a rep would plausibly want to recall this. Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "next_steps",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue directly attributes the statement to Zain Khan: 'Yes, enhancing citywide connectivity is key for us.' This matches the answer_claim that Zain Khan said enhancing citywide connectivity is key for them. The speaker attribution, the specific focus area, and the affirmative nature of the statement are all preserved."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states the focus area is 'Enhancing citywide connectivity.' The single cited evidence item (index 0) provides a direct quote from Zain Khan stating 'enhancing citywide connectivity is key for us,' which fully supports the gold_answer. The context metadata confirms the call involves Zain Khan and the UrbanTech Smart City Enhancement Initiative, aligning with the question's framing. All factual claims in the gold_answer are supported by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-1e3785884df45f85",
+    "question": "What features is Jacob Manning mainly looking for in a high-performance safety vehicle, and which model did Mia suggest as a match?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The key features Jacob Manning wants in a high-performance safety vehicle and the model Mia recommended as a match",
+        "relationship": "requirement and corresponding recommendation within the same conversation",
+        "reason": "A single coherent need: the customer's stated requirements and the salesperson's matching model suggestion address the same issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for two facts from a single call: Jacob's priority features (performance and safety) and Mia's suggested model (2022 BMW X5 M). Both are stated verbatim in the dialogue. The gold answer captures exactly those two facts with no extras. The question is naturally phrased, scoped to a specific customer and business situation, and a rep/AM would plausibly want to know a prospect's key criteria and the model pitched. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Jacob Manning explicitly states 'I'm mainly focused on performance and safety,' which directly supports the answer_claim that he is focused on performance and safety."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Mia Johansson explicitly states 'One model that might be a great match is the 2022 BMW X5 M,' which directly supports the answer_claim that Mia suggested the 2022 BMW X5 M as a match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Jacob is focused on performance and safety (supported by index 0) and that Mia suggested the 2022 BMW X5 M (supported by index 1). Both factual claims in the gold_answer are directly supported by the cited evidence. The slight hedging in Mia's language ('might be a great match') is a faithful paraphrase when summarized as 'suggested...as a match.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-2ad3bf02c24b4559",
+    "question": "What did Zara Phillips say she wants in a vehicle, and which two models did Dmitri suggest as a fit?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Zara Phillips's stated vehicle requirements and the two models Dmitri suggested as a fit",
+        "relationship": "requirement and corresponding recommendation within the same conversation",
+        "reason": "The recommendation directly responds to the stated requirements, forming one coherent sales exchange."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "Zara Phillips explicitly states she wants 'a vehicle that has both luxury and top-notch technological features' (14:33:55), and Dmitri earlier names the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6 as models that 'might align with what you're looking for' (14:30:45). The gold answer captures both requested facts precisely with no unasked extras. The question is naturally phrased, scoped to a specific customer interaction, and a rep would plausibly want to recall stated preferences and recommended models. Single-call question, so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Zara Phillips explicitly states: 'I'm interested in having a vehicle that has both luxury and top-notch technological features.' This directly supports the answer_claim that Zara is interested in a vehicle with luxury and top-notch technological features."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Dmitri Volkov explicitly names 'the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6' and says 'I think might align with what you're looking for.' This directly supports the answer_claim that Dmitri proposed those two models as a fit."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states (1) she wants luxury with top-notch technological features, which is directly supported by evidence index 0, and (2) Dmitri suggested the 2022 Toyota Camry Hybrid and the 2022 Cadillac XT6, which is directly supported by evidence index 1. Both factual claims in the gold_answer are fully covered by the supplied citations."
+      }
+    }
+  }
+]
