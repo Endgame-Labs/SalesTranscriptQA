@@ -1,0 +1,236 @@
+{
+  "seed": 2026091808,
+  "stage": "Full-history-reviewed frozen RAG cohort minus current quality holds; generation/reviews complete",
+  "inspection_started_utc": "2026-09-18T07:55:09Z",
+  "source": "runs/sales-full-v2/reviewed/questions.json",
+  "source_sha256": "32b6a9ccf28f63f1838e21e873a7ad0c7cb17f028419d4fd2804429071207293",
+  "eligible_pools": {
+    "b2b/multi_call": 383,
+    "b2b/single_call": 1124,
+    "b2c/single_call": 1239
+  },
+  "questions": [
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-00d30f7b643b17d3",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "For GreenEnergy Solutions, what data protection measures did Fatoumata outline when Nico first raised data security concerns, and how did Nico characterize security's importance in the later pricing call?",
+      "gold_answer": "Fatoumata cited encryption during transfer and storage, regular security audits, and compliance with international data protection standards. Later, Nico said security is a priority given the nature of their industry.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SwiaIAC",
+        "b2b:a05Wt000003T0sgIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T0sgIAC",
+          "answer_claim": "Data protection includes encryption during data transfer and storage, regular security audits, and compliance with international data protection standards.",
+          "kind": "dialogue",
+          "line_start": 6,
+          "line_end": 7,
+          "quote": "[2022-06-28T10:03:15] Fatoumata Diop: We take data security very seriously. Our proactive investment in advanced security measures ensures that your data is protected at all times. This includes encryption during data transfer and storage, regular security audits, and compliance with international data protection standards. It\u2019s something our clients find to be a key differentiator.",
+          "start": 1334,
+          "end": 1719
+        },
+        {
+          "call_id": "b2b:a05Wt000003SwiaIAC",
+          "answer_claim": "Nico said security is a priority, especially given the nature of their industry.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-09-20T14:33:55] Nico Haas: Absolutely, security is a priority, especially given the nature of our industry. The fact that TechPulse stays ahead with innovations and trends is a major plus for us to avoid stagnation.",
+          "start": 2457,
+          "end": 2678
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "00d30f7b643b17d3ae4a091361a9343f48576c2e8048d23b3a82fa3aa42b71a9",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-f98d307d9c60976c",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "Across the GreenStar Electronics discussions, which competitor did Fatih Yilmaz raise in the initial call and what pricing concern did he mention, and which competitor came up later regarding vendor stability and future enhancements?",
+      "gold_answer": "Initially he cited FlexEDA's flexible pricing as attractive for budget constraints; later he appreciated NanoDesign's focus on vendor stability and future enhancements.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003Su2MIAS",
+        "b2b:a05Wt000003SxOPIA0"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SxOPIA0",
+          "answer_claim": "Fatih noted FlexEDA offers flexible pricing attractive for adjusting to budget constraints.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2021-08-17T14:02:35] Fatih Yilmaz: We certainly appreciate predictability in our budgeting. Some competitors, like FlexEDA, offer flexible pricing that's attractive for adjusting to budget constraints.",
+          "start": 2184,
+          "end": 2386
+        },
+        {
+          "call_id": "b2b:a05Wt000003Su2MIAS",
+          "answer_claim": "Fatih said they appreciated NanoDesign's focus on vendor stability and future enhancements.",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 16,
+          "quote": "[2022-01-28T14:20:30] Fatih Yilmaz: Yes, I saw that. It\u2019s quite competitive, though we did appreciate NanoDesign\u2019s focus on vendor stability and future enhancements.",
+          "start": 3227,
+          "end": 3392
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "f98d307d9c60976cf7f7b0686145c43406f2a95e72e395e588a28f16e6e79d1c",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-0d10ceecac32a958",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What discount did LiftTech Elevations receive on the SecureFlow Suite, and what did Priya Sharma want to confirm about it for their budget plans?",
+      "gold_answer": "A 10% discount on SecureFlow Suite; Priya wants to confirm it aligns with LiftTech's 2024 budget plans.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SzemIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SzemIAC",
+          "answer_claim": "10% discount on SecureFlow",
+          "kind": "dialogue",
+          "line_start": 6,
+          "line_end": 7,
+          "quote": "[2023-12-05T11:03:00] Nadia Al-Balushi: That's great to hear. And with a 10% discount on SecureFlow, it's not only an effective but also a cost-efficient choice for LiftTech.",
+          "start": 938,
+          "end": 1112
+        },
+        {
+          "call_id": "b2b:a05Wt000003SzemIAC",
+          "answer_claim": "Priya: discount needs to align with 2024 budget plans",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-12-05T11:06:00] Priya Sharma: Yes, and the discount provided is appreciated. We just need to make sure it aligns with our 2024 budget plans.",
+          "start": 2065,
+          "end": 2211
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "0d10ceecac32a9583b2dea4558447550106dcaa0c1ff9adeb24a611ee40f110d",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-456c845d856231fe",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What is Rajesh Patel's budget for the Precision Circuit Systems package of four CloudLink Designer licenses plus one OptiPower Max?",
+      "gold_answer": "$2,281",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003T35oIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T35oIAC",
+          "answer_claim": "Your budget of $2,281 aligns well with customized options we can tailor for you.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2023-10-10T10:01:13] Aisha Ibrahim: Of course. The total package including four licenses for CloudLink Designer and one OptiPower Max is priced competitively. Your budget of $2,281 aligns well with customized options we can tailor for you.",
+          "start": 1829,
+          "end": 2069
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "456c845d856231fe6379848ba66a879c7dc4b402ec436ce8829b887bc4e42dfe",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-f1ac0ca27c0e15b1",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What vehicle is Ethan Martinez leaning toward, and what did he ask Hiroko to arrange next?",
+      "gold_answer": "The Lexus RX 350; he asked for a demonstration to be arranged soon.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SORBIA4"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SORBIA4",
+          "answer_claim": "Ethan says the Lexus RX 350 leans toward what he's looking for and asks for a demonstration to be arranged soon.",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 16,
+          "quote": "[2022-05-15T14:49:50] Ethan Martinez: The Lexus RX 350 seems to be leaning more towards what I\u2019m looking for. Could you arrange a demonstration sometime soon?",
+          "start": 2797,
+          "end": 2955
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "f1ac0ca27c0e15b1c50a686ab6f13022767626170fe79f98eb6a340ca489cf0e",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-dab19992b53e5d13",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What did Emma Daniels flag about scheduling service appointments compared to other providers, and how did Aisha respond?",
+      "gold_answer": "Emma noted some other providers make scheduling appointments easier; Aisha said AutoElite is actively streamlining its appointment processes while emphasizing thoroughness and reliability.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SRycIAG"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SRycIAG",
+          "answer_claim": "Emma noted feedback that scheduling appointments is easier with some other providers",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 16,
+          "quote": "[2024-01-31T10:02:14] Emma Daniels: That\u2019s reassuring to hear. Though I've noted some feedback around scheduling appointments being a bit easier with some other providers.",
+          "start": 2685,
+          "end": 2856
+        },
+        {
+          "call_id": "b2c:a05Ws000005SRycIAG",
+          "answer_claim": "Aisha said they are actively working on streamlining appointment processes and believe their thoroughness and reliability are worth the effort",
+          "kind": "dialogue",
+          "line_start": 16,
+          "line_end": 17,
+          "quote": "[2024-01-31T10:02:28] Aisha Patel: I appreciate your honesty. We\u2019re actively working on streamlining our appointment processes to make them as efficient as possible. We believe the thoroughness and reliability we offer are worth the effort, but improvements are always welcome.",
+          "start": 2857,
+          "end": 3134
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "dab19992b53e5d13c17105cf2869b73c565ee6bde31bdc60eeda41f424c9f838",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    }
+  ]
+}
