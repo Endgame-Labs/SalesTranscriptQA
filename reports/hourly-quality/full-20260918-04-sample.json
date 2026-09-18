@@ -1,0 +1,246 @@
+{
+  "seed": 2026091804,
+  "stage": "Full-history-reviewed frozen RAG cohort; generation and automated review complete",
+  "source": "runs/sales-full-v2/reviewed/questions.json",
+  "source_sha256": "e53ec6c1655b2e41888781260ec0a742d078af5a3c45bfd1bb66925549a74a9a",
+  "eligible_pools": {
+    "b2b/multi_call": 355,
+    "b2b/single_call": 987,
+    "b2c/single_call": 1068
+  },
+  "completed_history_results": 2970,
+  "questions": [
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-a80a153b00c87931",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "For Nordic HealthTech, what was the original AIOptics Vision quote, and how did the terms change after Olga raised budget concerns about the license count?",
+      "gold_answer": "Originally 20 units with a 15% discount totaling $9,009.83; later TechPulse agreed to a smaller initial batch at the same discounted rate, scalable as needed.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SwSUIA0",
+        "b2b:a05Wt000003T2BFIA0"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SwSUIA0",
+          "answer_claim": "AIOptics Vision quote: 20 units with 15% discount, total $9,009.83.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2022-07-18T11:04:30] Mei Chen: Absolutely. For AIOptics Vision, we have a quote for 20 units, including a 15% discount, bringing the total price to $9,009.83. As for SecureData Nexus, the quote is for 10 units with a 10% discount, totaling $5,399.91.",
+          "start": 2863,
+          "end": 3114
+        },
+        {
+          "call_id": "b2b:a05Wt000003T2BFIA0",
+          "answer_claim": "Olga wants fewer AIOptics Vision licenses upfront; Mei offers a smaller initial batch at the same discounted rate with scalable expansion.",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 9,
+          "quote": "[2022-08-08T13:01:55] Olga Romanov: Primarily, it's about the upfront costs for the number of AIOptics Vision licenses. We\u2019re considering starting with a smaller quantity initially.\n[2022-08-08T13:02:15] Mei Chen: Understood. Well, given your commitment, we're flexible with the initial quantity. We can adjust the terms to offer you scalable options, which means you can purchase a smaller batch now and expand as needed, capitalizing on the same discounted rate once you decide to scale up.",
+          "start": 1486,
+          "end": 1978
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "a80a153b00c87931d200e04d9f862e3cce68401d42f1fdd270fa32d8f3410af9",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-af177acb77f55ee0",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "Across the two discussions with Fatou Sanogo at EnviroTech Solutions, what did she say about NanoDesign Systems in each call?",
+      "gold_answer": "In the first call she noted both TechPulse and NanoDesign focus on future trends; in the second she said she's impressed by NanoDesign's vendor stability and forward-thinking enhancements roadmap.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SvpvIAC",
+        "b2b:a05Wt000003T203IAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SvpvIAC",
+          "answer_claim": "Fatou notes both TechPulse and NanoDesign Systems focus on future trends.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-11-06T10:34:10] Fatou Sanogo: That\u2019s definitely a point in your favor. We\u2019re also interested in how your technology aligns with future technological trends. We've seen that both you and NanoDesign Systems focus on future trends.",
+          "start": 2576,
+          "end": 2810
+        },
+        {
+          "call_id": "b2b:a05Wt000003T203IAC",
+          "answer_claim": "Fatou says she's impressed by NanoDesign's focus on vendor stability and forward-thinking enhancements roadmap.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-11-15T16:14:15] Fatou Sanogo: True, the cost clarity is definitely appreciated. But I must say, I\u2019m also impressed by NanoDesign's focus on vendor stability and their forward-thinking enhancements roadmap.",
+          "start": 2389,
+          "end": 2600
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "af177acb77f55ee0b6ec0139b252163c3c68207b4a0752b4e222002eda882ae6",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-62f53ad6d74eb244",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What budget and installation timeline did Liam Zheng from AquaGuard Solutions give for the EcoPower Convert and SecureFlow Suite?",
+      "gold_answer": "Budget of 2934 and installation completed within four days.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003T3yWIAS"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T3yWIAS",
+          "answer_claim": "We're working with a budget of 2934",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2023-10-17T10:01:45] Liam Zheng: What about pricing? We're working with a budget of 2934, and I want to make sure it's a good investment.",
+          "start": 1501,
+          "end": 1639
+        },
+        {
+          "call_id": "b2b:a05Wt000003T3yWIAS",
+          "answer_claim": "we need it completed within four days",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2023-10-17T10:02:15] Liam Zheng: That's reassuring. And the installation? I mentioned we need it completed within four days. Is that feasible?",
+          "start": 1876,
+          "end": 2019
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "62f53ad6d74eb244bf2886449a34bd74ff8bd602f3f59def386de9aa319f31da",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-d22f48749d23aad9",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What did Luis Martins say Insight Analytics Group's main transition concern is, and what did Lucas say about ongoing support?",
+      "gold_answer": "Luis is concerned about disruption to operations during transition; Lucas cited dedicated account managers, 24/7 support, and comprehensive training.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003T3ddIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T3ddIAC",
+          "answer_claim": "Transition concerns revolve around disruption to operations.",
+          "kind": "dialogue",
+          "line_start": 15,
+          "line_end": 16,
+          "quote": "[2024-05-08T15:03:30] Luis Martins: Transition concerns usually revolve around disruption to our operations. We've had smooth transitions in the past, but it's always something we have to plan carefully.",
+          "start": 2586,
+          "end": 2789
+        },
+        {
+          "call_id": "b2b:a05Wt000003T3ddIAC",
+          "answer_claim": "Dedicated account managers, 24/7 customer service, and comprehensive training.",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 19,
+          "quote": "[2024-05-08T15:04:15] Lucas Almeida: We offer unmatched support services with dedicated account managers and 24/7 customer service. Additionally, we provide comprehensive training to ensure your team gets the most out of our solutions.",
+          "start": 3115,
+          "end": 3350
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "d22f48749d23aad9b6c201e5820fb1e5ef70c291a86e1469bd90c0a25c84e1b7",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-9e8ef9d0bcad546f",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What financing flexibility does AutoElite offer Liam Anderson that competitors don't, and what did Enzo promise to send after the call?",
+      "gold_answer": "Clients can adjust financing terms mid-contract without penalties, a flexibility competitor plans lack; Enzo promised to send a detailed email summarizing the conversation.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005ST18IAG"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005ST18IAG",
+          "answer_claim": "Clients can adjust terms mid-contract without penalties, which competitor plans don't provide.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2023-11-08T15:17:00] Enzo Rossi: We offer several plans, but one tailored aspect is allowing clients to adjust terms mid-contract without penalties. It\u2019s a level of flexibility that many competitor plans don't provide, which can discourage some buyers.",
+          "start": 2214,
+          "end": 2467
+        },
+        {
+          "call_id": "b2c:a05Ws000005ST18IAG",
+          "answer_claim": "I'll also send over a detailed email summarizing our conversation today.",
+          "kind": "dialogue",
+          "line_start": 18,
+          "line_end": 19,
+          "quote": "[2023-11-08T15:18:00] Enzo Rossi: Perfect! And remember, if any other questions come up, don\u2019t hesitate to reach out. I\u2019ll also send over a detailed email summarizing our conversation today.",
+          "start": 3389,
+          "end": 3579
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "9e8ef9d0bcad546f315537cd6c56ea62b1dda47159113c2f602ccd0620528268",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-5e6d3f6366f27b12",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What is Lucas Wright's budget range for the premium pre-owned Audi Q7, and is he open to financing?",
+      "gold_answer": "$55,000 to $60,000, and yes, he's open to hearing about financing options.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SSsxIAG"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SSsxIAG",
+          "answer_claim": "Lucas is looking to stay in the range of $55,000 to $60,000 and is open to hearing about financing options.",
+          "kind": "dialogue",
+          "line_start": 7,
+          "line_end": 8,
+          "quote": "[2021-09-17T10:56:17] Lucas Wright: I'm looking to stay in the range of $55,000 to $60,000, ideally. But I'm open to hearing about financing options and how they might help.",
+          "start": 1317,
+          "end": 1490
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "5e6d3f6366f27b1261754cb56e5c56b203aa6604fb5e82d94343dc1e6423421f",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    }
+  ]
+}
