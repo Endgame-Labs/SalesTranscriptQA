@@ -1,0 +1,413 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "5b0dd5606061197b25f389d4fa68622a300bcf167b7efe8c456da4b5584e46cb",
+  "questions": 4,
+  "counts": {
+    "pass": 4
+  },
+  "estimated_usd": 0.50840918,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-c6ac7793f4b70953",
+      "question": "Across the PowerGrid Innovations opportunity, how did Aditya Kumar's view of Quantum Circuits Inc evolve from the initial discovery call to the proposal follow-up?",
+      "gold_answer": "Initially he saw Quantum Circuits Inc as stronger on long-term security adherence; later he felt their pricing was competitive but lacked flexibility, with TechPulse's cost-effectiveness standing out.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StO3IAK",
+        "b2b:a05Wt000003SuIbIAK",
+        "b2b:a05Wt000003SujwIAC",
+        "b2b:a05Wt000003Sv08IAC",
+        "b2b:a05Wt000003Sv87IAC",
+        "b2b:a05Wt000003SvEZIA0",
+        "b2b:a05Wt000003SvXuIAK",
+        "b2b:a05Wt000003SvclIAC",
+        "b2b:a05Wt000003SwfHIAS",
+        "b2b:a05Wt000003SwnTIAS",
+        "b2b:a05Wt000003SwqkIAC",
+        "b2b:a05Wt000003SwsDIAS",
+        "b2b:a05Wt000003SwydIAC",
+        "b2b:a05Wt000003Sx57IAC",
+        "b2b:a05Wt000003Sx8MIAS",
+        "b2b:a05Wt000003Sx8NIAS",
+        "b2b:a05Wt000003SxWYIA0",
+        "b2b:a05Wt000003SyyvIAC",
+        "b2b:a05Wt000003SzAIIA0",
+        "b2b:a05Wt000003SzDNIA0",
+        "b2b:a05Wt000003SzJrIAK",
+        "b2b:a05Wt000003SzgNIAS",
+        "b2b:a05Wt000003T0UPIA0",
+        "b2b:a05Wt000003T0XeIAK",
+        "b2b:a05Wt000003T0hIIAS",
+        "b2b:a05Wt000003T1DWIA0",
+        "b2b:a05Wt000003T1iAIAS",
+        "b2b:a05Wt000003T1rrIAC",
+        "b2b:a05Wt000003T1rsIAC",
+        "b2b:a05Wt000003T1rtIAC",
+        "b2b:a05Wt000003T2MWIA0",
+        "b2b:a05Wt000003T2RKIA0",
+        "b2b:a05Wt000003T2UZIA0",
+        "b2b:a05Wt000003T2UaIAK",
+        "b2b:a05Wt000003T2eEIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Aditya Kumar is the contact on the 'PowerGrid Energy Optimization' opportunity with rep Thato Mokoena. Quantum Circuits Inc is discussed in exactly two of his calls: the 2021-01-25 discovery session (where Aditya raises QCI's stronger long-term security emphasis) and the 2023-12-05 proposal follow-up (where Aditya says QCI's pricing is competitive but lacks flexibility). These two calls uniquely define the evolution asked about; the 2021-01-18 call is an earlier intro call but contains no QCI mention, so the discovery call that addresses QCI is unambiguous.",
+        "answers": [
+          {
+            "answer": "On the initial discovery call (2021-01-25), Aditya Kumar viewed Quantum Circuits Inc as a credible threat on security: he noted that while TechPulse's product features were robust, QCI had 'a stronger emphasis on long-term security adherence,' prompting Thato Mokoena to counter that TechPulse's SecureFlow Suite balances comprehensive security compliance with innovation. Aditya acknowledged security mattered but emphasized the need for a solution that evolves, suggesting competitors like QCI fall short on innovation. By the proposal follow-up (2023-12-05), his view had shifted to pricing vs. flexibility: he said PowerGrid had evaluated Quantum Circuits Inc and found their pricing competitive, but that it 'doesn't seem to match our flexibility needs,' whereas TechPulse's cost-effectiveness 'really stands out.' In short, QCI evolved from being seen as a security-focused competitor that outpaced TechPulse on long-term security adherence to being seen as a price-competitive but inflexible alternative that lost out to TechPulse on flexibility and cost-effectiveness.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0XeIAK",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-01-25T11:03:55] Aditya Kumar: That sounds promising. Although, I've noticed that while your product features are robust, a competitor like Quantum Circuits Inc has a stronger emphasis on long-term security adherence. How do your products compare in terms of security?\n[2021-01-25T11:04:20] Thato Mokoena: That's a great point, Aditya. While Quantum Circuits Inc does focus heavily on security, our SecureFlow Suite ensures robust data protection and rapid deployment. It balances comprehensive security compliance with innovation in our product features."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxWYIA0",
+                "line_start": 9,
+                "line_end": 10,
+                "quote": "[2023-12-05T09:47:53] Aditya Kumar: Well, we did look at another provider, Quantum Circuits Inc, and while their pricing is competitive, it doesn't seem to match our flexibility needs. Your cost-effectiveness really stands out for us."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies the 'PowerGrid Innovations' opportunity, the contact 'Aditya Kumar', and asks about his view of 'Quantum Circuits Inc' evolving from the 'initial discovery call' to the 'proposal follow-up.' Only one opportunity in the data involves Aditya Kumar: 'PowerGrid Energy Optimization' (006Wt000007B62yIAC), with three calls by Thato Mokoena. The initial discovery call is 2021-01-25 (explicitly called a 'discovery session'), and the proposal follow-up is 2023-12-05 (explicitly a follow-up on a sent proposal). Both calls contain Aditya's direct comments about Quantum Circuits Inc, showing a clear evolution in his view.",
+        "answers": [
+          {
+            "answer": "In the initial discovery call (2021-01-25), Aditya Kumar viewed Quantum Circuits Inc favorably regarding security, stating that 'a competitor like Quantum Circuits Inc has a stronger emphasis on long-term security adherence' compared to TechPulse, and asked how TechPulse's products compared in terms of security. By the proposal follow-up call (2023-12-05), his view had shifted: he acknowledged that Quantum Circuits Inc's 'pricing is competitive' but concluded that 'it doesn't seem to match our flexibility needs,' and told Thato Mokoena that TechPulse's 'cost-effectiveness really stands out for us.' In short, Aditya moved from seeing Quantum Circuits Inc as superior in long-term security adherence to recognizing its competitive pricing but finding it lacking in flexibility, ultimately favoring TechPulse's cost-effectiveness.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T0XeIAK",
+                "line_start": 11,
+                "line_end": 14,
+                "quote": "[2021-01-25T11:03:55] Aditya Kumar: That sounds promising. Although, I've noticed that while your product features are robust, a competitor like Quantum Circuits Inc has a stronger emphasis on long-term security adherence. How do your products compare in terms of security?\n[2021-01-25T11:04:20] Thato Mokoena: That's a great point, Aditya. While Quantum Circuits Inc does focus heavily on security, our SecureFlow Suite ensures robust data protection and rapid deployment. It balances comprehensive security compliance with innovation in our product features.\n[2021-01-25T11:04:45] Aditya Kumar: I see. Security is certainly important, but we also need a solution that evolves with our needs. That's where I feel some competitors fall short on innovation."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxWYIA0",
+                "line_start": 9,
+                "line_end": 11,
+                "quote": "[2023-12-05T09:47:53] Aditya Kumar: Well, we did look at another provider, Quantum Circuits Inc, and while their pricing is competitive, it doesn't seem to match our flexibility needs. Your cost-effectiveness really stands out for us.\n[2023-12-05T09:48:06] Thato Mokoena: That's really encouraging. Our goal is to ensure not just short-term savings, but a favorable total cost of ownership in the long run."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers describe the same two-stage evolution: (1) at the initial discovery call, Aditya Kumar viewed Quantum Circuits Inc as having a stronger emphasis on long-term security adherence compared to TechPulse, and (2) by the proposal follow-up, he acknowledged QCI's competitive pricing but found it lacking in flexibility, while TechPulse's cost-effectiveness stood out. Answer A adds minor extra context (Thato Mokoena's counter, the innovation angle) and Answer B adds the detail that Aditya asked how TechPulse compared on security, but these are unrequested extras that do not alter the core facts. The reference succinctly captures both requested commitments\u2014the initial security-adherence view and the later pricing-competitive-but-inflexible view with TechPulse's cost-effectiveness standing out\u2014matching the question's scope."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-d9688a758eb79fbb",
+      "question": "For TerraForm Engineering, how did Aiko initially position TechPulse's pricing versus industry standards, and what specific discounted quote did she later provide for AI Cirku-Tech?",
+      "gold_answer": "Initially she said pricing was competitive and aligned with industry standards for EDA solutions; later she quoted 10 units of AI Cirku-Tech with a 10% discount totaling $4769.91.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SrkeIAC",
+        "b2b:a05Wt000003SsQTIA0",
+        "b2b:a05Wt000003SuvDIAS",
+        "b2b:a05Wt000003Sv9jIAC",
+        "b2b:a05Wt000003SvD5IAK",
+        "b2b:a05Wt000003SvGBIA0",
+        "b2b:a05Wt000003SvoBIAS",
+        "b2b:a05Wt000003SvrSIAS",
+        "b2b:a05Wt000003SwCMIA0",
+        "b2b:a05Wt000003Swc4IAC",
+        "b2b:a05Wt000003SwyeIAC",
+        "b2b:a05Wt000003SwyfIAC",
+        "b2b:a05Wt000003SxEqIAK",
+        "b2b:a05Wt000003SxLKIA0",
+        "b2b:a05Wt000003SxQ7IAK",
+        "b2b:a05Wt000003SxoFIAS",
+        "b2b:a05Wt000003SxoGIAS",
+        "b2b:a05Wt000003SxwRIAS",
+        "b2b:a05Wt000003Sz3jIAC",
+        "b2b:a05Wt000003Sz3kIAC",
+        "b2b:a05Wt000003T0HUIA0",
+        "b2b:a05Wt000003T0e3IAC",
+        "b2b:a05Wt000003T0e4IAC",
+        "b2b:a05Wt000003T0kcIAC",
+        "b2b:a05Wt000003T15XIAS",
+        "b2b:a05Wt000003T21dIAC",
+        "b2b:a05Wt000003T287IAC",
+        "b2b:a05Wt000003T2ESIA0",
+        "b2b:a05Wt000003T2zHIAS",
+        "b2b:a05Wt000003T30tIAC",
+        "b2b:a05Wt000003T3YhIAK",
+        "b2b:a05Wt000003T3dYIAS",
+        "b2b:a05Wt000003T3s6IAC",
+        "b2b:a05Wt000003T407IAC",
+        "b2b:a05Wt000003T49mIAC",
+        "b2b:a05Wt000003T4BOIA0",
+        "b2b:a05Wt000003T4BPIA0",
+        "b2b:a05Wt000003T4JSIA0",
+        "b2b:a05Wt000003T4JTIA0",
+        "b2b:a05Wt000003T4T7IAK",
+        "b2b:a05Wt000003T4UjIAK",
+        "b2b:a05Wt000003T4WLIA0",
+        "b2b:a05Wt000003T4XxIAK"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Aiko's initial pricing-vs-industry-standards positioning appears in the 2023-04-12 prep call where Samuel explicitly asks how her pricing 'compares with industry standards' and she answers it is 'competitive and aligned with current industry standards for EDA solutions.' Her later specific AI Cirku-Tech discounted quote (10 units, 10% discount, $4,769.91 total) is stated consistently in the 2023-04-25 proposal call and repeated in the 2023-11-15 quote call (and to Liam in 2023-09-14), so it is the same fact, not competing answers.",
+        "answers": [
+          {
+            "answer": "Initially, Aiko positioned TechPulse's pricing as competitive and aligned with current industry standards for EDA solutions, noting that streamlined implementation and user-friendly products could also deliver long-term cost savings. Later, she provided a specific discounted quote for AI Cirku-Tech: 10 units with a 10% discount, bringing the total to $4,769.91 (a quote she repeated in subsequent discussions, alongside 5% discounts on SecureFlow Suite at $3,989.93 and CollabDesign Studio at $3,039.92 in the November quote call).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwCMIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-04-12T10:01:22] Samuel Okafor: Yes, we noticed that in your materials. One thing we're particularly interested in understanding is how your pricing compares with industry standards."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T21dIAC",
+                "line_start": 19,
+                "line_end": 20,
+                "quote": "[2023-04-25T14:04:55] Samuel Okafor: Good to hear. What about pricing? How does the proposal reflect our budgetary constraints while maximizing value?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SvGBIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-11-15T15:01:39] Samuel Okafor: That\u2019s good to hear. Another thing we\u2019d like to understand is the pricing structure. We need something that fits our budget without compromising the solution\u2019s impact on our projects."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question names Aiko (Matsumoto) and asks two specific things: (1) how she *initially* positioned TechPulse's pricing versus industry standards, and (2) what specific discounted quote she *later* provided for AI Cirku-Tech. Aiko's calls with TerraForm Engineering are: 2021-11-29 (Amina), 2023-04-12 (Samuel), 2023-04-14 (Samuel), 2023-04-25 (Samuel), 2023-05-01 (Samuel), 2023-08-15 (Liam), 2023-09-14 (Liam), 2023-11-15 (Samuel). The earliest call where pricing versus industry standards is explicitly discussed is 2023-04-12, where Aiko states pricing is 'competitive and aligned with current industry standards.' The later specific discounted quote for AI Cirku-Tech appears in the 2023-04-25 call: 10% discount on 10 units totaling approximately $4,769.91.",
+        "answers": [
+          {
+            "answer": "Aiko initially positioned TechPulse's pricing as competitive and aligned with current industry standards for EDA solutions, noting that streamlined implementation and user-friendly products also contribute to long-term cost savings. She later provided a specific discounted quote for AI Cirku-Tech of a 10% discount on a quantity of ten units, totaling approximately $4,769.91.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SwCMIA0",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2023-04-12T10:01:22] Samuel Okafor: Yes, we noticed that in your materials. One thing we're particularly interested in understanding is how your pricing compares with industry standards.\n[2023-04-12T10:01:39] Aiko Matsumoto: Glad you asked! Our pricing is competitive and aligned with current industry standards for EDA solutions. We've noted that our streamlined implementation and user-friendly products can also contribute to cost savings in the long run."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T21dIAC",
+                "line_start": 19,
+                "line_end": 21,
+                "quote": "[2023-04-25T14:04:55] Samuel Okafor: Good to hear. What about pricing? How does the proposal reflect our budgetary constraints while maximizing value?\n[2023-04-25T14:05:20] Aiko Matsumoto: Certainly, Samuel. For AI Cirku-Tech, we're offering a 10% discount on a quantity of ten units, totaling approximately $4769.91. SecureFlow Suite and CollabDesign Studio also come with a 5% discount each. Overall, the proposal ensures substantial value which aligns with your budget."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Aiko initially positioned TechPulse's pricing as competitive and aligned with current industry standards for EDA solutions, and both give the same specific discounted quote for AI Cirku-Tech: 10 units with a 10% discount totaling $4,769.91. Answer A includes additional details about other product discounts in a November quote call, but these are extras not requested by the question. The reference covers both requested facts: the initial positioning (competitive, aligned with industry standards for EDA solutions) and the specific discounted quote (10 units, 10% discount, $4,769.91). All requested commitments are addressed consistently across both answers and the reference."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-2f52ccb49dccea8e",
+      "question": "What discounts did Liam offer Sven at Precision Circuit Systems on AIOptics Vision and CloudInnovate Space?",
+      "gold_answer": "5% discount on AIOptics Vision and 15% on CloudInnovate Space.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SqTRIA0",
+        "b2b:a05Wt000003SrhJIAS",
+        "b2b:a05Wt000003St1UIAS",
+        "b2b:a05Wt000003StO7IAK",
+        "b2b:a05Wt000003StckIAC",
+        "b2b:a05Wt000003StmIIAS",
+        "b2b:a05Wt000003SvHvIAK",
+        "b2b:a05Wt000003SwaWIAS",
+        "b2b:a05Wt000003SwdiIAC",
+        "b2b:a05Wt000003SwsLIAS",
+        "b2b:a05Wt000003SxLGIA0",
+        "b2b:a05Wt000003SypHIAS",
+        "b2b:a05Wt000003SzDQIA0",
+        "b2b:a05Wt000003SzgRIAS",
+        "b2b:a05Wt000003SzzrIAC",
+        "b2b:a05Wt000003T09PIAS",
+        "b2b:a05Wt000003T09QIAS",
+        "b2b:a05Wt000003T0mDIAS",
+        "b2b:a05Wt000003T0sdIAC",
+        "b2b:a05Wt000003T0seIAC",
+        "b2b:a05Wt000003T10mIAC",
+        "b2b:a05Wt000003T1YVIA0",
+        "b2b:a05Wt000003T1zyIAC",
+        "b2b:a05Wt000003T2UbIAK",
+        "b2b:a05Wt000003T2fxIAC",
+        "b2b:a05Wt000003T3KBIA0",
+        "b2b:a05Wt000003T3NOIA0",
+        "b2b:a05Wt000003T3TrIAK",
+        "b2b:a05Wt000003T3VRIA0",
+        "b2b:a05Wt000003T3VSIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Liam O'Sullivan stated the same discounts for Sven in two calls: AIOptics Vision at 5% and CloudInnovate Space at 15% (2023-08-25 and 2023-09-15), so the answer is consistent across sources.",
+        "answers": [
+          {
+            "answer": "Liam offered Sven a 5% discount on AIOptics Vision and a 15% discount on CloudInnovate Space.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1zyIAC",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2023-08-25T15:17:45] Sven Lindstrom: That's reassuring since staying ahead of the curve is critical for us. By the way, how does pricing look for the AIOptics Vision and CloudInnovate Space?\n[2023-08-25T15:18:00] Liam O'Sullivan: We actually offer attractive discounts for these products. For AIOptics Vision, we provide a 5% discount, and for CloudInnovate Space, it's a 15% discount. These competitive prices, combined with enhanced capabilities, offer great value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2UbIAK",
+                "line_start": 13,
+                "line_end": 15,
+                "quote": "[2023-09-15T14:09:21] Sven Lindstrom: Great! And pricing-wise, do you provide any discounts based on volume or package deals?\n[2023-09-15T14:09:47] Liam O'Sullivan: Certainly. For instance, with the CloudInnovate Space, we\u2019re offering a 15% discount for the quantity you're considering. Similarly, for AIOptics Vision, there\u2019s a 5% discount available."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Liam (O'Sullivan), Sven (Lindstrom), Precision Circuit Systems, and the two products AIOptics Vision and CloudInnovate Space. Two calls match all criteria: b2b:a05Wt000003T1zyIAC (2023-08-25) and b2b:a05Wt000003T2UbIAK (2023-09-15). Both calls contain the same discount figures: 5% for AIOptics Vision and 15% for CloudInnovate Space. Since the discounts are identical across both calls, there is one determinate answer.",
+        "answers": [
+          {
+            "answer": "Liam offered Sven a 5% discount on AIOptics Vision and a 15% discount on CloudInnovate Space.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T1zyIAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2023-08-25T15:18:00] Liam O'Sullivan: We actually offer attractive discounts for these products. For AIOptics Vision, we provide a 5% discount, and for CloudInnovate Space, it's a 15% discount. These competitive prices, combined with enhanced capabilities, offer great value."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2UbIAK",
+                "line_start": 14,
+                "line_end": 15,
+                "quote": "[2023-09-15T14:09:47] Liam O'Sullivan: Certainly. For instance, with the CloudInnovate Space, we\u2019re offering a 15% discount for the quantity you're considering. Similarly, for AIOptics Vision, there\u2019s a 5% discount available."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state a 5% discount on AIOptics Vision and a 15% discount on CloudInnovate Space, which are identical. The reference also lists both discounts (5% on AIOptics Vision, 15% on CloudInnovate Space), covering all requested facts."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-b310a8a08a6bbc3e",
+      "question": "What did Jamal Okoro say GreenTech Dynamics appreciates about TechPulse compared to NanoDesign?",
+      "gold_answer": "TechPulse offers a more comprehensive integration process that meshes well with GreenTech's current systems.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003SuvHIAS",
+        "b2b:a05Wt000003Sv1rIAC",
+        "b2b:a05Wt000003SvHyIAK",
+        "b2b:a05Wt000003SvgBIAS",
+        "b2b:a05Wt000003SwdjIAC",
+        "b2b:a05Wt000003Sx3aIAC",
+        "b2b:a05Wt000003SxErIAK",
+        "b2b:a05Wt000003SxMvIAK",
+        "b2b:a05Wt000003SxQ8IAK",
+        "b2b:a05Wt000003SyHVIA0",
+        "b2b:a05Wt000003SyNqIAK",
+        "b2b:a05Wt000003SysRIAS",
+        "b2b:a05Wt000003Syz0IAC",
+        "b2b:a05Wt000003SzAPIA0",
+        "b2b:a05Wt000003SzdEIAS",
+        "b2b:a05Wt000003SzwdIAC",
+        "b2b:a05Wt000003T0SxIAK",
+        "b2b:a05Wt000003T1GpIAK",
+        "b2b:a05Wt000003T1dRIAS",
+        "b2b:a05Wt000003T2zLIAS",
+        "b2b:a05Wt000003T2zMIAS",
+        "b2b:a05Wt000003T2zNIAS",
+        "b2b:a05Wt000003T2zOIAS",
+        "b2b:a05Wt000003T3f8IAC",
+        "b2b:a05Wt000003T3vHIAS",
+        "b2b:a05Wt000003T4D0IAK",
+        "b2b:a05Wt000003T4HuIAK",
+        "b2b:a05Wt000003T4WMIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 7,
+            "normalized_end": 8
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Jamal Okoro appears in three calls, but only in the 2023-10-20 call does he explicitly state what GreenTech appreciates about TechPulse compared to NanoDesign: TechPulse's more comprehensive integration process that meshes well with their current systems.",
+        "answers": [
+          {
+            "answer": "Jamal Okoro said that one of the things GreenTech appreciates is that TechPulse Solutions offers a more comprehensive integration process compared to others, like NanoDesign, which meshes well with their current systems.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxMvIAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-10-20T10:02:15] Jamal Okoro: Honestly, that's one of the things we appreciate. TechPulse Solutions does offer a more comprehensive integration process compared to others, like NanoDesign, which meshes well with our current systems."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "Jamal Okoro appears in three calls (b2b:a05Wt000003SzAPIA0, b2b:a05Wt000003SzwdIAC, b2b:a05Wt000003SysRIAS, b2b:a05Wt000003SxMvIAK). Only in call b2b:a05Wt000003SxMvIAK does Jamal explicitly compare TechPulse to NanoDesign and state what GreenTech Dynamics appreciates about TechPulse compared to NanoDesign. In that call, at line 7, Jamal says TechPulse offers a more comprehensive integration process compared to NanoDesign, which meshes well with their current systems.",
+        "answers": [
+          {
+            "answer": "Jamal Okoro said that GreenTech Dynamics appreciates that TechPulse Solutions offers a more comprehensive integration process compared to NanoDesign, which meshes well with their current systems.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SxMvIAK",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2023-10-20T10:02:15] Jamal Okoro: Honestly, that's one of the things we appreciate. TechPulse Solutions does offer a more comprehensive integration process compared to others, like NanoDesign, which meshes well with our current systems."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state that Jamal Okoro said GreenTech Dynamics appreciates TechPulse's more comprehensive integration process compared to NanoDesign, which meshes well with their current systems. The reference likewise captures the same core fact: TechPulse offers a more comprehensive integration process that meshes well with GreenTech's current systems. All requested facts are present and consistent across both answers and the reference."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}
