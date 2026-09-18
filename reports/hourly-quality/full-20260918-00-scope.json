@@ -1,0 +1,404 @@
+{
+  "protocol": "customer-event-scope-v2",
+  "question_sha256": "e68956898ed036159e427b07066d0311066f0ce9f107309c337d0ee4652e4415",
+  "questions": 4,
+  "counts": {
+    "pass": 4
+  },
+  "estimated_usd": 0.4710181,
+  "results": [
+    {
+      "question_id": "b2b-multi_call-a6ef3a24be3e74ae",
+      "question": "For OmegaDesign Labs, what discount and total price did Maya quote for DevVision IDE in the demo call, and which products in the earlier proposal received only a 10% discount?",
+      "gold_answer": "DevVision IDE came with a 15% discount at $6,374.79 for 25 licenses; AI Cirku-Tech and CircuitSync Pro received 10% discounts.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003StcgIAC",
+        "b2b:a05Wt000003Stw0IAC",
+        "b2b:a05Wt000003SuKAIA0",
+        "b2b:a05Wt000003SuKBIA0",
+        "b2b:a05Wt000003SvRTIA0",
+        "b2b:a05Wt000003SvRUIA0",
+        "b2b:a05Wt000003SvUmIAK",
+        "b2b:a05Wt000003SvXvIAK",
+        "b2b:a05Wt000003Svg5IAC",
+        "b2b:a05Wt000003Svo5IAC",
+        "b2b:a05Wt000003SwfIIAS",
+        "b2b:a05Wt000003SwsEIAS",
+        "b2b:a05Wt000003Sx0JIAS",
+        "b2b:a05Wt000003Sx58IAC",
+        "b2b:a05Wt000003Sx59IAC",
+        "b2b:a05Wt000003SxMpIAK",
+        "b2b:a05Wt000003SxMqIAK",
+        "b2b:a05Wt000003SxMrIAK",
+        "b2b:a05Wt000003SxwNIAS",
+        "b2b:a05Wt000003Sy2tIAC",
+        "b2b:a05Wt000003SyNmIAK",
+        "b2b:a05Wt000003SzAJIA0",
+        "b2b:a05Wt000003SzJsIAK",
+        "b2b:a05Wt000003T0itIAC",
+        "b2b:a05Wt000003T0kXIAS",
+        "b2b:a05Wt000003T0kYIAS",
+        "b2b:a05Wt000003T0m9IAC",
+        "b2b:a05Wt000003T0mAIAS",
+        "b2b:a05Wt000003T1DXIA0",
+        "b2b:a05Wt000003T1DYIA0",
+        "b2b:a05Wt000003T1ruIAC",
+        "b2b:a05Wt000003T1zuIAC",
+        "b2b:a05Wt000003T27yIAC",
+        "b2b:a05Wt000003T29aIAC",
+        "b2b:a05Wt000003T29bIAC",
+        "b2b:a05Wt000003T2CpIAK",
+        "b2b:a05Wt000003T2CqIAK",
+        "b2b:a05Wt000003T2HfIAK",
+        "b2b:a05Wt000003T2MXIA0",
+        "b2b:a05Wt000003T2SxIAK",
+        "b2b:a05Wt000003T2b0IAC",
+        "b2b:a05Wt000003T2hWIAS",
+        "b2b:a05Wt000003T2hXIAS",
+        "b2b:a05Wt000003T2nuIAC",
+        "b2b:a05Wt000003T2nvIAC",
+        "b2b:a05Wt000003T2r7IAC",
+        "b2b:a05Wt000003T2sjIAC",
+        "b2b:a05Wt000003T2skIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [
+          {
+            "answer": 0,
+            "evidence": 0,
+            "original_end": 6,
+            "normalized_end": 7
+          },
+          {
+            "answer": 0,
+            "evidence": 1,
+            "original_end": 4,
+            "normalized_end": 5
+          }
+        ],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Maya's demo call for DevVision IDE (2022-01-16) quotes a 15% discount at $6,374.79 for 25 licenses, and the earlier proposal call with Maya (2022-01-11) states a 10% discount on AI Cirku-Tech and CircuitSync Pro. Both facts are uniquely identified.",
+        "answers": [
+          {
+            "answer": "In the DevVision IDE demo call, Maya Johnson quoted a 15% discount, bringing the price to $6,374.79 for 25 licenses. In the earlier proposal discussion, the products that received only a 10% discount were AI Cirku-Tech and CircuitSync Pro (while AIOptics Vision and DevVision IDE received 15%).",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2MXIA0",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2022-01-16T16:31:10] Maya Johnson: Fantastic. Let's get started. In terms of pricing, I can share that we offer the DevVision IDE with a 15% discount, bringing the price to $6,374.79 for 25 licenses. We find this offers a strong return on investment due to its comprehensive features."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SxMrIAK",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2020-09-28T14:30:22] Jaemin Park: Wonderful. So from our last conversation, we analyzed how TechPulse Solutions can tailor our offerings to support OmegaDesign Labs, especially focusing on advanced design solutions that integrate seamlessly with your existing systems."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Maya (Maya Johnson) quoting a discount and total price for DevVision IDE in a demo call, and asks which products in the earlier proposal received only a 10% discount. Maya Johnson's only demo call for OmegaDesign Labs is b2b:a05Wt000003T2MXIA0 (2022-01-16, opportunity 'OmegaDesign Partnership for Advanced EDA Integration'), where she quotes DevVision IDE at a 15% discount, $6,374.79 for 25 licenses. The earlier proposal call for the same opportunity is b2b:a05Wt000003SuKBIA0 (2022-01-11), where Maya states AI Cirku-Tech and CircuitSync Pro received a 10% discount. No other Maya Johnson demo call for OmegaDesign Labs quotes DevVision IDE pricing, so the answer is unique.",
+        "answers": [
+          {
+            "answer": "In the demo call on 2022-01-16, Maya Johnson quoted DevVision IDE at a 15% discount, bringing the total price to $6,374.79 for 25 licenses. In the earlier proposal call on 2022-01-11, the products that received only a 10% discount were AI Cirku-Tech and CircuitSync Pro.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T2MXIA0",
+                "line_start": 6,
+                "line_end": 7,
+                "quote": "[2022-01-16T16:31:10] Maya Johnson: Fantastic. Let's get started. In terms of pricing, I can share that we offer the DevVision IDE with a 15% discount, bringing the price to $6,374.79 for 25 licenses. We find this offers a strong return on investment due to its comprehensive features."
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuKBIA0",
+                "line_start": 4,
+                "line_end": 5,
+                "quote": "[2022-01-11T12:31:10] Maya Johnson: Absolutely, we can dive into those details. Let's start with pricing. As provided, you're getting a 10% discount on products like AI Cirku-Tech and CircuitSync Pro, and a 15% discount on AIOptics Vision and DevVision IDE."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers agree on all requested facts: Maya quoted a 15% discount for DevVision IDE at a total price of $6,374.79 for 25 licenses in the demo call, and AI Cirku-Tech and CircuitSync Pro received only a 10% discount in the earlier proposal. The reference also covers all three requested facts (15% discount, $6,374.79 total for 25 licenses, and the two 10%-discount products). Answer A adds extra context about which products got 15% in the earlier proposal, and Answer B adds specific dates, but these are unrequested extras that do not affect agreement."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-multi_call-c5bcbc45d9dd569a",
+      "question": "In the EcoWave Solutions follow-up, Reza raised a competitive concern about customizability \u2014 what exactly was it, and how did Hana respond? Also, what had Hana acknowledged earlier about competitors during initial setup?",
+      "gold_answer": "Reza noted competitors offer significant customizability and asked how TechPulse compares; Hana said SecureFlow Suite and EcoPCB Creator come with a range of customizable options without compromising performance. Earlier, Hana had acknowledged feedback that competitors were more accommodating during initial setups.",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003St34IAC",
+        "b2b:a05Wt000003SuyQIAS",
+        "b2b:a05Wt000003Sv1eIAC",
+        "b2b:a05Wt000003Sv6UIAS",
+        "b2b:a05Wt000003Sv9hIAC",
+        "b2b:a05Wt000003SvBJIA0",
+        "b2b:a05Wt000003SvCvIAK",
+        "b2b:a05Wt000003SvEXIA0",
+        "b2b:a05Wt000003SvG9IAK",
+        "b2b:a05Wt000003SvHlIAK",
+        "b2b:a05Wt000003SvJNIA0",
+        "b2b:a05Wt000003SvJOIA0",
+        "b2b:a05Wt000003SvKzIAK",
+        "b2b:a05Wt000003SvMbIAK",
+        "b2b:a05Wt000003SvODIA0",
+        "b2b:a05Wt000003SvPpIAK",
+        "b2b:a05Wt000003SvRRIA0",
+        "b2b:a05Wt000003SvT3IAK",
+        "b2b:a05Wt000003SvUfIAK",
+        "b2b:a05Wt000003SvWHIA0",
+        "b2b:a05Wt000003SvXtIAK",
+        "b2b:a05Wt000003SvZVIA0",
+        "b2b:a05Wt000003Svb7IAC",
+        "b2b:a05Wt000003SvcjIAC",
+        "b2b:a05Wt000003SveLIAS",
+        "b2b:a05Wt000003SvfxIAC",
+        "b2b:a05Wt000003SvhZIAS",
+        "b2b:a05Wt000003SvjBIAS",
+        "b2b:a05Wt000003SvknIAC",
+        "b2b:a05Wt000003SvmPIAS",
+        "b2b:a05Wt000003Svo1IAC",
+        "b2b:a05Wt000003SvpdIAC",
+        "b2b:a05Wt000003SvrFIAS"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "The follow-up call between Hana Kato and Reza Mohammed (2021-02-19) contains Reza's competitive concern about customizability and Hana's response. The earlier Hana\u2013Reza call (2021-02-18) contains Hana's acknowledgment about competitors being more accommodating during initial setups. The 2021-02-17 discovery call has no such competitor acknowledgment, so the references are unambiguous.",
+        "answers": [
+          {
+            "answer": "In the follow-up call (2021-02-19), Reza raised that EcoWave's competitors offer quite a bit of customizability, which helps them tailor solutions to their needs, and asked how TechPulse compares in that area. Hana responded that while TechPulse offers a foundational standard in its solutions, products like the SecureFlow Suite and EcoPCB Creator come with a range of customizable options that allow tweaking to specific requirements, and that TechPulse focuses on providing flexibility without compromising performance, which many clients have appreciated. Earlier, in the 2021-02-18 call, Hana had acknowledged that TechPulse heard feedback about competitors being more accommodating during initial setups, and said they are continuously improving to offer more tailored services.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvEXIA0",
+                "line_start": 7,
+                "line_end": 8,
+                "quote": "[2021-02-19T15:02:10] Reza Mohammed: That sounds interesting. I did notice our competitors offer quite a bit of customizability, which really helps us tailor the solutions to our needs. How does TechPulse compare in that area?"
+              },
+              {
+                "call_id": "b2b:a05Wt000003St34IAC",
+                "line_start": 12,
+                "line_end": 14,
+                "quote": "[2021-02-18T17:04:05] Hana Kato: We focus on a streamlined implementation process and offer comprehensive support post-deployment. However, we did hear feedback about competitors being more accommodating during initial setups. We\u2019re continuously improving to offer more tailored services.\n[2021-02-18T17:04:30] Reza Mohammed: Yes, it's always a concern when the initial setup doesn\u2019t quite fit. It\u2019s good to know you're open to customizing based on client needs."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies three identifying facts: (1) EcoWave Solutions follow-up, (2) Reza raised a competitive concern about customizability, (3) Hana responded, and (4) Hana had earlier acknowledged something about competitors during initial setup. Only one call matches all criteria for the follow-up: b2b:a05Wt000003SvEXIA0 (2021-02-19), where Reza Mohammed raises a competitive concern about customizability (line 7) and Hana Kato responds (line 8). The 'earlier' acknowledgment by Hana about competitors during initial setup is found in b2b:a05Wt000003St34IAC (2021-02-18), line 12, where Hana acknowledges that competitors were 'more accommodating during initial setups.' Both calls are on the same opportunity (EcoWave FutureTech Partnership) with the same participants (Hana Kato and Reza Mohammed). The 2021-02-17 call (b2b:a05Wt000003SvCvIAK) is the true initial discovery call but contains no competitor acknowledgment by Hana, so the 'initial setup' acknowledgment refers to the 2021-02-18 call where Hana explicitly mentions competitor feedback about initial setups.",
+        "answers": [
+          {
+            "answer": "In the EcoWave Solutions follow-up call (2021-02-19), Reza raised the competitive concern that competitors offer 'quite a bit of customizability, which really helps us tailor the solutions to our needs,' and asked how TechPulse compares in that area. Hana responded by acknowledging that while TechPulse offers a 'foundational standard' in their solutions, products like the SecureFlow Suite and EcoPCB Creator come with 'a range of customizable options that allow you to tweak them according to your specific requirements,' emphasizing that they've 'focused on providing flexibility without compromising performance, which many of our clients have appreciated.' Earlier, during the initial setup discussion (2021-02-18), Hana had acknowledged that 'we did hear feedback about competitors being more accommodating during initial setups' and stated that TechPulse was 'continuously improving to offer more tailored services.'",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003SvEXIA0",
+                "line_start": 7,
+                "line_end": 9,
+                "quote": "[2021-02-19T15:02:10] Reza Mohammed: That sounds interesting. I did notice our competitors offer quite a bit of customizability, which really helps us tailor the solutions to our needs. How does TechPulse compare in that area?\n[2021-02-19T15:02:35] Hana Kato: Great question, Reza. While we offer a foundational standard in our solutions, products like the SecureFlow Suite and EcoPCB Creator come with a range of customizable options that allow you to tweak them according to your specific requirements. We've focused on providing flexibility without compromising performance, which many of our clients have appreciated. [15:02]"
+              },
+              {
+                "call_id": "b2b:a05Wt000003St34IAC",
+                "line_start": 12,
+                "line_end": 13,
+                "quote": "[2021-02-18T17:04:05] Hana Kato: We focus on a streamlined implementation process and offer comprehensive support post-deployment. However, we did hear feedback about competitors being more accommodating during initial setups. We\u2019re continuously improving to offer more tailored services."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers agree on all requested facts: (1) Reza's competitive concern was that competitors offer quite a bit of customizability helping tailor solutions, and he asked how TechPulse compares; (2) Hana responded that TechPulse has a foundational standard but products like SecureFlow Suite and EcoPCB Creator offer customizable options, emphasizing flexibility without compromising performance; (3) Earlier, Hana acknowledged feedback that competitors were more accommodating during initial setups and that TechPulse is continuously improving. The reference covers all three requested facts: Reza's customizability concern and comparison question, Hana's response naming SecureFlow Suite and EcoPCB Creator with customizable options and no performance compromise, and the earlier acknowledgment about competitors being more accommodating during initial setups. Minor wording differences exist but no substantive disagreement or missing commitment."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2b-single_call-6e8a5471124f04ef",
+      "question": "What discount did Anwar offer Farah at DataGuard Insights for bulk purchasing, and what did she agree to do before their next call?",
+      "gold_answer": "A 10% discount on quantities; she would review the case studies and discuss compatibility with her team.",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2b:a05Wt000003Sr80IAC",
+        "b2b:a05Wt000003SrSlIAK",
+        "b2b:a05Wt000003StkdIAC",
+        "b2b:a05Wt000003SvoDIAS",
+        "b2b:a05Wt000003SvpuIAC",
+        "b2b:a05Wt000003SxgOIAS",
+        "b2b:a05Wt000003SxjXIAS",
+        "b2b:a05Wt000003SxoJIAS",
+        "b2b:a05Wt000003SyisIAC",
+        "b2b:a05Wt000003Sz3mIAC",
+        "b2b:a05Wt000003SzAQIA0",
+        "b2b:a05Wt000003SzARIA0",
+        "b2b:a05Wt000003Szv5IAC",
+        "b2b:a05Wt000003T0PbIAK",
+        "b2b:a05Wt000003T10rIAC",
+        "b2b:a05Wt000003T1qNIAS",
+        "b2b:a05Wt000003T2HoIAK",
+        "b2b:a05Wt000003T2RVIA0",
+        "b2b:a05Wt000003T2eJIAS",
+        "b2b:a05Wt000003T2xdIAC",
+        "b2b:a05Wt000003T4EeIAK",
+        "b2b:a05Wt000003T4JVIA0",
+        "b2b:a05Wt000003T4UlIAK",
+        "b2b:a05Wt000003T4WOIA0",
+        "b2b:a05Wt000003T4WPIA0",
+        "b2b:a05Wt000003T4ZbIAK",
+        "b2b:a05Wt000003T4cnIAC"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only two calls involve Anwar Malik with Farah Elamin at DataGuard Insights. The 2023-01-28 call (TechPulse-DataGuard Expansion) contains the bulk-purchasing discount discussion; the 2023-02-03 follow-up contains no discount or commitment content, so there is no competing answer.",
+        "answers": [
+          {
+            "answer": "Anwar offered a 10% discount on quantities for bulk purchasing, and Farah agreed to review the case studies Anwar would send and talk to her team about their compatibility with what TechPulse offers, with more feedback expected by their next call the following week.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T4WOIA0",
+                "line_start": 18,
+                "line_end": 19,
+                "quote": "[2023-01-28T16:03:28] Anwar Malik: Of course. We provide a 10% discount on quantities which ensures favorable cost structures. I'd be happy to dive deeper into these numbers in our next steps."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4WOIA0",
+                "line_start": 20,
+                "line_end": 21,
+                "quote": "[2023-01-28T16:03:52] Anwar Malik: Perfect, Farah. I'll follow up with an email containing case studies and more detailed info. Let\u2019s schedule another call to address any further questions. When would work best for you?"
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question specifies Anwar (salesperson), Farah (customer), DataGuard Insights (account), and bulk purchasing discount. Only one call matches all these criteria: b2b:a05Wt000003T4WOIA0 (2023-01-28), where Anwar Malik speaks with Farah Elamin at DataGuard Insights. In that call, Anwar offers a 10% discount on quantities (bulk purchasing), and Farah agrees to review the case studies and talk to her team before their next call. The other Anwar-Farah call (b2b:a05Wt000003SvoDIAS, 2023-02-03) is a follow-up with no discount discussion, confirming the first call is the relevant one.",
+        "answers": [
+          {
+            "answer": "Anwar offered Farah a 10% discount on quantities (bulk purchasing) for SecureFlow Suite and CryptSecure Core. Before their next call, Farah agreed to review the case studies Anwar would send and talk to her team about their compatibility with what TechPulse offers.",
+            "evidence": [
+              {
+                "call_id": "b2b:a05Wt000003T4WOIA0",
+                "line_start": 16,
+                "line_end": 19,
+                "quote": "[2023-01-28T16:03:00] Anwar Malik: I'll make sure to send those over. On top of that, our SecureFlow Suite and CryptSecure Core are competitively priced with bulk purchasing options like the ones mentioned in my notes here. This, combined with customization, sets us apart. It's all about providing options that work for you.\n[2023-01-28T16:03:15] Farah Elamin: Pricing is always a consideration, especially with larger projects. Bulk purchasing and discounts might make it more feasible for us.\n[2023-01-28T16:03:28] Anwar Malik: Of course. We provide a 10% discount on quantities which ensures favorable cost structures. I'd be happy to dive deeper into these numbers in our next steps."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T4WOIA0",
+                "line_start": 19,
+                "line_end": 22,
+                "quote": "[2023-01-28T16:03:40] Farah Elamin: Sounds like a plan. I\u2019ll review the case studies and talk to my team about our compatibility with what you offer.\n[2023-01-28T16:03:52] Anwar Malik: Perfect, Farah. I'll follow up with an email containing case studies and more detailed info. Let\u2019s schedule another call to address any further questions. When would work best for you?\n[2023-01-28T16:04:02] Farah Elamin: Next week sounds good. I should have more feedback by then."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same 10% discount on quantities for bulk purchasing and the same pre-next-call commitments: Farah would review the case studies Anwar sends and talk to her team about compatibility with what TechPulse offers. Answer A adds a timing detail ('following week') and Answer B adds product names, but these are extras that do not conflict. The reference captures both requested facts: the 10% discount on quantities and the two commitments (review case studies, discuss compatibility with her team)."
+      },
+      "passed": true
+    },
+    {
+      "question_id": "b2c-single_call-0a3e2c8620edcc8c",
+      "question": "What discount did AutoElite offer Hannah Lee on the Comprehensive Maintenance Plan for her bulk Toyota Camry Hybrid and Nissan Leaf purchase?",
+      "gold_answer": "A 10% discount on the Comprehensive Maintenance Plan when bought in bulk.",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "pool_call_ids": [
+        "b2c:a05Ws000005SNGaIAO",
+        "b2c:a05Ws000005SQmNIAW",
+        "b2c:a05Ws000005SRyYIAW",
+        "b2c:a05Ws000005SS3OIAW",
+        "b2c:a05Ws000005SSJUIA4",
+        "b2c:a05Ws000005SScsIAG",
+        "b2c:a05Ws000005SSjLIAW",
+        "b2c:a05Ws000005SSmWIAW",
+        "b2c:a05Ws000005STQuIAO",
+        "b2c:a05Ws000005STc9IAG",
+        "b2c:a05Ws000005STqfIAG",
+        "b2c:a05Ws000005SUoJIAW",
+        "b2c:a05Ws000005SWQIIA4",
+        "b2c:a05Ws000005SWmyIAG",
+        "b2c:a05Ws000005SWoZIAW",
+        "b2c:a05Ws000005SXcWIAW",
+        "b2c:a05Ws000005SYNLIA4",
+        "b2c:a05Ws000005SYS7IAO",
+        "b2c:a05Ws000005SaNRIA0"
+      ],
+      "schema_valid": true,
+      "evidence_index_repairs": {
+        "extraction": [],
+        "verdict": []
+      },
+      "extraction": {
+        "scope": "determinate",
+        "reason": "Only one call in the history mentions a discount on the Comprehensive Maintenance Plan tied to a bulk purchase of Toyota Camry Hybrids and Nissan Leafs: Priya Nair's December 2, 2021 call, where she offers a 10% discount. No other call contains a competing discount figure for this plan.",
+        "answers": [
+          {
+            "answer": "AutoElite offered Hannah Lee a 10% discount on the Comprehensive Maintenance Plan when bought in bulk for her desired Toyota Camry Hybrids and Nissan Leafs, as part of the Eco-Friendly Luxury Spring Sale.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SS3OIAW",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-12-02T16:19:00] Hannah Lee: That aligns with what I've heard. Pricing is, of course, also crucial. How flexible can we be with negotiations, especially on the comprehensive maintenance plan and bulk vehicle purchases?\n[2021-12-02T16:19:25] Priya Nair: Certainly, Hannah. For your acquisition, we\u2019re offering the Comprehensive Maintenance Plan with a 10% discount when bought in bulk for your desired Toyota Camry Hybrids and Nissan Leafs. We aim to provide you with the best value."
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "scope": "determinate",
+        "reason": "The question asks specifically about a discount on the Comprehensive Maintenance Plan for a bulk Toyota Camry Hybrid and Nissan Leaf purchase. Only one call in the history contains this information: call b2c:a05Ws000005SS3OIAW (2021-12-02), where Priya Nair explicitly states a 10% discount on the Comprehensive Maintenance Plan when bought in bulk for Toyota Camry Hybrids and Nissan Leafs. No other call mentions a discount on this plan for these specific vehicles in bulk.",
+        "answers": [
+          {
+            "answer": "AutoElite offered Hannah Lee a 10% discount on the Comprehensive Maintenance Plan when bought in bulk for her Toyota Camry Hybrids and Nissan Leafs.",
+            "evidence": [
+              {
+                "call_id": "b2c:a05Ws000005SS3OIAW",
+                "line_start": 11,
+                "line_end": 13,
+                "quote": "[2021-12-02T16:19:00] Hannah Lee: That aligns with what I've heard. Pricing is, of course, also crucial. How flexible can we be with negotiations, especially on the comprehensive maintenance plan and bulk vehicle purchases?\n[2021-12-02T16:19:25] Priya Nair: Certainly, Hannah. For your acquisition, we\u2019re offering the Comprehensive Maintenance Plan with a 10% discount when bought in bulk for your desired Toyota Camry Hybrids and Nissan Leafs. We aim to provide you with the best value."
+              }
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "answers_agree": true,
+        "reference_covers_requested_facts": true,
+        "reason": "Both answers state the same core fact: a 10% discount on the Comprehensive Maintenance Plan for the bulk purchase of Toyota Camry Hybrids and Nissan Leafs. Answer A adds the extra detail of the 'Eco-Friendly Luxury Spring Sale,' which is unrequested but does not conflict. The reference confirms the 10% discount on the Comprehensive Maintenance Plan when bought in bulk, covering the requested fact."
+      },
+      "passed": true
+    }
+  ],
+  "policy": "Diagnostic, all frozen questions; no RAG outcomes used; no cohort mutation. Full account/lead-ID histories, not a full-corpus proof."
+}

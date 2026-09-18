@@ -1,0 +1,447 @@
+[
+  {
+    "question_id": "b2b-multi_call-a6ef3a24be3e74ae",
+    "question": "For OmegaDesign Labs, what discount and total price did Maya quote for DevVision IDE in the demo call, and which products in the earlier proposal received only a 10% discount?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount and total price Maya quoted for DevVision IDE in the demo call, and which products in the earlier proposal received only a 10% discount.",
+        "relationship": "same commercial issue across calls \u2014 discount/pricing terms for OmegaDesign Labs, comparing the demo quote against the earlier proposal's discount levels.",
+        "reason": "Both lookups concern the same business issue (discounting and pricing for OmegaDesign Labs), not merely the same account, so the multi-call comparison is coherent."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SuKBIA0",
+                "fact": "AI Cirku-Tech and CircuitSync Pro received 10% discounts.",
+                "why_other_call_cannot_supply_it": "The demo call (b2b:a05Wt000003T2MXIA0) only discusses DevVision IDE pricing and does not mention AI Cirku-Tech or CircuitSync Pro."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2MXIA0",
+                "fact": "DevVision IDE was quoted with a 15% discount, bringing the price to $6,374.79 for 25 licenses.",
+                "why_other_call_cannot_supply_it": "The earlier proposal call (b2b:a05Wt000003SuKBIA0) only mentions a 15% discount on DevVision IDE but does not provide the total price or license count."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the discount and total price for DevVision IDE from the demo call, and which products received only a 10% discount from the earlier proposal. The demo call provides the specific price and license count for DevVision IDE, while the earlier proposal call identifies the products with 10% discounts. Neither call contains both pieces of information, so both are necessary."
+          },
+          "schema_attempts": [
+            {
+              "type": "object",
+              "necessary": false,
+              "exclusive_facts": [],
+              "reason": "The question asks for the discount and total price for DevVision IDE from the demo call, and which products in the earlier proposal received only a 10% discount. The demo call (b2b:a05Wt000003T2MXIA0) provides the DevVision IDE discount and price. The earlier proposal call (b2b:a05Wt000003SuKBIA0) provides the list of products with 10% discount. However, the earlier call also mentions that DevVision IDE has a 15% discount, but the price is not given there. The demo call does not mention the other products. Thus, both calls are needed to answer the full question. But the question explicitly asks for information from two different sources: the demo call for DevVision IDE pricing, and the earlier proposal for the 10% discount products. Since each call provides distinct requested information, both are necessary. However, the instruction says to reject if both repeat one fact or if facts are unrelated lookups joined together. Here, the facts are related to the same opportunity and pricing discussion, but they are distinct pieces of information requested by the question. The question is a compound query that requires both calls. Therefore, necessary=true. But the instruction says 'If unsure, necessary=false.' I am not unsure; both calls are clearly needed. So necessary=true. However, the response format requires exclusive_facts with one essential fact per source call. For the demo call, the essential fact is the DevVision IDE price and discount. For the earlier call, the essential fact is the list of products with 10% discount. But the earlier call also mentions DevVision IDE's discount, but that is not the requested information from that call; the requested information is which products got 10% discount. So the exclusive fact for the earlier call is that AI Cirku-Tech and CircuitSync Pro received 10% discounts. For the demo call, the exclusive fact is that DevVision IDE has a 15% discount and total price $6,374.79 for 25 licenses. These are distinct and not repeated. So necessary=true. But wait, the question says 'which products in the earlier proposal received only a 10% discount?' The earlier call says 'you're getting a 10% discount on products like AI Cirku-Tech and CircuitSync Pro, and a 15% discount on AIOptics Vision and DevVision IDE.' So the answer is AI Cirku-Tech and CircuitSync Pro. That is only in the earlier call. The demo call does not mention those products. So indeed both calls are needed. Therefore, necessary=true. I will output necessary=true with exclusive_facts. But the instruction says 'If necessary=true give exactly one essential fact per source call.' So I will provide one fact per call. For the demo call, the fact is the DevVision IDE pricing. For the earlier call, the fact is the list of products with 10% discount. I will also provide why the other call cannot supply it. For the demo call, the earlier call does not have the total price, only the discount. For the earlier call, the demo call does not mention the other products. So I will output that. However, the instruction says 'Repeated complaints or paraphrases are NOT distinct facts merely because the question says ",
+              "first": " or ",
+              "later": " .' Here, the facts are not repeated; they are distinct. So necessary=true. I will output JSON accordingly. But the response format says '{"
+            },
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SuKBIA0",
+                  "fact": "AI Cirku-Tech and CircuitSync Pro received 10% discounts.",
+                  "why_other_call_cannot_supply_it": "The demo call (b2b:a05Wt000003T2MXIA0) only discusses DevVision IDE pricing and does not mention AI Cirku-Tech or CircuitSync Pro."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2MXIA0",
+                  "fact": "DevVision IDE was quoted with a 15% discount, bringing the price to $6,374.79 for 25 licenses.",
+                  "why_other_call_cannot_supply_it": "The earlier proposal call (b2b:a05Wt000003SuKBIA0) only mentions a 15% discount on DevVision IDE but does not provide the total price or license count."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the discount and total price for DevVision IDE from the demo call, and which products received only a 10% discount from the earlier proposal. The demo call provides the specific price and license count for DevVision IDE, while the earlier proposal call identifies the products with 10% discounts. Neither call contains both pieces of information, so both are necessary."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T2MXIA0",
+                "fact": "DevVision IDE quoted with a 15% discount at $6,374.79 for 25 licenses in the demo call",
+                "why_other_call_cannot_supply_it": "The earlier proposal call only mentions a 15% discount on DevVision IDE without any total price or license count, and the demo call is the only source of the $6,374.79 figure"
+              },
+              {
+                "call_id": "b2b:a05Wt000003SuKBIA0",
+                "fact": "AI Cirku-Tech and CircuitSync Pro received only 10% discounts in the earlier proposal",
+                "why_other_call_cannot_supply_it": "The demo call discusses only DevVision IDE pricing and never mentions which products received 10% discounts"
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information: the demo-call quote (discount and total price for DevVision IDE) and which proposal products got only 10% discounts. Each call exclusively supplies one of these facts; neither call alone answers both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T2MXIA0",
+                  "fact": "DevVision IDE quoted with a 15% discount at $6,374.79 for 25 licenses in the demo call",
+                  "why_other_call_cannot_supply_it": "The earlier proposal call only mentions a 15% discount on DevVision IDE without any total price or license count, and the demo call is the only source of the $6,374.79 figure"
+                },
+                {
+                  "call_id": "b2b:a05Wt000003SuKBIA0",
+                  "fact": "AI Cirku-Tech and CircuitSync Pro received only 10% discounts in the earlier proposal",
+                  "why_other_call_cannot_supply_it": "The demo call discusses only DevVision IDE pricing and never mentions which products received 10% discounts"
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information: the demo-call quote (discount and total price for DevVision IDE) and which proposal products got only 10% discounts. Each call exclusively supplies one of these facts; neither call alone answers both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question plausibly asks a rep to recall specific discount/price details across two calls for the same account. Call 1 (2022-01-11) provides the exclusive fact that AI Cirku-Tech and CircuitSync Pro received 10% discounts in the earlier proposal. Call 2 (2022-01-16, the demo call) provides the exclusive fact that DevVision IDE was quoted at a 15% discount, $6,374.79 for 25 licenses. Both sources contribute distinct requested facts. The gold answer matches all source claims exactly with no unasked extras. Wording is natural, scope is clear (OmegaDesign Labs, named products, named rep), and no locator preamble or answer leakage is present."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Maya Johnson on 2022-01-16 explicitly states 'DevVision IDE with a 15% discount, bringing the price to $6,374.79 for 25 licenses,' which directly supports the answer_claim about the 15% discount, the total price of $6,374.79, and 25 licenses."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Maya Johnson on 2022-01-11 explicitly states 'a 10% discount on products like AI Cirku-Tech and CircuitSync Pro, and a 15% discount on AIOptics Vision and DevVision IDE,' which directly supports the answer_claim about the 10% discount on AI Cirku-Tech and CircuitSync Pro and the 15% discount on AIOptics Vision and DevVision IDE."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) DevVision IDE came with a 15% discount at $6,374.79 for 25 licenses \u2014 supported by evidence index 0; (2) AI Cirku-Tech and CircuitSync Pro received 10% discounts \u2014 supported by evidence index 1. All factual claims in the gold_answer are directly supported by the cited evidence. The context metadata confirms both calls relate to OmegaDesign Labs and the same opportunity, and Maya Johnson is the speaker in both quotes, consistent with the question's reference to 'Maya.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-c5bcbc45d9dd569a",
+    "question": "In the EcoWave Solutions follow-up, Reza raised a competitive concern about customizability \u2014 what exactly was it, and how did Hana respond? Also, what had Hana acknowledged earlier about competitors during initial setup?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The competitive concern Reza raised about customizability, Hana's response to it, and Hana's earlier acknowledgment about competitors during initial setup",
+        "relationship": "All three facts concern the same business issue \u2014 competitive positioning around customizability \u2014 across the initial and follow-up calls",
+        "reason": "The question combines an objection, its response, and a related earlier acknowledgment, all tied to the same competitive concern rather than unrelated lookups joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvEXIA0",
+                "fact": "Reza raised a competitive concern that competitors offer significant customizability and asked how TechPulse compares; Hana responded that SecureFlow Suite and EcoPCB Creator come with a range of customizable options without compromising performance.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003St34IAC) does not contain this specific competitive concern or the detailed response about customizable options; it only mentions a general openness to customization."
+              },
+              {
+                "call_id": "b2b:a05Wt000003St34IAC",
+                "fact": "Hana acknowledged earlier that competitors were more accommodating during initial setups.",
+                "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SvEXIA0) does not mention this earlier acknowledgment about competitors being more accommodating during initial setups; it focuses on the later competitive concern and response."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information: the specific competitive concern and Hana's response from the follow-up call, and an earlier acknowledgment from the initial setup call. Each fact is exclusive to its respective call, and neither call alone provides both pieces of information."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvEXIA0",
+                  "fact": "Reza raised a competitive concern that competitors offer significant customizability and asked how TechPulse compares; Hana responded that SecureFlow Suite and EcoPCB Creator come with a range of customizable options without compromising performance.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003St34IAC) does not contain this specific competitive concern or the detailed response about customizable options; it only mentions a general openness to customization."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003St34IAC",
+                  "fact": "Hana acknowledged earlier that competitors were more accommodating during initial setups.",
+                  "why_other_call_cannot_supply_it": "The other call (b2b:a05Wt000003SvEXIA0) does not mention this earlier acknowledgment about competitors being more accommodating during initial setups; it focuses on the later competitive concern and response."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information: the specific competitive concern and Hana's response from the follow-up call, and an earlier acknowledgment from the initial setup call. Each fact is exclusive to its respective call, and neither call alone provides both pieces of information."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003SvEXIA0",
+                "fact": "Reza raised that competitors offer significant customizability and asked how TechPulse compares; Hana responded that SecureFlow Suite and EcoPCB Creator offer a range of customizable options without compromising performance.",
+                "why_other_call_cannot_supply_it": "The first call (Feb 18) contains no discussion of competitor customizability or Hana's response to it; this exchange occurs only in the Feb 19 follow-up call."
+              },
+              {
+                "call_id": "b2b:a05Wt000003St34IAC",
+                "fact": "During initial setup discussion, Hana acknowledged feedback that competitors were more accommodating during initial setups.",
+                "why_other_call_cannot_supply_it": "The follow-up call (Feb 19) never mentions competitors being more accommodating during initial setups; this acknowledgment appears only in the Feb 18 call."
+              }
+            ],
+            "reason": "The question asks for two distinct pieces of information from different conversations: the customizability concern and Hana's response (only in the follow-up call), and Hana's earlier acknowledgment about competitors during initial setup (only in the first call). Neither call alone can answer both parts."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003SvEXIA0",
+                  "fact": "Reza raised that competitors offer significant customizability and asked how TechPulse compares; Hana responded that SecureFlow Suite and EcoPCB Creator offer a range of customizable options without compromising performance.",
+                  "why_other_call_cannot_supply_it": "The first call (Feb 18) contains no discussion of competitor customizability or Hana's response to it; this exchange occurs only in the Feb 19 follow-up call."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003St34IAC",
+                  "fact": "During initial setup discussion, Hana acknowledged feedback that competitors were more accommodating during initial setups.",
+                  "why_other_call_cannot_supply_it": "The follow-up call (Feb 19) never mentions competitors being more accommodating during initial setups; this acknowledgment appears only in the Feb 18 call."
+                }
+              ],
+              "reason": "The question asks for two distinct pieces of information from different conversations: the customizability concern and Hana's response (only in the follow-up call), and Hana's earlier acknowledgment about competitors during initial setup (only in the first call). Neither call alone can answer both parts."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive objection raised by Reza in the follow-up call (Feb 19) and Hana's response, plus a prior acknowledgment Hana made in the initial call (Feb 18) about competitors being more accommodating during setups. Both facts are verified verbatim in their respective transcripts. Each source contributes an exclusive requested fact: the customizability concern and response appear only in call 2, while the competitor-accommodation acknowledgment appears only in call 1. The question is naturally phrased, identifies the account (EcoWave Solutions) and contact (Reza) clearly, and a rep would plausibly want to recall how a competitive objection was handled and what prior concession was made. No locator preamble, no answer leakage, no unsupported causality.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2021-02-19 follow-up call shows Reza Mohammed stating 'our competitors offer quite a bit of customizability' and asking 'How does TechPulse compare in that area?' Hana Kato responds that 'products like the SecureFlow Suite and EcoPCB Creator come with a range of customizable options' and that they've 'focused on providing flexibility without compromising performance.' This directly supports the answer_claim."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from the 2021-02-18 initial call shows Hana Kato saying 'we did hear feedback about competitors being more accommodating during initial setups.' This directly supports the answer_claim that Hana acknowledged feedback that competitors were more accommodating during initial setups."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has three factual components: (1) Reza noted competitors offer significant customizability and asked how TechPulse compares \u2014 supported by index 0; (2) Hana said SecureFlow Suite and EcoPCB Creator come with a range of customizable options without compromising performance \u2014 supported by index 0; (3) Earlier, Hana acknowledged feedback that competitors were more accommodating during initial setups \u2014 supported by index 1. All claims in the gold_answer are faithfully supported by the cited evidence. The paraphrasing ('significant' vs 'quite a bit') is acceptable."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-0d44b841e81fdac1",
+    "question": "What did Mei Chen from UrbanTech Developments say about her team's installation timeline requirement for EcoPCB Creator?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Mei Chen from UrbanTech Developments said about her team's installation timeline requirement for EcoPCB Creator",
+        "relationship": "single coherent lookup of one requirement from one customer",
+        "reason": "This is a single requirement lookup about a software product's installation timeline, which is a valid installable/software context, and it concerns one customer and one issue."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Mei Chen said about her team's installation timeline for EcoPCB Creator. The dialogue at 10:00:55 shows her stating 'My team is really keen on setting everything up quickly, ideally within a day.' The gold answer accurately captures this. The question naturally identifies the customer (Mei Chen, UrbanTech Developments) and the product (EcoPCB Creator), which is realistic for a rep reviewing call notes. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true per instructions.",
+        "intent": "requirements",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is directly attributed to Mei Chen and contains the exact statement: 'My team is really keen on setting everything up quickly, ideally within a day.' This matches the answer_claim verbatim and confirms the installation timeline requirement of ideally within a day."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item directly quotes Mei Chen from UrbanTech Developments (confirmed by context_metadata) stating her team wants everything set up quickly, ideally within a day. This fully supports the gold_answer: 'Her team wants everything set up quickly, ideally within a day.'"
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-6e8a5471124f04ef",
+    "question": "What discount did Anwar offer Farah at DataGuard Insights for bulk purchasing, and what did she agree to do before their next call?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The bulk-purchase discount Anwar offered Farah at DataGuard Insights and the commitment she agreed to before the next call",
+        "relationship": "single coherent exchange: a commercial offer and the agreed next step from the same negotiation",
+        "reason": "Both parts concern the same deal discussion\u2014the discount offered and the resulting commitment\u2014forming one coherent sales interaction, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "commercial_terms",
+        "locator_preamble": false,
+        "reason": "The question asks about a specific discount offered during a sales conversation and the customer's agreed next steps\u2014both realistic needs for a rep tracking deal progress. The dialogue confirms Anwar offered a 10% discount on quantities (16:03:28) and Farah agreed to review case studies and discuss compatibility with her team (16:03:40). The gold answer matches these facts precisely with no extra or missing information. Wording is natural, scope is clear (named rep, customer, and company), and no artificial locator preamble is present. Single-call question, so both_sources_required is set true by convention."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Anwar Malik explicitly states 'We provide a 10% discount on quantities which ensures favorable cost structures,' directly supporting the answer_claim about a 10% discount on quantities."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Farah Elamin explicitly states 'I'll review the case studies and talk to my team about our compatibility with what you offer,' directly supporting the answer_claim that she would review case studies and discuss compatibility with her team."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'A 10% discount on quantities; she would review the case studies and discuss compatibility with her team.' Evidence index 0 confirms Anwar offered a 10% discount on quantities. Evidence index 1 confirms Farah agreed to review the case studies and talk to her team about compatibility. Both factual claims in the gold_answer are fully supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-80ecc842eab06a9a",
+    "question": "What is the price of the AutoElite Comprehensive Maintenance Plan discussed with Sophia Patel, and is there flexibility on it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Price of the AutoElite Comprehensive Maintenance Plan discussed with Sophia Patel and whether there is flexibility on that price",
+        "relationship": "single coherent request: the price lookup and the flexibility question concern the same commercial term (the plan's price)",
+        "reason": "Both parts address one commercial item\u2014the maintenance plan's price and its negotiability\u2014making this a natural quote/objection-style sales question, not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks for the price of the AutoElite Comprehensive Maintenance Plan and whether there is flexibility. The transcript clearly states the price is $1,999.99 and Ravi says 'we're open to discussing any adjustments that align with your needs.' The gold answer captures both facts precisely without unasked extras. The question naturally identifies the customer (Sophia Patel) and the product, which is realistic for a rep/account manager. No locator preamble, no answer leakage, no unsupported causality. Single-call question so both_sources_required is set to true.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Ravi Chandra explicitly states the plan is priced at $1,999.99 and that they are 'open to discussing any adjustments that align with your needs,' directly supporting the answer_claim of the price and flexibility."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The single cited evidence item contains both the exact price ($1,999.99) and the statement of openness to discussing adjustments to align with the customer's needs, which together fully support the gold_answer. The context metadata confirms the call is associated with Sophia Patel, matching the question's reference."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-0a3e2c8620edcc8c",
+    "question": "What discount did AutoElite offer Hannah Lee on the Comprehensive Maintenance Plan for her bulk Toyota Camry Hybrid and Nissan Leaf purchase?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The discount AutoElite offered Hannah Lee on the Comprehensive Maintenance Plan for her bulk Toyota Camry Hybrid and Nissan Leaf purchase",
+        "relationship": "single coherent lookup: one discount on one plan tied to one purchase",
+        "reason": "A single fact lookup about a discount on a specific maintenance plan within one commercial transaction; plausible sales language, no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks about a specific discount offered to a named customer on a named plan for a bulk vehicle purchase. The dialogue confirms Priya Nair offered Hannah Lee a 10% discount on the Comprehensive Maintenance Plan when bought in bulk for Toyota Camry Hybrids and Nissan Leafs. The gold answer states exactly that fact with no unasked extras. Wording is natural and scoped to a clear business situation. Single-call question, so both_sources_required is set to true per instructions.",
+        "intent": "commercial_terms",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Priya Nair explicitly states: 'we're offering the Comprehensive Maintenance Plan with a 10% discount when bought in bulk for your desired Toyota Camry Hybrids and Nissan Leafs.' This directly supports the answer_claim of a 10% discount on the Comprehensive Maintenance Plan when bought in bulk for Toyota Camry Hybrids and Nissan Leafs. The speaker is identified as Priya Nair (the salesperson), the recipient is Hannah Lee, and the specific vehicles and discount percentage are all clearly stated."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states 'A 10% discount on the Comprehensive Maintenance Plan when bought in bulk.' The cited evidence (index 0) contains a direct quote from the salesperson (Priya Nair) to Hannah Lee confirming exactly this: a 10% discount on the Comprehensive Maintenance Plan when bought in bulk for Toyota Camry Hybrids and Nissan Leafs. All factual elements of the gold_answer (10% discount, Comprehensive Maintenance Plan, bulk purchase condition) are explicitly present in the cited dialogue. The account metadata confirms the call is associated with Hannah Lee. The answer is fully supported."
+      }
+    }
+  }
+]
