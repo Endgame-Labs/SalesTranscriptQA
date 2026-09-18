@@ -4,6 +4,7 @@ import collections
 import json
 import sqlite3
 from pathlib import Path
+from salestranscriptqa.artifacts import read_json_artifact
 import pyarrow.parquet as pq
 
 
@@ -21,7 +22,7 @@ def main():
     with sqlite3.connect(f'file:{root}/progress.sqlite?mode=ro',uri=True) as db:
         records=db.execute("SELECT artifact,estimated_usd FROM attempts WHERE stage='group_blind_verification_v2' AND status='ok' ORDER BY started").fetchall()
     for artifact,cost in records:
-        v=json.loads((root/artifact).read_text());p=json.loads(v['request']['messages'][0]['content'].split('\nINPUT JSON:\n',1)[1])
+        v=read_json_artifact(root/artifact);p=json.loads(v['request']['messages'][0]['content'].split('\nINPUT JSON:\n',1)[1])
         question=p['question']
         if question not in qcache:
             qcache[question]=required_speakers(question,names)

@@ -6,6 +6,7 @@ import json
 import random
 from collections import Counter
 from pathlib import Path
+from salestranscriptqa.artifacts import read_json_artifact
 from salestranscriptqa.corpus import write_json
 from salestranscriptqa.sales_questions import SalesQuestions, SalesQuestionsGLM, SalesQuestionsEdited, SalesQuestionsReady, SALES_PROMPT, STYLE_AUDIT
 
@@ -50,7 +51,7 @@ def main():
             artifacts = [root/p for p, in db.execute("SELECT artifact FROM attempts WHERE stage='generate' AND status='ok' ORDER BY started")]
         raw = {}
         for path in artifacts:
-            artifact = json.loads(path.read_text())
+            artifact = read_json_artifact(path)
             value = json.loads(artifact['request']['messages'][0]['content'].split('INPUT JSON:\n',1)[1])
             raw.setdefault(tuple(c['call_id'] for c in value['calls']),artifact['parsed'])
         rows = []
