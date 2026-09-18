@@ -2,7 +2,7 @@
 
 A dialogue RAG benchmark built from Salesforce's synthetic CRMArena-Pro sales calls, with separate B2B and B2C question sets and a companion CLI in this repository.
 
-**Paused for disk expansion and reboot (September 18, 2026, 03:58 UTC).** Full v9 generation and automated review have finished; RAG evaluation is partially complete. See the checkpoint and resume instructions below. B2C is single-call only; B2B supports single- and two-call questions. [Generation guide](docs/GENERATION.md) · [Cohort registry](reports/cohort-registry.json).
+**Resumed after disk expansion (September 18, 2026, 06:29 UTC).** Full v9 generation and automated review have finished; RAG evaluation is partially complete. See the checkpoint and resume instructions below. B2C is single-call only; B2B supports single- and two-call questions. [Generation guide](docs/GENERATION.md) · [Cohort registry](reports/cohort-registry.json).
 
 The earlier 200-question Hugging Face pilot and stopped legacy full-generation run are retired for new research. They remain historical artifacts; they will not be mixed into the revised cohort. The published [Hugging Face dataset](https://huggingface.co/datasets/EndgameLabs/SalesTranscriptQA) still serves that legacy pilot pending replacement publication. The revised 37-question sample yielded 36 active seed questions after quarantining one ambiguous package question.
 
@@ -19,7 +19,18 @@ The corpus preserves dialogue verbatim. Linked IDs are resolved into separate id
 
 Publication uses canonical Parquet plus Markdown transcript exports with YAML frontmatter. The `salestranscriptqa` CLI fetches pinned Hugging Face releases, exports corpora/questions, validates submissions, and supports answer judging in the style of [EnronQA-cli](https://github.com/dorkitude/EnronQA-cli).
 
-## Paused checkpoint and resumption
+## Current run and saved reboot checkpoint
+
+The user has resumed the work. The service and hourly timer are active again;
+2,967 unchanged QA pairs remain after the three quality holds were reconciled.
+The private evaluator now has a tested `reconcile_partial.py` migration that maps
+cached embeddings by original question ID and preserves API receipts and costs.
+Migration made no model calls. Disk space is now about 405 GB free. The managed
+workflow replays cached reviews before resuming RAG. Next assistant inspection:
+07:00 UTC. The notes below preserve the pause checkpoint and recovery procedure;
+the previously outstanding partial-cache reconciliation is now implemented.
+
+### Historical pause checkpoint and resumption
 
 All 14,916 eligible source units have been processed. Generation selected 4,932
 questions; source/citation and customer-history reviews reduced these to 2,970
