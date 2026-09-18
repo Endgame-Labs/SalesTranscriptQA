@@ -1,0 +1,367 @@
+[
+  {
+    "question_id": "b2b-multi_call-a29857df1bbf2753",
+    "question": "For the SecureWise Solutions partnership expansion, what pain point did Marcus Lund raise about his current provider in the initial discussion, and what competitive concern did he raise in the follow-up about TechPulse's innovation pace?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Marcus Lund's pain point about his current provider in the initial SecureWise partnership discussion and his competitive concern about TechPulse's innovation pace in the follow-up",
+        "relationship": "Both facts concern the same business issue \u2014 the competitive/partnership concerns driving the SecureWise Solutions expansion \u2014 across an initial call and its follow-up",
+        "reason": "The two requested facts are both competitive concerns tied to one coherent partnership opportunity, making this a natural initial/follow-up comparison rather than two unrelated lookups joined by account name."
+      }
+    },
+    "necessity": {
+      "accepted": true,
+      "verdicts": [
+        {
+          "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0ZHIA0",
+                "fact": "Marcus Lund raised lack of robust support and reliable SLAs from current provider as a pain point.",
+                "why_other_call_cannot_supply_it": "The follow-up call does not mention this pain point; it focuses on competitive innovation concerns."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2JPIA0",
+                "fact": "Marcus Lund raised a competitive concern about competitors having frequent product enhancements and asked how TechPulse maintains innovation.",
+                "why_other_call_cannot_supply_it": "The initial call does not discuss competitors' product enhancement frequency or TechPulse's innovation pace."
+              }
+            ],
+            "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: the initial pain point and the follow-up competitive concern. Each fact is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0ZHIA0",
+                  "fact": "Marcus Lund raised lack of robust support and reliable SLAs from current provider as a pain point.",
+                  "why_other_call_cannot_supply_it": "The follow-up call does not mention this pain point; it focuses on competitive innovation concerns."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2JPIA0",
+                  "fact": "Marcus Lund raised a competitive concern about competitors having frequent product enhancements and asked how TechPulse maintains innovation.",
+                  "why_other_call_cannot_supply_it": "The initial call does not discuss competitors' product enhancement frequency or TechPulse's innovation pace."
+                }
+              ],
+              "reason": "The question explicitly asks for two distinct pieces of information from two different conversations: the initial pain point and the follow-up competitive concern. Each fact is only present in its respective call, and neither call contains both facts. Therefore, both calls are necessary to answer the question fully."
+            }
+          ]
+        },
+        {
+          "model": "accounts/fireworks/models/glm-5p3-flash",
+          "passed": true,
+          "verdict": {
+            "necessary": true,
+            "exclusive_facts": [
+              {
+                "call_id": "b2b:a05Wt000003T0ZHIA0",
+                "fact": "Marcus cited lack of robust support and reliable SLAs from his current provider as a pain point",
+                "why_other_call_cannot_supply_it": "The follow-up call never mentions his current provider's support/SLA shortcomings; it only discusses TechPulse's own support strengths."
+              },
+              {
+                "call_id": "b2b:a05Wt000003T2JPIA0",
+                "fact": "Marcus raised the competitive concern that competitors seem to have frequent product enhancements and asked how TechPulse maintains innovation",
+                "why_other_call_cannot_supply_it": "The initial call contains no mention of competitors' product enhancement cadence or any innovation-pace concern; Marcus there only asked positively about TechPulse's tech innovations."
+              }
+            ],
+            "reason": "The question explicitly requests two distinct pieces of information: an initial pain point about the current provider (only in the first call) and a follow-up competitive concern about innovation pace (only in the second call). Neither call contains both facts, and they are not paraphrases of the same complaint."
+          },
+          "schema_attempts": [
+            {
+              "necessary": true,
+              "exclusive_facts": [
+                {
+                  "call_id": "b2b:a05Wt000003T0ZHIA0",
+                  "fact": "Marcus cited lack of robust support and reliable SLAs from his current provider as a pain point",
+                  "why_other_call_cannot_supply_it": "The follow-up call never mentions his current provider's support/SLA shortcomings; it only discusses TechPulse's own support strengths."
+                },
+                {
+                  "call_id": "b2b:a05Wt000003T2JPIA0",
+                  "fact": "Marcus raised the competitive concern that competitors seem to have frequent product enhancements and asked how TechPulse maintains innovation",
+                  "why_other_call_cannot_supply_it": "The initial call contains no mention of competitors' product enhancement cadence or any innovation-pace concern; Marcus there only asked positively about TechPulse's tech innovations."
+                }
+              ],
+              "reason": "The question explicitly requests two distinct pieces of information: an initial pain point about the current provider (only in the first call) and a follow-up competitive concern about innovation pace (only in the second call). Neither call contains both facts, and they are not paraphrases of the same complaint."
+            }
+          ]
+        }
+      ],
+      "version": "multi-necessity-v1"
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question targets two distinct competitive-positioning facts across two calls in the same opportunity. Call 1 (2023-07-28) contains Marcus Lund's pain point: 'lack of robust support and reliable SLAs from our current provider.' Call 2 (2023-08-04) contains his competitive concern: 'competitors seem to have frequent product enhancements. How does TechPulse maintain innovation?' Each source contributes an exclusive requested fact. The gold answer accurately reflects both statements without adding unasked extras. The question identifies the account (SecureWise Solutions), the contact (Marcus Lund), and the opportunity context naturally without artificial locator preambles. Wording is natural and scoped to a plausible sales need (understanding a prospect's pain points and competitive concerns to prepare positioning)."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue from Marcus Lund on 2023-07-28 explicitly states 'one of the main issues we face is the lack of robust support and reliable SLAs from our current provider' and adds 'any downtime can have significant impacts.' This directly supports the answer_claim about lack of robust support, reliable SLAs, and downtime impacts."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue from Marcus Lund on 2023-08-04 explicitly states 'competitors seem to have frequent product enhancements' and asks 'How does TechPulse maintain innovation?' This directly supports the answer_claim about competitors having frequent product enhancements and Marcus asking how TechPulse maintains innovation."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) the initial pain point about lack of robust support and reliable SLAs from the current provider, and (2) the follow-up competitive concern about competitors having frequent product enhancements and asking how TechPulse maintains innovation. Evidence index 0 fully supports part (1) with the exact quote from the initial call (2023-07-28), and evidence index 1 fully supports part (2) with the exact quote from the follow-up call (2023-08-04). The context metadata confirms both calls are tied to the SecureWise Partnership Expansion opportunity and Marcus Lund as the contact. All factual claims in the gold_answer are covered by the supplied citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-multi_call-5846559ebf331c04",
+    "question": "For TechWave Innovations, what pricing concession did Monique mention in the initial call, and how did she position TechPulse's pricing against Quantum Circuits Inc during the discovery meeting?",
+    "coherence": {
+      "accepted": false,
+      "verdict": {
+        "accept": false,
+        "information_need": "(1) A pricing concession Monique mentioned in the initial call with TechWave Innovations, and (2) how she positioned TechPulse's pricing against Quantum Circuits Inc in a separate discovery meeting.",
+        "relationship": "Two independent pricing fact lookups joined across two different calls; the concession and the competitive positioning are distinct information needs, not one coherent issue.",
+        "reason": "Although both facts relate to pricing and the same account, the question asks for two unrelated lookups (a concession in one call and a competitive comparison in another) artificially combined; multi-call questions must address the same business issue, which this does not."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question asks for two distinct facts: (1) the pricing concession Monique mentioned in the initial call (10% discount for quantity orders on PulseSim Pro, confirmed in call 1 at 11:03:00) and (2) how she positioned TechPulse pricing against Quantum Circuits Inc in the discovery meeting (strong price-to-performance ratio, confirmed in call 2 at 10:31:50). Each source contributes an exclusive requested fact. The gold answer accurately reflects both claims without adding unasked extras. The question naturally identifies the account (TechWave Innovations), the rep (Monique), and the two calls by their business context (initial call vs. discovery meeting), which is realistic for a sales rep reviewing account history. No artificial locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote from Monique Dubois in the initial call (2022-07-21) explicitly states 'PulseSim Pro comes with a 10% discount for quantity orders like yours,' directly supporting the answer_claim about the 10% discount for quantity orders."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote from Monique Dubois in the discovery meeting (2023-10-19) explicitly states 'our offerings are competitively priced' and 'We have a strong price-to-performance ratio compared to others like Quantum Circuits Inc.,' directly supporting the answer_claim about competitive positioning against Quantum Circuits Inc."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "Both parts of the gold_answer are fully supported by the cited evidence: (1) the 10% discount for quantity orders on PulseSim Pro is stated verbatim in evidence index 0 from the initial call, and (2) the competitive pricing positioning with a strong price-to-performance ratio versus Quantum Circuits Inc is stated verbatim in evidence index 1 from the discovery meeting. The context metadata confirms both calls relate to TechWave Innovations (account_name) and the same opportunity, and the speaker is Monique Dubois in both cases, matching the question's reference to Monique."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-4c3f8824d569adf7",
+    "question": "What did Fatoumata Tour\u00e9 at MedTech Advances say about Adaptive Design Solutions' offerings?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "What Fatoumata Tour\u00e9 at MedTech Advances said about Adaptive Design Solutions' offerings",
+        "relationship": "single lookup of one person's comments in one call",
+        "reason": "A single coherent fact lookup about one contact's statements regarding a vendor's offerings; no unrelated requests joined."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "competitive_positioning",
+        "locator_preamble": false,
+        "reason": "The question naturally asks what a named contact said about a competitor's offerings, which is a realistic competitive-positioning need for a rep. The dialogue at 10:38:05 contains Fatoumata Tour\u00e9's exact statement: Adaptive Design Solutions has a strong emphasis on user experience (appreciated) but their long-term strategic benefits aren't always clear. The gold answer reproduces this precisely with no extra or missing facts. The question identifies the account (MedTech Advances) and contact (Fatoumata Tour\u00e9) without artificial date/title preambles. Single-call question, so both_sources_required is set true per instructions."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue is directly attributed to Fatoumata Tour\u00e9 and states: 'They have a strong emphasis on user experience, which we appreciate. However, their long-term strategic benefits aren't always clear.' This matches the answer_claim about strong user experience emphasis and unclear long-term strategic benefits. The context metadata confirms the call involves Fatoumata Tour\u00e9 at MedTech Advances, and the opportunity name references 'Advanced Data Protection and Education Enhancement Deal' which aligns with Adaptive Design Solutions being the vendor discussed. The quote faithfully supports the claim."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states that Adaptive Design Solutions has a strong emphasis on user experience which MedTech appreciates, but their long-term strategic benefits aren't always clear. The single cited evidence (index 0) is a direct quote from Fatoumata Tour\u00e9 saying exactly this: 'They have a strong emphasis on user experience, which we appreciate. However, their long-term strategic benefits aren't always clear.' The context metadata confirms the speaker is Fatoumata Tour\u00e9 at MedTech Advances. The pronoun 'They' refers to Adaptive Design Solutions as identified in the question and answer_claim. All factual elements of the gold_answer are supported by the cited evidence."
+      }
+    }
+  },
+  {
+    "question_id": "b2b-single_call-5f4b28909e8408ec",
+    "question": "What concern did Anisha Gupta from InspireTech Consulting raise about competitors' initial configuration flexibility, and how did Hiroshi respond?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "The concern Anisha Gupta raised about competitors' initial configuration flexibility and Hiroshi's response",
+        "relationship": "single objection-and-response exchange within one call",
+        "reason": "This is one coherent objection and its response addressing the same issue (configuration flexibility), not two independent lookups."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question targets a specific competitive-positioning exchange in the transcript. Anisha's concern about competitors' initial configuration flexibility and Hiroshi's acknowledgment plus pivot to post-implementation flexibility and long-term support are both verbatim-supported in the dialogue. The answer states exactly the two requested facts (her concern and his response) with no unasked extras. The question is naturally worded, adequately scoped by naming the account, contact, and topic, and a rep would plausibly want to recall this objection-handling moment. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "competitive_positioning",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quote shows Anisha Gupta explicitly asking about 'the initial configuration flexibility offered by competitors' and how TechPulse's setups compare. This directly supports the answer_claim that she asked how TechPulse setups compare given competitors' initial configuration flexibility. The speaker attribution (Anisha Gupta) and the account context (InspireTech Consulting per metadata) are consistent."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quote shows Hiroshi Tanaka acknowledging 'some competitors may offer more adaptable initial setups for specific applications' and then stating 'where we stand out is in post-implementation flexibility and long-term support.' This directly supports the answer_claim that Hiroshi acknowledged competitors may offer more adaptable initial setups but highlighted post-implementation flexibility and long-term support. Speaker attribution and content match."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states: (1) Anisha noted competitors offer more adaptable initial setups for specific applications \u2014 supported by index 0 where she raises the concern about competitors' initial configuration flexibility, and index 1 where Hiroshi's acknowledgment confirms the specific framing 'more adaptable initial setups for specific applications.' (2) Hiroshi acknowledged this but said TechPulse stands out in post-implementation flexibility and long-term support \u2014 directly supported by index 1's quote. All factual claims in the gold_answer are covered by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-033573f91d31b25c",
+    "question": "What is Sophia Collins' main concern about AutoElite's transparent pricing, and how did Hina respond to it?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Identify Sophia Collins' main concern regarding AutoElite's transparent pricing and how Hina responded to it.",
+        "relationship": "objection and its response within the same conversation",
+        "reason": "This is a single coherent request pairing a customer's objection about pricing transparency with the salesperson's response to that same concern."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "intent": "objection",
+        "locator_preamble": false,
+        "reason": "The question targets a specific customer objection (transparent pricing rigidity) and the rep's rebuttal, both clearly present in the single call transcript. Sophia Collins expresses concern that transparent pricing 'might be rigid' and doesn't allow negotiation; Hina responds that it means knowing exactly what you pay upfront and often proves more cost-effective long-term. The gold answer captures both parts precisely without extra unasked facts. The question is naturally worded, adequately scoped to a named customer and account (AutoElite), and represents a realistic sales-QA need (understanding how an objection was handled). Single-call question so both_sources_required is set true per instructions. No locator preamble, no answer leakage, no unsupported causality."
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "Sophia Collins explicitly states 'My concern with transparent pricing is that it might be rigid,' directly supporting the claim that her concern is rigidity of transparent pricing."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "Hina Patel's quote states 'many clients appreciate knowing exactly what they're paying upfront, and it often proves more cost-effective in the long run,' which directly supports the claim that she explained transparent pricing means knowing exactly what you pay upfront and it often proves more cost-effective long-term."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer has two parts: (1) Sophia worried transparent pricing is rigid and doesn't allow negotiation, and (2) Hina explained it means knowing exactly what you pay upfront and often proves more cost-effective long-term. Evidence index 0 directly supports Sophia's rigidity concern. Evidence index 1 supports Hina's explanation about knowing exactly what you pay upfront and long-term cost-effectiveness. The 'doesn't allow negotiation' aspect of Sophia's concern is also supported by index 1, where Hina acknowledges 'it might seem like it doesn't allow flexibility to negotiate,' which contextually frames Sophia's concern (and Sophia's response in index 0 confirms she heard this point). All factual claims in the gold_answer are supported by the combined citations."
+      }
+    }
+  },
+  {
+    "question_id": "b2c-single_call-06382ed86ca22ba8",
+    "question": "What is Liam Martinez looking for in a new SUV, and which two models did Dmitri suggest as fits?",
+    "coherence": {
+      "accepted": true,
+      "verdict": {
+        "accept": true,
+        "information_need": "Liam Martinez's SUV requirements and the two models Dmitri suggested as fits",
+        "relationship": "single coherent need-and-recommendation exchange",
+        "reason": "The customer's requirements and the salesperson's model suggestions address the same purchase decision in one natural interaction."
+      }
+    },
+    "independent_review": {
+      "passed": true,
+      "verdict": {
+        "realistic_sales_need": true,
+        "natural_wording": true,
+        "adequately_scoped": true,
+        "factual_answer": true,
+        "exactly_requested_answer": true,
+        "both_sources_required": true,
+        "reason": "The question asks what Liam Martinez wants in a new SUV and which two models Dmitri suggested. The dialogue confirms all four criteria (advanced safety features, comfortable interiors, good fuel efficiency, ample cargo space) and both model recommendations (2021 Audi Q7, 2021 Volvo XC60). The answer matches the source exactly with no extras or omissions. A sales rep would plausibly need to recall a customer's stated preferences and the models pitched. Single-call question, so both_sources_required is set true per instructions.",
+        "intent": "decision_criteria",
+        "locator_preamble": false
+      }
+    },
+    "citation_audit": {
+      "method": "quoted-evidence-audit-v1",
+      "passed": true,
+      "schema_valid": true,
+      "verdict": {
+        "evidence_support": [
+          {
+            "index": 0,
+            "supported": true,
+            "reason": "The quoted dialogue shows Dmitri asking about advanced safety features and comfortable interiors, and Liam confirming those as top priorities while adding great fuel efficiency and ample cargo space for family travel. This directly supports the answer_claim about Liam's priorities."
+          },
+          {
+            "index": 1,
+            "supported": true,
+            "reason": "The quoted dialogue shows Dmitri explicitly stating 'the 2021 Audi Q7 and the 2021 Volvo XC60 could be excellent fits for you,' which directly supports the claim that Dmitri suggested those two models as fits."
+          }
+        ],
+        "answer_supported": true,
+        "reason": "The gold_answer states Liam is looking for advanced safety features, comfortable interiors, good fuel efficiency, and ample cargo space, and that Dmitri suggested the 2021 Audi Q7 and 2021 Volvo XC60. Evidence index 0 confirms all four criteria (advanced safety features, comfortable interiors, great fuel efficiency, ample cargo space for family travel). Evidence index 1 confirms Dmitri suggested the 2021 Audi Q7 and 2021 Volvo XC60 as excellent fits. All factual claims in the gold_answer are supported by the combined citations."
+      }
+    }
+  }
+]
