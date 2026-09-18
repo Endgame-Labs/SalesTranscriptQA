@@ -1,11 +1,11 @@
 """Link billed request attempts to accepted/rejected candidates using verified cache keys."""
-
 import csv
 import json
 import sqlite3
 from collections import defaultdict
 from pathlib import Path
 
+from .artifacts import read_json_artifact
 from .transport import RATES, digest
 
 
@@ -23,7 +23,7 @@ def breakdown(run, accepted_ids, output):
     for row in attempts:
         if not row["artifact"]:
             continue
-        artifact = json.loads((run / row["artifact"]).read_text())
+        artifact = read_json_artifact(run / row["artifact"])
         payload = artifact["request"]
         value = json.loads(payload["messages"][0]["content"].rsplit("\nINPUT JSON:\n", 1)[1])
         parsed[row["id"]] = (payload, value)

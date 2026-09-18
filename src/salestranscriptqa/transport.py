@@ -1,5 +1,4 @@
 """Resumable JSON requests and per-attempt billing, with shared rate-limit cooldown."""
-
 import email.utils
 import hashlib
 import json
@@ -13,6 +12,7 @@ from pathlib import Path
 
 import httpx
 
+from .artifacts import read_json_artifact
 from .budget_ledger import install as install_budget_ledger
 
 PRIMARY = "accounts/fireworks/models/deepseek-v4-flash-0731"
@@ -126,7 +126,7 @@ class Transport:
                 (key,),
             ).fetchone()
         if row:
-            return json.loads((self.root / row["artifact"]).read_text())["parsed"]
+            return read_json_artifact(self.root / row["artifact"])["parsed"]
         credentials()
         invalid_outputs = 0
         for attempt in range(8):
