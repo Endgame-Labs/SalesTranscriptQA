@@ -1,0 +1,236 @@
+{
+  "seed": 2026091809,
+  "stage": "Full-history-reviewed frozen RAG cohort minus current quality holds; generation/reviews complete",
+  "inspection_started_utc": "2026-09-18T08:28:49.538201+00:00",
+  "source": "runs/sales-full-v2/reviewed/questions.json",
+  "source_sha256": "32b6a9ccf28f63f1838e21e873a7ad0c7cb17f028419d4fd2804429071207293",
+  "eligible_pools": {
+    "b2b/multi_call": 381,
+    "b2b/single_call": 1122,
+    "b2c/single_call": 1237
+  },
+  "questions": [
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-24603f294d505376",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "For TrueNorth Technologies, what deployment-pace concern did Oluwaseun raise in the initial discussion, and what onboarding timeline did Priya commit to at the kick-off meeting?",
+      "gold_answer": "Oluwaseun said delays in feature introduction could hold them back; Priya committed to completing full onboarding within six to eight weeks.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003Sx0EIAS",
+        "b2b:a05Wt000003T0pJIAS"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003Sx0EIAS",
+          "answer_claim": "Oluwaseun noted rapid deployment is an advantage but any delays in feature introduction could hold them back.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2021-02-28T16:02:10] Oluwaseun Olowo: Rapid deployment is definitely an advantage. We've been working at a good pace, but any delays in feature introduction could hold us back.",
+          "start": 1917,
+          "end": 2094
+        },
+        {
+          "call_id": "b2b:a05Wt000003T0pJIAS",
+          "answer_claim": "Priya said they aim to complete the full onboarding within six to eight weeks.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2021-06-04T15:03:50] Priya Choudhury: We aim to complete the full onboarding within six to eight weeks. This timeline allows us to tailor our approach to your specific needs and perform thorough testing to ensure everything functions as expected.",
+          "start": 2633,
+          "end": 2880
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "24603f294d505376b685df68438e4f82a99c3ea290046fc3d639594badd4f688",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-multi_call-3e7fc7b697c4753c",
+      "domain": "b2b",
+      "question_class": "multi_call",
+      "question": "What concern did Dmitry Morozov of SkyLink Communications raise about support from current suppliers, and how did Pierre respond when Dmitry raised support and training again in the follow-up discussion?",
+      "gold_answer": "Dmitry said he'd struggled getting timely responses from current suppliers; Pierre said TechPulse provides tailored training sessions and a dedicated support team.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003SvBSIA0",
+        "b2b:a05Wt000003T21aIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003SvBSIA0",
+          "answer_claim": "Dmitry says support is a big element and they've struggled getting timely responses from current suppliers.",
+          "kind": "dialogue",
+          "line_start": 9,
+          "line_end": 10,
+          "quote": "[2022-01-14T10:32:05] Dmitry Morozov: Support is definitely a big element for us. We've had struggles getting timely responses from a few of our current suppliers.",
+          "start": 1953,
+          "end": 2116
+        },
+        {
+          "call_id": "b2b:a05Wt000003T21aIAC",
+          "answer_claim": "Pierre says TechPulse provides tailored training sessions and a dedicated support team.",
+          "kind": "dialogue",
+          "line_start": 8,
+          "line_end": 9,
+          "quote": "[2022-01-31T12:17:55] Pierre Fontaine: I'm glad you brought that up. One aspect our clients value is our comprehensive training and support. We provide tailored training sessions and have a dedicated support team to ensure you get the most out of our solutions. This not only sets us apart but ensures a smooth transition and operation.",
+          "start": 1584,
+          "end": 1920
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "3e7fc7b697c4753c1cebb6b7d3644e8a5f47767cc95bf34c6ef98fcb4b35667a",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-68eff374d3e711ce",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What did Laila Hassan want the demo of SecureFlow Suite and AI Cirku-Tech to cover?",
+      "gold_answer": "More on customization options, since Horizon Tech wants products tailored to their unique processes.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003T3VVIA0"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T3VVIA0",
+          "answer_claim": "Laila asked for more on customization options, being keen on products tailored to their unique processes.",
+          "kind": "dialogue",
+          "line_start": 19,
+          "line_end": 20,
+          "quote": "[2024-01-05T14:04:40] Laila Hassan: Perhaps just a bit more on customization options. We're quite keen on products that can be tailored to fit our unique processes.",
+          "start": 3475,
+          "end": 3639
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "68eff374d3e711ce453bb2c54a222432ba9ed61cd6212edfd60008c0cc7a590c",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2b-single_call-bb322e7272966d3d",
+      "domain": "b2b",
+      "question_class": "single_call",
+      "question": "What did Miguel Oliveira say about how SecureLink Technologies views competitors' security offerings versus flexibility?",
+      "gold_answer": "He said competitors offer good security too, but flexibility varies quite a bit among them.",
+      "supporting_call_ids": [
+        "b2b:a05Wt000003T1jmIAC"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2b:a05Wt000003T1jmIAC",
+          "answer_claim": "Miguel said competitors offer good security but flexibility varies quite a bit.",
+          "kind": "dialogue",
+          "line_start": 11,
+          "line_end": 12,
+          "quote": "[2020-09-03T14:01:50] Miguel Oliveira: I understand. We've seen your competitors offering good security too, but flexibility is something we've noted varies quite a bit.",
+          "start": 2034,
+          "end": 2203
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "bb322e7272966d3dafb3c8a873c2ea68ecdfa02cdabb1a00ea25ce2fb52a3b0b",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-255467b794319ba4",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What financing follow-up did Felix commit to for Ava Davidson, and by when?",
+      "gold_answer": "He committed to sending detailed financing options from the finance team by the next day at the latest.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SVvhIAG"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SVvhIAG",
+          "answer_claim": "Felix will have the finance team put together detailed financing options and send them.",
+          "kind": "dialogue",
+          "line_start": 12,
+          "line_end": 13,
+          "quote": "[2020-05-04T10:03:00] Felix Bakker: Of course, Ava. I'll have our finance team put together detailed options and send them your way. One thing to note, though, is that our comprehensive maintenance plan is designed to cover extensive vehicle needs, though some customers find our competitors might offer more precise post-purchase partnerships.",
+          "start": 2318,
+          "end": 2662
+        },
+        {
+          "call_id": "b2c:a05Ws000005SVvhIAG",
+          "answer_claim": "He will have that information to her by tomorrow at the latest.",
+          "kind": "dialogue",
+          "line_start": 14,
+          "line_end": 15,
+          "quote": "[2020-05-04T10:03:30] Felix Bakker: I\u2019ll make sure to have that information to you by tomorrow at the latest. Once you have a chance to review it, we can schedule another call if any other questions come up.",
+          "start": 2835,
+          "end": 3042
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "255467b794319ba40b293d7e1658d2867ca620732569128876198a5948400f20",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    },
+    {
+      "schema_version": 1,
+      "question_id": "b2c-single_call-a5afc5e87fca40f1",
+      "domain": "b2c",
+      "question_class": "single_call",
+      "question": "What did AutoElite quote Chloe Bennett for the Tesla Model S and the Mercedes-Benz E-Class, and what does the Comprehensive Maintenance Plan cost?",
+      "gold_answer": "Tesla Model S: $89,999.99; Mercedes-Benz E-Class: $65,999.99; Comprehensive Maintenance Plan: $1,999.99.",
+      "supporting_call_ids": [
+        "b2c:a05Ws000005SdQ9IAK"
+      ],
+      "evidence": [
+        {
+          "call_id": "b2c:a05Ws000005SdQ9IAK",
+          "answer_claim": "Tesla Model S quoted $89,999.99 and Mercedes-Benz E-Class $65,999.99",
+          "kind": "dialogue",
+          "line_start": 4,
+          "line_end": 5,
+          "quote": "[2022-12-07T11:00:45] Levi Cohen: Certainly. Let's dive into that. For the Tesla Model S, we quoted $89,999.99, and for the Mercedes-Benz E-Class, it\u2019s $65,999.99. Both quotes reflect competitive pricing given the high demand for these models this year. However, I understand that premium dealerships can sometimes offer lower prices.",
+          "start": 552,
+          "end": 886
+        },
+        {
+          "call_id": "b2c:a05Ws000005SdQ9IAK",
+          "answer_claim": "Comprehensive Maintenance Plan priced at $1,999.99",
+          "kind": "dialogue",
+          "line_start": 10,
+          "line_end": 11,
+          "quote": "[2022-12-07T11:02:20] Levi Cohen: Great question. Our Comprehensive Maintenance Plan, priced at $1,999.99, covers servicing by our factory-trained technicians, with genuine parts and labor included. It\u2019s designed to maintain peak performance of high-end vehicles like yours over time.",
+          "start": 1799,
+          "end": 2083
+        }
+      ],
+      "alternate_answers": [],
+      "provenance": {
+        "job_id": "a5afc5e87fca40f1fb9c0112a1f27fb9135ee50c00dab2195266f645c8db210f",
+        "config_digest": "521a86bf0328aed6a528ddea9aa51e7a7b6553adb5c4fc36cfcb128a1e2066f4",
+        "origin": "generated",
+        "human_reviewed": false
+      }
+    }
+  ]
+}
