@@ -15,9 +15,43 @@ import httpx
 from .artifacts import read_json_artifact
 from .budget_ledger import install as install_budget_ledger
 
-PRIMARY = "accounts/fireworks/models/deepseek-v4-flash-0731"
-SECONDARY = "accounts/fireworks/models/glm-5p3-flash"
-RATES = {PRIMARY: (0.22, 0.007, 0.66), SECONDARY: (0.15, 0.03, 0.50)}
+# DeepSeek V4 Flash 0731 generated the published cohorts but Fireworks retired
+# it on 2026-10-02 (404 "not deployed"). It stays here only so recorded
+# attempts from those runs can still be priced.
+DEEPSEEK_V4_FLASH_0731 = "accounts/fireworks/models/deepseek-v4-flash-0731"
+GLM_5P3_FLASH = "accounts/fireworks/models/glm-5p3-flash"
+DEEPSEEK_V4P1_FLASH = "accounts/fireworks/models/deepseek-v4p1-flash"
+# Since 2026-10-03 DeepSeek V4.1 Flash takes the retired 0731's slot, keeping two
+# model families. The constant names are historical, not role names: the
+# current pipeline (v8/v9 sales arms, natural v5) generates questions with
+# SECONDARY (GLM 5.3 Flash) and independently answers/cross-checks with PRIMARY
+# (DeepSeek V4.1 Flash). See docs/IMPLEMENTATION.md.
+PRIMARY = DEEPSEEK_V4P1_FLASH
+SECONDARY = GLM_5P3_FLASH
+# USD per 1M input / cached-input / output tokens, Fireworks serverless Standard.
+# GLM and DeepSeek V4.1 Flash: https://docs.fireworks.ai/serverless/pricing, read 2026-10-03.
+# DeepSeek 0731 (historical): https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731, read 2026-09-12.
+RATES = {
+    DEEPSEEK_V4_FLASH_0731: (0.22, 0.007, 0.66),
+    GLM_5P3_FLASH: (0.15, 0.03, 0.50),
+    DEEPSEEK_V4P1_FLASH: (0.30, 0.006, 1.20),
+}
+# GLM 5.3 Flash is thinking-only: "none" or disabled thinking is a 400. "low"
+# keeps reasoning small; max_tokens below leaves room for it. DeepSeek V4.1
+# Flash accepts "none" (verified 2026-10-03).
+REASONING_EFFORT = {GLM_5P3_FLASH: "low", DEEPSEEK_V4P1_FLASH: "none"}
+
+
+def reasoning_effort(model):
+    return REASONING_EFFORT.get(model, "none")
+
+
+def output_tokens(usage):
+    """Billed output tokens. Fireworks completion_tokens already include
+    completion_tokens_details.reasoning_tokens; never bill fewer than those."""
+    out = usage.get("completion_tokens")
+    reasoning = (usage.get("completion_tokens_details") or {}).get("reasoning_tokens") or 0
+    return None if out is None else max(out, reasoning)
 
 
 class BudgetExceededError(RuntimeError):
@@ -140,7 +174,7 @@ class Transport:
             messages=[{"role": "user", "content": prompt}],
             temperature=0,
             max_tokens=4096,
-            reasoning_effort="low" if model == SECONDARY else "none",
+            reasoning_effort=reasoning_effort(model),
             response_format={"type": "json_object"},
         )
         key = digest(dict(payload=payload, stage=stage, nonce=nonce))
@@ -174,8 +208,13 @@ class Transport:
                 response.raise_for_status()
                 data = response.json()
                 if data["choices"][0]["finish_reason"] != "stop":
+                    # Includes "length": a thinking model can spend max_tokens on reasoning.
                     raise ValueError("Incomplete completion")
-                parsed = json.loads(data["choices"][0]["message"]["content"])
+                # The answer is message.content only, never reasoning_content.
+                content = data["choices"][0]["message"].get("content")
+                if not isinstance(content, str) or not content.strip():
+                    raise ValueError("Empty completion")
+                parsed = json.loads(content)
                 if not isinstance(parsed, dict):
                     raise ValueError("Expected JSON object")
             except Exception as exc:
@@ -188,7 +227,7 @@ class Transport:
             ):
                 invalid_outputs += 1
             usage = (data or {}).get("usage") or {}
-            inp, out = usage.get("prompt_tokens"), usage.get("completion_tokens")
+            inp, out = usage.get("prompt_tokens"), output_tokens(usage)
             cached = (
                 (usage.get("prompt_tokens_details") or {}).get("cached_tokens", 0)
                 if usage
