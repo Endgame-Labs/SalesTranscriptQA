@@ -17,21 +17,29 @@ from .budget_ledger import install as install_budget_ledger
 
 # DeepSeek V4 Flash 0731 generated the published cohorts but Fireworks retired
 # it on 2026-10-02 (404 "not deployed"). It stays here only so recorded
-# attempts from those runs can still be priced; new runs default to GLM.
+# attempts from those runs can still be priced.
 DEEPSEEK_V4_FLASH_0731 = "accounts/fireworks/models/deepseek-v4-flash-0731"
 GLM_5P3_FLASH = "accounts/fireworks/models/glm-5p3-flash"
-# Since 2026-10-03 the generator and the independent answerer/validator are the
-# SAME model, so checks that relied on two model families are now same-model
-# self-checks. See docs/IMPLEMENTATION.md.
-PRIMARY = GLM_5P3_FLASH
+DEEPSEEK_V4P1_FLASH = "accounts/fireworks/models/deepseek-v4p1-flash"
+# Since 2026-10-03 DeepSeek V4.1 Flash takes the retired 0731's slot, keeping two
+# model families. The constant names are historical, not role names: the
+# current pipeline (v8/v9 sales arms, natural v5) generates questions with
+# SECONDARY (GLM 5.3 Flash) and independently answers/cross-checks with PRIMARY
+# (DeepSeek V4.1 Flash). See docs/IMPLEMENTATION.md.
+PRIMARY = DEEPSEEK_V4P1_FLASH
 SECONDARY = GLM_5P3_FLASH
 # USD per 1M input / cached-input / output tokens, Fireworks serverless Standard.
-# GLM: https://docs.fireworks.ai/serverless/pricing, read 2026-10-03.
+# GLM and DeepSeek V4.1 Flash: https://docs.fireworks.ai/serverless/pricing, read 2026-10-03.
 # DeepSeek 0731 (historical): https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731, read 2026-09-12.
-RATES = {DEEPSEEK_V4_FLASH_0731: (0.22, 0.007, 0.66), GLM_5P3_FLASH: (0.15, 0.03, 0.50)}
+RATES = {
+    DEEPSEEK_V4_FLASH_0731: (0.22, 0.007, 0.66),
+    GLM_5P3_FLASH: (0.15, 0.03, 0.50),
+    DEEPSEEK_V4P1_FLASH: (0.30, 0.006, 1.20),
+}
 # GLM 5.3 Flash is thinking-only: "none" or disabled thinking is a 400. "low"
-# keeps reasoning small; max_tokens below leaves room for it.
-REASONING_EFFORT = {GLM_5P3_FLASH: "low"}
+# keeps reasoning small; max_tokens below leaves room for it. DeepSeek V4.1
+# Flash accepts "none" (verified 2026-10-03).
+REASONING_EFFORT = {GLM_5P3_FLASH: "low", DEEPSEEK_V4P1_FLASH: "none"}
 
 
 def reasoning_effort(model):

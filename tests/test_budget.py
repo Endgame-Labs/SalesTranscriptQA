@@ -1,6 +1,6 @@
 import concurrent.futures
 import pytest
-from salestranscriptqa.transport import Transport, PRIMARY, BudgetExceededError
+from salestranscriptqa.transport import Transport, BudgetExceededError, GLM_5P3_FLASH as PRIMARY  # budgets below are sized to this rate card
 
 
 def test_concurrent_attempt_reservations_and_unknown_usage(tmp_path):

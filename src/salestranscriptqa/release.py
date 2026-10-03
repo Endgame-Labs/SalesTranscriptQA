@@ -30,7 +30,7 @@ def cost_report(run_parent):
         stages=stages,
         total_estimated_usd=sum(r["estimated_usd"] or 0 for r in stages),
         unknown_usage_attempts=sum(r["unknown_usage_attempts"] for r in stages),
-        pricing_basis="Fireworks serverless Standard input/cached-input/output USD per million tokens; DeepSeek V4 Flash 0731 checked 2026-09-12 (retired 2026-10-02), GLM 5.3 Flash rechecked 2026-10-03; not an invoice",
+        pricing_basis="Fireworks serverless Standard input/cached-input/output USD per million tokens; DeepSeek V4 Flash 0731 checked 2026-09-12 (retired 2026-10-02), GLM 5.3 Flash rechecked and DeepSeek V4.1 Flash added 2026-10-03; not an invoice",
         pricing_sources=[
             "https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731",
             "https://docs.fireworks.ai/serverless/pricing",

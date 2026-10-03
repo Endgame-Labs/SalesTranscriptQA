@@ -4,7 +4,7 @@ import sqlite3
 import pytest
 
 from salestranscriptqa.budget_ledger import install
-from salestranscriptqa.transport import Transport, PRIMARY, BudgetExceededError
+from salestranscriptqa.transport import Transport, BudgetExceededError, GLM_5P3_FLASH as PRIMARY  # budgets below are sized to this rate card
 
 
 def assert_total(db):
