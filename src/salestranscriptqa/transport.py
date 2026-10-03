@@ -1,4 +1,5 @@
 """Resumable JSON requests and per-attempt billing, with shared rate-limit cooldown."""
+
 import email.utils
 import hashlib
 import json
@@ -157,14 +158,20 @@ class Transport:
             db.execute("BEGIN IMMEDIATE")
             if self.budget_usd is not None:
                 a, _, c = RATES[model]
-                worst = ((len(json.dumps(payload,ensure_ascii=False).encode()) + 1024) * a
-                         + payload['max_tokens'] * c) / 1e6
+                worst = (
+                    (len(json.dumps(payload, ensure_ascii=False).encode()) + 1024) * a
+                    + payload["max_tokens"] * c
+                ) / 1e6
                 used = db.execute("SELECT usd FROM budget_total WHERE id=1").fetchone()[0]
                 if used + worst > self.budget_usd:
-                    raise BudgetExceededError('Run API allowance exhausted; raise the explicit budget to resume')
-                db.execute('INSERT INTO budget_reservations VALUES(?,?)',(aid,worst))
-            db.execute("INSERT INTO attempts(id,request_key,stage,model,started,status) VALUES(?,?,?,?,?,?)",
-                       (aid,key,stage,model,started,'running'))
+                    raise BudgetExceededError(
+                        "Run API allowance exhausted; raise the explicit budget to resume"
+                    )
+                db.execute("INSERT INTO budget_reservations VALUES(?,?)", (aid, worst))
+            db.execute(
+                "INSERT INTO attempts(id,request_key,stage,model,started,status) VALUES(?,?,?,?,?,?)",
+                (aid, key, stage, model, started, "running"),
+            )
 
     def request(self, model, prompt, stage, nonce=""):
         if model not in RATES:

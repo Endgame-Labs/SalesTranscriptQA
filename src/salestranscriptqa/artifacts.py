@@ -1,4 +1,5 @@
 """Lossless storage for completed request artifacts; cache semantics stay unchanged."""
+
 import fcntl
 import gzip
 import hashlib
@@ -25,7 +26,9 @@ def archive_requests(root, max_raw_bytes):
         if json.loads((root / "progress.json").read_text()).get("complete") is not True:
             raise ValueError("Only completed generation can be archived")
         with sqlite3.connect(root / "progress.sqlite", timeout=60) as db:
-            rows = db.execute("SELECT id,artifact FROM attempts WHERE status='ok' AND artifact IS NOT NULL ORDER BY id").fetchall()
+            rows = db.execute(
+                "SELECT id,artifact FROM attempts WHERE status='ok' AND artifact IS NOT NULL ORDER BY id"
+            ).fetchall()
             count = raw_bytes = compressed_bytes = 0
             manifest = root / "request-compression.jsonl"
             with manifest.open("a") as log:
@@ -56,11 +59,22 @@ def archive_requests(root, max_raw_bytes):
                     # Verify bytes read from disk, not only the in-memory compression.
                     if gzip.decompress(target.read_bytes()) != original:
                         raise ValueError("Written archive verification failed")
-                    changed = db.execute("UPDATE attempts SET artifact=? WHERE id=? AND artifact=?", (str(target.relative_to(root)), aid, relative)).rowcount
+                    changed = db.execute(
+                        "UPDATE attempts SET artifact=? WHERE id=? AND artifact=?",
+                        (str(target.relative_to(root)), aid, relative),
+                    ).rowcount
                     if changed != 1:
                         raise ValueError("Artifact ledger changed concurrently")
                     db.commit()
-                    record = dict(attempt_id=aid, original_path=relative, artifact=str(target.relative_to(root)), sha256=hashlib.sha256(original).hexdigest(), compressed_sha256=hashlib.sha256(packed).hexdigest(), raw_bytes=len(original), compressed_bytes=len(packed))
+                    record = dict(
+                        attempt_id=aid,
+                        original_path=relative,
+                        artifact=str(target.relative_to(root)),
+                        sha256=hashlib.sha256(original).hexdigest(),
+                        compressed_sha256=hashlib.sha256(packed).hexdigest(),
+                        raw_bytes=len(original),
+                        compressed_bytes=len(packed),
+                    )
                     log.write(json.dumps(record) + "\n")
                     log.flush()
                     os.fsync(log.fileno())
@@ -68,4 +82,10 @@ def archive_requests(root, max_raw_bytes):
                     count += 1
                     raw_bytes += len(original)
                     compressed_bytes += len(packed)
-            return dict(artifacts=count, raw_bytes=raw_bytes, compressed_bytes=compressed_bytes, freed_bytes=raw_bytes-compressed_bytes, manifest=str(manifest))
+            return dict(
+                artifacts=count,
+                raw_bytes=raw_bytes,
+                compressed_bytes=compressed_bytes,
+                freed_bytes=raw_bytes - compressed_bytes,
+                manifest=str(manifest),
+            )
