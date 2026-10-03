@@ -13,7 +13,7 @@ from salestranscriptqa.sales_questions import SalesQuestions, SalesQuestionsGLM,
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--model', choices=['deepseek', 'glm', 'edited', 'focused'], default='deepseek')
+    parser.add_argument('--model', choices=['deepseek', 'glm', 'edited', 'focused'], default='glm')
     parser.add_argument('--seed', type=int, default=20260915)
     parser.add_argument('--count', type=int, default=100)
     parser.add_argument('--workers', type=int, default=8)

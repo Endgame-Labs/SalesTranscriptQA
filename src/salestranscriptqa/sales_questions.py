@@ -1,6 +1,6 @@
 """Sales-oriented prompt experiment; frozen legacy prompts remain replayable."""
 from .full import Full
-from .transport import PRIMARY, SECONDARY
+from .transport import DEEPSEEK_V4_FLASH_0731, PRIMARY, SECONDARY
 
 SALES_PROMPT = '''Write ONE question a sales rep or account manager would realistically ask
 an internal assistant about this customer/account, using only the supplied transcripts and metadata.
@@ -36,7 +36,10 @@ facts. A business-relevant date is allowed. Occasional initial/follow-up wording
 
 class SalesQuestions(Full):
     version = 'sales-questions-v6-deepseek'
-    generator = PRIMARY
+    # Historical arm: keep its recorded generator. 0731 was retired on
+    # 2026-10-02, so new generation with this arm fails visibly (HTTP 404)
+    # rather than writing GLM output under a "deepseek" version.
+    generator = DEEPSEEK_V4_FLASH_0731
 
     def quality_required(self, kind):
         fields = super().quality_required(kind)
@@ -48,7 +51,7 @@ class SalesQuestions(Full):
             instruction = SALES_PROMPT
             model = self.generator
         elif stage == 'independent_answer':
-            model = SECONDARY if self.generator == PRIMARY else PRIMARY
+            model = SECONDARY if self.generator != SECONDARY else PRIMARY
         if stage in {'quality_audit', 'final_audit'}:
             instruction += STYLE_AUDIT
         return super().ask(model, instruction, value, stage, job)
