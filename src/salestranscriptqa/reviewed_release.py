@@ -24,19 +24,27 @@ def verify_rag(questions, report):
     """Require all four outcomes for every unchanged question, regardless of score."""
     report = Path(report)
     verification = read(report / "verification.json")
-    rows = [json.loads(line) for line in (report / "results.jsonl").read_text().splitlines() if line]
+    rows = [
+        json.loads(line) for line in (report / "results.jsonl").read_text().splitlines() if line
+    ]
     lookup = {q["question_id"]: q for q in questions}
-    expected = {(qid, arm) for qid in lookup for arm in
-                ("hybrid", "hybrid-rerank", "oracle", "no-context")}
-    if (len(lookup) != len(questions) or len(rows) != len(expected)
-            or {(r["question_id"], r["configuration"]) for r in rows} != expected
-            or verification.get("exact_context_and_coverage_verified") is not True
-            or verification.get("question_count") != len(questions)
-            or verification.get("outcomes") != len(rows)):
+    expected = {
+        (qid, arm) for qid in lookup for arm in ("hybrid", "hybrid-rerank", "oracle", "no-context")
+    }
+    if (
+        len(lookup) != len(questions)
+        or len(rows) != len(expected)
+        or {(r["question_id"], r["configuration"]) for r in rows} != expected
+        or verification.get("exact_context_and_coverage_verified") is not True
+        or verification.get("question_count") != len(questions)
+        or verification.get("outcomes") != len(rows)
+    ):
         raise ValueError("Incomplete or unverified four-arm RAG cohort")
     for row in rows:
-        if any(row[key] != lookup[row["question_id"]][key] for key in
-               ("question", "gold_answer", "supporting_call_ids", "evidence")):
+        if any(
+            row[key] != lookup[row["question_id"]][key]
+            for key in ("question", "gold_answer", "supporting_call_ids", "evidence")
+        ):
             raise ValueError("RAG question differs from frozen release")
     return verification
 
@@ -56,16 +64,27 @@ def replay_reviews(selected, exported, reviews, exclusions, pre_scope, scope, fr
         if row.get("passed") is True:
             verdict = row.get("verdict", {})
             citation = row.get("citation_audit", {})
-            required = ("realistic_sales_need", "natural_wording", "adequately_scoped",
-                        "factual_answer", "exactly_requested_answer", "both_sources_required")
-            if (not all(verdict.get(k) is True for k in required)
-                    or verdict.get("locator_preamble") is not False
-                    or citation.get("passed") is not True
-                    or citation.get("schema_valid") is not True
-                    or citation.get("verdict", {}).get("answer_supported") is not True
-                    or len(citation.get("verdict", {}).get("evidence_support", [])) != len(q["evidence"])
-                    or not all(e.get("supported") is True for e in
-                               citation.get("verdict", {}).get("evidence_support", []))):
+            required = (
+                "realistic_sales_need",
+                "natural_wording",
+                "adequately_scoped",
+                "factual_answer",
+                "exactly_requested_answer",
+                "both_sources_required",
+            )
+            if (
+                not all(verdict.get(k) is True for k in required)
+                or verdict.get("locator_preamble") is not False
+                or citation.get("passed") is not True
+                or citation.get("schema_valid") is not True
+                or citation.get("verdict", {}).get("answer_supported") is not True
+                or len(citation.get("verdict", {}).get("evidence_support", []))
+                != len(q["evidence"])
+                or not all(
+                    e.get("supported") is True
+                    for e in citation.get("verdict", {}).get("evidence_support", [])
+                )
+            ):
                 raise ValueError("Independent review pass contradicts its gates")
     expected_pre, rejected = reviewed_selection(selected, exported, reviews, exclusions)
     if expected_pre != pre_scope:
@@ -77,36 +96,53 @@ def replay_reviews(selected, exported, reviews, exclusions, pre_scope, scope, fr
 
 
 def prepare_reviewed(project, run, rag_report, output, pilot=None):
-    project, run, rag_report, output = map(lambda p: Path(p).resolve(),
-                                         (project, run, rag_report, output))
+    project, run, rag_report, output = map(
+        lambda p: Path(p).resolve(), (project, run, rag_report, output)
+    )
     pilot = Path(pilot).resolve() if pilot else project / "data/release"
     if output.exists() and any(output.iterdir()):
         raise ValueError("Use an empty release output directory")
-    progress, workflow, plan, config = [read(run / name) for name in
-                                      ("progress.json", "workflow.json", "source-plan.json", "config.json")]
-    if (progress.get("complete") is not True or workflow.get("stage") != "complete"
-            or plan.get("scope") != "all" or plan.get("excluded_groups")
-            or progress["total_units"] != 14916 or progress["completed_units"] != 14916
-            or config.get("version") != "sales-questions-v9-line-evidence"):
+    progress, workflow, plan, config = [
+        read(run / name)
+        for name in ("progress.json", "workflow.json", "source-plan.json", "config.json")
+    ]
+    if (
+        progress.get("complete") is not True
+        or workflow.get("stage") != "complete"
+        or plan.get("scope") != "all"
+        or plan.get("excluded_groups")
+        or progress["total_units"] != 14916
+        or progress["completed_units"] != 14916
+        or config.get("version") != "sales-questions-v9-line-evidence"
+    ):
         raise ValueError("Completed full v9 generation, reviews, and RAG required")
     # Independently re-run recorded gate, corpus hash, quote and Parquet validation.
-    subprocess.run(["uv", "run", "python", "scripts/verify_generation_output.py", str(run)],
-                   cwd=project, check=True)
+    subprocess.run(
+        ["uv", "run", "python", "scripts/verify_generation_output.py", str(run)],
+        cwd=project,
+        check=True,
+    )
     calls, expected = {}, set()
     for domain in ("b2b", "b2c"):
         rows = pq.read_table(project / "data/corpus" / f"{domain}-corpus.parquet").to_pylist()
         calls.update({c["call_id"]: c for c in rows})
-        expected.update((domain, kind, tuple(c["call_id"] for c in source))
-                        for kind, source in source_units(rows)
-                        if not (domain == "b2c" and kind == "multi_call"))
-    observed = {(u["domain"], u["question_class"], tuple(u["supporting_call_ids"]))
-                for u in plan["units"]}
+        expected.update(
+            (domain, kind, tuple(c["call_id"] for c in source))
+            for kind, source in source_units(rows)
+            if not (domain == "b2c" and kind == "multi_call")
+        )
+    observed = {
+        (u["domain"], u["question_class"], tuple(u["supporting_call_ids"])) for u in plan["units"]
+    }
     if observed != expected or len(plan["units"]) != len(expected) or len(expected) != 14916:
         raise ValueError("Source plan does not cover every eligible unit exactly once")
     units = []
     for unit in plan["units"]:
         done = read(run / "units" / f"{unit['unit_id']}.json")
-        if any(done[k] != v for k, v in unit.items()) or done["status"] not in ("accepted", "rejected"):
+        if any(done[k] != v for k, v in unit.items()) or done["status"] not in (
+            "accepted",
+            "rejected",
+        ):
             raise ValueError("Invalid terminal source unit")
         units.append(done)
     reports = project / "reports"
@@ -115,8 +151,10 @@ def prepare_reviewed(project, run, rag_report, output, pilot=None):
     exported = read(reports / f"{prefix}-accepted.json")["questions"]
     reviews = read(reports / f"{prefix}-accepted-qwen-review-v1.json")["results"]
     registry = read(reports / "cohort-registry.json")
-    exclusions = registry["excluded_questions"] + read(
-        reports / "sales-expanded-2000-v1-review-selection.json")["rejected"]
+    exclusions = (
+        registry["excluded_questions"]
+        + read(reports / "sales-expanded-2000-v1-review-selection.json")["rejected"]
+    )
     pre_scope = read(run / "pre-scope/questions.json")
     scope = read(reports / f"{prefix}-customer-scope-review.json")
     frozen_path = run / "reviewed/questions.json"
@@ -128,14 +166,19 @@ def prepare_reviewed(project, run, rag_report, output, pilot=None):
         raise ValueError("Scope audit input checksum mismatch")
     rejected = replay_reviews(selected, exported, reviews, exclusions, pre_scope, scope, frozen)
     selection = read(reports / f"{prefix}-review-selection.json")
-    if (selection["question_sha256"] != sha(frozen_path.read_bytes())
-            or selection["accepted"] != len(frozen) or selection["rejected"] != rejected
-            or not frozen or {q["domain"] for q in frozen} != {"b2b", "b2c"}):
+    if (
+        selection["question_sha256"] != sha(frozen_path.read_bytes())
+        or selection["accepted"] != len(frozen)
+        or selection["rejected"] != rejected
+        or not frozen
+        or {q["domain"] for q in frozen} != {"b2b", "b2c"}
+    ):
         raise ValueError("Final selection receipt mismatch")
     verification = verify_rag(frozen, rag_report)
     for domain in ("b2b", "b2c"):
         if pq.read_table(run / "reviewed" / f"{domain}-test.parquet").to_pylist() != [
-                q for q in frozen if q["domain"] == domain]:
+            q for q in frozen if q["domain"] == domain
+        ]:
             raise ValueError("Reviewed Parquet differs from frozen questions")
     old = read(pilot / "manifest.json")
     for entry in old["files"]:
@@ -147,7 +190,8 @@ def prepare_reviewed(project, run, rag_report, output, pilot=None):
             raise ValueError("Pilot checksum mismatch")
     for domain in ("b2b", "b2c"):
         if (pilot / f"{domain}-corpus.parquet").read_bytes() != (
-                project / "data/corpus" / f"{domain}-corpus.parquet").read_bytes():
+            project / "data/corpus" / f"{domain}-corpus.parquet"
+        ).read_bytes():
             raise ValueError("Published corpus changed")
     output.mkdir(parents=True, exist_ok=True)
     for name in {e["path"] for e in old["files"]} | {"manifest.json", "README.md"}:
@@ -157,30 +201,59 @@ def prepare_reviewed(project, run, rag_report, output, pilot=None):
     for domain in ("b2b", "b2c"):
         for suffix in ("corpus.parquet", "markdown.zip"):
             shutil.copyfile(pilot / f"{domain}-{suffix}", output / f"{domain}-{suffix}")
-        shutil.copyfile(run / "reviewed" / f"{domain}-test.parquet", output / f"{domain}-test.parquet")
+        shutil.copyfile(
+            run / "reviewed" / f"{domain}-test.parquet", output / f"{domain}-test.parquet"
+        )
     for name in ("LICENSE-DATA.txt", "NOTICE.md", "upstream-manifest.json"):
         shutil.copyfile(pilot / name, output / name)
     shutil.copyfile(frozen_path, output / "questions.json")
     shutil.copyfile(run / "config.json", output / "generation-config.json")
     write_json(output / "source-coverage.json", units)
-    coverage = dict(complete=True, source_units=len(units), question_count=len(frozen),
-                    counts=dict(Counter(q["domain"] + "/" + q["question_class"] for q in frozen)),
-                    before_independent_review=len(selected), excluded_after_review=len(rejected))
+    coverage = dict(
+        complete=True,
+        source_units=len(units),
+        question_count=len(frozen),
+        counts=dict(Counter(q["domain"] + "/" + q["question_class"] for q in frozen)),
+        before_independent_review=len(selected),
+        excluded_after_review=len(rejected),
+    )
     write_json(output / "coverage.json", coverage)
     write_json(output / "review-selection.json", selection)
-    write_json(output / "validation-audits.json", dict(source_and_citation=reviews, customer_scope=scope))
-    write_json(output / "release-verification.json", dict(
-        release="full-v2", question_sha256=selection["question_sha256"],
-        question_count=len(frozen), full_source_coverage=True, review_selection_replayed=True,
-        frozen_parquet_verified=True, rag=verification,
-        limitations="Recorded gates and artifact integrity; not a human correctness estimate. RAG scores never select questions."))
-    configs = [dict(config_name=d + suffix, data_files=[dict(split="test", path=path + f"{d}-test.parquet")])
-               for d in ("b2b", "b2c") for suffix, path in (("", ""), ("_pilot", "pilot/"))]
-    card = dict(license="cc-by-nc-4.0", language=["en"], task_categories=["question-answering"],
-                tags=["rag", "synthetic", "sales", "multi-hop"], configs=configs)
-    table = "\n".join(f"| {d.upper()} | {sum(c['domain'] == d for c in calls.values())} | "
-                      f"{coverage['counts'].get(d + '/single_call', 0)} | {coverage['counts'].get(d + '/multi_call', 0)} |"
-                      for d in ("b2b", "b2c"))
+    write_json(
+        output / "validation-audits.json", dict(source_and_citation=reviews, customer_scope=scope)
+    )
+    write_json(
+        output / "release-verification.json",
+        dict(
+            release="full-v2",
+            question_sha256=selection["question_sha256"],
+            question_count=len(frozen),
+            full_source_coverage=True,
+            review_selection_replayed=True,
+            frozen_parquet_verified=True,
+            rag=verification,
+            limitations="Recorded gates and artifact integrity; not a human correctness estimate. RAG scores never select questions.",
+        ),
+    )
+    configs = [
+        dict(
+            config_name=d + suffix, data_files=[dict(split="test", path=path + f"{d}-test.parquet")]
+        )
+        for d in ("b2b", "b2c")
+        for suffix, path in (("", ""), ("_pilot", "pilot/"))
+    ]
+    card = dict(
+        license="cc-by-nc-4.0",
+        language=["en"],
+        task_categories=["question-answering"],
+        tags=["rag", "synthetic", "sales", "multi-hop"],
+        configs=configs,
+    )
+    table = "\n".join(
+        f"| {d.upper()} | {sum(c['domain'] == d for c in calls.values())} | "
+        f"{coverage['counts'].get(d + '/single_call', 0)} | {coverage['counts'].get(d + '/multi_call', 0)} |"
+        for d in ("b2b", "b2c")
+    )
     text = f"""# SalesTranscriptQA
 
 {len(frozen):,} reviewed questions over {len(calls):,} verbatim synthetic CRMArena-Pro sales-call transcripts. All {len(units):,} eligible source units were processed: single calls in both domains and distinct-dialogue pairs within one B2B opportunity. No B2C multi-call questions. Rejected proposals and review failures do not become benchmark questions.
@@ -215,14 +288,27 @@ The original 200-question pilot is archived under `pilot/`, configs `b2b_pilot` 
 
 Derived from [Salesforce/CRMArenaPro](https://huggingface.co/datasets/Salesforce/CRMArenaPro), accompanying [CRMArena-Pro](https://arxiv.org/abs/2505.18878), Salesforce AI Research. Independent adaptation by Kyle Wild / Endgame Labs; not endorsed by Salesforce. Data and derived QA use CC BY-NC 4.0. The CLI's MIT license does not relicense the data. See `NOTICE.md`, `LICENSE-DATA.txt`, and `upstream-manifest.json` for attribution and pinned sources.
 """
-    (output / "README.md").write_text("---\n" + yaml.safe_dump(card, sort_keys=False) + "---\n\n" + text)
-    manifest = dict(schema_version=1, release="full-v2", question_count=len(frozen),
-                    question_sha256=selection["question_sha256"], corpus_count=len(calls),
-                    license="cc-by-nc-4.0", files=[])
+    (output / "README.md").write_text(
+        "---\n" + yaml.safe_dump(card, sort_keys=False) + "---\n\n" + text
+    )
+    manifest = dict(
+        schema_version=1,
+        release="full-v2",
+        question_count=len(frozen),
+        question_sha256=selection["question_sha256"],
+        corpus_count=len(calls),
+        license="cc-by-nc-4.0",
+        files=[],
+    )
     for path in sorted(output.rglob("*")):
         if path.is_file():
-            manifest["files"].append(dict(path=str(path.relative_to(output)), bytes=path.stat().st_size,
-                                          sha256=sha(path.read_bytes())))
+            manifest["files"].append(
+                dict(
+                    path=str(path.relative_to(output)),
+                    bytes=path.stat().st_size,
+                    sha256=sha(path.read_bytes()),
+                )
+            )
     write_json(output / "manifest.json", manifest)
     verify_package(output, manifest)
     return coverage
@@ -231,11 +317,25 @@ Derived from [Salesforce/CRMArenaPro](https://huggingface.co/datasets/Salesforce
 def verify_package(output, manifest):
     """Check the release's frozen QA, both Parquet files, and completion receipt."""
     output = Path(output)
-    required = {"questions.json", "release-verification.json", "coverage.json",
-                "b2b-test.parquet", "b2c-test.parquet", "README.md", "LICENSE-DATA.txt",
-                "NOTICE.md", "upstream-manifest.json", "review-selection.json",
-                "validation-audits.json", "source-coverage.json", "generation-config.json",
-                "b2b-corpus.parquet", "b2c-corpus.parquet", "b2b-markdown.zip", "b2c-markdown.zip"}
+    required = {
+        "questions.json",
+        "release-verification.json",
+        "coverage.json",
+        "b2b-test.parquet",
+        "b2c-test.parquet",
+        "README.md",
+        "LICENSE-DATA.txt",
+        "NOTICE.md",
+        "upstream-manifest.json",
+        "review-selection.json",
+        "validation-audits.json",
+        "source-coverage.json",
+        "generation-config.json",
+        "b2b-corpus.parquet",
+        "b2c-corpus.parquet",
+        "b2b-markdown.zip",
+        "b2c-markdown.zip",
+    }
     names = [e["path"] for e in manifest["files"]]
     if not required <= set(names) or len(set(names)) != len(names):
         raise ValueError("Reviewed release manifest is incomplete or duplicated")
@@ -244,18 +344,30 @@ def verify_package(output, manifest):
     receipt = read(output / "release-verification.json")
     coverage = read(output / "coverage.json")
     n = len(questions)
-    if (manifest.get("release") != "full-v2" or receipt.get("release") != "full-v2"
-            or sha(body) != manifest.get("question_sha256")
-            or sha(body) != receipt.get("question_sha256")
-            or manifest.get("question_count") != n or receipt.get("question_count") != n
-            or coverage.get("question_count") != n or coverage.get("source_units") != 14916
-            or coverage.get("complete") is not True or not n
-            or len({q["question_id"] for q in questions}) != n
-            or not all(receipt.get(k) is True for k in
-                       ("full_source_coverage", "review_selection_replayed", "frozen_parquet_verified"))
-            or receipt.get("rag", {}).get("question_count") != n
-            or receipt.get("rag", {}).get("outcomes") != n * 4
-            or receipt.get("rag", {}).get("exact_context_and_coverage_verified") is not True):
+    if (
+        manifest.get("release") != "full-v2"
+        or receipt.get("release") != "full-v2"
+        or sha(body) != manifest.get("question_sha256")
+        or sha(body) != receipt.get("question_sha256")
+        or manifest.get("question_count") != n
+        or receipt.get("question_count") != n
+        or coverage.get("question_count") != n
+        or coverage.get("source_units") != 14916
+        or coverage.get("complete") is not True
+        or not n
+        or len({q["question_id"] for q in questions}) != n
+        or not all(
+            receipt.get(k) is True
+            for k in (
+                "full_source_coverage",
+                "review_selection_replayed",
+                "frozen_parquet_verified",
+            )
+        )
+        or receipt.get("rag", {}).get("question_count") != n
+        or receipt.get("rag", {}).get("outcomes") != n * 4
+        or receipt.get("rag", {}).get("exact_context_and_coverage_verified") is not True
+    ):
         raise ValueError("Reviewed release completion receipt mismatch")
     for domain in ("b2b", "b2c"):
         expected = [q for q in questions if q["domain"] == domain]

@@ -2,11 +2,15 @@ from salestranscriptqa.question_style import locator_flags
 
 
 def test_real_model_date_locator_failures():
-    assert locator_flags("What did Olivia Grant say she was leaning towards during the April 10 call?")
-    assert locator_flags("What pricing did Mei Lin quote during the December 29 call with Samuel Peterson?")
+    assert locator_flags(
+        "What did Olivia Grant say she was leaning towards during the April 10 call?"
+    )
+    assert locator_flags(
+        "What pricing did Mei Lin quote during the December 29 call with Samuel Peterson?"
+    )
     assert locator_flags("In the call on July 11, what did Mark agree to?")
-    assert locator_flags('What happened in the call titled Foobar?')
-    assert locator_flags('What support was promised in the January call?')
+    assert locator_flags("What happened in the call titled Foobar?")
+    assert locator_flags("What support was promised in the January call?")
 
 
 def test_natural_customer_names_and_business_dates_are_preserved():
@@ -21,6 +25,6 @@ def test_natural_customer_names_and_business_dates_are_preserved():
 
 
 def test_observed_year_locator_and_unbound_speaker():
-    assert locator_flags('What did Rajesh prioritize in the 2022 call?')
-    assert locator_flags('How did I address Chloe’s concern?')
-    assert locator_flags('What did Arjun offer Chloe?')==[]
+    assert locator_flags("What did Rajesh prioritize in the 2022 call?")
+    assert locator_flags("How did I address Chloe’s concern?")
+    assert locator_flags("What did Arjun offer Chloe?") == []
