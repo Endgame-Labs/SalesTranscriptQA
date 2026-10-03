@@ -3,7 +3,6 @@
 import csv
 import json
 import os
-import shlex
 import shutil
 import sqlite3
 import statistics
@@ -248,19 +247,24 @@ Derived from [Salesforce/CRMArenaPro](https://huggingface.co/datasets/Salesforce
     return report
 
 
-def hf_token():
-    token = os.environ.get("HF_TOKEN")
+# The exe.dev `huggingface` integration injects the Hub token (write access to
+# EndgameLabs) at the network edge. HF_ENDPOINT overrides it with the Hub
+# itself (https://huggingface.co), which then needs HF_TOKEN from the
+# environment. Receipts keep recording public huggingface.co URLs.
+HF_INTEGRATION = "https://huggingface.int.exe.xyz"
+
+
+def hf_api():
+    endpoint = (os.environ.get("HF_ENDPOINT") or HF_INTEGRATION).strip().rstrip("/")
+    if endpoint.startswith("https://") and endpoint.lower().split("/")[2].endswith(".int.exe.xyz"):
+        # huggingface_hub insists on a token; the integration replaces this dummy.
+        return HfApi(endpoint=endpoint, token="implicit")
+    token = os.environ.get("HF_TOKEN", "").strip()
     if not token:
-        path = Path.home() / ".secrets/keys.env"
-        if path.exists():
-            for line in path.read_text().splitlines():
-                key, sep, value = line.removeprefix("export ").partition("=")
-                if sep and key.strip() == "HF_TOKEN":
-                    token = shlex.split(value)[0]
-                    break
-    if not token:
-        raise RuntimeError("HF_TOKEN unavailable")
-    return token
+        raise RuntimeError(
+            f"HF_TOKEN unavailable (only a direct HF_ENDPOINT needs it; on exe.dev use the default {HF_INTEGRATION})"
+        )
+    return HfApi(endpoint=endpoint, token=token)
 
 
 def publish_full(output, receipt, repo=DEFAULT_REPO):
@@ -280,7 +284,7 @@ def publish_full(output, receipt, repo=DEFAULT_REPO):
         from .reviewed_release import verify_package
 
         verify_package(output, manifest)
-    api = HfApi(token=hf_token())
+    api = hf_api()
     if receipt.exists():
         info = json.loads(receipt.read_text())
         if (

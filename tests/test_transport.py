@@ -123,3 +123,74 @@ def test_invalid_completions_are_distinct_from_unavailable_provider(tmp_path, mo
         assert type(caught.value) is error
         with t.db() as db:
             assert db.execute("SELECT count(*) FROM attempts").fetchone()[0] == 8
+
+
+def _ok(request):
+    return httpx.Response(
+        200,
+        json={
+            "choices": [{"finish_reason": "stop", "message": {"content": '{"ok":true}'}}],
+            "usage": {"prompt_tokens": 1, "completion_tokens": 1},
+        },
+    )
+
+
+def test_default_route_is_exe_integration_without_key(tmp_path, monkeypatch):
+    monkeypatch.delenv("FIREWORKS_API_KEY", raising=False)
+    monkeypatch.delenv("FIREWORKS_BASE_URL", raising=False)
+    t = Transport(tmp_path)
+    calls = []
+    t.client = httpx.Client(transport=httpx.MockTransport(lambda r: calls.append(r) or _ok(r)))
+    assert t.request(PRIMARY, "x", "test") == {"ok": True}
+    assert str(calls[0].url) == "https://fireworks.int.exe.xyz/inference/v1/chat/completions"
+    assert "authorization" not in calls[0].headers
+
+
+def test_direct_route_needs_key_from_environment(tmp_path, monkeypatch):
+    import pytest
+
+    from salestranscriptqa.transport import FIREWORKS_DIRECT
+
+    monkeypatch.setenv("FIREWORKS_BASE_URL", FIREWORKS_DIRECT)
+    monkeypatch.delenv("FIREWORKS_API_KEY", raising=False)
+    t = Transport(tmp_path)
+    calls = []
+    t.client = httpx.Client(transport=httpx.MockTransport(lambda r: calls.append(r) or _ok(r)))
+    with pytest.raises(RuntimeError, match="FIREWORKS_API_KEY"):
+        t.request(PRIMARY, "x", "test")
+    assert not calls
+    monkeypatch.setenv("FIREWORKS_API_KEY", "direct-test")
+    assert t.request(PRIMARY, "x", "test") == {"ok": True}
+    assert str(calls[0].url) == FIREWORKS_DIRECT + "/chat/completions"
+    assert calls[0].headers["authorization"] == "Bearer direct-test"
+
+
+def test_cache_survives_route_change(tmp_path, monkeypatch):
+    from salestranscriptqa.transport import FIREWORKS_DIRECT
+
+    monkeypatch.setenv("FIREWORKS_BASE_URL", FIREWORKS_DIRECT)
+    monkeypatch.setenv("FIREWORKS_API_KEY", "direct-test")
+    t = Transport(tmp_path)
+    calls = []
+    t.client = httpx.Client(transport=httpx.MockTransport(lambda r: calls.append(r) or _ok(r)))
+    t.request(PRIMARY, "x", "test")
+    monkeypatch.delenv("FIREWORKS_BASE_URL")
+    monkeypatch.delenv("FIREWORKS_API_KEY")
+    assert t.request(PRIMARY, "x", "test") == {"ok": True}
+    assert len(calls) == 1
+
+
+def test_hf_api_routes(monkeypatch):
+    import pytest
+
+    from salestranscriptqa.full_release import hf_api
+
+    monkeypatch.delenv("HF_ENDPOINT", raising=False)
+    monkeypatch.delenv("HF_TOKEN", raising=False)
+    api = hf_api()
+    assert api.endpoint == "https://huggingface.int.exe.xyz" and api.token == "implicit"
+    monkeypatch.setenv("HF_ENDPOINT", "https://huggingface.co")
+    with pytest.raises(RuntimeError, match="HF_TOKEN"):
+        hf_api()
+    monkeypatch.setenv("HF_TOKEN", "hf-test")
+    assert hf_api().token == "hf-test"
