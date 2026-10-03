@@ -34,18 +34,42 @@ def digest(value):
     ).hexdigest()
 
 
-def credentials():
-    if not os.environ.get("FIREWORKS_API_KEY"):
-        # Load only this key. Never execute the secrets file as shell code.
-        import shlex
+# The exe.dev `fireworks` integration injects the Fireworks key at the network
+# edge, so the VM never holds it. FIREWORKS_BASE_URL overrides the endpoint
+# (e.g. FIREWORKS_DIRECT for machines without the integration); any endpoint
+# other than an exe.dev integration needs FIREWORKS_API_KEY from the
+# environment. Request cache keys hash only the payload, stage and nonce, so
+# switching endpoints never invalidates stored responses.
+FIREWORKS_INTEGRATION = "https://fireworks.int.exe.xyz/inference/v1"
+FIREWORKS_DIRECT = "https://api.fireworks.ai/inference/v1"
 
-        for line in (Path.home() / ".secrets/keys.env").read_text().splitlines():
-            key, sep, value = line.removeprefix("export ").partition("=")
-            if sep and key.strip() == "FIREWORKS_API_KEY":
-                os.environ[key.strip()] = shlex.split(value)[0]
-                break
-    if not os.environ.get("FIREWORKS_API_KEY"):
-        raise RuntimeError("FIREWORKS_API_KEY is unavailable")
+
+def is_exe_integration(url):
+    """True for an exe.dev integration host (https://<name>.int.exe.xyz)."""
+    parts = httpx.URL(url)
+    return parts.scheme == "https" and (parts.host or "").lower().endswith(".int.exe.xyz")
+
+
+def fireworks_base_url():
+    return (os.environ.get("FIREWORKS_BASE_URL") or FIREWORKS_INTEGRATION).strip().rstrip("/")
+
+
+def auth_headers(base_url, key_env="FIREWORKS_API_KEY"):
+    """Authorization headers for base_url: none for an exe.dev integration,
+    otherwise a bearer key read from the environment only."""
+    if is_exe_integration(base_url):
+        return {}
+    key = os.environ.get(key_env, "").strip()
+    if not key:
+        raise RuntimeError(
+            f"{key_env} is unavailable (only a direct endpoint needs it; on exe.dev use the default {FIREWORKS_INTEGRATION})"
+        )
+    return {"Authorization": "Bearer " + key}
+
+
+def credentials():
+    """Fail fast before any request when the configured endpoint needs a missing key."""
+    auth_headers(fireworks_base_url())
 
 
 def retry_delay(attempt, header=None, now=None):
@@ -141,9 +165,10 @@ class Transport:
             self.start_attempt(aid, key, stage, model, started, payload)
             data, response, parsed, error = None, None, None, None
             try:
+                base_url = fireworks_base_url()
                 response = self.client.post(
-                    "https://api.fireworks.ai/inference/v1/chat/completions",
-                    headers={"Authorization": "Bearer " + os.environ["FIREWORKS_API_KEY"]},
+                    base_url + "/chat/completions",
+                    headers=auth_headers(base_url),
                     json=payload,
                 )
                 response.raise_for_status()

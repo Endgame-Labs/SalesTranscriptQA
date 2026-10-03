@@ -46,8 +46,10 @@ uv sync --frozen
 uv run salestranscriptqa build-corpus --fetch-source
 ```
 
-Provide `FIREWORKS_API_KEY` in your environment. On the development VM the helper
-can load that key alone from `~/.secrets/keys.env`. No Hugging Face token is required
+On an exe.dev VM, requests go to the `fireworks` integration
+(`https://fireworks.int.exe.xyz/inference/v1`) and need no key. Elsewhere set
+`FIREWORKS_BASE_URL=https://api.fireworks.ai/inference/v1` and provide
+`FIREWORKS_API_KEY` in your environment. No Hugging Face token is required
 for generation. Source transcripts remain verbatim; Salesforce attribution and
 CC BY-NC 4.0 data terms remain in effect.
 
