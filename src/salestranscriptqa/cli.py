@@ -1,7 +1,6 @@
 """Explicit dataset access, exports and evaluation; generation is a separate command."""
 
 import json
-import os
 import re
 import time
 from collections import Counter
@@ -433,7 +432,8 @@ def check(
         "elsewhere use e.g. https://api.fireworks.ai/inference/v1 with --api-key-env.",
     ),
     api_key_env: str = typer.Option(
-        "FIREWORKS_API_KEY", help="Environment variable holding the key for a non-integration endpoint."
+        "FIREWORKS_API_KEY",
+        help="Environment variable holding the key for a non-integration endpoint.",
     ),
     output: Path = typer.Option(...),
     force: bool = False,
