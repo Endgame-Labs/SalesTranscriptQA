@@ -49,10 +49,13 @@ def test_defaults_are_glm_with_low_reasoning(tmp_path, monkeypatch):
 
 def test_current_arms_generate_with_glm_and_cross_check_with_deepseek_v4p1():
     from salestranscriptqa.sales_questions import SalesQuestionsGLM, SalesQuestionsReliable
+
     for arm in (SalesQuestionsGLM, SalesQuestionsReliable):
         assert arm.generator == GLM_5P3_FLASH
     # independent_answer goes to the other family
-    assert (SECONDARY if SalesQuestionsGLM.generator != SECONDARY else PRIMARY) == DEEPSEEK_V4P1_FLASH
+    assert (
+        SECONDARY if SalesQuestionsGLM.generator != SECONDARY else PRIMARY
+    ) == DEEPSEEK_V4P1_FLASH
 
 
 def test_historical_deepseek_arm_is_not_relabelled():
@@ -73,8 +76,14 @@ def test_empty_or_truncated_content_is_retried_then_visible(tmp_path, monkeypatc
     monkeypatch.setenv("FIREWORKS_API_KEY", "test")
     monkeypatch.setattr(transport, "retry_delay", lambda *args: 0)
     t = Transport(tmp_path)
-    body = {"choices": [choice], "usage": {"prompt_tokens": 2, "completion_tokens": 20,
-            "completion_tokens_details": {"reasoning_tokens": 20}}}
+    body = {
+        "choices": [choice],
+        "usage": {
+            "prompt_tokens": 2,
+            "completion_tokens": 20,
+            "completion_tokens_details": {"reasoning_tokens": 20},
+        },
+    }
     t.client = httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(200, json=body)))
     with pytest.raises(InvalidModelOutputError):
         t.request(GLM_5P3_FLASH, "JSON", "empty")
@@ -90,15 +99,27 @@ def test_empty_then_answer_recovers(tmp_path, monkeypatch):
     monkeypatch.setattr(transport, "retry_delay", lambda *args: 0)
     replies = iter([ok(""), ok('{"answer":"OK"}')])
     t = Transport(tmp_path)
-    t.client = httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(200, json=next(replies))))
+    t.client = httpx.Client(
+        transport=httpx.MockTransport(lambda r: httpx.Response(200, json=next(replies)))
+    )
     assert t.request(GLM_5P3_FLASH, "JSON", "recover") == {"answer": "OK"}
 
 
 def test_reasoning_tokens_are_billed_as_output(tmp_path, monkeypatch):
     # Fireworks reports reasoning inside completion_tokens.
-    assert output_tokens({"completion_tokens": 20, "completion_tokens_details": {"reasoning_tokens": 20}}) == 20
+    assert (
+        output_tokens(
+            {"completion_tokens": 20, "completion_tokens_details": {"reasoning_tokens": 20}}
+        )
+        == 20
+    )
     # Never bill fewer output tokens than the reported reasoning.
-    assert output_tokens({"completion_tokens": 3, "completion_tokens_details": {"reasoning_tokens": 40}}) == 40
+    assert (
+        output_tokens(
+            {"completion_tokens": 3, "completion_tokens_details": {"reasoning_tokens": 40}}
+        )
+        == 40
+    )
     assert output_tokens({}) is None
     monkeypatch.setenv("FIREWORKS_API_KEY", "test")
     t = Transport(tmp_path)
@@ -119,11 +140,19 @@ def test_roles_use_two_model_families_and_never_share_a_cache_entry(tmp_path, mo
     monkeypatch.setenv("FIREWORKS_API_KEY", "test")
     assert PRIMARY != SECONDARY
     sent = []
-    decision = json.dumps({"necessary": True, "reason": "needs both", "exclusive_facts": [
-        {"call_id": "a", "fact": "x"}, {"call_id": "b", "fact": "y"}]})
+    decision = json.dumps(
+        {
+            "necessary": True,
+            "reason": "needs both",
+            "exclusive_facts": [{"call_id": "a", "fact": "x"}, {"call_id": "b", "fact": "y"}],
+        }
+    )
     t = Transport(tmp_path)
-    t.client = httpx.Client(transport=httpx.MockTransport(
-        lambda r: sent.append(json.loads(r.content)) or httpx.Response(200, json=ok(decision))))
+    t.client = httpx.Client(
+        transport=httpx.MockTransport(
+            lambda r: sent.append(json.loads(r.content)) or httpx.Response(200, json=ok(decision))
+        )
+    )
     calls = [{"call_id": c, "metadata": {}, "dialogue": "d"} for c in "ab"]
     try:
         assess({"question": "q", "gold_answer": "g"}, calls, t)
