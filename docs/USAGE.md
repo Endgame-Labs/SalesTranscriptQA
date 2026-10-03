@@ -58,13 +58,19 @@ External judges can produce JSONL records with `question_id` and boolean `correc
 salestranscriptqa score answers.jsonl --domain b2b --judgments judgments.jsonl --output scores.json
 ```
 
-For direct LLM judging, export your provider key into an environment variable and choose a model explicitly:
+For direct LLM judging, choose a model explicitly. The default base URL is the [exe.dev](https://exe.dev/docs/integrations.md) `fireworks` integration (`https://fireworks.int.exe.xyz/inference/v1`), which injects the key at the network edge, so no key is needed on an exe.dev VM:
 
 ```sh
-salestranscriptqa check answers.jsonl --domain b2b --model PROVIDER_MODEL_ID --api-key-env FIREWORKS_API_KEY --output judgments.jsonl
+salestranscriptqa check answers.jsonl --domain b2b --model PROVIDER_MODEL_ID --output judgments.jsonl
 ```
 
-Use `--base-url` for another HTTPS OpenAI-compatible JSON endpoint. `--reasoning-effort` and `--max-tokens` configure provider reasoning/output limits; for GLM Flash, use `--reasoning-effort low`. The full submission and output destination are validated before paid requests. Judgments checkpoint after each question and include per-attempt timing and provider usage where supplied. Failures have an `error` field, never a fabricated correctness value; `check` exits nonzero if any fail. `score` rejects incomplete/duplicate judgment sets. A new `check` invocation currently rejudges the supplied batch; supply only unanswered items when recovering a partial judging run.
+Elsewhere, pass the provider endpoint and export its key into an environment variable:
+
+```sh
+salestranscriptqa check answers.jsonl --domain b2b --model PROVIDER_MODEL_ID --base-url https://api.fireworks.ai/inference/v1 --api-key-env FIREWORKS_API_KEY --output judgments.jsonl
+```
+
+Use `--base-url` for another HTTPS OpenAI-compatible JSON endpoint; any base URL other than an exe.dev integration needs the key named by `--api-key-env`. `--reasoning-effort` and `--max-tokens` configure provider reasoning/output limits; for GLM Flash, use `--reasoning-effort low`. The full submission and output destination are validated before paid requests. Judgments checkpoint after each question and include per-attempt timing and provider usage where supplied. Failures have an `error` field, never a fabricated correctness value; `check` exits nonzero if any fail. `score` rejects incomplete/duplicate judgment sets. A new `check` invocation currently rejudges the supplied batch; supply only unanswered items when recovering a partial judging run.
 
 Outputs refuse overwrite unless `--force` is supplied. Answers, judge results and API keys are not uploaded by these commands.
 
@@ -80,7 +86,7 @@ uv run salestranscriptqa generate-pilot --per-class 50
 
 Source downloads are pinned by `provenance/upstream-manifest.json`. To use an existing verified source download, pass `--source-dir PATH` to `build-corpus`. Default generated files are ignored by Git: `data/` for corpora and release artifacts, `runs/` for SQLite progress and model request artifacts.
 
-Generation uses DeepSeek V4 Flash 0731 and GLM 5.3 Flash through Fireworks. Supply `FIREWORKS_API_KEY` in the environment. On the development VM, the harness can load only that key from `~/.secrets/keys.env` if it is not already set. No other keys are read into the environment.
+Generation uses DeepSeek V4 Flash 0731 and GLM 5.3 Flash through Fireworks. By default requests go to the exe.dev `fireworks` integration (`https://fireworks.int.exe.xyz/inference/v1`), which injects the key at the network edge, so no key is needed on an exe.dev VM. Elsewhere set `FIREWORKS_BASE_URL=https://api.fireworks.ai/inference/v1` and supply `FIREWORKS_API_KEY` in the environment; the harness never reads keys from files. Request caching does not depend on the endpoint, so a run resumes on either route.
 
 The harness uses one process lock per run with six concurrent candidate workers, transactional SQLite stage records, request caching, bounded exponential backoff with jitter, and shared rate-limit cooldown. Each source group contributes at most one candidate per class in a run. Rejected candidates are retained and replaced with candidates from other groups; there is no refinement/optimization loop in this first implementation. Resume with the same run directory and configuration. Use a new directory/version when changing the generation protocol.
 
@@ -108,7 +114,7 @@ Or run the complete sequence from the repository root:
 uv run python scripts/generate_and_publish.py
 ```
 
-Generation uses `FIREWORKS_API_KEY`; publication uses `HF_TOKEN`. On the development VM each helper loads only its own key from `~/.secrets/keys.env` if needed. Publication writes to `EndgameLabs/SalesTranscriptQA`, then verifies anonymous pinned downloads and the CLI fetch. It uses one Hugging Face commit with a parent-revision precondition. A completed publication receipt prevents duplicate uploads on resume.
+Generation and publication go through the exe.dev `fireworks` and `huggingface` integrations by default, so no keys are needed on an exe.dev VM. Elsewhere set `FIREWORKS_BASE_URL=https://api.fireworks.ai/inference/v1` with `FIREWORKS_API_KEY`, and `HF_ENDPOINT=https://huggingface.co` with a write-scoped `HF_TOKEN`, in the environment; keys are never read from files. Publication writes to `EndgameLabs/SalesTranscriptQA`, then verifies anonymous pinned downloads and the CLI fetch. It uses one Hugging Face commit with a parent-revision precondition. A completed publication receipt prevents duplicate uploads on resume.
 
 Defaults: `--corpus data/corpus`, `--run-dir runs/full-v1`, `--workers 24`, `--proposals 3`. Resume with the same configuration. `generate-all --limit 8` is a non-publishable smoke check across all four domain/class strata; running again without the limit reuses its completed work. A process lock prevents concurrent generators on the same run. The workflow adds its own lock across generation, packaging and publication. Infrastructure failures stop the workflow rather than becoming quality rejections; rerun after resolving the failure.
 

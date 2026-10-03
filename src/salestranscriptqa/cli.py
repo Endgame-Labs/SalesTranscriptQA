@@ -1,7 +1,6 @@
 """Explicit dataset access, exports and evaluation; generation is a separate command."""
 
 import json
-import os
 import re
 import time
 from collections import Counter
@@ -13,7 +12,7 @@ import typer
 from huggingface_hub import hf_hub_download
 
 from .corpus import download, extract, sha
-from .transport import retry_delay
+from .transport import auth_headers, retry_delay
 
 app = typer.Typer(no_args_is_help=True, help="SalesTranscriptQA dataset and evaluation CLI.")
 questions = typer.Typer(help="Read or export benchmark questions.")
@@ -427,8 +426,15 @@ def check(
     domain: str = typer.Option(...),
     data_dir: Path = typer.Option(Path("salestranscriptqa-data")),
     model: str = typer.Option(...),
-    base_url: str = "https://api.fireworks.ai/inference/v1",
-    api_key_env: str = "FIREWORKS_API_KEY",
+    base_url: str = typer.Option(
+        "https://fireworks.int.exe.xyz/inference/v1",
+        help="OpenAI-compatible base URL. The default exe.dev fireworks integration needs no key; "
+        "elsewhere use e.g. https://api.fireworks.ai/inference/v1 with --api-key-env.",
+    ),
+    api_key_env: str = typer.Option(
+        "FIREWORKS_API_KEY",
+        help="Environment variable holding the key for a non-integration endpoint.",
+    ),
     output: Path = typer.Option(...),
     force: bool = False,
     reasoning_effort: str | None = None,
@@ -439,11 +445,14 @@ def check(
     rows = records(data_dir, domain, "test")
     answers = batch(input, rows)
     lookup = {r["question_id"]: r for r in rows}
-    api_key = os.environ.get(api_key_env)
-    if not api_key:
-        raise typer.BadParameter(f"Set {api_key_env} in the environment")
     if not base_url.startswith("https://"):
         raise typer.BadParameter("Use HTTPS for a credential-bearing endpoint")
+    try:
+        headers = auth_headers(base_url, api_key_env)
+    except RuntimeError:
+        raise typer.BadParameter(
+            f"Set {api_key_env} in the environment (not needed for an exe.dev integration base URL)"
+        ) from None
     results = []
     with httpx.Client(timeout=180) as client:
         for a in answers:
@@ -479,7 +488,7 @@ def check(
                 try:
                     response = client.post(
                         base_url.rstrip("/") + "/chat/completions",
-                        headers={"Authorization": "Bearer " + api_key},
+                        headers=headers,
                         json=payload,
                     )
                     response.raise_for_status()
